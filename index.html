@@ -5,37 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
     <!-- ═══ SEO PRIMAIRE ═══ -->
-    <title>Qualité de l'Eau — Hérault (34) & Gard (30) | Eau Potable, Nappes, Rivières</title>
-    <meta name="description" content="Surveillance en temps réel de la qualité de l'eau dans l'Hérault et le Gard. Eau potable (100+ communes), nappes phréatiques, rivières — données officielles ARS, BRGM, Hub'Eau, mises à jour chaque matin.">
-    <meta name="keywords" content="qualité eau potable Hérault, qualité eau Gard, eau potable Montpellier, eau potable Nîmes, nappes phréatiques 34 30, qualité rivières Hérault, nitrates eau potable, surveillance eau Occitanie, Hub'Eau, ARS">
+    <title>Qualité Air et Eau — Hérault (34) & Gard (30) | Eau Potable, Air, Nappes, Rivières</title>
+    <meta name="description" content="Surveillance en temps réel de la qualité de l'air et de l'eau dans l'Hérault et le Gard. Eau potable (100+ communes), qualité de l'air (IQA), pollen, nappes phréatiques, rivières — données officielles ARS, Atmo Occitanie, BRGM, Hub'Eau, mises à jour chaque matin.">
+    <meta name="keywords" content="qualité air eau Hérault, qualité air Gard, qualité eau potable Montpellier, qualité air Nîmes, IQA pollen Occitanie, nappes phréatiques 34 30, qualité rivières Hérault, nitrates eau potable, Atmo Occitanie, Hub'Eau, ARS">
     <meta name="robots" content="index, follow">
-    <meta name="author" content="Qualité Eau 34/30">
+    <meta name="author" content="Qualité Air et Eau 34/30">
     <link rel="canonical" href="https://www.nbrx.fr/">
 
     <!-- ═══ OPEN GRAPH (Facebook, LinkedIn, WhatsApp) ═══ -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.nbrx.fr/">
-    <meta property="og:title" content="Qualité de l'Eau — Hérault & Gard">
-    <meta property="og:description" content="Eau potable, nappes phréatiques, rivières : surveillance quotidienne pour 100+ communes de l'Hérault et du Gard. Données officielles ARS, BRGM, Hub'Eau.">
+    <meta property="og:title" content="Qualité Air et Eau — Hérault & Gard">
+    <meta property="og:description" content="Qualité de l'air (IQA, pollen), eau potable, nappes phréatiques, rivières : surveillance quotidienne pour 100+ communes de l'Hérault et du Gard. Données officielles ARS, Atmo Occitanie, BRGM, Hub'Eau.">
     <meta property="og:locale" content="fr_FR">
 
     <!-- ═══ TWITTER CARD ═══ -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Qualité de l'Eau — Hérault & Gard">
-    <meta name="twitter:description" content="Surveillance quotidienne de la qualité de l'eau pour 100+ communes du 34 et du 30.">
+    <meta name="twitter:title" content="Qualité Air et Eau — Hérault & Gard">
+    <meta name="twitter:description" content="Surveillance quotidienne de la qualité de l'air et de l'eau pour 100+ communes du 34 et du 30.">
 
     <!-- ═══ DONNÉES STRUCTURÉES JSON-LD ═══ -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "name": "Qualité Eau 34/30",
+      "name": "Qualité Air et Eau 34/30",
       "url": "https://www.nbrx.fr/",
-      "description": "Surveillance en temps réel de la qualité de l'eau dans l'Hérault (34) et le Gard (30) — eau potable, nappes phréatiques, rivières.",
+      "description": "Surveillance en temps réel de la qualité de l'air et de l'eau dans l'Hérault (34) et le Gard (30) — IQA, pollen, eau potable, nappes phréatiques, rivières.",
       "inLanguage": "fr-FR",
       "publisher": {
         "@type": "Organization",
-        "name": "Qualité Eau 34/30",
+        "name": "Qualité Air et Eau 34/30",
         "url": "https://www.nbrx.fr/"
       },
       "potentialAction": {
@@ -124,7 +124,7 @@
     <!-- HEADER -->
     <header class="flex flex-col md:flex-row justify-between items-center mb-6 bg-white p-6 rounded-3xl shadow-sm border border-slate-200 gap-4">
         <div>
-            <h1 class="text-3xl md:text-4xl font-black tracking-tight uppercase leading-tight">QUALITÉ <span class="text-sky-500">EAU</span></h1>
+            <h1 class="text-3xl md:text-4xl font-black tracking-tight uppercase leading-tight">QUALITÉ <span class="text-sky-500">AIR ET EAU</span></h1>
             <p class="text-slate-500 text-sm font-medium italic">Surveillance Hérault (34) & Gard (30)</p>
         </div>
         <div class="flex items-center gap-4">
@@ -194,6 +194,7 @@
         <button onclick="switchTab('potable')" id="tab-potable" class="pb-4 text-base font-black text-slate-400 hover:text-slate-600 transition-all uppercase tracking-wider">Eau Potable</button>
         <button onclick="switchTab('rivieres')" id="tab-rivieres" class="pb-4 text-base font-black text-slate-400 hover:text-slate-600 transition-all uppercase tracking-wider">Qualité Rivières</button>
         <button onclick="switchTab('carte')" id="tab-carte" class="pb-4 text-base font-black text-slate-400 hover:text-slate-600 transition-all uppercase tracking-wider">Carte</button>
+        <button onclick="switchTab('air')" id="tab-air" class="pb-4 text-base font-black text-slate-400 hover:text-slate-600 transition-all uppercase tracking-wider">Qualité de l'Air</button>
         <button onclick="switchTab('methode')" id="tab-methode" class="pb-4 text-base font-black text-slate-400 hover:text-slate-600 transition-all uppercase tracking-wider">Sources & Méthode</button>
     </div>
 
@@ -251,6 +252,7 @@
                     <div>
                         <h2 class="text-2xl font-black uppercase">Eau Potable par Commune</h2>
                         <p class="text-xs font-bold text-sky-600 uppercase tracking-tighter">Score qualité + 11 paramètres</p>
+                        <p class="text-[11px] text-slate-400 mt-1">Ce tableau couvre uniquement les communes de plus de 1 000 habitants des départements 34 et 30.</p>
                     </div>
                     <input type="text" id="city-search" placeholder="Filtrer par ville..." class="px-6 py-3 rounded-2xl border-2 border-white shadow-lg outline-none w-full md:w-96 focus:ring-4 focus:ring-sky-100 transition-all" onkeyup="renderPotable()">
                 </div>
@@ -383,6 +385,42 @@
         </div>
     </div>
 
+    <!-- ====== SECTION QUALITÉ DE L'AIR ====== -->
+    <div id="section-air" class="hidden space-y-8">
+
+        <!-- Explication -->
+        <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-200 flex flex-col md:flex-row gap-6 items-start">
+            <div class="flex-shrink-0 w-12 h-12 bg-sky-500 text-white rounded-2xl flex items-center justify-center text-2xl">🌬️</div>
+            <div class="space-y-2 text-[13px] leading-relaxed text-slate-600">
+                <p class="text-base font-black text-slate-800 uppercase tracking-tight">Indice de Qualité de l'Air (IQA) & Pollen</p>
+                <p>L'<strong>IQA</strong> est calculé chaque jour par Atmo Occitanie à partir de 5 polluants : NO₂ (dioxyde d'azote), O₃ (ozone), PM10 et PM2.5 (particules fines), SO₂ (dioxyde de soufre). Il reflète le polluant le plus défavorable.</p>
+                <div class="flex flex-wrap gap-3 pt-1">
+                    <span class="flex items-center gap-1 text-xs font-black"><span class="w-3 h-3 rounded-full bg-emerald-500 inline-block"></span> Bon</span>
+                    <span class="flex items-center gap-1 text-xs font-black"><span class="w-3 h-3 rounded-full bg-lime-400 inline-block"></span> Moyen</span>
+                    <span class="flex items-center gap-1 text-xs font-black"><span class="w-3 h-3 rounded-full bg-amber-400 inline-block"></span> Dégradé</span>
+                    <span class="flex items-center gap-1 text-xs font-black"><span class="w-3 h-3 rounded-full bg-orange-500 inline-block"></span> Mauvais</span>
+                    <span class="flex items-center gap-1 text-xs font-black"><span class="w-3 h-3 rounded-full bg-red-500 inline-block"></span> Très mauvais</span>
+                    <span class="flex items-center gap-1 text-xs font-black"><span class="w-3 h-3 rounded-full bg-purple-700 inline-block"></span> Extrêmement mauvais</span>
+                </div>
+                <p class="text-slate-400 text-[11px]">Source : Atmo Occitanie · Données journalières prévisionnelles · Mise à jour chaque matin.</p>
+                <p class="text-slate-400 text-[11px]">Les zones IQA couvrent les principales agglomérations de plus de 1 000 habitants des départements 34 et 30.</p>
+            </div>
+        </div>
+
+        <!-- IQA par zone -->
+        <div>
+            <h2 class="text-2xl font-black uppercase mb-4">Indice Qualité Air — par zone</h2>
+            <div id="air-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+        </div>
+
+        <!-- Pollen -->
+        <div>
+            <h2 class="text-2xl font-black uppercase mb-4">Risque Pollinique</h2>
+            <div id="pollen-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
+        </div>
+
+    </div>
+
     <!-- ====== SECTION MÉTHODE ====== -->
     <div id="section-methode" class="hidden">
         <div class="flex flex-col xl:flex-row gap-8">
@@ -424,6 +462,14 @@
                                 <h3 class="text-sky-600 font-black text-xl group-hover:underline uppercase italic">Portail Open Data — Montpellier Méditerranée Métropole</h3>
                             </div>
                             <p class="text-sm text-slate-500 leading-relaxed text-justify">Portail officiel de Montpellier 3M (data.montpellier3m.fr). Publie les analyses de qualité de l'eau potable par réseau de distribution (UDI), les bilans annuaux et les résultats de contrôle sanitaire pour les communes de la métropole. Permet d'accéder aux données par réseau et non seulement par commune, ce qui complète les données Hub'Eau pour les villes multi-réseaux comme Montpellier.</p>
+                        </a>
+                        <a href="https://www.atmo-occitanie.org" target="_blank" class="p-8 bg-white rounded-3xl border border-slate-100 shadow-sm hover:border-sky-400 transition-all group">
+                            <h3 class="text-sky-600 font-black text-xl mb-4 group-hover:underline uppercase italic">Atmo Occitanie</h3>
+                            <p class="text-sm text-slate-500 leading-relaxed text-justify">Association agréée de surveillance de la qualité de l'air en Occitanie. Fournit l'Indice de Qualité de l'Air (IQA) journalier par zone EPCI, calculé à partir de 5 polluants (NO₂, O₃, PM10, PM2.5, SO₂), ainsi que les niveaux d'exposition aux pollens par département.</p>
+                        </a>
+                        <a href="https://open-meteo.com" target="_blank" class="p-8 bg-white rounded-3xl border border-slate-100 shadow-sm hover:border-sky-400 transition-all group">
+                            <h3 class="text-sky-600 font-black text-xl mb-4 group-hover:underline uppercase italic">Open-Meteo</h3>
+                            <p class="text-sm text-slate-500 leading-relaxed text-justify">API météorologique open-source fournissant des données climatiques en temps réel et prévisionnelles. Utilisée pour les températures actuelles et les indicateurs météo complémentaires aux données de qualité de l'air.</p>
                         </a>
                     </div>
                 </div>
@@ -474,8 +520,8 @@
 <footer class="bg-slate-900 text-white py-16 mt-8">
     <div class="max-w-[1600px] mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
         <div>
-            <h3 class="text-2xl font-black uppercase mb-6 italic">QUALITÉ <span class="text-sky-400">EAU</span></h3>
-            <p class="text-slate-400 text-sm leading-relaxed">Surveillance indépendante de la qualité de l'eau pour le Languedoc. Données certifiées État, Région et Communes.</p>
+            <h3 class="text-2xl font-black uppercase mb-6 italic">QUALITÉ <span class="text-sky-400">AIR ET EAU</span></h3>
+            <p class="text-slate-400 text-sm leading-relaxed">Surveillance indépendante de la qualité de l'air et de l'eau pour le Languedoc. Données certifiées État, Région, Atmo Occitanie et Communes.</p>
         </div>
         <div>
             <h4 class="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-6">Partenaires</h4>
@@ -547,16 +593,75 @@
 
     function switchTab(tab) {
         currentTab = tab;
-        ['nappes','potable','rivieres','carte','methode'].forEach(s => {
+        ['nappes','potable','rivieres','carte','air','methode'].forEach(s => {
             document.getElementById(`section-${s}`).classList.toggle('hidden', s !== tab);
             document.getElementById(`tab-${s}`).classList.toggle('tab-active', s === tab);
         });
-        document.getElementById('dept-selector').classList.toggle('hidden', tab === 'methode');
+        document.getElementById('dept-selector').classList.toggle('hidden', tab === 'methode' || tab === 'air');
         if (tab === 'nappes') { renderNappes(); if (mapNappes) setTimeout(() => mapNappes.invalidateSize(), 200); }
         if (tab === 'potable') renderPotable();
         if (tab === 'rivieres') renderRivieres();
         if (tab === 'carte') renderCarte();
+        if (tab === 'air') renderAir();
         window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function renderAir() {
+        const airData    = fullData.air    || [];
+        const pollenData = fullData.pollen || [];
+
+        // IQA
+        const airGrid = document.getElementById('air-grid');
+        if (!airData.length) {
+            airGrid.innerHTML = '<p class="text-slate-400 col-span-3 text-center py-8">Données non disponibles</p>';
+        } else {
+            airGrid.innerHTML = airData.map(z => `
+                <div class="glass-card p-6 rounded-[2rem] border border-white shadow-sm hover:shadow-xl transition-all">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="font-black text-slate-800 text-sm uppercase leading-tight">${z.zone}</h3>
+                            <p class="text-[10px] text-slate-400 font-bold uppercase mt-0.5">Dept ${z.dept} · ${z.date}</p>
+                        </div>
+                        <div class="rounded-2xl px-3 py-1.5 text-white font-black text-sm flex-shrink-0 ml-2" style="background:${z.color}">${z.label}</div>
+                    </div>
+                    <div class="grid grid-cols-5 gap-1.5">
+                        ${Object.entries(z.polluants).map(([nom, p]) => `
+                        <div class="text-center">
+                            <div class="w-full h-2 rounded-full mb-1" style="background:${p.color}"></div>
+                            <p class="text-[9px] font-black text-slate-500 uppercase">${nom}</p>
+                            <p class="text-[9px] font-bold" style="color:${p.color}">${p.label}</p>
+                        </div>`).join('')}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Pollen
+        const pollenGrid = document.getElementById('pollen-grid');
+        if (!pollenData.length) {
+            pollenGrid.innerHTML = '<p class="text-slate-400 col-span-2 text-center py-8">Données non disponibles</p>';
+        } else {
+            pollenGrid.innerHTML = pollenData.map(d => `
+                <div class="glass-card p-6 rounded-[2rem] border border-white shadow-sm">
+                    <div class="flex justify-between items-center mb-5">
+                        <div>
+                            <h3 class="font-black text-slate-800 text-lg uppercase">${d.lib_zone}</h3>
+                            <p class="text-[10px] text-slate-400 font-bold uppercase">Dept ${d.dept} · ${d.date}</p>
+                        </div>
+                        <div class="rounded-2xl px-3 py-1.5 text-white font-black text-sm" style="background:${d.color_global}">
+                            Indice global : ${d.label_global}
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-2">
+                        ${Object.entries(d.taxa).map(([nom, t]) => `
+                        <div class="flex justify-between items-center px-3 py-2 bg-white/60 rounded-xl border-l-4" style="border-left-color:${t.color}">
+                            <span class="text-xs font-black text-slate-600">${nom}</span>
+                            <span class="text-xs font-black" style="color:${t.color}">${t.label}</span>
+                        </div>`).join('')}
+                    </div>
+                </div>
+            `).join('');
+        }
     }
 
     function switchDept(dept) {
