@@ -445,19 +445,133 @@ def run_all():
             print(f"  {s['nom_commune']} — {current:.2f} m NGF")
 
     # -----------------------------------------------------------------------
+    # 4. QUALITÉ DE L'AIR — source : Atmo Occitanie (ArcGIS WFS, sans auth)
+    # -----------------------------------------------------------------------
+    print("Qualité de l'air (Atmo Occitanie)...")
+
+    # Zones EPCI couvertes avec leur département
+    AIR_ZONES = {
+        # Hérault (34)
+        "243400017": {"nom": "Montpellier Métropole",       "dept": "34"},
+        "243400769": {"nom": "Béziers Méditerranée",         "dept": "34"},
+        "200066355": {"nom": "Bassin de Thau (Sète)",        "dept": "34"},
+        "243400470": {"nom": "Pays de l'Or (Mauguio)",      "dept": "34"},
+        "243400819": {"nom": "Hérault-Méditerranée (Agde)", "dept": "34"},
+        "200017341": {"nom": "Lodévois et Larzac",           "dept": "34"},
+        "243400520": {"nom": "Pays de Lunel",                "dept": "34"},
+        "243400694": {"nom": "Vallée de l'Hérault (Gignac)","dept": "34"},
+        # Gard (30)
+        "243000643": {"nom": "Nîmes Métropole",              "dept": "30"},
+        "200066918": {"nom": "Alès Agglomération",           "dept": "30"},
+        "200034692": {"nom": "Gard Rhodanien (Bagnols)",     "dept": "30"},
+        "243000585": {"nom": "Beaucaire Terre d'Argence",   "dept": "30"},
+        "200034379": {"nom": "Pays d'Uzès",                 "dept": "30"},
+        "243000296": {"nom": "Pays de Sommières",            "dept": "30"},
+    }
+    QUAL_LABELS = {1:"Bon", 2:"Moyen", 3:"Dégradé", 4:"Mauvais", 5:"Très mauvais", 6:"Extrêmement mauvais", 0:"N.C."}
+    QUAL_COLORS = {1:"#10b981", 2:"#a3e635", 3:"#f59e0b", 4:"#f97316", 5:"#ef4444", 6:"#7c3aed", 0:"#94a3b8"}
+    SUB_PARAMS  = [("no2","NO₂"), ("o3","O₃"), ("pm10","PM10"), ("pm25","PM2.5"), ("so2","SO₂")]
+
+    air_results = []
+    wfs_url = ("https://dservices9.arcgis.com/7Sr9Ek9c1QTKmbwr/arcgis/services/ind_occitanie/WFSServer"
+               "?service=WFS&version=2.0.0&request=GetFeature"
+               "&typeName=ind_occitanie:ind_occitanie&outputFormat=GEOJSON&count=500")
+    d_air = get_json(wfs_url)
+
+    if d_air and "features" in d_air:
+        latest = {}  # code_zone → feature le plus récent
+        for f in d_air["features"]:
+            p  = f.get("properties", {})
+            cz = p.get("code_zone")
+            if cz not in AIR_ZONES: continue
+            # Garder la ligne la plus récente par zone
+            if cz not in latest or p.get("date_ech","") > latest[cz].get("date_ech",""):
+                latest[cz] = p
+
+        for cz, p in latest.items():
+            qual = p.get("code_qual") or 0
+            air_results.append({
+                "zone":    AIR_ZONES[cz]["nom"],
+                "dept":    AIR_ZONES[cz]["dept"],
+                "date":    p.get("date_ech", ""),
+                "indice":  qual,
+                "label":   p.get("lib_qual") or QUAL_LABELS.get(qual, "N.C."),
+                "color":   p.get("coul_qual") or QUAL_COLORS.get(qual, "#94a3b8"),
+                "polluants": {
+                    label: {"indice": p.get(f"code_{key}") or 0,
+                            "label":  QUAL_LABELS.get(p.get(f"code_{key}") or 0, "N.C."),
+                            "color":  QUAL_COLORS.get(p.get(f"code_{key}") or 0, "#94a3b8")}
+                    for key, label in SUB_PARAMS
+                }
+            })
+    print(f"  {len(air_results)} zones air")
+
+    # -----------------------------------------------------------------------
+    # 5. POLLEN — source : Atmo Occitanie (ArcGIS FeatureServer, sans auth)
+    # -----------------------------------------------------------------------
+    print("Pollen (Atmo Occitanie)...")
+
+    POLLEN_TAXA = {
+        "GRAMINEE": "Graminées",  "OLEA":     "Olivier",
+        "CUPRESSA": "Cyprès",     "PLATANUS": "Platane",
+        "AMBROSIA": "Ambroisie",  "FRAXINUS": "Frêne",
+        "QUERCUS":  "Chêne",      "URTICACE": "Urticacées",
+        "BETULA":   "Bouleau",    "ARTEMISI": "Armoise",
+    }
+    POL_LABELS = {0:"N.C.", 1:"Très faible", 2:"Faible", 3:"Moyen", 4:"Élevé", 5:"Très élevé", 6:"Extrêmement élevé"}
+    POL_COLORS = {0:"#94a3b8", 1:"#10b981", 2:"#a3e635", 3:"#f59e0b", 4:"#f97316", 5:"#ef4444", 6:"#7c3aed"}
+
+    pollen_url = ("https://services9.arcgis.com/7Sr9Ek9c1QTKmbwr/arcgis/rest/services"
+                  "/Indice_Pollens_sur_la_region_Occitanie/FeatureServer/0/query"
+                  "?where=code_zone+IN+(30,34)&outFields=*&orderByFields=date_ech+DESC"
+                  "&resultRecordCount=10&f=json")
+    d_pol = get_json(pollen_url)
+
+    pollen_results = []
+    if d_pol and "features" in d_pol:
+        seen = set()
+        for f in d_pol["features"]:
+            a    = f.get("attributes", {})
+            dept = str(a.get("code_zone", ""))
+            if dept in seen: continue
+            seen.add(dept)
+            date_ms  = a.get("date_ech")
+            date_str = datetime.fromtimestamp(date_ms / 1000).strftime("%Y-%m-%d") if date_ms else ""
+            indice_g = a.get("indice") or 0
+            taxa = {
+                name: {"indice": a.get(code) or 0,
+                        "label":  POL_LABELS.get(a.get(code) or 0, "N.C."),
+                        "color":  POL_COLORS.get(a.get(code) or 0, "#94a3b8")}
+                for code, name in POLLEN_TAXA.items()
+            }
+            pollen_results.append({
+                "dept":          dept,
+                "lib_zone":      a.get("lib_zone", f"Département {dept}"),
+                "date":          date_str,
+                "indice_global": indice_g,
+                "label_global":  POL_LABELS.get(indice_g, "N.C."),
+                "color_global":  POL_COLORS.get(indice_g, "#94a3b8"),
+                "taxa":          taxa
+            })
+    print(f"  {len(pollen_results)} départements pollen")
+
+    # -----------------------------------------------------------------------
     # SAUVEGARDE
     # -----------------------------------------------------------------------
     final_data = {
         "nappes":   nappe_results,
         "potable":  potable,
         "rivieres": rivieres,
+        "air":      air_results,
+        "pollen":   pollen_results,
         "updated":  today.strftime("%d/%m/%Y à %H:%M")
     }
     out = os.path.join(BASE_DIR, "full_data.json")
     with open(out, "w", encoding="utf-8") as f:
         json.dump(final_data, f, indent=2, ensure_ascii=False)
     print(f"\nfull_data.json généré — {len(nappe_results)} nappes, "
-          f"{len(potable)} communes, {len(rivieres)} rivières.")
+          f"{len(potable)} communes, {len(rivieres)} rivières, "
+          f"{len(air_results)} zones air, {len(pollen_results)} depts pollen.")
 
 if __name__ == "__main__":
     run_all()

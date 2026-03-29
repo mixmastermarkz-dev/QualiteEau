@@ -2,7 +2,7 @@ name: Mise à jour quotidienne des données
 
 on:
   schedule:
-    - cron: '0 3 * * *'   # Tous les jours à 5h UTC (7h heure française)
+    - cron: '0 3 * * *'   # Tous les jours à 3h UTC (5h heure française)
   workflow_dispatch:        # Déclenchement manuel depuis GitHub
 
 permissions:
@@ -21,13 +21,16 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Lancer le script de données
+      - name: Récupérer les données API
         run: python data_fetcher.py
 
-      - name: Publier le nouveau full_data.json
+      - name: Générer les pages communes
+        run: python generate_pages.py
+
+      - name: Publier les fichiers mis à jour
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add full_data.json
+          git add full_data.json sitemap.xml eau-potable/
           git diff --staged --quiet || git commit -m "data: mise à jour automatique $(date +'%d/%m/%Y à %H:%M')"
           git push
