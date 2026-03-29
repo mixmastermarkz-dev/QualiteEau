@@ -159,10 +159,10 @@ CONF_TEMP = {"warning": 20, "danger": 25, "mode": "max"}
 # UTILITAIRES
 # ---------------------------------------------------------------------------
 
-def get_json(url):
+def get_json(url, timeout=20):
     try:
         req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-        with urllib.request.urlopen(req, timeout=20) as r:
+        with urllib.request.urlopen(req, timeout=timeout) as r:
             return json.loads(r.read().decode())
     except:
         return None
@@ -339,7 +339,7 @@ def run_all():
     url_analyses = (f"https://hubeau.eaufrance.fr/api/v2/qualite_rivieres/analyse_pc"
                     f"?code_departement=34,30&code_parametre={codes_str}"
                     f"&date_debut_prelevement={two_years_ago}&size=20000&sort=desc")
-    d_all = get_json(url_analyses)
+    d_all = get_json(url_analyses, timeout=90)
 
     # Grouper par station (code_station)
     par_station = {}
