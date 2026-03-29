@@ -2,7 +2,7 @@ name: Mise à jour quotidienne des données
 
 on:
   schedule:
-    - cron: '0 5 * * *'   # Tous les jours à 5h UTC (7h heure française)
+    - cron: '0 3 * * *'   # Tous les jours à 5h UTC (7h heure française)
   workflow_dispatch:        # Déclenchement manuel depuis GitHub
 
 jobs:
