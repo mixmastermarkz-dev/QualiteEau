@@ -15,14 +15,17 @@
     <!-- ═══ OPEN GRAPH (Facebook, LinkedIn, WhatsApp) ═══ -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.mon-environnement.fr/">
-    <meta property="og:title" content="Qualité Air et Eau — Hérault & Gard">
-    <meta property="og:description" content="Qualité de l'air (IQA, pollen), eau potable, nappes phréatiques, rivières : surveillance quotidienne pour 100+ communes de l'Hérault et du Gard. Données officielles ARS, Atmo Occitanie, BRGM, Hub'Eau.">
+    <meta property="og:title" content="Qualité Air &amp; Eau — Mon-Environnement.fr">
+    <meta property="og:description" content="Surveillance environnementale en France. Données officielles ARS, Atmo, Hub'Eau, BRGM.">
     <meta property="og:locale" content="fr_FR">
 
     <!-- ═══ TWITTER CARD ═══ -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Qualité Air et Eau — Hérault & Gard">
-    <meta name="twitter:description" content="Surveillance quotidienne de la qualité de l'air et de l'eau pour 100+ communes du 34 et du 30.">
+    <meta name="twitter:title" content="Qualité Air &amp; Eau — Mon-Environnement.fr">
+    <meta name="twitter:description" content="Surveillance environnementale en France. Qualité de l'air, eau potable, nappes phréatiques, rivières.">
+
+    <!-- ═══ FAVICON ═══ -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
 
     <!-- ═══ DONNÉES STRUCTURÉES JSON-LD ═══ -->
     <script type="application/ld+json">
@@ -65,9 +68,45 @@
         .ad-label { pointer-events: none; }
         .score-ring { width: 64px; height: 64px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; font-weight: 900; color: white; flex-shrink: 0; }
         .station-chart { height: 40px !important; width: 100% !important; }
+
+        /* ── HAMBURGER / SIDE DRAWER ── */
+        #side-drawer {
+            transform: translateX(-100%);
+            transition: transform 0.28s cubic-bezier(.4,0,.2,1);
+        }
+        #side-drawer.open { transform: translateX(0); }
+        #menu-overlay {
+            opacity: 0; pointer-events: none;
+            transition: opacity 0.28s ease;
+        }
+        #menu-overlay.open { opacity: 1; pointer-events: auto; }
     </style>
 </head>
 <body class="bg-slate-100 min-h-screen font-sans flex flex-col antialiased text-slate-900">
+
+<!-- ═══ OVERLAY MENU MOBILE ═══ -->
+<div id="menu-overlay" class="fixed inset-0 bg-black/40 z-[200]" onclick="closeMenu()"></div>
+
+<!-- ═══ SIDE DRAWER MOBILE ═══ -->
+<nav id="side-drawer" class="fixed top-0 left-0 h-full w-72 bg-white shadow-2xl z-[201] flex flex-col md:hidden">
+    <div class="p-5 border-b border-slate-100 flex justify-between items-center">
+        <span class="font-black uppercase text-slate-800 tracking-tight text-sm">Mon-Environnement.fr</span>
+        <button onclick="closeMenu()" class="w-9 h-9 flex items-center justify-center rounded-xl text-slate-400 hover:text-slate-700 hover:bg-slate-100 text-xl leading-none">&times;</button>
+    </div>
+    <div class="flex-grow overflow-y-auto p-3 space-y-1">
+        <button onclick="closeMenu();switchTab('nappes')"    class="w-full text-left px-4 py-4 rounded-2xl font-bold text-slate-700 hover:bg-slate-50 text-sm min-h-[48px]">💧 Nappes</button>
+        <button onclick="closeMenu();switchTab('potable')"  class="w-full text-left px-4 py-4 rounded-2xl font-bold text-slate-700 hover:bg-slate-50 text-sm min-h-[48px]">🚰 Eau Potable</button>
+        <button onclick="closeMenu();switchTab('rivieres')" class="w-full text-left px-4 py-4 rounded-2xl font-bold text-slate-700 hover:bg-slate-50 text-sm min-h-[48px]">🌊 Qualité Rivières</button>
+        <button onclick="closeMenu();switchTab('carte')"    class="w-full text-left px-4 py-4 rounded-2xl font-bold text-slate-700 hover:bg-slate-50 text-sm min-h-[48px]">🗺️ Carte</button>
+        <button onclick="closeMenu();switchTab('air')"      class="w-full text-left px-4 py-4 rounded-2xl font-bold text-slate-700 hover:bg-slate-50 text-sm min-h-[48px]">🌬️ Qualité de l'Air</button>
+        <a href="/eau-potable/" onclick="closeMenu()"       class="flex items-center px-4 py-4 rounded-2xl font-bold text-slate-700 hover:bg-slate-50 text-sm min-h-[48px]">🏘️ Communes</a>
+        <button onclick="closeMenu();switchTab('methode')"  class="w-full text-left px-4 py-4 rounded-2xl font-bold text-slate-700 hover:bg-slate-50 text-sm min-h-[48px]">📋 Sources & Méthode</button>
+    </div>
+    <div class="p-4 border-t border-slate-100 space-y-1">
+        <a href="/contact.html"        class="block px-4 py-3 text-xs font-bold text-slate-400 hover:text-slate-700 rounded-xl hover:bg-slate-50">Contact</a>
+        <a href="/mentions-legales.html" class="block px-4 py-3 text-xs font-bold text-slate-400 hover:text-slate-700 rounded-xl hover:bg-slate-50">Mentions légales</a>
+    </div>
+</nav>
 
 <!-- ═══ BANDEAU CONSENTEMENT COOKIES (RGPD) ═══ -->
 <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-[9999] bg-slate-900 text-white px-6 py-5 shadow-2xl hidden">
@@ -123,9 +162,18 @@
 
     <!-- HEADER -->
     <header class="flex flex-col md:flex-row justify-between items-center mb-6 bg-white p-6 rounded-3xl shadow-sm border border-slate-200 gap-4">
-        <div>
-            <h1 class="text-3xl md:text-4xl font-black tracking-tight uppercase leading-tight">QUALITÉ <span class="text-sky-500">AIR ET EAU</span></h1>
-            <p class="text-slate-500 text-sm font-medium italic">Surveillance Hérault (34) & Gard (30)</p>
+        <div class="flex items-center gap-4 w-full md:w-auto">
+            <!-- Hamburger mobile -->
+            <button onclick="toggleMenu()" class="md:hidden flex-shrink-0 flex items-center justify-center w-11 h-11 rounded-2xl bg-slate-100 hover:bg-slate-200 transition-colors" aria-label="Menu">
+                <svg class="w-5 h-5 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+            <div>
+                <h1 class="text-3xl md:text-4xl font-black tracking-tight uppercase leading-tight">QUALITÉ <span class="text-sky-500">AIR ET EAU</span></h1>
+                <p class="text-slate-500 text-sm font-medium italic">Surveillance Hérault (34) & Gard (30)</p>
+                <p id="updated-subtitle" class="text-[10px] font-bold text-slate-400 uppercase tracking-tighter mt-1 hidden"></p>
+            </div>
         </div>
         <div class="flex items-center gap-4">
             <div class="text-center">
@@ -188,14 +236,23 @@
         </div>
     </div>
 
-    <!-- ONGLETS -->
-    <div class="flex space-x-8 mb-6 border-b border-slate-300 overflow-x-auto whitespace-nowrap">
+    <!-- ONGLETS (desktop uniquement — hamburger sur mobile) -->
+    <div class="hidden md:flex space-x-8 mb-6 border-b border-slate-300 overflow-x-auto whitespace-nowrap">
         <button onclick="switchTab('nappes')" id="tab-nappes" class="pb-4 text-base font-black text-slate-400 hover:text-slate-600 transition-all tab-active uppercase tracking-wider">Nappes</button>
         <button onclick="switchTab('potable')" id="tab-potable" class="pb-4 text-base font-black text-slate-400 hover:text-slate-600 transition-all uppercase tracking-wider">Eau Potable</button>
         <button onclick="switchTab('rivieres')" id="tab-rivieres" class="pb-4 text-base font-black text-slate-400 hover:text-slate-600 transition-all uppercase tracking-wider">Qualité Rivières</button>
         <button onclick="switchTab('carte')" id="tab-carte" class="pb-4 text-base font-black text-slate-400 hover:text-slate-600 transition-all uppercase tracking-wider">Carte</button>
         <button onclick="switchTab('air')" id="tab-air" class="pb-4 text-base font-black text-slate-400 hover:text-slate-600 transition-all uppercase tracking-wider">Qualité de l'Air</button>
+        <a href="/eau-potable/" class="pb-4 text-base font-black text-slate-400 hover:text-sky-600 transition-all uppercase tracking-wider">Communes</a>
         <button onclick="switchTab('methode')" id="tab-methode" class="pb-4 text-base font-black text-slate-400 hover:text-slate-600 transition-all uppercase tracking-wider">Sources & Méthode</button>
+    </div>
+    <!-- MINI NAV MOBILE (remplace les onglets sur petits écrans) -->
+    <div class="flex md:hidden space-x-2 mb-6 overflow-x-auto whitespace-nowrap pb-1">
+        <button onclick="switchTab('nappes')"    class="px-4 py-2 rounded-xl bg-white border border-slate-200 text-xs font-black text-slate-500 shadow-sm">Nappes</button>
+        <button onclick="switchTab('potable')"   class="px-4 py-2 rounded-xl bg-white border border-slate-200 text-xs font-black text-slate-500 shadow-sm">Eau Potable</button>
+        <button onclick="switchTab('rivieres')"  class="px-4 py-2 rounded-xl bg-white border border-slate-200 text-xs font-black text-slate-500 shadow-sm">Rivières</button>
+        <button onclick="switchTab('air')"       class="px-4 py-2 rounded-xl bg-white border border-slate-200 text-xs font-black text-slate-500 shadow-sm">Air</button>
+        <a href="/eau-potable/"                  class="px-4 py-2 rounded-xl bg-white border border-slate-200 text-xs font-black text-slate-500 shadow-sm">Communes</a>
     </div>
 
     <!-- SÉLECTEUR DÉPARTEMENT -->
@@ -254,7 +311,7 @@
                         <p class="text-xs font-bold text-sky-600 uppercase tracking-tighter">Score qualité + 11 paramètres</p>
                         <p class="text-[11px] text-slate-400 mt-1">Ce tableau couvre uniquement les communes de plus de 1 000 habitants des départements 34 et 30.</p>
                     </div>
-                    <input type="text" id="city-search" placeholder="Filtrer par ville..." class="px-6 py-3 rounded-2xl border-2 border-white shadow-lg outline-none w-full md:w-96 focus:ring-4 focus:ring-sky-100 transition-all" onkeyup="renderPotable()">
+                    <input type="text" id="city-search" placeholder="Rechercher votre commune..." class="px-6 py-3 rounded-2xl border-2 border-white shadow-lg outline-none w-full md:w-96 focus:ring-4 focus:ring-sky-100 transition-all" onkeyup="renderPotable()">
                 </div>
 
                 <div id="potable-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"></div>
@@ -521,7 +578,7 @@
     <div class="max-w-[1600px] mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
         <div>
             <h3 class="text-2xl font-black uppercase mb-6 italic">QUALITÉ <span class="text-sky-400">AIR ET EAU</span></h3>
-            <p class="text-slate-400 text-sm leading-relaxed">Surveillance indépendante de la qualité de l'air et de l'eau pour le Languedoc. Données certifiées État, Région, Atmo Occitanie et Communes.</p>
+            <p class="text-slate-400 text-sm leading-relaxed">Surveillance indépendante de la qualité de l'air et de l'eau pour la France. Données certifiées État, Atmo Occitanie et Communes.</p>
         </div>
         <div>
             <h4 class="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-6">Partenaires</h4>
@@ -547,6 +604,20 @@
 </footer>
 
 <script>
+    // ═══ MENU HAMBURGER MOBILE ═══
+    function toggleMenu() {
+        document.getElementById('side-drawer').classList.toggle('open');
+        document.getElementById('menu-overlay').classList.toggle('open');
+        document.body.style.overflow = document.getElementById('side-drawer').classList.contains('open') ? 'hidden' : '';
+    }
+    function closeMenu() {
+        document.getElementById('side-drawer').classList.remove('open');
+        document.getElementById('menu-overlay').classList.remove('open');
+        document.body.style.overflow = '';
+    }
+    // Fermeture au resize vers desktop
+    window.addEventListener('resize', () => { if (window.innerWidth >= 768) closeMenu(); });
+
     // ═══ GESTION COOKIES RGPD ═══
     function acceptCookies() {
         localStorage.setItem('cookie_consent', 'accepted');
@@ -575,6 +646,8 @@
         const res = await fetch('full_data.json');
         fullData = await res.json();
         document.getElementById('updated-at').innerText = "Actualisé le " + fullData.updated;
+        const subtitle = document.getElementById('updated-subtitle');
+        if (subtitle) { subtitle.textContent = "Données mises à jour le " + fullData.updated; subtitle.classList.remove('hidden'); }
         document.getElementById('stat-communes').innerText = fullData.potable.length;
         document.getElementById('stat-rivieres').innerText = fullData.rivieres.length;
 

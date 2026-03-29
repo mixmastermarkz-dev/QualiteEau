@@ -12,24 +12,51 @@
     <meta property="og:title" content="Contact — Mon-Environnement.fr">
     <meta property="og:description" content="Contactez l'équipe de Mon-Environnement.fr pour toute question, signalement ou demande de partenariat.">
     <meta property="og:locale" content="fr_FR">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #side-drawer { transform: translateX(-100%); transition: transform 0.28s cubic-bezier(.4,0,.2,1); }
+        #side-drawer.open { transform: translateX(0); }
+        #menu-overlay { opacity: 0; pointer-events: none; transition: opacity 0.28s ease; }
+        #menu-overlay.open { opacity: 1; pointer-events: auto; }
+    </style>
 </head>
 <body class="bg-slate-100 min-h-screen font-sans antialiased text-slate-900 flex flex-col">
+
+<!-- OVERLAY -->
+<div id="menu-overlay" class="fixed inset-0 bg-black/40 z-[200]" onclick="closeMenu()"></div>
+
+<!-- SIDE DRAWER -->
+<nav id="side-drawer" class="fixed top-0 left-0 h-full w-72 bg-white shadow-2xl z-[201] flex flex-col">
+    <div class="p-5 border-b border-slate-100 flex justify-between items-center">
+        <span class="font-black uppercase text-slate-800 tracking-tight text-sm">Mon-Environnement.fr</span>
+        <button onclick="closeMenu()" class="w-9 h-9 flex items-center justify-center rounded-xl text-slate-400 hover:text-slate-700 hover:bg-slate-100 text-xl leading-none">&times;</button>
+    </div>
+    <div class="flex-grow overflow-y-auto p-3 space-y-1">
+        <a href="/"               class="flex items-center px-4 py-4 rounded-2xl font-bold text-slate-700 hover:bg-slate-50 text-sm min-h-[48px]">🏠 Accueil</a>
+        <a href="/eau-potable/"   class="flex items-center px-4 py-4 rounded-2xl font-bold text-slate-700 hover:bg-slate-50 text-sm min-h-[48px]">🏘️ Communes</a>
+        <a href="/contact.html"   class="flex items-center px-4 py-4 rounded-2xl font-bold text-sky-600 bg-sky-50 text-sm min-h-[48px]">✉️ Contact</a>
+        <a href="/mentions-legales.html" class="flex items-center px-4 py-4 rounded-2xl font-bold text-slate-700 hover:bg-slate-50 text-sm min-h-[48px]">📄 Mentions légales</a>
+    </div>
+</nav>
 
 <!-- HEADER -->
 <header class="bg-white border-b border-slate-200 shadow-sm">
     <div class="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between gap-4">
-        <a href="/" class="flex items-center gap-3 group">
-            <span class="text-slate-400 group-hover:text-sky-500 transition-colors text-lg font-black">←</span>
-            <span class="font-black text-slate-700 uppercase tracking-tight text-sm group-hover:text-sky-600 transition-colors">Qualité Air et Eau 34/30</span>
-        </a>
-        <span class="text-xs font-bold text-slate-400 uppercase tracking-widest hidden md:block">Mon-Environnement.fr</span>
+        <div class="flex items-center gap-3">
+            <button onclick="toggleMenu()" class="flex items-center justify-center w-11 h-11 rounded-2xl bg-slate-100 hover:bg-slate-200 transition-colors" aria-label="Menu">
+                <svg class="w-5 h-5 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+            <a href="/" class="font-black text-slate-700 uppercase tracking-tight text-sm hover:text-sky-600 transition-colors">Qualité Air et Eau 34/30</a>
+        </div>
+        <a href="/" class="text-xs font-bold text-slate-400 hover:text-sky-500 transition-colors hidden md:block">← Retour à l'accueil</a>
     </div>
 </header>
 
 <!-- MAIN -->
 <main class="max-w-4xl mx-auto px-4 py-16 flex-grow w-full">
-
     <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-10 md:p-16 max-w-2xl mx-auto">
 
         <p class="text-xs font-black text-slate-400 uppercase tracking-widest mb-4">Mon-Environnement.fr</p>
@@ -57,9 +84,7 @@
                 ← Retour au tableau de bord
             </a>
         </div>
-
     </div>
-
 </main>
 
 <!-- FOOTER -->
@@ -75,5 +100,18 @@
     </div>
 </footer>
 
+<script>
+    function toggleMenu() {
+        document.getElementById('side-drawer').classList.toggle('open');
+        document.getElementById('menu-overlay').classList.toggle('open');
+        document.body.style.overflow = document.getElementById('side-drawer').classList.contains('open') ? 'hidden' : '';
+    }
+    function closeMenu() {
+        document.getElementById('side-drawer').classList.remove('open');
+        document.getElementById('menu-overlay').classList.remove('open');
+        document.body.style.overflow = '';
+    }
+    window.addEventListener('resize', () => { if (window.innerWidth >= 768) closeMenu(); });
+</script>
 </body>
 </html>

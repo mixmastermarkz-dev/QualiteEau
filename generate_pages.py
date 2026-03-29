@@ -473,14 +473,23 @@ def build_page(commune, neighbors_html, json_ld, slug):
 # ---------------------------------------------------------------------------
 
 def generate_sitemap(commune_slugs: list) -> str:
-    urls = [
-        f"  <url>\n"
-        f"    <loc>{BASE_URL}/</loc>\n"
-        f"    <lastmod>{TODAY}</lastmod>\n"
-        f"    <changefreq>daily</changefreq>\n"
-        f"    <priority>1.0</priority>\n"
-        f"  </url>"
+    # Pages statiques permanentes
+    static_pages = [
+        (f"{BASE_URL}/",                           TODAY, "daily",   "1.0"),
+        (f"{BASE_URL}/eau-potable/",               TODAY, "monthly", "0.7"),
+        (f"{BASE_URL}/contact.html",               TODAY, "yearly",  "0.3"),
+        (f"{BASE_URL}/mentions-legales.html",      TODAY, "yearly",  "0.3"),
     ]
+    urls = []
+    for loc, lastmod, freq, pri in static_pages:
+        urls.append(
+            f"  <url>\n"
+            f"    <loc>{loc}</loc>\n"
+            f"    <lastmod>{lastmod}</lastmod>\n"
+            f"    <changefreq>{freq}</changefreq>\n"
+            f"    <priority>{pri}</priority>\n"
+            f"  </url>"
+        )
     for slug in sorted(commune_slugs):
         urls.append(
             f"  <url>\n"
@@ -542,7 +551,7 @@ def main():
     with open(os.path.join(BASE_DIR, "sitemap.xml"), "w", encoding="utf-8") as f:
         f.write(sitemap)
 
-    print(f"\nSitemap mis à jour — {len(generated) + 1} URLs")
+    print(f"\nSitemap mis à jour — {len(generated) + 4} URLs ({len(generated)} communes + 4 pages statiques)")
     print(f"Pages générées    — {len(generated)} communes")
 
 
