@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <!-- ═══ SEO PRIMAIRE ═══ -->
+    <title>Qualité de l'Eau — Hérault (34) & Gard (30) | Eau Potable, Nappes, Rivières</title>
+    <meta name="description" content="Surveillance en temps réel de la qualité de l'eau dans l'Hérault et le Gard. Eau potable (100+ communes), nappes phréatiques, rivières — données officielles ARS, BRGM, Hub'Eau, mises à jour chaque matin.">
+    <meta name="keywords" content="qualité eau potable Hérault, qualité eau Gard, eau potable Montpellier, eau potable Nîmes, nappes phréatiques 34 30, qualité rivières Hérault, nitrates eau potable, surveillance eau Occitanie, Hub'Eau, ARS">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Qualité Eau 34/30">
+    <link rel="canonical" href="https://www.nbrx.fr/">
+
+    <!-- ═══ OPEN GRAPH (Facebook, LinkedIn, WhatsApp) ═══ -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.nbrx.fr/">
+    <meta property="og:title" content="Qualité de l'Eau — Hérault & Gard">
+    <meta property="og:description" content="Eau potable, nappes phréatiques, rivières : surveillance quotidienne pour 100+ communes de l'Hérault et du Gard. Données officielles ARS, BRGM, Hub'Eau.">
+    <meta property="og:locale" content="fr_FR">
+
+    <!-- ═══ TWITTER CARD ═══ -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Qualité de l'Eau — Hérault & Gard">
+    <meta name="twitter:description" content="Surveillance quotidienne de la qualité de l'eau pour 100+ communes du 34 et du 30.">
+
+    <!-- ═══ DONNÉES STRUCTURÉES JSON-LD ═══ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Qualité Eau 34/30",
+      "url": "https://www.nbrx.fr/",
+      "description": "Surveillance en temps réel de la qualité de l'eau dans l'Hérault (34) et le Gard (30) — eau potable, nappes phréatiques, rivières.",
+      "inLanguage": "fr-FR",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Qualité Eau 34/30",
+        "url": "https://www.nbrx.fr/"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.nbrx.fr/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- ═══ GOOGLE ADSENSE ═══ -->
+    <!-- Remplacez ca-pub-XXXXXXXXXXXXXXXX par votre ID éditeur Google AdSense -->
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6656990941754174" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        #map-nappes { height: 420px; border-radius: 2rem; width: 100%; z-index: 10; }
+        #map-qualite { height: 420px; border-radius: 2rem; width: 100%; z-index: 10; }
+        .glass-card { background: rgba(255,255,255,0.85); backdrop-filter: blur(10px); }
+        .tab-active { border-bottom: 4px solid #0ea5e9; color: #0ea5e9; }
+        .subtab-active { background: #0ea5e9 !important; color: white !important; }
+        .ad-slot { background: rgba(241,245,249,0.5); border: 2px dashed #cbd5e1; border-radius: 1.5rem; display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; }
+        .ad-slot ins.adsbygoogle { position: absolute; inset: 0; }
+        .ad-label { pointer-events: none; }
+        .score-ring { width: 64px; height: 64px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; font-weight: 900; color: white; flex-shrink: 0; }
+        .station-chart { height: 40px !important; width: 100% !important; }
+    </style>
+</head>
+<body class="bg-slate-100 min-h-screen font-sans flex flex-col antialiased text-slate-900">
+
+<!-- ═══ BANDEAU CONSENTEMENT COOKIES (RGPD) ═══ -->
+<div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-[9999] bg-slate-900 text-white px-6 py-5 shadow-2xl hidden">
+    <div class="max-w-[1600px] mx-auto flex flex-col md:flex-row items-center gap-4 justify-between">
+        <div class="text-sm leading-relaxed text-slate-300 max-w-2xl">
+            <strong class="text-white">🍪 Cookies & Confidentialité</strong> — Ce site utilise des cookies publicitaires (Google AdSense) pour financer son fonctionnement gratuit. Aucune donnée personnelle n'est collectée par le site lui-même.
+            <button onclick="document.getElementById('privacy-modal').classList.remove('hidden')" class="underline text-sky-400 ml-1 hover:text-sky-300">Politique de confidentialité</button>
+        </div>
+        <div class="flex gap-3 flex-shrink-0">
+            <button onclick="acceptCookies()" class="bg-sky-500 hover:bg-sky-400 text-white font-black text-sm px-6 py-2.5 rounded-xl transition-all">Accepter</button>
+            <button onclick="refuseCookies()" class="bg-slate-700 hover:bg-slate-600 text-white font-black text-sm px-6 py-2.5 rounded-xl transition-all">Refuser</button>
+        </div>
+    </div>
+</div>
+
+<!-- ═══ MODAL POLITIQUE DE CONFIDENTIALITÉ ═══ -->
+<div id="privacy-modal" class="fixed inset-0 z-[10000] bg-black/60 flex items-center justify-center p-4 hidden">
+    <div class="bg-white rounded-3xl shadow-2xl max-w-2xl w-full max-h-[85vh] overflow-y-auto p-8">
+        <div class="flex justify-between items-start mb-6">
+            <h2 class="text-2xl font-black uppercase">Politique de confidentialité</h2>
+            <button onclick="document.getElementById('privacy-modal').classList.add('hidden')" class="text-slate-400 hover:text-slate-700 text-3xl leading-none font-black">&times;</button>
+        </div>
+        <div class="text-sm text-slate-600 space-y-4 leading-relaxed">
+            <p><strong>Dernière mise à jour :</strong> mars 2026</p>
+
+            <h3 class="font-black text-slate-800 text-base">1. Éditeur du site</h3>
+            <p>Le site <strong>Qualité Eau 34/30</strong> (ci-après "le Site") est un outil indépendant de surveillance de la qualité de l'eau dans l'Hérault et le Gard, accessible à l'adresse <strong>www.nbrx.fr</strong>.</p>
+
+            <h3 class="font-black text-slate-800 text-base">2. Données collectées</h3>
+            <p>Le Site <strong>ne collecte aucune donnée personnelle</strong> directement. Il ne dispose pas de formulaire d'inscription, de compte utilisateur, ni de base de données propre. Les données affichées proviennent exclusivement d'APIs publiques gouvernementales (Hub'Eau, VigiEau, BRGM, Open-Meteo).</p>
+
+            <h3 class="font-black text-slate-800 text-base">3. Cookies publicitaires (Google AdSense)</h3>
+            <p>Ce site utilise <strong>Google AdSense</strong>, un service de publicité de Google LLC, pour afficher des annonces et financer son fonctionnement gratuit. Google AdSense peut déposer des cookies sur votre appareil afin de personnaliser les publicités affichées en fonction de vos centres d'intérêt.</p>
+            <p>Ces cookies sont soumis à la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" class="text-sky-500 underline">Politique de confidentialité de Google</a>. Vous pouvez gérer vos préférences publicitaires sur <a href="https://adssettings.google.com" target="_blank" rel="noopener" class="text-sky-500 underline">adssettings.google.com</a>.</p>
+
+            <h3 class="font-black text-slate-800 text-base">4. Cookies de cartographie (Leaflet / Carto)</h3>
+            <p>Les cartes interactives utilisent des tuiles du service CartoDBn (CARTO). Ces tuiles sont chargées depuis leurs serveurs ; CARTO peut enregistrer des accès dans ses journaux de serveur (adresse IP, navigateur) à des fins techniques.</p>
+
+            <h3 class="font-black text-slate-800 text-base">5. Vos droits (RGPD)</h3>
+            <p>Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez du droit d'accès, de rectification et de suppression de vos données. Pour les cookies Google AdSense, exercez vos droits via les outils Google. Pour toute autre demande, contactez-nous via le dépôt GitHub du projet.</p>
+
+            <h3 class="font-black text-slate-800 text-base">6. Refus des cookies</h3>
+            <p>Vous pouvez refuser les cookies publicitaires via le bandeau de consentement. Dans ce cas, des publicités non personnalisées peuvent toujours être affichées. Vous pouvez également utiliser un bloqueur de publicités.</p>
+
+            <h3 class="font-black text-slate-800 text-base">7. Sources des données</h3>
+            <p>Toutes les données de qualité de l'eau proviennent de sources officielles : <strong>Hub'Eau</strong> (BRGM / OFB / ARS), <strong>VigiEau</strong> (Ministère de la Transition Écologique), <strong>Open-Meteo</strong>. Ces sources sont publiques et accessibles librement.</p>
+        </div>
+        <button onclick="document.getElementById('privacy-modal').classList.add('hidden')" class="mt-6 w-full bg-sky-500 hover:bg-sky-400 text-white font-black py-3 rounded-2xl transition-all">Fermer</button>
+    </div>
+</div>
+
+<div class="max-w-[1600px] mx-auto px-4 py-4 flex-grow w-full">
+
+    <!-- HEADER -->
+    <header class="flex flex-col md:flex-row justify-between items-center mb-6 bg-white p-6 rounded-3xl shadow-sm border border-slate-200 gap-4">
+        <div>
+            <h1 class="text-3xl md:text-4xl font-black tracking-tight uppercase leading-tight">QUALITÉ <span class="text-sky-500">EAU</span></h1>
+            <p class="text-slate-500 text-sm font-medium italic">Surveillance Hérault (34) & Gard (30)</p>
+        </div>
+        <div class="flex items-center gap-4">
+            <div class="text-center">
+                <p class="text-[9px] font-black text-slate-400 uppercase tracking-widest">Communes analysées</p>
+                <p class="text-2xl font-black text-sky-600" id="stat-communes">--</p>
+            </div>
+            <div class="text-center">
+                <p class="text-[9px] font-black text-slate-400 uppercase tracking-widest">Rivières analysées</p>
+                <p class="text-2xl font-black text-indigo-600" id="stat-rivieres">--</p>
+            </div>
+            <div id="updated-at" class="text-[10px] font-bold text-slate-400 bg-slate-100 px-4 py-2 rounded-full uppercase tracking-tighter">Chargement...</div>
+        </div>
+    </header>
+
+    <!-- PUB HAUT — Leaderboard -->
+    <div class="ad-slot w-full mb-6" style="min-height:90px">
+        <span class="ad-label text-slate-400 text-[10px] font-black uppercase tracking-[0.2em]">Publicité — 728×90</span>
+        <ins class="adsbygoogle" style="display:block;width:100%;height:90px"
+             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+             data-ad-slot="XXXXXXXXXX"
+             data-ad-format="horizontal"
+             data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <!-- SCORE GLOBAL -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+        <div class="bg-gradient-to-br from-sky-600 to-sky-500 text-white p-6 rounded-3xl shadow-lg flex justify-between items-center group relative">
+            <div>
+                <p class="text-[10px] font-bold uppercase tracking-widest opacity-80">Score qualité moyen</p>
+                <p class="text-xl font-black">Eau potable</p>
+                <p class="text-[11px] opacity-80 mt-1 leading-snug">Moyenne sur les <span id="stat-communes-score">--</span> communes.<br>100 = tous paramètres conformes · 0 = dépassements critiques.</p>
+            </div>
+            <div class="text-center ml-4 flex-shrink-0">
+                <span class="text-5xl font-black" id="score-global-potable">--</span>
+                <span class="text-sm opacity-60 block">/100</span>
+            </div>
+        </div>
+        <div class="bg-gradient-to-br from-indigo-600 to-indigo-500 text-white p-6 rounded-3xl shadow-lg flex justify-between items-center">
+            <div>
+                <p class="text-[10px] font-bold uppercase tracking-widest opacity-80">Score qualité moyen</p>
+                <p class="text-xl font-black">Rivières</p>
+                <p class="text-[11px] opacity-80 mt-1 leading-snug">Moyenne sur les <span id="stat-rivieres-score">--</span> stations analysées.<br>Basé sur nitrates, phosphore, pH, O2, MES, ammonium.</p>
+            </div>
+            <div class="text-center ml-4 flex-shrink-0">
+                <span class="text-5xl font-black" id="score-global-riviere">--</span>
+                <span class="text-sm opacity-60 block">/100</span>
+            </div>
+        </div>
+        <div class="bg-gradient-to-br from-emerald-600 to-emerald-500 text-white p-6 rounded-3xl shadow-lg flex justify-between items-center">
+            <div>
+                <p class="text-[10px] font-bold uppercase tracking-widest opacity-80">Conformité eau potable</p>
+                <p class="text-xl font-black">Communes score ≥ 80</p>
+                <p class="text-[11px] opacity-80 mt-1 leading-snug">Eau potable conforme = score ≥ 80/100.<br>Source : contrôles ARS via Hub'Eau.</p>
+            </div>
+            <div class="text-center ml-4 flex-shrink-0">
+                <span class="text-5xl font-black" id="stat-conformes">--</span>
+                <span class="text-sm opacity-60 block font-medium" id="stat-conformes-pct"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ONGLETS -->
+    <div class="flex space-x-8 mb-6 border-b border-slate-300 overflow-x-auto whitespace-nowrap">
+        <button onclick="switchTab('nappes')" id="tab-nappes" class="pb-4 text-base font-black text-slate-400 hover:text-slate-600 transition-all tab-active uppercase tracking-wider">Nappes</button>
+        <button onclick="switchTab('potable')" id="tab-potable" class="pb-4 text-base font-black text-slate-400 hover:text-slate-600 transition-all uppercase tracking-wider">Eau Potable</button>
+        <button onclick="switchTab('rivieres')" id="tab-rivieres" class="pb-4 text-base font-black text-slate-400 hover:text-slate-600 transition-all uppercase tracking-wider">Qualité Rivières</button>
+        <button onclick="switchTab('carte')" id="tab-carte" class="pb-4 text-base font-black text-slate-400 hover:text-slate-600 transition-all uppercase tracking-wider">Carte</button>
+        <button onclick="switchTab('methode')" id="tab-methode" class="pb-4 text-base font-black text-slate-400 hover:text-slate-600 transition-all uppercase tracking-wider">Sources & Méthode</button>
+    </div>
+
+    <!-- SÉLECTEUR DÉPARTEMENT -->
+    <div id="dept-selector" class="flex space-x-2 mb-8">
+        <button onclick="switchDept('all')" id="btn-dept-all" class="px-6 py-2 rounded-xl bg-white border border-slate-200 text-xs font-black text-slate-500 subtab-active shadow-sm uppercase">Global</button>
+        <button onclick="switchDept('34')" id="btn-dept-34" class="px-6 py-2 rounded-xl bg-white border border-slate-200 text-xs font-black text-slate-500 shadow-sm uppercase">Hérault (34)</button>
+        <button onclick="switchDept('30')" id="btn-dept-30" class="px-6 py-2 rounded-xl bg-white border border-slate-200 text-xs font-black text-slate-500 shadow-sm uppercase">Gard (30)</button>
+    </div>
+
+    <!-- ====== SECTION NAPPES ====== -->
+    <div id="section-nappes" class="space-y-8">
+
+        <!-- Explication encart -->
+        <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-200 flex flex-col md:flex-row gap-6 items-start">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-600 text-white rounded-2xl flex items-center justify-center text-2xl">💧</div>
+            <div class="space-y-3 text-[13px] leading-relaxed text-slate-600">
+                <p class="text-base font-black text-slate-800 uppercase tracking-tight">Comment lire ces données ?</p>
+                <p><strong>Le niveau d'une nappe phréatique</strong> est mesuré en <strong>mètres NGF</strong> — c'est l'altitude du niveau d'eau au-dessus du niveau moyen de la mer (référence Nivellement Général de la France). Chaque nappe a son propre "niveau normal" : une nappe côtière peut osciller entre 1 et 5 m NGF, une nappe de plaine entre 20 et 80 m NGF. Ce qui compte, c'est l'<strong>évolution par rapport à l'an dernier</strong>.</p>
+                <div class="flex flex-wrap gap-4 pt-1">
+                    <span class="flex items-center gap-2 text-blue-600 font-black"><span class="w-3 h-3 rounded-full bg-blue-500 inline-block"></span> En hausse → nappe plus remplie qu'il y a un an</span>
+                    <span class="flex items-center gap-2 text-red-500 font-black"><span class="w-3 h-3 rounded-full bg-red-500 inline-block"></span> En baisse → nappe moins remplie qu'il y a un an</span>
+                </div>
+                <p class="text-slate-400 text-[11px]">Source : BRGM (Bureau de Recherches Géologiques et Minières) via Hub'Eau · Données temps réel et historiques.</p>
+            </div>
+        </div>
+
+        <div class="flex flex-col xl:flex-row gap-8">
+            <div class="flex-grow space-y-8">
+                <div id="map-nappes" class="shadow-2xl border-4 border-white overflow-hidden"></div>
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4" id="nappe-stats"></div>
+            </div>
+        </div>
+        <div id="station-list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4"></div>
+    </div>
+
+    <!-- ====== SECTION EAU POTABLE ====== -->
+    <div id="section-potable" class="hidden space-y-10">
+        <div class="flex flex-col xl:flex-row gap-8">
+            <div class="flex-grow space-y-10">
+
+                <!-- Légende alertes sécheresse -->
+                <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-200">
+                    <h3 class="text-xs font-black text-slate-400 uppercase tracking-widest mb-4 flex items-center"><span class="w-2 h-2 bg-sky-500 rounded-full mr-2"></span> Alertes sécheresse (VigiEau)</h3>
+                    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                        <div class="flex items-center p-3 bg-green-50 rounded-2xl border border-green-100"><span class="w-3 h-3 bg-green-500 rounded-full mr-3"></span><div><p class="text-[10px] font-black text-green-700 uppercase leading-none mb-1">Vigilance</p><p class="text-[9px] text-green-600 font-medium">Appel au civisme.</p></div></div>
+                        <div class="flex items-center p-3 bg-yellow-50 rounded-2xl border border-yellow-100"><span class="w-3 h-3 bg-yellow-500 rounded-full mr-3"></span><div><p class="text-[10px] font-black text-yellow-700 uppercase leading-none mb-1">Alerte</p><p class="text-[9px] text-yellow-600 font-medium">Restrictions partielles.</p></div></div>
+                        <div class="flex items-center p-3 bg-orange-50 rounded-2xl border border-orange-100"><span class="w-3 h-3 bg-orange-500 rounded-full mr-3"></span><div><p class="text-[10px] font-black text-orange-700 uppercase leading-none mb-1">Renforcée</p><p class="text-[9px] text-orange-600 font-medium">Restrictions fortes.</p></div></div>
+                        <div class="flex items-center p-3 bg-red-50 rounded-2xl border border-red-100"><span class="w-3 h-3 bg-red-500 rounded-full mr-3"></span><div><p class="text-[10px] font-black text-red-700 uppercase leading-none mb-1">Crise</p><p class="text-[9px] text-red-600 font-medium">Priorité santé/sécu.</p></div></div>
+                    </div>
+                </div>
+
+                <!-- Titre + recherche -->
+                <div class="flex flex-col md:flex-row justify-between items-end gap-4">
+                    <div>
+                        <h2 class="text-2xl font-black uppercase">Eau Potable par Commune</h2>
+                        <p class="text-xs font-bold text-sky-600 uppercase tracking-tighter">Score qualité + 11 paramètres</p>
+                    </div>
+                    <input type="text" id="city-search" placeholder="Filtrer par ville..." class="px-6 py-3 rounded-2xl border-2 border-white shadow-lg outline-none w-full md:w-96 focus:ring-4 focus:ring-sky-100 transition-all" onkeyup="renderPotable()">
+                </div>
+
+                <div id="potable-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"></div>
+
+                <!-- Glossaire -->
+                <div class="glass-card p-10 rounded-[2.5rem] border border-white shadow-2xl space-y-8">
+                    <h3 class="text-2xl font-black uppercase flex items-center"><span class="w-10 h-10 bg-sky-600 text-white rounded-2xl flex items-center justify-center mr-4 text-lg">?</span> Comprendre les paramètres</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-6 text-[13px] leading-relaxed text-slate-600">
+                        <div class="space-y-3">
+                            <p><strong>• Nitrates :</strong> Limite 50 mg/L. Pollution agricole ou urbaine.</p>
+                            <p><strong>• pH :</strong> Acidité (6.5–9.0). Instable = corrosion des canalisations.</p>
+                            <p><strong>• Chlore :</strong> Désinfectant actif. Au-delà de 5 mg/L, goût et irritations.</p>
+                            <p><strong>• Bactériologie :</strong> Germes fécaux. Valeur doit être 0.</p>
+                        </div>
+                        <div class="space-y-3">
+                            <p><strong>• Calcaire (TH) :</strong> Dureté &gt; 30°f = eau entartrante.</p>
+                            <p><strong>• Aluminium :</strong> Agent clarifiant. Limite 200 µg/L.</p>
+                            <p><strong>• Plomb :</strong> Vieux tuyaux. Seuil de sécurité : 10 µg/L.</p>
+                            <p><strong>• Pesticides :</strong> Limite 0.1 µg/L/substance.</p>
+                        </div>
+                        <div class="space-y-3">
+                            <p><strong>• THM :</strong> Sous-produits de chloration. Limite 100 µg/L.</p>
+                            <p><strong>• Conductivité :</strong> Minéralisation totale. Seuil 1100 µS/cm.</p>
+                            <p><strong>• PFAS :</strong> Polluants éternels. Limite stricte : 0.10 µg/L.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-6 pt-4 border-t border-slate-100">
+                        <div class="flex items-center gap-2"><span class="w-4 h-4 rounded-full bg-emerald-500"></span><span class="text-xs font-black text-slate-500 uppercase">Conforme</span></div>
+                        <div class="flex items-center gap-2"><span class="w-4 h-4 rounded-full bg-amber-500"></span><span class="text-xs font-black text-slate-500 uppercase">Vigilance</span></div>
+                        <div class="flex items-center gap-2"><span class="w-4 h-4 rounded-full bg-red-500"></span><span class="text-xs font-black text-slate-500 uppercase">Dépassement</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden xl:block w-80 sticky top-4 self-start">
+                <div class="ad-slot w-full" style="min-height:600px">
+                    <span class="ad-label text-slate-400 text-[10px] font-black uppercase tracking-[0.2em] rotate-90 inline-block">Publicité — 300×600</span>
+                    <ins class="adsbygoogle" style="display:block;width:300px;height:600px"
+                         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                         data-ad-slot="XXXXXXXXXX"
+                         data-ad-format="vertical"></ins>
+                    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====== SECTION RIVIÈRES ====== -->
+    <div id="section-rivieres" class="hidden space-y-10">
+        <div class="flex flex-col xl:flex-row gap-8">
+            <div class="flex-grow space-y-10">
+                <div class="flex flex-col md:flex-row justify-between items-end gap-4">
+                    <div>
+                        <h2 class="text-2xl font-black uppercase">Qualité Chimique des Rivières</h2>
+                        <p class="text-xs font-bold text-indigo-600 uppercase tracking-tighter">Score qualité + 8 paramètres chimiques</p>
+                    </div>
+                    <input type="text" id="river-search" placeholder="Rechercher une rivière..." class="px-6 py-3 rounded-2xl border-2 border-white shadow-lg outline-none w-full md:w-96 focus:ring-4 focus:ring-indigo-100 transition-all" onkeyup="renderRivieres()">
+                </div>
+
+                <div id="riviere-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+                <!-- Glossaire rivières -->
+                <div class="glass-card p-10 rounded-[2.5rem] border border-white shadow-2xl space-y-8">
+                    <h3 class="text-2xl font-black uppercase flex items-center"><span class="w-10 h-10 bg-indigo-600 text-white rounded-2xl flex items-center justify-center mr-4 text-lg">~</span> Paramètres de qualité</h3>
+                    <div class="flex gap-6 mb-6">
+                        <div class="flex items-center gap-2 bg-emerald-50 px-4 py-2 rounded-xl border border-emerald-100">
+                            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                            <span class="text-[10px] font-black text-emerald-700 uppercase">Capteur continu — température eau Hub'Eau (toutes les heures)</span>
+                        </div>
+                        <div class="flex items-center gap-2 bg-sky-50 px-4 py-2 rounded-xl border border-sky-100">
+                            <span class="w-2 h-2 rounded-full bg-sky-400 animate-pulse"></span>
+                            <span class="text-[10px] font-black text-sky-600 uppercase">Météo-France — température air Open-Meteo (si capteur eau indisponible)</span>
+                        </div>
+                        <div class="flex items-center gap-2 bg-slate-50 px-4 py-2 rounded-xl border border-slate-200">
+                            <span class="w-2 h-2 rounded-full bg-slate-400"></span>
+                            <span class="text-[10px] font-black text-slate-500 uppercase">Analyses labo — dernier prélèvement disponible (délai naturel de semaines à mois)</span>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-[13px] leading-relaxed text-slate-600">
+                        <div class="space-y-3">
+                            <p><strong>• Température ●</strong> <em class="text-emerald-600 text-[10px]">Temps réel</em> — Au-delà de 25°C, l'oxygène se raréfie et les espèces souffrent.</p>
+                            <p><strong>• Conductivité ●</strong> <em class="text-emerald-600 text-[10px]">Temps réel</em> — Minéralisation. Très élevée = apports industriels ou agricoles.</p>
+                            <p><strong>• Nitrates :</strong> Au-delà de 25 mg/L, risque d'eutrophisation (prolifération d'algues).</p>
+                            <p><strong>• Phosphore :</strong> Indicateur de pollution agricole. Seuil critique à 0.5 mg/L.</p>
+                        </div>
+                        <div class="space-y-3">
+                            <p><strong>• pH :</strong> Entre 6.5 et 8.5 pour une rivière en bonne santé.</p>
+                            <p><strong>• O2 dissous :</strong> En dessous de 6 mg/L, la vie piscicole est menacée.</p>
+                            <p><strong>• MES :</strong> Matières en suspension. Indicateur de turbidité et d'érosion.</p>
+                            <p><strong>• Ammonium :</strong> Déchet organique. Toxique pour les poissons au-delà de 2 mg/L.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden xl:block w-80 sticky top-4 self-start">
+                <div class="ad-slot w-full" style="min-height:600px">
+                    <span class="ad-label text-slate-400 text-[10px] font-black uppercase tracking-[0.2em] rotate-90 inline-block">Publicité — 300×600</span>
+                    <ins class="adsbygoogle" style="display:block;width:300px;height:600px"
+                         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                         data-ad-slot="XXXXXXXXXX"
+                         data-ad-format="vertical"></ins>
+                    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====== SECTION CARTE ====== -->
+    <div id="section-carte" class="hidden space-y-8">
+        <div class="flex flex-col xl:flex-row gap-8">
+            <div class="flex-grow space-y-6">
+                <div>
+                    <h2 class="text-2xl font-black uppercase">Carte de Qualité</h2>
+                    <p class="text-xs font-bold text-sky-600 uppercase tracking-tighter">Scores eau potable par commune</p>
+                </div>
+                <div id="map-qualite" class="shadow-2xl border-4 border-white overflow-hidden"></div>
+                <div id="map-legend" class="grid grid-cols-2 sm:grid-cols-4 gap-4"></div>
+            </div>
+            <div class="hidden xl:block w-80 sticky top-4 self-start">
+                <div class="ad-slot w-full" style="min-height:600px">
+                    <span class="ad-label text-slate-400 text-[10px] font-black uppercase tracking-[0.2em] rotate-90 inline-block">Publicité — 300×600</span>
+                    <ins class="adsbygoogle" style="display:block;width:300px;height:600px"
+                         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                         data-ad-slot="XXXXXXXXXX"
+                         data-ad-format="vertical"></ins>
+                    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====== SECTION MÉTHODE ====== -->
+    <div id="section-methode" class="hidden">
+        <div class="flex flex-col xl:flex-row gap-8">
+            <div class="flex-grow max-w-5xl mx-auto space-y-12 pb-24">
+                <div class="glass-card p-12 rounded-[3rem] border border-white shadow-2xl">
+                    <h2 class="text-3xl font-black uppercase mb-10 text-center">Origine des Données</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <a href="https://www.data.gouv.fr" target="_blank" class="p-8 bg-white rounded-3xl border border-slate-100 shadow-sm hover:border-sky-400 transition-all group">
+                            <h3 class="text-sky-600 font-black text-xl mb-4 group-hover:underline uppercase italic">Data.gouv.fr</h3>
+                            <p class="text-sm text-slate-500 leading-relaxed text-justify">La plateforme nationale de référence pour l'Open Data en France. Toutes les bases sont certifiées par l'État.</p>
+                        </a>
+                        <a href="https://hubeau.eaufrance.fr" target="_blank" class="p-8 bg-white rounded-3xl border border-slate-100 shadow-sm hover:border-sky-400 transition-all group">
+                            <h3 class="text-sky-600 font-black text-xl mb-4 group-hover:underline uppercase italic">Hub'Eau</h3>
+                            <p class="text-sm text-slate-500 leading-relaxed text-justify">Service technique centralisé pour la qualité de l'eau potable et la qualité physicochimique des cours d'eau.</p>
+                        </a>
+                        <a href="https://vigieau.gouv.fr" target="_blank" class="p-8 bg-white rounded-3xl border border-slate-100 shadow-sm hover:border-sky-400 transition-all group">
+                            <h3 class="text-sky-600 font-black text-xl mb-4 group-hover:underline uppercase italic">VigiEau</h3>
+                            <p class="text-sm text-slate-500 leading-relaxed text-justify">Centralisation des arrêtés préfectoraux de sécheresse et des niveaux d'alerte par commune.</p>
+                        </a>
+                        <a href="https://www.brgm.fr" target="_blank" class="p-8 bg-white rounded-3xl border border-slate-100 shadow-sm hover:border-sky-400 transition-all group">
+                            <h3 class="text-sky-600 font-black text-xl mb-4 group-hover:underline uppercase italic">BRGM</h3>
+                            <p class="text-sm text-slate-500 leading-relaxed text-justify">Expertise géologique nationale. Fournit les données sur les aquifères et la qualité des nappes phréatiques.</p>
+                        </a>
+                        <a href="https://www.laregion.fr" target="_blank" class="p-8 bg-white rounded-3xl border border-slate-100 shadow-sm hover:border-sky-400 transition-all group">
+                            <h3 class="text-sky-600 font-black text-xl mb-4 group-hover:underline uppercase italic">Région Occitanie</h3>
+                            <p class="text-sm text-slate-500 leading-relaxed text-justify">Portail Open Data régional fournissant les données sur l'aménagement du territoire et la gestion durable des ressources.</p>
+                        </a>
+                        <a href="https://www.herault-data.fr" target="_blank" class="p-8 bg-white rounded-3xl border border-slate-100 shadow-sm hover:border-sky-400 transition-all group">
+                            <h3 class="text-sky-600 font-black text-xl mb-4 group-hover:underline uppercase italic">Hérault Data</h3>
+                            <p class="text-sm text-slate-500 leading-relaxed text-justify">Portail Open Data du Département de l'Hérault. Publie les jeux de données environnementaux locaux : qualité des eaux de baignade, cours d'eau, zones humides et biodiversité du territoire héraultais.</p>
+                        </a>
+                        <a href="https://data.montpellier3m.fr/" target="_blank" class="p-8 bg-white rounded-3xl border border-slate-100 shadow-sm hover:border-sky-400 transition-all group">
+                            <h3 class="text-sky-600 font-black text-xl mb-4 group-hover:underline uppercase italic">Mairies & Métropoles</h3>
+                            <p class="text-sm text-slate-500 leading-relaxed text-justify">Données locales issues des services des eaux de Nîmes Métropole et des communes de plus de 5 000 habitants.</p>
+                        </a>
+                        <a href="https://data.montpellier3m.fr/" target="_blank" class="p-8 bg-white rounded-3xl border border-slate-100 shadow-sm hover:border-sky-400 transition-all group col-span-1 md:col-span-2 border-2 border-sky-100">
+                            <div class="flex items-center gap-4 mb-4">
+                                <span class="w-10 h-10 bg-sky-100 text-sky-600 rounded-2xl flex items-center justify-center font-black text-lg">M</span>
+                                <h3 class="text-sky-600 font-black text-xl group-hover:underline uppercase italic">Portail Open Data — Montpellier Méditerranée Métropole</h3>
+                            </div>
+                            <p class="text-sm text-slate-500 leading-relaxed text-justify">Portail officiel de Montpellier 3M (data.montpellier3m.fr). Publie les analyses de qualité de l'eau potable par réseau de distribution (UDI), les bilans annuaux et les résultats de contrôle sanitaire pour les communes de la métropole. Permet d'accéder aux données par réseau et non seulement par commune, ce qui complète les données Hub'Eau pour les villes multi-réseaux comme Montpellier.</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="glass-card p-12 rounded-[3rem] border border-white shadow-2xl">
+                    <h2 class="text-3xl font-black uppercase mb-8 text-center">Méthodologie du Score Qualité</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm text-slate-600 leading-relaxed">
+                        <div class="bg-emerald-50 p-6 rounded-2xl border border-emerald-100 text-center">
+                            <div class="score-ring mx-auto mb-4" style="background:#10b981">80+</div>
+                            <p class="font-black text-emerald-700 uppercase text-sm mb-2">Bonne qualité</p>
+                            <p>La majorité des paramètres sont en dessous des seuils de vigilance. Eau conforme.</p>
+                        </div>
+                        <div class="bg-amber-50 p-6 rounded-2xl border border-amber-100 text-center">
+                            <div class="score-ring mx-auto mb-4" style="background:#f59e0b">50–79</div>
+                            <p class="font-black text-amber-700 uppercase text-sm mb-2">Qualité moyenne</p>
+                            <p>Certains paramètres dépassent le seuil de vigilance. Surveillance recommandée.</p>
+                        </div>
+                        <div class="bg-red-50 p-6 rounded-2xl border border-red-100 text-center">
+                            <div class="score-ring mx-auto mb-4" style="background:#ef4444">&lt;50</div>
+                            <p class="font-black text-red-700 uppercase text-sm mb-2">Mauvaise qualité</p>
+                            <p>Dépassements significatifs. Action correctrice ou alerte sanitaire nécessaire.</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 italic mt-8 text-center">Le score est calculé automatiquement en moyennant les évaluations de chaque paramètre mesuré (vert=100, orange=50, rouge=0).</p>
+                </div>
+            </div>
+            <div class="hidden xl:block w-80 sticky top-4 self-start">
+                <div class="ad-slot w-full" style="min-height:600px">
+                    <span class="ad-label text-slate-400 text-[10px] font-black uppercase tracking-[0.2em] rotate-90 inline-block">Publicité — 300×600</span>
+                    <ins class="adsbygoogle" style="display:block;width:300px;height:600px"
+                         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                         data-ad-slot="XXXXXXXXXX"
+                         data-ad-format="vertical"></ins>
+                    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div><!-- /container -->
+
+<!-- BOUTON FLOTTANT HAUT DE PAGE -->
+<button id="btn-top" onclick="window.scrollTo({top:0,behavior:'smooth'})"
+    class="fixed bottom-8 right-8 z-50 w-12 h-12 rounded-full bg-sky-500 text-white shadow-xl flex items-center justify-center text-xl font-black opacity-0 pointer-events-none transition-all duration-300 hover:bg-sky-600 hover:scale-110"
+    aria-label="Remonter en haut">↑</button>
+
+<!-- FOOTER -->
+<footer class="bg-slate-900 text-white py-16 mt-8">
+    <div class="max-w-[1600px] mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
+        <div>
+            <h3 class="text-2xl font-black uppercase mb-6 italic">QUALITÉ <span class="text-sky-400">EAU</span></h3>
+            <p class="text-slate-400 text-sm leading-relaxed">Surveillance indépendante de la qualité de l'eau pour le Languedoc. Données certifiées État, Région et Communes.</p>
+        </div>
+        <div>
+            <h4 class="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-6">Partenaires</h4>
+            <div class="flex flex-wrap gap-4 opacity-50 hover:opacity-100 transition-all font-black text-[10px] uppercase">
+                <span class="px-3 py-1 bg-white/10 rounded">Data.gouv.fr</span>
+                <span class="px-3 py-1 bg-white/10 rounded">Hub'Eau</span>
+                <span class="px-3 py-1 bg-white/10 rounded">VigiEau</span>
+                <span class="px-3 py-1 bg-white/10 rounded">Région Occitanie</span>
+            </div>
+        </div>
+        <div class="text-right">
+            <p class="text-[10px] font-black uppercase text-slate-500 mb-2">Copyright &copy; 2026</p>
+            <p class="text-lg font-black tracking-tighter uppercase italic">Qualité-Eau-34-30</p>
+            <div class="mt-4 flex flex-col gap-2 items-end">
+                <button onclick="document.getElementById('privacy-modal').classList.remove('hidden')" class="text-slate-400 hover:text-white text-xs underline transition-all">Politique de confidentialité</button>
+                <button onclick="document.getElementById('cookie-banner').classList.remove('hidden')" class="text-slate-400 hover:text-white text-xs underline transition-all">Gérer mes cookies</button>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // ═══ GESTION COOKIES RGPD ═══
+    function acceptCookies() {
+        localStorage.setItem('cookie_consent', 'accepted');
+        document.getElementById('cookie-banner').classList.add('hidden');
+    }
+    function refuseCookies() {
+        localStorage.setItem('cookie_consent', 'refused');
+        document.getElementById('cookie-banner').classList.add('hidden');
+    }
+    (function() {
+        const consent = localStorage.getItem('cookie_consent');
+        if (!consent) {
+            document.getElementById('cookie-banner').classList.remove('hidden');
+        }
+    })();
+
+    let fullData = {};
+    let mapNappes, mapQualite, markersLayer;
+    let currentTab = 'nappes';
+    let currentDept = 'all';
+
+    const PARAMS_POTABLE = ["Nitrates","pH","Chlore","Bactériologie","Calcaire (TH)","Aluminium","Plomb","Pesticides","THM","Conductivité","PFAS"];
+    const PARAMS_RIVIERE = ["Temp. air","Temp. eau","Nitrates","Phosphore","pH","Conductivité","O2 saturation","MES","Ammonium"];
+
+    async function init() {
+        const res = await fetch('full_data.json');
+        fullData = await res.json();
+        document.getElementById('updated-at').innerText = "Actualisé le " + fullData.updated;
+        document.getElementById('stat-communes').innerText = fullData.potable.length;
+        document.getElementById('stat-rivieres').innerText = fullData.rivieres.length;
+
+        const scoresP = fullData.potable.map(c => c.score).filter(s => s !== null);
+        const scoresR = fullData.rivieres.map(r => r.score).filter(s => s !== null);
+        const avgP = scoresP.length ? Math.round(scoresP.reduce((a,b)=>a+b,0)/scoresP.length) : '--';
+        const avgR = scoresR.length ? Math.round(scoresR.reduce((a,b)=>a+b,0)/scoresR.length) : '--';
+        document.getElementById('score-global-potable').innerText = avgP;
+        document.getElementById('score-global-riviere').innerText = avgR;
+        document.getElementById('stat-communes-score').innerText = scoresP.length;
+        document.getElementById('stat-rivieres-score').innerText = scoresR.length;
+
+        const conformes = fullData.potable.filter(c => c.score !== null && c.score >= 80).length;
+        document.getElementById('stat-conformes').innerText = conformes;
+        document.getElementById('stat-conformes-pct').innerText = fullData.potable.length ? Math.round(conformes/fullData.potable.length*100) + '%' : '';
+
+        renderNappes();
+    }
+
+    function switchTab(tab) {
+        currentTab = tab;
+        ['nappes','potable','rivieres','carte','methode'].forEach(s => {
+            document.getElementById(`section-${s}`).classList.toggle('hidden', s !== tab);
+            document.getElementById(`tab-${s}`).classList.toggle('tab-active', s === tab);
+        });
+        document.getElementById('dept-selector').classList.toggle('hidden', tab === 'methode');
+        if (tab === 'nappes') { renderNappes(); if (mapNappes) setTimeout(() => mapNappes.invalidateSize(), 200); }
+        if (tab === 'potable') renderPotable();
+        if (tab === 'rivieres') renderRivieres();
+        if (tab === 'carte') renderCarte();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function switchDept(dept) {
+        currentDept = dept;
+        ['all','34','30'].forEach(d => document.getElementById(`btn-dept-${d}`).classList.toggle('subtab-active', d === dept));
+        if (currentTab === 'nappes') renderNappes();
+        if (currentTab === 'potable') renderPotable();
+        if (currentTab === 'rivieres') renderRivieres();
+        if (currentTab === 'carte') renderCarte();
+    }
+
+    function renderNappes() {
+        const data = currentDept === 'all' ? fullData.nappes : fullData.nappes.filter(s => s.dept === currentDept);
+        const list = document.getElementById('station-list');
+        list.innerHTML = '';
+
+        if (!mapNappes) {
+            mapNappes = L.map('map-nappes').setView([43.7, 4.0], 9);
+            L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png').addTo(mapNappes);
+            fetch('https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/departements-version-simplifiee.geojson')
+                .then(r => r.json()).then(geojson => {
+                    L.geoJSON(geojson, { filter: f => ['34','30'].includes(f.properties.code), style: { color:'#3b82f6', weight:3, fillOpacity:0.05, dashArray:'5,10' } }).addTo(mapNappes);
+                });
+        }
+
+        const nappeCards = [];
+        data.forEach((s, idx) => {
+            const canvasId = `n-chart-${idx}`;
+            const diff = (s.year_ago !== null && s.year_ago !== undefined) ? parseFloat((s.current - s.year_ago).toFixed(2)) : null;
+            const isUp     = diff !== null && diff > 0;
+            const diffColor = isUp ? 'text-blue-600' : 'text-red-500';
+            const diffBg    = isUp ? 'bg-blue-50 border-blue-100'  : 'bg-red-50 border-red-100';
+            const icon      = isUp ? '↑' : '↓';
+            const tendance  = isUp ? 'En hausse' : 'En baisse';
+            const endVal    = s.history.length ? s.history[s.history.length-1].toFixed(2) : '--';
+
+            if (s.lat && s.lng) {
+                const markerIcon = L.divIcon({
+                    html: `<div style="background:${s.color};width:12px;height:12px;border-radius:50%;border:2px solid white;box-shadow:0 1px 4px rgba(0,0,0,0.4)"></div>`,
+                    className: '', iconSize: [12,12], iconAnchor: [6,6]
+                });
+                L.marker([s.lat, s.lng], {icon: markerIcon}).addTo(mapNappes)
+                 .bindPopup(`<b>${s.nom}</b><br>Niveau : <b>${s.current.toFixed(2)} m NGF</b><br>${diff !== null ? (isUp ? '↑ +' : '↓ ') + Math.abs(diff) + ' m vs an dernier' : ''}`);
+            }
+
+            nappeCards.push(`
+                <div class="glass-card p-5 rounded-[2rem] border border-white shadow-sm flex flex-col hover:shadow-xl transition-all">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="font-black text-slate-800 text-sm leading-tight">${s.nom}</h3>
+                        <span class="text-[9px] font-black bg-slate-100 px-2 py-0.5 rounded text-slate-400 flex-shrink-0 ml-2">${s.dept}</span>
+                    </div>
+
+                    <!-- Niveau actuel -->
+                    <div class="mb-3">
+                        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-0.5">Niveau d'eau actuel</p>
+                        <div class="flex items-baseline gap-1">
+                            <span class="text-3xl font-black text-slate-900">${s.current.toFixed(2)}</span>
+                            <span class="text-xs font-black text-slate-400">m (altitude)</span>
+                        </div>
+                    </div>
+
+                    <!-- Tendance vs N-1 -->
+                    <div class="${diffBg} border p-3 rounded-2xl mb-3">
+                        ${diff !== null ? `
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-black ${diffColor}">${icon} ${tendance}</span>
+                            <span class="text-sm font-black ${diffColor}">${icon}${Math.abs(diff)} m</span>
+                        </div>
+                        <p class="text-[10px] ${diffColor} mt-0.5">vs même période l'an dernier</p>
+                        ` : `<p class="text-[10px] text-slate-400 font-black uppercase">Comparaison N-1 indisponible</p>`}
+                    </div>
+
+                    <!-- Mini graphique 7j -->
+                    <p class="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-1">Évolution sur 7 jours</p>
+                    <div class="h-[36px] w-full"><canvas id="${canvasId}"></canvas></div>
+                    <div class="flex justify-between text-[9px] text-slate-400 mt-1">
+                        <span>J−7</span><span>Aujourd'hui : ${endVal} m</span>
+                    </div>
+                </div>
+            `);
+        });
+
+        list.innerHTML = nappeCards.join('');
+
+        data.forEach((s, idx) => {
+            const ctx = document.getElementById(`n-chart-${idx}`);
+            if (ctx && s.history.length) new Chart(ctx, { type:'line', data:{ labels: s.history.map((_,i)=>i), datasets:[{ data: s.history, borderColor: s.color, borderWidth:2, pointRadius:0, tension:0.4, fill:true, backgroundColor: s.color+'18' }] }, options:{ plugins:{legend:{display:false},tooltip:{enabled:false}}, scales:{x:{display:false},y:{display:false}}, maintainAspectRatio:false } });
+        });
+
+        const nHausse = data.filter(x=>x.color==='#3b82f6').length;
+        const nBaisse = data.filter(x=>x.color==='#ef4444').length;
+        document.getElementById('nappe-stats').innerHTML = `
+            <div class="glass-card p-4 rounded-2xl border border-white shadow text-center"><p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Stations suivies</p><p class="text-2xl font-black">${data.length}</p></div>
+            <div class="glass-card p-4 rounded-2xl border border-white shadow text-center"><p class="text-xs font-bold text-blue-400 uppercase tracking-widest">↑ En hausse</p><p class="text-2xl font-black text-blue-600">${nHausse}</p><p class="text-[10px] text-slate-400">Nappe plus remplie vs N-1</p></div>
+            <div class="glass-card p-4 rounded-2xl border border-white shadow text-center"><p class="text-xs font-bold text-red-400 uppercase tracking-widest">↓ En baisse</p><p class="text-2xl font-black text-red-500">${nBaisse}</p><p class="text-[10px] text-slate-400">Nappe moins remplie vs N-1</p></div>
+            <div class="glass-card p-4 rounded-2xl border border-white shadow text-center"><p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Source</p><p class="text-base font-black text-slate-600 uppercase">BRGM</p><p class="text-[10px] text-slate-400">Données Hub'Eau</p></div>
+        `;
+    }
+
+    function renderPotable() {
+        let data = currentDept === 'all' ? fullData.potable : fullData.potable.filter(c => c.dept === currentDept);
+        const search = document.getElementById('city-search').value.toLowerCase();
+        if (search) data = data.filter(c => c.nom.toLowerCase().includes(search));
+
+        const container = document.getElementById('potable-grid');
+        container.innerHTML = '';
+        data.forEach(c => {
+            const rColor = c.restric === 'Vigilance' ? 'bg-green-100 text-green-700' :
+                           c.restric === 'Alerte' ? 'bg-yellow-100 text-yellow-700' :
+                           c.restric === 'Alerte Renforcée' ? 'bg-orange-100 text-orange-700' :
+                           'bg-red-100 text-red-700';
+            const scoreVal = c.score !== null ? c.score : '?';
+            container.innerHTML += `
+                <div class="glass-card p-6 rounded-[2rem] border border-white shadow-xl flex flex-col h-full hover:scale-[1.01] transition-all">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-black text-slate-800 uppercase italic leading-tight">${c.nom}</h3>
+                            <p class="text-[9px] text-sky-500 font-black uppercase tracking-[0.1em] mt-1 underline decoration-2">${c.origine}</p>
+                        </div>
+                        <div class="score-ring ml-2" style="background:${c.score_color};min-width:56px;min-height:56px;font-size:1rem">${scoreVal}</div>
+                    </div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-[9px] font-black ${rColor} px-2.5 py-1 rounded-lg uppercase tracking-tighter">${c.restric}</span>
+                        <span class="text-[10px] font-black uppercase tracking-tighter" style="color:${c.score_color}">${c.score_label}</span>
+                    </div>
+                    <div class="grid grid-cols-1 gap-1.5 flex-grow">
+                        ${PARAMS_POTABLE.map(p => {
+                            const info = c.parametres[p] || {valeur:'N.C.', color:'#cbd5e1', date:''};
+                            const dDate = info.date ? info.date.split('-').reverse().join('/') : '';
+                            return `<div class="flex justify-between items-center px-3 py-2 bg-white/50 rounded-xl border-l-4 transition-all" style="border-left-color:${info.color}">
+                                <span class="text-xs font-black text-slate-500 uppercase tracking-tighter italic">${p}</span>
+                                <div class="text-right">
+                                    <span class="text-base font-black block leading-none" style="color:${info.valeur==='N.C.'?'#94a3b8':info.color}">${info.valeur}</span>
+                                    <span class="text-[9px] font-black opacity-40 text-slate-600 block">${dDate}</span>
+                                </div>
+                            </div>`;
+                        }).join('')}
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-100 text-[9px] text-slate-400 italic line-clamp-2 uppercase font-black tracking-tight leading-tight">${c.conclusion}</div>
+                </div>
+            `;
+        });
+    }
+
+    function renderRivieres() {
+        let data = currentDept === 'all' ? fullData.rivieres : fullData.rivieres.filter(r => r.dept === currentDept);
+        const search = document.getElementById('river-search').value.toLowerCase();
+        if (search) data = data.filter(r => r.nom.toLowerCase().includes(search) || r.commune.toLowerCase().includes(search));
+
+        const container = document.getElementById('riviere-grid');
+        container.innerHTML = '';
+
+        const TREND_PARAMS = [
+            { key: 'Nitrates',      color: '#6366f1' },
+            { key: 'Phosphore',     color: '#f59e0b' },
+            { key: 'O2 saturation', color: '#10b981' },
+        ];
+
+        // Préparer toutes les cartes en une seule passe pour éviter les reflows
+        const allTrends = [];
+        const cards = data.map((r, idx) => {
+            const scoreVal = r.score !== null ? r.score : '?';
+
+            const trends = TREND_PARAMS.map((tp, ti) => {
+                const raw = r.historique[tp.key];
+                if (!raw || raw.length < 2) return null;
+                const pts = [...raw].reverse();
+                return {
+                    key:      tp.key,
+                    color:    pts[pts.length - 1].color || tp.color,
+                    fallback: tp.color,
+                    pts,
+                    start: pts[0].date.split('-').reverse().join('/'),
+                    end:   pts[pts.length - 1].date.split('-').reverse().join('/'),
+                    canvasId: `r-chart-${idx}-${ti}`
+                };
+            }).filter(Boolean);
+
+            allTrends.push(trends);
+
+            return `
+                <div class="glass-card p-8 rounded-[2.5rem] border border-white shadow-xl flex flex-col hover:shadow-2xl transition-all">
+                    <div class="flex justify-between items-start mb-6">
+                        <div>
+                            <h3 class="text-2xl font-black text-slate-800 uppercase italic tracking-tighter">${r.nom}</h3>
+                            <p class="text-[10px] text-indigo-500 font-bold uppercase tracking-widest mt-1">${r.commune} · Dept ${r.dept}</p>
+                        </div>
+                        <div class="score-ring" style="background:${r.score_color};min-width:56px;min-height:56px;font-size:1rem;margin-left:8px">${scoreVal}</div>
+                    </div>
+                    <p class="text-xs font-black uppercase tracking-tighter mb-4" style="color:${r.score_color}">${r.score_label}</p>
+                    <div class="grid grid-cols-1 gap-2 flex-grow">
+                        ${PARAMS_RIVIERE.map(p => {
+                            const info = r.parametres[p] || {valeur:'N.C.', color:'#cbd5e1', date:'', realtime: false};
+                            const dDate = info.date ? info.date.split('-').reverse().join('/') : '';
+                            const unite = info.unite || '';
+                            const badge = info.realtime
+                                ? `<span class="inline-flex items-center gap-1 text-[8px] font-black text-sky-500 uppercase"><span class="w-1.5 h-1.5 rounded-full bg-sky-400 animate-pulse inline-block"></span>Météo-France</span>`
+                                : `<span class="text-[9px] font-black opacity-40 text-slate-600">${dDate}</span>`;
+                            return `<div class="flex justify-between items-center px-4 py-2.5 bg-white/50 rounded-2xl border-l-4 transition-all" style="border-left-color:${info.color}">
+                                <span class="text-xs font-black text-slate-500 uppercase tracking-tighter italic">${p}</span>
+                                <div class="text-right">
+                                    <span class="text-base font-black block leading-none" style="color:${info.valeur==='N.C.'?'#94a3b8':info.color}">${info.valeur} <span class="text-[9px] font-medium opacity-60">${info.valeur !== 'N.C.' ? unite : ''}</span></span>
+                                    ${badge}
+                                </div>
+                            </div>`;
+                        }).join('')}
+                    </div>
+                    ${trends.length ? `
+                    <div class="mt-6 pt-4 border-t border-slate-100 space-y-4">
+                        ${trends.map(t => `
+                        <div>
+                            <div class="flex justify-between text-[8px] font-black text-slate-400 uppercase mb-1">
+                                <span>${t.start}</span>
+                                <span class="italic opacity-70" style="color:${t.color}">${t.key}</span>
+                                <span>${t.end}</span>
+                            </div>
+                            <div class="h-[44px] w-full"><canvas id="${t.canvasId}"></canvas></div>
+                        </div>`).join('')}
+                    </div>` : ''}
+                </div>
+            `;
+        });
+
+        // Un seul write DOM pour toutes les cartes
+        container.innerHTML = cards.join('');
+
+        // Graphiques avec IntersectionObserver pour ne rendre que ce qui est visible
+        const observer = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                const canvas = entry.target;
+                obs.unobserve(canvas);
+                const idx = parseInt(canvas.dataset.idx);
+                const ti  = parseInt(canvas.dataset.ti);
+                const t   = allTrends[idx][ti];
+                if (!t) return;
+                new Chart(canvas, {
+                    type: 'line',
+                    data: {
+                        labels: t.pts.map(d => d.date),
+                        datasets: [{ data: t.pts.map(d => d.valeur), borderColor: t.color, borderWidth: 2.5, pointRadius: 3, pointBackgroundColor: t.pts.map(d => d.color), tension: 0.4, fill: true, backgroundColor: t.color + '18' }]
+                    },
+                    options: { plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => `${c.parsed.y} — ${t.pts[c.dataIndex].date}` } } }, scales: { x: { display: false }, y: { display: false } }, maintainAspectRatio: false }
+                });
+            });
+        }, { rootMargin: '200px' });
+
+        allTrends.forEach((trends, idx) => {
+            trends.forEach((t, ti) => {
+                const canvas = document.getElementById(t.canvasId);
+                if (!canvas) return;
+                canvas.dataset.idx = idx;
+                canvas.dataset.ti  = ti;
+                observer.observe(canvas);
+            });
+        });
+    }
+
+    function renderCarte() {
+        if (!mapQualite) {
+            mapQualite = L.map('map-qualite').setView([43.7, 4.0], 9);
+            L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png').addTo(mapQualite);
+            fetch('https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/departements-version-simplifiee.geojson')
+                .then(r => r.json()).then(geojson => {
+                    L.geoJSON(geojson, { filter: f => ['34','30'].includes(f.properties.code), style: { color:'#0ea5e9', weight:3, fillOpacity:0.05, dashArray:'5,10' } }).addTo(mapQualite);
+                });
+            markersLayer = L.layerGroup().addTo(mapQualite);
+        } else {
+            setTimeout(() => mapQualite.invalidateSize(), 200);
+        }
+
+        // Vider les marqueurs existants avant d'en ajouter de nouveaux
+        markersLayer.clearLayers();
+
+        // Marqueurs qualité potable filtrés par département
+        const data = currentDept === 'all' ? fullData.potable : fullData.potable.filter(c => c.dept === currentDept);
+
+        // Coordonnées approximatives des communes (centroids)
+        const COORDS = {
+            "Montpellier":[43.6119,3.8772],"Béziers":[43.3441,3.2190],"Sète":[43.4020,3.6953],
+            "Lunel":[43.6765,4.1353],"Agde":[43.3100,3.4764],"Castelnau-le-Lez":[43.6381,3.9269],
+            "Mauguio":[43.6153,3.9988],"Lattes":[43.5704,3.8952],"Frontignan":[43.4483,3.7558],
+            "Juvignac":[43.6153,3.8108],"Mèze":[43.4333,3.6056],"Saint-Gély-du-Fesc":[43.7047,3.8231],
+            "Villeneuve-lès-Maguelone":[43.5233,3.8483],"Pérols":[43.5647,3.9283],"Fabrègues":[43.5547,3.7847],
+            "Jacou":[43.6617,3.9208],"Baillargues":[43.6556,4.0047],"Gigean":[43.4883,3.7283],
+            "Clermont-l'Hérault":[43.6283,3.4317],"Lodève":[43.7319,3.3194],
+            "Nîmes":[43.8367,4.3601],"Alès":[44.1262,4.0839],"Bagnols-sur-Cèze":[44.1633,4.6189],
+            "Beaucaire":[43.8069,4.6428],"Saint-Gilles":[43.6769,4.4308],"Villeneuve-lès-Avignon":[43.9694,4.7933],
+            "Vauvert":[43.6944,4.2733],"Pont-Saint-Esprit":[44.2556,4.6494],"Uzès":[44.0119,4.4206],
+            "Marguerittes":[43.8406,4.4283],"Aigues-Mortes":[43.5683,4.1922],"Rochefort-du-Gard":[43.9417,4.6550],
+            "Bouillargues":[43.8033,4.3883]
+        };
+
+        data.forEach(c => {
+            const coords = COORDS[c.nom];
+            if (!coords) return;
+            const scoreVal = c.score !== null ? c.score : '?';
+            const icon = L.divIcon({
+                html: `<div style="background:${c.score_color};color:white;font-weight:900;font-size:11px;width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:2px solid white;box-shadow:0 2px 8px rgba(0,0,0,0.3)">${scoreVal}</div>`,
+                className: '', iconSize: [36,36], iconAnchor: [18,18]
+            });
+            L.marker(coords, {icon}).addTo(markersLayer).bindPopup(`<b>${c.nom}</b><br>Score : ${scoreVal}/100 — ${c.score_label}<br>Source : ${c.origine}`);
+        });
+
+        document.getElementById('map-legend').innerHTML = `
+            <div class="glass-card p-4 rounded-2xl border border-white shadow text-center"><div class="score-ring mx-auto mb-2" style="background:#10b981;width:48px;height:48px;font-size:0.85rem">80+</div><p class="text-[10px] font-black text-emerald-600 uppercase">Bonne</p></div>
+            <div class="glass-card p-4 rounded-2xl border border-white shadow text-center"><div class="score-ring mx-auto mb-2" style="background:#f59e0b;width:48px;height:48px;font-size:0.85rem">50–79</div><p class="text-[10px] font-black text-amber-600 uppercase">Moyenne</p></div>
+            <div class="glass-card p-4 rounded-2xl border border-white shadow text-center"><div class="score-ring mx-auto mb-2" style="background:#ef4444;width:48px;height:48px;font-size:0.85rem">&lt;50</div><p class="text-[10px] font-black text-red-600 uppercase">Mauvaise</p></div>
+            <div class="glass-card p-4 rounded-2xl border border-white shadow text-center"><div class="score-ring mx-auto mb-2" style="background:#94a3b8;width:48px;height:48px;font-size:0.85rem">?</div><p class="text-[10px] font-black text-slate-400 uppercase">N.C.</p></div>
+        `;
+    }
+
+    // Bouton haut de page
+    const btnTop = document.getElementById('btn-top');
+    window.addEventListener('scroll', () => {
+        const visible = window.scrollY > 300;
+        btnTop.style.opacity = visible ? '1' : '0';
+        btnTop.style.pointerEvents = visible ? 'auto' : 'none';
+    });
+
+    init();
+</script>
+</body>
+</html>
