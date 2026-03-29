@@ -11,7 +11,7 @@ import unicodedata
 from datetime import date
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-BASE_URL  = "https://www.nbrx.fr"
+BASE_URL  = "https://www.mon-environnement.fr"
 TODAY     = date.today().strftime("%Y-%m-%d")
 YEAR      = date.today().year
 
