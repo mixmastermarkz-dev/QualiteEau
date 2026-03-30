@@ -191,14 +191,13 @@
         </div>
         <div class="flex items-center gap-4">
             <div class="text-center">
-                <p class="text-[9px] font-black text-slate-400 uppercase tracking-widest">Communes analysées</p>
+                <p class="text-[9px] font-black text-slate-400 uppercase tracking-widest">Communes concernées</p>
                 <p class="text-2xl font-black text-sky-600" id="stat-communes">--</p>
             </div>
             <div class="text-center">
-                <p class="text-[9px] font-black text-slate-400 uppercase tracking-widest">Rivières analysées</p>
+                <p class="text-[9px] font-black text-slate-400 uppercase tracking-widest">Rivières concernées</p>
                 <p class="text-2xl font-black text-indigo-600" id="stat-rivieres">--</p>
             </div>
-            <div id="updated-at" class="text-[10px] font-bold text-slate-400 bg-slate-100 px-4 py-2 rounded-full uppercase tracking-tighter">Chargement...</div>
         </div>
     </header>
 
@@ -283,11 +282,12 @@
             <div class="flex-shrink-0 w-12 h-12 bg-blue-600 text-white rounded-2xl flex items-center justify-center text-2xl">💧</div>
             <div class="space-y-3 text-[13px] leading-relaxed text-slate-600">
                 <p class="text-base font-black text-slate-800 uppercase tracking-tight">Comment lire ces données ?</p>
-                <p><strong>Le niveau d'une nappe phréatique</strong> est mesuré en <strong>mètres NGF</strong> — c'est l'altitude du niveau d'eau au-dessus du niveau moyen de la mer (référence Nivellement Général de la France). Chaque nappe a son propre "niveau normal" : une nappe côtière peut osciller entre 1 et 5 m NGF, une nappe de plaine entre 20 et 80 m NGF. Ce qui compte, c'est l'<strong>évolution par rapport à l'an dernier</strong>.</p>
+                <p><strong>Le niveau d'une nappe phréatique</strong> est mesuré en <strong>mètres NGF</strong> (altitude du niveau d'eau au-dessus du niveau moyen de la mer). Chaque nappe a son propre niveau de référence : une nappe côtière oscille entre 1 et 5 m NGF, une nappe de plaine entre 20 et 80 m NGF.</p>
                 <div class="flex flex-wrap gap-4 pt-1">
-                    <span class="flex items-center gap-2 text-blue-600 font-black"><span class="w-3 h-3 rounded-full bg-blue-500 inline-block"></span> En hausse → nappe plus remplie qu'il y a un an</span>
-                    <span class="flex items-center gap-2 text-red-500 font-black"><span class="w-3 h-3 rounded-full bg-red-500 inline-block"></span> En baisse → nappe moins remplie qu'il y a un an</span>
+                    <span class="flex items-center gap-2 text-blue-600 font-black"><span class="w-3 h-3 rounded-full bg-blue-500 inline-block"></span> Par rapport à l'an dernier à la même date : niveau + élevé</span>
+                    <span class="flex items-center gap-2 text-red-500 font-black"><span class="w-3 h-3 rounded-full bg-red-500 inline-block"></span> Par rapport à l'an dernier à la même date : niveau − élevé</span>
                 </div>
+                <p class="text-[10px] text-amber-700 font-bold bg-amber-50 px-3 py-2 rounded-xl border border-amber-100">⚠ Note : un niveau plus élevé qu'il y a un an ne signifie pas nécessairement que la nappe est haute. Cela dépend du contexte pluriannuel et de la nature géologique du sous-sol.</p>
                 <p class="text-slate-400 text-[11px]">Source : BRGM (Bureau de Recherches Géologiques et Minières) via Hub'Eau · Données temps réel et historiques.</p>
             </div>
         </div>
@@ -295,7 +295,8 @@
         <div class="flex flex-col xl:flex-row gap-8">
             <div class="flex-grow space-y-8">
                 <div id="map-nappes" class="shadow-2xl border-4 border-white overflow-hidden"></div>
-                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4" id="nappe-stats"></div>
+                <p id="nappe-count" class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2"></p>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4" id="nappe-stats"></div>
             </div>
         </div>
         <div id="station-list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4"></div>
@@ -323,6 +324,7 @@
                         <h2 class="text-2xl font-black uppercase">Eau Potable par Commune</h2>
                         <p class="text-xs font-bold text-sky-600 uppercase tracking-tighter">Score qualité + 11 paramètres</p>
                         <p class="text-[11px] text-slate-400 mt-1">Ce tableau couvre uniquement les communes de plus de 1 000 habitants des départements 34 et 30.</p>
+                        <p id="potable-count" class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1"></p>
                     </div>
                     <input type="text" id="city-search" placeholder="Rechercher votre commune..." class="px-6 py-3 rounded-2xl border-2 border-white shadow-lg outline-none w-full md:w-96 focus:ring-4 focus:ring-sky-100 transition-all" onkeyup="renderPotable()">
                 </div>
@@ -379,6 +381,7 @@
                     <div>
                         <h2 class="text-2xl font-black uppercase">Qualité Chimique des Rivières</h2>
                         <p class="text-xs font-bold text-indigo-600 uppercase tracking-tighter">Score qualité + 8 paramètres chimiques</p>
+                        <p id="riviere-count" class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1"></p>
                     </div>
                     <input type="text" id="river-search" placeholder="Rechercher une rivière..." class="px-6 py-3 rounded-2xl border-2 border-white shadow-lg outline-none w-full md:w-96 focus:ring-4 focus:ring-indigo-100 transition-all" onkeyup="renderRivieres()">
                 </div>
@@ -395,25 +398,31 @@
                         </div>
                         <div class="flex items-center gap-2 bg-sky-50 px-4 py-2 rounded-xl border border-sky-100">
                             <span class="w-2 h-2 rounded-full bg-sky-400 animate-pulse"></span>
-                            <span class="text-[10px] font-black text-sky-600 uppercase">Météo-France — température air Open-Meteo (si capteur eau indisponible)</span>
+                            <span class="text-[10px] font-black text-sky-600 uppercase">Open-Meteo — température air en temps réel</span>
                         </div>
                         <div class="flex items-center gap-2 bg-slate-50 px-4 py-2 rounded-xl border border-slate-200">
                             <span class="w-2 h-2 rounded-full bg-slate-400"></span>
                             <span class="text-[10px] font-black text-slate-500 uppercase">Analyses labo — dernier prélèvement disponible (délai naturel de semaines à mois)</span>
                         </div>
                     </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-[13px] leading-relaxed text-slate-600">
-                        <div class="space-y-3">
-                            <p><strong>• Température ●</strong> <em class="text-emerald-600 text-[10px]">Temps réel</em> — Au-delà de 25°C, l'oxygène se raréfie et les espèces souffrent.</p>
-                            <p><strong>• Conductivité ●</strong> <em class="text-emerald-600 text-[10px]">Temps réel</em> — Minéralisation. Très élevée = apports industriels ou agricoles.</p>
-                            <p><strong>• Nitrates :</strong> Au-delà de 25 mg/L, risque d'eutrophisation (prolifération d'algues).</p>
-                            <p><strong>• Phosphore :</strong> Indicateur de pollution agricole. Seuil critique à 0.5 mg/L.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-[13px] leading-relaxed text-slate-600">
+                        <div>
+                            <p class="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-3 pb-1 border-b border-slate-100">Paramètres physiques</p>
+                            <div class="space-y-2">
+                                <p><strong>• Température ●</strong> <em class="text-emerald-600 text-[10px]">Temps réel</em> — Au-delà de 25°C, l'oxygène se raréfie et les espèces souffrent.</p>
+                                <p><strong>• Conductivité ●</strong> <em class="text-emerald-600 text-[10px]">Temps réel</em> — Minéralisation globale. Très élevée = apports industriels ou agricoles.</p>
+                                <p><strong>• MES :</strong> Matières en suspension. Indicateur de turbidité et d'érosion des sols.</p>
+                                <p><strong>• O2 dissous :</strong> Teneur en oxygène. En dessous de 70% de saturation, la vie piscicole est menacée.</p>
+                            </div>
                         </div>
-                        <div class="space-y-3">
-                            <p><strong>• pH :</strong> Entre 6.5 et 8.5 pour une rivière en bonne santé.</p>
-                            <p><strong>• O2 dissous :</strong> En dessous de 6 mg/L, la vie piscicole est menacée.</p>
-                            <p><strong>• MES :</strong> Matières en suspension. Indicateur de turbidité et d'érosion.</p>
-                            <p><strong>• Ammonium :</strong> Déchet organique. Toxique pour les poissons au-delà de 2 mg/L.</p>
+                        <div>
+                            <p class="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-3 pb-1 border-b border-slate-100">Paramètres chimiques</p>
+                            <div class="space-y-2">
+                                <p><strong>• Nitrates :</strong> Au-delà de 25 mg/L, risque d'eutrophisation (prolifération d'algues).</p>
+                                <p><strong>• Phosphore :</strong> Indicateur de pollution agricole. Seuil critique à 0.5 mg/L.</p>
+                                <p><strong>• pH :</strong> Entre 6.5 et 8.5 pour une rivière en bonne santé écologique.</p>
+                                <p><strong>• Ammonium :</strong> Déchet organique. Toxique pour les poissons au-delà de 2 mg/L.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -510,8 +519,20 @@
 
         <!-- IQA par zone -->
         <div>
-            <h2 class="text-2xl font-black uppercase mb-4">Indice Qualité Air — par zone</h2>
-            <div id="air-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+            <h2 class="text-2xl font-black uppercase mb-2">Indice Qualité Air — par zone</h2>
+            <p id="air-count" class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-4"></p>
+            <div class="mb-6">
+                <h3 class="text-sm font-black text-sky-700 uppercase tracking-widest mb-3 flex items-center gap-2">
+                    <span class="px-2 py-0.5 bg-sky-100 text-sky-700 rounded-lg text-xs font-black">34</span> Hérault
+                </h3>
+                <div id="air-grid-34" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+            </div>
+            <div>
+                <h3 class="text-sm font-black text-indigo-700 uppercase tracking-widest mb-3 flex items-center gap-2">
+                    <span class="px-2 py-0.5 bg-indigo-100 text-indigo-700 rounded-lg text-xs font-black">30</span> Gard
+                </h3>
+                <div id="air-grid-30" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+            </div>
         </div>
 
         <!-- Pollen -->
@@ -608,7 +629,7 @@
                     <span class="px-3 py-1 bg-white border border-slate-200 rounded-xl text-[10px] font-black text-slate-600 uppercase">Trifluraline</span>
                     <span class="px-3 py-1 bg-white border border-slate-200 rounded-xl text-[10px] font-black text-slate-600 uppercase">Prosulfocarbe</span>
                 </div>
-                <p class="text-[9px] text-slate-400 mt-3 italic">Données issues des campagnes de mesure ponctuelles d'Atmo Occitanie. Mise à jour selon disponibilité des données.</p>
+                <p class="text-[9px] text-slate-400 mt-3 italic">Données issues des campagnes de mesure ponctuelles d'Atmo Occitanie. La couverture des campagnes concerne pour l'instant principalement d'autres départements d'Occitanie — les données Hérault/Gard seront affichées dès leur publication. Mise à jour selon disponibilité.</p>
             </div>
         </div>
 
@@ -815,6 +836,14 @@
     const PARAMS_POTABLE = ["Nitrates","pH","Chlore","Bactériologie","Calcaire (TH)","Aluminium","Plomb","Pesticides","THM","Conductivité","PFAS"];
     const PARAMS_RIVIERE = ["Temp. air","Temp. eau","Nitrates","Phosphore","pH","Conductivité","O2 saturation","MES","Ammonium"];
 
+    function isoToFr(iso) {
+        if (!iso) return '';
+        const [y, m, d] = iso.split('-');
+        if (!y || !m || !d) return iso;
+        const mois = ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
+        return `${+d} ${mois[+m - 1]} ${y}`;
+    }
+
     function formatUpdatedDate(raw) {
         // raw = "30/03/2026 à 09:05"
         const m = raw.match(/(\d{2})\/(\d{2})\/(\d{4}) à (\d{2}):(\d{2})/);
@@ -829,7 +858,6 @@
     async function init() {
         const res = await fetch('full_data.json');
         fullData = await res.json();
-        document.getElementById('updated-at').innerText = "Actualisé le " + fullData.updated;
         const subtitle = document.getElementById('updated-subtitle');
         if (subtitle) {
             subtitle.innerHTML = `📡 Données mises à jour quotidiennement à 11h &mdash; Dernière mise à jour : ${formatUpdatedDate(fullData.updated)}`;
@@ -875,31 +903,41 @@
         const airData    = fullData.air    || [];
         const pollenData = fullData.pollen || [];
 
-        // IQA
-        const airGrid = document.getElementById('air-grid');
-        if (!airData.length) {
-            airGrid.innerHTML = '<p class="text-slate-400 col-span-3 text-center py-8">Données non disponibles</p>';
-        } else {
-            airGrid.innerHTML = airData.map(z => `
-                <div class="glass-card p-6 rounded-[2rem] border border-white shadow-sm hover:shadow-xl transition-all">
-                    <div class="flex justify-between items-start mb-4">
-                        <div>
-                            <h3 class="font-black text-slate-800 text-sm uppercase leading-tight">${z.zone}</h3>
-                            <p class="text-[10px] text-slate-400 font-bold uppercase mt-0.5">Dept ${z.dept} · ${z.date}</p>
-                        </div>
-                        <div class="rounded-2xl px-3 py-1.5 text-white font-black text-sm flex-shrink-0 ml-2" style="background:${z.color}">${z.label}</div>
+        // IQA — split 34 / 30
+        const airCount = document.getElementById('air-count');
+        if (airCount) airCount.textContent = `${airData.length} zone${airData.length > 1 ? 's' : ''} avec données actives`;
+
+        function airZoneCard(z) {
+            return `<div class="glass-card p-6 rounded-[2rem] border border-white shadow-sm hover:shadow-xl transition-all">
+                <div class="flex justify-between items-start mb-4">
+                    <div>
+                        <h3 class="font-black text-slate-800 text-sm uppercase leading-tight">${z.zone}</h3>
+                        <p class="text-[10px] text-slate-400 font-bold uppercase mt-0.5">${isoToFr(z.date)}</p>
                     </div>
-                    <div class="grid grid-cols-5 gap-1.5">
-                        ${Object.entries(z.polluants).map(([nom, p]) => `
-                        <div class="text-center">
-                            <div class="w-full h-2 rounded-full mb-1" style="background:${p.color}"></div>
-                            <p class="text-[9px] font-black text-slate-500 uppercase">${nom}</p>
-                            <p class="text-[9px] font-bold" style="color:${p.color}">${p.label}</p>
-                        </div>`).join('')}
-                    </div>
+                    <div class="rounded-2xl px-3 py-1.5 text-white font-black text-sm flex-shrink-0 ml-2" style="background:${z.color}">${z.label}</div>
                 </div>
-            `).join('');
+                <div class="grid grid-cols-5 gap-1.5">
+                    ${Object.entries(z.polluants).map(([nom, p]) => `
+                    <div class="text-center">
+                        <div class="w-full h-2 rounded-full mb-1" style="background:${p.color}"></div>
+                        <p class="text-[9px] font-black text-slate-500 uppercase">${nom}</p>
+                        <p class="text-[9px] font-bold" style="color:${p.color}">${p.label}</p>
+                    </div>`).join('')}
+                </div>
+            </div>`;
         }
+
+        const grid34 = document.getElementById('air-grid-34');
+        const grid30 = document.getElementById('air-grid-30');
+        const zones34 = airData.filter(z => z.dept === '34');
+        const zones30 = airData.filter(z => z.dept === '30');
+
+        if (grid34) grid34.innerHTML = zones34.length
+            ? zones34.map(airZoneCard).join('')
+            : '<p class="text-slate-400 col-span-3 text-center py-4">Données non disponibles</p>';
+        if (grid30) grid30.innerHTML = zones30.length
+            ? zones30.map(airZoneCard).join('')
+            : '<p class="text-slate-400 col-span-3 text-center py-4">Données non disponibles</p>';
 
         // Pollen
         const pollenGrid = document.getElementById('pollen-grid');
@@ -911,7 +949,7 @@
                     <div class="flex justify-between items-center mb-5">
                         <div>
                             <h3 class="font-black text-slate-800 text-lg uppercase">${d.lib_zone}</h3>
-                            <p class="text-[10px] text-slate-400 font-bold uppercase">Dept ${d.dept} · ${d.date}</p>
+                            <p class="text-[10px] text-slate-400 font-bold uppercase">Dept ${d.dept} · ${isoToFr(d.date)}</p>
                         </div>
                         <div class="rounded-2xl px-3 py-1.5 text-white font-black text-sm" style="background:${d.color_global}">
                             Indice global : ${d.label_global}
@@ -960,7 +998,7 @@
             const diffColor = isUp ? 'text-blue-600' : 'text-red-500';
             const diffBg    = isUp ? 'bg-blue-50 border-blue-100'  : 'bg-red-50 border-red-100';
             const icon      = isUp ? '↑' : '↓';
-            const tendance  = isUp ? 'En hausse' : 'En baisse';
+            const tendance  = isUp ? 'Par rapport à N−1 : niveau + élevé' : 'Par rapport à N−1 : niveau − élevé';
             const endVal    = s.history.length ? s.history[s.history.length-1].toFixed(2) : '--';
 
             if (s.lat && s.lng) {
@@ -1005,11 +1043,14 @@
                     <div class="flex justify-between text-[9px] text-slate-400 mt-1">
                         <span>J−7</span><span>Aujourd'hui : ${endVal} m</span>
                     </div>
+                    ${s.code_bss ? `<a href="https://hubeau.eaufrance.fr/sites/default/files/api/demo/piezo/piezo.htm?code_bss=${encodeURIComponent(s.code_bss)}" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1.5 text-[9px] font-black text-sky-600 hover:text-sky-800 uppercase tracking-wider transition-colors">📈 Voir l'historique complet →</a>` : ''}
                 </div>
             `);
         });
 
         list.innerHTML = nappeCards.join('');
+        const nc = document.getElementById('nappe-count');
+        if (nc) nc.textContent = `${data.length} point${data.length > 1 ? 's' : ''} de mesure actif${data.length > 1 ? 's' : ''}`;
 
         data.forEach((s, idx) => {
             const ctx = document.getElementById(`n-chart-${idx}`);
@@ -1030,6 +1071,11 @@
         let data = currentDept === 'all' ? fullData.potable : fullData.potable.filter(c => c.dept === currentDept);
         const search = document.getElementById('city-search').value.toLowerCase();
         if (search) data = data.filter(c => c.nom.toLowerCase().includes(search));
+        data = [...data].sort((a, b) => a.nom.localeCompare(b.nom, 'fr'));
+
+        const potCount = document.getElementById('potable-count');
+        const actives = data.filter(c => c.score !== null).length;
+        if (potCount) potCount.textContent = `${actives} commune${actives > 1 ? 's' : ''} avec données actives sur ${data.length}`;
 
         const container = document.getElementById('potable-grid');
         container.innerHTML = '';
@@ -1075,6 +1121,9 @@
         let data = currentDept === 'all' ? fullData.rivieres : fullData.rivieres.filter(r => r.dept === currentDept);
         const search = document.getElementById('river-search').value.toLowerCase();
         if (search) data = data.filter(r => r.nom.toLowerCase().includes(search) || r.commune.toLowerCase().includes(search));
+
+        const rivCount = document.getElementById('riviere-count');
+        if (rivCount) rivCount.textContent = `${data.length} station${data.length > 1 ? 's' : ''} avec données actives`;
 
         const container = document.getElementById('riviere-grid');
         container.innerHTML = '';

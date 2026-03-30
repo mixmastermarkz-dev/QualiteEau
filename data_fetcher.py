@@ -2,6 +2,7 @@ import urllib.request
 import json
 import os
 from datetime import datetime, timedelta
+from zoneinfo import ZoneInfo
 
 # Chemin absolu vers le répertoire du script (pour le cron OVH)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -236,7 +237,7 @@ def get_temperature_meteo(lat, lon):
 # ---------------------------------------------------------------------------
 
 def run_all():
-    today = datetime.now()
+    today = datetime.now(tz=ZoneInfo("Europe/Paris"))
     ten_years_ago = (today - timedelta(days=3650)).strftime("%Y-%m-%d")
     one_year_ago  = (today - timedelta(days=365)).strftime("%Y-%m-%d")
 
@@ -424,8 +425,9 @@ def run_all():
     d_nap = get_json("https://hubeau.eaufrance.fr/api/v1/niveaux_nappes/stations"
                      "?code_departement=34,30&format=json&size=500")
     if d_nap:
+        # Inclure les stations sans date de fin (encore actives) OU avec date fin récente
         active = [s for s in d_nap["data"]
-                  if s.get("date_fin_mesure") and s["date_fin_mesure"] >= "2026-01-01"]
+                  if not s.get("date_fin_mesure") or s["date_fin_mesure"] >= "2024-01-01"]
         for s in active:
             bss = s["code_bss"].replace("/", "%2F")
             d_tr = get_json(f"https://hubeau.eaufrance.fr/api/v1/niveaux_nappes/chroniques_tr"
@@ -438,6 +440,7 @@ def run_all():
             year_ago = d_old["data"][0]["niveau_nappe_eau"] if d_old and d_old.get("data") else None
             nappe_results.append({
                 "nom": s["nom_commune"], "dept": s["code_departement"],
+                "code_bss": s["code_bss"],
                 "current": current, "history": history, "year_ago": year_ago,
                 "lat": s["y"], "lng": s["x"],
                 "color": "#3b82f6" if (year_ago and current > year_ago) else "#ef4444"
@@ -469,7 +472,7 @@ def run_all():
         "243000296": {"nom": "Pays de Sommières",            "dept": "30"},
     }
     QUAL_LABELS = {1:"Bon", 2:"Moyen", 3:"Dégradé", 4:"Mauvais", 5:"Très mauvais", 6:"Extrêmement mauvais", 0:"N.C."}
-    QUAL_COLORS = {1:"#10b981", 2:"#a3e635", 3:"#f59e0b", 4:"#f97316", 5:"#ef4444", 6:"#7c3aed", 0:"#94a3b8"}
+    QUAL_COLORS = {1:"#10b981", 2:"#eab308", 3:"#f59e0b", 4:"#f97316", 5:"#ef4444", 6:"#7c3aed", 0:"#94a3b8"}
     SUB_PARAMS  = [("no2","NO₂"), ("o3","O₃"), ("pm10","PM10"), ("pm25","PM2.5"), ("so2","SO₂")]
 
     air_results = []
