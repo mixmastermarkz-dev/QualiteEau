@@ -965,6 +965,47 @@
                 </div>
             `).join('');
         }
+
+        // Pesticides
+        const pestGrid = document.getElementById('pesticides-grid');
+        if (pestGrid) {
+            const pestData = fullData.pesticides || [];
+            if (!pestData.length) {
+                pestGrid.innerHTML = `<div class="flex items-center gap-4 p-5 bg-slate-50 rounded-2xl border border-slate-200">
+                    <div class="w-10 h-10 bg-slate-200 rounded-2xl flex items-center justify-center text-slate-400 flex-shrink-0 text-lg">📊</div>
+                    <div>
+                        <p class="font-black text-slate-600 text-sm">Aucune molécule détectée dans la période récente</p>
+                        <p class="text-xs text-slate-400 mt-0.5">Données mises à jour hebdomadairement par Atmo Occitanie.</p>
+                    </div>
+                </div>`;
+            } else {
+                const campagne = pestData[0].campagne || '';
+                const dateRef  = pestData[0].date || '';
+                pestGrid.innerHTML = `
+                    <p class="text-xs text-slate-500 mb-3 font-bold">${campagne ? 'Campagne : ' + campagne + ' · ' : ''}Semaine du ${dateRef} · ${pestData.length} molécule${pestData.length > 1 ? 's' : ''} détectée${pestData.length > 1 ? 's' : ''}</p>
+                    <div class="overflow-x-auto rounded-2xl border border-slate-200">
+                        <table class="w-full text-xs">
+                            <thead>
+                                <tr class="bg-slate-50 text-slate-500 uppercase font-black tracking-wide text-[10px]">
+                                    <th class="text-left px-4 py-3">Molécule</th>
+                                    <th class="text-left px-4 py-3 hidden sm:table-cell">Famille</th>
+                                    <th class="text-right px-4 py-3">Concentration</th>
+                                    <th class="text-left px-4 py-3 hidden md:table-cell">Site</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-100">
+                                ${pestData.map((p, i) => `
+                                <tr class="${i % 2 === 0 ? 'bg-white' : 'bg-slate-50/50'} hover:bg-sky-50 transition-colors">
+                                    <td class="px-4 py-3 font-black text-slate-800">${p.molecule}</td>
+                                    <td class="px-4 py-3 text-slate-500 hidden sm:table-cell">${p.famille}</td>
+                                    <td class="px-4 py-3 text-right font-black text-amber-600">${p.valeur} <span class="font-normal text-slate-400">${p.unite}</span></td>
+                                    <td class="px-4 py-3 text-slate-400 hidden md:table-cell truncate max-w-[180px]">${p.site}</td>
+                                </tr>`).join('')}
+                            </tbody>
+                        </table>
+                    </div>`;
+            }
+        }
     }
 
     function switchDept(dept) {

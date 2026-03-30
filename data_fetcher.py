@@ -559,22 +559,74 @@ def run_all():
     print(f"  {len(pollen_results)} départements pollen")
 
     # -----------------------------------------------------------------------
+    # 6. PESTICIDES DANS L'AIR — source : Atmo Occitanie (ArcGIS FeatureServer)
+    # -----------------------------------------------------------------------
+    print("Pesticides dans l'air (Atmo Occitanie)...")
+    pesticide_url = (
+        "https://services9.arcgis.com/7Sr9Ek9c1QTKmbwr/arcgis/rest/services"
+        "/Concentrations_hebdomadaires_Pesticides_sur_la_Region_Occitanie_vue"
+        "/FeatureServer/0/query"
+        "?where=1%3D1"
+        "&outFields=nom_site,molecule,famille,valeur,unite,date_debut,campagne,x_l93,y_l93"
+        "&orderByFields=date_debut+DESC"
+        "&resultRecordCount=8000"
+        "&f=json"
+    )
+    d_pest = get_json(pesticide_url, timeout=60)
+    pesticide_results = []
+    if d_pest and "features" in d_pest:
+        BBOX_X = (700000, 920000)
+        BBOX_Y = (6230000, 6430000)
+        def in_bbox(attrs):
+            x = attrs.get("x_l93") or 0
+            y = attrs.get("y_l93") or 0
+            return BBOX_X[0] <= x <= BBOX_X[1] and BBOX_Y[0] <= y <= BBOX_Y[1]
+        local_features = [f["attributes"] for f in d_pest["features"] if in_bbox(f.get("attributes", {}))]
+        if not local_features:
+            local_features = [f["attributes"] for f in d_pest["features"]]
+        mol_latest = {}
+        for a in local_features:
+            mol = a.get("molecule", "")
+            val = a.get("valeur")
+            if not mol or val is None or val < 0:
+                continue
+            if mol not in mol_latest:
+                mol_latest[mol] = a
+        detected = [(mol, a) for mol, a in mol_latest.items() if a["valeur"] > 0]
+        detected.sort(key=lambda x: x[1]["valeur"], reverse=True)
+        for mol, a in detected:
+            ts = a.get("date_debut")
+            mol_date = datetime.fromtimestamp(ts / 1000, tz=ZoneInfo("Europe/Paris")).strftime("%d/%m/%Y") if ts else ""
+            pesticide_results.append({
+                "molecule": mol,
+                "famille":  a.get("famille", ""),
+                "valeur":   round(a["valeur"], 4),
+                "unite":    a.get("unite", "ng/m³"),
+                "site":     a.get("nom_site", ""),
+                "date":     mol_date,
+                "campagne": a.get("campagne", ""),
+            })
+    print(f"  {len(pesticide_results)} molécules détectées")
+
+    # -----------------------------------------------------------------------
     # SAUVEGARDE
     # -----------------------------------------------------------------------
     final_data = {
-        "nappes":   nappe_results,
-        "potable":  potable,
-        "rivieres": rivieres,
-        "air":      air_results,
-        "pollen":   pollen_results,
-        "updated":  today.strftime("%d/%m/%Y à %H:%M")
+        "nappes":     nappe_results,
+        "potable":    potable,
+        "rivieres":   rivieres,
+        "air":        air_results,
+        "pollen":     pollen_results,
+        "pesticides": pesticide_results,
+        "updated":    today.strftime("%d/%m/%Y à %H:%M")
     }
     out = os.path.join(BASE_DIR, "full_data.json")
     with open(out, "w", encoding="utf-8") as f:
         json.dump(final_data, f, indent=2, ensure_ascii=False)
     print(f"\nfull_data.json généré — {len(nappe_results)} nappes, "
           f"{len(potable)} communes, {len(rivieres)} rivières, "
-          f"{len(air_results)} zones air, {len(pollen_results)} depts pollen.")
+          f"{len(air_results)} zones air, {len(pollen_results)} depts pollen, "
+          f"{len(pesticide_results)} pesticides.")
 
 if __name__ == "__main__":
     run_all()
