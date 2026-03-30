@@ -1259,7 +1259,7 @@
                         labels: t.pts.map(d => d.date),
                         datasets: [{ data: t.pts.map(d => d.valeur), borderColor: t.color, borderWidth: 2.5, pointRadius: 3, pointBackgroundColor: t.pts.map(d => d.color), tension: 0.4, fill: true, backgroundColor: t.color + '18' }]
                     },
-                    options: { plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => `${c.parsed.y} — ${t.pts[c.dataIndex].date}` } } }, scales: { x: { display: false }, y: { display: false } }, maintainAspectRatio: false }
+                    options: { plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => `${c.parsed.y} — ${t.pts[c.dataIndex].date.split('-').reverse().join('/')}` } } }, scales: { x: { display: false }, y: { display: false } }, maintainAspectRatio: false }
                 });
             });
         }, { rootMargin: '200px' });

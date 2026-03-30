@@ -12,7 +12,8 @@ from datetime import date
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 BASE_URL  = "https://www.mon-environnement.fr"
-TODAY     = date.today().strftime("%Y-%m-%d")
+TODAY     = date.today().strftime("%Y-%m-%d")   # pour sitemap (norme ISO)
+TODAY_FR  = date.today().strftime("%d/%m/%Y")   # pour affichage
 YEAR      = date.today().year
 
 # ---------------------------------------------------------------------------
@@ -195,11 +196,18 @@ def score_style(score):
 # COMPOSANTS HTML
 # ---------------------------------------------------------------------------
 
+def iso_to_fr(d: str) -> str:
+    """Convertit YYYY-MM-DD en DD/MM/YYYY, laisse intact si autre format."""
+    if d and d != "—" and len(d) == 10 and d[4] == "-":
+        return d[8:10] + "/" + d[5:7] + "/" + d[0:4]
+    return d or "—"
+
+
 def render_param_row(name, p):
     val    = p.get("valeur")
     unite  = p.get("unite", "")
     color  = p.get("color", "#94a3b8")
-    d      = p.get("date", "—")
+    d      = iso_to_fr(p.get("date", "—"))
     dot    = COLOR_TO_DOT.get(color, "bg-slate-300")
     val_str = str(val) if val is not None else "—"
     return (
@@ -407,7 +415,7 @@ def build_page(commune, neighbors_html, json_ld, slug):
         </div>
         <div class="bg-white rounded-2xl border border-slate-200 p-4">
             <p class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-1">Mis à jour</p>
-            <p class="font-black text-slate-800 text-sm">{TODAY}</p>
+            <p class="font-black text-slate-800 text-sm">{TODAY_FR}</p>
         </div>
     </div>
 
