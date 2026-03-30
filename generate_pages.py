@@ -364,7 +364,10 @@ def build_page(commune, neighbors_html, json_ld, slug):
     <div class="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between gap-4">
         <a href="/" class="flex items-center gap-3 group">
             <span class="text-slate-400 group-hover:text-sky-500 transition-colors text-lg font-black">←</span>
-            <span class="font-black text-slate-700 uppercase tracking-tight text-sm group-hover:text-sky-600 transition-colors">Qualité Air et Eau 34/30</span>
+            <div>
+                <span class="font-black text-slate-700 uppercase tracking-tight text-sm group-hover:text-sky-600 transition-colors">Qualité Air et Eau 34/30</span>
+                <p class="text-[10px] text-slate-400 italic mt-0.5">📡 Données mises à jour quotidiennement à 11h</p>
+            </div>
         </a>
         <span class="text-xs font-bold text-slate-400 uppercase tracking-widest hidden md:block">{dept_label}</span>
     </div>

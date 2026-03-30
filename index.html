@@ -6,7 +6,7 @@
 	
     <!-- ═══ SEO PRIMAIRE ═══ -->
     <title>Qualité Air &amp; Eau — Surveillance environnementale en France | Mon-Environnement.fr</title>
-    <meta name="description" content="Surveillez la qualité de l'air, de l'eau potable, des rivières et des nappes phréatiques en temps réel. Données officielles ARS, Atmo, Hub'Eau, BRGM.">
+    <meta name="description" content="Qualité de l'air (IQA, pesticides dans l'air) et de l'eau potable en Hérault (34) et Gard (30). Nappes phréatiques, rivières. Données officielles ARS, Atmo Occitanie, Hub'Eau, BRGM.">
     <meta name="keywords" content="qualité air eau Hérault, qualité air Gard, qualité eau potable Montpellier, qualité air Nîmes, IQA pollen Occitanie, nappes phréatiques 34 30, qualité rivières Hérault, nitrates eau potable, Atmo Occitanie, Hub'Eau, ARS">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Qualité Air et Eau 34/30">
@@ -46,6 +46,21 @@
         "target": "https://www.mon-environnement.fr/?q={search_term_string}",
         "query-input": "required name=search_term_string"
       }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dataset",
+      "name": "Pesticides dans l'air — Hérault et Gard",
+      "description": "Données de présence de pesticides atmosphériques (glyphosate, chlorpyrifos, pendiméthaline, trifluraline, prosulfocarbe) mesurées par Atmo Occitanie dans les départements de l'Hérault (34) et du Gard (30).",
+      "url": "https://www.mon-environnement.fr/#air",
+      "creator": { "@type": "Organization", "name": "Atmo Occitanie", "url": "https://www.atmo-occitanie.org" },
+      "publisher": { "@type": "Organization", "name": "Mon-Environnement.fr", "url": "https://www.mon-environnement.fr/" },
+      "spatialCoverage": "Hérault (34), Gard (30), Occitanie, France",
+      "license": "https://www.etalab.gouv.fr/licence-ouverte-open-licence",
+      "inLanguage": "fr-FR"
     }
     </script>
 
@@ -97,7 +112,6 @@
         <button onclick="closeMenu();switchTab('nappes')"    class="w-full text-left px-4 py-4 rounded-2xl font-bold text-slate-700 hover:bg-slate-50 text-sm min-h-[48px]">💧 Nappes</button>
         <button onclick="closeMenu();switchTab('potable')"  class="w-full text-left px-4 py-4 rounded-2xl font-bold text-slate-700 hover:bg-slate-50 text-sm min-h-[48px]">🚰 Eau Potable</button>
         <button onclick="closeMenu();switchTab('rivieres')" class="w-full text-left px-4 py-4 rounded-2xl font-bold text-slate-700 hover:bg-slate-50 text-sm min-h-[48px]">🌊 Qualité Rivières</button>
-        <button onclick="closeMenu();switchTab('carte')"    class="w-full text-left px-4 py-4 rounded-2xl font-bold text-slate-700 hover:bg-slate-50 text-sm min-h-[48px]">🗺️ Carte</button>
         <button onclick="closeMenu();switchTab('air')"      class="w-full text-left px-4 py-4 rounded-2xl font-bold text-slate-700 hover:bg-slate-50 text-sm min-h-[48px]">🌬️ Qualité de l'Air</button>
         <a href="/eau-potable/" onclick="closeMenu()"       class="flex items-center px-4 py-4 rounded-2xl font-bold text-slate-700 hover:bg-slate-50 text-sm min-h-[48px]">🏘️ Communes</a>
         <button onclick="closeMenu();switchTab('methode')"  class="w-full text-left px-4 py-4 rounded-2xl font-bold text-slate-700 hover:bg-slate-50 text-sm min-h-[48px]">📋 Sources & Méthode</button>
@@ -172,7 +186,7 @@
             <div>
                 <h1 class="text-3xl md:text-4xl font-black tracking-tight uppercase leading-tight">QUALITÉ <span class="text-sky-500">AIR ET EAU</span></h1>
                 <p class="text-slate-500 text-sm font-medium italic">Surveillance Hérault (34) & Gard (30)</p>
-                <p id="updated-subtitle" class="text-[10px] font-bold text-slate-400 uppercase tracking-tighter mt-1 hidden"></p>
+                <p id="updated-subtitle" class="text-[11px] text-slate-400 italic mt-1 hidden"></p>
             </div>
         </div>
         <div class="flex items-center gap-4">
@@ -241,7 +255,6 @@
         <button onclick="switchTab('nappes')" id="tab-nappes" class="pb-4 text-base font-black text-slate-400 hover:text-slate-600 transition-all tab-active uppercase tracking-wider">Nappes</button>
         <button onclick="switchTab('potable')" id="tab-potable" class="pb-4 text-base font-black text-slate-400 hover:text-slate-600 transition-all uppercase tracking-wider">Eau Potable</button>
         <button onclick="switchTab('rivieres')" id="tab-rivieres" class="pb-4 text-base font-black text-slate-400 hover:text-slate-600 transition-all uppercase tracking-wider">Qualité Rivières</button>
-        <button onclick="switchTab('carte')" id="tab-carte" class="pb-4 text-base font-black text-slate-400 hover:text-slate-600 transition-all uppercase tracking-wider">Carte</button>
         <button onclick="switchTab('air')" id="tab-air" class="pb-4 text-base font-black text-slate-400 hover:text-slate-600 transition-all uppercase tracking-wider">Qualité de l'Air</button>
         <a href="/eau-potable/" class="pb-4 text-base font-black text-slate-400 hover:text-sky-600 transition-all uppercase tracking-wider">Communes</a>
         <button onclick="switchTab('methode')" id="tab-methode" class="pb-4 text-base font-black text-slate-400 hover:text-slate-600 transition-all uppercase tracking-wider">Sources & Méthode</button>
@@ -445,22 +458,53 @@
     <!-- ====== SECTION QUALITÉ DE L'AIR ====== -->
     <div id="section-air" class="hidden space-y-8">
 
+        <h2 class="text-2xl font-black uppercase">Qualité de l'Air en Hérault (34) et Gard (30)</h2>
+
         <!-- Explication -->
         <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-200 flex flex-col md:flex-row gap-6 items-start">
             <div class="flex-shrink-0 w-12 h-12 bg-sky-500 text-white rounded-2xl flex items-center justify-center text-2xl">🌬️</div>
             <div class="space-y-2 text-[13px] leading-relaxed text-slate-600">
                 <p class="text-base font-black text-slate-800 uppercase tracking-tight">Indice de Qualité de l'Air (IQA) & Pollen</p>
                 <p>L'<strong>IQA</strong> est calculé chaque jour par Atmo Occitanie à partir de 5 polluants : NO₂ (dioxyde d'azote), O₃ (ozone), PM10 et PM2.5 (particules fines), SO₂ (dioxyde de soufre). Il reflète le polluant le plus défavorable.</p>
-                <div class="flex flex-wrap gap-3 pt-1">
-                    <span class="flex items-center gap-1 text-xs font-black"><span class="w-3 h-3 rounded-full bg-emerald-500 inline-block"></span> Bon</span>
-                    <span class="flex items-center gap-1 text-xs font-black"><span class="w-3 h-3 rounded-full bg-lime-400 inline-block"></span> Moyen</span>
-                    <span class="flex items-center gap-1 text-xs font-black"><span class="w-3 h-3 rounded-full bg-amber-400 inline-block"></span> Dégradé</span>
-                    <span class="flex items-center gap-1 text-xs font-black"><span class="w-3 h-3 rounded-full bg-orange-500 inline-block"></span> Mauvais</span>
-                    <span class="flex items-center gap-1 text-xs font-black"><span class="w-3 h-3 rounded-full bg-red-500 inline-block"></span> Très mauvais</span>
-                    <span class="flex items-center gap-1 text-xs font-black"><span class="w-3 h-3 rounded-full bg-purple-700 inline-block"></span> Extrêmement mauvais</span>
-                </div>
                 <p class="text-slate-400 text-[11px]">Source : Atmo Occitanie · Données journalières prévisionnelles · Mise à jour chaque matin.</p>
                 <p class="text-slate-400 text-[11px]">Les zones IQA couvrent les principales agglomérations de plus de 1 000 habitants des départements 34 et 30.</p>
+            </div>
+        </div>
+
+        <!-- LÉGENDE IQA COMPLÈTE -->
+        <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-200">
+            <h3 class="text-sm font-black text-slate-700 uppercase tracking-widest mb-4">Légende — Indice de Qualité de l'Air</h3>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+                <div class="flex flex-col items-center gap-2 p-3 rounded-2xl bg-emerald-50 border border-emerald-100">
+                    <div class="w-10 h-10 rounded-full bg-emerald-500 flex items-center justify-center text-white font-black text-sm">1-2</div>
+                    <p class="text-[10px] font-black text-emerald-700 uppercase text-center">Bon</p>
+                    <p class="text-[9px] text-emerald-600 text-center leading-tight">Aucune restriction</p>
+                </div>
+                <div class="flex flex-col items-center gap-2 p-3 rounded-2xl bg-yellow-50 border border-yellow-100">
+                    <div class="w-10 h-10 rounded-full bg-yellow-400 flex items-center justify-center text-white font-black text-sm">3-4</div>
+                    <p class="text-[10px] font-black text-yellow-700 uppercase text-center">Moyen</p>
+                    <p class="text-[9px] text-yellow-600 text-center leading-tight">Personnes sensibles</p>
+                </div>
+                <div class="flex flex-col items-center gap-2 p-3 rounded-2xl bg-orange-50 border border-orange-100">
+                    <div class="w-10 h-10 rounded-full bg-orange-400 flex items-center justify-center text-white font-black text-sm">5-6</div>
+                    <p class="text-[10px] font-black text-orange-700 uppercase text-center">Dégradé</p>
+                    <p class="text-[9px] text-orange-600 text-center leading-tight">Limiter les efforts</p>
+                </div>
+                <div class="flex flex-col items-center gap-2 p-3 rounded-2xl bg-red-50 border border-red-100">
+                    <div class="w-10 h-10 rounded-full bg-red-500 flex items-center justify-center text-white font-black text-sm">7-8</div>
+                    <p class="text-[10px] font-black text-red-700 uppercase text-center">Mauvais</p>
+                    <p class="text-[9px] text-red-600 text-center leading-tight">Éviter l'extérieur</p>
+                </div>
+                <div class="flex flex-col items-center gap-2 p-3 rounded-2xl bg-rose-50 border border-rose-200">
+                    <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-black text-sm" style="background:#9b1c2e">9-10</div>
+                    <p class="text-[10px] font-black uppercase text-center" style="color:#9b1c2e">Très mauvais</p>
+                    <p class="text-[9px] text-rose-700 text-center leading-tight">Rester à l'intérieur</p>
+                </div>
+                <div class="flex flex-col items-center gap-2 p-3 rounded-2xl bg-purple-50 border border-purple-100">
+                    <div class="w-10 h-10 rounded-full bg-purple-700 flex items-center justify-center text-white font-black text-[9px]">10+</div>
+                    <p class="text-[10px] font-black text-purple-700 uppercase text-center">Extrêmement mauvais</p>
+                    <p class="text-[9px] text-purple-600 text-center leading-tight">Confinement conseillé</p>
+                </div>
             </div>
         </div>
 
@@ -474,6 +518,135 @@
         <div>
             <h2 class="text-2xl font-black uppercase mb-4">Risque Pollinique</h2>
             <div id="pollen-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
+        </div>
+
+        <!-- COMPRENDRE LES POLLUANTS -->
+        <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-200">
+            <h2 class="text-xl font-black uppercase mb-6 flex items-center gap-3">
+                <span class="w-10 h-10 bg-sky-500 text-white rounded-2xl flex items-center justify-center text-base flex-shrink-0">⚗</span>
+                Comprendre les polluants
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="w-2 h-8 rounded-full bg-amber-500 flex-shrink-0"></span>
+                        <div>
+                            <p class="font-black text-slate-800 text-sm">NO₂ — Dioxyde d'azote</p>
+                            <p class="text-[10px] font-bold text-amber-600 uppercase">Trafic routier · Combustion</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-500 leading-relaxed">Seuil européen : <strong>40 µg/m³/an</strong>. Irritation des voies respiratoires, aggravation de l'asthme, risque accru d'infections pulmonaires.</p>
+                </div>
+                <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="w-2 h-8 rounded-full bg-sky-400 flex-shrink-0"></span>
+                        <div>
+                            <p class="font-black text-slate-800 text-sm">O₃ — Ozone</p>
+                            <p class="text-[10px] font-bold text-sky-600 uppercase">Réaction UV + polluants</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-500 leading-relaxed">Seuil européen : <strong>120 µg/m³ sur 8h</strong>. Irritation des yeux, toux, essoufflement. Pics en été par temps chaud et ensoleillé.</p>
+                </div>
+                <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="w-2 h-8 rounded-full bg-orange-400 flex-shrink-0"></span>
+                        <div>
+                            <p class="font-black text-slate-800 text-sm">PM10 — Particules</p>
+                            <p class="text-[10px] font-bold text-orange-600 uppercase">Poussières · Agriculture · Trafic</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-500 leading-relaxed">Seuil européen : <strong>40 µg/m³/an</strong>. Pénètrent dans les voies respiratoires. Risques cardio-vasculaires et respiratoires à long terme.</p>
+                </div>
+                <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="w-2 h-8 rounded-full bg-red-500 flex-shrink-0"></span>
+                        <div>
+                            <p class="font-black text-slate-800 text-sm">PM2.5 — Particules fines</p>
+                            <p class="text-[10px] font-bold text-red-600 uppercase">Combustion · Industrie</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-500 leading-relaxed">Seuil européen : <strong>25 µg/m³/an</strong>. Pénètrent jusqu'aux alvéoles pulmonaires. Cancérigène avéré (CIRC). Plus dangereuses que les PM10.</p>
+                </div>
+                <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="w-2 h-8 rounded-full bg-yellow-600 flex-shrink-0"></span>
+                        <div>
+                            <p class="font-black text-slate-800 text-sm">SO₂ — Dioxyde de soufre</p>
+                            <p class="text-[10px] font-bold text-yellow-700 uppercase">Industrie · Centrales thermiques</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-500 leading-relaxed">Seuil européen : <strong>125 µg/m³/jour</strong>. Bronchospasmes, irritation des yeux et de la gorge. Précurseur des pluies acides.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- PESTICIDES DANS L'AIR -->
+        <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-200">
+            <h2 class="text-xl font-black uppercase mb-2 flex items-center gap-3">
+                <span class="w-10 h-10 bg-green-600 text-white rounded-2xl flex items-center justify-center text-base flex-shrink-0">🌿</span>
+                Pesticides dans l'Air — Hérault &amp; Gard
+            </h2>
+            <p class="text-[11px] text-slate-400 uppercase font-bold tracking-widest mb-4">Source : Atmo Occitanie — campagnes de mesure pesticides</p>
+            <p class="text-sm text-slate-600 leading-relaxed mb-6">
+                Les pesticides ne restent pas uniquement dans les sols et l'eau. Une partie s'évapore et se retrouve dans l'air que nous respirons, notamment lors des traitements agricoles. Atmo Occitanie mesure régulièrement leur présence dans l'atmosphère.
+            </p>
+            <div id="pesticides-grid">
+                <div class="flex items-center gap-4 p-5 bg-slate-50 rounded-2xl border border-slate-200">
+                    <div class="w-10 h-10 bg-slate-200 rounded-2xl flex items-center justify-center text-slate-400 flex-shrink-0 text-lg">📊</div>
+                    <div>
+                        <p class="font-black text-slate-600 text-sm">Données en cours de collecte</p>
+                        <p class="text-xs text-slate-400 mt-0.5">Prochaine campagne de mesure : printemps 2026 — Les données seront affichées ici dès leur publication par Atmo Occitanie.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5 p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                <p class="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-3">Molécules surveillées</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-white border border-slate-200 rounded-xl text-[10px] font-black text-slate-600 uppercase">Glyphosate</span>
+                    <span class="px-3 py-1 bg-white border border-slate-200 rounded-xl text-[10px] font-black text-slate-600 uppercase">Chlorpyrifos</span>
+                    <span class="px-3 py-1 bg-white border border-slate-200 rounded-xl text-[10px] font-black text-slate-600 uppercase">Pendiméthaline</span>
+                    <span class="px-3 py-1 bg-white border border-slate-200 rounded-xl text-[10px] font-black text-slate-600 uppercase">Trifluraline</span>
+                    <span class="px-3 py-1 bg-white border border-slate-200 rounded-xl text-[10px] font-black text-slate-600 uppercase">Prosulfocarbe</span>
+                </div>
+                <p class="text-[9px] text-slate-400 mt-3 italic">Données issues des campagnes de mesure ponctuelles d'Atmo Occitanie. Mise à jour selon disponibilité des données.</p>
+            </div>
+        </div>
+
+        <!-- CONSEILS SANTÉ -->
+        <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-200">
+            <h2 class="text-xl font-black uppercase mb-6 flex items-center gap-3">
+                <span class="w-10 h-10 bg-rose-500 text-white rounded-2xl flex items-center justify-center flex-shrink-0">❤</span>
+                Que faire selon l'indice ?
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="p-5 bg-slate-50 rounded-2xl border border-slate-100">
+                    <p class="font-black text-slate-800 text-sm uppercase mb-3">👥 Population générale</p>
+                    <div class="space-y-2 text-xs text-slate-600 leading-relaxed">
+                        <div class="flex items-start gap-2"><span class="w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0 mt-1"></span><span><strong>IQA 1-4 :</strong> Activités normales sans restriction.</span></div>
+                        <div class="flex items-start gap-2"><span class="w-2 h-2 rounded-full bg-orange-400 flex-shrink-0 mt-1"></span><span><strong>IQA 5-6 :</strong> Aérer le logement tôt le matin ou le soir.</span></div>
+                        <div class="flex items-start gap-2"><span class="w-2 h-2 rounded-full bg-red-500 flex-shrink-0 mt-1"></span><span><strong>IQA 7-8 :</strong> Éviter les déplacements inutiles en voiture.</span></div>
+                        <div class="flex items-start gap-2"><span class="w-2 h-2 rounded-full bg-purple-700 flex-shrink-0 mt-1"></span><span><strong>IQA 9+ :</strong> Rester à l'intérieur, vitres fermées.</span></div>
+                    </div>
+                </div>
+                <div class="p-5 bg-amber-50 rounded-2xl border border-amber-100">
+                    <p class="font-black text-amber-800 text-sm uppercase mb-1">⚕ Personnes sensibles</p>
+                    <p class="text-[10px] text-amber-600 font-bold uppercase mb-3">Asthmatiques · Personnes âgées · Enfants</p>
+                    <div class="space-y-2 text-xs text-amber-700 leading-relaxed">
+                        <div class="flex items-start gap-2"><span class="w-2 h-2 rounded-full bg-yellow-400 flex-shrink-0 mt-1"></span><span><strong>IQA 3-4 :</strong> Surveiller les symptômes, avoir son traitement à portée.</span></div>
+                        <div class="flex items-start gap-2"><span class="w-2 h-2 rounded-full bg-orange-500 flex-shrink-0 mt-1"></span><span><strong>IQA 5-6 :</strong> Limiter les sorties prolongées, éviter les efforts.</span></div>
+                        <div class="flex items-start gap-2"><span class="w-2 h-2 rounded-full bg-red-500 flex-shrink-0 mt-1"></span><span><strong>IQA 7+ :</strong> Rester à l'intérieur. Consulter si symptômes.</span></div>
+                    </div>
+                </div>
+                <div class="p-5 bg-sky-50 rounded-2xl border border-sky-100">
+                    <p class="font-black text-sky-800 text-sm uppercase mb-1">🏃 Sportifs</p>
+                    <p class="text-[10px] text-sky-600 font-bold uppercase mb-3">Activité physique extérieure</p>
+                    <div class="space-y-2 text-xs text-sky-700 leading-relaxed">
+                        <div class="flex items-start gap-2"><span class="w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0 mt-1"></span><span><strong>IQA 1-4 :</strong> Sport en extérieur sans restriction.</span></div>
+                        <div class="flex items-start gap-2"><span class="w-2 h-2 rounded-full bg-orange-400 flex-shrink-0 mt-1"></span><span><strong>IQA 5-6 :</strong> Préférer le matin tôt, réduire l'intensité.</span></div>
+                        <div class="flex items-start gap-2"><span class="w-2 h-2 rounded-full bg-red-500 flex-shrink-0 mt-1"></span><span><strong>IQA 7+ :</strong> Reporter l'activité en intérieur ou annuler.</span></div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
@@ -642,12 +815,26 @@
     const PARAMS_POTABLE = ["Nitrates","pH","Chlore","Bactériologie","Calcaire (TH)","Aluminium","Plomb","Pesticides","THM","Conductivité","PFAS"];
     const PARAMS_RIVIERE = ["Temp. air","Temp. eau","Nitrates","Phosphore","pH","Conductivité","O2 saturation","MES","Ammonium"];
 
+    function formatUpdatedDate(raw) {
+        // raw = "30/03/2026 à 09:05"
+        const m = raw.match(/(\d{2})\/(\d{2})\/(\d{4}) à (\d{2}):(\d{2})/);
+        if (!m) return raw;
+        const [,day,month,year,h,min] = m;
+        const d = new Date(+year, +month-1, +day);
+        const jours = ['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+        const mois  = ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
+        return `${jours[d.getDay()]} ${+day} ${mois[+month-1]} ${year} à ${h}h${min}`;
+    }
+
     async function init() {
         const res = await fetch('full_data.json');
         fullData = await res.json();
         document.getElementById('updated-at').innerText = "Actualisé le " + fullData.updated;
         const subtitle = document.getElementById('updated-subtitle');
-        if (subtitle) { subtitle.textContent = "Données mises à jour le " + fullData.updated; subtitle.classList.remove('hidden'); }
+        if (subtitle) {
+            subtitle.innerHTML = `📡 Données mises à jour quotidiennement à 11h &mdash; Dernière mise à jour : ${formatUpdatedDate(fullData.updated)}`;
+            subtitle.classList.remove('hidden');
+        }
         document.getElementById('stat-communes').innerText = fullData.potable.length;
         document.getElementById('stat-rivieres').innerText = fullData.rivieres.length;
 
@@ -670,8 +857,10 @@
     function switchTab(tab) {
         currentTab = tab;
         ['nappes','potable','rivieres','carte','air','methode'].forEach(s => {
-            document.getElementById(`section-${s}`).classList.toggle('hidden', s !== tab);
-            document.getElementById(`tab-${s}`).classList.toggle('tab-active', s === tab);
+            const sect  = document.getElementById(`section-${s}`);
+            const tabEl = document.getElementById(`tab-${s}`);
+            if (sect)  sect.classList.toggle('hidden', s !== tab);
+            if (tabEl) tabEl.classList.toggle('tab-active', s === tab);
         });
         document.getElementById('dept-selector').classList.toggle('hidden', tab === 'methode' || tab === 'air');
         if (tab === 'nappes') { renderNappes(); if (mapNappes) setTimeout(() => mapNappes.invalidateSize(), 200); }
