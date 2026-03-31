@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qualité de l'eau et de l'air par département — Mon-Environnement.fr</title>
+    <meta name="description" content="Accédez aux données de qualité de l'eau potable, rivières, nappes phréatiques et qualité de l'air pour chacun des 96 départements français métropolitains.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.mon-environnement.fr/departement/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.mon-environnement.fr/departement/">
+    <meta property="og:title" content="Qualité de l'eau et de l'air par département — Mon-Environnement.fr">
+    <meta property="og:description" content="Données environnementales officielles pour les 96 départements français. Eau potable, rivières, nappes phréatiques, qualité de l'air.">
+    <meta property="og:locale" content="fr_FR">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #side-drawer { transform: translateX(-100%); transition: transform 0.28s cubic-bezier(.4,0,.2,1); }
+        #side-drawer.open { transform: translateX(0); }
+        #menu-overlay { opacity: 0; pointer-events: none; transition: opacity 0.28s ease; }
+        #menu-overlay.open { opacity: 1; pointer-events: auto; }
+    </style>
+</head>
+<body class="bg-slate-100 min-h-screen font-sans antialiased text-slate-900 flex flex-col">
+
+<!-- OVERLAY -->
+<div id="menu-overlay" class="fixed inset-0 bg-black/40 z-[200]" onclick="closeMenu()"></div>
+
+<!-- SIDE DRAWER -->
+<nav id="side-drawer" class="fixed top-0 left-0 h-full w-72 bg-white shadow-2xl z-[201] flex flex-col">
+    <div class="p-5 border-b border-slate-100 flex justify-between items-center">
+        <span class="font-black uppercase text-slate-800 tracking-tight text-sm">Mon-Environnement.fr</span>
+        <button onclick="closeMenu()" class="w-9 h-9 flex items-center justify-center rounded-xl text-slate-400 hover:text-slate-700 hover:bg-slate-100 text-xl leading-none">&times;</button>
+    </div>
+    <div class="flex-grow overflow-y-auto p-3 space-y-1">
+        <a href="/"                  class="flex items-center px-4 py-4 rounded-2xl font-bold text-slate-700 hover:bg-slate-50 text-sm min-h-[48px]">🏠 Accueil</a>
+        <a href="/departement/"      class="flex items-center px-4 py-4 rounded-2xl font-bold text-sky-600 bg-sky-50 text-sm min-h-[48px]">📍 Tous les départements</a>
+        <a href="/eau-potable/"      class="flex items-center px-4 py-4 rounded-2xl font-bold text-slate-700 hover:bg-slate-50 text-sm min-h-[48px]">🏘️ Communes (34/30)</a>
+        <a href="/contact.html"      class="flex items-center px-4 py-4 rounded-2xl font-bold text-slate-700 hover:bg-slate-50 text-sm min-h-[48px]">✉️ Contact</a>
+        <a href="/mentions-legales.html" class="flex items-center px-4 py-4 rounded-2xl font-bold text-slate-700 hover:bg-slate-50 text-sm min-h-[48px]">📄 Mentions légales</a>
+    </div>
+</nav>
+
+<!-- HEADER -->
+<header class="bg-white border-b border-slate-200 shadow-sm">
+    <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+            <button onclick="toggleMenu()" class="flex items-center justify-center w-11 h-11 rounded-2xl bg-slate-100 hover:bg-slate-200 transition-colors" aria-label="Menu">
+                <svg class="w-5 h-5 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+            <div>
+                <a href="/" class="font-black text-slate-700 uppercase tracking-tight text-sm hover:text-sky-600 transition-colors">Qualité Air et Eau 34/30</a>
+                <p class="text-[10px] text-slate-400 italic mt-0.5">📡 Données mises à jour quotidiennement à 11h</p>
+            </div>
+        </div>
+        <a href="/" class="text-xs font-bold text-slate-400 hover:text-sky-500 transition-colors hidden md:block">← Retour à l'accueil</a>
+    </div>
+</header>
+
+<!-- MAIN -->
+<main class="max-w-5xl mx-auto px-4 py-10 flex-grow w-full">
+
+    <div class="mb-10">
+        <p class="text-xs font-black text-slate-400 uppercase tracking-widest mb-2">Mon-Environnement.fr · Couverture nationale</p>
+        <h1 class="text-3xl md:text-4xl font-black uppercase leading-tight">Tous les <span class="text-sky-600">départements</span></h1>
+        <p class="text-slate-500 text-sm mt-3 max-w-2xl leading-relaxed">
+            Consultez les données de qualité de l'eau potable, des rivières, des nappes phréatiques
+            et de la qualité de l'air pour chacun des 96 départements français métropolitains.
+            Données officielles ARS, Hub'Eau, Atmo, BRGM.
+        </p>
+        <div class="mt-4 flex flex-wrap gap-3 text-xs font-bold text-slate-500">
+            <span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-emerald-500 inline-block"></span> Score ≥ 80 — Bonne qualité</span>
+            <span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-amber-400 inline-block"></span> Score 50–79 — Qualité moyenne</span>
+            <span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-red-500 inline-block"></span> Score &lt; 50 — Mauvaise qualité</span>
+            <span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-slate-300 inline-block"></span> Données en cours de collecte</span>
+        </div>
+    </div>
+
+    <!-- NOTE PHASE 1 -->
+    <div class="mb-8 p-4 bg-sky-50 border border-sky-200 rounded-2xl text-sm text-sky-700 flex items-start gap-3">
+        <span class="text-lg flex-shrink-0">🚧</span>
+        <p>
+            <strong>Extension nationale en cours.</strong>
+            Les pages par département sont en cours de déploiement.
+            Les données Hérault (34) et Gard (30) sont disponibles depuis le tableau de bord principal.
+        </p>
+    </div>
+
+    <!-- AUVERGNE-RHÔNE-ALPES -->
+    <section class="mb-10">
+        <h2 class="text-base font-black uppercase tracking-tight text-slate-600 mb-4 flex items-center gap-3">
+            <span class="px-2.5 py-1 bg-slate-100 rounded-xl text-xs font-black text-slate-500">12 depts</span>
+            Auvergne-Rhône-Alpes
+        </h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
+            <a href="/departement/ain/"                  class="dept-card"><span class="dept-num">01</span><span>Ain</span></a>
+            <a href="/departement/allier/"               class="dept-card"><span class="dept-num">03</span><span>Allier</span></a>
+            <a href="/departement/ardeche/"              class="dept-card"><span class="dept-num">07</span><span>Ardèche</span></a>
+            <a href="/departement/cantal/"               class="dept-card"><span class="dept-num">15</span><span>Cantal</span></a>
+            <a href="/departement/drome/"                class="dept-card"><span class="dept-num">26</span><span>Drôme</span></a>
+            <a href="/departement/isere/"                class="dept-card"><span class="dept-num">38</span><span>Isère</span></a>
+            <a href="/departement/loire/"                class="dept-card"><span class="dept-num">42</span><span>Loire</span></a>
+            <a href="/departement/haute-loire/"          class="dept-card"><span class="dept-num">43</span><span>Haute-Loire</span></a>
+            <a href="/departement/puy-de-dome/"          class="dept-card"><span class="dept-num">63</span><span>Puy-de-Dôme</span></a>
+            <a href="/departement/rhone/"                class="dept-card"><span class="dept-num">69</span><span>Rhône</span></a>
+            <a href="/departement/savoie/"               class="dept-card"><span class="dept-num">73</span><span>Savoie</span></a>
+            <a href="/departement/haute-savoie/"         class="dept-card"><span class="dept-num">74</span><span>Haute-Savoie</span></a>
+        </div>
+    </section>
+
+    <!-- BOURGOGNE-FRANCHE-COMTÉ -->
+    <section class="mb-10">
+        <h2 class="text-base font-black uppercase tracking-tight text-slate-600 mb-4 flex items-center gap-3">
+            <span class="px-2.5 py-1 bg-slate-100 rounded-xl text-xs font-black text-slate-500">8 depts</span>
+            Bourgogne-Franche-Comté
+        </h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
+            <a href="/departement/cote-d-or/"            class="dept-card"><span class="dept-num">21</span><span>Côte-d'Or</span></a>
+            <a href="/departement/doubs/"                class="dept-card"><span class="dept-num">25</span><span>Doubs</span></a>
+            <a href="/departement/jura/"                 class="dept-card"><span class="dept-num">39</span><span>Jura</span></a>
+            <a href="/departement/nievre/"               class="dept-card"><span class="dept-num">58</span><span>Nièvre</span></a>
+            <a href="/departement/haute-saone/"          class="dept-card"><span class="dept-num">70</span><span>Haute-Saône</span></a>
+            <a href="/departement/saone-et-loire/"       class="dept-card"><span class="dept-num">71</span><span>Saône-et-Loire</span></a>
+            <a href="/departement/yonne/"                class="dept-card"><span class="dept-num">89</span><span>Yonne</span></a>
+            <a href="/departement/territoire-de-belfort/" class="dept-card"><span class="dept-num">90</span><span>Territoire de Belfort</span></a>
+        </div>
+    </section>
+
+    <!-- BRETAGNE -->
+    <section class="mb-10">
+        <h2 class="text-base font-black uppercase tracking-tight text-slate-600 mb-4 flex items-center gap-3">
+            <span class="px-2.5 py-1 bg-slate-100 rounded-xl text-xs font-black text-slate-500">4 depts</span>
+            Bretagne
+        </h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
+            <a href="/departement/cotes-d-armor/"        class="dept-card"><span class="dept-num">22</span><span>Côtes-d'Armor</span></a>
+            <a href="/departement/finistere/"            class="dept-card"><span class="dept-num">29</span><span>Finistère</span></a>
+            <a href="/departement/ille-et-vilaine/"      class="dept-card"><span class="dept-num">35</span><span>Ille-et-Vilaine</span></a>
+            <a href="/departement/morbihan/"             class="dept-card"><span class="dept-num">56</span><span>Morbihan</span></a>
+        </div>
+    </section>
+
+    <!-- CENTRE-VAL DE LOIRE -->
+    <section class="mb-10">
+        <h2 class="text-base font-black uppercase tracking-tight text-slate-600 mb-4 flex items-center gap-3">
+            <span class="px-2.5 py-1 bg-slate-100 rounded-xl text-xs font-black text-slate-500">6 depts</span>
+            Centre-Val de Loire
+        </h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
+            <a href="/departement/cher/"                 class="dept-card"><span class="dept-num">18</span><span>Cher</span></a>
+            <a href="/departement/eure-et-loir/"         class="dept-card"><span class="dept-num">28</span><span>Eure-et-Loir</span></a>
+            <a href="/departement/indre/"                class="dept-card"><span class="dept-num">36</span><span>Indre</span></a>
+            <a href="/departement/indre-et-loire/"       class="dept-card"><span class="dept-num">37</span><span>Indre-et-Loire</span></a>
+            <a href="/departement/loir-et-cher/"         class="dept-card"><span class="dept-num">41</span><span>Loir-et-Cher</span></a>
+            <a href="/departement/loiret/"               class="dept-card"><span class="dept-num">45</span><span>Loiret</span></a>
+        </div>
+    </section>
+
+    <!-- CORSE -->
+    <section class="mb-10">
+        <h2 class="text-base font-black uppercase tracking-tight text-slate-600 mb-4 flex items-center gap-3">
+            <span class="px-2.5 py-1 bg-slate-100 rounded-xl text-xs font-black text-slate-500">2 depts</span>
+            Corse
+        </h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
+            <a href="/departement/corse-du-sud/"         class="dept-card"><span class="dept-num">2A</span><span>Corse-du-Sud</span></a>
+            <a href="/departement/haute-corse/"          class="dept-card"><span class="dept-num">2B</span><span>Haute-Corse</span></a>
+        </div>
+    </section>
+
+    <!-- GRAND EST -->
+    <section class="mb-10">
+        <h2 class="text-base font-black uppercase tracking-tight text-slate-600 mb-4 flex items-center gap-3">
+            <span class="px-2.5 py-1 bg-slate-100 rounded-xl text-xs font-black text-slate-500">10 depts</span>
+            Grand Est
+        </h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
+            <a href="/departement/ardennes/"             class="dept-card"><span class="dept-num">08</span><span>Ardennes</span></a>
+            <a href="/departement/aube/"                 class="dept-card"><span class="dept-num">10</span><span>Aube</span></a>
+            <a href="/departement/marne/"                class="dept-card"><span class="dept-num">51</span><span>Marne</span></a>
+            <a href="/departement/haute-marne/"          class="dept-card"><span class="dept-num">52</span><span>Haute-Marne</span></a>
+            <a href="/departement/meurthe-et-moselle/"   class="dept-card"><span class="dept-num">54</span><span>Meurthe-et-Moselle</span></a>
+            <a href="/departement/meuse/"                class="dept-card"><span class="dept-num">55</span><span>Meuse</span></a>
+            <a href="/departement/moselle/"              class="dept-card"><span class="dept-num">57</span><span>Moselle</span></a>
+            <a href="/departement/bas-rhin/"             class="dept-card"><span class="dept-num">67</span><span>Bas-Rhin</span></a>
+            <a href="/departement/haut-rhin/"            class="dept-card"><span class="dept-num">68</span><span>Haut-Rhin</span></a>
+            <a href="/departement/vosges/"               class="dept-card"><span class="dept-num">88</span><span>Vosges</span></a>
+        </div>
+    </section>
+
+    <!-- HAUTS-DE-FRANCE -->
+    <section class="mb-10">
+        <h2 class="text-base font-black uppercase tracking-tight text-slate-600 mb-4 flex items-center gap-3">
+            <span class="px-2.5 py-1 bg-slate-100 rounded-xl text-xs font-black text-slate-500">5 depts</span>
+            Hauts-de-France
+        </h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
+            <a href="/departement/aisne/"                class="dept-card"><span class="dept-num">02</span><span>Aisne</span></a>
+            <a href="/departement/nord/"                 class="dept-card"><span class="dept-num">59</span><span>Nord</span></a>
+            <a href="/departement/oise/"                 class="dept-card"><span class="dept-num">60</span><span>Oise</span></a>
+            <a href="/departement/pas-de-calais/"        class="dept-card"><span class="dept-num">62</span><span>Pas-de-Calais</span></a>
+            <a href="/departement/somme/"                class="dept-card"><span class="dept-num">80</span><span>Somme</span></a>
+        </div>
+    </section>
+
+    <!-- ÎLE-DE-FRANCE -->
+    <section class="mb-10">
+        <h2 class="text-base font-black uppercase tracking-tight text-slate-600 mb-4 flex items-center gap-3">
+            <span class="px-2.5 py-1 bg-slate-100 rounded-xl text-xs font-black text-slate-500">8 depts</span>
+            Île-de-France
+        </h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
+            <a href="/departement/paris/"                class="dept-card"><span class="dept-num">75</span><span>Paris</span></a>
+            <a href="/departement/seine-et-marne/"       class="dept-card"><span class="dept-num">77</span><span>Seine-et-Marne</span></a>
+            <a href="/departement/yvelines/"             class="dept-card"><span class="dept-num">78</span><span>Yvelines</span></a>
+            <a href="/departement/essonne/"              class="dept-card"><span class="dept-num">91</span><span>Essonne</span></a>
+            <a href="/departement/hauts-de-seine/"       class="dept-card"><span class="dept-num">92</span><span>Hauts-de-Seine</span></a>
+            <a href="/departement/seine-saint-denis/"    class="dept-card"><span class="dept-num">93</span><span>Seine-Saint-Denis</span></a>
+            <a href="/departement/val-de-marne/"         class="dept-card"><span class="dept-num">94</span><span>Val-de-Marne</span></a>
+            <a href="/departement/val-d-oise/"           class="dept-card"><span class="dept-num">95</span><span>Val-d'Oise</span></a>
+        </div>
+    </section>
+
+    <!-- NORMANDIE -->
+    <section class="mb-10">
+        <h2 class="text-base font-black uppercase tracking-tight text-slate-600 mb-4 flex items-center gap-3">
+            <span class="px-2.5 py-1 bg-slate-100 rounded-xl text-xs font-black text-slate-500">5 depts</span>
+            Normandie
+        </h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
+            <a href="/departement/calvados/"             class="dept-card"><span class="dept-num">14</span><span>Calvados</span></a>
+            <a href="/departement/eure/"                 class="dept-card"><span class="dept-num">27</span><span>Eure</span></a>
+            <a href="/departement/manche/"               class="dept-card"><span class="dept-num">50</span><span>Manche</span></a>
+            <a href="/departement/orne/"                 class="dept-card"><span class="dept-num">61</span><span>Orne</span></a>
+            <a href="/departement/seine-maritime/"       class="dept-card"><span class="dept-num">76</span><span>Seine-Maritime</span></a>
+        </div>
+    </section>
+
+    <!-- NOUVELLE-AQUITAINE -->
+    <section class="mb-10">
+        <h2 class="text-base font-black uppercase tracking-tight text-slate-600 mb-4 flex items-center gap-3">
+            <span class="px-2.5 py-1 bg-slate-100 rounded-xl text-xs font-black text-slate-500">12 depts</span>
+            Nouvelle-Aquitaine
+        </h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
+            <a href="/departement/charente/"             class="dept-card"><span class="dept-num">16</span><span>Charente</span></a>
+            <a href="/departement/charente-maritime/"    class="dept-card"><span class="dept-num">17</span><span>Charente-Maritime</span></a>
+            <a href="/departement/correze/"              class="dept-card"><span class="dept-num">19</span><span>Corrèze</span></a>
+            <a href="/departement/creuse/"               class="dept-card"><span class="dept-num">23</span><span>Creuse</span></a>
+            <a href="/departement/dordogne/"             class="dept-card"><span class="dept-num">24</span><span>Dordogne</span></a>
+            <a href="/departement/gironde/"              class="dept-card"><span class="dept-num">33</span><span>Gironde</span></a>
+            <a href="/departement/landes/"               class="dept-card"><span class="dept-num">40</span><span>Landes</span></a>
+            <a href="/departement/lot-et-garonne/"       class="dept-card"><span class="dept-num">47</span><span>Lot-et-Garonne</span></a>
+            <a href="/departement/pyrenees-atlantiques/" class="dept-card"><span class="dept-num">64</span><span>Pyrénées-Atlantiques</span></a>
+            <a href="/departement/deux-sevres/"          class="dept-card"><span class="dept-num">79</span><span>Deux-Sèvres</span></a>
+            <a href="/departement/vienne/"               class="dept-card"><span class="dept-num">86</span><span>Vienne</span></a>
+            <a href="/departement/haute-vienne/"         class="dept-card"><span class="dept-num">87</span><span>Haute-Vienne</span></a>
+        </div>
+    </section>
+
+    <!-- OCCITANIE -->
+    <section class="mb-10">
+        <h2 class="text-base font-black uppercase tracking-tight text-slate-600 mb-4 flex items-center gap-3">
+            <span class="px-2.5 py-1 bg-sky-100 rounded-xl text-xs font-black text-sky-700">13 depts · données disponibles</span>
+            Occitanie
+        </h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
+            <a href="/departement/ariege/"               class="dept-card dept-card-active"><span class="dept-num dept-num-active">09</span><span>Ariège</span></a>
+            <a href="/departement/aude/"                 class="dept-card dept-card-active"><span class="dept-num dept-num-active">11</span><span>Aude</span></a>
+            <a href="/departement/aveyron/"              class="dept-card dept-card-active"><span class="dept-num dept-num-active">12</span><span>Aveyron</span></a>
+            <a href="/departement/gard/"                 class="dept-card dept-card-active"><span class="dept-num dept-num-active">30</span><span>Gard</span></a>
+            <a href="/departement/haute-garonne/"        class="dept-card dept-card-active"><span class="dept-num dept-num-active">31</span><span>Haute-Garonne</span></a>
+            <a href="/departement/gers/"                 class="dept-card dept-card-active"><span class="dept-num dept-num-active">32</span><span>Gers</span></a>
+            <a href="/departement/herault/"              class="dept-card dept-card-active"><span class="dept-num dept-num-active">34</span><span>Hérault</span></a>
+            <a href="/departement/lot/"                  class="dept-card dept-card-active"><span class="dept-num dept-num-active">46</span><span>Lot</span></a>
+            <a href="/departement/lozere/"               class="dept-card dept-card-active"><span class="dept-num dept-num-active">48</span><span>Lozère</span></a>
+            <a href="/departement/hautes-pyrenees/"      class="dept-card dept-card-active"><span class="dept-num dept-num-active">65</span><span>Hautes-Pyrénées</span></a>
+            <a href="/departement/pyrenees-orientales/"  class="dept-card dept-card-active"><span class="dept-num dept-num-active">66</span><span>Pyrénées-Orientales</span></a>
+            <a href="/departement/tarn/"                 class="dept-card dept-card-active"><span class="dept-num dept-num-active">81</span><span>Tarn</span></a>
+            <a href="/departement/tarn-et-garonne/"      class="dept-card dept-card-active"><span class="dept-num dept-num-active">82</span><span>Tarn-et-Garonne</span></a>
+        </div>
+    </section>
+
+    <!-- PAYS DE LA LOIRE -->
+    <section class="mb-10">
+        <h2 class="text-base font-black uppercase tracking-tight text-slate-600 mb-4 flex items-center gap-3">
+            <span class="px-2.5 py-1 bg-slate-100 rounded-xl text-xs font-black text-slate-500">5 depts</span>
+            Pays de la Loire
+        </h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
+            <a href="/departement/loire-atlantique/"     class="dept-card"><span class="dept-num">44</span><span>Loire-Atlantique</span></a>
+            <a href="/departement/maine-et-loire/"       class="dept-card"><span class="dept-num">49</span><span>Maine-et-Loire</span></a>
+            <a href="/departement/mayenne/"              class="dept-card"><span class="dept-num">53</span><span>Mayenne</span></a>
+            <a href="/departement/sarthe/"               class="dept-card"><span class="dept-num">72</span><span>Sarthe</span></a>
+            <a href="/departement/vendee/"               class="dept-card"><span class="dept-num">85</span><span>Vendée</span></a>
+        </div>
+    </section>
+
+    <!-- PROVENCE-ALPES-CÔTE D'AZUR -->
+    <section class="mb-10">
+        <h2 class="text-base font-black uppercase tracking-tight text-slate-600 mb-4 flex items-center gap-3">
+            <span class="px-2.5 py-1 bg-slate-100 rounded-xl text-xs font-black text-slate-500">6 depts</span>
+            Provence-Alpes-Côte d'Azur
+        </h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
+            <a href="/departement/alpes-de-haute-provence/" class="dept-card"><span class="dept-num">04</span><span>Alpes-de-Haute-Provence</span></a>
+            <a href="/departement/hautes-alpes/"         class="dept-card"><span class="dept-num">05</span><span>Hautes-Alpes</span></a>
+            <a href="/departement/alpes-maritimes/"      class="dept-card"><span class="dept-num">06</span><span>Alpes-Maritimes</span></a>
+            <a href="/departement/bouches-du-rhone/"     class="dept-card"><span class="dept-num">13</span><span>Bouches-du-Rhône</span></a>
+            <a href="/departement/var/"                  class="dept-card"><span class="dept-num">83</span><span>Var</span></a>
+            <a href="/departement/vaucluse/"             class="dept-card"><span class="dept-num">84</span><span>Vaucluse</span></a>
+        </div>
+    </section>
+
+    <div class="text-center mt-6">
+        <a href="/" class="inline-flex items-center gap-2 text-sky-600 font-black uppercase text-sm tracking-wider hover:text-sky-800 transition-colors">
+            ← Retour au tableau de bord
+        </a>
+    </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-slate-900 text-white py-10 mt-4">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+        <p class="font-black uppercase text-lg mb-2">QUALITÉ <span class="text-sky-400">AIR ET EAU</span></p>
+        <p class="text-slate-400 text-sm">Surveillance indépendante · Données officielles ARS, Atmo, BRGM, Hub'Eau</p>
+        <div class="mt-4 flex justify-center gap-6 text-xs text-slate-500">
+            <a href="/contact.html" class="hover:text-white transition-colors underline">Contact</a>
+            <a href="/mentions-legales.html" class="hover:text-white transition-colors underline">Mentions légales</a>
+        </div>
+        <p class="text-slate-600 text-xs mt-4">© 2026 Mon-Environnement.fr</p>
+    </div>
+</footer>
+
+<style>
+    .dept-card {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        background: white;
+        border: 1px solid #e2e8f0;
+        border-radius: 1rem;
+        padding: 0.6rem 0.8rem;
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: #475569;
+        transition: all 0.15s;
+        text-decoration: none;
+    }
+    .dept-card:hover {
+        border-color: #38bdf8;
+        color: #0284c7;
+        box-shadow: 0 2px 8px rgba(14,165,233,0.12);
+    }
+    .dept-num {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 22px;
+        background: #f1f5f9;
+        border-radius: 6px;
+        font-size: 0.65rem;
+        font-weight: 900;
+        color: #64748b;
+        flex-shrink: 0;
+    }
+    .dept-card-active {
+        border-color: #bae6fd;
+        background: #f0f9ff;
+    }
+    .dept-card-active:hover {
+        border-color: #0ea5e9;
+        background: #e0f2fe;
+    }
+    .dept-num-active {
+        background: #0ea5e9;
+        color: white;
+    }
+</style>
+
+<script>
+    function toggleMenu() {
+        document.getElementById('side-drawer').classList.toggle('open');
+        document.getElementById('menu-overlay').classList.toggle('open');
+        document.body.style.overflow = document.getElementById('side-drawer').classList.contains('open') ? 'hidden' : '';
+    }
+    function closeMenu() {
+        document.getElementById('side-drawer').classList.remove('open');
+        document.getElementById('menu-overlay').classList.remove('open');
+        document.body.style.overflow = '';
+    }
+    window.addEventListener('resize', () => { if (window.innerWidth >= 768) closeMenu(); });
+</script>
+</body>
+</html>

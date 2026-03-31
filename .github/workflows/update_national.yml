@@ -1,0 +1,217 @@
+name: Mise à jour nationale des données
+
+on:
+  schedule:
+    - cron: '30 9 * * *'   # 09h30 UTC = 11h30 heure française (30 min après le cron existant)
+  workflow_dispatch:
+    inputs:
+      depts:
+        description: 'Codes depts séparés par virgule pour test pilote (ex: 34,30,31,13,75)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+# ─────────────────────────────────────────────────────────────────────────────
+# STRUCTURE : 4 jobs parallèles + 1 job de publication
+#
+# Chaque batch tourne sur un runner indépendant et écrit ses JSON dans un
+# répertoire temporaire /tmp/batch-out/, uploadé comme artifact.
+# Le job "publish" télécharge tous les artifacts, génère data/index.json
+# et pousse un seul commit.
+#
+# Pour tester sur 5 depts pilotes :
+#   → Déclencher manuellement depuis GitHub Actions
+#   → Saisir "34,30,31,13,75" dans le champ "depts"
+#   → Seul le job "pilot" sera exécuté (les batches sont skippés)
+# ─────────────────────────────────────────────────────────────────────────────
+
+jobs:
+
+  # ── MODE PILOTE (déclenchement manuel avec depts spécifiés) ────────────────
+  pilot:
+    if: github.event.inputs.depts != ''
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v4
+
+      - name: Installer Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Fetcher — depts pilotes
+        run: |
+          mkdir -p /tmp/batch-out
+          python data_fetcher_national.py \
+            --depts "${{ github.event.inputs.depts }}" \
+            --outdir /tmp/batch-out
+
+      - name: Upload artifact pilote
+        uses: actions/upload-artifact@v4
+        with:
+          name: data-pilot
+          path: /tmp/batch-out/
+          retention-days: 1
+
+  # ── BATCH 1 — depts 01 à 24 environ ───────────────────────────────────────
+  fetch-batch-1:
+    if: github.event.inputs.depts == '' || github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Fetcher batch 1
+        run: |
+          mkdir -p /tmp/batch-out
+          python data_fetcher_national.py --batch 1 --outdir /tmp/batch-out
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: data-batch-1
+          path: /tmp/batch-out/
+          retention-days: 1
+
+  # ── BATCH 2 — depts 25 à 48 environ ───────────────────────────────────────
+  fetch-batch-2:
+    if: github.event.inputs.depts == '' || github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Fetcher batch 2
+        run: |
+          mkdir -p /tmp/batch-out
+          python data_fetcher_national.py --batch 2 --outdir /tmp/batch-out
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: data-batch-2
+          path: /tmp/batch-out/
+          retention-days: 1
+
+  # ── BATCH 3 — depts 49 à 72 environ ───────────────────────────────────────
+  fetch-batch-3:
+    if: github.event.inputs.depts == '' || github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Fetcher batch 3
+        run: |
+          mkdir -p /tmp/batch-out
+          python data_fetcher_national.py --batch 3 --outdir /tmp/batch-out
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: data-batch-3
+          path: /tmp/batch-out/
+          retention-days: 1
+
+  # ── BATCH 4 — depts 73 à 95 ───────────────────────────────────────────────
+  fetch-batch-4:
+    if: github.event.inputs.depts == '' || github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Fetcher batch 4
+        run: |
+          mkdir -p /tmp/batch-out
+          python data_fetcher_national.py --batch 4 --outdir /tmp/batch-out
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: data-batch-4
+          path: /tmp/batch-out/
+          retention-days: 1
+
+  # ── PUBLICATION ────────────────────────────────────────────────────────────
+  # Collecte les artifacts, génère data/index.json, pousse un seul commit.
+  publish:
+    needs: [fetch-batch-1, fetch-batch-2, fetch-batch-3, fetch-batch-4]
+    if: |
+      always() &&
+      (needs.fetch-batch-1.result == 'success' || needs.fetch-batch-1.result == 'skipped') &&
+      (needs.fetch-batch-2.result == 'success' || needs.fetch-batch-2.result == 'skipped') &&
+      (needs.fetch-batch-3.result == 'success' || needs.fetch-batch-3.result == 'skipped') &&
+      (needs.fetch-batch-4.result == 'success' || needs.fetch-batch-4.result == 'skipped')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v4
+
+      - name: Installer Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Créer le dossier data/dept/
+        run: mkdir -p data/dept
+
+      - name: Télécharger tous les artifacts (batches)
+        uses: actions/download-artifact@v4
+        with:
+          pattern: data-batch-*
+          path: data/dept/
+          merge-multiple: true
+
+      - name: Générer data/index.json
+        run: python data_fetcher_national.py --generate-index-only
+
+      - name: Publier les fichiers
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add data/
+          git diff --staged --quiet || \
+            git commit -m "data-national: mise à jour $(date +'%d/%m/%Y à %H:%M')"
+          git pull --rebase origin master
+          git push
+
+  # ── PUBLICATION MODE PILOTE ────────────────────────────────────────────────
+  publish-pilot:
+    needs: [pilot]
+    if: always() && needs.pilot.result == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Créer le dossier data/dept/
+        run: mkdir -p data/dept
+
+      - name: Télécharger l'artifact pilote
+        uses: actions/download-artifact@v4
+        with:
+          name: data-pilot
+          path: data/dept/
+
+      - name: Générer data/index.json
+        run: python data_fetcher_national.py --generate-index-only
+
+      - name: Publier les fichiers
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add data/
+          git diff --staged --quiet || \
+            git commit -m "data-national-pilot: $(date +'%d/%m/%Y à %H:%M') [${{ github.event.inputs.depts }}]"
+          git pull --rebase origin master
+          git push
