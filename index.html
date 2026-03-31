@@ -388,6 +388,9 @@
                     <input type="text" id="river-search" placeholder="Rechercher une rivière..." class="px-6 py-3 rounded-2xl border-2 border-white shadow-lg outline-none w-full md:w-96 focus:ring-4 focus:ring-indigo-100 transition-all" onkeyup="renderRivieres()">
                 </div>
 
+                <!-- Carte des stations fluviales -->
+                <div id="map-rivieres" style="height:320px" class="rounded-3xl overflow-hidden border border-slate-200 shadow-sm hidden"></div>
+
                 <div id="riviere-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
 
                 <!-- Glossaire rivières -->
@@ -831,7 +834,7 @@
     })();
 
     let fullData = {};
-    let mapNappes, mapQualite, markersLayer;
+    let mapNappes, mapQualite, mapRivieres, markersLayer, rivMarkersLayer;
     let currentTab = 'nappes';
     let currentDept = 'all';
 
@@ -895,7 +898,7 @@
         document.getElementById('dept-selector').classList.toggle('hidden', tab === 'methode' || tab === 'air');
         if (tab === 'nappes') { renderNappes(); if (mapNappes) setTimeout(() => mapNappes.invalidateSize(), 200); }
         if (tab === 'potable') renderPotable();
-        if (tab === 'rivieres') renderRivieres();
+        if (tab === 'rivieres') { renderRivieres(); if (mapRivieres) setTimeout(() => mapRivieres.invalidateSize(), 200); }
         if (tab === 'carte') renderCarte();
         if (tab === 'air') renderAir();
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -1200,7 +1203,7 @@
             allTrends.push(trends);
 
             return `
-                <div class="glass-card p-8 rounded-[2.5rem] border border-white shadow-xl flex flex-col hover:shadow-2xl transition-all">
+                <div id="riviere-card-${idx}" class="glass-card p-8 rounded-[2.5rem] border border-white shadow-xl flex flex-col hover:shadow-2xl transition-all">
                     <div class="flex justify-between items-start mb-6">
                         <div>
                             <h3 class="text-2xl font-black text-slate-800 uppercase italic tracking-tighter">${r.nom}</h3>
@@ -1244,6 +1247,62 @@
 
         // Un seul write DOM pour toutes les cartes
         container.innerHTML = cards.join('');
+
+        // ── Carte Leaflet des stations ──────────────────────────────────────
+        const stationsGeo = data.map((r, idx) => ({ ...r, _cardIdx: idx })).filter(r => r.lat && r.lon);
+        const mapDiv = document.getElementById('map-rivieres');
+        if (stationsGeo.length && mapDiv) {
+            mapDiv.classList.remove('hidden');
+
+            if (!mapRivieres) {
+                mapRivieres = L.map('map-rivieres', { scrollWheelZoom: false });
+                L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                    attribution: '© CartoDB © OpenStreetMap'
+                }).addTo(mapRivieres);
+                rivMarkersLayer = L.layerGroup().addTo(mapRivieres);
+            } else {
+                rivMarkersLayer.clearLayers();
+            }
+
+            const bounds = [];
+            stationsGeo.forEach(r => {
+                bounds.push([r.lat, r.lon]);
+                const scoreVal = r.score !== null ? r.score : '?';
+                const topParams = Object.entries(r.parametres).slice(0, 3)
+                    .map(([k, v]) => `<span style="color:${v.color};font-weight:bold">${k}</span> ${v.valeur !== undefined ? v.valeur : '—'} <span style="opacity:.6;font-size:10px">${v.unite || ''}</span>`)
+                    .join('<br>');
+                const marker = L.circleMarker([r.lat, r.lon], {
+                    radius: 11,
+                    fillColor: r.score_color,
+                    color: '#fff',
+                    weight: 2.5,
+                    opacity: 1,
+                    fillOpacity: 0.92
+                });
+                marker.bindPopup(
+                    `<div style="font-family:sans-serif;min-width:160px">` +
+                    `<p style="font-weight:900;font-size:13px;margin:0 0 4px">${r.nom}</p>` +
+                    `<p style="color:${r.score_color};font-weight:700;font-size:12px;margin:0 0 6px">Score : ${scoreVal}/100 — ${r.score_label}</p>` +
+                    `<div style="font-size:12px;line-height:1.8">${topParams}</div>` +
+                    `</div>`,
+                    { maxWidth: 220 }
+                );
+                marker.on('click', () => {
+                    const card = document.getElementById(`riviere-card-${r._cardIdx}`);
+                    if (!card) return;
+                    card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    card.style.transition = 'box-shadow 0.3s';
+                    card.style.boxShadow = `0 0 0 3px ${r.score_color}`;
+                    setTimeout(() => { card.style.boxShadow = ''; }, 2000);
+                });
+                rivMarkersLayer.addLayer(marker);
+            });
+
+            if (bounds.length) mapRivieres.fitBounds(bounds, { padding: [30, 30] });
+            setTimeout(() => mapRivieres.invalidateSize(), 100);
+        } else if (mapDiv) {
+            mapDiv.classList.add('hidden');
+        }
 
         // Graphiques avec IntersectionObserver pour ne rendre que ce qui est visible
         const observer = new IntersectionObserver((entries, obs) => {
