@@ -173,11 +173,14 @@ jobs:
       - name: Générer data/index.json
         run: python data_fetcher_national.py --generate-index-only
 
+      - name: Générer les pages département
+        run: python generate_dept_pages.py
+
       - name: Publier les fichiers
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add data/
+          git add data/ departement/ sitemap.xml
           git diff --staged --quiet || \
             git commit -m "data-national: mise à jour $(date +'%d/%m/%Y à %H:%M')"
           git pull --rebase origin master
@@ -206,11 +209,14 @@ jobs:
       - name: Générer data/index.json
         run: python data_fetcher_national.py --generate-index-only
 
+      - name: Générer les pages département
+        run: python generate_dept_pages.py
+
       - name: Publier les fichiers
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add data/
+          git add data/ departement/ sitemap.xml
           git diff --staged --quiet || \
             git commit -m "data-national-pilot: $(date +'%d/%m/%Y à %H:%M') [${{ github.event.inputs.depts }}]"
           git pull --rebase origin master
