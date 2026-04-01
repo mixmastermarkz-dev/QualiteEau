@@ -835,6 +835,7 @@
 
     let fullData = {};
     let mapNappes, mapQualite, mapRivieres, markersLayer, rivMarkersLayer;
+    let rivMapInstances = {};
     let currentTab = 'nappes';
     let currentDept = 'all';
 
@@ -1202,48 +1203,59 @@
 
             allTrends.push(trends);
 
+            const mapSlot = (r.lat && r.lon)
+                ? `<div class="riv-map-slot h-[130px] bg-slate-100" data-idx="${idx}" data-lat="${r.lat}" data-lon="${r.lon}"></div>`
+                : '';
+
             return `
-                <div id="riviere-card-${idx}" class="glass-card p-8 rounded-[2.5rem] border border-white shadow-xl flex flex-col hover:shadow-2xl transition-all">
-                    <div class="flex justify-between items-start mb-6">
-                        <div>
-                            <h3 class="text-2xl font-black text-slate-800 uppercase italic tracking-tighter">${r.nom}</h3>
-                            <p class="text-[10px] text-indigo-500 font-bold uppercase tracking-widest mt-1">${r.commune} · Dept ${r.dept}</p>
-                        </div>
-                        <div class="score-ring" style="background:${r.score_color};min-width:56px;min-height:56px;font-size:1rem;margin-left:8px">${scoreVal}</div>
-                    </div>
-                    <p class="text-xs font-black uppercase tracking-tighter mb-4" style="color:${r.score_color}">${r.score_label}</p>
-                    <div class="grid grid-cols-1 gap-2 flex-grow">
-                        ${PARAMS_RIVIERE.map(p => {
-                            const info = r.parametres[p] || {valeur:'N.C.', color:'#cbd5e1', date:'', realtime: false};
-                            const dDate = info.date ? info.date.split('-').reverse().join('/') : '';
-                            const unite = info.unite || '';
-                            const badge = info.realtime
-                                ? `<span class="inline-flex items-center gap-1 text-[8px] font-black text-sky-500 uppercase"><span class="w-1.5 h-1.5 rounded-full bg-sky-400 animate-pulse inline-block"></span>Météo-France</span>`
-                                : `<span class="text-[9px] font-black opacity-40 text-slate-600">${dDate}</span>`;
-                            return `<div class="flex justify-between items-center px-4 py-2.5 bg-white/50 rounded-2xl border-l-4 transition-all" style="border-left-color:${info.color}">
-                                <span class="text-xs font-black text-slate-500 uppercase tracking-tighter italic">${p}</span>
-                                <div class="text-right">
-                                    <span class="text-base font-black block leading-none" style="color:${info.valeur==='N.C.'?'#94a3b8':info.color}">${info.valeur} <span class="text-[9px] font-medium opacity-60">${info.valeur !== 'N.C.' ? unite : ''}</span></span>
-                                    ${badge}
-                                </div>
-                            </div>`;
-                        }).join('')}
-                    </div>
-                    ${trends.length ? `
-                    <div class="mt-6 pt-4 border-t border-slate-100 space-y-4">
-                        ${trends.map(t => `
-                        <div>
-                            <div class="flex justify-between text-[8px] font-black text-slate-400 uppercase mb-1">
-                                <span>${t.start}</span>
-                                <span class="italic opacity-70" style="color:${t.color}">${t.key}</span>
-                                <span>${t.end}</span>
+                <div id="riviere-card-${idx}" class="glass-card rounded-[2.5rem] border border-white shadow-xl flex flex-col hover:shadow-2xl transition-all overflow-hidden">
+                    ${mapSlot}
+                    <div class="p-8 flex flex-col flex-grow">
+                        <div class="flex justify-between items-start mb-6">
+                            <div>
+                                <h3 class="text-2xl font-black text-slate-800 uppercase italic tracking-tighter">${r.nom}</h3>
+                                <p class="text-[10px] text-indigo-500 font-bold uppercase tracking-widest mt-1">${r.commune} · Dept ${r.dept}</p>
                             </div>
-                            <div class="h-[44px] w-full"><canvas id="${t.canvasId}"></canvas></div>
-                        </div>`).join('')}
-                    </div>` : ''}
+                            <div class="score-ring" style="background:${r.score_color};min-width:56px;min-height:56px;font-size:1rem;margin-left:8px">${scoreVal}</div>
+                        </div>
+                        <p class="text-xs font-black uppercase tracking-tighter mb-4" style="color:${r.score_color}">${r.score_label}</p>
+                        <div class="grid grid-cols-1 gap-2 flex-grow">
+                            ${PARAMS_RIVIERE.map(p => {
+                                const info = r.parametres[p] || {valeur:'N.C.', color:'#cbd5e1', date:'', realtime: false};
+                                const dDate = info.date ? info.date.split('-').reverse().join('/') : '';
+                                const unite = info.unite || '';
+                                const badge = info.realtime
+                                    ? `<span class="inline-flex items-center gap-1 text-[8px] font-black text-sky-500 uppercase"><span class="w-1.5 h-1.5 rounded-full bg-sky-400 animate-pulse inline-block"></span>Météo-France</span>`
+                                    : `<span class="text-[9px] font-black opacity-40 text-slate-600">${dDate}</span>`;
+                                return `<div class="flex justify-between items-center px-4 py-2.5 bg-white/50 rounded-2xl border-l-4 transition-all" style="border-left-color:${info.color}">
+                                    <span class="text-xs font-black text-slate-500 uppercase tracking-tighter italic">${p}</span>
+                                    <div class="text-right">
+                                        <span class="text-base font-black block leading-none" style="color:${info.valeur==='N.C.'?'#94a3b8':info.color}">${info.valeur} <span class="text-[9px] font-medium opacity-60">${info.valeur !== 'N.C.' ? unite : ''}</span></span>
+                                        ${badge}
+                                    </div>
+                                </div>`;
+                            }).join('')}
+                        </div>
+                        ${trends.length ? `
+                        <div class="mt-6 pt-4 border-t border-slate-100 space-y-4">
+                            ${trends.map(t => `
+                            <div>
+                                <div class="flex justify-between text-[8px] font-black text-slate-400 uppercase mb-1">
+                                    <span>${t.start}</span>
+                                    <span class="italic opacity-70" style="color:${t.color}">${t.key}</span>
+                                    <span>${t.end}</span>
+                                </div>
+                                <div class="h-[44px] w-full"><canvas id="${t.canvasId}"></canvas></div>
+                            </div>`).join('')}
+                        </div>` : ''}
+                    </div>
                 </div>
             `;
         });
+
+        // Détruire les mini-cartes existantes avant de recréer le DOM
+        Object.values(rivMapInstances).forEach(m => { try { m.remove(); } catch(e) {} });
+        rivMapInstances = {};
 
         // Un seul write DOM pour toutes les cartes
         container.innerHTML = cards.join('');
@@ -1303,6 +1315,34 @@
         } else if (mapDiv) {
             mapDiv.classList.add('hidden');
         }
+
+        // ── Mini-cartes par station (lazy via IntersectionObserver) ────────────
+        const mapSlotObserver = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                const slot = entry.target;
+                obs.unobserve(slot);
+                const idx = parseInt(slot.dataset.idx);
+                const lat = parseFloat(slot.dataset.lat);
+                const lon = parseFloat(slot.dataset.lon);
+                if (rivMapInstances[idx] || isNaN(lat) || isNaN(lon)) return;
+                const m = L.map(slot, {
+                    zoomControl: false, attributionControl: false,
+                    dragging: false, scrollWheelZoom: false,
+                    doubleClickZoom: false, touchZoom: false, keyboard: false,
+                }).setView([lat, lon], 13);
+                L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png').addTo(m);
+                const sc = data[idx] ? data[idx].score_color : '#94a3b8';
+                L.circleMarker([lat, lon], {
+                    radius: 9, fillColor: sc, color: '#fff',
+                    weight: 2.5, fillOpacity: 1,
+                }).addTo(m);
+                rivMapInstances[idx] = m;
+                setTimeout(() => m.invalidateSize(), 50);
+            });
+        }, { rootMargin: '400px' });
+
+        document.querySelectorAll('.riv-map-slot').forEach(el => mapSlotObserver.observe(el));
 
         // Graphiques avec IntersectionObserver pour ne rendre que ce qui est visible
         const observer = new IntersectionObserver((entries, obs) => {

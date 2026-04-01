@@ -413,6 +413,8 @@ def run_all():
             "nom":         info["nom"],
             "commune":     info["nom"],
             "dept":        info["dept"],
+            "lat":         info["lat"],
+            "lon":         info["lon"],
             "parametres":  parametres,
             "historique":  historique,
             "score":       score,
