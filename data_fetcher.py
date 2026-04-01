@@ -160,13 +160,18 @@ CONF_TEMP = {"warning": 20, "danger": 25, "mode": "max"}
 # UTILITAIRES
 # ---------------------------------------------------------------------------
 
-def get_json(url, timeout=20):
-    try:
-        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-        with urllib.request.urlopen(req, timeout=timeout) as r:
-            return json.loads(r.read().decode())
-    except:
-        return None
+def get_json(url, timeout=20, retries=2):
+    for attempt in range(retries + 1):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                return json.loads(r.read().decode())
+        except Exception as e:
+            if attempt < retries:
+                print(f"    [RETRY {attempt+1}/{retries}] {url[:80]}... → {e}")
+            else:
+                print(f"    [ÉCHEC] {url[:80]}... → {e}")
+    return None
 
 def get_color(val, conf):
     if val is None:
@@ -609,8 +614,19 @@ def run_all():
     print(f"  {len(pesticide_results)} molécules détectées")
 
     # -----------------------------------------------------------------------
-    # SAUVEGARDE
+    # SAUVEGARDE — garde-fou : ne pas écraser les rivières si le fetch a échoué
     # -----------------------------------------------------------------------
+    out = os.path.join(BASE_DIR, "full_data.json")
+    if len(rivieres) == 0:
+        try:
+            with open(out, encoding="utf-8") as f:
+                prev = json.load(f)
+            if prev.get("rivieres"):
+                print(f"  [GARDE-FOU] 0 rivières récupérées — conservation des {len(prev['rivieres'])} stations précédentes.")
+                rivieres = prev["rivieres"]
+        except Exception:
+            pass
+
     final_data = {
         "nappes":     nappe_results,
         "potable":    potable,
