@@ -1,6 +1,7 @@
 import urllib.request
 import json
 import os
+import re
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 
@@ -215,6 +216,15 @@ def score_label(s):
     if s >= 50: return "Moyenne"
     return "Mauvaise"
 
+def extract_nom_cours_eau(libelle):
+    """Extrait le nom du cours d'eau depuis le libellé de la station Hub'Eau.
+    Ex: 'LEZ A LATTES 2'                   -> 'LEZ'
+        'VISTRE DE LA FONTAINE A NIMES'    -> 'VISTRE DE LA FONTAINE'
+        'GRABIEUX A ST-MARTIN-DE-VALGALGUES' -> 'GRABIEUX'
+    """
+    m = re.match(r'^(.*?)\s+(?:A|AU|AUX|SUR|DANS|EN)\s+\S', libelle.strip().upper())
+    return m.group(1).strip() if m else libelle.strip().upper()
+
 def dept_from_coords(lat, lon):
     """Estime le département (34/30) à partir des coordonnées GPS."""
     if lat is None or lon is None:
@@ -410,16 +420,17 @@ def run_all():
 
         score = calc_score({k: v for k, v in parametres.items() if not v.get("realtime")})
         rivieres.append({
-            "nom":         info["nom"],
-            "commune":     info["nom"],
-            "dept":        info["dept"],
-            "lat":         info["lat"],
-            "lon":         info["lon"],
-            "parametres":  parametres,
-            "historique":  historique,
-            "score":       score,
-            "score_color": score_color(score),
-            "score_label": score_label(score)
+            "nom":            info["nom"],
+            "commune":        info["nom"],
+            "dept":           info["dept"],
+            "lat":            info["lat"],
+            "lon":            info["lon"],
+            "nom_cours_eau":  extract_nom_cours_eau(info["nom"]),
+            "parametres":     parametres,
+            "historique":     historique,
+            "score":          score,
+            "score_color":    score_color(score),
+            "score_label":    score_label(score)
         })
         print(f"  {info['nom']} ({info['dept']}) — {len(parametres)} params — score {score}")
 

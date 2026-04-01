@@ -1317,6 +1317,12 @@
         }
 
         // ── Mini-cartes par station (lazy via IntersectionObserver) ────────────
+        function sortByDominantAxis(stations) {
+            const latRange = Math.max(...stations.map(s => s.lat)) - Math.min(...stations.map(s => s.lat));
+            const lonRange = Math.max(...stations.map(s => s.lon)) - Math.min(...stations.map(s => s.lon));
+            return [...stations].sort((a, b) => latRange >= lonRange ? a.lat - b.lat : a.lon - b.lon);
+        }
+
         const mapSlotObserver = new IntersectionObserver((entries, obs) => {
             entries.forEach(entry => {
                 if (!entry.isIntersecting) return;
@@ -1326,17 +1332,62 @@
                 const lat = parseFloat(slot.dataset.lat);
                 const lon = parseFloat(slot.dataset.lon);
                 if (rivMapInstances[idx] || isNaN(lat) || isNaN(lon)) return;
+
+                const station = data[idx];
+                const sc = station ? station.score_color : '#94a3b8';
+
                 const m = L.map(slot, {
                     zoomControl: false, attributionControl: false,
                     dragging: false, scrollWheelZoom: false,
                     doubleClickZoom: false, touchZoom: false, keyboard: false,
-                }).setView([lat, lon], 13);
+                }).setView([lat, lon], 12);
                 L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png').addTo(m);
-                const sc = data[idx] ? data[idx].score_color : '#94a3b8';
+
+                // Regroupement par cours d'eau et tracé du tronçon
+                const nomCours = station && station.nom_cours_eau;
+                const coRiver = nomCours
+                    ? sortByDominantAxis(data.filter(s => s.nom_cours_eau === nomCours && s.lat && s.lon))
+                    : [];
+
+                if (coRiver.length > 1) {
+                    const allCoords = coRiver.map(s => [s.lat, s.lon]);
+                    const curPos    = coRiver.findIndex(s => s.lat === lat && s.lon === lon);
+
+                    // Ligne complète du cours d'eau (grise pointillée)
+                    L.polyline(allCoords, {
+                        color: '#94a3b8', weight: 2, opacity: 0.5, dashArray: '5,6'
+                    }).addTo(m);
+
+                    // Tronçon surveillé : voisin amont → station → voisin aval
+                    const segStart  = Math.max(0, curPos - 1);
+                    const segEnd    = Math.min(coRiver.length - 1, curPos + 1);
+                    const segCoords = allCoords.slice(segStart, segEnd + 1);
+                    L.polyline(segCoords, {
+                        color: sc, weight: 5, opacity: 0.9, lineCap: 'round'
+                    }).addTo(m);
+
+                    // Marqueurs des stations voisines (colorés par leur score)
+                    coRiver.forEach((s, i) => {
+                        if (i === curPos) return;
+                        L.circleMarker([s.lat, s.lon], {
+                            radius: 5, fillColor: s.score_color || '#94a3b8',
+                            color: '#fff', weight: 1.5, fillOpacity: 0.85,
+                        }).addTo(m);
+                    });
+
+                    // Cadrage sur le tronçon surligné
+                    m.fitBounds(segCoords.length > 1 ? segCoords : [[lat - 0.02, lon - 0.02],[lat + 0.02, lon + 0.02]],
+                        { padding: [25, 25] });
+                } else {
+                    m.setView([lat, lon], 13);
+                }
+
+                // Marqueur de la station courante (rendu en dernier, donc au-dessus)
                 L.circleMarker([lat, lon], {
-                    radius: 9, fillColor: sc, color: '#fff',
+                    radius: 10, fillColor: sc, color: '#fff',
                     weight: 2.5, fillOpacity: 1,
                 }).addTo(m);
+
                 rivMapInstances[idx] = m;
                 setTimeout(() => m.invalidateSize(), 50);
             });
