@@ -866,7 +866,8 @@
         fullData = await res.json();
         const subtitle = document.getElementById('updated-subtitle');
         if (subtitle) {
-            subtitle.innerHTML = `📡 Données mises à jour quotidiennement à 11h &mdash; Dernière mise à jour : ${formatUpdatedDate(fullData.updated)}`;
+            const updateHour = fullData.updated ? fullData.updated.match(/à (\d{2})h/)?.[1] ?? '11' : '11';
+            subtitle.innerHTML = `📡 Données mises à jour quotidiennement à ${updateHour}h &mdash; Dernière mise à jour : ${formatUpdatedDate(fullData.updated)}`;
             subtitle.classList.remove('hidden');
         }
         document.getElementById('stat-communes').innerText = fullData.potable.length;

@@ -182,7 +182,7 @@ jobs:
           git config user.email "actions@github.com"
           git add data/ departement/ sitemap.xml
           git diff --staged --quiet || \
-            git commit -m "data-national: mise à jour $(date +'%d/%m/%Y à %H:%M')"
+            git commit -m "data-national: mise à jour $(TZ='Europe/Paris' date +'%d/%m/%Y à %H:%M')"
           git pull --rebase origin master
           git push
 
@@ -218,6 +218,6 @@ jobs:
           git config user.email "actions@github.com"
           git add data/ departement/ sitemap.xml
           git diff --staged --quiet || \
-            git commit -m "data-national-pilot: $(date +'%d/%m/%Y à %H:%M') [${{ github.event.inputs.depts }}]"
+            git commit -m "data-national-pilot: $(TZ='Europe/Paris' date +'%d/%m/%Y à %H:%M') [${{ github.event.inputs.depts }}]"
           git pull --rebase origin master
           git push
