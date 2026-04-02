@@ -390,6 +390,11 @@
 
                 <!-- Carte des stations fluviales -->
                 <div id="map-rivieres" style="height:320px" class="rounded-3xl overflow-hidden border border-slate-200 shadow-sm hidden"></div>
+                <p id="map-rivieres-legend" class="hidden text-sm text-slate-500 mt-2 mb-1 px-1">
+                    <span class="font-semibold text-slate-600">Chaque point</span> représente une station de mesure physique.
+                    Cliquez sur un point pour voir ses valeurs.
+                    Sur chaque mini-carte, le <span class="font-semibold text-slate-600">segment coloré</span> indique la position de la station le long du cours d'eau par rapport à ses voisines.
+                </p>
 
                 <div id="riviere-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
 
@@ -1264,8 +1269,10 @@
         // ── Carte Leaflet des stations ──────────────────────────────────────
         const stationsGeo = data.map((r, idx) => ({ ...r, _cardIdx: idx })).filter(r => r.lat && r.lon);
         const mapDiv = document.getElementById('map-rivieres');
+        const legendDiv = document.getElementById('map-rivieres-legend');
         if (stationsGeo.length && mapDiv) {
             mapDiv.classList.remove('hidden');
+            if (legendDiv) legendDiv.classList.remove('hidden');
 
             if (!mapRivieres) {
                 mapRivieres = L.map('map-rivieres', { scrollWheelZoom: false });
@@ -1300,21 +1307,14 @@
                     `</div>`,
                     { maxWidth: 220 }
                 );
-                marker.on('click', () => {
-                    const card = document.getElementById(`riviere-card-${r._cardIdx}`);
-                    if (!card) return;
-                    card.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    card.style.transition = 'box-shadow 0.3s';
-                    card.style.boxShadow = `0 0 0 3px ${r.score_color}`;
-                    setTimeout(() => { card.style.boxShadow = ''; }, 2000);
-                });
                 rivMarkersLayer.addLayer(marker);
             });
 
-            if (bounds.length) mapRivieres.fitBounds(bounds, { padding: [30, 30] });
+            if (bounds.length) mapRivieres.fitBounds(bounds, { padding: [30, 30], maxZoom: 11 });
             setTimeout(() => mapRivieres.invalidateSize(), 100);
         } else if (mapDiv) {
             mapDiv.classList.add('hidden');
+            if (legendDiv) legendDiv.classList.add('hidden');
         }
 
         // ── Mini-cartes par station (lazy via IntersectionObserver) ────────────
