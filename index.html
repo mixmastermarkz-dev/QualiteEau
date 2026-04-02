@@ -862,7 +862,7 @@
     }
 
     async function init() {
-        const res = await fetch('full_data.json');
+        const res = await fetch('full_data.json', { cache: 'no-cache' });
         fullData = await res.json();
         const subtitle = document.getElementById('updated-subtitle');
         if (subtitle) {
