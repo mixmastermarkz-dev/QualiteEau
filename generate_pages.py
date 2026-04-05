@@ -340,7 +340,7 @@ def build_page(commune, neighbors_html, json_ld, slug):
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qualité de l'eau potable à {nom} — {YEAR} | nbrx.fr</title>
+    <title>Qualité de l'eau potable à {nom} — {YEAR} | Mon-Environnement.fr</title>
     <meta name="description" content="{meta_desc}">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="{BASE_URL}/eau-potable/{slug}/">
@@ -471,7 +471,12 @@ def build_page(commune, neighbors_html, json_ld, slug):
         <p class="font-black uppercase text-lg mb-2">QUALITÉ <span class="text-sky-400">AIR ET EAU</span></p>
         <p class="text-slate-400 text-sm">Surveillance indépendante · Données officielles ARS, BRGM, Hub'Eau</p>
         <p class="text-slate-400 text-sm">Hérault (34) &amp; Gard (30) · Communes de plus de 1 000 habitants</p>
-        <p class="text-slate-600 text-xs mt-4">© {YEAR} · <a href="/" class="hover:text-white transition-colors">nbrx.fr</a></p>
+        <div class="mt-4 flex justify-center gap-6 text-xs text-slate-500">
+            <a href="/contact.html" class="hover:text-white transition-colors underline">Contact</a>
+            <a href="/mentions-legales.html" class="hover:text-white transition-colors underline">Mentions légales</a>
+            <a href="/politique-confidentialite.html" class="hover:text-white transition-colors underline">Confidentialité</a>
+        </div>
+        <p class="text-slate-600 text-xs mt-4">© {YEAR} · <a href="/" class="hover:text-white transition-colors">Mon-Environnement.fr</a></p>
     </div>
 </footer>
 
@@ -488,8 +493,9 @@ def generate_sitemap(commune_slugs: list) -> str:
     static_pages = [
         (f"{BASE_URL}/",                           TODAY, "daily",   "1.0"),
         (f"{BASE_URL}/eau-potable/",               TODAY, "monthly", "0.7"),
-        (f"{BASE_URL}/contact.html",               TODAY, "yearly",  "0.3"),
-        (f"{BASE_URL}/mentions-legales.html",      TODAY, "yearly",  "0.3"),
+        (f"{BASE_URL}/contact.html",                          TODAY, "yearly",  "0.3"),
+        (f"{BASE_URL}/mentions-legales.html",               TODAY, "yearly",  "0.3"),
+        (f"{BASE_URL}/politique-confidentialite.html",      TODAY, "yearly",  "0.3"),
     ]
     urls = []
     for loc, lastmod, freq, pri in static_pages:
@@ -562,7 +568,7 @@ def main():
     with open(os.path.join(BASE_DIR, "sitemap.xml"), "w", encoding="utf-8") as f:
         f.write(sitemap)
 
-    print(f"\nSitemap mis à jour — {len(generated) + 4} URLs ({len(generated)} communes + 4 pages statiques)")
+    print(f"\nSitemap mis à jour — {len(generated) + 5} URLs ({len(generated)} communes + 5 pages statiques)")
     print(f"Pages générées    — {len(generated)} communes")
 
 

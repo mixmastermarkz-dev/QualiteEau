@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de confidentialité — Mon-Environnement.fr</title>
+    <meta name="description" content="Politique de confidentialité et cookies de Mon-Environnement.fr : données personnelles, Google AdSense, cartographie, droits RGPD.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.mon-environnement.fr/politique-confidentialite.html">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.mon-environnement.fr/politique-confidentialite.html">
+    <meta property="og:title" content="Politique de confidentialité — Mon-Environnement.fr">
+    <meta property="og:locale" content="fr_FR">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #side-drawer { transform: translateX(-100%); transition: transform 0.28s cubic-bezier(.4,0,.2,1); }
+        #side-drawer.open { transform: translateX(0); }
+        #menu-overlay { opacity: 0; pointer-events: none; transition: opacity 0.28s ease; }
+        #menu-overlay.open { opacity: 1; pointer-events: auto; }
+    </style>
+</head>
+<body class="bg-slate-100 min-h-screen font-sans antialiased text-slate-900 flex flex-col">
+
+<!-- OVERLAY -->
+<div id="menu-overlay" class="fixed inset-0 bg-black/40 z-[200]" onclick="closeMenu()"></div>
+
+<!-- SIDE DRAWER -->
+<nav id="side-drawer" class="fixed top-0 left-0 h-full w-72 bg-white shadow-2xl z-[201] flex flex-col">
+    <div class="p-5 border-b border-slate-100 flex justify-between items-center">
+        <span class="font-black uppercase text-slate-800 tracking-tight text-sm">Mon-Environnement.fr</span>
+        <button onclick="closeMenu()" class="w-9 h-9 flex items-center justify-center rounded-xl text-slate-400 hover:text-slate-700 hover:bg-slate-100 text-xl leading-none">&times;</button>
+    </div>
+    <div class="flex-grow overflow-y-auto p-3 space-y-1">
+        <a href="/"               class="flex items-center px-4 py-4 rounded-2xl font-bold text-slate-700 hover:bg-slate-50 text-sm min-h-[48px]">🏠 Accueil</a>
+        <a href="/eau-potable/"   class="flex items-center px-4 py-4 rounded-2xl font-bold text-slate-700 hover:bg-slate-50 text-sm min-h-[48px]">🏘️ Communes</a>
+        <a href="/contact.html"   class="flex items-center px-4 py-4 rounded-2xl font-bold text-slate-700 hover:bg-slate-50 text-sm min-h-[48px]">✉️ Contact</a>
+        <a href="/mentions-legales.html" class="flex items-center px-4 py-4 rounded-2xl font-bold text-slate-700 hover:bg-slate-50 text-sm min-h-[48px]">📄 Mentions légales</a>
+        <a href="/politique-confidentialite.html" class="flex items-center px-4 py-4 rounded-2xl font-bold text-sky-600 bg-sky-50 text-sm min-h-[48px]">🔒 Confidentialité</a>
+    </div>
+</nav>
+
+<!-- HEADER -->
+<header class="bg-white border-b border-slate-200 shadow-sm">
+    <div class="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+            <button onclick="toggleMenu()" class="flex items-center justify-center w-11 h-11 rounded-2xl bg-slate-100 hover:bg-slate-200 transition-colors" aria-label="Menu">
+                <svg class="w-5 h-5 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+            <div>
+                <a href="/" class="font-black text-slate-700 uppercase tracking-tight text-sm hover:text-sky-600 transition-colors">Qualité Air et Eau 34/30</a>
+                <p class="text-[10px] text-slate-400 italic mt-0.5">📡 Données mises à jour quotidiennement à 11h</p>
+            </div>
+        </div>
+        <a href="/" class="text-xs font-bold text-slate-400 hover:text-sky-500 transition-colors hidden md:block">← Retour à l'accueil</a>
+    </div>
+</header>
+
+<!-- MAIN -->
+<main class="max-w-4xl mx-auto px-4 py-16 flex-grow w-full">
+    <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-10 md:p-16 max-w-2xl mx-auto space-y-8">
+
+        <div>
+            <p class="text-xs font-black text-slate-400 uppercase tracking-widest mb-4">Mon-Environnement.fr</p>
+            <h1 class="text-4xl font-black uppercase leading-tight">Politique de <span class="text-sky-600">confidentialité</span></h1>
+            <p class="text-xs text-slate-400 mt-3">Dernière mise à jour : avril 2026. Conformément au Règlement Général sur la Protection des Données (RGPD — UE 2016/679).</p>
+        </div>
+
+        <section class="space-y-3">
+            <h2 class="text-lg font-black uppercase tracking-tight text-slate-800 border-b border-slate-100 pb-2">1. Données collectées</h2>
+            <p class="text-sm text-slate-600 leading-relaxed">
+                Mon-Environnement.fr ne collecte <strong class="text-slate-800">aucune donnée personnelle directement</strong> : pas de formulaire d'inscription, pas de compte utilisateur, pas de traçage propriétaire.
+            </p>
+            <p class="text-sm text-slate-600 leading-relaxed">
+                Les seules données traitées sont celles collectées automatiquement par les services tiers intégrés (voir sections 3 et 4).
+            </p>
+        </section>
+
+        <section class="space-y-3">
+            <h2 class="text-lg font-black uppercase tracking-tight text-slate-800 border-b border-slate-100 pb-2">2. Cookies</h2>
+            <p class="text-sm text-slate-600 leading-relaxed">Ce site utilise des cookies déposés par des services tiers à des fins publicitaires et de cartographie. Aucun cookie propriétaire n'est utilisé.</p>
+            <div class="overflow-x-auto">
+                <table class="w-full text-xs text-slate-600 border-collapse">
+                    <thead>
+                        <tr class="bg-slate-50 text-slate-700 font-bold">
+                            <th class="text-left p-3 border border-slate-200">Service</th>
+                            <th class="text-left p-3 border border-slate-200">Finalité</th>
+                            <th class="text-left p-3 border border-slate-200">Politique</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="p-3 border border-slate-200 font-medium">Google AdSense</td>
+                            <td class="p-3 border border-slate-200">Publicité personnalisée</td>
+                            <td class="p-3 border border-slate-200"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener" class="text-sky-600 underline">policies.google.com</a></td>
+                        </tr>
+                        <tr class="bg-slate-50">
+                            <td class="p-3 border border-slate-200 font-medium">CartoDB / CARTO</td>
+                            <td class="p-3 border border-slate-200">Affichage des cartes</td>
+                            <td class="p-3 border border-slate-200"><a href="https://carto.com/privacy" target="_blank" rel="noopener" class="text-sky-600 underline">carto.com/privacy</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="space-y-3">
+            <h2 class="text-lg font-black uppercase tracking-tight text-slate-800 border-b border-slate-100 pb-2">3. Google AdSense</h2>
+            <div class="text-sm text-slate-600 space-y-2 leading-relaxed">
+                <p>Ce site utilise <strong class="text-slate-800">Google AdSense</strong>, un service de publicité de Google LLC (1600 Amphitheatre Parkway, Mountain View, CA 94043, États-Unis).</p>
+                <p>Google AdSense peut déposer des cookies publicitaires sur votre appareil afin de diffuser des annonces personnalisées en fonction de vos centres d'intérêt et de votre historique de navigation.</p>
+                <p>Vous pouvez gérer vos préférences publicitaires ou désactiver la personnalisation des annonces sur :</p>
+                <ul class="list-disc list-inside ml-2 space-y-1">
+                    <li><a href="https://adssettings.google.com" target="_blank" rel="noopener" class="text-sky-600 underline">adssettings.google.com</a></li>
+                    <li><a href="https://optout.aboutads.info" target="_blank" rel="noopener" class="text-sky-600 underline">optout.aboutads.info</a> (opt-out interprofessionnel)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="space-y-3">
+            <h2 class="text-lg font-black uppercase tracking-tight text-slate-800 border-b border-slate-100 pb-2">4. Cartographie (CartoDB)</h2>
+            <p class="text-sm text-slate-600 leading-relaxed">
+                Les cartes interactives utilisent les tuiles de <strong class="text-slate-800">CartoDB / CARTO</strong>. Lors de l'affichage d'une carte, votre navigateur charge des tuiles depuis les serveurs CARTO, ce qui peut entraîner la collecte de votre adresse IP par ce service.
+            </p>
+        </section>
+
+        <section class="space-y-3">
+            <h2 class="text-lg font-black uppercase tracking-tight text-slate-800 border-b border-slate-100 pb-2">5. Hébergement</h2>
+            <p class="text-sm text-slate-600 leading-relaxed">
+                Le site est hébergé par <strong class="text-slate-800">GitHub Pages</strong> (Microsoft Corporation, San Francisco, États-Unis). GitHub peut collecter des données de connexion (adresse IP, user-agent) à des fins de sécurité et de statistiques d'infrastructure.
+                Politique de confidentialité : <a href="https://docs.github.com/fr/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener" class="text-sky-600 underline">docs.github.com</a>
+            </p>
+        </section>
+
+        <section class="space-y-3">
+            <h2 class="text-lg font-black uppercase tracking-tight text-slate-800 border-b border-slate-100 pb-2">6. Vos droits (RGPD)</h2>
+            <div class="text-sm text-slate-600 space-y-2 leading-relaxed">
+                <p>Conformément au RGPD, vous disposez des droits suivants sur vos données personnelles :</p>
+                <ul class="list-disc list-inside ml-2 space-y-1">
+                    <li><strong class="text-slate-700">Droit d'accès</strong> — connaître les données vous concernant</li>
+                    <li><strong class="text-slate-700">Droit de rectification</strong> — corriger des données inexactes</li>
+                    <li><strong class="text-slate-700">Droit à l'effacement</strong> — demander la suppression de vos données</li>
+                    <li><strong class="text-slate-700">Droit d'opposition</strong> — vous opposer à certains traitements</li>
+                </ul>
+                <p class="mt-2">
+                    Pour les cookies Google AdSense, exercez vos droits directement via les outils Google (<a href="https://myaccount.google.com" target="_blank" rel="noopener" class="text-sky-600 underline">myaccount.google.com</a>).
+                    Pour toute autre demande concernant ce site, contactez-nous à :
+                    <a href="mailto:contact@mon-environnement.fr" class="text-sky-600 underline font-medium">contact@mon-environnement.fr</a>
+                </p>
+                <p>Vous pouvez également introduire une réclamation auprès de la <a href="https://www.cnil.fr" target="_blank" rel="noopener" class="text-sky-600 underline">CNIL</a>.</p>
+            </div>
+        </section>
+
+        <div class="pt-4 border-t border-slate-100">
+            <a href="/" class="inline-flex items-center gap-2 text-sky-600 font-black uppercase text-sm tracking-wider hover:text-sky-800 transition-colors">
+                ← Retour au tableau de bord
+            </a>
+        </div>
+    </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-slate-900 text-white py-10 mt-4">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+        <p class="font-black uppercase text-lg mb-2">QUALITÉ <span class="text-sky-400">AIR ET EAU</span></p>
+        <p class="text-slate-400 text-sm">Surveillance indépendante · Données officielles ARS, Atmo Occitanie, BRGM, Hub'Eau</p>
+        <div class="mt-4 flex justify-center gap-6 text-xs text-slate-500">
+            <a href="/contact.html" class="hover:text-white transition-colors underline">Contact</a>
+            <a href="/mentions-legales.html" class="hover:text-white transition-colors underline">Mentions légales</a>
+            <a href="/politique-confidentialite.html" class="hover:text-white transition-colors underline">Confidentialité</a>
+        </div>
+        <p class="text-slate-600 text-xs mt-4">© 2026 Mon-Environnement.fr</p>
+    </div>
+</footer>
+
+<script>
+    function toggleMenu() {
+        document.getElementById('side-drawer').classList.toggle('open');
+        document.getElementById('menu-overlay').classList.toggle('open');
+        document.body.style.overflow = document.getElementById('side-drawer').classList.contains('open') ? 'hidden' : '';
+    }
+    function closeMenu() {
+        document.getElementById('side-drawer').classList.remove('open');
+        document.getElementById('menu-overlay').classList.remove('open');
+        document.body.style.overflow = '';
+    }
+    window.addEventListener('resize', () => { if (window.innerWidth >= 768) closeMenu(); });
+</script>
+</body>
+</html>

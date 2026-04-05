@@ -2,7 +2,7 @@ name: Mise à jour nationale des données
 
 on:
   schedule:
-    - cron: '30 9 * * *'   # 09h30 UTC = 11h30 heure française (30 min après le cron existant)
+    - cron: '0 10 * * *'   # 10h00 UTC = 12h00 Paris (été/UTC+2) — 30 min après le régional
   workflow_dispatch:
     inputs:
       depts:
