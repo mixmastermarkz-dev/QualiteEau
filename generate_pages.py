@@ -10,6 +10,8 @@ import math
 import unicodedata
 from datetime import date
 
+from shared import score_style
+
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 BASE_URL  = "https://www.mon-environnement.fr"
 TODAY     = date.today().strftime("%Y-%m-%d")   # pour sitemap (norme ISO)
@@ -182,14 +184,7 @@ COLOR_TO_DOT = {
 }
 
 
-def score_style(score):
-    if score is None:
-        return "#94a3b8", "Données insuffisantes"
-    if score >= 80:
-        return "#10b981", "Bonne qualité"
-    if score >= 50:
-        return "#f59e0b", "Qualité moyenne"
-    return "#ef4444", "Mauvaise qualité"
+# score_style importé depuis shared.py
 
 
 # ---------------------------------------------------------------------------

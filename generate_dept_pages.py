@@ -14,6 +14,8 @@ import re
 import argparse
 from datetime import date
 
+from shared import score_style
+
 BASE_DIR      = os.path.dirname(os.path.abspath(__file__))
 BASE_URL      = "https://www.mon-environnement.fr"
 TODAY         = date.today().strftime("%Y-%m-%d")
@@ -54,14 +56,7 @@ def iso_to_fr(d):
     return d or "—"
 
 
-def score_style(score):
-    if score is None:
-        return "#94a3b8", "N.C."
-    if score >= 80:
-        return "#10b981", "Bonne qualité"
-    if score >= 50:
-        return "#f59e0b", "Qualité moyenne"
-    return "#ef4444", "Mauvaise qualité"
+# score_style importé depuis shared.py
 
 
 def tw_for_color(color, mapping=None):
@@ -164,7 +159,7 @@ def render_nappe_card(n):
         f'<div class="flex gap-4 text-xs text-slate-600">'
         f'<span>Niveau : <strong class="text-slate-900">{niv_str}</strong></span>'
         f'<span class="text-slate-400">{date_}</span>'
-        f'{"<span class=\\"font-bold text-sky-600\\">" + t_icon + " " + tendance.capitalize() + "</span>" if tendance else ""}'
+        f'{("<span class=\"font-bold text-sky-600\">" + t_icon + " " + tendance.capitalize() + "</span>") if tendance else ""}'
         f'</div>'
         f'</div>'
     )

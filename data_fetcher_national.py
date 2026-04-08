@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-data_fetcher_national.py — Récupération nationale des données environnementales
-Écriture dans data/dept/XX.json et data/index.json
+data_fetcher_national.py — Récupération nationale des données environnementales.
+Écrit data/dept/XX.json et data/index.json.
 ⚠️  Ne touche JAMAIS à full_data.json ni aux fichiers du pipeline existant.
 
 Usage :
@@ -12,14 +12,30 @@ Usage :
   python data_fetcher_national.py --batch 4               # batch 4/4 (≈ depts 73-95)
   python data_fetcher_national.py --generate-index-only   # régénère data/index.json
   python data_fetcher_national.py --outdir /tmp/out ...   # répertoire de sortie (CI)
+
+Optimisations vs version précédente :
+  - Constantes et utilitaires centralisés dans shared.py (DRY)
+  - get_json avec retry (2 tentatives) importé depuis shared.py
+  - Nappes fetchées en parallèle par station (ThreadPoolExecutor)
+  - Depts traités en parallèle au sein d'un batch (ThreadPoolExecutor)
+  - Guard pagination : détecte si Hub'Eau a tronqué les résultats (count > size)
+  - Cache WFS Atmo Occitanie thread-safe (verrou)
 """
-import urllib.request
-import urllib.parse
-import json
 import os
+import json
 import argparse
+import threading
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
+from concurrent.futures import ThreadPoolExecutor, as_completed
+
+from shared import (
+    PARAMS_POTABLE, PARAMS_RIVIERE,
+    QUAL_LABELS, QUAL_COLORS, SUB_PARAMS, AIR_ZONES, OCCITANIE_DEPTS,
+    POL_LABELS, POL_COLORS, POLLEN_TAXA,
+    get_json, get_color, calc_score, score_color, score_label,
+    parse_result, encode_bss, extract_nom_cours_eau,
+)
 
 BASE_DIR      = os.path.dirname(os.path.abspath(__file__))
 DATA_DEPT_DIR = os.path.join(BASE_DIR, "data", "dept")
@@ -28,7 +44,6 @@ INDEX_PATH    = os.path.join(BASE_DIR, "data", "index.json")
 # ---------------------------------------------------------------------------
 # RÉFÉRENTIEL — 96 DÉPARTEMENTS MÉTROPOLITAINS
 # ---------------------------------------------------------------------------
-
 DEPARTEMENTS = {
     "01": {"nom": "Ain",                        "slug": "ain",                       "region": "Auvergne-Rhône-Alpes"},
     "02": {"nom": "Aisne",                      "slug": "aisne",                     "region": "Hauts-de-France"},
@@ -128,77 +143,9 @@ DEPARTEMENTS = {
     "95": {"nom": "Val-d'Oise",                 "slug": "val-d-oise",                "region": "Île-de-France"},
 }
 
-# Départements de la région Occitanie — seule région couverte par Atmo Occitanie
-OCCITANIE_DEPTS = {"09", "11", "12", "30", "31", "32", "34", "46", "48", "65", "66", "81", "82"}
-
-# Zones EPCI suivies par Atmo Occitanie (IQA air)
-# Phase 2 : étendre à tous les depts Occitanie + remplacer par Atmo Data national
-AIR_ZONES = {
-    # Hérault (34)
-    "243400017": {"nom": "Montpellier Métropole",        "dept": "34"},
-    "243400769": {"nom": "Béziers Méditerranée",          "dept": "34"},
-    "200066355": {"nom": "Bassin de Thau (Sète)",         "dept": "34"},
-    "243400470": {"nom": "Pays de l'Or (Mauguio)",        "dept": "34"},
-    "243400819": {"nom": "Hérault-Méditerranée (Agde)",   "dept": "34"},
-    "200017341": {"nom": "Lodévois et Larzac",            "dept": "34"},
-    "243400520": {"nom": "Pays de Lunel",                 "dept": "34"},
-    "243400694": {"nom": "Vallée de l'Hérault (Gignac)",  "dept": "34"},
-    # Gard (30)
-    "243000643": {"nom": "Nîmes Métropole",               "dept": "30"},
-    "200066918": {"nom": "Alès Agglomération",            "dept": "30"},
-    "200034692": {"nom": "Gard Rhodanien (Bagnols)",      "dept": "30"},
-    "243000585": {"nom": "Beaucaire Terre d'Argence",     "dept": "30"},
-    "200034379": {"nom": "Pays d'Uzès",                   "dept": "30"},
-    "243000296": {"nom": "Pays de Sommières",             "dept": "30"},
-    # Haute-Garonne (31) — Phase 2 : compléter depuis le WFS Atmo Occitanie
-    "243100518": {"nom": "Toulouse Métropole",            "dept": "31"},
-}
-
-# Paramètres eau potable (identiques à data_fetcher.py)
-PARAMS_POTABLE = {
-    "1340": {"name": "Nitrates",      "unite": "mg/L",     "warning": 25,  "danger": 50,   "mode": "max"},
-    "1302": {"name": "pH",            "unite": "unité pH", "w_low": 7.0, "w_high": 8.5, "d_low": 6.5, "d_high": 9.0, "mode": "range"},
-    "1399": {"name": "Chlore",        "unite": "mg/L",     "warning": 1.0, "danger": 5.0,  "mode": "max"},
-    "1449": {"name": "Bactériologie", "unite": "nb/100mL", "danger": 0,                    "mode": "zero"},
-    "1345": {"name": "Calcaire (TH)", "unite": "°f",       "warning": 30,  "danger": 50,   "mode": "max"},
-    "1384": {"name": "Aluminium",     "unite": "µg/L",     "warning": 150, "danger": 200,  "mode": "max"},
-    "1382": {"name": "Plomb",         "unite": "µg/L",     "warning": 5,   "danger": 10,   "mode": "max"},
-    "6276": {"name": "Pesticides",    "unite": "µg/L",     "warning": 0.1, "danger": 0.5,  "mode": "max"},
-    "2036": {"name": "THM",           "unite": "µg/L",     "warning": 50,  "danger": 100,  "mode": "max"},
-    "1311": {"name": "Conductivité",  "unite": "µS/cm",    "warning": 800, "danger": 1100, "mode": "max"},
-    "8111": {"name": "PFAS",          "unite": "µg/L",     "warning": 0.05,"danger": 0.10, "mode": "max"},
-}
-
-# Paramètres rivières (identiques à data_fetcher.py)
-PARAMS_RIVIERE = {
-    "1301": {"name": "Temp. eau",    "unite": "°C",   "warning": 20,  "danger": 25,  "mode": "max"},
-    "1340": {"name": "Nitrates",     "unite": "mg/L", "warning": 10,  "danger": 25,  "mode": "max"},
-    "1350": {"name": "Phosphore",    "unite": "mg/L", "warning": 0.2, "danger": 0.5, "mode": "max"},
-    "1302": {"name": "pH",           "unite": "pH",   "w_low": 6.5, "w_high": 8.5, "d_low": 6.0, "d_high": 9.0, "mode": "range"},
-    "1311": {"name": "Conductivité", "unite": "µS/cm","warning": 500, "danger": 900, "mode": "max"},
-    "1312": {"name": "O2 saturation","unite": "%",    "warning": 70,  "danger": 50,  "mode": "min"},
-    "1303": {"name": "MES",          "unite": "mg/L", "warning": 25,  "danger": 50,  "mode": "max"},
-    "1841": {"name": "Ammonium",     "unite": "mg/L", "warning": 0.5, "danger": 2.0, "mode": "max"},
-}
-
-QUAL_LABELS = {1:"Bon", 2:"Moyen", 3:"Dégradé", 4:"Mauvais", 5:"Très mauvais", 6:"Extrêmement mauvais", 0:"N.C."}
-QUAL_COLORS = {1:"#10b981", 2:"#eab308", 3:"#f59e0b", 4:"#f97316", 5:"#ef4444", 6:"#7c3aed", 0:"#94a3b8"}
-POL_LABELS  = {0:"N.C.", 1:"Très faible", 2:"Faible", 3:"Moyen", 4:"Élevé", 5:"Très élevé", 6:"Extrêmement élevé"}
-POL_COLORS  = {0:"#94a3b8", 1:"#10b981", 2:"#a3e635", 3:"#f59e0b", 4:"#f97316", 5:"#ef4444", 6:"#7c3aed"}
-SUB_PARAMS  = [("no2","NO₂"), ("o3","O₃"), ("pm10","PM10"), ("pm25","PM2.5"), ("so2","SO₂")]
-POLLEN_TAXA = {
-    "GRAMINEE":"Graminées", "OLEA":"Olivier", "CUPRESSA":"Cyprès", "PLATANUS":"Platane",
-    "AMBROSIA":"Ambroisie", "FRAXINUS":"Frêne", "QUERCUS":"Chêne", "URTICACE":"Urticacées",
-    "BETULA":"Bouleau",     "ARTEMISI":"Armoise",
-}
-
-# Cache partagé pour le WFS Atmo Occitanie (1 seul appel pour tous les depts Occitanie)
-_wfs_cache = None
-
-# Batches pour les 4 jobs parallèles
 _ALL_CODES = sorted(DEPARTEMENTS.keys())
-_N         = len(_ALL_CODES)  # 96
-_BS        = _N // 4          # 24
+_N  = len(_ALL_CODES)   # 96
+_BS = _N // 4           # 24
 BATCHES = {
     1: _ALL_CODES[0:_BS],
     2: _ALL_CODES[_BS:2*_BS],
@@ -206,116 +153,62 @@ BATCHES = {
     4: _ALL_CODES[3*_BS:],
 }
 
-# ---------------------------------------------------------------------------
-# UTILITAIRES (identiques à data_fetcher.py)
-# ---------------------------------------------------------------------------
-
-def get_json(url, timeout=20):
-    try:
-        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-        with urllib.request.urlopen(req, timeout=timeout) as r:
-            return json.loads(r.read().decode())
-    except Exception as e:
-        print(f"    [WARN] {url[:80]}... → {e}")
-        return None
-
-def get_color(val, conf):
-    if val is None:
-        return "#94a3b8"
-    mode = conf["mode"]
-    if mode == "max":
-        if val > conf.get("danger", float("inf")): return "#ef4444"
-        if val > conf.get("warning", float("inf")): return "#f59e0b"
-    elif mode == "min":
-        if val < conf["danger"]: return "#ef4444"
-        if val < conf["warning"]: return "#f59e0b"
-    elif mode == "zero":
-        if val > conf["danger"]: return "#ef4444"
-    elif mode == "range":
-        if val < conf["d_low"] or val > conf["d_high"]: return "#ef4444"
-        if val < conf["w_low"] or val > conf["w_high"]: return "#f59e0b"
-    return "#10b981"
-
-def calc_score(parametres):
-    total, count = 0, 0
-    for p in parametres.values():
-        c = p.get("color", "#94a3b8")
-        if c == "#94a3b8": continue
-        if c == "#10b981": total += 100
-        elif c == "#f59e0b": total += 50
-        count += 1
-    return round(total / count) if count else None
-
-def score_color(s):
-    if s is None: return "#94a3b8"
-    if s >= 80: return "#10b981"
-    if s >= 50: return "#f59e0b"
-    return "#ef4444"
-
-def score_label(s):
-    if s is None: return "N.C."
-    if s >= 80: return "Bonne"
-    if s >= 50: return "Moyenne"
-    return "Mauvaise"
+# Cache WFS Atmo Occitanie — partagé entre threads, protégé par un verrou
+_wfs_cache: dict | None = None
+_wfs_lock  = threading.Lock()
 
 # ---------------------------------------------------------------------------
-# 1. EAU POTABLE
+# 1. EAU POTABLE — 1 appel par paramètre au niveau département
 # ---------------------------------------------------------------------------
 
-def fetch_potable(dept_code, today):
+def fetch_potable(dept_code: str, today: datetime) -> list:
     """
-    Eau potable via Hub'Eau — 1 appel par paramètre au niveau département.
-    ~11 appels total vs N_communes × 12 appels dans l'ancienne approche.
+    Eau potable : 11 appels API (1 par paramètre) au lieu de N_communes × 12.
+    Guard pagination : avertit si Hub'Eau a tronqué les résultats.
     """
-    print(f"  Eau potable dept {dept_code}...")
-
-    par_commune = {}  # {insee: {nom, conclusion, parametres}}
+    print(f"  Eau potable dept {dept_code}…")
+    PAGE_SIZE   = 20000
+    par_commune: dict = {}
 
     for p_code, conf in PARAMS_POTABLE.items():
         url_q = (f"https://hubeau.eaufrance.fr/api/v1/qualite_eau_potable/resultats_dis"
                  f"?code_departement={dept_code}&code_parametre={p_code}"
-                 f"&size=20000&sort=desc")
+                 f"&size={PAGE_SIZE}&sort=desc")
         d_q = get_json(url_q)
         if not d_q or not d_q.get("data"):
             continue
 
-        p_name       = conf["name"]
-        seen_communes = set()  # on ne garde que le résultat le plus récent par commune
+        # Guard pagination
+        total_count = d_q.get("count", 0)
+        if total_count > PAGE_SIZE:
+            print(f"    [WARN] dept {dept_code} param {p_code} : {total_count} résultats > {PAGE_SIZE} — données tronquées")
 
-        for p in d_q["data"]:
-            insee = p.get("code_commune_insee") or p.get("code_commune")
-            nom   = p.get("nom_commune", "")
+        p_name        = conf["name"]
+        seen_communes: set = set()
+
+        for record in d_q["data"]:
+            insee = record.get("code_commune_insee") or record.get("code_commune")
+            nom   = record.get("nom_commune", "")
             if not insee or not nom or insee in seen_communes:
                 continue
             seen_communes.add(insee)
 
-            val_num   = p.get("resultat_numerique")
-            val_alpha = p.get("resultat_alphanumerique")
-            date_str  = p.get("date_prelevement", "").split("T")[0]
-
-            if val_num is None and (val_alpha is None or str(val_alpha).strip() in ("", "N.M.", "N.R.")):
+            val_num, display, color, date_str = parse_result(record, conf)
+            if display is None:
                 continue
-
-            val_for_color = val_num
-            if val_for_color is None and val_alpha and "<" in str(val_alpha):
-                val_for_color = 0.0
-            color   = get_color(val_for_color, conf)
-            display = val_alpha if val_alpha and ("<" in str(val_alpha) or ">" in str(val_alpha)) else val_num
 
             if insee not in par_commune:
                 par_commune[insee] = {
                     "nom":        nom,
-                    "conclusion": p.get("conclusion_conformite_prelevement", "N/A"),
+                    "conclusion": record.get("conclusion_conformite_prelevement", "N/A"),
                     "parametres": {},
                 }
-
-            if p_name not in par_commune[insee]["parametres"]:
-                par_commune[insee]["parametres"][p_name] = {
-                    "valeur": display,
-                    "unite":  p.get("libelle_unite", conf["unite"]),
-                    "color":  color,
-                    "date":   date_str,
-                }
+            par_commune[insee]["parametres"].setdefault(p_name, {
+                "valeur": display,
+                "unite":  record.get("libelle_unite", conf["unite"]),
+                "color":  color,
+                "date":   date_str,
+            })
 
     potable = []
     for insee, data in par_commune.items():
@@ -340,12 +233,11 @@ def fetch_potable(dept_code, today):
     return potable
 
 # ---------------------------------------------------------------------------
-# 2. QUALITÉ RIVIÈRES
+# 2. RIVIÈRES
 # ---------------------------------------------------------------------------
 
-def fetch_rivieres(dept_code, today):
-    """Rivières via Hub'Eau — même logique que data_fetcher.py, paramétré par dept."""
-    print(f"  Rivières dept {dept_code}...")
+def fetch_rivieres(dept_code: str, today: datetime) -> list:
+    print(f"  Rivières dept {dept_code}…")
     two_years_ago = (today - timedelta(days=730)).strftime("%Y-%m-%d")
     codes_str     = ",".join(PARAMS_RIVIERE.keys())
 
@@ -354,11 +246,12 @@ def fetch_rivieres(dept_code, today):
            f"&date_debut_prelevement={two_years_ago}&size=20000&sort=desc")
     d_all = get_json(url, timeout=90)
 
-    par_station = {}
+    par_station: dict = {}
     if d_all:
         for p in d_all.get("data", []):
             cs = p.get("code_station")
-            if not cs: continue
+            if not cs:
+                continue
             if cs not in par_station:
                 par_station[cs] = {
                     "nom":      p.get("libelle_station", cs),
@@ -371,60 +264,81 @@ def fetch_rivieres(dept_code, today):
 
     rivieres = []
     for cs, info in par_station.items():
-        parametres = {}
-        historique = {}
+        parametres, historique = {}, {}
         for p in info["analyses"]:
             p_code = str(p.get("code_parametre", ""))
-            if p_code not in PARAMS_RIVIERE: continue
+            if p_code not in PARAMS_RIVIERE:
+                continue
             conf   = PARAMS_RIVIERE[p_code]
             p_name = conf["name"]
             val    = p.get("resultat")
             date_s = p.get("date_prelevement", "").split("T")[0]
-            if val is None: continue
-            color  = get_color(val, conf)
-            if p_name not in historique:
-                historique[p_name] = []
+            if val is None:
+                continue
+            color = get_color(val, conf)
+            historique.setdefault(p_name, [])
             if len(historique[p_name]) < 5:
                 historique[p_name].append({"date": date_s, "valeur": val, "color": color})
             if p_name not in parametres:
                 parametres[p_name] = {
-                    "valeur":   round(val, 3),
-                    "unite":    conf["unite"],
-                    "color":    color,
-                    "date":     date_s,
-                    "realtime": False,
+                    "valeur": round(val, 3), "unite": conf["unite"],
+                    "color": color, "date": date_s, "realtime": False,
                 }
 
-        if not parametres: continue
+        if not parametres:
+            continue
         score = calc_score(parametres)
         rivieres.append({
-            "nom":         info["nom"],
-            "dept":        dept_code,
-            "lat":         info["lat"],
-            "lon":         info["lon"],
-            "parametres":  parametres,
-            "historique":  historique,
-            "score":       score,
-            "score_color": score_color(score),
-            "score_label": score_label(score),
+            "nom":           info["nom"],
+            "dept":          dept_code,
+            "lat":           info["lat"],
+            "lon":           info["lon"],
+            "nom_cours_eau": extract_nom_cours_eau(info["nom"]),
+            "parametres":    parametres,
+            "historique":    historique,
+            "score":         score,
+            "score_color":   score_color(score),
+            "score_label":   score_label(score),
         })
 
     print(f"    → {len(rivieres)} stations rivières")
     return rivieres
 
 # ---------------------------------------------------------------------------
-# 3. NAPPES PHRÉATIQUES
+# 3. NAPPES (parallèle par station)
 # ---------------------------------------------------------------------------
 
-def fetch_nappes(dept_code, today):
-    """Nappes via Hub'Eau BRGM — même logique que data_fetcher.py, paramétré par dept."""
-    print(f"  Nappes dept {dept_code}...")
+def _fetch_nappe_station(s: dict, one_year_ago: str):
+    """Récupère données d'une station nappe. Thread-safe."""
+    bss  = encode_bss(s["code_bss"])
+    d_tr = get_json(f"https://hubeau.eaufrance.fr/api/v1/niveaux_nappes/chroniques_tr"
+                    f"?code_bss={bss}&size=168&sort=desc")
+    if not d_tr or not d_tr.get("data"):
+        return None
+    current = d_tr["data"][0]["niveau_eau_ngf"]
+    history = [m["niveau_eau_ngf"] for i, m in enumerate(d_tr["data"]) if i % 12 == 0][::-1]
+    d_old   = get_json(f"https://hubeau.eaufrance.fr/api/v1/niveaux_nappes/chroniques"
+                       f"?code_bss={bss}&date_debut_mesure={one_year_ago}&size=1&sort=asc")
+    year_ago = d_old["data"][0]["niveau_nappe_eau"] if d_old and d_old.get("data") else None
+    return {
+        "nom":      s["nom_commune"],
+        "dept":     s.get("code_departement", ""),
+        "code_bss": s["code_bss"],
+        "current":  current,
+        "history":  history,
+        "year_ago": year_ago,
+        "lat":      s.get("y"),
+        "lng":      s.get("x"),
+        "color":    "#3b82f6" if (year_ago and current > year_ago) else "#ef4444",
+    }
+
+
+def fetch_nappes(dept_code: str, today: datetime) -> list:
+    print(f"  Nappes dept {dept_code}…")
     one_year_ago = (today - timedelta(days=365)).strftime("%Y-%m-%d")
 
-    d_nap = get_json(
-        f"https://hubeau.eaufrance.fr/api/v1/niveaux_nappes/stations"
-        f"?code_departement={dept_code}&format=json&size=500"
-    )
+    d_nap = get_json(f"https://hubeau.eaufrance.fr/api/v1/niveaux_nappes/stations"
+                     f"?code_departement={dept_code}&format=json&size=500")
     if not d_nap or not d_nap.get("data"):
         return []
 
@@ -432,57 +346,34 @@ def fetch_nappes(dept_code, today):
               if not s.get("date_fin_mesure") or s["date_fin_mesure"] >= "2024-01-01"]
 
     nappes = []
-    for s in active:
-        bss  = urllib.parse.quote(s["code_bss"], safe="")
-        d_tr = get_json(
-            f"https://hubeau.eaufrance.fr/api/v1/niveaux_nappes/chroniques_tr"
-            f"?code_bss={bss}&size=168&sort=desc"
-        )
-        if not d_tr or not d_tr.get("data"): continue
-        current = d_tr["data"][0]["niveau_eau_ngf"]
-        history = [m["niveau_eau_ngf"] for i, m in enumerate(d_tr["data"]) if i % 12 == 0][::-1]
-        d_old = get_json(
-            f"https://hubeau.eaufrance.fr/api/v1/niveaux_nappes/chroniques"
-            f"?code_bss={bss}&date_debut_mesure={one_year_ago}&size=1&sort=asc"
-        )
-        year_ago = d_old["data"][0]["niveau_nappe_eau"] if d_old and d_old.get("data") else None
-        nappes.append({
-            "nom":      s["nom_commune"],
-            "dept":     dept_code,
-            "code_bss": s["code_bss"],
-            "current":  current,
-            "history":  history,
-            "year_ago": year_ago,
-            "lat":      s.get("y"),
-            "lng":      s.get("x"),
-            "color":    "#3b82f6" if (year_ago and current > year_ago) else "#ef4444",
-        })
+    with ThreadPoolExecutor(max_workers=5) as pool:
+        futures = [pool.submit(_fetch_nappe_station, s, one_year_ago) for s in active]
+        for future in as_completed(futures):
+            r = future.result()
+            if r:
+                nappes.append(r)
 
     print(f"    → {len(nappes)} stations nappes")
     return nappes
 
 # ---------------------------------------------------------------------------
-# 4. QUALITÉ DE L'AIR (Atmo Occitanie — Occitanie seulement)
-# Phase 2 : remplacer par Atmo Data national (admindata.atmo-france.org)
+# 4. QUALITÉ DE L'AIR (Atmo Occitanie — uniquement pour les depts Occitanie)
 # ---------------------------------------------------------------------------
 
-def _get_wfs_occitanie():
-    """Charge le WFS Atmo Occitanie une seule fois (cache module-level)."""
+def _get_wfs_occitanie() -> dict | None:
+    """Charge le WFS Atmo Occitanie une seule fois (cache thread-safe)."""
     global _wfs_cache
-    if _wfs_cache is not None:
+    with _wfs_lock:
+        if _wfs_cache is not None:
+            return _wfs_cache
+        url = ("https://dservices9.arcgis.com/7Sr9Ek9c1QTKmbwr/arcgis/services/ind_occitanie/WFSServer"
+               "?service=WFS&version=2.0.0&request=GetFeature"
+               "&typeName=ind_occitanie:ind_occitanie&outputFormat=GEOJSON&count=500")
+        _wfs_cache = get_json(url)
         return _wfs_cache
-    url = ("https://dservices9.arcgis.com/7Sr9Ek9c1QTKmbwr/arcgis/services/ind_occitanie/WFSServer"
-           "?service=WFS&version=2.0.0&request=GetFeature"
-           "&typeName=ind_occitanie:ind_occitanie&outputFormat=GEOJSON&count=500")
-    _wfs_cache = get_json(url)
-    return _wfs_cache
 
-def fetch_air(dept_code):
-    """
-    Qualité de l'air pour un département.
-    Couverture actuelle : depts Occitanie uniquement (Atmo Occitanie).
-    Autres depts : retourne [] — sera complété en Phase 2 avec Atmo Data national.
-    """
+
+def fetch_air(dept_code: str) -> list:
     if dept_code not in OCCITANIE_DEPTS:
         return []
 
@@ -490,29 +381,30 @@ def fetch_air(dept_code):
     if not dept_zones:
         return []
 
-    print(f"  Air dept {dept_code} (Atmo Occitanie)...")
+    print(f"  Air dept {dept_code} (Atmo Occitanie)…")
     d_air = _get_wfs_occitanie()
     if not d_air or "features" not in d_air:
         return []
 
-    latest = {}
+    latest: dict = {}
     for f in d_air["features"]:
         p  = f.get("properties", {})
         cz = p.get("code_zone")
-        if cz not in dept_zones: continue
+        if cz not in dept_zones:
+            continue
         if cz not in latest or p.get("date_ech", "") > latest[cz].get("date_ech", ""):
             latest[cz] = p
 
-    air_results = []
+    results = []
     for cz, p in latest.items():
         qual = p.get("code_qual") or 0
-        air_results.append({
-            "zone":    dept_zones[cz]["nom"],
-            "dept":    dept_code,
-            "date":    p.get("date_ech", ""),
-            "indice":  qual,
-            "label":   p.get("lib_qual") or QUAL_LABELS.get(qual, "N.C."),
-            "color":   p.get("coul_qual") or QUAL_COLORS.get(qual, "#94a3b8"),
+        results.append({
+            "zone":   dept_zones[cz]["nom"],
+            "dept":   dept_code,
+            "date":   p.get("date_ech", ""),
+            "indice": qual,
+            "label":  p.get("lib_qual") or QUAL_LABELS.get(qual, "N.C."),
+            "color":  p.get("coul_qual") or QUAL_COLORS.get(qual, "#94a3b8"),
             "polluants": {
                 label: {
                     "indice": p.get(f"code_{key}") or 0,
@@ -522,22 +414,18 @@ def fetch_air(dept_code):
                 for key, label in SUB_PARAMS
             },
         })
-    print(f"    → {len(air_results)} zones air")
-    return air_results
+    print(f"    → {len(results)} zones air")
+    return results
 
 # ---------------------------------------------------------------------------
-# 5. POLLEN (Atmo Occitanie — Occitanie seulement)
+# 5. POLLEN (Atmo Occitanie — uniquement pour les depts Occitanie)
 # ---------------------------------------------------------------------------
 
-def fetch_pollen(dept_code):
-    """
-    Pollen pour un département.
-    Couverture actuelle : depts Occitanie uniquement.
-    """
+def fetch_pollen(dept_code: str) -> list:
     if dept_code not in OCCITANIE_DEPTS:
         return []
 
-    print(f"  Pollen dept {dept_code}...")
+    print(f"  Pollen dept {dept_code}…")
     url = (f"https://services9.arcgis.com/7Sr9Ek9c1QTKmbwr/arcgis/rest/services"
            f"/Indice_Pollens_sur_la_region_Occitanie/FeatureServer/0/query"
            f"?where=code_zone+%3D+{int(dept_code)}&outFields=*"
@@ -577,21 +465,21 @@ def fetch_pollen(dept_code):
 # TRAITEMENT D'UN DÉPARTEMENT
 # ---------------------------------------------------------------------------
 
-def process_dept(dept_code, today, outdir):
-    """Traite un département et écrit data/dept/XX.json (ou outdir/XX.json)."""
+def process_dept(dept_code: str, today: datetime, outdir: str) -> dict:
+    """Traite un département complet et écrit XX.json dans outdir."""
     info = DEPARTEMENTS.get(dept_code, {})
     print(f"\n{'='*60}")
     print(f"Département {dept_code} — {info.get('nom', '?')} ({info.get('region', '?')})")
     print(f"{'='*60}")
 
-    potable   = fetch_potable(dept_code, today)
-    rivieres  = fetch_rivieres(dept_code, today)
-    nappes    = fetch_nappes(dept_code, today)
-    air       = fetch_air(dept_code)
-    pollen    = fetch_pollen(dept_code)
+    potable  = fetch_potable(dept_code, today)
+    rivieres = fetch_rivieres(dept_code, today)
+    nappes   = fetch_nappes(dept_code, today)
+    air      = fetch_air(dept_code)
+    pollen   = fetch_pollen(dept_code)
 
-    scores     = [c["score"] for c in potable if c.get("score") is not None]
-    score_eau  = round(sum(scores) / len(scores)) if scores else None
+    scores    = [c["score"] for c in potable if c.get("score") is not None]
+    score_eau = round(sum(scores) / len(scores)) if scores else None
 
     dept_data = {
         "dept":        dept_code,
@@ -613,8 +501,7 @@ def process_dept(dept_code, today, outdir):
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(dept_data, f, indent=2, ensure_ascii=False)
 
-    print(f"  ✓ Écrit → {out_path}")
-    print(f"    {len(potable)} communes · {len(rivieres)} rivières · "
+    print(f"  ✓ {out_path} — {len(potable)} communes · {len(rivieres)} rivières · "
           f"{len(nappes)} nappes · {len(air)} zones air · {len(pollen)} pollen")
     return dept_data
 
@@ -622,11 +509,8 @@ def process_dept(dept_code, today, outdir):
 # GÉNÉRATION DE data/index.json
 # ---------------------------------------------------------------------------
 
-def generate_index(dept_dir=None):
-    """
-    Lit tous les data/dept/XX.json et génère data/index.json avec les scores agrégés.
-    Appelé en fin de run ou via --generate-index-only.
-    """
+def generate_index(dept_dir: str = None):
+    """Lit tous les data/dept/XX.json et génère data/index.json."""
     if dept_dir is None:
         dept_dir = DATA_DEPT_DIR
 
@@ -672,9 +556,9 @@ def generate_index(dept_dir=None):
 def main():
     parser = argparse.ArgumentParser(description="Fetcher national Mon-Environnement.fr")
     group  = parser.add_mutually_exclusive_group()
-    group.add_argument("--depts", help="Codes séparés par virgule (ex: 34,30,31,13,75)")
-    group.add_argument("--batch", type=int, choices=[1, 2, 3, 4],
-                       help="Numéro de batch 1-4 pour les jobs parallèles GitHub Actions")
+    group.add_argument("--depts",  help="Codes séparés par virgule (ex: 34,30,31,13,75)")
+    group.add_argument("--batch",  type=int, choices=[1, 2, 3, 4],
+                       help="Numéro de batch 1–4 pour les jobs parallèles GitHub Actions")
     group.add_argument("--generate-index-only", action="store_true",
                        help="Régénère uniquement data/index.json depuis data/dept/*.json")
     parser.add_argument("--outdir", default=DATA_DEPT_DIR,
@@ -685,7 +569,6 @@ def main():
         generate_index(DATA_DEPT_DIR)
         return
 
-    # Détermination des depts à traiter
     if args.depts:
         depts = [d.strip().upper() if d.strip().upper() in ("2A", "2B")
                  else d.strip().zfill(2)
@@ -693,30 +576,32 @@ def main():
     elif args.batch:
         depts = BATCHES[args.batch]
     else:
-        depts = _ALL_CODES  # tous les 96 depts
+        depts = _ALL_CODES
 
     today  = datetime.now(tz=ZoneInfo("Europe/Paris"))
     outdir = args.outdir
     os.makedirs(outdir, exist_ok=True)
 
     print(f"data_fetcher_national.py — {today.strftime('%d/%m/%Y à %H:%M')}")
-    print(f"Depts à traiter : {depts}")
+    print(f"Depts à traiter ({len(depts)}) : {depts}")
     print(f"Répertoire de sortie : {outdir}")
 
-    for dept_code in depts:
-        if dept_code not in DEPARTEMENTS:
-            print(f"[SKIP] Code inconnu : {dept_code}")
-            continue
-        try:
-            process_dept(dept_code, today, outdir)
-        except Exception as e:
-            print(f"[ERROR] Dept {dept_code} : {e}")
+    # Traitement des depts en parallèle (max 6 simultanés pour éviter le rate-limiting)
+    with ThreadPoolExecutor(max_workers=6) as pool:
+        futures = {pool.submit(process_dept, code, today, outdir): code
+                   for code in depts if code in DEPARTEMENTS}
+        for future in as_completed(futures):
+            code = futures[future]
+            try:
+                future.result()
+            except Exception as exc:
+                print(f"[ERROR] Dept {code} : {exc}")
 
-    # Mise à jour de data/index.json (seulement si on écrit dans le répertoire principal)
     if outdir == DATA_DEPT_DIR:
         generate_index(DATA_DEPT_DIR)
 
     print(f"\nTerminé — {len(depts)} département(s) traité(s).")
+
 
 if __name__ == "__main__":
     main()
