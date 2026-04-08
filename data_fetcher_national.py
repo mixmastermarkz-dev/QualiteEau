@@ -262,108 +262,74 @@ def score_label(s):
 # 1. EAU POTABLE
 # ---------------------------------------------------------------------------
 
-def discover_communes(dept_code):
-    """
-    Découvre les communes du département via Hub'Eau communes_udi.
-    Retourne un dict {code_insee: nom_commune}.
-    """
-    url = (f"https://hubeau.eaufrance.fr/api/v1/qualite_eau_potable/communes_udi"
-           f"?code_departement={dept_code}&size=500")
-    d = get_json(url)
-    if not d or not d.get("data"):
-        return {}
-    communes = {}
-    for c in d["data"]:
-        # Les noms de champs Hub'Eau communes_udi — à vérifier si l'API évolue
-        code = (c.get("code_commune_insee")
-                or c.get("code_commune")
-                or c.get("code_insee_commune", ""))
-        nom  = (c.get("nom_commune")
-                or c.get("libelle_commune", ""))
-        if code and nom and code not in communes:
-            communes[code] = nom
-    return communes
-
 def fetch_potable(dept_code, today):
     """
-    Eau potable via Hub'Eau — découverte dynamique des communes.
-    Approche : communes_udi → par commune × par paramètre (même logique que data_fetcher.py).
-    Phase 2 : optimiser avec requête dept-niveau si l'API le supporte.
+    Eau potable via Hub'Eau — 1 appel par paramètre au niveau département.
+    ~11 appels total vs N_communes × 12 appels dans l'ancienne approche.
     """
     print(f"  Eau potable dept {dept_code}...")
-    communes = discover_communes(dept_code)
-    if not communes:
-        print(f"    Aucune commune trouvée pour le dept {dept_code}")
-        return []
 
-    print(f"    {len(communes)} communes découvertes")
-    potable = []
+    par_commune = {}  # {insee: {nom, conclusion, parametres}}
 
-    for insee, nom in communes.items():
-        # Restriction sécheresse VigiEau
-        restric = "Vigilance"
-        d_res = get_json(
-            f"https://api.vigieau.gouv.fr/api/zones?commune={insee}&profil=particulier",
-            timeout=10
-        )
-        if d_res:
-            lvls = [z.get("niveauGravite", "") for z in d_res]
-            if "crise" in lvls:              restric = "Crise"
-            elif "alerte_renforcee" in lvls: restric = "Alerte Renforcée"
-            elif "alerte" in lvls:           restric = "Alerte"
+    for p_code, conf in PARAMS_POTABLE.items():
+        url_q = (f"https://hubeau.eaufrance.fr/api/v1/qualite_eau_potable/resultats_dis"
+                 f"?code_departement={dept_code}&code_parametre={p_code}"
+                 f"&size=20000&sort=desc")
+        d_q = get_json(url_q)
+        if not d_q or not d_q.get("data"):
+            continue
 
-        # Analyses ARS — une requête par paramètre pour obtenir la valeur la plus récente
-        conclusion     = "N/A"
-        parametres     = {}
-        got_conclusion = False
+        p_name       = conf["name"]
+        seen_communes = set()  # on ne garde que le résultat le plus récent par commune
 
-        for p_code, conf in PARAMS_POTABLE.items():
-            url_q = (f"https://hubeau.eaufrance.fr/api/v1/qualite_eau_potable/resultats_dis"
-                     f"?code_commune={insee}&code_parametre={p_code}&size=100&sort=desc")
-            d_q = get_json(url_q)
-            if not d_q or not d_q.get("data"):
+        for p in d_q["data"]:
+            insee = p.get("code_commune_insee") or p.get("code_commune")
+            nom   = p.get("nom_commune", "")
+            if not insee or not nom or insee in seen_communes:
+                continue
+            seen_communes.add(insee)
+
+            val_num   = p.get("resultat_numerique")
+            val_alpha = p.get("resultat_alphanumerique")
+            date_str  = p.get("date_prelevement", "").split("T")[0]
+
+            if val_num is None and (val_alpha is None or str(val_alpha).strip() in ("", "N.M.", "N.R.")):
                 continue
 
-            if not got_conclusion:
-                conclusion = d_q["data"][0].get("conclusion_conformite_prelevement", "N/A")
-                got_conclusion = True
+            val_for_color = val_num
+            if val_for_color is None and val_alpha and "<" in str(val_alpha):
+                val_for_color = 0.0
+            color   = get_color(val_for_color, conf)
+            display = val_alpha if val_alpha and ("<" in str(val_alpha) or ">" in str(val_alpha)) else val_num
 
-            p_name = conf["name"]
-            for p in d_q["data"]:
-                val_num   = p.get("resultat_numerique")
-                val_alpha = p.get("resultat_alphanumerique")
-                date_str  = p.get("date_prelevement", "").split("T")[0]
+            if insee not in par_commune:
+                par_commune[insee] = {
+                    "nom":        nom,
+                    "conclusion": p.get("conclusion_conformite_prelevement", "N/A"),
+                    "parametres": {},
+                }
 
-                if val_num is None and (val_alpha is None or str(val_alpha).strip() in ("", "N.M.", "N.R.")):
-                    continue
+            if p_name not in par_commune[insee]["parametres"]:
+                par_commune[insee]["parametres"][p_name] = {
+                    "valeur": display,
+                    "unite":  p.get("libelle_unite", conf["unite"]),
+                    "color":  color,
+                    "date":   date_str,
+                }
 
-                val_for_color = val_num
-                if val_for_color is None and val_alpha and "<" in str(val_alpha):
-                    val_for_color = 0.0
-                color   = get_color(val_for_color, conf)
-                display = val_alpha if val_alpha and ("<" in str(val_alpha) or ">" in str(val_alpha)) else val_num
-
-                if p_name not in parametres:
-                    parametres[p_name] = {
-                        "valeur": display,
-                        "unite":  p.get("libelle_unite", conf["unite"]),
-                        "color":  color,
-                        "date":   date_str,
-                    }
-                    break  # valeur la plus récente trouvée
-
-        if not parametres:
-            continue  # commune sans aucune donnée récente = ignorée
-
-        score = calc_score(parametres)
+    potable = []
+    for insee, data in par_commune.items():
+        if not data["parametres"]:
+            continue
+        score = calc_score(data["parametres"])
         potable.append({
-            "nom":         nom,
+            "nom":         data["nom"],
             "dept":        dept_code,
             "insee":       insee,
-            "restric":     restric,
+            "restric":     "N.D.",
             "origine":     "Nappe ou captage local",
-            "conclusion":  conclusion,
-            "parametres":  parametres,
+            "conclusion":  data["conclusion"],
+            "parametres":  data["parametres"],
             "score":       score,
             "score_color": score_color(score),
             "score_label": score_label(score),
