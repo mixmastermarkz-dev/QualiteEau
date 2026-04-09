@@ -68,36 +68,82 @@
     <!-- Remplacez ca-pub-XXXXXXXXXXXXXXXX par votre ID éditeur Google AdSense -->
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6656990941754174" crossorigin="anonymous"></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,700;0,800;0,900;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
-        #map-nappes { height: 420px; border-radius: 2rem; width: 100%; z-index: 10; }
-        #map-qualite { height: 420px; border-radius: 2rem; width: 100%; z-index: 10; }
-        .glass-card { background: rgba(255,255,255,0.85); backdrop-filter: blur(10px); }
-        .tab-active { border-bottom: 4px solid #0ea5e9; color: #0ea5e9; }
-        .subtab-active { background: #0ea5e9 !important; color: white !important; }
+        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+
+        #map-nappes { height: 420px; border-radius: 1.5rem; width: 100%; z-index: 10; }
+        #map-qualite { height: 420px; border-radius: 1.5rem; width: 100%; z-index: 10; }
+
+        /* ── GLASS CARD ── */
+        .glass-card { background: #ffffff; box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 16px rgba(0,0,0,0.04); }
+
+        /* ── TAB PILLS ── */
+        .tab-btn {
+            padding: 0.5rem 1rem; border-radius: 9999px;
+            font-size: 0.7rem; font-weight: 800;
+            color: #64748b; transition: all 0.18s;
+            display: inline-flex; align-items: center; gap: 0.35rem;
+            white-space: nowrap; letter-spacing: 0.04em; text-transform: uppercase;
+            text-decoration: none;
+        }
+        .tab-btn:hover { background: rgba(14,165,233,0.08); color: #0284c7; }
+        .tab-active { background: #0ea5e9 !important; color: white !important; box-shadow: 0 3px 12px rgba(14,165,233,0.4); }
+
+        /* ── DEPT SELECTOR ── */
+        .subtab-active { background: #0f172a !important; color: white !important; }
+
+        /* ── SCORE RING (static, used in cards) ── */
+        .score-ring { width: 64px; height: 64px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; font-weight: 900; color: white; flex-shrink: 0; }
+
+        /* ── SVG RINGS (hero) ── */
+        .ring-arc { transition: stroke-dashoffset 1.6s cubic-bezier(.4,0,.2,1); }
+
+        /* ── HERO DOT GRID ── */
+        .hero-dot-grid {
+            background-image: radial-gradient(circle, rgba(148,163,184,0.12) 1px, transparent 1px);
+            background-size: 28px 28px;
+        }
+
+        /* ── SECTION FADE-IN ── */
+        #section-nappes:not(.hidden),
+        #section-potable:not(.hidden),
+        #section-rivieres:not(.hidden),
+        #section-carte:not(.hidden),
+        #section-air:not(.hidden),
+        #section-methode:not(.hidden) {
+            animation: sectionIn 0.22s ease-out;
+        }
+        @keyframes sectionIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ── ADS ── */
         .ad-slot { background: rgba(241,245,249,0.5); border: 2px dashed #cbd5e1; border-radius: 1.5rem; display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; }
         .ad-slot ins.adsbygoogle { position: absolute; inset: 0; }
         .ad-label { pointer-events: none; }
-        .score-ring { width: 64px; height: 64px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; font-weight: 900; color: white; flex-shrink: 0; }
+
+        /* ── CHARTS ── */
         .station-chart { height: 40px !important; width: 100% !important; }
 
         /* ── HAMBURGER / SIDE DRAWER ── */
-        #side-drawer {
-            transform: translateX(-100%);
-            transition: transform 0.28s cubic-bezier(.4,0,.2,1);
-        }
+        #side-drawer { transform: translateX(-100%); transition: transform 0.28s cubic-bezier(.4,0,.2,1); }
         #side-drawer.open { transform: translateX(0); }
-        #menu-overlay {
-            opacity: 0; pointer-events: none;
-            transition: opacity 0.28s ease;
-        }
+        #menu-overlay { opacity: 0; pointer-events: none; transition: opacity 0.28s ease; }
         #menu-overlay.open { opacity: 1; pointer-events: auto; }
+
+        /* ── SCROLLBAR HIDE (mobile tab bar) ── */
+        .scrollbar-hide::-webkit-scrollbar { display: none; }
+        .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
 </head>
-<body class="bg-slate-100 min-h-screen font-sans flex flex-col antialiased text-slate-900">
+<body class="bg-slate-50 min-h-screen flex flex-col antialiased text-slate-900">
 
 <!-- ═══ OVERLAY MENU MOBILE ═══ -->
 <div id="menu-overlay" class="fixed inset-0 bg-black/40 z-[200]" onclick="closeMenu()"></div>
@@ -173,38 +219,135 @@
     </div>
 </div>
 
+<!-- ═══ LOADING OVERLAY ═══ -->
+<div id="loading-overlay" class="fixed inset-0 z-[9998] bg-slate-50/95 backdrop-blur-sm flex items-center justify-center flex-col gap-6">
+    <div class="relative w-16 h-16">
+        <svg class="animate-spin w-16 h-16 text-sky-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <circle class="opacity-20" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3"></circle>
+            <path class="opacity-90" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>
+        </svg>
+    </div>
+    <div class="text-center">
+        <p class="text-base font-black text-slate-700 uppercase tracking-widest">Chargement des données</p>
+        <p class="text-xs text-slate-400 mt-1">Données officielles ARS · Hub'Eau · Atmo Occitanie</p>
+    </div>
+</div>
+
 <div class="max-w-[1600px] mx-auto px-4 py-4 flex-grow w-full">
 
-    <!-- HEADER -->
-    <header class="flex flex-col md:flex-row justify-between items-center mb-6 bg-white p-6 rounded-3xl shadow-sm border border-slate-200 gap-4">
-        <div class="flex items-center gap-4 w-full md:w-auto">
-            <!-- Hamburger mobile -->
-            <button onclick="toggleMenu()" class="md:hidden flex-shrink-0 flex items-center justify-center w-11 h-11 rounded-2xl bg-slate-100 hover:bg-slate-200 transition-colors" aria-label="Menu">
-                <svg class="w-5 h-5 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16M4 18h16"/>
-                </svg>
-            </button>
-            <div>
-                <h1 class="text-3xl md:text-4xl font-black tracking-tight uppercase leading-tight">QUALITÉ <span class="text-sky-500">AIR ET EAU</span></h1>
-                <p class="text-slate-500 text-sm font-medium italic">Surveillance Hérault (34) & Gard (30)</p>
-                <p id="updated-subtitle" class="text-[11px] text-slate-400 italic mt-1 hidden"></p>
-                <a href="/departement/" class="text-[11px] font-black text-sky-500 hover:text-sky-700 uppercase tracking-wide mt-1 inline-flex items-center gap-1 transition-colors">📍 Voir tous les départements →</a>
+    <!-- ═══ HERO ═══ -->
+    <header class="relative overflow-hidden bg-gradient-to-br from-slate-900 via-[#0d1f48] to-slate-900 rounded-3xl mb-5 shadow-2xl">
+        <!-- Background texture -->
+        <div class="absolute inset-0 hero-dot-grid pointer-events-none"></div>
+        <!-- Ambient glows -->
+        <div class="absolute -top-32 -right-32 w-[500px] h-[500px] bg-sky-500/8 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 left-1/3 w-72 h-72 bg-indigo-600/6 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="relative px-6 md:px-10 py-8 md:py-10">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+
+                <!-- Left: branding -->
+                <div class="flex items-start gap-4">
+                    <button onclick="toggleMenu()" class="md:hidden flex-shrink-0 flex items-center justify-center w-11 h-11 rounded-2xl bg-white/10 hover:bg-white/20 transition-colors mt-1" aria-label="Menu">
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                    <div>
+                        <div class="flex flex-wrap items-center gap-2 mb-3">
+                            <span class="inline-flex items-center gap-1.5 bg-emerald-500/15 text-emerald-400 text-[10px] font-black uppercase tracking-[0.15em] px-3 py-1 rounded-full border border-emerald-500/20">
+                                <span class="w-1.5 h-1.5 bg-emerald-400 rounded-full animate-pulse"></span>
+                                Données officielles
+                            </span>
+                            <a href="/departement/" class="text-[10px] font-bold text-slate-400 hover:text-sky-400 transition-colors uppercase tracking-wide">📍 Tous les départements →</a>
+                        </div>
+                        <h1 class="text-4xl md:text-5xl font-black text-white tracking-tight uppercase leading-none">
+                            Mon<span class="text-sky-400">Environnement</span><span class="text-slate-600">.fr</span>
+                        </h1>
+                        <p class="text-slate-400 text-sm font-medium mt-2">Hérault (34) &amp; Gard (30) — Qualité Air &amp; Eau</p>
+                        <p id="updated-subtitle" class="text-[11px] text-slate-500 italic mt-2 hidden"></p>
+                    </div>
+                </div>
+
+                <!-- Right: 3 animated score rings -->
+                <div class="flex items-center gap-4 md:gap-7 flex-shrink-0">
+
+                    <!-- Eau potable -->
+                    <div class="flex flex-col items-center gap-1.5">
+                        <div class="relative w-[72px] h-[72px] md:w-[88px] md:h-[88px]">
+                            <svg viewBox="0 0 100 100" class="w-full h-full" style="transform:rotate(-90deg)">
+                                <circle cx="50" cy="50" r="40" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="9"/>
+                                <circle id="ring-potable-circle" cx="50" cy="50" r="40" fill="none" stroke="#38bdf8" stroke-width="9"
+                                    stroke-dasharray="251.3" stroke-dashoffset="251.3" stroke-linecap="round" class="ring-arc"/>
+                            </svg>
+                            <div class="absolute inset-0 flex flex-col items-center justify-center">
+                                <span class="text-xl font-black text-white leading-none" id="score-global-potable">--</span>
+                                <span class="text-[8px] text-sky-400/60 font-bold">/100</span>
+                            </div>
+                        </div>
+                        <p class="text-[9px] font-black text-slate-400 uppercase tracking-wider text-center leading-tight">Eau potable</p>
+                        <p class="text-[9px] text-slate-500 text-center"><span id="stat-communes-score">--</span> communes</p>
+                    </div>
+
+                    <div class="w-px h-16 bg-white/5 hidden md:block"></div>
+
+                    <!-- Rivières -->
+                    <div class="flex flex-col items-center gap-1.5">
+                        <div class="relative w-[72px] h-[72px] md:w-[88px] md:h-[88px]">
+                            <svg viewBox="0 0 100 100" class="w-full h-full" style="transform:rotate(-90deg)">
+                                <circle cx="50" cy="50" r="40" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="9"/>
+                                <circle id="ring-riviere-circle" cx="50" cy="50" r="40" fill="none" stroke="#818cf8" stroke-width="9"
+                                    stroke-dasharray="251.3" stroke-dashoffset="251.3" stroke-linecap="round" class="ring-arc"/>
+                            </svg>
+                            <div class="absolute inset-0 flex flex-col items-center justify-center">
+                                <span class="text-xl font-black text-white leading-none" id="score-global-riviere">--</span>
+                                <span class="text-[8px] text-indigo-400/60 font-bold">/100</span>
+                            </div>
+                        </div>
+                        <p class="text-[9px] font-black text-slate-400 uppercase tracking-wider text-center leading-tight">Rivières</p>
+                        <p class="text-[9px] text-slate-500 text-center"><span id="stat-rivieres-score">--</span> stations</p>
+                    </div>
+
+                    <div class="w-px h-16 bg-white/5 hidden md:block"></div>
+
+                    <!-- Conformité -->
+                    <div class="flex flex-col items-center gap-1.5">
+                        <div class="relative w-[72px] h-[72px] md:w-[88px] md:h-[88px]">
+                            <svg viewBox="0 0 100 100" class="w-full h-full" style="transform:rotate(-90deg)">
+                                <circle cx="50" cy="50" r="40" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="9"/>
+                                <circle id="ring-conformes-circle" cx="50" cy="50" r="40" fill="none" stroke="#34d399" stroke-width="9"
+                                    stroke-dasharray="251.3" stroke-dashoffset="251.3" stroke-linecap="round" class="ring-arc"/>
+                            </svg>
+                            <div class="absolute inset-0 flex flex-col items-center justify-center">
+                                <span class="text-xl font-black text-white leading-none" id="stat-conformes">--</span>
+                                <span class="text-[9px] text-emerald-400/70 font-bold" id="stat-conformes-pct">%</span>
+                            </div>
+                        </div>
+                        <p class="text-[9px] font-black text-slate-400 uppercase tracking-wider text-center leading-tight">Conformes</p>
+                        <p class="text-[9px] text-slate-500 text-center">score ≥ 80/100</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="flex items-center gap-4">
-            <div class="text-center">
-                <p class="text-[9px] font-black text-slate-400 uppercase tracking-widest">Communes concernées</p>
-                <p class="text-2xl font-black text-sky-600" id="stat-communes">--</p>
-            </div>
-            <div class="text-center">
-                <p class="text-[9px] font-black text-slate-400 uppercase tracking-widest">Rivières concernées</p>
-                <p class="text-2xl font-black text-indigo-600" id="stat-rivieres">--</p>
+
+            <!-- Stats bar -->
+            <div class="flex items-center gap-4 mt-6 pt-5 border-t border-white/[0.06]">
+                <div class="flex items-center gap-1.5">
+                    <span class="w-2 h-2 bg-sky-400 rounded-full flex-shrink-0"></span>
+                    <span class="text-sky-400 font-black text-sm" id="stat-communes">--</span>
+                    <span class="text-slate-500 text-xs">communes surveillées</span>
+                </div>
+                <span class="text-white/10 text-lg select-none">·</span>
+                <div class="flex items-center gap-1.5">
+                    <span class="w-2 h-2 bg-indigo-400 rounded-full flex-shrink-0"></span>
+                    <span class="text-indigo-400 font-black text-sm" id="stat-rivieres">--</span>
+                    <span class="text-slate-500 text-xs">stations fluviales</span>
+                </div>
             </div>
         </div>
     </header>
 
     <!-- PUB HAUT — Leaderboard -->
-    <div class="ad-slot w-full mb-6" style="min-height:90px">
+    <div class="ad-slot w-full mb-5" style="min-height:90px">
         <span class="ad-label text-slate-400 text-[10px] font-black uppercase tracking-[0.2em]">Publicité — 728×90</span>
         <ins class="adsbygoogle" style="display:block;width:100%;height:90px"
              data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
@@ -214,73 +357,28 @@
         <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
 
-    <!-- SCORE GLOBAL -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-        <div class="bg-gradient-to-br from-sky-600 to-sky-500 text-white p-6 rounded-3xl shadow-lg flex justify-between items-center group relative">
-            <div>
-                <p class="text-[10px] font-bold uppercase tracking-widest opacity-80">Score qualité moyen</p>
-                <p class="text-xl font-black">Eau potable</p>
-                <p class="text-[11px] opacity-80 mt-1 leading-snug">Moyenne sur les <span id="stat-communes-score">--</span> communes.<br>100 = tous paramètres conformes · 0 = dépassements critiques.</p>
-            </div>
-            <div class="text-center ml-4 flex-shrink-0">
-                <span class="text-5xl font-black" id="score-global-potable">--</span>
-                <span class="text-sm opacity-60 block">/100</span>
-            </div>
-        </div>
-        <div class="bg-gradient-to-br from-indigo-600 to-indigo-500 text-white p-6 rounded-3xl shadow-lg flex justify-between items-center">
-            <div>
-                <p class="text-[10px] font-bold uppercase tracking-widest opacity-80">Score qualité moyen</p>
-                <p class="text-xl font-black">Rivières</p>
-                <p class="text-[11px] opacity-80 mt-1 leading-snug">Moyenne sur les <span id="stat-rivieres-score">--</span> stations analysées.<br>Basé sur nitrates, phosphore, pH, O2, MES, ammonium.</p>
-            </div>
-            <div class="text-center ml-4 flex-shrink-0">
-                <span class="text-5xl font-black" id="score-global-riviere">--</span>
-                <span class="text-sm opacity-60 block">/100</span>
-            </div>
-        </div>
-        <div class="bg-gradient-to-br from-emerald-600 to-emerald-500 text-white p-6 rounded-3xl shadow-lg flex justify-between items-center">
-            <div>
-                <p class="text-[10px] font-bold uppercase tracking-widest opacity-80">Conformité eau potable</p>
-                <p class="text-xl font-black">Communes score ≥ 80</p>
-                <p class="text-[11px] opacity-80 mt-1 leading-snug">Eau potable conforme = score ≥ 80/100.<br>Source : contrôles ARS via Hub'Eau.</p>
-            </div>
-            <div class="text-center ml-4 flex-shrink-0">
-                <span class="text-5xl font-black" id="stat-conformes">--</span>
-                <span class="text-sm opacity-60 block font-medium" id="stat-conformes-pct"></span>
-            </div>
-        </div>
-    </div>
-
-    <!-- ONGLETS (desktop uniquement — hamburger sur mobile) -->
-    <div class="hidden md:flex space-x-8 mb-6 border-b border-slate-300 overflow-x-auto whitespace-nowrap">
-        <button onclick="switchTab('nappes')" id="tab-nappes" class="pb-4 text-base font-black text-slate-400 hover:text-slate-600 transition-all tab-active uppercase tracking-wider">Nappes</button>
-        <button onclick="switchTab('potable')" id="tab-potable" class="pb-4 text-base font-black text-slate-400 hover:text-slate-600 transition-all uppercase tracking-wider">Eau Potable</button>
-        <button onclick="switchTab('rivieres')" id="tab-rivieres" class="pb-4 text-base font-black text-slate-400 hover:text-slate-600 transition-all uppercase tracking-wider">Qualité Rivières</button>
-        <button onclick="switchTab('air')" id="tab-air" class="pb-4 text-base font-black text-slate-400 hover:text-slate-600 transition-all uppercase tracking-wider">Qualité de l'Air</button>
-        <a href="/eau-potable/" class="pb-4 text-base font-black text-slate-400 hover:text-sky-600 transition-all uppercase tracking-wider">Communes</a>
-        <button onclick="switchTab('methode')" id="tab-methode" class="pb-4 text-base font-black text-slate-400 hover:text-slate-600 transition-all uppercase tracking-wider">Sources & Méthode</button>
-    </div>
-    <!-- MINI NAV MOBILE (remplace les onglets sur petits écrans) -->
-    <div class="flex md:hidden space-x-2 mb-6 overflow-x-auto whitespace-nowrap pb-1">
-        <button onclick="switchTab('nappes')"    class="px-4 py-2 rounded-xl bg-white border border-slate-200 text-xs font-black text-slate-500 shadow-sm">Nappes</button>
-        <button onclick="switchTab('potable')"   class="px-4 py-2 rounded-xl bg-white border border-slate-200 text-xs font-black text-slate-500 shadow-sm">Eau Potable</button>
-        <button onclick="switchTab('rivieres')"  class="px-4 py-2 rounded-xl bg-white border border-slate-200 text-xs font-black text-slate-500 shadow-sm">Rivières</button>
-        <button onclick="switchTab('air')"       class="px-4 py-2 rounded-xl bg-white border border-slate-200 text-xs font-black text-slate-500 shadow-sm">Air</button>
-        <a href="/eau-potable/"                  class="px-4 py-2 rounded-xl bg-white border border-slate-200 text-xs font-black text-slate-500 shadow-sm">Communes</a>
+    <!-- NAVIGATION PRINCIPALE -->
+    <div class="flex items-center gap-1 mb-4 p-1.5 bg-white rounded-2xl shadow-sm border border-slate-100 overflow-x-auto scrollbar-hide">
+        <button onclick="switchTab('nappes')"   id="tab-nappes"   class="tab-btn tab-active">💧 Nappes</button>
+        <button onclick="switchTab('potable')"  id="tab-potable"  class="tab-btn">🚰 Eau Potable</button>
+        <button onclick="switchTab('rivieres')" id="tab-rivieres" class="tab-btn">🌊 Rivières</button>
+        <button onclick="switchTab('air')"      id="tab-air"      class="tab-btn">🌬️ Air &amp; Pollen</button>
+        <a href="/eau-potable/"                                    class="tab-btn">🏘️ Communes</a>
+        <button onclick="switchTab('methode')"  id="tab-methode"  class="tab-btn">📋 Méthode</button>
     </div>
 
     <!-- SÉLECTEUR DÉPARTEMENT -->
-    <div id="dept-selector" class="flex space-x-2 mb-8">
-        <button onclick="switchDept('all')" id="btn-dept-all" class="px-6 py-2 rounded-xl bg-white border border-slate-200 text-xs font-black text-slate-500 subtab-active shadow-sm uppercase">Global</button>
-        <button onclick="switchDept('34')" id="btn-dept-34" class="px-6 py-2 rounded-xl bg-white border border-slate-200 text-xs font-black text-slate-500 shadow-sm uppercase">Hérault (34)</button>
-        <button onclick="switchDept('30')" id="btn-dept-30" class="px-6 py-2 rounded-xl bg-white border border-slate-200 text-xs font-black text-slate-500 shadow-sm uppercase">Gard (30)</button>
+    <div id="dept-selector" class="flex gap-2 mb-6">
+        <button onclick="switchDept('all')" id="btn-dept-all" class="px-4 py-1.5 rounded-full text-xs font-black uppercase shadow-sm subtab-active bg-white border border-slate-200 text-slate-500">Tout</button>
+        <button onclick="switchDept('34')"  id="btn-dept-34"  class="px-4 py-1.5 rounded-full bg-white border border-slate-200 text-xs font-black text-slate-500 uppercase shadow-sm">Hérault (34)</button>
+        <button onclick="switchDept('30')"  id="btn-dept-30"  class="px-4 py-1.5 rounded-full bg-white border border-slate-200 text-xs font-black text-slate-500 uppercase shadow-sm">Gard (30)</button>
     </div>
 
     <!-- ====== SECTION NAPPES ====== -->
     <div id="section-nappes" class="space-y-8">
 
         <!-- Explication encart -->
-        <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-200 flex flex-col md:flex-row gap-6 items-start">
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex flex-col md:flex-row gap-6 items-start">
             <div class="flex-shrink-0 w-12 h-12 bg-blue-600 text-white rounded-2xl flex items-center justify-center text-2xl">💧</div>
             <div class="space-y-3 text-[13px] leading-relaxed text-slate-600">
                 <p class="text-base font-black text-slate-800 uppercase tracking-tight">Comment lire ces données ?</p>
@@ -296,7 +394,7 @@
 
         <div class="flex flex-col xl:flex-row gap-8">
             <div class="flex-grow space-y-8">
-                <div id="map-nappes" class="shadow-2xl border-4 border-white overflow-hidden"></div>
+                <div id="map-nappes" class="shadow-md border border-slate-100 overflow-hidden"></div>
                 <p id="nappe-count" class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2"></p>
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-4" id="nappe-stats"></div>
             </div>
@@ -310,7 +408,7 @@
             <div class="flex-grow space-y-10">
 
                 <!-- Légende alertes sécheresse -->
-                <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-200">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
                     <h3 class="text-xs font-black text-slate-400 uppercase tracking-widest mb-4 flex items-center"><span class="w-2 h-2 bg-sky-500 rounded-full mr-2"></span> Alertes sécheresse (VigiEau)</h3>
                     <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
                         <div class="flex items-center p-3 bg-green-50 rounded-2xl border border-green-100"><span class="w-3 h-3 bg-green-500 rounded-full mr-3"></span><div><p class="text-[10px] font-black text-green-700 uppercase leading-none mb-1">Vigilance</p><p class="text-[9px] text-green-600 font-medium">Appel au civisme.</p></div></div>
@@ -334,8 +432,8 @@
                 <div id="potable-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"></div>
 
                 <!-- Glossaire -->
-                <div class="glass-card p-10 rounded-[2.5rem] border border-white shadow-2xl space-y-8">
-                    <h3 class="text-2xl font-black uppercase flex items-center"><span class="w-10 h-10 bg-sky-600 text-white rounded-2xl flex items-center justify-center mr-4 text-lg">?</span> Comprendre les paramètres</h3>
+                <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-8 space-y-8">
+                    <h3 class="text-xl font-black uppercase flex items-center"><span class="w-10 h-10 bg-sky-600 text-white rounded-2xl flex items-center justify-center mr-4 text-lg flex-shrink-0">?</span> Comprendre les paramètres</h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-6 text-[13px] leading-relaxed text-slate-600">
                         <div class="space-y-3">
                             <p><strong>• Nitrates :</strong> Limite 50 mg/L. Pollution agricole ou urbaine.</p>
@@ -399,8 +497,8 @@
                 <div id="riviere-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
 
                 <!-- Glossaire rivières -->
-                <div class="glass-card p-10 rounded-[2.5rem] border border-white shadow-2xl space-y-8">
-                    <h3 class="text-2xl font-black uppercase flex items-center"><span class="w-10 h-10 bg-indigo-600 text-white rounded-2xl flex items-center justify-center mr-4 text-lg">~</span> Paramètres de qualité</h3>
+                <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-8 space-y-8">
+                    <h3 class="text-xl font-black uppercase flex items-center"><span class="w-10 h-10 bg-indigo-600 text-white rounded-2xl flex items-center justify-center mr-4 text-lg flex-shrink-0">~</span> Paramètres de qualité</h3>
                     <div class="flex gap-6 mb-6">
                         <div class="flex items-center gap-2 bg-emerald-50 px-4 py-2 rounded-xl border border-emerald-100">
                             <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
@@ -458,7 +556,7 @@
                     <h2 class="text-2xl font-black uppercase">Carte de Qualité</h2>
                     <p class="text-xs font-bold text-sky-600 uppercase tracking-tighter">Scores eau potable par commune</p>
                 </div>
-                <div id="map-qualite" class="shadow-2xl border-4 border-white overflow-hidden"></div>
+                <div id="map-qualite" class="shadow-md border border-slate-100 overflow-hidden"></div>
                 <div id="map-legend" class="grid grid-cols-2 sm:grid-cols-4 gap-4"></div>
             </div>
             <div class="hidden xl:block w-80 sticky top-4 self-start">
@@ -480,7 +578,7 @@
         <h2 class="text-2xl font-black uppercase">Qualité de l'Air en Hérault (34) et Gard (30)</h2>
 
         <!-- Explication -->
-        <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-200 flex flex-col md:flex-row gap-6 items-start">
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex flex-col md:flex-row gap-6 items-start">
             <div class="flex-shrink-0 w-12 h-12 bg-sky-500 text-white rounded-2xl flex items-center justify-center text-2xl">🌬️</div>
             <div class="space-y-2 text-[13px] leading-relaxed text-slate-600">
                 <p class="text-base font-black text-slate-800 uppercase tracking-tight">Indice de Qualité de l'Air (IQA) & Pollen</p>
@@ -491,7 +589,7 @@
         </div>
 
         <!-- LÉGENDE IQA COMPLÈTE -->
-        <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-200">
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
             <h3 class="text-sm font-black text-slate-700 uppercase tracking-widest mb-4">Légende — Indice de Qualité de l'Air</h3>
             <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
                 <div class="flex flex-col items-center gap-2 p-3 rounded-2xl bg-emerald-50 border border-emerald-100">
@@ -500,27 +598,27 @@
                     <p class="text-[9px] text-emerald-600 text-center leading-tight">Aucune restriction</p>
                 </div>
                 <div class="flex flex-col items-center gap-2 p-3 rounded-2xl bg-yellow-50 border border-yellow-100">
-                    <div class="w-10 h-10 rounded-full bg-yellow-400 flex items-center justify-center text-white font-black text-sm">3-4</div>
+                    <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-black text-sm" style="background:#eab308">3-4</div>
                     <p class="text-[10px] font-black text-yellow-700 uppercase text-center">Moyen</p>
                     <p class="text-[9px] text-yellow-600 text-center leading-tight">Personnes sensibles</p>
                 </div>
                 <div class="flex flex-col items-center gap-2 p-3 rounded-2xl bg-orange-50 border border-orange-100">
-                    <div class="w-10 h-10 rounded-full bg-orange-400 flex items-center justify-center text-white font-black text-sm">5-6</div>
+                    <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-black text-sm" style="background:#f59e0b">5-6</div>
                     <p class="text-[10px] font-black text-orange-700 uppercase text-center">Dégradé</p>
                     <p class="text-[9px] text-orange-600 text-center leading-tight">Limiter les efforts</p>
                 </div>
                 <div class="flex flex-col items-center gap-2 p-3 rounded-2xl bg-red-50 border border-red-100">
-                    <div class="w-10 h-10 rounded-full bg-red-500 flex items-center justify-center text-white font-black text-sm">7-8</div>
+                    <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-black text-sm" style="background:#f97316">7-8</div>
                     <p class="text-[10px] font-black text-red-700 uppercase text-center">Mauvais</p>
                     <p class="text-[9px] text-red-600 text-center leading-tight">Éviter l'extérieur</p>
                 </div>
                 <div class="flex flex-col items-center gap-2 p-3 rounded-2xl bg-rose-50 border border-rose-200">
-                    <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-black text-sm" style="background:#9b1c2e">9-10</div>
-                    <p class="text-[10px] font-black uppercase text-center" style="color:#9b1c2e">Très mauvais</p>
+                    <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-black text-sm" style="background:#ef4444">9-10</div>
+                    <p class="text-[10px] font-black text-red-700 uppercase text-center">Très mauvais</p>
                     <p class="text-[9px] text-rose-700 text-center leading-tight">Rester à l'intérieur</p>
                 </div>
                 <div class="flex flex-col items-center gap-2 p-3 rounded-2xl bg-purple-50 border border-purple-100">
-                    <div class="w-10 h-10 rounded-full bg-purple-700 flex items-center justify-center text-white font-black text-[9px]">10+</div>
+                    <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-black text-[9px]" style="background:#7c3aed">10+</div>
                     <p class="text-[10px] font-black text-purple-700 uppercase text-center">Extrêmement mauvais</p>
                     <p class="text-[9px] text-purple-600 text-center leading-tight">Confinement conseillé</p>
                 </div>
@@ -552,7 +650,7 @@
         </div>
 
         <!-- COMPRENDRE LES POLLUANTS -->
-        <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-200">
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
             <h2 class="text-xl font-black uppercase mb-6 flex items-center gap-3">
                 <span class="w-10 h-10 bg-sky-500 text-white rounded-2xl flex items-center justify-center text-base flex-shrink-0">⚗</span>
                 Comprendre les polluants
@@ -644,7 +742,7 @@
         </div>
 
         <!-- CONSEILS SANTÉ -->
-        <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-200">
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
             <h2 class="text-xl font-black uppercase mb-6 flex items-center gap-3">
                 <span class="w-10 h-10 bg-rose-500 text-white rounded-2xl flex items-center justify-center flex-shrink-0">❤</span>
                 Que faire selon l'indice ?
@@ -686,7 +784,7 @@
     <div id="section-methode" class="hidden">
         <div class="flex flex-col xl:flex-row gap-8">
             <div class="flex-grow max-w-5xl mx-auto space-y-12 pb-24">
-                <div class="glass-card p-12 rounded-[3rem] border border-white shadow-2xl">
+                <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-10">
                     <h2 class="text-3xl font-black uppercase mb-10 text-center">Origine des Données</h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <a href="https://www.data.gouv.fr" target="_blank" class="p-8 bg-white rounded-3xl border border-slate-100 shadow-sm hover:border-sky-400 transition-all group">
@@ -735,7 +833,7 @@
                     </div>
                 </div>
 
-                <div class="glass-card p-12 rounded-[3rem] border border-white shadow-2xl">
+                <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-10">
                     <h2 class="text-3xl font-black uppercase mb-8 text-center">Méthodologie du Score Qualité</h2>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm text-slate-600 leading-relaxed">
                         <div class="bg-emerald-50 p-6 rounded-2xl border border-emerald-100 text-center">
@@ -778,7 +876,7 @@
     aria-label="Remonter en haut">↑</button>
 
 <!-- FOOTER -->
-<footer class="bg-slate-900 text-white py-16 mt-8">
+<footer class="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-16 mt-8">
     <div class="max-w-[1600px] mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
         <div>
             <h3 class="text-2xl font-black uppercase mb-6 italic">QUALITÉ <span class="text-sky-400">AIR ET EAU</span></h3>
@@ -867,8 +965,12 @@
     }
 
     async function init() {
+        const loader = document.getElementById('loading-overlay');
+        try {
         const res = await fetch('full_data.json', { cache: 'no-cache' });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
         fullData = await res.json();
+        if (loader) loader.classList.add('hidden');
         const subtitle = document.getElementById('updated-subtitle');
         if (subtitle) {
             const updateHour = fullData.updated ? fullData.updated.match(/à (\d{2})h/)?.[1] ?? '11' : '11';
@@ -891,7 +993,32 @@
         document.getElementById('stat-conformes').innerText = conformes;
         document.getElementById('stat-conformes-pct').innerText = fullData.potable.length ? Math.round(conformes/fullData.potable.length*100) + '%' : '';
 
+        // ── Animate SVG score rings ──
+        const RING_C = 251.3; // 2π × r=40
+        function animateRing(id, score, delayMs) {
+            const el = document.getElementById(id);
+            if (!el || score === '--' || score === null || isNaN(score)) return;
+            setTimeout(() => { el.style.strokeDashoffset = RING_C * (1 - score / 100); }, delayMs);
+        }
+        animateRing('ring-potable-circle',  avgP, 300);
+        animateRing('ring-riviere-circle',  avgR, 600);
+        if (fullData.potable.length) {
+            animateRing('ring-conformes-circle', Math.round(conformes / fullData.potable.length * 100), 900);
+        }
+
         renderNappes();
+        } catch(err) {
+            if (loader) {
+                loader.innerHTML = `
+                    <div class="text-center px-8">
+                        <div class="text-6xl mb-4">⚠️</div>
+                        <p class="text-xl font-black text-slate-800 mb-2 uppercase">Données temporairement indisponibles</p>
+                        <p class="text-sm text-slate-500 mb-6">Une erreur est survenue lors du chargement des données environnementales.<br>Vérifiez votre connexion et réessayez.</p>
+                        <button onclick="location.reload()" class="bg-sky-500 hover:bg-sky-400 text-white font-black px-8 py-3 rounded-2xl transition-all shadow-lg">Réessayer</button>
+                    </div>
+                `;
+            }
+        }
     }
 
     function switchTab(tab) {
@@ -920,7 +1047,7 @@
         if (airCount) airCount.textContent = `${airData.length} zone${airData.length > 1 ? 's' : ''} avec données actives`;
 
         function airZoneCard(z) {
-            return `<div class="glass-card p-6 rounded-[2rem] border border-white shadow-sm hover:shadow-xl transition-all">
+            return `<div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
                 <div class="flex justify-between items-start mb-4">
                     <div>
                         <h3 class="font-black text-slate-800 text-sm uppercase leading-tight">${z.zone}</h3>
@@ -957,7 +1084,7 @@
             pollenGrid.innerHTML = '<p class="text-slate-400 col-span-2 text-center py-8">Données non disponibles</p>';
         } else {
             pollenGrid.innerHTML = pollenData.map(d => `
-                <div class="glass-card p-6 rounded-[2rem] border border-white shadow-sm">
+                <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-6">
                     <div class="flex justify-between items-center mb-5">
                         <div>
                             <h3 class="font-black text-slate-800 text-lg uppercase">${d.lib_zone}</h3>
@@ -1064,10 +1191,10 @@
             }
 
             nappeCards.push(`
-                <div class="glass-card p-5 rounded-[2rem] border border-white shadow-sm flex flex-col hover:shadow-xl transition-all">
+                <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-5 flex flex-col hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
                     <div class="flex justify-between items-start mb-3">
                         <h3 class="font-black text-slate-800 text-sm leading-tight">${s.nom}</h3>
-                        <span class="text-[9px] font-black bg-slate-100 px-2 py-0.5 rounded text-slate-400 flex-shrink-0 ml-2">${s.dept}</span>
+                        <span class="text-[9px] font-black bg-slate-100 px-2 py-0.5 rounded-lg text-slate-400 flex-shrink-0 ml-2">${s.dept}</span>
                     </div>
 
                     <!-- Niveau actuel -->
@@ -1113,10 +1240,10 @@
         const nHausse = data.filter(x=>x.color==='#3b82f6').length;
         const nBaisse = data.filter(x=>x.color==='#ef4444').length;
         document.getElementById('nappe-stats').innerHTML = `
-            <div class="glass-card p-4 rounded-2xl border border-white shadow text-center"><p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Stations suivies</p><p class="text-2xl font-black">${data.length}</p></div>
-            <div class="glass-card p-4 rounded-2xl border border-white shadow text-center"><p class="text-xs font-bold text-blue-400 uppercase tracking-widest">↑ En hausse</p><p class="text-2xl font-black text-blue-600">${nHausse}</p><p class="text-[10px] text-slate-400">Nappe plus remplie vs N-1</p></div>
-            <div class="glass-card p-4 rounded-2xl border border-white shadow text-center"><p class="text-xs font-bold text-red-400 uppercase tracking-widest">↓ En baisse</p><p class="text-2xl font-black text-red-500">${nBaisse}</p><p class="text-[10px] text-slate-400">Nappe moins remplie vs N-1</p></div>
-            <div class="glass-card p-4 rounded-2xl border border-white shadow text-center"><p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Source</p><p class="text-base font-black text-slate-600 uppercase">BRGM</p><p class="text-[10px] text-slate-400">Données Hub'Eau</p></div>
+            <div class="bg-white rounded-xl border border-slate-100 p-4 text-center shadow-sm"><p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Stations suivies</p><p class="text-2xl font-black text-slate-800">${data.length}</p></div>
+            <div class="bg-blue-50 rounded-xl border border-blue-100 p-4 text-center shadow-sm"><p class="text-[10px] font-bold text-blue-500 uppercase tracking-widest mb-1">↑ En hausse</p><p class="text-2xl font-black text-blue-600">${nHausse}</p><p class="text-[10px] text-blue-400 mt-0.5">vs N−1</p></div>
+            <div class="bg-red-50 rounded-xl border border-red-100 p-4 text-center shadow-sm"><p class="text-[10px] font-bold text-red-400 uppercase tracking-widest mb-1">↓ En baisse</p><p class="text-2xl font-black text-red-500">${nBaisse}</p><p class="text-[10px] text-red-400 mt-0.5">vs N−1</p></div>
+            <div class="bg-slate-50 rounded-xl border border-slate-100 p-4 text-center shadow-sm"><p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Source</p><p class="text-sm font-black text-slate-600 uppercase">BRGM</p><p class="text-[10px] text-slate-400">Hub'Eau</p></div>
         `;
     }
 
@@ -1132,14 +1259,35 @@
 
         const container = document.getElementById('potable-grid');
         container.innerHTML = '';
-        data.forEach(c => {
+
+        // Construire tout le HTML d'abord, puis attacher les Chart.js après
+        const CHART_PARAMS = ['Nitrates', 'Pesticides', 'pH'];
+        const cards = data.map((c, idx) => {
             const rColor = c.restric === 'Vigilance' ? 'bg-green-100 text-green-700' :
                            c.restric === 'Alerte' ? 'bg-yellow-100 text-yellow-700' :
                            c.restric === 'Alerte Renforcée' ? 'bg-orange-100 text-orange-700' :
                            'bg-red-100 text-red-700';
             const scoreVal = c.score !== null ? c.score : '?';
-            container.innerHTML += `
-                <div class="glass-card p-6 rounded-[2rem] border border-white shadow-xl flex flex-col h-full hover:scale-[1.01] transition-all">
+
+            // Trouver le premier paramètre avec un historique suffisant
+            const chartParam = CHART_PARAMS.find(p => c.historique?.[p]?.length >= 3);
+            const histData = chartParam ? [...c.historique[chartParam]].reverse() : null;
+            const lastColor = histData ? (histData[histData.length - 1]?.color || '#6366f1') : '#6366f1';
+            const sparkSection = histData ? `
+                <div class="mt-3 pt-3 border-t border-slate-100">
+                    <div class="flex justify-between items-center mb-1">
+                        <span class="text-[9px] font-black text-slate-400 uppercase tracking-widest">Tendance — ${chartParam}</span>
+                        <span class="text-[9px] font-black" style="color:${lastColor}">${histData[histData.length-1]?.valeur ?? ''} ${c.parametres[chartParam]?.unite ?? ''}</span>
+                    </div>
+                    <canvas id="p-chart-${idx}" style="height:36px;width:100%;display:block"></canvas>
+                    <div class="flex justify-between text-[8px] text-slate-300 mt-0.5">
+                        <span>${histData[0]?.date?.split('-').reverse().join('/') ?? ''}</span>
+                        <span>Aujourd'hui</span>
+                    </div>
+                </div>` : '';
+
+            return `
+                <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-6 flex flex-col h-full hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
                     <div class="flex justify-between items-start mb-4">
                         <div>
                             <h3 class="text-xl font-black text-slate-800 uppercase italic leading-tight">${c.nom}</h3>
@@ -1164,9 +1312,36 @@
                             </div>`;
                         }).join('')}
                     </div>
+                    ${sparkSection}
                     <div class="mt-4 pt-3 border-t border-slate-100 text-[9px] text-slate-400 italic line-clamp-2 uppercase font-black tracking-tight leading-tight">${c.conclusion}</div>
                 </div>
             `;
+        });
+        container.innerHTML = cards.join('');
+
+        // Attacher les graphiques après injection dans le DOM
+        data.forEach((c, idx) => {
+            const chartParam = CHART_PARAMS.find(p => c.historique?.[p]?.length >= 3);
+            if (!chartParam) return;
+            const ctx = document.getElementById(`p-chart-${idx}`);
+            if (!ctx) return;
+            const pts = [...c.historique[chartParam]].reverse();
+            const lastColor = pts[pts.length - 1]?.color || '#6366f1';
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: pts.map(p => p.date),
+                    datasets: [{ data: pts.map(p => p.valeur), borderColor: lastColor, borderWidth: 2, pointRadius: 0, tension: 0.4, fill: true, backgroundColor: lastColor + '18' }]
+                },
+                options: {
+                    plugins: { legend: { display: false }, tooltip: {
+                        enabled: true, mode: 'index', intersect: false,
+                        callbacks: { label: ctx => `${ctx.parsed.y} ${c.parametres[chartParam]?.unite ?? ''}` }
+                    }},
+                    scales: { x: { display: false }, y: { display: false } },
+                    maintainAspectRatio: false
+                }
+            });
         });
     }
 
@@ -1214,7 +1389,7 @@
                 : '';
 
             return `
-                <div id="riviere-card-${idx}" class="glass-card rounded-[2.5rem] border border-white shadow-xl flex flex-col hover:shadow-2xl transition-all overflow-hidden">
+                <div id="riviere-card-${idx}" class="bg-white rounded-2xl border border-slate-100 shadow-sm flex flex-col hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 overflow-hidden">
                     ${mapSlot}
                     <div class="p-8 flex flex-col flex-grow">
                         <div class="flex justify-between items-start mb-6">
