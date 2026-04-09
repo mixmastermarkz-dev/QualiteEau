@@ -3,44 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-    <!-- ═══ SEO PRIMAIRE ═══ -->
-    <title>Qualité Air &amp; Eau — Surveillance environnementale en France | Mon-Environnement.fr</title>
-    <meta name="description" content="Qualité de l'air (IQA, pesticides dans l'air) et de l'eau potable en Hérault (34) et Gard (30). Nappes phréatiques, rivières. Données officielles ARS, Atmo Occitanie, Hub'Eau, BRGM.">
-    <meta name="keywords" content="qualité air eau Hérault, qualité air Gard, qualité eau potable Montpellier, qualité air Nîmes, IQA pollen Occitanie, nappes phréatiques 34 30, qualité rivières Hérault, nitrates eau potable, Atmo Occitanie, Hub'Eau, ARS">
+    <title>Mon-Environnement.fr — Qualité de l'air et de l'eau par ville</title>
+    <meta name="description" content="Recherchez la qualité de l'air, de l'eau potable, des nappes phréatiques, des rivières et de l'eau de mer pour votre ville. Données officielles en temps réel.">
     <meta name="robots" content="index, follow">
-    <meta name="author" content="Qualité Air et Eau 34/30">
     <link rel="canonical" href="https://www.mon-environnement.fr/">
-
-    <!-- ═══ OPEN GRAPH (Facebook, LinkedIn, WhatsApp) ═══ -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.mon-environnement.fr/">
-    <meta property="og:title" content="Qualité Air &amp; Eau — Mon-Environnement.fr">
-    <meta property="og:description" content="Surveillance environnementale en France. Données officielles ARS, Atmo, Hub'Eau, BRGM.">
+    <meta property="og:title" content="Mon-Environnement.fr — Recherche environnementale par ville">
+    <meta property="og:description" content="Qualité de l'air, eau potable, nappes phréatiques, rivières et eau de mer pour votre ville.">
     <meta property="og:locale" content="fr_FR">
-
-    <!-- ═══ TWITTER CARD ═══ -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Qualité Air &amp; Eau — Mon-Environnement.fr">
-    <meta name="twitter:description" content="Surveillance environnementale en France. Qualité de l'air, eau potable, nappes phréatiques, rivières.">
+    <meta name="twitter:title" content="Mon-Environnement.fr">
+    <meta name="twitter:description" content="Recherchez les données environnementales de votre ville.">
 
-    <!-- ═══ FAVICON ═══ -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
-
-    <!-- ═══ DONNÉES STRUCTURÉES JSON-LD ═══ -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "name": "Qualité Air et Eau 34/30",
+      "name": "Mon-Environnement.fr",
       "url": "https://www.mon-environnement.fr/",
-      "description": "Surveillance en temps réel de la qualité de l'air et de l'eau dans l'Hérault (34) et le Gard (30) — IQA, pollen, eau potable, nappes phréatiques, rivières.",
+      "description": "Données environnementales par ville : qualité de l'air, eau potable, nappes phréatiques, rivières, eau de mer.",
       "inLanguage": "fr-FR",
-      "publisher": {
-        "@type": "Organization",
-        "name": "Qualité Air et Eau 34/30",
-        "url": "https://www.mon-environnement.fr/"
-      },
       "potentialAction": {
         "@type": "SearchAction",
         "target": "https://www.mon-environnement.fr/?q={search_term_string}",
@@ -49,1623 +32,651 @@
     }
     </script>
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Dataset",
-      "name": "Pesticides dans l'air — Hérault et Gard",
-      "description": "Données de présence de pesticides atmosphériques (glyphosate, chlorpyrifos, pendiméthaline, trifluraline, prosulfocarbe) mesurées par Atmo Occitanie dans les départements de l'Hérault (34) et du Gard (30).",
-      "url": "https://www.mon-environnement.fr/#air",
-      "creator": { "@type": "Organization", "name": "Atmo Occitanie", "url": "https://www.atmo-occitanie.org" },
-      "publisher": { "@type": "Organization", "name": "Mon-Environnement.fr", "url": "https://www.mon-environnement.fr/" },
-      "spatialCoverage": "Hérault (34), Gard (30), Occitanie, France",
-      "license": "https://www.etalab.gouv.fr/licence-ouverte-open-licence",
-      "inLanguage": "fr-FR"
-    }
-    </script>
-
-    <!-- ═══ GOOGLE ADSENSE ═══ -->
-    <!-- Remplacez ca-pub-XXXXXXXXXXXXXXXX par votre ID éditeur Google AdSense -->
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6656990941754174" crossorigin="anonymous"></script>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6656990941754174" crossorigin="anonymous"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,700;0,800;0,900;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <style>
-        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+        * { box-sizing: border-box; }
+        body { font-family: 'Inter', system-ui, sans-serif; }
 
-        #map-nappes { height: 420px; border-radius: 1.5rem; width: 100%; z-index: 10; }
-        #map-qualite { height: 420px; border-radius: 1.5rem; width: 100%; z-index: 10; }
+        /* HERO BG */
+        .hero-bg {
+            background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 40%, #f0f9ff 100%);
+            min-height: 100vh;
+        }
 
-        /* ── GLASS CARD ── */
-        .glass-card { background: #ffffff; box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 16px rgba(0,0,0,0.04); }
+        /* LOGO */
+        .logo-leaf { font-size: 3rem; line-height: 1; }
+        .logo-text-main { font-size: 2.4rem; font-weight: 900; letter-spacing: -0.03em; }
+        .logo-text-tld { color: #16a34a; }
+        .logo-tagline { font-size: 0.78rem; font-weight: 500; color: #64748b; letter-spacing: 0.06em; text-transform: uppercase; }
 
-        /* ── TAB PILLS ── */
-        .tab-btn {
-            padding: 0.5rem 1rem; border-radius: 9999px;
-            font-size: 0.7rem; font-weight: 800;
-            color: #64748b; transition: all 0.18s;
-            display: inline-flex; align-items: center; gap: 0.35rem;
-            white-space: nowrap; letter-spacing: 0.04em; text-transform: uppercase;
+        /* SEARCH BAR */
+        .search-wrap {
+            position: relative;
+            max-width: 640px;
+            width: 100%;
+        }
+        .search-input {
+            width: 100%;
+            padding: 1rem 1.25rem 1rem 3.25rem;
+            font-size: 1.05rem;
+            font-family: 'Inter', sans-serif;
+            border: 2px solid #e2e8f0;
+            border-radius: 999px;
+            outline: none;
+            background: white;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+            transition: border-color 0.18s, box-shadow 0.18s;
+            color: #1e293b;
+        }
+        .search-input:focus {
+            border-color: #16a34a;
+            box-shadow: 0 4px 28px rgba(22,163,74,0.15);
+        }
+        .search-icon {
+            position: absolute;
+            left: 1.1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #94a3b8;
+            pointer-events: none;
+        }
+        .search-btn {
+            position: absolute;
+            right: 0.4rem;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #16a34a;
+            color: white;
+            border: none;
+            border-radius: 999px;
+            padding: 0.55rem 1.3rem;
+            font-size: 0.9rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.15s;
+        }
+        .search-btn:hover { background: #15803d; }
+
+        /* AUTOCOMPLETE */
+        .autocomplete-list {
+            position: absolute;
+            top: calc(100% + 8px);
+            left: 0;
+            right: 0;
+            background: white;
+            border: 1.5px solid #e2e8f0;
+            border-radius: 1.25rem;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            max-height: 280px;
+            overflow-y: auto;
+            z-index: 100;
+            display: none;
+        }
+        .autocomplete-list.show { display: block; }
+        .autocomplete-item {
+            padding: 0.75rem 1.25rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 0.95rem;
+            color: #1e293b;
+            transition: background 0.1s;
+        }
+        .autocomplete-item:first-child { border-radius: 1.25rem 1.25rem 0 0; }
+        .autocomplete-item:last-child { border-radius: 0 0 1.25rem 1.25rem; }
+        .autocomplete-item:hover, .autocomplete-item.active { background: #f0fdf4; color: #15803d; }
+        .autocomplete-item span.dept { font-size: 0.75rem; color: #94a3b8; margin-left: auto; }
+        .autocomplete-highlight { font-weight: 700; color: #16a34a; }
+
+        /* RESULTS PANEL */
+        #results-panel { display: none; }
+        #results-panel.show { display: block; }
+
+        /* CARDS */
+        .env-card {
+            background: white;
+            border-radius: 1.25rem;
+            padding: 1.5rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            border: 1.5px solid transparent;
+            transition: border-color 0.18s, transform 0.18s, box-shadow 0.18s;
+            cursor: pointer;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        .env-card:hover {
+            border-color: #bbf7d0;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 24px rgba(22,163,74,0.12);
+        }
+        .env-card.unavailable {
+            opacity: 0.55;
+            cursor: default;
+        }
+        .env-card.unavailable:hover {
+            transform: none;
+            border-color: transparent;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+        .card-icon { font-size: 2rem; }
+        .card-title { font-size: 1rem; font-weight: 800; color: #1e293b; }
+        .card-desc { font-size: 0.8rem; color: #64748b; line-height: 1.5; }
+        .card-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 0.2rem 0.6rem;
+            border-radius: 999px;
+            width: fit-content;
+            margin-top: auto;
+        }
+        .badge-green { background: #dcfce7; color: #15803d; }
+        .badge-blue { background: #dbeafe; color: #1d4ed8; }
+        .badge-amber { background: #fef9c3; color: #92400e; }
+        .badge-slate { background: #f1f5f9; color: #475569; }
+
+        /* SCROLLBAR */
+        .autocomplete-list::-webkit-scrollbar { width: 4px; }
+        .autocomplete-list::-webkit-scrollbar-thumb { background: #e2e8f0; border-radius: 2px; }
+
+        /* POPULAR PILLS */
+        .popular-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            padding: 0.4rem 0.9rem;
+            background: white;
+            border: 1.5px solid #e2e8f0;
+            border-radius: 999px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: #475569;
+            cursor: pointer;
+            transition: all 0.15s;
             text-decoration: none;
         }
-        .tab-btn:hover { background: rgba(14,165,233,0.08); color: #0284c7; }
-        .tab-active { background: #0ea5e9 !important; color: white !important; box-shadow: 0 3px 12px rgba(14,165,233,0.4); }
-
-        /* ── DEPT SELECTOR ── */
-        .subtab-active { background: #0f172a !important; color: white !important; }
-
-        /* ── SCORE RING (static, used in cards) ── */
-        .score-ring { width: 64px; height: 64px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; font-weight: 900; color: white; flex-shrink: 0; }
-
-        /* ── SVG RINGS (hero) ── */
-        .ring-arc { transition: stroke-dashoffset 1.6s cubic-bezier(.4,0,.2,1); }
-
-        /* ── HERO DOT GRID ── */
-        .hero-dot-grid {
-            background-image: radial-gradient(circle, rgba(148,163,184,0.12) 1px, transparent 1px);
-            background-size: 28px 28px;
+        .popular-pill:hover {
+            background: #f0fdf4;
+            border-color: #86efac;
+            color: #15803d;
         }
 
-        /* ── SECTION FADE-IN ── */
-        #section-nappes:not(.hidden),
-        #section-potable:not(.hidden),
-        #section-rivieres:not(.hidden),
-        #section-carte:not(.hidden),
-        #section-air:not(.hidden),
-        #section-methode:not(.hidden) {
-            animation: sectionIn 0.22s ease-out;
-        }
-        @keyframes sectionIn {
-            from { opacity: 0; transform: translateY(8px); }
-            to   { opacity: 1; transform: translateY(0); }
-        }
-
-        /* ── ADS ── */
-        .ad-slot { background: rgba(241,245,249,0.5); border: 2px dashed #cbd5e1; border-radius: 1.5rem; display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; }
-        .ad-slot ins.adsbygoogle { position: absolute; inset: 0; }
-        .ad-label { pointer-events: none; }
-
-        /* ── CHARTS ── */
-        .station-chart { height: 40px !important; width: 100% !important; }
-
-        /* ── HAMBURGER / SIDE DRAWER ── */
-        #side-drawer { transform: translateX(-100%); transition: transform 0.28s cubic-bezier(.4,0,.2,1); }
-        #side-drawer.open { transform: translateX(0); }
-        #menu-overlay { opacity: 0; pointer-events: none; transition: opacity 0.28s ease; }
-        #menu-overlay.open { opacity: 1; pointer-events: auto; }
-
-        /* ── SCROLLBAR HIDE (mobile tab bar) ── */
-        .scrollbar-hide::-webkit-scrollbar { display: none; }
-        .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+        /* STATS BAR */
+        .stat-item { text-align: center; }
+        .stat-num { font-size: 1.5rem; font-weight: 900; color: #15803d; }
+        .stat-lbl { font-size: 0.7rem; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em; }
     </style>
 </head>
-<body class="bg-slate-50 min-h-screen flex flex-col antialiased text-slate-900">
+<body class="hero-bg">
 
-<!-- ═══ OVERLAY MENU MOBILE ═══ -->
-<div id="menu-overlay" class="fixed inset-0 bg-black/40 z-[200]" onclick="closeMenu()"></div>
+<!-- HEADER MINIMAL -->
+<header class="w-full px-6 py-4 flex items-center justify-between">
+    <div></div>
+    <nav class="flex items-center gap-4">
+        <a href="/contact.html" class="text-xs font-600 text-slate-500 hover:text-slate-800 transition-colors">Contact</a>
+        <a href="/mentions-legales.html" class="text-xs font-600 text-slate-500 hover:text-slate-800 transition-colors">Mentions légales</a>
+    </nav>
+</header>
 
-<!-- ═══ SIDE DRAWER MOBILE ═══ -->
-<nav id="side-drawer" class="fixed top-0 left-0 h-full w-72 bg-white shadow-2xl z-[201] flex flex-col md:hidden">
-    <div class="p-5 border-b border-slate-100 flex justify-between items-center">
-        <span class="font-black uppercase text-slate-800 tracking-tight text-sm">Mon-Environnement.fr</span>
-        <button onclick="closeMenu()" class="w-9 h-9 flex items-center justify-center rounded-xl text-slate-400 hover:text-slate-700 hover:bg-slate-100 text-xl leading-none">&times;</button>
-    </div>
-    <div class="flex-grow overflow-y-auto p-3 space-y-1">
-        <button onclick="closeMenu();switchTab('nappes')"    class="w-full text-left px-4 py-4 rounded-2xl font-bold text-slate-700 hover:bg-slate-50 text-sm min-h-[48px]">💧 Nappes</button>
-        <button onclick="closeMenu();switchTab('potable')"  class="w-full text-left px-4 py-4 rounded-2xl font-bold text-slate-700 hover:bg-slate-50 text-sm min-h-[48px]">🚰 Eau Potable</button>
-        <button onclick="closeMenu();switchTab('rivieres')" class="w-full text-left px-4 py-4 rounded-2xl font-bold text-slate-700 hover:bg-slate-50 text-sm min-h-[48px]">🌊 Qualité Rivières</button>
-        <button onclick="closeMenu();switchTab('air')"      class="w-full text-left px-4 py-4 rounded-2xl font-bold text-slate-700 hover:bg-slate-50 text-sm min-h-[48px]">🌬️ Qualité de l'Air</button>
-        <a href="/eau-potable/" onclick="closeMenu()"       class="flex items-center px-4 py-4 rounded-2xl font-bold text-slate-700 hover:bg-slate-50 text-sm min-h-[48px]">🏘️ Communes</a>
-        <a href="/departement/" onclick="closeMenu()"      class="flex items-center px-4 py-4 rounded-2xl font-bold text-slate-700 hover:bg-slate-50 text-sm min-h-[48px]">📍 Tous les départements</a>
-        <button onclick="closeMenu();switchTab('methode')"  class="w-full text-left px-4 py-4 rounded-2xl font-bold text-slate-700 hover:bg-slate-50 text-sm min-h-[48px]">📋 Sources & Méthode</button>
-    </div>
-    <div class="p-4 border-t border-slate-100 space-y-1">
-        <a href="/contact.html"        class="block px-4 py-3 text-xs font-bold text-slate-400 hover:text-slate-700 rounded-xl hover:bg-slate-50">Contact</a>
-        <a href="/mentions-legales.html" class="block px-4 py-3 text-xs font-bold text-slate-400 hover:text-slate-700 rounded-xl hover:bg-slate-50">Mentions légales</a>
-    </div>
-</nav>
+<!-- HERO SEARCH -->
+<main>
+<section id="hero-section" class="flex flex-col items-center justify-center px-6 pt-10 pb-16 transition-all duration-500">
 
-<!-- ═══ BANDEAU CONSENTEMENT COOKIES (RGPD) ═══ -->
-<div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-[9999] bg-slate-900 text-white px-6 py-5 shadow-2xl hidden">
-    <div class="max-w-[1600px] mx-auto flex flex-col md:flex-row items-center gap-4 justify-between">
-        <div class="text-sm leading-relaxed text-slate-300 max-w-2xl">
-            <strong class="text-white">🍪 Cookies & Confidentialité</strong> — Ce site utilise des cookies publicitaires (Google AdSense) pour financer son fonctionnement gratuit. Aucune donnée personnelle n'est collectée par le site lui-même.
-            <a href="/politique-confidentialite.html" class="underline text-sky-400 ml-1 hover:text-sky-300">Politique de confidentialité</a>
+    <!-- Logo -->
+    <div class="flex flex-col items-center mb-10">
+        <div class="logo-leaf mb-2">🌿</div>
+        <div class="logo-text-main text-slate-800">
+            Mon-Environnement<span class="logo-text-tld">.fr</span>
         </div>
-        <div class="flex gap-3 flex-shrink-0">
-            <button onclick="acceptCookies()" class="bg-sky-500 hover:bg-sky-400 text-white font-black text-sm px-6 py-2.5 rounded-xl transition-all">Accepter</button>
-            <button onclick="refuseCookies()" class="bg-slate-700 hover:bg-slate-600 text-white font-black text-sm px-6 py-2.5 rounded-xl transition-all">Refuser</button>
-        </div>
+        <div class="logo-tagline mt-2">Données environnementales · Air · Eau · Nature</div>
     </div>
-</div>
 
-<!-- ═══ MODAL POLITIQUE DE CONFIDENTIALITÉ ═══ -->
-<div id="privacy-modal" class="fixed inset-0 z-[10000] bg-black/60 flex items-center justify-center p-4 hidden">
-    <div class="bg-white rounded-3xl shadow-2xl max-w-2xl w-full max-h-[85vh] overflow-y-auto p-8">
-        <div class="flex justify-between items-start mb-6">
-            <h2 class="text-2xl font-black uppercase">Politique de confidentialité</h2>
-            <button onclick="document.getElementById('privacy-modal').classList.add('hidden')" class="text-slate-400 hover:text-slate-700 text-3xl leading-none font-black">&times;</button>
-        </div>
-        <div class="text-sm text-slate-600 space-y-4 leading-relaxed">
-            <p><strong>Dernière mise à jour :</strong> mars 2026</p>
-
-            <h3 class="font-black text-slate-800 text-base">1. Éditeur du site</h3>
-            <p>Le site <strong>Mon Environnement</strong> (ci-après "le Site") est un outil citoyen et indépendant de surveillance environnementale, accessible à l'adresse <strong>www.mon-environnement.fr</strong>. Pour plus d'informations légales, consultez les <a href="/mentions-legales.html" class="text-sky-500 underline">mentions légales</a>.</p>
-
-            <h3 class="font-black text-slate-800 text-base">2. Données collectées</h3>
-            <p>Le Site <strong>ne collecte aucune donnée personnelle</strong> directement. Il ne dispose pas de formulaire d'inscription, de compte utilisateur, ni de base de données propre. Les données affichées proviennent exclusivement d'APIs publiques officielles (Hub'Eau, VigiEau, BRGM, Atmo Occitanie, Open-Meteo).</p>
-
-            <h3 class="font-black text-slate-800 text-base">3. Cookies publicitaires (Google AdSense)</h3>
-            <p>Ce site utilise <strong>Google AdSense</strong>, un service de publicité de Google LLC, pour afficher des annonces et financer son fonctionnement gratuit. Google AdSense peut déposer des cookies sur votre appareil afin de personnaliser les publicités affichées en fonction de vos centres d'intérêt.</p>
-            <p>Ces cookies sont soumis à la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" class="text-sky-500 underline">Politique de confidentialité de Google</a>. Vous pouvez gérer vos préférences publicitaires sur <a href="https://adssettings.google.com" target="_blank" rel="noopener" class="text-sky-500 underline">adssettings.google.com</a>.</p>
-
-            <h3 class="font-black text-slate-800 text-base">4. Cookies de cartographie (Leaflet / Carto)</h3>
-            <p>Les cartes interactives utilisent des tuiles du service CartoDBn (CARTO). Ces tuiles sont chargées depuis leurs serveurs ; CARTO peut enregistrer des accès dans ses journaux de serveur (adresse IP, navigateur) à des fins techniques.</p>
-
-            <h3 class="font-black text-slate-800 text-base">5. Vos droits (RGPD)</h3>
-            <p>Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez du droit d'accès, de rectification et de suppression de vos données. Pour les cookies Google AdSense, exercez vos droits via les outils Google. Pour toute autre demande, contactez-nous à <a href="mailto:contact@mon-environnement.fr" class="text-sky-500 underline">contact@mon-environnement.fr</a>.</p>
-
-            <h3 class="font-black text-slate-800 text-base">6. Refus des cookies</h3>
-            <p>Vous pouvez refuser les cookies publicitaires via le bandeau de consentement. Dans ce cas, des publicités non personnalisées peuvent toujours être affichées. Vous pouvez également utiliser un bloqueur de publicités.</p>
-
-            <h3 class="font-black text-slate-800 text-base">7. Sources des données</h3>
-            <p>Toutes les données environnementales proviennent de sources officielles : <strong>Hub'Eau</strong> (BRGM / OFB / ARS), <strong>VigiEau</strong> (Ministère de la Transition Écologique), <strong>Atmo Occitanie</strong> (qualité de l'air et pollen), <strong>BRGM</strong> (nappes phréatiques), <strong>Open-Meteo</strong> (météo). Ces sources sont publiques, accessibles librement et sous licence ouverte Etalab.</p>
-        </div>
-        <button onclick="document.getElementById('privacy-modal').classList.add('hidden')" class="mt-6 w-full bg-sky-500 hover:bg-sky-400 text-white font-black py-3 rounded-2xl transition-all">Fermer</button>
-    </div>
-</div>
-
-<!-- ═══ LOADING OVERLAY ═══ -->
-<div id="loading-overlay" class="fixed inset-0 z-[9998] bg-slate-50/95 backdrop-blur-sm flex items-center justify-center flex-col gap-6">
-    <div class="relative w-16 h-16">
-        <svg class="animate-spin w-16 h-16 text-sky-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-            <circle class="opacity-20" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3"></circle>
-            <path class="opacity-90" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>
+    <!-- Search bar -->
+    <div class="search-wrap" id="search-container">
+        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
         </svg>
-    </div>
-    <div class="text-center">
-        <p class="text-base font-black text-slate-700 uppercase tracking-widest">Chargement des données</p>
-        <p class="text-xs text-slate-400 mt-1">Données officielles ARS · Hub'Eau · Atmo Occitanie</p>
-    </div>
-</div>
+        <input
+            type="text"
+            id="search-input"
+            class="search-input"
+            placeholder="Tapez le nom de votre ville..."
+            autocomplete="off"
+            spellcheck="false"
+        >
+        <button class="search-btn" onclick="doSearch()">Rechercher</button>
 
-<div class="max-w-[1600px] mx-auto px-4 py-4 flex-grow w-full">
-
-    <!-- ═══ HERO ═══ -->
-    <header class="relative overflow-hidden bg-gradient-to-br from-slate-900 via-[#0d1f48] to-slate-900 rounded-3xl mb-5 shadow-2xl">
-        <!-- Background texture -->
-        <div class="absolute inset-0 hero-dot-grid pointer-events-none"></div>
-        <!-- Ambient glows -->
-        <div class="absolute -top-32 -right-32 w-[500px] h-[500px] bg-sky-500/8 rounded-full blur-3xl pointer-events-none"></div>
-        <div class="absolute -bottom-24 left-1/3 w-72 h-72 bg-indigo-600/6 rounded-full blur-3xl pointer-events-none"></div>
-
-        <div class="relative px-6 md:px-10 py-8 md:py-10">
-            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-
-                <!-- Left: branding -->
-                <div class="flex items-start gap-4">
-                    <button onclick="toggleMenu()" class="md:hidden flex-shrink-0 flex items-center justify-center w-11 h-11 rounded-2xl bg-white/10 hover:bg-white/20 transition-colors mt-1" aria-label="Menu">
-                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16M4 18h16"/>
-                        </svg>
-                    </button>
-                    <div>
-                        <div class="flex flex-wrap items-center gap-2 mb-3">
-                            <span class="inline-flex items-center gap-1.5 bg-emerald-500/15 text-emerald-400 text-[10px] font-black uppercase tracking-[0.15em] px-3 py-1 rounded-full border border-emerald-500/20">
-                                <span class="w-1.5 h-1.5 bg-emerald-400 rounded-full animate-pulse"></span>
-                                Données officielles
-                            </span>
-                            <a href="/departement/" class="text-[10px] font-bold text-slate-400 hover:text-sky-400 transition-colors uppercase tracking-wide">📍 Tous les départements →</a>
-                        </div>
-                        <h1 class="text-4xl md:text-5xl font-black text-white tracking-tight uppercase leading-none">
-                            Mon<span class="text-sky-400">Environnement</span><span class="text-slate-600">.fr</span>
-                        </h1>
-                        <p class="text-slate-400 text-sm font-medium mt-2">Hérault (34) &amp; Gard (30) — Qualité Air &amp; Eau</p>
-                        <p id="updated-subtitle" class="text-[11px] text-slate-500 italic mt-2 hidden"></p>
-                    </div>
-                </div>
-
-                <!-- Right: 3 animated score rings -->
-                <div class="flex items-center gap-4 md:gap-7 flex-shrink-0">
-
-                    <!-- Eau potable -->
-                    <div class="flex flex-col items-center gap-1.5">
-                        <div class="relative w-[72px] h-[72px] md:w-[88px] md:h-[88px]">
-                            <svg viewBox="0 0 100 100" class="w-full h-full" style="transform:rotate(-90deg)">
-                                <circle cx="50" cy="50" r="40" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="9"/>
-                                <circle id="ring-potable-circle" cx="50" cy="50" r="40" fill="none" stroke="#38bdf8" stroke-width="9"
-                                    stroke-dasharray="251.3" stroke-dashoffset="251.3" stroke-linecap="round" class="ring-arc"/>
-                            </svg>
-                            <div class="absolute inset-0 flex flex-col items-center justify-center">
-                                <span class="text-xl font-black text-white leading-none" id="score-global-potable">--</span>
-                                <span class="text-[8px] text-sky-400/60 font-bold">/100</span>
-                            </div>
-                        </div>
-                        <p class="text-[9px] font-black text-slate-400 uppercase tracking-wider text-center leading-tight">Eau potable</p>
-                        <p class="text-[9px] text-slate-500 text-center"><span id="stat-communes-score">--</span> communes</p>
-                    </div>
-
-                    <div class="w-px h-16 bg-white/5 hidden md:block"></div>
-
-                    <!-- Rivières -->
-                    <div class="flex flex-col items-center gap-1.5">
-                        <div class="relative w-[72px] h-[72px] md:w-[88px] md:h-[88px]">
-                            <svg viewBox="0 0 100 100" class="w-full h-full" style="transform:rotate(-90deg)">
-                                <circle cx="50" cy="50" r="40" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="9"/>
-                                <circle id="ring-riviere-circle" cx="50" cy="50" r="40" fill="none" stroke="#818cf8" stroke-width="9"
-                                    stroke-dasharray="251.3" stroke-dashoffset="251.3" stroke-linecap="round" class="ring-arc"/>
-                            </svg>
-                            <div class="absolute inset-0 flex flex-col items-center justify-center">
-                                <span class="text-xl font-black text-white leading-none" id="score-global-riviere">--</span>
-                                <span class="text-[8px] text-indigo-400/60 font-bold">/100</span>
-                            </div>
-                        </div>
-                        <p class="text-[9px] font-black text-slate-400 uppercase tracking-wider text-center leading-tight">Rivières</p>
-                        <p class="text-[9px] text-slate-500 text-center"><span id="stat-rivieres-score">--</span> stations</p>
-                    </div>
-
-                    <div class="w-px h-16 bg-white/5 hidden md:block"></div>
-
-                    <!-- Conformité -->
-                    <div class="flex flex-col items-center gap-1.5">
-                        <div class="relative w-[72px] h-[72px] md:w-[88px] md:h-[88px]">
-                            <svg viewBox="0 0 100 100" class="w-full h-full" style="transform:rotate(-90deg)">
-                                <circle cx="50" cy="50" r="40" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="9"/>
-                                <circle id="ring-conformes-circle" cx="50" cy="50" r="40" fill="none" stroke="#34d399" stroke-width="9"
-                                    stroke-dasharray="251.3" stroke-dashoffset="251.3" stroke-linecap="round" class="ring-arc"/>
-                            </svg>
-                            <div class="absolute inset-0 flex flex-col items-center justify-center">
-                                <span class="text-xl font-black text-white leading-none" id="stat-conformes">--</span>
-                                <span class="text-[9px] text-emerald-400/70 font-bold" id="stat-conformes-pct">%</span>
-                            </div>
-                        </div>
-                        <p class="text-[9px] font-black text-slate-400 uppercase tracking-wider text-center leading-tight">Conformes</p>
-                        <p class="text-[9px] text-slate-500 text-center">score ≥ 80/100</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Stats bar -->
-            <div class="flex items-center gap-4 mt-6 pt-5 border-t border-white/[0.06]">
-                <div class="flex items-center gap-1.5">
-                    <span class="w-2 h-2 bg-sky-400 rounded-full flex-shrink-0"></span>
-                    <span class="text-sky-400 font-black text-sm" id="stat-communes">--</span>
-                    <span class="text-slate-500 text-xs">communes surveillées</span>
-                </div>
-                <span class="text-white/10 text-lg select-none">·</span>
-                <div class="flex items-center gap-1.5">
-                    <span class="w-2 h-2 bg-indigo-400 rounded-full flex-shrink-0"></span>
-                    <span class="text-indigo-400 font-black text-sm" id="stat-rivieres">--</span>
-                    <span class="text-slate-500 text-xs">stations fluviales</span>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- PUB HAUT — Leaderboard -->
-    <div class="ad-slot w-full mb-5" style="min-height:90px">
-        <span class="ad-label text-slate-400 text-[10px] font-black uppercase tracking-[0.2em]">Publicité — 728×90</span>
-        <ins class="adsbygoogle" style="display:block;width:100%;height:90px"
-             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-             data-ad-slot="XXXXXXXXXX"
-             data-ad-format="horizontal"
-             data-full-width-responsive="true"></ins>
-        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        <!-- Autocomplete dropdown -->
+        <div class="autocomplete-list" id="autocomplete-list"></div>
     </div>
 
-    <!-- NAVIGATION PRINCIPALE -->
-    <div class="flex items-center gap-1 mb-4 p-1.5 bg-white rounded-2xl shadow-sm border border-slate-100 overflow-x-auto scrollbar-hide">
-        <button onclick="switchTab('nappes')"   id="tab-nappes"   class="tab-btn tab-active">💧 Nappes</button>
-        <button onclick="switchTab('potable')"  id="tab-potable"  class="tab-btn">🚰 Eau Potable</button>
-        <button onclick="switchTab('rivieres')" id="tab-rivieres" class="tab-btn">🌊 Rivières</button>
-        <button onclick="switchTab('air')"      id="tab-air"      class="tab-btn">🌬️ Air &amp; Pollen</button>
-        <a href="/eau-potable/"                                    class="tab-btn">🏘️ Communes</a>
-        <button onclick="switchTab('methode')"  id="tab-methode"  class="tab-btn">📋 Méthode</button>
+    <!-- Popular cities -->
+    <div class="flex flex-wrap justify-center gap-2 mt-6 max-w-2xl" id="popular-cities">
+        <span class="text-xs text-slate-400 font-500 w-full text-center mb-1">Villes populaires</span>
+        <span class="popular-pill" onclick="selectCity('montpellier')">📍 Montpellier</span>
+        <span class="popular-pill" onclick="selectCity('nimes')">📍 Nîmes</span>
+        <span class="popular-pill" onclick="selectCity('beziers')">📍 Béziers</span>
+        <span class="popular-pill" onclick="selectCity('sete')">📍 Sète</span>
+        <span class="popular-pill" onclick="selectCity('palavas-les-flots')">📍 Palavas-les-Flots</span>
+        <span class="popular-pill" onclick="selectCity('uzes')">📍 Uzès</span>
+        <span class="popular-pill" onclick="selectCity('ales')">📍 Alès</span>
+        <span class="popular-pill" onclick="selectCity('lunel')">📍 Lunel</span>
     </div>
 
-    <!-- SÉLECTEUR DÉPARTEMENT -->
-    <div id="dept-selector" class="flex gap-2 mb-6">
-        <button onclick="switchDept('all')" id="btn-dept-all" class="px-4 py-1.5 rounded-full text-xs font-black uppercase shadow-sm subtab-active bg-white border border-slate-200 text-slate-500">Tout</button>
-        <button onclick="switchDept('34')"  id="btn-dept-34"  class="px-4 py-1.5 rounded-full bg-white border border-slate-200 text-xs font-black text-slate-500 uppercase shadow-sm">Hérault (34)</button>
-        <button onclick="switchDept('30')"  id="btn-dept-30"  class="px-4 py-1.5 rounded-full bg-white border border-slate-200 text-xs font-black text-slate-500 uppercase shadow-sm">Gard (30)</button>
-    </div>
-
-    <!-- ====== SECTION NAPPES ====== -->
-    <div id="section-nappes" class="space-y-8">
-
-        <!-- Explication encart -->
-        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex flex-col md:flex-row gap-6 items-start">
-            <div class="flex-shrink-0 w-12 h-12 bg-blue-600 text-white rounded-2xl flex items-center justify-center text-2xl">💧</div>
-            <div class="space-y-3 text-[13px] leading-relaxed text-slate-600">
-                <p class="text-base font-black text-slate-800 uppercase tracking-tight">Comment lire ces données ?</p>
-                <p><strong>Le niveau d'une nappe phréatique</strong> est mesuré en <strong>mètres NGF</strong> (altitude du niveau d'eau au-dessus du niveau moyen de la mer). Chaque nappe a son propre niveau de référence : une nappe côtière oscille entre 1 et 5 m NGF, une nappe de plaine entre 20 et 80 m NGF.</p>
-                <div class="flex flex-wrap gap-4 pt-1">
-                    <span class="flex items-center gap-2 text-blue-600 font-black"><span class="w-3 h-3 rounded-full bg-blue-500 inline-block"></span> Par rapport à l'an dernier à la même date : niveau + élevé</span>
-                    <span class="flex items-center gap-2 text-red-500 font-black"><span class="w-3 h-3 rounded-full bg-red-500 inline-block"></span> Par rapport à l'an dernier à la même date : niveau − élevé</span>
-                </div>
-                <p class="text-[10px] text-amber-700 font-bold bg-amber-50 px-3 py-2 rounded-xl border border-amber-100">⚠ Note : un niveau plus élevé qu'il y a un an ne signifie pas nécessairement que la nappe est haute. Cela dépend du contexte pluriannuel et de la nature géologique du sous-sol.</p>
-                <p class="text-slate-400 text-[11px]">Source : BRGM (Bureau de Recherches Géologiques et Minières) via Hub'Eau · Données temps réel et historiques.</p>
-            </div>
+    <!-- Stats bar -->
+    <div class="flex items-center gap-8 mt-12 px-8 py-5 bg-white/70 backdrop-blur rounded-2xl shadow-sm border border-slate-100">
+        <div class="stat-item">
+            <div class="stat-num">101</div>
+            <div class="stat-lbl">Communes</div>
         </div>
-
-        <div class="flex flex-col xl:flex-row gap-8">
-            <div class="flex-grow space-y-8">
-                <div id="map-nappes" class="shadow-md border border-slate-100 overflow-hidden"></div>
-                <p id="nappe-count" class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2"></p>
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4" id="nappe-stats"></div>
-            </div>
+        <div class="w-px h-10 bg-slate-100"></div>
+        <div class="stat-item">
+            <div class="stat-num">5</div>
+            <div class="stat-lbl">Rubriques</div>
         </div>
-        <div id="station-list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4"></div>
-    </div>
-
-    <!-- ====== SECTION EAU POTABLE ====== -->
-    <div id="section-potable" class="hidden space-y-10">
-        <div class="flex flex-col xl:flex-row gap-8">
-            <div class="flex-grow space-y-10">
-
-                <!-- Légende alertes sécheresse -->
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
-                    <h3 class="text-xs font-black text-slate-400 uppercase tracking-widest mb-4 flex items-center"><span class="w-2 h-2 bg-sky-500 rounded-full mr-2"></span> Alertes sécheresse (VigiEau)</h3>
-                    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
-                        <div class="flex items-center p-3 bg-green-50 rounded-2xl border border-green-100"><span class="w-3 h-3 bg-green-500 rounded-full mr-3"></span><div><p class="text-[10px] font-black text-green-700 uppercase leading-none mb-1">Vigilance</p><p class="text-[9px] text-green-600 font-medium">Appel au civisme.</p></div></div>
-                        <div class="flex items-center p-3 bg-yellow-50 rounded-2xl border border-yellow-100"><span class="w-3 h-3 bg-yellow-500 rounded-full mr-3"></span><div><p class="text-[10px] font-black text-yellow-700 uppercase leading-none mb-1">Alerte</p><p class="text-[9px] text-yellow-600 font-medium">Restrictions partielles.</p></div></div>
-                        <div class="flex items-center p-3 bg-orange-50 rounded-2xl border border-orange-100"><span class="w-3 h-3 bg-orange-500 rounded-full mr-3"></span><div><p class="text-[10px] font-black text-orange-700 uppercase leading-none mb-1">Renforcée</p><p class="text-[9px] text-orange-600 font-medium">Restrictions fortes.</p></div></div>
-                        <div class="flex items-center p-3 bg-red-50 rounded-2xl border border-red-100"><span class="w-3 h-3 bg-red-500 rounded-full mr-3"></span><div><p class="text-[10px] font-black text-red-700 uppercase leading-none mb-1">Crise</p><p class="text-[9px] text-red-600 font-medium">Priorité santé/sécu.</p></div></div>
-                    </div>
-                </div>
-
-                <!-- Titre + recherche -->
-                <div class="flex flex-col md:flex-row justify-between items-end gap-4">
-                    <div>
-                        <h2 class="text-2xl font-black uppercase">Eau Potable par Commune</h2>
-                        <p class="text-xs font-bold text-sky-600 uppercase tracking-tighter">Score qualité + 11 paramètres</p>
-                        <p class="text-[11px] text-slate-400 mt-1">Ce tableau couvre uniquement les communes de plus de 1 000 habitants des départements 34 et 30.</p>
-                        <p id="potable-count" class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1"></p>
-                    </div>
-                    <input type="text" id="city-search" placeholder="Rechercher votre commune..." class="px-6 py-3 rounded-2xl border-2 border-white shadow-lg outline-none w-full md:w-96 focus:ring-4 focus:ring-sky-100 transition-all" onkeyup="renderPotable()">
-                </div>
-
-                <div id="potable-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"></div>
-
-                <!-- Glossaire -->
-                <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-8 space-y-8">
-                    <h3 class="text-xl font-black uppercase flex items-center"><span class="w-10 h-10 bg-sky-600 text-white rounded-2xl flex items-center justify-center mr-4 text-lg flex-shrink-0">?</span> Comprendre les paramètres</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-6 text-[13px] leading-relaxed text-slate-600">
-                        <div class="space-y-3">
-                            <p><strong>• Nitrates :</strong> Limite 50 mg/L. Pollution agricole ou urbaine.</p>
-                            <p><strong>• pH :</strong> Acidité (6.5–9.0). Instable = corrosion des canalisations.</p>
-                            <p><strong>• Chlore :</strong> Désinfectant actif. Au-delà de 5 mg/L, goût et irritations.</p>
-                            <p><strong>• Bactériologie :</strong> Germes fécaux. Valeur doit être 0.</p>
-                        </div>
-                        <div class="space-y-3">
-                            <p><strong>• Calcaire (TH) :</strong> Dureté &gt; 30°f = eau entartrante.</p>
-                            <p><strong>• Aluminium :</strong> Agent clarifiant. Limite 200 µg/L.</p>
-                            <p><strong>• Plomb :</strong> Vieux tuyaux. Seuil de sécurité : 10 µg/L.</p>
-                            <p><strong>• Pesticides :</strong> Limite 0.1 µg/L/substance.</p>
-                        </div>
-                        <div class="space-y-3">
-                            <p><strong>• THM :</strong> Sous-produits de chloration. Limite 100 µg/L.</p>
-                            <p><strong>• Conductivité :</strong> Minéralisation totale. Seuil 1100 µS/cm.</p>
-                            <p><strong>• PFAS :</strong> Polluants éternels. Limite stricte : 0.10 µg/L.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-center gap-6 pt-4 border-t border-slate-100">
-                        <div class="flex items-center gap-2"><span class="w-4 h-4 rounded-full bg-emerald-500"></span><span class="text-xs font-black text-slate-500 uppercase">Conforme</span></div>
-                        <div class="flex items-center gap-2"><span class="w-4 h-4 rounded-full bg-amber-500"></span><span class="text-xs font-black text-slate-500 uppercase">Vigilance</span></div>
-                        <div class="flex items-center gap-2"><span class="w-4 h-4 rounded-full bg-red-500"></span><span class="text-xs font-black text-slate-500 uppercase">Dépassement</span></div>
-                    </div>
-                </div>
-            </div>
-            <div class="hidden xl:block w-80 sticky top-4 self-start">
-                <div class="ad-slot w-full" style="min-height:600px">
-                    <span class="ad-label text-slate-400 text-[10px] font-black uppercase tracking-[0.2em] rotate-90 inline-block">Publicité — 300×600</span>
-                    <ins class="adsbygoogle" style="display:block;width:300px;height:600px"
-                         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-                         data-ad-slot="XXXXXXXXXX"
-                         data-ad-format="vertical"></ins>
-                    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-                </div>
-            </div>
+        <div class="w-px h-10 bg-slate-100"></div>
+        <div class="stat-item">
+            <div class="stat-num">Live</div>
+            <div class="stat-lbl">Mises à jour</div>
+        </div>
+        <div class="w-px h-10 bg-slate-100"></div>
+        <div class="stat-item">
+            <div class="stat-num">100%</div>
+            <div class="stat-lbl">Officiel</div>
         </div>
     </div>
+</section>
 
-    <!-- ====== SECTION RIVIÈRES ====== -->
-    <div id="section-rivieres" class="hidden space-y-10">
-        <div class="flex flex-col xl:flex-row gap-8">
-            <div class="flex-grow space-y-10">
-                <div class="flex flex-col md:flex-row justify-between items-end gap-4">
-                    <div>
-                        <h2 class="text-2xl font-black uppercase">Qualité Chimique des Rivières</h2>
-                        <p class="text-xs font-bold text-indigo-600 uppercase tracking-tighter">Score qualité + 8 paramètres chimiques</p>
-                        <p id="riviere-count" class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1"></p>
-                    </div>
-                    <input type="text" id="river-search" placeholder="Rechercher une rivière..." class="px-6 py-3 rounded-2xl border-2 border-white shadow-lg outline-none w-full md:w-96 focus:ring-4 focus:ring-indigo-100 transition-all" onkeyup="renderRivieres()">
-                </div>
+<!-- RESULTS PANEL -->
+<section id="results-panel" class="max-w-4xl mx-auto px-6 pb-20">
 
-                <!-- Carte des stations fluviales -->
-                <div id="map-rivieres" style="height:320px" class="rounded-3xl overflow-hidden border border-slate-200 shadow-sm hidden"></div>
-                <p id="map-rivieres-legend" class="hidden text-sm text-slate-500 mt-2 mb-1 px-1">
-                    <span class="font-semibold text-slate-600">Chaque point</span> représente une station de mesure physique.
-                    Cliquez sur un point pour voir ses valeurs.
-                    Sur chaque mini-carte, le <span class="font-semibold text-slate-600">segment coloré</span> indique la position de la station le long du cours d'eau par rapport à ses voisines.
-                </p>
-
-                <div id="riviere-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
-
-                <!-- Glossaire rivières -->
-                <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-8 space-y-8">
-                    <h3 class="text-xl font-black uppercase flex items-center"><span class="w-10 h-10 bg-indigo-600 text-white rounded-2xl flex items-center justify-center mr-4 text-lg flex-shrink-0">~</span> Paramètres de qualité</h3>
-                    <div class="flex gap-6 mb-6">
-                        <div class="flex items-center gap-2 bg-emerald-50 px-4 py-2 rounded-xl border border-emerald-100">
-                            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                            <span class="text-[10px] font-black text-emerald-700 uppercase">Capteur continu — température eau Hub'Eau (toutes les heures)</span>
-                        </div>
-                        <div class="flex items-center gap-2 bg-sky-50 px-4 py-2 rounded-xl border border-sky-100">
-                            <span class="w-2 h-2 rounded-full bg-sky-400 animate-pulse"></span>
-                            <span class="text-[10px] font-black text-sky-600 uppercase">Open-Meteo — température air en temps réel</span>
-                        </div>
-                        <div class="flex items-center gap-2 bg-slate-50 px-4 py-2 rounded-xl border border-slate-200">
-                            <span class="w-2 h-2 rounded-full bg-slate-400"></span>
-                            <span class="text-[10px] font-black text-slate-500 uppercase">Analyses labo — dernier prélèvement disponible (délai naturel de semaines à mois)</span>
-                        </div>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-[13px] leading-relaxed text-slate-600">
-                        <div>
-                            <p class="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-3 pb-1 border-b border-slate-100">Paramètres physiques</p>
-                            <div class="space-y-2">
-                                <p><strong>• Température ●</strong> <em class="text-emerald-600 text-[10px]">Temps réel</em> — Au-delà de 25°C, l'oxygène se raréfie et les espèces souffrent.</p>
-                                <p><strong>• Conductivité ●</strong> <em class="text-emerald-600 text-[10px]">Temps réel</em> — Minéralisation globale. Très élevée = apports industriels ou agricoles.</p>
-                                <p><strong>• MES :</strong> Matières en suspension. Indicateur de turbidité et d'érosion des sols.</p>
-                                <p><strong>• O2 dissous :</strong> Teneur en oxygène. En dessous de 70% de saturation, la vie piscicole est menacée.</p>
-                            </div>
-                        </div>
-                        <div>
-                            <p class="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-3 pb-1 border-b border-slate-100">Paramètres chimiques</p>
-                            <div class="space-y-2">
-                                <p><strong>• Nitrates :</strong> Au-delà de 25 mg/L, risque d'eutrophisation (prolifération d'algues).</p>
-                                <p><strong>• Phosphore :</strong> Indicateur de pollution agricole. Seuil critique à 0.5 mg/L.</p>
-                                <p><strong>• pH :</strong> Entre 6.5 et 8.5 pour une rivière en bonne santé écologique.</p>
-                                <p><strong>• Ammonium :</strong> Déchet organique. Toxique pour les poissons au-delà de 2 mg/L.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="hidden xl:block w-80 sticky top-4 self-start">
-                <div class="ad-slot w-full" style="min-height:600px">
-                    <span class="ad-label text-slate-400 text-[10px] font-black uppercase tracking-[0.2em] rotate-90 inline-block">Publicité — 300×600</span>
-                    <ins class="adsbygoogle" style="display:block;width:300px;height:600px"
-                         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-                         data-ad-slot="XXXXXXXXXX"
-                         data-ad-format="vertical"></ins>
-                    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-                </div>
-            </div>
-        </div>
+    <!-- City header -->
+    <div class="flex items-center gap-4 mb-8">
+        <button onclick="resetSearch()" class="flex items-center gap-2 text-sm font-600 text-slate-500 hover:text-slate-800 transition-colors">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+            Nouvelle recherche
+        </button>
+        <div class="w-px h-5 bg-slate-200"></div>
+        <h1 id="result-city-name" class="text-xl font-900 text-slate-800"></h1>
+        <span id="result-city-dept" class="text-sm font-600 text-slate-400"></span>
     </div>
 
-    <!-- ====== SECTION CARTE ====== -->
-    <div id="section-carte" class="hidden space-y-8">
-        <div class="flex flex-col xl:flex-row gap-8">
-            <div class="flex-grow space-y-6">
-                <div>
-                    <h2 class="text-2xl font-black uppercase">Carte de Qualité</h2>
-                    <p class="text-xs font-bold text-sky-600 uppercase tracking-tighter">Scores eau potable par commune</p>
-                </div>
-                <div id="map-qualite" class="shadow-md border border-slate-100 overflow-hidden"></div>
-                <div id="map-legend" class="grid grid-cols-2 sm:grid-cols-4 gap-4"></div>
-            </div>
-            <div class="hidden xl:block w-80 sticky top-4 self-start">
-                <div class="ad-slot w-full" style="min-height:600px">
-                    <span class="ad-label text-slate-400 text-[10px] font-black uppercase tracking-[0.2em] rotate-90 inline-block">Publicité — 300×600</span>
-                    <ins class="adsbygoogle" style="display:block;width:300px;height:600px"
-                         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-                         data-ad-slot="XXXXXXXXXX"
-                         data-ad-format="vertical"></ins>
-                    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- Cards grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" id="cards-grid"></div>
 
-    <!-- ====== SECTION QUALITÉ DE L'AIR ====== -->
-    <div id="section-air" class="hidden space-y-8">
-
-        <h2 class="text-2xl font-black uppercase">Qualité de l'Air en Hérault (34) et Gard (30)</h2>
-
-        <!-- Explication -->
-        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex flex-col md:flex-row gap-6 items-start">
-            <div class="flex-shrink-0 w-12 h-12 bg-sky-500 text-white rounded-2xl flex items-center justify-center text-2xl">🌬️</div>
-            <div class="space-y-2 text-[13px] leading-relaxed text-slate-600">
-                <p class="text-base font-black text-slate-800 uppercase tracking-tight">Indice de Qualité de l'Air (IQA) & Pollen</p>
-                <p>L'<strong>IQA</strong> est calculé chaque jour par Atmo Occitanie à partir de 5 polluants : NO₂ (dioxyde d'azote), O₃ (ozone), PM10 et PM2.5 (particules fines), SO₂ (dioxyde de soufre). Il reflète le polluant le plus défavorable.</p>
-                <p class="text-slate-400 text-[11px]">Source : Atmo Occitanie · Données journalières prévisionnelles · Mise à jour chaque matin.</p>
-                <p class="text-slate-400 text-[11px]">Les zones IQA couvrent les principales agglomérations de plus de 1 000 habitants des départements 34 et 30.</p>
-            </div>
-        </div>
-
-        <!-- LÉGENDE IQA COMPLÈTE -->
-        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
-            <h3 class="text-sm font-black text-slate-700 uppercase tracking-widest mb-4">Légende — Indice de Qualité de l'Air</h3>
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
-                <div class="flex flex-col items-center gap-2 p-3 rounded-2xl bg-emerald-50 border border-emerald-100">
-                    <div class="w-10 h-10 rounded-full bg-emerald-500 flex items-center justify-center text-white font-black text-sm">1-2</div>
-                    <p class="text-[10px] font-black text-emerald-700 uppercase text-center">Bon</p>
-                    <p class="text-[9px] text-emerald-600 text-center leading-tight">Aucune restriction</p>
-                </div>
-                <div class="flex flex-col items-center gap-2 p-3 rounded-2xl bg-yellow-50 border border-yellow-100">
-                    <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-black text-sm" style="background:#eab308">3-4</div>
-                    <p class="text-[10px] font-black text-yellow-700 uppercase text-center">Moyen</p>
-                    <p class="text-[9px] text-yellow-600 text-center leading-tight">Personnes sensibles</p>
-                </div>
-                <div class="flex flex-col items-center gap-2 p-3 rounded-2xl bg-orange-50 border border-orange-100">
-                    <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-black text-sm" style="background:#f59e0b">5-6</div>
-                    <p class="text-[10px] font-black text-orange-700 uppercase text-center">Dégradé</p>
-                    <p class="text-[9px] text-orange-600 text-center leading-tight">Limiter les efforts</p>
-                </div>
-                <div class="flex flex-col items-center gap-2 p-3 rounded-2xl bg-red-50 border border-red-100">
-                    <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-black text-sm" style="background:#f97316">7-8</div>
-                    <p class="text-[10px] font-black text-red-700 uppercase text-center">Mauvais</p>
-                    <p class="text-[9px] text-red-600 text-center leading-tight">Éviter l'extérieur</p>
-                </div>
-                <div class="flex flex-col items-center gap-2 p-3 rounded-2xl bg-rose-50 border border-rose-200">
-                    <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-black text-sm" style="background:#ef4444">9-10</div>
-                    <p class="text-[10px] font-black text-red-700 uppercase text-center">Très mauvais</p>
-                    <p class="text-[9px] text-rose-700 text-center leading-tight">Rester à l'intérieur</p>
-                </div>
-                <div class="flex flex-col items-center gap-2 p-3 rounded-2xl bg-purple-50 border border-purple-100">
-                    <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-black text-[9px]" style="background:#7c3aed">10+</div>
-                    <p class="text-[10px] font-black text-purple-700 uppercase text-center">Extrêmement mauvais</p>
-                    <p class="text-[9px] text-purple-600 text-center leading-tight">Confinement conseillé</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- IQA par zone -->
-        <div>
-            <h2 class="text-2xl font-black uppercase mb-2">Indice Qualité Air — par zone</h2>
-            <p id="air-count" class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-4"></p>
-            <div class="mb-6">
-                <h3 class="text-sm font-black text-sky-700 uppercase tracking-widest mb-3 flex items-center gap-2">
-                    <span class="px-2 py-0.5 bg-sky-100 text-sky-700 rounded-lg text-xs font-black">34</span> Hérault
-                </h3>
-                <div id="air-grid-34" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
-            </div>
-            <div>
-                <h3 class="text-sm font-black text-indigo-700 uppercase tracking-widest mb-3 flex items-center gap-2">
-                    <span class="px-2 py-0.5 bg-indigo-100 text-indigo-700 rounded-lg text-xs font-black">30</span> Gard
-                </h3>
-                <div id="air-grid-30" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
-            </div>
-        </div>
-
-        <!-- Pollen -->
-        <div>
-            <h2 class="text-2xl font-black uppercase mb-4">Risque Pollinique</h2>
-            <div id="pollen-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
-        </div>
-
-        <!-- COMPRENDRE LES POLLUANTS -->
-        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
-            <h2 class="text-xl font-black uppercase mb-6 flex items-center gap-3">
-                <span class="w-10 h-10 bg-sky-500 text-white rounded-2xl flex items-center justify-center text-base flex-shrink-0">⚗</span>
-                Comprendre les polluants
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
-                    <div class="flex items-center gap-2 mb-2">
-                        <span class="w-2 h-8 rounded-full bg-amber-500 flex-shrink-0"></span>
-                        <div>
-                            <p class="font-black text-slate-800 text-sm">NO₂ — Dioxyde d'azote</p>
-                            <p class="text-[10px] font-bold text-amber-600 uppercase">Trafic routier · Combustion</p>
-                        </div>
-                    </div>
-                    <p class="text-xs text-slate-500 leading-relaxed">Seuil européen : <strong>40 µg/m³/an</strong>. Irritation des voies respiratoires, aggravation de l'asthme, risque accru d'infections pulmonaires.</p>
-                </div>
-                <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
-                    <div class="flex items-center gap-2 mb-2">
-                        <span class="w-2 h-8 rounded-full bg-sky-400 flex-shrink-0"></span>
-                        <div>
-                            <p class="font-black text-slate-800 text-sm">O₃ — Ozone</p>
-                            <p class="text-[10px] font-bold text-sky-600 uppercase">Réaction UV + polluants</p>
-                        </div>
-                    </div>
-                    <p class="text-xs text-slate-500 leading-relaxed">Seuil européen : <strong>120 µg/m³ sur 8h</strong>. Irritation des yeux, toux, essoufflement. Pics en été par temps chaud et ensoleillé.</p>
-                </div>
-                <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
-                    <div class="flex items-center gap-2 mb-2">
-                        <span class="w-2 h-8 rounded-full bg-orange-400 flex-shrink-0"></span>
-                        <div>
-                            <p class="font-black text-slate-800 text-sm">PM10 — Particules</p>
-                            <p class="text-[10px] font-bold text-orange-600 uppercase">Poussières · Agriculture · Trafic</p>
-                        </div>
-                    </div>
-                    <p class="text-xs text-slate-500 leading-relaxed">Seuil européen : <strong>40 µg/m³/an</strong>. Pénètrent dans les voies respiratoires. Risques cardio-vasculaires et respiratoires à long terme.</p>
-                </div>
-                <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
-                    <div class="flex items-center gap-2 mb-2">
-                        <span class="w-2 h-8 rounded-full bg-red-500 flex-shrink-0"></span>
-                        <div>
-                            <p class="font-black text-slate-800 text-sm">PM2.5 — Particules fines</p>
-                            <p class="text-[10px] font-bold text-red-600 uppercase">Combustion · Industrie</p>
-                        </div>
-                    </div>
-                    <p class="text-xs text-slate-500 leading-relaxed">Seuil européen : <strong>25 µg/m³/an</strong>. Pénètrent jusqu'aux alvéoles pulmonaires. Cancérigène avéré (CIRC). Plus dangereuses que les PM10.</p>
-                </div>
-                <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
-                    <div class="flex items-center gap-2 mb-2">
-                        <span class="w-2 h-8 rounded-full bg-yellow-600 flex-shrink-0"></span>
-                        <div>
-                            <p class="font-black text-slate-800 text-sm">SO₂ — Dioxyde de soufre</p>
-                            <p class="text-[10px] font-bold text-yellow-700 uppercase">Industrie · Centrales thermiques</p>
-                        </div>
-                    </div>
-                    <p class="text-xs text-slate-500 leading-relaxed">Seuil européen : <strong>125 µg/m³/jour</strong>. Bronchospasmes, irritation des yeux et de la gorge. Précurseur des pluies acides.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- PESTICIDES DANS L'AIR -->
-        <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-200">
-            <h2 class="text-xl font-black uppercase mb-2 flex items-center gap-3">
-                <span class="w-10 h-10 bg-green-600 text-white rounded-2xl flex items-center justify-center text-base flex-shrink-0">🌿</span>
-                Pesticides dans l'Air — Hérault &amp; Gard
-            </h2>
-            <p class="text-[11px] text-slate-400 uppercase font-bold tracking-widest mb-4">Source : Atmo Occitanie — campagnes de mesure pesticides</p>
-            <p class="text-sm text-slate-600 leading-relaxed mb-6">
-                Les pesticides ne restent pas uniquement dans les sols et l'eau. Une partie s'évapore et se retrouve dans l'air que nous respirons, notamment lors des traitements agricoles. Atmo Occitanie mesure régulièrement leur présence dans l'atmosphère.
-            </p>
-            <div id="pesticides-grid">
-                <div class="flex items-center gap-4 p-5 bg-slate-50 rounded-2xl border border-slate-200">
-                    <div class="w-10 h-10 bg-slate-200 rounded-2xl flex items-center justify-center text-slate-400 flex-shrink-0 text-lg">📊</div>
-                    <div>
-                        <p class="font-black text-slate-600 text-sm">Données en cours de collecte</p>
-                        <p class="text-xs text-slate-400 mt-0.5">Prochaine campagne de mesure : printemps 2026 — Les données seront affichées ici dès leur publication par Atmo Occitanie.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-5 p-4 bg-slate-50 rounded-2xl border border-slate-100">
-                <p class="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-3">Molécules surveillées</p>
-                <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1 bg-white border border-slate-200 rounded-xl text-[10px] font-black text-slate-600 uppercase">Glyphosate</span>
-                    <span class="px-3 py-1 bg-white border border-slate-200 rounded-xl text-[10px] font-black text-slate-600 uppercase">Chlorpyrifos</span>
-                    <span class="px-3 py-1 bg-white border border-slate-200 rounded-xl text-[10px] font-black text-slate-600 uppercase">Pendiméthaline</span>
-                    <span class="px-3 py-1 bg-white border border-slate-200 rounded-xl text-[10px] font-black text-slate-600 uppercase">Trifluraline</span>
-                    <span class="px-3 py-1 bg-white border border-slate-200 rounded-xl text-[10px] font-black text-slate-600 uppercase">Prosulfocarbe</span>
-                </div>
-                <p class="text-[9px] text-slate-400 mt-3 italic">Données issues des campagnes de mesure ponctuelles d'Atmo Occitanie. La couverture des campagnes concerne pour l'instant principalement d'autres départements d'Occitanie — les données Hérault/Gard seront affichées dès leur publication. Mise à jour selon disponibilité.</p>
-            </div>
-        </div>
-
-        <!-- CONSEILS SANTÉ -->
-        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
-            <h2 class="text-xl font-black uppercase mb-6 flex items-center gap-3">
-                <span class="w-10 h-10 bg-rose-500 text-white rounded-2xl flex items-center justify-center flex-shrink-0">❤</span>
-                Que faire selon l'indice ?
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div class="p-5 bg-slate-50 rounded-2xl border border-slate-100">
-                    <p class="font-black text-slate-800 text-sm uppercase mb-3">👥 Population générale</p>
-                    <div class="space-y-2 text-xs text-slate-600 leading-relaxed">
-                        <div class="flex items-start gap-2"><span class="w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0 mt-1"></span><span><strong>IQA 1-4 :</strong> Activités normales sans restriction.</span></div>
-                        <div class="flex items-start gap-2"><span class="w-2 h-2 rounded-full bg-orange-400 flex-shrink-0 mt-1"></span><span><strong>IQA 5-6 :</strong> Aérer le logement tôt le matin ou le soir.</span></div>
-                        <div class="flex items-start gap-2"><span class="w-2 h-2 rounded-full bg-red-500 flex-shrink-0 mt-1"></span><span><strong>IQA 7-8 :</strong> Éviter les déplacements inutiles en voiture.</span></div>
-                        <div class="flex items-start gap-2"><span class="w-2 h-2 rounded-full bg-purple-700 flex-shrink-0 mt-1"></span><span><strong>IQA 9+ :</strong> Rester à l'intérieur, vitres fermées.</span></div>
-                    </div>
-                </div>
-                <div class="p-5 bg-amber-50 rounded-2xl border border-amber-100">
-                    <p class="font-black text-amber-800 text-sm uppercase mb-1">⚕ Personnes sensibles</p>
-                    <p class="text-[10px] text-amber-600 font-bold uppercase mb-3">Asthmatiques · Personnes âgées · Enfants</p>
-                    <div class="space-y-2 text-xs text-amber-700 leading-relaxed">
-                        <div class="flex items-start gap-2"><span class="w-2 h-2 rounded-full bg-yellow-400 flex-shrink-0 mt-1"></span><span><strong>IQA 3-4 :</strong> Surveiller les symptômes, avoir son traitement à portée.</span></div>
-                        <div class="flex items-start gap-2"><span class="w-2 h-2 rounded-full bg-orange-500 flex-shrink-0 mt-1"></span><span><strong>IQA 5-6 :</strong> Limiter les sorties prolongées, éviter les efforts.</span></div>
-                        <div class="flex items-start gap-2"><span class="w-2 h-2 rounded-full bg-red-500 flex-shrink-0 mt-1"></span><span><strong>IQA 7+ :</strong> Rester à l'intérieur. Consulter si symptômes.</span></div>
-                    </div>
-                </div>
-                <div class="p-5 bg-sky-50 rounded-2xl border border-sky-100">
-                    <p class="font-black text-sky-800 text-sm uppercase mb-1">🏃 Sportifs</p>
-                    <p class="text-[10px] text-sky-600 font-bold uppercase mb-3">Activité physique extérieure</p>
-                    <div class="space-y-2 text-xs text-sky-700 leading-relaxed">
-                        <div class="flex items-start gap-2"><span class="w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0 mt-1"></span><span><strong>IQA 1-4 :</strong> Sport en extérieur sans restriction.</span></div>
-                        <div class="flex items-start gap-2"><span class="w-2 h-2 rounded-full bg-orange-400 flex-shrink-0 mt-1"></span><span><strong>IQA 5-6 :</strong> Préférer le matin tôt, réduire l'intensité.</span></div>
-                        <div class="flex items-start gap-2"><span class="w-2 h-2 rounded-full bg-red-500 flex-shrink-0 mt-1"></span><span><strong>IQA 7+ :</strong> Reporter l'activité en intérieur ou annuler.</span></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- ====== SECTION MÉTHODE ====== -->
-    <div id="section-methode" class="hidden">
-        <div class="flex flex-col xl:flex-row gap-8">
-            <div class="flex-grow max-w-5xl mx-auto space-y-12 pb-24">
-                <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-10">
-                    <h2 class="text-3xl font-black uppercase mb-10 text-center">Origine des Données</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <a href="https://www.data.gouv.fr" target="_blank" class="p-8 bg-white rounded-3xl border border-slate-100 shadow-sm hover:border-sky-400 transition-all group">
-                            <h3 class="text-sky-600 font-black text-xl mb-4 group-hover:underline uppercase italic">Data.gouv.fr</h3>
-                            <p class="text-sm text-slate-500 leading-relaxed text-justify">La plateforme nationale de référence pour l'Open Data en France. Toutes les bases sont certifiées par l'État.</p>
-                        </a>
-                        <a href="https://hubeau.eaufrance.fr" target="_blank" class="p-8 bg-white rounded-3xl border border-slate-100 shadow-sm hover:border-sky-400 transition-all group">
-                            <h3 class="text-sky-600 font-black text-xl mb-4 group-hover:underline uppercase italic">Hub'Eau</h3>
-                            <p class="text-sm text-slate-500 leading-relaxed text-justify">Service technique centralisé pour la qualité de l'eau potable et la qualité physicochimique des cours d'eau.</p>
-                        </a>
-                        <a href="https://vigieau.gouv.fr" target="_blank" class="p-8 bg-white rounded-3xl border border-slate-100 shadow-sm hover:border-sky-400 transition-all group">
-                            <h3 class="text-sky-600 font-black text-xl mb-4 group-hover:underline uppercase italic">VigiEau</h3>
-                            <p class="text-sm text-slate-500 leading-relaxed text-justify">Centralisation des arrêtés préfectoraux de sécheresse et des niveaux d'alerte par commune.</p>
-                        </a>
-                        <a href="https://www.brgm.fr" target="_blank" class="p-8 bg-white rounded-3xl border border-slate-100 shadow-sm hover:border-sky-400 transition-all group">
-                            <h3 class="text-sky-600 font-black text-xl mb-4 group-hover:underline uppercase italic">BRGM</h3>
-                            <p class="text-sm text-slate-500 leading-relaxed text-justify">Expertise géologique nationale. Fournit les données sur les aquifères et la qualité des nappes phréatiques.</p>
-                        </a>
-                        <a href="https://www.laregion.fr" target="_blank" class="p-8 bg-white rounded-3xl border border-slate-100 shadow-sm hover:border-sky-400 transition-all group">
-                            <h3 class="text-sky-600 font-black text-xl mb-4 group-hover:underline uppercase italic">Région Occitanie</h3>
-                            <p class="text-sm text-slate-500 leading-relaxed text-justify">Portail Open Data régional fournissant les données sur l'aménagement du territoire et la gestion durable des ressources.</p>
-                        </a>
-                        <a href="https://www.herault-data.fr" target="_blank" class="p-8 bg-white rounded-3xl border border-slate-100 shadow-sm hover:border-sky-400 transition-all group">
-                            <h3 class="text-sky-600 font-black text-xl mb-4 group-hover:underline uppercase italic">Hérault Data</h3>
-                            <p class="text-sm text-slate-500 leading-relaxed text-justify">Portail Open Data du Département de l'Hérault. Publie les jeux de données environnementaux locaux : qualité des eaux de baignade, cours d'eau, zones humides et biodiversité du territoire héraultais.</p>
-                        </a>
-                        <a href="https://data.montpellier3m.fr/" target="_blank" class="p-8 bg-white rounded-3xl border border-slate-100 shadow-sm hover:border-sky-400 transition-all group">
-                            <h3 class="text-sky-600 font-black text-xl mb-4 group-hover:underline uppercase italic">Mairies & Métropoles</h3>
-                            <p class="text-sm text-slate-500 leading-relaxed text-justify">Données locales issues des services des eaux de Nîmes Métropole et des communes de plus de 5 000 habitants.</p>
-                        </a>
-                        <a href="https://data.montpellier3m.fr/" target="_blank" class="p-8 bg-white rounded-3xl border border-slate-100 shadow-sm hover:border-sky-400 transition-all group col-span-1 md:col-span-2 border-2 border-sky-100">
-                            <div class="flex items-center gap-4 mb-4">
-                                <span class="w-10 h-10 bg-sky-100 text-sky-600 rounded-2xl flex items-center justify-center font-black text-lg">M</span>
-                                <h3 class="text-sky-600 font-black text-xl group-hover:underline uppercase italic">Portail Open Data — Montpellier Méditerranée Métropole</h3>
-                            </div>
-                            <p class="text-sm text-slate-500 leading-relaxed text-justify">Portail officiel de Montpellier 3M (data.montpellier3m.fr). Publie les analyses de qualité de l'eau potable par réseau de distribution (UDI), les bilans annuaux et les résultats de contrôle sanitaire pour les communes de la métropole. Permet d'accéder aux données par réseau et non seulement par commune, ce qui complète les données Hub'Eau pour les villes multi-réseaux comme Montpellier.</p>
-                        </a>
-                        <a href="https://www.atmo-occitanie.org" target="_blank" class="p-8 bg-white rounded-3xl border border-slate-100 shadow-sm hover:border-sky-400 transition-all group">
-                            <h3 class="text-sky-600 font-black text-xl mb-4 group-hover:underline uppercase italic">Atmo Occitanie</h3>
-                            <p class="text-sm text-slate-500 leading-relaxed text-justify">Association agréée de surveillance de la qualité de l'air en Occitanie. Fournit l'Indice de Qualité de l'Air (IQA) journalier par zone EPCI, calculé à partir de 5 polluants (NO₂, O₃, PM10, PM2.5, SO₂), ainsi que les niveaux d'exposition aux pollens par département.</p>
-                        </a>
-                        <a href="https://open-meteo.com" target="_blank" class="p-8 bg-white rounded-3xl border border-slate-100 shadow-sm hover:border-sky-400 transition-all group">
-                            <h3 class="text-sky-600 font-black text-xl mb-4 group-hover:underline uppercase italic">Open-Meteo</h3>
-                            <p class="text-sm text-slate-500 leading-relaxed text-justify">API météorologique open-source fournissant des données climatiques en temps réel et prévisionnelles. Utilisée pour les températures actuelles et les indicateurs météo complémentaires aux données de qualité de l'air.</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-10">
-                    <h2 class="text-3xl font-black uppercase mb-8 text-center">Méthodologie du Score Qualité</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm text-slate-600 leading-relaxed">
-                        <div class="bg-emerald-50 p-6 rounded-2xl border border-emerald-100 text-center">
-                            <div class="score-ring mx-auto mb-4" style="background:#10b981">80+</div>
-                            <p class="font-black text-emerald-700 uppercase text-sm mb-2">Bonne qualité</p>
-                            <p>La majorité des paramètres sont en dessous des seuils de vigilance. Eau conforme.</p>
-                        </div>
-                        <div class="bg-amber-50 p-6 rounded-2xl border border-amber-100 text-center">
-                            <div class="score-ring mx-auto mb-4" style="background:#f59e0b">50–79</div>
-                            <p class="font-black text-amber-700 uppercase text-sm mb-2">Qualité moyenne</p>
-                            <p>Certains paramètres dépassent le seuil de vigilance. Surveillance recommandée.</p>
-                        </div>
-                        <div class="bg-red-50 p-6 rounded-2xl border border-red-100 text-center">
-                            <div class="score-ring mx-auto mb-4" style="background:#ef4444">&lt;50</div>
-                            <p class="font-black text-red-700 uppercase text-sm mb-2">Mauvaise qualité</p>
-                            <p>Dépassements significatifs. Action correctrice ou alerte sanitaire nécessaire.</p>
-                        </div>
-                    </div>
-                    <p class="text-xs text-slate-400 italic mt-8 text-center">Le score est calculé automatiquement en moyennant les évaluations de chaque paramètre mesuré (vert=100, orange=50, rouge=0).</p>
-                </div>
-            </div>
-            <div class="hidden xl:block w-80 sticky top-4 self-start">
-                <div class="ad-slot w-full" style="min-height:600px">
-                    <span class="ad-label text-slate-400 text-[10px] font-black uppercase tracking-[0.2em] rotate-90 inline-block">Publicité — 300×600</span>
-                    <ins class="adsbygoogle" style="display:block;width:300px;height:600px"
-                         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-                         data-ad-slot="XXXXXXXXXX"
-                         data-ad-format="vertical"></ins>
-                    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</div><!-- /container -->
-
-<!-- BOUTON FLOTTANT HAUT DE PAGE -->
-<button id="btn-top" onclick="window.scrollTo({top:0,behavior:'smooth'})"
-    class="fixed bottom-8 right-8 z-50 w-12 h-12 rounded-full bg-sky-500 text-white shadow-xl flex items-center justify-center text-xl font-black opacity-0 pointer-events-none transition-all duration-300 hover:bg-sky-600 hover:scale-110"
-    aria-label="Remonter en haut">↑</button>
+    <!-- Info notice -->
+    <p class="mt-8 text-center text-xs text-slate-400">
+        Données issues de sources officielles : ARS, Atmo, Hub'Eau, BRGM, Ministère de la Santé.<br>
+        Mises à jour quotidiennement.
+    </p>
+</section>
+</main>
 
 <!-- FOOTER -->
-<footer class="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-16 mt-8">
-    <div class="max-w-[1600px] mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
-        <div>
-            <h3 class="text-2xl font-black uppercase mb-6 italic">QUALITÉ <span class="text-sky-400">AIR ET EAU</span></h3>
-            <p class="text-slate-400 text-sm leading-relaxed">Surveillance indépendante de la qualité de l'air et de l'eau pour la France. Données certifiées État, Atmo Occitanie et Communes.</p>
-        </div>
-        <div>
-            <h4 class="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-6">Partenaires</h4>
-            <div class="flex flex-wrap gap-4 opacity-50 hover:opacity-100 transition-all font-black text-[10px] uppercase">
-                <span class="px-3 py-1 bg-white/10 rounded">Data.gouv.fr</span>
-                <span class="px-3 py-1 bg-white/10 rounded">Hub'Eau</span>
-                <span class="px-3 py-1 bg-white/10 rounded">VigiEau</span>
-                <span class="px-3 py-1 bg-white/10 rounded">Atmo Occitanie</span>
-                <span class="px-3 py-1 bg-white/10 rounded">Région Occitanie</span>
-            </div>
-        </div>
-        <div class="text-right">
-            <p class="text-[10px] font-black uppercase text-slate-500 mb-2">Copyright &copy; 2026 Mon-Environnement.fr</p>
-            <p class="text-lg font-black tracking-tighter uppercase italic">Mon-Environnement</p>
-            <div class="mt-4 flex flex-col gap-2 items-end">
-                <a href="/contact.html" class="text-slate-400 hover:text-white text-xs underline transition-all">Contact</a>
-                <a href="/mentions-legales.html" class="text-slate-400 hover:text-white text-xs underline transition-all">Mentions légales</a>
-                <a href="/politique-confidentialite.html" class="text-slate-400 hover:text-white text-xs underline transition-all">Politique de confidentialité</a>
-                <button onclick="document.getElementById('cookie-banner').classList.remove('hidden')" class="text-slate-400 hover:text-white text-xs underline transition-all">Gérer mes cookies</button>
-            </div>
-        </div>
+<footer class="border-t border-slate-100 bg-white/60 py-6 px-6 text-center text-xs text-slate-400">
+    <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-2">
+        <a href="/mentions-legales.html" class="hover:text-slate-600 transition-colors">Mentions légales</a>
+        <a href="/politique-confidentialite.html" class="hover:text-slate-600 transition-colors">Confidentialité</a>
+        <a href="/contact.html" class="hover:text-slate-600 transition-colors">Contact</a>
+        <a href="/sitemap.xml" class="hover:text-slate-600 transition-colors">Sitemap</a>
     </div>
+    <p>© 2026 Mon-Environnement.fr — Données environnementales libres et officielles pour la France</p>
 </footer>
 
 <script>
-    // ═══ MENU HAMBURGER MOBILE ═══
-    function toggleMenu() {
-        document.getElementById('side-drawer').classList.toggle('open');
-        document.getElementById('menu-overlay').classList.toggle('open');
-        document.body.style.overflow = document.getElementById('side-drawer').classList.contains('open') ? 'hidden' : '';
-    }
-    function closeMenu() {
-        document.getElementById('side-drawer').classList.remove('open');
-        document.getElementById('menu-overlay').classList.remove('open');
-        document.body.style.overflow = '';
-    }
-    // Fermeture au resize vers desktop
-    window.addEventListener('resize', () => { if (window.innerWidth >= 768) closeMenu(); });
+// CITY DATABASE
+const CITIES = [
+    { slug: "agde",                     name: "Agde",                        dept: "Hérault (34)", coastal: true  },
+    { slug: "aigues-mortes",            name: "Aigues-Mortes",               dept: "Gard (30)",    coastal: true  },
+    { slug: "aimargues",                name: "Aimargues",                   dept: "Gard (30)",    coastal: false },
+    { slug: "ales",                     name: "Alès",                        dept: "Gard (30)",    coastal: false },
+    { slug: "aramon",                   name: "Aramon",                      dept: "Gard (30)",    coastal: false },
+    { slug: "bagnols-sur-ceze",         name: "Bagnols-sur-Cèze",            dept: "Gard (30)",    coastal: false },
+    { slug: "baillargues",              name: "Baillargues",                 dept: "Hérault (34)", coastal: false },
+    { slug: "balaruc-les-bains",        name: "Balaruc-les-Bains",           dept: "Hérault (34)", coastal: true  },
+    { slug: "beaucaire",                name: "Beaucaire",                   dept: "Gard (30)",    coastal: false },
+    { slug: "bedarieux",                name: "Bédarieux",                   dept: "Hérault (34)", coastal: false },
+    { slug: "bellegarde",               name: "Bellegarde",                  dept: "Gard (30)",    coastal: false },
+    { slug: "bessan",                   name: "Bessan",                      dept: "Hérault (34)", coastal: false },
+    { slug: "beziers",                  name: "Béziers",                     dept: "Hérault (34)", coastal: false },
+    { slug: "bouillargues",             name: "Bouillargues",                dept: "Gard (30)",    coastal: false },
+    { slug: "boujan-sur-libron",        name: "Boujan-sur-Libron",           dept: "Hérault (34)", coastal: false },
+    { slug: "caissargues",              name: "Caissargues",                 dept: "Gard (30)",    coastal: false },
+    { slug: "calvisson",                name: "Calvisson",                   dept: "Gard (30)",    coastal: false },
+    { slug: "canet",                    name: "Canet",                       dept: "Hérault (34)", coastal: false },
+    { slug: "capestang",                name: "Capestang",                   dept: "Hérault (34)", coastal: false },
+    { slug: "castelnau-le-lez",         name: "Castelnau-le-Lez",            dept: "Hérault (34)", coastal: false },
+    { slug: "castries",                 name: "Castries",                    dept: "Hérault (34)", coastal: false },
+    { slug: "clapiers",                 name: "Clapiers",                    dept: "Hérault (34)", coastal: false },
+    { slug: "clarensac",                name: "Clarensac",                   dept: "Gard (30)",    coastal: false },
+    { slug: "clermont-l-herault",       name: "Clermont-l'Hérault",          dept: "Hérault (34)", coastal: false },
+    { slug: "cournonterral",            name: "Cournonterral",               dept: "Hérault (34)", coastal: false },
+    { slug: "fabregues",                name: "Fabrègues",                   dept: "Hérault (34)", coastal: false },
+    { slug: "florensac",                name: "Florensac",                   dept: "Hérault (34)", coastal: false },
+    { slug: "frontignan",               name: "Frontignan",                  dept: "Hérault (34)", coastal: true  },
+    { slug: "gallargues-le-montueux",   name: "Gallargues-le-Montueux",      dept: "Gard (30)",    coastal: false },
+    { slug: "ganges",                   name: "Ganges",                      dept: "Hérault (34)", coastal: false },
+    { slug: "garons",                   name: "Garons",                      dept: "Gard (30)",    coastal: false },
+    { slug: "gigean",                   name: "Gigean",                      dept: "Hérault (34)", coastal: false },
+    { slug: "gignac",                   name: "Gignac",                      dept: "Hérault (34)", coastal: false },
+    { slug: "grabels",                  name: "Grabels",                     dept: "Hérault (34)", coastal: false },
+    { slug: "jacou",                    name: "Jacou",                       dept: "Hérault (34)", coastal: false },
+    { slug: "juvignac",                 name: "Juvignac",                    dept: "Hérault (34)", coastal: false },
+    { slug: "la-grand-combe",           name: "La Grand-Combe",              dept: "Gard (30)",    coastal: false },
+    { slug: "lattes",                   name: "Lattes",                      dept: "Hérault (34)", coastal: false },
+    { slug: "laudun-l-ardoise",         name: "Laudun-l'Ardoise",            dept: "Gard (30)",    coastal: false },
+    { slug: "le-cres",                  name: "Le Crès",                     dept: "Hérault (34)", coastal: false },
+    { slug: "le-grau-du-roi",           name: "Le Grau-du-Roi",              dept: "Gard (30)",    coastal: true  },
+    { slug: "le-vigan",                 name: "Le Vigan",                    dept: "Gard (30)",    coastal: false },
+    { slug: "les-angles",               name: "Les Angles",                  dept: "Gard (30)",    coastal: false },
+    { slug: "lodeve",                   name: "Lodève",                      dept: "Hérault (34)", coastal: false },
+    { slug: "lunel",                    name: "Lunel",                       dept: "Hérault (34)", coastal: false },
+    { slug: "lunel-viel",               name: "Lunel-Viel",                  dept: "Hérault (34)", coastal: false },
+    { slug: "manduel",                  name: "Manduel",                     dept: "Gard (30)",    coastal: false },
+    { slug: "maraussan",                name: "Maraussan",                   dept: "Hérault (34)", coastal: false },
+    { slug: "marguerittes",             name: "Marguerittes",                dept: "Gard (30)",    coastal: false },
+    { slug: "marseillan",               name: "Marseillan",                  dept: "Hérault (34)", coastal: true  },
+    { slug: "marsillargues",            name: "Marsillargues",               dept: "Hérault (34)", coastal: false },
+    { slug: "mauguio",                  name: "Mauguio",                     dept: "Hérault (34)", coastal: true  },
+    { slug: "meze",                     name: "Mèze",                        dept: "Hérault (34)", coastal: true  },
+    { slug: "milhaud",                  name: "Milhaud",                     dept: "Gard (30)",    coastal: false },
+    { slug: "mireval",                  name: "Mireval",                     dept: "Hérault (34)", coastal: true  },
+    { slug: "montagnac",                name: "Montagnac",                   dept: "Hérault (34)", coastal: false },
+    { slug: "montbazin",                name: "Montbazin",                   dept: "Hérault (34)", coastal: false },
+    { slug: "montblanc",                name: "Montblanc",                   dept: "Hérault (34)", coastal: false },
+    { slug: "montferrier-sur-lez",      name: "Montferrier-sur-Lez",         dept: "Hérault (34)", coastal: false },
+    { slug: "montfrin",                 name: "Montfrin",                    dept: "Gard (30)",    coastal: false },
+    { slug: "montpellier",              name: "Montpellier",                 dept: "Hérault (34)", coastal: false },
+    { slug: "nimes",                    name: "Nîmes",                       dept: "Gard (30)",    coastal: false },
+    { slug: "nissan-lez-enserune",      name: "Nissan-lez-Enserune",         dept: "Hérault (34)", coastal: false },
+    { slug: "palavas-les-flots",        name: "Palavas-les-Flots",           dept: "Hérault (34)", coastal: true  },
+    { slug: "perols",                   name: "Pérols",                      dept: "Hérault (34)", coastal: true  },
+    { slug: "pezenas",                  name: "Pézenas",                     dept: "Hérault (34)", coastal: false },
+    { slug: "pignan",                   name: "Pignan",                      dept: "Hérault (34)", coastal: false },
+    { slug: "pont-saint-esprit",        name: "Pont-Saint-Esprit",           dept: "Gard (30)",    coastal: false },
+    { slug: "poussan",                  name: "Poussan",                     dept: "Hérault (34)", coastal: false },
+    { slug: "prades-le-lez",            name: "Prades-le-Lez",               dept: "Hérault (34)", coastal: false },
+    { slug: "quissac",                  name: "Quissac",                     dept: "Gard (30)",    coastal: false },
+    { slug: "redessan",                 name: "Redessan",                    dept: "Gard (30)",    coastal: false },
+    { slug: "remoulins",                name: "Remoulins",                   dept: "Gard (30)",    coastal: false },
+    { slug: "rochefort-du-gard",        name: "Rochefort-du-Gard",           dept: "Gard (30)",    coastal: false },
+    { slug: "roquemaure",               name: "Roquemaure",                  dept: "Gard (30)",    coastal: false },
+    { slug: "saint-ambroix",            name: "Saint-Ambroix",               dept: "Gard (30)",    coastal: false },
+    { slug: "saint-aunes",              name: "Saint-Aunes",                 dept: "Hérault (34)", coastal: false },
+    { slug: "saint-christol-lez-ales",  name: "Saint-Christol-lès-Alès",     dept: "Gard (30)",    coastal: false },
+    { slug: "saint-clement-de-riviere", name: "Saint-Clément-de-Rivière",    dept: "Hérault (34)", coastal: false },
+    { slug: "saint-gely-du-fesc",       name: "Saint-Gély-du-Fesc",          dept: "Hérault (34)", coastal: false },
+    { slug: "saint-genies-de-malgoires",name: "Saint-Geniès-de-Malgoirès",   dept: "Gard (30)",    coastal: false },
+    { slug: "saint-georges-d-orques",   name: "Saint-Georges-d'Orques",      dept: "Hérault (34)", coastal: false },
+    { slug: "saint-gilles",             name: "Saint-Gilles",                dept: "Gard (30)",    coastal: false },
+    { slug: "saint-hilaire-de-brethmas",name: "Saint-Hilaire-de-Brethmas",   dept: "Gard (30)",    coastal: false },
+    { slug: "saint-hippolyte-du-fort",  name: "Saint-Hippolyte-du-Fort",     dept: "Gard (30)",    coastal: false },
+    { slug: "saint-jean-de-vedas",      name: "Saint-Jean-de-Védas",         dept: "Hérault (34)", coastal: false },
+    { slug: "saint-laurent-des-arbres", name: "Saint-Laurent-des-Arbres",    dept: "Gard (30)",    coastal: false },
+    { slug: "saint-mathieu-de-treviers",name: "Saint-Mathieu-de-Tréviers",   dept: "Hérault (34)", coastal: false },
+    { slug: "salindres",                name: "Salindres",                   dept: "Gard (30)",    coastal: false },
+    { slug: "serignan",                 name: "Sérignan",                    dept: "Hérault (34)", coastal: true  },
+    { slug: "sete",                     name: "Sète",                        dept: "Hérault (34)", coastal: true  },
+    { slug: "sommieres",                name: "Sommières",                   dept: "Gard (30)",    coastal: false },
+    { slug: "uchaud",                   name: "Uchaud",                      dept: "Gard (30)",    coastal: false },
+    { slug: "uzes",                     name: "Uzès",                        dept: "Gard (30)",    coastal: false },
+    { slug: "valras-plage",             name: "Valras-Plage",                dept: "Hérault (34)", coastal: true  },
+    { slug: "vauvert",                  name: "Vauvert",                     dept: "Gard (30)",    coastal: false },
+    { slug: "vendargues",               name: "Vendargues",                  dept: "Hérault (34)", coastal: false },
+    { slug: "vergeze",                  name: "Vergèze",                     dept: "Gard (30)",    coastal: false },
+    { slug: "vias",                     name: "Vias",                        dept: "Hérault (34)", coastal: true  },
+    { slug: "villeneuve-les-avignon",   name: "Villeneuve-lès-Avignon",      dept: "Gard (30)",    coastal: false },
+    { slug: "villeneuve-les-beziers",   name: "Villeneuve-lès-Béziers",      dept: "Hérault (34)", coastal: true  },
+    { slug: "villeneuve-les-maguelone", name: "Villeneuve-lès-Maguelone",    dept: "Hérault (34)", coastal: true  },
+];
 
-    // ═══ GESTION COOKIES RGPD ═══
-    function acceptCookies() {
-        localStorage.setItem('cookie_consent', 'accepted');
-        document.getElementById('cookie-banner').classList.add('hidden');
-    }
-    function refuseCookies() {
-        localStorage.setItem('cookie_consent', 'refused');
-        document.getElementById('cookie-banner').classList.add('hidden');
-    }
-    (function() {
-        const consent = localStorage.getItem('cookie_consent');
-        if (!consent) {
-            document.getElementById('cookie-banner').classList.remove('hidden');
-        }
-    })();
+// Normalize string: remove accents + lowercase + collapse separators
+function normalize(str) {
+    return str.toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/[-'\u2019]/g, " ")
+        .trim();
+}
 
-    let fullData = {};
-    let mapNappes, mapQualite, mapRivieres, markersLayer, rivMarkersLayer;
-    let rivMapInstances = {};
-    let currentTab = 'nappes';
-    let currentDept = 'all';
+// AUTOCOMPLETE
+const input = document.getElementById("search-input");
+const list  = document.getElementById("autocomplete-list");
+let activeIdx = -1;
+let currentMatches = [];
 
-    const PARAMS_POTABLE = ["Nitrates","pH","Chlore","Bactériologie","Calcaire (TH)","Aluminium","Plomb","Pesticides","THM","Conductivité","PFAS"];
-    const PARAMS_RIVIERE = ["Temp. air","Temp. eau","Nitrates","Phosphore","pH","Conductivité","O2 saturation","MES","Ammonium"];
+input.addEventListener("input", function() {
+    const q = normalize(this.value);
+    activeIdx = -1;
+    if (q.length < 1) { list.classList.remove("show"); return; }
 
-    function isoToFr(iso) {
-        if (!iso) return '';
-        const [y, m, d] = iso.split('-');
-        if (!y || !m || !d) return iso;
-        const mois = ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
-        return `${+d} ${mois[+m - 1]} ${y}`;
-    }
+    currentMatches = CITIES.filter(c =>
+        normalize(c.name).includes(q) || normalize(c.slug).includes(q.replace(/ /g, "-"))
+    ).slice(0, 8);
 
-    function formatUpdatedDate(raw) {
-        // raw = "30/03/2026 à 09:05"
-        const m = raw.match(/(\d{2})\/(\d{2})\/(\d{4}) à (\d{2}):(\d{2})/);
-        if (!m) return raw;
-        const [,day,month,year,h,min] = m;
-        const d = new Date(+year, +month-1, +day);
-        const jours = ['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
-        const mois  = ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
-        return `${jours[d.getDay()]} ${+day} ${mois[+month-1]} ${year} à ${h}h${min}`;
-    }
+    if (currentMatches.length === 0) { list.classList.remove("show"); return; }
 
-    async function init() {
-        const loader = document.getElementById('loading-overlay');
-        try {
-        const res = await fetch('full_data.json', { cache: 'no-cache' });
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        fullData = await res.json();
-        if (loader) loader.classList.add('hidden');
-        const subtitle = document.getElementById('updated-subtitle');
-        if (subtitle) {
-            const updateHour = fullData.updated ? fullData.updated.match(/à (\d{2})h/)?.[1] ?? '11' : '11';
-            subtitle.innerHTML = `📡 Données mises à jour quotidiennement à ${updateHour}h &mdash; Dernière mise à jour : ${formatUpdatedDate(fullData.updated)}`;
-            subtitle.classList.remove('hidden');
-        }
-        document.getElementById('stat-communes').innerText = fullData.potable.length;
-        document.getElementById('stat-rivieres').innerText = fullData.rivieres.length;
+    // Build autocomplete HTML with highlighted match
+    list.innerHTML = currentMatches.map((c, i) => {
+        // Simple highlight: bold the typed query in display name
+        const re = new RegExp("(" + this.value.trim().replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + ")", "gi");
+        const hl = c.name.replace(re, '<span class="autocomplete-highlight">$1</span>');
+        return `<div class="autocomplete-item" data-idx="${i}" onmousedown="selectCityObj(${i})">
+            <span>📍</span>
+            <span>${hl}</span>
+            <span class="dept">${c.dept}</span>
+        </div>`;
+    }).join("");
+    list.classList.add("show");
+});
 
-        const scoresP = fullData.potable.map(c => c.score).filter(s => s !== null);
-        const scoresR = fullData.rivieres.map(r => r.score).filter(s => s !== null);
-        const avgP = scoresP.length ? Math.round(scoresP.reduce((a,b)=>a+b,0)/scoresP.length) : '--';
-        const avgR = scoresR.length ? Math.round(scoresR.reduce((a,b)=>a+b,0)/scoresR.length) : '--';
-        document.getElementById('score-global-potable').innerText = avgP;
-        document.getElementById('score-global-riviere').innerText = avgR;
-        document.getElementById('stat-communes-score').innerText = scoresP.length;
-        document.getElementById('stat-rivieres-score').innerText = scoresR.length;
-
-        const conformes = fullData.potable.filter(c => c.score !== null && c.score >= 80).length;
-        document.getElementById('stat-conformes').innerText = conformes;
-        document.getElementById('stat-conformes-pct').innerText = fullData.potable.length ? Math.round(conformes/fullData.potable.length*100) + '%' : '';
-
-        // ── Animate SVG score rings ──
-        const RING_C = 251.3; // 2π × r=40
-        function animateRing(id, score, delayMs) {
-            const el = document.getElementById(id);
-            if (!el || score === '--' || score === null || isNaN(score)) return;
-            setTimeout(() => { el.style.strokeDashoffset = RING_C * (1 - score / 100); }, delayMs);
-        }
-        animateRing('ring-potable-circle',  avgP, 300);
-        animateRing('ring-riviere-circle',  avgR, 600);
-        if (fullData.potable.length) {
-            animateRing('ring-conformes-circle', Math.round(conformes / fullData.potable.length * 100), 900);
-        }
-
-        renderNappes();
-        } catch(err) {
-            if (loader) {
-                loader.innerHTML = `
-                    <div class="text-center px-8">
-                        <div class="text-6xl mb-4">⚠️</div>
-                        <p class="text-xl font-black text-slate-800 mb-2 uppercase">Données temporairement indisponibles</p>
-                        <p class="text-sm text-slate-500 mb-6">Une erreur est survenue lors du chargement des données environnementales.<br>Vérifiez votre connexion et réessayez.</p>
-                        <button onclick="location.reload()" class="bg-sky-500 hover:bg-sky-400 text-white font-black px-8 py-3 rounded-2xl transition-all shadow-lg">Réessayer</button>
-                    </div>
-                `;
-            }
-        }
-    }
-
-    function switchTab(tab) {
-        currentTab = tab;
-        ['nappes','potable','rivieres','carte','air','methode'].forEach(s => {
-            const sect  = document.getElementById(`section-${s}`);
-            const tabEl = document.getElementById(`tab-${s}`);
-            if (sect)  sect.classList.toggle('hidden', s !== tab);
-            if (tabEl) tabEl.classList.toggle('tab-active', s === tab);
-        });
-        document.getElementById('dept-selector').classList.toggle('hidden', tab === 'methode' || tab === 'air');
-        if (tab === 'nappes') { renderNappes(); if (mapNappes) setTimeout(() => mapNappes.invalidateSize(), 200); }
-        if (tab === 'potable') renderPotable();
-        if (tab === 'rivieres') { renderRivieres(); if (mapRivieres) setTimeout(() => mapRivieres.invalidateSize(), 200); }
-        if (tab === 'carte') renderCarte();
-        if (tab === 'air') renderAir();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-    function renderAir() {
-        const airData    = fullData.air    || [];
-        const pollenData = fullData.pollen || [];
-
-        // IQA — split 34 / 30
-        const airCount = document.getElementById('air-count');
-        if (airCount) airCount.textContent = `${airData.length} zone${airData.length > 1 ? 's' : ''} avec données actives`;
-
-        function airZoneCard(z) {
-            return `<div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
-                <div class="flex justify-between items-start mb-4">
-                    <div>
-                        <h3 class="font-black text-slate-800 text-sm uppercase leading-tight">${z.zone}</h3>
-                        <p class="text-[10px] text-slate-400 font-bold uppercase mt-0.5">${isoToFr(z.date)}</p>
-                    </div>
-                    <div class="rounded-2xl px-3 py-1.5 text-white font-black text-sm flex-shrink-0 ml-2" style="background:${z.color}">${z.label}</div>
-                </div>
-                <div class="grid grid-cols-5 gap-1.5">
-                    ${Object.entries(z.polluants).map(([nom, p]) => `
-                    <div class="text-center">
-                        <div class="w-full h-2 rounded-full mb-1" style="background:${p.color}"></div>
-                        <p class="text-[9px] font-black text-slate-500 uppercase">${nom}</p>
-                        <p class="text-[9px] font-bold" style="color:${p.color}">${p.label}</p>
-                    </div>`).join('')}
-                </div>
-            </div>`;
-        }
-
-        const grid34 = document.getElementById('air-grid-34');
-        const grid30 = document.getElementById('air-grid-30');
-        const zones34 = airData.filter(z => z.dept === '34');
-        const zones30 = airData.filter(z => z.dept === '30');
-
-        if (grid34) grid34.innerHTML = zones34.length
-            ? zones34.map(airZoneCard).join('')
-            : '<p class="text-slate-400 col-span-3 text-center py-4">Données non disponibles</p>';
-        if (grid30) grid30.innerHTML = zones30.length
-            ? zones30.map(airZoneCard).join('')
-            : '<p class="text-slate-400 col-span-3 text-center py-4">Données non disponibles</p>';
-
-        // Pollen
-        const pollenGrid = document.getElementById('pollen-grid');
-        if (!pollenData.length) {
-            pollenGrid.innerHTML = '<p class="text-slate-400 col-span-2 text-center py-8">Données non disponibles</p>';
+input.addEventListener("keydown", function(e) {
+    const items = list.querySelectorAll(".autocomplete-item");
+    if (e.key === "ArrowDown") {
+        e.preventDefault();
+        activeIdx = Math.min(activeIdx + 1, items.length - 1);
+        items.forEach((el, i) => el.classList.toggle("active", i === activeIdx));
+    } else if (e.key === "ArrowUp") {
+        e.preventDefault();
+        activeIdx = Math.max(activeIdx - 1, -1);
+        items.forEach((el, i) => el.classList.toggle("active", i === activeIdx));
+    } else if (e.key === "Enter") {
+        e.preventDefault();
+        if (activeIdx >= 0 && currentMatches[activeIdx]) {
+            selectCityObj(activeIdx);
         } else {
-            pollenGrid.innerHTML = pollenData.map(d => `
-                <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-6">
-                    <div class="flex justify-between items-center mb-5">
-                        <div>
-                            <h3 class="font-black text-slate-800 text-lg uppercase">${d.lib_zone}</h3>
-                            <p class="text-[10px] text-slate-400 font-bold uppercase">Dept ${d.dept} · ${isoToFr(d.date)}</p>
-                        </div>
-                        <div class="rounded-2xl px-3 py-1.5 text-white font-black text-sm" style="background:${d.color_global}">
-                            Indice global : ${d.label_global}
-                        </div>
-                    </div>
-                    <div class="grid grid-cols-2 gap-2">
-                        ${Object.entries(d.taxa).map(([nom, t]) => `
-                        <div class="flex justify-between items-center px-3 py-2 bg-white/60 rounded-xl border-l-4" style="border-left-color:${t.color}">
-                            <span class="text-xs font-black text-slate-600">${nom}</span>
-                            <span class="text-xs font-black" style="color:${t.color}">${t.label}</span>
-                        </div>`).join('')}
-                    </div>
-                </div>
-            `).join('');
+            doSearch();
         }
+    } else if (e.key === "Escape") {
+        list.classList.remove("show");
+    }
+});
 
-        // Pesticides
-        const pestGrid = document.getElementById('pesticides-grid');
-        if (pestGrid) {
-            const pestData = fullData.pesticides || [];
-            if (!pestData.length) {
-                pestGrid.innerHTML = `<div class="flex items-center gap-4 p-5 bg-slate-50 rounded-2xl border border-slate-200">
-                    <div class="w-10 h-10 bg-slate-200 rounded-2xl flex items-center justify-center text-slate-400 flex-shrink-0 text-lg">📊</div>
-                    <div>
-                        <p class="font-black text-slate-600 text-sm">Aucune molécule détectée dans la période récente</p>
-                        <p class="text-xs text-slate-400 mt-0.5">Données mises à jour hebdomadairement par Atmo Occitanie.</p>
-                    </div>
-                </div>`;
-            } else {
-                const campagne = pestData[0].campagne || '';
-                const dateRef  = pestData[0].date || '';
-                pestGrid.innerHTML = `
-                    <p class="text-xs text-slate-500 mb-3 font-bold">${campagne ? 'Campagne : ' + campagne + ' · ' : ''}Semaine du ${dateRef} · ${pestData.length} molécule${pestData.length > 1 ? 's' : ''} détectée${pestData.length > 1 ? 's' : ''}</p>
-                    <div class="overflow-x-auto rounded-2xl border border-slate-200">
-                        <table class="w-full text-xs">
-                            <thead>
-                                <tr class="bg-slate-50 text-slate-500 uppercase font-black tracking-wide text-[10px]">
-                                    <th class="text-left px-4 py-3">Molécule</th>
-                                    <th class="text-left px-4 py-3 hidden sm:table-cell">Famille</th>
-                                    <th class="text-right px-4 py-3">Concentration</th>
-                                    <th class="text-left px-4 py-3 hidden md:table-cell">Site</th>
-                                </tr>
-                            </thead>
-                            <tbody class="divide-y divide-slate-100">
-                                ${pestData.map((p, i) => `
-                                <tr class="${i % 2 === 0 ? 'bg-white' : 'bg-slate-50/50'} hover:bg-sky-50 transition-colors">
-                                    <td class="px-4 py-3 font-black text-slate-800">${p.molecule}</td>
-                                    <td class="px-4 py-3 text-slate-500 hidden sm:table-cell">${p.famille}</td>
-                                    <td class="px-4 py-3 text-right font-black text-amber-600">${p.valeur} <span class="font-normal text-slate-400">${p.unite}</span></td>
-                                    <td class="px-4 py-3 text-slate-400 hidden md:table-cell truncate max-w-[180px]">${p.site}</td>
-                                </tr>`).join('')}
-                            </tbody>
-                        </table>
-                    </div>`;
-            }
-        }
+document.addEventListener("click", function(e) {
+    if (!document.getElementById("search-container").contains(e.target)) {
+        list.classList.remove("show");
+    }
+});
+
+function selectCityObj(idx) {
+    const city = currentMatches[idx];
+    if (!city) return;
+    input.value = city.name;
+    list.classList.remove("show");
+    showResults(city);
+}
+
+function selectCity(slug) {
+    const city = CITIES.find(c => c.slug === slug);
+    if (!city) return;
+    input.value = city.name;
+    showResults(city);
+}
+
+function doSearch() {
+    const q = normalize(input.value);
+    if (!q) return;
+    // exact match first
+    let city = CITIES.find(c => normalize(c.name) === q);
+    if (!city) city = CITIES.find(c => normalize(c.name).startsWith(q));
+    if (!city) city = CITIES.find(c => normalize(c.name).includes(q));
+    if (city) {
+        showResults(city);
+    } else {
+        list.classList.remove("show");
+        alert("Ville non trouvée. Essayez avec le nom complet ou une autre orthographe.\nCommunes couvertes : Hérault (34) et Gard (30).");
+    }
+}
+
+// SHOW RESULTS
+function showResults(city) {
+    list.classList.remove("show");
+
+    // Update URL without reload
+    const url = new URL(window.location);
+    url.searchParams.set("q", city.name);
+    window.history.pushState({}, "", url);
+
+    document.getElementById("result-city-name").textContent = city.name;
+    document.getElementById("result-city-dept").textContent = city.dept;
+    document.getElementById("cards-grid").innerHTML = buildCards(city);
+
+    document.getElementById("results-panel").classList.add("show");
+    document.getElementById("hero-section").style.paddingTop = "1.5rem";
+    document.getElementById("hero-section").style.paddingBottom = "2rem";
+    document.getElementById("popular-cities").style.display = "none";
+
+    setTimeout(() => {
+        document.getElementById("results-panel").scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 80);
+}
+
+function resetSearch() {
+    document.getElementById("results-panel").classList.remove("show");
+    document.getElementById("hero-section").style.paddingTop = "";
+    document.getElementById("hero-section").style.paddingBottom = "";
+    document.getElementById("popular-cities").style.display = "";
+    input.value = "";
+    const url = new URL(window.location);
+    url.searchParams.delete("q");
+    window.history.pushState({}, "", url);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    input.focus();
+}
+
+function buildCards(city) {
+    const { slug, coastal, dept } = city;
+    const hasRegional = dept.includes("34") || dept.includes("30");
+    const cards = [];
+
+    // 1. EAU POTABLE
+    cards.push(`
+        <a href="/eau-potable/${slug}/" class="env-card">
+            <div class="card-icon">🚰</div>
+            <div class="card-title">Eau potable</div>
+            <div class="card-desc">Score de qualité, nitrates, pH, chlore, bactériologie et paramètres physico-chimiques. Données ARS via Hub'Eau, mises à jour chaque matin.</div>
+            <span class="card-badge badge-green">✓ Données disponibles</span>
+        </a>
+    `);
+
+    // 2. QUALITE DE L'AIR
+    if (hasRegional) {
+        cards.push(`
+            <a href="/#air" class="env-card">
+                <div class="card-icon">💨</div>
+                <div class="card-title">Qualité de l'air</div>
+                <div class="card-desc">Indice de qualité de l'air (IQA), particules fines PM2.5 et PM10, ozone, dioxyde d'azote. Source : Atmo Occitanie.</div>
+                <span class="card-badge badge-blue">✓ Données disponibles</span>
+            </a>
+        `);
+    } else {
+        cards.push(`
+            <div class="env-card unavailable">
+                <div class="card-icon">💨</div>
+                <div class="card-title">Qualité de l'air</div>
+                <div class="card-desc">Actuellement disponible pour l'Hérault (34) et le Gard (30) via Atmo Occitanie.</div>
+                <span class="card-badge badge-slate">Hors zone couverte</span>
+            </div>
+        `);
     }
 
-    function switchDept(dept) {
-        currentDept = dept;
-        ['all','34','30'].forEach(d => document.getElementById(`btn-dept-${d}`).classList.toggle('subtab-active', d === dept));
-        if (currentTab === 'nappes') renderNappes();
-        if (currentTab === 'potable') renderPotable();
-        if (currentTab === 'rivieres') renderRivieres();
-        if (currentTab === 'carte') renderCarte();
+    // 3. PESTICIDES DANS L'AIR
+    if (hasRegional) {
+        cards.push(`
+            <a href="/#pesticides" class="env-card">
+                <div class="card-icon">🌾</div>
+                <div class="card-title">Pesticides dans l'air</div>
+                <div class="card-desc">Glyphosate, chlorpyrifos, prosulfocarbe, pendiméthaline mesurés dans l'atmosphère. Atmo Occitanie — données uniques en France.</div>
+                <span class="card-badge badge-amber">⚠ Données sensibles</span>
+            </a>
+        `);
     }
 
-    function renderNappes() {
-        const data = currentDept === 'all' ? fullData.nappes : fullData.nappes.filter(s => s.dept === currentDept);
-        const list = document.getElementById('station-list');
-        list.innerHTML = '';
+    // 4. NAPPES PHREATIQUES
+    cards.push(`
+        <a href="/#nappes" class="env-card">
+            <div class="card-icon">🌊</div>
+            <div class="card-title">Nappes phréatiques</div>
+            <div class="card-desc">Niveau et tendance des nappes souterraines, stations piézométriques BRGM. Recharge et état par rapport aux normales saisonnières.</div>
+            <span class="card-badge badge-blue">✓ Données régionales</span>
+        </a>
+    `);
 
-        if (!mapNappes) {
-            mapNappes = L.map('map-nappes').setView([43.7, 4.0], 9);
-            L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png').addTo(mapNappes);
-            fetch('https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/departements-version-simplifiee.geojson')
-                .then(r => r.json()).then(geojson => {
-                    L.geoJSON(geojson, { filter: f => ['34','30'].includes(f.properties.code), style: { color:'#3b82f6', weight:3, fillOpacity:0.05, dashArray:'5,10' } }).addTo(mapNappes);
-                });
-        }
+    // 5. RIVIERES
+    cards.push(`
+        <a href="/#rivieres" class="env-card">
+            <div class="card-icon">🏞️</div>
+            <div class="card-title">Rivières & cours d'eau</div>
+            <div class="card-desc">Qualité écologique et chimique des cours d'eau. Indices biologiques (IBD, IBG), nitrates, phosphore, pesticides dissous.</div>
+            <span class="card-badge badge-blue">✓ Données régionales</span>
+        </a>
+    `);
 
-        const nappeCards = [];
-        data.forEach((s, idx) => {
-            const canvasId = `n-chart-${idx}`;
-            const diff = (s.year_ago !== null && s.year_ago !== undefined) ? parseFloat((s.current - s.year_ago).toFixed(2)) : null;
-            const isUp     = diff !== null && diff > 0;
-            const diffColor = isUp ? 'text-blue-600' : 'text-red-500';
-            const diffBg    = isUp ? 'bg-blue-50 border-blue-100'  : 'bg-red-50 border-red-100';
-            const icon      = isUp ? '↑' : '↓';
-            const tendance  = isUp ? 'Par rapport à N−1 : niveau + élevé' : 'Par rapport à N−1 : niveau − élevé';
-            const endVal    = s.history.length ? s.history[s.history.length-1].toFixed(2) : '--';
-
-            if (s.lat && s.lng) {
-                const markerIcon = L.divIcon({
-                    html: `<div style="background:${s.color};width:12px;height:12px;border-radius:50%;border:2px solid white;box-shadow:0 1px 4px rgba(0,0,0,0.4)"></div>`,
-                    className: '', iconSize: [12,12], iconAnchor: [6,6]
-                });
-                L.marker([s.lat, s.lng], {icon: markerIcon}).addTo(mapNappes)
-                 .bindPopup(`<b>${s.nom}</b><br>Niveau : <b>${s.current.toFixed(2)} m NGF</b><br>${diff !== null ? (isUp ? '↑ +' : '↓ ') + Math.abs(diff) + ' m vs an dernier' : ''}`);
-            }
-
-            nappeCards.push(`
-                <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-5 flex flex-col hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
-                    <div class="flex justify-between items-start mb-3">
-                        <h3 class="font-black text-slate-800 text-sm leading-tight">${s.nom}</h3>
-                        <span class="text-[9px] font-black bg-slate-100 px-2 py-0.5 rounded-lg text-slate-400 flex-shrink-0 ml-2">${s.dept}</span>
-                    </div>
-
-                    <!-- Niveau actuel -->
-                    <div class="mb-3">
-                        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-0.5">Niveau d'eau actuel</p>
-                        <div class="flex items-baseline gap-1">
-                            <span class="text-3xl font-black text-slate-900">${s.current.toFixed(2)}</span>
-                            <span class="text-xs font-black text-slate-400">m (altitude)</span>
-                        </div>
-                    </div>
-
-                    <!-- Tendance vs N-1 -->
-                    <div class="${diffBg} border p-3 rounded-2xl mb-3">
-                        ${diff !== null ? `
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs font-black ${diffColor}">${icon} ${tendance}</span>
-                            <span class="text-sm font-black ${diffColor}">${icon}${Math.abs(diff)} m</span>
-                        </div>
-                        <p class="text-[10px] ${diffColor} mt-0.5">vs même période l'an dernier</p>
-                        ` : `<p class="text-[10px] text-slate-400 font-black uppercase">Comparaison N-1 indisponible</p>`}
-                    </div>
-
-                    <!-- Mini graphique 7j -->
-                    <p class="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-1">Évolution sur 7 jours</p>
-                    <div class="h-[36px] w-full"><canvas id="${canvasId}"></canvas></div>
-                    <div class="flex justify-between text-[9px] text-slate-400 mt-1">
-                        <span>J−7</span><span>Aujourd'hui : ${endVal} m</span>
-                    </div>
-                    ${s.code_bss ? `<a href="https://hubeau.eaufrance.fr/sites/default/files/api/demo/piezo/piezo.htm?code_bss=${encodeURIComponent(s.code_bss)}" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1.5 text-[9px] font-black text-sky-600 hover:text-sky-800 uppercase tracking-wider transition-colors">📈 Voir l'historique complet →</a>` : ''}
-                </div>
-            `);
-        });
-
-        list.innerHTML = nappeCards.join('');
-        const nc = document.getElementById('nappe-count');
-        if (nc) nc.textContent = `${data.length} point${data.length > 1 ? 's' : ''} de mesure actif${data.length > 1 ? 's' : ''}`;
-
-        data.forEach((s, idx) => {
-            const ctx = document.getElementById(`n-chart-${idx}`);
-            if (ctx && s.history.length) new Chart(ctx, { type:'line', data:{ labels: s.history.map((_,i)=>i), datasets:[{ data: s.history, borderColor: s.color, borderWidth:2, pointRadius:0, tension:0.4, fill:true, backgroundColor: s.color+'18' }] }, options:{ plugins:{legend:{display:false},tooltip:{enabled:false}}, scales:{x:{display:false},y:{display:false}}, maintainAspectRatio:false } });
-        });
-
-        const nHausse = data.filter(x=>x.color==='#3b82f6').length;
-        const nBaisse = data.filter(x=>x.color==='#ef4444').length;
-        document.getElementById('nappe-stats').innerHTML = `
-            <div class="bg-white rounded-xl border border-slate-100 p-4 text-center shadow-sm"><p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Stations suivies</p><p class="text-2xl font-black text-slate-800">${data.length}</p></div>
-            <div class="bg-blue-50 rounded-xl border border-blue-100 p-4 text-center shadow-sm"><p class="text-[10px] font-bold text-blue-500 uppercase tracking-widest mb-1">↑ En hausse</p><p class="text-2xl font-black text-blue-600">${nHausse}</p><p class="text-[10px] text-blue-400 mt-0.5">vs N−1</p></div>
-            <div class="bg-red-50 rounded-xl border border-red-100 p-4 text-center shadow-sm"><p class="text-[10px] font-bold text-red-400 uppercase tracking-widest mb-1">↓ En baisse</p><p class="text-2xl font-black text-red-500">${nBaisse}</p><p class="text-[10px] text-red-400 mt-0.5">vs N−1</p></div>
-            <div class="bg-slate-50 rounded-xl border border-slate-100 p-4 text-center shadow-sm"><p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Source</p><p class="text-sm font-black text-slate-600 uppercase">BRGM</p><p class="text-[10px] text-slate-400">Hub'Eau</p></div>
-        `;
+    // 6. EAU DE MER
+    if (coastal) {
+        cards.push(`
+            <a href="/#mer" class="env-card">
+                <div class="card-icon">🏖️</div>
+                <div class="card-title">Eau de mer & baignade</div>
+                <div class="card-desc">Qualité des eaux de baignade, classement des plages (Excellent / Bon / Suffisant / Insuffisant). Données Ministère de la Santé.</div>
+                <span class="card-badge badge-green">✓ Commune côtière</span>
+            </a>
+        `);
+    } else {
+        cards.push(`
+            <div class="env-card unavailable">
+                <div class="card-icon">🏖️</div>
+                <div class="card-title">Eau de mer & baignade</div>
+                <div class="card-desc">Disponible uniquement pour les communes ayant un accès au littoral méditerranéen.</div>
+                <span class="card-badge badge-slate">Commune non côtière</span>
+            </div>
+        `);
     }
 
-    function renderPotable() {
-        let data = currentDept === 'all' ? fullData.potable : fullData.potable.filter(c => c.dept === currentDept);
-        const search = document.getElementById('city-search').value.toLowerCase();
-        if (search) data = data.filter(c => c.nom.toLowerCase().includes(search));
-        data = [...data].sort((a, b) => a.nom.localeCompare(b.nom, 'fr'));
+    return cards.join("");
+}
 
-        const potCount = document.getElementById('potable-count');
-        const actives = data.filter(c => c.score !== null).length;
-        if (potCount) potCount.textContent = `${actives} commune${actives > 1 ? 's' : ''} avec données actives sur ${data.length}`;
-
-        const container = document.getElementById('potable-grid');
-        container.innerHTML = '';
-
-        // Construire tout le HTML d'abord, puis attacher les Chart.js après
-        const CHART_PARAMS = ['Nitrates', 'Pesticides', 'pH'];
-        const cards = data.map((c, idx) => {
-            const rColor = c.restric === 'Vigilance' ? 'bg-green-100 text-green-700' :
-                           c.restric === 'Alerte' ? 'bg-yellow-100 text-yellow-700' :
-                           c.restric === 'Alerte Renforcée' ? 'bg-orange-100 text-orange-700' :
-                           'bg-red-100 text-red-700';
-            const scoreVal = c.score !== null ? c.score : '?';
-
-            // Trouver le premier paramètre avec un historique suffisant
-            const chartParam = CHART_PARAMS.find(p => c.historique?.[p]?.length >= 3);
-            const histData = chartParam ? [...c.historique[chartParam]].reverse() : null;
-            const lastColor = histData ? (histData[histData.length - 1]?.color || '#6366f1') : '#6366f1';
-            const sparkSection = histData ? `
-                <div class="mt-3 pt-3 border-t border-slate-100">
-                    <div class="flex justify-between items-center mb-1">
-                        <span class="text-[9px] font-black text-slate-400 uppercase tracking-widest">Tendance — ${chartParam}</span>
-                        <span class="text-[9px] font-black" style="color:${lastColor}">${histData[histData.length-1]?.valeur ?? ''} ${c.parametres[chartParam]?.unite ?? ''}</span>
-                    </div>
-                    <canvas id="p-chart-${idx}" style="height:36px;width:100%;display:block"></canvas>
-                    <div class="flex justify-between text-[8px] text-slate-300 mt-0.5">
-                        <span>${histData[0]?.date?.split('-').reverse().join('/') ?? ''}</span>
-                        <span>Aujourd'hui</span>
-                    </div>
-                </div>` : '';
-
-            return `
-                <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-6 flex flex-col h-full hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
-                    <div class="flex justify-between items-start mb-4">
-                        <div>
-                            <h3 class="text-xl font-black text-slate-800 uppercase italic leading-tight">${c.nom}</h3>
-                            <p class="text-[9px] text-sky-500 font-black uppercase tracking-[0.1em] mt-1 underline decoration-2">${c.origine}</p>
-                        </div>
-                        <div class="score-ring ml-2" style="background:${c.score_color};min-width:56px;min-height:56px;font-size:1rem">${scoreVal}</div>
-                    </div>
-                    <div class="flex items-center justify-between mb-4">
-                        <span class="text-[9px] font-black ${rColor} px-2.5 py-1 rounded-lg uppercase tracking-tighter">${c.restric}</span>
-                        <span class="text-[10px] font-black uppercase tracking-tighter" style="color:${c.score_color}">${c.score_label}</span>
-                    </div>
-                    <div class="grid grid-cols-1 gap-1.5 flex-grow">
-                        ${PARAMS_POTABLE.map(p => {
-                            const info = c.parametres[p] || {valeur:'N.C.', color:'#cbd5e1', date:''};
-                            const dDate = info.date ? info.date.split('-').reverse().join('/') : '';
-                            return `<div class="flex justify-between items-center px-3 py-2 bg-white/50 rounded-xl border-l-4 transition-all" style="border-left-color:${info.color}">
-                                <span class="text-xs font-black text-slate-500 uppercase tracking-tighter italic">${p}</span>
-                                <div class="text-right">
-                                    <span class="text-base font-black block leading-none" style="color:${info.valeur==='N.C.'?'#94a3b8':info.color}">${info.valeur}</span>
-                                    <span class="text-[9px] font-black opacity-40 text-slate-600 block">${dDate}</span>
-                                </div>
-                            </div>`;
-                        }).join('')}
-                    </div>
-                    ${sparkSection}
-                    <div class="mt-4 pt-3 border-t border-slate-100 text-[9px] text-slate-400 italic line-clamp-2 uppercase font-black tracking-tight leading-tight">${c.conclusion}</div>
-                </div>
-            `;
-        });
-        container.innerHTML = cards.join('');
-
-        // Attacher les graphiques après injection dans le DOM
-        data.forEach((c, idx) => {
-            const chartParam = CHART_PARAMS.find(p => c.historique?.[p]?.length >= 3);
-            if (!chartParam) return;
-            const ctx = document.getElementById(`p-chart-${idx}`);
-            if (!ctx) return;
-            const pts = [...c.historique[chartParam]].reverse();
-            const lastColor = pts[pts.length - 1]?.color || '#6366f1';
-            new Chart(ctx, {
-                type: 'line',
-                data: {
-                    labels: pts.map(p => p.date),
-                    datasets: [{ data: pts.map(p => p.valeur), borderColor: lastColor, borderWidth: 2, pointRadius: 0, tension: 0.4, fill: true, backgroundColor: lastColor + '18' }]
-                },
-                options: {
-                    plugins: { legend: { display: false }, tooltip: {
-                        enabled: true, mode: 'index', intersect: false,
-                        callbacks: { label: ctx => `${ctx.parsed.y} ${c.parametres[chartParam]?.unite ?? ''}` }
-                    }},
-                    scales: { x: { display: false }, y: { display: false } },
-                    maintainAspectRatio: false
-                }
-            });
-        });
+// INIT: restore from URL param
+(function() {
+    const params = new URLSearchParams(window.location.search);
+    const q = params.get("q");
+    if (q) {
+        input.value = q;
+        const city = CITIES.find(c => normalize(c.name) === normalize(q));
+        if (city) showResults(city);
     }
-
-    function renderRivieres() {
-        let data = currentDept === 'all' ? fullData.rivieres : fullData.rivieres.filter(r => r.dept === currentDept);
-        const search = document.getElementById('river-search').value.toLowerCase();
-        if (search) data = data.filter(r => r.nom.toLowerCase().includes(search) || r.commune.toLowerCase().includes(search));
-
-        const rivCount = document.getElementById('riviere-count');
-        if (rivCount) rivCount.textContent = `${data.length} station${data.length > 1 ? 's' : ''} avec données actives`;
-
-        const container = document.getElementById('riviere-grid');
-        container.innerHTML = '';
-
-        const TREND_PARAMS = [
-            { key: 'Nitrates',      color: '#6366f1' },
-            { key: 'Phosphore',     color: '#f59e0b' },
-            { key: 'O2 saturation', color: '#10b981' },
-        ];
-
-        // Préparer toutes les cartes en une seule passe pour éviter les reflows
-        const allTrends = [];
-        const cards = data.map((r, idx) => {
-            const scoreVal = r.score !== null ? r.score : '?';
-
-            const trends = TREND_PARAMS.map((tp, ti) => {
-                const raw = r.historique[tp.key];
-                if (!raw || raw.length < 2) return null;
-                const pts = [...raw].reverse();
-                return {
-                    key:      tp.key,
-                    color:    pts[pts.length - 1].color || tp.color,
-                    fallback: tp.color,
-                    pts,
-                    start: pts[0].date.split('-').reverse().join('/'),
-                    end:   pts[pts.length - 1].date.split('-').reverse().join('/'),
-                    canvasId: `r-chart-${idx}-${ti}`
-                };
-            }).filter(Boolean);
-
-            allTrends.push(trends);
-
-            const mapSlot = (r.lat && r.lon)
-                ? `<div class="riv-map-slot h-[130px] bg-slate-100" data-idx="${idx}" data-lat="${r.lat}" data-lon="${r.lon}"></div>`
-                : '';
-
-            return `
-                <div id="riviere-card-${idx}" class="bg-white rounded-2xl border border-slate-100 shadow-sm flex flex-col hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 overflow-hidden">
-                    ${mapSlot}
-                    <div class="p-8 flex flex-col flex-grow">
-                        <div class="flex justify-between items-start mb-6">
-                            <div>
-                                <h3 class="text-2xl font-black text-slate-800 uppercase italic tracking-tighter">${r.nom}</h3>
-                                <p class="text-[10px] text-indigo-500 font-bold uppercase tracking-widest mt-1">${r.commune} · Dept ${r.dept}</p>
-                            </div>
-                            <div class="score-ring" style="background:${r.score_color};min-width:56px;min-height:56px;font-size:1rem;margin-left:8px">${scoreVal}</div>
-                        </div>
-                        <p class="text-xs font-black uppercase tracking-tighter mb-4" style="color:${r.score_color}">${r.score_label}</p>
-                        <div class="grid grid-cols-1 gap-2 flex-grow">
-                            ${PARAMS_RIVIERE.map(p => {
-                                const info = r.parametres[p] || {valeur:'N.C.', color:'#cbd5e1', date:'', realtime: false};
-                                const dDate = info.date ? info.date.split('-').reverse().join('/') : '';
-                                const unite = info.unite || '';
-                                const badge = info.realtime
-                                    ? `<span class="inline-flex items-center gap-1 text-[8px] font-black text-sky-500 uppercase"><span class="w-1.5 h-1.5 rounded-full bg-sky-400 animate-pulse inline-block"></span>Météo-France</span>`
-                                    : `<span class="text-[9px] font-black opacity-40 text-slate-600">${dDate}</span>`;
-                                return `<div class="flex justify-between items-center px-4 py-2.5 bg-white/50 rounded-2xl border-l-4 transition-all" style="border-left-color:${info.color}">
-                                    <span class="text-xs font-black text-slate-500 uppercase tracking-tighter italic">${p}</span>
-                                    <div class="text-right">
-                                        <span class="text-base font-black block leading-none" style="color:${info.valeur==='N.C.'?'#94a3b8':info.color}">${info.valeur} <span class="text-[9px] font-medium opacity-60">${info.valeur !== 'N.C.' ? unite : ''}</span></span>
-                                        ${badge}
-                                    </div>
-                                </div>`;
-                            }).join('')}
-                        </div>
-                        ${trends.length ? `
-                        <div class="mt-6 pt-4 border-t border-slate-100 space-y-4">
-                            ${trends.map(t => `
-                            <div>
-                                <div class="flex justify-between text-[8px] font-black text-slate-400 uppercase mb-1">
-                                    <span>${t.start}</span>
-                                    <span class="italic opacity-70" style="color:${t.color}">${t.key}</span>
-                                    <span>${t.end}</span>
-                                </div>
-                                <div class="h-[44px] w-full"><canvas id="${t.canvasId}"></canvas></div>
-                            </div>`).join('')}
-                        </div>` : ''}
-                    </div>
-                </div>
-            `;
-        });
-
-        // Détruire les mini-cartes existantes avant de recréer le DOM
-        Object.values(rivMapInstances).forEach(m => { try { m.remove(); } catch(e) {} });
-        rivMapInstances = {};
-
-        // Un seul write DOM pour toutes les cartes
-        container.innerHTML = cards.join('');
-
-        // ── Carte Leaflet des stations ──────────────────────────────────────
-        const stationsGeo = data.map((r, idx) => ({ ...r, _cardIdx: idx })).filter(r => r.lat && r.lon);
-        const mapDiv = document.getElementById('map-rivieres');
-        const legendDiv = document.getElementById('map-rivieres-legend');
-        if (stationsGeo.length && mapDiv) {
-            mapDiv.classList.remove('hidden');
-            if (legendDiv) legendDiv.classList.remove('hidden');
-
-            if (!mapRivieres) {
-                mapRivieres = L.map('map-rivieres', { scrollWheelZoom: false });
-                L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-                    attribution: '© CartoDB © OpenStreetMap'
-                }).addTo(mapRivieres);
-                rivMarkersLayer = L.layerGroup().addTo(mapRivieres);
-            } else {
-                rivMarkersLayer.clearLayers();
-            }
-
-            const bounds = [];
-            stationsGeo.forEach(r => {
-                bounds.push([r.lat, r.lon]);
-                const scoreVal = r.score !== null ? r.score : '?';
-                const topParams = Object.entries(r.parametres).slice(0, 3)
-                    .map(([k, v]) => `<span style="color:${v.color};font-weight:bold">${k}</span> ${v.valeur !== undefined ? v.valeur : '—'} <span style="opacity:.6;font-size:10px">${v.unite || ''}</span>`)
-                    .join('<br>');
-                const marker = L.circleMarker([r.lat, r.lon], {
-                    radius: 11,
-                    fillColor: r.score_color,
-                    color: '#fff',
-                    weight: 2.5,
-                    opacity: 1,
-                    fillOpacity: 0.92
-                });
-                marker.bindPopup(
-                    `<div style="font-family:sans-serif;min-width:160px">` +
-                    `<p style="font-weight:900;font-size:13px;margin:0 0 4px">${r.nom}</p>` +
-                    `<p style="color:${r.score_color};font-weight:700;font-size:12px;margin:0 0 6px">Score : ${scoreVal}/100 — ${r.score_label}</p>` +
-                    `<div style="font-size:12px;line-height:1.8">${topParams}</div>` +
-                    `</div>`,
-                    { maxWidth: 220 }
-                );
-                rivMarkersLayer.addLayer(marker);
-            });
-
-            if (bounds.length) mapRivieres.fitBounds(bounds, { padding: [30, 30], maxZoom: 11 });
-            setTimeout(() => mapRivieres.invalidateSize(), 100);
-        } else if (mapDiv) {
-            mapDiv.classList.add('hidden');
-            if (legendDiv) legendDiv.classList.add('hidden');
-        }
-
-        // ── Mini-cartes par station (lazy via IntersectionObserver) ────────────
-        function sortByDominantAxis(stations) {
-            const latRange = Math.max(...stations.map(s => s.lat)) - Math.min(...stations.map(s => s.lat));
-            const lonRange = Math.max(...stations.map(s => s.lon)) - Math.min(...stations.map(s => s.lon));
-            return [...stations].sort((a, b) => latRange >= lonRange ? a.lat - b.lat : a.lon - b.lon);
-        }
-
-        const mapSlotObserver = new IntersectionObserver((entries, obs) => {
-            entries.forEach(entry => {
-                if (!entry.isIntersecting) return;
-                const slot = entry.target;
-                obs.unobserve(slot);
-                const idx = parseInt(slot.dataset.idx);
-                const lat = parseFloat(slot.dataset.lat);
-                const lon = parseFloat(slot.dataset.lon);
-                if (rivMapInstances[idx] || isNaN(lat) || isNaN(lon)) return;
-
-                const station = data[idx];
-                const sc = station ? station.score_color : '#94a3b8';
-
-                const m = L.map(slot, {
-                    zoomControl: false, attributionControl: false,
-                    dragging: false, scrollWheelZoom: false,
-                    doubleClickZoom: false, touchZoom: false, keyboard: false,
-                }).setView([lat, lon], 12);
-                L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png').addTo(m);
-
-                // Regroupement par cours d'eau et tracé du tronçon
-                const nomCours = station && station.nom_cours_eau;
-                const coRiver = nomCours
-                    ? sortByDominantAxis(data.filter(s => s.nom_cours_eau === nomCours && s.lat && s.lon))
-                    : [];
-
-                if (coRiver.length > 1) {
-                    const allCoords = coRiver.map(s => [s.lat, s.lon]);
-                    const curPos    = coRiver.findIndex(s => s.lat === lat && s.lon === lon);
-
-                    // Ligne complète du cours d'eau (grise pointillée)
-                    L.polyline(allCoords, {
-                        color: '#94a3b8', weight: 2, opacity: 0.5, dashArray: '5,6'
-                    }).addTo(m);
-
-                    // Tronçon surveillé : voisin amont → station → voisin aval
-                    const segStart  = Math.max(0, curPos - 1);
-                    const segEnd    = Math.min(coRiver.length - 1, curPos + 1);
-                    const segCoords = allCoords.slice(segStart, segEnd + 1);
-                    L.polyline(segCoords, {
-                        color: sc, weight: 5, opacity: 0.9, lineCap: 'round'
-                    }).addTo(m);
-
-                    // Marqueurs des stations voisines (colorés par leur score)
-                    coRiver.forEach((s, i) => {
-                        if (i === curPos) return;
-                        L.circleMarker([s.lat, s.lon], {
-                            radius: 5, fillColor: s.score_color || '#94a3b8',
-                            color: '#fff', weight: 1.5, fillOpacity: 0.85,
-                        }).addTo(m);
-                    });
-
-                    // Cadrage sur le tronçon surligné
-                    m.fitBounds(segCoords.length > 1 ? segCoords : [[lat - 0.02, lon - 0.02],[lat + 0.02, lon + 0.02]],
-                        { padding: [25, 25] });
-                } else {
-                    m.setView([lat, lon], 13);
-                }
-
-                // Marqueur de la station courante (rendu en dernier, donc au-dessus)
-                L.circleMarker([lat, lon], {
-                    radius: 10, fillColor: sc, color: '#fff',
-                    weight: 2.5, fillOpacity: 1,
-                }).addTo(m);
-
-                rivMapInstances[idx] = m;
-                setTimeout(() => m.invalidateSize(), 50);
-            });
-        }, { rootMargin: '400px' });
-
-        document.querySelectorAll('.riv-map-slot').forEach(el => mapSlotObserver.observe(el));
-
-        // Graphiques avec IntersectionObserver pour ne rendre que ce qui est visible
-        const observer = new IntersectionObserver((entries, obs) => {
-            entries.forEach(entry => {
-                if (!entry.isIntersecting) return;
-                const canvas = entry.target;
-                obs.unobserve(canvas);
-                const idx = parseInt(canvas.dataset.idx);
-                const ti  = parseInt(canvas.dataset.ti);
-                const t   = allTrends[idx][ti];
-                if (!t) return;
-                new Chart(canvas, {
-                    type: 'line',
-                    data: {
-                        labels: t.pts.map(d => d.date),
-                        datasets: [{ data: t.pts.map(d => d.valeur), borderColor: t.color, borderWidth: 2.5, pointRadius: 3, pointBackgroundColor: t.pts.map(d => d.color), tension: 0.4, fill: true, backgroundColor: t.color + '18' }]
-                    },
-                    options: { plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => `${c.parsed.y} — ${t.pts[c.dataIndex].date.split('-').reverse().join('/')}` } } }, scales: { x: { display: false }, y: { display: false } }, maintainAspectRatio: false }
-                });
-            });
-        }, { rootMargin: '200px' });
-
-        allTrends.forEach((trends, idx) => {
-            trends.forEach((t, ti) => {
-                const canvas = document.getElementById(t.canvasId);
-                if (!canvas) return;
-                canvas.dataset.idx = idx;
-                canvas.dataset.ti  = ti;
-                observer.observe(canvas);
-            });
-        });
-    }
-
-    function renderCarte() {
-        if (!mapQualite) {
-            mapQualite = L.map('map-qualite').setView([43.7, 4.0], 9);
-            L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png').addTo(mapQualite);
-            fetch('https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/departements-version-simplifiee.geojson')
-                .then(r => r.json()).then(geojson => {
-                    L.geoJSON(geojson, { filter: f => ['34','30'].includes(f.properties.code), style: { color:'#0ea5e9', weight:3, fillOpacity:0.05, dashArray:'5,10' } }).addTo(mapQualite);
-                });
-            markersLayer = L.layerGroup().addTo(mapQualite);
-        } else {
-            setTimeout(() => mapQualite.invalidateSize(), 200);
-        }
-
-        // Vider les marqueurs existants avant d'en ajouter de nouveaux
-        markersLayer.clearLayers();
-
-        // Marqueurs qualité potable filtrés par département
-        const data = currentDept === 'all' ? fullData.potable : fullData.potable.filter(c => c.dept === currentDept);
-
-        // Coordonnées approximatives des communes (centroids)
-        const COORDS = {
-            "Montpellier":[43.6119,3.8772],"Béziers":[43.3441,3.2190],"Sète":[43.4020,3.6953],
-            "Lunel":[43.6765,4.1353],"Agde":[43.3100,3.4764],"Castelnau-le-Lez":[43.6381,3.9269],
-            "Mauguio":[43.6153,3.9988],"Lattes":[43.5704,3.8952],"Frontignan":[43.4483,3.7558],
-            "Juvignac":[43.6153,3.8108],"Mèze":[43.4333,3.6056],"Saint-Gély-du-Fesc":[43.7047,3.8231],
-            "Villeneuve-lès-Maguelone":[43.5233,3.8483],"Pérols":[43.5647,3.9283],"Fabrègues":[43.5547,3.7847],
-            "Jacou":[43.6617,3.9208],"Baillargues":[43.6556,4.0047],"Gigean":[43.4883,3.7283],
-            "Clermont-l'Hérault":[43.6283,3.4317],"Lodève":[43.7319,3.3194],
-            "Nîmes":[43.8367,4.3601],"Alès":[44.1262,4.0839],"Bagnols-sur-Cèze":[44.1633,4.6189],
-            "Beaucaire":[43.8069,4.6428],"Saint-Gilles":[43.6769,4.4308],"Villeneuve-lès-Avignon":[43.9694,4.7933],
-            "Vauvert":[43.6944,4.2733],"Pont-Saint-Esprit":[44.2556,4.6494],"Uzès":[44.0119,4.4206],
-            "Marguerittes":[43.8406,4.4283],"Aigues-Mortes":[43.5683,4.1922],"Rochefort-du-Gard":[43.9417,4.6550],
-            "Bouillargues":[43.8033,4.3883]
-        };
-
-        data.forEach(c => {
-            const coords = COORDS[c.nom];
-            if (!coords) return;
-            const scoreVal = c.score !== null ? c.score : '?';
-            const icon = L.divIcon({
-                html: `<div style="background:${c.score_color};color:white;font-weight:900;font-size:11px;width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:2px solid white;box-shadow:0 2px 8px rgba(0,0,0,0.3)">${scoreVal}</div>`,
-                className: '', iconSize: [36,36], iconAnchor: [18,18]
-            });
-            L.marker(coords, {icon}).addTo(markersLayer).bindPopup(`<b>${c.nom}</b><br>Score : ${scoreVal}/100 — ${c.score_label}<br>Source : ${c.origine}`);
-        });
-
-        document.getElementById('map-legend').innerHTML = `
-            <div class="glass-card p-4 rounded-2xl border border-white shadow text-center"><div class="score-ring mx-auto mb-2" style="background:#10b981;width:48px;height:48px;font-size:0.85rem">80+</div><p class="text-[10px] font-black text-emerald-600 uppercase">Bonne</p></div>
-            <div class="glass-card p-4 rounded-2xl border border-white shadow text-center"><div class="score-ring mx-auto mb-2" style="background:#f59e0b;width:48px;height:48px;font-size:0.85rem">50–79</div><p class="text-[10px] font-black text-amber-600 uppercase">Moyenne</p></div>
-            <div class="glass-card p-4 rounded-2xl border border-white shadow text-center"><div class="score-ring mx-auto mb-2" style="background:#ef4444;width:48px;height:48px;font-size:0.85rem">&lt;50</div><p class="text-[10px] font-black text-red-600 uppercase">Mauvaise</p></div>
-            <div class="glass-card p-4 rounded-2xl border border-white shadow text-center"><div class="score-ring mx-auto mb-2" style="background:#94a3b8;width:48px;height:48px;font-size:0.85rem">?</div><p class="text-[10px] font-black text-slate-400 uppercase">N.C.</p></div>
-        `;
-    }
-
-    // Bouton haut de page
-    const btnTop = document.getElementById('btn-top');
-    window.addEventListener('scroll', () => {
-        const visible = window.scrollY > 300;
-        btnTop.style.opacity = visible ? '1' : '0';
-        btnTop.style.pointerEvents = visible ? 'auto' : 'none';
-    });
-
-    init();
+})();
 </script>
 </body>
 </html>
