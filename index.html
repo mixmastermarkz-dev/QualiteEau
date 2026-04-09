@@ -4,32 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon-Environnement.fr — Qualité de l'air et de l'eau par ville</title>
-    <meta name="description" content="Recherchez la qualité de l'air, de l'eau potable, des nappes phréatiques, des rivières et de l'eau de mer pour votre ville. Données officielles en temps réel.">
+    <meta name="description" content="Recherchez la qualité de l'air, de l'eau potable, des nappes phréatiques, des rivières et du pollen pour votre ville. Données officielles en temps réel.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.mon-environnement.fr/">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.mon-environnement.fr/">
     <meta property="og:title" content="Mon-Environnement.fr — Recherche environnementale par ville">
-    <meta property="og:description" content="Qualité de l'air, eau potable, nappes phréatiques, rivières et eau de mer pour votre ville.">
+    <meta property="og:description" content="Qualité de l'air, eau potable, nappes phréatiques, rivières et pollen pour votre ville.">
     <meta property="og:locale" content="fr_FR">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Mon-Environnement.fr">
-    <meta name="twitter:description" content="Recherchez les données environnementales de votre ville.">
+    <meta name="twitter:description" content="Données environnementales en temps réel pour votre ville.">
 
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Mon-Environnement.fr",
-      "url": "https://www.mon-environnement.fr/",
-      "description": "Données environnementales par ville : qualité de l'air, eau potable, nappes phréatiques, rivières, eau de mer.",
-      "inLanguage": "fr-FR",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://www.mon-environnement.fr/?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    }
+    {"@context":"https://schema.org","@type":"WebSite","name":"Mon-Environnement.fr","url":"https://www.mon-environnement.fr/","inLanguage":"fr-FR","potentialAction":{"@type":"SearchAction","target":"https://www.mon-environnement.fr/?q={search_term_string}","query-input":"required name=search_term_string"}}
     </script>
 
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
@@ -41,229 +29,183 @@
 
     <style>
         * { box-sizing: border-box; }
-        body { font-family: 'Inter', system-ui, sans-serif; }
-
-        /* HERO BG */
-        .hero-bg {
-            background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 40%, #f0f9ff 100%);
-            min-height: 100vh;
-        }
+        body { font-family: 'Inter', system-ui, sans-serif; background: linear-gradient(135deg,#f0fdf4 0%,#ecfdf5 40%,#f0f9ff 100%); min-height: 100vh; }
 
         /* LOGO */
-        .logo-leaf { font-size: 3rem; line-height: 1; }
-        .logo-text-main { font-size: 2.4rem; font-weight: 900; letter-spacing: -0.03em; }
         .logo-text-tld { color: #16a34a; }
-        .logo-tagline { font-size: 0.78rem; font-weight: 500; color: #64748b; letter-spacing: 0.06em; text-transform: uppercase; }
 
         /* SEARCH BAR */
-        .search-wrap {
-            position: relative;
-            max-width: 640px;
-            width: 100%;
-        }
+        .search-wrap { position: relative; max-width: 640px; width: 100%; }
         .search-input {
-            width: 100%;
-            padding: 1rem 1.25rem 1rem 3.25rem;
-            font-size: 1.05rem;
-            font-family: 'Inter', sans-serif;
-            border: 2px solid #e2e8f0;
-            border-radius: 999px;
-            outline: none;
-            background: white;
-            box-shadow: 0 4px 24px rgba(0,0,0,0.07);
-            transition: border-color 0.18s, box-shadow 0.18s;
-            color: #1e293b;
+            width: 100%; padding: 1rem 9rem 1rem 3.25rem;
+            font-size: 1.05rem; font-family: 'Inter', sans-serif;
+            border: 2px solid #e2e8f0; border-radius: 999px; outline: none;
+            background: white; box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+            transition: border-color .18s, box-shadow .18s; color: #1e293b;
         }
-        .search-input:focus {
-            border-color: #16a34a;
-            box-shadow: 0 4px 28px rgba(22,163,74,0.15);
-        }
-        .search-icon {
-            position: absolute;
-            left: 1.1rem;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #94a3b8;
-            pointer-events: none;
-        }
+        .search-input:focus { border-color: #16a34a; box-shadow: 0 4px 28px rgba(22,163,74,.15); }
+        .search-icon { position: absolute; left: 1.1rem; top: 50%; transform: translateY(-50%); color: #94a3b8; pointer-events: none; }
         .search-btn {
-            position: absolute;
-            right: 0.4rem;
-            top: 50%;
-            transform: translateY(-50%);
-            background: #16a34a;
-            color: white;
-            border: none;
-            border-radius: 999px;
-            padding: 0.55rem 1.3rem;
-            font-size: 0.9rem;
-            font-weight: 700;
-            cursor: pointer;
-            transition: background 0.15s;
+            position: absolute; right: 0.4rem; top: 50%; transform: translateY(-50%);
+            background: #16a34a; color: white; border: none; border-radius: 999px;
+            padding: 0.55rem 1.3rem; font-size: 0.9rem; font-weight: 700; cursor: pointer; transition: background .15s;
         }
         .search-btn:hover { background: #15803d; }
 
         /* AUTOCOMPLETE */
         .autocomplete-list {
-            position: absolute;
-            top: calc(100% + 8px);
-            left: 0;
-            right: 0;
-            background: white;
-            border: 1.5px solid #e2e8f0;
-            border-radius: 1.25rem;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-            max-height: 280px;
-            overflow-y: auto;
-            z-index: 100;
-            display: none;
+            position: absolute; top: calc(100% + 8px); left: 0; right: 0;
+            background: white; border: 1.5px solid #e2e8f0; border-radius: 1.25rem;
+            box-shadow: 0 8px 32px rgba(0,0,0,.1); max-height: 280px; overflow-y: auto; z-index: 100; display: none;
         }
         .autocomplete-list.show { display: block; }
         .autocomplete-item {
-            padding: 0.75rem 1.25rem;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            font-size: 0.95rem;
-            color: #1e293b;
-            transition: background 0.1s;
+            padding: .75rem 1.25rem; cursor: pointer; display: flex; align-items: center;
+            gap: .75rem; font-size: .95rem; color: #1e293b; transition: background .1s;
         }
         .autocomplete-item:first-child { border-radius: 1.25rem 1.25rem 0 0; }
-        .autocomplete-item:last-child { border-radius: 0 0 1.25rem 1.25rem; }
+        .autocomplete-item:last-child  { border-radius: 0 0 1.25rem 1.25rem; }
         .autocomplete-item:hover, .autocomplete-item.active { background: #f0fdf4; color: #15803d; }
-        .autocomplete-item span.dept { font-size: 0.75rem; color: #94a3b8; margin-left: auto; }
+        .autocomplete-item .dept { font-size: .75rem; color: #94a3b8; margin-left: auto; }
         .autocomplete-highlight { font-weight: 700; color: #16a34a; }
 
-        /* RESULTS PANEL */
+        /* RESULTS */
         #results-panel { display: none; }
         #results-panel.show { display: block; }
 
-        /* CARDS */
-        .env-card {
-            background: white;
-            border-radius: 1.25rem;
-            padding: 1.5rem;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-            border: 1.5px solid transparent;
-            transition: border-color 0.18s, transform 0.18s, box-shadow 0.18s;
-            cursor: pointer;
-            text-decoration: none;
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
+        /* DATA CARDS */
+        .data-card {
+            background: white; border-radius: 1.25rem; padding: 1.5rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,.06); border: 1.5px solid #f1f5f9;
+            margin-bottom: 1rem;
         }
-        .env-card:hover {
-            border-color: #bbf7d0;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 24px rgba(22,163,74,0.12);
-        }
-        .env-card.unavailable {
-            opacity: 0.55;
-            cursor: default;
-        }
-        .env-card.unavailable:hover {
-            transform: none;
-            border-color: transparent;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-        }
-        .card-icon { font-size: 2rem; }
-        .card-title { font-size: 1rem; font-weight: 800; color: #1e293b; }
-        .card-desc { font-size: 0.8rem; color: #64748b; line-height: 1.5; }
-        .card-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.3rem;
-            font-size: 0.7rem;
-            font-weight: 700;
-            padding: 0.2rem 0.6rem;
+        .card-header { display: flex; align-items: center; gap: .75rem; margin-bottom: 1rem; }
+        .card-header-icon { font-size: 1.5rem; }
+        .card-header-title { font-size: 1.05rem; font-weight: 800; color: #1e293b; }
+        .card-header-sub { font-size: .72rem; color: #94a3b8; font-weight: 500; margin-top: .1rem; }
+        .card-header-badge {
+            margin-left: auto; font-size: .7rem; font-weight: 700; padding: .25rem .7rem;
             border-radius: 999px;
-            width: fit-content;
-            margin-top: auto;
         }
-        .badge-green { background: #dcfce7; color: #15803d; }
-        .badge-blue { background: #dbeafe; color: #1d4ed8; }
-        .badge-amber { background: #fef9c3; color: #92400e; }
-        .badge-slate { background: #f1f5f9; color: #475569; }
+
+        /* SCORE RING */
+        .score-ring {
+            width: 72px; height: 72px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.2rem; font-weight: 900; color: white; flex-shrink: 0;
+        }
+
+        /* PARAM PILLS */
+        .param-grid { display: flex; flex-wrap: wrap; gap: .5rem; }
+        .param-pill {
+            display: inline-flex; align-items: center; gap: .35rem;
+            padding: .35rem .75rem; border-radius: .6rem; font-size: .76rem;
+            font-weight: 600; background: #f8fafc; border: 1px solid #e2e8f0;
+        }
+        .param-pill .dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+        .param-pill .val { color: #1e293b; }
+        .param-pill .name { color: #64748b; }
+
+        /* AIR POLLUANT ROW */
+        .pollutant-row { display: flex; flex-wrap: wrap; gap: .5rem; }
+        .pollutant-chip {
+            display: inline-flex; flex-direction: column; align-items: center;
+            padding: .5rem .9rem; border-radius: .75rem; font-size: .72rem;
+            background: #f8fafc; border: 1px solid #e2e8f0; min-width: 64px;
+        }
+        .pollutant-chip .p-name { font-weight: 700; color: #475569; font-size: .68rem; }
+        .pollutant-chip .p-val  { font-weight: 800; margin-top: .15rem; }
+
+        /* IQA BADGE */
+        .iqa-badge {
+            display: inline-flex; align-items: center; gap: .5rem;
+            padding: .5rem 1.1rem; border-radius: 999px; font-weight: 800;
+            font-size: .95rem; color: #1e293b; border: 2px solid;
+        }
+
+        /* POLLEN PILLS */
+        .pollen-grid { display: flex; flex-wrap: wrap; gap: .4rem; }
+        .pollen-chip {
+            display: inline-flex; align-items: center; gap: .4rem;
+            padding: .3rem .7rem; border-radius: .6rem; font-size: .73rem;
+            font-weight: 600; background: #f8fafc; border: 1px solid #e2e8f0;
+        }
+
+        /* NAPPE STATION */
+        .nappe-row { display: grid; grid-template-columns: 1fr auto; gap: .5rem 1rem; align-items: center; padding: .6rem 0; border-bottom: 1px solid #f1f5f9; }
+        .nappe-row:last-child { border-bottom: none; }
+
+        /* RIVIERE ROW */
+        .riviere-row { padding: .75rem 0; border-bottom: 1px solid #f1f5f9; }
+        .riviere-row:last-child { border-bottom: none; }
+
+        /* TREND ARROW */
+        .trend-up   { color: #22c55e; font-weight: 700; }
+        .trend-down { color: #ef4444; font-weight: 700; }
+        .trend-flat { color: #94a3b8; font-weight: 700; }
+
+        /* UNAVAILABLE */
+        .card-unavailable { opacity: .5; }
+
+        /* POPULAR PILLS */
+        .popular-pill {
+            display: inline-flex; align-items: center; gap: .35rem;
+            padding: .4rem .9rem; background: white; border: 1.5px solid #e2e8f0;
+            border-radius: 999px; font-size: .78rem; font-weight: 600;
+            color: #475569; cursor: pointer; transition: all .15s;
+        }
+        .popular-pill:hover { background: #f0fdf4; border-color: #86efac; color: #15803d; }
+
+        /* STATS */
+        .stat-num { font-size: 1.5rem; font-weight: 900; color: #15803d; }
+        .stat-lbl { font-size: .7rem; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: .05em; }
 
         /* SCROLLBAR */
         .autocomplete-list::-webkit-scrollbar { width: 4px; }
         .autocomplete-list::-webkit-scrollbar-thumb { background: #e2e8f0; border-radius: 2px; }
 
-        /* POPULAR PILLS */
-        .popular-pill {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.35rem;
-            padding: 0.4rem 0.9rem;
-            background: white;
-            border: 1.5px solid #e2e8f0;
-            border-radius: 999px;
-            font-size: 0.78rem;
-            font-weight: 600;
-            color: #475569;
-            cursor: pointer;
-            transition: all 0.15s;
-            text-decoration: none;
-        }
-        .popular-pill:hover {
-            background: #f0fdf4;
-            border-color: #86efac;
-            color: #15803d;
-        }
-
-        /* STATS BAR */
-        .stat-item { text-align: center; }
-        .stat-num { font-size: 1.5rem; font-weight: 900; color: #15803d; }
-        .stat-lbl { font-size: 0.7rem; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em; }
+        /* DETAIL LINK */
+        .detail-link { font-size: .75rem; font-weight: 600; color: #16a34a; text-decoration: none; display: inline-flex; align-items: center; gap: .25rem; }
+        .detail-link:hover { text-decoration: underline; }
     </style>
 </head>
-<body class="hero-bg">
+<body>
 
-<!-- HEADER MINIMAL -->
-<header class="w-full px-6 py-4 flex items-center justify-between">
-    <div></div>
+<!-- HEADER -->
+<header class="w-full px-6 py-4 flex items-center justify-end">
     <nav class="flex items-center gap-4">
         <a href="/contact.html" class="text-xs font-600 text-slate-500 hover:text-slate-800 transition-colors">Contact</a>
         <a href="/mentions-legales.html" class="text-xs font-600 text-slate-500 hover:text-slate-800 transition-colors">Mentions légales</a>
     </nav>
 </header>
 
-<!-- HERO SEARCH -->
-<main>
-<section id="hero-section" class="flex flex-col items-center justify-center px-6 pt-10 pb-16 transition-all duration-500">
+<main class="px-4">
+
+<!-- ═══ HERO ═══ -->
+<section id="hero-section" class="flex flex-col items-center justify-center pt-8 pb-12 transition-all duration-300">
 
     <!-- Logo -->
-    <div class="flex flex-col items-center mb-10">
-        <div class="logo-leaf mb-2">🌿</div>
-        <div class="logo-text-main text-slate-800">
+    <div class="flex flex-col items-center mb-9">
+        <div style="font-size:2.8rem;line-height:1" class="mb-2">🌿</div>
+        <div style="font-size:2.2rem;font-weight:900;letter-spacing:-.03em" class="text-slate-800">
             Mon-Environnement<span class="logo-text-tld">.fr</span>
         </div>
-        <div class="logo-tagline mt-2">Données environnementales · Air · Eau · Nature</div>
+        <div class="text-xs font-500 text-slate-400 mt-2 tracking-widest uppercase">Air · Eau · Nappes · Rivières · Pollen</div>
     </div>
 
-    <!-- Search bar -->
+    <!-- Search -->
     <div class="search-wrap" id="search-container">
         <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
         </svg>
-        <input
-            type="text"
-            id="search-input"
-            class="search-input"
-            placeholder="Tapez le nom de votre ville..."
-            autocomplete="off"
-            spellcheck="false"
-        >
+        <input type="text" id="search-input" class="search-input" placeholder="Tapez le nom de votre ville…" autocomplete="off" spellcheck="false">
         <button class="search-btn" onclick="doSearch()">Rechercher</button>
-
-        <!-- Autocomplete dropdown -->
         <div class="autocomplete-list" id="autocomplete-list"></div>
     </div>
 
-    <!-- Popular cities -->
-    <div class="flex flex-wrap justify-center gap-2 mt-6 max-w-2xl" id="popular-cities">
-        <span class="text-xs text-slate-400 font-500 w-full text-center mb-1">Villes populaires</span>
+    <!-- Popular -->
+    <div class="flex flex-wrap justify-center gap-2 mt-5 max-w-2xl" id="popular-cities">
+        <span class="text-xs text-slate-400 w-full text-center mb-1">Villes populaires</span>
         <span class="popular-pill" onclick="selectCity('montpellier')">📍 Montpellier</span>
         <span class="popular-pill" onclick="selectCity('nimes')">📍 Nîmes</span>
         <span class="popular-pill" onclick="selectCity('beziers')">📍 Béziers</span>
@@ -271,211 +213,240 @@
         <span class="popular-pill" onclick="selectCity('palavas-les-flots')">📍 Palavas-les-Flots</span>
         <span class="popular-pill" onclick="selectCity('uzes')">📍 Uzès</span>
         <span class="popular-pill" onclick="selectCity('ales')">📍 Alès</span>
-        <span class="popular-pill" onclick="selectCity('lunel')">📍 Lunel</span>
+        <span class="popular-pill" onclick="selectCity('agde')">📍 Agde</span>
     </div>
 
-    <!-- Stats bar -->
-    <div class="flex items-center gap-8 mt-12 px-8 py-5 bg-white/70 backdrop-blur rounded-2xl shadow-sm border border-slate-100">
-        <div class="stat-item">
-            <div class="stat-num">101</div>
-            <div class="stat-lbl">Communes</div>
-        </div>
-        <div class="w-px h-10 bg-slate-100"></div>
-        <div class="stat-item">
-            <div class="stat-num">5</div>
-            <div class="stat-lbl">Rubriques</div>
-        </div>
-        <div class="w-px h-10 bg-slate-100"></div>
-        <div class="stat-item">
-            <div class="stat-num">Live</div>
-            <div class="stat-lbl">Mises à jour</div>
-        </div>
-        <div class="w-px h-10 bg-slate-100"></div>
-        <div class="stat-item">
-            <div class="stat-num">100%</div>
-            <div class="stat-lbl">Officiel</div>
-        </div>
+    <!-- Stats -->
+    <div class="flex items-center gap-6 mt-10 px-6 py-4 bg-white/70 rounded-2xl shadow-sm border border-slate-100">
+        <div class="text-center"><div class="stat-num">101</div><div class="stat-lbl">Communes</div></div>
+        <div class="w-px h-8 bg-slate-100"></div>
+        <div class="text-center"><div class="stat-num">5</div><div class="stat-lbl">Rubriques</div></div>
+        <div class="w-px h-8 bg-slate-100"></div>
+        <div class="text-center"><div class="stat-num">Live</div><div class="stat-lbl">Données</div></div>
+        <div class="w-px h-8 bg-slate-100"></div>
+        <div class="text-center"><div class="stat-num">100%</div><div class="stat-lbl">Officiel</div></div>
     </div>
 </section>
 
-<!-- RESULTS PANEL -->
-<section id="results-panel" class="max-w-4xl mx-auto px-6 pb-20">
+<!-- ═══ RÉSULTATS ═══ -->
+<section id="results-panel" class="max-w-3xl mx-auto pb-20">
 
     <!-- City header -->
-    <div class="flex items-center gap-4 mb-8">
-        <button onclick="resetSearch()" class="flex items-center gap-2 text-sm font-600 text-slate-500 hover:text-slate-800 transition-colors">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
-            Nouvelle recherche
+    <div class="flex items-center gap-3 mb-6">
+        <button onclick="resetSearch()" class="flex items-center gap-2 text-sm font-600 text-slate-400 hover:text-slate-700 transition-colors">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+            Retour
         </button>
         <div class="w-px h-5 bg-slate-200"></div>
         <h1 id="result-city-name" class="text-xl font-900 text-slate-800"></h1>
-        <span id="result-city-dept" class="text-sm font-600 text-slate-400"></span>
+        <span id="result-city-dept" class="text-sm text-slate-400 font-500"></span>
+        <span id="result-updated" class="ml-auto text-xs text-slate-400"></span>
     </div>
 
-    <!-- Cards grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" id="cards-grid"></div>
+    <!-- Loading -->
+    <div id="loading-state" class="text-center py-12 text-slate-400 text-sm">
+        <div class="text-2xl mb-2">⏳</div>Chargement des données…
+    </div>
 
-    <!-- Info notice -->
-    <p class="mt-8 text-center text-xs text-slate-400">
-        Données issues de sources officielles : ARS, Atmo, Hub'Eau, BRGM, Ministère de la Santé.<br>
-        Mises à jour quotidiennement.
-    </p>
+    <!-- Sections -->
+    <div id="data-sections"></div>
+
 </section>
 </main>
 
 <!-- FOOTER -->
-<footer class="border-t border-slate-100 bg-white/60 py-6 px-6 text-center text-xs text-slate-400">
-    <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-2">
+<footer class="border-t border-slate-100 bg-white/50 py-5 px-6 text-center text-xs text-slate-400">
+    <div class="flex flex-wrap justify-center gap-x-5 gap-y-1 mb-1">
         <a href="/mentions-legales.html" class="hover:text-slate-600 transition-colors">Mentions légales</a>
         <a href="/politique-confidentialite.html" class="hover:text-slate-600 transition-colors">Confidentialité</a>
         <a href="/contact.html" class="hover:text-slate-600 transition-colors">Contact</a>
-        <a href="/sitemap.xml" class="hover:text-slate-600 transition-colors">Sitemap</a>
     </div>
-    <p>© 2026 Mon-Environnement.fr — Données environnementales libres et officielles pour la France</p>
+    <p>© 2026 Mon-Environnement.fr — Sources : ARS · Atmo Occitanie · Hub'Eau · BRGM · Ministère de la Santé</p>
 </footer>
 
 <script>
+// ═══════════════════════════════════════════════
 // CITY DATABASE
+// ═══════════════════════════════════════════════
 const CITIES = [
-    { slug: "agde",                     name: "Agde",                        dept: "Hérault (34)", coastal: true  },
-    { slug: "aigues-mortes",            name: "Aigues-Mortes",               dept: "Gard (30)",    coastal: true  },
-    { slug: "aimargues",                name: "Aimargues",                   dept: "Gard (30)",    coastal: false },
-    { slug: "ales",                     name: "Alès",                        dept: "Gard (30)",    coastal: false },
-    { slug: "aramon",                   name: "Aramon",                      dept: "Gard (30)",    coastal: false },
-    { slug: "bagnols-sur-ceze",         name: "Bagnols-sur-Cèze",            dept: "Gard (30)",    coastal: false },
-    { slug: "baillargues",              name: "Baillargues",                 dept: "Hérault (34)", coastal: false },
-    { slug: "balaruc-les-bains",        name: "Balaruc-les-Bains",           dept: "Hérault (34)", coastal: true  },
-    { slug: "beaucaire",                name: "Beaucaire",                   dept: "Gard (30)",    coastal: false },
-    { slug: "bedarieux",                name: "Bédarieux",                   dept: "Hérault (34)", coastal: false },
-    { slug: "bellegarde",               name: "Bellegarde",                  dept: "Gard (30)",    coastal: false },
-    { slug: "bessan",                   name: "Bessan",                      dept: "Hérault (34)", coastal: false },
-    { slug: "beziers",                  name: "Béziers",                     dept: "Hérault (34)", coastal: false },
-    { slug: "bouillargues",             name: "Bouillargues",                dept: "Gard (30)",    coastal: false },
-    { slug: "boujan-sur-libron",        name: "Boujan-sur-Libron",           dept: "Hérault (34)", coastal: false },
-    { slug: "caissargues",              name: "Caissargues",                 dept: "Gard (30)",    coastal: false },
-    { slug: "calvisson",                name: "Calvisson",                   dept: "Gard (30)",    coastal: false },
-    { slug: "canet",                    name: "Canet",                       dept: "Hérault (34)", coastal: false },
-    { slug: "capestang",                name: "Capestang",                   dept: "Hérault (34)", coastal: false },
-    { slug: "castelnau-le-lez",         name: "Castelnau-le-Lez",            dept: "Hérault (34)", coastal: false },
-    { slug: "castries",                 name: "Castries",                    dept: "Hérault (34)", coastal: false },
-    { slug: "clapiers",                 name: "Clapiers",                    dept: "Hérault (34)", coastal: false },
-    { slug: "clarensac",                name: "Clarensac",                   dept: "Gard (30)",    coastal: false },
-    { slug: "clermont-l-herault",       name: "Clermont-l'Hérault",          dept: "Hérault (34)", coastal: false },
-    { slug: "cournonterral",            name: "Cournonterral",               dept: "Hérault (34)", coastal: false },
-    { slug: "fabregues",                name: "Fabrègues",                   dept: "Hérault (34)", coastal: false },
-    { slug: "florensac",                name: "Florensac",                   dept: "Hérault (34)", coastal: false },
-    { slug: "frontignan",               name: "Frontignan",                  dept: "Hérault (34)", coastal: true  },
-    { slug: "gallargues-le-montueux",   name: "Gallargues-le-Montueux",      dept: "Gard (30)",    coastal: false },
-    { slug: "ganges",                   name: "Ganges",                      dept: "Hérault (34)", coastal: false },
-    { slug: "garons",                   name: "Garons",                      dept: "Gard (30)",    coastal: false },
-    { slug: "gigean",                   name: "Gigean",                      dept: "Hérault (34)", coastal: false },
-    { slug: "gignac",                   name: "Gignac",                      dept: "Hérault (34)", coastal: false },
-    { slug: "grabels",                  name: "Grabels",                     dept: "Hérault (34)", coastal: false },
-    { slug: "jacou",                    name: "Jacou",                       dept: "Hérault (34)", coastal: false },
-    { slug: "juvignac",                 name: "Juvignac",                    dept: "Hérault (34)", coastal: false },
-    { slug: "la-grand-combe",           name: "La Grand-Combe",              dept: "Gard (30)",    coastal: false },
-    { slug: "lattes",                   name: "Lattes",                      dept: "Hérault (34)", coastal: false },
-    { slug: "laudun-l-ardoise",         name: "Laudun-l'Ardoise",            dept: "Gard (30)",    coastal: false },
-    { slug: "le-cres",                  name: "Le Crès",                     dept: "Hérault (34)", coastal: false },
-    { slug: "le-grau-du-roi",           name: "Le Grau-du-Roi",              dept: "Gard (30)",    coastal: true  },
-    { slug: "le-vigan",                 name: "Le Vigan",                    dept: "Gard (30)",    coastal: false },
-    { slug: "les-angles",               name: "Les Angles",                  dept: "Gard (30)",    coastal: false },
-    { slug: "lodeve",                   name: "Lodève",                      dept: "Hérault (34)", coastal: false },
-    { slug: "lunel",                    name: "Lunel",                       dept: "Hérault (34)", coastal: false },
-    { slug: "lunel-viel",               name: "Lunel-Viel",                  dept: "Hérault (34)", coastal: false },
-    { slug: "manduel",                  name: "Manduel",                     dept: "Gard (30)",    coastal: false },
-    { slug: "maraussan",                name: "Maraussan",                   dept: "Hérault (34)", coastal: false },
-    { slug: "marguerittes",             name: "Marguerittes",                dept: "Gard (30)",    coastal: false },
-    { slug: "marseillan",               name: "Marseillan",                  dept: "Hérault (34)", coastal: true  },
-    { slug: "marsillargues",            name: "Marsillargues",               dept: "Hérault (34)", coastal: false },
-    { slug: "mauguio",                  name: "Mauguio",                     dept: "Hérault (34)", coastal: true  },
-    { slug: "meze",                     name: "Mèze",                        dept: "Hérault (34)", coastal: true  },
-    { slug: "milhaud",                  name: "Milhaud",                     dept: "Gard (30)",    coastal: false },
-    { slug: "mireval",                  name: "Mireval",                     dept: "Hérault (34)", coastal: true  },
-    { slug: "montagnac",                name: "Montagnac",                   dept: "Hérault (34)", coastal: false },
-    { slug: "montbazin",                name: "Montbazin",                   dept: "Hérault (34)", coastal: false },
-    { slug: "montblanc",                name: "Montblanc",                   dept: "Hérault (34)", coastal: false },
-    { slug: "montferrier-sur-lez",      name: "Montferrier-sur-Lez",         dept: "Hérault (34)", coastal: false },
-    { slug: "montfrin",                 name: "Montfrin",                    dept: "Gard (30)",    coastal: false },
-    { slug: "montpellier",              name: "Montpellier",                 dept: "Hérault (34)", coastal: false },
-    { slug: "nimes",                    name: "Nîmes",                       dept: "Gard (30)",    coastal: false },
-    { slug: "nissan-lez-enserune",      name: "Nissan-lez-Enserune",         dept: "Hérault (34)", coastal: false },
-    { slug: "palavas-les-flots",        name: "Palavas-les-Flots",           dept: "Hérault (34)", coastal: true  },
-    { slug: "perols",                   name: "Pérols",                      dept: "Hérault (34)", coastal: true  },
-    { slug: "pezenas",                  name: "Pézenas",                     dept: "Hérault (34)", coastal: false },
-    { slug: "pignan",                   name: "Pignan",                      dept: "Hérault (34)", coastal: false },
-    { slug: "pont-saint-esprit",        name: "Pont-Saint-Esprit",           dept: "Gard (30)",    coastal: false },
-    { slug: "poussan",                  name: "Poussan",                     dept: "Hérault (34)", coastal: false },
-    { slug: "prades-le-lez",            name: "Prades-le-Lez",               dept: "Hérault (34)", coastal: false },
-    { slug: "quissac",                  name: "Quissac",                     dept: "Gard (30)",    coastal: false },
-    { slug: "redessan",                 name: "Redessan",                    dept: "Gard (30)",    coastal: false },
-    { slug: "remoulins",                name: "Remoulins",                   dept: "Gard (30)",    coastal: false },
-    { slug: "rochefort-du-gard",        name: "Rochefort-du-Gard",           dept: "Gard (30)",    coastal: false },
-    { slug: "roquemaure",               name: "Roquemaure",                  dept: "Gard (30)",    coastal: false },
-    { slug: "saint-ambroix",            name: "Saint-Ambroix",               dept: "Gard (30)",    coastal: false },
-    { slug: "saint-aunes",              name: "Saint-Aunes",                 dept: "Hérault (34)", coastal: false },
-    { slug: "saint-christol-lez-ales",  name: "Saint-Christol-lès-Alès",     dept: "Gard (30)",    coastal: false },
-    { slug: "saint-clement-de-riviere", name: "Saint-Clément-de-Rivière",    dept: "Hérault (34)", coastal: false },
-    { slug: "saint-gely-du-fesc",       name: "Saint-Gély-du-Fesc",          dept: "Hérault (34)", coastal: false },
-    { slug: "saint-genies-de-malgoires",name: "Saint-Geniès-de-Malgoirès",   dept: "Gard (30)",    coastal: false },
-    { slug: "saint-georges-d-orques",   name: "Saint-Georges-d'Orques",      dept: "Hérault (34)", coastal: false },
-    { slug: "saint-gilles",             name: "Saint-Gilles",                dept: "Gard (30)",    coastal: false },
-    { slug: "saint-hilaire-de-brethmas",name: "Saint-Hilaire-de-Brethmas",   dept: "Gard (30)",    coastal: false },
-    { slug: "saint-hippolyte-du-fort",  name: "Saint-Hippolyte-du-Fort",     dept: "Gard (30)",    coastal: false },
-    { slug: "saint-jean-de-vedas",      name: "Saint-Jean-de-Védas",         dept: "Hérault (34)", coastal: false },
-    { slug: "saint-laurent-des-arbres", name: "Saint-Laurent-des-Arbres",    dept: "Gard (30)",    coastal: false },
-    { slug: "saint-mathieu-de-treviers",name: "Saint-Mathieu-de-Tréviers",   dept: "Hérault (34)", coastal: false },
-    { slug: "salindres",                name: "Salindres",                   dept: "Gard (30)",    coastal: false },
-    { slug: "serignan",                 name: "Sérignan",                    dept: "Hérault (34)", coastal: true  },
-    { slug: "sete",                     name: "Sète",                        dept: "Hérault (34)", coastal: true  },
-    { slug: "sommieres",                name: "Sommières",                   dept: "Gard (30)",    coastal: false },
-    { slug: "uchaud",                   name: "Uchaud",                      dept: "Gard (30)",    coastal: false },
-    { slug: "uzes",                     name: "Uzès",                        dept: "Gard (30)",    coastal: false },
-    { slug: "valras-plage",             name: "Valras-Plage",                dept: "Hérault (34)", coastal: true  },
-    { slug: "vauvert",                  name: "Vauvert",                     dept: "Gard (30)",    coastal: false },
-    { slug: "vendargues",               name: "Vendargues",                  dept: "Hérault (34)", coastal: false },
-    { slug: "vergeze",                  name: "Vergèze",                     dept: "Gard (30)",    coastal: false },
-    { slug: "vias",                     name: "Vias",                        dept: "Hérault (34)", coastal: true  },
-    { slug: "villeneuve-les-avignon",   name: "Villeneuve-lès-Avignon",      dept: "Gard (30)",    coastal: false },
-    { slug: "villeneuve-les-beziers",   name: "Villeneuve-lès-Béziers",      dept: "Hérault (34)", coastal: true  },
-    { slug: "villeneuve-les-maguelone", name: "Villeneuve-lès-Maguelone",    dept: "Hérault (34)", coastal: true  },
+    { slug:"agde",                     name:"Agde",                        dept:"Hérault (34)", deptNum:"34", coastal:true  },
+    { slug:"aigues-mortes",            name:"Aigues-Mortes",               dept:"Gard (30)",    deptNum:"30", coastal:true  },
+    { slug:"aimargues",                name:"Aimargues",                   dept:"Gard (30)",    deptNum:"30", coastal:false },
+    { slug:"ales",                     name:"Alès",                        dept:"Gard (30)",    deptNum:"30", coastal:false },
+    { slug:"aramon",                   name:"Aramon",                      dept:"Gard (30)",    deptNum:"30", coastal:false },
+    { slug:"bagnols-sur-ceze",         name:"Bagnols-sur-Cèze",            dept:"Gard (30)",    deptNum:"30", coastal:false },
+    { slug:"baillargues",              name:"Baillargues",                 dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"balaruc-les-bains",        name:"Balaruc-les-Bains",           dept:"Hérault (34)", deptNum:"34", coastal:true  },
+    { slug:"beaucaire",                name:"Beaucaire",                   dept:"Gard (30)",    deptNum:"30", coastal:false },
+    { slug:"bedarieux",                name:"Bédarieux",                   dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"bellegarde",               name:"Bellegarde",                  dept:"Gard (30)",    deptNum:"30", coastal:false },
+    { slug:"bessan",                   name:"Bessan",                      dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"beziers",                  name:"Béziers",                     dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"bouillargues",             name:"Bouillargues",                dept:"Gard (30)",    deptNum:"30", coastal:false },
+    { slug:"boujan-sur-libron",        name:"Boujan-sur-Libron",           dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"caissargues",              name:"Caissargues",                 dept:"Gard (30)",    deptNum:"30", coastal:false },
+    { slug:"calvisson",                name:"Calvisson",                   dept:"Gard (30)",    deptNum:"30", coastal:false },
+    { slug:"canet",                    name:"Canet",                       dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"capestang",                name:"Capestang",                   dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"castelnau-le-lez",         name:"Castelnau-le-Lez",            dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"castries",                 name:"Castries",                    dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"clapiers",                 name:"Clapiers",                    dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"clarensac",                name:"Clarensac",                   dept:"Gard (30)",    deptNum:"30", coastal:false },
+    { slug:"clermont-l-herault",       name:"Clermont-l'Hérault",          dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"cournonterral",            name:"Cournonterral",               dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"fabregues",                name:"Fabrègues",                   dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"florensac",                name:"Florensac",                   dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"frontignan",               name:"Frontignan",                  dept:"Hérault (34)", deptNum:"34", coastal:true  },
+    { slug:"gallargues-le-montueux",   name:"Gallargues-le-Montueux",      dept:"Gard (30)",    deptNum:"30", coastal:false },
+    { slug:"ganges",                   name:"Ganges",                      dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"garons",                   name:"Garons",                      dept:"Gard (30)",    deptNum:"30", coastal:false },
+    { slug:"gigean",                   name:"Gigean",                      dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"gignac",                   name:"Gignac",                      dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"grabels",                  name:"Grabels",                     dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"jacou",                    name:"Jacou",                       dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"juvignac",                 name:"Juvignac",                    dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"la-grand-combe",           name:"La Grand-Combe",              dept:"Gard (30)",    deptNum:"30", coastal:false },
+    { slug:"lattes",                   name:"Lattes",                      dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"laudun-l-ardoise",         name:"Laudun-l'Ardoise",            dept:"Gard (30)",    deptNum:"30", coastal:false },
+    { slug:"le-cres",                  name:"Le Crès",                     dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"le-grau-du-roi",           name:"Le Grau-du-Roi",              dept:"Gard (30)",    deptNum:"30", coastal:true  },
+    { slug:"le-vigan",                 name:"Le Vigan",                    dept:"Gard (30)",    deptNum:"30", coastal:false },
+    { slug:"les-angles",               name:"Les Angles",                  dept:"Gard (30)",    deptNum:"30", coastal:false },
+    { slug:"lodeve",                   name:"Lodève",                      dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"lunel",                    name:"Lunel",                       dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"lunel-viel",               name:"Lunel-Viel",                  dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"manduel",                  name:"Manduel",                     dept:"Gard (30)",    deptNum:"30", coastal:false },
+    { slug:"maraussan",                name:"Maraussan",                   dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"marguerittes",             name:"Marguerittes",                dept:"Gard (30)",    deptNum:"30", coastal:false },
+    { slug:"marseillan",               name:"Marseillan",                  dept:"Hérault (34)", deptNum:"34", coastal:true  },
+    { slug:"marsillargues",            name:"Marsillargues",               dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"mauguio",                  name:"Mauguio",                     dept:"Hérault (34)", deptNum:"34", coastal:true  },
+    { slug:"meze",                     name:"Mèze",                        dept:"Hérault (34)", deptNum:"34", coastal:true  },
+    { slug:"milhaud",                  name:"Milhaud",                     dept:"Gard (30)",    deptNum:"30", coastal:false },
+    { slug:"mireval",                  name:"Mireval",                     dept:"Hérault (34)", deptNum:"34", coastal:true  },
+    { slug:"montagnac",                name:"Montagnac",                   dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"montbazin",                name:"Montbazin",                   dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"montblanc",                name:"Montblanc",                   dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"montferrier-sur-lez",      name:"Montferrier-sur-Lez",         dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"montfrin",                 name:"Montfrin",                    dept:"Gard (30)",    deptNum:"30", coastal:false },
+    { slug:"montpellier",              name:"Montpellier",                 dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"nimes",                    name:"Nîmes",                       dept:"Gard (30)",    deptNum:"30", coastal:false },
+    { slug:"nissan-lez-enserune",      name:"Nissan-lez-Enserune",         dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"palavas-les-flots",        name:"Palavas-les-Flots",           dept:"Hérault (34)", deptNum:"34", coastal:true  },
+    { slug:"perols",                   name:"Pérols",                      dept:"Hérault (34)", deptNum:"34", coastal:true  },
+    { slug:"pezenas",                  name:"Pézenas",                     dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"pignan",                   name:"Pignan",                      dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"pont-saint-esprit",        name:"Pont-Saint-Esprit",           dept:"Gard (30)",    deptNum:"30", coastal:false },
+    { slug:"poussan",                  name:"Poussan",                     dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"prades-le-lez",            name:"Prades-le-Lez",               dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"quissac",                  name:"Quissac",                     dept:"Gard (30)",    deptNum:"30", coastal:false },
+    { slug:"redessan",                 name:"Redessan",                    dept:"Gard (30)",    deptNum:"30", coastal:false },
+    { slug:"remoulins",                name:"Remoulins",                   dept:"Gard (30)",    deptNum:"30", coastal:false },
+    { slug:"rochefort-du-gard",        name:"Rochefort-du-Gard",           dept:"Gard (30)",    deptNum:"30", coastal:false },
+    { slug:"roquemaure",               name:"Roquemaure",                  dept:"Gard (30)",    deptNum:"30", coastal:false },
+    { slug:"saint-ambroix",            name:"Saint-Ambroix",               dept:"Gard (30)",    deptNum:"30", coastal:false },
+    { slug:"saint-aunes",              name:"Saint-Aunès",                 dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"saint-christol-lez-ales",  name:"Saint-Christol-lès-Alès",     dept:"Gard (30)",    deptNum:"30", coastal:false },
+    { slug:"saint-clement-de-riviere", name:"Saint-Clément-de-Rivière",    dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"saint-gely-du-fesc",       name:"Saint-Gély-du-Fesc",          dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"saint-genies-de-malgoires",name:"Saint-Geniès-de-Malgoirès",   dept:"Gard (30)",    deptNum:"30", coastal:false },
+    { slug:"saint-georges-d-orques",   name:"Saint-Georges-d'Orques",      dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"saint-gilles",             name:"Saint-Gilles",                dept:"Gard (30)",    deptNum:"30", coastal:false },
+    { slug:"saint-hilaire-de-brethmas",name:"Saint-Hilaire-de-Brethmas",   dept:"Gard (30)",    deptNum:"30", coastal:false },
+    { slug:"saint-hippolyte-du-fort",  name:"Saint-Hippolyte-du-Fort",     dept:"Gard (30)",    deptNum:"30", coastal:false },
+    { slug:"saint-jean-de-vedas",      name:"Saint-Jean-de-Védas",         dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"saint-laurent-des-arbres", name:"Saint-Laurent-des-Arbres",    dept:"Gard (30)",    deptNum:"30", coastal:false },
+    { slug:"saint-mathieu-de-treviers",name:"Saint-Mathieu-de-Tréviers",   dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"salindres",                name:"Salindres",                   dept:"Gard (30)",    deptNum:"30", coastal:false },
+    { slug:"serignan",                 name:"Sérignan",                    dept:"Hérault (34)", deptNum:"34", coastal:true  },
+    { slug:"sete",                     name:"Sète",                        dept:"Hérault (34)", deptNum:"34", coastal:true  },
+    { slug:"sommieres",                name:"Sommières",                   dept:"Gard (30)",    deptNum:"30", coastal:false },
+    { slug:"uchaud",                   name:"Uchaud",                      dept:"Gard (30)",    deptNum:"30", coastal:false },
+    { slug:"uzes",                     name:"Uzès",                        dept:"Gard (30)",    deptNum:"30", coastal:false },
+    { slug:"valras-plage",             name:"Valras-Plage",                dept:"Hérault (34)", deptNum:"34", coastal:true  },
+    { slug:"vauvert",                  name:"Vauvert",                     dept:"Gard (30)",    deptNum:"30", coastal:false },
+    { slug:"vendargues",               name:"Vendargues",                  dept:"Hérault (34)", deptNum:"34", coastal:false },
+    { slug:"vergeze",                  name:"Vergèze",                     dept:"Gard (30)",    deptNum:"30", coastal:false },
+    { slug:"vias",                     name:"Vias",                        dept:"Hérault (34)", deptNum:"34", coastal:true  },
+    { slug:"villeneuve-les-avignon",   name:"Villeneuve-lès-Avignon",      dept:"Gard (30)",    deptNum:"30", coastal:false },
+    { slug:"villeneuve-les-beziers",   name:"Villeneuve-lès-Béziers",      dept:"Hérault (34)", deptNum:"34", coastal:true  },
+    { slug:"villeneuve-les-maguelone", name:"Villeneuve-lès-Maguelone",    dept:"Hérault (34)", deptNum:"34", coastal:true  },
 ];
 
-// Normalize string: remove accents + lowercase + collapse separators
-function normalize(str) {
-    return str.toLowerCase()
-        .normalize("NFD")
-        .replace(/[\u0300-\u036f]/g, "")
-        .replace(/[-'\u2019]/g, " ")
-        .trim();
+// Mapping ville slug → index zone air dans full_data.json
+// (0=Lodévois, 1=Uzès, 2=Gard Rhodanien, 3=Thau/Sète, 4=Alès, 5=Sommières,
+//  6=Beaucaire, 7=Nîmes, 9=Montpellier, 10=Pays de l'Or, 11=Lunel, 12=Hérault/Gignac, 13=Béziers, 14=Agde)
+const CITY_AIR_ZONE = {
+    "agde":14, "vias":14, "marseillan":14,
+    "sete":3, "meze":3, "balaruc-les-bains":3, "frontignan":3, "mireval":3,
+    "poussan":3, "gigean":3, "montbazin":3, "balaruc-les-bains":3,
+    "montpellier":9, "castelnau-le-lez":9, "clapiers":9, "grabels":9,
+    "jacou":9, "juvignac":9, "lattes":9, "le-cres":9, "montferrier-sur-lez":9,
+    "perols":9, "pignan":9, "prades-le-lez":9, "saint-aunes":9,
+    "saint-clement-de-riviere":9, "saint-gely-du-fesc":9, "saint-georges-d-orques":9,
+    "saint-jean-de-vedas":9, "vendargues":9, "fabregues":9,
+    "mauguio":10, "palavas-les-flots":10, "villeneuve-les-maguelone":10,
+    "castries":10, "saint-mathieu-de-treviers":10, "lunel-viel":10,
+    "marsillargues":10, "baillargues":10,
+    "lunel":11, "aimargues":11, "gallargues-le-montueux":11,
+    "gignac":12, "montagnac":12, "florensac":12, "bessan":12, "canet":12,
+    "cournonterral":12, "pezenas":12,
+    "clermont-l-herault":0, "lodeve":0, "ganges":0, "bedarieux":0,
+    "beziers":13, "villeneuve-les-beziers":13, "serignan":13, "valras-plage":13,
+    "nissan-lez-enserune":13, "capestang":13, "boujan-sur-libron":13,
+    "maraussan":13, "montblanc":13,
+    "nimes":7, "bouillargues":7, "caissargues":7, "garons":7, "marguerittes":7,
+    "milhaud":7, "redessan":7, "uchaud":7, "manduel":7, "vergeze":7,
+    "saint-gilles":7,
+    "sommieres":5, "calvisson":5, "clarensac":5, "quissac":5,
+    "beaucaire":6, "aramon":6, "remoulins":6, "rochefort-du-gard":6,
+    "roquemaure":6, "les-angles":6, "villeneuve-les-avignon":6, "montfrin":6,
+    "ales":4, "saint-christol-lez-ales":4, "salindres":4, "saint-ambroix":4,
+    "saint-hilaire-de-brethmas":4, "la-grand-combe":4, "saint-hippolyte-du-fort":4,
+    "uzes":1, "pont-saint-esprit":1, "saint-laurent-des-arbres":1,
+    "bagnols-sur-ceze":2, "laudun-l-ardoise":2, "saint-genies-de-malgoires":2,
+    "aigues-mortes":7, "le-grau-du-roi":7,
+    "bellegarde":7, "le-vigan":0,
+};
+
+// ═══ DATA ═══
+let DATA = null;
+let dataPromise = null;
+
+function loadData() {
+    if (dataPromise) return dataPromise;
+    dataPromise = fetch('/full_data.json')
+        .then(r => r.json())
+        .then(d => { DATA = d; return d; });
+    return dataPromise;
 }
 
-// AUTOCOMPLETE
+// ═══ NORMALIZE ═══
+function normalize(str) {
+    return str.toLowerCase()
+        .normalize("NFD").replace(/[\u0300-\u036f]/g,"")
+        .replace(/[-'\u2019]/g," ").trim();
+}
+
+// ═══ AUTOCOMPLETE ═══
 const input = document.getElementById("search-input");
 const list  = document.getElementById("autocomplete-list");
-let activeIdx = -1;
-let currentMatches = [];
+let activeIdx = -1, currentMatches = [];
 
 input.addEventListener("input", function() {
     const q = normalize(this.value);
     activeIdx = -1;
     if (q.length < 1) { list.classList.remove("show"); return; }
-
     currentMatches = CITIES.filter(c =>
-        normalize(c.name).includes(q) || normalize(c.slug).includes(q.replace(/ /g, "-"))
+        normalize(c.name).includes(q) || normalize(c.slug).includes(q.replace(/ /g,"-"))
     ).slice(0, 8);
-
-    if (currentMatches.length === 0) { list.classList.remove("show"); return; }
-
-    // Build autocomplete HTML with highlighted match
-    list.innerHTML = currentMatches.map((c, i) => {
-        // Simple highlight: bold the typed query in display name
-        const re = new RegExp("(" + this.value.trim().replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + ")", "gi");
-        const hl = c.name.replace(re, '<span class="autocomplete-highlight">$1</span>');
+    if (!currentMatches.length) { list.classList.remove("show"); return; }
+    const raw = this.value.trim();
+    list.innerHTML = currentMatches.map((c,i) => {
+        const re = new RegExp("("+raw.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+")","gi");
+        const hl = c.name.replace(re,'<span class="autocomplete-highlight">$1</span>');
         return `<div class="autocomplete-item" data-idx="${i}" onmousedown="selectCityObj(${i})">
-            <span>📍</span>
-            <span>${hl}</span>
-            <span class="dept">${c.dept}</span>
+            <span>📍</span><span>${hl}</span><span class="dept">${c.dept}</span>
         </div>`;
     }).join("");
     list.classList.add("show");
@@ -483,83 +454,57 @@ input.addEventListener("input", function() {
 
 input.addEventListener("keydown", function(e) {
     const items = list.querySelectorAll(".autocomplete-item");
-    if (e.key === "ArrowDown") {
-        e.preventDefault();
-        activeIdx = Math.min(activeIdx + 1, items.length - 1);
-        items.forEach((el, i) => el.classList.toggle("active", i === activeIdx));
-    } else if (e.key === "ArrowUp") {
-        e.preventDefault();
-        activeIdx = Math.max(activeIdx - 1, -1);
-        items.forEach((el, i) => el.classList.toggle("active", i === activeIdx));
-    } else if (e.key === "Enter") {
-        e.preventDefault();
-        if (activeIdx >= 0 && currentMatches[activeIdx]) {
-            selectCityObj(activeIdx);
-        } else {
-            doSearch();
-        }
-    } else if (e.key === "Escape") {
-        list.classList.remove("show");
-    }
+    if (e.key==="ArrowDown") { e.preventDefault(); activeIdx=Math.min(activeIdx+1,items.length-1); items.forEach((el,i)=>el.classList.toggle("active",i===activeIdx)); }
+    else if (e.key==="ArrowUp") { e.preventDefault(); activeIdx=Math.max(activeIdx-1,-1); items.forEach((el,i)=>el.classList.toggle("active",i===activeIdx)); }
+    else if (e.key==="Enter") { e.preventDefault(); activeIdx>=0&&currentMatches[activeIdx] ? selectCityObj(activeIdx) : doSearch(); }
+    else if (e.key==="Escape") { list.classList.remove("show"); }
 });
-
-document.addEventListener("click", function(e) {
-    if (!document.getElementById("search-container").contains(e.target)) {
-        list.classList.remove("show");
-    }
-});
+document.addEventListener("click", e => { if (!document.getElementById("search-container").contains(e.target)) list.classList.remove("show"); });
 
 function selectCityObj(idx) {
-    const city = currentMatches[idx];
-    if (!city) return;
-    input.value = city.name;
-    list.classList.remove("show");
-    showResults(city);
+    const city = currentMatches[idx]; if (!city) return;
+    input.value = city.name; list.classList.remove("show"); showResults(city);
 }
-
 function selectCity(slug) {
-    const city = CITIES.find(c => c.slug === slug);
-    if (!city) return;
-    input.value = city.name;
-    showResults(city);
+    const city = CITIES.find(c=>c.slug===slug); if (!city) return;
+    input.value = city.name; showResults(city);
 }
-
 function doSearch() {
-    const q = normalize(input.value);
-    if (!q) return;
-    // exact match first
-    let city = CITIES.find(c => normalize(c.name) === q);
-    if (!city) city = CITIES.find(c => normalize(c.name).startsWith(q));
-    if (!city) city = CITIES.find(c => normalize(c.name).includes(q));
-    if (city) {
-        showResults(city);
-    } else {
-        list.classList.remove("show");
-        alert("Ville non trouvée. Essayez avec le nom complet ou une autre orthographe.\nCommunes couvertes : Hérault (34) et Gard (30).");
-    }
+    const q = normalize(input.value); if (!q) return;
+    let city = CITIES.find(c=>normalize(c.name)===q)
+            || CITIES.find(c=>normalize(c.name).startsWith(q))
+            || CITIES.find(c=>normalize(c.name).includes(q));
+    if (city) showResults(city);
+    else alert("Ville non trouvée. Communes couvertes : Hérault (34) et Gard (30).");
 }
 
-// SHOW RESULTS
+// ═══ SHOW RESULTS ═══
 function showResults(city) {
     list.classList.remove("show");
-
-    // Update URL without reload
     const url = new URL(window.location);
     url.searchParams.set("q", city.name);
     window.history.pushState({}, "", url);
 
     document.getElementById("result-city-name").textContent = city.name;
     document.getElementById("result-city-dept").textContent = city.dept;
-    document.getElementById("cards-grid").innerHTML = buildCards(city);
-
+    document.getElementById("data-sections").innerHTML = "";
+    document.getElementById("loading-state").style.display = "block";
     document.getElementById("results-panel").classList.add("show");
-    document.getElementById("hero-section").style.paddingTop = "1.5rem";
-    document.getElementById("hero-section").style.paddingBottom = "2rem";
+    document.getElementById("hero-section").style.paddingTop = "1rem";
+    document.getElementById("hero-section").style.paddingBottom = "1.25rem";
     document.getElementById("popular-cities").style.display = "none";
 
     setTimeout(() => {
-        document.getElementById("results-panel").scrollIntoView({ behavior: "smooth", block: "start" });
-    }, 80);
+        document.getElementById("results-panel").scrollIntoView({ behavior:"smooth", block:"start" });
+    }, 60);
+
+    loadData().then(d => {
+        document.getElementById("loading-state").style.display = "none";
+        if (d.updated) document.getElementById("result-updated").textContent = "Mis à jour le "+d.updated;
+        document.getElementById("data-sections").innerHTML = renderAllSections(city, d);
+    }).catch(() => {
+        document.getElementById("loading-state").innerHTML = "❌ Impossible de charger les données.";
+    });
 }
 
 function resetSearch() {
@@ -571,109 +516,254 @@ function resetSearch() {
     const url = new URL(window.location);
     url.searchParams.delete("q");
     window.history.pushState({}, "", url);
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top:0, behavior:"smooth" });
     input.focus();
 }
 
-function buildCards(city) {
-    const { slug, coastal, dept } = city;
-    const hasRegional = dept.includes("34") || dept.includes("30");
-    const cards = [];
-
-    // 1. EAU POTABLE
-    cards.push(`
-        <a href="/eau-potable/${slug}/" class="env-card">
-            <div class="card-icon">🚰</div>
-            <div class="card-title">Eau potable</div>
-            <div class="card-desc">Score de qualité, nitrates, pH, chlore, bactériologie et paramètres physico-chimiques. Données ARS via Hub'Eau, mises à jour chaque matin.</div>
-            <span class="card-badge badge-green">✓ Données disponibles</span>
-        </a>
-    `);
-
-    // 2. QUALITE DE L'AIR
-    if (hasRegional) {
-        cards.push(`
-            <a href="/#air" class="env-card">
-                <div class="card-icon">💨</div>
-                <div class="card-title">Qualité de l'air</div>
-                <div class="card-desc">Indice de qualité de l'air (IQA), particules fines PM2.5 et PM10, ozone, dioxyde d'azote. Source : Atmo Occitanie.</div>
-                <span class="card-badge badge-blue">✓ Données disponibles</span>
-            </a>
-        `);
-    } else {
-        cards.push(`
-            <div class="env-card unavailable">
-                <div class="card-icon">💨</div>
-                <div class="card-title">Qualité de l'air</div>
-                <div class="card-desc">Actuellement disponible pour l'Hérault (34) et le Gard (30) via Atmo Occitanie.</div>
-                <span class="card-badge badge-slate">Hors zone couverte</span>
-            </div>
-        `);
-    }
-
-    // 3. PESTICIDES DANS L'AIR
-    if (hasRegional) {
-        cards.push(`
-            <a href="/#pesticides" class="env-card">
-                <div class="card-icon">🌾</div>
-                <div class="card-title">Pesticides dans l'air</div>
-                <div class="card-desc">Glyphosate, chlorpyrifos, prosulfocarbe, pendiméthaline mesurés dans l'atmosphère. Atmo Occitanie — données uniques en France.</div>
-                <span class="card-badge badge-amber">⚠ Données sensibles</span>
-            </a>
-        `);
-    }
-
-    // 4. NAPPES PHREATIQUES
-    cards.push(`
-        <a href="/#nappes" class="env-card">
-            <div class="card-icon">🌊</div>
-            <div class="card-title">Nappes phréatiques</div>
-            <div class="card-desc">Niveau et tendance des nappes souterraines, stations piézométriques BRGM. Recharge et état par rapport aux normales saisonnières.</div>
-            <span class="card-badge badge-blue">✓ Données régionales</span>
-        </a>
-    `);
-
-    // 5. RIVIERES
-    cards.push(`
-        <a href="/#rivieres" class="env-card">
-            <div class="card-icon">🏞️</div>
-            <div class="card-title">Rivières & cours d'eau</div>
-            <div class="card-desc">Qualité écologique et chimique des cours d'eau. Indices biologiques (IBD, IBG), nitrates, phosphore, pesticides dissous.</div>
-            <span class="card-badge badge-blue">✓ Données régionales</span>
-        </a>
-    `);
-
-    // 6. EAU DE MER
-    if (coastal) {
-        cards.push(`
-            <a href="/#mer" class="env-card">
-                <div class="card-icon">🏖️</div>
-                <div class="card-title">Eau de mer & baignade</div>
-                <div class="card-desc">Qualité des eaux de baignade, classement des plages (Excellent / Bon / Suffisant / Insuffisant). Données Ministère de la Santé.</div>
-                <span class="card-badge badge-green">✓ Commune côtière</span>
-            </a>
-        `);
-    } else {
-        cards.push(`
-            <div class="env-card unavailable">
-                <div class="card-icon">🏖️</div>
-                <div class="card-title">Eau de mer & baignade</div>
-                <div class="card-desc">Disponible uniquement pour les communes ayant un accès au littoral méditerranéen.</div>
-                <span class="card-badge badge-slate">Commune non côtière</span>
-            </div>
-        `);
-    }
-
-    return cards.join("");
+// ═══ RENDER ALL SECTIONS ═══
+function renderAllSections(city, d) {
+    return [
+        renderPotable(city, d.potable),
+        renderAir(city, d.air),
+        renderPollen(city, d.pollen),
+        renderNappes(city, d.nappes),
+        renderRivieres(city, d.rivieres),
+    ].join("");
 }
 
-// INIT: restore from URL param
+// ────────────────────────────────────────────────
+// EAU POTABLE
+// ────────────────────────────────────────────────
+function renderPotable(city, potable) {
+    const rec = potable.find(p => normalize(p.nom)===normalize(city.name));
+    if (!rec) {
+        return `<div class="data-card card-unavailable">
+            <div class="card-header"><span class="card-header-icon">🚰</span>
+                <div><div class="card-header-title">Eau potable</div><div class="card-header-sub">Aucune donnée pour cette commune</div></div>
+            </div></div>`;
+    }
+    const color = rec.score_color || "#10b981";
+    const paramHtml = Object.entries(rec.parametres||{}).map(([name,p]) =>
+        `<div class="param-pill">
+            <div class="dot" style="background:${p.color}"></div>
+            <span class="name">${name}</span>
+            <span class="val">${p.valeur} <span style="color:#94a3b8;font-weight:400">${p.unite}</span></span>
+         </div>`
+    ).join("");
+
+    const alertBadge = rec.restric && rec.restric !== "Aucune" && rec.restric !== "RAS"
+        ? `<span class="card-header-badge" style="background:#fef9c3;color:#92400e">⚠ ${rec.restric}</span>` : "";
+
+    return `<div class="data-card">
+        <div class="card-header">
+            <span class="card-header-icon">🚰</span>
+            <div>
+                <div class="card-header-title">Eau potable</div>
+                <div class="card-header-sub">Source : ARS via Hub'Eau</div>
+            </div>
+            ${alertBadge}
+        </div>
+        <div class="flex items-center gap-4 mb-4">
+            <div class="score-ring" style="background:${color}">${rec.score}<span style="font-size:.6rem">/100</span></div>
+            <div>
+                <div style="font-size:.95rem;font-weight:800;color:${color}">${rec.score_label}</div>
+                ${rec.origine ? `<div style="font-size:.72rem;color:#94a3b8;margin-top:.15rem">Origine : ${rec.origine}</div>` : ""}
+                ${rec.conclusion ? `<div style="font-size:.73rem;color:#475569;margin-top:.3rem;max-width:400px;line-height:1.45">${rec.conclusion}</div>` : ""}
+            </div>
+        </div>
+        <div class="param-grid">${paramHtml}</div>
+        <div class="mt-4">
+            <a href="/eau-potable/${city.slug}/" class="detail-link">Voir la fiche complète →</a>
+        </div>
+    </div>`;
+}
+
+// ────────────────────────────────────────────────
+// QUALITE DE L'AIR
+// ────────────────────────────────────────────────
+function renderAir(city, air) {
+    if (!Array.isArray(air) || !air.length) return "";
+    const zoneIdx = CITY_AIR_ZONE[city.slug];
+    let rec = null;
+    if (zoneIdx !== undefined) {
+        rec = air[zoneIdx];
+    } else {
+        // Fallback: first zone of the dept
+        rec = air.find(a => a.dept === city.deptNum);
+    }
+    if (!rec) {
+        return `<div class="data-card card-unavailable">
+            <div class="card-header"><span class="card-header-icon">💨</span>
+                <div><div class="card-header-title">Qualité de l'air</div>
+                <div class="card-header-sub">Pas de station Atmo pour ce secteur</div></div>
+            </div></div>`;
+    }
+
+    const pollHtml = Object.entries(rec.polluants||{}).map(([name,p]) =>
+        `<div class="pollutant-chip">
+            <div class="p-name">${name}</div>
+            <div class="p-val" style="color:${p.color}">${p.label}</div>
+         </div>`
+    ).join("");
+
+    const iqaStyle = `border-color:${rec.color};background:${rec.color}22;color:${rec.color === '#10b981' ? '#065f46' : '#1e293b'}`;
+
+    return `<div class="data-card">
+        <div class="card-header">
+            <span class="card-header-icon">💨</span>
+            <div>
+                <div class="card-header-title">Qualité de l'air</div>
+                <div class="card-header-sub">${rec.zone} · ${rec.date} · Atmo Occitanie</div>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 mb-4">
+            <div class="iqa-badge" style="${iqaStyle}">
+                <span style="font-size:1.4rem;font-weight:900">${rec.indice}</span>
+                <span>${rec.label}</span>
+            </div>
+            <div style="font-size:.75rem;color:#94a3b8">Indice de qualité de l'air<br>sur une échelle de 1 (Bon) à 6 (Extrêmement mauvais)</div>
+        </div>
+        <div class="pollutant-row">${pollHtml}</div>
+    </div>`;
+}
+
+// ────────────────────────────────────────────────
+// POLLEN
+// ────────────────────────────────────────────────
+function renderPollen(city, pollen) {
+    if (!Array.isArray(pollen) || !pollen.length) return "";
+    const rec = pollen.find(p => p.dept === city.deptNum);
+    if (!rec) return "";
+
+    const taxaHtml = Object.entries(rec.taxa||{})
+        .filter(([,t]) => t.indice > 0)
+        .map(([name,t]) =>
+            `<div class="pollen-chip">
+                <span style="width:8px;height:8px;border-radius:50%;background:${t.color};flex-shrink:0;display:inline-block"></span>
+                <span style="color:#475569">${name}</span>
+                <span style="font-weight:700;color:${t.color}">${t.label}</span>
+             </div>`
+        ).join("") || '<span style="font-size:.75rem;color:#94a3b8">Aucun pollène significatif</span>';
+
+    return `<div class="data-card">
+        <div class="card-header">
+            <span class="card-header-icon">🌸</span>
+            <div>
+                <div class="card-header-title">Risque pollinique</div>
+                <div class="card-header-sub">${rec.lib_zone} · ${rec.date} · RNSA</div>
+            </div>
+            <span class="card-header-badge" style="background:${rec.color_global}33;color:#1e293b;border:1.5px solid ${rec.color_global}">${rec.label_global}</span>
+        </div>
+        <div class="pollen-grid">${taxaHtml}</div>
+    </div>`;
+}
+
+// ────────────────────────────────────────────────
+// NAPPES PHREATIQUES
+// ────────────────────────────────────────────────
+function renderNappes(city, nappes) {
+    if (!Array.isArray(nappes) || !nappes.length) return "";
+    const cityNorm = normalize(city.name);
+    const matches = nappes.filter(n => normalize(n.nom).includes(cityNorm) || cityNorm.includes(normalize(n.nom)));
+
+    // Fallback: dept-level, up to 2 nearby stations
+    const dept = city.deptNum;
+    const fallback = matches.length ? matches : nappes.filter(n => n.dept === dept).slice(0,2);
+
+    if (!fallback.length) {
+        return `<div class="data-card card-unavailable">
+            <div class="card-header"><span class="card-header-icon">🌊</span>
+                <div><div class="card-header-title">Nappes phréatiques</div><div class="card-header-sub">Aucune station piézométrique à proximité</div></div>
+            </div></div>`;
+    }
+
+    const rowsHtml = fallback.slice(0,4).map(n => {
+        const diff = n.current - n.year_ago;
+        const trend = diff > 0.2
+            ? `<span class="trend-up">↑ +${diff.toFixed(2)} m/an</span>`
+            : diff < -0.2
+            ? `<span class="trend-down">↓ ${diff.toFixed(2)} m/an</span>`
+            : `<span class="trend-flat">→ Stable</span>`;
+        return `<div class="nappe-row">
+            <div>
+                <div style="font-size:.85rem;font-weight:700;color:#1e293b">${n.nom}</div>
+                <div style="font-size:.72rem;color:#94a3b8">${n.code_bss}</div>
+            </div>
+            <div style="text-align:right">
+                <div style="font-size:.9rem;font-weight:800;color:#1d4ed8">${n.current} m NGF</div>
+                <div style="font-size:.72rem;margin-top:.1rem">${trend}</div>
+            </div>
+        </div>`;
+    }).join("");
+
+    return `<div class="data-card">
+        <div class="card-header">
+            <span class="card-header-icon">🌊</span>
+            <div>
+                <div class="card-header-title">Nappes phréatiques</div>
+                <div class="card-header-sub">Stations BRGM · Niveau actuel vs il y a un an</div>
+            </div>
+        </div>
+        ${rowsHtml}
+    </div>`;
+}
+
+// ────────────────────────────────────────────────
+// RIVIERES
+// ────────────────────────────────────────────────
+function renderRivieres(city, rivieres) {
+    if (!Array.isArray(rivieres) || !rivieres.length) return "";
+    const cityNorm = normalize(city.name);
+    const matches = rivieres.filter(r => {
+        const comm = normalize(r.commune || r.nom || "");
+        return comm.includes(cityNorm) || cityNorm.includes(comm.split(" ")[0]);
+    });
+
+    const dept = city.deptNum;
+    const fallback = matches.length ? matches : rivieres.filter(r => r.dept === dept).slice(0,2);
+
+    if (!fallback.length) {
+        return `<div class="data-card card-unavailable">
+            <div class="card-header"><span class="card-header-icon">🏞️</span>
+                <div><div class="card-header-title">Rivières & cours d'eau</div><div class="card-header-sub">Aucune station à proximité</div></div>
+            </div></div>`;
+    }
+
+    const rowsHtml = fallback.slice(0,3).map(r => {
+        const paramHtml = Object.entries(r.parametres||{}).slice(0,5).map(([name,p]) =>
+            `<div class="param-pill">
+                <div class="dot" style="background:${p.color}"></div>
+                <span class="name">${name}</span>
+                <span class="val">${p.valeur} <span style="color:#94a3b8;font-weight:400">${p.unite}</span></span>
+             </div>`
+        ).join("");
+        return `<div class="riviere-row">
+            <div style="font-size:.85rem;font-weight:700;color:#1e293b;margin-bottom:.4rem">
+                🏞 ${r.nom_cours_eau ? r.nom_cours_eau.trim() : "Cours d'eau"} · <span style="font-weight:400;color:#64748b;font-size:.78rem">${r.commune ? r.commune.trim() : ""}</span>
+            </div>
+            <div class="param-grid">${paramHtml || '<span style="font-size:.75rem;color:#94a3b8">Pas de paramètres disponibles</span>'}</div>
+        </div>`;
+    }).join("");
+
+    return `<div class="data-card">
+        <div class="card-header">
+            <span class="card-header-icon">🏞️</span>
+            <div>
+                <div class="card-header-title">Rivières & cours d'eau</div>
+                <div class="card-header-sub">Qualité physico-chimique · Hub'Eau</div>
+            </div>
+        </div>
+        ${rowsHtml}
+    </div>`;
+}
+
+// ═══ INIT ═══
 (function() {
-    const params = new URLSearchParams(window.location.search);
-    const q = params.get("q");
+    loadData(); // prefetch
+    const q = new URLSearchParams(window.location.search).get("q");
     if (q) {
         input.value = q;
-        const city = CITIES.find(c => normalize(c.name) === normalize(q));
+        const city = CITIES.find(c => normalize(c.name)===normalize(q));
         if (city) showResults(city);
     }
 })();
