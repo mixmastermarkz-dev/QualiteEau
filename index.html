@@ -866,10 +866,14 @@ function renderAir(city,air){
     }).join("");
 
     const iqaBg=rec.color+"18";
-    // Gradient scale bar: 6 segments
-    const scaleColors=["#10b981","#84cc16","#eab308","#f97316","#ef4444","#7f1d1d"];
-    const scaleLbls=["Bon","Moyen","Dégradé","Mauvais","Très mauvais","Extrêmement\xa0mauvais"];
-    const scalePips=scaleColors.map((cl,i)=>`<span style="background:${cl};${i===rec.indice-1?`outline:2px solid #1e293b;outline-offset:1px;`:""}" title="${scaleLbls[i]}"></span>`).join("");
+    // Échelle IQA : les couleurs sont issues des données Atmo pour rester cohérentes
+    // Le curseur utilise rec.color (même couleur que le chiffre affiché → 0 confusion)
+    const scaleColors=["#10b981","#a3e635","#F0E641","#f97316","#ef4444","#991b1b"];
+    const scaleLbls=["Bon","Moyen","Dégradé","Mauvais","Très mauvais","Extrêmement mauvais"];
+    const segW=100/6;
+    // Position du curseur = centre du segment actif
+    const thumbPct=((rec.indice-1)*segW + segW/2).toFixed(2);
+    const trackSegs=scaleColors.map((cl,i)=>`<div style="flex:1;background:${cl};opacity:${i===rec.indice-1?1:.45}"></div>`).join("");
 
     return`<div class="section-card" style="border-left:4px solid #8b5cf6">
         <div class="card-header" style="background:#faf5ff;border-bottom:1px solid #e9d5ff">
@@ -881,14 +885,23 @@ function renderAir(city,air){
             <span style="font-size:.68rem;color:#94a3b8;font-weight:500;flex-shrink:0">${fmtDate(rec.date)}</span>
         </div>
         <div class="card-body">
-            <div style="display:flex;align-items:center;gap:1.25rem;padding:1rem 1.25rem;border-radius:1rem;margin-bottom:1rem;background:${iqaBg};border:1.5px solid ${rec.color}40">
-                <div style="font-size:3.6rem;font-weight:900;line-height:1;color:${rec.color}">${rec.indice}</div>
-                <div style="flex:1">
+            <div style="display:flex;align-items:center;gap:1.25rem;padding:1rem 1.25rem;border-radius:1rem;margin-bottom:1.25rem;background:${iqaBg};border:1.5px solid ${rec.color}50">
+                <div style="font-size:3.6rem;font-weight:900;line-height:1;color:${rec.color};min-width:2.2rem;text-align:center">${rec.indice}</div>
+                <div style="flex:1;min-width:0">
                     <div style="font-size:1.1rem;font-weight:800;color:${rec.color}">${rec.label}</div>
-                    <div class="iqa-scale-bar" style="margin-top:.6rem">${scalePips}</div>
-                    <div style="display:flex;justify-content:space-between;margin-top:.3rem">
-                        <span style="font-size:.58rem;color:#94a3b8;font-weight:500">Bon</span>
-                        <span style="font-size:.58rem;color:#94a3b8;font-weight:500">Extrêmement mauvais</span>
+                    <!-- Barre + curseur -->
+                    <div style="position:relative;margin-top:.75rem;padding-bottom:14px">
+                        <!-- Track coloré -->
+                        <div style="display:flex;height:10px;border-radius:999px;overflow:hidden;gap:2px">${trackSegs}</div>
+                        <!-- Curseur circulaire positionné sur le segment actif -->
+                        <div style="position:absolute;top:-5px;left:${thumbPct}%;transform:translateX(-50%);
+                             width:20px;height:20px;border-radius:50%;
+                             background:${rec.color};border:3px solid white;
+                             box-shadow:0 2px 8px rgba(0,0,0,.28);z-index:2"></div>
+                        <!-- Étiquettes -->
+                        <div style="display:flex;justify-content:space-between;margin-top:4px">
+                            ${scaleLbls.map(l=>`<span style="font-size:.55rem;color:#94a3b8;font-weight:500;flex:1;text-align:center;line-height:1.2">${l}</span>`).join("")}
+                        </div>
                     </div>
                 </div>
             </div>
