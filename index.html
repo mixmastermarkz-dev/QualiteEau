@@ -191,23 +191,41 @@
         .score-label-sm{font-size:.6rem;color:#94a3b8;font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-top:.15rem}
 
         /* ── PARAMETER BARS ── */
-        .param-row{margin-bottom:.7rem}
+        .params-grid{display:grid;grid-template-columns:1fr 1fr;gap:.55rem 1.25rem}
+        @media(max-width:520px){.params-grid{grid-template-columns:1fr}}
+        .param-row{margin-bottom:0}
         .param-row-top{
             display:flex;
             justify-content:space-between;
             align-items:baseline;
-            margin-bottom:.3rem;
+            margin-bottom:.25rem;
         }
-        .param-row-name{font-size:.73rem;font-weight:500;color:#64748b}
-        .param-row-val{font-size:.85rem;font-weight:800}
+        .param-row-name{font-size:.7rem;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:.03em}
+        .param-row-val{font-size:.92rem;font-weight:900;line-height:1}
+        .param-row-unit{font-size:.65rem;font-weight:400;color:#94a3b8;margin-left:.2rem}
+        .param-row-bottom{display:flex;justify-content:space-between;align-items:center;margin-top:.25rem}
         .param-bar-track{
-            width:100%;
-            height:6px;
+            flex:1;
+            height:5px;
             background:#f1f5f9;
             border-radius:999px;
             overflow:hidden;
+            margin-right:.5rem;
         }
-        .param-bar-fill{height:100%;border-radius:999px;transition:width .8s cubic-bezier(.4,0,.2,1)}
+        .param-bar-fill{height:100%;border-radius:999px;transition:width .9s cubic-bezier(.4,0,.2,1)}
+        .param-date{font-size:.6rem;color:#cbd5e1;font-weight:500;white-space:nowrap;flex-shrink:0}
+
+        /* ── SCORE LAYOUT ── */
+        .score-layout{display:flex;gap:1.5rem;flex-wrap:wrap;align-items:flex-start}
+        .score-right{flex:1;min-width:240px}
+
+        /* ── IQA SCALE BAR ── */
+        .iqa-scale-bar{
+            display:flex;height:6px;border-radius:999px;overflow:hidden;margin-top:.75rem;
+        }
+        .iqa-scale-bar span{flex:1}
+
+        /* ── POLLUTANT CHIPS ── */
 
         /* ── IQA BLOCK ── */
         .iqa-block{
@@ -223,7 +241,7 @@
         .iqa-scale{font-size:.7rem;color:#94a3b8;margin-top:.25rem}
 
         /* ── POLLUTANT CHIPS ── */
-        .pollutant-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem}
+        .pollutant-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(100px,1fr));gap:.5rem}
         .pollutant-chip{
             background:white;
             border:1px solid #e2e8f0;
@@ -691,6 +709,20 @@ function resetSearch(){
 }
 
 // ════════════════════════════════════════════════
+// DATE FORMATTING  →  jj/mm/aaaa
+// ════════════════════════════════════════════════
+function fmtDate(s){
+    if(!s) return "";
+    // ISO: YYYY-MM-DD
+    const iso=s.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+    if(iso) return`${iso[3]}/${iso[2]}/${iso[1]}`;
+    // m/d/yyyy (Atmo format)
+    const mdy=s.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
+    if(mdy) return`${String(mdy[2]).padStart(2,"0")}/${String(mdy[1]).padStart(2,"0")}/${mdy[3]}`;
+    return s;
+}
+
+// ════════════════════════════════════════════════
 // SPARKLINE SVG
 // ════════════════════════════════════════════════
 function sparkline(history,color,w=140,h=36){
@@ -770,24 +802,27 @@ function renderPotable(city,potable){
     const alertBadge=rec.restric&&rec.restric!=="Aucune"&&rec.restric!=="RAS"
         ?`<span class="badge badge-alert" style="margin-left:auto">⚠ ${rec.restric}</span>`:"";
 
-    // param bars (new layout: label+value on top, bar below)
     const bars=Object.entries(rec.parametres||{}).map(([name,p])=>{
         const lim=PARAM_LIMITS[name];
         const raw=parseFloat(p.valeur);
         let pct=0;
         if(lim&&!isNaN(raw)) pct=Math.min(100,Math.round((raw/lim.limit)*100));
-        else pct=p.color==="#10b981"?15:p.color==="#f59e0b"?55:80;
+        else pct=p.color==="#10b981"?12:p.color==="#f59e0b"?55:82;
+        const d=p.date?fmtDate(p.date):"";
         return`<div class="param-row">
             <div class="param-row-top">
                 <span class="param-row-name">${name}</span>
-                <span class="param-row-val" style="color:${p.color}">${p.valeur} <span style="font-weight:400;color:#94a3b8;font-size:.7rem">${p.unite}</span></span>
+                <span class="param-row-val" style="color:${p.color}">${p.valeur}<span class="param-row-unit">${p.unite}</span></span>
             </div>
-            <div class="param-bar-track"><div class="param-bar-fill" style="width:${pct}%;background:${p.color}"></div></div>
+            <div class="param-row-bottom">
+                <div class="param-bar-track"><div class="param-bar-fill" style="width:${pct}%;background:${p.color}"></div></div>
+                ${d?`<span class="param-date">${d}</span>`:""}
+            </div>
         </div>`;
     }).join("");
 
-    return`<div class="section-card" style="border-left:4px solid #0ea5e9;--accent:#0ea5e9">
-        <div class="card-header" style="--accent-bg:#f0f9ff;--accent-border:#bae6fd;background:#f0f9ff;border-bottom:1px solid #bae6fd">
+    return`<div class="section-card" style="border-left:4px solid #0ea5e9">
+        <div class="card-header" style="background:#f0f9ff;border-bottom:1px solid #bae6fd">
             <span class="card-header-icon">🚰</span>
             <div style="flex:1">
                 <div class="card-header-title">Eau potable</div>
@@ -796,14 +831,17 @@ function renderPotable(city,potable){
             ${alertBadge}
         </div>
         <div class="card-body">
-            <div style="display:flex;flex-direction:column;align-items:center;margin-bottom:1rem">
-                ${scoreRing(rec.score,c)}
-                <div style="font-size:.9rem;font-weight:800;color:${c};margin-top:.5rem">${rec.score_label}</div>
+            <div class="score-layout">
+                <div style="display:flex;flex-direction:column;align-items:center;gap:.4rem;flex-shrink:0">
+                    ${scoreRing(rec.score,c)}
+                    <div style="font-size:.82rem;font-weight:800;color:${c};letter-spacing:.01em">${rec.score_label||""}</div>
+                    ${rec.origine?`<div style="font-size:.62rem;color:#cbd5e1;text-align:center;max-width:130px;line-height:1.35">${rec.origine}</div>`:""}
+                </div>
+                <div class="score-right">
+                    ${rec.conclusion?`<div class="conclusion-text" style="margin-bottom:.9rem">${rec.conclusion}</div>`:""}
+                    <div class="params-grid">${bars}</div>
+                </div>
             </div>
-            <div>${bars}</div>
-            ${rec.conclusion?`<div class="conclusion-text" style="margin-top:1rem">${rec.conclusion}</div>`:""}
-            ${rec.origine?`<div style="font-size:.7rem;color:#94a3b8;margin-top:.6rem">Origine de l'eau : ${rec.origine}</div>`:""}
-            <div style="margin-top:1rem"><a href="/eau-potable/${city.slug}/" class="detail-link">Fiche complète & historique →</a></div>
         </div>
     </div>`;
 }
@@ -827,22 +865,31 @@ function renderAir(city,air){
         </div>`;
     }).join("");
 
-    const iqaBg=rec.color+"1a";
+    const iqaBg=rec.color+"18";
+    // Gradient scale bar: 6 segments
+    const scaleColors=["#10b981","#84cc16","#eab308","#f97316","#ef4444","#7f1d1d"];
+    const scaleLbls=["Bon","Moyen","Dégradé","Mauvais","Très mauvais","Extrêmement\xa0mauvais"];
+    const scalePips=scaleColors.map((cl,i)=>`<span style="background:${cl};${i===rec.indice-1?`outline:2px solid #1e293b;outline-offset:1px;`:""}" title="${scaleLbls[i]}"></span>`).join("");
 
     return`<div class="section-card" style="border-left:4px solid #8b5cf6">
         <div class="card-header" style="background:#faf5ff;border-bottom:1px solid #e9d5ff">
             <span class="card-header-icon">💨</span>
-            <div>
+            <div style="flex:1">
                 <div class="card-header-title">Qualité de l'air</div>
-                <div class="card-header-sub">${rec.zone} · ${rec.date} · Atmo Occitanie</div>
+                <div class="card-header-sub">${rec.zone} · Atmo Occitanie</div>
             </div>
+            <span style="font-size:.68rem;color:#94a3b8;font-weight:500;flex-shrink:0">${fmtDate(rec.date)}</span>
         </div>
         <div class="card-body">
-            <div class="iqa-block" style="background:${iqaBg};border:2px solid ${rec.color}">
-                <div class="iqa-number" style="color:${rec.color}">${rec.indice}</div>
-                <div>
-                    <div class="iqa-label" style="color:${rec.color}">${rec.label}</div>
-                    <div class="iqa-scale">Indice sur 6 · 1 = Bon · 6 = Extrêmement mauvais</div>
+            <div style="display:flex;align-items:center;gap:1.25rem;padding:1rem 1.25rem;border-radius:1rem;margin-bottom:1rem;background:${iqaBg};border:1.5px solid ${rec.color}40">
+                <div style="font-size:3.6rem;font-weight:900;line-height:1;color:${rec.color}">${rec.indice}</div>
+                <div style="flex:1">
+                    <div style="font-size:1.1rem;font-weight:800;color:${rec.color}">${rec.label}</div>
+                    <div class="iqa-scale-bar" style="margin-top:.6rem">${scalePips}</div>
+                    <div style="display:flex;justify-content:space-between;margin-top:.3rem">
+                        <span style="font-size:.58rem;color:#94a3b8;font-weight:500">Bon</span>
+                        <span style="font-size:.58rem;color:#94a3b8;font-weight:500">Extrêmement mauvais</span>
+                    </div>
                 </div>
             </div>
             <div class="pollutant-grid">${chips}</div>
@@ -874,8 +921,9 @@ function renderPollen(city,pollen){
             <span class="card-header-icon">🌸</span>
             <div style="flex:1">
                 <div class="card-header-title">Risque pollinique</div>
-                <div class="card-header-sub">${rec.lib_zone} · ${rec.date} · RNSA</div>
+                <div class="card-header-sub">${rec.lib_zone} · RNSA</div>
             </div>
+            <span style="font-size:.68rem;color:#94a3b8;font-weight:500;margin-right:.5rem;flex-shrink:0">${fmtDate(rec.date)}</span>
             ${globalBadge}
         </div>
         <div class="card-body">
@@ -921,7 +969,7 @@ function renderNappes(city,nappes){
             <span class="card-header-icon">🌊</span>
             <div>
                 <div class="card-header-title">Nappes phréatiques</div>
-                <div class="card-header-sub">Piézomètres BRGM · Niveau & tendance sur 12 mois</div>
+                <div class="card-header-sub">Piézomètres BRGM · Niveau actuel vs il y a 12 mois</div>
             </div>
         </div>
         <div class="card-body">
@@ -943,13 +991,18 @@ function renderRivieres(city,rivieres){
     if(!matches.length) return "";
 
     const rows=matches.slice(0,3).map(r=>{
-        const params=Object.entries(r.parametres||{}).slice(0,6).map(([name,p])=>
-            `<span class="river-param"><span class="rdot" style="background:${p.color}"></span>${name} <strong style="color:${p.color}">${p.valeur}</strong> <span style="color:#94a3b8;font-size:.65rem">${p.unite}</span></span>`
-        ).join("");
+        const params=Object.entries(r.parametres||{}).slice(0,6).map(([name,p])=>{
+            const d=p.date?fmtDate(p.date):"";
+            return`<span class="river-param" title="${d?'Mesuré le '+d:''}">
+                <span class="rdot" style="background:${p.color}"></span>
+                ${name}&nbsp;<strong style="color:${p.color}">${p.valeur}</strong>&nbsp;<span style="color:#94a3b8;font-size:.62rem">${p.unite}</span>
+                ${d?`<span style="color:#cbd5e1;font-size:.58rem;margin-left:.2rem">${d}</span>`:""}
+            </span>`;
+        }).join("");
         return`<div style="padding:.75rem 0;border-bottom:1px solid #f1f5f9">
-            <div style="font-size:.82rem;font-weight:700;color:#1e293b;margin-bottom:.4rem">
-                ${r.nom_cours_eau?r.nom_cours_eau.trim():"Cours d'eau"}
-                <span style="font-weight:400;color:#94a3b8;font-size:.72rem;margin-left:.4rem">${r.commune?r.commune.trim():""}</span>
+            <div style="font-size:.82rem;font-weight:700;color:#1e293b;margin-bottom:.45rem;display:flex;align-items:center;gap:.5rem">
+                <span>${r.nom_cours_eau?r.nom_cours_eau.trim():"Cours d'eau"}</span>
+                <span style="font-weight:400;color:#94a3b8;font-size:.7rem">${r.commune?r.commune.trim():""}</span>
             </div>
             <div style="display:flex;flex-wrap:wrap;gap:.35rem">${params||'<span style="font-size:.72rem;color:#94a3b8">Pas de paramètres</span>'}</div>
         </div>`;
