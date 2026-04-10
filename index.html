@@ -25,110 +25,324 @@
 
     <style>
         *{box-sizing:border-box}
-        body{font-family:'Inter',system-ui,sans-serif;background:linear-gradient(150deg,#f0fdf4 0%,#f8faff 60%,#f0f9ff 100%);min-height:100vh}
+
+        /* ── BODY & DOTS PATTERN ── */
+        body{
+            font-family:'Inter',system-ui,sans-serif;
+            background:#f8fafc;
+            min-height:100vh;
+            position:relative;
+        }
+        body::before{
+            content:"";
+            position:fixed;
+            inset:0;
+            background-image:radial-gradient(circle,rgba(148,163,184,0.10) 1px,transparent 1px);
+            background-size:22px 22px;
+            z-index:0;
+            pointer-events:none;
+        }
+        body>*{position:relative;z-index:1}
 
         /* ── SEARCH ── */
         .search-wrap{position:relative;max-width:640px;width:100%}
-        .search-input{width:100%;padding:.95rem 1.2rem .95rem 3.2rem;font-size:1.05rem;font-family:'Inter',sans-serif;border:2px solid #e2e8f0;border-radius:999px;outline:none;background:white;box-shadow:0 4px 24px rgba(0,0,0,.07);transition:border-color .18s,box-shadow .18s;color:#1e293b}
-        .search-input:focus{border-color:#16a34a;box-shadow:0 4px 28px rgba(22,163,74,.18)}
+        .search-input{
+            width:100%;
+            padding:.95rem 1.2rem .95rem 3.2rem;
+            font-size:1.05rem;
+            font-family:'Inter',sans-serif;
+            border:2px solid #e2e8f0;
+            border-radius:999px;
+            outline:none;
+            background:white;
+            box-shadow:0 4px 24px rgba(0,0,0,.06);
+            transition:border-color .18s,box-shadow .18s;
+            color:#1e293b;
+        }
+        .search-input:focus{
+            border-color:#14b8a6;
+            box-shadow:0 4px 28px rgba(20,184,166,.18);
+        }
         .search-icon{position:absolute;left:1.1rem;top:50%;transform:translateY(-50%);color:#94a3b8;pointer-events:none}
-        .search-btn{position:absolute;right:.4rem;top:50%;transform:translateY(-50%);background:linear-gradient(135deg,#16a34a,#059669);color:white;border:none;border-radius:999px;padding:.55rem 1.3rem;font-size:.9rem;font-weight:700;cursor:pointer;transition:opacity .15s}
+        .search-btn{
+            position:absolute;
+            right:.4rem;
+            top:50%;
+            transform:translateY(-50%);
+            background:linear-gradient(135deg,#14b8a6,#0d9488);
+            color:white;
+            border:none;
+            border-radius:999px;
+            padding:.55rem 1.3rem;
+            font-size:.9rem;
+            font-weight:700;
+            cursor:pointer;
+            transition:opacity .15s;
+        }
         .search-btn:hover{opacity:.9}
 
         /* ── AUTOCOMPLETE ── */
-        .autocomplete-list{position:absolute;top:calc(100% + 8px);left:0;right:0;background:white;border:1.5px solid #e2e8f0;border-radius:1.25rem;box-shadow:0 8px 32px rgba(0,0,0,.1);max-height:280px;overflow-y:auto;z-index:200;display:none}
+        .autocomplete-list{
+            position:absolute;
+            top:calc(100% + 8px);
+            left:0;right:0;
+            background:white;
+            border:1.5px solid #e2e8f0;
+            border-radius:1.25rem;
+            box-shadow:0 8px 32px rgba(0,0,0,.1);
+            max-height:280px;
+            overflow-y:auto;
+            z-index:200;
+            display:none;
+        }
         .autocomplete-list.show{display:block}
-        .autocomplete-item{padding:.7rem 1.2rem;cursor:pointer;display:flex;align-items:center;gap:.7rem;font-size:.93rem;color:#1e293b;transition:background .1s}
+        .autocomplete-item{
+            padding:.7rem 1.2rem;
+            cursor:pointer;
+            display:flex;
+            align-items:center;
+            gap:.7rem;
+            font-size:.93rem;
+            color:#1e293b;
+            transition:background .1s;
+        }
         .autocomplete-item:first-child{border-radius:1.25rem 1.25rem 0 0}
         .autocomplete-item:last-child{border-radius:0 0 1.25rem 1.25rem}
-        .autocomplete-item:hover,.autocomplete-item.active{background:#f0fdf4;color:#15803d}
+        .autocomplete-item:hover,.autocomplete-item.active{background:#f0fdfa;color:#0d9488}
         .autocomplete-item .dept{font-size:.72rem;color:#94a3b8;margin-left:auto}
-        .autocomplete-highlight{font-weight:800;color:#16a34a}
+        .autocomplete-highlight{font-weight:800;color:#14b8a6}
         .autocomplete-list::-webkit-scrollbar{width:4px}
         .autocomplete-list::-webkit-scrollbar-thumb{background:#e2e8f0;border-radius:2px}
 
         /* ── POPULAR PILLS ── */
-        .popular-pill{display:inline-flex;align-items:center;gap:.35rem;padding:.38rem .85rem;background:white;border:1.5px solid #e2e8f0;border-radius:999px;font-size:.77rem;font-weight:600;color:#475569;cursor:pointer;transition:all .15s;user-select:none}
-        .popular-pill:hover{background:#f0fdf4;border-color:#86efac;color:#15803d}
+        .popular-pill{
+            display:inline-flex;
+            align-items:center;
+            gap:.35rem;
+            padding:.38rem .85rem;
+            background:white;
+            border:1.5px solid #e2e8f0;
+            border-radius:999px;
+            font-size:.77rem;
+            font-weight:600;
+            color:#475569;
+            cursor:pointer;
+            transition:all .15s;
+            user-select:none;
+        }
+        .popular-pill:hover{background:#f0fdfa;border-color:#99f6e4;color:#0d9488}
 
         /* ── STATS ── */
-        .stat-num{font-size:1.45rem;font-weight:900;color:#15803d}
+        .stat-num{font-size:1.45rem;font-weight:900;color:#14b8a6}
         .stat-lbl{font-size:.68rem;font-weight:600;color:#94a3b8;text-transform:uppercase;letter-spacing:.05em}
 
         /* ── RESULTS ── */
         #results-panel{display:none}
         #results-panel.show{display:block}
 
+        /* ── CARD ENTER ANIMATION ── */
+        @keyframes cardIn{
+            from{opacity:0;transform:translateY(20px)}
+            to{opacity:1;transform:translateY(0)}
+        }
+
         /* ── SECTION CARD ── */
-        .section-card{background:white;border-radius:1.5rem;overflow:hidden;box-shadow:0 2px 16px rgba(0,0,0,.06);margin-bottom:1.25rem;border:1px solid rgba(0,0,0,.04)}
+        .section-card{
+            background:white;
+            border-radius:1.5rem;
+            overflow:hidden;
+            box-shadow:0 1px 3px rgba(0,0,0,.04),0 8px 24px rgba(0,0,0,.06);
+            margin-bottom:1.25rem;
+            animation:cardIn 0.45s cubic-bezier(0.22,1,0.36,1) both;
+            animation-delay:calc(var(--i,0) * 120ms);
+        }
 
-        /* ── CARD HEADER STRIP ── */
-        .card-strip{padding:1rem 1.4rem;display:flex;align-items:center;gap:.75rem}
-        .card-strip-icon{font-size:1.4rem;flex-shrink:0}
-        .card-strip-title{font-size:1rem;font-weight:800;color:white}
-        .card-strip-sub{font-size:.72rem;color:rgba(255,255,255,.75);margin-top:.1rem}
-        .card-body{padding:1.25rem 1.4rem}
+        /* ── CARD HEADER (tinted, no dark strip) ── */
+        .card-header{
+            padding:1rem 1.5rem;
+            display:flex;
+            align-items:center;
+            gap:.75rem;
+            border-bottom:1px solid var(--accent-border,#e2e8f0);
+            background:var(--accent-bg,#f8fafc);
+        }
+        .card-header-icon{font-size:1.6rem;flex-shrink:0}
+        .card-header-title{font-size:1rem;font-weight:800;color:#1e293b}
+        .card-header-sub{font-size:.72rem;color:#94a3b8;margin-top:.1rem}
+        .card-body{padding:1.25rem 1.5rem}
 
-        /* ── SCORE RING ── */
-        .score-svg-wrap{position:relative;width:100px;height:100px;flex-shrink:0}
+        /* ── SCORE RING (150px) ── */
+        .score-svg-wrap{
+            position:relative;
+            width:150px;
+            height:150px;
+            flex-shrink:0;
+        }
         .score-svg-wrap svg{transform:rotate(-90deg)}
-        .score-center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
-        .score-number{font-size:1.6rem;font-weight:900;line-height:1}
-        .score-label-sm{font-size:.6rem;color:#94a3b8;font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-top:.1rem}
+        .score-center{
+            position:absolute;
+            inset:0;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+        }
+        .score-number{font-size:2rem;font-weight:900;line-height:1}
+        .score-label-sm{font-size:.6rem;color:#94a3b8;font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-top:.15rem}
 
-        /* ── PARAM BARS ── */
-        .param-bar-row{display:flex;align-items:center;gap:.6rem;margin-bottom:.55rem}
-        .param-bar-name{font-size:.72rem;font-weight:600;color:#64748b;min-width:90px}
-        .param-bar-track{flex:1;height:7px;background:#f1f5f9;border-radius:999px;overflow:hidden}
+        /* ── PARAMETER BARS ── */
+        .param-row{margin-bottom:.7rem}
+        .param-row-top{
+            display:flex;
+            justify-content:space-between;
+            align-items:baseline;
+            margin-bottom:.3rem;
+        }
+        .param-row-name{font-size:.73rem;font-weight:500;color:#64748b}
+        .param-row-val{font-size:.85rem;font-weight:800}
+        .param-bar-track{
+            width:100%;
+            height:6px;
+            background:#f1f5f9;
+            border-radius:999px;
+            overflow:hidden;
+        }
         .param-bar-fill{height:100%;border-radius:999px;transition:width .8s cubic-bezier(.4,0,.2,1)}
-        .param-bar-val{font-size:.72rem;font-weight:700;color:#1e293b;min-width:80px;text-align:right}
 
         /* ── IQA BLOCK ── */
-        .iqa-block{display:flex;align-items:center;gap:1rem;padding:1rem 1.2rem;border-radius:1rem;margin-bottom:1rem}
-        .iqa-number{font-size:3rem;font-weight:900;line-height:1}
-        .iqa-label{font-size:1.1rem;font-weight:800}
-        .iqa-scale{font-size:.7rem;color:rgba(255,255,255,.7);margin-top:.2rem}
+        .iqa-block{
+            display:flex;
+            align-items:center;
+            gap:1.25rem;
+            padding:1.1rem 1.4rem;
+            border-radius:1rem;
+            margin-bottom:1rem;
+        }
+        .iqa-number{font-size:3.5rem;font-weight:900;line-height:1}
+        .iqa-label{font-size:1.15rem;font-weight:800}
+        .iqa-scale{font-size:.7rem;color:#94a3b8;margin-top:.25rem}
 
         /* ── POLLUTANT CHIPS ── */
-        .pollutant-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:.5rem}
-        .pollutant-chip{background:#f8fafc;border:1px solid #e2e8f0;border-radius:.9rem;padding:.65rem .8rem;display:flex;flex-direction:column;gap:.25rem}
-        .pollutant-chip .p-name{font-size:.68rem;font-weight:700;color:#64748b;text-transform:uppercase;letter-spacing:.04em}
-        .pollutant-chip .p-label{font-size:.82rem;font-weight:800}
-        .pollutant-chip .p-bar-track{height:4px;background:#e2e8f0;border-radius:999px;overflow:hidden;margin-top:.1rem}
+        .pollutant-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem}
+        .pollutant-chip{
+            background:white;
+            border:1px solid #e2e8f0;
+            border-radius:.9rem;
+            padding:.65rem .8rem;
+            display:flex;
+            flex-direction:column;
+            gap:.25rem;
+        }
+        .pollutant-chip .p-name{font-size:.68rem;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.04em}
+        .pollutant-chip .p-label{font-size:.85rem;font-weight:800}
+        .pollutant-chip .p-bar-track{height:4px;background:#e2e8f0;border-radius:999px;overflow:hidden;margin-top:.15rem}
         .pollutant-chip .p-bar-fill{height:100%;border-radius:999px}
 
-        /* ── POLLEN GRID ── */
-        .pollen-pill{display:inline-flex;align-items:center;gap:.45rem;padding:.4rem .85rem;border-radius:.75rem;font-size:.75rem;font-weight:600;background:#f8fafc;border:1px solid #e2e8f0}
+        /* ── POLLEN PILLS ── */
+        .pollen-pill{
+            display:inline-flex;
+            align-items:center;
+            gap:.45rem;
+            padding:.4rem .85rem;
+            border-radius:.75rem;
+            font-size:.75rem;
+            font-weight:600;
+            background:#f8fafc;
+            border:1px solid #e2e8f0;
+        }
         .pollen-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0}
 
-        /* ── SPARKLINE ── */
-        .sparkline-wrap{background:#f8fafc;border-radius:.75rem;padding:.5rem .75rem .25rem;overflow:hidden}
-        .sparkline-label{font-size:.68rem;font-weight:700;color:#1e293b}
-        .sparkline-val{font-size:1rem;font-weight:900}
-        .sparkline-trend{font-size:.68rem;font-weight:700;margin-top:.1rem}
+        /* ── STATION ROW ── */
+        .station-row{
+            display:flex;
+            align-items:center;
+            gap:.85rem;
+            padding:.75rem 0;
+            border-bottom:1px solid #f1f5f9;
+        }
+        .station-row:last-child{border-bottom:none}
 
-        /* ── MAP ── */
-        .env-map{height:240px;border-radius:1rem;width:100%;z-index:1}
+        /* ── BADGE TREND ── */
+        .badge-trend{
+            display:inline-flex;
+            align-items:center;
+            gap:.2rem;
+            padding:.2rem .6rem;
+            border-radius:999px;
+            font-size:.68rem;
+            font-weight:700;
+            white-space:nowrap;
+        }
+        .badge-trend-up{background:#dcfce7;color:#15803d}
+        .badge-trend-down{background:#fee2e2;color:#b91c1c}
+        .badge-trend-flat{background:#f1f5f9;color:#64748b}
 
-        /* ── DETAIL LINK ── */
-        .detail-link{display:inline-flex;align-items:center;gap:.3rem;font-size:.75rem;font-weight:700;color:#16a34a;text-decoration:none;padding:.3rem .7rem;border-radius:999px;border:1.5px solid #bbf7d0;transition:all .15s}
-        .detail-link:hover{background:#f0fdf4}
-
-        /* ── UNAVAILABLE ── */
-        .card-unavailable{opacity:.45}
-
-        /* ── BADGE ── */
-        .badge{display:inline-flex;align-items:center;gap:.3rem;padding:.22rem .65rem;border-radius:999px;font-size:.68rem;font-weight:700}
+        /* ── BADGE GLOBAL ── */
+        .badge{
+            display:inline-flex;
+            align-items:center;
+            gap:.3rem;
+            padding:.22rem .65rem;
+            border-radius:999px;
+            font-size:.68rem;
+            font-weight:700;
+        }
         .badge-alert{background:#fef9c3;color:#92400e}
         .badge-ok{background:#dcfce7;color:#15803d}
         .badge-info{background:#dbeafe;color:#1d4ed8}
 
+        /* ── MAP ── */
+        .env-map{
+            height:260px;
+            border-radius:1rem;
+            width:100%;
+            z-index:1;
+            margin-top:1rem;
+        }
+
+        /* ── SPARKLINE ── */
+        .sparkline-wrap{overflow:hidden}
+
         /* ── RIVER PARAM DOT ── */
-        .river-param{display:inline-flex;align-items:center;gap:.3rem;font-size:.73rem;padding:.25rem .6rem;border-radius:.5rem;background:#f8fafc;border:1px solid #e2e8f0;font-weight:500}
+        .river-param{
+            display:inline-flex;
+            align-items:center;
+            gap:.3rem;
+            font-size:.73rem;
+            padding:.25rem .6rem;
+            border-radius:.5rem;
+            background:#f8fafc;
+            border:1px solid #e2e8f0;
+            font-weight:500;
+        }
         .river-param .rdot{width:8px;height:8px;border-radius:50%}
 
         /* ── CONCLUSION ── */
-        .conclusion-text{font-size:.75rem;color:#475569;line-height:1.55;background:#f8fafc;border-left:3px solid #86efac;padding:.6rem .9rem;border-radius:0 .5rem .5rem 0}
+        .conclusion-text{
+            font-size:.75rem;
+            color:#475569;
+            line-height:1.55;
+            background:#f8fafc;
+            border-left:3px solid #99f6e4;
+            padding:.6rem .9rem;
+            border-radius:0 .5rem .5rem 0;
+        }
+
+        /* ── DETAIL LINK ── */
+        .detail-link{
+            display:inline-flex;
+            align-items:center;
+            gap:.3rem;
+            font-size:.75rem;
+            font-weight:700;
+            color:#14b8a6;
+            text-decoration:none;
+            padding:.3rem .7rem;
+            border-radius:999px;
+            border:1.5px solid #99f6e4;
+            transition:all .15s;
+        }
+        .detail-link:hover{background:#f0fdfa}
 
         /* leaflet popup */
         .leaflet-popup-content{font-family:'Inter',sans-serif;font-size:.8rem;min-width:140px}
@@ -136,25 +350,25 @@
 </head>
 <body>
 
-<header class="w-full px-6 py-4 flex items-center justify-end">
+<header class="w-full px-6 py-4 flex items-center justify-end" style="position:relative;z-index:1">
     <nav class="flex items-center gap-4">
         <a href="/contact.html" class="text-xs text-slate-500 hover:text-slate-800 transition-colors font-600">Contact</a>
         <a href="/mentions-legales.html" class="text-xs text-slate-500 hover:text-slate-800 transition-colors font-600">Mentions légales</a>
     </nav>
 </header>
 
-<main class="px-4">
+<main class="px-4" style="position:relative;z-index:1">
 
 <!-- ═══ HERO ═══ -->
 <section id="hero-section" class="flex flex-col items-center justify-center pt-8 pb-12 transition-all duration-400">
 
     <!-- Logo -->
     <div class="flex flex-col items-center mb-9">
-        <div style="font-size:3rem;line-height:1;filter:drop-shadow(0 4px 8px rgba(22,163,74,.25))" class="mb-3">🌿</div>
-        <div style="font-size:2.25rem;font-weight:900;letter-spacing:-.035em" class="text-slate-800">
-            Mon-Environnement<span style="color:#16a34a">.fr</span>
+        <div style="font-size:3rem;line-height:1;filter:drop-shadow(0 4px 8px rgba(20,184,166,.28))" class="mb-3">🌿</div>
+        <div style="font-size:2.25rem;font-weight:900;letter-spacing:-.035em;color:#1e293b">
+            Mon-Environnement<span style="color:#14b8a6">.fr</span>
         </div>
-        <div class="text-xs font-500 text-slate-400 mt-2 tracking-widest uppercase">Air · Eau · Nappes · Rivières · Pollen</div>
+        <div style="font-size:.7rem;font-weight:500;color:#94a3b8;margin-top:.5rem;text-transform:uppercase;letter-spacing:.14em">Air · Eau · Nappes · Rivières · Pollen</div>
     </div>
 
     <!-- Search bar -->
@@ -215,13 +429,14 @@
 </section>
 </main>
 
-<footer class="border-t border-slate-100 bg-white/50 py-5 px-6 text-center text-xs text-slate-400">
-    <div class="flex flex-wrap justify-center gap-x-5 gap-y-1 mb-1">
-        <a href="/mentions-legales.html" class="hover:text-slate-600 transition-colors">Mentions légales</a>
-        <a href="/politique-confidentialite.html" class="hover:text-slate-600 transition-colors">Confidentialité</a>
-        <a href="/contact.html" class="hover:text-slate-600 transition-colors">Contact</a>
-    </div>
-    <p>© 2026 Mon-Environnement.fr — Sources : ARS · Atmo Occitanie · Hub'Eau · BRGM · RNSA</p>
+<footer style="position:relative;z-index:1;border-top:1px solid #f1f5f9;padding:1.5rem 1rem;text-align:center">
+    <p style="font-size:.75rem;color:#94a3b8">
+        © 2026 Mon-Environnement.fr
+        · <a href="/mentions-legales.html" style="color:#94a3b8;text-decoration:none" class="hover:text-slate-600">Mentions légales</a>
+        · <a href="/politique-confidentialite.html" style="color:#94a3b8;text-decoration:none" class="hover:text-slate-600">Confidentialité</a>
+        · <a href="/contact.html" style="color:#94a3b8;text-decoration:none" class="hover:text-slate-600">Contact</a>
+        · Sources : ARS · Atmo · Hub'Eau · BRGM
+    </p>
 </footer>
 
 <script>
@@ -454,8 +669,13 @@ function showResults(city){
         document.getElementById("loading-state").style.display="none";
         if(d.updated)document.getElementById("result-updated").textContent="Mis à jour le "+d.updated;
         document.getElementById("data-sections").innerHTML=renderAll(city,d);
-        // init maps after DOM is set
-        requestAnimationFrame(()=>{initMaps(city,d);});
+        // stagger card animations via --i CSS variable
+        requestAnimationFrame(()=>{
+            document.querySelectorAll("#data-sections .section-card").forEach((el,i)=>{
+                el.style.setProperty("--i",i);
+            });
+            initMaps(city,d);
+        });
     }).catch(()=>{document.getElementById("loading-state").innerHTML='<p class="text-red-400 text-sm">❌ Erreur de chargement.</p>';});
 }
 function resetSearch(){
@@ -492,19 +712,34 @@ function sparkline(history,color,w=140,h=36){
 }
 
 // ════════════════════════════════════════════════
-// SCORE RING SVG
+// SCORE RING SVG — 150px, animated counter
 // ════════════════════════════════════════════════
 function scoreRing(score,color){
-    const r=40,circ=2*Math.PI*r,dash=circ*(score/100),gap=circ-dash;
+    const r=60,circ=2*Math.PI*r,dash=circ*(score/100),gap=circ-dash;
+    const uid="sr"+(Math.random()*1e6|0);
+    // Counter animation via setTimeout after render
+    setTimeout(()=>{
+        const el=document.getElementById(uid);
+        if(!el) return;
+        const start=performance.now(),dur=900;
+        function step(now){
+            const t=Math.min(1,(now-start)/dur);
+            // ease-out-cubic
+            const e=1-Math.pow(1-t,3);
+            el.textContent=Math.round(e*score);
+            if(t<1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+    },50);
     return`<div class="score-svg-wrap">
-        <svg width="100" height="100" viewBox="0 0 100 100">
-            <circle cx="50" cy="50" r="${r}" fill="none" stroke="#f1f5f9" stroke-width="9"/>
-            <circle cx="50" cy="50" r="${r}" fill="none" stroke="${color}" stroke-width="9"
+        <svg width="150" height="150" viewBox="0 0 150 150">
+            <circle cx="75" cy="75" r="${r}" fill="none" stroke="#f1f5f9" stroke-width="10"/>
+            <circle cx="75" cy="75" r="${r}" fill="none" stroke="${color}" stroke-width="10"
                 stroke-dasharray="${dash} ${gap}" stroke-linecap="round"
-                style="transition:stroke-dasharray 1s cubic-bezier(.4,0,.2,1)"/>
+                style="transition:stroke-dasharray 1.2s cubic-bezier(.4,0,.2,1)"/>
         </svg>
         <div class="score-center">
-            <div class="score-number" style="color:${color}">${score}</div>
+            <div class="score-number" style="color:${color}"><span id="${uid}">0</span></div>
             <div class="score-label-sm">/ 100</div>
         </div>
     </div>`;
@@ -520,66 +755,62 @@ function renderAll(city,d){
         renderPollen(city,d.pollen),
         renderNappes(city,d.nappes),
         renderRivieres(city,d.rivieres),
-    ].join("");
+    ].filter(Boolean).join("");
 }
 
 // ────────────────────────────────────────────────
 // EAU POTABLE
+// accent: #0ea5e9
 // ────────────────────────────────────────────────
 function renderPotable(city,potable){
     const rec=potable.find(p=>norm(p.nom)===norm(city.name));
-    if(!rec) return `<div class="section-card card-unavailable">
-        <div class="card-strip" style="background:#94a3b8">
-            <span class="card-strip-icon">🚰</span>
-            <div><div class="card-strip-title">Eau potable</div><div class="card-strip-sub">Aucune donnée disponible</div></div>
-        </div></div>`;
+    if(!rec) return "";
 
-    const c=rec.score_color||"#10b981";
+    const c=rec.score_color||"#0ea5e9";
     const alertBadge=rec.restric&&rec.restric!=="Aucune"&&rec.restric!=="RAS"
-        ?`<span class="badge badge-alert ml-auto">⚠ ${rec.restric}</span>`:"";
+        ?`<span class="badge badge-alert" style="margin-left:auto">⚠ ${rec.restric}</span>`:"";
 
-    // param bars
+    // param bars (new layout: label+value on top, bar below)
     const bars=Object.entries(rec.parametres||{}).map(([name,p])=>{
         const lim=PARAM_LIMITS[name];
         const raw=parseFloat(p.valeur);
         let pct=0;
         if(lim&&!isNaN(raw)) pct=Math.min(100,Math.round((raw/lim.limit)*100));
         else pct=p.color==="#10b981"?15:p.color==="#f59e0b"?55:80;
-        return`<div class="param-bar-row">
-            <div class="param-bar-name">${name}</div>
+        return`<div class="param-row">
+            <div class="param-row-top">
+                <span class="param-row-name">${name}</span>
+                <span class="param-row-val" style="color:${p.color}">${p.valeur} <span style="font-weight:400;color:#94a3b8;font-size:.7rem">${p.unite}</span></span>
+            </div>
             <div class="param-bar-track"><div class="param-bar-fill" style="width:${pct}%;background:${p.color}"></div></div>
-            <div class="param-bar-val" style="color:${p.color}">${p.valeur} <span style="font-weight:400;color:#94a3b8;font-size:.66rem">${p.unite}</span></div>
         </div>`;
     }).join("");
 
-    return`<div class="section-card">
-        <div class="card-strip" style="background:linear-gradient(135deg,#064e3b,#065f46)">
-            <span class="card-strip-icon">🚰</span>
+    return`<div class="section-card" style="border-left:4px solid #0ea5e9;--accent:#0ea5e9">
+        <div class="card-header" style="--accent-bg:#f0f9ff;--accent-border:#bae6fd;background:#f0f9ff;border-bottom:1px solid #bae6fd">
+            <span class="card-header-icon">🚰</span>
             <div style="flex:1">
-                <div class="card-strip-title">Eau potable</div>
-                <div class="card-strip-sub">ARS · Hub'Eau · Données officielles</div>
+                <div class="card-header-title">Eau potable</div>
+                <div class="card-header-sub">ARS · Hub'Eau · Données officielles</div>
             </div>
             ${alertBadge}
         </div>
         <div class="card-body">
-            <div class="flex gap-5 items-start flex-wrap">
-                <div class="flex flex-col items-center gap-1">
-                    ${scoreRing(rec.score,c)}
-                    <div style="font-size:.8rem;font-weight:800;color:${c};margin-top:.15rem">${rec.score_label}</div>
-                </div>
-                <div style="flex:1;min-width:220px">
-                    ${bars}
-                </div>
+            <div style="display:flex;flex-direction:column;align-items:center;margin-bottom:1rem">
+                ${scoreRing(rec.score,c)}
+                <div style="font-size:.9rem;font-weight:800;color:${c};margin-top:.5rem">${rec.score_label}</div>
             </div>
-            ${rec.conclusion?`<div class="conclusion-text mt-4">${rec.conclusion}</div>`:""}
+            <div>${bars}</div>
+            ${rec.conclusion?`<div class="conclusion-text" style="margin-top:1rem">${rec.conclusion}</div>`:""}
             ${rec.origine?`<div style="font-size:.7rem;color:#94a3b8;margin-top:.6rem">Origine de l'eau : ${rec.origine}</div>`:""}
-            <div class="mt-4"><a href="/eau-potable/${city.slug}/" class="detail-link">Fiche complète & historique →</a></div>
+            <div style="margin-top:1rem"><a href="/eau-potable/${city.slug}/" class="detail-link">Fiche complète & historique →</a></div>
         </div>
     </div>`;
 }
 
 // ────────────────────────────────────────────────
 // QUALITE DE L'AIR
+// accent: #8b5cf6
 // ────────────────────────────────────────────────
 function renderAir(city,air){
     if(!Array.isArray(air)||!air.length) return "";
@@ -596,23 +827,22 @@ function renderAir(city,air){
         </div>`;
     }).join("");
 
-    const iqaBg=rec.color+"22",iqaBorder=rec.color;
-    const darkLabel=rec.indice<=2?"#065f46":rec.indice<=3?"#78350f":"#7f1d1d";
+    const iqaBg=rec.color+"1a";
 
-    return`<div class="section-card">
-        <div class="card-strip" style="background:linear-gradient(135deg,#0c4a6e,#075985)">
-            <span class="card-strip-icon">💨</span>
+    return`<div class="section-card" style="border-left:4px solid #8b5cf6">
+        <div class="card-header" style="background:#faf5ff;border-bottom:1px solid #e9d5ff">
+            <span class="card-header-icon">💨</span>
             <div>
-                <div class="card-strip-title">Qualité de l'air</div>
-                <div class="card-strip-sub">${rec.zone} · ${rec.date} · Atmo Occitanie</div>
+                <div class="card-header-title">Qualité de l'air</div>
+                <div class="card-header-sub">${rec.zone} · ${rec.date} · Atmo Occitanie</div>
             </div>
         </div>
         <div class="card-body">
-            <div class="flex items-center gap-4 mb-4 p-4 rounded-xl" style="background:${iqaBg};border:2px solid ${iqaBorder}">
-                <div style="font-size:3.2rem;font-weight:900;color:${rec.color};line-height:1">${rec.indice}</div>
+            <div class="iqa-block" style="background:${iqaBg};border:2px solid ${rec.color}">
+                <div class="iqa-number" style="color:${rec.color}">${rec.indice}</div>
                 <div>
-                    <div style="font-size:1.2rem;font-weight:800;color:${darkLabel}">${rec.label}</div>
-                    <div style="font-size:.72rem;color:#64748b;margin-top:.2rem">Indice sur 6 · 1 = Bon · 6 = Extrêmement mauvais</div>
+                    <div class="iqa-label" style="color:${rec.color}">${rec.label}</div>
+                    <div class="iqa-scale">Indice sur 6 · 1 = Bon · 6 = Extrêmement mauvais</div>
                 </div>
             </div>
             <div class="pollutant-grid">${chips}</div>
@@ -622,6 +852,7 @@ function renderAir(city,air){
 
 // ────────────────────────────────────────────────
 // POLLEN
+// accent: #f59e0b
 // ────────────────────────────────────────────────
 function renderPollen(city,pollen){
     if(!Array.isArray(pollen)||!pollen.length) return "";
@@ -630,28 +861,32 @@ function renderPollen(city,pollen){
 
     const pills=Object.entries(rec.taxa||{}).map(([name,t])=>`
         <div class="pollen-pill">
-            <div class="pollen-dot" style="background:${t.color}"></div>
+            <div class="pollen-dot" style="background:${t.color||'#94a3b8'}"></div>
             <span style="color:#475569">${name}</span>
-            <span style="font-weight:800;color:${t.color}">${t.label}</span>
+            <span style="font-weight:800;color:${t.color||'#94a3b8'}">${t.label}</span>
         </div>`).join("");
 
-    return`<div class="section-card">
-        <div class="card-strip" style="background:linear-gradient(135deg,#4a1d96,#5b21b6)">
-            <span class="card-strip-icon">🌸</span>
+    const globalBadge=rec.label_global
+        ?`<span class="badge" style="margin-left:auto;background:${rec.color_global}22;color:${rec.color_global};border:1px solid ${rec.color_global}55">${rec.label_global}</span>`:"";
+
+    return`<div class="section-card" style="border-left:4px solid #f59e0b">
+        <div class="card-header" style="background:#fffbeb;border-bottom:1px solid #fde68a">
+            <span class="card-header-icon">🌸</span>
             <div style="flex:1">
-                <div class="card-strip-title">Risque pollinique</div>
-                <div class="card-strip-sub">${rec.lib_zone} · ${rec.date} · RNSA</div>
+                <div class="card-header-title">Risque pollinique</div>
+                <div class="card-header-sub">${rec.lib_zone} · ${rec.date} · RNSA</div>
             </div>
-            <span class="badge ml-auto" style="background:${rec.color_global}33;color:white;border:1px solid ${rec.color_global}">${rec.label_global}</span>
+            ${globalBadge}
         </div>
         <div class="card-body">
-            <div class="flex flex-wrap gap-2">${pills}</div>
+            <div style="display:flex;flex-wrap:wrap;gap:.5rem">${pills}</div>
         </div>
     </div>`;
 }
 
 // ────────────────────────────────────────────────
 // NAPPES PHREATIQUES
+// accent: #3b82f6
 // ────────────────────────────────────────────────
 function renderNappes(city,nappes){
     if(!Array.isArray(nappes)||!nappes.length) return "";
@@ -662,41 +897,43 @@ function renderNappes(city,nappes){
 
     const stations=matches.slice(0,4).map(n=>{
         const diff=+(n.current-n.year_ago).toFixed(2);
-        const trendColor=diff>0.2?"#16a34a":diff<-0.2?"#ef4444":"#94a3b8";
-        const trendArrow=diff>0.2?"↑":diff<-0.2?"↓":"→";
-        const trendTxt=diff>0.2?`+${diff} m/an`:diff<-0.2?`${diff} m/an`:"Stable";
-        return`<div style="display:flex;align-items:center;gap:.75rem;padding:.7rem 0;border-bottom:1px solid #f1f5f9">
-            <div style="flex:1">
-                <div style="font-size:.82rem;font-weight:700;color:#1e293b">${n.nom}</div>
+        const isUp=diff>0.2,isDown=diff<-0.2;
+        const trendBadge=isUp
+            ?`<span class="badge-trend badge-trend-up">↑ En hausse</span>`
+            :isDown
+            ?`<span class="badge-trend badge-trend-down">↓ En baisse</span>`
+            :`<span class="badge-trend badge-trend-flat">→ Stable</span>`;
+        return`<div class="station-row">
+            <div style="flex:1;min-width:0">
+                <div style="font-size:.82rem;font-weight:700;color:#1e293b;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${n.nom}</div>
                 <div style="font-size:.68rem;color:#94a3b8;margin-top:.1rem">${n.code_bss}</div>
-                <div style="margin-top:.4rem">${sparkline(n.history,n.color||"#3b82f6")}</div>
             </div>
-            <div style="text-align:right;min-width:90px">
-                <div style="font-size:1rem;font-weight:900;color:#1d4ed8">${n.current} <span style="font-size:.65rem;font-weight:400;color:#94a3b8">m NGF</span></div>
-                <div style="font-size:.72rem;font-weight:700;color:${trendColor};margin-top:.2rem">${trendArrow} ${trendTxt}</div>
+            <div class="sparkline-wrap" style="flex-shrink:0">${sparkline(n.history,n.color||"#3b82f6")}</div>
+            <div style="text-align:right;min-width:80px;flex-shrink:0">
+                <div style="font-size:1rem;font-weight:900;color:#3b82f6">${n.current} <span style="font-size:.65rem;font-weight:400;color:#94a3b8">m NGF</span></div>
+                <div style="margin-top:.3rem">${trendBadge}</div>
             </div>
         </div>`;
     }).join("");
 
-    return`<div class="section-card">
-        <div class="card-strip" style="background:linear-gradient(135deg,#1e3a5f,#1e40af)">
-            <span class="card-strip-icon">🌊</span>
+    return`<div class="section-card" style="border-left:4px solid #3b82f6">
+        <div class="card-header" style="background:#eff6ff;border-bottom:1px solid #bfdbfe">
+            <span class="card-header-icon">🌊</span>
             <div>
-                <div class="card-strip-title">Nappes phréatiques</div>
-                <div class="card-strip-sub">Piézomètres BRGM · Niveau & tendance sur 12 mois</div>
+                <div class="card-header-title">Nappes phréatiques</div>
+                <div class="card-header-sub">Piézomètres BRGM · Niveau & tendance sur 12 mois</div>
             </div>
         </div>
         <div class="card-body">
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.25rem" class="sm:grid-cols-2">
-                <div>${stations}</div>
-                <div><div id="map-nappes" class="env-map"></div></div>
-            </div>
+            <div>${stations}</div>
+            <div id="map-nappes" class="env-map"></div>
         </div>
     </div>`;
 }
 
 // ────────────────────────────────────────────────
 // RIVIERES
+// accent: #22c55e
 // ────────────────────────────────────────────────
 function renderRivieres(city,rivieres){
     if(!Array.isArray(rivieres)||!rivieres.length) return "";
@@ -718,19 +955,17 @@ function renderRivieres(city,rivieres){
         </div>`;
     }).join("");
 
-    return`<div class="section-card">
-        <div class="card-strip" style="background:linear-gradient(135deg,#14532d,#166534)">
-            <span class="card-strip-icon">🏞️</span>
+    return`<div class="section-card" style="border-left:4px solid #22c55e">
+        <div class="card-header" style="background:#f0fdf4;border-bottom:1px solid #bbf7d0">
+            <span class="card-header-icon">🏞️</span>
             <div>
-                <div class="card-strip-title">Rivières & cours d'eau</div>
-                <div class="card-strip-sub">Qualité physico-chimique · Hub'Eau</div>
+                <div class="card-header-title">Rivières & cours d'eau</div>
+                <div class="card-header-sub">Qualité physico-chimique · Hub'Eau</div>
             </div>
         </div>
         <div class="card-body">
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.25rem">
-                <div>${rows}</div>
-                <div><div id="map-rivieres" class="env-map"></div></div>
-            </div>
+            <div>${rows}</div>
+            <div id="map-rivieres" class="env-map"></div>
         </div>
     </div>`;
 }
@@ -755,8 +990,8 @@ function makeMap(id){
 
 function circleMarker(color){
     return L.divIcon({
-        html:`<div style="width:14px;height:14px;border-radius:50%;background:${color};border:2.5px solid white;box-shadow:0 1px 6px rgba(0,0,0,.25)"></div>`,
-        iconSize:[14,14],iconAnchor:[7,7],className:""
+        html:`<div style="width:16px;height:16px;border-radius:50%;background:${color};border:3px solid white;box-shadow:0 2px 8px rgba(0,0,0,.28)"></div>`,
+        iconSize:[16,16],iconAnchor:[8,8],className:""
     });
 }
 
@@ -791,7 +1026,7 @@ function initRivieresMap(city,rivieres){
         const lat=r.lat,lng=r.lon;
         if(!lat||!lng) return;
         const firstParam=Object.entries(r.parametres||{})[0];
-        const color=firstParam?firstParam[1].color:"#16a34a";
+        const color=firstParam?firstParam[1].color:"#22c55e";
         const nom=(r.nom_cours_eau||"").trim();
         const commune=(r.commune||"").trim();
         L.marker([lat,lng],{icon:circleMarker(color)})
