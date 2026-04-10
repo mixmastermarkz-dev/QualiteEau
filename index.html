@@ -866,14 +866,8 @@ function renderAir(city,air){
     }).join("");
 
     const iqaBg=rec.color+"18";
-    // Échelle IQA : les couleurs sont issues des données Atmo pour rester cohérentes
-    // Le curseur utilise rec.color (même couleur que le chiffre affiché → 0 confusion)
-    const scaleColors=["#10b981","#a3e635","#F0E641","#f97316","#ef4444","#991b1b"];
-    const scaleLbls=["Bon","Moyen","Dégradé","Mauvais","Très mauvais","Extrêmement mauvais"];
-    const segW=100/6;
-    // Position du curseur = centre du segment actif
-    const thumbPct=((rec.indice-1)*segW + segW/2).toFixed(2);
-    const trackSegs=scaleColors.map((cl,i)=>`<div style="flex:1;background:${cl};opacity:${i===rec.indice-1?1:.45}"></div>`).join("");
+    // Position du curseur sur échelle 1-6 (en %)
+    const thumbPct=((rec.indice-1)*(100/5)).toFixed(2);
 
     return`<div class="section-card" style="border-left:4px solid #8b5cf6">
         <div class="card-header" style="background:#faf5ff;border-bottom:1px solid #e9d5ff">
@@ -889,22 +883,25 @@ function renderAir(city,air){
                 <div style="font-size:3.6rem;font-weight:900;line-height:1;color:${rec.color};min-width:2.2rem;text-align:center">${rec.indice}</div>
                 <div style="flex:1;min-width:0">
                     <div style="font-size:1.1rem;font-weight:800;color:${rec.color}">${rec.label}</div>
-                    <!-- Barre + curseur -->
-                    <div style="position:relative;margin-top:.75rem;padding-bottom:14px">
-                        <!-- Track coloré -->
-                        <div style="display:flex;height:10px;border-radius:999px;overflow:hidden;gap:2px">${trackSegs}</div>
-                        <!-- Curseur circulaire positionné sur le segment actif -->
+                    <!-- Échelle dégradée continue + curseur -->
+                    <div style="position:relative;margin-top:.85rem;padding-bottom:18px">
+                        <!-- Track gradient vert → rouge, neutre et sans ambiguïté -->
+                        <div style="height:10px;border-radius:999px;background:linear-gradient(to right,#10b981,#a3e635,#fde047,#f97316,#ef4444,#991b1b)"></div>
+                        <!-- Curseur : même couleur que le chiffre, positionné précisément -->
                         <div style="position:absolute;top:-5px;left:${thumbPct}%;transform:translateX(-50%);
                              width:20px;height:20px;border-radius:50%;
                              background:${rec.color};border:3px solid white;
-                             box-shadow:0 2px 8px rgba(0,0,0,.28);z-index:2"></div>
-                        <!-- Étiquettes -->
-                        <div style="display:flex;justify-content:space-between;margin-top:4px">
-                            ${scaleLbls.map(l=>`<span style="font-size:.55rem;color:#94a3b8;font-weight:500;flex:1;text-align:center;line-height:1.2">${l}</span>`).join("")}
+                             box-shadow:0 2px 10px rgba(0,0,0,.3);z-index:2"></div>
+                        <!-- Étiquettes extrêmes uniquement -->
+                        <div style="display:flex;justify-content:space-between;margin-top:5px">
+                            <span style="font-size:.6rem;color:#94a3b8;font-weight:500">← Bon</span>
+                            <span style="font-size:.6rem;color:#94a3b8;font-weight:500">Extrêmement mauvais →</span>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Polluants : chaque chip a sa propre couleur de niveau, indépendante de l'IQA global -->
+            <div style="font-size:.68rem;color:#94a3b8;font-weight:500;margin-bottom:.6rem;text-transform:uppercase;letter-spacing:.05em">Détail par polluant</div>
             <div class="pollutant-grid">${chips}</div>
         </div>
     </div>`;
