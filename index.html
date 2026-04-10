@@ -622,6 +622,10 @@ const IQA_RANGES={
              seuil:"UE : 125 µg/m³/24h · 350 µg/m³/h · Alerte : 500 µg/m³/h"},
 };
 
+// Couleurs officielles ATMO (échelle européenne EAQI)
+// 1=Bon(cyan) 2=Moyen(vert) 3=Dégradé(jaune) 4=Mauvais(rouge) 5=Très mauvais(pourpre) 6=Extrêmement mauvais(violet)
+const ATMO_COLS=["#50f0e6","#50ccaa","#f0e641","#ff5050","#960032","#7d2181"];
+
 // Effets sanitaires par niveau IQA
 const IQA_HEALTH=[
     {l:1, lab:"Bon",               eff:"Aucun impact sanitaire notable"},
@@ -898,20 +902,23 @@ function renderAir(city,air){
     const thumbPct=((rec.indice-1)*(100/5)).toFixed(2);
     const healthRow=IQA_HEALTH.find(h=>h.l===rec.indice);
 
-    // Chips polluants enrichis : indice X/6 + plage µg/m³ + seuil
+    // Chips polluants enrichis : indice X/6 + plage µg/m³ + mini-échelle ATMO
     const chips=Object.entries(rec.polluants||{}).map(([name,p])=>{
-        const w=IQA_WIDTH[p.indice]||10;
         const meta=IQA_RANGES[name];
         const range=meta?meta.r[p.indice-1]+" "+meta.unit:"";
+        const miniScale=ATMO_COLS.map((c,i)=>{
+            const active=p.indice===i+1;
+            return`<div style="flex:1;height:${active?8:4}px;border-radius:2px;background:${c};opacity:${active?1:0.28}" title="${IQA_HEALTH[i].lab}"></div>`;
+        }).join("");
         return`<div class="pollutant-chip" style="padding:.75rem .9rem;gap:.3rem">
             <div class="p-name" style="font-size:.65rem">${name}</div>
             <div style="display:flex;align-items:baseline;gap:.35rem;margin-top:.1rem">
-                <span style="font-size:1.35rem;font-weight:900;color:${p.color};line-height:1">${p.indice}</span>
+                <span style="font-size:1.35rem;font-weight:900;color:${ATMO_COLS[p.indice-1]||p.color};line-height:1">${p.indice}</span>
                 <span style="font-size:.65rem;color:#94a3b8;font-weight:600">/6</span>
-                <span style="font-size:.72rem;font-weight:700;color:${p.color};margin-left:.1rem">${p.label}</span>
+                <span style="font-size:.72rem;font-weight:700;color:${ATMO_COLS[p.indice-1]||p.color};margin-left:.1rem">${p.label}</span>
             </div>
             ${range?`<div style="font-size:.62rem;color:#64748b;font-weight:500;margin-top:.1rem">${range}</div>`:""}
-            <div class="p-bar-track" style="margin-top:.35rem"><div class="p-bar-fill" style="width:${w}%;background:${p.color}"></div></div>
+            <div style="display:flex;gap:2px;align-items:flex-end;margin-top:.4rem">${miniScale}</div>
         </div>`;
     }).join("");
 
@@ -923,13 +930,16 @@ function renderAir(city,air){
         </tr>`
     ).join("");
 
-    // Légende IQA
-    const legendRows=IQA_HEALTH.map(h=>`
-        <div style="display:flex;align-items:flex-start;gap:.5rem;padding:.3rem 0;border-bottom:1px solid #f8fafc">
-            <span style="font-size:.65rem;font-weight:900;min-width:14px;color:${h.l===rec.indice?rec.color:'#94a3b8'}">${h.l}</span>
-            <span style="font-size:.65rem;font-weight:700;min-width:90px;color:${h.l===rec.indice?rec.color:'#475569'}">${h.lab}</span>
-            <span style="font-size:.62rem;color:#64748b;line-height:1.4">${h.eff}</span>
-        </div>`).join("");
+    // Légende IQA avec couleurs ATMO officielles
+    const legendRows=IQA_HEALTH.map((h,i)=>{
+        const col=ATMO_COLS[i];
+        const active=h.l===rec.indice;
+        return`<div style="display:flex;align-items:flex-start;gap:.5rem;padding:.3rem .4rem;border-radius:.35rem;margin-bottom:.1rem;background:${active?col+'18':'transparent'};${active?`border-left:3px solid ${col};padding-left:.5rem`:'border-left:3px solid transparent'}">
+            <span style="display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:50%;background:${col};color:#fff;font-size:.6rem;font-weight:800;flex-shrink:0">${h.l}</span>
+            <span style="font-size:.68rem;font-weight:700;min-width:110px;color:${col}">${h.lab}</span>
+            <span style="font-size:.63rem;color:#475569;line-height:1.4">${h.eff}</span>
+        </div>`;
+    }).join("");
 
     return`<div class="section-card" style="border-left:4px solid #8b5cf6">
         <div class="card-header" style="background:#faf5ff;border-bottom:1px solid #e9d5ff">
@@ -951,10 +961,11 @@ function renderAir(city,air){
                 <div style="flex:1;min-width:0">
                     <div style="font-size:1.1rem;font-weight:800;color:${rec.color}">${rec.label}</div>
                     ${healthRow?`<div style="font-size:.73rem;color:#475569;margin-top:.2rem;line-height:1.4">${healthRow.eff}</div>`:""}
-                    <div style="position:relative;margin-top:.85rem;padding-bottom:20px">
-                        <div style="height:10px;border-radius:999px;background:linear-gradient(to right,#10b981,#a3e635,#fde047,#f97316,#ef4444,#991b1b)"></div>
-                        <div style="position:absolute;top:-5px;left:${thumbPct}%;transform:translateX(-50%);width:20px;height:20px;border-radius:50%;background:${rec.color};border:3px solid white;box-shadow:0 2px 10px rgba(0,0,0,.3);z-index:2"></div>
-                        <div style="display:flex;justify-content:space-between;margin-top:5px">
+                    <div style="margin-top:.85rem">
+                        <div style="display:flex;gap:3px;align-items:flex-end;margin-bottom:4px">
+                            ${ATMO_COLS.map((c,i)=>{const active=rec.indice===i+1;return`<div style="flex:1;height:${active?14:8}px;border-radius:3px;background:${c};opacity:${active?1:0.35};outline:${active?`2.5px solid ${c}`:'none'};outline-offset:1px;transition:height .2s" title="${IQA_HEALTH[i].lab}"></div>`}).join("")}
+                        </div>
+                        <div style="display:flex;justify-content:space-between">
                             <span style="font-size:.58rem;color:#94a3b8;font-weight:500">1 — Bon</span>
                             <span style="font-size:.58rem;color:#94a3b8;font-weight:500">6 — Extrêmement mauvais</span>
                         </div>
@@ -1158,6 +1169,18 @@ function renderNappes(city,nappes){
 // RIVIERES
 // accent: #22c55e
 // ────────────────────────────────────────────────
+// Limites DCE 2000/60/CE et seuils écologiques par paramètre rivière
+const RIVER_LIMITS={
+    "Nitrates"    :{limit:50,  unit:"mg/L",  ref:"DCE bon état : ≤ 50 mg/L · très bon : ≤ 10 mg/L",    inverse:true},
+    "pH"          :{limit:8.5, unit:"pH",    ref:"Bon état : 6.5–8.5 (optimal 7.5)",                    inverse:false, min:6.5},
+    "O2 saturation":{limit:100,unit:"%",     ref:"Très bon état : > 90 % · bon état : > 70 %",          inverse:false},
+    "Phosphore"   :{limit:0.2, unit:"mg/L",  ref:"DCE bon état : ≤ 0.2 mg/L · très bon : ≤ 0.05 mg/L", inverse:true},
+    "Ammonium"    :{limit:1.0, unit:"mg/L",  ref:"DCE bon état : ≤ 0.5 mg/L · seuil toxicité poissons ≥ 1 mg/L",inverse:true},
+    "MES"         :{limit:50,  unit:"mg/L",  ref:"Bon état : ≤ 25 mg/L · turbidité élevée > 50 mg/L",   inverse:true},
+    "Conductivité":{limit:1000,unit:"µS/cm", ref:"Naturel : 200–500 µS/cm · dégradé > 1 000 µS/cm",    inverse:true},
+    "Temp. eau"   :{limit:25,  unit:"°C",    ref:"Seuil salmonicoles : 20°C · cyprinicoles : 25°C",     inverse:true},
+};
+
 function renderRivieres(city,rivieres){
     if(!Array.isArray(rivieres)||!rivieres.length) return "";
     const cn=norm(city.name);
@@ -1165,35 +1188,75 @@ function renderRivieres(city,rivieres){
     if(!matches.length) matches=rivieres.filter(r=>r.dept===city.deptNum).slice(0,3);
     if(!matches.length) return "";
 
-    const rows=matches.slice(0,3).map(r=>{
-        const params=Object.entries(r.parametres||{}).slice(0,6).map(([name,p])=>{
+    const stations=matches.slice(0,3).map(r=>{
+        const bars=Object.entries(r.parametres||{}).map(([name,p])=>{
+            const lim=RIVER_LIMITS[name];
+            const raw=parseFloat(p.valeur);
+            let pct=0;
+            if(lim&&!isNaN(raw)){
+                if(name==="O2 saturation") pct=Math.min(100,Math.round(raw));
+                else pct=Math.min(100,Math.round((raw/lim.limit)*100));
+            } else {
+                pct=p.color==="#10b981"?15:p.color==="#f59e0b"?55:82;
+            }
             const d=p.date?fmtDate(p.date):"";
-            return`<span class="river-param" title="${d?'Mesuré le '+d:''}">
-                <span class="rdot" style="background:${p.color}"></span>
-                ${name}&nbsp;<strong style="color:${p.color}">${p.valeur}</strong>&nbsp;<span style="color:#94a3b8;font-size:.62rem">${p.unite}</span>
-                ${d?`<span style="color:#cbd5e1;font-size:.58rem;margin-left:.2rem">${d}</span>`:""}
-            </span>`;
+            const isRT=p.realtime;
+            return`<div class="param-row">
+                <div class="param-row-top">
+                    <span class="param-row-name">${name}${isRT?'<span style="font-size:.55rem;color:#14b8a6;font-weight:700;margin-left:.3rem">● temps réel</span>':''}</span>
+                    <span class="param-row-val" style="color:${p.color}">${p.valeur}<span class="param-row-unit">${p.unite}</span></span>
+                </div>
+                <div class="param-row-bottom">
+                    <div class="param-bar-track"><div class="param-bar-fill" style="width:${pct}%;background:${p.color}"></div></div>
+                    ${lim?`<span style="font-size:.58rem;color:#cbd5e1;white-space:nowrap">${Math.round(pct)}% du seuil DCE</span>`:d?`<span class="param-date">${d}</span>`:""}
+                </div>
+                ${d&&lim?`<div style="font-size:.58rem;color:#cbd5e1;text-align:right;margin-top:-.1rem">${d}</div>`:""}
+            </div>`;
         }).join("");
-        return`<div style="padding:.75rem 0;border-bottom:1px solid #f1f5f9">
-            <div style="font-size:.82rem;font-weight:700;color:#1e293b;margin-bottom:.45rem;display:flex;align-items:center;gap:.5rem">
-                <span>${r.nom_cours_eau?r.nom_cours_eau.trim():"Cours d'eau"}</span>
-                <span style="font-weight:400;color:#94a3b8;font-size:.7rem">${r.commune?r.commune.trim():""}</span>
+
+        const realtimeFlag=Object.values(r.parametres||{}).some(p=>p.realtime);
+        const lastDate=Object.values(r.parametres||{}).map(p=>p.date).filter(Boolean).sort().reverse()[0];
+
+        return`<div style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:.85rem;padding:.9rem 1.1rem;margin-bottom:.85rem">
+            <div style="display:flex;align-items:baseline;gap:.6rem;margin-bottom:.7rem;flex-wrap:wrap">
+                <span style="font-size:.88rem;font-weight:800;color:#14532d">${r.nom_cours_eau?r.nom_cours_eau.trim():"Cours d'eau"}</span>
+                <span style="font-size:.7rem;color:#94a3b8">${r.commune?r.commune.trim():""}</span>
+                ${lastDate?`<span style="font-size:.63rem;color:#94a3b8;margin-left:auto">Relevé : ${fmtDate(lastDate)}</span>`:""}
             </div>
-            <div style="display:flex;flex-wrap:wrap;gap:.35rem">${params||'<span style="font-size:.72rem;color:#94a3b8">Pas de paramètres</span>'}</div>
+            <div class="params-grid">${bars||'<span style="font-size:.72rem;color:#94a3b8">Pas de paramètres</span>'}</div>
         </div>`;
     }).join("");
+
+    const limDetails=Object.entries(RIVER_LIMITS).map(([n,l])=>`
+        <tr style="border-bottom:1px solid #f1f5f9">
+            <td style="padding:.25rem .5rem;font-weight:700;font-size:.67rem;color:#475569;white-space:nowrap">${n}</td>
+            <td style="padding:.25rem .5rem;font-size:.63rem;color:#64748b;line-height:1.35">${l.ref}</td>
+        </tr>`).join("");
 
     return`<div class="section-card" style="border-left:4px solid #22c55e">
         <div class="card-header" style="background:#f0fdf4;border-bottom:1px solid #bbf7d0">
             <span class="card-header-icon">🏞️</span>
             <div>
-                <div class="card-header-title">Rivières & cours d'eau</div>
-                <div class="card-header-sub">Qualité physico-chimique · Hub'Eau</div>
+                <div class="card-header-title">Rivières &amp; cours d'eau</div>
+                <div class="card-header-sub">Qualité physico-chimique · DCE 2000/60/CE · Hub'Eau</div>
             </div>
         </div>
         <div class="card-body">
-            <div>${rows}</div>
-            <div id="map-rivieres" class="env-map"></div>
+            ${stations}
+            <details style="margin-top:.25rem">
+                <summary style="font-size:.65rem;font-weight:700;color:#16a34a;cursor:pointer;padding:.35rem 0;list-style:none;display:flex;align-items:center;gap:.35rem">
+                    <span>▸</span> Valeurs seuils DCE &amp; références écologiques
+                </summary>
+                <table style="width:100%;border-collapse:collapse;margin-top:.5rem">
+                    <thead><tr style="background:#dcfce7">
+                        <th style="padding:.3rem .5rem;font-size:.65rem;color:#166534;font-weight:700;text-align:left">Paramètre</th>
+                        <th style="padding:.3rem .5rem;font-size:.65rem;color:#166534;font-weight:700;text-align:left">Seuils réglementaires / écologiques</th>
+                    </tr></thead>
+                    <tbody>${limDetails}</tbody>
+                </table>
+                <p style="font-size:.6rem;color:#94a3b8;margin-top:.4rem;line-height:1.5">Source : Directive Cadre sur l'Eau 2000/60/CE · Arrêté du 25/01/2010 · Hub'Eau (BRGM) · données temps réel Hub'Eau Hydrométrie</p>
+            </details>
+            <div id="map-rivieres" class="env-map" style="margin-top:.75rem"></div>
         </div>
     </div>`;
 }
