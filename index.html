@@ -4,21 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon-Environnement.fr — Qualité de l'air et de l'eau par ville</title>
-    <meta name="description" content="Recherchez la qualité de l'air, de l'eau potable, des nappes phréatiques, des rivières et du pollen pour votre ville. Données officielles en temps réel.">
+    <meta name="description" content="Données environnementales par ville : air, eau potable, nappes phréatiques, rivières, pollen. Sources officielles.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.mon-environnement.fr/">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.mon-environnement.fr/">
-    <meta property="og:title" content="Mon-Environnement.fr — Recherche environnementale par ville">
-    <meta property="og:description" content="Qualité de l'air, eau potable, nappes phréatiques, rivières et pollen pour votre ville.">
+    <meta property="og:title" content="Mon-Environnement.fr — Données environnementales par ville">
     <meta property="og:locale" content="fr_FR">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Mon-Environnement.fr">
-    <meta name="twitter:description" content="Données environnementales en temps réel pour votre ville.">
 
-    <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"WebSite","name":"Mon-Environnement.fr","url":"https://www.mon-environnement.fr/","inLanguage":"fr-FR","potentialAction":{"@type":"SearchAction","target":"https://www.mon-environnement.fr/?q={search_term_string}","query-input":"required name=search_term_string"}}
-    </script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Mon-Environnement.fr","url":"https://www.mon-environnement.fr/","inLanguage":"fr-FR","potentialAction":{"@type":"SearchAction","target":"https://www.mon-environnement.fr/?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
 
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6656990941754174" crossorigin="anonymous"></script>
@@ -26,178 +20,146 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
     <style>
-        * { box-sizing: border-box; }
-        body { font-family: 'Inter', system-ui, sans-serif; background: linear-gradient(135deg,#f0fdf4 0%,#ecfdf5 40%,#f0f9ff 100%); min-height: 100vh; }
+        *{box-sizing:border-box}
+        body{font-family:'Inter',system-ui,sans-serif;background:linear-gradient(150deg,#f0fdf4 0%,#f8faff 60%,#f0f9ff 100%);min-height:100vh}
 
-        /* LOGO */
-        .logo-text-tld { color: #16a34a; }
+        /* ── SEARCH ── */
+        .search-wrap{position:relative;max-width:640px;width:100%}
+        .search-input{width:100%;padding:.95rem 1.2rem .95rem 3.2rem;font-size:1.05rem;font-family:'Inter',sans-serif;border:2px solid #e2e8f0;border-radius:999px;outline:none;background:white;box-shadow:0 4px 24px rgba(0,0,0,.07);transition:border-color .18s,box-shadow .18s;color:#1e293b}
+        .search-input:focus{border-color:#16a34a;box-shadow:0 4px 28px rgba(22,163,74,.18)}
+        .search-icon{position:absolute;left:1.1rem;top:50%;transform:translateY(-50%);color:#94a3b8;pointer-events:none}
+        .search-btn{position:absolute;right:.4rem;top:50%;transform:translateY(-50%);background:linear-gradient(135deg,#16a34a,#059669);color:white;border:none;border-radius:999px;padding:.55rem 1.3rem;font-size:.9rem;font-weight:700;cursor:pointer;transition:opacity .15s}
+        .search-btn:hover{opacity:.9}
 
-        /* SEARCH BAR */
-        .search-wrap { position: relative; max-width: 640px; width: 100%; }
-        .search-input {
-            width: 100%; padding: 1rem 9rem 1rem 3.25rem;
-            font-size: 1.05rem; font-family: 'Inter', sans-serif;
-            border: 2px solid #e2e8f0; border-radius: 999px; outline: none;
-            background: white; box-shadow: 0 4px 24px rgba(0,0,0,0.07);
-            transition: border-color .18s, box-shadow .18s; color: #1e293b;
-        }
-        .search-input:focus { border-color: #16a34a; box-shadow: 0 4px 28px rgba(22,163,74,.15); }
-        .search-icon { position: absolute; left: 1.1rem; top: 50%; transform: translateY(-50%); color: #94a3b8; pointer-events: none; }
-        .search-btn {
-            position: absolute; right: 0.4rem; top: 50%; transform: translateY(-50%);
-            background: #16a34a; color: white; border: none; border-radius: 999px;
-            padding: 0.55rem 1.3rem; font-size: 0.9rem; font-weight: 700; cursor: pointer; transition: background .15s;
-        }
-        .search-btn:hover { background: #15803d; }
+        /* ── AUTOCOMPLETE ── */
+        .autocomplete-list{position:absolute;top:calc(100% + 8px);left:0;right:0;background:white;border:1.5px solid #e2e8f0;border-radius:1.25rem;box-shadow:0 8px 32px rgba(0,0,0,.1);max-height:280px;overflow-y:auto;z-index:200;display:none}
+        .autocomplete-list.show{display:block}
+        .autocomplete-item{padding:.7rem 1.2rem;cursor:pointer;display:flex;align-items:center;gap:.7rem;font-size:.93rem;color:#1e293b;transition:background .1s}
+        .autocomplete-item:first-child{border-radius:1.25rem 1.25rem 0 0}
+        .autocomplete-item:last-child{border-radius:0 0 1.25rem 1.25rem}
+        .autocomplete-item:hover,.autocomplete-item.active{background:#f0fdf4;color:#15803d}
+        .autocomplete-item .dept{font-size:.72rem;color:#94a3b8;margin-left:auto}
+        .autocomplete-highlight{font-weight:800;color:#16a34a}
+        .autocomplete-list::-webkit-scrollbar{width:4px}
+        .autocomplete-list::-webkit-scrollbar-thumb{background:#e2e8f0;border-radius:2px}
 
-        /* AUTOCOMPLETE */
-        .autocomplete-list {
-            position: absolute; top: calc(100% + 8px); left: 0; right: 0;
-            background: white; border: 1.5px solid #e2e8f0; border-radius: 1.25rem;
-            box-shadow: 0 8px 32px rgba(0,0,0,.1); max-height: 280px; overflow-y: auto; z-index: 100; display: none;
-        }
-        .autocomplete-list.show { display: block; }
-        .autocomplete-item {
-            padding: .75rem 1.25rem; cursor: pointer; display: flex; align-items: center;
-            gap: .75rem; font-size: .95rem; color: #1e293b; transition: background .1s;
-        }
-        .autocomplete-item:first-child { border-radius: 1.25rem 1.25rem 0 0; }
-        .autocomplete-item:last-child  { border-radius: 0 0 1.25rem 1.25rem; }
-        .autocomplete-item:hover, .autocomplete-item.active { background: #f0fdf4; color: #15803d; }
-        .autocomplete-item .dept { font-size: .75rem; color: #94a3b8; margin-left: auto; }
-        .autocomplete-highlight { font-weight: 700; color: #16a34a; }
+        /* ── POPULAR PILLS ── */
+        .popular-pill{display:inline-flex;align-items:center;gap:.35rem;padding:.38rem .85rem;background:white;border:1.5px solid #e2e8f0;border-radius:999px;font-size:.77rem;font-weight:600;color:#475569;cursor:pointer;transition:all .15s;user-select:none}
+        .popular-pill:hover{background:#f0fdf4;border-color:#86efac;color:#15803d}
 
-        /* RESULTS */
-        #results-panel { display: none; }
-        #results-panel.show { display: block; }
+        /* ── STATS ── */
+        .stat-num{font-size:1.45rem;font-weight:900;color:#15803d}
+        .stat-lbl{font-size:.68rem;font-weight:600;color:#94a3b8;text-transform:uppercase;letter-spacing:.05em}
 
-        /* DATA CARDS */
-        .data-card {
-            background: white; border-radius: 1.25rem; padding: 1.5rem;
-            box-shadow: 0 2px 12px rgba(0,0,0,.06); border: 1.5px solid #f1f5f9;
-            margin-bottom: 1rem;
-        }
-        .card-header { display: flex; align-items: center; gap: .75rem; margin-bottom: 1rem; }
-        .card-header-icon { font-size: 1.5rem; }
-        .card-header-title { font-size: 1.05rem; font-weight: 800; color: #1e293b; }
-        .card-header-sub { font-size: .72rem; color: #94a3b8; font-weight: 500; margin-top: .1rem; }
-        .card-header-badge {
-            margin-left: auto; font-size: .7rem; font-weight: 700; padding: .25rem .7rem;
-            border-radius: 999px;
-        }
+        /* ── RESULTS ── */
+        #results-panel{display:none}
+        #results-panel.show{display:block}
 
-        /* SCORE RING */
-        .score-ring {
-            width: 72px; height: 72px; border-radius: 50%;
-            display: flex; align-items: center; justify-content: center;
-            font-size: 1.2rem; font-weight: 900; color: white; flex-shrink: 0;
-        }
+        /* ── SECTION CARD ── */
+        .section-card{background:white;border-radius:1.5rem;overflow:hidden;box-shadow:0 2px 16px rgba(0,0,0,.06);margin-bottom:1.25rem;border:1px solid rgba(0,0,0,.04)}
 
-        /* PARAM PILLS */
-        .param-grid { display: flex; flex-wrap: wrap; gap: .5rem; }
-        .param-pill {
-            display: inline-flex; align-items: center; gap: .35rem;
-            padding: .35rem .75rem; border-radius: .6rem; font-size: .76rem;
-            font-weight: 600; background: #f8fafc; border: 1px solid #e2e8f0;
-        }
-        .param-pill .dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
-        .param-pill .val { color: #1e293b; }
-        .param-pill .name { color: #64748b; }
+        /* ── CARD HEADER STRIP ── */
+        .card-strip{padding:1rem 1.4rem;display:flex;align-items:center;gap:.75rem}
+        .card-strip-icon{font-size:1.4rem;flex-shrink:0}
+        .card-strip-title{font-size:1rem;font-weight:800;color:white}
+        .card-strip-sub{font-size:.72rem;color:rgba(255,255,255,.75);margin-top:.1rem}
+        .card-body{padding:1.25rem 1.4rem}
 
-        /* AIR POLLUANT ROW */
-        .pollutant-row { display: flex; flex-wrap: wrap; gap: .5rem; }
-        .pollutant-chip {
-            display: inline-flex; flex-direction: column; align-items: center;
-            padding: .5rem .9rem; border-radius: .75rem; font-size: .72rem;
-            background: #f8fafc; border: 1px solid #e2e8f0; min-width: 64px;
-        }
-        .pollutant-chip .p-name { font-weight: 700; color: #475569; font-size: .68rem; }
-        .pollutant-chip .p-val  { font-weight: 800; margin-top: .15rem; }
+        /* ── SCORE RING ── */
+        .score-svg-wrap{position:relative;width:100px;height:100px;flex-shrink:0}
+        .score-svg-wrap svg{transform:rotate(-90deg)}
+        .score-center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+        .score-number{font-size:1.6rem;font-weight:900;line-height:1}
+        .score-label-sm{font-size:.6rem;color:#94a3b8;font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-top:.1rem}
 
-        /* IQA BADGE */
-        .iqa-badge {
-            display: inline-flex; align-items: center; gap: .5rem;
-            padding: .5rem 1.1rem; border-radius: 999px; font-weight: 800;
-            font-size: .95rem; color: #1e293b; border: 2px solid;
-        }
+        /* ── PARAM BARS ── */
+        .param-bar-row{display:flex;align-items:center;gap:.6rem;margin-bottom:.55rem}
+        .param-bar-name{font-size:.72rem;font-weight:600;color:#64748b;min-width:90px}
+        .param-bar-track{flex:1;height:7px;background:#f1f5f9;border-radius:999px;overflow:hidden}
+        .param-bar-fill{height:100%;border-radius:999px;transition:width .8s cubic-bezier(.4,0,.2,1)}
+        .param-bar-val{font-size:.72rem;font-weight:700;color:#1e293b;min-width:80px;text-align:right}
 
-        /* POLLEN PILLS */
-        .pollen-grid { display: flex; flex-wrap: wrap; gap: .4rem; }
-        .pollen-chip {
-            display: inline-flex; align-items: center; gap: .4rem;
-            padding: .3rem .7rem; border-radius: .6rem; font-size: .73rem;
-            font-weight: 600; background: #f8fafc; border: 1px solid #e2e8f0;
-        }
+        /* ── IQA BLOCK ── */
+        .iqa-block{display:flex;align-items:center;gap:1rem;padding:1rem 1.2rem;border-radius:1rem;margin-bottom:1rem}
+        .iqa-number{font-size:3rem;font-weight:900;line-height:1}
+        .iqa-label{font-size:1.1rem;font-weight:800}
+        .iqa-scale{font-size:.7rem;color:rgba(255,255,255,.7);margin-top:.2rem}
 
-        /* NAPPE STATION */
-        .nappe-row { display: grid; grid-template-columns: 1fr auto; gap: .5rem 1rem; align-items: center; padding: .6rem 0; border-bottom: 1px solid #f1f5f9; }
-        .nappe-row:last-child { border-bottom: none; }
+        /* ── POLLUTANT CHIPS ── */
+        .pollutant-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:.5rem}
+        .pollutant-chip{background:#f8fafc;border:1px solid #e2e8f0;border-radius:.9rem;padding:.65rem .8rem;display:flex;flex-direction:column;gap:.25rem}
+        .pollutant-chip .p-name{font-size:.68rem;font-weight:700;color:#64748b;text-transform:uppercase;letter-spacing:.04em}
+        .pollutant-chip .p-label{font-size:.82rem;font-weight:800}
+        .pollutant-chip .p-bar-track{height:4px;background:#e2e8f0;border-radius:999px;overflow:hidden;margin-top:.1rem}
+        .pollutant-chip .p-bar-fill{height:100%;border-radius:999px}
 
-        /* RIVIERE ROW */
-        .riviere-row { padding: .75rem 0; border-bottom: 1px solid #f1f5f9; }
-        .riviere-row:last-child { border-bottom: none; }
+        /* ── POLLEN GRID ── */
+        .pollen-pill{display:inline-flex;align-items:center;gap:.45rem;padding:.4rem .85rem;border-radius:.75rem;font-size:.75rem;font-weight:600;background:#f8fafc;border:1px solid #e2e8f0}
+        .pollen-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0}
 
-        /* TREND ARROW */
-        .trend-up   { color: #22c55e; font-weight: 700; }
-        .trend-down { color: #ef4444; font-weight: 700; }
-        .trend-flat { color: #94a3b8; font-weight: 700; }
+        /* ── SPARKLINE ── */
+        .sparkline-wrap{background:#f8fafc;border-radius:.75rem;padding:.5rem .75rem .25rem;overflow:hidden}
+        .sparkline-label{font-size:.68rem;font-weight:700;color:#1e293b}
+        .sparkline-val{font-size:1rem;font-weight:900}
+        .sparkline-trend{font-size:.68rem;font-weight:700;margin-top:.1rem}
 
-        /* UNAVAILABLE */
-        .card-unavailable { opacity: .5; }
+        /* ── MAP ── */
+        .env-map{height:240px;border-radius:1rem;width:100%;z-index:1}
 
-        /* POPULAR PILLS */
-        .popular-pill {
-            display: inline-flex; align-items: center; gap: .35rem;
-            padding: .4rem .9rem; background: white; border: 1.5px solid #e2e8f0;
-            border-radius: 999px; font-size: .78rem; font-weight: 600;
-            color: #475569; cursor: pointer; transition: all .15s;
-        }
-        .popular-pill:hover { background: #f0fdf4; border-color: #86efac; color: #15803d; }
+        /* ── DETAIL LINK ── */
+        .detail-link{display:inline-flex;align-items:center;gap:.3rem;font-size:.75rem;font-weight:700;color:#16a34a;text-decoration:none;padding:.3rem .7rem;border-radius:999px;border:1.5px solid #bbf7d0;transition:all .15s}
+        .detail-link:hover{background:#f0fdf4}
 
-        /* STATS */
-        .stat-num { font-size: 1.5rem; font-weight: 900; color: #15803d; }
-        .stat-lbl { font-size: .7rem; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: .05em; }
+        /* ── UNAVAILABLE ── */
+        .card-unavailable{opacity:.45}
 
-        /* SCROLLBAR */
-        .autocomplete-list::-webkit-scrollbar { width: 4px; }
-        .autocomplete-list::-webkit-scrollbar-thumb { background: #e2e8f0; border-radius: 2px; }
+        /* ── BADGE ── */
+        .badge{display:inline-flex;align-items:center;gap:.3rem;padding:.22rem .65rem;border-radius:999px;font-size:.68rem;font-weight:700}
+        .badge-alert{background:#fef9c3;color:#92400e}
+        .badge-ok{background:#dcfce7;color:#15803d}
+        .badge-info{background:#dbeafe;color:#1d4ed8}
 
-        /* DETAIL LINK */
-        .detail-link { font-size: .75rem; font-weight: 600; color: #16a34a; text-decoration: none; display: inline-flex; align-items: center; gap: .25rem; }
-        .detail-link:hover { text-decoration: underline; }
+        /* ── RIVER PARAM DOT ── */
+        .river-param{display:inline-flex;align-items:center;gap:.3rem;font-size:.73rem;padding:.25rem .6rem;border-radius:.5rem;background:#f8fafc;border:1px solid #e2e8f0;font-weight:500}
+        .river-param .rdot{width:8px;height:8px;border-radius:50%}
+
+        /* ── CONCLUSION ── */
+        .conclusion-text{font-size:.75rem;color:#475569;line-height:1.55;background:#f8fafc;border-left:3px solid #86efac;padding:.6rem .9rem;border-radius:0 .5rem .5rem 0}
+
+        /* leaflet popup */
+        .leaflet-popup-content{font-family:'Inter',sans-serif;font-size:.8rem;min-width:140px}
     </style>
 </head>
 <body>
 
-<!-- HEADER -->
 <header class="w-full px-6 py-4 flex items-center justify-end">
     <nav class="flex items-center gap-4">
-        <a href="/contact.html" class="text-xs font-600 text-slate-500 hover:text-slate-800 transition-colors">Contact</a>
-        <a href="/mentions-legales.html" class="text-xs font-600 text-slate-500 hover:text-slate-800 transition-colors">Mentions légales</a>
+        <a href="/contact.html" class="text-xs text-slate-500 hover:text-slate-800 transition-colors font-600">Contact</a>
+        <a href="/mentions-legales.html" class="text-xs text-slate-500 hover:text-slate-800 transition-colors font-600">Mentions légales</a>
     </nav>
 </header>
 
 <main class="px-4">
 
 <!-- ═══ HERO ═══ -->
-<section id="hero-section" class="flex flex-col items-center justify-center pt-8 pb-12 transition-all duration-300">
+<section id="hero-section" class="flex flex-col items-center justify-center pt-8 pb-12 transition-all duration-400">
 
     <!-- Logo -->
     <div class="flex flex-col items-center mb-9">
-        <div style="font-size:2.8rem;line-height:1" class="mb-2">🌿</div>
-        <div style="font-size:2.2rem;font-weight:900;letter-spacing:-.03em" class="text-slate-800">
-            Mon-Environnement<span class="logo-text-tld">.fr</span>
+        <div style="font-size:3rem;line-height:1;filter:drop-shadow(0 4px 8px rgba(22,163,74,.25))" class="mb-3">🌿</div>
+        <div style="font-size:2.25rem;font-weight:900;letter-spacing:-.035em" class="text-slate-800">
+            Mon-Environnement<span style="color:#16a34a">.fr</span>
         </div>
         <div class="text-xs font-500 text-slate-400 mt-2 tracking-widest uppercase">Air · Eau · Nappes · Rivières · Pollen</div>
     </div>
 
-    <!-- Search -->
+    <!-- Search bar -->
     <div class="search-wrap" id="search-container">
-        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
-        </svg>
+        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
         <input type="text" id="search-input" class="search-input" placeholder="Tapez le nom de votre ville…" autocomplete="off" spellcheck="false">
         <button class="search-btn" onclick="doSearch()">Rechercher</button>
         <div class="autocomplete-list" id="autocomplete-list"></div>
@@ -217,7 +179,7 @@
     </div>
 
     <!-- Stats -->
-    <div class="flex items-center gap-6 mt-10 px-6 py-4 bg-white/70 rounded-2xl shadow-sm border border-slate-100">
+    <div class="flex items-center gap-6 mt-10 px-6 py-4 bg-white/80 backdrop-blur rounded-2xl shadow-sm border border-slate-100">
         <div class="text-center"><div class="stat-num">101</div><div class="stat-lbl">Communes</div></div>
         <div class="w-px h-8 bg-slate-100"></div>
         <div class="text-center"><div class="stat-num">5</div><div class="stat-lbl">Rubriques</div></div>
@@ -229,351 +191,389 @@
 </section>
 
 <!-- ═══ RÉSULTATS ═══ -->
-<section id="results-panel" class="max-w-3xl mx-auto pb-20">
+<section id="results-panel" class="max-w-3xl mx-auto pb-24">
 
-    <!-- City header -->
-    <div class="flex items-center gap-3 mb-6">
-        <button onclick="resetSearch()" class="flex items-center gap-2 text-sm font-600 text-slate-400 hover:text-slate-700 transition-colors">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+    <!-- Header ville -->
+    <div class="flex items-center gap-3 mb-5">
+        <button onclick="resetSearch()" class="flex items-center gap-1.5 text-sm font-600 text-slate-400 hover:text-slate-700 transition-colors">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
             Retour
         </button>
-        <div class="w-px h-5 bg-slate-200"></div>
+        <div class="w-px h-4 bg-slate-200"></div>
         <h1 id="result-city-name" class="text-xl font-900 text-slate-800"></h1>
         <span id="result-city-dept" class="text-sm text-slate-400 font-500"></span>
         <span id="result-updated" class="ml-auto text-xs text-slate-400"></span>
     </div>
 
     <!-- Loading -->
-    <div id="loading-state" class="text-center py-12 text-slate-400 text-sm">
-        <div class="text-2xl mb-2">⏳</div>Chargement des données…
+    <div id="loading-state" class="text-center py-12 text-slate-400">
+        <div style="font-size:2rem" class="mb-2 animate-pulse">🌿</div>
+        <div class="text-sm">Chargement des données…</div>
     </div>
 
-    <!-- Sections -->
     <div id="data-sections"></div>
-
 </section>
 </main>
 
-<!-- FOOTER -->
 <footer class="border-t border-slate-100 bg-white/50 py-5 px-6 text-center text-xs text-slate-400">
     <div class="flex flex-wrap justify-center gap-x-5 gap-y-1 mb-1">
         <a href="/mentions-legales.html" class="hover:text-slate-600 transition-colors">Mentions légales</a>
         <a href="/politique-confidentialite.html" class="hover:text-slate-600 transition-colors">Confidentialité</a>
         <a href="/contact.html" class="hover:text-slate-600 transition-colors">Contact</a>
     </div>
-    <p>© 2026 Mon-Environnement.fr — Sources : ARS · Atmo Occitanie · Hub'Eau · BRGM · Ministère de la Santé</p>
+    <p>© 2026 Mon-Environnement.fr — Sources : ARS · Atmo Occitanie · Hub'Eau · BRGM · RNSA</p>
 </footer>
 
 <script>
-// ═══════════════════════════════════════════════
+// ════════════════════════════════════════════════
 // CITY DATABASE
-// ═══════════════════════════════════════════════
-const CITIES = [
-    { slug:"agde",                     name:"Agde",                        dept:"Hérault (34)", deptNum:"34", coastal:true  },
-    { slug:"aigues-mortes",            name:"Aigues-Mortes",               dept:"Gard (30)",    deptNum:"30", coastal:true  },
-    { slug:"aimargues",                name:"Aimargues",                   dept:"Gard (30)",    deptNum:"30", coastal:false },
-    { slug:"ales",                     name:"Alès",                        dept:"Gard (30)",    deptNum:"30", coastal:false },
-    { slug:"aramon",                   name:"Aramon",                      dept:"Gard (30)",    deptNum:"30", coastal:false },
-    { slug:"bagnols-sur-ceze",         name:"Bagnols-sur-Cèze",            dept:"Gard (30)",    deptNum:"30", coastal:false },
-    { slug:"baillargues",              name:"Baillargues",                 dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"balaruc-les-bains",        name:"Balaruc-les-Bains",           dept:"Hérault (34)", deptNum:"34", coastal:true  },
-    { slug:"beaucaire",                name:"Beaucaire",                   dept:"Gard (30)",    deptNum:"30", coastal:false },
-    { slug:"bedarieux",                name:"Bédarieux",                   dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"bellegarde",               name:"Bellegarde",                  dept:"Gard (30)",    deptNum:"30", coastal:false },
-    { slug:"bessan",                   name:"Bessan",                      dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"beziers",                  name:"Béziers",                     dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"bouillargues",             name:"Bouillargues",                dept:"Gard (30)",    deptNum:"30", coastal:false },
-    { slug:"boujan-sur-libron",        name:"Boujan-sur-Libron",           dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"caissargues",              name:"Caissargues",                 dept:"Gard (30)",    deptNum:"30", coastal:false },
-    { slug:"calvisson",                name:"Calvisson",                   dept:"Gard (30)",    deptNum:"30", coastal:false },
-    { slug:"canet",                    name:"Canet",                       dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"capestang",                name:"Capestang",                   dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"castelnau-le-lez",         name:"Castelnau-le-Lez",            dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"castries",                 name:"Castries",                    dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"clapiers",                 name:"Clapiers",                    dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"clarensac",                name:"Clarensac",                   dept:"Gard (30)",    deptNum:"30", coastal:false },
-    { slug:"clermont-l-herault",       name:"Clermont-l'Hérault",          dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"cournonterral",            name:"Cournonterral",               dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"fabregues",                name:"Fabrègues",                   dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"florensac",                name:"Florensac",                   dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"frontignan",               name:"Frontignan",                  dept:"Hérault (34)", deptNum:"34", coastal:true  },
-    { slug:"gallargues-le-montueux",   name:"Gallargues-le-Montueux",      dept:"Gard (30)",    deptNum:"30", coastal:false },
-    { slug:"ganges",                   name:"Ganges",                      dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"garons",                   name:"Garons",                      dept:"Gard (30)",    deptNum:"30", coastal:false },
-    { slug:"gigean",                   name:"Gigean",                      dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"gignac",                   name:"Gignac",                      dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"grabels",                  name:"Grabels",                     dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"jacou",                    name:"Jacou",                       dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"juvignac",                 name:"Juvignac",                    dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"la-grand-combe",           name:"La Grand-Combe",              dept:"Gard (30)",    deptNum:"30", coastal:false },
-    { slug:"lattes",                   name:"Lattes",                      dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"laudun-l-ardoise",         name:"Laudun-l'Ardoise",            dept:"Gard (30)",    deptNum:"30", coastal:false },
-    { slug:"le-cres",                  name:"Le Crès",                     dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"le-grau-du-roi",           name:"Le Grau-du-Roi",              dept:"Gard (30)",    deptNum:"30", coastal:true  },
-    { slug:"le-vigan",                 name:"Le Vigan",                    dept:"Gard (30)",    deptNum:"30", coastal:false },
-    { slug:"les-angles",               name:"Les Angles",                  dept:"Gard (30)",    deptNum:"30", coastal:false },
-    { slug:"lodeve",                   name:"Lodève",                      dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"lunel",                    name:"Lunel",                       dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"lunel-viel",               name:"Lunel-Viel",                  dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"manduel",                  name:"Manduel",                     dept:"Gard (30)",    deptNum:"30", coastal:false },
-    { slug:"maraussan",                name:"Maraussan",                   dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"marguerittes",             name:"Marguerittes",                dept:"Gard (30)",    deptNum:"30", coastal:false },
-    { slug:"marseillan",               name:"Marseillan",                  dept:"Hérault (34)", deptNum:"34", coastal:true  },
-    { slug:"marsillargues",            name:"Marsillargues",               dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"mauguio",                  name:"Mauguio",                     dept:"Hérault (34)", deptNum:"34", coastal:true  },
-    { slug:"meze",                     name:"Mèze",                        dept:"Hérault (34)", deptNum:"34", coastal:true  },
-    { slug:"milhaud",                  name:"Milhaud",                     dept:"Gard (30)",    deptNum:"30", coastal:false },
-    { slug:"mireval",                  name:"Mireval",                     dept:"Hérault (34)", deptNum:"34", coastal:true  },
-    { slug:"montagnac",                name:"Montagnac",                   dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"montbazin",                name:"Montbazin",                   dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"montblanc",                name:"Montblanc",                   dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"montferrier-sur-lez",      name:"Montferrier-sur-Lez",         dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"montfrin",                 name:"Montfrin",                    dept:"Gard (30)",    deptNum:"30", coastal:false },
-    { slug:"montpellier",              name:"Montpellier",                 dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"nimes",                    name:"Nîmes",                       dept:"Gard (30)",    deptNum:"30", coastal:false },
-    { slug:"nissan-lez-enserune",      name:"Nissan-lez-Enserune",         dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"palavas-les-flots",        name:"Palavas-les-Flots",           dept:"Hérault (34)", deptNum:"34", coastal:true  },
-    { slug:"perols",                   name:"Pérols",                      dept:"Hérault (34)", deptNum:"34", coastal:true  },
-    { slug:"pezenas",                  name:"Pézenas",                     dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"pignan",                   name:"Pignan",                      dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"pont-saint-esprit",        name:"Pont-Saint-Esprit",           dept:"Gard (30)",    deptNum:"30", coastal:false },
-    { slug:"poussan",                  name:"Poussan",                     dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"prades-le-lez",            name:"Prades-le-Lez",               dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"quissac",                  name:"Quissac",                     dept:"Gard (30)",    deptNum:"30", coastal:false },
-    { slug:"redessan",                 name:"Redessan",                    dept:"Gard (30)",    deptNum:"30", coastal:false },
-    { slug:"remoulins",                name:"Remoulins",                   dept:"Gard (30)",    deptNum:"30", coastal:false },
-    { slug:"rochefort-du-gard",        name:"Rochefort-du-Gard",           dept:"Gard (30)",    deptNum:"30", coastal:false },
-    { slug:"roquemaure",               name:"Roquemaure",                  dept:"Gard (30)",    deptNum:"30", coastal:false },
-    { slug:"saint-ambroix",            name:"Saint-Ambroix",               dept:"Gard (30)",    deptNum:"30", coastal:false },
-    { slug:"saint-aunes",              name:"Saint-Aunès",                 dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"saint-christol-lez-ales",  name:"Saint-Christol-lès-Alès",     dept:"Gard (30)",    deptNum:"30", coastal:false },
-    { slug:"saint-clement-de-riviere", name:"Saint-Clément-de-Rivière",    dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"saint-gely-du-fesc",       name:"Saint-Gély-du-Fesc",          dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"saint-genies-de-malgoires",name:"Saint-Geniès-de-Malgoirès",   dept:"Gard (30)",    deptNum:"30", coastal:false },
-    { slug:"saint-georges-d-orques",   name:"Saint-Georges-d'Orques",      dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"saint-gilles",             name:"Saint-Gilles",                dept:"Gard (30)",    deptNum:"30", coastal:false },
-    { slug:"saint-hilaire-de-brethmas",name:"Saint-Hilaire-de-Brethmas",   dept:"Gard (30)",    deptNum:"30", coastal:false },
-    { slug:"saint-hippolyte-du-fort",  name:"Saint-Hippolyte-du-Fort",     dept:"Gard (30)",    deptNum:"30", coastal:false },
-    { slug:"saint-jean-de-vedas",      name:"Saint-Jean-de-Védas",         dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"saint-laurent-des-arbres", name:"Saint-Laurent-des-Arbres",    dept:"Gard (30)",    deptNum:"30", coastal:false },
-    { slug:"saint-mathieu-de-treviers",name:"Saint-Mathieu-de-Tréviers",   dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"salindres",                name:"Salindres",                   dept:"Gard (30)",    deptNum:"30", coastal:false },
-    { slug:"serignan",                 name:"Sérignan",                    dept:"Hérault (34)", deptNum:"34", coastal:true  },
-    { slug:"sete",                     name:"Sète",                        dept:"Hérault (34)", deptNum:"34", coastal:true  },
-    { slug:"sommieres",                name:"Sommières",                   dept:"Gard (30)",    deptNum:"30", coastal:false },
-    { slug:"uchaud",                   name:"Uchaud",                      dept:"Gard (30)",    deptNum:"30", coastal:false },
-    { slug:"uzes",                     name:"Uzès",                        dept:"Gard (30)",    deptNum:"30", coastal:false },
-    { slug:"valras-plage",             name:"Valras-Plage",                dept:"Hérault (34)", deptNum:"34", coastal:true  },
-    { slug:"vauvert",                  name:"Vauvert",                     dept:"Gard (30)",    deptNum:"30", coastal:false },
-    { slug:"vendargues",               name:"Vendargues",                  dept:"Hérault (34)", deptNum:"34", coastal:false },
-    { slug:"vergeze",                  name:"Vergèze",                     dept:"Gard (30)",    deptNum:"30", coastal:false },
-    { slug:"vias",                     name:"Vias",                        dept:"Hérault (34)", deptNum:"34", coastal:true  },
-    { slug:"villeneuve-les-avignon",   name:"Villeneuve-lès-Avignon",      dept:"Gard (30)",    deptNum:"30", coastal:false },
-    { slug:"villeneuve-les-beziers",   name:"Villeneuve-lès-Béziers",      dept:"Hérault (34)", deptNum:"34", coastal:true  },
-    { slug:"villeneuve-les-maguelone", name:"Villeneuve-lès-Maguelone",    dept:"Hérault (34)", deptNum:"34", coastal:true  },
+// ════════════════════════════════════════════════
+const CITIES=[
+    {slug:"agde",name:"Agde",dept:"Hérault (34)",deptNum:"34",coastal:true},
+    {slug:"aigues-mortes",name:"Aigues-Mortes",dept:"Gard (30)",deptNum:"30",coastal:true},
+    {slug:"aimargues",name:"Aimargues",dept:"Gard (30)",deptNum:"30",coastal:false},
+    {slug:"ales",name:"Alès",dept:"Gard (30)",deptNum:"30",coastal:false},
+    {slug:"aramon",name:"Aramon",dept:"Gard (30)",deptNum:"30",coastal:false},
+    {slug:"bagnols-sur-ceze",name:"Bagnols-sur-Cèze",dept:"Gard (30)",deptNum:"30",coastal:false},
+    {slug:"baillargues",name:"Baillargues",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"balaruc-les-bains",name:"Balaruc-les-Bains",dept:"Hérault (34)",deptNum:"34",coastal:true},
+    {slug:"beaucaire",name:"Beaucaire",dept:"Gard (30)",deptNum:"30",coastal:false},
+    {slug:"bedarieux",name:"Bédarieux",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"bellegarde",name:"Bellegarde",dept:"Gard (30)",deptNum:"30",coastal:false},
+    {slug:"bessan",name:"Bessan",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"beziers",name:"Béziers",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"bouillargues",name:"Bouillargues",dept:"Gard (30)",deptNum:"30",coastal:false},
+    {slug:"boujan-sur-libron",name:"Boujan-sur-Libron",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"caissargues",name:"Caissargues",dept:"Gard (30)",deptNum:"30",coastal:false},
+    {slug:"calvisson",name:"Calvisson",dept:"Gard (30)",deptNum:"30",coastal:false},
+    {slug:"canet",name:"Canet",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"capestang",name:"Capestang",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"castelnau-le-lez",name:"Castelnau-le-Lez",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"castries",name:"Castries",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"clapiers",name:"Clapiers",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"clarensac",name:"Clarensac",dept:"Gard (30)",deptNum:"30",coastal:false},
+    {slug:"clermont-l-herault",name:"Clermont-l'Hérault",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"cournonterral",name:"Cournonterral",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"fabregues",name:"Fabrègues",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"florensac",name:"Florensac",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"frontignan",name:"Frontignan",dept:"Hérault (34)",deptNum:"34",coastal:true},
+    {slug:"gallargues-le-montueux",name:"Gallargues-le-Montueux",dept:"Gard (30)",deptNum:"30",coastal:false},
+    {slug:"ganges",name:"Ganges",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"garons",name:"Garons",dept:"Gard (30)",deptNum:"30",coastal:false},
+    {slug:"gigean",name:"Gigean",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"gignac",name:"Gignac",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"grabels",name:"Grabels",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"jacou",name:"Jacou",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"juvignac",name:"Juvignac",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"la-grand-combe",name:"La Grand-Combe",dept:"Gard (30)",deptNum:"30",coastal:false},
+    {slug:"lattes",name:"Lattes",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"laudun-l-ardoise",name:"Laudun-l'Ardoise",dept:"Gard (30)",deptNum:"30",coastal:false},
+    {slug:"le-cres",name:"Le Crès",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"le-grau-du-roi",name:"Le Grau-du-Roi",dept:"Gard (30)",deptNum:"30",coastal:true},
+    {slug:"le-vigan",name:"Le Vigan",dept:"Gard (30)",deptNum:"30",coastal:false},
+    {slug:"les-angles",name:"Les Angles",dept:"Gard (30)",deptNum:"30",coastal:false},
+    {slug:"lodeve",name:"Lodève",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"lunel",name:"Lunel",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"lunel-viel",name:"Lunel-Viel",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"manduel",name:"Manduel",dept:"Gard (30)",deptNum:"30",coastal:false},
+    {slug:"maraussan",name:"Maraussan",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"marguerittes",name:"Marguerittes",dept:"Gard (30)",deptNum:"30",coastal:false},
+    {slug:"marseillan",name:"Marseillan",dept:"Hérault (34)",deptNum:"34",coastal:true},
+    {slug:"marsillargues",name:"Marsillargues",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"mauguio",name:"Mauguio",dept:"Hérault (34)",deptNum:"34",coastal:true},
+    {slug:"meze",name:"Mèze",dept:"Hérault (34)",deptNum:"34",coastal:true},
+    {slug:"milhaud",name:"Milhaud",dept:"Gard (30)",deptNum:"30",coastal:false},
+    {slug:"mireval",name:"Mireval",dept:"Hérault (34)",deptNum:"34",coastal:true},
+    {slug:"montagnac",name:"Montagnac",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"montbazin",name:"Montbazin",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"montblanc",name:"Montblanc",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"montferrier-sur-lez",name:"Montferrier-sur-Lez",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"montfrin",name:"Montfrin",dept:"Gard (30)",deptNum:"30",coastal:false},
+    {slug:"montpellier",name:"Montpellier",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"nimes",name:"Nîmes",dept:"Gard (30)",deptNum:"30",coastal:false},
+    {slug:"nissan-lez-enserune",name:"Nissan-lez-Enserune",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"palavas-les-flots",name:"Palavas-les-Flots",dept:"Hérault (34)",deptNum:"34",coastal:true},
+    {slug:"perols",name:"Pérols",dept:"Hérault (34)",deptNum:"34",coastal:true},
+    {slug:"pezenas",name:"Pézenas",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"pignan",name:"Pignan",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"pont-saint-esprit",name:"Pont-Saint-Esprit",dept:"Gard (30)",deptNum:"30",coastal:false},
+    {slug:"poussan",name:"Poussan",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"prades-le-lez",name:"Prades-le-Lez",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"quissac",name:"Quissac",dept:"Gard (30)",deptNum:"30",coastal:false},
+    {slug:"redessan",name:"Redessan",dept:"Gard (30)",deptNum:"30",coastal:false},
+    {slug:"remoulins",name:"Remoulins",dept:"Gard (30)",deptNum:"30",coastal:false},
+    {slug:"rochefort-du-gard",name:"Rochefort-du-Gard",dept:"Gard (30)",deptNum:"30",coastal:false},
+    {slug:"roquemaure",name:"Roquemaure",dept:"Gard (30)",deptNum:"30",coastal:false},
+    {slug:"saint-ambroix",name:"Saint-Ambroix",dept:"Gard (30)",deptNum:"30",coastal:false},
+    {slug:"saint-aunes",name:"Saint-Aunès",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"saint-christol-lez-ales",name:"Saint-Christol-lès-Alès",dept:"Gard (30)",deptNum:"30",coastal:false},
+    {slug:"saint-clement-de-riviere",name:"Saint-Clément-de-Rivière",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"saint-gely-du-fesc",name:"Saint-Gély-du-Fesc",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"saint-genies-de-malgoires",name:"Saint-Geniès-de-Malgoirès",dept:"Gard (30)",deptNum:"30",coastal:false},
+    {slug:"saint-georges-d-orques",name:"Saint-Georges-d'Orques",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"saint-gilles",name:"Saint-Gilles",dept:"Gard (30)",deptNum:"30",coastal:false},
+    {slug:"saint-hilaire-de-brethmas",name:"Saint-Hilaire-de-Brethmas",dept:"Gard (30)",deptNum:"30",coastal:false},
+    {slug:"saint-hippolyte-du-fort",name:"Saint-Hippolyte-du-Fort",dept:"Gard (30)",deptNum:"30",coastal:false},
+    {slug:"saint-jean-de-vedas",name:"Saint-Jean-de-Védas",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"saint-laurent-des-arbres",name:"Saint-Laurent-des-Arbres",dept:"Gard (30)",deptNum:"30",coastal:false},
+    {slug:"saint-mathieu-de-treviers",name:"Saint-Mathieu-de-Tréviers",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"salindres",name:"Salindres",dept:"Gard (30)",deptNum:"30",coastal:false},
+    {slug:"serignan",name:"Sérignan",dept:"Hérault (34)",deptNum:"34",coastal:true},
+    {slug:"sete",name:"Sète",dept:"Hérault (34)",deptNum:"34",coastal:true},
+    {slug:"sommieres",name:"Sommières",dept:"Gard (30)",deptNum:"30",coastal:false},
+    {slug:"uchaud",name:"Uchaud",dept:"Gard (30)",deptNum:"30",coastal:false},
+    {slug:"uzes",name:"Uzès",dept:"Gard (30)",deptNum:"30",coastal:false},
+    {slug:"valras-plage",name:"Valras-Plage",dept:"Hérault (34)",deptNum:"34",coastal:true},
+    {slug:"vauvert",name:"Vauvert",dept:"Gard (30)",deptNum:"30",coastal:false},
+    {slug:"vendargues",name:"Vendargues",dept:"Hérault (34)",deptNum:"34",coastal:false},
+    {slug:"vergeze",name:"Vergèze",dept:"Gard (30)",deptNum:"30",coastal:false},
+    {slug:"vias",name:"Vias",dept:"Hérault (34)",deptNum:"34",coastal:true},
+    {slug:"villeneuve-les-avignon",name:"Villeneuve-lès-Avignon",dept:"Gard (30)",deptNum:"30",coastal:false},
+    {slug:"villeneuve-les-beziers",name:"Villeneuve-lès-Béziers",dept:"Hérault (34)",deptNum:"34",coastal:true},
+    {slug:"villeneuve-les-maguelone",name:"Villeneuve-lès-Maguelone",dept:"Hérault (34)",deptNum:"34",coastal:true},
 ];
 
-// Mapping ville slug → index zone air dans full_data.json
-// (0=Lodévois, 1=Uzès, 2=Gard Rhodanien, 3=Thau/Sète, 4=Alès, 5=Sommières,
-//  6=Beaucaire, 7=Nîmes, 9=Montpellier, 10=Pays de l'Or, 11=Lunel, 12=Hérault/Gignac, 13=Béziers, 14=Agde)
-const CITY_AIR_ZONE = {
-    "agde":14, "vias":14, "marseillan":14,
-    "sete":3, "meze":3, "balaruc-les-bains":3, "frontignan":3, "mireval":3,
-    "poussan":3, "gigean":3, "montbazin":3, "balaruc-les-bains":3,
-    "montpellier":9, "castelnau-le-lez":9, "clapiers":9, "grabels":9,
-    "jacou":9, "juvignac":9, "lattes":9, "le-cres":9, "montferrier-sur-lez":9,
-    "perols":9, "pignan":9, "prades-le-lez":9, "saint-aunes":9,
-    "saint-clement-de-riviere":9, "saint-gely-du-fesc":9, "saint-georges-d-orques":9,
-    "saint-jean-de-vedas":9, "vendargues":9, "fabregues":9,
-    "mauguio":10, "palavas-les-flots":10, "villeneuve-les-maguelone":10,
-    "castries":10, "saint-mathieu-de-treviers":10, "lunel-viel":10,
-    "marsillargues":10, "baillargues":10,
-    "lunel":11, "aimargues":11, "gallargues-le-montueux":11,
-    "gignac":12, "montagnac":12, "florensac":12, "bessan":12, "canet":12,
-    "cournonterral":12, "pezenas":12,
-    "clermont-l-herault":0, "lodeve":0, "ganges":0, "bedarieux":0,
-    "beziers":13, "villeneuve-les-beziers":13, "serignan":13, "valras-plage":13,
-    "nissan-lez-enserune":13, "capestang":13, "boujan-sur-libron":13,
-    "maraussan":13, "montblanc":13,
-    "nimes":7, "bouillargues":7, "caissargues":7, "garons":7, "marguerittes":7,
-    "milhaud":7, "redessan":7, "uchaud":7, "manduel":7, "vergeze":7,
-    "saint-gilles":7,
-    "sommieres":5, "calvisson":5, "clarensac":5, "quissac":5,
-    "beaucaire":6, "aramon":6, "remoulins":6, "rochefort-du-gard":6,
-    "roquemaure":6, "les-angles":6, "villeneuve-les-avignon":6, "montfrin":6,
-    "ales":4, "saint-christol-lez-ales":4, "salindres":4, "saint-ambroix":4,
-    "saint-hilaire-de-brethmas":4, "la-grand-combe":4, "saint-hippolyte-du-fort":4,
-    "uzes":1, "pont-saint-esprit":1, "saint-laurent-des-arbres":1,
-    "bagnols-sur-ceze":2, "laudun-l-ardoise":2, "saint-genies-de-malgoires":2,
-    "aigues-mortes":7, "le-grau-du-roi":7,
-    "bellegarde":7, "le-vigan":0,
+// city slug → air zone index in full_data.json air array
+const CITY_AIR_ZONE={
+    "agde":14,"vias":14,"marseillan":14,
+    "sete":3,"meze":3,"balaruc-les-bains":3,"frontignan":3,"mireval":3,"poussan":3,"gigean":3,"montbazin":3,
+    "montpellier":9,"castelnau-le-lez":9,"clapiers":9,"grabels":9,"jacou":9,"juvignac":9,"lattes":9,
+    "le-cres":9,"montferrier-sur-lez":9,"perols":9,"pignan":9,"prades-le-lez":9,"saint-aunes":9,
+    "saint-clement-de-riviere":9,"saint-gely-du-fesc":9,"saint-georges-d-orques":9,"saint-jean-de-vedas":9,
+    "vendargues":9,"fabregues":9,"baillargues":9,
+    "mauguio":10,"palavas-les-flots":10,"villeneuve-les-maguelone":10,"castries":10,
+    "saint-mathieu-de-treviers":10,"lunel-viel":10,"marsillargues":10,
+    "lunel":11,"aimargues":11,"gallargues-le-montueux":11,
+    "gignac":12,"montagnac":12,"florensac":12,"bessan":12,"canet":12,"cournonterral":12,"pezenas":12,
+    "clermont-l-herault":0,"lodeve":0,"ganges":0,"bedarieux":0,"le-vigan":0,
+    "beziers":13,"villeneuve-les-beziers":13,"serignan":13,"valras-plage":13,
+    "nissan-lez-enserune":13,"capestang":13,"boujan-sur-libron":13,"maraussan":13,"montblanc":13,
+    "nimes":7,"bouillargues":7,"caissargues":7,"garons":7,"marguerittes":7,"milhaud":7,
+    "redessan":7,"uchaud":7,"manduel":7,"vergeze":7,"saint-gilles":7,"aigues-mortes":7,"le-grau-du-roi":7,"bellegarde":7,
+    "sommieres":5,"calvisson":5,"clarensac":5,"quissac":5,
+    "beaucaire":6,"aramon":6,"remoulins":6,"rochefort-du-gard":6,"roquemaure":6,
+    "les-angles":6,"villeneuve-les-avignon":6,"montfrin":6,
+    "ales":4,"saint-christol-lez-ales":4,"salindres":4,"saint-ambroix":4,
+    "saint-hilaire-de-brethmas":4,"la-grand-combe":4,"saint-hippolyte-du-fort":4,
+    "uzes":1,"pont-saint-esprit":1,"saint-laurent-des-arbres":1,
+    "bagnols-sur-ceze":2,"laudun-l-ardoise":2,"saint-genies-de-malgoires":2,
 };
 
-// ═══ DATA ═══
-let DATA = null;
-let dataPromise = null;
+// parameter display limits for bar chart
+const PARAM_LIMITS={
+    "Nitrates":{limit:50,unit:"mg/L"},
+    "pH":{limit:9,unit:"pH"},
+    "Chlore":{limit:1,unit:"mg/L"},
+    "Bactériologie":{limit:1,unit:"UFC/100mL"},
+    "Calcaire (TH)":{limit:50,unit:"°f"},
+    "Plomb":{limit:10,unit:"µg/L"},
+    "Pesticides":{limit:0.5,unit:"µg/L"},
+    "THM":{limit:100,unit:"µg/L"},
+};
 
-function loadData() {
-    if (dataPromise) return dataPromise;
-    dataPromise = fetch('/full_data.json')
-        .then(r => r.json())
-        .then(d => { DATA = d; return d; });
+// IQA colors map for polluant bar widths (1-6 scale)
+const IQA_WIDTH={1:10,2:28,3:50,4:68,5:84,6:100};
+
+// ════════════════════════════════════════════════
+// DATA LOAD
+// ════════════════════════════════════════════════
+let DATA=null,dataPromise=null;
+function loadData(){
+    if(dataPromise) return dataPromise;
+    dataPromise=fetch('/full_data.json').then(r=>r.json()).then(d=>{DATA=d;return d;});
     return dataPromise;
 }
 
-// ═══ NORMALIZE ═══
-function normalize(str) {
-    return str.toLowerCase()
-        .normalize("NFD").replace(/[\u0300-\u036f]/g,"")
-        .replace(/[-'\u2019]/g," ").trim();
+// ════════════════════════════════════════════════
+// NORMALIZE
+// ════════════════════════════════════════════════
+function norm(s){
+    return s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[-'\u2019]/g," ").trim();
 }
 
-// ═══ AUTOCOMPLETE ═══
-const input = document.getElementById("search-input");
-const list  = document.getElementById("autocomplete-list");
-let activeIdx = -1, currentMatches = [];
+// ════════════════════════════════════════════════
+// AUTOCOMPLETE
+// ════════════════════════════════════════════════
+const input=document.getElementById("search-input");
+const list=document.getElementById("autocomplete-list");
+let activeIdx=-1,currentMatches=[];
 
-input.addEventListener("input", function() {
-    const q = normalize(this.value);
-    activeIdx = -1;
-    if (q.length < 1) { list.classList.remove("show"); return; }
-    currentMatches = CITIES.filter(c =>
-        normalize(c.name).includes(q) || normalize(c.slug).includes(q.replace(/ /g,"-"))
-    ).slice(0, 8);
-    if (!currentMatches.length) { list.classList.remove("show"); return; }
-    const raw = this.value.trim();
-    list.innerHTML = currentMatches.map((c,i) => {
-        const re = new RegExp("("+raw.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+")","gi");
-        const hl = c.name.replace(re,'<span class="autocomplete-highlight">$1</span>');
-        return `<div class="autocomplete-item" data-idx="${i}" onmousedown="selectCityObj(${i})">
-            <span>📍</span><span>${hl}</span><span class="dept">${c.dept}</span>
-        </div>`;
+input.addEventListener("input",function(){
+    const q=norm(this.value); activeIdx=-1;
+    if(q.length<1){list.classList.remove("show");return;}
+    currentMatches=CITIES.filter(c=>norm(c.name).includes(q)||norm(c.slug).includes(q.replace(/ /g,"-"))).slice(0,8);
+    if(!currentMatches.length){list.classList.remove("show");return;}
+    const raw=this.value.trim();
+    list.innerHTML=currentMatches.map((c,i)=>{
+        const re=new RegExp("("+raw.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+")","gi");
+        const hl=c.name.replace(re,'<span class="autocomplete-highlight">$1</span>');
+        return`<div class="autocomplete-item" onmousedown="selectCityObj(${i})"><span>📍</span><span>${hl}</span><span class="dept">${c.dept}</span></div>`;
     }).join("");
     list.classList.add("show");
 });
-
-input.addEventListener("keydown", function(e) {
-    const items = list.querySelectorAll(".autocomplete-item");
-    if (e.key==="ArrowDown") { e.preventDefault(); activeIdx=Math.min(activeIdx+1,items.length-1); items.forEach((el,i)=>el.classList.toggle("active",i===activeIdx)); }
-    else if (e.key==="ArrowUp") { e.preventDefault(); activeIdx=Math.max(activeIdx-1,-1); items.forEach((el,i)=>el.classList.toggle("active",i===activeIdx)); }
-    else if (e.key==="Enter") { e.preventDefault(); activeIdx>=0&&currentMatches[activeIdx] ? selectCityObj(activeIdx) : doSearch(); }
-    else if (e.key==="Escape") { list.classList.remove("show"); }
+input.addEventListener("keydown",function(e){
+    const items=list.querySelectorAll(".autocomplete-item");
+    if(e.key==="ArrowDown"){e.preventDefault();activeIdx=Math.min(activeIdx+1,items.length-1);items.forEach((el,i)=>el.classList.toggle("active",i===activeIdx));}
+    else if(e.key==="ArrowUp"){e.preventDefault();activeIdx=Math.max(activeIdx-1,-1);items.forEach((el,i)=>el.classList.toggle("active",i===activeIdx));}
+    else if(e.key==="Enter"){e.preventDefault();activeIdx>=0&&currentMatches[activeIdx]?selectCityObj(activeIdx):doSearch();}
+    else if(e.key==="Escape"){list.classList.remove("show");}
 });
-document.addEventListener("click", e => { if (!document.getElementById("search-container").contains(e.target)) list.classList.remove("show"); });
+document.addEventListener("click",e=>{if(!document.getElementById("search-container").contains(e.target))list.classList.remove("show");});
 
-function selectCityObj(idx) {
-    const city = currentMatches[idx]; if (!city) return;
-    input.value = city.name; list.classList.remove("show"); showResults(city);
-}
-function selectCity(slug) {
-    const city = CITIES.find(c=>c.slug===slug); if (!city) return;
-    input.value = city.name; showResults(city);
-}
-function doSearch() {
-    const q = normalize(input.value); if (!q) return;
-    let city = CITIES.find(c=>normalize(c.name)===q)
-            || CITIES.find(c=>normalize(c.name).startsWith(q))
-            || CITIES.find(c=>normalize(c.name).includes(q));
-    if (city) showResults(city);
-    else alert("Ville non trouvée. Communes couvertes : Hérault (34) et Gard (30).");
+function selectCityObj(i){const c=currentMatches[i];if(!c)return;input.value=c.name;list.classList.remove("show");showResults(c);}
+function selectCity(slug){const c=CITIES.find(x=>x.slug===slug);if(!c)return;input.value=c.name;showResults(c);}
+function doSearch(){
+    const q=norm(input.value);if(!q)return;
+    const c=CITIES.find(x=>norm(x.name)===q)||CITIES.find(x=>norm(x.name).startsWith(q))||CITIES.find(x=>norm(x.name).includes(q));
+    if(c)showResults(c);
+    else alert("Ville non trouvée.\nCommunes couvertes : Hérault (34) et Gard (30).");
 }
 
-// ═══ SHOW RESULTS ═══
-function showResults(city) {
+// ════════════════════════════════════════════════
+// SHOW RESULTS
+// ════════════════════════════════════════════════
+let leafletMaps=[];
+function destroyMaps(){leafletMaps.forEach(m=>{try{m.remove();}catch(e){}});leafletMaps=[];}
+
+function showResults(city){
     list.classList.remove("show");
-    const url = new URL(window.location);
-    url.searchParams.set("q", city.name);
-    window.history.pushState({}, "", url);
+    const url=new URL(window.location);url.searchParams.set("q",city.name);window.history.pushState({},"",url);
 
-    document.getElementById("result-city-name").textContent = city.name;
-    document.getElementById("result-city-dept").textContent = city.dept;
-    document.getElementById("data-sections").innerHTML = "";
-    document.getElementById("loading-state").style.display = "block";
+    document.getElementById("result-city-name").textContent=city.name;
+    document.getElementById("result-city-dept").textContent=city.dept;
+    document.getElementById("data-sections").innerHTML="";
+    document.getElementById("loading-state").style.display="block";
     document.getElementById("results-panel").classList.add("show");
-    document.getElementById("hero-section").style.paddingTop = "1rem";
-    document.getElementById("hero-section").style.paddingBottom = "1.25rem";
-    document.getElementById("popular-cities").style.display = "none";
+    document.getElementById("hero-section").style.paddingTop=".75rem";
+    document.getElementById("hero-section").style.paddingBottom="1rem";
+    document.getElementById("popular-cities").style.display="none";
+    destroyMaps();
+    setTimeout(()=>document.getElementById("results-panel").scrollIntoView({behavior:"smooth",block:"start"}),60);
 
-    setTimeout(() => {
-        document.getElementById("results-panel").scrollIntoView({ behavior:"smooth", block:"start" });
-    }, 60);
-
-    loadData().then(d => {
-        document.getElementById("loading-state").style.display = "none";
-        if (d.updated) document.getElementById("result-updated").textContent = "Mis à jour le "+d.updated;
-        document.getElementById("data-sections").innerHTML = renderAllSections(city, d);
-    }).catch(() => {
-        document.getElementById("loading-state").innerHTML = "❌ Impossible de charger les données.";
-    });
+    loadData().then(d=>{
+        document.getElementById("loading-state").style.display="none";
+        if(d.updated)document.getElementById("result-updated").textContent="Mis à jour le "+d.updated;
+        document.getElementById("data-sections").innerHTML=renderAll(city,d);
+        // init maps after DOM is set
+        requestAnimationFrame(()=>{initMaps(city,d);});
+    }).catch(()=>{document.getElementById("loading-state").innerHTML='<p class="text-red-400 text-sm">❌ Erreur de chargement.</p>';});
 }
-
-function resetSearch() {
+function resetSearch(){
+    destroyMaps();
     document.getElementById("results-panel").classList.remove("show");
-    document.getElementById("hero-section").style.paddingTop = "";
-    document.getElementById("hero-section").style.paddingBottom = "";
-    document.getElementById("popular-cities").style.display = "";
-    input.value = "";
-    const url = new URL(window.location);
-    url.searchParams.delete("q");
-    window.history.pushState({}, "", url);
-    window.scrollTo({ top:0, behavior:"smooth" });
+    document.getElementById("hero-section").style.paddingTop="";
+    document.getElementById("hero-section").style.paddingBottom="";
+    document.getElementById("popular-cities").style.display="";
+    input.value="";
+    const url=new URL(window.location);url.searchParams.delete("q");window.history.pushState({},"",url);
+    window.scrollTo({top:0,behavior:"smooth"});
     input.focus();
 }
 
-// ═══ RENDER ALL SECTIONS ═══
-function renderAllSections(city, d) {
-    return [
-        renderPotable(city, d.potable),
-        renderAir(city, d.air),
-        renderPollen(city, d.pollen),
-        renderNappes(city, d.nappes),
-        renderRivieres(city, d.rivieres),
+// ════════════════════════════════════════════════
+// SPARKLINE SVG
+// ════════════════════════════════════════════════
+function sparkline(history,color,w=140,h=36){
+    if(!history||history.length<2) return "";
+    const vals=history.map(Number);
+    const mn=Math.min(...vals),mx=Math.max(...vals);
+    const range=mx-mn||1;
+    const pts=vals.map((v,i)=>{
+        const x=i*(w/(vals.length-1));
+        const y=h-(((v-mn)/range)*(h-6)+3);
+        return`${x.toFixed(1)},${y.toFixed(1)}`;
+    });
+    const last=pts[pts.length-1];
+    const [lx,ly]=last.split(",");
+    return`<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" style="display:block">
+        <polyline points="${pts.join(" ")}" fill="none" stroke="${color}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+        <circle cx="${lx}" cy="${ly}" r="3.5" fill="${color}"/>
+    </svg>`;
+}
+
+// ════════════════════════════════════════════════
+// SCORE RING SVG
+// ════════════════════════════════════════════════
+function scoreRing(score,color){
+    const r=40,circ=2*Math.PI*r,dash=circ*(score/100),gap=circ-dash;
+    return`<div class="score-svg-wrap">
+        <svg width="100" height="100" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="${r}" fill="none" stroke="#f1f5f9" stroke-width="9"/>
+            <circle cx="50" cy="50" r="${r}" fill="none" stroke="${color}" stroke-width="9"
+                stroke-dasharray="${dash} ${gap}" stroke-linecap="round"
+                style="transition:stroke-dasharray 1s cubic-bezier(.4,0,.2,1)"/>
+        </svg>
+        <div class="score-center">
+            <div class="score-number" style="color:${color}">${score}</div>
+            <div class="score-label-sm">/ 100</div>
+        </div>
+    </div>`;
+}
+
+// ════════════════════════════════════════════════
+// RENDER ALL
+// ════════════════════════════════════════════════
+function renderAll(city,d){
+    return[
+        renderPotable(city,d.potable),
+        renderAir(city,d.air),
+        renderPollen(city,d.pollen),
+        renderNappes(city,d.nappes),
+        renderRivieres(city,d.rivieres),
     ].join("");
 }
 
 // ────────────────────────────────────────────────
 // EAU POTABLE
 // ────────────────────────────────────────────────
-function renderPotable(city, potable) {
-    const rec = potable.find(p => normalize(p.nom)===normalize(city.name));
-    if (!rec) {
-        return `<div class="data-card card-unavailable">
-            <div class="card-header"><span class="card-header-icon">🚰</span>
-                <div><div class="card-header-title">Eau potable</div><div class="card-header-sub">Aucune donnée pour cette commune</div></div>
-            </div></div>`;
-    }
-    const color = rec.score_color || "#10b981";
-    const paramHtml = Object.entries(rec.parametres||{}).map(([name,p]) =>
-        `<div class="param-pill">
-            <div class="dot" style="background:${p.color}"></div>
-            <span class="name">${name}</span>
-            <span class="val">${p.valeur} <span style="color:#94a3b8;font-weight:400">${p.unite}</span></span>
-         </div>`
-    ).join("");
+function renderPotable(city,potable){
+    const rec=potable.find(p=>norm(p.nom)===norm(city.name));
+    if(!rec) return `<div class="section-card card-unavailable">
+        <div class="card-strip" style="background:#94a3b8">
+            <span class="card-strip-icon">🚰</span>
+            <div><div class="card-strip-title">Eau potable</div><div class="card-strip-sub">Aucune donnée disponible</div></div>
+        </div></div>`;
 
-    const alertBadge = rec.restric && rec.restric !== "Aucune" && rec.restric !== "RAS"
-        ? `<span class="card-header-badge" style="background:#fef9c3;color:#92400e">⚠ ${rec.restric}</span>` : "";
+    const c=rec.score_color||"#10b981";
+    const alertBadge=rec.restric&&rec.restric!=="Aucune"&&rec.restric!=="RAS"
+        ?`<span class="badge badge-alert ml-auto">⚠ ${rec.restric}</span>`:"";
 
-    return `<div class="data-card">
-        <div class="card-header">
-            <span class="card-header-icon">🚰</span>
-            <div>
-                <div class="card-header-title">Eau potable</div>
-                <div class="card-header-sub">Source : ARS via Hub'Eau</div>
+    // param bars
+    const bars=Object.entries(rec.parametres||{}).map(([name,p])=>{
+        const lim=PARAM_LIMITS[name];
+        const raw=parseFloat(p.valeur);
+        let pct=0;
+        if(lim&&!isNaN(raw)) pct=Math.min(100,Math.round((raw/lim.limit)*100));
+        else pct=p.color==="#10b981"?15:p.color==="#f59e0b"?55:80;
+        return`<div class="param-bar-row">
+            <div class="param-bar-name">${name}</div>
+            <div class="param-bar-track"><div class="param-bar-fill" style="width:${pct}%;background:${p.color}"></div></div>
+            <div class="param-bar-val" style="color:${p.color}">${p.valeur} <span style="font-weight:400;color:#94a3b8;font-size:.66rem">${p.unite}</span></div>
+        </div>`;
+    }).join("");
+
+    return`<div class="section-card">
+        <div class="card-strip" style="background:linear-gradient(135deg,#064e3b,#065f46)">
+            <span class="card-strip-icon">🚰</span>
+            <div style="flex:1">
+                <div class="card-strip-title">Eau potable</div>
+                <div class="card-strip-sub">ARS · Hub'Eau · Données officielles</div>
             </div>
             ${alertBadge}
         </div>
-        <div class="flex items-center gap-4 mb-4">
-            <div class="score-ring" style="background:${color}">${rec.score}<span style="font-size:.6rem">/100</span></div>
-            <div>
-                <div style="font-size:.95rem;font-weight:800;color:${color}">${rec.score_label}</div>
-                ${rec.origine ? `<div style="font-size:.72rem;color:#94a3b8;margin-top:.15rem">Origine : ${rec.origine}</div>` : ""}
-                ${rec.conclusion ? `<div style="font-size:.73rem;color:#475569;margin-top:.3rem;max-width:400px;line-height:1.45">${rec.conclusion}</div>` : ""}
+        <div class="card-body">
+            <div class="flex gap-5 items-start flex-wrap">
+                <div class="flex flex-col items-center gap-1">
+                    ${scoreRing(rec.score,c)}
+                    <div style="font-size:.8rem;font-weight:800;color:${c};margin-top:.15rem">${rec.score_label}</div>
+                </div>
+                <div style="flex:1;min-width:220px">
+                    ${bars}
+                </div>
             </div>
-        </div>
-        <div class="param-grid">${paramHtml}</div>
-        <div class="mt-4">
-            <a href="/eau-potable/${city.slug}/" class="detail-link">Voir la fiche complète →</a>
+            ${rec.conclusion?`<div class="conclusion-text mt-4">${rec.conclusion}</div>`:""}
+            ${rec.origine?`<div style="font-size:.7rem;color:#94a3b8;margin-top:.6rem">Origine de l'eau : ${rec.origine}</div>`:""}
+            <div class="mt-4"><a href="/eau-potable/${city.slug}/" class="detail-link">Fiche complète & historique →</a></div>
         </div>
     </div>`;
 }
@@ -581,190 +581,237 @@ function renderPotable(city, potable) {
 // ────────────────────────────────────────────────
 // QUALITE DE L'AIR
 // ────────────────────────────────────────────────
-function renderAir(city, air) {
-    if (!Array.isArray(air) || !air.length) return "";
-    const zoneIdx = CITY_AIR_ZONE[city.slug];
-    let rec = null;
-    if (zoneIdx !== undefined) {
-        rec = air[zoneIdx];
-    } else {
-        // Fallback: first zone of the dept
-        rec = air.find(a => a.dept === city.deptNum);
-    }
-    if (!rec) {
-        return `<div class="data-card card-unavailable">
-            <div class="card-header"><span class="card-header-icon">💨</span>
-                <div><div class="card-header-title">Qualité de l'air</div>
-                <div class="card-header-sub">Pas de station Atmo pour ce secteur</div></div>
-            </div></div>`;
-    }
+function renderAir(city,air){
+    if(!Array.isArray(air)||!air.length) return "";
+    const zIdx=CITY_AIR_ZONE[city.slug];
+    const rec=zIdx!==undefined?air[zIdx]:air.find(a=>a.dept===city.deptNum);
+    if(!rec) return "";
 
-    const pollHtml = Object.entries(rec.polluants||{}).map(([name,p]) =>
-        `<div class="pollutant-chip">
+    const chips=Object.entries(rec.polluants||{}).map(([name,p])=>{
+        const w=IQA_WIDTH[p.indice]||10;
+        return`<div class="pollutant-chip">
             <div class="p-name">${name}</div>
-            <div class="p-val" style="color:${p.color}">${p.label}</div>
-         </div>`
-    ).join("");
+            <div class="p-label" style="color:${p.color}">${p.label}</div>
+            <div class="p-bar-track"><div class="p-bar-fill" style="width:${w}%;background:${p.color}"></div></div>
+        </div>`;
+    }).join("");
 
-    const iqaStyle = `border-color:${rec.color};background:${rec.color}22;color:${rec.color === '#10b981' ? '#065f46' : '#1e293b'}`;
+    const iqaBg=rec.color+"22",iqaBorder=rec.color;
+    const darkLabel=rec.indice<=2?"#065f46":rec.indice<=3?"#78350f":"#7f1d1d";
 
-    return `<div class="data-card">
-        <div class="card-header">
-            <span class="card-header-icon">💨</span>
+    return`<div class="section-card">
+        <div class="card-strip" style="background:linear-gradient(135deg,#0c4a6e,#075985)">
+            <span class="card-strip-icon">💨</span>
             <div>
-                <div class="card-header-title">Qualité de l'air</div>
-                <div class="card-header-sub">${rec.zone} · ${rec.date} · Atmo Occitanie</div>
+                <div class="card-strip-title">Qualité de l'air</div>
+                <div class="card-strip-sub">${rec.zone} · ${rec.date} · Atmo Occitanie</div>
             </div>
         </div>
-        <div class="flex items-center gap-4 mb-4">
-            <div class="iqa-badge" style="${iqaStyle}">
-                <span style="font-size:1.4rem;font-weight:900">${rec.indice}</span>
-                <span>${rec.label}</span>
+        <div class="card-body">
+            <div class="flex items-center gap-4 mb-4 p-4 rounded-xl" style="background:${iqaBg};border:2px solid ${iqaBorder}">
+                <div style="font-size:3.2rem;font-weight:900;color:${rec.color};line-height:1">${rec.indice}</div>
+                <div>
+                    <div style="font-size:1.2rem;font-weight:800;color:${darkLabel}">${rec.label}</div>
+                    <div style="font-size:.72rem;color:#64748b;margin-top:.2rem">Indice sur 6 · 1 = Bon · 6 = Extrêmement mauvais</div>
+                </div>
             </div>
-            <div style="font-size:.75rem;color:#94a3b8">Indice de qualité de l'air<br>sur une échelle de 1 (Bon) à 6 (Extrêmement mauvais)</div>
+            <div class="pollutant-grid">${chips}</div>
         </div>
-        <div class="pollutant-row">${pollHtml}</div>
     </div>`;
 }
 
 // ────────────────────────────────────────────────
 // POLLEN
 // ────────────────────────────────────────────────
-function renderPollen(city, pollen) {
-    if (!Array.isArray(pollen) || !pollen.length) return "";
-    const rec = pollen.find(p => p.dept === city.deptNum);
-    if (!rec) return "";
+function renderPollen(city,pollen){
+    if(!Array.isArray(pollen)||!pollen.length) return "";
+    const rec=pollen.find(p=>p.dept===city.deptNum);
+    if(!rec) return "";
 
-    const taxaHtml = Object.entries(rec.taxa||{})
-        .filter(([,t]) => t.indice > 0)
-        .map(([name,t]) =>
-            `<div class="pollen-chip">
-                <span style="width:8px;height:8px;border-radius:50%;background:${t.color};flex-shrink:0;display:inline-block"></span>
-                <span style="color:#475569">${name}</span>
-                <span style="font-weight:700;color:${t.color}">${t.label}</span>
-             </div>`
-        ).join("") || '<span style="font-size:.75rem;color:#94a3b8">Aucun pollène significatif</span>';
+    const pills=Object.entries(rec.taxa||{}).map(([name,t])=>`
+        <div class="pollen-pill">
+            <div class="pollen-dot" style="background:${t.color}"></div>
+            <span style="color:#475569">${name}</span>
+            <span style="font-weight:800;color:${t.color}">${t.label}</span>
+        </div>`).join("");
 
-    return `<div class="data-card">
-        <div class="card-header">
-            <span class="card-header-icon">🌸</span>
-            <div>
-                <div class="card-header-title">Risque pollinique</div>
-                <div class="card-header-sub">${rec.lib_zone} · ${rec.date} · RNSA</div>
+    return`<div class="section-card">
+        <div class="card-strip" style="background:linear-gradient(135deg,#4a1d96,#5b21b6)">
+            <span class="card-strip-icon">🌸</span>
+            <div style="flex:1">
+                <div class="card-strip-title">Risque pollinique</div>
+                <div class="card-strip-sub">${rec.lib_zone} · ${rec.date} · RNSA</div>
             </div>
-            <span class="card-header-badge" style="background:${rec.color_global}33;color:#1e293b;border:1.5px solid ${rec.color_global}">${rec.label_global}</span>
+            <span class="badge ml-auto" style="background:${rec.color_global}33;color:white;border:1px solid ${rec.color_global}">${rec.label_global}</span>
         </div>
-        <div class="pollen-grid">${taxaHtml}</div>
+        <div class="card-body">
+            <div class="flex flex-wrap gap-2">${pills}</div>
+        </div>
     </div>`;
 }
 
 // ────────────────────────────────────────────────
 // NAPPES PHREATIQUES
 // ────────────────────────────────────────────────
-function renderNappes(city, nappes) {
-    if (!Array.isArray(nappes) || !nappes.length) return "";
-    const cityNorm = normalize(city.name);
-    const matches = nappes.filter(n => normalize(n.nom).includes(cityNorm) || cityNorm.includes(normalize(n.nom)));
+function renderNappes(city,nappes){
+    if(!Array.isArray(nappes)||!nappes.length) return "";
+    const cn=norm(city.name);
+    let matches=nappes.filter(n=>norm(n.nom).includes(cn)||cn.includes(norm(n.nom)));
+    if(!matches.length) matches=nappes.filter(n=>n.dept===city.deptNum).slice(0,3);
+    if(!matches.length) return "";
 
-    // Fallback: dept-level, up to 2 nearby stations
-    const dept = city.deptNum;
-    const fallback = matches.length ? matches : nappes.filter(n => n.dept === dept).slice(0,2);
-
-    if (!fallback.length) {
-        return `<div class="data-card card-unavailable">
-            <div class="card-header"><span class="card-header-icon">🌊</span>
-                <div><div class="card-header-title">Nappes phréatiques</div><div class="card-header-sub">Aucune station piézométrique à proximité</div></div>
-            </div></div>`;
-    }
-
-    const rowsHtml = fallback.slice(0,4).map(n => {
-        const diff = n.current - n.year_ago;
-        const trend = diff > 0.2
-            ? `<span class="trend-up">↑ +${diff.toFixed(2)} m/an</span>`
-            : diff < -0.2
-            ? `<span class="trend-down">↓ ${diff.toFixed(2)} m/an</span>`
-            : `<span class="trend-flat">→ Stable</span>`;
-        return `<div class="nappe-row">
-            <div>
-                <div style="font-size:.85rem;font-weight:700;color:#1e293b">${n.nom}</div>
-                <div style="font-size:.72rem;color:#94a3b8">${n.code_bss}</div>
+    const stations=matches.slice(0,4).map(n=>{
+        const diff=+(n.current-n.year_ago).toFixed(2);
+        const trendColor=diff>0.2?"#16a34a":diff<-0.2?"#ef4444":"#94a3b8";
+        const trendArrow=diff>0.2?"↑":diff<-0.2?"↓":"→";
+        const trendTxt=diff>0.2?`+${diff} m/an`:diff<-0.2?`${diff} m/an`:"Stable";
+        return`<div style="display:flex;align-items:center;gap:.75rem;padding:.7rem 0;border-bottom:1px solid #f1f5f9">
+            <div style="flex:1">
+                <div style="font-size:.82rem;font-weight:700;color:#1e293b">${n.nom}</div>
+                <div style="font-size:.68rem;color:#94a3b8;margin-top:.1rem">${n.code_bss}</div>
+                <div style="margin-top:.4rem">${sparkline(n.history,n.color||"#3b82f6")}</div>
             </div>
-            <div style="text-align:right">
-                <div style="font-size:.9rem;font-weight:800;color:#1d4ed8">${n.current} m NGF</div>
-                <div style="font-size:.72rem;margin-top:.1rem">${trend}</div>
+            <div style="text-align:right;min-width:90px">
+                <div style="font-size:1rem;font-weight:900;color:#1d4ed8">${n.current} <span style="font-size:.65rem;font-weight:400;color:#94a3b8">m NGF</span></div>
+                <div style="font-size:.72rem;font-weight:700;color:${trendColor};margin-top:.2rem">${trendArrow} ${trendTxt}</div>
             </div>
         </div>`;
     }).join("");
 
-    return `<div class="data-card">
-        <div class="card-header">
-            <span class="card-header-icon">🌊</span>
+    return`<div class="section-card">
+        <div class="card-strip" style="background:linear-gradient(135deg,#1e3a5f,#1e40af)">
+            <span class="card-strip-icon">🌊</span>
             <div>
-                <div class="card-header-title">Nappes phréatiques</div>
-                <div class="card-header-sub">Stations BRGM · Niveau actuel vs il y a un an</div>
+                <div class="card-strip-title">Nappes phréatiques</div>
+                <div class="card-strip-sub">Piézomètres BRGM · Niveau & tendance sur 12 mois</div>
             </div>
         </div>
-        ${rowsHtml}
+        <div class="card-body">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.25rem" class="sm:grid-cols-2">
+                <div>${stations}</div>
+                <div><div id="map-nappes" class="env-map"></div></div>
+            </div>
+        </div>
     </div>`;
 }
 
 // ────────────────────────────────────────────────
 // RIVIERES
 // ────────────────────────────────────────────────
-function renderRivieres(city, rivieres) {
-    if (!Array.isArray(rivieres) || !rivieres.length) return "";
-    const cityNorm = normalize(city.name);
-    const matches = rivieres.filter(r => {
-        const comm = normalize(r.commune || r.nom || "");
-        return comm.includes(cityNorm) || cityNorm.includes(comm.split(" ")[0]);
-    });
+function renderRivieres(city,rivieres){
+    if(!Array.isArray(rivieres)||!rivieres.length) return "";
+    const cn=norm(city.name);
+    let matches=rivieres.filter(r=>norm(r.commune||r.nom||"").includes(cn));
+    if(!matches.length) matches=rivieres.filter(r=>r.dept===city.deptNum).slice(0,3);
+    if(!matches.length) return "";
 
-    const dept = city.deptNum;
-    const fallback = matches.length ? matches : rivieres.filter(r => r.dept === dept).slice(0,2);
-
-    if (!fallback.length) {
-        return `<div class="data-card card-unavailable">
-            <div class="card-header"><span class="card-header-icon">🏞️</span>
-                <div><div class="card-header-title">Rivières & cours d'eau</div><div class="card-header-sub">Aucune station à proximité</div></div>
-            </div></div>`;
-    }
-
-    const rowsHtml = fallback.slice(0,3).map(r => {
-        const paramHtml = Object.entries(r.parametres||{}).slice(0,5).map(([name,p]) =>
-            `<div class="param-pill">
-                <div class="dot" style="background:${p.color}"></div>
-                <span class="name">${name}</span>
-                <span class="val">${p.valeur} <span style="color:#94a3b8;font-weight:400">${p.unite}</span></span>
-             </div>`
+    const rows=matches.slice(0,3).map(r=>{
+        const params=Object.entries(r.parametres||{}).slice(0,6).map(([name,p])=>
+            `<span class="river-param"><span class="rdot" style="background:${p.color}"></span>${name} <strong style="color:${p.color}">${p.valeur}</strong> <span style="color:#94a3b8;font-size:.65rem">${p.unite}</span></span>`
         ).join("");
-        return `<div class="riviere-row">
-            <div style="font-size:.85rem;font-weight:700;color:#1e293b;margin-bottom:.4rem">
-                🏞 ${r.nom_cours_eau ? r.nom_cours_eau.trim() : "Cours d'eau"} · <span style="font-weight:400;color:#64748b;font-size:.78rem">${r.commune ? r.commune.trim() : ""}</span>
+        return`<div style="padding:.75rem 0;border-bottom:1px solid #f1f5f9">
+            <div style="font-size:.82rem;font-weight:700;color:#1e293b;margin-bottom:.4rem">
+                ${r.nom_cours_eau?r.nom_cours_eau.trim():"Cours d'eau"}
+                <span style="font-weight:400;color:#94a3b8;font-size:.72rem;margin-left:.4rem">${r.commune?r.commune.trim():""}</span>
             </div>
-            <div class="param-grid">${paramHtml || '<span style="font-size:.75rem;color:#94a3b8">Pas de paramètres disponibles</span>'}</div>
+            <div style="display:flex;flex-wrap:wrap;gap:.35rem">${params||'<span style="font-size:.72rem;color:#94a3b8">Pas de paramètres</span>'}</div>
         </div>`;
     }).join("");
 
-    return `<div class="data-card">
-        <div class="card-header">
-            <span class="card-header-icon">🏞️</span>
+    return`<div class="section-card">
+        <div class="card-strip" style="background:linear-gradient(135deg,#14532d,#166534)">
+            <span class="card-strip-icon">🏞️</span>
             <div>
-                <div class="card-header-title">Rivières & cours d'eau</div>
-                <div class="card-header-sub">Qualité physico-chimique · Hub'Eau</div>
+                <div class="card-strip-title">Rivières & cours d'eau</div>
+                <div class="card-strip-sub">Qualité physico-chimique · Hub'Eau</div>
             </div>
         </div>
-        ${rowsHtml}
+        <div class="card-body">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.25rem">
+                <div>${rows}</div>
+                <div><div id="map-rivieres" class="env-map"></div></div>
+            </div>
+        </div>
     </div>`;
 }
 
-// ═══ INIT ═══
-(function() {
-    loadData(); // prefetch
-    const q = new URLSearchParams(window.location.search).get("q");
-    if (q) {
-        input.value = q;
-        const city = CITIES.find(c => normalize(c.name)===normalize(q));
-        if (city) showResults(city);
+// ════════════════════════════════════════════════
+// INIT LEAFLET MAPS
+// ════════════════════════════════════════════════
+function initMaps(city,d){
+    initNappesMap(city,d.nappes);
+    initRivieresMap(city,d.rivieres);
+}
+
+function makeMap(id){
+    const el=document.getElementById(id);
+    if(!el) return null;
+    const m=L.map(id,{zoomControl:true,scrollWheelZoom:false,attributionControl:false});
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OSM'}).addTo(m);
+    L.control.attribution({prefix:false}).addTo(m);
+    leafletMaps.push(m);
+    return m;
+}
+
+function circleMarker(color){
+    return L.divIcon({
+        html:`<div style="width:14px;height:14px;border-radius:50%;background:${color};border:2.5px solid white;box-shadow:0 1px 6px rgba(0,0,0,.25)"></div>`,
+        iconSize:[14,14],iconAnchor:[7,7],className:""
+    });
+}
+
+function initNappesMap(city,nappes){
+    const m=makeMap("map-nappes");if(!m) return;
+    const cn=norm(city.name);
+    let stations=nappes.filter(n=>norm(n.nom).includes(cn)||cn.includes(norm(n.nom)));
+    if(!stations.length) stations=nappes.filter(n=>n.dept===city.deptNum).slice(0,6);
+    if(!stations.length){m.setView([43.6,3.9],10);return;}
+    const bounds=[];
+    stations.forEach(n=>{
+        if(!n.lat||!n.lng) return;
+        const diff=+(n.current-n.year_ago).toFixed(2);
+        const trendTxt=diff>0.2?`↑ +${diff}m/an`:diff<-0.2?`↓ ${diff}m/an`:"→ Stable";
+        const color=diff>0.2?"#16a34a":diff<-0.2?"#ef4444":"#3b82f6";
+        L.marker([n.lat,n.lng],{icon:circleMarker(color)})
+            .addTo(m)
+            .bindPopup(`<strong>${n.nom}</strong><br>${n.current} m NGF<br><span style="color:${color}">${trendTxt}</span>`);
+        bounds.push([n.lat,n.lng]);
+    });
+    if(bounds.length) m.fitBounds(bounds,{padding:[24,24],maxZoom:13});
+}
+
+function initRivieresMap(city,rivieres){
+    const m=makeMap("map-rivieres");if(!m) return;
+    const cn=norm(city.name);
+    let stations=rivieres.filter(r=>norm(r.commune||r.nom||"").includes(cn));
+    if(!stations.length) stations=rivieres.filter(r=>r.dept===city.deptNum).slice(0,6);
+    if(!stations.length){m.setView([43.6,3.9],10);return;}
+    const bounds=[];
+    stations.forEach(r=>{
+        const lat=r.lat,lng=r.lon;
+        if(!lat||!lng) return;
+        const firstParam=Object.entries(r.parametres||{})[0];
+        const color=firstParam?firstParam[1].color:"#16a34a";
+        const nom=(r.nom_cours_eau||"").trim();
+        const commune=(r.commune||"").trim();
+        L.marker([lat,lng],{icon:circleMarker(color)})
+            .addTo(m)
+            .bindPopup(`<strong>${nom}</strong><br><span style="color:#64748b">${commune}</span>`);
+        bounds.push([lat,lng]);
+    });
+    if(bounds.length) m.fitBounds(bounds,{padding:[24,24],maxZoom:13});
+}
+
+// ════════════════════════════════════════════════
+// INIT
+// ════════════════════════════════════════════════
+(function(){
+    loadData();
+    const q=new URLSearchParams(window.location.search).get("q");
+    if(q){
+        input.value=q;
+        const c=CITIES.find(x=>norm(x.name)===norm(q));
+        if(c) showResults(c);
     }
 })();
 </script>
