@@ -207,7 +207,7 @@
         .param-bar-track{
             flex:1;
             height:5px;
-            background:#f1f5f9;
+            background:#e2e8f0;
             border-radius:999px;
             overflow:hidden;
             margin-right:.5rem;
@@ -311,12 +311,26 @@
 
         /* ── MAP ── */
         .env-map{
-            height:260px;
+            height:280px;
             border-radius:1rem;
             width:100%;
             z-index:1;
             margin-top:1rem;
         }
+        /* Labels permanents sur les stations rivières */
+        .leaflet-tooltip{
+            background:rgba(15,23,42,.82)!important;
+            color:#fff!important;
+            border:none!important;
+            border-radius:4px!important;
+            font-size:.6rem!important;
+            font-weight:700!important;
+            font-family:'Inter',sans-serif!important;
+            padding:.15rem .4rem!important;
+            box-shadow:0 2px 8px rgba(0,0,0,.25)!important;
+            white-space:nowrap!important;
+        }
+        .leaflet-tooltip::before{display:none!important}
 
         /* ── SPARKLINE ── */
         .sparkline-wrap{overflow:hidden}
@@ -611,20 +625,25 @@ const IQA_WIDTH={1:10,2:28,3:50,4:68,5:84,6:100};
 // Source : EAQI européen + Directive 2008/50/CE + OMS 2021
 const IQA_RANGES={
     "NO₂" :{unit:"µg/m³", r:["< 40","40–80","80–120","120–160","160–200","> 200"],
-             seuil:"OMS 2021 : 10 µg/m³/an · UE 2008/50 : 40 µg/m³/an · Alerte : 400 µg/m³/h"},
+             seuil:"OMS 2021 : 10 µg/m³/an · UE 2008/50 : 40 µg/m³/an · Alerte : 400 µg/m³/h",
+             oms:"10 µg/m³/an", omsFrom:1},
     "O₃"  :{unit:"µg/m³", r:["< 50","50–100","100–130","130–160","160–200","> 200"],
-             seuil:"Seuil info : 180 µg/m³ · Alerte : 240 µg/m³ · OMS 2021 : 60 µg/m³/8h max"},
+             seuil:"Seuil info : 180 µg/m³ · Alerte : 240 µg/m³ · OMS 2021 : 60 µg/m³/8h max",
+             oms:"60 µg/m³/8h", omsFrom:2},
     "PM10" :{unit:"µg/m³", r:["< 20","20–40","40–50","50–75","75–80","> 80"],
-             seuil:"OMS 2021 : 15 µg/m³/an · UE : 40 µg/m³/an · 50 µg/m³/24h (max 35j)"},
+             seuil:"OMS 2021 : 15 µg/m³/an · UE : 40 µg/m³/an · 50 µg/m³/24h (max 35j)",
+             oms:"15 µg/m³/an", omsFrom:2},
     "PM2.5":{unit:"µg/m³", r:["< 10","10–20","20–25","25–50","50–75","> 75"],
-             seuil:"OMS 2021 : 5 µg/m³/an · UE : 25 µg/m³/an (révisé 10 en 2030)"},
+             seuil:"OMS 2021 : 5 µg/m³/an · UE : 25 µg/m³/an (révisé 10 en 2030)",
+             oms:"5 µg/m³/an", omsFrom:1},
     "SO₂"  :{unit:"µg/m³", r:["< 50","50–100","100–200","200–350","350–500","> 500"],
-             seuil:"UE : 125 µg/m³/24h · 350 µg/m³/h · Alerte : 500 µg/m³/h"},
+             seuil:"UE : 125 µg/m³/24h · 350 µg/m³/h · Alerte : 500 µg/m³/h",
+             oms:"40 µg/m³/an", omsFrom:2},
 };
 
 // Palette ATMO — séquentielle moderne (Tailwind/data-viz)
 // 1=Bon 2=Moyen 3=Dégradé 4=Mauvais 5=Très mauvais 6=Extrêmement mauvais
-const ATMO_COLS=["#22c55e","#84cc16","#f59e0b","#f97316","#ef4444","#7c3aed"];
+const ATMO_COLS=["#22c55e","#84cc16","#f59e0b","#f97316","#ef4444","#be123c"];
 
 // Effets sanitaires par niveau IQA
 const IQA_HEALTH=[
@@ -898,31 +917,46 @@ function renderAir(city,air){
     const rec=zIdx!==undefined?air[zIdx]:air.find(a=>a.dept===city.deptNum);
     if(!rec) return "";
 
-    const iqaBg=rec.color+"18";
-    const thumbPct=((rec.indice-1)*(100/5)).toFixed(2);
+    // Couleur ATMO basée sur l'indice (pas rec.color qui peut diverger)
+    const atmoCol=ATMO_COLS[rec.indice-1]||"#22c55e";
+    const iqaBg=atmoCol+"15";
     const healthRow=IQA_HEALTH.find(h=>h.l===rec.indice);
 
-    // Chips polluants enrichis : indice X/6 + plage µg/m³ + mini-échelle ATMO
+    // Chips polluants : indice + label + plage µg/m³ + alerte OMS + mini-échelle ATMO
     const chips=Object.entries(rec.polluants||{}).map(([name,p])=>{
+        const col=ATMO_COLS[p.indice-1]||"#22c55e";
         const meta=IQA_RANGES[name];
         const range=meta?meta.r[p.indice-1]+" "+meta.unit:"";
+        const omsExceeded=meta&&p.indice>=meta.omsFrom;
         const miniScale=ATMO_COLS.map((c,i)=>{
             const active=p.indice===i+1;
-            return`<div style="flex:1;height:${active?8:4}px;border-radius:2px;background:${c};opacity:${active?1:0.28}" title="${IQA_HEALTH[i].lab}"></div>`;
+            return`<div style="flex:1;height:${active?8:4}px;border-radius:2px;background:${c};opacity:${active?1:0.25}" title="${IQA_HEALTH[i].lab}"></div>`;
         }).join("");
         return`<div class="pollutant-chip" style="padding:.75rem .9rem;gap:.3rem">
             <div class="p-name" style="font-size:.65rem">${name}</div>
             <div style="display:flex;align-items:baseline;gap:.35rem;margin-top:.1rem">
-                <span style="font-size:1.35rem;font-weight:900;color:${ATMO_COLS[p.indice-1]||p.color};line-height:1">${p.indice}</span>
+                <span style="font-size:1.35rem;font-weight:900;color:${col};line-height:1">${p.indice}</span>
                 <span style="font-size:.65rem;color:#94a3b8;font-weight:600">/6</span>
-                <span style="font-size:.72rem;font-weight:700;color:${ATMO_COLS[p.indice-1]||p.color};margin-left:.1rem">${p.label}</span>
+                <span style="font-size:.72rem;font-weight:700;color:${col};margin-left:.1rem">${p.label}</span>
             </div>
-            ${range?`<div style="font-size:.62rem;color:#64748b;font-weight:500;margin-top:.1rem">${range}</div>`:""}
+            ${range?`<div style="font-size:.62rem;color:#64748b;font-weight:500;margin-top:.05rem">${range}</div>`:""}
+            ${meta?`<div style="font-size:.6rem;color:${omsExceeded?'#dc2626':'#94a3b8'};font-weight:${omsExceeded?700:400};margin-top:.1rem">${omsExceeded?'⚠ ':''}OMS : ${meta.oms}</div>`:""}
             <div style="display:flex;gap:2px;align-items:flex-end;margin-top:.4rem">${miniScale}</div>
         </div>`;
     }).join("");
 
-    // Tableau seuils réglementaires
+    // Légende IQA avec couleurs ATMO
+    const legendRows=IQA_HEALTH.map((h,i)=>{
+        const col=ATMO_COLS[i];
+        const active=h.l===rec.indice;
+        return`<div style="display:flex;align-items:flex-start;gap:.5rem;padding:.3rem .4rem;border-radius:.35rem;margin-bottom:.1rem;background:${active?col+'18':'transparent'};border-left:3px solid ${active?col:'transparent'};padding-left:.5rem">
+            <span style="display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:50%;background:${col};color:#fff;font-size:.6rem;font-weight:800;flex-shrink:0">${h.l}</span>
+            <span style="font-size:.68rem;font-weight:700;min-width:110px;color:${col}">${h.lab}</span>
+            <span style="font-size:.63rem;color:#475569;line-height:1.4">${h.eff}</span>
+        </div>`;
+    }).join("");
+
+    // Seuils réglementaires toujours visibles
     const seuilRows=Object.entries(IQA_RANGES).map(([pol,m])=>
         `<tr style="border-bottom:1px solid #f1f5f9">
             <td style="padding:.3rem .5rem;font-weight:700;color:#475569;font-size:.67rem;white-space:nowrap">${pol}</td>
@@ -930,40 +964,29 @@ function renderAir(city,air){
         </tr>`
     ).join("");
 
-    // Légende IQA avec couleurs ATMO officielles
-    const legendRows=IQA_HEALTH.map((h,i)=>{
-        const col=ATMO_COLS[i];
-        const active=h.l===rec.indice;
-        return`<div style="display:flex;align-items:flex-start;gap:.5rem;padding:.3rem .4rem;border-radius:.35rem;margin-bottom:.1rem;background:${active?col+'18':'transparent'};${active?`border-left:3px solid ${col};padding-left:.5rem`:'border-left:3px solid transparent'}">
-            <span style="display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:50%;background:${col};color:#fff;font-size:.6rem;font-weight:800;flex-shrink:0">${h.l}</span>
-            <span style="font-size:.68rem;font-weight:700;min-width:110px;color:${col}">${h.lab}</span>
-            <span style="font-size:.63rem;color:#475569;line-height:1.4">${h.eff}</span>
-        </div>`;
-    }).join("");
-
-    return`<div class="section-card" style="border-left:4px solid #8b5cf6">
-        <div class="card-header" style="background:#faf5ff;border-bottom:1px solid #e9d5ff">
+    return`<div class="section-card" style="border-left:4px solid ${atmoCol}">
+        <div class="card-header" style="background:${atmoCol}10;border-bottom:1px solid ${atmoCol}40">
             <span class="card-header-icon">💨</span>
             <div style="flex:1">
                 <div class="card-header-title">Qualité de l'air</div>
-                <div class="card-header-sub">Indice ATMO · base EAQI européen · ${rec.zone} · Atmo Occitanie</div>
+                <div class="card-header-sub">Indice ATMO · EAQI européen · ${rec.zone} · Atmo Occitanie</div>
             </div>
             <span style="font-size:.68rem;color:#94a3b8;font-weight:500;flex-shrink:0">Relevé du ${fmtDate(rec.date)}</span>
         </div>
         <div class="card-body">
 
-            <!-- IQA global + curseur -->
-            <div style="display:flex;align-items:center;gap:1.25rem;padding:1rem 1.25rem;border-radius:1rem;margin-bottom:1.25rem;background:${iqaBg};border:1.5px solid ${rec.color}50">
+            <!-- IQA global + barre ATMO -->
+            <div style="display:flex;align-items:center;gap:1.25rem;padding:1rem 1.25rem;border-radius:1rem;margin-bottom:1.25rem;background:${iqaBg};border:1.5px solid ${atmoCol}50">
                 <div style="text-align:center;flex-shrink:0">
-                    <div style="font-size:3.6rem;font-weight:900;line-height:1;color:${rec.color}">${rec.indice}</div>
+                    <div style="font-size:3.6rem;font-weight:900;line-height:1;color:${atmoCol}">${rec.indice}</div>
                     <div style="font-size:.6rem;color:#94a3b8;font-weight:600;margin-top:.1rem">/6</div>
                 </div>
                 <div style="flex:1;min-width:0">
-                    <div style="font-size:1.1rem;font-weight:800;color:${rec.color}">${rec.label}</div>
+                    <div style="font-size:1.1rem;font-weight:800;color:${atmoCol}">${rec.label}</div>
                     ${healthRow?`<div style="font-size:.73rem;color:#475569;margin-top:.2rem;line-height:1.4">${healthRow.eff}</div>`:""}
                     <div style="margin-top:.85rem">
                         <div style="display:flex;gap:3px;align-items:flex-end;margin-bottom:4px">
-                            ${ATMO_COLS.map((c,i)=>{const active=rec.indice===i+1;return`<div style="flex:1;height:${active?14:8}px;border-radius:3px;background:${c};opacity:${active?1:0.35};outline:${active?`2.5px solid ${c}`:'none'};outline-offset:1px;transition:height .2s" title="${IQA_HEALTH[i].lab}"></div>`}).join("")}
+                            ${ATMO_COLS.map((c,i)=>{const active=rec.indice===i+1;return`<div style="flex:1;height:${active?14:8}px;border-radius:3px;background:${c};opacity:${active?1:0.35};outline:${active?`2.5px solid ${c}`:'none'};outline-offset:1px" title="${IQA_HEALTH[i].lab}"></div>`}).join("")}
                         </div>
                         <div style="display:flex;justify-content:space-between">
                             <span style="font-size:.58rem;color:#94a3b8;font-weight:500">1 — Bon</span>
@@ -980,23 +1003,19 @@ function renderAir(city,air){
             </div>
 
             <!-- Détail par polluant -->
-            <div style="font-size:.65rem;color:#94a3b8;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:.6rem">Détail par polluant — indice individuel / plage µg/m³ indicative</div>
+            <div style="font-size:.65rem;color:#94a3b8;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:.6rem">Détail par polluant — indice / plage µg/m³ / seuil OMS</div>
             <div class="pollutant-grid" style="margin-bottom:1.25rem">${chips}</div>
 
-            <!-- Seuils réglementaires -->
-            <details style="margin-top:.25rem">
-                <summary style="font-size:.65rem;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.06em;cursor:pointer;user-select:none;padding:.4rem 0">
-                    Seuils réglementaires OMS 2021 &amp; Directive UE 2008/50/CE ▾
-                </summary>
-                <table style="width:100%;border-collapse:collapse;margin-top:.5rem">
-                    <thead><tr style="border-bottom:2px solid #e2e8f0">
-                        <th style="padding:.3rem .5rem;font-size:.65rem;color:#475569;font-weight:700;text-align:left">Polluant</th>
-                        <th style="padding:.3rem .5rem;font-size:.65rem;color:#475569;font-weight:700;text-align:left">Valeurs limites &amp; valeurs guides</th>
-                    </tr></thead>
-                    <tbody>${seuilRows}</tbody>
-                </table>
-                <p style="font-size:.6rem;color:#94a3b8;margin-top:.5rem;line-height:1.5">Source : OMS Guidelines for European Region 2021 · Directive 2008/50/CE · Règlement (UE) 2022/2465</p>
-            </details>
+            <!-- Seuils réglementaires toujours visibles -->
+            <div style="font-size:.65rem;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.06em;margin-bottom:.4rem">Seuils réglementaires OMS 2021 &amp; Directive UE 2008/50/CE</div>
+            <table style="width:100%;border-collapse:collapse;margin-bottom:.5rem">
+                <thead><tr style="background:#f8fafc;border-bottom:2px solid #e2e8f0">
+                    <th style="padding:.3rem .5rem;font-size:.63rem;color:#475569;font-weight:700;text-align:left">Polluant</th>
+                    <th style="padding:.3rem .5rem;font-size:.63rem;color:#475569;font-weight:700;text-align:left">Valeurs limites &amp; valeurs guides</th>
+                </tr></thead>
+                <tbody>${seuilRows}</tbody>
+            </table>
+            <div style="font-size:.6rem;color:#94a3b8;line-height:1.5">OMS Guidelines for European Region 2021 · Directive 2008/50/CE · Règlement (UE) 2022/2465 · ⚠ = seuil guide OMS dépassé au niveau actuel</div>
         </div>
     </div>`;
 }
@@ -1010,13 +1029,14 @@ function renderPollen(city,pollen){
     const rec=pollen.find(p=>p.dept===city.deptNum);
     if(!rec) return "";
 
+    // Palette RNSA alignée sur ATMO_COLS (vert→lime→amber→orange→rouge→crimson)
     const RNSA_LEVELS=[
-        {i:0,lab:"Nul",        eff:"Aucun risque allergique détecté",        col:"#94a3b8"},
-        {i:1,lab:"Très faible",eff:"Risque négligeable, même chez les sujets très sensibles",col:"#4ade80"},
-        {i:2,lab:"Faible",     eff:"Réactions légères possibles chez les sujets très sensibles",col:"#a3e635"},
-        {i:3,lab:"Moyen",      eff:"Symptômes chez les sujets sensibles, traitement conseillé",col:"#facc15"},
-        {i:4,lab:"Élevé",      eff:"Symptômes marqués même avec traitement chez les allergiques",col:"#f97316"},
-        {i:5,lab:"Très élevé", eff:"Réactions sévères possibles — mesures de protection renforcées",col:"#ef4444"},
+        {i:0,lab:"Nul",        eff:"Aucun risque allergique détecté",                                   col:"#94a3b8"},
+        {i:1,lab:"Très faible",eff:"Risque négligeable, même chez les sujets très sensibles",           col:"#22c55e"},
+        {i:2,lab:"Faible",     eff:"Réactions légères possibles chez les sujets très sensibles",        col:"#84cc16"},
+        {i:3,lab:"Moyen",      eff:"Symptômes chez les sujets sensibles, traitement conseillé",         col:"#f59e0b"},
+        {i:4,lab:"Élevé",      eff:"Symptômes marqués même avec traitement chez les allergiques",       col:"#f97316"},
+        {i:5,lab:"Très élevé", eff:"Réactions sévères possibles — mesures de protection renforcées",   col:"#be123c"},
     ];
     const ig=rec.indice_global||0;
     const curLev=RNSA_LEVELS[ig]||RNSA_LEVELS[0];
@@ -1032,8 +1052,8 @@ function renderPollen(city,pollen){
             </div>
             <div style="flex:1;min-width:180px">
                 <div style="font-size:.8rem;color:#475569;margin-bottom:.6rem;font-style:italic">${curLev.eff}</div>
-                <div style="position:relative;height:10px;border-radius:999px;background:linear-gradient(to right,#4ade80,#a3e635,#facc15,#f97316,#ef4444);margin-bottom:.3rem">
-                    <div style="position:absolute;top:50%;left:${gaugePos}%;transform:translate(-50%,-50%);width:18px;height:18px;border-radius:50%;background:${rec.color_global||curLev.col};border:2.5px solid #fff;box-shadow:0 0 0 2px ${rec.color_global||curLev.col}44"></div>
+                <div style="display:flex;gap:2px;align-items:flex-end;margin-bottom:.35rem">
+                    ${RNSA_LEVELS.map(lv=>{const act=lv.i===ig;return`<div style="flex:1;height:${act?14:8}px;border-radius:3px;background:${lv.col};opacity:${act?1:0.3};outline:${act?`2px solid ${lv.col}`:'none'};outline-offset:1px" title="${lv.lab}"></div>`;}).join("")}
                 </div>
                 <div style="display:flex;justify-content:space-between;font-size:.6rem;color:#94a3b8;margin-bottom:.7rem"><span>Nul (0)</span><span>Très élevé (5)</span></div>
                 <div style="font-size:.68rem;color:#94a3b8">Relevé du ${fmtDate(rec.date)} · Zone : ${rec.lib_zone}</div>
@@ -1051,11 +1071,9 @@ function renderPollen(city,pollen){
         </tr>`).join("");
 
     const legendTable=`
-        <details style="margin-bottom:1rem">
-            <summary style="font-size:.75rem;font-weight:700;color:#f59e0b;cursor:pointer;padding:.35rem 0;list-style:none;display:flex;align-items:center;gap:.35rem">
-                <span>▸</span> Échelle RNSA 0–5 — niveaux de risque pollinique
-            </summary>
-            <table style="width:100%;border-collapse:collapse;margin-top:.5rem;font-size:.73rem">
+        <div style="margin-bottom:1rem">
+            <div style="font-size:.65rem;font-weight:700;color:#92400e;text-transform:uppercase;letter-spacing:.06em;margin-bottom:.4rem">Échelle RNSA 0–5 — niveaux de risque pollinique</div>
+            <table style="width:100%;border-collapse:collapse;font-size:.73rem">
                 <thead><tr style="background:#fef3c7">
                     <th style="padding:.3rem .5rem;text-align:center;font-size:.65rem;color:#92400e">Indice</th>
                     <th style="padding:.3rem .5rem;text-align:left;font-size:.65rem;color:#92400e">Niveau</th>
@@ -1063,8 +1081,8 @@ function renderPollen(city,pollen){
                 </tr></thead>
                 <tbody>${legendRows}</tbody>
             </table>
-            <div style="font-size:.63rem;color:#94a3b8;margin-top:.4rem">Source RNSA (Réseau National de Surveillance Aérobiologique) · Seuils grains/m³ SEAIC</div>
-        </details>`;
+            <div style="font-size:.63rem;color:#94a3b8;margin-top:.35rem">Source RNSA · Seuils grains/m³ SEAIC</div>
+        </div>`;
 
     // Taxa cards
     const taxaCards=Object.entries(rec.taxa||{}).map(([name,t])=>{
@@ -1082,8 +1100,8 @@ function renderPollen(city,pollen){
                 <span style="font-size:.82rem;font-weight:800;color:#1e293b">${name}</span>
                 <span style="font-size:.72rem;font-weight:700;color:${col};background:${col}18;border:1px solid ${col}44;border-radius:999px;padding:.1rem .55rem">${t.label||lev.lab}</span>
             </div>
-            <div style="position:relative;height:6px;border-radius:999px;background:linear-gradient(to right,#4ade80,#a3e635,#facc15,#f97316,#ef4444)">
-                <div style="position:absolute;top:50%;left:${taxaPos}%;transform:translate(-50%,-50%);width:13px;height:13px;border-radius:50%;background:${col};border:2px solid #fff;box-shadow:0 0 0 1.5px ${col}66"></div>
+            <div style="display:flex;gap:2px;align-items:flex-end">
+                ${RNSA_LEVELS.map(lv=>{const act=lv.i===ti;return`<div style="flex:1;height:${act?8:4}px;border-radius:2px;background:${lv.col};opacity:${act?1:0.25}" title="${lv.lab}"></div>`;}).join("")}
             </div>
             <div style="display:flex;gap:.8rem;flex-wrap:wrap;margin-top:.15rem">
                 <span style="font-size:.68rem;color:#64748b"><b style="color:#1e293b">Indice :</b> ${ti}/5</span>
@@ -1132,20 +1150,63 @@ function renderNappes(city,nappes){
     const stations=matches.slice(0,4).map(n=>{
         const diff=+(n.current-n.year_ago).toFixed(2);
         const isUp=diff>0.2,isDown=diff<-0.2;
+        const sign=diff>0?"+":"";
         const trendBadge=isUp
             ?`<span class="badge-trend badge-trend-up">↑ En hausse</span>`
             :isDown
             ?`<span class="badge-trend badge-trend-down">↓ En baisse</span>`
             :`<span class="badge-trend badge-trend-flat">→ Stable</span>`;
-        return`<div class="station-row">
-            <div style="flex:1;min-width:0">
-                <div style="font-size:.82rem;font-weight:700;color:#1e293b;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${n.nom}</div>
-                <div style="font-size:.68rem;color:#94a3b8;margin-top:.1rem">${n.code_bss}</div>
-            </div>
-            <div class="sparkline-wrap" style="flex-shrink:0">${sparkline(n.history,n.color||"#3b82f6")}</div>
-            <div style="text-align:right;min-width:80px;flex-shrink:0">
-                <div style="font-size:1rem;font-weight:900;color:#3b82f6">${n.current} <span style="font-size:.65rem;font-weight:400;color:#94a3b8">m NGF</span></div>
-                <div style="margin-top:.3rem">${trendBadge}</div>
+
+        // Stats historiques sur les 14 derniers mois
+        const hist=n.history||[];
+        const hMin=hist.length?Math.min(...hist).toFixed(3):null;
+        const hMax=hist.length?Math.max(...hist).toFixed(3):null;
+        const hRange=hMin&&hMax?(+hMax-+hMin).toFixed(3):null;
+        // Position du niveau actuel dans la plage historique (0%=min, 100%=max)
+        const histPct=hMin&&hMax&&hRange>0
+            ?Math.round(((n.current-hMin)/hRange)*100):null;
+        // Interprétation qualitative
+        let histInterp="";
+        if(histPct!==null){
+            if(histPct>=80) histInterp="Niveau élevé sur la période";
+            else if(histPct>=50) histInterp="Niveau moyen-haut";
+            else if(histPct>=20) histInterp="Niveau moyen-bas";
+            else histInterp="Niveau bas sur la période";
+        }
+
+        return`<div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:.85rem;padding:.9rem 1.1rem;margin-bottom:.85rem">
+            <div style="display:flex;align-items:flex-start;gap:1rem;flex-wrap:wrap">
+                <div style="flex:1;min-width:180px">
+                    <div style="font-size:.84rem;font-weight:800;color:#1e3a5f;margin-bottom:.15rem">${n.nom}</div>
+                    <div style="font-size:.63rem;color:#94a3b8;font-family:monospace">${n.code_bss}</div>
+                    <div style="margin-top:.6rem;display:flex;gap:.5rem;align-items:center;flex-wrap:wrap">
+                        ${trendBadge}
+                        <span style="font-size:.68rem;color:${isUp?'#16a34a':isDown?'#dc2626':'#64748b'};font-weight:700">${sign}${diff} m/an</span>
+                    </div>
+                    <div style="margin-top:.5rem;font-size:.68rem;color:#64748b">
+                        <span><b style="color:#1e293b">N-1 :</b> ${n.year_ago} m NGF</span>
+                        <span style="margin-left:.75rem"><b style="color:#1e293b">Actuel :</b> ${n.current} m NGF</span>
+                    </div>
+                    ${hMin&&hMax?`<div style="margin-top:.35rem;font-size:.65rem;color:#64748b">
+                        <b style="color:#1e293b">Plage 14 mois :</b> ${hMin} → ${hMax} m NGF
+                        <span style="margin-left:.5rem;color:#94a3b8">(amplitude : ${hRange} m)</span>
+                    </div>`:""}
+                    ${histPct!==null?`<div style="margin-top:.5rem">
+                        <div style="display:flex;justify-content:space-between;font-size:.6rem;color:#94a3b8;margin-bottom:.2rem">
+                            <span>Min historique</span><span>${histInterp}</span><span>Max historique</span>
+                        </div>
+                        <div style="height:6px;background:#e2e8f0;border-radius:999px;position:relative">
+                            <div style="position:absolute;left:0;top:0;height:100%;width:${histPct}%;background:${n.color||'#3b82f6'};border-radius:999px;opacity:.7"></div>
+                            <div style="position:absolute;top:50%;left:${histPct}%;transform:translate(-50%,-50%);width:12px;height:12px;border-radius:50%;background:${n.color||'#3b82f6'};border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.2)"></div>
+                        </div>
+                    </div>`:""}
+                </div>
+                <div style="flex-shrink:0;text-align:right">
+                    <div style="font-size:1.5rem;font-weight:900;color:#3b82f6;line-height:1">${n.current}</div>
+                    <div style="font-size:.65rem;color:#94a3b8;margin-top:.1rem">m NGF</div>
+                    <div style="margin-top:.5rem">${sparkline(n.history,n.color||"#3b82f6")}</div>
+                    <div style="font-size:.58rem;color:#94a3b8;margin-top:.2rem">14 mois de mesures</div>
+                </div>
             </div>
         </div>`;
     }).join("");
@@ -1155,11 +1216,12 @@ function renderNappes(city,nappes){
             <span class="card-header-icon">🌊</span>
             <div>
                 <div class="card-header-title">Nappes phréatiques</div>
-                <div class="card-header-sub">Piézomètres BRGM · Niveau actuel vs il y a 12 mois</div>
+                <div class="card-header-sub">Piézomètres BRGM · BSS · Niveau NGF · variation annuelle</div>
             </div>
         </div>
         <div class="card-body">
-            <div>${stations}</div>
+            ${stations}
+            <div style="font-size:.62rem;color:#94a3b8;margin-bottom:.5rem;line-height:1.5">NGF = Nivellement Général de la France (altitude de la surface piézométrique) · BSS = Banque du Sous-Sol BRGM · Sparkline : 14 mois glissants</div>
             <div id="map-nappes" class="env-map"></div>
         </div>
     </div>`;
@@ -1305,14 +1367,14 @@ function initNappesMap(city,nappes){
     if(bounds.length) m.fitBounds(bounds,{padding:[24,24],maxZoom:13});
 }
 
-function initRivieresMap(city,rivieres){
+async function initRivieresMap(city,rivieres){
     const m=makeMap("map-rivieres");if(!m) return;
     const cn=norm(city.name);
     let stations=rivieres.filter(r=>norm(r.commune||r.nom||"").includes(cn));
     if(!stations.length) stations=rivieres.filter(r=>r.dept===city.deptNum).slice(0,6);
     if(!stations.length){m.setView([43.6,3.9],10);return;}
 
-    // Grouper les stations par cours d'eau
+    // Grouper par cours d'eau
     const byCours={};
     stations.forEach(r=>{
         if(!r.lat||!r.lon) return;
@@ -1322,46 +1384,70 @@ function initRivieresMap(city,rivieres){
     });
 
     const bounds=[];
-    const riverColors=["#3b82f6","#06b6d4","#8b5cf6","#10b981","#f59e0b","#ef4444"];
+    const riverColors=["#3b82f6","#06b6d4","#0ea5e9","#10b981","#f59e0b","#8b5cf6"];
     let colorIdx=0;
 
-    Object.entries(byCours).forEach(([nomCours,pts])=>{
-        // Trier les points par longitude (amont→aval approximatif)
+    for(const [nomCours,pts] of Object.entries(byCours)){
         pts.sort((a,b)=>a.lon-b.lon);
-        const coords=pts.map(r=>[r.lat,r.lon]);
         const riverCol=riverColors[colorIdx%riverColors.length];colorIdx++;
 
-        // Effet "surlignage" : halo semi-transparent épais + trait net par-dessus
-        if(coords.length>1){
-            L.polyline(coords,{color:riverCol,weight:10,opacity:.15,lineCap:"round",lineJoin:"round"}).addTo(m);
-            L.polyline(coords,{color:riverCol,weight:3,opacity:.85,lineCap:"round",lineJoin:"round",dashArray:null}).addTo(m);
+        // Récupérer le tracé OSM via Overpass
+        const lats=pts.map(p=>p.lat),lons=pts.map(p=>p.lon);
+        const bbox=[Math.min(...lats)-.08,Math.min(...lons)-.08,Math.max(...lats)+.08,Math.max(...lons)+.08].join(",");
+        const cleanName=nomCours.split(" ")[0].replace(/[^A-Za-zÀ-ÿ]/g,"").slice(0,20);
+        let drawnTrace=false;
+        try{
+            const q=`[out:json][timeout:12];way["waterway"]["name"~"${cleanName}",i](${bbox});out geom;`;
+            const resp=await fetch("https://overpass-api.de/api/interpreter?data="+encodeURIComponent(q));
+            if(resp.ok){
+                const geo=await resp.json();
+                const ways=(geo.elements||[]).filter(e=>e.type==="way"&&e.geometry&&e.geometry.length>1);
+                if(ways.length){
+                    ways.forEach(w=>{
+                        const wCoords=w.geometry.map(p=>[p.lat,p.lon]);
+                        // Halo + trait net
+                        L.polyline(wCoords,{color:riverCol,weight:12,opacity:.12,lineCap:"round",lineJoin:"round"}).addTo(m);
+                        L.polyline(wCoords,{color:riverCol,weight:2.5,opacity:.9,lineCap:"round",lineJoin:"round"}).addTo(m);
+                    });
+                    drawnTrace=true;
+                }
+            }
+        }catch(e){}
+
+        // Fallback : ligne directe entre stations
+        if(!drawnTrace&&pts.length>1){
+            const coords=pts.map(r=>[r.lat,r.lon]);
+            L.polyline(coords,{color:riverCol,weight:10,opacity:.12,lineCap:"round",lineJoin:"round"}).addTo(m);
+            L.polyline(coords,{color:riverCol,weight:2.5,opacity:.85,lineCap:"round",lineJoin:"round",dashArray:"6 4"}).addTo(m);
         }
 
-        // Marqueurs avec popup détaillé
-        pts.forEach(r=>{
+        // Marqueurs + labels permanents + popup détaillé
+        pts.forEach((r,idx)=>{
             bounds.push([r.lat,r.lon]);
+            const shortLabel=(r.commune||nomCours).split(" ")[0].toUpperCase().slice(0,6)+(idx+1);
             const paramLines=Object.entries(r.parametres||{}).map(([n,p])=>{
-                const d=p.date?` <span style="color:#94a3b8">(${fmtDate(p.date)})</span>`:"";
-                return`<div style="display:flex;justify-content:space-between;gap:.5rem;padding:.1rem 0;border-bottom:1px solid #f1f5f9">
+                const d=p.date?` <span style="color:#94a3b8;font-size:.6rem">${fmtDate(p.date)}</span>`:"";
+                return`<div style="display:flex;justify-content:space-between;gap:.5rem;padding:.15rem 0;border-bottom:1px solid #f1f5f9">
                     <span style="color:#64748b;font-size:.7rem">${n}</span>
                     <span style="font-weight:700;color:${p.color};font-size:.7rem">${p.valeur} ${p.unite}${d}</span>
                 </div>`;
             }).join("");
             const icon=L.divIcon({
-                html:`<div style="width:14px;height:14px;border-radius:50%;background:${riverCol};border:3px solid white;box-shadow:0 0 0 3px ${riverCol}44,0 2px 8px rgba(0,0,0,.25)"></div>`,
-                iconSize:[14,14],iconAnchor:[7,7],className:""
+                html:`<div style="width:12px;height:12px;border-radius:50%;background:${riverCol};border:2.5px solid white;box-shadow:0 0 0 2.5px ${riverCol}55,0 2px 6px rgba(0,0,0,.22)"></div>`,
+                iconSize:[12,12],iconAnchor:[6,6],className:""
             });
             L.marker([r.lat,r.lon],{icon})
                 .addTo(m)
-                .bindPopup(`<div style="min-width:200px;font-family:Inter,sans-serif">
-                    <div style="font-weight:800;color:#14532d;font-size:.8rem;margin-bottom:.35rem">${nomCours}</div>
-                    <div style="color:#64748b;font-size:.68rem;margin-bottom:.4rem">${(r.commune||"").trim()}</div>
+                .bindTooltip(shortLabel,{permanent:true,direction:"top",offset:[0,-8],className:"",opacity:1})
+                .bindPopup(`<div style="min-width:210px;font-family:Inter,sans-serif;font-size:.78rem">
+                    <div style="font-weight:800;color:${riverCol};margin-bottom:.2rem">${nomCours}</div>
+                    <div style="color:#64748b;font-size:.67rem;margin-bottom:.5rem">${(r.commune||"").trim()}</div>
                     ${paramLines}
-                </div>`,{maxWidth:260});
+                </div>`,{maxWidth:270});
         });
-    });
+    }
 
-    if(bounds.length) m.fitBounds(bounds,{padding:[32,32],maxZoom:13});
+    if(bounds.length) m.fitBounds(bounds,{padding:[36,36],maxZoom:13});
 }
 
 // ════════════════════════════════════════════════
