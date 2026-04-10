@@ -604,8 +604,46 @@ const PARAM_LIMITS={
     "THM":{limit:100,unit:"µg/L"},
 };
 
-// IQA colors map for polluant bar widths (1-6 scale)
+// IQA bar widths (1-6 scale)
 const IQA_WIDTH={1:10,2:28,3:50,4:68,5:84,6:100};
+
+// Plages µg/m³ indicatives par polluant et par indice (1→6)
+// Source : EAQI européen + Directive 2008/50/CE + OMS 2021
+const IQA_RANGES={
+    "NO₂" :{unit:"µg/m³", r:["< 40","40–80","80–120","120–160","160–200","> 200"],
+             seuil:"OMS 2021 : 10 µg/m³/an · UE 2008/50 : 40 µg/m³/an · Alerte : 400 µg/m³/h"},
+    "O₃"  :{unit:"µg/m³", r:["< 50","50–100","100–130","130–160","160–200","> 200"],
+             seuil:"Seuil info : 180 µg/m³ · Alerte : 240 µg/m³ · OMS 2021 : 60 µg/m³/8h max"},
+    "PM10" :{unit:"µg/m³", r:["< 20","20–40","40–50","50–75","75–80","> 80"],
+             seuil:"OMS 2021 : 15 µg/m³/an · UE : 40 µg/m³/an · 50 µg/m³/24h (max 35j)"},
+    "PM2.5":{unit:"µg/m³", r:["< 10","10–20","20–25","25–50","50–75","> 75"],
+             seuil:"OMS 2021 : 5 µg/m³/an · UE : 25 µg/m³/an (révisé 10 en 2030)"},
+    "SO₂"  :{unit:"µg/m³", r:["< 50","50–100","100–200","200–350","350–500","> 500"],
+             seuil:"UE : 125 µg/m³/24h · 350 µg/m³/h · Alerte : 500 µg/m³/h"},
+};
+
+// Effets sanitaires par niveau IQA
+const IQA_HEALTH=[
+    {l:1, lab:"Bon",               eff:"Aucun impact sanitaire notable"},
+    {l:2, lab:"Moyen",             eff:"Légères irritations chez les personnes très sensibles"},
+    {l:3, lab:"Dégradé",           eff:"Gêne respiratoire chez les personnes sensibles et fragiles"},
+    {l:4, lab:"Mauvais",           eff:"Symptômes chez personnes fragiles ; irritations chez adultes sains"},
+    {l:5, lab:"Très mauvais",      eff:"Effets significatifs sur personnes sensibles ; légers chez adultes sains"},
+    {l:6, lab:"Extrêmement mauvais",eff:"Urgence sanitaire — effets graves sur l'ensemble de la population"},
+];
+
+// Données expertes pollen par taxon
+// Sources : RNSA (seuils grains/m³), SEAIC (allergenicité)
+const POLLEN_DATA={
+    "Graminées" :{allerg:"Très forte",prev:"~20% pop. fr.",grains:["0","1–24","25–99","100–499","≥ 500"],note:"Principal allergène printanier. Saison : avr.–juil."},
+    "Ambroisie" :{allerg:"Très forte",prev:"~10–12% pop. fr.",grains:["0","1–4","5–14","15–29","≥ 30"],note:"Allergène invasif majeur. Saison : août–oct. Seuil OMS : 10 gr/m³"},
+    "Olivier"   :{allerg:"Très forte",prev:"~10% sud France",grains:["0","1–14","15–49","50–199","≥ 200"],note:"Dominant en région méditerranéenne. Saison : avr.–juin"},
+    "Cyprès"    :{allerg:"Forte",prev:"~12% sud France",grains:["0","1–49","50–149","150–499","≥ 500"],note:"Pollinisation hivernale précoce. Saison : janv.–avr."},
+    "Platane"   :{allerg:"Forte",prev:"~5–8% pop. fr.",grains:["0","1–24","25–74","75–299","≥ 300"],note:"Poils tecteurs irritants. Saison : mars–avr."},
+    "Frêne"     :{allerg:"Modérée à forte",prev:"~4–6% pop. fr.",grains:["0","1–24","25–74","75–299","≥ 300"],note:"Réactivité croisée avec l'olivier. Saison : févr.–avr."},
+    "Chêne"     :{allerg:"Modérée",prev:"~4% pop. fr.",grains:["0","1–24","25–74","75–299","≥ 300"],note:"Longue saison de pollinisation. Saison : avr.–juin"},
+    "Bouleau"   :{allerg:"Très forte",prev:"~15% nord France",grains:["0","1–24","25–74","75–299","≥ 300"],note:"Réactivité croisée (pomme, noisette, carotte…). Saison : mars–mai"},
+};
 
 // ════════════════════════════════════════════════
 // DATA LOAD
@@ -856,53 +894,98 @@ function renderAir(city,air){
     const rec=zIdx!==undefined?air[zIdx]:air.find(a=>a.dept===city.deptNum);
     if(!rec) return "";
 
+    const iqaBg=rec.color+"18";
+    const thumbPct=((rec.indice-1)*(100/5)).toFixed(2);
+    const healthRow=IQA_HEALTH.find(h=>h.l===rec.indice);
+
+    // Chips polluants enrichis : indice X/6 + plage µg/m³ + seuil
     const chips=Object.entries(rec.polluants||{}).map(([name,p])=>{
         const w=IQA_WIDTH[p.indice]||10;
-        return`<div class="pollutant-chip">
-            <div class="p-name">${name}</div>
-            <div class="p-label" style="color:${p.color}">${p.label}</div>
-            <div class="p-bar-track"><div class="p-bar-fill" style="width:${w}%;background:${p.color}"></div></div>
+        const meta=IQA_RANGES[name];
+        const range=meta?meta.r[p.indice-1]+" "+meta.unit:"";
+        return`<div class="pollutant-chip" style="padding:.75rem .9rem;gap:.3rem">
+            <div class="p-name" style="font-size:.65rem">${name}</div>
+            <div style="display:flex;align-items:baseline;gap:.35rem;margin-top:.1rem">
+                <span style="font-size:1.35rem;font-weight:900;color:${p.color};line-height:1">${p.indice}</span>
+                <span style="font-size:.65rem;color:#94a3b8;font-weight:600">/6</span>
+                <span style="font-size:.72rem;font-weight:700;color:${p.color};margin-left:.1rem">${p.label}</span>
+            </div>
+            ${range?`<div style="font-size:.62rem;color:#64748b;font-weight:500;margin-top:.1rem">${range}</div>`:""}
+            <div class="p-bar-track" style="margin-top:.35rem"><div class="p-bar-fill" style="width:${w}%;background:${p.color}"></div></div>
         </div>`;
     }).join("");
 
-    const iqaBg=rec.color+"18";
-    // Position du curseur sur échelle 1-6 (en %)
-    const thumbPct=((rec.indice-1)*(100/5)).toFixed(2);
+    // Tableau seuils réglementaires
+    const seuilRows=Object.entries(IQA_RANGES).map(([pol,m])=>
+        `<tr style="border-bottom:1px solid #f1f5f9">
+            <td style="padding:.3rem .5rem;font-weight:700;color:#475569;font-size:.67rem;white-space:nowrap">${pol}</td>
+            <td style="padding:.3rem .5rem;font-size:.62rem;color:#64748b;line-height:1.4">${m.seuil}</td>
+        </tr>`
+    ).join("");
+
+    // Légende IQA
+    const legendRows=IQA_HEALTH.map(h=>`
+        <div style="display:flex;align-items:flex-start;gap:.5rem;padding:.3rem 0;border-bottom:1px solid #f8fafc">
+            <span style="font-size:.65rem;font-weight:900;min-width:14px;color:${h.l===rec.indice?rec.color:'#94a3b8'}">${h.l}</span>
+            <span style="font-size:.65rem;font-weight:700;min-width:90px;color:${h.l===rec.indice?rec.color:'#475569'}">${h.lab}</span>
+            <span style="font-size:.62rem;color:#64748b;line-height:1.4">${h.eff}</span>
+        </div>`).join("");
 
     return`<div class="section-card" style="border-left:4px solid #8b5cf6">
         <div class="card-header" style="background:#faf5ff;border-bottom:1px solid #e9d5ff">
             <span class="card-header-icon">💨</span>
             <div style="flex:1">
                 <div class="card-header-title">Qualité de l'air</div>
-                <div class="card-header-sub">${rec.zone} · Atmo Occitanie</div>
+                <div class="card-header-sub">Indice ATMO · base EAQI européen · ${rec.zone} · Atmo Occitanie</div>
             </div>
-            <span style="font-size:.68rem;color:#94a3b8;font-weight:500;flex-shrink:0">${fmtDate(rec.date)}</span>
+            <span style="font-size:.68rem;color:#94a3b8;font-weight:500;flex-shrink:0">Relevé du ${fmtDate(rec.date)}</span>
         </div>
         <div class="card-body">
+
+            <!-- IQA global + curseur -->
             <div style="display:flex;align-items:center;gap:1.25rem;padding:1rem 1.25rem;border-radius:1rem;margin-bottom:1.25rem;background:${iqaBg};border:1.5px solid ${rec.color}50">
-                <div style="font-size:3.6rem;font-weight:900;line-height:1;color:${rec.color};min-width:2.2rem;text-align:center">${rec.indice}</div>
+                <div style="text-align:center;flex-shrink:0">
+                    <div style="font-size:3.6rem;font-weight:900;line-height:1;color:${rec.color}">${rec.indice}</div>
+                    <div style="font-size:.6rem;color:#94a3b8;font-weight:600;margin-top:.1rem">/6</div>
+                </div>
                 <div style="flex:1;min-width:0">
                     <div style="font-size:1.1rem;font-weight:800;color:${rec.color}">${rec.label}</div>
-                    <!-- Échelle dégradée continue + curseur -->
-                    <div style="position:relative;margin-top:.85rem;padding-bottom:18px">
-                        <!-- Track gradient vert → rouge, neutre et sans ambiguïté -->
+                    ${healthRow?`<div style="font-size:.73rem;color:#475569;margin-top:.2rem;line-height:1.4">${healthRow.eff}</div>`:""}
+                    <div style="position:relative;margin-top:.85rem;padding-bottom:20px">
                         <div style="height:10px;border-radius:999px;background:linear-gradient(to right,#10b981,#a3e635,#fde047,#f97316,#ef4444,#991b1b)"></div>
-                        <!-- Curseur : même couleur que le chiffre, positionné précisément -->
-                        <div style="position:absolute;top:-5px;left:${thumbPct}%;transform:translateX(-50%);
-                             width:20px;height:20px;border-radius:50%;
-                             background:${rec.color};border:3px solid white;
-                             box-shadow:0 2px 10px rgba(0,0,0,.3);z-index:2"></div>
-                        <!-- Étiquettes extrêmes uniquement -->
+                        <div style="position:absolute;top:-5px;left:${thumbPct}%;transform:translateX(-50%);width:20px;height:20px;border-radius:50%;background:${rec.color};border:3px solid white;box-shadow:0 2px 10px rgba(0,0,0,.3);z-index:2"></div>
                         <div style="display:flex;justify-content:space-between;margin-top:5px">
-                            <span style="font-size:.6rem;color:#94a3b8;font-weight:500">← Bon</span>
-                            <span style="font-size:.6rem;color:#94a3b8;font-weight:500">Extrêmement mauvais →</span>
+                            <span style="font-size:.58rem;color:#94a3b8;font-weight:500">1 — Bon</span>
+                            <span style="font-size:.58rem;color:#94a3b8;font-weight:500">6 — Extrêmement mauvais</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Polluants : chaque chip a sa propre couleur de niveau, indépendante de l'IQA global -->
-            <div style="font-size:.68rem;color:#94a3b8;font-weight:500;margin-bottom:.6rem;text-transform:uppercase;letter-spacing:.05em">Détail par polluant</div>
-            <div class="pollutant-grid">${chips}</div>
+
+            <!-- Légende niveaux IQA -->
+            <div style="background:#f8fafc;border-radius:.75rem;padding:.75rem 1rem;margin-bottom:1.25rem">
+                <div style="font-size:.65rem;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.06em;margin-bottom:.4rem">Signification de l'indice ATMO (1–6)</div>
+                ${legendRows}
+            </div>
+
+            <!-- Détail par polluant -->
+            <div style="font-size:.65rem;color:#94a3b8;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:.6rem">Détail par polluant — indice individuel / plage µg/m³ indicative</div>
+            <div class="pollutant-grid" style="margin-bottom:1.25rem">${chips}</div>
+
+            <!-- Seuils réglementaires -->
+            <details style="margin-top:.25rem">
+                <summary style="font-size:.65rem;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.06em;cursor:pointer;user-select:none;padding:.4rem 0">
+                    Seuils réglementaires OMS 2021 &amp; Directive UE 2008/50/CE ▾
+                </summary>
+                <table style="width:100%;border-collapse:collapse;margin-top:.5rem">
+                    <thead><tr style="border-bottom:2px solid #e2e8f0">
+                        <th style="padding:.3rem .5rem;font-size:.65rem;color:#475569;font-weight:700;text-align:left">Polluant</th>
+                        <th style="padding:.3rem .5rem;font-size:.65rem;color:#475569;font-weight:700;text-align:left">Valeurs limites &amp; valeurs guides</th>
+                    </tr></thead>
+                    <tbody>${seuilRows}</tbody>
+                </table>
+                <p style="font-size:.6rem;color:#94a3b8;margin-top:.5rem;line-height:1.5">Source : OMS Guidelines for European Region 2021 · Directive 2008/50/CE · Règlement (UE) 2022/2465</p>
+            </details>
         </div>
     </div>`;
 }
@@ -916,28 +999,110 @@ function renderPollen(city,pollen){
     const rec=pollen.find(p=>p.dept===city.deptNum);
     if(!rec) return "";
 
-    const pills=Object.entries(rec.taxa||{}).map(([name,t])=>`
-        <div class="pollen-pill">
-            <div class="pollen-dot" style="background:${t.color||'#94a3b8'}"></div>
-            <span style="color:#475569">${name}</span>
-            <span style="font-weight:800;color:${t.color||'#94a3b8'}">${t.label}</span>
-        </div>`).join("");
+    const RNSA_LEVELS=[
+        {i:0,lab:"Nul",        eff:"Aucun risque allergique détecté",        col:"#94a3b8"},
+        {i:1,lab:"Très faible",eff:"Risque négligeable, même chez les sujets très sensibles",col:"#4ade80"},
+        {i:2,lab:"Faible",     eff:"Réactions légères possibles chez les sujets très sensibles",col:"#a3e635"},
+        {i:3,lab:"Moyen",      eff:"Symptômes chez les sujets sensibles, traitement conseillé",col:"#facc15"},
+        {i:4,lab:"Élevé",      eff:"Symptômes marqués même avec traitement chez les allergiques",col:"#f97316"},
+        {i:5,lab:"Très élevé", eff:"Réactions sévères possibles — mesures de protection renforcées",col:"#ef4444"},
+    ];
+    const ig=rec.indice_global||0;
+    const curLev=RNSA_LEVELS[ig]||RNSA_LEVELS[0];
 
-    const globalBadge=rec.label_global
-        ?`<span class="badge" style="margin-left:auto;background:${rec.color_global}22;color:${rec.color_global};border:1px solid ${rec.color_global}55">${rec.label_global}</span>`:"";
+    // Global RNSA gauge (0-5)
+    const gaugePos=((ig)*(100/5)).toFixed(2);
+    const globalBlock=`
+        <div style="display:flex;gap:1.5rem;align-items:flex-start;flex-wrap:wrap;margin-bottom:1.2rem">
+            <div style="text-align:center;min-width:80px">
+                <div style="font-size:2.8rem;font-weight:900;line-height:1;color:${rec.color_global||curLev.col}">${ig}</div>
+                <div style="font-size:.72rem;color:#94a3b8;font-weight:600;margin-top:.15rem">sur 5</div>
+                <div style="font-size:.75rem;font-weight:700;color:${rec.color_global||curLev.col};margin-top:.25rem">${rec.label_global||curLev.lab}</div>
+            </div>
+            <div style="flex:1;min-width:180px">
+                <div style="font-size:.8rem;color:#475569;margin-bottom:.6rem;font-style:italic">${curLev.eff}</div>
+                <div style="position:relative;height:10px;border-radius:999px;background:linear-gradient(to right,#4ade80,#a3e635,#facc15,#f97316,#ef4444);margin-bottom:.3rem">
+                    <div style="position:absolute;top:50%;left:${gaugePos}%;transform:translate(-50%,-50%);width:18px;height:18px;border-radius:50%;background:${rec.color_global||curLev.col};border:2.5px solid #fff;box-shadow:0 0 0 2px ${rec.color_global||curLev.col}44"></div>
+                </div>
+                <div style="display:flex;justify-content:space-between;font-size:.6rem;color:#94a3b8;margin-bottom:.7rem"><span>Nul (0)</span><span>Très élevé (5)</span></div>
+                <div style="font-size:.68rem;color:#94a3b8">Relevé du ${fmtDate(rec.date)} · Zone : ${rec.lib_zone}</div>
+            </div>
+        </div>`;
+
+    // RNSA legend table
+    const legendRows=RNSA_LEVELS.map(lv=>`
+        <tr style="${lv.i===ig?`background:${lv.col}18;font-weight:700`:''}">
+            <td style="padding:.25rem .5rem;text-align:center">
+                <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:${lv.col};color:#fff;font-size:.7rem;font-weight:800">${lv.i}</span>
+            </td>
+            <td style="padding:.25rem .5rem;font-size:.75rem;font-weight:${lv.i===ig?700:500};color:${lv.col}">${lv.lab}</td>
+            <td style="padding:.25rem .5rem;font-size:.73rem;color:#475569">${lv.eff}</td>
+        </tr>`).join("");
+
+    const legendTable=`
+        <details style="margin-bottom:1rem">
+            <summary style="font-size:.75rem;font-weight:700;color:#f59e0b;cursor:pointer;padding:.35rem 0;list-style:none;display:flex;align-items:center;gap:.35rem">
+                <span>▸</span> Échelle RNSA 0–5 — niveaux de risque pollinique
+            </summary>
+            <table style="width:100%;border-collapse:collapse;margin-top:.5rem;font-size:.73rem">
+                <thead><tr style="background:#fef3c7">
+                    <th style="padding:.3rem .5rem;text-align:center;font-size:.65rem;color:#92400e">Indice</th>
+                    <th style="padding:.3rem .5rem;text-align:left;font-size:.65rem;color:#92400e">Niveau</th>
+                    <th style="padding:.3rem .5rem;text-align:left;font-size:.65rem;color:#92400e">Effet sanitaire</th>
+                </tr></thead>
+                <tbody>${legendRows}</tbody>
+            </table>
+            <div style="font-size:.63rem;color:#94a3b8;margin-top:.4rem">Source RNSA (Réseau National de Surveillance Aérobiologique) · Seuils grains/m³ SEAIC</div>
+        </details>`;
+
+    // Taxa cards
+    const taxaCards=Object.entries(rec.taxa||{}).map(([name,t])=>{
+        const pd=POLLEN_DATA[name];
+        const ti=t.indice||0;
+        const grains=pd?pd.grains[ti]:"—";
+        const allergi=pd?pd.allerg:"—";
+        const prev=pd?pd.prev:"—";
+        const note=pd?pd.note:"";
+        const taxaPos=((ti)*(100/5)).toFixed(2);
+        const col=t.color||"#94a3b8";
+        const lev=RNSA_LEVELS[ti]||RNSA_LEVELS[0];
+        return`<div style="background:#fffbeb;border:1px solid #fde68a;border-radius:10px;padding:.75rem 1rem;display:flex;flex-direction:column;gap:.4rem;min-width:220px;flex:1">
+            <div style="display:flex;align-items:center;gap:.5rem;justify-content:space-between">
+                <span style="font-size:.82rem;font-weight:800;color:#1e293b">${name}</span>
+                <span style="font-size:.72rem;font-weight:700;color:${col};background:${col}18;border:1px solid ${col}44;border-radius:999px;padding:.1rem .55rem">${t.label||lev.lab}</span>
+            </div>
+            <div style="position:relative;height:6px;border-radius:999px;background:linear-gradient(to right,#4ade80,#a3e635,#facc15,#f97316,#ef4444)">
+                <div style="position:absolute;top:50%;left:${taxaPos}%;transform:translate(-50%,-50%);width:13px;height:13px;border-radius:50%;background:${col};border:2px solid #fff;box-shadow:0 0 0 1.5px ${col}66"></div>
+            </div>
+            <div style="display:flex;gap:.8rem;flex-wrap:wrap;margin-top:.15rem">
+                <span style="font-size:.68rem;color:#64748b"><b style="color:#1e293b">Indice :</b> ${ti}/5</span>
+                <span style="font-size:.68rem;color:#64748b"><b style="color:#1e293b">Grains/m³ :</b> ${grains}</span>
+            </div>
+            <div style="display:flex;gap:.8rem;flex-wrap:wrap">
+                <span style="font-size:.68rem;color:#64748b"><b style="color:#1e293b">Allergénicité :</b> ${allergi}</span>
+                <span style="font-size:.68rem;color:#64748b"><b style="color:#1e293b">Prévalence :</b> ${prev}</span>
+            </div>
+            ${note?`<div style="font-size:.65rem;color:#92400e;font-style:italic;border-top:1px solid #fde68a;padding-top:.3rem;margin-top:.1rem">${note}</div>`:""}
+        </div>`;
+    }).join("");
 
     return`<div class="section-card" style="border-left:4px solid #f59e0b">
         <div class="card-header" style="background:#fffbeb;border-bottom:1px solid #fde68a">
             <span class="card-header-icon">🌸</span>
             <div style="flex:1">
                 <div class="card-header-title">Risque pollinique</div>
-                <div class="card-header-sub">${rec.lib_zone} · RNSA</div>
+                <div class="card-header-sub">${rec.lib_zone} · Réseau RNSA</div>
             </div>
             <span style="font-size:.68rem;color:#94a3b8;font-weight:500;margin-right:.5rem;flex-shrink:0">${fmtDate(rec.date)}</span>
-            ${globalBadge}
         </div>
         <div class="card-body">
-            <div style="display:flex;flex-wrap:wrap;gap:.5rem">${pills}</div>
+            ${globalBlock}
+            ${legendTable}
+            <div style="font-size:.72rem;font-weight:700;color:#92400e;margin-bottom:.6rem;padding-bottom:.3rem;border-bottom:1px solid #fde68a">Détail par taxon pollinique</div>
+            <div style="display:flex;flex-wrap:wrap;gap:.75rem">${taxaCards}</div>
+            <div style="font-size:.63rem;color:#94a3b8;margin-top:1rem;border-top:1px solid #fde68a;padding-top:.6rem">
+                Données RNSA · Allergenicité : classement SEAIC · Seuils grains/m³ : références RNSA/OMS · Prévalence : données épidémiologiques françaises
+            </div>
         </div>
     </div>`;
 }
