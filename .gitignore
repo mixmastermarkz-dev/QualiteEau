@@ -1,3 +1,29 @@
+# Python
 __pycache__/
 *.pyc
+*.pyo
+.venv/
+venv/
+
+# Secrets
 .env
+.dev.vars
+workers/auth-gate/.dev.vars
+
+# Données locales de dev (ne pas commiter les ~36k pages générées)
+france/
+data/referentiel/communes.json
+
+# Données dept générées (commitées uniquement via GitHub Actions)
+# data/dept/   ← commenter cette ligne pour commiter les données localement
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node (Wrangler)
+node_modules/
+workers/auth-gate/node_modules/

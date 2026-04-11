@@ -1,0 +1,15 @@
+name = "mon-env-auth-gate"
+main = "index.js"
+compatibility_date = "2024-01-01"
+
+# Route : intercepte toutes les pages /detail/
+[[routes]]
+pattern = "mon-environnement.fr/france/*/detail/*"
+zone_name = "mon-environnement.fr"
+
+[vars]
+# JWT_SECRET est injecté depuis les Cloudflare Workers Secrets (wrangler secret put JWT_SECRET)
+# Ne jamais commiter ce secret ici.
+
+# Pour développement local : créer un fichier .dev.vars (gitignore)
+# JWT_SECRET = "votre-secret-de-dev-local"
