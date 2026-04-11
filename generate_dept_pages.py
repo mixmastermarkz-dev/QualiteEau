@@ -150,6 +150,10 @@ def render_nappe_card(n):
     dot   = COLOR_TO_DOT.get(color, "bg-slate-300")
     niv_str = f"{niv} m" if niv is not None else "N.C."
     t_icon = {"hausse": "↑", "baisse": "↓", "stable": "→"}.get(tendance, "")
+    tendance_html = (
+        f'<span class="font-bold text-sky-600">{t_icon} {tendance.capitalize()}</span>'
+        if tendance else ""
+    )
     return (
         f'<div class="bg-white rounded-2xl border border-slate-200 p-4">'
         f'<div class="flex items-start justify-between gap-2 mb-2">'
@@ -159,7 +163,7 @@ def render_nappe_card(n):
         f'<div class="flex gap-4 text-xs text-slate-600">'
         f'<span>Niveau : <strong class="text-slate-900">{niv_str}</strong></span>'
         f'<span class="text-slate-400">{date_}</span>'
-        f'{("<span class=\"font-bold text-sky-600\">" + t_icon + " " + tendance.capitalize() + "</span>") if tendance else ""}'
+        f'{tendance_html}'
         f'</div>'
         f'</div>'
     )
