@@ -26,15 +26,23 @@ import json
 import argparse
 import threading
 from datetime import datetime, timedelta
+from urllib.parse import quote
 from zoneinfo import ZoneInfo
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from shared import (
     PARAMS_POTABLE, PARAMS_RIVIERE,
-    QUAL_LABELS, QUAL_COLORS, SUB_PARAMS, AIR_ZONES, OCCITANIE_DEPTS,
+    QUAL_LABELS, QUAL_COLORS, SUB_PARAMS, OCCITANIE_DEPTS,
     POL_LABELS, POL_COLORS, POLLEN_TAXA,
     get_json, get_color, calc_score, score_color, score_label,
     parse_result, encode_bss, extract_nom_cours_eau,
+)
+
+WFS_NATIONAL_AIR = (
+    "https://data.atmo-france.org/geoserver/ind/ows"
+    "?service=WFS&version=2.0.0&request=GetFeature"
+    "&TypeNames=ind:ind_atmo&outputFormat=application%2Fjson"
+    "&sortBy=date_ech+D"
 )
 
 BASE_DIR      = os.path.dirname(os.path.abspath(__file__))
@@ -153,9 +161,7 @@ BATCHES = {
     4: _ALL_CODES[3*_BS:],
 }
 
-# Cache WFS Atmo Occitanie — partagé entre threads, protégé par un verrou
-_wfs_cache: dict | None = None
-_wfs_lock  = threading.Lock()
+
 
 # ---------------------------------------------------------------------------
 # 1. EAU POTABLE — 1 appel par paramètre au niveau département
@@ -357,65 +363,57 @@ def fetch_nappes(dept_code: str, today: datetime) -> list:
     return nappes
 
 # ---------------------------------------------------------------------------
-# 4. QUALITÉ DE L'AIR (Atmo Occitanie — uniquement pour les depts Occitanie)
+# 4. QUALITÉ DE L'AIR (WFS national Atmo France — tous les départements)
 # ---------------------------------------------------------------------------
 
-def _get_wfs_occitanie() -> dict | None:
-    """Charge le WFS Atmo Occitanie une seule fois (cache thread-safe)."""
-    global _wfs_cache
-    with _wfs_lock:
-        if _wfs_cache is not None:
-            return _wfs_cache
-        url = ("https://dservices9.arcgis.com/7Sr9Ek9c1QTKmbwr/arcgis/services/ind_occitanie/WFSServer"
-               "?service=WFS&version=2.0.0&request=GetFeature"
-               "&typeName=ind_occitanie:ind_occitanie&outputFormat=GEOJSON&count=500")
-        _wfs_cache = get_json(url)
-        return _wfs_cache
-
-
 def fetch_air(dept_code: str) -> list:
-    if dept_code not in OCCITANIE_DEPTS:
+    """Fetch ATMO index via le WFS national Atmo France (aucune auth requise).
+    Couvre toute la France métropolitaine — remplace le WFS Occitanie limité.
+    """
+    prefix = dept_code.upper()
+    cql = f"code_zone LIKE '{prefix}%'"
+    url = f"{WFS_NATIONAL_AIR}&CQL_FILTER={quote(cql)}&count=10"
+
+    print(f"  Air dept {dept_code} (Atmo France WFS national)…")
+    d = get_json(url)
+    if not d or "features" not in d:
         return []
 
-    dept_zones = {k: v for k, v in AIR_ZONES.items() if v["dept"] == dept_code}
-    if not dept_zones:
-        return []
-
-    print(f"  Air dept {dept_code} (Atmo Occitanie)…")
-    d_air = _get_wfs_occitanie()
-    if not d_air or "features" not in d_air:
-        return []
-
+    # Garder l'enregistrement le plus récent par code_zone
     latest: dict = {}
-    for f in d_air["features"]:
+    for f in d.get("features", []):
         p  = f.get("properties", {})
-        cz = p.get("code_zone")
-        if cz not in dept_zones:
+        cz = p.get("code_zone", "")
+        if not cz:
             continue
         if cz not in latest or p.get("date_ech", "") > latest[cz].get("date_ech", ""):
             latest[cz] = p
 
     results = []
     for cz, p in latest.items():
-        qual = p.get("code_qual") or 0
+        qual = int(p.get("code_qual") or 0)
+        if qual == 0:
+            continue
         results.append({
-            "zone":   dept_zones[cz]["nom"],
+            "zone":   p.get("lib_zone") or cz,
             "dept":   dept_code,
             "date":   p.get("date_ech", ""),
             "indice": qual,
             "label":  p.get("lib_qual") or QUAL_LABELS.get(qual, "N.C."),
             "color":  p.get("coul_qual") or QUAL_COLORS.get(qual, "#94a3b8"),
+            "source": p.get("source", ""),
             "polluants": {
                 label: {
-                    "indice": p.get(f"code_{key}") or 0,
-                    "label":  QUAL_LABELS.get(p.get(f"code_{key}") or 0, "N.C."),
-                    "color":  QUAL_COLORS.get(p.get(f"code_{key}") or 0, "#94a3b8"),
+                    "indice": int(p.get(f"code_{key}") or 0),
+                    "label":  QUAL_LABELS.get(int(p.get(f"code_{key}") or 0), "N.C."),
+                    "color":  QUAL_COLORS.get(int(p.get(f"code_{key}") or 0), "#94a3b8"),
                 }
                 for key, label in SUB_PARAMS
             },
         })
+
     print(f"    → {len(results)} zones air")
-    return results
+    return results[:5]  # max 5 zones par département
 
 # ---------------------------------------------------------------------------
 # 5. POLLEN (Atmo Occitanie — uniquement pour les depts Occitanie)
