@@ -562,108 +562,108 @@
 // CITY DATABASE
 // ════════════════════════════════════════════════
 const CITIES=[
-    {slug:"agde",name:"Agde",dept:"Hérault (34)",deptNum:"34",coastal:true},
-    {slug:"aigues-mortes",name:"Aigues-Mortes",dept:"Gard (30)",deptNum:"30",coastal:true},
-    {slug:"aimargues",name:"Aimargues",dept:"Gard (30)",deptNum:"30",coastal:false},
-    {slug:"ales",name:"Alès",dept:"Gard (30)",deptNum:"30",coastal:false},
-    {slug:"aramon",name:"Aramon",dept:"Gard (30)",deptNum:"30",coastal:false},
-    {slug:"bagnols-sur-ceze",name:"Bagnols-sur-Cèze",dept:"Gard (30)",deptNum:"30",coastal:false},
-    {slug:"baillargues",name:"Baillargues",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"balaruc-les-bains",name:"Balaruc-les-Bains",dept:"Hérault (34)",deptNum:"34",coastal:true},
-    {slug:"beaucaire",name:"Beaucaire",dept:"Gard (30)",deptNum:"30",coastal:false},
-    {slug:"bedarieux",name:"Bédarieux",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"bellegarde",name:"Bellegarde",dept:"Gard (30)",deptNum:"30",coastal:false},
-    {slug:"bessan",name:"Bessan",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"beziers",name:"Béziers",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"bouillargues",name:"Bouillargues",dept:"Gard (30)",deptNum:"30",coastal:false},
-    {slug:"boujan-sur-libron",name:"Boujan-sur-Libron",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"caissargues",name:"Caissargues",dept:"Gard (30)",deptNum:"30",coastal:false},
-    {slug:"calvisson",name:"Calvisson",dept:"Gard (30)",deptNum:"30",coastal:false},
-    {slug:"canet",name:"Canet",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"capestang",name:"Capestang",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"castelnau-le-lez",name:"Castelnau-le-Lez",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"castries",name:"Castries",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"clapiers",name:"Clapiers",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"clarensac",name:"Clarensac",dept:"Gard (30)",deptNum:"30",coastal:false},
-    {slug:"clermont-l-herault",name:"Clermont-l'Hérault",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"cournonterral",name:"Cournonterral",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"fabregues",name:"Fabrègues",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"florensac",name:"Florensac",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"frontignan",name:"Frontignan",dept:"Hérault (34)",deptNum:"34",coastal:true},
-    {slug:"gallargues-le-montueux",name:"Gallargues-le-Montueux",dept:"Gard (30)",deptNum:"30",coastal:false},
-    {slug:"ganges",name:"Ganges",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"garons",name:"Garons",dept:"Gard (30)",deptNum:"30",coastal:false},
-    {slug:"gigean",name:"Gigean",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"gignac",name:"Gignac",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"grabels",name:"Grabels",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"jacou",name:"Jacou",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"juvignac",name:"Juvignac",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"la-grand-combe",name:"La Grand-Combe",dept:"Gard (30)",deptNum:"30",coastal:false},
-    {slug:"lattes",name:"Lattes",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"laudun-l-ardoise",name:"Laudun-l'Ardoise",dept:"Gard (30)",deptNum:"30",coastal:false},
-    {slug:"le-cres",name:"Le Crès",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"le-grau-du-roi",name:"Le Grau-du-Roi",dept:"Gard (30)",deptNum:"30",coastal:true},
-    {slug:"le-vigan",name:"Le Vigan",dept:"Gard (30)",deptNum:"30",coastal:false},
-    {slug:"les-angles",name:"Les Angles",dept:"Gard (30)",deptNum:"30",coastal:false},
-    {slug:"lodeve",name:"Lodève",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"lunel",name:"Lunel",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"lunel-viel",name:"Lunel-Viel",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"manduel",name:"Manduel",dept:"Gard (30)",deptNum:"30",coastal:false},
-    {slug:"maraussan",name:"Maraussan",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"marguerittes",name:"Marguerittes",dept:"Gard (30)",deptNum:"30",coastal:false},
-    {slug:"marseillan",name:"Marseillan",dept:"Hérault (34)",deptNum:"34",coastal:true},
-    {slug:"marsillargues",name:"Marsillargues",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"mauguio",name:"Mauguio",dept:"Hérault (34)",deptNum:"34",coastal:true},
-    {slug:"meze",name:"Mèze",dept:"Hérault (34)",deptNum:"34",coastal:true},
-    {slug:"milhaud",name:"Milhaud",dept:"Gard (30)",deptNum:"30",coastal:false},
-    {slug:"mireval",name:"Mireval",dept:"Hérault (34)",deptNum:"34",coastal:true},
-    {slug:"montagnac",name:"Montagnac",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"montbazin",name:"Montbazin",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"montblanc",name:"Montblanc",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"montferrier-sur-lez",name:"Montferrier-sur-Lez",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"montfrin",name:"Montfrin",dept:"Gard (30)",deptNum:"30",coastal:false},
-    {slug:"montpellier",name:"Montpellier",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"nimes",name:"Nîmes",dept:"Gard (30)",deptNum:"30",coastal:false},
-    {slug:"nissan-lez-enserune",name:"Nissan-lez-Enserune",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"palavas-les-flots",name:"Palavas-les-Flots",dept:"Hérault (34)",deptNum:"34",coastal:true},
-    {slug:"perols",name:"Pérols",dept:"Hérault (34)",deptNum:"34",coastal:true},
-    {slug:"pezenas",name:"Pézenas",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"pignan",name:"Pignan",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"pont-saint-esprit",name:"Pont-Saint-Esprit",dept:"Gard (30)",deptNum:"30",coastal:false},
-    {slug:"poussan",name:"Poussan",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"prades-le-lez",name:"Prades-le-Lez",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"quissac",name:"Quissac",dept:"Gard (30)",deptNum:"30",coastal:false},
-    {slug:"redessan",name:"Redessan",dept:"Gard (30)",deptNum:"30",coastal:false},
-    {slug:"remoulins",name:"Remoulins",dept:"Gard (30)",deptNum:"30",coastal:false},
-    {slug:"rochefort-du-gard",name:"Rochefort-du-Gard",dept:"Gard (30)",deptNum:"30",coastal:false},
-    {slug:"roquemaure",name:"Roquemaure",dept:"Gard (30)",deptNum:"30",coastal:false},
-    {slug:"saint-ambroix",name:"Saint-Ambroix",dept:"Gard (30)",deptNum:"30",coastal:false},
-    {slug:"saint-aunes",name:"Saint-Aunès",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"saint-christol-lez-ales",name:"Saint-Christol-lès-Alès",dept:"Gard (30)",deptNum:"30",coastal:false},
-    {slug:"saint-clement-de-riviere",name:"Saint-Clément-de-Rivière",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"saint-gely-du-fesc",name:"Saint-Gély-du-Fesc",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"saint-genies-de-malgoires",name:"Saint-Geniès-de-Malgoirès",dept:"Gard (30)",deptNum:"30",coastal:false},
-    {slug:"saint-georges-d-orques",name:"Saint-Georges-d'Orques",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"saint-gilles",name:"Saint-Gilles",dept:"Gard (30)",deptNum:"30",coastal:false},
-    {slug:"saint-hilaire-de-brethmas",name:"Saint-Hilaire-de-Brethmas",dept:"Gard (30)",deptNum:"30",coastal:false},
-    {slug:"saint-hippolyte-du-fort",name:"Saint-Hippolyte-du-Fort",dept:"Gard (30)",deptNum:"30",coastal:false},
-    {slug:"saint-jean-de-vedas",name:"Saint-Jean-de-Védas",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"saint-laurent-des-arbres",name:"Saint-Laurent-des-Arbres",dept:"Gard (30)",deptNum:"30",coastal:false},
-    {slug:"saint-mathieu-de-treviers",name:"Saint-Mathieu-de-Tréviers",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"salindres",name:"Salindres",dept:"Gard (30)",deptNum:"30",coastal:false},
-    {slug:"serignan",name:"Sérignan",dept:"Hérault (34)",deptNum:"34",coastal:true},
-    {slug:"sete",name:"Sète",dept:"Hérault (34)",deptNum:"34",coastal:true},
-    {slug:"sommieres",name:"Sommières",dept:"Gard (30)",deptNum:"30",coastal:false},
-    {slug:"uchaud",name:"Uchaud",dept:"Gard (30)",deptNum:"30",coastal:false},
-    {slug:"uzes",name:"Uzès",dept:"Gard (30)",deptNum:"30",coastal:false},
-    {slug:"valras-plage",name:"Valras-Plage",dept:"Hérault (34)",deptNum:"34",coastal:true},
-    {slug:"vauvert",name:"Vauvert",dept:"Gard (30)",deptNum:"30",coastal:false},
-    {slug:"vendargues",name:"Vendargues",dept:"Hérault (34)",deptNum:"34",coastal:false},
-    {slug:"vergeze",name:"Vergèze",dept:"Gard (30)",deptNum:"30",coastal:false},
-    {slug:"vias",name:"Vias",dept:"Hérault (34)",deptNum:"34",coastal:true},
-    {slug:"villeneuve-les-avignon",name:"Villeneuve-lès-Avignon",dept:"Gard (30)",deptNum:"30",coastal:false},
-    {slug:"villeneuve-les-beziers",name:"Villeneuve-lès-Béziers",dept:"Hérault (34)",deptNum:"34",coastal:true},
-    {slug:"villeneuve-les-maguelone",name:"Villeneuve-lès-Maguelone",dept:"Hérault (34)",deptNum:"34",coastal:true},
+    {slug:"agde",name:"Agde",dept:"Hérault (34)",deptNum:"34",coastal:true,lat:43.310,lng:3.475},
+    {slug:"aigues-mortes",name:"Aigues-Mortes",dept:"Gard (30)",deptNum:"30",coastal:true,lat:43.567,lng:4.192},
+    {slug:"aimargues",name:"Aimargues",dept:"Gard (30)",deptNum:"30",coastal:false,lat:43.688,lng:4.220},
+    {slug:"ales",name:"Alès",dept:"Gard (30)",deptNum:"30",coastal:false,lat:44.124,lng:4.082},
+    {slug:"aramon",name:"Aramon",dept:"Gard (30)",deptNum:"30",coastal:false,lat:43.883,lng:4.638},
+    {slug:"bagnols-sur-ceze",name:"Bagnols-sur-Cèze",dept:"Gard (30)",deptNum:"30",coastal:false,lat:44.162,lng:4.620},
+    {slug:"baillargues",name:"Baillargues",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.657,lng:3.957},
+    {slug:"balaruc-les-bains",name:"Balaruc-les-Bains",dept:"Hérault (34)",deptNum:"34",coastal:true,lat:43.449,lng:3.676},
+    {slug:"beaucaire",name:"Beaucaire",dept:"Gard (30)",deptNum:"30",coastal:false,lat:43.806,lng:4.645},
+    {slug:"bedarieux",name:"Bédarieux",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.615,lng:3.157},
+    {slug:"bellegarde",name:"Bellegarde",dept:"Gard (30)",deptNum:"30",coastal:false,lat:43.770,lng:4.520},
+    {slug:"bessan",name:"Bessan",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.375,lng:3.440},
+    {slug:"beziers",name:"Béziers",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.344,lng:3.216},
+    {slug:"bouillargues",name:"Bouillargues",dept:"Gard (30)",deptNum:"30",coastal:false,lat:43.808,lng:4.381},
+    {slug:"boujan-sur-libron",name:"Boujan-sur-Libron",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.351,lng:3.277},
+    {slug:"caissargues",name:"Caissargues",dept:"Gard (30)",deptNum:"30",coastal:false,lat:43.793,lng:4.390},
+    {slug:"calvisson",name:"Calvisson",dept:"Gard (30)",deptNum:"30",coastal:false,lat:43.773,lng:4.219},
+    {slug:"canet",name:"Canet",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.581,lng:3.713},
+    {slug:"capestang",name:"Capestang",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.329,lng:3.043},
+    {slug:"castelnau-le-lez",name:"Castelnau-le-Lez",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.634,lng:3.909},
+    {slug:"castries",name:"Castries",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.683,lng:3.985},
+    {slug:"clapiers",name:"Clapiers",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.656,lng:3.876},
+    {slug:"clarensac",name:"Clarensac",dept:"Gard (30)",deptNum:"30",coastal:false,lat:43.825,lng:4.243},
+    {slug:"clermont-l-herault",name:"Clermont-l'Hérault",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.627,lng:3.432},
+    {slug:"cournonterral",name:"Cournonterral",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.567,lng:3.750},
+    {slug:"fabregues",name:"Fabrègues",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.523,lng:3.770},
+    {slug:"florensac",name:"Florensac",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.377,lng:3.464},
+    {slug:"frontignan",name:"Frontignan",dept:"Hérault (34)",deptNum:"34",coastal:true,lat:43.449,lng:3.756},
+    {slug:"gallargues-le-montueux",name:"Gallargues-le-Montueux",dept:"Gard (30)",deptNum:"30",coastal:false,lat:43.727,lng:4.177},
+    {slug:"ganges",name:"Ganges",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.934,lng:3.704},
+    {slug:"garons",name:"Garons",dept:"Gard (30)",deptNum:"30",coastal:false,lat:43.815,lng:4.373},
+    {slug:"gigean",name:"Gigean",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.487,lng:3.723},
+    {slug:"gignac",name:"Gignac",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.652,lng:3.554},
+    {slug:"grabels",name:"Grabels",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.660,lng:3.831},
+    {slug:"jacou",name:"Jacou",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.668,lng:3.928},
+    {slug:"juvignac",name:"Juvignac",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.624,lng:3.820},
+    {slug:"la-grand-combe",name:"La Grand-Combe",dept:"Gard (30)",deptNum:"30",coastal:false,lat:44.220,lng:4.022},
+    {slug:"lattes",name:"Lattes",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.564,lng:3.894},
+    {slug:"laudun-l-ardoise",name:"Laudun-l'Ardoise",dept:"Gard (30)",deptNum:"30",coastal:false,lat:44.097,lng:4.678},
+    {slug:"le-cres",name:"Le Crès",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.641,lng:3.951},
+    {slug:"le-grau-du-roi",name:"Le Grau-du-Roi",dept:"Gard (30)",deptNum:"30",coastal:true,lat:43.538,lng:4.131},
+    {slug:"le-vigan",name:"Le Vigan",dept:"Gard (30)",deptNum:"30",coastal:false,lat:43.992,lng:3.606},
+    {slug:"les-angles",name:"Les Angles",dept:"Gard (30)",deptNum:"30",coastal:false,lat:43.969,lng:4.782},
+    {slug:"lodeve",name:"Lodève",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.731,lng:3.320},
+    {slug:"lunel",name:"Lunel",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.674,lng:4.137},
+    {slug:"lunel-viel",name:"Lunel-Viel",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.666,lng:4.091},
+    {slug:"manduel",name:"Manduel",dept:"Gard (30)",deptNum:"30",coastal:false,lat:43.800,lng:4.466},
+    {slug:"maraussan",name:"Maraussan",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.382,lng:3.189},
+    {slug:"marguerittes",name:"Marguerittes",dept:"Gard (30)",deptNum:"30",coastal:false,lat:43.862,lng:4.430},
+    {slug:"marseillan",name:"Marseillan",dept:"Hérault (34)",deptNum:"34",coastal:true,lat:43.364,lng:3.534},
+    {slug:"marsillargues",name:"Marsillargues",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.671,lng:4.182},
+    {slug:"mauguio",name:"Mauguio",dept:"Hérault (34)",deptNum:"34",coastal:true,lat:43.614,lng:4.007},
+    {slug:"meze",name:"Mèze",dept:"Hérault (34)",deptNum:"34",coastal:true,lat:43.432,lng:3.606},
+    {slug:"milhaud",name:"Milhaud",dept:"Gard (30)",deptNum:"30",coastal:false,lat:43.778,lng:4.364},
+    {slug:"mireval",name:"Mireval",dept:"Hérault (34)",deptNum:"34",coastal:true,lat:43.502,lng:3.802},
+    {slug:"montagnac",name:"Montagnac",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.479,lng:3.490},
+    {slug:"montbazin",name:"Montbazin",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.501,lng:3.729},
+    {slug:"montblanc",name:"Montblanc",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.361,lng:3.368},
+    {slug:"montferrier-sur-lez",name:"Montferrier-sur-Lez",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.672,lng:3.852},
+    {slug:"montfrin",name:"Montfrin",dept:"Gard (30)",deptNum:"30",coastal:false,lat:43.874,lng:4.605},
+    {slug:"montpellier",name:"Montpellier",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.611,lng:3.877},
+    {slug:"nimes",name:"Nîmes",dept:"Gard (30)",deptNum:"30",coastal:false,lat:43.837,lng:4.360},
+    {slug:"nissan-lez-enserune",name:"Nissan-lez-Enserune",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.300,lng:3.087},
+    {slug:"palavas-les-flots",name:"Palavas-les-Flots",dept:"Hérault (34)",deptNum:"34",coastal:true,lat:43.528,lng:3.930},
+    {slug:"perols",name:"Pérols",dept:"Hérault (34)",deptNum:"34",coastal:true,lat:43.561,lng:3.951},
+    {slug:"pezenas",name:"Pézenas",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.461,lng:3.424},
+    {slug:"pignan",name:"Pignan",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.571,lng:3.789},
+    {slug:"pont-saint-esprit",name:"Pont-Saint-Esprit",dept:"Gard (30)",deptNum:"30",coastal:false,lat:44.255,lng:4.648},
+    {slug:"poussan",name:"Poussan",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.490,lng:3.674},
+    {slug:"prades-le-lez",name:"Prades-le-Lez",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.698,lng:3.863},
+    {slug:"quissac",name:"Quissac",dept:"Gard (30)",deptNum:"30",coastal:false,lat:43.917,lng:3.993},
+    {slug:"redessan",name:"Redessan",dept:"Gard (30)",deptNum:"30",coastal:false,lat:43.810,lng:4.445},
+    {slug:"remoulins",name:"Remoulins",dept:"Gard (30)",deptNum:"30",coastal:false,lat:43.942,lng:4.558},
+    {slug:"rochefort-du-gard",name:"Rochefort-du-Gard",dept:"Gard (30)",deptNum:"30",coastal:false,lat:43.969,lng:4.712},
+    {slug:"roquemaure",name:"Roquemaure",dept:"Gard (30)",deptNum:"30",coastal:false,lat:44.051,lng:4.741},
+    {slug:"saint-ambroix",name:"Saint-Ambroix",dept:"Gard (30)",deptNum:"30",coastal:false,lat:44.218,lng:4.196},
+    {slug:"saint-aunes",name:"Saint-Aunès",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.633,lng:3.972},
+    {slug:"saint-christol-lez-ales",name:"Saint-Christol-lès-Alès",dept:"Gard (30)",deptNum:"30",coastal:false,lat:44.111,lng:4.124},
+    {slug:"saint-clement-de-riviere",name:"Saint-Clément-de-Rivière",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.703,lng:3.831},
+    {slug:"saint-gely-du-fesc",name:"Saint-Gély-du-Fesc",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.703,lng:3.823},
+    {slug:"saint-genies-de-malgoires",name:"Saint-Geniès-de-Malgoirès",dept:"Gard (30)",deptNum:"30",coastal:false,lat:43.940,lng:4.295},
+    {slug:"saint-georges-d-orques",name:"Saint-Georges-d'Orques",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.577,lng:3.780},
+    {slug:"saint-gilles",name:"Saint-Gilles",dept:"Gard (30)",deptNum:"30",coastal:false,lat:43.678,lng:4.432},
+    {slug:"saint-hilaire-de-brethmas",name:"Saint-Hilaire-de-Brethmas",dept:"Gard (30)",deptNum:"30",coastal:false,lat:44.091,lng:4.099},
+    {slug:"saint-hippolyte-du-fort",name:"Saint-Hippolyte-du-Fort",dept:"Gard (30)",deptNum:"30",coastal:false,lat:43.967,lng:3.857},
+    {slug:"saint-jean-de-vedas",name:"Saint-Jean-de-Védas",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.572,lng:3.820},
+    {slug:"saint-laurent-des-arbres",name:"Saint-Laurent-des-Arbres",dept:"Gard (30)",deptNum:"30",coastal:false,lat:44.091,lng:4.723},
+    {slug:"saint-mathieu-de-treviers",name:"Saint-Mathieu-de-Tréviers",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.742,lng:3.878},
+    {slug:"salindres",name:"Salindres",dept:"Gard (30)",deptNum:"30",coastal:false,lat:44.112,lng:4.151},
+    {slug:"serignan",name:"Sérignan",dept:"Hérault (34)",deptNum:"34",coastal:true,lat:43.270,lng:3.307},
+    {slug:"sete",name:"Sète",dept:"Hérault (34)",deptNum:"34",coastal:true,lat:43.403,lng:3.697},
+    {slug:"sommieres",name:"Sommières",dept:"Gard (30)",deptNum:"30",coastal:false,lat:43.784,lng:4.090},
+    {slug:"uchaud",name:"Uchaud",dept:"Gard (30)",deptNum:"30",coastal:false,lat:43.762,lng:4.342},
+    {slug:"uzes",name:"Uzès",dept:"Gard (30)",deptNum:"30",coastal:false,lat:44.011,lng:4.420},
+    {slug:"valras-plage",name:"Valras-Plage",dept:"Hérault (34)",deptNum:"34",coastal:true,lat:43.249,lng:3.292},
+    {slug:"vauvert",name:"Vauvert",dept:"Gard (30)",deptNum:"30",coastal:false,lat:43.693,lng:4.279},
+    {slug:"vendargues",name:"Vendargues",dept:"Hérault (34)",deptNum:"34",coastal:false,lat:43.639,lng:3.984},
+    {slug:"vergeze",name:"Vergèze",dept:"Gard (30)",deptNum:"30",coastal:false,lat:43.730,lng:4.250},
+    {slug:"vias",name:"Vias",dept:"Hérault (34)",deptNum:"34",coastal:true,lat:43.313,lng:3.420},
+    {slug:"villeneuve-les-avignon",name:"Villeneuve-lès-Avignon",dept:"Gard (30)",deptNum:"30",coastal:false,lat:43.961,lng:4.793},
+    {slug:"villeneuve-les-beziers",name:"Villeneuve-lès-Béziers",dept:"Hérault (34)",deptNum:"34",coastal:true,lat:43.311,lng:3.238},
+    {slug:"villeneuve-les-maguelone",name:"Villeneuve-lès-Maguelone",dept:"Hérault (34)",deptNum:"34",coastal:true,lat:43.529,lng:3.859},
 ];
 
 // city slug → air zone index in full_data.json air array
@@ -753,6 +753,15 @@ const POLLEN_DATA={
     "Chêne"     :{allerg:"Modérée",prev:"~4% pop. fr.",grains:["0","1–24","25–74","75–299","≥ 300"],note:"Longue saison de pollinisation. Saison : avr.–juin"},
     "Bouleau"   :{allerg:"Très forte",prev:"~15% nord France",grains:["0","1–24","25–74","75–299","≥ 300"],note:"Réactivité croisée (pomme, noisette, carotte…). Saison : mars–mai"},
 };
+
+// ════════════════════════════════════════════════
+// HAVERSINE — distance entre deux points GPS (en km)
+// ════════════════════════════════════════════════
+function haversine(lat1,lon1,lat2,lon2){
+    const R=6371,dLat=(lat2-lat1)*Math.PI/180,dLon=(lon2-lon1)*Math.PI/180;
+    const a=Math.sin(dLat/2)**2+Math.cos(lat1*Math.PI/180)*Math.cos(lat2*Math.PI/180)*Math.sin(dLon/2)**2;
+    return R*2*Math.atan2(Math.sqrt(a),Math.sqrt(1-a));
+}
 
 // ════════════════════════════════════════════════
 // DATA LOAD
@@ -1228,12 +1237,41 @@ function renderPollen(city,pollen){
 // ────────────────────────────────────────────────
 function renderNappes(city,nappes){
     if(!Array.isArray(nappes)||!nappes.length) return "";
+
+    // ── Matching par proximité géographique ──────────────────────────────
+    // 1. Stations portant le nom exact de la ville
+    // 2. Si aucune : les 3 stations les plus proches (rayon max 25 km)
     const cn=norm(city.name);
-    let matches=nappes.filter(n=>norm(n.nom).includes(cn)||cn.includes(norm(n.nom)));
-    if(!matches.length) matches=nappes.filter(n=>n.dept===city.deptNum).slice(0,3);
+    let matches=nappes.filter(n=>norm(n.nom)===cn||norm(n.nom).startsWith(cn));
+
+    if(!matches.length && city.lat && city.lng){
+        // Calculer la distance de chaque station à la ville
+        const withDist=nappes
+            .filter(n=>n.lat&&n.lng)
+            .map(n=>({...n, dist:haversine(city.lat,city.lng,n.lat,n.lng)}))
+            .sort((a,b)=>a.dist-b.dist);
+        // Prendre max 3 stations dans un rayon de 25 km
+        matches=withDist.filter(n=>n.dist<=25).slice(0,3);
+        if(!matches.length) matches=withDist.slice(0,2); // fallback absolu : 2 plus proches
+    }
     if(!matches.length) return "";
 
-    const stations=matches.slice(0,4).map(n=>{
+    // ── Légende fixe : qu'est-ce qu'une nappe phréatique / un piézomètre ──
+    const legend=`
+        <div style="background:#f0f9ff;border:1px solid #bae6fd;border-radius:.85rem;padding:.85rem 1.1rem;margin-bottom:1.1rem;display:flex;flex-direction:column;gap:.5rem">
+            <div style="font-size:.65rem;font-weight:700;color:#0369a1;text-transform:uppercase;letter-spacing:.06em">Comprendre les données piézométriques</div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:.5rem .9rem">
+                <div style="font-size:.68rem;color:#475569"><b style="color:#0c4a6e">Nappe phréatique</b> — masse d'eau souterraine saturant les pores et fissures du sol ou du sous-sol (aquifère). Alimente puits, sources et cours d'eau à l'étiage.</div>
+                <div style="font-size:.68rem;color:#475569"><b style="color:#0c4a6e">Piézomètre</b> — sonde de mesure du niveau piézométrique (surface de la nappe), exprimée en <b>mètres NGF</b> (altitude absolue / Nivellement Général de France).</div>
+                <div style="font-size:.68rem;color:#475569"><b style="color:#0c4a6e">m NGF</b> — altitude absolue de la surface piézométrique. Un niveau plus haut = nappe plus haute = aquifère mieux rechargé.</div>
+                <div style="font-size:.68rem;color:#475569"><b style="color:#0c4a6e">Variation annuelle</b> — différence actuel − N-1 (même mois an dernier). Positive = recharge, négative = prélèvements &gt; recharge ou sécheresse.</div>
+                <div style="font-size:.68rem;color:#475569"><b style="color:#0c4a6e">BSS</b> — Banque du Sous-Sol (BRGM). Identifiant national du point de mesure (ex: 09913X0158/AIRE). Consultable sur <i>infoterre.brgm.fr</i>.</div>
+                <div style="font-size:.68rem;color:#475569"><b style="color:#0c4a6e">Position dans la plage</b> — position du niveau actuel entre le minimum et le maximum mesurés sur les 14 derniers mois. 0 % = à l'étiage historique récent, 100 % = au plus haut.</div>
+            </div>
+        </div>`;
+
+    // ── Cartes de stations ───────────────────────────────────────────────
+    const stations=matches.slice(0,3).map(n=>{
         const diff=+(n.current-n.year_ago).toFixed(2);
         const isUp=diff>0.2,isDown=diff<-0.2;
         const sign=diff>0?"+":"";
@@ -1243,55 +1281,65 @@ function renderNappes(city,nappes){
             ?`<span class="badge-trend badge-trend-down">↓ En baisse</span>`
             :`<span class="badge-trend badge-trend-flat">→ Stable</span>`;
 
-        // Stats historiques sur les 14 derniers mois
         const hist=n.history||[];
-        const hMin=hist.length?Math.min(...hist).toFixed(3):null;
-        const hMax=hist.length?Math.max(...hist).toFixed(3):null;
-        const hRange=hMin&&hMax?(+hMax-+hMin).toFixed(3):null;
-        // Position du niveau actuel dans la plage historique (0%=min, 100%=max)
-        const histPct=hMin&&hMax&&hRange>0
-            ?Math.round(((n.current-hMin)/hRange)*100):null;
-        // Interprétation qualitative
-        let histInterp="";
+        const hMin=hist.length?Math.min(...hist):null;
+        const hMax=hist.length?Math.max(...hist):null;
+        const hRange=hMin!==null&&hMax!==null?(hMax-hMin):null;
+        const histPct=hRange>0?Math.round(((n.current-hMin)/hRange)*100):null;
+        let histInterp="",histColor="#64748b";
         if(histPct!==null){
-            if(histPct>=80) histInterp="Niveau élevé sur la période";
-            else if(histPct>=50) histInterp="Niveau moyen-haut";
-            else if(histPct>=20) histInterp="Niveau moyen-bas";
-            else histInterp="Niveau bas sur la période";
+            if(histPct>=80){histInterp="Niveau élevé — bonne recharge";histColor="#16a34a";}
+            else if(histPct>=50){histInterp="Niveau moyen-haut";histColor="#84cc16";}
+            else if(histPct>=25){histInterp="Niveau moyen-bas — surveiller";histColor="#f59e0b";}
+            else{histInterp="Niveau bas — possible stress hydrique";histColor="#ef4444";}
         }
+
+        // Distance à la ville (si calculée par proximité)
+        const distLabel=n.dist!=null&&n.dist>0.5
+            ?`<span style="font-size:.6rem;color:#94a3b8">à ~${n.dist.toFixed(1)} km</span>`:"";
 
         return`<div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:.85rem;padding:.9rem 1.1rem;margin-bottom:.85rem">
             <div style="display:flex;align-items:flex-start;gap:1rem;flex-wrap:wrap">
                 <div style="flex:1;min-width:180px">
-                    <div style="font-size:.84rem;font-weight:800;color:#1e3a5f;margin-bottom:.15rem">${n.nom}</div>
-                    <div style="font-size:.63rem;color:#94a3b8;font-family:monospace">${n.code_bss}</div>
-                    <div style="margin-top:.6rem;display:flex;gap:.5rem;align-items:center;flex-wrap:wrap">
+                    <div style="display:flex;align-items:baseline;gap:.5rem;flex-wrap:wrap;margin-bottom:.15rem">
+                        <span style="font-size:.84rem;font-weight:800;color:#1e3a5f">${n.nom}</span>
+                        ${distLabel}
+                    </div>
+                    <div style="font-size:.62rem;color:#94a3b8;font-family:monospace;margin-bottom:.55rem">${n.code_bss}</div>
+
+                    <div style="display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;margin-bottom:.5rem">
                         ${trendBadge}
-                        <span style="font-size:.68rem;color:${isUp?'#16a34a':isDown?'#dc2626':'#64748b'};font-weight:700">${sign}${diff} m/an</span>
+                        <span style="font-size:.7rem;color:${isUp?'#16a34a':isDown?'#dc2626':'#64748b'};font-weight:700">${sign}${diff} m vs N-1</span>
                     </div>
-                    <div style="margin-top:.5rem;font-size:.68rem;color:#64748b">
-                        <span><b style="color:#1e293b">N-1 :</b> ${n.year_ago} m NGF</span>
-                        <span style="margin-left:.75rem"><b style="color:#1e293b">Actuel :</b> ${n.current} m NGF</span>
+
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:.2rem .8rem;margin-bottom:.5rem">
+                        <div style="font-size:.67rem;color:#64748b"><b style="color:#1e293b">Niveau actuel :</b> ${n.current} m NGF</div>
+                        <div style="font-size:.67rem;color:#64748b"><b style="color:#1e293b">Il y a 12 mois :</b> ${n.year_ago} m NGF</div>
+                        ${hMin!==null?`<div style="font-size:.67rem;color:#64748b"><b style="color:#1e293b">Min 14 mois :</b> ${hMin.toFixed(3)} m NGF</div>`:""}
+                        ${hMax!==null?`<div style="font-size:.67rem;color:#64748b"><b style="color:#1e293b">Max 14 mois :</b> ${hMax.toFixed(3)} m NGF</div>`:""}
+                        ${hRange!==null?`<div style="font-size:.67rem;color:#64748b"><b style="color:#1e293b">Amplitude :</b> ${hRange.toFixed(3)} m</div>`:""}
                     </div>
-                    ${hMin&&hMax?`<div style="margin-top:.35rem;font-size:.65rem;color:#64748b">
-                        <b style="color:#1e293b">Plage 14 mois :</b> ${hMin} → ${hMax} m NGF
-                        <span style="margin-left:.5rem;color:#94a3b8">(amplitude : ${hRange} m)</span>
-                    </div>`:""}
-                    ${histPct!==null?`<div style="margin-top:.5rem">
-                        <div style="display:flex;justify-content:space-between;font-size:.6rem;color:#94a3b8;margin-bottom:.2rem">
-                            <span>Min historique</span><span>${histInterp}</span><span>Max historique</span>
+
+                    ${histPct!==null?`
+                    <div style="margin-top:.4rem">
+                        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.2rem">
+                            <span style="font-size:.6rem;color:#94a3b8">Bas (${hMin.toFixed(2)} m)</span>
+                            <span style="font-size:.63rem;font-weight:700;color:${histColor}">${histInterp}</span>
+                            <span style="font-size:.6rem;color:#94a3b8">Haut (${hMax.toFixed(2)} m)</span>
                         </div>
-                        <div style="height:6px;background:#e2e8f0;border-radius:999px;position:relative">
-                            <div style="position:absolute;left:0;top:0;height:100%;width:${histPct}%;background:${n.color||'#3b82f6'};border-radius:999px;opacity:.7"></div>
-                            <div style="position:absolute;top:50%;left:${histPct}%;transform:translate(-50%,-50%);width:12px;height:12px;border-radius:50%;background:${n.color||'#3b82f6'};border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.2)"></div>
+                        <div style="height:7px;background:#e2e8f0;border-radius:999px;position:relative">
+                            <div style="position:absolute;left:0;top:0;height:100%;width:${histPct}%;background:${n.color||'#3b82f6'};border-radius:999px;opacity:.55"></div>
+                            <div style="position:absolute;top:50%;left:${histPct}%;transform:translate(-50%,-50%);width:13px;height:13px;border-radius:50%;background:${n.color||'#3b82f6'};border:2.5px solid #fff;box-shadow:0 1px 5px rgba(0,0,0,.22)"></div>
                         </div>
+                        <div style="font-size:.6rem;color:${histColor};margin-top:.2rem;text-align:center">${histPct} % de la plage historique 14 mois</div>
                     </div>`:""}
                 </div>
-                <div style="flex-shrink:0;text-align:right">
-                    <div style="font-size:1.5rem;font-weight:900;color:#3b82f6;line-height:1">${n.current}</div>
-                    <div style="font-size:.65rem;color:#94a3b8;margin-top:.1rem">m NGF</div>
-                    <div style="margin-top:.5rem">${sparkline(n.history,n.color||"#3b82f6")}</div>
-                    <div style="font-size:.58rem;color:#94a3b8;margin-top:.2rem">14 mois de mesures</div>
+
+                <div style="flex-shrink:0;text-align:right;min-width:80px">
+                    <div style="font-size:1.6rem;font-weight:900;color:#3b82f6;line-height:1">${n.current}</div>
+                    <div style="font-size:.62rem;color:#94a3b8;margin-top:.1rem">m NGF</div>
+                    <div style="margin-top:.55rem">${sparkline(n.history,n.color||"#3b82f6")}</div>
+                    <div style="font-size:.56rem;color:#94a3b8;margin-top:.15rem;text-align:center">14 mois glissants</div>
                 </div>
             </div>
         </div>`;
@@ -1302,12 +1350,15 @@ function renderNappes(city,nappes){
             <span class="card-header-icon">🌊</span>
             <div>
                 <div class="card-header-title">Nappes phréatiques</div>
-                <div class="card-header-sub">Piézomètres BRGM · BSS · Niveau NGF · variation annuelle</div>
+                <div class="card-header-sub">Piézomètres BRGM · Banque du Sous-Sol · Niveau NGF · Stations les plus proches</div>
             </div>
         </div>
         <div class="card-body">
+            ${legend}
             ${stations}
-            <div style="font-size:.62rem;color:#94a3b8;margin-bottom:.5rem;line-height:1.5">NGF = Nivellement Général de la France (altitude de la surface piézométrique) · BSS = Banque du Sous-Sol BRGM · Sparkline : 14 mois glissants</div>
+            <div style="font-size:.6rem;color:#94a3b8;line-height:1.5;border-top:1px solid #dbeafe;padding-top:.5rem">
+                Source : BRGM — Banque du Sous-Sol (BSS) · Hub'Eau Piézométrie · NGF = Nivellement Général de France (Lallemand) · Stations sélectionnées par proximité géographique
+            </div>
             <div id="map-nappes" class="env-map"></div>
         </div>
     </div>`;
@@ -1333,7 +1384,20 @@ function renderRivieres(city,rivieres){
     if(!Array.isArray(rivieres)||!rivieres.length) return "";
     const cn=norm(city.name);
     let matches=rivieres.filter(r=>norm(r.commune||r.nom||"").includes(cn));
-    if(!matches.length) matches=rivieres.filter(r=>r.dept===city.deptNum).slice(0,3);
+    if(!matches.length && city.lat && city.lng){
+        const withDist=rivieres.filter(r=>r.lat&&r.lon)
+            .map(r=>({...r,dist:haversine(city.lat,city.lng,r.lat,r.lon)}))
+            .sort((a,b)=>a.dist-b.dist);
+        const seen=new Set();
+        matches=[];
+        for(const r of withDist){
+            const key=(r.nom_cours_eau||r.nom||"?").trim();
+            if(!seen.has(key)){seen.add(key);matches.push(r);}
+            if(matches.length>=2) break;
+        }
+        if(!matches.length) matches=withDist.slice(0,2);
+    }
+    if(!matches.length) matches=rivieres.filter(r=>r.dept===city.deptNum).slice(0,2);
     if(!matches.length) return "";
 
     const stations=matches.slice(0,3).map(r=>{
