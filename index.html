@@ -664,6 +664,208 @@ const CITIES=[
     {slug:"villeneuve-les-avignon",name:"Villeneuve-lès-Avignon",dept:"Gard (30)",deptNum:"30",coastal:false,lat:43.961,lng:4.793},
     {slug:"villeneuve-les-beziers",name:"Villeneuve-lès-Béziers",dept:"Hérault (34)",deptNum:"34",coastal:true,lat:43.311,lng:3.238},
     {slug:"villeneuve-les-maguelone",name:"Villeneuve-lès-Maguelone",dept:"Hérault (34)",deptNum:"34",coastal:true,lat:43.529,lng:3.859},
+    // ── Aude (11) ─────────────────────────────────
+    {slug:"carcassonne",name:"Carcassonne",dept:"Aude (11)",deptNum:"11",coastal:false,lat:43.213,lng:2.353},
+    {slug:"narbonne",name:"Narbonne",dept:"Aude (11)",deptNum:"11",coastal:false,lat:43.184,lng:3.003},
+    {slug:"limoux",name:"Limoux",dept:"Aude (11)",deptNum:"11",coastal:false,lat:43.056,lng:2.219},
+    {slug:"castelnaudary",name:"Castelnaudary",dept:"Aude (11)",deptNum:"11",coastal:false,lat:43.317,lng:1.955},
+    // ── Aveyron (12) ──────────────────────────────
+    {slug:"rodez",name:"Rodez",dept:"Aveyron (12)",deptNum:"12",coastal:false,lat:44.351,lng:2.573},
+    {slug:"millau",name:"Millau",dept:"Aveyron (12)",deptNum:"12",coastal:false,lat:44.099,lng:3.080},
+    // ── Bouches-du-Rhône (13) ─────────────────────
+    {slug:"marseille",name:"Marseille",dept:"Bouches-du-Rhône (13)",deptNum:"13",coastal:true,lat:43.296,lng:5.381},
+    {slug:"aix-en-provence",name:"Aix-en-Provence",dept:"Bouches-du-Rhône (13)",deptNum:"13",coastal:false,lat:43.530,lng:5.447},
+    {slug:"arles",name:"Arles",dept:"Bouches-du-Rhône (13)",deptNum:"13",coastal:false,lat:43.677,lng:4.628},
+    {slug:"aubagne",name:"Aubagne",dept:"Bouches-du-Rhône (13)",deptNum:"13",coastal:false,lat:43.293,lng:5.571},
+    {slug:"martigues",name:"Martigues",dept:"Bouches-du-Rhône (13)",deptNum:"13",coastal:true,lat:43.404,lng:5.047},
+    {slug:"salon-de-provence",name:"Salon-de-Provence",dept:"Bouches-du-Rhône (13)",deptNum:"13",coastal:false,lat:43.641,lng:5.097},
+    {slug:"istres",name:"Istres",dept:"Bouches-du-Rhône (13)",deptNum:"13",coastal:false,lat:43.514,lng:4.988},
+    {slug:"vitrolles",name:"Vitrolles",dept:"Bouches-du-Rhône (13)",deptNum:"13",coastal:false,lat:43.464,lng:5.247},
+    {slug:"fos-sur-mer",name:"Fos-sur-Mer",dept:"Bouches-du-Rhône (13)",deptNum:"13",coastal:true,lat:43.437,lng:4.944},
+    // ── Calvados (14) ─────────────────────────────
+    {slug:"caen",name:"Caen",dept:"Calvados (14)",deptNum:"14",coastal:false,lat:49.182,lng:-0.370},
+    {slug:"cherbourg-en-cotentin",name:"Cherbourg-en-Cotentin",dept:"Manche (50)",deptNum:"50",coastal:true,lat:49.633,lng:-1.622},
+    // ── Charente-Maritime (17) ────────────────────
+    {slug:"la-rochelle",name:"La Rochelle",dept:"Charente-Maritime (17)",deptNum:"17",coastal:true,lat:46.160,lng:-1.152},
+    {slug:"rochefort",name:"Rochefort",dept:"Charente-Maritime (17)",deptNum:"17",coastal:false,lat:45.941,lng:-0.958},
+    {slug:"saintes",name:"Saintes",dept:"Charente-Maritime (17)",deptNum:"17",coastal:false,lat:45.745,lng:-0.631},
+    // ── Corrèze (19) ──────────────────────────────
+    {slug:"brive-la-gaillarde",name:"Brive-la-Gaillarde",dept:"Corrèze (19)",deptNum:"19",coastal:false,lat:45.158,lng:1.532},
+    // ── Côte-d'Or (21) ────────────────────────────
+    {slug:"dijon",name:"Dijon",dept:"Côte-d'Or (21)",deptNum:"21",coastal:false,lat:47.322,lng:5.041},
+    {slug:"beaune",name:"Beaune",dept:"Côte-d'Or (21)",deptNum:"21",coastal:false,lat:47.026,lng:4.840},
+    // ── Doubs (25) ────────────────────────────────
+    {slug:"besancon",name:"Besançon",dept:"Doubs (25)",deptNum:"25",coastal:false,lat:47.238,lng:6.024},
+    {slug:"montbeliard",name:"Montbéliard",dept:"Doubs (25)",deptNum:"25",coastal:false,lat:47.510,lng:6.798},
+    // ── Finistère (29) ────────────────────────────
+    {slug:"brest",name:"Brest",dept:"Finistère (29)",deptNum:"29",coastal:true,lat:48.390,lng:-4.486},
+    {slug:"quimper",name:"Quimper",dept:"Finistère (29)",deptNum:"29",coastal:false,lat:47.997,lng:-4.098},
+    // ── Haute-Garonne (31) ────────────────────────
+    {slug:"toulouse",name:"Toulouse",dept:"Haute-Garonne (31)",deptNum:"31",coastal:false,lat:43.605,lng:1.444},
+    {slug:"blagnac",name:"Blagnac",dept:"Haute-Garonne (31)",deptNum:"31",coastal:false,lat:43.636,lng:1.390},
+    {slug:"colomiers",name:"Colomiers",dept:"Haute-Garonne (31)",deptNum:"31",coastal:false,lat:43.611,lng:1.334},
+    {slug:"muret",name:"Muret",dept:"Haute-Garonne (31)",deptNum:"31",coastal:false,lat:43.462,lng:1.330},
+    {slug:"tournefeuille",name:"Tournefeuille",dept:"Haute-Garonne (31)",deptNum:"31",coastal:false,lat:43.585,lng:1.346},
+    // ── Gironde (33) ──────────────────────────────
+    {slug:"bordeaux",name:"Bordeaux",dept:"Gironde (33)",deptNum:"33",coastal:false,lat:44.837,lng:-0.580},
+    {slug:"merignac",name:"Mérignac",dept:"Gironde (33)",deptNum:"33",coastal:false,lat:44.838,lng:-0.644},
+    {slug:"pessac",name:"Pessac",dept:"Gironde (33)",deptNum:"33",coastal:false,lat:44.806,lng:-0.631},
+    {slug:"talence",name:"Talence",dept:"Gironde (33)",deptNum:"33",coastal:false,lat:44.808,lng:-0.584},
+    {slug:"libourne",name:"Libourne",dept:"Gironde (33)",deptNum:"33",coastal:false,lat:44.921,lng:-0.240},
+    {slug:"arcachon",name:"Arcachon",dept:"Gironde (33)",deptNum:"33",coastal:true,lat:44.657,lng:-1.168},
+    {slug:"perigueux",name:"Périgueux",dept:"Dordogne (24)",deptNum:"24",coastal:false,lat:45.185,lng:0.720},
+    // ── Hérault/Gard déjà couverts ────────────────
+    // ── Ille-et-Vilaine (35) ──────────────────────
+    {slug:"rennes",name:"Rennes",dept:"Ille-et-Vilaine (35)",deptNum:"35",coastal:false,lat:48.117,lng:-1.678},
+    {slug:"saint-malo",name:"Saint-Malo",dept:"Ille-et-Vilaine (35)",deptNum:"35",coastal:true,lat:48.649,lng:-2.025},
+    {slug:"fougeres",name:"Fougères",dept:"Ille-et-Vilaine (35)",deptNum:"35",coastal:false,lat:48.352,lng:-1.200},
+    // ── Isère (38) ────────────────────────────────
+    {slug:"grenoble",name:"Grenoble",dept:"Isère (38)",deptNum:"38",coastal:false,lat:45.188,lng:5.724},
+    {slug:"vienne",name:"Vienne",dept:"Isère (38)",deptNum:"38",coastal:false,lat:45.524,lng:4.874},
+    {slug:"bourgoin-jallieu",name:"Bourgoin-Jallieu",dept:"Isère (38)",deptNum:"38",coastal:false,lat:45.587,lng:5.282},
+    // ── Landes (40) ───────────────────────────────
+    {slug:"mont-de-marsan",name:"Mont-de-Marsan",dept:"Landes (40)",deptNum:"40",coastal:false,lat:43.891,lng:-0.497},
+    {slug:"dax",name:"Dax",dept:"Landes (40)",deptNum:"40",coastal:false,lat:43.710,lng:-1.051},
+    // ── Maine-et-Loire (49) ───────────────────────
+    {slug:"angers",name:"Angers",dept:"Maine-et-Loire (49)",deptNum:"49",coastal:false,lat:47.478,lng:-0.563},
+    {slug:"cholet",name:"Cholet",dept:"Maine-et-Loire (49)",deptNum:"49",coastal:false,lat:47.060,lng:-0.879},
+    // ── Meurthe-et-Moselle (54) ───────────────────
+    {slug:"nancy",name:"Nancy",dept:"Meurthe-et-Moselle (54)",deptNum:"54",coastal:false,lat:48.692,lng:6.184},
+    // ── Moselle (57) ──────────────────────────────
+    {slug:"metz",name:"Metz",dept:"Moselle (57)",deptNum:"57",coastal:false,lat:49.120,lng:6.177},
+    {slug:"thionville",name:"Thionville",dept:"Moselle (57)",deptNum:"57",coastal:false,lat:49.357,lng:6.168},
+    // ── Nord (59) ─────────────────────────────────
+    {slug:"lille",name:"Lille",dept:"Nord (59)",deptNum:"59",coastal:false,lat:50.629,lng:3.057},
+    {slug:"roubaix",name:"Roubaix",dept:"Nord (59)",deptNum:"59",coastal:false,lat:50.695,lng:3.181},
+    {slug:"tourcoing",name:"Tourcoing",dept:"Nord (59)",deptNum:"59",coastal:false,lat:50.724,lng:3.160},
+    {slug:"dunkerque",name:"Dunkerque",dept:"Nord (59)",deptNum:"59",coastal:true,lat:51.035,lng:2.377},
+    {slug:"valenciennes",name:"Valenciennes",dept:"Nord (59)",deptNum:"59",coastal:false,lat:50.357,lng:3.524},
+    // ── Bas-Rhin (67) ─────────────────────────────
+    {slug:"strasbourg",name:"Strasbourg",dept:"Bas-Rhin (67)",deptNum:"67",coastal:false,lat:48.573,lng:7.752},
+    {slug:"haguenau",name:"Haguenau",dept:"Bas-Rhin (67)",deptNum:"67",coastal:false,lat:48.816,lng:7.790},
+    {slug:"schiltigheim",name:"Schiltigheim",dept:"Bas-Rhin (67)",deptNum:"67",coastal:false,lat:48.607,lng:7.741},
+    // ── Haut-Rhin (68) ────────────────────────────
+    {slug:"mulhouse",name:"Mulhouse",dept:"Haut-Rhin (68)",deptNum:"68",coastal:false,lat:47.750,lng:7.336},
+    {slug:"colmar",name:"Colmar",dept:"Haut-Rhin (68)",deptNum:"68",coastal:false,lat:48.079,lng:7.358},
+    // ── Rhône (69) ────────────────────────────────
+    {slug:"lyon",name:"Lyon",dept:"Rhône (69)",deptNum:"69",coastal:false,lat:45.748,lng:4.847},
+    {slug:"villeurbanne",name:"Villeurbanne",dept:"Rhône (69)",deptNum:"69",coastal:false,lat:45.771,lng:4.889},
+    {slug:"venissieux",name:"Vénissieux",dept:"Rhône (69)",deptNum:"69",coastal:false,lat:45.697,lng:4.889},
+    {slug:"saint-priest",name:"Saint-Priest",dept:"Rhône (69)",deptNum:"69",coastal:false,lat:45.694,lng:4.942},
+    {slug:"bron",name:"Bron",dept:"Rhône (69)",deptNum:"69",coastal:false,lat:45.738,lng:4.915},
+    // ── Haute-Savoie (74) ─────────────────────────
+    {slug:"annecy",name:"Annecy",dept:"Haute-Savoie (74)",deptNum:"74",coastal:false,lat:45.899,lng:6.129},
+    {slug:"thonon-les-bains",name:"Thonon-les-Bains",dept:"Haute-Savoie (74)",deptNum:"74",coastal:false,lat:46.371,lng:6.478},
+    // ── Paris (75) ────────────────────────────────
+    {slug:"paris",name:"Paris",dept:"Paris (75)",deptNum:"75",coastal:false,lat:48.857,lng:2.347},
+    // ── Seine-Maritime (76) ───────────────────────
+    {slug:"rouen",name:"Rouen",dept:"Seine-Maritime (76)",deptNum:"76",coastal:false,lat:49.443,lng:1.099},
+    {slug:"le-havre",name:"Le Havre",dept:"Seine-Maritime (76)",deptNum:"76",coastal:true,lat:49.494,lng:0.107},
+    {slug:"dieppe",name:"Dieppe",dept:"Seine-Maritime (76)",deptNum:"76",coastal:true,lat:49.922,lng:1.079},
+    // ── Yvelines (78) ─────────────────────────────
+    {slug:"versailles",name:"Versailles",dept:"Yvelines (78)",deptNum:"78",coastal:false,lat:48.805,lng:2.135},
+    // ── Deux-Sèvres (79) ──────────────────────────
+    {slug:"niort",name:"Niort",dept:"Deux-Sèvres (79)",deptNum:"79",coastal:false,lat:46.323,lng:-0.464},
+    // ── Somme (80) ────────────────────────────────
+    {slug:"amiens",name:"Amiens",dept:"Somme (80)",deptNum:"80",coastal:false,lat:49.895,lng:2.301},
+    // ── Tarn (81) ─────────────────────────────────
+    {slug:"albi",name:"Albi",dept:"Tarn (81)",deptNum:"81",coastal:false,lat:43.928,lng:2.148},
+    {slug:"castres",name:"Castres",dept:"Tarn (81)",deptNum:"81",coastal:false,lat:43.606,lng:2.242},
+    // ── Tarn-et-Garonne (82) ──────────────────────
+    {slug:"montauban",name:"Montauban",dept:"Tarn-et-Garonne (82)",deptNum:"82",coastal:false,lat:44.017,lng:1.352},
+    // ── Var (83) ──────────────────────────────────
+    {slug:"toulon",name:"Toulon",dept:"Var (83)",deptNum:"83",coastal:true,lat:43.124,lng:5.928},
+    {slug:"frejus",name:"Fréjus",dept:"Var (83)",deptNum:"83",coastal:true,lat:43.433,lng:6.737},
+    {slug:"hyeres",name:"Hyères",dept:"Var (83)",deptNum:"83",coastal:true,lat:43.120,lng:6.128},
+    {slug:"la-seyne-sur-mer",name:"La Seyne-sur-Mer",dept:"Var (83)",deptNum:"83",coastal:true,lat:43.098,lng:5.880},
+    // ── Vaucluse (84) ─────────────────────────────
+    {slug:"avignon",name:"Avignon",dept:"Vaucluse (84)",deptNum:"84",coastal:false,lat:43.950,lng:4.806},
+    {slug:"orange",name:"Orange",dept:"Vaucluse (84)",deptNum:"84",coastal:false,lat:44.136,lng:4.808},
+    {slug:"carpentras",name:"Carpentras",dept:"Vaucluse (84)",deptNum:"84",coastal:false,lat:44.055,lng:5.052},
+    // ── Vendée (85) ───────────────────────────────
+    {slug:"la-roche-sur-yon",name:"La Roche-sur-Yon",dept:"Vendée (85)",deptNum:"85",coastal:false,lat:46.671,lng:-1.426},
+    {slug:"les-sables-d-olonne",name:"Les Sables-d'Olonne",dept:"Vendée (85)",deptNum:"85",coastal:true,lat:46.497,lng:-1.783},
+    // ── Vienne (86) ───────────────────────────────
+    {slug:"poitiers",name:"Poitiers",dept:"Vienne (86)",deptNum:"86",coastal:false,lat:46.580,lng:0.340},
+    // ── Haute-Vienne (87) ─────────────────────────
+    {slug:"limoges",name:"Limoges",dept:"Haute-Vienne (87)",deptNum:"87",coastal:false,lat:45.833,lng:1.261},
+    // ── Essonne (91) ──────────────────────────────
+    {slug:"evry-courcouronnes",name:"Évry-Courcouronnes",dept:"Essonne (91)",deptNum:"91",coastal:false,lat:48.627,lng:2.428},
+    // ── Hauts-de-Seine (92) ───────────────────────
+    {slug:"boulogne-billancourt",name:"Boulogne-Billancourt",dept:"Hauts-de-Seine (92)",deptNum:"92",coastal:false,lat:48.833,lng:2.248},
+    {slug:"nanterre",name:"Nanterre",dept:"Hauts-de-Seine (92)",deptNum:"92",coastal:false,lat:48.892,lng:2.207},
+    {slug:"colombes",name:"Colombes",dept:"Hauts-de-Seine (92)",deptNum:"92",coastal:false,lat:48.923,lng:2.254},
+    // ── Seine-Saint-Denis (93) ────────────────────
+    {slug:"saint-denis",name:"Saint-Denis",dept:"Seine-Saint-Denis (93)",deptNum:"93",coastal:false,lat:48.936,lng:2.357},
+    {slug:"montreuil",name:"Montreuil",dept:"Seine-Saint-Denis (93)",deptNum:"93",coastal:false,lat:48.864,lng:2.443},
+    // ── Val-de-Marne (94) ─────────────────────────
+    {slug:"creteil",name:"Créteil",dept:"Val-de-Marne (94)",deptNum:"94",coastal:false,lat:48.790,lng:2.456},
+    // ── Val-d'Oise (95) ───────────────────────────
+    {slug:"cergy",name:"Cergy",dept:"Val-d'Oise (95)",deptNum:"95",coastal:false,lat:49.036,lng:2.064},
+    // ── Alpes-Maritimes (06) ──────────────────────
+    {slug:"nice",name:"Nice",dept:"Alpes-Maritimes (06)",deptNum:"06",coastal:true,lat:43.710,lng:7.262},
+    {slug:"cannes",name:"Cannes",dept:"Alpes-Maritimes (06)",deptNum:"06",coastal:true,lat:43.553,lng:7.017},
+    {slug:"antibes",name:"Antibes",dept:"Alpes-Maritimes (06)",deptNum:"06",coastal:true,lat:43.580,lng:7.128},
+    {slug:"grasse",name:"Grasse",dept:"Alpes-Maritimes (06)",deptNum:"06",coastal:false,lat:43.659,lng:6.924},
+    {slug:"menton",name:"Menton",dept:"Alpes-Maritimes (06)",deptNum:"06",coastal:true,lat:43.776,lng:7.496},
+    // ── Allier (03) ───────────────────────────────
+    {slug:"moulins",name:"Moulins",dept:"Allier (03)",deptNum:"03",coastal:false,lat:46.564,lng:3.334},
+    {slug:"vichy",name:"Vichy",dept:"Allier (03)",deptNum:"03",coastal:false,lat:46.129,lng:3.427},
+    // ── Ain (01) ──────────────────────────────────
+    {slug:"bourg-en-bresse",name:"Bourg-en-Bresse",dept:"Ain (01)",deptNum:"01",coastal:false,lat:46.205,lng:5.226},
+    // ── Puy-de-Dôme (63) ──────────────────────────
+    {slug:"clermont-ferrand",name:"Clermont-Ferrand",dept:"Puy-de-Dôme (63)",deptNum:"63",coastal:false,lat:45.778,lng:3.087},
+    {slug:"riom",name:"Riom",dept:"Puy-de-Dôme (63)",deptNum:"63",coastal:false,lat:45.894,lng:3.114},
+    // ── Loire (42) ────────────────────────────────
+    {slug:"saint-etienne",name:"Saint-Étienne",dept:"Loire (42)",deptNum:"42",coastal:false,lat:45.440,lng:4.387},
+    {slug:"roanne",name:"Roanne",dept:"Loire (42)",deptNum:"42",coastal:false,lat:46.034,lng:4.071},
+    // ── Loire-Atlantique (44) ─────────────────────
+    {slug:"nantes",name:"Nantes",dept:"Loire-Atlantique (44)",deptNum:"44",coastal:false,lat:47.218,lng:-1.554},
+    {slug:"saint-nazaire",name:"Saint-Nazaire",dept:"Loire-Atlantique (44)",deptNum:"44",coastal:true,lat:47.279,lng:-2.213},
+    // ── Loiret (45) ───────────────────────────────
+    {slug:"orleans",name:"Orléans",dept:"Loiret (45)",deptNum:"45",coastal:false,lat:47.903,lng:1.909},
+    // ── Pyrénées-Atlantiques (64) ─────────────────
+    {slug:"pau",name:"Pau",dept:"Pyrénées-Atlantiques (64)",deptNum:"64",coastal:false,lat:43.296,lng:-0.371},
+    {slug:"bayonne",name:"Bayonne",dept:"Pyrénées-Atlantiques (64)",deptNum:"64",coastal:false,lat:43.492,lng:-1.474},
+    {slug:"biarritz",name:"Biarritz",dept:"Pyrénées-Atlantiques (64)",deptNum:"64",coastal:true,lat:43.483,lng:-1.559},
+    {slug:"anglet",name:"Anglet",dept:"Pyrénées-Atlantiques (64)",deptNum:"64",coastal:true,lat:43.482,lng:-1.518},
+    // ── Pyrénées-Orientales (66) ──────────────────
+    {slug:"perpignan",name:"Perpignan",dept:"Pyrénées-Orientales (66)",deptNum:"66",coastal:false,lat:42.699,lng:2.895},
+    {slug:"canet-en-roussillon",name:"Canet-en-Roussillon",dept:"Pyrénées-Orientales (66)",deptNum:"66",coastal:true,lat:42.706,lng:3.018},
+    // ── Morbihan (56) ─────────────────────────────
+    {slug:"lorient",name:"Lorient",dept:"Morbihan (56)",deptNum:"56",coastal:true,lat:47.748,lng:-3.367},
+    {slug:"vannes",name:"Vannes",dept:"Morbihan (56)",deptNum:"56",coastal:false,lat:47.658,lng:-2.760},
+    // ── Sarthe (72) ───────────────────────────────
+    {slug:"le-mans",name:"Le Mans",dept:"Sarthe (72)",deptNum:"72",coastal:false,lat:48.006,lng:0.200},
+    // ── Savoie (73) ───────────────────────────────
+    {slug:"chambery",name:"Chambéry",dept:"Savoie (73)",deptNum:"73",coastal:false,lat:45.570,lng:5.917},
+    // ── Indre-et-Loire (37) ───────────────────────
+    {slug:"tours",name:"Tours",dept:"Indre-et-Loire (37)",deptNum:"37",coastal:false,lat:47.394,lng:0.688},
+    // ── Charente (16) ─────────────────────────────
+    {slug:"angouleme",name:"Angoulême",dept:"Charente (16)",deptNum:"16",coastal:false,lat:45.649,lng:0.156},
+    // ── Eure-et-Loir (28) ─────────────────────────
+    {slug:"chartres",name:"Chartres",dept:"Eure-et-Loir (28)",deptNum:"28",coastal:false,lat:48.447,lng:1.489},
+    // ── Cher (18) ─────────────────────────────────
+    {slug:"bourges",name:"Bourges",dept:"Cher (18)",deptNum:"18",coastal:false,lat:47.081,lng:2.397},
+    // ── Saône-et-Loire (71) ───────────────────────
+    {slug:"chalon-sur-saone",name:"Chalon-sur-Saône",dept:"Saône-et-Loire (71)",deptNum:"71",coastal:false,lat:46.780,lng:4.854},
+    {slug:"macon",name:"Mâcon",dept:"Saône-et-Loire (71)",deptNum:"71",coastal:false,lat:46.306,lng:4.829},
+    // ── Pas-de-Calais (62) ────────────────────────
+    {slug:"calais",name:"Calais",dept:"Pas-de-Calais (62)",deptNum:"62",coastal:true,lat:50.951,lng:1.858},
+    {slug:"boulogne-sur-mer",name:"Boulogne-sur-Mer",dept:"Pas-de-Calais (62)",deptNum:"62",coastal:true,lat:50.727,lng:1.614},
+    {slug:"lens",name:"Lens",dept:"Pas-de-Calais (62)",deptNum:"62",coastal:false,lat:50.432,lng:2.831},
+    {slug:"arras",name:"Arras",dept:"Pas-de-Calais (62)",deptNum:"62",coastal:false,lat:50.291,lng:2.777},
+    // ── Oise (60) ─────────────────────────────────
+    {slug:"compiegne",name:"Compiègne",dept:"Oise (60)",deptNum:"60",coastal:false,lat:49.418,lng:2.826},
+    {slug:"beauvais",name:"Beauvais",dept:"Oise (60)",deptNum:"60",coastal:false,lat:49.430,lng:2.081},
+    // ── Lot-et-Garonne (47) ───────────────────────
+    {slug:"agen",name:"Agen",dept:"Lot-et-Garonne (47)",deptNum:"47",coastal:false,lat:44.200,lng:0.622},
+    // ── Haute-Loire (43) ──────────────────────────
+    {slug:"le-puy-en-velay",name:"Le Puy-en-Velay",dept:"Haute-Loire (43)",deptNum:"43",coastal:false,lat:45.044,lng:3.884},
+    // ── Corse-du-Sud (2A) ─────────────────────────
+    {slug:"ajaccio",name:"Ajaccio",dept:"Corse-du-Sud (2A)",deptNum:"2A",coastal:true,lat:41.919,lng:8.738},
+    // ── Haute-Corse (2B) ──────────────────────────
+    {slug:"bastia",name:"Bastia",dept:"Haute-Corse (2B)",deptNum:"2B",coastal:true,lat:42.703,lng:9.450},
 ];
 
 // city slug → air zone index in full_data.json air array
@@ -764,13 +966,16 @@ function haversine(lat1,lon1,lat2,lon2){
 }
 
 // ════════════════════════════════════════════════
-// DATA LOAD
+// DATA LOAD — par département (cache local)
+// Essaie /data/dept/{dept}.json, fallback /full_data.json
 // ════════════════════════════════════════════════
-let DATA=null,dataPromise=null;
-function loadData(){
-    if(dataPromise) return dataPromise;
-    dataPromise=fetch('/full_data.json').then(r=>r.json()).then(d=>{DATA=d;return d;});
-    return dataPromise;
+const DEPT_CACHE={};
+function loadDataForDept(deptNum){
+    if(DEPT_CACHE[deptNum]) return Promise.resolve(DEPT_CACHE[deptNum]);
+    return fetch(`/data/dept/${deptNum}.json`)
+        .then(r=>r.ok?r.json():Promise.reject())
+        .catch(()=>fetch('/full_data.json').then(r=>r.json()))
+        .then(d=>{DEPT_CACHE[deptNum]=d;return d;});
 }
 
 // ════════════════════════════════════════════════
@@ -839,7 +1044,7 @@ function showResults(city){
     destroyMaps();
     setTimeout(()=>document.getElementById("results-panel").scrollIntoView({behavior:"smooth",block:"start"}),60);
 
-    loadData().then(d=>{
+    loadDataForDept(city.deptNum).then(d=>{
         document.getElementById("loading-state").style.display="none";
         if(d.updated)document.getElementById("result-updated").textContent="Mis à jour le "+d.updated;
         document.getElementById("data-sections").innerHTML=renderAll(city,d);
@@ -977,6 +1182,27 @@ function renderPotable(city,potable){
         </div>`;
     }).join("");
 
+    const EAU_LEGEND=[
+        {col:"#10b981",label:"Bonne qualité",desc:"≥ 80 — tous les paramètres conformes aux limites réglementaires"},
+        {col:"#f59e0b",label:"Vigilance",     desc:"50–79 — un ou plusieurs paramètres proches des seuils · surveiller"},
+        {col:"#ef4444",label:"Non conforme",  desc:"< 50 — dépassement de seuil · mesures correctives en cours"},
+        {col:"#94a3b8",label:"Données insuffisantes",desc:"Analyses trop anciennes ou unité de distribution non trouvée"},
+    ];
+    const legendHtml=EAU_LEGEND.map(l=>`
+        <div style="display:flex;align-items:flex-start;gap:.5rem;margin-bottom:.45rem">
+            <span style="width:11px;height:11px;border-radius:50%;background:${l.col};flex-shrink:0;margin-top:2px"></span>
+            <div style="font-size:.72rem;line-height:1.4;color:#475569">
+                <strong style="color:#1e293b">${l.label}</strong> — ${l.desc}
+            </div>
+        </div>`).join("");
+
+    const vigilanceNote=`<div style="margin-top:.9rem;padding:.6rem .75rem;background:#fefce8;border:1px solid #fde047;border-radius:.5rem;font-size:.72rem;color:#713f12;line-height:1.5">
+        <strong>⚠ Qu'est-ce que la Vigilance ?</strong><br>
+        La vigilance signale que l'eau reste consommable mais qu'un paramètre (nitrates, pesticides, bactériologie…)
+        s'approche de la limite réglementaire. L'ARS et le gestionnaire du réseau surveillent de près
+        et peuvent déclencher un <em>arrêté préfectoral</em> imposant la restriction ou l'interdiction de consommation.
+    </div>`;
+
     return`<div class="section-card" style="border-left:4px solid #0ea5e9">
         <div class="card-header" style="background:#f0f9ff;border-bottom:1px solid #bae6fd">
             <span class="card-header-icon">🚰</span>
@@ -997,6 +1223,11 @@ function renderPotable(city,potable){
                     ${rec.conclusion?`<div class="conclusion-text" style="margin-bottom:.9rem">${rec.conclusion}</div>`:""}
                     <div class="params-grid">${bars}</div>
                 </div>
+            </div>
+            <div style="margin-top:1.1rem;padding-top:.9rem;border-top:1px solid #e2e8f0">
+                <div style="font-size:.72rem;font-weight:700;color:#64748b;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.55rem">Légende des niveaux</div>
+                ${legendHtml}
+                ${vigilanceNote}
             </div>
         </div>
     </div>`;
