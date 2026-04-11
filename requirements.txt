@@ -1,0 +1,12 @@
+# Dépendances Python — mon-environnement.fr
+# Uniquement stdlib + ruff pour le linting
+# Toutes les requêtes HTTP utilisent urllib.request (stdlib)
+
+# Linting / qualité de code
+ruff>=0.4.0
+
+# Tests (à venir V2)
+pytest>=8.0.0
+
+# Pour la V2 : Worker Stripe webhook (serverless)
+# stripe>=10.0.0   # décommenter lors de l'intégration paiement

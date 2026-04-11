@@ -1,0 +1,124 @@
+name: CI — validation PR
+
+on:
+  pull_request:
+    branches: [main, master, develop]
+  push:
+    branches: [develop]
+
+jobs:
+  # ── LINT PYTHON ────────────────────────────────────────────────────────────
+  lint-python:
+    name: Lint Python (ruff)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Installer ruff
+        run: pip install ruff
+
+      - name: Vérifier le style (ruff)
+        run: |
+          ruff check \
+            data_fetcher.py \
+            data_fetcher_national.py \
+            generate_pages.py \
+            generate_dept_pages.py \
+            shared.py \
+            --select E,W,F \
+            --ignore E501,W503
+        # E501 = lignes longues (tolérées dans les scripts de génération)
+        # W503 = opérateur en fin de ligne (style acceptable)
+
+  # ── VALIDATION JSON ────────────────────────────────────────────────────────
+  validate-json:
+    name: Validation JSON
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Vérifier les JSON trackés
+        run: |
+          python - <<'EOF'
+          import json, os, sys
+
+          errors = []
+          checked = 0
+          for root, dirs, files in os.walk('.'):
+              # Ignorer .git et node_modules
+              dirs[:] = [d for d in dirs if d not in {'.git', 'node_modules', '__pycache__'}]
+              for f in files:
+                  if not f.endswith('.json'):
+                      continue
+                  path = os.path.join(root, f)
+                  # Ignorer les JSON dans data/dept/ (générés, volumineux)
+                  if 'data/dept' in path or 'data\\dept' in path:
+                      continue
+                  try:
+                      with open(path, encoding='utf-8') as fh:
+                          json.load(fh)
+                      checked += 1
+                  except json.JSONDecodeError as e:
+                      errors.append(f"{path}: {e}")
+
+          if errors:
+              print(f"❌ {len(errors)} fichier(s) JSON invalide(s) :")
+              for e in errors:
+                  print(f"  {e}")
+              sys.exit(1)
+          else:
+              print(f"✅ {checked} fichier(s) JSON valide(s)")
+          EOF
+
+  # ── VÉRIFICATION SITEMAP ───────────────────────────────────────────────────
+  check-sitemap:
+    name: Vérifier sitemap.xml
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Valider la structure XML du sitemap
+        run: python -c "import xml.etree.ElementTree as ET; ET.parse('sitemap.xml'); print('✅ sitemap.xml valide')"
+
+  # ── CHECK HTML CRITIQUE ────────────────────────────────────────────────────
+  check-html:
+    name: Vérifier index.html
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Vérifier la présence des balises SEO critiques
+        run: |
+          python - <<'EOF'
+          with open('index.html', encoding='utf-8') as f:
+              html = f.read()
+
+          checks = {
+              'meta charset':      '<meta charset=',
+              'meta viewport':     'name="viewport"',
+              'meta description':  'name="description"',
+              'og:title':          'og:title',
+              'og:description':    'og:description',
+              'canonical':         'rel="canonical"',
+              'lang=fr':           'lang="fr"',
+              'twitter:card':      'twitter:card',
+              'schema.org':        'application/ld+json',
+          }
+
+          errors = []
+          for label, snippet in checks.items():
+              if snippet not in html:
+                  errors.append(f"  ❌ Manquant : {label} ({snippet!r})")
+
+          if errors:
+              print("Balises SEO manquantes dans index.html :")
+              print('\n'.join(errors))
+              import sys; sys.exit(1)
+          else:
+              print(f"✅ {len(checks)} balises SEO présentes dans index.html")
+          EOF

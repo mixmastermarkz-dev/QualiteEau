@@ -1,0 +1,24 @@
+name: Deploy — Cloudflare Worker (auth-gate)
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - 'workers/auth-gate/**'
+  workflow_dispatch:
+
+jobs:
+  deploy-worker:
+    name: Deploy auth-gate Worker
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy via Wrangler
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          workingDirectory: workers/auth-gate
+        # Configurer les secrets Workers séparément :
+        #   wrangler secret put JWT_SECRET
+        #   (ne jamais mettre JWT_SECRET dans ce fichier ou wrangler.toml)
