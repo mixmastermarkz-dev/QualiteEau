@@ -31,9 +31,9 @@ jobs:
             generate_dept_pages.py \
             shared.py \
             --select E,W,F \
-            --ignore E501,W503
+            --ignore E501
         # E501 = lignes longues (tolérées dans les scripts de génération)
-        # W503 = opérateur en fin de ligne (style acceptable)
+        # W503 n'existe pas dans ruff (règle flake8 uniquement, supprimée)
 
   # ── VALIDATION JSON ────────────────────────────────────────────────────────
   validate-json:
