@@ -512,7 +512,7 @@
 
     <!-- Stats -->
     <div class="stats-bar flex items-center gap-6 mt-10 px-6 py-4 bg-white/80 backdrop-blur rounded-2xl shadow-sm border border-slate-100">
-        <div class="text-center flex-shrink-0"><div class="stat-num">101</div><div class="stat-lbl">Communes</div></div>
+        <div class="text-center flex-shrink-0"><div class="stat-num" id="stat-communes">—</div><div class="stat-lbl">Communes</div></div>
         <div class="sep w-px h-8 bg-slate-100"></div>
         <div class="text-center flex-shrink-0"><div class="stat-num">5</div><div class="stat-lbl">Rubriques</div></div>
         <div class="sep w-px h-8 bg-slate-100"></div>
@@ -867,6 +867,11 @@ const CITIES=[
     // ── Haute-Corse (2B) ──────────────────────────
     {slug:"bastia",name:"Bastia",dept:"Haute-Corse (2B)",deptNum:"2B",coastal:true,lat:42.703,lng:9.450},
 ];
+
+document.addEventListener("DOMContentLoaded",()=>{
+    const el=document.getElementById("stat-communes");
+    if(el) el.textContent=CITIES.length.toLocaleString("fr-FR");
+});
 
 // city slug → air zone index in full_data.json air array
 const CITY_AIR_ZONE={
