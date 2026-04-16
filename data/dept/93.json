@@ -3,7 +3,7 @@
   "nom": "Seine-Saint-Denis",
   "slug": "seine-saint-denis",
   "region": "Île-de-France",
-  "updated": "15/04/2026 à 16:54",
+  "updated": "16/04/2026 à 17:15",
   "score_eau": 99,
   "nb_communes": 47,
   "potable": [
@@ -2097,17 +2097,24 @@
       "lon": 2.564361163,
       "nom_cours_eau": "LE CANAL DE CHELLES",
       "parametres": {
-        "Nitrates": {
-          "valeur": 13.0,
-          "unite": "mg/L",
-          "color": "#f59e0b",
-          "date": "2024-12-09",
-          "realtime": false
-        },
         "Conductivité": {
           "valeur": 10.5,
           "unite": "µS/cm",
           "color": "#10b981",
+          "date": "2024-12-09",
+          "realtime": false
+        },
+        "MES": {
+          "valeur": 576.0,
+          "unite": "mg/L",
+          "color": "#ef4444",
+          "date": "2024-12-09",
+          "realtime": false
+        },
+        "Ammonium": {
+          "valeur": 2.2,
+          "unite": "mg/L",
+          "color": "#ef4444",
           "date": "2024-12-09",
           "realtime": false
         },
@@ -2125,10 +2132,10 @@
           "date": "2024-12-09",
           "realtime": false
         },
-        "Ammonium": {
-          "valeur": 2.2,
+        "Nitrates": {
+          "valeur": 13.0,
           "unite": "mg/L",
-          "color": "#ef4444",
+          "color": "#f59e0b",
           "date": "2024-12-09",
           "realtime": false
         },
@@ -2145,43 +2152,9 @@
           "color": "#10b981",
           "date": "2024-12-09",
           "realtime": false
-        },
-        "MES": {
-          "valeur": 576.0,
-          "unite": "mg/L",
-          "color": "#ef4444",
-          "date": "2024-12-09",
-          "realtime": false
         }
       },
       "historique": {
-        "Nitrates": [
-          {
-            "date": "2024-12-09",
-            "valeur": 13.0,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2024-12-09",
-            "valeur": 13.0,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2024-10-18",
-            "valeur": 8.7,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-08-12",
-            "valeur": 5.7,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-06-19",
-            "valeur": 8.5,
-            "color": "#10b981"
-          }
-        ],
         "Conductivité": [
           {
             "date": "2024-12-09",
@@ -2207,6 +2180,60 @@
             "date": "2024-06-19",
             "valeur": 11.9,
             "color": "#10b981"
+          }
+        ],
+        "MES": [
+          {
+            "date": "2024-12-09",
+            "valeur": 576.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2024-12-09",
+            "valeur": 576.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2024-10-18",
+            "valeur": 458.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2024-08-12",
+            "valeur": 439.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2024-06-19",
+            "valeur": 483.0,
+            "color": "#ef4444"
+          }
+        ],
+        "Ammonium": [
+          {
+            "date": "2024-12-09",
+            "valeur": 2.2,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2024-12-09",
+            "valeur": 2.2,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2024-10-18",
+            "valeur": 2.5,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2024-08-12",
+            "valeur": 1.9,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2024-06-19",
+            "valeur": 3.1,
+            "color": "#ef4444"
           }
         ],
         "Temp. eau": [
@@ -2263,31 +2290,31 @@
             "color": "#10b981"
           }
         ],
-        "Ammonium": [
+        "Nitrates": [
           {
             "date": "2024-12-09",
-            "valeur": 2.2,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-12-09",
-            "valeur": 2.2,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-10-18",
-            "valeur": 2.5,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-08-12",
-            "valeur": 1.9,
+            "valeur": 13.0,
             "color": "#f59e0b"
           },
           {
+            "date": "2024-12-09",
+            "valeur": 13.0,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2024-10-18",
+            "valeur": 8.7,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-08-12",
+            "valeur": 5.7,
+            "color": "#10b981"
+          },
+          {
             "date": "2024-06-19",
-            "valeur": 3.1,
-            "color": "#ef4444"
+            "valeur": 8.5,
+            "color": "#10b981"
           }
         ],
         "pH": [
@@ -2342,33 +2369,6 @@
             "date": "2024-06-19",
             "valeur": 0.031,
             "color": "#10b981"
-          }
-        ],
-        "MES": [
-          {
-            "date": "2024-12-09",
-            "valeur": 576.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-12-09",
-            "valeur": 576.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-10-18",
-            "valeur": 458.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-08-12",
-            "valeur": 439.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-06-19",
-            "valeur": 483.0,
-            "color": "#ef4444"
           }
         ]
       },

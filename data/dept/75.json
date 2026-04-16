@@ -3,8 +3,8 @@
   "nom": "Paris",
   "slug": "paris",
   "region": "Île-de-France",
-  "updated": "15/04/2026 à 16:54",
-  "score_eau": 94,
+  "updated": "16/04/2026 à 17:15",
+  "score_eau": 86,
   "nb_communes": 3,
   "potable": [
     {
@@ -15,6 +15,12 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 25.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-09-24"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -40,6 +46,12 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 26.0,
+          "unite": "mg/L",
+          "color": "#f59e0b",
+          "date": "2025-11-28"
+        },
         "Plomb": {
           "valeur": 8.0,
           "unite": "µg/L",
@@ -59,9 +71,9 @@
           "date": "2025-11-28"
         }
       },
-      "score": 83,
-      "score_color": "#10b981",
-      "score_label": "Bonne"
+      "score": 75,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
     },
     {
       "nom": "SAINT-CLOUD",
@@ -69,8 +81,14 @@
       "insee": "92064",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 41.0,
+          "unite": "mg/L",
+          "color": "#f59e0b",
+          "date": "2025-09-29"
+        },
         "Pesticides": {
           "valeur": 0.026,
           "unite": "µg/L",
@@ -84,7 +102,7 @@
           "date": "2025-09-05"
         }
       },
-      "score": 100,
+      "score": 83,
       "score_color": "#10b981",
       "score_label": "Bonne"
     }
@@ -97,6 +115,41 @@
       "lon": 2.381542365,
       "nom_cours_eau": "LA SEINE",
       "parametres": {
+        "Nitrates": {
+          "valeur": 23.0,
+          "unite": "mg/L",
+          "color": "#f59e0b",
+          "date": "2025-12-15",
+          "realtime": false
+        },
+        "pH": {
+          "valeur": 8.0,
+          "unite": "pH",
+          "color": "#10b981",
+          "date": "2025-12-15",
+          "realtime": false
+        },
+        "O2 saturation": {
+          "valeur": 100.4,
+          "unite": "%",
+          "color": "#10b981",
+          "date": "2025-12-15",
+          "realtime": false
+        },
+        "Temp. eau": {
+          "valeur": 10.1,
+          "unite": "°C",
+          "color": "#10b981",
+          "date": "2025-12-15",
+          "realtime": false
+        },
+        "MES": {
+          "valeur": 502.0,
+          "unite": "mg/L",
+          "color": "#ef4444",
+          "date": "2025-12-15",
+          "realtime": false
+        },
         "Phosphore": {
           "valeur": 0.106,
           "unite": "mg/L",
@@ -117,44 +170,144 @@
           "color": "#ef4444",
           "date": "2025-12-15",
           "realtime": false
-        },
-        "O2 saturation": {
-          "valeur": 100.4,
-          "unite": "%",
-          "color": "#10b981",
-          "date": "2025-12-15",
-          "realtime": false
-        },
-        "pH": {
-          "valeur": 8.0,
-          "unite": "pH",
-          "color": "#10b981",
-          "date": "2025-12-15",
-          "realtime": false
-        },
-        "Nitrates": {
-          "valeur": 23.0,
-          "unite": "mg/L",
-          "color": "#f59e0b",
-          "date": "2025-12-15",
-          "realtime": false
-        },
-        "Temp. eau": {
-          "valeur": 10.1,
-          "unite": "°C",
-          "color": "#10b981",
-          "date": "2025-12-15",
-          "realtime": false
-        },
-        "MES": {
-          "valeur": 502.0,
-          "unite": "mg/L",
-          "color": "#ef4444",
-          "date": "2025-12-15",
-          "realtime": false
         }
       },
       "historique": {
+        "Nitrates": [
+          {
+            "date": "2025-12-15",
+            "valeur": 23.0,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2025-11-17",
+            "valeur": 24.0,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2025-10-22",
+            "valeur": 21.0,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2025-08-20",
+            "valeur": 16.0,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2024-12-13",
+            "valeur": 21.0,
+            "color": "#f59e0b"
+          }
+        ],
+        "pH": [
+          {
+            "date": "2025-12-15",
+            "valeur": 8.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-11-17",
+            "valeur": 8.1,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-10-22",
+            "valeur": 8.1,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-08-20",
+            "valeur": 8.1,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-12-13",
+            "valeur": 8.2,
+            "color": "#10b981"
+          }
+        ],
+        "O2 saturation": [
+          {
+            "date": "2025-12-15",
+            "valeur": 100.4,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-11-17",
+            "valeur": 102.2,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-10-22",
+            "valeur": 107.2,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-08-20",
+            "valeur": 99.7,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-12-13",
+            "valeur": 100.3,
+            "color": "#10b981"
+          }
+        ],
+        "Temp. eau": [
+          {
+            "date": "2025-12-15",
+            "valeur": 10.1,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-11-17",
+            "valeur": 8.1,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-10-22",
+            "valeur": 13.8,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-08-20",
+            "valeur": 23.2,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2024-12-13",
+            "valeur": 7.3,
+            "color": "#10b981"
+          }
+        ],
+        "MES": [
+          {
+            "date": "2025-12-15",
+            "valeur": 502.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-11-17",
+            "valeur": 553.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-10-22",
+            "valeur": 510.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-08-20",
+            "valeur": 542.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2024-12-13",
+            "valeur": 482.0,
+            "color": "#ef4444"
+          }
+        ],
         "Phosphore": [
           {
             "date": "2025-12-15",
@@ -233,141 +386,6 @@
           {
             "date": "2024-12-13",
             "valeur": 5.5,
-            "color": "#ef4444"
-          }
-        ],
-        "O2 saturation": [
-          {
-            "date": "2025-12-15",
-            "valeur": 100.4,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-11-17",
-            "valeur": 102.2,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-10-22",
-            "valeur": 107.2,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-08-20",
-            "valeur": 99.7,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-12-13",
-            "valeur": 100.3,
-            "color": "#10b981"
-          }
-        ],
-        "pH": [
-          {
-            "date": "2025-12-15",
-            "valeur": 8.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-11-17",
-            "valeur": 8.1,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-10-22",
-            "valeur": 8.1,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-08-20",
-            "valeur": 8.1,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-12-13",
-            "valeur": 8.2,
-            "color": "#10b981"
-          }
-        ],
-        "Nitrates": [
-          {
-            "date": "2025-12-15",
-            "valeur": 23.0,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2025-11-17",
-            "valeur": 24.0,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2025-10-22",
-            "valeur": 21.0,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2025-08-20",
-            "valeur": 16.0,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2024-12-13",
-            "valeur": 21.0,
-            "color": "#f59e0b"
-          }
-        ],
-        "Temp. eau": [
-          {
-            "date": "2025-12-15",
-            "valeur": 10.1,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-11-17",
-            "valeur": 8.1,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-10-22",
-            "valeur": 13.8,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-08-20",
-            "valeur": 23.2,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2024-12-13",
-            "valeur": 7.3,
-            "color": "#10b981"
-          }
-        ],
-        "MES": [
-          {
-            "date": "2025-12-15",
-            "valeur": 502.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2025-11-17",
-            "valeur": 553.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2025-10-22",
-            "valeur": 510.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2025-08-20",
-            "valeur": 542.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-12-13",
-            "valeur": 482.0,
             "color": "#ef4444"
           }
         ]
