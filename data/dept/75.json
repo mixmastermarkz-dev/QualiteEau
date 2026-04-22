@@ -3,8 +3,8 @@
   "nom": "Paris",
   "slug": "paris",
   "region": "Île-de-France",
-  "updated": "21/04/2026 à 17:00",
-  "score_eau": 100,
+  "updated": "22/04/2026 à 17:00",
+  "score_eau": 94,
   "nb_communes": 3,
   "potable": [
     {
@@ -15,6 +15,12 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-08-05"
+        },
         "THM": {
           "valeur": 17.0,
           "unite": "µg/L",
@@ -34,6 +40,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Plomb": {
+          "valeur": 8.0,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2019-11-21"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-11"
+        },
         "THM": {
           "valeur": 11.5,
           "unite": "µg/L",
@@ -41,7 +59,7 @@
           "date": "2025-11-28"
         }
       },
-      "score": 100,
+      "score": 83,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -53,6 +71,12 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Pesticides": {
+          "valeur": 0.026,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-05"
+        },
         "THM": {
           "valeur": 17.78,
           "unite": "µg/L",

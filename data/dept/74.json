@@ -3,9 +3,9 @@
   "nom": "Haute-Savoie",
   "slug": "haute-savoie",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "21/04/2026 à 17:00",
-  "score_eau": 100,
-  "nb_communes": 237,
+  "updated": "22/04/2026 à 17:00",
+  "score_eau": 99,
+  "nb_communes": 241,
   "potable": [
     {
       "nom": "ABONDANCE",
@@ -15,6 +15,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 2.3,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-09-09"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-09-02"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -38,8 +50,20 @@
       "insee": "74002",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "conclusion": "Eau d'alimentation non-conforme aux exigences de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 14.2,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-06"
+        },
+        "Plomb": {
+          "valeur": 0.54,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-11-18"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -65,6 +89,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.4,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-02"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-02-12"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -90,6 +126,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 2.3,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-09"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-06-03"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -115,6 +163,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 14.3,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-18"
+        },
+        "Plomb": {
+          "valeur": 0.42,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-10-26"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -140,6 +200,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 2.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-07-28"
+        },
+        "Plomb": {
+          "valeur": 0.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2017-07-26"
+        },
         "Pesticides": {
           "valeur": 0.011,
           "unite": "µg/L",
@@ -165,6 +237,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 4.2,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-06"
+        },
+        "Plomb": {
+          "valeur": 4.48,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-10-14"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -183,13 +267,44 @@
       "score_label": "Bonne"
     },
     {
+      "nom": "AMBILLY",
+      "dept": "74",
+      "insee": "74008",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 0.43,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2022-09-08"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
       "nom": "ANDILLY",
       "dept": "74",
       "insee": "74009",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 7.2,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-21"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-10-27"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -215,6 +330,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 0.7,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-12-17"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-12-03"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -240,6 +367,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 15.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-18"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-11-19"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -265,6 +404,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 0.25,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-09-24"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-12-01"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -290,6 +441,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 11.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-28"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-06-08"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -315,6 +478,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 12.9,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-07-21"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-07-23"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -340,6 +515,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 5.8,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-14"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-10-27"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -365,6 +552,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 9.1,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-19"
+        },
+        "Plomb": {
+          "valeur": 0.31,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-09-07"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -390,6 +589,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 5.7,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-13"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-10-05"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -415,6 +626,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 6.1,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-07-02"
+        },
+        "Plomb": {
+          "valeur": 1.15,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-07-07"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -440,6 +663,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 19.8,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-27"
+        },
+        "Plomb": {
+          "valeur": 0.97,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-03-25"
+        },
         "Pesticides": {
           "valeur": 0.041,
           "unite": "µg/L",
@@ -465,6 +700,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 0.64,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-12-09"
+        },
+        "Plomb": {
+          "valeur": "<0,2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2018-12-12"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -490,6 +737,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 30.0,
+          "unite": "mg/L",
+          "color": "#f59e0b",
+          "date": "2025-09-04"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-02-27"
+        },
         "Pesticides": {
           "valeur": 0.035,
           "unite": "µg/L",
@@ -503,7 +762,7 @@
           "date": "2020-02-27"
         }
       },
-      "score": 100,
+      "score": 88,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -515,6 +774,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 0.97,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-05"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-11-25"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -540,6 +811,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 7.2,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-17"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-12-21"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -565,6 +848,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 3.4,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-12-01"
+        },
+        "Plomb": {
+          "valeur": 6.44,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2020-12-15"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -578,7 +873,7 @@
           "date": "2021-06-29"
         }
       },
-      "score": 100,
+      "score": 88,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -590,6 +885,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 3.7,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-25"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-11-19"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -615,6 +922,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.4,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-28"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-10-05"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -640,6 +959,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 7.4,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-14"
+        },
+        "Plomb": {
+          "valeur": 0.65,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-02-25"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -665,6 +996,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 0.99,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2019-04-01"
+        },
+        "Plomb": {
+          "valeur": "<0,2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2017-09-14"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -690,6 +1033,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.2,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-02"
+        },
+        "Plomb": {
+          "valeur": 0.73,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-10-15"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -715,6 +1070,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.3,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-22"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-06-17"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -738,8 +1105,20 @@
       "insee": "74040",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 11.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-08-25"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-02-04"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -763,8 +1142,20 @@
       "insee": "74041",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 0.57,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-07-03"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-08-05"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -790,6 +1181,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 6.4,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-29"
+        },
+        "Plomb": {
+          "valeur": 0.57,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-02-24"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -815,6 +1218,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 2.8,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-09-08"
+        },
+        "Plomb": {
+          "valeur": 0.47,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-07-07"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -840,6 +1255,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 13.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-08-21"
+        },
+        "Plomb": {
+          "valeur": 0.91,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-02-21"
+        },
         "Pesticides": {
           "valeur": 0.03,
           "unite": "µg/L",
@@ -865,6 +1292,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 5.8,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-09-11"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-10-13"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -890,6 +1329,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 12.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-08-26"
+        },
+        "Plomb": {
+          "valeur": 0.28,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-08-25"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -915,6 +1366,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.1,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-09-08"
+        },
+        "Plomb": {
+          "valeur": 0.87,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-03-17"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -940,6 +1403,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 0.82,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-07-31"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-03-05"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -965,6 +1440,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.1,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-09-02"
+        },
+        "Plomb": {
+          "valeur": 1.45,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-10-15"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -990,6 +1477,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 19.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-21"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-10-27"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -1015,6 +1514,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 4.7,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-21"
+        },
+        "Plomb": {
+          "valeur": 0.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2018-10-10"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -1040,6 +1551,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.3,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-08-12"
+        },
+        "Plomb": {
+          "valeur": 0.94,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-02-27"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -1065,6 +1588,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 4.7,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-08-06"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-08-20"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -1090,6 +1625,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 0.8,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-12-08"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-02-19"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -1115,6 +1662,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 11.7,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-12-23"
+        },
+        "Plomb": {
+          "valeur": "<0,2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2019-06-24"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -1140,6 +1699,12 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Plomb": {
+          "valeur": 0.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2018-08-29"
+        },
         "THM": {
           "valeur": 1.1,
           "unite": "µg/L",
@@ -1159,6 +1724,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 2.9,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-07-03"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-07-16"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -1184,6 +1761,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.6,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-09-02"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-03-24"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -1209,6 +1798,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 2.5,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-09-22"
+        },
+        "Plomb": {
+          "valeur": 0.95,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-09-10"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -1232,8 +1833,20 @@
       "insee": "74064",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation non-conforme aux exigences de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 3.7,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-09-15"
+        },
+        "Plomb": {
+          "valeur": "<0,2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2018-09-12"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -1259,6 +1872,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 3.7,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-09-17"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-09-01"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -1282,8 +1907,14 @@
       "insee": "74066",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 4.7,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-09-29"
+        },
         "Pesticides": {
           "valeur": 0.023,
           "unite": "µg/L",
@@ -1303,6 +1934,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 13.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-04"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-11-04"
+        },
         "Pesticides": {
           "valeur": 0.008,
           "unite": "µg/L",
@@ -1328,6 +1971,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 11.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-12-02"
+        },
+        "Plomb": {
+          "valeur": 0.22,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-06-18"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -1353,6 +2008,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 3.6,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-09-17"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-09-01"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -1378,6 +2045,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.1,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-04"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-11-24"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -1403,6 +2082,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 2.4,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-27"
+        },
+        "Plomb": {
+          "valeur": "<0,2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2018-05-28"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -1428,6 +2119,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 4.5,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-07-30"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-07-02"
+        },
         "Pesticides": {
           "valeur": 0.005,
           "unite": "µg/L",
@@ -1451,8 +2154,20 @@
       "insee": "74075",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 8.1,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-09-04"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-03-17"
+        },
         "Pesticides": {
           "valeur": 0.054,
           "unite": "µg/L",
@@ -1476,8 +2191,20 @@
       "insee": "74076",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 8.2,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-27"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-05-27"
+        },
         "Pesticides": {
           "valeur": 0.007,
           "unite": "µg/L",
@@ -1501,8 +2228,20 @@
       "insee": "74077",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 5.3,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-04"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-07-07"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -1528,6 +2267,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.3,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-08-19"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-08-19"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -1553,6 +2304,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 2.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-12-16"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-12-17"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -1576,8 +2339,20 @@
       "insee": "74081",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 2.7,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-12-18"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-12-22"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -1603,6 +2378,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 13.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-17"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-06-08"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -1628,6 +2415,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.4,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-15"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-06-02"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -1653,6 +2452,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 3.3,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-25"
+        },
+        "Plomb": {
+          "valeur": 1.1,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-05-13"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -1678,6 +2489,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 0.86,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-22"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-10-06"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -1703,6 +2526,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.1,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-26"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-12-15"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -1728,6 +2563,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.5,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-19"
+        },
+        "Plomb": {
+          "valeur": 0.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2018-05-15"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -1753,6 +2600,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 3.7,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-19"
+        },
+        "Plomb": {
+          "valeur": 1.06,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-11-03"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -1776,8 +2635,20 @@
       "insee": "74095",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 2.4,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-09-30"
+        },
+        "Plomb": {
+          "valeur": 0.31,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-09-17"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -1803,6 +2674,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 2.2,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-20"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-12-10"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -1826,8 +2709,20 @@
       "insee": "74097",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.5,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-06"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-03-10"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -1853,6 +2748,12 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.3,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-20"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -1872,6 +2773,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.1,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-09-03"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-06-02"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -1897,6 +2810,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 26.0,
+          "unite": "mg/L",
+          "color": "#f59e0b",
+          "date": "2025-08-06"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-08-20"
+        },
         "Pesticides": {
           "valeur": 0.005,
           "unite": "µg/L",
@@ -1910,7 +2835,7 @@
           "date": "2024-03-05"
         }
       },
-      "score": 100,
+      "score": 88,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -1922,6 +2847,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 14.1,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-18"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-11-04"
+        },
         "Pesticides": {
           "valeur": 0.027,
           "unite": "µg/L",
@@ -1947,6 +2884,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.6,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-09-11"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-05-05"
+        },
         "Pesticides": {
           "valeur": 0.006,
           "unite": "µg/L",
@@ -1972,6 +2921,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.2,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-22"
+        },
+        "Plomb": {
+          "valeur": 0.42,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-06-10"
+        },
         "Pesticides": {
           "valeur": 0.008,
           "unite": "µg/L",
@@ -1995,8 +2956,20 @@
       "insee": "74104",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 5.5,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-12-03"
+        },
+        "Plomb": {
+          "valeur": 0.92,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2022-07-19"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -2022,6 +2995,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 20.4,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-13"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-10-26"
+        },
         "Pesticides": {
           "valeur": 0.053,
           "unite": "µg/L",
@@ -2047,6 +3032,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 3.5,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-13"
+        },
+        "Plomb": {
+          "valeur": 0.49,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-07-06"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -2072,6 +3069,12 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Plomb": {
+          "valeur": 0.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2017-02-21"
+        },
         "THM": {
           "valeur": "<2",
           "unite": "µg/L",
@@ -2091,6 +3094,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.5,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-08"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-10-08"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -2114,8 +3129,20 @@
       "insee": "74114",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.2,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-28"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-10-05"
+        },
         "Pesticides": {
           "valeur": 0.006,
           "unite": "µg/L",
@@ -2141,6 +3168,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 21.6,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-09-30"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-09-17"
+        },
         "Pesticides": {
           "valeur": 0.017,
           "unite": "µg/L",
@@ -2166,6 +3205,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 3.8,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-19"
+        },
+        "Plomb": {
+          "valeur": 0.81,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-05-05"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -2191,6 +3242,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.5,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-25"
+        },
+        "Plomb": {
+          "valeur": 0.64,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-05-25"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -2216,6 +3279,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": "<0,5",
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-24"
+        },
+        "Plomb": {
+          "valeur": 0.31,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-09-03"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -2241,6 +3316,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 14.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-18"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-11-04"
+        },
         "Pesticides": {
           "valeur": 0.006,
           "unite": "µg/L",
@@ -2266,6 +3353,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 2.1,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-09-08"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-09-07"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -2291,6 +3390,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 7.7,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-12-23"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-06-30"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -2316,6 +3427,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.4,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-12-09"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-07-01"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -2329,9 +3452,9 @@
           "date": "2025-04-03"
         }
       },
-      "score": 75,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
+      "score": 88,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "FILLINGES",
@@ -2341,6 +3464,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.8,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-08-06"
+        },
+        "Plomb": {
+          "valeur": "<0,2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2019-02-19"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -2366,6 +3501,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.4,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-05"
+        },
+        "Plomb": {
+          "valeur": 3.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2019-05-16"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -2391,6 +3538,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 18.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-16"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-10-22"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -2416,6 +3575,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.4,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-07-08"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-09-15"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -2441,6 +3612,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.6,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-12-03"
+        },
+        "Plomb": {
+          "valeur": 0.61,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-10-20"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -2466,6 +3649,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.1,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-29"
+        },
+        "Plomb": {
+          "valeur": 2.17,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-10-13"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -2491,6 +3686,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 2.6,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-07"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-10-20"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -2514,8 +3721,20 @@
       "insee": "74137",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 2.1,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-12-09"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-12-10"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -2539,8 +3758,20 @@
       "insee": "74138",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 3.3,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-06"
+        },
+        "Plomb": {
+          "valeur": 0.26,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-06-03"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -2566,6 +3797,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 0.63,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-08"
+        },
+        "Plomb": {
+          "valeur": 0.24,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-12-11"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -2591,6 +3834,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 3.9,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-08"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-10-21"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -2614,8 +3869,20 @@
       "insee": "74141",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 19.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-09-30"
+        },
+        "Plomb": {
+          "valeur": "<0,2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2017-09-12"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -2641,6 +3908,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 10.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-12-03"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-06-03"
+        },
         "Pesticides": {
           "valeur": 0.053,
           "unite": "µg/L",
@@ -2664,8 +3943,20 @@
       "insee": "74143",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 3.8,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-06"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-10-19"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -2691,6 +3982,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 9.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-07-30"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-07-02"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -2716,6 +4019,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 4.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-19"
+        },
+        "Plomb": {
+          "valeur": 0.61,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-11-03"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -2741,6 +4056,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 3.4,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-08-28"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-08-31"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -2766,6 +4093,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-27"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-03-24"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -2791,6 +4130,12 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 0.81,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-08-13"
+        },
         "Pesticides": {
           "valeur": "<0,5",
           "unite": "µg/L",
@@ -2810,6 +4155,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 4.7,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-09-08"
+        },
+        "Plomb": {
+          "valeur": 0.46,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-03-05"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -2833,8 +4190,20 @@
       "insee": "74151",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 9.5,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-09-30"
+        },
+        "Plomb": {
+          "valeur": "<0,2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2018-05-03"
+        },
         "Pesticides": {
           "valeur": 0.005,
           "unite": "µg/L",
@@ -2860,6 +4229,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 14.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-08-12"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-08-12"
+        },
         "Pesticides": {
           "valeur": 0.008,
           "unite": "µg/L",
@@ -2883,8 +4264,20 @@
       "insee": "74153",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 2.1,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-08-25"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-08-06"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -2910,6 +4303,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 2.1,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-12-04"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-12-09"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -2935,6 +4340,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.5,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-20"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-06-16"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -2960,6 +4377,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 6.8,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-16"
+        },
+        "Plomb": {
+          "valeur": 0.59,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-10-27"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -2985,6 +4414,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.4,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-09"
+        },
+        "Plomb": {
+          "valeur": 2.27,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-07-01"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -3010,6 +4451,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.9,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-07"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-02-11"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -3028,13 +4481,44 @@
       "score_label": "Bonne"
     },
     {
+      "nom": "MARCELLAZ",
+      "dept": "74",
+      "insee": "74162",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 1.85,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2022-08-02"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
       "nom": "MARCELLAZ-ALBANAIS",
       "dept": "74",
       "insee": "74161",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 13.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-15"
+        },
+        "Plomb": {
+          "valeur": 0.28,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-10-15"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -3060,6 +4544,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 2.5,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-12-15"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-03-10"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -3089,8 +4585,20 @@
       "insee": "74165",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 7.4,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-12-17"
+        },
+        "Plomb": {
+          "valeur": 0.27,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-12-14"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -3116,6 +4624,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 8.7,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-12-23"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-12-02"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -3139,8 +4659,20 @@
       "insee": "74168",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 9.3,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-04"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-11-25"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -3166,6 +4698,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.4,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-09-30"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-08-10"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -3191,6 +4735,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 8.2,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-09-30"
+        },
+        "Plomb": {
+          "valeur": 1.07,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-02-25"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -3214,8 +4770,20 @@
       "insee": "74172",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 5.2,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-12-17"
+        },
+        "Plomb": {
+          "valeur": 0.27,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-12-09"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -3241,6 +4809,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 2.1,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-12-11"
+        },
+        "Plomb": {
+          "valeur": 2.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2021-09-20"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -3266,6 +4846,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 2.1,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-08-11"
+        },
+        "Plomb": {
+          "valeur": "<0,2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2019-03-06"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -3289,8 +4881,20 @@
       "insee": "74175",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 3.1,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-08-12"
+        },
+        "Plomb": {
+          "valeur": 0.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2018-02-19"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -3316,6 +4920,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.6,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2022-10-05"
+        },
+        "Plomb": {
+          "valeur": 0.24,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-10-28"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -3341,6 +4957,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 9.5,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-20"
+        },
+        "Plomb": {
+          "valeur": "<0,2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2019-10-28"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -3364,8 +4992,20 @@
       "insee": "74178",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 6.6,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-07-02"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-07-16"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -3391,6 +5031,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 18.8,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-27"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-08-11"
+        },
         "Pesticides": {
           "valeur": 0.006,
           "unite": "µg/L",
@@ -3416,6 +5068,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 3.1,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-13"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-10-26"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -3439,8 +5103,20 @@
       "insee": "74183",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 2.3,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-07"
+        },
+        "Plomb": {
+          "valeur": 0.27,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-09-09"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -3464,8 +5140,20 @@
       "insee": "74184",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 4.3,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-16"
+        },
+        "Plomb": {
+          "valeur": "<0,2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2018-04-10"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -3489,8 +5177,20 @@
       "insee": "74185",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 9.2,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-19"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-09-14"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -3516,6 +5216,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 2.3,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-01"
+        },
+        "Plomb": {
+          "valeur": 0.36,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-05-25"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -3541,6 +5253,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 6.4,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-09"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-10-21"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -3566,6 +5290,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 0.64,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-08-20"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-08-10"
+        },
         "Pesticides": {
           "valeur": 0.005,
           "unite": "µg/L",
@@ -3591,6 +5327,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 2.3,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-09-16"
+        },
+        "Plomb": {
+          "valeur": 1.11,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-09-17"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -3616,6 +5364,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": "<0,5",
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-08-20"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-07-03"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -3641,6 +5401,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 10.7,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-08-26"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-08-25"
+        },
         "Pesticides": {
           "valeur": 0.011,
           "unite": "µg/L",
@@ -3666,6 +5438,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 8.9,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-08-06"
+        },
+        "Plomb": {
+          "valeur": 0.45,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-09-14"
+        },
         "Pesticides": {
           "valeur": 0.018,
           "unite": "µg/L",
@@ -3691,6 +5475,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 5.6,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-09-03"
+        },
+        "Plomb": {
+          "valeur": 0.27,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-03-10"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -3716,6 +5512,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 7.7,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-09-23"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-03-19"
+        },
         "Pesticides": {
           "valeur": 0.108,
           "unite": "µg/L",
@@ -3729,9 +5537,9 @@
           "date": "2024-03-05"
         }
       },
-      "score": 75,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
+      "score": 88,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "NANCY-SUR-CLUSES",
@@ -3739,8 +5547,20 @@
       "insee": "74196",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.6,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-01"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-07-08"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -3766,6 +5586,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 9.7,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-09-25"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-02-19"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -3791,6 +5623,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 2.6,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-08-12"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-08-31"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -3816,6 +5660,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 10.8,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-28"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-07-02"
+        },
         "Pesticides": {
           "valeur": 0.007,
           "unite": "µg/L",
@@ -3839,8 +5695,20 @@
       "insee": "74202",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation non-conforme aux exigences de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 24.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-27"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-05-27"
+        },
         "Pesticides": {
           "valeur": 0.011,
           "unite": "µg/L",
@@ -3866,6 +5734,12 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.4,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-20"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -3885,6 +5759,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 2.6,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-09-15"
+        },
+        "Plomb": {
+          "valeur": 0.79,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-06-16"
+        },
         "Pesticides": {
           "valeur": 0.007,
           "unite": "µg/L",
@@ -3908,8 +5794,20 @@
       "insee": "74206",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 3.5,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-14"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-10-27"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -3935,6 +5833,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 0.85,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-12-22"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-09-28"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -3958,8 +5868,20 @@
       "insee": "74209",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 2.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-08-11"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-08-05"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -3983,8 +5905,20 @@
       "insee": "74210",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 3.2,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-13"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-10-27"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -4010,6 +5944,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 7.9,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-12-18"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-07-23"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -4035,6 +5981,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 0.64,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-12-17"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-09-10"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -4060,6 +6018,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 2.6,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-09-17"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-09-10"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -4085,6 +6055,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 10.8,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-29"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-12-21"
+        },
         "Pesticides": {
           "valeur": 0.007,
           "unite": "µg/L",
@@ -4110,6 +6092,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 12.6,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-09-22"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-09-08"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -4135,6 +6129,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 12.9,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-09"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-10-21"
+        },
         "Pesticides": {
           "valeur": 0.007,
           "unite": "µg/L",
@@ -4158,8 +6164,20 @@
       "insee": "74221",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 2.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-05"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-11-30"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -4183,8 +6201,20 @@
       "insee": "74222",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 2.5,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-09-22"
+        },
+        "Plomb": {
+          "valeur": 0.39,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-09-01"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -4208,8 +6238,20 @@
       "insee": "74223",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 2.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-18"
+        },
+        "Plomb": {
+          "valeur": 0.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2019-05-14"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -4233,8 +6275,20 @@
       "insee": "74224",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 5.6,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-12-02"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-12-30"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -4260,6 +6314,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 10.2,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-17"
+        },
+        "Plomb": {
+          "valeur": 6.92,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2025-06-16"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -4273,7 +6339,7 @@
           "date": "2025-11-17"
         }
       },
-      "score": 100,
+      "score": 88,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -4285,6 +6351,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.1,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-09-02"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-05-04"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -4310,6 +6388,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 6.8,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-09-29"
+        },
+        "Plomb": {
+          "valeur": 1.25,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-03-03"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -4333,8 +6423,20 @@
       "insee": "74231",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation non-conforme aux exigences de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 37.0,
+          "unite": "mg/L",
+          "color": "#f59e0b",
+          "date": "2025-11-17"
+        },
+        "Plomb": {
+          "valeur": 1.82,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-07-01"
+        },
         "Pesticides": {
           "valeur": 0.298,
           "unite": "µg/L",
@@ -4358,8 +6460,20 @@
       "insee": "74232",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.5,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-27"
+        },
+        "Plomb": {
+          "valeur": 5.92,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2024-10-10"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -4373,7 +6487,7 @@
           "date": "2025-05-14"
         }
       },
-      "score": 100,
+      "score": 88,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -4385,6 +6499,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 6.7,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-12-03"
+        },
+        "Plomb": {
+          "valeur": 0.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2019-06-17"
+        },
         "Pesticides": {
           "valeur": 0.024,
           "unite": "µg/L",
@@ -4410,6 +6536,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.4,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-24"
+        },
+        "Plomb": {
+          "valeur": 0.71,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-11-23"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -4435,6 +6573,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 3.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-03"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-11-05"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -4460,6 +6610,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.8,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-25"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-05-13"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -4485,6 +6647,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.9,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-03"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-11-12"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -4510,6 +6684,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.2,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-27"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-11-12"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -4533,8 +6719,20 @@
       "insee": "74240",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation non-conforme aux exigences de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 4.5,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-12-10"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-12-08"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -4560,6 +6758,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 2.7,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-25"
+        },
+        "Plomb": {
+          "valeur": 0.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-01-07"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -4585,6 +6795,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 0.58,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-27"
+        },
+        "Plomb": {
+          "valeur": "<0,2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2018-07-04"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -4610,6 +6832,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 10.7,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-18"
+        },
+        "Plomb": {
+          "valeur": 3.44,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2022-11-02"
+        },
         "Pesticides": {
           "valeur": 0.026,
           "unite": "µg/L",
@@ -4635,6 +6869,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 3.6,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-09-18"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-12-14"
+        },
         "Pesticides": {
           "valeur": 0.017,
           "unite": "µg/L",
@@ -4660,6 +6906,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 2.5,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-25"
+        },
+        "Plomb": {
+          "valeur": 0.22,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-01-27"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -4683,8 +6941,20 @@
       "insee": "74250",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 6.9,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-12-04"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-12-04"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -4710,6 +6980,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 4.8,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-18"
+        },
+        "Plomb": {
+          "valeur": 0.71,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-11-09"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -4735,6 +7017,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 2.1,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-09-18"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-03-18"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -4760,6 +7054,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 6.8,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2021-09-27"
+        },
+        "Plomb": {
+          "valeur": 1.35,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-10-15"
+        },
         "THM": {
           "valeur": 6.1,
           "unite": "µg/L",
@@ -4779,6 +7085,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 2.6,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-26"
+        },
+        "Plomb": {
+          "valeur": 0.42,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-09-01"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -4804,6 +7122,12 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 9.8,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-27"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -4823,6 +7147,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 5.1,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-06"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-11-30"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -4848,6 +7184,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 8.2,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-07-28"
+        },
+        "Plomb": {
+          "valeur": "<0,2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2019-07-22"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -4873,6 +7221,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 12.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-07-30"
+        },
+        "Plomb": {
+          "valeur": 0.36,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-07-02"
+        },
         "Pesticides": {
           "valeur": 0.006,
           "unite": "µg/L",
@@ -4896,8 +7256,20 @@
       "insee": "74261",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.1,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-02"
+        },
+        "Plomb": {
+          "valeur": "<0,2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2019-10-22"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -4916,6 +7288,25 @@
       "score_label": "Bonne"
     },
     {
+      "nom": "SCIENTRIER",
+      "dept": "74",
+      "insee": "74262",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 1.3,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2024-06-13"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
       "nom": "SCIEZ",
       "dept": "74",
       "insee": "74263",
@@ -4923,6 +7314,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 3.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-13"
+        },
+        "Plomb": {
+          "valeur": 3.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2021-07-06"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -4948,6 +7351,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 2.4,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-12-15"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-12-21"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -4973,6 +7388,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.5,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-20"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-05-28"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -4998,6 +7425,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.2,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-12"
+        },
+        "Plomb": {
+          "valeur": 0.35,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-11-03"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -5021,8 +7460,20 @@
       "insee": "74269",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation non-conforme aux exigences de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 3.7,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-07-28"
+        },
+        "Plomb": {
+          "valeur": "<0,2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-01-20"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -5048,6 +7499,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-28"
+        },
+        "Plomb": {
+          "valeur": "<0,2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2019-04-23"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -5073,6 +7536,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 22.3,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-27"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-08-12"
+        },
         "Pesticides": {
           "valeur": 0.006,
           "unite": "µg/L",
@@ -5096,8 +7571,20 @@
       "insee": "74273",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 0.47,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-09"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-10-07"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -5123,6 +7610,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 2.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-01"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-10-28"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -5146,8 +7645,20 @@
       "insee": "74276",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation non-conforme aux exigences de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.8,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-09-09"
+        },
+        "Plomb": {
+          "valeur": 1.05,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-09-02"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -5173,6 +7684,12 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.2,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-12-04"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -5190,8 +7707,20 @@
       "insee": "74280",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 0.85,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-02"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-10-20"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -5217,6 +7746,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 13.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-18"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-11-19"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -5242,6 +7783,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation non-conforme aux exigences de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 23.9,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-15"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-12-14"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -5267,6 +7820,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 8.2,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-12-15"
+        },
+        "Plomb": {
+          "valeur": 1.64,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2021-02-15"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -5292,6 +7857,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.9,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-25"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-05-04"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -5317,6 +7894,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.6,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-27"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-11-04"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -5340,8 +7929,20 @@
       "insee": "74287",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "conclusion": "Eau d'alimentation non-conforme aux exigences de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 2.8,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-20"
+        },
+        "Plomb": {
+          "valeur": 1.08,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-11-04"
+        },
         "Pesticides": {
           "valeur": 0.008,
           "unite": "µg/L",
@@ -5367,6 +7968,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 2.8,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-14"
+        },
+        "Plomb": {
+          "valeur": 0.25,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-02-17"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -5392,6 +8005,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 11.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-18"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-11-04"
+        },
         "Pesticides": {
           "valeur": 0.024,
           "unite": "µg/L",
@@ -5415,8 +8040,20 @@
       "insee": "74289",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 16.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-17"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-11-09"
+        },
         "Pesticides": {
           "valeur": 0.006,
           "unite": "µg/L",
@@ -5440,8 +8077,20 @@
       "insee": "74290",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation non-conforme aux exigences de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 0.58,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-06"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-10-19"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -5467,6 +8116,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.4,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-06-12"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-06-18"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -5492,6 +8153,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 15.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-08-27"
+        },
+        "Plomb": {
+          "valeur": "<0,2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2019-02-25"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -5515,8 +8188,20 @@
       "insee": "74294",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.7,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-09"
+        },
+        "Plomb": {
+          "valeur": "<0,2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2019-10-09"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -5540,8 +8225,20 @@
       "insee": "74295",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 2.5,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-07-03"
+        },
+        "Plomb": {
+          "valeur": 0.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2019-07-02"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -5567,6 +8264,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 11.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-29"
+        },
+        "Plomb": {
+          "valeur": "<0,2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2018-04-17"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -5592,6 +8301,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 1.5,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-04"
+        },
+        "Plomb": {
+          "valeur": 0.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2019-06-03"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -5617,6 +8338,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 3.6,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-07-30"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-07-01"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -5642,6 +8375,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 3.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-09-23"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-03-09"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -5667,6 +8412,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 3.3,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-12-09"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-06-09"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -5692,6 +8449,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 2.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-22"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-10-13"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -5710,6 +8479,25 @@
       "score_label": "Bonne"
     },
     {
+      "nom": "VILLY-LE-BOUVERET",
+      "dept": "74",
+      "insee": "74306",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 2.03,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-10-07"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
       "nom": "VINZIER",
       "dept": "74",
       "insee": "74308",
@@ -5717,6 +8505,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 2.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-30"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-10-08"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -5742,6 +8542,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 9.6,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-09-22"
+        },
+        "Plomb": {
+          "valeur": "<0,2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-01-14"
+        },
         "Pesticides": {
           "valeur": 0.018,
           "unite": "µg/L",
@@ -5767,6 +8579,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 2.3,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-22"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-02-06"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -5792,6 +8616,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 5.9,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-08-12"
+        },
+        "Plomb": {
+          "valeur": 0.73,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-08-26"
+        },
         "Pesticides": {
           "valeur": 0.166,
           "unite": "µg/L",
@@ -5805,9 +8641,9 @@
           "date": "2021-03-25"
         }
       },
-      "score": 75,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
+      "score": 88,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "VOUGY",
@@ -5817,6 +8653,18 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 7.1,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2023-08-22"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-02-24"
+        },
         "Pesticides": {
           "valeur": 0.044,
           "unite": "µg/L",
@@ -5840,8 +8688,20 @@
       "insee": "74313",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 4.3,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-20"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-10-28"
+        },
         "Pesticides": {
           "valeur": 0.005,
           "unite": "µg/L",
@@ -5865,8 +8725,20 @@
       "insee": "74314",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 16.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-06-12"
+        },
+        "Plomb": {
+          "valeur": "<0,20",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-06-18"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -29152,10 +32024,8 @@
       "nom": "Marigny-Saint-Marcel",
       "dept": "74",
       "code_bss": "07013X0071/F1",
-      "current": 352.934,
+      "current": 352.921,
       "history": [
-        353.006,
-        353.001,
         352.998,
         352.991,
         352.986,
@@ -29167,7 +32037,9 @@
         352.951,
         352.946,
         352.942,
-        352.934
+        352.934,
+        352.93,
+        352.921
       ],
       "year_ago": 353.13,
       "lat": 45.832389293,
@@ -29178,10 +32050,8 @@
       "nom": "Publier",
       "dept": "74",
       "code_bss": "06301X0019/P5",
-      "current": 373.939,
+      "current": 373.945,
       "history": [
-        373.913,
-        373.92,
         373.922,
         373.925,
         373.927,
@@ -29193,7 +32063,9 @@
         373.929,
         373.936,
         373.94,
-        373.939
+        373.939,
+        373.944,
+        373.945
       ],
       "year_ago": 374.08,
       "lat": 46.390565227,
@@ -29204,10 +32076,8 @@
       "nom": "Vinzier",
       "dept": "74",
       "code_bss": "06306X0042/BIOGE",
-      "current": 572.721,
+      "current": 572.661,
       "history": [
-        572.883,
-        572.972,
         572.951,
         572.873,
         572.8,
@@ -29219,12 +32089,40 @@
         572.669,
         572.675,
         572.712,
-        572.721
+        572.721,
+        572.709,
+        572.661
       ],
-      "year_ago": 572.87,
+      "year_ago": 572.76,
       "lat": 46.335316884,
       "lng": 6.621257922,
       "color": "#ef4444"
+    },
+    {
+      "nom": "Passy",
+      "dept": "74",
+      "code_bss": "BSS004QBEB/X",
+      "current": 570.092,
+      "history": [
+        570.186,
+        570.177,
+        570.17,
+        570.156,
+        570.154,
+        570.143,
+        570.137,
+        570.13,
+        570.13,
+        570.119,
+        570.116,
+        570.107,
+        570.105,
+        570.092
+      ],
+      "year_ago": 569.32,
+      "lat": 45.920935924,
+      "lng": 6.72495014,
+      "color": "#3b82f6"
     },
     {
       "nom": "Rumilly",
@@ -29253,41 +32151,11 @@
       "color": "#3b82f6"
     },
     {
-      "nom": "Passy",
-      "dept": "74",
-      "code_bss": "BSS004QBEB/X",
-      "current": 570.107,
-      "history": [
-        570.2,
-        570.192,
-        570.186,
-        570.177,
-        570.17,
-        570.156,
-        570.154,
-        570.143,
-        570.137,
-        570.13,
-        570.13,
-        570.119,
-        570.116,
-        570.107
-      ],
-      "year_ago": 569.32,
-      "lat": 45.920935924,
-      "lng": 6.72495014,
-      "color": "#3b82f6"
-    },
-    {
       "nom": "Marigny-Saint-Marcel",
       "dept": "74",
       "code_bss": "BSS004MZXK/X",
-      "current": 363.498,
+      "current": 363.476,
       "history": [
-        363.555,
-        363.556,
-        363.549,
-        363.546,
         363.543,
         363.537,
         363.536,
@@ -29297,9 +32165,13 @@
         363.353,
         363.473,
         363.494,
-        363.498
+        363.498,
+        363.499,
+        363.489,
+        363.489,
+        363.476
       ],
-      "year_ago": 363.56,
+      "year_ago": 363.57,
       "lat": 45.835072054,
       "lng": 5.968019958,
       "color": "#ef4444"
@@ -29308,10 +32180,8 @@
       "nom": "Viry",
       "dept": "74",
       "code_bss": "06537X0103/VEIGY",
-      "current": 372.576,
+      "current": 372.568,
       "history": [
-        372.54,
-        372.54,
         372.548,
         372.545,
         372.574,
@@ -29323,9 +32193,11 @@
         372.588,
         372.58,
         372.599,
-        372.576
+        372.576,
+        372.595,
+        372.568
       ],
-      "year_ago": 372.0,
+      "year_ago": 372.01,
       "lat": 46.141387797,
       "lng": 6.017375948,
       "color": "#3b82f6"

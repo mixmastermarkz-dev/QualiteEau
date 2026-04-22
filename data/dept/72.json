@@ -3,10 +3,29 @@
   "nom": "Sarthe",
   "slug": "sarthe",
   "region": "Pays de la Loire",
-  "updated": "21/04/2026 à 17:00",
-  "score_eau": 88,
-  "nb_communes": 261,
+  "updated": "22/04/2026 à 17:00",
+  "score_eau": 90,
+  "nb_communes": 336,
   "potable": [
+    {
+      "nom": "AIGNE",
+      "dept": "72",
+      "insee": "72001",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 0.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-04-16"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
     {
       "nom": "AILLIERES-BEAUVOIR",
       "dept": "72",
@@ -39,6 +58,12 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-12-04"
+        },
+        "Pesticides": {
+          "valeur": 0.005,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-10-14"
         },
         "THM": {
           "valeur": 19.03,
@@ -83,6 +108,12 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-10-21"
+        },
+        "Plomb": {
+          "valeur": 0.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-05-13"
         }
       },
       "score": 100,
@@ -102,6 +133,12 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-06-03"
+        },
+        "Plomb": {
+          "valeur": 1.7,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-07-15"
         },
         "THM": {
           "valeur": 28.0,
@@ -141,6 +178,12 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Plomb": {
+          "valeur": 0.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-07-27"
+        },
         "THM": {
           "valeur": 40.0,
           "unite": "µg/L",
@@ -185,6 +228,12 @@
           "color": "#f59e0b",
           "date": "2025-10-27"
         },
+        "Plomb": {
+          "valeur": 1.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-08-23"
+        },
         "THM": {
           "valeur": 2.0,
           "unite": "µg/L",
@@ -192,9 +241,9 @@
           "date": "2023-05-23"
         }
       },
-      "score": 75,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
+      "score": 83,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "ASSE-LE-RIBOUL",
@@ -210,11 +259,36 @@
           "color": "#10b981",
           "date": "2025-11-10"
         },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-15"
+        },
         "THM": {
           "valeur": 4.7,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-09-15"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "AUBIGNE-RACAN",
+      "dept": "72",
+      "insee": "72013",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés.  Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 1.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-06-17"
         }
       },
       "score": 100,
@@ -253,6 +327,12 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2021-03-31"
+        },
+        "Plomb": {
+          "valeur": 0.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-22"
         },
         "THM": {
           "valeur": 49.0,
@@ -297,11 +377,17 @@
           "unite": "mg/L",
           "color": "#f59e0b",
           "date": "2024-09-27"
+        },
+        "Plomb": {
+          "valeur": 12.4,
+          "unite": "µg/L",
+          "color": "#ef4444",
+          "date": "2025-05-21"
         }
       },
-      "score": 50,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
+      "score": 25,
+      "score_color": "#ef4444",
+      "score_label": "Mauvaise"
     },
     {
       "nom": "AVEZE",
@@ -316,6 +402,12 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-08-26"
+        },
+        "Plomb": {
+          "valeur": 1.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-05-21"
         }
       },
       "score": 100,
@@ -333,6 +425,12 @@
         "Nitrates": {
           "valeur": 16.0,
           "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2024-06-25"
+        },
+        "Plomb": {
+          "valeur": 1.6,
+          "unite": "µg/L",
           "color": "#10b981",
           "date": "2024-06-25"
         }
@@ -354,6 +452,18 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-12-09"
+        },
+        "Plomb": {
+          "valeur": 0.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-05-22"
+        },
+        "Pesticides": {
+          "valeur": 0.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-06-29"
         },
         "THM": {
           "valeur": 28.0,
@@ -379,6 +489,12 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2022-07-26"
+        },
+        "Plomb": {
+          "valeur": 1.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-08-06"
         }
       },
       "score": 100,
@@ -396,6 +512,12 @@
         "Nitrates": {
           "valeur": "<0,5",
           "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-06-04"
+        },
+        "Plomb": {
+          "valeur": 0.2,
+          "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-06-04"
         }
@@ -417,6 +539,18 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-12-17"
+        },
+        "Plomb": {
+          "valeur": 4.8,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-06-18"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-10"
         },
         "THM": {
           "valeur": 19.0,
@@ -440,6 +574,18 @@
         "Nitrates": {
           "valeur": 28.0,
           "unite": "mg/L",
+          "color": "#f59e0b",
+          "date": "2025-11-25"
+        },
+        "Plomb": {
+          "valeur": 1.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2022-05-02"
+        },
+        "Pesticides": {
+          "valeur": 0.17,
+          "unite": "µg/L",
           "color": "#f59e0b",
           "date": "2025-11-25"
         },
@@ -468,11 +614,55 @@
           "color": "#10b981",
           "date": "2025-09-09"
         },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-09"
+        },
         "THM": {
           "valeur": 4.8,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-09-09"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "BEAUMONT-SUR-DEME",
+      "dept": "72",
+      "insee": "72027",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés à l'exception du paramètre nickel (27,9µg/l). La valeur mesurée après écoulement est conforme (0,4µg/l). Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 1.1,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-09-24"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "BEAUMONT-SUR-SARTHE",
+      "dept": "72",
+      "insee": "72029",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 0.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-08"
         }
       },
       "score": 100,
@@ -492,11 +682,36 @@
           "unite": "mg/L",
           "color": "#f59e0b",
           "date": "2025-10-01"
+        },
+        "Plomb": {
+          "valeur": 0.7,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-05-13"
         }
       },
-      "score": 50,
+      "score": 75,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
+    },
+    {
+      "nom": "BERFAY",
+      "dept": "72",
+      "insee": "72032",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés.  Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 0.8,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-05-27"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "BERNAY-NEUVY-EN-CHAMPAGNE",
@@ -511,9 +726,15 @@
           "unite": "mg/L",
           "color": "#f59e0b",
           "date": "2025-10-31"
+        },
+        "Plomb": {
+          "valeur": 1.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-05-19"
         }
       },
-      "score": 50,
+      "score": 75,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
     },
@@ -531,11 +752,36 @@
           "color": "#10b981",
           "date": "2023-07-03"
         },
+        "Plomb": {
+          "valeur": 8.6,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2023-07-03"
+        },
         "THM": {
           "valeur": 7.8,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2023-07-03"
+        }
+      },
+      "score": 83,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "BESSE-SUR-BRAYE",
+      "dept": "72",
+      "insee": "72035",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés.  Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 0.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-06-17"
         }
       },
       "score": 100,
@@ -553,6 +799,12 @@
         "Nitrates": {
           "valeur": "<0,5",
           "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2024-05-22"
+        },
+        "Plomb": {
+          "valeur": 5.0,
+          "unite": "µg/L",
           "color": "#10b981",
           "date": "2024-05-22"
         },
@@ -580,6 +832,12 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2023-06-30"
+        },
+        "Plomb": {
+          "valeur": 2.7,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-30"
         }
       },
       "score": 100,
@@ -597,6 +855,18 @@
         "Nitrates": {
           "valeur": 2.5,
           "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-12-18"
+        },
+        "Plomb": {
+          "valeur": 0.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-17"
+        },
+        "Pesticides": {
+          "valeur": 0.016,
+          "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-12-18"
         },
@@ -625,6 +895,12 @@
           "color": "#10b981",
           "date": "2025-10-08"
         },
+        "Pesticides": {
+          "valeur": 0.023,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-10-08"
+        },
         "THM": {
           "valeur": 6.7,
           "unite": "µg/L",
@@ -647,6 +923,18 @@
         "Nitrates": {
           "valeur": 7.8,
           "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-04"
+        },
+        "Plomb": {
+          "valeur": 1.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2022-07-06"
+        },
+        "Pesticides": {
+          "valeur": 0.011,
+          "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-11-04"
         },
@@ -675,6 +963,18 @@
           "color": "#10b981",
           "date": "2025-10-02"
         },
+        "Plomb": {
+          "valeur": 11.7,
+          "unite": "µg/L",
+          "color": "#ef4444",
+          "date": "2024-04-16"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-06-03"
+        },
         "THM": {
           "valeur": "<SEUIL",
           "unite": "µg/L",
@@ -682,9 +982,9 @@
           "date": "2025-06-03"
         }
       },
-      "score": 100,
-      "score_color": "#10b981",
-      "score_label": "Bonne"
+      "score": 75,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
     },
     {
       "nom": "BOURG-LE-ROI",
@@ -699,6 +999,12 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-08-26"
+        },
+        "Plomb": {
+          "valeur": 2.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-03-15"
         }
       },
       "score": 100,
@@ -718,6 +1024,18 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-12-11"
+        },
+        "Plomb": {
+          "valeur": 3.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-07-25"
+        },
+        "Pesticides": {
+          "valeur": 0.022,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-10-08"
         },
         "THM": {
           "valeur": 4.1,
@@ -743,9 +1061,15 @@
           "unite": "mg/L",
           "color": "#f59e0b",
           "date": "2024-09-23"
+        },
+        "Plomb": {
+          "valeur": 2.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-09-12"
         }
       },
-      "score": 50,
+      "score": 75,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
     },
@@ -762,6 +1086,18 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-10-16"
+        },
+        "Plomb": {
+          "valeur": 1.8,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-10-09"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-25"
         },
         "THM": {
           "valeur": 2.4,
@@ -787,11 +1123,36 @@
           "unite": "mg/L",
           "color": "#f59e0b",
           "date": "2025-12-18"
+        },
+        "Plomb": {
+          "valeur": 3.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-03-28"
         }
       },
-      "score": 50,
+      "score": 75,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
+    },
+    {
+      "nom": "BRUERE-SUR-LOIR (LA)",
+      "dept": "72",
+      "insee": "72049",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 2.8,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2022-08-04"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "BRULON",
@@ -807,6 +1168,12 @@
           "color": "#f59e0b",
           "date": "2025-08-12"
         },
+        "Plomb": {
+          "valeur": 0.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-22"
+        },
         "THM": {
           "valeur": 17.0,
           "unite": "µg/L",
@@ -814,9 +1181,9 @@
           "date": "2022-04-13"
         }
       },
-      "score": 75,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
+      "score": 83,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "CERANS-FOULLETOURTE",
@@ -831,6 +1198,18 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-09-30"
+        },
+        "Plomb": {
+          "valeur": 0.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-05-02"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-04-01"
         },
         "THM": {
           "valeur": 5.1,
@@ -876,6 +1255,12 @@
           "color": "#10b981",
           "date": "2024-09-04"
         },
+        "Plomb": {
+          "valeur": 0.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-04-16"
+        },
         "THM": {
           "valeur": 1.1,
           "unite": "µg/L",
@@ -895,6 +1280,12 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Plomb": {
+          "valeur": 5.8,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2024-09-23"
+        },
         "THM": {
           "valeur": 34.0,
           "unite": "µg/L",
@@ -902,9 +1293,9 @@
           "date": "2024-09-23"
         }
       },
-      "score": 100,
-      "score_color": "#10b981",
-      "score_label": "Bonne"
+      "score": 75,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
     },
     {
       "nom": "CHAMPFLEUR",
@@ -917,6 +1308,12 @@
         "Nitrates": {
           "valeur": "<0,5",
           "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-10"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-11-10"
         },
@@ -944,9 +1341,15 @@
           "unite": "mg/L",
           "color": "#f59e0b",
           "date": "2025-10-02"
+        },
+        "Plomb": {
+          "valeur": "<0,2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-10-09"
         }
       },
-      "score": 50,
+      "score": 75,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
     },
@@ -956,8 +1359,14 @@
       "insee": "72058",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés.  Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
       "parametres": {
+        "Plomb": {
+          "valeur": 3.7,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-05-28"
+        },
         "THM": {
           "valeur": 29.0,
           "unite": "µg/L",
@@ -983,6 +1392,12 @@
           "color": "#f59e0b",
           "date": "2025-09-24"
         },
+        "Plomb": {
+          "valeur": 8.2,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2023-09-01"
+        },
         "THM": {
           "valeur": 26.0,
           "unite": "µg/L",
@@ -990,9 +1405,28 @@
           "date": "2023-09-01"
         }
       },
-      "score": 75,
+      "score": 67,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
+    },
+    {
+      "nom": "CHAPELLE-AUX-CHOUX (LA)",
+      "dept": "72",
+      "insee": "72060",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés.  Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 3.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-06-11"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "CHAPELLE-D'ALIGNE (LA)",
@@ -1008,6 +1442,12 @@
           "color": "#f59e0b",
           "date": "2025-07-29"
         },
+        "Plomb": {
+          "valeur": 0.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-10"
+        },
         "THM": {
           "valeur": 33.0,
           "unite": "µg/L",
@@ -1015,9 +1455,9 @@
           "date": "2025-09-10"
         }
       },
-      "score": 75,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
+      "score": 83,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "CHAPELLE-DU-BOIS (LA)",
@@ -1030,6 +1470,12 @@
         "Nitrates": {
           "valeur": 8.0,
           "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-12-08"
+        },
+        "Pesticides": {
+          "valeur": 0.015,
+          "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-12-08"
         },
@@ -1058,11 +1504,42 @@
           "color": "#10b981",
           "date": "2025-09-04"
         },
+        "Plomb": {
+          "valeur": 1.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-06-25"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-05-20"
+        },
         "THM": {
           "valeur": 3.2,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-05-20"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "CHAPELLE-SAINT-AUBIN (LA)",
+      "dept": "72",
+      "insee": "72065",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 0.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-04-04"
         }
       },
       "score": 100,
@@ -1082,6 +1559,18 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-11-13"
+        },
+        "Plomb": {
+          "valeur": 1.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-06-15"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-09"
         },
         "THM": {
           "valeur": 1.7,
@@ -1107,6 +1596,12 @@
           "unite": "mg/L",
           "color": "#f59e0b",
           "date": "2025-07-29"
+        },
+        "Plomb": {
+          "valeur": 8.9,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2025-08-25"
         }
       },
       "score": 50,
@@ -1127,6 +1622,18 @@
           "color": "#10b981",
           "date": "2025-08-05"
         },
+        "Plomb": {
+          "valeur": 1.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-06-23"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-02-03"
+        },
         "THM": {
           "valeur": 3.6,
           "unite": "µg/L",
@@ -1144,8 +1651,14 @@
       "insee": "72072",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés.  Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
       "parametres": {
+        "Plomb": {
+          "valeur": 2.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-08-28"
+        },
         "THM": {
           "valeur": 10.71,
           "unite": "µg/L",
@@ -1163,8 +1676,14 @@
       "insee": "72073",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés.  Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
       "parametres": {
+        "Plomb": {
+          "valeur": 1.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-09-11"
+        },
         "THM": {
           "valeur": 16.0,
           "unite": "µg/L",
@@ -1189,11 +1708,36 @@
           "unite": "mg/L",
           "color": "#f59e0b",
           "date": "2025-06-03"
+        },
+        "Plomb": {
+          "valeur": 1.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-08-24"
         }
       },
-      "score": 50,
+      "score": 75,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
+    },
+    {
+      "nom": "CHEMIRE-LE-GAUDIN",
+      "dept": "72",
+      "insee": "72075",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés à l'exception du paramètre nickel (68,6µg/l). La valeurs mesurée après écoulement est conforme (0,3 µg/l). Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 1.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-09-27"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "CHENAY",
@@ -1227,6 +1771,18 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-09-22"
+        },
+        "Plomb": {
+          "valeur": "<0,5",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2019-04-08"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-05-26"
         },
         "THM": {
           "valeur": 2.9,
@@ -1272,6 +1828,12 @@
           "color": "#10b981",
           "date": "2020-10-06"
         },
+        "Plomb": {
+          "valeur": 0.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-10-06"
+        },
         "THM": {
           "valeur": 7.6,
           "unite": "µg/L",
@@ -1296,6 +1858,18 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-10-07"
+        },
+        "Plomb": {
+          "valeur": 1.1,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-01"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-06-10"
         },
         "THM": {
           "valeur": 3.8,
@@ -1346,6 +1920,31 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2024-09-12"
+        },
+        "Plomb": {
+          "valeur": 2.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-09-24"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "COGNERS",
+      "dept": "72",
+      "insee": "72085",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 0.8,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-07-15"
         }
       },
       "score": 100,
@@ -1365,6 +1964,12 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2024-04-10"
+        },
+        "Plomb": {
+          "valeur": 0.8,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-04-10"
         }
       },
       "score": 100,
@@ -1382,6 +1987,18 @@
         "Nitrates": {
           "valeur": "<0,5",
           "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-04"
+        },
+        "Plomb": {
+          "valeur": 1.1,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-09-29"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-11-04"
         },
@@ -1409,9 +2026,15 @@
           "unite": "mg/L",
           "color": "#f59e0b",
           "date": "2025-03-12"
+        },
+        "Plomb": {
+          "valeur": 0.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-07-31"
         }
       },
-      "score": 50,
+      "score": 75,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
     },
@@ -1429,6 +2052,12 @@
           "color": "#10b981",
           "date": "2025-12-10"
         },
+        "Pesticides": {
+          "valeur": 0.19,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2025-10-28"
+        },
         "THM": {
           "valeur": 5.7,
           "unite": "µg/L",
@@ -1436,7 +2065,7 @@
           "date": "2025-10-28"
         }
       },
-      "score": 100,
+      "score": 83,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -1453,9 +2082,15 @@
           "unite": "mg/L",
           "color": "#f59e0b",
           "date": "2025-11-24"
+        },
+        "Plomb": {
+          "valeur": 3.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-04-17"
         }
       },
-      "score": 50,
+      "score": 75,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
     },
@@ -1492,6 +2127,18 @@
           "color": "#10b981",
           "date": "2025-12-30"
         },
+        "Plomb": {
+          "valeur": 0.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-25"
+        },
+        "Pesticides": {
+          "valeur": 0.078,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-25"
+        },
         "THM": {
           "valeur": 5.5,
           "unite": "µg/L",
@@ -1517,6 +2164,18 @@
           "color": "#10b981",
           "date": "2025-12-09"
         },
+        "Plomb": {
+          "valeur": 7.8,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2025-08-11"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-10-02"
+        },
         "THM": {
           "valeur": 1.4,
           "unite": "µg/L",
@@ -1524,7 +2183,7 @@
           "date": "2025-10-02"
         }
       },
-      "score": 100,
+      "score": 88,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -1542,6 +2201,12 @@
           "color": "#f59e0b",
           "date": "2025-10-07"
         },
+        "Pesticides": {
+          "valeur": 0.11,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2025-10-07"
+        },
         "THM": {
           "valeur": 1.2,
           "unite": "µg/L",
@@ -1549,7 +2214,7 @@
           "date": "2025-02-19"
         }
       },
-      "score": 75,
+      "score": 67,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
     },
@@ -1559,13 +2224,57 @@
       "insee": "72095",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés.  Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
       "parametres": {
+        "Plomb": {
+          "valeur": 0.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-07-28"
+        },
         "THM": {
           "valeur": 8.1,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-07-28"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "COULANS-SUR-GEE",
+      "dept": "72",
+      "insee": "72096",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés.  Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 1.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-05-25"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "COULONGE",
+      "dept": "72",
+      "insee": "72098",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés.  Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 0.7,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-04-04"
         }
       },
       "score": 100,
@@ -1585,11 +2294,36 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2023-04-17"
+        },
+        "Plomb": {
+          "valeur": 9.8,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2023-04-17"
         }
       },
-      "score": 100,
-      "score_color": "#10b981",
-      "score_label": "Bonne"
+      "score": 75,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
+      "nom": "COURCELLES-LA-FORET",
+      "dept": "72",
+      "insee": "72100",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés à l'exception du paramètre plomb (12µg/l). La valeur mesurée après écoulement est conforme (1,3µg/l). Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 12.0,
+          "unite": "µg/L",
+          "color": "#ef4444",
+          "date": "2024-06-14"
+        }
+      },
+      "score": 0,
+      "score_color": "#ef4444",
+      "score_label": "Mauvaise"
     },
     {
       "nom": "COURCEMONT",
@@ -1604,9 +2338,15 @@
           "unite": "mg/L",
           "color": "#f59e0b",
           "date": "2025-11-05"
+        },
+        "Plomb": {
+          "valeur": 1.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-05-02"
         }
       },
-      "score": 50,
+      "score": 75,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
     },
@@ -1624,6 +2364,18 @@
           "color": "#10b981",
           "date": "2025-08-18"
         },
+        "Plomb": {
+          "valeur": 5.2,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2025-05-20"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-04-07"
+        },
         "THM": {
           "valeur": 2.6,
           "unite": "µg/L",
@@ -1631,7 +2383,7 @@
           "date": "2025-04-07"
         }
       },
-      "score": 100,
+      "score": 88,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -1687,6 +2439,12 @@
           "color": "#10b981",
           "date": "2025-01-28"
         },
+        "Plomb": {
+          "valeur": 0.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-05-12"
+        },
         "THM": {
           "valeur": 25.0,
           "unite": "µg/L",
@@ -1711,9 +2469,15 @@
           "unite": "mg/L",
           "color": "#f59e0b",
           "date": "2025-11-21"
+        },
+        "Plomb": {
+          "valeur": 1.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-07-23"
         }
       },
-      "score": 50,
+      "score": 75,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
     },
@@ -1731,6 +2495,12 @@
           "color": "#f59e0b",
           "date": "2025-03-19"
         },
+        "Plomb": {
+          "valeur": 1.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-08-13"
+        },
         "THM": {
           "valeur": 41.0,
           "unite": "µg/L",
@@ -1738,9 +2508,9 @@
           "date": "2025-08-13"
         }
       },
-      "score": 75,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
+      "score": 83,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "CURES",
@@ -1755,6 +2525,18 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-12-10"
+        },
+        "Plomb": {
+          "valeur": 1.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-09-09"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-03-17"
         },
         "THM": {
           "valeur": 2.1,
@@ -1780,9 +2562,15 @@
           "unite": "mg/L",
           "color": "#f59e0b",
           "date": "2025-08-06"
+        },
+        "Plomb": {
+          "valeur": 2.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-05-02"
         }
       },
-      "score": 50,
+      "score": 75,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
     },
@@ -1792,8 +2580,14 @@
       "insee": "72113",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés.  Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
       "parametres": {
+        "Plomb": {
+          "valeur": 2.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-06-04"
+        },
         "THM": {
           "valeur": 4.0,
           "unite": "µg/L",
@@ -1818,11 +2612,17 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2024-11-20"
+        },
+        "Plomb": {
+          "valeur": 5.9,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2024-06-03"
         }
       },
-      "score": 100,
-      "score_color": "#10b981",
-      "score_label": "Bonne"
+      "score": 75,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
     },
     {
       "nom": "DISSAY-SOUS-COURCILLON",
@@ -1837,6 +2637,18 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-08-18"
+        },
+        "Plomb": {
+          "valeur": 1.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-07-25"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-02-17"
         },
         "THM": {
           "valeur": 3.9,
@@ -1863,6 +2675,18 @@
           "color": "#f59e0b",
           "date": "2025-12-10"
         },
+        "Plomb": {
+          "valeur": 0.7,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-10-30"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-12-10"
+        },
         "THM": {
           "valeur": 3.1,
           "unite": "µg/L",
@@ -1870,9 +2694,9 @@
           "date": "2025-09-22"
         }
       },
-      "score": 75,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
+      "score": 88,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "DOMFRONT-EN-CHAMPAGNE",
@@ -1887,6 +2711,12 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-12-05"
+        },
+        "Plomb": {
+          "valeur": 1.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-06-04"
         }
       },
       "score": 100,
@@ -1925,11 +2755,17 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-11-25"
+        },
+        "Plomb": {
+          "valeur": 6.1,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2020-09-14"
         }
       },
-      "score": 100,
-      "score_color": "#10b981",
-      "score_label": "Bonne"
+      "score": 75,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
     },
     {
       "nom": "DUNEAU",
@@ -1944,6 +2780,12 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-12-29"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-07-29"
         },
         "THM": {
           "valeur": 3.3,
@@ -1969,6 +2811,12 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2021-07-07"
+        },
+        "Plomb": {
+          "valeur": 2.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2021-07-07"
         }
       },
       "score": 100,
@@ -1989,11 +2837,42 @@
           "color": "#10b981",
           "date": "2025-12-16"
         },
+        "Plomb": {
+          "valeur": 0.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-10-23"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-07-01"
+        },
         "THM": {
           "valeur": 0.95,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-07-01"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "EPINEU-LE-CHEVREUIL",
+      "dept": "72",
+      "insee": "72126",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés.  Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 4.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-09-01"
         }
       },
       "score": 100,
@@ -2008,6 +2887,12 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Plomb": {
+          "valeur": 0.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-04-11"
+        },
         "THM": {
           "valeur": 31.0,
           "unite": "µg/L",
@@ -2020,18 +2905,62 @@
       "score_label": "Bonne"
     },
     {
+      "nom": "FATINES",
+      "dept": "72",
+      "insee": "72129",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés.  Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 0.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-08-19"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
       "nom": "FAY",
       "dept": "72",
       "insee": "72130",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés.  Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
       "parametres": {
+        "Plomb": {
+          "valeur": 1.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-10-23"
+        },
         "THM": {
           "valeur": 34.0,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2024-10-23"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "FERCE-SUR-SARTHE",
+      "dept": "72",
+      "insee": "72131",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 0.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-12"
         }
       },
       "score": 100,
@@ -2052,11 +2981,42 @@
           "color": "#10b981",
           "date": "2025-12-30"
         },
+        "Plomb": {
+          "valeur": 1.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-08-18"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-12-30"
+        },
         "THM": {
           "valeur": 28.0,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-10-07"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "FILLE",
+      "dept": "72",
+      "insee": "72133",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 1.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-09-06"
         }
       },
       "score": 100,
@@ -2077,11 +3037,61 @@
           "color": "#10b981",
           "date": "2025-11-24"
         },
+        "Plomb": {
+          "valeur": 0.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-29"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-11-24"
+        },
         "THM": {
           "valeur": 14.0,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-11-24"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "FLEE",
+      "dept": "72",
+      "insee": "72134",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés.  Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 2.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-06-22"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "FONTAINE-SAINT-MARTIN (LA)",
+      "dept": "72",
+      "insee": "72135",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés.  Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 1.8,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-09-17"
         }
       },
       "score": 100,
@@ -2099,6 +3109,12 @@
         "Nitrates": {
           "valeur": 15.0,
           "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2024-09-24"
+        },
+        "Plomb": {
+          "valeur": 1.5,
+          "unite": "µg/L",
           "color": "#10b981",
           "date": "2024-09-24"
         }
@@ -2121,6 +3137,18 @@
           "color": "#f59e0b",
           "date": "2025-12-05"
         },
+        "Plomb": {
+          "valeur": 0.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-05-06"
+        },
+        "Pesticides": {
+          "valeur": 0.022,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-03-11"
+        },
         "THM": {
           "valeur": 16.0,
           "unite": "µg/L",
@@ -2128,9 +3156,9 @@
           "date": "2025-03-11"
         }
       },
-      "score": 75,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
+      "score": 88,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "FYE",
@@ -2145,6 +3173,12 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-09-19"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-09"
         },
         "THM": {
           "valeur": 1.8,
@@ -2175,6 +3209,25 @@
       "score": 50,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
+    },
+    {
+      "nom": "GRAND-LUCE (LE)",
+      "dept": "72",
+      "insee": "72143",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 0.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-05-30"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "GRANDCHAMP",
@@ -2240,6 +3293,25 @@
       "score_label": "Moyenne"
     },
     {
+      "nom": "GUECELARD",
+      "dept": "72",
+      "insee": "72146",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés.  Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 2.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-06-17"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
       "nom": "GUIERCHE (LA)",
       "dept": "72",
       "insee": "72147",
@@ -2250,6 +3322,12 @@
         "Nitrates": {
           "valeur": 5.9,
           "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2024-06-27"
+        },
+        "Plomb": {
+          "valeur": 0.8,
+          "unite": "µg/L",
           "color": "#10b981",
           "date": "2024-06-27"
         }
@@ -2271,9 +3349,15 @@
           "unite": "mg/L",
           "color": "#f59e0b",
           "date": "2025-11-20"
+        },
+        "Plomb": {
+          "valeur": 0.7,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-22"
         }
       },
-      "score": 50,
+      "score": 75,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
     },
@@ -2290,11 +3374,17 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2023-05-09"
+        },
+        "Plomb": {
+          "valeur": 6.8,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2025-08-06"
         }
       },
-      "score": 100,
-      "score_color": "#10b981",
-      "score_label": "Bonne"
+      "score": 75,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
     },
     {
       "nom": "JUIGNE-SUR-SARTHE",
@@ -2334,6 +3424,50 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-07-31"
+        },
+        "Plomb": {
+          "valeur": 0.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-10-10"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "JUPILLES",
+      "dept": "72",
+      "insee": "72153",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 1.1,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-04-10"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "LAIGNÉ-SAINT-GERVAIS",
+      "dept": "72",
+      "insee": "72155",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 0.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-06-19"
         }
       },
       "score": 100,
@@ -2354,6 +3488,18 @@
           "color": "#f59e0b",
           "date": "2025-12-10"
         },
+        "Plomb": {
+          "valeur": 20.6,
+          "unite": "µg/L",
+          "color": "#ef4444",
+          "date": "2024-04-22"
+        },
+        "Pesticides": {
+          "valeur": 0.06,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-12-10"
+        },
         "THM": {
           "valeur": 3.6,
           "unite": "µg/L",
@@ -2361,7 +3507,7 @@
           "date": "2025-12-10"
         }
       },
-      "score": 75,
+      "score": 62,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
     },
@@ -2371,8 +3517,14 @@
       "insee": "72157",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés.  Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
       "parametres": {
+        "Plomb": {
+          "valeur": 0.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-08-07"
+        },
         "THM": {
           "valeur": 4.8,
           "unite": "µg/L",
@@ -2397,6 +3549,18 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-12-10"
+        },
+        "Plomb": {
+          "valeur": 0.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-04-14"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-08-12"
         },
         "THM": {
           "valeur": 0.86,
@@ -2423,11 +3587,42 @@
           "color": "#10b981",
           "date": "2025-12-02"
         },
+        "Plomb": {
+          "valeur": 2.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-03-24"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-06-23"
+        },
         "THM": {
           "valeur": 2.7,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-06-23"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "LHOMME",
+      "dept": "72",
+      "insee": "72161",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 0.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-09"
         }
       },
       "score": 100,
@@ -2447,6 +3642,18 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-12-09"
+        },
+        "Plomb": {
+          "valeur": 1.1,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-07-22"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-22"
         },
         "THM": {
           "valeur": 8.2,
@@ -2492,6 +3699,18 @@
           "color": "#10b981",
           "date": "2025-09-23"
         },
+        "Plomb": {
+          "valeur": 6.2,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2025-06-02"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-06-02"
+        },
         "THM": {
           "valeur": 4.8,
           "unite": "µg/L",
@@ -2499,7 +3718,7 @@
           "date": "2025-06-02"
         }
       },
-      "score": 100,
+      "score": 88,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -2516,11 +3735,36 @@
           "unite": "mg/L",
           "color": "#f59e0b",
           "date": "2025-11-20"
+        },
+        "Plomb": {
+          "valeur": 0.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-07-22"
         }
       },
-      "score": 50,
+      "score": 75,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
+    },
+    {
+      "nom": "LONGNES",
+      "dept": "72",
+      "insee": "72166",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 0.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-22"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "LOUAILLES",
@@ -2536,6 +3780,12 @@
           "color": "#10b981",
           "date": "2025-10-15"
         },
+        "Plomb": {
+          "valeur": 28.6,
+          "unite": "µg/L",
+          "color": "#ef4444",
+          "date": "2025-06-26"
+        },
         "THM": {
           "valeur": 39.0,
           "unite": "µg/L",
@@ -2543,9 +3793,9 @@
           "date": "2025-06-26"
         }
       },
-      "score": 100,
-      "score_color": "#10b981",
-      "score_label": "Bonne"
+      "score": 67,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
     },
     {
       "nom": "LOUE",
@@ -2561,6 +3811,12 @@
           "color": "#f59e0b",
           "date": "2025-08-27"
         },
+        "Plomb": {
+          "valeur": 2.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-04-09"
+        },
         "THM": {
           "valeur": 18.0,
           "unite": "µg/L",
@@ -2568,9 +3824,28 @@
           "date": "2022-09-27"
         }
       },
-      "score": 75,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
+      "score": 83,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "LOUPLANDE",
+      "dept": "72",
+      "insee": "72169",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés.  Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 1.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-06-17"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "LOUVIGNY",
@@ -2604,9 +3879,15 @@
           "unite": "mg/L",
           "color": "#f59e0b",
           "date": "2025-11-26"
+        },
+        "Plomb": {
+          "valeur": 3.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-09-22"
         }
       },
-      "score": 50,
+      "score": 75,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
     },
@@ -2630,6 +3911,25 @@
       "score_label": "Bonne"
     },
     {
+      "nom": "LUCEAU",
+      "dept": "72",
+      "insee": "72173",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés à l'exception du paramètre nickel(40,4µg/l). La val eur mesurée après écoulment est conforme (<0,2µg/l). Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 8.3,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2025-08-14"
+        }
+      },
+      "score": 50,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
       "nom": "LUCHE-PRINGE",
       "dept": "72",
       "insee": "72175",
@@ -2642,6 +3942,18 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-10-14"
+        },
+        "Plomb": {
+          "valeur": 1.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-06-28"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-08-19"
         },
         "THM": {
           "valeur": 6.2,
@@ -2668,11 +3980,42 @@
           "color": "#10b981",
           "date": "2025-12-09"
         },
+        "Plomb": {
+          "valeur": 1.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-07-15"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-10-09"
+        },
         "THM": {
           "valeur": 11.0,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-10-09"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "MAIGNE",
+      "dept": "72",
+      "insee": "72177",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés.  Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 1.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-07-27"
         }
       },
       "score": 100,
@@ -2699,6 +4042,25 @@
       "score_label": "Bonne"
     },
     {
+      "nom": "MALICORNE-SUR-SARTHE",
+      "dept": "72",
+      "insee": "72179",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés.  Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 0.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-06-26"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
       "nom": "MAMERS",
       "dept": "72",
       "insee": "72180",
@@ -2711,6 +4073,12 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-12-11"
+        },
+        "Plomb": {
+          "valeur": 0.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-07-02"
         }
       },
       "score": 100,
@@ -2731,6 +4099,18 @@
           "color": "#10b981",
           "date": "2025-12-29"
         },
+        "Plomb": {
+          "valeur": 2.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-25"
+        },
+        "Pesticides": {
+          "valeur": 0.012,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-11-12"
+        },
         "THM": {
           "valeur": 17.0,
           "unite": "µg/L",
@@ -2750,6 +4130,12 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Plomb": {
+          "valeur": 2.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-08-26"
+        },
         "THM": {
           "valeur": 15.7,
           "unite": "µg/L",
@@ -2775,6 +4161,12 @@
           "color": "#f59e0b",
           "date": "2025-10-08"
         },
+        "Plomb": {
+          "valeur": 3.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-07-31"
+        },
         "THM": {
           "valeur": 14.0,
           "unite": "µg/L",
@@ -2782,9 +4174,28 @@
           "date": "2023-07-31"
         }
       },
-      "score": 75,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
+      "score": 83,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "MAREIL-SUR-LOIR",
+      "dept": "72",
+      "insee": "72185",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 0.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-29"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "MARESCHE",
@@ -2819,6 +4230,18 @@
           "color": "#10b981",
           "date": "2025-12-02"
         },
+        "Plomb": {
+          "valeur": 1.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-08-08"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-10-09"
+        },
         "THM": {
           "valeur": 5.2,
           "unite": "µg/L",
@@ -2848,6 +4271,25 @@
       "score": 50,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
+    },
+    {
+      "nom": "MAROLLES-LES-SAINT-CALAIS",
+      "dept": "72",
+      "insee": "72190",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés.  Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 0.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-06-17"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "MAROLLETTE",
@@ -2881,6 +4323,12 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2016-08-02"
+        },
+        "Plomb": {
+          "valeur": 1.7,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-04-25"
         }
       },
       "score": 100,
@@ -2920,6 +4368,18 @@
           "color": "#10b981",
           "date": "2025-09-25"
         },
+        "Plomb": {
+          "valeur": 1.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-09-01"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-08-26"
+        },
         "THM": {
           "valeur": 2.9,
           "unite": "µg/L",
@@ -2951,6 +4411,25 @@
       "score_label": "Bonne"
     },
     {
+      "nom": "MEZIERES-SOUS-LAVARDIN",
+      "dept": "72",
+      "insee": "72197",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation non-conforme à la limite de qualité Nickel. Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'u tilisation où elles ont été mesurées. En effet,compte tenu de l'influe nce du réseau de distribution d'eau (réseau intérieur et éventuellemen t,branchement public) sur la dissolution des métaux, ces valeurs ne so nt pas représentatives de la qualité de l'eau pour  l'ensemble des con sommateurs du réseau de distribution. En cas de valeur proche ou supér ieure à une des limites,il estconseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 3.1,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-10-21"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
       "nom": "MEZIERES-SUR-PONTHOUIN",
       "dept": "72",
       "insee": "72196",
@@ -2968,6 +4447,25 @@
       "score": 50,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
+    },
+    {
+      "nom": "MILESSE (LA)",
+      "dept": "72",
+      "insee": "72198",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 2.1,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-06-10"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "MOITRON-SUR-SARTHE",
@@ -2994,8 +4492,14 @@
       "insee": "72200",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés à l'exception du paramètre nickel (51,3µg/l). La va leur mesurée après écoulement est conforme (3,2µg/l)XX. Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
       "parametres": {
+        "Plomb": {
+          "valeur": 2.1,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-07-27"
+        },
         "THM": {
           "valeur": 13.0,
           "unite": "µg/L",
@@ -3059,6 +4563,12 @@
           "color": "#f59e0b",
           "date": "2025-06-23"
         },
+        "Plomb": {
+          "valeur": 1.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-08-22"
+        },
         "THM": {
           "valeur": 1.23,
           "unite": "µg/L",
@@ -3066,9 +4576,28 @@
           "date": "2019-10-15"
         }
       },
-      "score": 75,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
+      "score": 83,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "MONTAILLE",
+      "dept": "72",
+      "insee": "72204",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 0.8,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-04-15"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "MONTBIZOT",
@@ -3084,6 +4613,18 @@
           "color": "#10b981",
           "date": "2025-12-08"
         },
+        "Plomb": {
+          "valeur": 123.0,
+          "unite": "µg/L",
+          "color": "#ef4444",
+          "date": "2024-04-18"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-08-26"
+        },
         "THM": {
           "valeur": "<SEUIL",
           "unite": "µg/L",
@@ -3091,9 +4632,9 @@
           "date": "2024-08-26"
         }
       },
-      "score": 100,
-      "score_color": "#10b981",
-      "score_label": "Bonne"
+      "score": 75,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
     },
     {
       "nom": "MONTFORT-LE-GESNOIS",
@@ -3109,6 +4650,18 @@
           "color": "#10b981",
           "date": "2025-12-29"
         },
+        "Plomb": {
+          "valeur": 7.2,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2025-07-31"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-12-29"
+        },
         "THM": {
           "valeur": 5.6,
           "unite": "µg/L",
@@ -3116,7 +4669,7 @@
           "date": "2025-12-29"
         }
       },
-      "score": 100,
+      "score": 88,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -3133,6 +4686,18 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-09-25"
+        },
+        "Plomb": {
+          "valeur": 4.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-09-01"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-10-29"
         },
         "THM": {
           "valeur": 2.0,
@@ -3159,6 +4724,18 @@
           "color": "#10b981",
           "date": "2025-10-22"
         },
+        "Plomb": {
+          "valeur": 3.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-05-04"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-07-22"
+        },
         "THM": {
           "valeur": 1.6,
           "unite": "µg/L",
@@ -3183,6 +4760,12 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-07-16"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-05-19"
         },
         "THM": {
           "valeur": 1.7,
@@ -3209,6 +4792,18 @@
           "color": "#10b981",
           "date": "2025-11-18"
         },
+        "Plomb": {
+          "valeur": 6.1,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2025-06-02"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-08-18"
+        },
         "THM": {
           "valeur": 2.0,
           "unite": "µg/L",
@@ -3222,7 +4817,7 @@
           "date": "2016-11-10"
         }
       },
-      "score": 100,
+      "score": 90,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -3240,6 +4835,18 @@
           "color": "#f59e0b",
           "date": "2025-09-08"
         },
+        "Plomb": {
+          "valeur": 3.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-07-24"
+        },
+        "Pesticides": {
+          "valeur": 0.017,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-04-07"
+        },
         "THM": {
           "valeur": 5.7,
           "unite": "µg/L",
@@ -3247,9 +4854,28 @@
           "date": "2025-04-07"
         }
       },
-      "score": 75,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
+      "score": 88,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "MULSANNE",
+      "dept": "72",
+      "insee": "72213",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 0.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-06-19"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "NAUVAY",
@@ -3290,6 +4916,25 @@
       "score_label": "Bonne"
     },
     {
+      "nom": "NEUVILLALAIS",
+      "dept": "72",
+      "insee": "72216",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 0.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-06-12"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
       "nom": "NEUVILLE-SUR-SARTHE",
       "dept": "72",
       "insee": "72217",
@@ -3300,6 +4945,18 @@
         "Nitrates": {
           "valeur": 7.3,
           "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-10-20"
+        },
+        "Plomb": {
+          "valeur": 0.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-10-28"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-10-20"
         },
@@ -3328,6 +4985,12 @@
           "color": "#f59e0b",
           "date": "2025-04-10"
         },
+        "Plomb": {
+          "valeur": 0.7,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-05-14"
+        },
         "THM": {
           "valeur": 4.0,
           "unite": "µg/L",
@@ -3335,9 +4998,9 @@
           "date": "2023-05-25"
         }
       },
-      "score": 75,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
+      "score": 83,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "NOGENT-LE-BERNARD",
@@ -3353,11 +5016,42 @@
           "color": "#10b981",
           "date": "2025-12-08"
         },
+        "Plomb": {
+          "valeur": 0.7,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-26"
+        },
+        "Pesticides": {
+          "valeur": 0.057,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-03"
+        },
         "THM": {
           "valeur": 12.0,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-09-03"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "NOGENT-SUR-LOIR",
+      "dept": "72",
+      "insee": "72221",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 1.1,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-05-03"
         }
       },
       "score": 100,
@@ -3377,6 +5071,12 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-08-04"
+        },
+        "Plomb": {
+          "valeur": 1.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-05-30"
         },
         "THM": {
           "valeur": 40.0,
@@ -3441,6 +5141,18 @@
           "color": "#f59e0b",
           "date": "2025-11-20"
         },
+        "Plomb": {
+          "valeur": 10.2,
+          "unite": "µg/L",
+          "color": "#ef4444",
+          "date": "2024-07-10"
+        },
+        "Pesticides": {
+          "valeur": 0.12,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2025-11-20"
+        },
         "THM": {
           "valeur": 2.1,
           "unite": "µg/L",
@@ -3448,7 +5160,7 @@
           "date": "2025-11-20"
         }
       },
-      "score": 75,
+      "score": 50,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
     },
@@ -3463,6 +5175,12 @@
         "Nitrates": {
           "valeur": 0.92,
           "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-06-10"
+        },
+        "Plomb": {
+          "valeur": 0.6,
+          "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-06-10"
         },
@@ -3485,6 +5203,12 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Plomb": {
+          "valeur": 0.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-06-19"
+        },
         "THM": {
           "valeur": 13.0,
           "unite": "µg/L",
@@ -3510,6 +5234,12 @@
           "color": "#10b981",
           "date": "2025-11-03"
         },
+        "Pesticides": {
+          "valeur": 0.131,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2025-06-02"
+        },
         "THM": {
           "valeur": 4.44,
           "unite": "µg/L",
@@ -3517,7 +5247,7 @@
           "date": "2025-06-02"
         }
       },
-      "score": 100,
+      "score": 83,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -3554,6 +5284,18 @@
           "color": "#10b981",
           "date": "2025-12-17"
         },
+        "Plomb": {
+          "valeur": 0.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-07-29"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-12-17"
+        },
         "THM": {
           "valeur": 32.0,
           "unite": "µg/L",
@@ -3579,6 +5321,12 @@
           "color": "#f59e0b",
           "date": "2025-10-30"
         },
+        "Plomb": {
+          "valeur": 0.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-06-24"
+        },
         "THM": {
           "valeur": 2.9,
           "unite": "µg/L",
@@ -3586,9 +5334,9 @@
           "date": "2022-10-20"
         }
       },
-      "score": 75,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
+      "score": 83,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "PARIGNE-L'EVEQUE",
@@ -3603,6 +5351,18 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-12-03"
+        },
+        "Plomb": {
+          "valeur": "<0,2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-08-28"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-03-19"
         },
         "THM": {
           "valeur": 0.59,
@@ -3626,6 +5386,18 @@
         "Nitrates": {
           "valeur": 11.0,
           "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-11-06"
+        },
+        "Plomb": {
+          "valeur": 1.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-06-27"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-11-06"
         },
@@ -3673,6 +5445,18 @@
           "color": "#f59e0b",
           "date": "2025-12-15"
         },
+        "Plomb": {
+          "valeur": 2.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-07-21"
+        },
+        "Pesticides": {
+          "valeur": 0.0086,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-12-15"
+        },
         "THM": {
           "valeur": 1.9,
           "unite": "µg/L",
@@ -3680,9 +5464,9 @@
           "date": "2025-12-15"
         }
       },
-      "score": 75,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
+      "score": 88,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "PIACE",
@@ -3697,9 +5481,15 @@
           "unite": "mg/L",
           "color": "#f59e0b",
           "date": "2025-08-14"
+        },
+        "Plomb": {
+          "valeur": 0.8,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-06-26"
         }
       },
-      "score": 50,
+      "score": 75,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
     },
@@ -3716,6 +5506,12 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-10-28"
+        },
+        "Plomb": {
+          "valeur": 1.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-04-19"
         },
         "THM": {
           "valeur": 17.0,
@@ -3742,6 +5538,12 @@
           "color": "#f59e0b",
           "date": "2025-11-17"
         },
+        "Plomb": {
+          "valeur": 3.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-09-25"
+        },
         "THM": {
           "valeur": 7.84,
           "unite": "µg/L",
@@ -3749,9 +5551,9 @@
           "date": "2019-05-23"
         }
       },
-      "score": 75,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
+      "score": 83,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "PIZIEUX",
@@ -3805,6 +5607,12 @@
           "color": "#10b981",
           "date": "2025-12-09"
         },
+        "Pesticides": {
+          "valeur": 0.022,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-22"
+        },
         "THM": {
           "valeur": 6.3,
           "unite": "µg/L",
@@ -3827,6 +5635,18 @@
         "Nitrates": {
           "valeur": 22.0,
           "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-12-17"
+        },
+        "Plomb": {
+          "valeur": 0.7,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-06-26"
+        },
+        "Pesticides": {
+          "valeur": 0.015,
+          "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-12-17"
         },
@@ -3854,6 +5674,31 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-04-16"
+        },
+        "Plomb": {
+          "valeur": 2.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-09-01"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "PREVELLES",
+      "dept": "72",
+      "insee": "72246",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés.  Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 1.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-07-20"
         }
       },
       "score": 100,
@@ -3874,6 +5719,12 @@
           "color": "#10b981",
           "date": "2025-10-15"
         },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-07-16"
+        },
         "THM": {
           "valeur": 4.4,
           "unite": "µg/L",
@@ -3893,6 +5744,12 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Plomb": {
+          "valeur": 1.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-07-15"
+        },
         "THM": {
           "valeur": 32.0,
           "unite": "µg/L",
@@ -3912,6 +5769,12 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Plomb": {
+          "valeur": 0.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-06-15"
+        },
         "THM": {
           "valeur": 2.2,
           "unite": "µg/L",
@@ -3922,6 +5785,25 @@
       "score": 100,
       "score_color": "#10b981",
       "score_label": "Bonne"
+    },
+    {
+      "nom": "RAHAY",
+      "dept": "72",
+      "insee": "72250",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés.  Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 6.5,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2025-06-04"
+        }
+      },
+      "score": 50,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
     },
     {
       "nom": "RENE",
@@ -3943,6 +5825,44 @@
       "score_label": "Moyenne"
     },
     {
+      "nom": "REQUEIL",
+      "dept": "72",
+      "insee": "72252",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés à l'exception du paramètre plomb (13µg/l). La valeur mesurée après écoulement est conforme (1,3µg/l). Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 13.0,
+          "unite": "µg/L",
+          "color": "#ef4444",
+          "date": "2024-05-02"
+        }
+      },
+      "score": 0,
+      "score_color": "#ef4444",
+      "score_label": "Mauvaise"
+    },
+    {
+      "nom": "ROEZE-SUR-SARTHE",
+      "dept": "72",
+      "insee": "72253",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": "<0,2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-05-16"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
       "nom": "ROUESSE-FONTAINE",
       "dept": "72",
       "insee": "72254",
@@ -3956,6 +5876,12 @@
           "color": "#f59e0b",
           "date": "2025-12-04"
         },
+        "Pesticides": {
+          "valeur": 0.065,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-12-04"
+        },
         "THM": {
           "valeur": 4.5,
           "unite": "µg/L",
@@ -3963,9 +5889,9 @@
           "date": "2025-12-04"
         }
       },
-      "score": 75,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
+      "score": 83,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "ROUESSE-VASSE",
@@ -3981,6 +5907,12 @@
           "color": "#f59e0b",
           "date": "2025-12-15"
         },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-11-06"
+        },
         "THM": {
           "valeur": 2.1,
           "unite": "µg/L",
@@ -3988,9 +5920,9 @@
           "date": "2025-11-06"
         }
       },
-      "score": 75,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
+      "score": 83,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "ROUEZ",
@@ -4006,6 +5938,12 @@
           "color": "#f59e0b",
           "date": "2025-07-16"
         },
+        "Plomb": {
+          "valeur": 1.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-04-10"
+        },
         "THM": {
           "valeur": 2.52,
           "unite": "µg/L",
@@ -4013,9 +5951,9 @@
           "date": "2018-09-12"
         }
       },
-      "score": 75,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
+      "score": 83,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "ROUILLON",
@@ -4025,6 +5963,12 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Plomb": {
+          "valeur": 1.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-05-07"
+        },
         "THM": {
           "valeur": 37.0,
           "unite": "µg/L",
@@ -4037,13 +5981,38 @@
       "score_label": "Bonne"
     },
     {
+      "nom": "ROUPERROUX-LE-COQUET",
+      "dept": "72",
+      "insee": "72259",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 0.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-17"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
       "nom": "RUAUDIN",
       "dept": "72",
       "insee": "72260",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés.  Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
       "parametres": {
+        "Plomb": {
+          "valeur": 2.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-08-18"
+        },
         "THM": {
           "valeur": 37.0,
           "unite": "µg/L",
@@ -4068,9 +6037,15 @@
           "unite": "mg/L",
           "color": "#f59e0b",
           "date": "2025-08-22"
+        },
+        "Plomb": {
+          "valeur": 0.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-06-25"
         }
       },
-      "score": 50,
+      "score": 75,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
     },
@@ -4088,6 +6063,18 @@
           "color": "#10b981",
           "date": "2025-12-17"
         },
+        "Plomb": {
+          "valeur": 1.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-07-23"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-12-17"
+        },
         "THM": {
           "valeur": 10.0,
           "unite": "µg/L",
@@ -4098,6 +6085,25 @@
       "score": 100,
       "score_color": "#10b981",
       "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-AIGNAN",
+      "dept": "72",
+      "insee": "72265",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés à l'exception du paramètre plomb (15µg/l). La valeu r  mesurées après écoulements est conforme (1,02µg/l).  Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 15.0,
+          "unite": "µg/L",
+          "color": "#ef4444",
+          "date": "2023-07-25"
+        }
+      },
+      "score": 0,
+      "score_color": "#ef4444",
+      "score_label": "Mauvaise"
     },
     {
       "nom": "SAINT-AUBIN-DE-LOCQUENAY",
@@ -4112,6 +6118,12 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-12-04"
+        },
+        "Plomb": {
+          "valeur": 0.7,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-06-03"
         }
       },
       "score": 100,
@@ -4131,11 +6143,36 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2016-05-11"
+        },
+        "Plomb": {
+          "valeur": 0.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-17"
         }
       },
       "score": 100,
       "score_color": "#10b981",
       "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-BIEZ-EN-BELIN",
+      "dept": "72",
+      "insee": "72268",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés.  Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 7.9,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2024-09-26"
+        }
+      },
+      "score": 50,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
     },
     {
       "nom": "SAINT-CALAIS",
@@ -4150,6 +6187,18 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-09-04"
+        },
+        "Plomb": {
+          "valeur": 1.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-12"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-06-03"
         },
         "THM": {
           "valeur": 3.4,
@@ -4194,9 +6243,15 @@
           "unite": "mg/L",
           "color": "#f59e0b",
           "date": "2025-01-07"
+        },
+        "Plomb": {
+          "valeur": 3.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-10-31"
         }
       },
-      "score": 50,
+      "score": 75,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
     },
@@ -4213,6 +6268,12 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-09-26"
+        },
+        "Plomb": {
+          "valeur": 1.8,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-04-11"
         }
       },
       "score": 100,
@@ -4233,6 +6294,12 @@
           "color": "#f59e0b",
           "date": "2025-12-16"
         },
+        "Plomb": {
+          "valeur": 7.8,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2023-08-16"
+        },
         "THM": {
           "valeur": 12.0,
           "unite": "µg/L",
@@ -4240,9 +6307,28 @@
           "date": "2023-08-16"
         }
       },
-      "score": 75,
+      "score": 67,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
+    },
+    {
+      "nom": "SAINT-CORNEILLE",
+      "dept": "72",
+      "insee": "72275",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 0.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-07-04"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "SAINT-COSME-EN-VAIRAIS",
@@ -4258,6 +6344,18 @@
           "color": "#10b981",
           "date": "2025-11-05"
         },
+        "Plomb": {
+          "valeur": 8.6,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2021-09-02"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-06-05"
+        },
         "THM": {
           "valeur": 18.0,
           "unite": "µg/L",
@@ -4265,7 +6363,7 @@
           "date": "2025-06-05"
         }
       },
-      "score": 100,
+      "score": 88,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -4283,11 +6381,42 @@
           "color": "#10b981",
           "date": "2025-12-10"
         },
+        "Plomb": {
+          "valeur": 0.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-22"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-07-09"
+        },
         "THM": {
           "valeur": 0.28,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-07-09"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-GEORGES-DE-LA-COUEE",
+      "dept": "72",
+      "insee": "72279",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés.  Du point de vue des référzences de qualités on pe ut noter la température élévée de l'eau (26°). Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 1.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2022-08-16"
         }
       },
       "score": 100,
@@ -4302,6 +6431,12 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Plomb": {
+          "valeur": 0.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-05-23"
+        },
         "THM": {
           "valeur": 36.0,
           "unite": "µg/L",
@@ -4346,6 +6481,12 @@
           "color": "#f59e0b",
           "date": "2025-06-23"
         },
+        "Plomb": {
+          "valeur": 6.6,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2024-05-30"
+        },
         "THM": {
           "valeur": 0.99,
           "unite": "µg/L",
@@ -4353,9 +6494,85 @@
           "date": "2019-05-17"
         }
       },
-      "score": 75,
+      "score": 67,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
+    },
+    {
+      "nom": "SAINT-GERMAIN-D'ARCE",
+      "dept": "72",
+      "insee": "72283",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 1.8,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-07-10"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-GERVAIS-DE-VIC",
+      "dept": "72",
+      "insee": "72286",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés.  Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 1.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-09-24"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-JEAN-D'ASSE",
+      "dept": "72",
+      "insee": "72290",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés.  Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 3.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-09-30"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-JEAN-DE-LA-MOTTE",
+      "dept": "72",
+      "insee": "72291",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 1.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-08-22"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "SAINT-JEAN-DES-ECHELLES",
@@ -4370,11 +6587,36 @@
           "unite": "mg/L",
           "color": "#f59e0b",
           "date": "2025-08-26"
+        },
+        "Plomb": {
+          "valeur": 1.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-06-10"
         }
       },
-      "score": 50,
+      "score": 75,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
+    },
+    {
+      "nom": "SAINT-JEAN-DU-BOIS",
+      "dept": "72",
+      "insee": "72293",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés.  Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 0.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-05-09"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "SAINT-LEONARD-DES-BOIS",
@@ -4390,6 +6632,12 @@
           "color": "#f59e0b",
           "date": "2025-08-26"
         },
+        "Plomb": {
+          "valeur": 0.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-19"
+        },
         "THM": {
           "valeur": 5.4,
           "unite": "µg/L",
@@ -4397,9 +6645,9 @@
           "date": "2021-07-07"
         }
       },
-      "score": 75,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
+      "score": 83,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "SAINT-LONGIS",
@@ -4434,6 +6682,18 @@
           "color": "#10b981",
           "date": "2025-06-10"
         },
+        "Plomb": {
+          "valeur": 1.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-09-26"
+        },
+        "Pesticides": {
+          "valeur": 0.134,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2016-07-25"
+        },
         "THM": {
           "valeur": 2.8,
           "unite": "µg/L",
@@ -4441,7 +6701,7 @@
           "date": "2016-01-26"
         }
       },
-      "score": 100,
+      "score": 88,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -4458,6 +6718,18 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-11-12"
+        },
+        "Plomb": {
+          "valeur": 1.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-09-13"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-10-16"
         },
         "THM": {
           "valeur": 1.6,
@@ -4483,6 +6755,12 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2024-12-13"
+        },
+        "Plomb": {
+          "valeur": 1.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-09-26"
         }
       },
       "score": 100,
@@ -4503,11 +6781,42 @@
           "color": "#10b981",
           "date": "2025-02-19"
         },
+        "Plomb": {
+          "valeur": 0.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-15"
+        },
+        "Pesticides": {
+          "valeur": 0.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-02-06"
+        },
         "THM": {
           "valeur": 4.2,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2024-02-06"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-MARTIN-DES-MONTS",
+      "dept": "72",
+      "insee": "72302",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés.  Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 2.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-09-30"
         }
       },
       "score": 100,
@@ -4527,9 +6836,15 @@
           "unite": "mg/L",
           "color": "#f59e0b",
           "date": "2025-12-09"
+        },
+        "Plomb": {
+          "valeur": 1.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-08-11"
         }
       },
-      "score": 50,
+      "score": 75,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
     },
@@ -4546,11 +6861,36 @@
           "unite": "mg/L",
           "color": "#f59e0b",
           "date": "2025-10-27"
+        },
+        "Plomb": {
+          "valeur": 3.8,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-04-10"
         }
       },
-      "score": 50,
+      "score": 75,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
+    },
+    {
+      "nom": "SAINT-OUEN-EN-BELIN",
+      "dept": "72",
+      "insee": "72306",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés.  Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 3.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-05-27"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "SAINT-OUEN-EN-CHAMPAGNE",
@@ -4566,6 +6906,18 @@
           "color": "#f59e0b",
           "date": "2025-11-06"
         },
+        "Plomb": {
+          "valeur": 3.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-08-12"
+        },
+        "Pesticides": {
+          "valeur": 0.029,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-11-06"
+        },
         "THM": {
           "valeur": 7.9,
           "unite": "µg/L",
@@ -4573,9 +6925,9 @@
           "date": "2025-11-06"
         }
       },
-      "score": 75,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
+      "score": 88,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "SAINT-PATERNE - LE CHEVAIN",
@@ -4590,6 +6942,12 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-12-11"
+        },
+        "Plomb": {
+          "valeur": 3.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-05-26"
         }
       },
       "score": 100,
@@ -4635,11 +6993,42 @@
           "color": "#10b981",
           "date": "2025-12-04"
         },
+        "Plomb": {
+          "valeur": 3.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-07-10"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-12-04"
+        },
         "THM": {
           "valeur": 3.4,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-12-04"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-PIERRE-DE-CHEVILLE",
+      "dept": "72",
+      "insee": "72311",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés.  Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 3.8,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-09"
         }
       },
       "score": 100,
@@ -4660,6 +7049,12 @@
           "color": "#f59e0b",
           "date": "2025-02-18"
         },
+        "Plomb": {
+          "valeur": 6.6,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2023-06-12"
+        },
         "THM": {
           "valeur": 18.0,
           "unite": "µg/L",
@@ -4667,7 +7062,7 @@
           "date": "2023-06-12"
         }
       },
-      "score": 75,
+      "score": 67,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
     },
@@ -4684,6 +7079,25 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-07-24"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-PIERRE-DU-LOROUER",
+      "dept": "72",
+      "insee": "72314",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 1.8,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-06-06"
         }
       },
       "score": 100,
@@ -4754,6 +7168,25 @@
       "score_label": "Bonne"
     },
     {
+      "nom": "SAINT-SATURNIN",
+      "dept": "72",
+      "insee": "72320",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 1.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-07-01"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
       "nom": "SAINT-SYMPHORIEN",
       "dept": "72",
       "insee": "72321",
@@ -4767,6 +7200,12 @@
           "color": "#f59e0b",
           "date": "2025-12-10"
         },
+        "Pesticides": {
+          "valeur": 0.013,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-10-28"
+        },
         "THM": {
           "valeur": 0.88,
           "unite": "µg/L",
@@ -4774,9 +7213,9 @@
           "date": "2025-10-28"
         }
       },
-      "score": 75,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
+      "score": 83,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "SAINT-ULPHACE",
@@ -4791,9 +7230,15 @@
           "unite": "mg/L",
           "color": "#f59e0b",
           "date": "2025-04-01"
+        },
+        "Plomb": {
+          "valeur": 4.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-08-26"
         }
       },
-      "score": 50,
+      "score": 75,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
     },
@@ -4842,6 +7287,25 @@
       "score_label": "Moyenne"
     },
     {
+      "nom": "SAINT-VINCENT-DU-LOROUER",
+      "dept": "72",
+      "insee": "72325",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés.  Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 9.2,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2024-08-26"
+        }
+      },
+      "score": 50,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
       "nom": "SAINTE-CEROTTE",
       "dept": "72",
       "insee": "72272",
@@ -4854,6 +7318,25 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-09-22"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINTE-JAMME-SUR-SARTHE",
+      "dept": "72",
+      "insee": "72289",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation non-conforme aux limites de qualité et conforme aux références de qualité.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 0.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-05-06"
         }
       },
       "score": 100,
@@ -4874,11 +7357,42 @@
           "color": "#10b981",
           "date": "2025-12-11"
         },
+        "Plomb": {
+          "valeur": 0.7,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-08-26"
+        },
+        "Pesticides": {
+          "valeur": 0.011,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-12-11"
+        },
         "THM": {
           "valeur": 2.4,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-12-11"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SARCE",
+      "dept": "72",
+      "insee": "72327",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés.  Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 1.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-09"
         }
       },
       "score": 100,
@@ -4898,6 +7412,18 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-12-04"
+        },
+        "Plomb": {
+          "valeur": 0.7,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-07-29"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-10-15"
         },
         "THM": {
           "valeur": 3.2,
@@ -4924,11 +7450,42 @@
           "color": "#10b981",
           "date": "2025-09-03"
         },
+        "Plomb": {
+          "valeur": 0.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-05-09"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-02-12"
+        },
         "THM": {
           "valeur": 6.4,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-02-12"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAVIGNE-SOUS-LE-LUDE",
+      "dept": "72",
+      "insee": "72330",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés.  Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 1.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-09-17"
         }
       },
       "score": 100,
@@ -4948,6 +7505,12 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-09-25"
+        },
+        "Plomb": {
+          "valeur": 1.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-07-22"
         }
       },
       "score": 100,
@@ -4967,6 +7530,18 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-10-02"
+        },
+        "Plomb": {
+          "valeur": "<0,2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-08-10"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-03-04"
         },
         "THM": {
           "valeur": 0.81,
@@ -4993,6 +7568,18 @@
           "color": "#f59e0b",
           "date": "2025-11-06"
         },
+        "Plomb": {
+          "valeur": 1.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-08-01"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-23"
+        },
         "THM": {
           "valeur": 1.8,
           "unite": "µg/L",
@@ -5000,9 +7587,9 @@
           "date": "2025-09-23"
         }
       },
-      "score": 75,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
+      "score": 88,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "SILLE-LE-PHILIPPE",
@@ -5036,6 +7623,12 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-11-21"
+        },
+        "Plomb": {
+          "valeur": 1.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-08-20"
         },
         "THM": {
           "valeur": 33.0,
@@ -5086,6 +7679,12 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2023-05-23"
+        },
+        "Plomb": {
+          "valeur": 0.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-15"
         }
       },
       "score": 100,
@@ -5105,6 +7704,18 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-10-08"
+        },
+        "Plomb": {
+          "valeur": 0.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-04-03"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-08-19"
         },
         "THM": {
           "valeur": 12.0,
@@ -5131,6 +7742,18 @@
           "color": "#10b981",
           "date": "2025-09-02"
         },
+        "Plomb": {
+          "valeur": 0.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-10-08"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-05-15"
+        },
         "THM": {
           "valeur": 7.6,
           "unite": "µg/L",
@@ -5153,6 +7776,18 @@
         "Nitrates": {
           "valeur": 7.1,
           "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-09-23"
+        },
+        "Plomb": {
+          "valeur": 2.1,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-05-22"
+        },
+        "Pesticides": {
+          "valeur": 0.06,
+          "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-09-23"
         },
@@ -5200,6 +7835,12 @@
           "color": "#10b981",
           "date": "2025-06-18"
         },
+        "Plomb": {
+          "valeur": 0.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-10-08"
+        },
         "THM": {
           "valeur": 51.0,
           "unite": "µg/L",
@@ -5207,9 +7848,28 @@
           "date": "2025-10-08"
         }
       },
-      "score": 75,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
+      "score": 83,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SPAY",
+      "dept": "72",
+      "insee": "72344",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés.  Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 1.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-07-08"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "SURFONDS",
@@ -5244,6 +7904,18 @@
           "color": "#10b981",
           "date": "2025-10-22"
         },
+        "Plomb": {
+          "valeur": 1.1,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-07-30"
+        },
+        "Pesticides": {
+          "valeur": 0.021,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-10-22"
+        },
         "THM": {
           "valeur": 23.0,
           "unite": "µg/L",
@@ -5269,6 +7941,12 @@
           "color": "#f59e0b",
           "date": "2025-05-05"
         },
+        "Plomb": {
+          "valeur": 8.8,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2024-06-14"
+        },
         "THM": {
           "valeur": 22.0,
           "unite": "µg/L",
@@ -5276,9 +7954,28 @@
           "date": "2020-10-16"
         }
       },
-      "score": 75,
+      "score": 67,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
+    },
+    {
+      "nom": "TASSILLE",
+      "dept": "72",
+      "insee": "72348",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 0.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-04-23"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "TEILLE",
@@ -5300,6 +7997,25 @@
       "score_label": "Moyenne"
     },
     {
+      "nom": "TELOCHE",
+      "dept": "72",
+      "insee": "72350",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 0.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-11-27"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
       "nom": "TENNIE",
       "dept": "72",
       "insee": "72351",
@@ -5313,11 +8029,36 @@
           "color": "#10b981",
           "date": "2025-09-17"
         },
+        "Plomb": {
+          "valeur": 1.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-07-04"
+        },
         "THM": {
           "valeur": 18.0,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2023-07-04"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "TERREHAULT",
+      "dept": "72",
+      "insee": "72352",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 1.7,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-04-09"
         }
       },
       "score": 100,
@@ -5338,6 +8079,18 @@
           "color": "#f59e0b",
           "date": "2025-12-30"
         },
+        "Plomb": {
+          "valeur": 24.6,
+          "unite": "µg/L",
+          "color": "#ef4444",
+          "date": "2023-04-26"
+        },
+        "Pesticides": {
+          "valeur": 0.11,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2025-07-02"
+        },
         "THM": {
           "valeur": 5.4,
           "unite": "µg/L",
@@ -5345,7 +8098,7 @@
           "date": "2025-07-02"
         }
       },
-      "score": 75,
+      "score": 50,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
     },
@@ -5388,6 +8141,25 @@
       "score_label": "Bonne"
     },
     {
+      "nom": "THOIRE-SUR-DINAN",
+      "dept": "72",
+      "insee": "72356",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 0.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-07-31"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
       "nom": "THOREE-LES-PINS",
       "dept": "72",
       "insee": "72357",
@@ -5398,6 +8170,18 @@
         "Nitrates": {
           "valeur": 11.0,
           "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-07-22"
+        },
+        "Plomb": {
+          "valeur": 2.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-05-22"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-07-22"
         },
@@ -5425,9 +8209,15 @@
           "unite": "mg/L",
           "color": "#f59e0b",
           "date": "2025-11-25"
+        },
+        "Plomb": {
+          "valeur": 0.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-05-23"
         }
       },
-      "score": 50,
+      "score": 75,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
     },
@@ -5444,11 +8234,23 @@
           "unite": "mg/L",
           "color": "#f59e0b",
           "date": "2025-10-06"
+        },
+        "Plomb": {
+          "valeur": 2.1,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-10-21"
+        },
+        "Pesticides": {
+          "valeur": 0.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2018-02-23"
         }
       },
-      "score": 50,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
+      "score": 83,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "TRANGE",
@@ -5458,11 +8260,36 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Plomb": {
+          "valeur": 0.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-17"
+        },
         "THM": {
           "valeur": 19.0,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-09-17"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "TRONCHET (LE)",
+      "dept": "72",
+      "insee": "72362",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés à l'exception du paramètre nickel (760µg/L). La valeur mesurée après purge est conforme (2,7µg/L). Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 3.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-07-23"
         }
       },
       "score": 100,
@@ -5483,11 +8310,42 @@
           "color": "#10b981",
           "date": "2025-07-01"
         },
+        "Plomb": {
+          "valeur": 1.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-06-17"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-07-01"
+        },
         "THM": {
           "valeur": 2.6,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-07-01"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "VAL D’ETANGSON",
+      "dept": "72",
+      "insee": "72128",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 0.8,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-06-17"
         }
       },
       "score": 100,
@@ -5507,6 +8365,12 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2024-08-12"
+        },
+        "Plomb": {
+          "valeur": 1.7,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-07-06"
         }
       },
       "score": 100,
@@ -5531,6 +8395,82 @@
       "score": 50,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
+    },
+    {
+      "nom": "VALLON-SUR-GEE",
+      "dept": "72",
+      "insee": "72367",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés.  Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 2.1,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-05-06"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "VANCE",
+      "dept": "72",
+      "insee": "72368",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés.  Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 1.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-08-24"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "VERNEIL-LE-CHETIF",
+      "dept": "72",
+      "insee": "72369",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés.  Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 1.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-08-26"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "VERNIE",
+      "dept": "72",
+      "insee": "72370",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 1.8,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-26"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "VEZOT",
@@ -5565,6 +8505,18 @@
           "color": "#f59e0b",
           "date": "2025-12-30"
         },
+        "Plomb": {
+          "valeur": 0.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-12"
+        },
+        "Pesticides": {
+          "valeur": 0.012,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-05-06"
+        },
         "THM": {
           "valeur": 3.4,
           "unite": "µg/L",
@@ -5572,9 +8524,9 @@
           "date": "2025-05-06"
         }
       },
-      "score": 75,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
+      "score": 88,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "VILLAINES-LA-CARELLE",
@@ -5596,6 +8548,44 @@
       "score_label": "Bonne"
     },
     {
+      "nom": "VILLAINES-SOUS-LUCE",
+      "dept": "72",
+      "insee": "72376",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux normes en vigueur pour l'ensemble des paramètres mesurés.  Les teneurs en plomb, cuivre et nickel ne valent que pour le point d'utilisation où elles ont été mesurées. En effet, compte tenu de l'influence du réseau de distribution d'eau (réseau intérieur et éventuellement,branchement public) sur la dissolution des métaux, ces valeurs ne sont pas représentatives de la qualité de l'eau pour l'ensemble des consommateurs du réseau de distribution. En cas de valeur proche ou supérieure à une des limites, il est conseillé d'assurer un écoulement d'eau, au robinet concerné, avant utilisation, voir de procéder à un changement de robinetterie.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 0.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-06-03"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "VILLAINES-SOUS-MALICORNE",
+      "dept": "72",
+      "insee": "72377",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 0.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-05-05"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
       "nom": "VILLENEUVE-EN-PERSEIGNE",
       "dept": "72",
       "insee": "72137",
@@ -5606,6 +8596,12 @@
         "Nitrates": {
           "valeur": "<0,5",
           "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-04-24"
+        },
+        "Plomb": {
+          "valeur": 2.8,
+          "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-04-24"
         },
@@ -5683,11 +8679,36 @@
           "unite": "mg/L",
           "color": "#f59e0b",
           "date": "2025-05-06"
+        },
+        "Plomb": {
+          "valeur": 0.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-10-09"
         }
       },
-      "score": 50,
+      "score": 75,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
+    },
+    {
+      "nom": "VOIVRES-LES-LE-MANS",
+      "dept": "72",
+      "insee": "72381",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 1.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-04-15"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "VOUVRAY-SUR-HUISNE",
@@ -5702,6 +8723,12 @@
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-05-12"
+        },
+        "Plomb": {
+          "valeur": 0.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-04-12"
         }
       },
       "score": 100,
@@ -19474,39 +22501,11 @@
   ],
   "nappes": [
     {
-      "nom": "Lavernat",
-      "dept": "72",
-      "code_bss": "03938X0035/PZ12",
-      "current": 108.738,
-      "history": [
-        108.794,
-        108.809,
-        108.794,
-        108.761,
-        108.778,
-        108.768,
-        108.779,
-        108.76,
-        108.752,
-        108.737,
-        108.76,
-        108.755,
-        108.781,
-        108.738
-      ],
-      "year_ago": 108.24,
-      "lat": 47.719172037,
-      "lng": 0.340983681,
-      "color": "#3b82f6"
-    },
-    {
       "nom": "Cherré-Au",
       "dept": "72",
       "code_bss": "03234X0535/PZ21",
-      "current": 96.384,
+      "current": 96.371,
       "history": [
-        96.477,
-        96.468,
         96.462,
         96.454,
         96.446,
@@ -19518,9 +22517,11 @@
         96.405,
         96.399,
         96.391,
-        96.384
+        96.384,
+        96.377,
+        96.371
       ],
-      "year_ago": 96.68,
+      "year_ago": 96.64,
       "lat": 48.16876397,
       "lng": 0.674841117,
       "color": "#ef4444"
@@ -19529,10 +22530,8 @@
       "nom": "Parcé-sur-Sarthe",
       "dept": "72",
       "code_bss": "03922X0027/S1",
-      "current": 44.524,
+      "current": 44.491,
       "history": [
-        44.908,
-        44.895,
         44.867,
         44.8,
         44.79,
@@ -19544,21 +22543,47 @@
         44.601,
         44.603,
         44.596,
-        44.524
+        44.524,
+        44.566,
+        44.491
       ],
-      "year_ago": 45.02,
+      "year_ago": 44.94,
       "lat": 47.829099453,
       "lng": -0.219859493,
       "color": "#ef4444"
     },
     {
+      "nom": "Lavernat",
+      "dept": "72",
+      "code_bss": "03938X0035/PZ12",
+      "current": 108.743,
+      "history": [
+        108.794,
+        108.761,
+        108.778,
+        108.768,
+        108.779,
+        108.76,
+        108.752,
+        108.737,
+        108.76,
+        108.755,
+        108.781,
+        108.738,
+        108.76,
+        108.743
+      ],
+      "year_ago": 108.08,
+      "lat": 47.719172037,
+      "lng": 0.340983681,
+      "color": "#3b82f6"
+    },
+    {
       "nom": "Saint-Pierre-du-Lorouër",
       "dept": "72",
       "code_bss": "03946X0015/PZ22",
-      "current": 74.597,
+      "current": 74.6,
       "history": [
-        74.6,
-        74.6,
         74.6,
         74.593,
         74.598,
@@ -19570,437 +22595,21 @@
         74.59,
         74.598,
         74.598,
-        74.597
+        74.597,
+        74.596,
+        74.6
       ],
-      "year_ago": 74.85,
+      "year_ago": 74.82,
       "lat": 47.777476662,
       "lng": 0.511490567,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Allonnes",
-      "dept": "72",
-      "code_bss": "03586X0145/P2",
-      "current": 52.801,
-      "history": [
-        52.833,
-        52.833,
-        52.828,
-        52.819,
-        52.829,
-        52.825,
-        52.828,
-        52.818,
-        52.809,
-        52.805,
-        52.817,
-        52.813,
-        52.817,
-        52.801
-      ],
-      "year_ago": 53.03,
-      "lat": 47.958210217,
-      "lng": 0.140557071,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Saint-Pierre-des-Bois",
-      "dept": "72",
-      "code_bss": "03577X0012/PZ13",
-      "current": 55.184,
-      "history": [
-        55.34,
-        55.327,
-        55.315,
-        55.301,
-        55.288,
-        55.276,
-        55.263,
-        55.252,
-        55.239,
-        55.227,
-        55.215,
-        55.205,
-        55.194,
-        55.184
-      ],
-      "year_ago": 55.82,
-      "lat": 47.947529293,
-      "lng": -0.133255608,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Conlie",
-      "dept": "72",
-      "code_bss": "03218X0022/PZ23",
-      "current": 117.085,
-      "history": [
-        117.179,
-        117.175,
-        117.163,
-        117.149,
-        117.141,
-        117.137,
-        117.127,
-        117.115,
-        117.119,
-        117.113,
-        117.108,
-        117.101,
-        117.09,
-        117.085
-      ],
-      "year_ago": 118.35,
-      "lat": 48.132628279,
-      "lng": -0.034581042,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Bouloire",
-      "dept": "72",
-      "code_bss": "03593X0017/PZ14",
-      "current": 124.488,
-      "history": [
-        124.453,
-        124.458,
-        124.459,
-        124.437,
-        124.461,
-        124.461,
-        124.48,
-        124.477,
-        124.466,
-        124.453,
-        124.479,
-        124.487,
-        124.509,
-        124.488
-      ],
-      "year_ago": 124.75,
-      "lat": 47.970855817,
-      "lng": 0.542855824,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Le Lude",
-      "dept": "72",
-      "code_bss": "04253X0550/PZ24",
-      "current": 50.21,
-      "history": [
-        50.157,
-        50.164,
-        50.169,
-        50.149,
-        50.173,
-        50.184,
-        50.2,
-        50.202,
-        50.183,
-        50.168,
-        50.195,
-        50.212,
-        50.228,
-        50.21
-      ],
-      "year_ago": 50.29,
-      "lat": 47.654469501,
-      "lng": 0.213676188,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Le Luart",
-      "dept": "72",
-      "code_bss": "03237X0021/PZ16",
-      "current": 81.824,
-      "history": [
-        84.167,
-        84.104,
-        84.044,
-        83.972,
-        83.952,
-        83.913,
-        83.893,
-        83.706,
-        83.312,
-        82.927,
-        82.6,
-        82.306,
-        82.051,
-        81.824
-      ],
-      "year_ago": 85.53,
-      "lat": 48.077359403,
-      "lng": 0.598672785,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Saint-Rémy-du-Val",
-      "dept": "72",
-      "code_bss": "02873X0005/PZ6",
-      "current": 107.877,
-      "history": [
-        107.883,
-        107.898,
-        107.905,
-        107.915,
-        107.901,
-        107.91,
-        107.908,
-        107.913,
-        107.909,
-        107.913,
-        107.91,
-        107.909,
-        107.899,
-        107.877
-      ],
-      "year_ago": 108.04,
-      "lat": 48.33179177,
-      "lng": 0.261465244,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Coulans-sur-Gée",
-      "dept": "72",
-      "code_bss": "03581X0026/PZ5B",
-      "current": 62.242,
-      "history": [
-        62.287,
-        62.285,
-        62.274,
-        62.25,
-        62.258,
-        62.246,
-        62.256,
-        62.243,
-        62.224,
-        62.218,
-        62.221,
-        62.236,
-        62.239,
-        62.242
-      ],
-      "year_ago": 62.98,
-      "lat": 47.996406482,
-      "lng": 0.019607987,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Savigné-l'Évêque",
-      "dept": "72",
-      "code_bss": "03228X0048/F",
-      "current": 55.586,
-      "history": [
-        55.63,
-        55.628,
-        55.62,
-        55.614,
-        55.617,
-        55.614,
-        55.611,
-        55.606,
-        55.605,
-        55.61,
-        55.61,
-        55.604,
-        55.596,
-        55.586
-      ],
-      "year_ago": 55.76,
-      "lat": 48.072632,
-      "lng": 0.300606,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Rouessé-Vassé",
-      "dept": "72",
-      "code_bss": "03213X0011/ST-AEP",
-      "current": 124.2,
-      "history": [
-        124.272,
-        124.269,
-        124.262,
-        124.251,
-        124.247,
-        124.243,
-        124.234,
-        124.231,
-        124.224,
-        124.223,
-        124.215,
-        124.21,
-        124.207,
-        124.2
-      ],
-      "year_ago": 124.5,
-      "lat": 48.159152511,
-      "lng": -0.19864035,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Coulongé",
-      "dept": "72",
-      "code_bss": "03937X0031/PZ",
-      "current": 40.371,
-      "history": [
-        40.381,
-        40.387,
-        40.385,
-        40.371,
-        40.39,
-        40.387,
-        40.397,
-        40.39,
-        40.376,
-        40.366,
-        40.382,
-        40.382,
-        40.388,
-        40.371
-      ],
-      "year_ago": 40.92,
-      "lat": 47.700221621,
-      "lng": 0.196024218,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Bouloire",
-      "dept": "72",
-      "code_bss": "03593X0055/PZ",
-      "current": 112.489,
-      "history": [
-        112.571,
-        112.569,
-        112.567,
-        112.552,
-        112.552,
-        112.544,
-        112.531,
-        112.519,
-        112.504,
-        112.496,
-        112.496,
-        112.501,
-        112.493,
-        112.489
-      ],
-      "year_ago": 112.7,
-      "lat": 47.971501323,
-      "lng": 0.543302537,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Villaines-sous-Malicorne",
-      "dept": "72",
-      "code_bss": "03927X0055/PZ",
-      "current": 53.821,
-      "history": [
-        53.831,
-        53.834,
-        53.833,
-        53.829,
-        53.831,
-        53.83,
-        53.829,
-        53.827,
-        53.822,
-        53.818,
-        53.821,
-        53.824,
-        53.821,
-        53.821
-      ],
-      "year_ago": 54.32,
-      "lat": 47.73642944,
-      "lng": -0.116746522,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Ligron",
-      "dept": "72",
-      "code_bss": "03928X0026/PZ",
-      "current": 79.232,
-      "history": [
-        79.331,
-        79.325,
-        79.314,
-        79.293,
-        79.292,
-        79.286,
-        79.286,
-        79.279,
-        79.257,
-        79.243,
-        79.249,
-        79.246,
-        79.25,
-        79.232
-      ],
-      "year_ago": 79.62,
-      "lat": 47.763751629,
-      "lng": -0.022459127,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Mansigné",
-      "dept": "72",
-      "code_bss": "03936X0056/PZ",
-      "current": 45.354,
-      "history": [
-        45.341,
-        45.341,
-        45.342,
-        45.328,
-        45.333,
-        45.336,
-        45.347,
-        45.346,
-        45.335,
-        45.329,
-        45.337,
-        45.347,
-        45.362,
-        45.354
-      ],
-      "year_ago": 45.4,
-      "lat": 47.739598242,
-      "lng": 0.136412631,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Le Lude",
-      "dept": "72",
-      "code_bss": "04253X0549/PZ",
-      "current": 41.571,
-      "history": [
-        41.636,
-        41.64,
-        41.638,
-        41.629,
-        41.633,
-        41.631,
-        41.632,
-        41.628,
-        41.613,
-        41.604,
-        41.599,
-        41.59,
-        41.581,
-        41.571
-      ],
-      "year_ago": 41.86,
-      "lat": 47.654479221,
-      "lng": 0.213715748,
       "color": "#ef4444"
     },
     {
       "nom": "Théligny",
       "dept": "72",
       "code_bss": "03241X2011/PZ32",
-      "current": 161.206,
+      "current": 161.198,
       "history": [
-        161.286,
-        161.282,
         161.275,
         161.264,
         161.264,
@@ -20012,11 +22621,429 @@
         161.23,
         161.225,
         161.221,
-        161.206
+        161.206,
+        161.207,
+        161.198
       ],
-      "year_ago": 161.66,
+      "year_ago": 161.62,
       "lat": 48.177508863,
       "lng": 0.804284453,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Allonnes",
+      "dept": "72",
+      "code_bss": "03586X0145/P2",
+      "current": 52.796,
+      "history": [
+        52.828,
+        52.819,
+        52.829,
+        52.825,
+        52.828,
+        52.818,
+        52.809,
+        52.805,
+        52.817,
+        52.813,
+        52.817,
+        52.801,
+        52.806,
+        52.796
+      ],
+      "year_ago": 53.0,
+      "lat": 47.958210217,
+      "lng": 0.140557071,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Saint-Pierre-des-Bois",
+      "dept": "72",
+      "code_bss": "03577X0012/PZ13",
+      "current": 55.162,
+      "history": [
+        55.315,
+        55.301,
+        55.288,
+        55.276,
+        55.263,
+        55.252,
+        55.239,
+        55.227,
+        55.215,
+        55.205,
+        55.194,
+        55.184,
+        55.172,
+        55.162
+      ],
+      "year_ago": 55.79,
+      "lat": 47.947529293,
+      "lng": -0.133255608,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Conlie",
+      "dept": "72",
+      "code_bss": "03218X0022/PZ23",
+      "current": 117.06,
+      "history": [
+        117.127,
+        117.115,
+        117.119,
+        117.113,
+        117.108,
+        117.101,
+        117.09,
+        117.085,
+        117.081,
+        117.077,
+        117.079,
+        117.07,
+        117.069,
+        117.06
+      ],
+      "year_ago": 118.3,
+      "lat": 48.132628279,
+      "lng": -0.034581042,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Bouloire",
+      "dept": "72",
+      "code_bss": "03593X0017/PZ14",
+      "current": 124.495,
+      "history": [
+        124.459,
+        124.437,
+        124.461,
+        124.461,
+        124.48,
+        124.477,
+        124.466,
+        124.453,
+        124.479,
+        124.487,
+        124.509,
+        124.488,
+        124.503,
+        124.495
+      ],
+      "year_ago": 124.67,
+      "lat": 47.970855817,
+      "lng": 0.542855824,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Le Lude",
+      "dept": "72",
+      "code_bss": "04253X0550/PZ24",
+      "current": 50.203,
+      "history": [
+        50.169,
+        50.149,
+        50.173,
+        50.184,
+        50.2,
+        50.202,
+        50.183,
+        50.168,
+        50.195,
+        50.212,
+        50.228,
+        50.21,
+        50.205,
+        50.203
+      ],
+      "year_ago": 50.2,
+      "lat": 47.654469501,
+      "lng": 0.213676188,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Le Luart",
+      "dept": "72",
+      "code_bss": "03237X0021/PZ16",
+      "current": 81.633,
+      "history": [
+        84.044,
+        83.972,
+        83.952,
+        83.913,
+        83.893,
+        83.706,
+        83.312,
+        82.927,
+        82.6,
+        82.306,
+        82.051,
+        81.824,
+        81.627,
+        81.633
+      ],
+      "year_ago": 85.47,
+      "lat": 48.077359403,
+      "lng": 0.598672785,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Coulans-sur-Gée",
+      "dept": "72",
+      "code_bss": "03581X0026/PZ5B",
+      "current": 62.249,
+      "history": [
+        62.274,
+        62.25,
+        62.258,
+        62.246,
+        62.256,
+        62.243,
+        62.224,
+        62.218,
+        62.221,
+        62.236,
+        62.239,
+        62.242,
+        62.236,
+        62.249
+      ],
+      "year_ago": 62.91,
+      "lat": 47.996406482,
+      "lng": 0.019607987,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Savigné-l'Évêque",
+      "dept": "72",
+      "code_bss": "03228X0048/F",
+      "current": 55.574,
+      "history": [
+        55.62,
+        55.614,
+        55.617,
+        55.614,
+        55.611,
+        55.606,
+        55.605,
+        55.61,
+        55.61,
+        55.604,
+        55.596,
+        55.586,
+        55.58,
+        55.574
+      ],
+      "year_ago": 55.73,
+      "lat": 48.072632,
+      "lng": 0.300606,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Rouessé-Vassé",
+      "dept": "72",
+      "code_bss": "03213X0011/ST-AEP",
+      "current": 124.195,
+      "history": [
+        124.262,
+        124.251,
+        124.247,
+        124.243,
+        124.234,
+        124.231,
+        124.224,
+        124.223,
+        124.215,
+        124.21,
+        124.207,
+        124.2,
+        124.197,
+        124.195
+      ],
+      "year_ago": 124.48,
+      "lat": 48.159152511,
+      "lng": -0.19864035,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Coulongé",
+      "dept": "72",
+      "code_bss": "03937X0031/PZ",
+      "current": 40.362,
+      "history": [
+        40.385,
+        40.371,
+        40.39,
+        40.387,
+        40.397,
+        40.39,
+        40.376,
+        40.366,
+        40.382,
+        40.382,
+        40.388,
+        40.371,
+        40.373,
+        40.362
+      ],
+      "year_ago": 40.82,
+      "lat": 47.700221621,
+      "lng": 0.196024218,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Bouloire",
+      "dept": "72",
+      "code_bss": "03593X0055/PZ",
+      "current": 112.493,
+      "history": [
+        112.567,
+        112.552,
+        112.552,
+        112.544,
+        112.531,
+        112.519,
+        112.504,
+        112.496,
+        112.496,
+        112.501,
+        112.493,
+        112.489,
+        112.484,
+        112.493
+      ],
+      "year_ago": 112.67,
+      "lat": 47.971501323,
+      "lng": 0.543302537,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Villaines-sous-Malicorne",
+      "dept": "72",
+      "code_bss": "03927X0055/PZ",
+      "current": 53.818,
+      "history": [
+        53.833,
+        53.829,
+        53.831,
+        53.83,
+        53.829,
+        53.827,
+        53.822,
+        53.818,
+        53.821,
+        53.824,
+        53.821,
+        53.821,
+        53.817,
+        53.818
+      ],
+      "year_ago": 54.31,
+      "lat": 47.73642944,
+      "lng": -0.116746522,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Ligron",
+      "dept": "72",
+      "code_bss": "03928X0026/PZ",
+      "current": 79.224,
+      "history": [
+        79.314,
+        79.293,
+        79.292,
+        79.286,
+        79.286,
+        79.279,
+        79.257,
+        79.243,
+        79.249,
+        79.246,
+        79.25,
+        79.232,
+        79.232,
+        79.224
+      ],
+      "year_ago": 79.55,
+      "lat": 47.763751629,
+      "lng": -0.022459127,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Mansigné",
+      "dept": "72",
+      "code_bss": "03936X0056/PZ",
+      "current": 45.358,
+      "history": [
+        45.342,
+        45.328,
+        45.333,
+        45.336,
+        45.347,
+        45.346,
+        45.335,
+        45.329,
+        45.337,
+        45.347,
+        45.362,
+        45.354,
+        45.359,
+        45.358
+      ],
+      "year_ago": 45.34,
+      "lat": 47.739598242,
+      "lng": 0.136412631,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Le Lude",
+      "dept": "72",
+      "code_bss": "04253X0549/PZ",
+      "current": 41.542,
+      "history": [
+        41.638,
+        41.629,
+        41.633,
+        41.631,
+        41.632,
+        41.628,
+        41.613,
+        41.604,
+        41.599,
+        41.59,
+        41.581,
+        41.571,
+        41.555,
+        41.542
+      ],
+      "year_ago": 41.83,
+      "lat": 47.654479221,
+      "lng": 0.213715748,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Saint-Rémy-du-Val",
+      "dept": "72",
+      "code_bss": "02873X0005/PZ6",
+      "current": 107.883,
+      "history": [
+        107.905,
+        107.915,
+        107.901,
+        107.91,
+        107.908,
+        107.913,
+        107.909,
+        107.913,
+        107.91,
+        107.909,
+        107.899,
+        107.877,
+        107.867,
+        107.883
+      ],
+      "year_ago": 108.02,
+      "lat": 48.33179177,
+      "lng": 0.261465244,
       "color": "#ef4444"
     }
   ],
