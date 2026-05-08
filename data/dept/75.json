@@ -3,8 +3,8 @@
   "nom": "Paris",
   "slug": "paris",
   "region": "Île-de-France",
-  "updated": "07/05/2026 à 13:45",
-  "score_eau": 83,
+  "updated": "08/05/2026 à 13:11",
+  "score_eau": 72,
   "nb_communes": 3,
   "potable": [
     {
@@ -15,6 +15,12 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 29.0,
+          "unite": "mg/L",
+          "color": "#f59e0b",
+          "date": "2025-12-26"
+        },
         "Pesticides": {
           "valeur": 0.019,
           "unite": "µg/L",
@@ -28,7 +34,7 @@
           "date": "2025-12-11"
         }
       },
-      "score": 100,
+      "score": 83,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -38,8 +44,14 @@
       "insee": "75056",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation non-conforme aux limites de qualité et conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 40.0,
+          "unite": "mg/L",
+          "color": "#f59e0b",
+          "date": "2025-12-30"
+        },
         "Plomb": {
           "valeur": 12.0,
           "unite": "µg/L",
@@ -69,8 +81,14 @@
       "insee": "92064",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 37.0,
+          "unite": "mg/L",
+          "color": "#f59e0b",
+          "date": "2025-12-16"
+        },
         "Pesticides": {
           "valeur": 0.013,
           "unite": "µg/L",
@@ -84,7 +102,7 @@
           "date": "2025-12-04"
         }
       },
-      "score": 100,
+      "score": 83,
       "score_color": "#10b981",
       "score_label": "Bonne"
     }
