@@ -3,7 +3,7 @@
   "nom": "Gers",
   "slug": "gers",
   "region": "Occitanie",
-  "updated": "13/05/2026 à 14:02",
+  "updated": "14/05/2026 à 13:50",
   "score_eau": 99,
   "nb_communes": 467,
   "potable": [
@@ -68777,39 +68777,11 @@
   ],
   "nappes": [
     {
-      "nom": "Polastron",
-      "dept": "32",
-      "code_bss": "10082X0001/F",
-      "current": 109.856,
-      "history": [
-        109.859,
-        109.878,
-        109.864,
-        109.856,
-        109.848,
-        109.847,
-        109.855,
-        109.851,
-        109.87,
-        109.877,
-        109.882,
-        109.855,
-        109.87,
-        109.856
-      ],
-      "year_ago": 110.08,
-      "lat": 43.521514492,
-      "lng": 0.876623753,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Monbardon",
       "dept": "32",
       "code_bss": "10078X0001/F",
-      "current": 171.861,
+      "current": 171.863,
       "history": [
-        171.865,
-        171.866,
         171.865,
         171.865,
         171.862,
@@ -68821,7 +68793,9 @@
         171.868,
         171.866,
         171.866,
-        171.861
+        171.861,
+        171.864,
+        171.863
       ],
       "year_ago": 172.18,
       "lat": 43.386791615,
@@ -68829,15 +68803,37 @@
       "color": "#ef4444"
     },
     {
+      "nom": "Polastron",
+      "dept": "32",
+      "code_bss": "10082X0001/F",
+      "current": 109.888,
+      "history": [
+        109.864,
+        109.856,
+        109.848,
+        109.847,
+        109.855,
+        109.851,
+        109.87,
+        109.877,
+        109.882,
+        109.855,
+        109.87,
+        109.856,
+        109.868,
+        109.888
+      ],
+      "year_ago": 110.08,
+      "lat": 43.521514492,
+      "lng": 0.876623753,
+      "color": "#ef4444"
+    },
+    {
       "nom": "Tarsac",
       "dept": "32",
       "code_bss": "09793X0011/F",
-      "current": 98.95,
+      "current": 98.904,
       "history": [
-        98.847,
-        98.844,
-        98.838,
-        98.836,
         98.834,
         98.829,
         98.826,
@@ -68847,9 +68843,13 @@
         98.966,
         98.951,
         98.955,
-        98.95
+        98.95,
+        98.94,
+        98.925,
+        98.911,
+        98.904
       ],
-      "year_ago": 99.22,
+      "year_ago": 99.17,
       "lat": 43.668135616,
       "lng": -0.112822644,
       "color": "#ef4444"
@@ -68858,10 +68858,8 @@
       "nom": "Nogaro",
       "dept": "32",
       "code_bss": "BSS003AFAC/X",
-      "current": 96.504,
+      "current": 96.516,
       "history": [
-        96.514,
-        96.525,
         96.518,
         96.51,
         96.506,
@@ -68873,7 +68871,9 @@
         96.517,
         96.503,
         96.511,
-        96.504
+        96.504,
+        96.507,
+        96.516
       ],
       "year_ago": 96.41,
       "lat": 43.756145,
@@ -68882,66 +68882,5 @@
     }
   ],
   "air": [],
-  "pollen": [
-    {
-      "dept": "32",
-      "lib_zone": "GERS",
-      "date": "2026-05-14",
-      "indice_global": 3,
-      "label_global": "Moyen",
-      "color_global": "#f59e0b",
-      "taxa": {
-        "Graminées": {
-          "indice": 2,
-          "label": "Faible",
-          "color": "#a3e635"
-        },
-        "Olivier": {
-          "indice": 2,
-          "label": "Faible",
-          "color": "#a3e635"
-        },
-        "Cyprès": {
-          "indice": 1,
-          "label": "Très faible",
-          "color": "#10b981"
-        },
-        "Platane": {
-          "indice": 1,
-          "label": "Très faible",
-          "color": "#10b981"
-        },
-        "Ambroisie": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        },
-        "Frêne": {
-          "indice": 1,
-          "label": "Très faible",
-          "color": "#10b981"
-        },
-        "Chêne": {
-          "indice": 3,
-          "label": "Moyen",
-          "color": "#f59e0b"
-        },
-        "Urticacées": {
-          "indice": 1,
-          "label": "Très faible",
-          "color": "#10b981"
-        },
-        "Bouleau": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        },
-        "Armoise": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    }
-  ]
+  "pollen": []
 }
