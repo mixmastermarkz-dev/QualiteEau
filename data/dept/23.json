@@ -3,8 +3,8 @@
   "nom": "Creuse",
   "slug": "creuse",
   "region": "Nouvelle-Aquitaine",
-  "updated": "16/05/2026 à 13:00",
-  "score_eau": 93,
+  "updated": "18/05/2026 à 15:43",
+  "score_eau": 94,
   "nb_communes": 256,
   "potable": [
     {
@@ -13,31 +13,55 @@
       "insee": "23001",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception de l'équilibre calco-carbonique. Eau agressive qui nécessite une optimisation du traitement de reminéralisation.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 4.7,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-03-18"
+        },
         "pH": {
-          "valeur": 7.8,
+          "valeur": 7.7,
           "unite": "unité pH",
           "color": "#10b981",
-          "date": "2025-09-24"
+          "date": "2026-03-18"
         },
         "Chlore": {
-          "valeur": 0.09,
+          "valeur": 0.11,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-09-24"
+          "date": "2026-03-18"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-09-24"
+          "date": "2026-03-18"
         },
-        "THM": {
-          "valeur": 44.993,
+        "Calcaire (TH)": {
+          "valeur": 7.8,
+          "unite": "°f",
+          "color": "#10b981",
+          "date": "2026-03-18"
+        },
+        "Plomb": {
+          "valeur": "<0,1",
           "unite": "µg/L",
           "color": "#10b981",
-          "date": "2022-04-20"
+          "date": "2026-03-18"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-18"
+        },
+        "THM": {
+          "valeur": 16.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-18"
         }
       },
       "score": 100,
@@ -302,37 +326,37 @@
       "insee": "23008",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception du paramètre conductivité. Une optimisation du traitement de reminéralisation est nécessaire.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement.",
       "parametres": {
         "Nitrates": {
-          "valeur": 3.2,
+          "valeur": 3.8,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2026-02-12"
+          "date": "2026-03-26"
         },
         "pH": {
-          "valeur": 7.7,
+          "valeur": 7.8,
           "unite": "unité pH",
           "color": "#10b981",
-          "date": "2026-02-12"
+          "date": "2026-03-26"
         },
         "Chlore": {
-          "valeur": 0.11,
+          "valeur": 0.27,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2026-02-12"
+          "date": "2026-03-26"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2026-02-12"
+          "date": "2026-03-26"
         },
         "Calcaire (TH)": {
-          "valeur": 7.9,
+          "valeur": 9.1,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2026-02-12"
+          "date": "2026-03-26"
         },
         "Plomb": {
           "valeur": "<2,00",
@@ -486,19 +510,19 @@
       "insee": "23012",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
+      "conclusion": "Les références de qualité, définies par le Code de la Santé Publique, ne sont pas satisfaites pour les paramètres pH, conductivité et coliformes totaux. Cette eau très peu minéralisée, agressive pour les métaux, nécessite un traitement de neutralisation suivi d'une désinfection permanente.",
       "parametres": {
         "Nitrates": {
-          "valeur": 3.1,
+          "valeur": 3.8,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-10-14"
+          "date": "2026-03-25"
         },
         "pH": {
           "valeur": 5.6,
           "unite": "unité pH",
           "color": "#ef4444",
-          "date": "2025-12-16"
+          "date": "2026-03-25"
         },
         "Chlore": {
           "valeur": "<0,03",
@@ -510,13 +534,13 @@
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-16"
+          "date": "2026-03-25"
         },
         "Calcaire (TH)": {
-          "valeur": 1.0,
+          "valeur": "<1",
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-10-14"
+          "date": "2026-03-25"
         },
         "Pesticides": {
           "valeur": "<SEUIL",
@@ -639,37 +663,37 @@
       "insee": "23015",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau de qualité bactériologique non conforme aux exigences de qualité définies par le Code de la Santé Publique. La présence de ces bactéries nécessite une vérification de l'efficacité du traitement de désinfection. Un nouveau prélèvement sera réalisé pour vérifier l’évolution de la qualité de l’eau desservie aux usagers du réseau.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception du paramètre conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation. De plus, la présence d'une flore interférente importante rend impossible le dénombrement des bactéries coliformes. Une inspection de l’ensemble des ouvrages ainsi qu'une vérification du bon fonctionnement du système de désinfection sont nécessaires. Un nouveau prélèvement sera réalisé pour vérifier l’évolution de la qualité de l’eau.",
       "parametres": {
         "Nitrates": {
-          "valeur": 18.0,
+          "valeur": 14.6,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2026-02-09"
+          "date": "2026-03-03"
         },
         "pH": {
-          "valeur": 6.1,
+          "valeur": 6.3,
           "unite": "unité pH",
           "color": "#ef4444",
-          "date": "2026-02-09"
+          "date": "2026-03-03"
         },
         "Chlore": {
-          "valeur": 0.08,
+          "valeur": 0.29,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2026-02-17"
+          "date": "2026-03-17"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2026-02-17"
+          "date": "2026-03-17"
         },
         "Calcaire (TH)": {
-          "valeur": 2.7,
+          "valeur": 2.8,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2026-02-09"
+          "date": "2026-03-03"
         },
         "Pesticides": {
           "valeur": 0.079,
@@ -780,49 +804,55 @@
       "insee": "23018",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement. Suivi métabolites de pesticides : A noter la présence de métabolites non pertinents de pesticides, l'ESA métolachlore et le chlorothalonil R471811, à des teneurs cependant inférieures à la valeur indicative fixée à 0,9 µg/L. Un programme renforcé de suivi de la qualité de l'eau est en cours.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception de l'équilibre calco-carbonique. Eau agressive qui nécessite une optimisation du traitement de reminéralisation. A noter la présence de métabolites  de pesticides, le chloridazone méthyl desphényl, le chlorothalonil R471811 et l'ESA metolachlore, à des teneurs cependant inférieures à la norme. Un programme renforcé de suivi de la qualité de l'eau est en cours.",
       "parametres": {
         "Nitrates": {
-          "valeur": 18.9,
+          "valeur": 17.0,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2026-02-09"
+          "date": "2026-03-17"
         },
         "pH": {
-          "valeur": 7.3,
+          "valeur": 7.5,
           "unite": "unité pH",
           "color": "#10b981",
-          "date": "2026-02-09"
+          "date": "2026-03-17"
         },
         "Chlore": {
-          "valeur": 0.05,
+          "valeur": 0.45,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2026-02-09"
+          "date": "2026-03-17"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2026-02-09"
+          "date": "2026-03-17"
         },
         "Calcaire (TH)": {
-          "valeur": 9.0,
+          "valeur": 10.2,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2026-02-09"
+          "date": "2026-03-17"
+        },
+        "Plomb": {
+          "valeur": 0.73,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-17"
         },
         "Pesticides": {
-          "valeur": 0.035,
+          "valeur": 0.02,
           "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-09-08"
+          "date": "2026-03-17"
         },
         "THM": {
-          "valeur": 11.6,
+          "valeur": 17.8,
           "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-09-08"
+          "date": "2026-03-17"
         }
       },
       "score": 100,
@@ -961,7 +991,7 @@
           "date": "2026-02-02"
         },
         "pH": {
-          "valeur": 6.4,
+          "valeur": 6.2,
           "unite": "unité pH",
           "color": "#ef4444",
           "date": "2026-02-02"
@@ -1040,26 +1070,38 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception du paramètre conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 7.1,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-03-24"
+        },
         "pH": {
-          "valeur": 6.8,
+          "valeur": 6.4,
           "unite": "unité pH",
-          "color": "#f59e0b",
-          "date": "2025-11-13"
+          "color": "#ef4444",
+          "date": "2026-03-24"
         },
         "Chlore": {
-          "valeur": 0.2,
+          "valeur": 0.39,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-11-13"
+          "date": "2026-03-24"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-11-13"
+          "date": "2026-03-24"
+        },
+        "Calcaire (TH)": {
+          "valeur": "<1",
+          "unite": "°f",
+          "color": "#10b981",
+          "date": "2026-03-24"
         }
       },
-      "score": 83,
+      "score": 80,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -1069,37 +1111,37 @@
       "insee": "23025",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau, très peu minéralisée, corrosive pour les métaux, nécessite la mise en place d'un traitement de neutralisation.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
       "parametres": {
         "Nitrates": {
-          "valeur": 8.8,
+          "valeur": 10.3,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2026-02-24"
+          "date": "2026-03-18"
         },
         "pH": {
-          "valeur": 6.4,
+          "valeur": 6.5,
           "unite": "unité pH",
-          "color": "#ef4444",
-          "date": "2026-02-24"
+          "color": "#f59e0b",
+          "date": "2026-03-18"
         },
         "Chlore": {
-          "valeur": 0.1,
+          "valeur": 0.13,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2026-02-24"
+          "date": "2026-03-18"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2026-02-24"
+          "date": "2026-03-18"
         },
         "Calcaire (TH)": {
-          "valeur": 2.8,
+          "valeur": 2.3,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2026-02-24"
+          "date": "2026-03-18"
         },
         "Pesticides": {
           "valeur": "<SEUIL",
@@ -1108,13 +1150,13 @@
           "date": "2025-03-17"
         },
         "THM": {
-          "valeur": 28.4,
+          "valeur": 18.4,
           "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-12-18"
+          "date": "2026-03-18"
         }
       },
-      "score": 86,
+      "score": 93,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -1157,28 +1199,40 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 8.5,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-03-23"
+        },
         "pH": {
-          "valeur": 6.4,
+          "valeur": 5.9,
           "unite": "unité pH",
           "color": "#ef4444",
-          "date": "2025-12-22"
+          "date": "2026-03-23"
         },
         "Chlore": {
           "valeur": "<0,03",
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2024-12-03"
+          "date": "2026-03-23"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-22"
+          "date": "2026-03-23"
+        },
+        "Calcaire (TH)": {
+          "valeur": "<1",
+          "unite": "°f",
+          "color": "#10b981",
+          "date": "2026-03-23"
         }
       },
-      "score": 67,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
+      "score": 80,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "BOSROGER",
@@ -1272,37 +1326,37 @@
       "insee": "23030",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception du paramètre conductivité. Une optimisation du traitement de neutralisation est nécessaire.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception du paramètre conductivité. Une optimisation du traitement de reminéralisation est nécessaire.",
       "parametres": {
         "Nitrates": {
-          "valeur": 6.3,
+          "valeur": 5.5,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2026-02-05"
+          "date": "2026-03-12"
         },
         "pH": {
           "valeur": 7.5,
           "unite": "unité pH",
           "color": "#10b981",
-          "date": "2026-02-05"
+          "date": "2026-03-12"
         },
         "Chlore": {
-          "valeur": 0.45,
+          "valeur": 0.42,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2026-02-05"
+          "date": "2026-03-12"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2026-02-05"
+          "date": "2026-03-12"
         },
         "Calcaire (TH)": {
-          "valeur": 8.6,
+          "valeur": 8.9,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2026-02-05"
+          "date": "2026-03-12"
         },
         "Plomb": {
           "valeur": "<0,500",
@@ -1421,10 +1475,10 @@
           "date": "2020-05-26"
         },
         "Pesticides": {
-          "valeur": 0.09,
+          "valeur": "<SEUIL",
           "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-12-09"
+          "date": "2026-01-26"
         },
         "THM": {
           "valeur": 21.5,
@@ -1443,37 +1497,37 @@
       "insee": "23033",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement.",
+      "conclusion": "Eau d'alimentation non conforme aux exigences de qualité définies par le Code de la Santé Publique, notamment par la présence d’un métabolite pertinent, le chloridazone desphényl. A noter également la présence d'ESA métolachlore à une teneur cependant inférieure à la norme. Un programme renforcé de suivi de la qualité de l'eau est en cours.",
       "parametres": {
         "Nitrates": {
-          "valeur": 26.0,
+          "valeur": 27.0,
           "unite": "mg/L",
           "color": "#f59e0b",
-          "date": "2025-11-12"
+          "date": "2026-03-05"
         },
         "pH": {
-          "valeur": 7.7,
+          "valeur": 7.5,
           "unite": "unité pH",
           "color": "#10b981",
-          "date": "2025-11-12"
+          "date": "2026-03-05"
         },
         "Chlore": {
-          "valeur": 0.28,
+          "valeur": "<0,03",
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-12-04"
+          "date": "2026-03-05"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-11-12"
+          "date": "2026-03-05"
         },
         "Calcaire (TH)": {
-          "valeur": 10.0,
+          "valeur": 9.1,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-09-29"
+          "date": "2026-03-05"
         },
         "Pesticides": {
           "valeur": 0.161,
@@ -1590,37 +1644,37 @@
       "insee": "23036",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception du paramètre conductivité. Une optimisation du traitement de neutralisation est nécessaire.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement.",
       "parametres": {
         "Nitrates": {
-          "valeur": 3.9,
+          "valeur": 9.3,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2026-02-26"
+          "date": "2026-03-24"
         },
         "pH": {
-          "valeur": 7.2,
+          "valeur": 7.5,
           "unite": "unité pH",
           "color": "#10b981",
-          "date": "2026-02-26"
+          "date": "2026-03-24"
         },
         "Chlore": {
-          "valeur": 0.44,
+          "valeur": 0.28,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2026-02-26"
+          "date": "2026-03-24"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2026-02-26"
+          "date": "2026-03-24"
         },
         "Calcaire (TH)": {
-          "valeur": 8.0,
+          "valeur": 8.9,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2026-02-26"
+          "date": "2026-03-24"
         },
         "Pesticides": {
           "valeur": "<SEUIL",
@@ -2113,23 +2167,35 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception du paramètre conductivité. Une optimisation du traitement de reminéralisation est nécessaire.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 3.4,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-03-10"
+        },
         "pH": {
           "valeur": 8.2,
           "unite": "unité pH",
           "color": "#10b981",
-          "date": "2025-11-24"
+          "date": "2026-03-10"
         },
         "Chlore": {
-          "valeur": 0.17,
+          "valeur": 0.03,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-11-24"
+          "date": "2026-03-10"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-11-24"
+          "date": "2026-03-10"
+        },
+        "Calcaire (TH)": {
+          "valeur": 5.2,
+          "unite": "°f",
+          "color": "#10b981",
+          "date": "2026-03-10"
         }
       },
       "score": 100,
@@ -2237,22 +2303,22 @@
           "date": "2026-02-24"
         },
         "pH": {
-          "valeur": 6.4,
+          "valeur": 6.2,
           "unite": "unité pH",
           "color": "#ef4444",
-          "date": "2026-02-24"
+          "date": "2026-03-19"
         },
         "Chlore": {
           "valeur": "<0,03",
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2026-02-24"
+          "date": "2026-03-19"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2026-02-24"
+          "date": "2026-03-19"
         },
         "Calcaire (TH)": {
           "valeur": 1.8,
@@ -2344,37 +2410,37 @@
       "insee": "23052",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception du paramètre conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
       "parametres": {
         "Nitrates": {
-          "valeur": 15.0,
+          "valeur": 9.1,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-10-14"
+          "date": "2026-03-31"
         },
         "pH": {
           "valeur": 6.5,
           "unite": "unité pH",
           "color": "#f59e0b",
-          "date": "2025-12-03"
+          "date": "2026-03-31"
         },
         "Chlore": {
-          "valeur": 0.29,
+          "valeur": 0.19,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-12-15"
+          "date": "2026-03-31"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-15"
+          "date": "2026-03-31"
         },
         "Calcaire (TH)": {
-          "valeur": 1.3,
+          "valeur": 1.6,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-10-14"
+          "date": "2026-03-31"
         },
         "Pesticides": {
           "valeur": "<SEUIL",
@@ -2814,16 +2880,16 @@
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
       "parametres": {
         "Nitrates": {
-          "valeur": 5.6,
+          "valeur": 3.8,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-10-01"
+          "date": "2026-03-30"
         },
         "pH": {
-          "valeur": 5.8,
+          "valeur": 5.6,
           "unite": "unité pH",
           "color": "#ef4444",
-          "date": "2025-12-02"
+          "date": "2026-03-30"
         },
         "Chlore": {
           "valeur": "<0,03",
@@ -2835,13 +2901,13 @@
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-02"
+          "date": "2026-03-30"
         },
         "Calcaire (TH)": {
-          "valeur": 1.4,
+          "valeur": "<1",
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-10-01"
+          "date": "2026-03-30"
         },
         "Plomb": {
           "valeur": 4.83,
@@ -3016,34 +3082,34 @@
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
       "parametres": {
         "Nitrates": {
-          "valeur": 7.5,
+          "valeur": 7.1,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-10-21"
+          "date": "2026-03-16"
         },
         "pH": {
-          "valeur": 6.3,
+          "valeur": 6.1,
           "unite": "unité pH",
           "color": "#ef4444",
-          "date": "2025-12-09"
+          "date": "2026-03-16"
         },
         "Chlore": {
-          "valeur": 0.53,
+          "valeur": 0.4,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-12-09"
+          "date": "2026-03-16"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-09"
+          "date": "2026-03-16"
         },
         "Calcaire (TH)": {
-          "valeur": 1.1,
+          "valeur": "<1",
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-10-21"
+          "date": "2026-03-16"
         },
         "Plomb": {
           "valeur": 4.42,
@@ -3175,34 +3241,34 @@
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
       "parametres": {
         "Nitrates": {
-          "valeur": 26.0,
+          "valeur": 16.5,
           "unite": "mg/L",
-          "color": "#f59e0b",
-          "date": "2026-02-24"
+          "color": "#10b981",
+          "date": "2026-03-19"
         },
         "pH": {
-          "valeur": 6.3,
+          "valeur": 6.4,
           "unite": "unité pH",
           "color": "#ef4444",
-          "date": "2026-02-24"
+          "date": "2026-03-19"
         },
         "Chlore": {
-          "valeur": "<0,03",
+          "valeur": 0.27,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2026-02-24"
+          "date": "2026-03-19"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2026-02-24"
+          "date": "2026-03-19"
         },
         "Calcaire (TH)": {
-          "valeur": 3.9,
+          "valeur": 3.6,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2026-02-24"
+          "date": "2026-03-19"
         },
         "Plomb": {
           "valeur": 0.688,
@@ -3211,9 +3277,9 @@
           "date": "2020-11-26"
         }
       },
-      "score": 75,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
+      "score": 83,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "CROZE",
@@ -3224,16 +3290,16 @@
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
       "parametres": {
         "Nitrates": {
-          "valeur": 7.1,
+          "valeur": 6.8,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-10-01"
+          "date": "2026-03-30"
         },
         "pH": {
-          "valeur": 6.1,
+          "valeur": 6.0,
           "unite": "unité pH",
           "color": "#ef4444",
-          "date": "2025-12-02"
+          "date": "2026-03-30"
         },
         "Chlore": {
           "valeur": "<0,03",
@@ -3245,13 +3311,13 @@
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-18"
+          "date": "2026-03-30"
         },
         "Calcaire (TH)": {
-          "valeur": 1.2,
+          "valeur": 1.0,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-10-01"
+          "date": "2026-03-30"
         },
         "Pesticides": {
           "valeur": "<SEUIL",
@@ -3319,37 +3385,37 @@
       "insee": "23073",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l'exception de l'équilibre calco-carbonique. Eau agressive qui nécessite une optimisation du traitement de reminéralisation.Il est à noter également la présence de métabolites non pertinents de pesticides,le chlorothalonil R471811 et l'ESA métolachlore, à des teneurs cependant inférieures à à la valeur indicative fixée à 0,9 µg/L.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des bactéries sulfito réductrices. La présence de ces bactéries nécessite une inspection de l’ensemble des ouvrages ainsi qu'une vérification du bon fonctionnement du système de désinfection. De plus, une étude sur le réseau doit être mise en œuvre afin de déceler les sources de contaminations potentielles (double réseau).",
       "parametres": {
         "Nitrates": {
-          "valeur": 18.0,
+          "valeur": 17.6,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-10-14"
+          "date": "2026-03-19"
         },
         "pH": {
-          "valeur": 6.8,
+          "valeur": 7.1,
           "unite": "unité pH",
-          "color": "#f59e0b",
-          "date": "2025-12-18"
+          "color": "#10b981",
+          "date": "2026-03-19"
         },
         "Chlore": {
-          "valeur": 0.28,
+          "valeur": 0.32,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-12-18"
+          "date": "2026-03-19"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-18"
+          "date": "2026-03-19"
         },
         "Calcaire (TH)": {
-          "valeur": 12.6,
+          "valeur": 8.6,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-10-14"
+          "date": "2026-03-19"
         },
         "Pesticides": {
           "valeur": "<SEUIL",
@@ -3364,7 +3430,7 @@
           "date": "2025-10-14"
         }
       },
-      "score": 93,
+      "score": 100,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -3376,26 +3442,38 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception du paramètre conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite la remise en service du traitement de neutralisation.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 25.8,
+          "unite": "mg/L",
+          "color": "#f59e0b",
+          "date": "2026-03-30"
+        },
         "pH": {
           "valeur": 7.2,
           "unite": "unité pH",
           "color": "#10b981",
-          "date": "2025-12-11"
+          "date": "2026-03-30"
         },
         "Chlore": {
-          "valeur": 0.05,
+          "valeur": "<0,03",
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-12-11"
+          "date": "2026-03-30"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-11"
+          "date": "2026-03-30"
+        },
+        "Calcaire (TH)": {
+          "valeur": 3.1,
+          "unite": "°f",
+          "color": "#10b981",
+          "date": "2026-03-30"
         }
       },
-      "score": 100,
+      "score": 90,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -3405,37 +3483,37 @@
       "insee": "23075",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation. De plus, la chloration excessive est inopportune et confère à l'eau des goûts désagréables pour les usagers. Un autocontrôle des teneurs en chlore doit être effectué régulièrement.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception du paramètre conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
       "parametres": {
         "Nitrates": {
-          "valeur": 11.9,
+          "valeur": 11.7,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2026-02-26"
+          "date": "2026-03-19"
         },
         "pH": {
-          "valeur": 6.5,
+          "valeur": 6.7,
           "unite": "unité pH",
           "color": "#f59e0b",
-          "date": "2026-02-26"
+          "date": "2026-03-19"
         },
         "Chlore": {
-          "valeur": 1.5,
+          "valeur": "<0,03",
           "unite": "mg(Cl2)/L",
-          "color": "#f59e0b",
-          "date": "2026-02-26"
+          "color": "#10b981",
+          "date": "2026-03-19"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2026-02-26"
+          "date": "2026-03-19"
         },
         "Calcaire (TH)": {
-          "valeur": 3.6,
+          "valeur": 3.3,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2026-02-26"
+          "date": "2026-03-19"
         },
         "Pesticides": {
           "valeur": 0.073,
@@ -3450,7 +3528,7 @@
           "date": "2025-09-29"
         }
       },
-      "score": 86,
+      "score": 93,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -3460,37 +3538,37 @@
       "insee": "23076",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception du paramètre conductivité. Une optimisation du traitement de reminéralisation est nécessaire.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement.",
       "parametres": {
         "Nitrates": {
-          "valeur": 2.9,
+          "valeur": 3.5,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2026-01-27"
+          "date": "2026-03-26"
         },
         "pH": {
-          "valeur": 7.8,
+          "valeur": 8.1,
           "unite": "unité pH",
           "color": "#10b981",
-          "date": "2026-01-27"
+          "date": "2026-03-26"
         },
         "Chlore": {
-          "valeur": 0.63,
+          "valeur": 0.54,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2026-01-27"
+          "date": "2026-03-26"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2026-01-27"
+          "date": "2026-03-26"
         },
         "Calcaire (TH)": {
-          "valeur": 7.7,
+          "valeur": 9.3,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2026-01-27"
+          "date": "2026-03-26"
         },
         "THM": {
           "valeur": 26.3,
@@ -3509,19 +3587,19 @@
       "insee": "23077",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception du paramètre conductivité. Une optimisation du traitement de neutralisation est nécessaire.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
       "parametres": {
         "Nitrates": {
-          "valeur": 6.3,
+          "valeur": 3.6,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-10-13"
+          "date": "2026-03-23"
         },
         "pH": {
-          "valeur": 8.0,
+          "valeur": 5.5,
           "unite": "unité pH",
-          "color": "#10b981",
-          "date": "2025-12-01"
+          "color": "#ef4444",
+          "date": "2026-03-23"
         },
         "Chlore": {
           "valeur": "<0,03",
@@ -3533,13 +3611,13 @@
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-01"
+          "date": "2026-03-23"
         },
         "Calcaire (TH)": {
-          "valeur": 5.3,
+          "valeur": "<1",
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-10-13"
+          "date": "2026-03-23"
         },
         "Pesticides": {
           "valeur": "<SEUIL",
@@ -3548,7 +3626,7 @@
           "date": "2024-05-30"
         }
       },
-      "score": 100,
+      "score": 83,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -3558,19 +3636,19 @@
       "insee": "23078",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception du paramètre conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
       "parametres": {
         "Nitrates": {
-          "valeur": 6.9,
+          "valeur": 15.9,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-10-14"
+          "date": "2026-03-12"
         },
         "pH": {
-          "valeur": 6.6,
+          "valeur": 6.4,
           "unite": "unité pH",
-          "color": "#f59e0b",
-          "date": "2025-12-04"
+          "color": "#ef4444",
+          "date": "2026-03-12"
         },
         "Chlore": {
           "valeur": "<0,03",
@@ -3582,13 +3660,13 @@
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-04"
+          "date": "2026-03-12"
         },
         "Calcaire (TH)": {
-          "valeur": 1.0,
+          "valeur": 3.2,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-10-14"
+          "date": "2026-03-12"
         },
         "Plomb": {
           "valeur": 3.0,
@@ -3603,7 +3681,7 @@
           "date": "2024-05-13"
         }
       },
-      "score": 93,
+      "score": 86,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -3613,19 +3691,19 @@
       "insee": "23079",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Les références de qualité, définies par le Code de la Santé Publique, ne sont pas satisfaites pour les paramètres pH, conductivité et coliformes totaux. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation. De plus, la présence récurrente de bactéries coliformes doit motiver la mise en place d'une désinfection de l'eau avant distribution.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
       "parametres": {
         "Nitrates": {
-          "valeur": 6.5,
+          "valeur": 5.5,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2026-02-12"
+          "date": "2026-03-05"
         },
         "pH": {
-          "valeur": 5.9,
+          "valeur": 6.1,
           "unite": "unité pH",
           "color": "#ef4444",
-          "date": "2026-02-12"
+          "date": "2026-03-05"
         },
         "Chlore": {
           "valeur": "<0,03",
@@ -3637,13 +3715,13 @@
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2026-02-12"
+          "date": "2026-03-05"
         },
         "Calcaire (TH)": {
           "valeur": "<1",
           "unite": "°f",
           "color": "#10b981",
-          "date": "2026-02-12"
+          "date": "2026-03-05"
         }
       },
       "score": 80,
@@ -3659,16 +3737,16 @@
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
       "parametres": {
         "Nitrates": {
-          "valeur": 3.1,
+          "valeur": 8.8,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-10-28"
+          "date": "2026-03-30"
         },
         "pH": {
-          "valeur": 5.9,
+          "valeur": 5.6,
           "unite": "unité pH",
           "color": "#ef4444",
-          "date": "2025-12-02"
+          "date": "2026-03-30"
         },
         "Chlore": {
           "valeur": "<0,03",
@@ -3680,13 +3758,13 @@
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-02"
+          "date": "2026-03-30"
         },
         "Calcaire (TH)": {
-          "valeur": "<0,5",
+          "valeur": "<1",
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-10-28"
+          "date": "2026-03-30"
         },
         "Pesticides": {
           "valeur": "<SEUIL",
@@ -3705,37 +3783,37 @@
       "insee": "23081",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception du paramètre conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
       "parametres": {
         "Nitrates": {
-          "valeur": 7.3,
+          "valeur": 14.9,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2026-02-05"
+          "date": "2026-03-16"
         },
         "pH": {
-          "valeur": 6.9,
+          "valeur": 7.3,
           "unite": "unité pH",
-          "color": "#f59e0b",
-          "date": "2026-02-05"
+          "color": "#10b981",
+          "date": "2026-03-16"
         },
         "Chlore": {
-          "valeur": 0.73,
+          "valeur": 0.06,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2026-02-05"
+          "date": "2026-03-16"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2026-02-05"
+          "date": "2026-03-16"
         },
         "Calcaire (TH)": {
-          "valeur": "<1",
+          "valeur": 2.1,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2026-02-05"
+          "date": "2026-03-16"
         },
         "Pesticides": {
           "valeur": 0.032,
@@ -3750,7 +3828,7 @@
           "date": "2024-10-29"
         }
       },
-      "score": 93,
+      "score": 100,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -3996,34 +4074,34 @@
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement.",
       "parametres": {
         "Nitrates": {
-          "valeur": 3.5,
+          "valeur": 1.9,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2026-02-05"
+          "date": "2026-03-10"
         },
         "pH": {
-          "valeur": 8.6,
+          "valeur": 8.2,
           "unite": "unité pH",
-          "color": "#f59e0b",
-          "date": "2026-02-05"
+          "color": "#10b981",
+          "date": "2026-03-10"
         },
         "Chlore": {
-          "valeur": 0.28,
+          "valeur": 0.14,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2026-02-05"
+          "date": "2026-03-10"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2026-02-05"
+          "date": "2026-03-10"
         },
         "Calcaire (TH)": {
-          "valeur": 10.8,
+          "valeur": 11.9,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2026-02-05"
+          "date": "2026-03-10"
         },
         "Plomb": {
           "valeur": 0.877,
@@ -4032,7 +4110,7 @@
           "date": "2020-02-26"
         }
       },
-      "score": 92,
+      "score": 100,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -4042,25 +4120,37 @@
       "insee": "23088",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception du paramètre conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception du paramètre conductivité. Cette eau peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation. De plus, la présence d'une flore interférente importante rend impossible le dénombrement des bactéries coliformes. Une inspection de l’ensemble des ouvrages ainsi qu'une vérification du bon fonctionnement du système de désinfection sont nécessaires. Un nouveau prélèvement sera réalisé pour vérifier l’évolution de la qualité de l’eau.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 13.5,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-03-05"
+        },
         "pH": {
-          "valeur": 6.5,
+          "valeur": 6.6,
           "unite": "unité pH",
           "color": "#f59e0b",
-          "date": "2025-12-08"
+          "date": "2026-03-05"
         },
         "Chlore": {
-          "valeur": "<0,03",
+          "valeur": 0.09,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-12-08"
+          "date": "2026-03-23"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-08"
+          "date": "2026-03-23"
+        },
+        "Calcaire (TH)": {
+          "valeur": 2.2,
+          "unite": "°f",
+          "color": "#10b981",
+          "date": "2026-03-05"
         },
         "Plomb": {
           "valeur": "<0,500",
@@ -4069,7 +4159,7 @@
           "date": "2025-06-05"
         }
       },
-      "score": 88,
+      "score": 92,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -4134,19 +4224,19 @@
       "insee": "23090",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
+      "conclusion": "Les références de qualité, définies par le Code de la Santé Publique, ne sont pas satisfaites pour les paramètres pH, conductivité et coliformes totaux. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation. De plus, la présence récurrente de bactéries coliformes doit motiver la mise en place d'une désinfection de l'eau avant distribution.",
       "parametres": {
         "Nitrates": {
-          "valeur": 2.6,
+          "valeur": 2.2,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-10-13"
+          "date": "2026-03-23"
         },
         "pH": {
-          "valeur": 5.2,
+          "valeur": 6.4,
           "unite": "unité pH",
           "color": "#ef4444",
-          "date": "2025-12-11"
+          "date": "2026-03-23"
         },
         "Chlore": {
           "valeur": "<0,03",
@@ -4158,13 +4248,13 @@
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-11"
+          "date": "2026-03-23"
         },
         "Calcaire (TH)": {
-          "valeur": 0.9,
+          "valeur": "<1",
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-10-13"
+          "date": "2026-03-23"
         },
         "Pesticides": {
           "valeur": "<SEUIL",
@@ -4183,37 +4273,37 @@
       "insee": "23091",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH, conductivité et aluminium total. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation. Présence élevée d’aluminium d’origine naturelle. L'alimentation, à partir des captages présentant les teneurs les plus faibles en aluminium, doit être privilégiée.",
       "parametres": {
         "Nitrates": {
-          "valeur": 4.5,
+          "valeur": 3.7,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-10-01"
+          "date": "2026-03-30"
         },
         "pH": {
           "valeur": 5.5,
           "unite": "unité pH",
           "color": "#ef4444",
-          "date": "2025-12-09"
+          "date": "2026-03-30"
         },
         "Chlore": {
-          "valeur": "<0,03",
+          "valeur": 0.09,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-12-09"
+          "date": "2026-03-30"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-09"
+          "date": "2026-03-30"
         },
         "Calcaire (TH)": {
-          "valeur": 0.7,
+          "valeur": "<1",
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-10-01"
+          "date": "2026-03-30"
         },
         "Pesticides": {
           "valeur": "<SEUIL",
@@ -4232,37 +4322,37 @@
       "insee": "23092",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement. A noter cependant la présence d'un métabolite non pertinent de pesticides, l'ESA métolachlore, à une teneur cependant inférieure à la valeur indicative fixée à 0,9µg/L. Un programme renforcé de suivi de la qualité de l'eau est en cours.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception du paramètre conductivité. Une optimisation du traitement de reminéralisation est nécessaire.",
       "parametres": {
         "Nitrates": {
-          "valeur": 19.0,
+          "valeur": 7.5,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-09-24"
+          "date": "2026-03-24"
         },
         "pH": {
-          "valeur": 8.1,
+          "valeur": 8.0,
           "unite": "unité pH",
           "color": "#10b981",
-          "date": "2025-11-26"
+          "date": "2026-03-24"
         },
         "Chlore": {
-          "valeur": "<0,03",
+          "valeur": 0.49,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-11-26"
+          "date": "2026-03-24"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-11-26"
+          "date": "2026-03-24"
         },
         "Calcaire (TH)": {
-          "valeur": 9.8,
+          "valeur": 8.0,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-09-24"
+          "date": "2026-03-24"
         },
         "Plomb": {
           "valeur": "<0,500",
@@ -4293,25 +4383,37 @@
       "insee": "23093",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau de qualité bactériologique non conforme aux exigences de qualité définies par le Code de la Santé Publique. Un renforcement temporaire de la désinfection a été demandé. Un nouveau prélèvement sera réalisé pour vérifier l’évolution de la qualité de l’eau desservie aux usagers du réseau.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 11.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-03-04"
+        },
         "pH": {
-          "valeur": 7.5,
+          "valeur": 8.0,
           "unite": "unité pH",
           "color": "#10b981",
-          "date": "2025-11-24"
+          "date": "2026-03-04"
         },
         "Chlore": {
-          "valeur": 0.05,
+          "valeur": 0.48,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-12-03"
+          "date": "2026-03-04"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-03"
+          "date": "2026-03-04"
+        },
+        "Calcaire (TH)": {
+          "valeur": 17.4,
+          "unite": "°f",
+          "color": "#10b981",
+          "date": "2026-03-04"
         }
       },
       "score": 100,
@@ -4382,34 +4484,34 @@
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement.",
       "parametres": {
         "Nitrates": {
-          "valeur": 10.6,
+          "valeur": 11.9,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2026-02-10"
+          "date": "2026-03-18"
         },
         "pH": {
-          "valeur": 7.5,
+          "valeur": 7.4,
           "unite": "unité pH",
           "color": "#10b981",
-          "date": "2026-02-10"
+          "date": "2026-03-18"
         },
         "Chlore": {
-          "valeur": 0.13,
+          "valeur": 0.43,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2026-02-10"
+          "date": "2026-03-18"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2026-02-10"
+          "date": "2026-03-18"
         },
         "Calcaire (TH)": {
-          "valeur": 8.9,
+          "valeur": 8.8,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2026-02-10"
+          "date": "2026-03-18"
         },
         "Plomb": {
           "valeur": "< 2,00",
@@ -4514,37 +4616,37 @@
       "insee": "23099",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception du paramètre conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
       "parametres": {
         "Nitrates": {
-          "valeur": 9.3,
+          "valeur": 4.0,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-12-04"
+          "date": "2026-03-23"
         },
         "pH": {
-          "valeur": 6.3,
+          "valeur": 5.8,
           "unite": "unité pH",
           "color": "#ef4444",
-          "date": "2025-12-04"
+          "date": "2026-03-23"
         },
         "Chlore": {
-          "valeur": "<0,03",
+          "valeur": 0.12,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-12-11"
+          "date": "2026-03-23"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-11"
+          "date": "2026-03-23"
         },
         "Calcaire (TH)": {
-          "valeur": 2.2,
+          "valeur": "<1",
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-10-28"
+          "date": "2026-03-23"
         },
         "Pesticides": {
           "valeur": "<SEUIL",
@@ -4870,28 +4972,40 @@
       "insee": "23107",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception du paramètre conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
+      "conclusion": "Eau de qualité bactériologique non conforme aux exigences de qualité définies par le Code de la Santé Publique. La présence de ces bactéries nécessite une inspection des ouvrages de collecte et de stockage. De plus, une étude sur le réseau doit être mise en œuvre afin de déceler les sources de contaminations potentielles (double réseau). Un nouveau prélèvement sera réalisé pour vérifier l'évolution de la qualité de l'eau.",
       "parametres": {
-        "pH": {
-          "valeur": 6.9,
-          "unite": "unité pH",
+        "Nitrates": {
+          "valeur": 26.1,
+          "unite": "mg/L",
           "color": "#f59e0b",
-          "date": "2025-12-11"
+          "date": "2026-03-30"
+        },
+        "pH": {
+          "valeur": 7.2,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-03-30"
         },
         "Chlore": {
-          "valeur": 0.44,
+          "valeur": 0.49,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-12-11"
+          "date": "2026-03-30"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-11"
+          "date": "2026-03-30"
+        },
+        "Calcaire (TH)": {
+          "valeur": 3.2,
+          "unite": "°f",
+          "color": "#10b981",
+          "date": "2026-03-30"
         }
       },
-      "score": 83,
+      "score": 90,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -4963,25 +5077,37 @@
       "insee": "23110",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement. Il faut toutefois noter un dénombrement significatif de germes totaux.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 3.5,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-03-19"
+        },
         "pH": {
-          "valeur": 8.0,
+          "valeur": 8.1,
           "unite": "unité pH",
           "color": "#10b981",
-          "date": "2025-02-25"
+          "date": "2026-03-19"
         },
         "Chlore": {
-          "valeur": 0.08,
+          "valeur": "<0,03",
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-02-25"
+          "date": "2026-03-19"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-02-25"
+          "date": "2026-03-19"
+        },
+        "Calcaire (TH)": {
+          "valeur": 9.2,
+          "unite": "°f",
+          "color": "#10b981",
+          "date": "2026-03-19"
         },
         "Plomb": {
           "valeur": 0.557,
@@ -5368,37 +5494,37 @@
       "insee": "23119",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres conductivité et équilibre calco-carbonique. Eau agressive qui nécessite une vérification du bon fonctionnement du traitement de reminéralisation.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite la remise en service du traitement de neutralisation.",
       "parametres": {
         "Nitrates": {
-          "valeur": 6.4,
+          "valeur": 9.1,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-10-21"
+          "date": "2026-03-16"
         },
         "pH": {
-          "valeur": 6.7,
+          "valeur": 6.1,
           "unite": "unité pH",
-          "color": "#f59e0b",
-          "date": "2025-10-21"
+          "color": "#ef4444",
+          "date": "2026-03-16"
         },
         "Chlore": {
           "valeur": 0.35,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-10-21"
+          "date": "2026-03-16"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-10-21"
+          "date": "2026-03-16"
         },
         "Calcaire (TH)": {
-          "valeur": 3.1,
+          "valeur": 1.3,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-10-21"
+          "date": "2026-03-16"
         },
         "Plomb": {
           "valeur": "<0,500",
@@ -5419,7 +5545,7 @@
           "date": "2025-10-21"
         }
       },
-      "score": 94,
+      "score": 88,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -5429,30 +5555,42 @@
       "insee": "23120",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation. De plus, la présence d'une flore interférente importante rend impossible le dénombrement des coliformes totaux et des enterocoques. Une inspection de l’ensemble des ouvrages ainsi qu'une vérification du bon fonctionnement du système de désinfection sont nécessaires. Un nouveau prélèvement sera réalisé pour vérifier l’évolution de la qualité de l’eau.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 9.9,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-03-09"
+        },
         "pH": {
-          "valeur": 5.9,
+          "valeur": 5.8,
           "unite": "unité pH",
           "color": "#ef4444",
-          "date": "2025-01-07"
+          "date": "2026-03-09"
         },
         "Chlore": {
-          "valeur": 0.07,
+          "valeur": "<0,03",
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-01-07"
+          "date": "2026-03-09"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-01-07"
+          "date": "2026-03-09"
+        },
+        "Calcaire (TH)": {
+          "valeur": "<1",
+          "unite": "°f",
+          "color": "#10b981",
+          "date": "2026-03-09"
         }
       },
-      "score": 67,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
+      "score": 80,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "MANSAT-LA-COURRIERE",
@@ -5511,23 +5649,35 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 3.3,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-03-19"
+        },
         "pH": {
           "valeur": 7.9,
           "unite": "unité pH",
           "color": "#10b981",
-          "date": "2025-04-24"
+          "date": "2026-03-19"
         },
         "Chlore": {
-          "valeur": "<0,03",
+          "valeur": 0.06,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-04-24"
+          "date": "2026-03-19"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-04-24"
+          "date": "2026-03-19"
+        },
+        "Calcaire (TH)": {
+          "valeur": 9.3,
+          "unite": "°f",
+          "color": "#10b981",
+          "date": "2026-03-19"
         },
         "THM": {
           "valeur": 30.1,
@@ -5592,16 +5742,16 @@
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
       "parametres": {
         "Nitrates": {
-          "valeur": 9.2,
+          "valeur": 9.5,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-10-01"
+          "date": "2026-03-30"
         },
         "pH": {
-          "valeur": 6.1,
+          "valeur": 6.2,
           "unite": "unité pH",
           "color": "#ef4444",
-          "date": "2025-12-02"
+          "date": "2026-03-30"
         },
         "Chlore": {
           "valeur": "<0,03",
@@ -5613,13 +5763,13 @@
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-02"
+          "date": "2026-03-30"
         },
         "Calcaire (TH)": {
-          "valeur": 1.4,
+          "valeur": "<1",
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-10-01"
+          "date": "2026-03-30"
         },
         "Pesticides": {
           "valeur": "<SEUIL",
@@ -5813,10 +5963,10 @@
           "date": "2026-02-05"
         },
         "Chlore": {
-          "valeur": 0.44,
+          "valeur": 0.19,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2026-02-05"
+          "date": "2026-03-19"
         },
         "Bactériologie": {
           "valeur": "<1",
@@ -5831,10 +5981,10 @@
           "date": "2026-02-05"
         },
         "Plomb": {
-          "valeur": 0.68,
+          "valeur": 1.37,
           "unite": "µg/L",
           "color": "#10b981",
-          "date": "2026-02-05"
+          "date": "2026-03-19"
         },
         "THM": {
           "valeur": 7.57,
@@ -5853,37 +6003,37 @@
       "insee": "23132",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau très peu minéralisée, agressive pour les métaux, nécessite un traitement de neutralisation. A noter également la présence d'un métabolite non pertinent de pesticides, le chlorothalonil R471811 à une teneur cependant inférieure à la valeur indicative fixée à 0,9 µg/L.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
       "parametres": {
         "Nitrates": {
-          "valeur": 13.0,
+          "valeur": 30.6,
           "unite": "mg/L",
-          "color": "#10b981",
-          "date": "2025-10-14"
+          "color": "#f59e0b",
+          "date": "2026-03-05"
         },
         "pH": {
-          "valeur": 7.4,
+          "valeur": 6.1,
           "unite": "unité pH",
-          "color": "#10b981",
-          "date": "2025-10-14"
+          "color": "#ef4444",
+          "date": "2026-03-05"
         },
         "Chlore": {
-          "valeur": "<0,03",
+          "valeur": 0.14,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-10-14"
+          "date": "2026-03-05"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-10-14"
+          "date": "2026-03-05"
         },
         "Calcaire (TH)": {
-          "valeur": 2.1,
+          "valeur": 4.2,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-10-14"
+          "date": "2026-03-05"
         },
         "Plomb": {
           "valeur": 2.21,
@@ -5904,7 +6054,7 @@
           "date": "2025-10-14"
         }
       },
-      "score": 100,
+      "score": 81,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -5969,31 +6119,31 @@
           "valeur": 3.1,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-10-20"
+          "date": "2026-03-24"
         },
         "pH": {
-          "valeur": 6.4,
+          "valeur": 6.2,
           "unite": "unité pH",
           "color": "#ef4444",
-          "date": "2025-12-08"
+          "date": "2026-03-24"
         },
         "Chlore": {
-          "valeur": 0.05,
+          "valeur": 0.09,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-12-08"
+          "date": "2026-03-24"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-08"
+          "date": "2026-03-24"
         },
         "Calcaire (TH)": {
-          "valeur": 0.8,
+          "valeur": "<1",
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-10-20"
+          "date": "2026-03-24"
         },
         "Pesticides": {
           "valeur": "<SEUIL",
@@ -6094,16 +6244,16 @@
           "date": "2026-02-17"
         },
         "Chlore": {
-          "valeur": 0.14,
+          "valeur": 0.31,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2026-02-17"
+          "date": "2026-03-10"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2026-02-17"
+          "date": "2026-03-10"
         },
         "Calcaire (TH)": {
           "valeur": 1.4,
@@ -6398,37 +6548,37 @@
       "insee": "23144",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
       "parametres": {
         "Nitrates": {
-          "valeur": 3.5,
+          "valeur": 4.1,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-12-09"
+          "date": "2026-03-05"
         },
         "pH": {
           "valeur": 6.4,
           "unite": "unité pH",
           "color": "#ef4444",
-          "date": "2025-12-09"
+          "date": "2026-03-05"
         },
         "Chlore": {
-          "valeur": 0.46,
+          "valeur": 0.39,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-12-09"
+          "date": "2026-03-05"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-09"
+          "date": "2026-03-05"
         },
         "Calcaire (TH)": {
-          "valeur": 14.0,
+          "valeur": "<1",
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-12-09"
+          "date": "2026-03-05"
         },
         "Pesticides": {
           "valeur": "<SEUIL",
@@ -6698,37 +6848,37 @@
       "insee": "23150",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception du paramètre conductivité. Une optimisation du traitement de reminéralisation est nécessaire.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement.",
       "parametres": {
         "Nitrates": {
-          "valeur": 10.0,
+          "valeur": 9.9,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-10-08"
+          "date": "2026-03-31"
         },
         "pH": {
-          "valeur": 8.0,
+          "valeur": 7.9,
           "unite": "unité pH",
           "color": "#10b981",
-          "date": "2025-12-15"
+          "date": "2026-03-31"
         },
         "Chlore": {
-          "valeur": 0.46,
+          "valeur": 0.28,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-12-15"
+          "date": "2026-03-31"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-15"
+          "date": "2026-03-31"
         },
         "Calcaire (TH)": {
-          "valeur": 7.1,
+          "valeur": 9.2,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-10-08"
+          "date": "2026-03-31"
         },
         "Pesticides": {
           "valeur": "<SEUIL",
@@ -6755,23 +6905,35 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 3.3,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-03-24"
+        },
         "pH": {
           "valeur": 8.1,
           "unite": "unité pH",
           "color": "#10b981",
-          "date": "2025-04-24"
+          "date": "2026-03-24"
         },
         "Chlore": {
-          "valeur": 0.15,
+          "valeur": 0.1,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-04-24"
+          "date": "2026-03-24"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-04-24"
+          "date": "2026-03-24"
+        },
+        "Calcaire (TH)": {
+          "valeur": 9.0,
+          "unite": "°f",
+          "color": "#10b981",
+          "date": "2026-03-24"
         },
         "THM": {
           "valeur": 26.76,
@@ -6873,34 +7035,34 @@
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
       "parametres": {
         "Nitrates": {
-          "valeur": 4.2,
+          "valeur": 6.7,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-10-27"
+          "date": "2026-03-12"
         },
         "pH": {
-          "valeur": 5.9,
+          "valeur": 5.7,
           "unite": "unité pH",
           "color": "#ef4444",
-          "date": "2025-12-22"
+          "date": "2026-03-12"
         },
         "Chlore": {
-          "valeur": "<0,03",
+          "valeur": 0.13,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-12-22"
+          "date": "2026-03-12"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-22"
+          "date": "2026-03-12"
         },
         "Calcaire (TH)": {
-          "valeur": 0.8,
+          "valeur": "<1",
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-10-27"
+          "date": "2026-03-12"
         },
         "Pesticides": {
           "valeur": "<SEUIL",
@@ -7250,19 +7412,19 @@
       "insee": "23165",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau de qualité bactériologique non conforme aux exigences de qualité définies par le Code de la Santé Publique. La présence de ces bactéries nécessite une désinfection permanente de l'eau avant distribution. Dans l'attente, une désinfection temporaire a été demandée. Un nouveau prélèvement sera réalisé pour vérifier l’évolution de la qualité de l’eau desservie aux usagers du réseau.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
       "parametres": {
         "Nitrates": {
-          "valeur": 6.3,
+          "valeur": 1.7,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-10-22"
+          "date": "2026-03-23"
         },
         "pH": {
-          "valeur": 6.1,
+          "valeur": 5.9,
           "unite": "unité pH",
           "color": "#ef4444",
-          "date": "2025-12-15"
+          "date": "2026-03-23"
         },
         "Chlore": {
           "valeur": 0.04,
@@ -7274,13 +7436,13 @@
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-15"
+          "date": "2026-03-23"
         },
         "Calcaire (TH)": {
-          "valeur": 0.6,
+          "valeur": "<1",
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-10-22"
+          "date": "2026-03-23"
         },
         "Plomb": {
           "valeur": "<0,500",
@@ -7348,37 +7510,37 @@
       "insee": "23177",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des bactéries sulfito-réductrices. La présence de ces bactéries nécessite une inspection de l’ensemble des ouvrages ainsi qu'une vérification de l'efficacité du traitement de désinfection. De plus, une étude sur le réseau doit être mise en œuvre afin de déceler les sources de contaminations potentielles (double réseau).",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement.",
       "parametres": {
         "Nitrates": {
           "valeur": 14.4,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2026-02-25"
+          "date": "2026-03-17"
         },
         "pH": {
-          "valeur": 7.6,
+          "valeur": 7.3,
           "unite": "unité pH",
           "color": "#10b981",
-          "date": "2026-02-25"
+          "date": "2026-03-17"
         },
         "Chlore": {
-          "valeur": 0.09,
+          "valeur": 0.3,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2026-02-25"
+          "date": "2026-03-17"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2026-02-25"
+          "date": "2026-03-17"
         },
         "Calcaire (TH)": {
           "valeur": 9.3,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2026-02-25"
+          "date": "2026-03-17"
         },
         "Plomb": {
           "valeur": 0.817,
@@ -7409,37 +7571,37 @@
       "insee": "23178",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception du paramètre conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
       "parametres": {
         "Nitrates": {
-          "valeur": 5.8,
+          "valeur": 9.9,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-10-07"
+          "date": "2026-03-19"
         },
         "pH": {
-          "valeur": 6.4,
+          "valeur": 5.0,
           "unite": "unité pH",
           "color": "#ef4444",
-          "date": "2025-11-06"
+          "date": "2026-03-19"
         },
         "Chlore": {
-          "valeur": 0.29,
+          "valeur": 0.32,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-11-06"
+          "date": "2026-03-19"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-11-06"
+          "date": "2026-03-19"
         },
         "Calcaire (TH)": {
-          "valeur": 1.9,
+          "valeur": "<1",
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-10-07"
+          "date": "2026-03-19"
         },
         "Plomb": {
           "valeur": "<2,00",
@@ -7741,37 +7903,37 @@
       "insee": "23186",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception du paramètre conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation. De plus, la présence d'une flore interférente importante rend impossible le dénombrement des bactéries coliformes. Une inspection de l’ensemble des ouvrages ainsi qu'une vérification du bon fonctionnement du système de désinfection sont nécessaires. Un nouveau prélèvement sera réalisé pour vérifier l’évolution de la qualité de l’eau.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception du paramètre conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
       "parametres": {
         "Nitrates": {
-          "valeur": 9.7,
+          "valeur": 10.7,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-10-15"
+          "date": "2026-03-31"
         },
         "pH": {
           "valeur": 6.5,
           "unite": "unité pH",
           "color": "#f59e0b",
-          "date": "2025-12-15"
+          "date": "2026-03-31"
         },
         "Chlore": {
-          "valeur": 0.27,
+          "valeur": 0.25,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-12-15"
+          "date": "2026-03-31"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-15"
+          "date": "2026-03-31"
         },
         "Calcaire (TH)": {
-          "valeur": 1.5,
+          "valeur": 1.4,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-10-15"
+          "date": "2026-03-31"
         },
         "Pesticides": {
           "valeur": "<SEUIL",
@@ -7986,37 +8148,37 @@
       "insee": "23191",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception du paramètre conductivité. Cette eau très peu minéralisée, agressive pour les métaux, nécessite un traitement de neutralisation.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception du paramètre conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
       "parametres": {
         "Nitrates": {
-          "valeur": 5.4,
+          "valeur": 3.7,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-10-14"
+          "date": "2026-03-30"
         },
         "pH": {
-          "valeur": 6.9,
+          "valeur": 6.5,
           "unite": "unité pH",
           "color": "#f59e0b",
-          "date": "2025-12-03"
+          "date": "2026-03-30"
         },
         "Chlore": {
-          "valeur": 0.39,
+          "valeur": 0.31,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-12-03"
+          "date": "2026-03-30"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-03"
+          "date": "2026-03-30"
         },
         "Calcaire (TH)": {
-          "valeur": 1.8,
+          "valeur": 1.7,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-10-14"
+          "date": "2026-03-30"
         },
         "Plomb": {
           "valeur": 3.61,
@@ -8136,34 +8298,34 @@
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
       "parametres": {
         "Nitrates": {
-          "valeur": 6.0,
+          "valeur": 6.6,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-10-07"
+          "date": "2026-03-12"
         },
         "pH": {
-          "valeur": 5.9,
+          "valeur": 6.0,
           "unite": "unité pH",
           "color": "#ef4444",
-          "date": "2025-12-08"
+          "date": "2026-03-12"
         },
         "Chlore": {
-          "valeur": 0.64,
+          "valeur": 0.79,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-12-08"
+          "date": "2026-03-12"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-08"
+          "date": "2026-03-12"
         },
         "Calcaire (TH)": {
-          "valeur": 0.8,
+          "valeur": "<1",
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-10-07"
+          "date": "2026-03-12"
         },
         "Plomb": {
           "valeur": 4.44,
@@ -8178,10 +8340,10 @@
           "date": "2025-10-07"
         },
         "THM": {
-          "valeur": "<SEUIL",
+          "valeur": 1.0,
           "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-10-07"
+          "date": "2026-03-12"
         }
       },
       "score": 88,
@@ -8356,7 +8518,7 @@
           "date": "2026-02-10"
         },
         "pH": {
-          "valeur": 7.5,
+          "valeur": 8.1,
           "unite": "unité pH",
           "color": "#10b981",
           "date": "2026-02-10"
@@ -8390,37 +8552,37 @@
       "insee": "23202",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation. De plus, la chloration excessive est inopportune et confère à l'eau des goûts désagréables pour les usagers. Un autocontrôle des teneurs en chlore doit être effectué régulièrement.",
       "parametres": {
         "Nitrates": {
-          "valeur": 11.0,
+          "valeur": 20.7,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-10-27"
+          "date": "2026-03-12"
         },
         "pH": {
-          "valeur": 5.9,
+          "valeur": 6.8,
           "unite": "unité pH",
-          "color": "#ef4444",
-          "date": "2025-12-22"
+          "color": "#f59e0b",
+          "date": "2026-03-12"
         },
         "Chlore": {
-          "valeur": 0.8,
+          "valeur": 1.5,
           "unite": "mg(Cl2)/L",
-          "color": "#10b981",
-          "date": "2025-12-29"
+          "color": "#f59e0b",
+          "date": "2026-03-12"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-22"
+          "date": "2026-03-12"
         },
         "Calcaire (TH)": {
-          "valeur": 3.1,
+          "valeur": 3.3,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-10-27"
+          "date": "2026-03-12"
         },
         "Pesticides": {
           "valeur": "<SEUIL",
@@ -8429,10 +8591,10 @@
           "date": "2025-10-27"
         },
         "THM": {
-          "valeur": 3.4,
+          "valeur": 2.1,
           "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-10-27"
+          "date": "2026-03-12"
         }
       },
       "score": 86,
@@ -8525,19 +8687,19 @@
       "insee": "23205",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Les références de qualité, définies par le Code de la Santé Publique, ne sont pas satisfaites pour les paramètres pH, conductivité et coliformes totaux. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation. De plus, la présence récurrente de bactéries coliformes doit motiver la mise en place d'une désinfection de l'eau avant distribution.",
+      "conclusion": "Les références de qualité, définies par le Code de la Santé Publique, ne sont pas satisfaites pour les paramètres conductivité et coliformes totaux. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation. De plus, la présence récurrente de bactéries coliformes doit motiver la mise en place d'une désinfection de l'eau avant distribution.",
       "parametres": {
         "Nitrates": {
-          "valeur": 4.0,
+          "valeur": 4.5,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-10-14"
+          "date": "2026-03-25"
         },
         "pH": {
-          "valeur": 6.7,
+          "valeur": 6.8,
           "unite": "unité pH",
           "color": "#f59e0b",
-          "date": "2025-12-04"
+          "date": "2026-03-25"
         },
         "Chlore": {
           "valeur": "<0,03",
@@ -8549,13 +8711,13 @@
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-04"
+          "date": "2026-03-25"
         },
         "Calcaire (TH)": {
-          "valeur": 0.9,
+          "valeur": 1.1,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-10-14"
+          "date": "2026-03-25"
         },
         "Pesticides": {
           "valeur": "<SEUIL",
@@ -8687,34 +8849,34 @@
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
       "parametres": {
         "Nitrates": {
-          "valeur": 13.0,
+          "valeur": 10.3,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-10-15"
+          "date": "2026-03-05"
         },
         "pH": {
-          "valeur": 5.8,
+          "valeur": 6.3,
           "unite": "unité pH",
           "color": "#ef4444",
-          "date": "2025-12-08"
+          "date": "2026-03-05"
         },
         "Chlore": {
           "valeur": "<0,03",
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-12-08"
+          "date": "2026-03-05"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-08"
+          "date": "2026-03-05"
         },
         "Calcaire (TH)": {
-          "valeur": 1.6,
+          "valeur": 1.3,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-10-15"
+          "date": "2026-03-05"
         },
         "Pesticides": {
           "valeur": "<SEUIL",
@@ -8835,34 +8997,34 @@
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception du paramètre conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
       "parametres": {
         "Nitrates": {
-          "valeur": 3.4,
+          "valeur": 2.7,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-10-13"
+          "date": "2026-03-23"
         },
         "pH": {
-          "valeur": 6.3,
+          "valeur": 6.5,
           "unite": "unité pH",
-          "color": "#ef4444",
-          "date": "2025-12-15"
+          "color": "#f59e0b",
+          "date": "2026-03-23"
         },
         "Chlore": {
-          "valeur": 0.53,
+          "valeur": 0.95,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-12-15"
+          "date": "2026-03-23"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-15"
+          "date": "2026-03-23"
         },
         "Calcaire (TH)": {
-          "valeur": 0.9,
+          "valeur": "<1",
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-10-13"
+          "date": "2026-03-23"
         },
         "Pesticides": {
           "valeur": "<SEUIL",
@@ -8871,13 +9033,13 @@
           "date": "2025-04-01"
         },
         "THM": {
-          "valeur": 26.8,
+          "valeur": 33.8,
           "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-04-01"
+          "date": "2026-03-23"
         }
       },
-      "score": 86,
+      "score": 93,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -8985,36 +9147,54 @@
       "insee": "23215",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception du paramètre conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 7.3,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-03-16"
+        },
         "pH": {
-          "valeur": 6.0,
+          "valeur": 7.0,
           "unite": "unité pH",
-          "color": "#ef4444",
-          "date": "2025-06-11"
+          "color": "#10b981",
+          "date": "2026-03-16"
         },
         "Chlore": {
-          "valeur": 0.44,
+          "valeur": 0.56,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-06-11"
+          "date": "2026-03-16"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-06-11"
+          "date": "2026-03-16"
+        },
+        "Calcaire (TH)": {
+          "valeur": 2.7,
+          "unite": "°f",
+          "color": "#10b981",
+          "date": "2026-03-16"
+        },
+        "Plomb": {
+          "valeur": 8.82,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-03-16"
         },
         "THM": {
-          "valeur": "<SEUIL",
+          "valeur": 0.3,
           "unite": "µg/L",
           "color": "#10b981",
-          "date": "2024-07-04"
+          "date": "2026-03-16"
         }
       },
-      "score": 75,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
+      "score": 93,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "SAINT-MARTIN-CHATEAU",
@@ -9022,19 +9202,19 @@
       "insee": "23216",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Les références de qualité, définies par le Code de la Santé Publique, ne sont pas satisfaites pour les paramètres pH, conductivité et coliformes totaux. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation. De plus, la présence récurrente de bactéries coliformes doit motiver la mise en place d'une désinfection de l'eau avant distribution.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception du paramètre conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
       "parametres": {
         "Nitrates": {
-          "valeur": 7.2,
+          "valeur": 2.6,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-04-14"
+          "date": "2026-03-25"
         },
         "pH": {
-          "valeur": 5.9,
+          "valeur": 6.5,
           "unite": "unité pH",
-          "color": "#ef4444",
-          "date": "2025-12-04"
+          "color": "#f59e0b",
+          "date": "2026-03-25"
         },
         "Chlore": {
           "valeur": "<0,03",
@@ -9046,13 +9226,13 @@
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-04"
+          "date": "2026-03-25"
         },
         "Calcaire (TH)": {
-          "valeur": 0.8,
+          "valeur": 1.1,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-04-14"
+          "date": "2026-03-25"
         },
         "Pesticides": {
           "valeur": "<SEUIL",
@@ -9061,7 +9241,7 @@
           "date": "2024-10-08"
         }
       },
-      "score": 83,
+      "score": 92,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -9071,19 +9251,19 @@
       "insee": "23217",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Les références de qualité, définies par le Code de la Santé Publique, ne sont pas satisfaites pour les paramètres pH, conductivité et coliformes totaux. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation. De plus, la présence récurrente de bactéries coliformes doit motiver la mise en place d'une désinfection de l'eau avant distribution.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation. A noter également la présence de métabolites pertinents de pesticides : la deséthylatrazine, les chloridazone desphényl et chloridazone méthyl desphényl, à des teneurs cependant inférieures à la norme. Présence également de plusieurs métabolites non pertinents de pesticides.",
       "parametres": {
         "Nitrates": {
-          "valeur": 19.0,
+          "valeur": 13.0,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-12-16"
+          "date": "2026-03-16"
         },
         "pH": {
           "valeur": 6.3,
           "unite": "unité pH",
           "color": "#ef4444",
-          "date": "2025-12-16"
+          "date": "2026-03-16"
         },
         "Chlore": {
           "valeur": 0.17,
@@ -9095,13 +9275,13 @@
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-16"
+          "date": "2026-03-16"
         },
         "Calcaire (TH)": {
-          "valeur": 3.0,
+          "valeur": 2.1,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-10-14"
+          "date": "2026-03-16"
         },
         "Plomb": {
           "valeur": 1.97,
@@ -9110,15 +9290,15 @@
           "date": "2025-06-23"
         },
         "Pesticides": {
-          "valeur": 0.1,
+          "valeur": 0.16,
           "unite": "µg/L",
-          "color": "#10b981",
-          "date": "2025-11-25"
+          "color": "#f59e0b",
+          "date": "2026-03-16"
         }
       },
-      "score": 86,
-      "score_color": "#10b981",
-      "score_label": "Bonne"
+      "score": 79,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
     },
     {
       "nom": "SAINT-MAURICE-LA-SOUTERRAINE",
@@ -9129,34 +9309,34 @@
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement.",
       "parametres": {
         "Nitrates": {
-          "valeur": 17.4,
+          "valeur": 18.4,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2026-02-25"
+          "date": "2026-03-17"
         },
         "pH": {
-          "valeur": 7.7,
+          "valeur": 8.1,
           "unite": "unité pH",
           "color": "#10b981",
-          "date": "2026-02-25"
+          "date": "2026-03-17"
         },
         "Chlore": {
           "valeur": 0.51,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2026-02-25"
+          "date": "2026-03-17"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2026-02-25"
+          "date": "2026-03-17"
         },
         "Calcaire (TH)": {
-          "valeur": 11.7,
+          "valeur": 12.2,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2026-02-25"
+          "date": "2026-03-17"
         },
         "Plomb": {
           "valeur": 2.12,
@@ -9220,23 +9400,35 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 4.8,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-03-24"
+        },
         "pH": {
-          "valeur": 8.1,
+          "valeur": 7.8,
           "unite": "unité pH",
           "color": "#10b981",
-          "date": "2025-11-24"
+          "date": "2026-03-24"
         },
         "Chlore": {
-          "valeur": "<0,03",
+          "valeur": 0.28,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-11-24"
+          "date": "2026-03-24"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-11-24"
+          "date": "2026-03-24"
+        },
+        "Calcaire (TH)": {
+          "valeur": 8.6,
+          "unite": "°f",
+          "color": "#10b981",
+          "date": "2026-03-24"
         },
         "THM": {
           "valeur": 54.72,
@@ -9245,7 +9437,7 @@
           "date": "2022-07-27"
         }
       },
-      "score": 88,
+      "score": 92,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -9257,26 +9449,38 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception du paramètre conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 6.2,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-03-16"
+        },
         "pH": {
           "valeur": 6.6,
           "unite": "unité pH",
           "color": "#f59e0b",
-          "date": "2025-12-09"
+          "date": "2026-03-16"
         },
         "Chlore": {
-          "valeur": 0.09,
+          "valeur": 0.18,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-12-09"
+          "date": "2026-03-16"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-09"
+          "date": "2026-03-16"
+        },
+        "Calcaire (TH)": {
+          "valeur": "<1",
+          "unite": "°f",
+          "color": "#10b981",
+          "date": "2026-03-16"
         }
       },
-      "score": 83,
+      "score": 90,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -9332,16 +9536,16 @@
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
       "parametres": {
         "Nitrates": {
-          "valeur": 3.7,
+          "valeur": 2.0,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-10-14"
+          "date": "2026-03-25"
         },
         "pH": {
-          "valeur": 5.8,
+          "valeur": 6.0,
           "unite": "unité pH",
           "color": "#ef4444",
-          "date": "2025-12-16"
+          "date": "2026-03-25"
         },
         "Chlore": {
           "valeur": "<0,03",
@@ -9353,13 +9557,13 @@
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-29"
+          "date": "2026-03-25"
         },
         "Calcaire (TH)": {
-          "valeur": 0.6,
+          "valeur": "<1",
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-10-14"
+          "date": "2026-03-25"
         },
         "Pesticides": {
           "valeur": "<SEUIL",
@@ -9381,16 +9585,16 @@
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
       "parametres": {
         "Nitrates": {
-          "valeur": 5.2,
+          "valeur": 4.5,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-10-21"
+          "date": "2026-03-16"
         },
         "pH": {
-          "valeur": 5.9,
+          "valeur": 7.0,
           "unite": "unité pH",
-          "color": "#ef4444",
-          "date": "2025-12-09"
+          "color": "#10b981",
+          "date": "2026-03-16"
         },
         "Chlore": {
           "valeur": 0.51,
@@ -9402,13 +9606,13 @@
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-09"
+          "date": "2026-03-16"
         },
         "Calcaire (TH)": {
-          "valeur": 1.2,
+          "valeur": "<1",
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-10-21"
+          "date": "2026-03-16"
         },
         "Pesticides": {
           "valeur": "<SEUIL",
@@ -9423,7 +9627,7 @@
           "date": "2025-04-01"
         }
       },
-      "score": 86,
+      "score": 100,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -9435,26 +9639,38 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception du paramètre conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
       "parametres": {
-        "pH": {
-          "valeur": 7.4,
-          "unite": "unité pH",
+        "Nitrates": {
+          "valeur": 10.2,
+          "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-03-20"
+          "date": "2026-03-19"
+        },
+        "pH": {
+          "valeur": 5.9,
+          "unite": "unité pH",
+          "color": "#ef4444",
+          "date": "2026-03-19"
         },
         "Chlore": {
-          "valeur": 0.37,
+          "valeur": 0.13,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-09-11"
+          "date": "2026-03-19"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-03-20"
+          "date": "2026-03-19"
+        },
+        "Calcaire (TH)": {
+          "valeur": 1.3,
+          "unite": "°f",
+          "color": "#10b981",
+          "date": "2026-03-19"
         }
       },
-      "score": 100,
+      "score": 80,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -9578,16 +9794,16 @@
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
       "parametres": {
         "Nitrates": {
-          "valeur": 11.0,
+          "valeur": 3.2,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-10-27"
+          "date": "2026-03-04"
         },
         "pH": {
-          "valeur": 5.8,
+          "valeur": 5.7,
           "unite": "unité pH",
           "color": "#ef4444",
-          "date": "2025-12-04"
+          "date": "2026-03-04"
         },
         "Chlore": {
           "valeur": "<0,03",
@@ -9599,13 +9815,13 @@
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-04"
+          "date": "2026-03-04"
         },
         "Calcaire (TH)": {
-          "valeur": 1.1,
+          "valeur": "<1",
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-10-27"
+          "date": "2026-03-04"
         },
         "Pesticides": {
           "valeur": "<SEUIL",
@@ -9624,37 +9840,37 @@
       "insee": "23232",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Les références de qualité, définies par le Code de la Santé Publique, ne sont pas satisfaites pour les paramètres pH, conductivité et coliformes totaux. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation suivi d'une désinfection permanente.",
+      "conclusion": "Les références de qualité, définies par le Code de la Santé Publique, ne sont pas satisfaites pour les paramètres pH, conductivité et coliformes totaux. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation. De plus, la présence récurrente de bactéries coliformes doit motiver la mise en place d'une désinfection de l'eau avant distribution.",
       "parametres": {
         "Nitrates": {
-          "valeur": 5.5,
+          "valeur": 6.4,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-10-20"
+          "date": "2026-03-04"
         },
         "pH": {
-          "valeur": 5.2,
+          "valeur": 5.8,
           "unite": "unité pH",
           "color": "#ef4444",
-          "date": "2025-12-08"
+          "date": "2026-03-04"
         },
         "Chlore": {
           "valeur": "<0,03",
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-12-15"
+          "date": "2026-03-04"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-15"
+          "date": "2026-03-04"
         },
         "Calcaire (TH)": {
-          "valeur": 0.7,
+          "valeur": "<1",
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-10-20"
+          "date": "2026-03-04"
         },
         "Pesticides": {
           "valeur": "<SEUIL",
@@ -9673,19 +9889,19 @@
       "insee": "23230",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau de qualité bactériologique non conforme aux exigences de qualité définies par le Code de la Santé Publique. La présence de ces bactéries nécessite une désinfection permanente de l'eau avant distribution. Dans l'attente, une désinfection temporaire a été demandée. Un nouveau prélèvement sera réalisé pour vérifier l’évolution de la qualité de l’eau desservie aux usagers du réseau.",
+      "conclusion": "Les références de qualité, définies par le Code de la Santé Publique, ne sont pas satisfaites pour les paramètres pH, conductivité et coliformes totaux. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation suivi d'une désinfection permanente.",
       "parametres": {
         "Nitrates": {
-          "valeur": 20.0,
+          "valeur": 18.2,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-10-14"
+          "date": "2026-03-16"
         },
         "pH": {
-          "valeur": 6.2,
+          "valeur": 6.0,
           "unite": "unité pH",
           "color": "#ef4444",
-          "date": "2025-12-16"
+          "date": "2026-03-16"
         },
         "Chlore": {
           "valeur": 0.34,
@@ -9697,13 +9913,13 @@
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-16"
+          "date": "2026-03-16"
         },
         "Calcaire (TH)": {
-          "valeur": 2.1,
+          "valeur": 1.8,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-10-14"
+          "date": "2026-03-16"
         },
         "Pesticides": {
           "valeur": "<SEUIL",
@@ -9845,25 +10061,37 @@
       "insee": "23236",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Les exigences de qualité, définies par le Code de la Santé Publique, sont satisfaites à l'exception du paramètre Fer Total. Des purges du réseau de distribution ainsi qu'une vérification du bon fonctionnement de la filière de traitement seront réalisés aussi souvent que nécessaire pour limiter les teneurs élevées en fer.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 11.9,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-03-10"
+        },
         "pH": {
-          "valeur": 7.6,
+          "valeur": 7.8,
           "unite": "unité pH",
           "color": "#10b981",
-          "date": "2025-08-28"
+          "date": "2026-03-10"
         },
         "Chlore": {
-          "valeur": 0.28,
+          "valeur": 0.51,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-08-28"
+          "date": "2026-03-10"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-08-28"
+          "date": "2026-03-10"
+        },
+        "Calcaire (TH)": {
+          "valeur": 12.7,
+          "unite": "°f",
+          "color": "#10b981",
+          "date": "2026-03-10"
         },
         "THM": {
           "valeur": 22.0,
@@ -9913,37 +10141,37 @@
       "insee": "23238",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres, activité radon, pH et conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation. Par ailleurs, la teneur en radon dissous, légèrement supérieure à la référence de qualité, ne justifie pas nécessairement d'actions correctives.",
+      "conclusion": "Les références de qualité, définies par le Code de la Santé Publique, ne sont pas satisfaites pour les paramètres pH, conductivité et coliformes totaux. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation suivi d'une désinfection permanente.",
       "parametres": {
         "Nitrates": {
-          "valeur": 6.7,
+          "valeur": 8.5,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-10-13"
+          "date": "2026-03-05"
         },
         "pH": {
-          "valeur": 6.3,
+          "valeur": 5.8,
           "unite": "unité pH",
           "color": "#ef4444",
-          "date": "2025-12-09"
+          "date": "2026-03-05"
         },
         "Chlore": {
-          "valeur": 0.62,
+          "valeur": 0.14,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-12-09"
+          "date": "2026-03-05"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-09"
+          "date": "2026-03-05"
         },
         "Calcaire (TH)": {
-          "valeur": 0.7,
+          "valeur": 1.0,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-10-13"
+          "date": "2026-03-05"
         },
         "Pesticides": {
           "valeur": "<SEUIL",
@@ -9977,7 +10205,7 @@
           "date": "2026-02-09"
         },
         "pH": {
-          "valeur": 6.2,
+          "valeur": 6.1,
           "unite": "unité pH",
           "color": "#ef4444",
           "date": "2026-02-09"
@@ -10097,43 +10325,43 @@
       "insee": "23242",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception du paramètre conductivité. Cette eau très peu minéralisée, agressive pour les métaux, nécessite un traitement de neutralisation.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception du paramètre conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
       "parametres": {
         "Nitrates": {
           "valeur": 6.7,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-10-14"
+          "date": "2026-03-05"
         },
         "pH": {
           "valeur": 6.7,
           "unite": "unité pH",
           "color": "#f59e0b",
-          "date": "2025-12-08"
+          "date": "2026-03-05"
         },
         "Chlore": {
-          "valeur": 0.03,
+          "valeur": 0.4,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2026-02-25"
+          "date": "2026-03-24"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-08"
+          "date": "2026-03-05"
         },
         "Calcaire (TH)": {
-          "valeur": 2.1,
+          "valeur": 2.2,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-10-14"
+          "date": "2026-03-05"
         },
         "Pesticides": {
-          "valeur": 0.546,
+          "valeur": 0.275,
           "unite": "µg/L",
-          "color": "#ef4444",
-          "date": "2026-02-25"
+          "color": "#f59e0b",
+          "date": "2026-03-24"
         },
         "THM": {
           "valeur": 2.52,
@@ -10142,9 +10370,9 @@
           "date": "2022-03-28"
         }
       },
-      "score": 79,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
+      "score": 86,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "SAINT-SILVAIN-SOUS-TOULX",
@@ -10192,7 +10420,7 @@
           "date": "2026-02-26"
         },
         "pH": {
-          "valeur": 6.6,
+          "valeur": 6.5,
           "unite": "unité pH",
           "color": "#f59e0b",
           "date": "2026-02-26"
@@ -10244,37 +10472,37 @@
       "insee": "23245",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Les références de qualité, définies par le Code de la Santé Publique, ne sont pas satisfaites pour les paramètres pH, conductivité et coliformes totaux. Cette eau peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation. De plus, la présence récurrente de bactéries coliformes doit motiver la mise en place d'une désinfection de l'eau avant distribution.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
       "parametres": {
         "Nitrates": {
-          "valeur": 10.5,
+          "valeur": 12.1,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2026-02-24"
+          "date": "2026-03-24"
         },
         "pH": {
-          "valeur": 6.3,
+          "valeur": 6.4,
           "unite": "unité pH",
           "color": "#ef4444",
-          "date": "2026-02-24"
+          "date": "2026-03-24"
         },
         "Chlore": {
-          "valeur": "<0,03",
+          "valeur": 0.1,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2026-02-24"
+          "date": "2026-03-24"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2026-02-24"
+          "date": "2026-03-24"
         },
         "Calcaire (TH)": {
           "valeur": "<1",
           "unite": "°f",
           "color": "#10b981",
-          "date": "2026-02-24"
+          "date": "2026-03-24"
         },
         "Pesticides": {
           "valeur": "<SEUIL",
@@ -10342,37 +10570,37 @@
       "insee": "23247",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
+      "conclusion": "Eau de qualité bactériologique non conforme aux exigences de qualité définies par le Code de la Santé Publique. Un renforcement temporaire de la désinfection a été demandé. Un nouveau prélèvement sera réalisé pour vérifier l’évolution de la qualité de l’eau desservie aux usagers du réseau.",
       "parametres": {
         "Nitrates": {
-          "valeur": 4.6,
+          "valeur": 9.8,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2026-02-25"
+          "date": "2026-03-24"
         },
         "pH": {
-          "valeur": 7.4,
+          "valeur": 6.3,
           "unite": "unité pH",
-          "color": "#10b981",
-          "date": "2026-02-25"
+          "color": "#ef4444",
+          "date": "2026-03-24"
         },
         "Chlore": {
-          "valeur": 0.19,
+          "valeur": 0.04,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2026-02-25"
+          "date": "2026-03-30"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2026-02-25"
+          "date": "2026-03-30"
         },
         "Calcaire (TH)": {
-          "valeur": "<1",
+          "valeur": 1.3,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2026-02-25"
+          "date": "2026-03-24"
         },
         "Plomb": {
           "valeur": 0.569,
@@ -10393,7 +10621,7 @@
           "date": "2025-09-29"
         }
       },
-      "score": 100,
+      "score": 88,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -10406,34 +10634,34 @@
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception du paramètre conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
       "parametres": {
         "Nitrates": {
-          "valeur": 8.3,
+          "valeur": 10.6,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-10-15"
+          "date": "2026-03-05"
         },
         "pH": {
-          "valeur": 6.8,
+          "valeur": 6.7,
           "unite": "unité pH",
           "color": "#f59e0b",
-          "date": "2025-12-08"
+          "date": "2026-03-05"
         },
         "Chlore": {
-          "valeur": "<0,03",
+          "valeur": 0.1,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-12-08"
+          "date": "2026-03-05"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-08"
+          "date": "2026-03-05"
         },
         "Calcaire (TH)": {
-          "valeur": 1.9,
+          "valeur": 2.0,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-10-15"
+          "date": "2026-03-05"
         },
         "Pesticides": {
           "valeur": "<SEUIL",
@@ -10489,37 +10717,37 @@
       "insee": "23250",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Les exigences de qualité, définies par le Code de la Santé Publique, sont satisfaites à l'exception du paramètre Carbone Organique Total. Cette eau nécessite une amélioration de la filière de traitement pour réduire la teneur en matières organiques.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception du paramètre conductivité. Une optimisation du traitement de reminéralisation est nécessaire.",
       "parametres": {
         "Nitrates": {
-          "valeur": 2.7,
+          "valeur": 9.2,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-11-18"
+          "date": "2026-03-31"
         },
         "pH": {
-          "valeur": 7.8,
+          "valeur": 7.6,
           "unite": "unité pH",
           "color": "#10b981",
-          "date": "2025-12-11"
+          "date": "2026-03-31"
         },
         "Chlore": {
-          "valeur": "<0,03",
+          "valeur": 0.08,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-12-11"
+          "date": "2026-03-31"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-11"
+          "date": "2026-03-31"
         },
         "Calcaire (TH)": {
-          "valeur": 25.9,
+          "valeur": 6.7,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-11-18"
+          "date": "2026-03-31"
         },
         "Plomb": {
           "valeur": 0.845,
@@ -10559,34 +10787,34 @@
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement.",
       "parametres": {
         "Nitrates": {
-          "valeur": 11.3,
+          "valeur": 10.1,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2026-02-10"
+          "date": "2026-03-18"
         },
         "pH": {
           "valeur": 7.5,
           "unite": "unité pH",
           "color": "#10b981",
-          "date": "2026-02-10"
+          "date": "2026-03-18"
         },
         "Chlore": {
-          "valeur": 0.25,
+          "valeur": 0.19,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2026-02-10"
+          "date": "2026-03-18"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2026-02-10"
+          "date": "2026-03-18"
         },
         "Calcaire (TH)": {
-          "valeur": 8.9,
+          "valeur": "<1",
           "unite": "°f",
           "color": "#10b981",
-          "date": "2026-02-10"
+          "date": "2026-03-18"
         },
         "Plomb": {
           "valeur": "<0,500",
@@ -10697,43 +10925,49 @@
       "insee": "23168",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau de qualité bactériologique non conforme aux exigences de qualité définies par le Code de la Santé Publique. Un renforcement temporaire de la désinfection a été demandé. Un nouveau prélèvement sera réalisé pour vérifier l’évolution de la qualité de l’eau desservie aux usagers du réseau.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception du paramètre conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
       "parametres": {
         "Nitrates": {
-          "valeur": 12.0,
+          "valeur": 5.8,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-10-06"
+          "date": "2026-03-30"
         },
         "pH": {
-          "valeur": 6.2,
+          "valeur": 6.6,
           "unite": "unité pH",
-          "color": "#ef4444",
-          "date": "2025-12-03"
+          "color": "#f59e0b",
+          "date": "2026-03-30"
         },
         "Chlore": {
-          "valeur": 0.03,
+          "valeur": 0.17,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-12-11"
+          "date": "2026-03-30"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-11"
+          "date": "2026-03-30"
         },
         "Calcaire (TH)": {
-          "valeur": 2.9,
+          "valeur": 1.4,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-10-06"
+          "date": "2026-03-30"
+        },
+        "Plomb": {
+          "valeur": 0.23,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-30"
         },
         "Pesticides": {
           "valeur": "<SEUIL",
           "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-10-06"
+          "date": "2026-03-30"
         },
         "THM": {
           "valeur": 3.0,
@@ -10742,7 +10976,7 @@
           "date": "2025-04-07"
         }
       },
-      "score": 86,
+      "score": 94,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -10752,37 +10986,37 @@
       "insee": "23169",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Mélange d'eau de source et d'eau transportée par citerne : Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception du paramètre conductivité. Un traitement de neutralisation des eaux de source est à envisager.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception du paramètre conductivité. Une optimisation du traitement de reminéralisation est nécessaire.",
       "parametres": {
         "Nitrates": {
-          "valeur": 7.5,
+          "valeur": 8.9,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2022-08-04"
+          "date": "2026-03-31"
         },
         "pH": {
-          "valeur": 7.9,
+          "valeur": 7.6,
           "unite": "unité pH",
           "color": "#10b981",
-          "date": "2025-08-11"
+          "date": "2026-03-31"
         },
         "Chlore": {
-          "valeur": 0.1,
+          "valeur": 0.53,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-12-11"
+          "date": "2026-03-31"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-11"
+          "date": "2026-03-31"
         },
         "Calcaire (TH)": {
-          "valeur": 5.8,
+          "valeur": 7.1,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2022-08-04"
+          "date": "2026-03-31"
         },
         "THM": {
           "valeur": 5.45,
@@ -10914,28 +11148,40 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 13.5,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-03-12"
+        },
         "pH": {
-          "valeur": 6.3,
+          "valeur": 6.1,
           "unite": "unité pH",
           "color": "#ef4444",
-          "date": "2025-12-08"
+          "date": "2026-03-12"
         },
         "Chlore": {
           "valeur": "<0,03",
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-12-08"
+          "date": "2026-03-12"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-08"
+          "date": "2026-03-12"
+        },
+        "Calcaire (TH)": {
+          "valeur": 1.1,
+          "unite": "°f",
+          "color": "#10b981",
+          "date": "2026-03-12"
         }
       },
-      "score": 67,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
+      "score": 80,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "SOUMANS",
@@ -10945,23 +11191,35 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception du paramètre conductivité. Une optimisation du traitement de neutralisation est nécessaire.",
       "parametres": {
-        "pH": {
-          "valeur": 7.7,
-          "unite": "unité pH",
+        "Nitrates": {
+          "valeur": 18.2,
+          "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-11-12"
+          "date": "2026-03-09"
+        },
+        "pH": {
+          "valeur": 6.2,
+          "unite": "unité pH",
+          "color": "#ef4444",
+          "date": "2026-03-09"
         },
         "Chlore": {
-          "valeur": 0.04,
+          "valeur": 0.48,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-11-12"
+          "date": "2026-03-09"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-11-12"
+          "date": "2026-03-09"
+        },
+        "Calcaire (TH)": {
+          "valeur": 6.0,
+          "unite": "°f",
+          "color": "#10b981",
+          "date": "2026-03-09"
         },
         "THM": {
           "valeur": 19.35,
@@ -10970,7 +11228,7 @@
           "date": "2022-03-15"
         }
       },
-      "score": 100,
+      "score": 83,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -10995,16 +11253,16 @@
           "date": "2025-12-11"
         },
         "Chlore": {
-          "valeur": 0.03,
+          "valeur": "<0,03",
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-12-11"
+          "date": "2026-03-30"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-11"
+          "date": "2026-03-30"
         },
         "Calcaire (TH)": {
           "valeur": 1.7,
@@ -11044,34 +11302,34 @@
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement.",
       "parametres": {
         "Nitrates": {
-          "valeur": 13.9,
+          "valeur": 13.7,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2026-02-25"
+          "date": "2026-03-17"
         },
         "pH": {
-          "valeur": 7.6,
+          "valeur": 7.5,
           "unite": "unité pH",
           "color": "#10b981",
-          "date": "2026-02-25"
+          "date": "2026-03-17"
         },
         "Chlore": {
-          "valeur": 0.13,
+          "valeur": 0.21,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2026-02-25"
+          "date": "2026-03-17"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2026-02-25"
+          "date": "2026-03-17"
         },
         "Calcaire (TH)": {
-          "valeur": 11.8,
+          "valeur": 10.1,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2026-02-25"
+          "date": "2026-03-17"
         },
         "Pesticides": {
           "valeur": 0.034,
@@ -11136,9 +11394,9 @@
           "date": "2026-02-02"
         },
         "pH": {
-          "valeur": 6.8,
+          "valeur": 7.0,
           "unite": "unité pH",
-          "color": "#f59e0b",
+          "color": "#10b981",
           "date": "2026-02-02"
         },
         "Chlore": {
@@ -11172,7 +11430,7 @@
           "date": "2025-01-13"
         }
       },
-      "score": 93,
+      "score": 100,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -11185,34 +11443,34 @@
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
       "parametres": {
         "Nitrates": {
-          "valeur": 4.1,
+          "valeur": 4.0,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-10-28"
+          "date": "2026-03-23"
         },
         "pH": {
-          "valeur": 6.0,
+          "valeur": 6.1,
           "unite": "unité pH",
           "color": "#ef4444",
-          "date": "2025-12-22"
+          "date": "2026-03-23"
         },
         "Chlore": {
           "valeur": "<0,03",
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-12-22"
+          "date": "2026-03-23"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-22"
+          "date": "2026-03-23"
         },
         "Calcaire (TH)": {
-          "valeur": 0.7,
+          "valeur": "<1",
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-10-28"
+          "date": "2026-03-23"
         }
       },
       "score": 80,
@@ -11335,28 +11593,40 @@
       "insee": "23257",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Analyse suite à citernage : Eau de qualité bactériologique conforme aux exigences de qualité définies par le Code de la Santé Publique. Il est à noter cependant une absence de désinfectant au moment du prélèvement. Des mesures de chlore libre doivent être réalisées régulièrement sur le réseau afin d'adapter le traitement.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 3.4,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-03-24"
+        },
         "pH": {
-          "valeur": 6.7,
+          "valeur": 7.3,
           "unite": "unité pH",
-          "color": "#f59e0b",
-          "date": "2025-08-08"
+          "color": "#10b981",
+          "date": "2026-03-24"
         },
         "Chlore": {
           "valeur": "<0,03",
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2025-08-08"
+          "date": "2026-03-24"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-08-08"
+          "date": "2026-03-24"
+        },
+        "Calcaire (TH)": {
+          "valeur": 15.4,
+          "unite": "°f",
+          "color": "#10b981",
+          "date": "2026-03-24"
         }
       },
-      "score": 83,
+      "score": 100,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -11449,16 +11719,16 @@
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
       "parametres": {
         "Nitrates": {
-          "valeur": 9.5,
+          "valeur": 9.8,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-10-07"
+          "date": "2026-03-12"
         },
         "pH": {
           "valeur": 6.1,
           "unite": "unité pH",
           "color": "#ef4444",
-          "date": "2025-12-08"
+          "date": "2026-03-12"
         },
         "Chlore": {
           "valeur": 0.1,
@@ -11470,13 +11740,13 @@
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-08"
+          "date": "2026-03-12"
         },
         "Calcaire (TH)": {
-          "valeur": 1.1,
+          "valeur": "<1",
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-10-07"
+          "date": "2026-03-12"
         },
         "Pesticides": {
           "valeur": "<SEUIL",
@@ -11578,22 +11848,22 @@
           "date": "2026-02-24"
         },
         "pH": {
-          "valeur": 6.4,
+          "valeur": 6.5,
           "unite": "unité pH",
-          "color": "#ef4444",
-          "date": "2026-02-24"
+          "color": "#f59e0b",
+          "date": "2026-03-19"
         },
         "Chlore": {
-          "valeur": "<0,03",
+          "valeur": 0.16,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2026-02-24"
+          "date": "2026-03-19"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2026-02-24"
+          "date": "2026-03-19"
         },
         "Calcaire (TH)": {
           "valeur": 4.0,
@@ -11614,9 +11884,9 @@
           "date": "2024-04-25"
         }
       },
-      "score": 79,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
+      "score": 86,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "VILLEDIEU (LA)",
@@ -11627,16 +11897,16 @@
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement, à l’exception des paramètres pH et conductivité. Cette eau très peu minéralisée, corrosive pour les métaux, nécessite un traitement de neutralisation.",
       "parametres": {
         "Nitrates": {
-          "valeur": 10.0,
+          "valeur": 9.9,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2025-04-28"
+          "date": "2026-03-23"
         },
         "pH": {
-          "valeur": 5.7,
+          "valeur": 5.8,
           "unite": "unité pH",
           "color": "#ef4444",
-          "date": "2025-12-01"
+          "date": "2026-03-23"
         },
         "Chlore": {
           "valeur": "<0,03",
@@ -11648,13 +11918,13 @@
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2025-12-11"
+          "date": "2026-03-23"
         },
         "Calcaire (TH)": {
-          "valeur": 1.0,
+          "valeur": "<1",
           "unite": "°f",
           "color": "#10b981",
-          "date": "2025-04-28"
+          "date": "2026-03-23"
         },
         "Pesticides": {
           "valeur": "<SEUIL",
@@ -23681,119 +23951,11 @@
   ],
   "nappes": [
     {
-      "nom": "Gouzon",
-      "dept": "23",
-      "code_bss": "06432X0061/P1",
-      "current": 369.427,
-      "history": [
-        369.449,
-        369.447,
-        369.445,
-        369.443,
-        369.423,
-        369.42,
-        369.414,
-        369.412,
-        369.412,
-        369.414,
-        369.422,
-        369.437,
-        369.432,
-        369.427
-      ],
-      "year_ago": 369.64,
-      "lat": 46.201419569,
-      "lng": 2.278985176,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Vallière",
-      "dept": "23",
-      "code_bss": "06667X0006/P1",
-      "current": 566.631,
-      "history": [
-        566.878,
-        566.868,
-        566.862,
-        566.854,
-        566.659,
-        566.652,
-        566.65,
-        566.647,
-        566.643,
-        566.638,
-        566.633,
-        566.628,
-        566.632,
-        566.631
-      ],
-      "year_ago": 567.3,
-      "lat": 45.904671276,
-      "lng": 2.028863194,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Le Grand-Bourg",
-      "dept": "23",
-      "code_bss": "06417X0014/P1",
-      "current": 380.317,
-      "history": [
-        380.2,
-        380.206,
-        380.288,
-        380.281,
-        380.27,
-        380.259,
-        380.258,
-        380.262,
-        380.264,
-        380.275,
-        380.289,
-        380.332,
-        380.327,
-        380.317
-      ],
-      "year_ago": 380.29,
-      "lat": 46.156903752,
-      "lng": 1.646345884,
-      "color": "#3b82f6"
-    },
-    {
-      "nom": "Sainte-Feyre",
-      "dept": "23",
-      "code_bss": "06426X0015/P1",
-      "current": 417.25,
-      "history": [
-        417.144,
-        417.173,
-        417.132,
-        417.164,
-        417.229,
-        417.273,
-        417.239,
-        417.246,
-        417.209,
-        417.244,
-        417.251,
-        417.271,
-        417.234,
-        417.25
-      ],
-      "year_ago": 417.35,
-      "lat": 46.15163885,
-      "lng": 1.912331208,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Auzances",
       "dept": "23",
       "code_bss": "06674X0003/P1",
       "current": 569.84,
       "history": [
-        569.51,
-        569.51,
-        569.51,
-        569.5,
         569.72,
         569.74,
         569.75,
@@ -23803,51 +23965,101 @@
         569.79,
         569.8,
         569.82,
+        569.84,
+        569.84,
+        569.85,
+        569.84,
         569.84
       ],
-      "year_ago": 569.72,
+      "year_ago": 569.69,
       "lat": 46.034556704,
       "lng": 2.501192845,
       "color": "#3b82f6"
     },
     {
-      "nom": "Saint-Junien-la-Bregère",
+      "nom": "Sainte-Feyre",
       "dept": "23",
-      "code_bss": "06894X0018/P1",
-      "current": 568.356,
+      "code_bss": "06426X0015/P1",
+      "current": 417.242,
       "history": [
-        568.245,
-        568.241,
-        568.242,
-        568.244,
-        568.199,
-        568.198,
-        568.244,
-        568.268,
-        568.279,
-        568.287,
-        568.285,
-        568.282,
-        568.312,
-        568.356
+        417.229,
+        417.273,
+        417.239,
+        417.246,
+        417.209,
+        417.244,
+        417.251,
+        417.271,
+        417.234,
+        417.25,
+        417.216,
+        417.225,
+        417.213,
+        417.242
       ],
-      "year_ago": 568.47,
-      "lat": 45.893207171,
-      "lng": 1.75359489,
+      "year_ago": 417.33,
+      "lat": 46.15163885,
+      "lng": 1.912331208,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Le Grand-Bourg",
+      "dept": "23",
+      "code_bss": "06417X0014/P1",
+      "current": 380.295,
+      "history": [
+        380.27,
+        380.259,
+        380.258,
+        380.262,
+        380.264,
+        380.275,
+        380.289,
+        380.332,
+        380.327,
+        380.317,
+        380.307,
+        380.303,
+        380.297,
+        380.295
+      ],
+      "year_ago": 380.28,
+      "lat": 46.156903752,
+      "lng": 1.646345884,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Vallière",
+      "dept": "23",
+      "code_bss": "06667X0006/P1",
+      "current": 566.607,
+      "history": [
+        566.659,
+        566.652,
+        566.65,
+        566.647,
+        566.643,
+        566.638,
+        566.633,
+        566.628,
+        566.632,
+        566.631,
+        566.625,
+        566.62,
+        566.615,
+        566.607
+      ],
+      "year_ago": 567.25,
+      "lat": 45.904671276,
+      "lng": 2.028863194,
       "color": "#ef4444"
     },
     {
       "nom": "Bord-Saint-Georges",
       "dept": "23",
       "code_bss": "06432X0059/P1",
-      "current": 445.102,
+      "current": 445.014,
       "history": [
-        445.001,
-        445.094,
-        445.046,
-        445.117,
-        445.056,
-        445.115,
         445.075,
         445.041,
         445.044,
@@ -23855,7 +24067,13 @@
         445.065,
         445.083,
         445.1,
-        445.102
+        445.102,
+        445.07,
+        445.053,
+        445.032,
+        445.019,
+        445.024,
+        445.014
       ],
       "year_ago": 445.26,
       "lat": 46.253649078,
@@ -23866,12 +24084,8 @@
       "nom": "Bord-Saint-Georges",
       "dept": "23",
       "code_bss": "06432X0060/P2",
-      "current": 445.209,
+      "current": 445.167,
       "history": [
-        445.269,
-        445.262,
-        445.263,
-        445.265,
         445.233,
         445.2,
         445.2,
@@ -23881,9 +24095,13 @@
         445.255,
         445.261,
         445.228,
-        445.209
+        445.209,
+        445.191,
+        445.176,
+        445.175,
+        445.167
       ],
-      "year_ago": 445.48,
+      "year_ago": 445.44,
       "lat": 46.253613086,
       "lng": 2.307319961,
       "color": "#ef4444"
@@ -23892,12 +24110,8 @@
       "nom": "Saint-Agnant-de-Versillat",
       "dept": "23",
       "code_bss": "06165X0014/F22",
-      "current": 344.26,
+      "current": 344.23,
       "history": [
-        344.47,
-        344.47,
-        344.47,
-        344.46,
         344.31,
         344.29,
         344.3,
@@ -23907,9 +24121,13 @@
         344.3,
         344.29,
         344.26,
-        344.26
+        344.26,
+        344.25,
+        344.25,
+        344.24,
+        344.23
       ],
-      "year_ago": 344.61,
+      "year_ago": 344.59,
       "lat": 46.292752977,
       "lng": 1.492061327,
       "color": "#ef4444"
@@ -23918,12 +24136,8 @@
       "nom": "Le Grand-Bourg",
       "dept": "23",
       "code_bss": "06417X0015/P2",
-      "current": 380.381,
+      "current": 380.379,
       "history": [
-        380.383,
-        380.383,
-        380.383,
-        380.382,
         380.383,
         380.381,
         380.381,
@@ -23933,7 +24147,11 @@
         380.381,
         380.381,
         380.381,
-        380.381
+        380.381,
+        380.38,
+        380.379,
+        380.38,
+        380.379
       ],
       "year_ago": 380.51,
       "lat": 46.157047303,
@@ -23941,41 +24159,11 @@
       "color": "#ef4444"
     },
     {
-      "nom": "Aubusson",
-      "dept": "23",
-      "code_bss": "06668X0007/F3",
-      "current": 555.115,
-      "history": [
-        555.36,
-        555.317,
-        555.349,
-        555.388,
-        555.142,
-        555.146,
-        555.103,
-        555.143,
-        555.103,
-        555.112,
-        555.117,
-        555.067,
-        555.116,
-        555.115
-      ],
-      "year_ago": 555.6,
-      "lat": 45.938816952,
-      "lng": 2.13764895,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Bazelat",
       "dept": "23",
       "code_bss": "06162X0008/F5",
-      "current": 332.47,
+      "current": 332.44,
       "history": [
-        332.67,
-        332.67,
-        332.67,
-        332.67,
         332.51,
         332.5,
         332.51,
@@ -23985,23 +24173,101 @@
         332.54,
         332.51,
         332.48,
-        332.47
+        332.47,
+        332.45,
+        332.46,
+        332.45,
+        332.44
       ],
-      "year_ago": 332.84,
+      "year_ago": 332.81,
       "lat": 46.369742099,
       "lng": 1.531341208,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Aubusson",
+      "dept": "23",
+      "code_bss": "06668X0007/F3",
+      "current": 555.07,
+      "history": [
+        555.142,
+        555.146,
+        555.103,
+        555.143,
+        555.103,
+        555.112,
+        555.117,
+        555.067,
+        555.116,
+        555.115,
+        555,
+        555.073,
+        555.053,
+        555.07
+      ],
+      "year_ago": 555.63,
+      "lat": 45.938816952,
+      "lng": 2.13764895,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Saint-Agnant-de-Versillat",
+      "dept": "23",
+      "code_bss": "06165X0008/F19",
+      "current": 360.787,
+      "history": [
+        360.827,
+        360.821,
+        360.818,
+        360.812,
+        360.813,
+        360.811,
+        360.817,
+        360.815,
+        360.809,
+        360.803,
+        360.799,
+        360.794,
+        360.79,
+        360.787
+      ],
+      "year_ago": 361.14,
+      "lat": 46.322691669,
+      "lng": 1.495025167,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Gouzon",
+      "dept": "23",
+      "code_bss": "06432X0061/P1",
+      "current": 369.403,
+      "history": [
+        369.423,
+        369.42,
+        369.414,
+        369.412,
+        369.412,
+        369.414,
+        369.422,
+        369.437,
+        369.432,
+        369.427,
+        369.418,
+        369.413,
+        369.408,
+        369.403
+      ],
+      "year_ago": 369.62,
+      "lat": 46.201419569,
+      "lng": 2.278985176,
       "color": "#ef4444"
     },
     {
       "nom": "Bazelat",
       "dept": "23",
       "code_bss": "BSS004BMZQ/X",
-      "current": 337.858,
+      "current": 337.824,
       "history": [
-        337.944,
-        337.952,
-        337.93,
-        337.885,
         337.852,
         337.836,
         337.831,
@@ -24011,37 +24277,41 @@
         337.887,
         337.897,
         337.871,
-        337.858
+        337.858,
+        337.835,
+        337.833,
+        337.821,
+        337.824
       ],
-      "year_ago": 338.03,
+      "year_ago": 338.0,
       "lat": 46.360036113,
       "lng": 1.540807042,
       "color": "#ef4444"
     },
     {
-      "nom": "Saint-Agnant-de-Versillat",
+      "nom": "Saint-Junien-la-Bregère",
       "dept": "23",
-      "code_bss": "06165X0008/F19",
-      "current": 360.811,
+      "code_bss": "06894X0018/P1",
+      "current": 568.361,
       "history": [
-        361.041,
-        361.035,
-        361.019,
-        361.005,
-        361,
-        360.992,
-        360.839,
-        360.836,
-        360.827,
-        360.821,
-        360.818,
-        360.812,
-        360.813,
-        360.811
+        568.199,
+        568.198,
+        568.244,
+        568.268,
+        568.279,
+        568.287,
+        568.285,
+        568.282,
+        568.312,
+        568.356,
+        568.361,
+        568.371,
+        568.363,
+        568.361
       ],
-      "year_ago": 361.19,
-      "lat": 46.322691669,
-      "lng": 1.495025167,
+      "year_ago": 568.43,
+      "lat": 45.893207171,
+      "lng": 1.75359489,
       "color": "#ef4444"
     }
   ],
