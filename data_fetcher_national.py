@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+import sys, io
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 """
 data_fetcher_national.py — Récupération nationale des données environnementales.
 Écrit data/dept/XX.json et data/index.json.
@@ -366,28 +369,68 @@ def fetch_nappes(dept_code: str, today: datetime) -> list:
 # 4. QUALITÉ DE L'AIR (WFS national Atmo France — tous les départements)
 # ---------------------------------------------------------------------------
 
-def fetch_air(dept_code: str) -> list:
-    """Fetch ATMO index via le WFS national Atmo France (aucune auth requise).
-    Couvre toute la France métropolitaine — remplace le WFS Occitanie limité.
-    """
-    prefix = dept_code.upper()
-    cql = f"code_zone LIKE '{prefix}%'"
-    url = f"{WFS_NATIONAL_AIR}&CQL_FILTER={quote(cql)}&count=10"
+# Cache national air quality — chargé une fois, partagé entre tous les depts
+_AIR_NATIONAL_CACHE: dict | None = None  # {code_zone: properties}
 
-    print(f"  Air dept {dept_code} (Atmo France WFS national)…")
-    d = get_json(url)
+def _load_air_national_cache() -> dict:
+    """Charge une fois le cache national Atmo France (filtre date J-1)."""
+    global _AIR_NATIONAL_CACHE
+    if _AIR_NATIONAL_CACHE is not None:
+        return _AIR_NATIONAL_CACHE
+
+    from datetime import timedelta
+    yesterday = (datetime.now().date() - timedelta(days=1)).strftime("%Y-%m-%d")
+    cql = f"date_ech >= '{yesterday}'"
+    url = (f"{WFS_NATIONAL_AIR}"
+           f"&PropertyName=code_zone,lib_zone,code_qual,lib_qual,coul_qual,"
+           f"date_ech,code_no2,code_o3,code_pm10,code_pm25,source"
+           f"&count=50000&CQL_FILTER={quote(cql)}")
+
+    print(f"  [Air] Chargement cache national Atmo France (date >= {yesterday})…")
+    d = get_json(url, timeout=90)
     if not d or "features" not in d:
-        return []
+        print("  [Air] Échec du cache national")
+        _AIR_NATIONAL_CACHE = {}
+        return {}
 
-    # Garder l'enregistrement le plus récent par code_zone
+    # Garder le plus récent par code_zone
     latest: dict = {}
     for f in d.get("features", []):
         p  = f.get("properties", {})
-        cz = p.get("code_zone", "")
+        cz = str(p.get("code_zone", ""))
         if not cz:
             continue
-        if cz not in latest or p.get("date_ech", "") > latest[cz].get("date_ech", ""):
+        if cz not in latest or p.get("date_ech","") > latest[cz].get("date_ech",""):
             latest[cz] = p
+
+    _AIR_NATIONAL_CACHE = latest
+    print(f"  [Air] Cache chargé : {len(latest)} zones sur {len(d['features'])} features")
+    return latest
+
+
+def fetch_air(dept_code: str, insee_codes: list | None = None) -> list:
+    """Retourne les données air pour un département depuis le cache national."""
+    print(f"  Air dept {dept_code}…")
+
+    cache = _load_air_national_cache()
+    if not cache:
+        return []
+
+    dept_alt = dept_code.zfill(2) if dept_code not in ("2A","2B") else dept_code
+    dept_num = dept_code.lstrip("0") if dept_code not in ("2A","2B") else dept_code
+    ref_set  = set(insee_codes) if insee_codes else set()
+
+    # Filtrer les zones du département
+    latest: dict = {}
+    for cz, p in cache.items():
+        in_ref  = ref_set and cz in ref_set
+        in_dept = cz.startswith(dept_alt) or (dept_num and cz.startswith(dept_num))
+        if in_ref or in_dept:
+            latest[cz] = p
+
+    if not latest:
+        print(f"    → 0 zones air pour dept {dept_code}")
+        return []
 
     results = []
     for cz, p in latest.items():
@@ -463,17 +506,21 @@ def fetch_pollen(dept_code: str) -> list:
 # TRAITEMENT D'UN DÉPARTEMENT
 # ---------------------------------------------------------------------------
 
-def process_dept(dept_code: str, today: datetime, outdir: str) -> dict:
+def process_dept(dept_code: str, today: datetime, outdir: str,
+                 ref_by_dept: dict | None = None) -> dict:
     """Traite un département complet et écrit XX.json dans outdir."""
     info = DEPARTEMENTS.get(dept_code, {})
     print(f"\n{'='*60}")
     print(f"Département {dept_code} — {info.get('nom', '?')} ({info.get('region', '?')})")
     print(f"{'='*60}")
 
+    # Codes INSEE des communes ≥5000 hab pour ce département (depuis le référentiel)
+    insee_codes = [c["code"] for c in (ref_by_dept or {}).get(dept_code, [])]
+
     potable  = fetch_potable(dept_code, today)
     rivieres = fetch_rivieres(dept_code, today)
     nappes   = fetch_nappes(dept_code, today)
-    air      = fetch_air(dept_code)
+    air      = fetch_air(dept_code, insee_codes)
     pollen   = fetch_pollen(dept_code)
 
     scores    = [c["score"] for c in potable if c.get("score") is not None]
@@ -584,9 +631,20 @@ def main():
     print(f"Depts à traiter ({len(depts)}) : {depts}")
     print(f"Répertoire de sortie : {outdir}")
 
+    # Charger le référentiel communes ≥5000 hab pour filtrer l'air par INSEE
+    ref_by_dept: dict = {}
+    ref_path = os.path.join(BASE_DIR, "data", "referentiel", "communes.json")
+    if os.path.exists(ref_path):
+        with open(ref_path, encoding="utf-8") as f:
+            ref_all = json.load(f)
+        for c in ref_all:
+            dept = c["codeDepartement"]
+            ref_by_dept.setdefault(dept, []).append(c)
+        print(f"Référentiel chargé : {len(ref_all)} communes")
+
     # Traitement des depts en parallèle (max 6 simultanés pour éviter le rate-limiting)
     with ThreadPoolExecutor(max_workers=6) as pool:
-        futures = {pool.submit(process_dept, code, today, outdir): code
+        futures = {pool.submit(process_dept, code, today, outdir, ref_by_dept): code
                    for code in depts if code in DEPARTEMENTS}
         for future in as_completed(futures):
             code = futures[future]
