@@ -3,7 +3,7 @@
   "nom": "Loire",
   "slug": "loire",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "22/05/2026 à 14:16",
+  "updated": "23/05/2026 à 13:09",
   "score_eau": 97,
   "nb_communes": 326,
   "potable": [
@@ -59324,6 +59324,32 @@
   ],
   "nappes": [
     {
+      "nom": "Cleppé",
+      "dept": "42",
+      "code_bss": "06967X0100/F",
+      "current": 324.267,
+      "history": [
+        324.237,
+        324.251,
+        324.269,
+        324.277,
+        324.292,
+        324.306,
+        324.297,
+        324.29,
+        324.281,
+        324.286,
+        324.293,
+        324.283,
+        324.278,
+        324.267
+      ],
+      "year_ago": 324.44,
+      "lat": 45.769951628,
+      "lng": 4.183823819,
+      "color": "#ef4444"
+    },
+    {
       "nom": "Saint-André-le-Puy",
       "dept": "42",
       "code_bss": "07204X0105/F",
@@ -59344,7 +59370,7 @@
         356.684,
         356.667
       ],
-      "year_ago": 356.97,
+      "year_ago": 356.92,
       "lat": 45.647921327,
       "lng": 4.246544955,
       "color": "#ef4444"
@@ -59370,36 +59396,10 @@
         372.54,
         372.539
       ],
-      "year_ago": 372.35,
+      "year_ago": 372.33,
       "lat": 45.605448412,
       "lng": 4.306255162,
       "color": "#3b82f6"
-    },
-    {
-      "nom": "Cleppé",
-      "dept": "42",
-      "code_bss": "06967X0100/F",
-      "current": 324.267,
-      "history": [
-        324.237,
-        324.251,
-        324.269,
-        324.277,
-        324.292,
-        324.306,
-        324.297,
-        324.29,
-        324.281,
-        324.286,
-        324.293,
-        324.283,
-        324.278,
-        324.267
-      ],
-      "year_ago": 324.46,
-      "lat": 45.769951628,
-      "lng": 4.183823819,
-      "color": "#ef4444"
     },
     {
       "nom": "Chalain-le-Comtal",
@@ -59430,7 +59430,7 @@
   ],
   "air": [
     {
-      "zone": "Sainte-Croix-en-Jarez",
+      "zone": "Saint-Paul-en-Jarez",
       "dept": "42",
       "date": "2026-05-24",
       "indice": 4,
@@ -59466,7 +59466,7 @@
       }
     },
     {
-      "zone": "Saint-Cyprien",
+      "zone": "Saint-Pierre-de-Bœuf",
       "dept": "42",
       "date": "2026-05-24",
       "indice": 4,
@@ -59502,7 +59502,7 @@
       }
     },
     {
-      "zone": "Saint-Cyr-de-Favières",
+      "zone": "Saint-Pierre-la-Noaille",
       "dept": "42",
       "date": "2026-05-24",
       "indice": 4,
@@ -59538,7 +59538,7 @@
       }
     },
     {
-      "zone": "Saint-Cyr-de-Valorges",
+      "zone": "Saint-Polgues",
       "dept": "42",
       "date": "2026-05-24",
       "indice": 4,
@@ -59574,7 +59574,7 @@
       }
     },
     {
-      "zone": "Saint-Cyr-les-Vignes",
+      "zone": "Saint-Priest-en-Jarez",
       "dept": "42",
       "date": "2026-05-24",
       "indice": 4,
@@ -59583,9 +59583,9 @@
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "O₃": {
           "indice": 4,
@@ -59593,9 +59593,9 @@
           "color": "#f97316"
         },
         "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM2.5": {
           "indice": 1,

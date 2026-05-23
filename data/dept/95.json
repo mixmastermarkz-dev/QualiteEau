@@ -3,7 +3,7 @@
   "nom": "Val-d'Oise",
   "slug": "val-d-oise",
   "region": "Île-de-France",
-  "updated": "22/05/2026 à 14:16",
+  "updated": "23/05/2026 à 13:09",
   "score_eau": 93,
   "nb_communes": 192,
   "potable": [
@@ -16303,6 +16303,32 @@
   ],
   "nappes": [
     {
+      "nom": "Chars",
+      "dept": "95",
+      "code_bss": "01266X1013/S1",
+      "current": 85.881,
+      "history": [
+        85.886,
+        85.888,
+        85.893,
+        85.897,
+        85.898,
+        85.897,
+        85.893,
+        85.89,
+        85.885,
+        85.886,
+        85.885,
+        85.885,
+        85.882,
+        85.881
+      ],
+      "year_ago": 85.95,
+      "lat": 49.145694966,
+      "lng": 1.90127567,
+      "color": "#ef4444"
+    },
+    {
       "nom": "Villeron",
       "dept": "95",
       "code_bss": "01541X0038/F1",
@@ -16323,9 +16349,35 @@
         83.558,
         83.563
       ],
-      "year_ago": 83.8,
+      "year_ago": 83.77,
       "lat": 49.063723078,
       "lng": 2.52480359,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Théméricourt",
+      "dept": "95",
+      "code_bss": "01522X0069/PZ2008",
+      "current": 70.504,
+      "history": [
+        70.577,
+        70.577,
+        70.581,
+        70.578,
+        70.576,
+        70.565,
+        70.557,
+        70.55,
+        70.539,
+        70.534,
+        70.53,
+        70.52,
+        70.515,
+        70.504
+      ],
+      "year_ago": 72.53,
+      "lat": 49.083846437,
+      "lng": 1.897575713,
       "color": "#ef4444"
     },
     {
@@ -16349,7 +16401,7 @@
         45.896,
         45.898
       ],
-      "year_ago": 46.02,
+      "year_ago": 45.99,
       "lat": 49.105984547,
       "lng": 2.209806341,
       "color": "#ef4444"
@@ -16375,35 +16427,9 @@
         82.392,
         82.389
       ],
-      "year_ago": 83.21,
+      "year_ago": 83.17,
       "lat": 49.06908557,
       "lng": 2.488423943,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Chars",
-      "dept": "95",
-      "code_bss": "01266X1013/S1",
-      "current": 85.881,
-      "history": [
-        85.886,
-        85.888,
-        85.893,
-        85.897,
-        85.898,
-        85.897,
-        85.893,
-        85.89,
-        85.885,
-        85.886,
-        85.885,
-        85.885,
-        85.882,
-        85.881
-      ],
-      "year_ago": 85.96,
-      "lat": 49.145694966,
-      "lng": 1.90127567,
       "color": "#ef4444"
     },
     {
@@ -16427,46 +16453,20 @@
         46.59,
         46.582
       ],
-      "year_ago": 47.2,
+      "year_ago": 47.16,
       "lat": 49.197517023,
       "lng": 1.711584185,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Théméricourt",
-      "dept": "95",
-      "code_bss": "01522X0069/PZ2008",
-      "current": 70.504,
-      "history": [
-        70.577,
-        70.577,
-        70.581,
-        70.578,
-        70.576,
-        70.565,
-        70.557,
-        70.55,
-        70.539,
-        70.534,
-        70.53,
-        70.52,
-        70.515,
-        70.504
-      ],
-      "year_ago": 72.57,
-      "lat": 49.083846437,
-      "lng": 1.897575713,
       "color": "#ef4444"
     }
   ],
   "air": [
     {
-      "zone": "Boissy-L'Aillerie",
+      "zone": "Montigny-Lès-Cormeilles",
       "dept": "95",
-      "date": "2026-05-23",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#F0E641",
+      "date": "2026-05-24",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#FF5050",
       "source": "Airparif",
       "polluants": {
         "NO₂": {
@@ -16475,19 +16475,19 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
@@ -16497,12 +16497,12 @@
       }
     },
     {
-      "zone": "Moussy",
+      "zone": "Nucourt",
       "dept": "95",
-      "date": "2026-05-23",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#F0E641",
+      "date": "2026-05-24",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#FF5050",
       "source": "Airparif",
       "polluants": {
         "NO₂": {
@@ -16511,19 +16511,19 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
@@ -16533,12 +16533,12 @@
       }
     },
     {
-      "zone": "Domont",
+      "zone": "Frépillon",
       "dept": "95",
-      "date": "2026-05-23",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#F0E641",
+      "date": "2026-05-24",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#FF5050",
       "source": "Airparif",
       "polluants": {
         "NO₂": {
@@ -16547,55 +16547,19 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Hodent",
-      "dept": "95",
-      "date": "2026-05-23",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#F0E641",
-      "source": "Airparif",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
@@ -16607,10 +16571,10 @@
     {
       "zone": "Presles",
       "dept": "95",
-      "date": "2026-05-23",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#F0E641",
+      "date": "2026-05-24",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#FF5050",
       "source": "Airparif",
       "polluants": {
         "NO₂": {
@@ -16619,19 +16583,55 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Moussy",
+      "dept": "95",
+      "date": "2026-05-24",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#FF5050",
+      "source": "Airparif",
+      "polluants": {
+        "NO₂": {
           "indice": 1,
           "label": "Bon",
           "color": "#10b981"
         },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
