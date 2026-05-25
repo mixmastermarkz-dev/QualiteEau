@@ -3,7 +3,7 @@
   "nom": "Ariège",
   "slug": "ariege",
   "region": "Occitanie",
-  "updated": "24/05/2026 à 13:14",
+  "updated": "25/05/2026 à 14:58",
   "score_eau": 98,
   "nb_communes": 331,
   "potable": [
@@ -37514,6 +37514,32 @@
   ],
   "nappes": [
     {
+      "nom": "Montaut",
+      "dept": "09",
+      "code_bss": "10357X0021/F",
+      "current": 240.946,
+      "history": [
+        240.983,
+        240.98,
+        240.978,
+        240.975,
+        240.973,
+        240.97,
+        240.966,
+        240.964,
+        240.96,
+        240.957,
+        240.955,
+        240.952,
+        240.949,
+        240.946
+      ],
+      "year_ago": 240.67,
+      "lat": 43.225456979,
+      "lng": 1.62794485,
+      "color": "#3b82f6"
+    },
+    {
       "nom": "Mazères",
       "dept": "09",
       "code_bss": "10357X0213/F",
@@ -37534,7 +37560,7 @@
         254.691,
         254.688
       ],
-      "year_ago": 254.65,
+      "year_ago": 254.63,
       "lat": 43.209411174,
       "lng": 1.692949596,
       "color": "#3b82f6"
@@ -37560,7 +37586,7 @@
         316.431,
         316.425
       ],
-      "year_ago": 316.3,
+      "year_ago": 316.29,
       "lat": 43.081693662,
       "lng": 1.648900398,
       "color": "#3b82f6"
@@ -37586,7 +37612,7 @@
         496.079,
         496.08
       ],
-      "year_ago": 496.03,
+      "year_ago": 496.04,
       "lat": 42.955443654,
       "lng": 1.030378406,
       "color": "#3b82f6"
@@ -37612,44 +37638,199 @@
         440.093,
         440.151
       ],
-      "year_ago": 440.41,
+      "year_ago": 440.46,
       "lat": 42.990315316,
       "lng": 1.048876492,
       "color": "#ef4444"
-    },
-    {
-      "nom": "Montaut",
-      "dept": "09",
-      "code_bss": "10357X0021/F",
-      "current": 240.946,
-      "history": [
-        240.983,
-        240.98,
-        240.978,
-        240.975,
-        240.973,
-        240.97,
-        240.966,
-        240.964,
-        240.96,
-        240.957,
-        240.955,
-        240.952,
-        240.949,
-        240.946
-      ],
-      "year_ago": 240.67,
-      "lat": 43.225456979,
-      "lng": 1.62794485,
-      "color": "#3b82f6"
     }
   ],
-  "air": [],
+  "air": [
+    {
+      "zone": "Villars-le-Sec",
+      "dept": "09",
+      "date": "2026-05-27",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Giromagny",
+      "dept": "09",
+      "date": "2026-05-27",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Grandvillars",
+      "dept": "09",
+      "date": "2026-05-27",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Grosmagny",
+      "dept": "09",
+      "date": "2026-05-27",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Grosne",
+      "dept": "09",
+      "date": "2026-05-27",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    }
+  ],
   "pollen": [
     {
       "dept": "09",
       "lib_zone": "ARIEGE",
-      "date": "2026-05-25",
+      "date": "2026-05-26",
       "indice_global": 3,
       "label_global": "Moyen",
       "color_global": "#f59e0b",

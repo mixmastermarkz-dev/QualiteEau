@@ -3,7 +3,7 @@
   "nom": "Haute-Loire",
   "slug": "haute-loire",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "24/05/2026 à 13:14",
+  "updated": "25/05/2026 à 14:58",
   "score_eau": 96,
   "nb_communes": 262,
   "potable": [
@@ -47282,32 +47282,6 @@
   ],
   "nappes": [
     {
-      "nom": "Cohade",
-      "dept": "43",
-      "code_bss": "07662X0278/45B-03",
-      "current": 406.541,
-      "history": [
-        406.597,
-        406.591,
-        406.597,
-        406.6,
-        406.606,
-        406.599,
-        406.582,
-        406.57,
-        406.578,
-        406.569,
-        406.58,
-        406.561,
-        406.553,
-        406.541
-      ],
-      "year_ago": 406.83,
-      "lat": 45.354627,
-      "lng": 3.358466,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Azérat",
       "dept": "43",
       "code_bss": "07662X0277/45B-01",
@@ -47328,36 +47302,36 @@
         406.431,
         406.409
       ],
-      "year_ago": 406.58,
+      "year_ago": 406.55,
       "lat": 45.357221793,
       "lng": 3.367729971,
       "color": "#ef4444"
     },
     {
-      "nom": "Cohade",
+      "nom": "Chaspuzac",
       "dept": "43",
-      "code_bss": "07662X0279/P45B02",
-      "current": 406.227,
+      "code_bss": "07916X0008/P1",
+      "current": 863.454,
       "history": [
-        406.253,
-        406.257,
-        406.263,
-        406.266,
-        406.271,
-        406.263,
-        406.251,
-        406.244,
-        406.246,
-        406.245,
-        406.253,
-        406.242,
-        406.237,
-        406.227
+        863.485,
+        863.484,
+        863.487,
+        863.494,
+        863.511,
+        863.519,
+        863.503,
+        863.487,
+        863.471,
+        863.463,
+        863.459,
+        863.46,
+        863.453,
+        863.454
       ],
-      "year_ago": 406.47,
-      "lat": 45.355638,
-      "lng": 3.362851,
-      "color": "#ef4444"
+      "year_ago": 863.06,
+      "lat": 45.060946408,
+      "lng": 3.761689363,
+      "color": "#3b82f6"
     },
     {
       "nom": "Saugues",
@@ -47380,7 +47354,7 @@
         956.48,
         956.48
       ],
-      "year_ago": 956.36,
+      "year_ago": 956.32,
       "lat": 44.963175124,
       "lng": 3.547527986,
       "color": "#3b82f6"
@@ -47412,32 +47386,239 @@
       "color": "#ef4444"
     },
     {
-      "nom": "Chaspuzac",
+      "nom": "Cohade",
       "dept": "43",
-      "code_bss": "07916X0008/P1",
-      "current": 863.454,
+      "code_bss": "07662X0279/P45B02",
+      "current": 406.227,
       "history": [
-        863.485,
-        863.484,
-        863.487,
-        863.494,
-        863.511,
-        863.519,
-        863.503,
-        863.487,
-        863.471,
-        863.463,
-        863.459,
-        863.46,
-        863.453,
-        863.454
+        406.253,
+        406.257,
+        406.263,
+        406.266,
+        406.271,
+        406.263,
+        406.251,
+        406.244,
+        406.246,
+        406.245,
+        406.253,
+        406.242,
+        406.237,
+        406.227
+      ],
+      "year_ago": 406.45,
+      "lat": 45.355638,
+      "lng": 3.362851,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Cohade",
+      "dept": "43",
+      "code_bss": "07662X0278/45B-03",
+      "current": 406.541,
+      "history": [
+        406.597,
+        406.591,
+        406.597,
+        406.6,
+        406.606,
+        406.599,
+        406.582,
+        406.57,
+        406.578,
+        406.569,
+        406.58,
+        406.561,
+        406.553,
+        406.541
       ],
       "year_ago": null,
-      "lat": 45.060946408,
-      "lng": 3.761689363,
+      "lat": 45.354627,
+      "lng": 3.358466,
       "color": "#ef4444"
     }
   ],
-  "air": [],
+  "air": [
+    {
+      "zone": "Cerzat",
+      "dept": "43",
+      "date": "2026-05-27",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Ceyssac",
+      "dept": "43",
+      "date": "2026-05-27",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Chadrac",
+      "dept": "43",
+      "date": "2026-05-27",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Chadron",
+      "dept": "43",
+      "date": "2026-05-27",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "La Chaise-Dieu",
+      "dept": "43",
+      "date": "2026-05-27",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    }
+  ],
   "pollen": []
 }
