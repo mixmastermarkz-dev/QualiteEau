@@ -3,7 +3,7 @@
   "nom": "Savoie",
   "slug": "savoie",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "25/05/2026 à 14:58",
+  "updated": "28/05/2026 à 15:46",
   "score_eau": 99,
   "nb_communes": 274,
   "potable": [
@@ -31470,24 +31470,24 @@
       "nom": "Aiton",
       "dept": "73",
       "code_bss": "07266X0052/PS4",
-      "current": 293.829,
+      "current": 293.797,
       "history": [
-        293.808,
-        293.818,
-        293.824,
-        293.825,
-        293.825,
-        293.828,
-        293.834,
-        293.84,
-        293.841,
-        293.84,
-        293.838,
-        293.835,
-        293.829,
-        293.829
+        293.783,
+        293.786,
+        293.779,
+        293.777,
+        293.771,
+        293.77,
+        293.769,
+        293.765,
+        293.763,
+        293.763,
+        293.765,
+        293.774,
+        293.778,
+        293.797
       ],
-      "year_ago": 293.78,
+      "year_ago": 293.75,
       "lat": 45.566444711,
       "lng": 6.245431548,
       "color": "#3b82f6"
@@ -31496,48 +31496,48 @@
       "nom": "Chambéry",
       "dept": "73",
       "code_bss": "07256X0095/CHAMBE",
-      "current": 265.245,
+      "current": 265.074,
       "history": [
-        265.383,
-        265.36,
-        265.32,
-        265.303,
-        265.307,
-        265.311,
-        265.343,
-        265.339,
-        265.341,
-        265.312,
-        265.311,
-        265.281,
-        265.283,
-        265.245
+        265.191,
+        265.17,
+        265.17,
+        265.15,
+        265.153,
+        265.129,
+        265.135,
+        265.112,
+        265.12,
+        265.099,
+        265.108,
+        265.085,
+        265.096,
+        265.074
       ],
-      "year_ago": 265.17,
+      "year_ago": 265.12,
       "lat": 45.569053375,
       "lng": 5.916248145,
-      "color": "#3b82f6"
+      "color": "#ef4444"
     },
     {
       "nom": "Cruet",
       "dept": "73",
       "code_bss": "07494X0026/CRUET",
-      "current": 269.803,
+      "current": 270.202,
       "history": [
-        270.105,
-        270.024,
-        269.935,
-        269.892,
-        269.867,
+        269.703,
+        269.809,
+        269.746,
+        269.838,
+        269.781,
+        269.842,
+        269.799,
+        269.91,
         269.897,
-        269.863,
-        269.89,
-        269.839,
-        269.854,
-        269.785,
-        269.812,
-        269.806,
-        269.803
+        270.007,
+        269.943,
+        270.146,
+        270.084,
+        270.202
       ],
       "year_ago": 269.73,
       "lat": 45.522193195,
@@ -31547,9 +31547,45 @@
   ],
   "air": [
     {
-      "zone": "La Giettaz",
+      "zone": "Yenne",
       "dept": "73",
-      "date": "2026-05-27",
+      "date": "2026-05-30",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Aiguebelette-le-Lac",
+      "dept": "73",
+      "date": "2026-05-30",
       "indice": 4,
       "label": "Mauvais",
       "color": "#ff5050",
@@ -31583,9 +31619,9 @@
       }
     },
     {
-      "zone": "Gilly-sur-Isère",
+      "zone": "Aigueblanche",
       "dept": "73",
-      "date": "2026-05-27",
+      "date": "2026-05-30",
       "indice": 4,
       "label": "Mauvais",
       "color": "#ff5050",
@@ -31619,9 +31655,9 @@
       }
     },
     {
-      "zone": "Grésy-sur-Aix",
+      "zone": "Aillon-le-Jeune",
       "dept": "73",
-      "date": "2026-05-27",
+      "date": "2026-05-30",
       "indice": 4,
       "label": "Mauvais",
       "color": "#ff5050",
@@ -31655,9 +31691,9 @@
       }
     },
     {
-      "zone": "Grésy-sur-Isère",
+      "zone": "Aiton",
       "dept": "73",
-      "date": "2026-05-27",
+      "date": "2026-05-30",
       "indice": 4,
       "label": "Mauvais",
       "color": "#ff5050",
@@ -31674,50 +31710,14 @@
           "color": "#f97316"
         },
         "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Grignon",
-      "dept": "73",
-      "date": "2026-05-27",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,

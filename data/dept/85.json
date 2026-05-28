@@ -3,7 +3,7 @@
   "nom": "Vendée",
   "slug": "vendee",
   "region": "Pays de la Loire",
-  "updated": "25/05/2026 à 14:58",
+  "updated": "28/05/2026 à 15:46",
   "score_eau": 96,
   "nb_communes": 256,
   "potable": [
@@ -38228,182 +38228,50 @@
       "score": 80,
       "score_color": "#10b981",
       "score_label": "Bonne"
-    },
-    {
-      "nom": "RUISSEAU DES FONTENELLES A SOULLANS",
-      "dept": "85",
-      "lat": 46.804435031,
-      "lon": -1.861071043,
-      "nom_cours_eau": "RUISSEAU DES FONTENELLES",
-      "parametres": {
-        "Conductivité": {
-          "valeur": 6.5,
-          "unite": "µS/cm",
-          "color": "#10b981",
-          "date": "2024-05-27",
-          "realtime": false
-        },
-        "Temp. eau": {
-          "valeur": 14.2,
-          "unite": "°C",
-          "color": "#10b981",
-          "date": "2024-05-27",
-          "realtime": false
-        },
-        "MES": {
-          "valeur": 323.0,
-          "unite": "mg/L",
-          "color": "#ef4444",
-          "date": "2024-05-27",
-          "realtime": false
-        },
-        "O2 saturation": {
-          "valeur": 63.0,
-          "unite": "%",
-          "color": "#f59e0b",
-          "date": "2024-05-27",
-          "realtime": false
-        },
-        "pH": {
-          "valeur": 6.6,
-          "unite": "pH",
-          "color": "#10b981",
-          "date": "2024-05-27",
-          "realtime": false
-        }
-      },
-      "historique": {
-        "Conductivité": [
-          {
-            "date": "2024-05-27",
-            "valeur": 6.5,
-            "color": "#10b981"
-          }
-        ],
-        "Temp. eau": [
-          {
-            "date": "2024-05-27",
-            "valeur": 14.2,
-            "color": "#10b981"
-          }
-        ],
-        "MES": [
-          {
-            "date": "2024-05-27",
-            "valeur": 323.0,
-            "color": "#ef4444"
-          }
-        ],
-        "O2 saturation": [
-          {
-            "date": "2024-05-27",
-            "valeur": 63.0,
-            "color": "#f59e0b"
-          }
-        ],
-        "pH": [
-          {
-            "date": "2024-05-27",
-            "valeur": 6.6,
-            "color": "#10b981"
-          }
-        ]
-      },
-      "score": 70,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
-    },
-    {
-      "nom": "LE GUÉ-GORAND  A SAINT-RÉVÉREND",
-      "dept": "85",
-      "lat": 46.711834879,
-      "lon": -1.820328876,
-      "nom_cours_eau": "LE GUÉ-GORAND",
-      "parametres": {
-        "Conductivité": {
-          "valeur": 7.5,
-          "unite": "µS/cm",
-          "color": "#10b981",
-          "date": "2024-05-27",
-          "realtime": false
-        },
-        "Temp. eau": {
-          "valeur": 16.8,
-          "unite": "°C",
-          "color": "#10b981",
-          "date": "2024-05-27",
-          "realtime": false
-        },
-        "pH": {
-          "valeur": 6.6,
-          "unite": "pH",
-          "color": "#10b981",
-          "date": "2024-05-27",
-          "realtime": false
-        },
-        "MES": {
-          "valeur": 304.0,
-          "unite": "mg/L",
-          "color": "#ef4444",
-          "date": "2024-05-27",
-          "realtime": false
-        },
-        "O2 saturation": {
-          "valeur": 76.0,
-          "unite": "%",
-          "color": "#10b981",
-          "date": "2024-05-27",
-          "realtime": false
-        }
-      },
-      "historique": {
-        "Conductivité": [
-          {
-            "date": "2024-05-27",
-            "valeur": 7.5,
-            "color": "#10b981"
-          }
-        ],
-        "Temp. eau": [
-          {
-            "date": "2024-05-27",
-            "valeur": 16.8,
-            "color": "#10b981"
-          }
-        ],
-        "pH": [
-          {
-            "date": "2024-05-27",
-            "valeur": 6.6,
-            "color": "#10b981"
-          }
-        ],
-        "MES": [
-          {
-            "date": "2024-05-27",
-            "valeur": 304.0,
-            "color": "#ef4444"
-          }
-        ],
-        "O2 saturation": [
-          {
-            "date": "2024-05-27",
-            "valeur": 76.0,
-            "color": "#10b981"
-          }
-        ]
-      },
-      "score": 80,
-      "score_color": "#10b981",
-      "score_label": "Bonne"
     }
   ],
   "nappes": [],
   "air": [
     {
-      "zone": "Vouvant",
+      "zone": "l'Aiguillon-sur-Vie",
       "dept": "85",
-      "date": "2026-05-27",
+      "date": "2026-05-30",
+      "indice": 2,
+      "label": "moyen",
+      "color": "#50ccaa",
+      "source": "Air Pays de la Loire",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Aubigny",
+      "dept": "85",
+      "date": "2026-05-30",
       "indice": 3,
       "label": "dégradé",
       "color": "#f0e641",
@@ -38425,6 +38293,42 @@
           "color": "#eab308"
         },
         "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Auzay",
+      "dept": "85",
+      "date": "2026-05-30",
+      "indice": 3,
+      "label": "dégradé",
+      "color": "#f0e641",
+      "source": "Air Pays de la Loire",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
           "indice": 1,
           "label": "Bon",
           "color": "#10b981"
@@ -38437,9 +38341,9 @@
       }
     },
     {
-      "zone": "la Verrie",
+      "zone": "Beaurepaire",
       "dept": "85",
-      "date": "2026-05-27",
+      "date": "2026-05-30",
       "indice": 4,
       "label": "mauvais",
       "color": "#ff5050",
@@ -38461,9 +38365,9 @@
           "color": "#eab308"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
@@ -38473,9 +38377,9 @@
       }
     },
     {
-      "zone": "Vendrennes",
+      "zone": "Bourneau",
       "dept": "85",
-      "date": "2026-05-27",
+      "date": "2026-05-30",
       "indice": 3,
       "label": "dégradé",
       "color": "#f0e641",
@@ -38492,81 +38396,9 @@
           "color": "#f59e0b"
         },
         "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
           "indice": 1,
           "label": "Bon",
           "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Venansault",
-      "dept": "85",
-      "date": "2026-05-27",
-      "indice": 3,
-      "label": "dégradé",
-      "color": "#f0e641",
-      "source": "Air Pays de la Loire",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Vairé",
-      "dept": "85",
-      "date": "2026-05-27",
-      "indice": 3,
-      "label": "dégradé",
-      "color": "#f0e641",
-      "source": "Air Pays de la Loire",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
         },
         "PM2.5": {
           "indice": 1,
