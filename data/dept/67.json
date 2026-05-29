@@ -3,7 +3,7 @@
   "nom": "Bas-Rhin",
   "slug": "bas-rhin",
   "region": "Grand Est",
-  "updated": "28/05/2026 à 15:46",
+  "updated": "29/05/2026 à 14:46",
   "score_eau": 97,
   "nb_communes": 514,
   "potable": [
@@ -61045,11 +61045,6 @@
             "date": "2024-07-23",
             "valeur": 8.6,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-05-28",
-            "valeur": 9.4,
-            "color": "#10b981"
           }
         ],
         "MES": [
@@ -61066,11 +61061,6 @@
           {
             "date": "2024-07-23",
             "valeur": 402.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-05-28",
-            "valeur": 414.0,
             "color": "#ef4444"
           }
         ],
@@ -61089,11 +61079,6 @@
             "date": "2024-07-23",
             "valeur": 21.3,
             "color": "#f59e0b"
-          },
-          {
-            "date": "2024-05-28",
-            "valeur": 15.4,
-            "color": "#10b981"
           }
         ],
         "O2 saturation": [
@@ -61111,11 +61096,6 @@
             "date": "2024-07-23",
             "valeur": 97.1,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-05-28",
-            "valeur": 94.2,
-            "color": "#10b981"
           }
         ],
         "pH": [
@@ -61131,11 +61111,6 @@
           },
           {
             "date": "2024-07-23",
-            "valeur": 8.1,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-05-28",
             "valeur": 8.1,
             "color": "#10b981"
           }
@@ -61155,11 +61130,6 @@
             "date": "2024-07-23",
             "valeur": 6.8,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-05-28",
-            "valeur": 7.0,
-            "color": "#10b981"
           }
         ],
         "Phosphore": [
@@ -61177,11 +61147,6 @@
             "date": "2024-07-23",
             "valeur": 0.031,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-05-28",
-            "valeur": 0.02,
-            "color": "#10b981"
           }
         ],
         "Ammonium": [
@@ -61197,11 +61162,6 @@
           },
           {
             "date": "2024-07-23",
-            "valeur": 1.1,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2024-05-28",
             "valeur": 1.1,
             "color": "#f59e0b"
           }
@@ -61469,12 +61429,8 @@
       "nom": "Gresswiller",
       "dept": "67",
       "code_bss": "02713X0105/PZ1",
-      "current": 198.309,
+      "current": 198.28,
       "history": [
-        198.25,
-        198.33,
-        198.227,
-        198.334,
         198.234,
         198.334,
         198.21,
@@ -61484,7 +61440,11 @@
         198.195,
         198.298,
         198.232,
-        198.309
+        198.309,
+        198.242,
+        198.312,
+        198.217,
+        198.28
       ],
       "year_ago": 198.84,
       "lat": 48.520713416,
@@ -61495,10 +61455,8 @@
       "nom": "Haegen",
       "dept": "67",
       "code_bss": "02332X0198/F3",
-      "current": 207.288,
+      "current": 207.321,
       "history": [
-        207.19,
-        207.186,
         207.284,
         207.3,
         207.321,
@@ -61510,7 +61468,9 @@
         207.354,
         207.33,
         207.235,
-        207.288
+        207.288,
+        207.329,
+        207.321
       ],
       "year_ago": 207.34,
       "lat": 48.714388864,
@@ -61520,45 +61480,9 @@
   ],
   "air": [
     {
-      "zone": "Nordheim",
+      "zone": "Nothalten",
       "dept": "67",
-      "date": "2026-05-29",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#F0E641",
-      "source": "Atmo Grand Est",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Nordhouse",
-      "dept": "67",
-      "date": "2026-05-29",
+      "date": "2026-05-30",
       "indice": 4,
       "label": "Mauvais",
       "color": "#FF5050",
@@ -61580,45 +61504,9 @@
           "color": "#eab308"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Nothalten",
-      "dept": "67",
-      "date": "2026-05-29",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#F0E641",
-      "source": "Atmo Grand Est",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
@@ -61630,7 +61518,7 @@
     {
       "zone": "Obenheim",
       "dept": "67",
-      "date": "2026-05-29",
+      "date": "2026-05-30",
       "indice": 4,
       "label": "Mauvais",
       "color": "#FF5050",
@@ -61647,14 +61535,14 @@
           "color": "#f97316"
         },
         "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
@@ -61666,7 +61554,79 @@
     {
       "zone": "Betschdorf",
       "dept": "67",
-      "date": "2026-05-29",
+      "date": "2026-05-30",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#FF5050",
+      "source": "Atmo Grand Est",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Oberbronn",
+      "dept": "67",
+      "date": "2026-05-30",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#FF5050",
+      "source": "Atmo Grand Est",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Oberdorf-Spachbach",
+      "dept": "67",
+      "date": "2026-05-30",
       "indice": 3,
       "label": "Dégradé",
       "color": "#F0E641",
@@ -61683,14 +61643,14 @@
           "color": "#f59e0b"
         },
         "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
