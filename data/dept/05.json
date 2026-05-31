@@ -3,7 +3,7 @@
   "nom": "Hautes-Alpes",
   "slug": "hautes-alpes",
   "region": "Provence-Alpes-Côte d'Azur",
-  "updated": "30/05/2026 à 13:17",
+  "updated": "31/05/2026 à 13:40",
   "score_eau": 98,
   "nb_communes": 162,
   "potable": [
@@ -16642,39 +16642,11 @@
   ],
   "nappes": [
     {
-      "nom": "Saint-Jean-Saint-Nicolas",
-      "dept": "05",
-      "code_bss": "08466X0009/F2",
-      "current": 1160.59,
-      "history": [
-        1160.31,
-        1160.38,
-        1160.41,
-        1160.45,
-        1160.46,
-        1160.48,
-        1160.49,
-        1160.53,
-        1160.55,
-        1160.59,
-        1160.58,
-        1160.59,
-        1160.56,
-        1160.59
-      ],
-      "year_ago": 1160.91,
-      "lat": 44.680949438,
-      "lng": 6.260818821,
-      "color": "#ef4444"
-    },
-    {
       "nom": "La Roche-de-Rame",
       "dept": "05",
       "code_bss": "08472X0007/F-1",
-      "current": 924.33,
+      "current": 924.32,
       "history": [
-        924.04,
-        924.1,
         924.11,
         924.18,
         924.19,
@@ -16686,21 +16658,47 @@
         924.32,
         924.34,
         924.32,
-        924.33
+        924.33,
+        924.32,
+        924.32
       ],
-      "year_ago": 924.3,
+      "year_ago": 924.32,
       "lat": 44.738691198,
       "lng": 6.582662145,
-      "color": "#3b82f6"
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Saint-Jean-Saint-Nicolas",
+      "dept": "05",
+      "code_bss": "08466X0009/F2",
+      "current": 1160.55,
+      "history": [
+        1160.41,
+        1160.45,
+        1160.46,
+        1160.48,
+        1160.49,
+        1160.53,
+        1160.55,
+        1160.59,
+        1160.58,
+        1160.59,
+        1160.56,
+        1160.59,
+        1160.55,
+        1160.55
+      ],
+      "year_ago": 1161.01,
+      "lat": 44.680949438,
+      "lng": 6.260818821,
+      "color": "#ef4444"
     },
     {
       "nom": "Aspremont",
       "dept": "05",
       "code_bss": "08688X0023/PZ1",
-      "current": 718.71,
+      "current": 718.63,
       "history": [
-        718.64,
-        718.65,
         718.64,
         718.65,
         718.62,
@@ -16712,21 +16710,21 @@
         718.59,
         718.59,
         718.57,
-        718.71
+        718.71,
+        718.65,
+        718.63
       ],
-      "year_ago": 718.64,
+      "year_ago": 718.63,
       "lat": 44.493443917,
       "lng": 5.728933099,
-      "color": "#3b82f6"
+      "color": "#ef4444"
     },
     {
       "nom": "L'Argentière-la-Bessée",
       "dept": "05",
       "code_bss": "08471X0034/P5",
-      "current": 953.55,
+      "current": 953.54,
       "history": [
-        953.16,
-        953.22,
         953.27,
         953.33,
         953.36,
@@ -16738,9 +16736,11 @@
         953.52,
         953.53,
         953.53,
-        953.55
+        953.55,
+        953.54,
+        953.54
       ],
-      "year_ago": 953.45,
+      "year_ago": 953.46,
       "lat": 44.776271664,
       "lng": 6.558809418,
       "color": "#3b82f6"
@@ -16749,10 +16749,8 @@
       "nom": "Val Buëch-Méouge",
       "dept": "05",
       "code_bss": "09172X0078/P",
-      "current": 491.69,
+      "current": 491.68,
       "history": [
-        491.74,
-        491.74,
         491.73,
         491.72,
         491.72,
@@ -16764,7 +16762,9 @@
         491.7,
         491.69,
         491.69,
-        491.69
+        491.69,
+        491.69,
+        491.68
       ],
       "year_ago": 491.81,
       "lat": 44.231230139,
@@ -16774,13 +16774,13 @@
   ],
   "air": [
     {
-      "zone": "Le Petit-Celland",
+      "zone": "Pougny",
       "dept": "05",
-      "date": "2026-06-01",
+      "date": "2026-06-02",
       "indice": 2,
       "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
+      "color": "#50ccaa",
+      "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -16810,13 +16810,13 @@
       }
     },
     {
-      "zone": "Picauville",
+      "zone": "Pougues-les-Eaux",
       "dept": "05",
-      "date": "2026-06-01",
+      "date": "2026-06-02",
       "indice": 2,
       "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
+      "color": "#50ccaa",
+      "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -16846,13 +16846,13 @@
       }
     },
     {
-      "zone": "Pierreville",
+      "zone": "Pouilly-sur-Loire",
       "dept": "05",
-      "date": "2026-06-01",
+      "date": "2026-06-02",
       "indice": 2,
       "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
+      "color": "#50ccaa",
+      "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -16882,13 +16882,13 @@
       }
     },
     {
-      "zone": "Les Pieux",
+      "zone": "Pouques-Lormes",
       "dept": "05",
-      "date": "2026-06-01",
+      "date": "2026-06-02",
       "indice": 2,
       "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
+      "color": "#50ccaa",
+      "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -16918,13 +16918,13 @@
       }
     },
     {
-      "zone": "Pirou",
+      "zone": "Pousseaux",
       "dept": "05",
-      "date": "2026-06-01",
+      "date": "2026-06-02",
       "indice": 2,
       "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
+      "color": "#50ccaa",
+      "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
           "indice": 1,
