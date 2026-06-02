@@ -3,7 +3,7 @@
   "nom": "Seine-Saint-Denis",
   "slug": "seine-saint-denis",
   "region": "Île-de-France",
-  "updated": "01/06/2026 à 17:55",
+  "updated": "02/06/2026 à 15:59",
   "score_eau": 96,
   "nb_communes": 48,
   "potable": [
@@ -2567,10 +2567,17 @@
           "date": "2024-12-09",
           "realtime": false
         },
-        "MES": {
-          "valeur": 576.0,
+        "Temp. eau": {
+          "valeur": 6.9,
+          "unite": "°C",
+          "color": "#10b981",
+          "date": "2024-12-09",
+          "realtime": false
+        },
+        "Nitrates": {
+          "valeur": 13.0,
           "unite": "mg/L",
-          "color": "#ef4444",
+          "color": "#f59e0b",
           "date": "2024-12-09",
           "realtime": false
         },
@@ -2581,24 +2588,10 @@
           "date": "2024-12-09",
           "realtime": false
         },
-        "Temp. eau": {
-          "valeur": 6.9,
-          "unite": "°C",
-          "color": "#10b981",
-          "date": "2024-12-09",
-          "realtime": false
-        },
         "Ammonium": {
           "valeur": 2.2,
           "unite": "mg/L",
           "color": "#ef4444",
-          "date": "2024-12-09",
-          "realtime": false
-        },
-        "Nitrates": {
-          "valeur": 13.0,
-          "unite": "mg/L",
-          "color": "#f59e0b",
           "date": "2024-12-09",
           "realtime": false
         },
@@ -2613,6 +2606,13 @@
           "valeur": 8.2,
           "unite": "pH",
           "color": "#10b981",
+          "date": "2024-12-09",
+          "realtime": false
+        },
+        "MES": {
+          "valeur": 576.0,
+          "unite": "mg/L",
+          "color": "#ef4444",
           "date": "2024-12-09",
           "realtime": false
         }
@@ -2645,31 +2645,58 @@
             "color": "#10b981"
           }
         ],
-        "MES": [
+        "Temp. eau": [
           {
             "date": "2024-12-09",
-            "valeur": 576.0,
-            "color": "#ef4444"
+            "valeur": 6.9,
+            "color": "#10b981"
           },
           {
             "date": "2024-12-09",
-            "valeur": 576.0,
-            "color": "#ef4444"
+            "valeur": 6.9,
+            "color": "#10b981"
           },
           {
             "date": "2024-10-18",
-            "valeur": 458.0,
-            "color": "#ef4444"
+            "valeur": 15.5,
+            "color": "#10b981"
           },
           {
             "date": "2024-08-12",
-            "valeur": 439.0,
+            "valeur": 26.5,
             "color": "#ef4444"
           },
           {
             "date": "2024-06-19",
-            "valeur": 483.0,
-            "color": "#ef4444"
+            "valeur": 20.2,
+            "color": "#f59e0b"
+          }
+        ],
+        "Nitrates": [
+          {
+            "date": "2024-12-09",
+            "valeur": 13.0,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2024-12-09",
+            "valeur": 13.0,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2024-10-18",
+            "valeur": 8.7,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-08-12",
+            "valeur": 5.7,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-06-19",
+            "valeur": 8.5,
+            "color": "#10b981"
           }
         ],
         "O2 saturation": [
@@ -2699,33 +2726,6 @@
             "color": "#10b981"
           }
         ],
-        "Temp. eau": [
-          {
-            "date": "2024-12-09",
-            "valeur": 6.9,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-12-09",
-            "valeur": 6.9,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-10-18",
-            "valeur": 15.5,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-08-12",
-            "valeur": 26.5,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-06-19",
-            "valeur": 20.2,
-            "color": "#f59e0b"
-          }
-        ],
         "Ammonium": [
           {
             "date": "2024-12-09",
@@ -2751,33 +2751,6 @@
             "date": "2024-06-19",
             "valeur": 3.1,
             "color": "#ef4444"
-          }
-        ],
-        "Nitrates": [
-          {
-            "date": "2024-12-09",
-            "valeur": 13.0,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2024-12-09",
-            "valeur": 13.0,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2024-10-18",
-            "valeur": 8.7,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-08-12",
-            "valeur": 5.7,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-06-19",
-            "valeur": 8.5,
-            "color": "#10b981"
           }
         ],
         "Phosphore": [
@@ -2833,6 +2806,33 @@
             "valeur": 8.1,
             "color": "#10b981"
           }
+        ],
+        "MES": [
+          {
+            "date": "2024-12-09",
+            "valeur": 576.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2024-12-09",
+            "valeur": 576.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2024-10-18",
+            "valeur": 458.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2024-08-12",
+            "valeur": 439.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2024-06-19",
+            "valeur": 483.0,
+            "color": "#ef4444"
+          }
         ]
       },
       "score": 69,
@@ -2845,7 +2845,7 @@
     {
       "zone": "L'Île-Saint-Denis",
       "dept": "93",
-      "date": "2026-06-02",
+      "date": "2026-06-03",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -2881,7 +2881,7 @@
     {
       "zone": "Les Lilas",
       "dept": "93",
-      "date": "2026-06-02",
+      "date": "2026-06-03",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -2917,43 +2917,7 @@
     {
       "zone": "Coubron",
       "dept": "93",
-      "date": "2026-06-02",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Airparif",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Drancy",
-      "dept": "93",
-      "date": "2026-06-02",
+      "date": "2026-06-03",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -2989,7 +2953,43 @@
     {
       "zone": "Bondy",
       "dept": "93",
-      "date": "2026-06-02",
+      "date": "2026-06-03",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Airparif",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Gournay-Sur-Marne",
+      "dept": "93",
+      "date": "2026-06-03",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
