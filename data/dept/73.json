@@ -3,7 +3,7 @@
   "nom": "Savoie",
   "slug": "savoie",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "02/06/2026 à 15:59",
+  "updated": "03/06/2026 à 16:26",
   "score_eau": 99,
   "nb_communes": 274,
   "potable": [
@@ -31472,8 +31472,6 @@
       "code_bss": "07266X0052/PS4",
       "current": 293.821,
       "history": [
-        293.765,
-        293.774,
         293.778,
         293.797,
         293.809,
@@ -31485,9 +31483,11 @@
         293.83,
         293.826,
         293.825,
+        293.821,
+        293.818,
         293.821
       ],
-      "year_ago": 293.73,
+      "year_ago": 293.76,
       "lat": 45.566444711,
       "lng": 6.245431548,
       "color": "#3b82f6"
@@ -31496,10 +31496,8 @@
       "nom": "Chambéry",
       "dept": "73",
       "code_bss": "07256X0095/CHAMBE",
-      "current": 265.025,
+      "current": 265.116,
       "history": [
-        265.108,
-        265.085,
         265.096,
         265.074,
         265.083,
@@ -31511,21 +31509,21 @@
         265.049,
         265.027,
         265.041,
-        265.025
+        265.025,
+        265.056,
+        265.116
       ],
-      "year_ago": 265.09,
+      "year_ago": 265.1,
       "lat": 45.569053375,
       "lng": 5.916248145,
-      "color": "#ef4444"
+      "color": "#3b82f6"
     },
     {
       "nom": "Cruet",
       "dept": "73",
       "code_bss": "07494X0026/CRUET",
-      "current": 270.041,
+      "current": 270.123,
       "history": [
-        269.943,
-        270.146,
         270.084,
         270.202,
         270.108,
@@ -31537,195 +31535,16 @@
         270.042,
         270.048,
         270.007,
-        270.041
+        270.041,
+        269.98,
+        270.123
       ],
-      "year_ago": 269.88,
+      "year_ago": 269.99,
       "lat": 45.522193195,
       "lng": 6.104556772,
       "color": "#3b82f6"
     }
   ],
-  "air": [
-    {
-      "zone": "Valloire",
-      "dept": "73",
-      "date": "2026-06-04",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Jean-d'Arves",
-      "dept": "73",
-      "date": "2026-06-04",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Albiez le Vieux",
-      "dept": "73",
-      "date": "2026-06-04",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-François-de-Sales",
-      "dept": "73",
-      "date": "2026-06-04",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint François Longchamp",
-      "dept": "73",
-      "date": "2026-06-04",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    }
-  ],
+  "air": [],
   "pollen": []
 }

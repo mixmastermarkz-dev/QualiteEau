@@ -3,7 +3,7 @@
   "nom": "Haute-Loire",
   "slug": "haute-loire",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "02/06/2026 à 15:59",
+  "updated": "03/06/2026 à 16:26",
   "score_eau": 96,
   "nb_communes": 262,
   "potable": [
@@ -46945,10 +46945,8 @@
       "nom": "Azérat",
       "dept": "43",
       "code_bss": "07662X0277/45B-01",
-      "current": 406.247,
+      "current": 406.245,
       "history": [
-        406.293,
-        406.289,
         406.285,
         406.279,
         406.272,
@@ -46960,11 +46958,65 @@
         406.233,
         406.236,
         406.235,
-        406.247
+        406.247,
+        406.25,
+        406.245
       ],
-      "year_ago": 406.43,
+      "year_ago": 406.45,
       "lat": 45.357221793,
       "lng": 3.367729971,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Cohade",
+      "dept": "43",
+      "code_bss": "07662X0279/P45B02",
+      "current": 406.012,
+      "history": [
+        406.098,
+        406.088,
+        406.081,
+        406.072,
+        406.065,
+        406.059,
+        406.052,
+        406.043,
+        406.035,
+        406.031,
+        406.03,
+        406.028,
+        406.018,
+        406.012
+      ],
+      "year_ago": 406.31,
+      "lat": 45.355638,
+      "lng": 3.362851,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Cohade",
+      "dept": "43",
+      "code_bss": "07662X0278/45B-03",
+      "current": 406.26,
+      "history": [
+        406.387,
+        406.369,
+        406.361,
+        406.346,
+        406.339,
+        406.331,
+        406.324,
+        406.308,
+        406.301,
+        406.291,
+        406.295,
+        406.29,
+        406.277,
+        406.26
+      ],
+      "year_ago": 406.68,
+      "lat": 45.354627,
+      "lng": 3.358466,
       "color": "#ef4444"
     },
     {
@@ -46988,45 +47040,17 @@
         863.4,
         863.412
       ],
-      "year_ago": 863.04,
+      "year_ago": 863.05,
       "lat": 45.060946408,
       "lng": 3.761689363,
       "color": "#3b82f6"
     },
     {
-      "nom": "Cohade",
-      "dept": "43",
-      "code_bss": "07662X0279/P45B02",
-      "current": 406.028,
-      "history": [
-        406.11,
-        406.104,
-        406.098,
-        406.088,
-        406.081,
-        406.072,
-        406.065,
-        406.059,
-        406.052,
-        406.043,
-        406.035,
-        406.031,
-        406.03,
-        406.028
-      ],
-      "year_ago": 406.32,
-      "lat": 45.355638,
-      "lng": 3.362851,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Saugues",
       "dept": "43",
       "code_bss": "08144X0010/PUITS",
-      "current": 956.06,
+      "current": 956.04,
       "history": [
-        956.22,
-        956.21,
         956.19,
         956.18,
         956.17,
@@ -47038,37 +47062,13 @@
         956.09,
         956.08,
         956.07,
-        956.06
+        956.06,
+        956.05,
+        956.04
       ],
-      "year_ago": 956.13,
+      "year_ago": 956.15,
       "lat": 44.963175124,
       "lng": 3.547527986,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Cohade",
-      "dept": "43",
-      "code_bss": "07662X0278/45B-03",
-      "current": 406.29,
-      "history": [
-        406.401,
-        406.391,
-        406.387,
-        406.369,
-        406.361,
-        406.346,
-        406.339,
-        406.331,
-        406.324,
-        406.308,
-        406.301,
-        406.291,
-        406.295,
-        406.29
-      ],
-      "year_ago": 406.68,
-      "lat": 45.354627,
-      "lng": 3.358466,
       "color": "#ef4444"
     },
     {
@@ -47080,8 +47080,6 @@
         1200.746,
         1200.747,
         1200.746,
-        1200.747,
-        1200.746,
         1200.746,
         1200.743,
         1200.742,
@@ -47090,6 +47088,8 @@
         1200.738,
         1200.738,
         1200.736,
+        1200.739,
+        1200.738,
         1200.739
       ],
       "year_ago": 1201.02,
@@ -47098,6 +47098,187 @@
       "color": "#ef4444"
     }
   ],
-  "air": [],
+  "air": [
+    {
+      "zone": "Agnat",
+      "dept": "43",
+      "date": "2026-06-05",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Ally",
+      "dept": "43",
+      "date": "2026-06-05",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Aubazat",
+      "dept": "43",
+      "date": "2026-06-05",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Mairie de Vissac-Auteyrac",
+      "dept": "43",
+      "date": "2026-06-05",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Auzon",
+      "dept": "43",
+      "date": "2026-06-05",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    }
+  ],
   "pollen": []
 }
