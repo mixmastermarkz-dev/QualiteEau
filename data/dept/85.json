@@ -3,7 +3,7 @@
   "nom": "Vendée",
   "slug": "vendee",
   "region": "Pays de la Loire",
-  "updated": "06/06/2026 à 13:24",
+  "updated": "07/06/2026 à 13:46",
   "score_eau": 96,
   "nb_communes": 256,
   "potable": [
@@ -23887,11 +23887,6 @@
             "date": "2026-02-26",
             "valeur": 13.0,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-06-06",
-            "valeur": 16.5,
-            "color": "#10b981"
           }
         ],
         "Conductivité": [
@@ -23899,22 +23894,12 @@
             "date": "2026-02-26",
             "valeur": 10.5,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-06-06",
-            "valeur": 5.0,
-            "color": "#10b981"
           }
         ],
         "pH": [
           {
             "date": "2026-02-26",
             "valeur": 8.3,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-06-06",
-            "valeur": 7.2,
             "color": "#10b981"
           }
         ],
@@ -23930,11 +23915,6 @@
             "date": "2026-02-26",
             "valeur": 98.0,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-06-06",
-            "valeur": 49.0,
-            "color": "#ef4444"
           }
         ],
         "Nitrates": [
@@ -23955,11 +23935,6 @@
           {
             "date": "2026-02-26",
             "valeur": 434.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-06-06",
-            "valeur": 558.0,
             "color": "#ef4444"
           }
         ]
@@ -31307,11 +31282,6 @@
             "date": "2024-07-09",
             "valeur": 14.0,
             "color": "#ef4444"
-          },
-          {
-            "date": "2024-06-06",
-            "valeur": 15.0,
-            "color": "#ef4444"
           }
         ],
         "Nitrates": [
@@ -31323,11 +31293,6 @@
           {
             "date": "2024-07-09",
             "valeur": 0.055,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-06-06",
-            "valeur": 1.1,
             "color": "#10b981"
           }
         ],
@@ -31341,11 +31306,6 @@
             "date": "2024-07-09",
             "valeur": 0.61,
             "color": "#ef4444"
-          },
-          {
-            "date": "2024-06-06",
-            "valeur": 0.406,
-            "color": "#f59e0b"
           }
         ]
       },
@@ -37775,93 +37735,190 @@
       "score": 80,
       "score_color": "#10b981",
       "score_label": "Bonne"
-    },
-    {
-      "nom": "CIBOULE A NIEUL-LE-DOLENT",
-      "dept": "85",
-      "lat": 46.554060668,
-      "lon": -1.511228431,
-      "nom_cours_eau": "CIBOULE",
-      "parametres": {
-        "Conductivité": {
-          "valeur": 6.3,
-          "unite": "µS/cm",
-          "color": "#10b981",
-          "date": "2024-06-06",
-          "realtime": false
-        },
-        "O2 saturation": {
-          "valeur": 65.0,
-          "unite": "%",
-          "color": "#f59e0b",
-          "date": "2024-06-06",
-          "realtime": false
-        },
-        "Temp. eau": {
-          "valeur": 18.0,
-          "unite": "°C",
-          "color": "#10b981",
-          "date": "2024-06-06",
-          "realtime": false
-        },
-        "pH": {
-          "valeur": 7.0,
-          "unite": "pH",
-          "color": "#10b981",
-          "date": "2024-06-06",
-          "realtime": false
-        },
-        "MES": {
-          "valeur": 300.0,
-          "unite": "mg/L",
-          "color": "#ef4444",
-          "date": "2024-06-06",
-          "realtime": false
-        }
-      },
-      "historique": {
-        "Conductivité": [
-          {
-            "date": "2024-06-06",
-            "valeur": 6.3,
-            "color": "#10b981"
-          }
-        ],
-        "O2 saturation": [
-          {
-            "date": "2024-06-06",
-            "valeur": 65.0,
-            "color": "#f59e0b"
-          }
-        ],
-        "Temp. eau": [
-          {
-            "date": "2024-06-06",
-            "valeur": 18.0,
-            "color": "#10b981"
-          }
-        ],
-        "pH": [
-          {
-            "date": "2024-06-06",
-            "valeur": 7.0,
-            "color": "#10b981"
-          }
-        ],
-        "MES": [
-          {
-            "date": "2024-06-06",
-            "valeur": 300.0,
-            "color": "#ef4444"
-          }
-        ]
-      },
-      "score": 70,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
     }
   ],
   "nappes": [],
-  "air": [],
+  "air": [
+    {
+      "zone": "l'Orbrie",
+      "dept": "85",
+      "date": "2026-06-09",
+      "indice": 2,
+      "label": "moyen",
+      "color": "#50ccaa",
+      "source": "Air Pays de la Loire",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Nesmy",
+      "dept": "85",
+      "date": "2026-06-09",
+      "indice": 2,
+      "label": "moyen",
+      "color": "#50ccaa",
+      "source": "Air Pays de la Loire",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Mouzeuil-Saint-Martin",
+      "dept": "85",
+      "date": "2026-06-09",
+      "indice": 2,
+      "label": "moyen",
+      "color": "#50ccaa",
+      "source": "Air Pays de la Loire",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Mouilleron-le-Captif",
+      "dept": "85",
+      "date": "2026-06-09",
+      "indice": 2,
+      "label": "moyen",
+      "color": "#50ccaa",
+      "source": "Air Pays de la Loire",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Mouchamps",
+      "dept": "85",
+      "date": "2026-06-09",
+      "indice": 2,
+      "label": "moyen",
+      "color": "#50ccaa",
+      "source": "Air Pays de la Loire",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    }
+  ],
   "pollen": []
 }

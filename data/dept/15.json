@@ -3,7 +3,7 @@
   "nom": "Cantal",
   "slug": "cantal",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "06/06/2026 à 13:24",
+  "updated": "07/06/2026 à 13:46",
   "score_eau": 96,
   "nb_communes": 251,
   "potable": [
@@ -45493,65 +45493,11 @@
   ],
   "nappes": [
     {
-      "nom": "Teissières-lès-Bouliès",
-      "dept": "15",
-      "code_bss": "08125X0044/F1",
-      "current": 724.09,
-      "history": [
-        724.15,
-        724.14,
-        724.13,
-        724.13,
-        724.12,
-        724.12,
-        724.1,
-        724.1,
-        724.08,
-        724.1,
-        724.09,
-        724.1,
-        724.08,
-        724.09
-      ],
-      "year_ago": 724.03,
-      "lat": 44.820895,
-      "lng": 2.541051,
-      "color": "#3b82f6"
-    },
-    {
-      "nom": "Molompize",
-      "dept": "15",
-      "code_bss": "07657X0018/P1",
-      "current": 949.97,
-      "history": [
-        950.01,
-        950.01,
-        950,
-        950,
-        950,
-        949.99,
-        949.99,
-        949.99,
-        949.98,
-        949.98,
-        949.98,
-        949.98,
-        949.97,
-        949.97
-      ],
-      "year_ago": 950.27,
-      "lat": 45.242098391,
-      "lng": 3.098887675,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Roannes-Saint-Mary",
       "dept": "15",
       "code_bss": "08353X0052/F",
-      "current": 770.36,
+      "current": 770.37,
       "history": [
-        770.74,
-        770.72,
         770.69,
         770.66,
         770.65,
@@ -45563,21 +45509,73 @@
         770.53,
         770.48,
         770.38,
-        770.36
+        770.36,
+        770.37,
+        770.37
       ],
-      "year_ago": 771.17,
+      "year_ago": 771.1,
       "lat": 44.811215,
       "lng": 2.400826,
       "color": "#ef4444"
     },
     {
+      "nom": "Molompize",
+      "dept": "15",
+      "code_bss": "07657X0018/P1",
+      "current": 949.96,
+      "history": [
+        950,
+        950,
+        950,
+        949.99,
+        949.99,
+        949.99,
+        949.98,
+        949.98,
+        949.98,
+        949.98,
+        949.97,
+        949.97,
+        949.97,
+        949.96
+      ],
+      "year_ago": 950.24,
+      "lat": 45.242098391,
+      "lng": 3.098887675,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Teissières-lès-Bouliès",
+      "dept": "15",
+      "code_bss": "08125X0044/F1",
+      "current": 724.06,
+      "history": [
+        724.13,
+        724.13,
+        724.12,
+        724.12,
+        724.1,
+        724.1,
+        724.08,
+        724.1,
+        724.09,
+        724.1,
+        724.08,
+        724.09,
+        724.06,
+        724.06
+      ],
+      "year_ago": 724.03,
+      "lat": 44.820895,
+      "lng": 2.541051,
+      "color": "#3b82f6"
+    },
+    {
       "nom": "Moussages",
       "dept": "15",
       "code_bss": "07638X0017/MAIRIE",
-      "current": 847.24,
+      "current": 847.186,
       "history": [
-        847.091,
-        847.09,
         847.09,
         847.089,
         847.089,
@@ -45589,7 +45587,9 @@
         847.239,
         847.283,
         847.263,
-        847.24
+        847.24,
+        847.212,
+        847.186
       ],
       "year_ago": 847.09,
       "lat": 45.238404427,
@@ -45600,10 +45600,8 @@
       "nom": "Chalvignac",
       "dept": "15",
       "code_bss": "07635X0035/F",
-      "current": 509.52,
+      "current": 509.49,
       "history": [
-        509.53,
-        509.54,
         509.51,
         509.53,
         509.51,
@@ -45615,14 +45613,197 @@
         509.49,
         509.52,
         509.49,
-        509.52
+        509.52,
+        509.49,
+        509.49
       ],
-      "year_ago": 509.57,
+      "year_ago": 509.56,
       "lat": 45.241376056,
       "lng": 2.246274272,
       "color": "#ef4444"
     }
   ],
-  "air": [],
+  "air": [
+    {
+      "zone": "Massiac",
+      "dept": "15",
+      "date": "2026-06-09",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Vézac",
+      "dept": "15",
+      "date": "2026-06-09",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Vèze",
+      "dept": "15",
+      "date": "2026-06-09",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Vezels-Roussy",
+      "dept": "15",
+      "date": "2026-06-09",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Vic-sur-Cère",
+      "dept": "15",
+      "date": "2026-06-09",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    }
+  ],
   "pollen": []
 }
