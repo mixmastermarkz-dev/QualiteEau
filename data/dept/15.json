@@ -3,7 +3,7 @@
   "nom": "Cantal",
   "slug": "cantal",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "08/06/2026 à 16:04",
+  "updated": "09/06/2026 à 14:34",
   "score_eau": 96,
   "nb_communes": 251,
   "potable": [
@@ -45496,10 +45496,8 @@
       "nom": "Molompize",
       "dept": "15",
       "code_bss": "07657X0018/P1",
-      "current": 949.96,
+      "current": 949.95,
       "history": [
-        950,
-        949.99,
         949.99,
         949.99,
         949.98,
@@ -45511,47 +45509,21 @@
         949.97,
         949.96,
         949.96,
-        949.96
+        949.96,
+        949.95,
+        949.95
       ],
-      "year_ago": 950.22,
+      "year_ago": 950.2,
       "lat": 45.242098391,
       "lng": 3.098887675,
       "color": "#ef4444"
     },
     {
-      "nom": "Teissières-lès-Bouliès",
-      "dept": "15",
-      "code_bss": "08125X0044/F1",
-      "current": 724.05,
-      "history": [
-        724.12,
-        724.12,
-        724.1,
-        724.1,
-        724.08,
-        724.1,
-        724.09,
-        724.1,
-        724.08,
-        724.09,
-        724.06,
-        724.06,
-        724.05,
-        724.05
-      ],
-      "year_ago": 724.02,
-      "lat": 44.820895,
-      "lng": 2.541051,
-      "color": "#3b82f6"
-    },
-    {
       "nom": "Roannes-Saint-Mary",
       "dept": "15",
       "code_bss": "08353X0052/F",
-      "current": 770.33,
+      "current": 770.29,
       "history": [
-        770.65,
-        770.63,
         770.62,
         770.6,
         770.57,
@@ -45563,9 +45535,11 @@
         770.37,
         770.37,
         770.35,
-        770.33
+        770.33,
+        770.31,
+        770.29
       ],
-      "year_ago": 771.05,
+      "year_ago": 770.99,
       "lat": 44.811215,
       "lng": 2.400826,
       "color": "#ef4444"
@@ -45574,10 +45548,8 @@
       "nom": "Moussages",
       "dept": "15",
       "code_bss": "07638X0017/MAIRIE",
-      "current": 847.15,
+      "current": 847.128,
       "history": [
-        847.089,
-        847.089,
         847.09,
         847.09,
         847.091,
@@ -45589,9 +45561,11 @@
         847.212,
         847.186,
         847.166,
-        847.15
+        847.15,
+        847.139,
+        847.128
       ],
-      "year_ago": 847.08,
+      "year_ago": 847.07,
       "lat": 45.238404427,
       "lng": 2.467418099,
       "color": "#3b82f6"
@@ -45600,10 +45574,8 @@
       "nom": "Chalvignac",
       "dept": "15",
       "code_bss": "07635X0035/F",
-      "current": 509.5,
+      "current": 509.49,
       "history": [
-        509.51,
-        509.54,
         509.5,
         509.52,
         509.48,
@@ -45615,22 +45587,50 @@
         509.49,
         509.49,
         509.48,
-        509.5
+        509.5,
+        509.49,
+        509.49
       ],
-      "year_ago": 509.55,
+      "year_ago": 509.54,
       "lat": 45.241376056,
       "lng": 2.246274272,
       "color": "#ef4444"
+    },
+    {
+      "nom": "Teissières-lès-Bouliès",
+      "dept": "15",
+      "code_bss": "08125X0044/F1",
+      "current": 724.04,
+      "history": [
+        724.1,
+        724.1,
+        724.08,
+        724.1,
+        724.09,
+        724.1,
+        724.08,
+        724.09,
+        724.06,
+        724.06,
+        724.05,
+        724.05,
+        724.04,
+        724.04
+      ],
+      "year_ago": 724.01,
+      "lat": 44.820895,
+      "lng": 2.541051,
+      "color": "#3b82f6"
     }
   ],
   "air": [
     {
-      "zone": "Pleaux",
+      "zone": "Mentières",
       "dept": "15",
-      "date": "2026-06-10",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
+      "date": "2026-06-11",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
@@ -45639,9 +45639,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -45661,12 +45661,12 @@
       }
     },
     {
-      "zone": "Polminhac",
+      "zone": "Montchamp",
       "dept": "15",
-      "date": "2026-06-10",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
+      "date": "2026-06-11",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
@@ -45675,9 +45675,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -45697,12 +45697,12 @@
       }
     },
     {
-      "zone": "Pradiers",
+      "zone": "Saint-Georges",
       "dept": "15",
-      "date": "2026-06-10",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
+      "date": "2026-06-11",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
@@ -45711,9 +45711,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -45733,12 +45733,12 @@
       }
     },
     {
-      "zone": "Prunet",
+      "zone": "Tiviers",
       "dept": "15",
-      "date": "2026-06-10",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
+      "date": "2026-06-11",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
@@ -45747,9 +45747,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -45769,12 +45769,12 @@
       }
     },
     {
-      "zone": "Quézac",
+      "zone": "Vieillespesse",
       "dept": "15",
-      "date": "2026-06-10",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
+      "date": "2026-06-11",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
@@ -45783,9 +45783,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
