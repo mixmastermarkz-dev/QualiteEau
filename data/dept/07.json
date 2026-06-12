@@ -3,7 +3,7 @@
   "nom": "Ardèche",
   "slug": "ardeche",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "11/06/2026 à 15:57",
+  "updated": "12/06/2026 à 14:52",
   "score_eau": 96,
   "nb_communes": 336,
   "potable": [
@@ -28850,6 +28850,32 @@
   ],
   "nappes": [
     {
+      "nom": "Lablachère",
+      "dept": "07",
+      "code_bss": "BSS003GPIS/X",
+      "current": 243.903,
+      "history": [
+        244.138,
+        244.114,
+        244.087,
+        244.027,
+        244.035,
+        244.033,
+        244.041,
+        244.016,
+        244.017,
+        243.998,
+        243.985,
+        243.95,
+        243.941,
+        243.903
+      ],
+      "year_ago": 244.37,
+      "lat": 44.46354371,
+      "lng": 4.214386619,
+      "color": "#ef4444"
+    },
+    {
       "nom": "Aubenas",
       "dept": "07",
       "code_bss": "08651X0038/0038",
@@ -28870,45 +28896,17 @@
         298.076,
         297.968
       ],
-      "year_ago": 299.66,
+      "year_ago": 299.63,
       "lat": 44.619744152,
       "lng": 4.39032624,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Lablachère",
-      "dept": "07",
-      "code_bss": "BSS003GPIS/X",
-      "current": 243.95,
-      "history": [
-        244.181,
-        244.14,
-        244.138,
-        244.114,
-        244.087,
-        244.027,
-        244.035,
-        244.033,
-        244.041,
-        244.016,
-        244.017,
-        243.998,
-        243.985,
-        243.95
-      ],
-      "year_ago": 244.39,
-      "lat": 44.46354371,
-      "lng": 4.214386619,
       "color": "#ef4444"
     },
     {
       "nom": "Veyras",
       "dept": "07",
       "code_bss": "08413X0091/F3",
-      "current": 441.74,
+      "current": 441.73,
       "history": [
-        441.75,
-        441.75,
         441.75,
         441.76,
         441.75,
@@ -28920,7 +28918,9 @@
         441.76,
         441.76,
         441.75,
-        441.74
+        441.74,
+        441.74,
+        441.73
       ],
       "year_ago": 441.43,
       "lat": 44.733838457,
@@ -28928,187 +28928,6 @@
       "color": "#3b82f6"
     }
   ],
-  "air": [
-    {
-      "zone": "Saint-Nizier-sur-Arroux",
-      "dept": "07",
-      "date": "2026-06-13",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Pierre-de-Varennes",
-      "dept": "07",
-      "date": "2026-06-13",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Pierre-le-Vieux",
-      "dept": "07",
-      "date": "2026-06-13",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Point",
-      "dept": "07",
-      "date": "2026-06-13",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Mondornon",
-      "dept": "07",
-      "date": "2026-06-13",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    }
-  ],
+  "air": [],
   "pollen": []
 }
