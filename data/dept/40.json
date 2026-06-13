@@ -3,7 +3,7 @@
   "nom": "Landes",
   "slug": "landes",
   "region": "Nouvelle-Aquitaine",
-  "updated": "12/06/2026 à 14:52",
+  "updated": "13/06/2026 à 13:52",
   "score_eau": 99,
   "nb_communes": 327,
   "potable": [
@@ -60181,10 +60181,8 @@
       "nom": "Gourbera",
       "dept": "40",
       "code_bss": "09505X0034/GO01",
-      "current": 21.17,
+      "current": 21.21,
       "history": [
-        21.23,
-        21.27,
         21.18,
         21.19,
         21.21,
@@ -60196,21 +60194,21 @@
         21.2,
         21.19,
         21.18,
-        21.17
+        21.17,
+        21.18,
+        21.21
       ],
-      "year_ago": 21.22,
+      "year_ago": 21.19,
       "lat": 43.788966613,
       "lng": -1.035321265,
-      "color": "#ef4444"
+      "color": "#3b82f6"
     },
     {
       "nom": "Lacquy",
       "dept": "40",
       "code_bss": "09266X0004/LC101",
-      "current": 76.511,
+      "current": 76.513,
       "history": [
-        76.557,
-        76.56,
         76.553,
         76.544,
         76.54,
@@ -60222,7 +60220,9 @@
         76.526,
         76.521,
         76.516,
-        76.511
+        76.511,
+        76.507,
+        76.513
       ],
       "year_ago": 76.75,
       "lat": 43.960162747,
@@ -60233,10 +60233,8 @@
       "nom": "Betbezer-d'Armagnac",
       "dept": "40",
       "code_bss": "09267X0014/PIEZO1",
-      "current": 72.017,
+      "current": 72.029,
       "history": [
-        72.144,
-        72.164,
         72.103,
         72.085,
         72.096,
@@ -60248,9 +60246,11 @@
         72.061,
         72.042,
         72.027,
-        72.017
+        72.017,
+        72.018,
+        72.029
       ],
-      "year_ago": 72.44,
+      "year_ago": 72.4,
       "lat": 43.982375767,
       "lng": -0.155560344,
       "color": "#ef4444"
@@ -60259,10 +60259,8 @@
       "nom": "Saint-Yaguen",
       "dept": "40",
       "code_bss": "09511X0022/LS02",
-      "current": 31.04,
+      "current": 31.09,
       "history": [
-        31.13,
-        31.12,
         31.06,
         31.06,
         31.11,
@@ -60274,21 +60272,21 @@
         31.09,
         31.05,
         31.08,
-        31.04
+        31.04,
+        31.1,
+        31.09
       ],
-      "year_ago": 31.06,
+      "year_ago": 31.04,
       "lat": 43.910092549,
       "lng": -0.715761027,
-      "color": "#ef4444"
+      "color": "#3b82f6"
     },
     {
       "nom": "Ychoux",
       "dept": "40",
       "code_bss": "08746X0031/P22",
-      "current": 56.83,
+      "current": 56.82,
       "history": [
-        56.93,
-        56.92,
         56.91,
         56.9,
         56.9,
@@ -60300,9 +60298,11 @@
         56.85,
         56.84,
         56.84,
-        56.83
+        56.83,
+        56.82,
+        56.82
       ],
-      "year_ago": 56.85,
+      "year_ago": 56.82,
       "lat": 44.344690504,
       "lng": -0.931494266,
       "color": "#ef4444"
@@ -60311,10 +60311,8 @@
       "nom": "Saugnacq-et-Muret",
       "dept": "40",
       "code_bss": "08742X0058/P4",
-      "current": 47.934,
+      "current": 47.926,
       "history": [
-        47.997,
-        47.995,
         47.986,
         47.983,
         47.979,
@@ -60326,9 +60324,11 @@
         47.948,
         47.944,
         47.936,
-        47.934
+        47.934,
+        47.928,
+        47.926
       ],
-      "year_ago": 47.06,
+      "year_ago": 47.05,
       "lat": 44.435996741,
       "lng": -0.945104876,
       "color": "#3b82f6"
@@ -60336,9 +60336,9 @@
   ],
   "air": [
     {
-      "zone": "Belhade",
+      "zone": "Saint-Jean-de-Marsacq",
       "dept": "40",
-      "date": "2026-06-13",
+      "date": "2026-06-14",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -60372,12 +60372,12 @@
       }
     },
     {
-      "zone": "Sore",
+      "zone": "Gabarret",
       "dept": "40",
-      "date": "2026-06-13",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
+      "date": "2026-06-14",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
       "source": "Atmo Nouvelle-Aquitaine",
       "polluants": {
         "NO₂": {
@@ -60386,9 +60386,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -60408,12 +60408,12 @@
       }
     },
     {
-      "zone": "Mano",
+      "zone": "Luxey",
       "dept": "40",
-      "date": "2026-06-13",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
+      "date": "2026-06-14",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
       "source": "Atmo Nouvelle-Aquitaine",
       "polluants": {
         "NO₂": {
@@ -60422,9 +60422,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -60444,12 +60444,12 @@
       }
     },
     {
-      "zone": "Callen",
+      "zone": "Brocas",
       "dept": "40",
-      "date": "2026-06-13",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
+      "date": "2026-06-14",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
       "source": "Atmo Nouvelle-Aquitaine",
       "polluants": {
         "NO₂": {
@@ -60458,9 +60458,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -60480,12 +60480,12 @@
       }
     },
     {
-      "zone": "Pontenx-les-Forges",
+      "zone": "Estigarde",
       "dept": "40",
-      "date": "2026-06-13",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
+      "date": "2026-06-14",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
       "source": "Atmo Nouvelle-Aquitaine",
       "polluants": {
         "NO₂": {
@@ -60494,9 +60494,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,

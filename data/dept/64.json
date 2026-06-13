@@ -3,7 +3,7 @@
   "nom": "Pyrénées-Atlantiques",
   "slug": "pyrenees-atlantiques",
   "region": "Nouvelle-Aquitaine",
-  "updated": "12/06/2026 à 14:52",
+  "updated": "13/06/2026 à 13:52",
   "score_eau": 100,
   "nb_communes": 546,
   "potable": [
@@ -75574,13 +75574,37 @@
   ],
   "nappes": [
     {
+      "nom": "Simacourbe",
+      "dept": "64",
+      "code_bss": "10057X0001/LEE1",
+      "current": 135.4,
+      "history": [
+        135.45,
+        135.44,
+        135.44,
+        135.44,
+        135.43,
+        135.43,
+        135.43,
+        135.42,
+        135.42,
+        135.41,
+        135.41,
+        135.4,
+        135.4,
+        135.4
+      ],
+      "year_ago": 131.81,
+      "lat": 43.454531789,
+      "lng": -0.137076901,
+      "color": "#3b82f6"
+    },
+    {
       "nom": "Bordes",
       "dept": "64",
       "code_bss": "10306X0034/F3",
-      "current": 217.561,
+      "current": 217.566,
       "history": [
-        217.613,
-        217.619,
         217.594,
         217.592,
         217.599,
@@ -75592,47 +75616,21 @@
         217.578,
         217.57,
         217.568,
-        217.561
+        217.561,
+        217.565,
+        217.566
       ],
-      "year_ago": 217.5,
+      "year_ago": 217.49,
       "lat": 43.235756291,
       "lng": -0.282003913,
-      "color": "#3b82f6"
-    },
-    {
-      "nom": "Simacourbe",
-      "dept": "64",
-      "code_bss": "10057X0001/LEE1",
-      "current": 135.4,
-      "history": [
-        135.45,
-        135.45,
-        135.45,
-        135.44,
-        135.44,
-        135.44,
-        135.43,
-        135.43,
-        135.43,
-        135.42,
-        135.42,
-        135.41,
-        135.41,
-        135.4
-      ],
-      "year_ago": 131.82,
-      "lat": 43.454531789,
-      "lng": -0.137076901,
       "color": "#3b82f6"
     },
     {
       "nom": "Lalongue",
       "dept": "64",
       "code_bss": "10052X0037/F",
-      "current": 110.82,
+      "current": 110.44,
       "history": [
-        106.22,
-        106.22,
         110.8,
         111.05,
         105.87,
@@ -75644,9 +75642,11 @@
         106.2,
         105.88,
         110.65,
-        110.82
+        110.82,
+        105.72,
+        110.44
       ],
-      "year_ago": 113.59,
+      "year_ago": 113.57,
       "lat": 43.476041021,
       "lng": -0.202639256,
       "color": "#ef4444"
@@ -75655,10 +75655,8 @@
       "nom": "Lannecaube",
       "dept": "64",
       "code_bss": "10052X0038/F",
-      "current": 95.431,
+      "current": 95.475,
       "history": [
-        95.571,
-        95.543,
         95.497,
         95.503,
         95.54,
@@ -75670,9 +75668,11 @@
         95.485,
         95.449,
         95.462,
-        95.431
+        95.431,
+        95.483,
+        95.475
       ],
-      "year_ago": 95.68,
+      "year_ago": 95.66,
       "lat": 43.485423929,
       "lng": -0.205881589,
       "color": "#ef4444"
@@ -75681,10 +75681,8 @@
       "nom": "Eaux-Bonnes",
       "dept": "64",
       "code_bss": "BSS004KHNR/X",
-      "current": 1385.403,
+      "current": 1385.372,
       "history": [
-        1385.569,
-        1385.571,
         1385.557,
         1385.542,
         1385.532,
@@ -75696,12 +75694,66 @@
         1385.441,
         1385.434,
         1385.418,
-        1385.403
+        1385.403,
+        1385.387,
+        1385.372
       ],
-      "year_ago": 1385.74,
+      "year_ago": 1385.75,
       "lat": 42.96184,
       "lng": -0.329051,
       "color": "#ef4444"
+    },
+    {
+      "nom": "Eaux-Bonnes",
+      "dept": "64",
+      "code_bss": "BSS004CDVY/X",
+      "current": 1393.334,
+      "history": [
+        1393.327,
+        1393.319,
+        1393.316,
+        1393.31,
+        1393.307,
+        1393.312,
+        1393.315,
+        1393.324,
+        1393.329,
+        1393.325,
+        1393.329,
+        1393.333,
+        1393.333,
+        1393.334
+      ],
+      "year_ago": 1393.69,
+      "lat": 42.958752475,
+      "lng": -0.32997766,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Eaux-Bonnes",
+      "dept": "64",
+      "code_bss": "BSS004CDVZ/X",
+      "current": 1400.869,
+      "history": [
+        1400.873,
+        1400.877,
+        1400.868,
+        1400.869,
+        1400.876,
+        1400.884,
+        1400.883,
+        1400.886,
+        1400.883,
+        1400.882,
+        1400.872,
+        1400.872,
+        1400.868,
+        1400.869
+      ],
+      "year_ago": 1400.83,
+      "lat": 42.95862,
+      "lng": -0.328503,
+      "color": "#3b82f6"
     },
     {
       "nom": "Eaux-Bonnes",
@@ -75724,245 +75776,12 @@
         1354.587,
         1354.631
       ],
-      "year_ago": 1357.16,
+      "year_ago": 1356.89,
       "lat": 42.961778,
       "lng": -0.330899,
       "color": "#ef4444"
-    },
-    {
-      "nom": "Eaux-Bonnes",
-      "dept": "64",
-      "code_bss": "BSS004CDVY/X",
-      "current": 1393.333,
-      "history": [
-        1393.354,
-        1393.339,
-        1393.327,
-        1393.319,
-        1393.316,
-        1393.31,
-        1393.307,
-        1393.312,
-        1393.315,
-        1393.324,
-        1393.329,
-        1393.325,
-        1393.329,
-        1393.333
-      ],
-      "year_ago": 1393.72,
-      "lat": 42.958752475,
-      "lng": -0.32997766,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Eaux-Bonnes",
-      "dept": "64",
-      "code_bss": "BSS004CDVZ/X",
-      "current": 1400.872,
-      "history": [
-        1400.885,
-        1400.872,
-        1400.873,
-        1400.877,
-        1400.868,
-        1400.869,
-        1400.876,
-        1400.884,
-        1400.883,
-        1400.886,
-        1400.883,
-        1400.882,
-        1400.872,
-        1400.872
-      ],
-      "year_ago": 1401.62,
-      "lat": 42.95862,
-      "lng": -0.328503,
-      "color": "#ef4444"
     }
   ],
-  "air": [
-    {
-      "zone": "Labets-Biscay",
-      "dept": "64",
-      "date": "2026-06-13",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Nouvelle-Aquitaine",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "La Bastide-Clairence",
-      "dept": "64",
-      "date": "2026-06-13",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Nouvelle-Aquitaine",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Gabat",
-      "dept": "64",
-      "date": "2026-06-13",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Nouvelle-Aquitaine",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Sames",
-      "dept": "64",
-      "date": "2026-06-13",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Nouvelle-Aquitaine",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Léren",
-      "dept": "64",
-      "date": "2026-06-13",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Nouvelle-Aquitaine",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    }
-  ],
+  "air": [],
   "pollen": []
 }
