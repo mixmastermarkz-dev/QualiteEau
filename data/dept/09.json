@@ -3,7 +3,7 @@
   "nom": "Ariège",
   "slug": "ariege",
   "region": "Occitanie",
-  "updated": "13/06/2026 à 13:52",
+  "updated": "14/06/2026 à 13:55",
   "score_eau": 98,
   "nb_communes": 331,
   "potable": [
@@ -35702,10 +35702,8 @@
       "nom": "Mazères",
       "dept": "09",
       "code_bss": "10357X0213/F",
-      "current": 254.513,
+      "current": 254.524,
       "history": [
-        254.561,
-        254.55,
         254.546,
         254.551,
         254.547,
@@ -35717,21 +35715,21 @@
         254.523,
         254.517,
         254.512,
-        254.513
+        254.513,
+        254.517,
+        254.524
       ],
-      "year_ago": 254.53,
+      "year_ago": 254.51,
       "lat": 43.209411174,
       "lng": 1.692949596,
-      "color": "#ef4444"
+      "color": "#3b82f6"
     },
     {
       "nom": "Montaut",
       "dept": "09",
       "code_bss": "10357X0021/F",
-      "current": 240.79,
+      "current": 240.784,
       "history": [
-        240.831,
-        240.827,
         240.825,
         240.821,
         240.819,
@@ -35743,7 +35741,9 @@
         240.8,
         240.797,
         240.794,
-        240.79
+        240.79,
+        240.787,
+        240.784
       ],
       "year_ago": 240.66,
       "lat": 43.225456979,
@@ -35754,10 +35754,8 @@
       "nom": "Verniolle",
       "dept": "09",
       "code_bss": "10577X0159/F",
-      "current": 316.21,
+      "current": 316.201,
       "history": [
-        316.264,
-        316.259,
         316.257,
         316.253,
         316.249,
@@ -35769,9 +35767,11 @@
         316.221,
         316.218,
         316.213,
-        316.21
+        316.21,
+        316.205,
+        316.201
       ],
-      "year_ago": 316.19,
+      "year_ago": 316.18,
       "lat": 43.081693662,
       "lng": 1.648900398,
       "color": "#3b82f6"
@@ -35780,13 +35780,11 @@
       "nom": "Balaguères",
       "dept": "09",
       "code_bss": "10734X0010/HY",
-      "current": 496.095,
+      "current": 496.096,
       "history": [
-        496.094,
-        496.094,
-        496.094,
         496.095,
         496.095,
+        496.094,
         496.095,
         496.095,
         496.095,
@@ -35795,7 +35793,9 @@
         496.094,
         496.095,
         496.095,
-        496.095
+        496.095,
+        496.096,
+        496.096
       ],
       "year_ago": 496.07,
       "lat": 42.955443654,
@@ -35806,35 +35806,216 @@
       "nom": "Cazavet",
       "dept": "09",
       "code_bss": "10734X0011/HY",
-      "current": 440.56,
+      "current": 440.629,
       "history": [
-        440.368,
-        440.387,
-        440.403,
-        440.418,
-        440.431,
-        440.438,
-        440.438,
-        440.436,
         440.441,
         440.457,
         440.484,
         440.514,
         440.544,
-        440.56
+        440.56,
+        440.568,
+        440.575,
+        440.583,
+        440.592,
+        440.601,
+        440.61,
+        440.619,
+        440.629
       ],
-      "year_ago": 440.58,
+      "year_ago": 440.6,
       "lat": 42.990315316,
       "lng": 1.048876492,
-      "color": "#ef4444"
+      "color": "#3b82f6"
     }
   ],
-  "air": [],
+  "air": [
+    {
+      "zone": "Faverois",
+      "dept": "09",
+      "date": "2026-06-16",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Felon",
+      "dept": "09",
+      "date": "2026-06-16",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Fêche-l'Église",
+      "dept": "09",
+      "date": "2026-06-16",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Florimont",
+      "dept": "09",
+      "date": "2026-06-16",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Fontaine",
+      "dept": "09",
+      "date": "2026-06-16",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    }
+  ],
   "pollen": [
     {
       "dept": "09",
       "lib_zone": "ARIEGE",
-      "date": "2026-06-14",
+      "date": "2026-06-15",
       "indice_global": 3,
       "label_global": "Moyen",
       "color_global": "#f59e0b",
