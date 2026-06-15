@@ -3,7 +3,7 @@
   "nom": "Hautes-Alpes",
   "slug": "hautes-alpes",
   "region": "Provence-Alpes-Côte d'Azur",
-  "updated": "14/06/2026 à 13:55",
+  "updated": "15/06/2026 à 17:43",
   "score_eau": 98,
   "nb_communes": 162,
   "potable": [
@@ -16645,10 +16645,8 @@
       "nom": "La Roche-de-Rame",
       "dept": "05",
       "code_bss": "08472X0007/F-1",
-      "current": 924.15,
+      "current": 924.14,
       "history": [
-        924.19,
-        924.2,
         924.19,
         924.21,
         924.2,
@@ -16660,47 +16658,21 @@
         924.13,
         924.15,
         924.12,
-        924.15
+        924.15,
+        924.12,
+        924.14
       ],
-      "year_ago": 924.23,
+      "year_ago": 924.22,
       "lat": 44.738691198,
       "lng": 6.582662145,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Saint-Jean-Saint-Nicolas",
-      "dept": "05",
-      "code_bss": "08466X0009/F2",
-      "current": 1160.03,
-      "history": [
-        1160.2,
-        1160.2,
-        1160.18,
-        1160.17,
-        1160.17,
-        1160.18,
-        1160.15,
-        1160.12,
-        1160.09,
-        1160.06,
-        1160.04,
-        1160.03,
-        1160.03,
-        1160.03
-      ],
-      "year_ago": 1160.59,
-      "lat": 44.680949438,
-      "lng": 6.260818821,
       "color": "#ef4444"
     },
     {
       "nom": "Aspremont",
       "dept": "05",
       "code_bss": "08688X0023/PZ1",
-      "current": 718.43,
+      "current": 718.42,
       "history": [
-        718.49,
-        718.49,
         718.47,
         718.47,
         718.46,
@@ -16712,7 +16684,9 @@
         718.43,
         718.44,
         718.42,
-        718.43
+        718.43,
+        718.42,
+        718.42
       ],
       "year_ago": 718.55,
       "lat": 44.493443917,
@@ -16720,13 +16694,37 @@
       "color": "#ef4444"
     },
     {
+      "nom": "Saint-Jean-Saint-Nicolas",
+      "dept": "05",
+      "code_bss": "08466X0009/F2",
+      "current": 1160.03,
+      "history": [
+        1160.18,
+        1160.17,
+        1160.17,
+        1160.18,
+        1160.15,
+        1160.12,
+        1160.09,
+        1160.06,
+        1160.04,
+        1160.03,
+        1160.03,
+        1160.03,
+        1160.02,
+        1160.03
+      ],
+      "year_ago": 1160.54,
+      "lat": 44.680949438,
+      "lng": 6.260818821,
+      "color": "#ef4444"
+    },
+    {
       "nom": "L'Argentière-la-Bessée",
       "dept": "05",
       "code_bss": "08471X0034/P5",
-      "current": 953.35,
+      "current": 953.34,
       "history": [
-        953.48,
-        953.5,
         953.48,
         953.5,
         953.5,
@@ -16738,9 +16736,11 @@
         953.36,
         953.37,
         953.34,
-        953.35
+        953.35,
+        953.33,
+        953.34
       ],
-      "year_ago": 953.43,
+      "year_ago": 953.41,
       "lat": 44.776271664,
       "lng": 6.558809418,
       "color": "#ef4444"
@@ -16749,10 +16749,8 @@
       "nom": "Val Buëch-Méouge",
       "dept": "05",
       "code_bss": "09172X0078/P",
-      "current": 491.56,
+      "current": 491.55,
       "history": [
-        491.62,
-        491.61,
         491.61,
         491.6,
         491.6,
@@ -16764,195 +16762,16 @@
         491.57,
         491.56,
         491.56,
-        491.56
+        491.56,
+        491.55,
+        491.55
       ],
-      "year_ago": 491.67,
+      "year_ago": 491.66,
       "lat": 44.231230139,
       "lng": 5.862949573,
       "color": "#ef4444"
     }
   ],
-  "air": [
-    {
-      "zone": "Saint-Aubin-les-Forges",
-      "dept": "05",
-      "date": "2026-06-16",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Benin-d'Azy",
-      "dept": "05",
-      "date": "2026-06-16",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Benin-des-Bois",
-      "dept": "05",
-      "date": "2026-06-16",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Bonnot",
-      "dept": "05",
-      "date": "2026-06-16",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Brisson",
-      "dept": "05",
-      "date": "2026-06-16",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    }
-  ],
+  "air": [],
   "pollen": []
 }

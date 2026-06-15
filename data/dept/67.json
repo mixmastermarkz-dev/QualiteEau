@@ -3,7 +3,7 @@
   "nom": "Bas-Rhin",
   "slug": "bas-rhin",
   "region": "Grand Est",
-  "updated": "14/06/2026 à 13:55",
+  "updated": "15/06/2026 à 17:43",
   "score_eau": 97,
   "nb_communes": 514,
   "potable": [
@@ -59984,39 +59984,11 @@
   ],
   "nappes": [
     {
-      "nom": "Gresswiller",
-      "dept": "67",
-      "code_bss": "02713X0105/PZ1",
-      "current": 198.182,
-      "history": [
-        198.189,
-        198.13,
-        198.137,
-        198.131,
-        198.174,
-        198.16,
-        198.156,
-        198.127,
-        198.158,
-        198.108,
-        198.126,
-        198.093,
-        198.102,
-        198.182
-      ],
-      "year_ago": 199.53,
-      "lat": 48.520713416,
-      "lng": 7.415360799,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Haegen",
       "dept": "67",
       "code_bss": "02332X0198/F3",
-      "current": 207.46,
+      "current": 207.391,
       "history": [
-        207.299,
-        207.319,
         207.303,
         207.331,
         207.323,
@@ -60028,14 +60000,223 @@
         207.42,
         207.435,
         207.456,
-        207.46
+        207.46,
+        207.472,
+        207.391
       ],
-      "year_ago": 207.27,
+      "year_ago": 207.29,
       "lat": 48.714388864,
       "lng": 7.311970754,
       "color": "#3b82f6"
+    },
+    {
+      "nom": "Gresswiller",
+      "dept": "67",
+      "code_bss": "02713X0105/PZ1",
+      "current": 198.121,
+      "history": [
+        198.174,
+        198.16,
+        198.156,
+        198.127,
+        198.158,
+        198.108,
+        198.126,
+        198.093,
+        198.102,
+        198.182,
+        198.105,
+        198.208,
+        198.112,
+        198.121
+      ],
+      "year_ago": 199.55,
+      "lat": 48.520713416,
+      "lng": 7.415360799,
+      "color": "#ef4444"
     }
   ],
-  "air": [],
+  "air": [
+    {
+      "zone": "Retschwiller",
+      "dept": "67",
+      "date": "2026-06-16",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
+      "source": "Atmo Grand Est",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Reutenbourg",
+      "dept": "67",
+      "date": "2026-06-16",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
+      "source": "Atmo Grand Est",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Rexingen",
+      "dept": "67",
+      "date": "2026-06-16",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Atmo Grand Est",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Rhinau",
+      "dept": "67",
+      "date": "2026-06-16",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
+      "source": "Atmo Grand Est",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Richtolsheim",
+      "dept": "67",
+      "date": "2026-06-16",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
+      "source": "Atmo Grand Est",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    }
+  ],
   "pollen": []
 }
