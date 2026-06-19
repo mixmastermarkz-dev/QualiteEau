@@ -3,7 +3,7 @@
   "nom": "Hautes-Alpes",
   "slug": "hautes-alpes",
   "region": "Provence-Alpes-Côte d'Azur",
-  "updated": "18/06/2026 à 14:50",
+  "updated": "19/06/2026 à 15:33",
   "score_eau": 98,
   "nb_communes": 162,
   "potable": [
@@ -16660,65 +16660,11 @@
   ],
   "nappes": [
     {
-      "nom": "Aspremont",
-      "dept": "05",
-      "code_bss": "08688X0023/PZ1",
-      "current": 718.4,
-      "history": [
-        718.44,
-        718.44,
-        718.43,
-        718.44,
-        718.42,
-        718.43,
-        718.42,
-        718.42,
-        718.41,
-        718.41,
-        718.4,
-        718.41,
-        718.4,
-        718.4
-      ],
-      "year_ago": 718.54,
-      "lat": 44.493443917,
-      "lng": 5.728933099,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "La Roche-de-Rame",
-      "dept": "05",
-      "code_bss": "08472X0007/F-1",
-      "current": 924.13,
-      "history": [
-        924.15,
-        924.14,
-        924.13,
-        924.15,
-        924.12,
-        924.15,
-        924.12,
-        924.14,
-        924.12,
-        924.13,
-        924.11,
-        924.12,
-        924.1,
-        924.13
-      ],
-      "year_ago": 924.18,
-      "lat": 44.738691198,
-      "lng": 6.582662145,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Saint-Jean-Saint-Nicolas",
       "dept": "05",
       "code_bss": "08466X0009/F2",
-      "current": 1160.11,
+      "current": 1160.04,
       "history": [
-        1160.09,
-        1160.06,
         1160.04,
         1160.03,
         1160.03,
@@ -16730,47 +16676,73 @@
         1160.63,
         1160.73,
         1160.2,
-        1160.11
+        1160.11,
+        1160.05,
+        1160.04
       ],
-      "year_ago": 1160.41,
+      "year_ago": 1160.39,
       "lat": 44.680949438,
       "lng": 6.260818821,
       "color": "#ef4444"
     },
     {
-      "nom": "Val Buëch-Méouge",
+      "nom": "Aspremont",
       "dept": "05",
-      "code_bss": "09172X0078/P",
-      "current": 491.54,
+      "code_bss": "08688X0023/PZ1",
+      "current": 718.42,
       "history": [
-        491.58,
-        491.57,
-        491.57,
-        491.56,
-        491.56,
-        491.56,
-        491.55,
-        491.55,
-        491.55,
-        491.54,
-        491.54,
-        491.54,
-        491.54,
-        491.54
+        718.43,
+        718.44,
+        718.42,
+        718.43,
+        718.42,
+        718.42,
+        718.41,
+        718.41,
+        718.4,
+        718.41,
+        718.4,
+        718.4,
+        718.39,
+        718.42
       ],
-      "year_ago": 491.63,
-      "lat": 44.231230139,
-      "lng": 5.862949573,
+      "year_ago": 718.53,
+      "lat": 44.493443917,
+      "lng": 5.728933099,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "La Roche-de-Rame",
+      "dept": "05",
+      "code_bss": "08472X0007/F-1",
+      "current": 924.17,
+      "history": [
+        924.13,
+        924.15,
+        924.12,
+        924.15,
+        924.12,
+        924.14,
+        924.12,
+        924.13,
+        924.11,
+        924.12,
+        924.1,
+        924.13,
+        924.14,
+        924.17
+      ],
+      "year_ago": 924.17,
+      "lat": 44.738691198,
+      "lng": 6.582662145,
       "color": "#ef4444"
     },
     {
       "nom": "L'Argentière-la-Bessée",
       "dept": "05",
       "code_bss": "08471X0034/P5",
-      "current": 953.24,
+      "current": 953.28,
       "history": [
-        953.41,
-        953.38,
         953.36,
         953.37,
         953.34,
@@ -16782,14 +16754,223 @@
         953.26,
         953.24,
         953.21,
-        953.24
+        953.24,
+        953.28,
+        953.28
       ],
-      "year_ago": 953.35,
+      "year_ago": 953.33,
       "lat": 44.776271664,
       "lng": 6.558809418,
       "color": "#ef4444"
+    },
+    {
+      "nom": "Val Buëch-Méouge",
+      "dept": "05",
+      "code_bss": "09172X0078/P",
+      "current": 491.53,
+      "history": [
+        491.57,
+        491.56,
+        491.56,
+        491.56,
+        491.55,
+        491.55,
+        491.55,
+        491.54,
+        491.54,
+        491.54,
+        491.54,
+        491.54,
+        491.54,
+        491.53
+      ],
+      "year_ago": 491.63,
+      "lat": 44.231230139,
+      "lng": 5.862949573,
+      "color": "#ef4444"
     }
   ],
-  "air": [],
+  "air": [
+    {
+      "zone": "Villapourçon",
+      "dept": "05",
+      "date": "2026-06-21",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Ville-Langy",
+      "dept": "05",
+      "date": "2026-06-21",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Achun",
+      "dept": "05",
+      "date": "2026-06-21",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Alligny-en-Morvan",
+      "dept": "05",
+      "date": "2026-06-21",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Alluy",
+      "dept": "05",
+      "date": "2026-06-21",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    }
+  ],
   "pollen": []
 }

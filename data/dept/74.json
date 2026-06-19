@@ -3,7 +3,7 @@
   "nom": "Haute-Savoie",
   "slug": "haute-savoie",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "18/06/2026 à 14:50",
+  "updated": "19/06/2026 à 15:33",
   "score_eau": 98,
   "nb_communes": 279,
   "potable": [
@@ -40828,10 +40828,8 @@
       "nom": "Marigny-Saint-Marcel",
       "dept": "74",
       "code_bss": "07013X0071/F1",
-      "current": 352.685,
+      "current": 352.659,
       "history": [
-        352.801,
-        352.793,
         352.787,
         352.78,
         352.777,
@@ -40843,9 +40841,11 @@
         352.722,
         352.709,
         352.697,
-        352.685
+        352.685,
+        352.673,
+        352.659
       ],
-      "year_ago": 352.83,
+      "year_ago": 352.82,
       "lat": 45.832389293,
       "lng": 5.962087611,
       "color": "#ef4444"
@@ -40854,10 +40854,8 @@
       "nom": "Publier",
       "dept": "74",
       "code_bss": "06301X0019/P5",
-      "current": 373.849,
+      "current": 373.838,
       "history": [
-        373.924,
-        373.917,
         373.911,
         373.902,
         373.899,
@@ -40869,9 +40867,11 @@
         373.862,
         373.857,
         373.854,
-        373.849
+        373.849,
+        373.845,
+        373.838
       ],
-      "year_ago": 374.45,
+      "year_ago": 374.44,
       "lat": 46.390565227,
       "lng": 6.520859286,
       "color": "#ef4444"
@@ -40880,10 +40880,8 @@
       "nom": "Vinzier",
       "dept": "74",
       "code_bss": "06306X0042/BIOGE",
-      "current": 572.656,
+      "current": 572.667,
       "history": [
-        572.613,
-        572.605,
         572.618,
         572.623,
         572.651,
@@ -40895,9 +40893,11 @@
         572.729,
         572.691,
         572.672,
-        572.656
+        572.656,
+        572.672,
+        572.667
       ],
-      "year_ago": 573.05,
+      "year_ago": 573.04,
       "lat": 46.335316884,
       "lng": 6.621257922,
       "color": "#ef4444"
@@ -40906,10 +40906,8 @@
       "nom": "Passy",
       "dept": "74",
       "code_bss": "BSS004QBEB/X",
-      "current": 569.513,
+      "current": 569.503,
       "history": [
-        569.608,
-        569.592,
         569.591,
         569.583,
         569.583,
@@ -40921,7 +40919,9 @@
         569.541,
         569.527,
         569.527,
-        569.513
+        569.513,
+        569.517,
+        569.503
       ],
       "year_ago": 569.32,
       "lat": 45.920935924,
@@ -40932,10 +40932,8 @@
       "nom": "Marigny-Saint-Marcel",
       "dept": "74",
       "code_bss": "BSS004MZXK/X",
-      "current": 363.132,
+      "current": 363.116,
       "history": [
-        363.243,
-        363.233,
         363.12,
         363.213,
         363.214,
@@ -40947,9 +40945,11 @@
         363.059,
         363.145,
         363.124,
-        363.132
+        363.132,
+        363.123,
+        363.116
       ],
-      "year_ago": 363.18,
+      "year_ago": 363.16,
       "lat": 45.835072054,
       "lng": 5.968019958,
       "color": "#ef4444"
@@ -40958,10 +40958,8 @@
       "nom": "Viry",
       "dept": "74",
       "code_bss": "06537X0103/VEIGY",
-      "current": 372.497,
+      "current": 372.495,
       "history": [
-        372.522,
-        372.509,
         372.521,
         372.518,
         372.552,
@@ -40973,14 +40971,197 @@
         372.516,
         372.497,
         372.51,
-        372.497
+        372.497,
+        372.524,
+        372.495
       ],
-      "year_ago": 372.1,
+      "year_ago": 372.11,
       "lat": 46.141387797,
       "lng": 6.017375948,
       "color": "#3b82f6"
     }
   ],
-  "air": [],
+  "air": [
+    {
+      "zone": "Yvoire",
+      "dept": "74",
+      "date": "2026-06-21",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Vulbens",
+      "dept": "74",
+      "date": "2026-06-21",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Vovray-en-Bornes",
+      "dept": "74",
+      "date": "2026-06-21",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Vougy",
+      "dept": "74",
+      "date": "2026-06-21",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Viuz-en-Sallaz",
+      "dept": "74",
+      "date": "2026-06-21",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    }
+  ],
   "pollen": []
 }

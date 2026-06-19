@@ -3,7 +3,7 @@
   "nom": "Cantal",
   "slug": "cantal",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "18/06/2026 à 14:50",
+  "updated": "19/06/2026 à 15:33",
   "score_eau": 96,
   "nb_communes": 251,
   "potable": [
@@ -45600,39 +45600,11 @@
   ],
   "nappes": [
     {
-      "nom": "Moussages",
-      "dept": "15",
-      "code_bss": "07638X0017/MAIRIE",
-      "current": 847.072,
-      "history": [
-        847.095,
-        847.092,
-        847.09,
-        847.088,
-        847.085,
-        847.085,
-        847.083,
-        847.082,
-        847.081,
-        847.078,
-        847.076,
-        847.075,
-        847.073,
-        847.072
-      ],
-      "year_ago": 847.04,
-      "lat": 45.238404427,
-      "lng": 2.467418099,
-      "color": "#3b82f6"
-    },
-    {
       "nom": "Teissières-lès-Bouliès",
       "dept": "15",
       "code_bss": "08125X0044/F1",
-      "current": 723.932,
+      "current": 723.915,
       "history": [
-        723.987,
-        723.974,
         723.998,
         723.998,
         724.013,
@@ -45644,21 +45616,47 @@
         723.943,
         723.952,
         723.92,
-        723.932
+        723.932,
+        723.903,
+        723.915
       ],
-      "year_ago": 723.91,
+      "year_ago": 723.9,
       "lat": 44.820895,
       "lng": 2.541051,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Moussages",
+      "dept": "15",
+      "code_bss": "07638X0017/MAIRIE",
+      "current": 847.069,
+      "history": [
+        847.09,
+        847.088,
+        847.085,
+        847.085,
+        847.083,
+        847.082,
+        847.081,
+        847.078,
+        847.076,
+        847.075,
+        847.073,
+        847.072,
+        847.07,
+        847.069
+      ],
+      "year_ago": 847.04,
+      "lat": 45.238404427,
+      "lng": 2.467418099,
       "color": "#3b82f6"
     },
     {
       "nom": "Roannes-Saint-Mary",
       "dept": "15",
       "code_bss": "08353X0052/F",
-      "current": 769.921,
+      "current": 769.869,
       "history": [
-        770.196,
-        770.173,
         770.12,
         770.081,
         770.074,
@@ -45670,9 +45668,11 @@
         769.974,
         769.966,
         769.947,
-        769.921
+        769.921,
+        769.89,
+        769.869
       ],
-      "year_ago": 770.51,
+      "year_ago": 770.46,
       "lat": 44.811215,
       "lng": 2.400826,
       "color": "#ef4444"
@@ -45681,10 +45681,8 @@
       "nom": "Molompize",
       "dept": "15",
       "code_bss": "07657X0018/P1",
-      "current": 949.886,
+      "current": 949.881,
       "history": [
-        949.925,
-        949.923,
         949.918,
         949.915,
         949.913,
@@ -45696,7 +45694,9 @@
         949.894,
         949.893,
         949.889,
-        949.886
+        949.886,
+        949.885,
+        949.881
       ],
       "year_ago": 950.08,
       "lat": 45.242098391,
@@ -45707,10 +45707,8 @@
       "nom": "Chalvignac",
       "dept": "15",
       "code_bss": "07635X0035/F",
-      "current": 509.43,
+      "current": 509.42,
       "history": [
-        509.25,
-        509.23,
         509.23,
         509.23,
         509.46,
@@ -45722,7 +45720,9 @@
         509.4,
         509.44,
         509.39,
-        509.43
+        509.43,
+        509.39,
+        509.42
       ],
       "year_ago": 509.47,
       "lat": 45.241376056,
@@ -45730,6 +45730,187 @@
       "color": "#ef4444"
     }
   ],
-  "air": [],
+  "air": [
+    {
+      "zone": "Anglards-de-Salers",
+      "dept": "15",
+      "date": "2026-06-21",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Antignac",
+      "dept": "15",
+      "date": "2026-06-21",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Arches",
+      "dept": "15",
+      "date": "2026-06-21",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Auriac-l'Église",
+      "dept": "15",
+      "date": "2026-06-21",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Auzers",
+      "dept": "15",
+      "date": "2026-06-21",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    }
+  ],
   "pollen": []
 }
