@@ -3,7 +3,7 @@
   "nom": "Cantal",
   "slug": "cantal",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "19/06/2026 à 15:33",
+  "updated": "20/06/2026 à 13:54",
   "score_eau": 96,
   "nb_communes": 251,
   "potable": [
@@ -45600,65 +45600,11 @@
   ],
   "nappes": [
     {
-      "nom": "Teissières-lès-Bouliès",
-      "dept": "15",
-      "code_bss": "08125X0044/F1",
-      "current": 723.915,
-      "history": [
-        723.998,
-        723.998,
-        724.013,
-        724.009,
-        724,
-        724,
-        723.977,
-        723.976,
-        723.943,
-        723.952,
-        723.92,
-        723.932,
-        723.903,
-        723.915
-      ],
-      "year_ago": 723.9,
-      "lat": 44.820895,
-      "lng": 2.541051,
-      "color": "#3b82f6"
-    },
-    {
-      "nom": "Moussages",
-      "dept": "15",
-      "code_bss": "07638X0017/MAIRIE",
-      "current": 847.069,
-      "history": [
-        847.09,
-        847.088,
-        847.085,
-        847.085,
-        847.083,
-        847.082,
-        847.081,
-        847.078,
-        847.076,
-        847.075,
-        847.073,
-        847.072,
-        847.07,
-        847.069
-      ],
-      "year_ago": 847.04,
-      "lat": 45.238404427,
-      "lng": 2.467418099,
-      "color": "#3b82f6"
-    },
-    {
       "nom": "Roannes-Saint-Mary",
       "dept": "15",
       "code_bss": "08353X0052/F",
-      "current": 769.869,
+      "current": 769.796,
       "history": [
-        770.12,
-        770.081,
         770.074,
         770.088,
         770.082,
@@ -45670,21 +45616,47 @@
         769.947,
         769.921,
         769.89,
-        769.869
+        769.869,
+        769.83,
+        769.796
       ],
-      "year_ago": 770.46,
+      "year_ago": 770.43,
       "lat": 44.811215,
       "lng": 2.400826,
       "color": "#ef4444"
     },
     {
+      "nom": "Teissières-lès-Bouliès",
+      "dept": "15",
+      "code_bss": "08125X0044/F1",
+      "current": 723.897,
+      "history": [
+        724.013,
+        724.009,
+        724,
+        724,
+        723.977,
+        723.976,
+        723.943,
+        723.952,
+        723.92,
+        723.932,
+        723.903,
+        723.915,
+        723.889,
+        723.897
+      ],
+      "year_ago": 723.89,
+      "lat": 44.820895,
+      "lng": 2.541051,
+      "color": "#3b82f6"
+    },
+    {
       "nom": "Molompize",
       "dept": "15",
       "code_bss": "07657X0018/P1",
-      "current": 949.881,
+      "current": 949.873,
       "history": [
-        949.918,
-        949.915,
         949.913,
         949.91,
         949.906,
@@ -45696,21 +45668,47 @@
         949.889,
         949.886,
         949.885,
-        949.881
+        949.881,
+        949.878,
+        949.873
       ],
-      "year_ago": 950.08,
+      "year_ago": 950.07,
       "lat": 45.242098391,
       "lng": 3.098887675,
       "color": "#ef4444"
     },
     {
+      "nom": "Moussages",
+      "dept": "15",
+      "code_bss": "07638X0017/MAIRIE",
+      "current": 847.068,
+      "history": [
+        847.085,
+        847.085,
+        847.083,
+        847.082,
+        847.081,
+        847.078,
+        847.076,
+        847.075,
+        847.073,
+        847.072,
+        847.07,
+        847.069,
+        847.069,
+        847.068
+      ],
+      "year_ago": 847.04,
+      "lat": 45.238404427,
+      "lng": 2.467418099,
+      "color": "#3b82f6"
+    },
+    {
       "nom": "Chalvignac",
       "dept": "15",
       "code_bss": "07635X0035/F",
-      "current": 509.42,
+      "current": 509.4,
       "history": [
-        509.23,
-        509.23,
         509.46,
         509.47,
         509.45,
@@ -45722,9 +45720,11 @@
         509.39,
         509.43,
         509.39,
-        509.42
+        509.42,
+        509.39,
+        509.4
       ],
-      "year_ago": 509.47,
+      "year_ago": 509.46,
       "lat": 45.241376056,
       "lng": 2.246274272,
       "color": "#ef4444"
@@ -45732,9 +45732,9 @@
   ],
   "air": [
     {
-      "zone": "Anglards-de-Salers",
+      "zone": "Sansac-de-Marmiesse",
       "dept": "15",
-      "date": "2026-06-21",
+      "date": "2026-06-22",
       "indice": 4,
       "label": "Mauvais",
       "color": "#ff5050",
@@ -45756,9 +45756,9 @@
           "color": "#10b981"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
@@ -45768,9 +45768,45 @@
       }
     },
     {
-      "zone": "Antignac",
+      "zone": "Sansac-Veinazès",
       "dept": "15",
-      "date": "2026-06-21",
+      "date": "2026-06-22",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Sauvat",
+      "dept": "15",
+      "date": "2026-06-22",
       "indice": 4,
       "label": "Mauvais",
       "color": "#ff5050",
@@ -45804,9 +45840,9 @@
       }
     },
     {
-      "zone": "Arches",
+      "zone": "La Ségalassière",
       "dept": "15",
-      "date": "2026-06-21",
+      "date": "2026-06-22",
       "indice": 4,
       "label": "Mauvais",
       "color": "#ff5050",
@@ -45823,14 +45859,14 @@
           "color": "#f97316"
         },
         "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
           "indice": 1,
           "label": "Bon",
           "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
@@ -45840,9 +45876,9 @@
       }
     },
     {
-      "zone": "Auriac-l'Église",
+      "zone": "Ségur-les-Villas",
       "dept": "15",
-      "date": "2026-06-21",
+      "date": "2026-06-22",
       "indice": 4,
       "label": "Mauvais",
       "color": "#ff5050",
@@ -45859,45 +45895,9 @@
           "color": "#f97316"
         },
         "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
           "indice": 1,
           "label": "Bon",
           "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Auzers",
-      "dept": "15",
-      "date": "2026-06-21",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
         },
         "PM2.5": {
           "indice": 1,

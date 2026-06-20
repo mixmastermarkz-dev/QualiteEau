@@ -3,7 +3,7 @@
   "nom": "Orne",
   "slug": "orne",
   "region": "Normandie",
-  "updated": "19/06/2026 à 15:33",
+  "updated": "20/06/2026 à 13:54",
   "score_eau": 93,
   "nb_communes": 386,
   "potable": [
@@ -46739,10 +46739,8 @@
       "nom": "Saint-Sulpice-sur-Risle",
       "dept": "61",
       "code_bss": "02144X0005/S1",
-      "current": 204.702,
+      "current": 204.634,
       "history": [
-        205.098,
-        205.066,
         205.036,
         205.009,
         204.978,
@@ -46754,9 +46752,11 @@
         204.787,
         204.755,
         204.734,
-        204.702
+        204.702,
+        204.672,
+        204.634
       ],
-      "year_ago": 210.47,
+      "year_ago": 210.43,
       "lat": 48.766362664,
       "lng": 0.658047665,
       "color": "#ef4444"
@@ -46765,10 +46765,8 @@
       "nom": "Villiers-sous-Mortagne",
       "dept": "61",
       "code_bss": "02523X0002/S2",
-      "current": 194.178,
+      "current": 194.167,
       "history": [
-        194.223,
-        194.219,
         194.217,
         194.213,
         194.212,
@@ -46780,9 +46778,11 @@
         194.186,
         194.184,
         194.182,
-        194.178
+        194.178,
+        194.173,
+        194.167
       ],
-      "year_ago": 194.78,
+      "year_ago": 194.77,
       "lat": 48.523466288,
       "lng": 0.591804057,
       "color": "#ef4444"
@@ -46808,7 +46808,7 @@
         117.08,
         117.06
       ],
-      "year_ago": 116.24,
+      "year_ago": 116.22,
       "lat": 48.803924391,
       "lng": 0.144862591,
       "color": "#3b82f6"
@@ -46816,81 +46816,9 @@
   ],
   "air": [
     {
-      "zone": "Mieuxcé",
+      "zone": "Saint-André-de-Briouze",
       "dept": "61",
-      "date": "2026-06-21",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Moncy",
-      "dept": "61",
-      "date": "2026-06-21",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#F0E641",
-      "source": "Atmo Normandie",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Montabard",
-      "dept": "61",
-      "date": "2026-06-21",
+      "date": "2026-06-22",
       "indice": 3,
       "label": "Dégradé",
       "color": "#F0E641",
@@ -46912,9 +46840,9 @@
           "color": "#eab308"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
@@ -46924,9 +46852,9 @@
       }
     },
     {
-      "zone": "Montchevrel",
+      "zone": "Saint-André-de-Messei",
       "dept": "61",
-      "date": "2026-06-21",
+      "date": "2026-06-22",
       "indice": 3,
       "label": "Dégradé",
       "color": "#F0E641",
@@ -46948,9 +46876,9 @@
           "color": "#eab308"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
@@ -46960,9 +46888,45 @@
       }
     },
     {
-      "zone": "Montgaudry",
+      "zone": "Saint-Aquilin-de-Corbion",
       "dept": "61",
-      "date": "2026-06-21",
+      "date": "2026-06-22",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
+      "source": "Atmo Normandie",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Saint-Aubin-d'Appenai",
+      "dept": "61",
+      "date": "2026-06-22",
       "indice": 4,
       "label": "Mauvais",
       "color": "#FF5050",
@@ -46984,9 +46948,45 @@
           "color": "#eab308"
         },
         "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Saint-Aubin-de-Bonneval",
+      "dept": "61",
+      "date": "2026-06-22",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
+      "source": "Atmo Normandie",
+      "polluants": {
+        "NO₂": {
           "indice": 1,
           "label": "Bon",
           "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,

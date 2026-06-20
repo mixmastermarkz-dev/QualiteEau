@@ -3,7 +3,7 @@
   "nom": "Loire",
   "slug": "loire",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "19/06/2026 à 15:33",
+  "updated": "20/06/2026 à 13:54",
   "score_eau": 97,
   "nb_communes": 326,
   "potable": [
@@ -40833,11 +40833,6 @@
             "date": "2024-08-12",
             "valeur": 14.0,
             "color": "#f59e0b"
-          },
-          {
-            "date": "2024-06-19",
-            "valeur": 9.5,
-            "color": "#10b981"
           }
         ],
         "Ammonium": [
@@ -40855,11 +40850,6 @@
             "date": "2024-08-12",
             "valeur": 5.1,
             "color": "#ef4444"
-          },
-          {
-            "date": "2024-06-19",
-            "valeur": 6.5,
-            "color": "#ef4444"
           }
         ],
         "Phosphore": [
@@ -40876,11 +40866,6 @@
           {
             "date": "2024-08-12",
             "valeur": 0.163,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-06-19",
-            "valeur": 0.12,
             "color": "#10b981"
           }
         ],
@@ -41077,11 +41062,6 @@
             "date": "2024-08-09",
             "valeur": 12.0,
             "color": "#f59e0b"
-          },
-          {
-            "date": "2024-06-19",
-            "valeur": 12.0,
-            "color": "#f59e0b"
           }
         ],
         "Temp. eau": [
@@ -41153,11 +41133,6 @@
             "date": "2024-08-09",
             "valeur": 1.7,
             "color": "#f59e0b"
-          },
-          {
-            "date": "2024-06-19",
-            "valeur": 1.8,
-            "color": "#f59e0b"
           }
         ],
         "Phosphore": [
@@ -41174,11 +41149,6 @@
           {
             "date": "2024-08-09",
             "valeur": 0.092,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-06-19",
-            "valeur": 0.025,
             "color": "#10b981"
           }
         ]
@@ -57197,91 +57167,11 @@
   ],
   "nappes": [
     {
-      "nom": "Saint-Galmier",
-      "dept": "42",
-      "code_bss": "07208X0197/F1C",
-      "current": 372.544,
-      "history": [
-        372.547,
-        372.545,
-        372.557,
-        372.557,
-        372.567,
-        372.552,
-        372.55,
-        372.545,
-        372.548,
-        372.537,
-        372.55,
-        372.544,
-        372.56,
-        372.544
-      ],
-      "year_ago": 372.37,
-      "lat": 45.605448412,
-      "lng": 4.306255162,
-      "color": "#3b82f6"
-    },
-    {
-      "nom": "Cleppé",
-      "dept": "42",
-      "code_bss": "06967X0100/F",
-      "current": 323.854,
-      "history": [
-        323.933,
-        323.924,
-        323.938,
-        323.929,
-        323.931,
-        323.918,
-        323.911,
-        323.896,
-        323.893,
-        323.87,
-        323.879,
-        323.868,
-        323.872,
-        323.854
-      ],
-      "year_ago": 324.23,
-      "lat": 45.769951628,
-      "lng": 4.183823819,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Chalain-le-Comtal",
-      "dept": "42",
-      "code_bss": "07203X0168/PZ",
-      "current": 338.96,
-      "history": [
-        338.969,
-        338.96,
-        338.973,
-        338.962,
-        338.974,
-        338.963,
-        338.972,
-        338.963,
-        338.971,
-        338.963,
-        338.972,
-        338.96,
-        338.972,
-        338.96
-      ],
-      "year_ago": 338.97,
-      "lat": 45.649419482,
-      "lng": 4.190529903,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Saint-André-le-Puy",
       "dept": "42",
       "code_bss": "07204X0105/F",
-      "current": 356.174,
+      "current": 356.137,
       "history": [
-        356.26,
-        356.251,
         356.291,
         356.292,
         356.315,
@@ -57293,19 +57183,99 @@
         356.205,
         356.184,
         356.212,
-        356.174
+        356.174,
+        356.175,
+        356.137
       ],
-      "year_ago": 356.72,
+      "year_ago": 356.71,
       "lat": 45.647921327,
       "lng": 4.246544955,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Saint-Galmier",
+      "dept": "42",
+      "code_bss": "07208X0197/F1C",
+      "current": 372.542,
+      "history": [
+        372.557,
+        372.557,
+        372.567,
+        372.552,
+        372.55,
+        372.545,
+        372.548,
+        372.537,
+        372.55,
+        372.544,
+        372.56,
+        372.544,
+        372.549,
+        372.542
+      ],
+      "year_ago": 372.36,
+      "lat": 45.605448412,
+      "lng": 4.306255162,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Chalain-le-Comtal",
+      "dept": "42",
+      "code_bss": "07203X0168/PZ",
+      "current": 338.962,
+      "history": [
+        338.973,
+        338.962,
+        338.974,
+        338.963,
+        338.972,
+        338.963,
+        338.971,
+        338.963,
+        338.972,
+        338.96,
+        338.972,
+        338.96,
+        338.97,
+        338.962
+      ],
+      "year_ago": 338.97,
+      "lat": 45.649419482,
+      "lng": 4.190529903,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Cleppé",
+      "dept": "42",
+      "code_bss": "06967X0100/F",
+      "current": 323.837,
+      "history": [
+        323.938,
+        323.929,
+        323.931,
+        323.918,
+        323.911,
+        323.896,
+        323.893,
+        323.87,
+        323.879,
+        323.868,
+        323.872,
+        323.854,
+        323.851,
+        323.837
+      ],
+      "year_ago": 324.22,
+      "lat": 45.769951628,
+      "lng": 4.183823819,
       "color": "#ef4444"
     }
   ],
   "air": [
     {
-      "zone": "Tarentaise",
+      "zone": "Nandax",
       "dept": "42",
-      "date": "2026-06-21",
+      "date": "2026-06-22",
       "indice": 4,
       "label": "Mauvais",
       "color": "#ff5050",
@@ -57339,81 +57309,9 @@
       }
     },
     {
-      "zone": "Tartaras",
+      "zone": "Neaux",
       "dept": "42",
-      "date": "2026-06-21",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "La Terrasse-sur-Dorlay",
-      "dept": "42",
-      "date": "2026-06-21",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Thélis-la-Combe",
-      "dept": "42",
-      "date": "2026-06-21",
+      "date": "2026-06-22",
       "indice": 4,
       "label": "Mauvais",
       "color": "#ff5050",
@@ -57447,18 +57345,18 @@
       }
     },
     {
-      "zone": "La Tour-en-Jarez",
+      "zone": "Néronde",
       "dept": "42",
-      "date": "2026-06-21",
+      "date": "2026-06-22",
       "indice": 4,
       "label": "Mauvais",
       "color": "#ff5050",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "O₃": {
           "indice": 4,
@@ -57471,9 +57369,81 @@
           "color": "#eab308"
         },
         "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Nervieux",
+      "dept": "42",
+      "date": "2026-06-22",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
           "indice": 2,
           "label": "Moyen",
           "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Neulise",
+      "dept": "42",
+      "date": "2026-06-22",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "SO₂": {
           "indice": 0,
