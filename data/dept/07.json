@@ -3,7 +3,7 @@
   "nom": "Ardèche",
   "slug": "ardeche",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "20/06/2026 à 13:54",
+  "updated": "22/06/2026 à 17:22",
   "score_eau": 96,
   "nb_communes": 336,
   "potable": [
@@ -28640,11 +28640,6 @@
             "date": "2025-06-30",
             "valeur": 0.22,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-06-21",
-            "valeur": 0.0,
-            "color": "#10b981"
           }
         ],
         "Phosphore": [
@@ -28652,22 +28647,12 @@
             "date": "2025-06-30",
             "valeur": 0.069,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-06-21",
-            "valeur": 0.091,
-            "color": "#10b981"
           }
         ],
         "Nitrates": [
           {
             "date": "2025-06-30",
             "valeur": 1.1,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-06-21",
-            "valeur": 1.4,
             "color": "#10b981"
           }
         ]
@@ -28862,67 +28847,11 @@
   ],
   "nappes": [
     {
-      "nom": "Lablachère",
-      "dept": "07",
-      "code_bss": "BSS003GPIS/X",
-      "current": 243.81,
-      "history": [
-        243.93,
-        243.93,
-        243.952,
-        243.947,
-        243.942,
-        243.907,
-        243.893,
-        243.866,
-        243.868,
-        243.85,
-        243.856,
-        243.837,
-        243.831,
-        243.81
-      ],
-      "year_ago": 244.2,
-      "lat": 44.46354371,
-      "lng": 4.214386619,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Veyras",
-      "dept": "07",
-      "code_bss": "08413X0091/F3",
-      "current": 441.76,
-      "history": [
-        441.75,
-        441.76,
-        441.77,
-        441.77,
-        441.78,
-        441.77,
-        441.76,
-        441.76,
-        441.74,
-        441.76,
-        441.75,
-        441.76,
-        441.75,
-        441.76
-      ],
-      "year_ago": 441.43,
-      "lat": 44.733838457,
-      "lng": 4.561214887,
-      "color": "#3b82f6"
-    },
-    {
       "nom": "Aubenas",
       "dept": "07",
       "code_bss": "08651X0038/0038",
-      "current": 297.831,
+      "current": 297.796,
       "history": [
-        298.049,
-        297.974,
-        298.068,
-        297.945,
         298.024,
         297.91,
         297.984,
@@ -28932,59 +28861,79 @@
         297.952,
         297.853,
         297.931,
-        297.831
+        297.831,
+        297.904,
+        297.796,
+        297.88,
+        297.796
       ],
-      "year_ago": 299.51,
+      "year_ago": 299.43,
       "lat": 44.619744152,
       "lng": 4.39032624,
       "color": "#ef4444"
+    },
+    {
+      "nom": "Lablachère",
+      "dept": "07",
+      "code_bss": "BSS003GPIS/X",
+      "current": 243.766,
+      "history": [
+        243.942,
+        243.907,
+        243.893,
+        243.866,
+        243.868,
+        243.85,
+        243.856,
+        243.837,
+        243.831,
+        243.81,
+        243.796,
+        243.767,
+        243.769,
+        243.766
+      ],
+      "year_ago": 244.15,
+      "lat": 44.46354371,
+      "lng": 4.214386619,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Veyras",
+      "dept": "07",
+      "code_bss": "08413X0091/F3",
+      "current": 441.75,
+      "history": [
+        441.78,
+        441.77,
+        441.76,
+        441.76,
+        441.74,
+        441.76,
+        441.75,
+        441.76,
+        441.75,
+        441.76,
+        441.74,
+        441.75,
+        441.74,
+        441.75
+      ],
+      "year_ago": 441.43,
+      "lat": 44.733838457,
+      "lng": 4.561214887,
+      "color": "#3b82f6"
     }
   ],
   "air": [
     {
-      "zone": "Yville-sur-Seine",
+      "zone": "Aigné",
       "dept": "07",
-      "date": "2026-06-22",
+      "date": "2026-06-24",
       "indice": 4,
-      "label": "Mauvais",
-      "color": "#FF5050",
-      "source": "Atmo Normandie",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Yvetot",
-      "dept": "07",
-      "date": "2026-06-22",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#FF5050",
-      "source": "Atmo Normandie",
+      "label": "mauvais",
+      "color": "#ff5050",
+      "source": "Air Pays de la Loire",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -29014,49 +28963,13 @@
       }
     },
     {
-      "zone": "Yvecrique",
+      "zone": "Allonnes",
       "dept": "07",
-      "date": "2026-06-22",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#F0E641",
-      "source": "Atmo Normandie",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Yquebeuf",
-      "dept": "07",
-      "date": "2026-06-22",
+      "date": "2026-06-24",
       "indice": 4,
-      "label": "Mauvais",
-      "color": "#FF5050",
-      "source": "Atmo Normandie",
+      "label": "mauvais",
+      "color": "#ff5050",
+      "source": "Air Pays de la Loire",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -29086,13 +28999,13 @@
       }
     },
     {
-      "zone": "Ypreville-Biville",
+      "zone": "Ardenay-sur-Mérize",
       "dept": "07",
-      "date": "2026-06-22",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#F0E641",
-      "source": "Atmo Normandie",
+      "date": "2026-06-24",
+      "indice": 4,
+      "label": "mauvais",
+      "color": "#ff5050",
+      "source": "Air Pays de la Loire",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -29100,9 +29013,81 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Arnage",
+      "dept": "07",
+      "date": "2026-06-24",
+      "indice": 4,
+      "label": "mauvais",
+      "color": "#ff5050",
+      "source": "Air Pays de la Loire",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Ballon",
+      "dept": "07",
+      "date": "2026-06-24",
+      "indice": 4,
+      "label": "mauvais",
+      "color": "#ff5050",
+      "source": "Air Pays de la Loire",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "PM10": {
           "indice": 1,

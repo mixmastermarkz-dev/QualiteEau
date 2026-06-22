@@ -3,7 +3,7 @@
   "nom": "Bas-Rhin",
   "slug": "bas-rhin",
   "region": "Grand Est",
-  "updated": "20/06/2026 à 13:54",
+  "updated": "22/06/2026 à 17:22",
   "score_eau": 97,
   "nb_communes": 514,
   "potable": [
@@ -60308,15 +60308,37 @@
   ],
   "nappes": [
     {
+      "nom": "Gresswiller",
+      "dept": "67",
+      "code_bss": "02713X0105/PZ1",
+      "current": 198.021,
+      "history": [
+        198.095,
+        198.221,
+        198.095,
+        198.109,
+        198.047,
+        198.125,
+        198.05,
+        198.075,
+        198.059,
+        198.104,
+        198.022,
+        198.018,
+        197.998,
+        198.021
+      ],
+      "year_ago": 199.12,
+      "lat": 48.520713416,
+      "lng": 7.415360799,
+      "color": "#ef4444"
+    },
+    {
       "nom": "Haegen",
       "dept": "67",
       "code_bss": "02332X0198/F3",
-      "current": 207.316,
+      "current": 207.397,
       "history": [
-        207.456,
-        207.46,
-        207.472,
-        207.391,
         207.452,
         207.407,
         207.433,
@@ -60326,117 +60348,23 @@
         207.379,
         207.267,
         207.2,
-        207.316
+        207.316,
+        207.364,
+        207.374,
+        207.393,
+        207.397
       ],
-      "year_ago": 207.16,
+      "year_ago": 207.25,
       "lat": 48.714388864,
       "lng": 7.311970754,
       "color": "#3b82f6"
-    },
-    {
-      "nom": "Gresswiller",
-      "dept": "67",
-      "code_bss": "02713X0105/PZ1",
-      "current": 198.075,
-      "history": [
-        198.102,
-        198.182,
-        198.105,
-        198.208,
-        198.112,
-        198.121,
-        198.095,
-        198.221,
-        198.095,
-        198.109,
-        198.047,
-        198.125,
-        198.05,
-        198.075
-      ],
-      "year_ago": 199.2,
-      "lat": 48.520713416,
-      "lng": 7.415360799,
-      "color": "#ef4444"
     }
   ],
   "air": [
     {
-      "zone": "Obenheim",
+      "zone": "Ottersthal",
       "dept": "67",
-      "date": "2026-06-21",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#FF5050",
-      "source": "Atmo Grand Est",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Betschdorf",
-      "dept": "67",
-      "date": "2026-06-21",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#FF5050",
-      "source": "Atmo Grand Est",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Oberbronn",
-      "dept": "67",
-      "date": "2026-06-21",
+      "date": "2026-06-23",
       "indice": 4,
       "label": "Mauvais",
       "color": "#FF5050",
@@ -60470,9 +60398,9 @@
       }
     },
     {
-      "zone": "Oberdorf-Spachbach",
+      "zone": "Otterswiller",
       "dept": "67",
-      "date": "2026-06-21",
+      "date": "2026-06-23",
       "indice": 4,
       "label": "Mauvais",
       "color": "#FF5050",
@@ -60506,9 +60434,81 @@
       }
     },
     {
-      "zone": "Oberhaslach",
+      "zone": "Ottrott",
       "dept": "67",
-      "date": "2026-06-21",
+      "date": "2026-06-23",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#FF5050",
+      "source": "Atmo Grand Est",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Ottwiller",
+      "dept": "67",
+      "date": "2026-06-23",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
+      "source": "Atmo Grand Est",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Petersbach",
+      "dept": "67",
+      "date": "2026-06-23",
       "indice": 4,
       "label": "Mauvais",
       "color": "#FF5050",
