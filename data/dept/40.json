@@ -3,7 +3,7 @@
   "nom": "Landes",
   "slug": "landes",
   "region": "Nouvelle-Aquitaine",
-  "updated": "22/06/2026 à 17:22",
+  "updated": "24/06/2026 à 14:17",
   "score_eau": 99,
   "nb_communes": 327,
   "potable": [
@@ -60559,12 +60559,8 @@
       "nom": "Gourbera",
       "dept": "40",
       "code_bss": "09505X0034/GO01",
-      "current": 21.27,
+      "current": 21.31,
       "history": [
-        21.26,
-        21.27,
-        21.22,
-        21.26,
         21.24,
         21.26,
         21.27,
@@ -60574,9 +60570,13 @@
         21.27,
         21.26,
         21.26,
-        21.27
+        21.27,
+        21.29,
+        21.3,
+        21.31,
+        21.31
       ],
-      "year_ago": 21.18,
+      "year_ago": 21.24,
       "lat": 43.788966613,
       "lng": -1.035321265,
       "color": "#3b82f6"
@@ -60585,12 +60585,8 @@
       "nom": "Lacquy",
       "dept": "40",
       "code_bss": "09266X0004/LC101",
-      "current": 76.526,
+      "current": 76.531,
       "history": [
-        76.538,
-        76.54,
-        76.533,
-        76.534,
         76.532,
         76.533,
         76.535,
@@ -60600,7 +60596,11 @@
         76.533,
         76.531,
         76.528,
-        76.526
+        76.526,
+        76.527,
+        76.527,
+        76.528,
+        76.531
       ],
       "year_ago": 76.72,
       "lat": 43.960162747,
@@ -60611,10 +60611,8 @@
       "nom": "Betbezer-d'Armagnac",
       "dept": "40",
       "code_bss": "09267X0014/PIEZO1",
-      "current": 71.939,
+      "current": 71.928,
       "history": [
-        72.067,
-        72.05,
         72.011,
         72.021,
         72.006,
@@ -60626,47 +60624,21 @@
         71.959,
         71.953,
         71.941,
-        71.939
+        71.939,
+        71.935,
+        71.928
       ],
-      "year_ago": 72.21,
+      "year_ago": 72.2,
       "lat": 43.982375767,
       "lng": -0.155560344,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Ychoux",
-      "dept": "40",
-      "code_bss": "08746X0031/P22",
-      "current": 56.68,
-      "history": [
-        56.78,
-        56.77,
-        56.77,
-        56.76,
-        56.75,
-        56.75,
-        56.74,
-        56.73,
-        56.72,
-        56.71,
-        56.71,
-        56.7,
-        56.69,
-        56.68
-      ],
-      "year_ago": 56.74,
-      "lat": 44.344690504,
-      "lng": -0.931494266,
       "color": "#ef4444"
     },
     {
       "nom": "Saint-Yaguen",
       "dept": "40",
       "code_bss": "09511X0022/LS02",
-      "current": 31.18,
+      "current": 31.21,
       "history": [
-        31.19,
-        31.16,
         31.17,
         31.17,
         31.19,
@@ -60678,40 +60650,249 @@
         31.18,
         31.17,
         31.19,
-        31.18
+        31.18,
+        31.21,
+        31.21
       ],
-      "year_ago": 31.07,
+      "year_ago": 31.13,
       "lat": 43.910092549,
       "lng": -0.715761027,
       "color": "#3b82f6"
     },
     {
+      "nom": "Ychoux",
+      "dept": "40",
+      "code_bss": "08746X0031/P22",
+      "current": 56.66,
+      "history": [
+        56.75,
+        56.75,
+        56.74,
+        56.73,
+        56.72,
+        56.71,
+        56.71,
+        56.7,
+        56.69,
+        56.68,
+        56.68,
+        56.67,
+        56.67,
+        56.66
+      ],
+      "year_ago": 56.72,
+      "lat": 44.344690504,
+      "lng": -0.931494266,
+      "color": "#ef4444"
+    },
+    {
       "nom": "Saugnacq-et-Muret",
       "dept": "40",
       "code_bss": "08742X0058/P4",
-      "current": 47.83,
+      "current": 46.887,
       "history": [
-        47.898,
-        47.894,
-        47.89,
-        47.887,
         47.88,
-        47.877,
+        47.878,
         47.871,
         47.868,
-        47.86,
-        47.856,
-        47.846,
-        47.843,
+        47.859,
+        47.855,
+        47.847,
+        47.842,
         47.834,
-        47.83
+        47.829,
+        47.821,
+        47.817,
+        46.891,
+        46.887
       ],
-      "year_ago": 46.93,
+      "year_ago": 46.91,
       "lat": 44.435996741,
       "lng": -0.945104876,
-      "color": "#3b82f6"
+      "color": "#ef4444"
     }
   ],
-  "air": [],
+  "air": [
+    {
+      "zone": "Belhade",
+      "dept": "40",
+      "date": "2026-06-25",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Nouvelle-Aquitaine",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Poyartin",
+      "dept": "40",
+      "date": "2026-06-25",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Nouvelle-Aquitaine",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Estibeaux",
+      "dept": "40",
+      "date": "2026-06-25",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Nouvelle-Aquitaine",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Habas",
+      "dept": "40",
+      "date": "2026-06-25",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Nouvelle-Aquitaine",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Mimbaste",
+      "dept": "40",
+      "date": "2026-06-25",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Nouvelle-Aquitaine",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    }
+  ],
   "pollen": []
 }

@@ -3,7 +3,7 @@
   "nom": "Orne",
   "slug": "orne",
   "region": "Normandie",
-  "updated": "22/06/2026 à 17:22",
+  "updated": "24/06/2026 à 14:17",
   "score_eau": 93,
   "nb_communes": 386,
   "potable": [
@@ -46736,15 +46736,37 @@
   ],
   "nappes": [
     {
+      "nom": "Saint-Sulpice-sur-Risle",
+      "dept": "61",
+      "code_bss": "02144X0005/S1",
+      "current": 204.405,
+      "history": [
+        204.787,
+        204.755,
+        204.734,
+        204.702,
+        204.672,
+        204.634,
+        204.608,
+        204.578,
+        204.56,
+        204.523,
+        204.499,
+        204.461,
+        204.436,
+        204.405
+      ],
+      "year_ago": 210.24,
+      "lat": 48.766362664,
+      "lng": 0.658047665,
+      "color": "#ef4444"
+    },
+    {
       "nom": "Villiers-sous-Mortagne",
       "dept": "61",
       "code_bss": "02523X0002/S2",
-      "current": 194.149,
+      "current": 194.134,
       "history": [
-        194.206,
-        194.201,
-        194.195,
-        194.191,
         194.186,
         194.184,
         194.182,
@@ -46754,9 +46776,13 @@
         194.16,
         194.156,
         194.153,
-        194.149
+        194.149,
+        194.145,
+        194.142,
+        194.138,
+        194.134
       ],
-      "year_ago": 194.75,
+      "year_ago": 194.73,
       "lat": 48.523466288,
       "lng": 0.591804057,
       "color": "#ef4444"
@@ -46782,219 +46808,12 @@
         117.08,
         117.06
       ],
-      "year_ago": 116.18,
+      "year_ago": 116.13,
       "lat": 48.803924391,
       "lng": 0.144862591,
       "color": "#3b82f6"
-    },
-    {
-      "nom": "Saint-Sulpice-sur-Risle",
-      "dept": "61",
-      "code_bss": "02144X0005/S1",
-      "current": 204.523,
-      "history": [
-        204.916,
-        204.886,
-        204.847,
-        204.82,
-        204.787,
-        204.755,
-        204.734,
-        204.702,
-        204.672,
-        204.634,
-        204.608,
-        204.578,
-        204.56,
-        204.523
-      ],
-      "year_ago": 210.35,
-      "lat": 48.766362664,
-      "lng": 0.658047665,
-      "color": "#ef4444"
     }
   ],
-  "air": [
-    {
-      "zone": "Saint-Hilaire-de-Briouze",
-      "dept": "61",
-      "date": "2026-06-24",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#FF5050",
-      "source": "Atmo Normandie",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Hilaire-le-Châtel",
-      "dept": "61",
-      "date": "2026-06-24",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#FF5050",
-      "source": "Atmo Normandie",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Hilaire-sur-Erre",
-      "dept": "61",
-      "date": "2026-06-24",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#FF5050",
-      "source": "Atmo Normandie",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Hilaire-sur-Risle",
-      "dept": "61",
-      "date": "2026-06-24",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#FF5050",
-      "source": "Atmo Normandie",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Sainte-Honorine-la-Chardonne",
-      "dept": "61",
-      "date": "2026-06-24",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#FF5050",
-      "source": "Atmo Normandie",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    }
-  ],
+  "air": [],
   "pollen": []
 }
