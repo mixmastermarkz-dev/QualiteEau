@@ -3,7 +3,7 @@
   "nom": "Ardèche",
   "slug": "ardeche",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "25/06/2026 à 14:16",
+  "updated": "26/06/2026 à 14:08",
   "score_eau": 96,
   "nb_communes": 336,
   "potable": [
@@ -28835,10 +28835,8 @@
       "nom": "Aubenas",
       "dept": "07",
       "code_bss": "08651X0038/0038",
-      "current": 297.772,
+      "current": 297.738,
       "history": [
-        297.952,
-        297.853,
         297.931,
         297.831,
         297.904,
@@ -28850,37 +28848,13 @@
         297.895,
         297.799,
         297.879,
-        297.772
+        297.772,
+        297.859,
+        297.738
       ],
-      "year_ago": 299.29,
+      "year_ago": 299.23,
       "lat": 44.619744152,
       "lng": 4.39032624,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Lablachère",
-      "dept": "07",
-      "code_bss": "BSS003GPIS/X",
-      "current": 243.747,
-      "history": [
-        243.856,
-        243.837,
-        243.831,
-        243.81,
-        243.796,
-        243.767,
-        243.769,
-        243.766,
-        243.778,
-        243.758,
-        243.766,
-        243.753,
-        243.756,
-        243.747
-      ],
-      "year_ago": 244.11,
-      "lat": 44.46354371,
-      "lng": 4.214386619,
       "color": "#ef4444"
     },
     {
@@ -28889,8 +28863,6 @@
       "code_bss": "08413X0091/F3",
       "current": 441.78,
       "history": [
-        441.75,
-        441.76,
         441.75,
         441.76,
         441.74,
@@ -28902,14 +28874,223 @@
         441.78,
         441.78,
         441.8,
+        441.78,
+        441.78,
         441.78
       ],
-      "year_ago": 441.43,
+      "year_ago": 441.42,
       "lat": 44.733838457,
       "lng": 4.561214887,
       "color": "#3b82f6"
+    },
+    {
+      "nom": "Lablachère",
+      "dept": "07",
+      "code_bss": "BSS003GPIS/X",
+      "current": 243.731,
+      "history": [
+        243.831,
+        243.81,
+        243.796,
+        243.767,
+        243.769,
+        243.766,
+        243.778,
+        243.758,
+        243.766,
+        243.753,
+        243.756,
+        243.747,
+        243.758,
+        243.731
+      ],
+      "year_ago": 244.08,
+      "lat": 44.46354371,
+      "lng": 4.214386619,
+      "color": "#ef4444"
     }
   ],
-  "air": [],
+  "air": [
+    {
+      "zone": "Fleurville",
+      "dept": "07",
+      "date": "2026-06-28",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Viré",
+      "dept": "07",
+      "date": "2026-06-28",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Verzé",
+      "dept": "07",
+      "date": "2026-06-28",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Vers",
+      "dept": "07",
+      "date": "2026-06-28",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Varennes-le-Grand",
+      "dept": "07",
+      "date": "2026-06-28",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    }
+  ],
   "pollen": []
 }
