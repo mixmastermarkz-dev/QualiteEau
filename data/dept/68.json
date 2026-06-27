@@ -3,7 +3,7 @@
   "nom": "Haut-Rhin",
   "slug": "haut-rhin",
   "region": "Grand Est",
-  "updated": "26/06/2026 à 14:09",
+  "updated": "27/06/2026 à 13:25",
   "score_eau": 94,
   "nb_communes": 366,
   "potable": [
@@ -43154,10 +43154,8 @@
       "nom": "Mooslargue",
       "dept": "68",
       "code_bss": "04761X0021/F1",
-      "current": 428.892,
+      "current": 428.891,
       "history": [
-        428.911,
-        428.898,
         428.902,
         428.894,
         428.9,
@@ -43169,9 +43167,11 @@
         428.905,
         428.897,
         428.904,
-        428.892
+        428.892,
+        428.9,
+        428.891
       ],
-      "year_ago": 428.93,
+      "year_ago": 428.91,
       "lat": 47.509654366,
       "lng": 7.218150794,
       "color": "#ef4444"
@@ -43179,12 +43179,12 @@
   ],
   "air": [
     {
-      "zone": "Oberhergheim",
+      "zone": "Oderen",
       "dept": "68",
-      "date": "2026-06-27",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#FF5050",
+      "date": "2026-06-28",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
       "source": "Atmo Grand Est",
       "polluants": {
         "NO₂": {
@@ -43193,9 +43193,45 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Oltingue",
+      "dept": "68",
+      "date": "2026-06-28",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
+      "source": "Atmo Grand Est",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 2,
@@ -43215,12 +43251,12 @@
       }
     },
     {
-      "zone": "Oberlarg",
+      "zone": "Orbey",
       "dept": "68",
-      "date": "2026-06-27",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#FF5050",
+      "date": "2026-06-28",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
       "source": "Atmo Grand Est",
       "polluants": {
         "NO₂": {
@@ -43229,9 +43265,45 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Orschwihr",
+      "dept": "68",
+      "date": "2026-06-28",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
+      "source": "Atmo Grand Est",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 2,
@@ -43251,12 +43323,12 @@
       }
     },
     {
-      "zone": "Obermorschwihr",
+      "zone": "Osenbach",
       "dept": "68",
-      "date": "2026-06-27",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#FF5050",
+      "date": "2026-06-28",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
       "source": "Atmo Grand Est",
       "polluants": {
         "NO₂": {
@@ -43265,81 +43337,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Obermorschwiller",
-      "dept": "68",
-      "date": "2026-06-27",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#FF5050",
-      "source": "Atmo Grand Est",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Obersaasheim",
-      "dept": "68",
-      "date": "2026-06-27",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#FF5050",
-      "source": "Atmo Grand Est",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 2,

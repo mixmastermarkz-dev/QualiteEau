@@ -3,7 +3,7 @@
   "nom": "Loire",
   "slug": "loire",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "26/06/2026 à 14:09",
+  "updated": "27/06/2026 à 13:25",
   "score_eau": 97,
   "nb_communes": 326,
   "potable": [
@@ -57052,39 +57052,11 @@
   ],
   "nappes": [
     {
-      "nom": "Chalain-le-Comtal",
-      "dept": "42",
-      "code_bss": "07203X0168/PZ",
-      "current": 338.958,
-      "history": [
-        338.97,
-        338.962,
-        338.976,
-        338.96,
-        338.969,
-        338.959,
-        338.97,
-        338.958,
-        338.97,
-        338.96,
-        338.97,
-        338.958,
-        338.969,
-        338.958
-      ],
-      "year_ago": 339.01,
-      "lat": 45.649419482,
-      "lng": 4.190529903,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Saint-André-le-Puy",
       "dept": "42",
       "code_bss": "07204X0105/F",
-      "current": 356.025,
+      "current": 355.996,
       "history": [
-        356.175,
-        356.137,
         356.114,
         356.087,
         356.098,
@@ -57096,21 +57068,47 @@
         356.085,
         356.063,
         356.074,
-        356.025
+        356.025,
+        356.031,
+        355.996
       ],
-      "year_ago": 356.62,
+      "year_ago": 356.53,
       "lat": 45.647921327,
       "lng": 4.246544955,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Chalain-le-Comtal",
+      "dept": "42",
+      "code_bss": "07203X0168/PZ",
+      "current": 338.956,
+      "history": [
+        338.976,
+        338.96,
+        338.969,
+        338.959,
+        338.97,
+        338.958,
+        338.97,
+        338.96,
+        338.97,
+        338.958,
+        338.969,
+        338.958,
+        338.971,
+        338.956
+      ],
+      "year_ago": 338.99,
+      "lat": 45.649419482,
+      "lng": 4.190529903,
       "color": "#ef4444"
     },
     {
       "nom": "Saint-Galmier",
       "dept": "42",
       "code_bss": "07208X0197/F1C",
-      "current": 372.545,
+      "current": 372.547,
       "history": [
-        372.549,
-        372.542,
         372.543,
         372.541,
         372.547,
@@ -57122,9 +57120,11 @@
         372.558,
         372.549,
         372.554,
-        372.545
+        372.545,
+        372.55,
+        372.547
       ],
-      "year_ago": 372.37,
+      "year_ago": 372.35,
       "lat": 45.605448412,
       "lng": 4.306255162,
       "color": "#3b82f6"
@@ -57133,10 +57133,8 @@
       "nom": "Cleppé",
       "dept": "42",
       "code_bss": "06967X0100/F",
-      "current": 323.751,
+      "current": 323.739,
       "history": [
-        323.851,
-        323.837,
         323.821,
         323.819,
         323.821,
@@ -57148,14 +57146,197 @@
         323.788,
         323.771,
         323.771,
-        323.751
+        323.751,
+        323.754,
+        323.739
       ],
-      "year_ago": 324.13,
+      "year_ago": 324.1,
       "lat": 45.769951628,
       "lng": 4.183823819,
       "color": "#ef4444"
     }
   ],
-  "air": [],
+  "air": [
+    {
+      "zone": "Parigny",
+      "dept": "42",
+      "date": "2026-06-28",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Pavezin",
+      "dept": "42",
+      "date": "2026-06-28",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Pélussin",
+      "dept": "42",
+      "date": "2026-06-28",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Périgneux",
+      "dept": "42",
+      "date": "2026-06-28",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Perreux",
+      "dept": "42",
+      "date": "2026-06-28",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    }
+  ],
   "pollen": []
 }

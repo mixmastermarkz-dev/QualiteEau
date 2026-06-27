@@ -3,7 +3,7 @@
   "nom": "Bas-Rhin",
   "slug": "bas-rhin",
   "region": "Grand Est",
-  "updated": "26/06/2026 à 14:09",
+  "updated": "27/06/2026 à 13:25",
   "score_eau": 97,
   "nb_communes": 514,
   "potable": [
@@ -60328,7 +60328,7 @@
         198.006,
         198.02
       ],
-      "year_ago": 199.06,
+      "year_ago": 198.99,
       "lat": 48.520713416,
       "lng": 7.415360799,
       "color": "#ef4444"
@@ -60337,10 +60337,8 @@
       "nom": "Haegen",
       "dept": "67",
       "code_bss": "02332X0198/F3",
-      "current": 207.217,
+      "current": 207.268,
       "history": [
-        207.2,
-        207.316,
         207.364,
         207.374,
         207.393,
@@ -60352,9 +60350,11 @@
         207.19,
         207.295,
         207.079,
-        207.217
+        207.217,
+        207.085,
+        207.268
       ],
-      "year_ago": 207.13,
+      "year_ago": 207.11,
       "lat": 48.714388864,
       "lng": 7.311970754,
       "color": "#3b82f6"
@@ -60362,9 +60362,81 @@
   ],
   "air": [
     {
-      "zone": "Niedermodern",
+      "zone": "Niedersteinbach",
       "dept": "67",
-      "date": "2026-06-27",
+      "date": "2026-06-28",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#FF5050",
+      "source": "Atmo Grand Est",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Nordheim",
+      "dept": "67",
+      "date": "2026-06-28",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
+      "source": "Atmo Grand Est",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Nordhouse",
+      "dept": "67",
+      "date": "2026-06-28",
       "indice": 4,
       "label": "Mauvais",
       "color": "#FF5050",
@@ -60398,12 +60470,12 @@
       }
     },
     {
-      "zone": "Niedernai",
+      "zone": "Nothalten",
       "dept": "67",
-      "date": "2026-06-27",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#FF5050",
+      "date": "2026-06-28",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
       "source": "Atmo Grand Est",
       "polluants": {
         "NO₂": {
@@ -60412,9 +60484,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 2,
@@ -60434,12 +60506,12 @@
       }
     },
     {
-      "zone": "Niederrœdern",
+      "zone": "Obenheim",
       "dept": "67",
-      "date": "2026-06-27",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#FF5050",
+      "date": "2026-06-28",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
       "source": "Atmo Grand Est",
       "polluants": {
         "NO₂": {
@@ -60448,81 +60520,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Niederschaeffolsheim",
-      "dept": "67",
-      "date": "2026-06-27",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#FF5050",
-      "source": "Atmo Grand Est",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Niedersoultzbach",
-      "dept": "67",
-      "date": "2026-06-27",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#FF5050",
-      "source": "Atmo Grand Est",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 2,

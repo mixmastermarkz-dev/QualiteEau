@@ -3,7 +3,7 @@
   "nom": "Orne",
   "slug": "orne",
   "region": "Normandie",
-  "updated": "26/06/2026 à 14:09",
+  "updated": "27/06/2026 à 13:25",
   "score_eau": 93,
   "nb_communes": 386,
   "potable": [
@@ -46568,90 +46568,6 @@
       "score": 75,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
-    },
-    {
-      "nom": "RAU DES GRANDES PLANCHES A CHAMPSECRET",
-      "dept": "61",
-      "lat": 48.59847676,
-      "lon": -0.535248289,
-      "nom_cours_eau": "RAU DES GRANDES PLANCHES",
-      "parametres": {
-        "Temp. eau": {
-          "valeur": 14.5,
-          "unite": "°C",
-          "color": "#10b981",
-          "date": "2024-06-26",
-          "realtime": false
-        },
-        "pH": {
-          "valeur": 7.8,
-          "unite": "pH",
-          "color": "#10b981",
-          "date": "2024-06-26",
-          "realtime": false
-        },
-        "MES": {
-          "valeur": 89.0,
-          "unite": "mg/L",
-          "color": "#ef4444",
-          "date": "2024-06-26",
-          "realtime": false
-        },
-        "O2 saturation": {
-          "valeur": 97.4,
-          "unite": "%",
-          "color": "#10b981",
-          "date": "2024-06-26",
-          "realtime": false
-        },
-        "Conductivité": {
-          "valeur": 10.6,
-          "unite": "µS/cm",
-          "color": "#10b981",
-          "date": "2024-06-26",
-          "realtime": false
-        }
-      },
-      "historique": {
-        "Temp. eau": [
-          {
-            "date": "2024-06-26",
-            "valeur": 14.5,
-            "color": "#10b981"
-          }
-        ],
-        "pH": [
-          {
-            "date": "2024-06-26",
-            "valeur": 7.8,
-            "color": "#10b981"
-          }
-        ],
-        "MES": [
-          {
-            "date": "2024-06-26",
-            "valeur": 89.0,
-            "color": "#ef4444"
-          }
-        ],
-        "O2 saturation": [
-          {
-            "date": "2024-06-26",
-            "valeur": 97.4,
-            "color": "#10b981"
-          }
-        ],
-        "Conductivité": [
-          {
-            "date": "2024-06-26",
-            "valeur": 10.6,
-            "color": "#10b981"
-          }
-        ]
-      },
-      "score": 80,
-      "score_color": "#10b981",
-      "score_label": "Bonne"
     }
   ],
   "nappes": [
@@ -46659,10 +46575,8 @@
       "nom": "Saint-Sulpice-sur-Risle",
       "dept": "61",
       "code_bss": "02144X0005/S1",
-      "current": 204.281,
+      "current": 204.228,
       "history": [
-        204.672,
-        204.634,
         204.608,
         204.578,
         204.56,
@@ -46674,9 +46588,11 @@
         204.383,
         204.348,
         204.322,
-        204.281
+        204.281,
+        204.258,
+        204.228
       ],
-      "year_ago": 210.16,
+      "year_ago": 210.09,
       "lat": 48.766362664,
       "lng": 0.658047665,
       "color": "#ef4444"
@@ -46685,10 +46601,8 @@
       "nom": "Villiers-sous-Mortagne",
       "dept": "61",
       "code_bss": "02523X0002/S2",
-      "current": 194.116,
+      "current": 194.106,
       "history": [
-        194.173,
-        194.167,
         194.16,
         194.156,
         194.153,
@@ -46700,9 +46614,11 @@
         194.13,
         194.126,
         194.123,
-        194.116
+        194.116,
+        194.112,
+        194.106
       ],
-      "year_ago": 194.72,
+      "year_ago": 194.7,
       "lat": 48.523466288,
       "lng": 0.591804057,
       "color": "#ef4444"
@@ -46728,7 +46644,7 @@
         117.08,
         117.06
       ],
-      "year_ago": 116.1,
+      "year_ago": 116.08,
       "lat": 48.803924391,
       "lng": 0.144862591,
       "color": "#3b82f6"
@@ -46736,9 +46652,9 @@
   ],
   "air": [
     {
-      "zone": "Saint-Langis-lès-Mortagne",
+      "zone": "Les Ventes-de-Bourse",
       "dept": "61",
-      "date": "2026-06-28",
+      "date": "2026-06-29",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -46772,9 +46688,9 @@
       }
     },
     {
-      "zone": "Saint-Léger-sur-Sarthe",
+      "zone": "La Ventrouze",
       "dept": "61",
-      "date": "2026-06-28",
+      "date": "2026-06-29",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -46808,9 +46724,9 @@
       }
     },
     {
-      "zone": "Saint-Léonard-des-Parcs",
+      "zone": "Verrières",
       "dept": "61",
-      "date": "2026-06-28",
+      "date": "2026-06-29",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -46844,9 +46760,9 @@
       }
     },
     {
-      "zone": "Saint-Mard-de-Réno",
+      "zone": "Vidai",
       "dept": "61",
-      "date": "2026-06-28",
+      "date": "2026-06-29",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -46880,9 +46796,9 @@
       }
     },
     {
-      "zone": "Sainte-Marguerite-de-Carrouges",
+      "zone": "Vieux-Pont",
       "dept": "61",
-      "date": "2026-06-28",
+      "date": "2026-06-29",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
