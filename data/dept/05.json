@@ -3,7 +3,7 @@
   "nom": "Hautes-Alpes",
   "slug": "hautes-alpes",
   "region": "Provence-Alpes-Côte d'Azur",
-  "updated": "28/06/2026 à 13:45",
+  "updated": "29/06/2026 à 16:01",
   "score_eau": 98,
   "nb_communes": 162,
   "potable": [
@@ -16660,39 +16660,11 @@
   ],
   "nappes": [
     {
-      "nom": "Saint-Jean-Saint-Nicolas",
-      "dept": "05",
-      "code_bss": "08466X0009/F2",
-      "current": 1159.17,
-      "history": [
-        1159.89,
-        1159.91,
-        1159.86,
-        1159.85,
-        1159.78,
-        1159.74,
-        1159.71,
-        1159.55,
-        1159.42,
-        1159.34,
-        1159.27,
-        1159.24,
-        1159.18,
-        1159.17
-      ],
-      "year_ago": 1159.6,
-      "lat": 44.680949438,
-      "lng": 6.260818821,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Aspremont",
       "dept": "05",
       "code_bss": "08688X0023/PZ1",
-      "current": 718.33,
+      "current": 718.32,
       "history": [
-        718.38,
-        718.38,
         718.37,
         718.38,
         718.37,
@@ -16704,7 +16676,9 @@
         718.34,
         718.34,
         718.33,
-        718.33
+        718.33,
+        718.32,
+        718.32
       ],
       "year_ago": 718.48,
       "lat": 44.493443917,
@@ -16715,10 +16689,8 @@
       "nom": "La Roche-de-Rame",
       "dept": "05",
       "code_bss": "08472X0007/F-1",
-      "current": 924.08,
+      "current": 924.07,
       "history": [
-        924.1,
-        924.12,
         924.11,
         924.13,
         924.12,
@@ -16730,11 +16702,65 @@
         924.1,
         924.09,
         924.07,
-        924.08
+        924.08,
+        924.06,
+        924.07
       ],
       "year_ago": 924.06,
       "lat": 44.738691198,
       "lng": 6.582662145,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Saint-Jean-Saint-Nicolas",
+      "dept": "05",
+      "code_bss": "08466X0009/F2",
+      "current": 1159.13,
+      "history": [
+        1159.86,
+        1159.85,
+        1159.78,
+        1159.74,
+        1159.71,
+        1159.55,
+        1159.42,
+        1159.34,
+        1159.27,
+        1159.24,
+        1159.18,
+        1159.17,
+        1159.14,
+        1159.13
+      ],
+      "year_ago": 1159.55,
+      "lat": 44.680949438,
+      "lng": 6.260818821,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "L'Argentière-la-Bessée",
+      "dept": "05",
+      "code_bss": "08471X0034/P5",
+      "current": 953.2,
+      "history": [
+        953.21,
+        953.22,
+        953.21,
+        953.2,
+        953.21,
+        953.25,
+        953.25,
+        953.26,
+        953.23,
+        953.22,
+        953.2,
+        953.2,
+        953.19,
+        953.2
+      ],
+      "year_ago": 953.17,
+      "lat": 44.776271664,
+      "lng": 6.558809418,
       "color": "#3b82f6"
     },
     {
@@ -16758,38 +16784,193 @@
         491.53,
         491.53
       ],
-      "year_ago": 491.61,
+      "year_ago": 491.6,
       "lat": 44.231230139,
       "lng": 5.862949573,
       "color": "#ef4444"
-    },
-    {
-      "nom": "L'Argentière-la-Bessée",
-      "dept": "05",
-      "code_bss": "08471X0034/P5",
-      "current": 953.2,
-      "history": [
-        953.2,
-        953.23,
-        953.21,
-        953.22,
-        953.21,
-        953.2,
-        953.21,
-        953.25,
-        953.25,
-        953.26,
-        953.23,
-        953.22,
-        953.2,
-        953.2
-      ],
-      "year_ago": 953.17,
-      "lat": 44.776271664,
-      "lng": 6.558809418,
-      "color": "#3b82f6"
     }
   ],
-  "air": [],
+  "air": [
+    {
+      "zone": "Avrée",
+      "dept": "05",
+      "date": "2026-07-01",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Cercy-la-Tour",
+      "dept": "05",
+      "date": "2026-07-01",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Champvert",
+      "dept": "05",
+      "date": "2026-07-01",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Charrin",
+      "dept": "05",
+      "date": "2026-07-01",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Cossaye",
+      "dept": "05",
+      "date": "2026-07-01",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    }
+  ],
   "pollen": []
 }

@@ -3,7 +3,7 @@
   "nom": "Cantal",
   "slug": "cantal",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "28/06/2026 à 13:45",
+  "updated": "29/06/2026 à 16:01",
   "score_eau": 96,
   "nb_communes": 251,
   "potable": [
@@ -44080,39 +44080,11 @@
   ],
   "nappes": [
     {
-      "nom": "Teissières-lès-Bouliès",
-      "dept": "15",
-      "code_bss": "08125X0044/F1",
-      "current": 723.807,
-      "history": [
-        723.865,
-        723.861,
-        723.858,
-        723.843,
-        723.848,
-        723.83,
-        723.838,
-        723.824,
-        723.836,
-        723.819,
-        723.827,
-        723.816,
-        723.82,
-        723.807
-      ],
-      "year_ago": 723.81,
-      "lat": 44.820895,
-      "lng": 2.541051,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Moussages",
       "dept": "15",
       "code_bss": "07638X0017/MAIRIE",
-      "current": 847.05,
+      "current": 847.051,
       "history": [
-        847.064,
-        847.063,
         847.061,
         847.06,
         847.059,
@@ -44124,7 +44096,9 @@
         847.053,
         847.052,
         847.051,
-        847.05
+        847.05,
+        847.049,
+        847.051
       ],
       "year_ago": 847.02,
       "lat": 45.238404427,
@@ -44132,13 +44106,37 @@
       "color": "#3b82f6"
     },
     {
+      "nom": "Teissières-lès-Bouliès",
+      "dept": "15",
+      "code_bss": "08125X0044/F1",
+      "current": 723.795,
+      "history": [
+        723.858,
+        723.843,
+        723.848,
+        723.83,
+        723.838,
+        723.824,
+        723.836,
+        723.819,
+        723.827,
+        723.816,
+        723.82,
+        723.807,
+        723.799,
+        723.795
+      ],
+      "year_ago": 723.8,
+      "lat": 44.820895,
+      "lng": 2.541051,
+      "color": "#ef4444"
+    },
+    {
       "nom": "Molompize",
       "dept": "15",
       "code_bss": "07657X0018/P1",
-      "current": 949.827,
+      "current": 949.823,
       "history": [
-        949.865,
-        949.861,
         949.858,
         949.855,
         949.852,
@@ -44150,7 +44148,9 @@
         949.835,
         949.833,
         949.83,
-        949.827
+        949.827,
+        949.824,
+        949.823
       ],
       "year_ago": 950.0,
       "lat": 45.242098391,
@@ -44187,10 +44187,8 @@
       "nom": "Roannes-Saint-Mary",
       "dept": "15",
       "code_bss": "08353X0052/F",
-      "current": 769.343,
+      "current": 769.323,
       "history": [
-        769.689,
-        769.66,
         769.636,
         769.606,
         769.569,
@@ -44202,14 +44200,197 @@
         769.402,
         769.361,
         769.318,
-        769.343
+        769.343,
+        769.348,
+        769.323
       ],
-      "year_ago": 770.05,
+      "year_ago": 770.0,
       "lat": 44.811215,
       "lng": 2.400826,
       "color": "#ef4444"
     }
   ],
-  "air": [],
+  "air": [
+    {
+      "zone": "Lieutadès",
+      "dept": "15",
+      "date": "2026-07-01",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Lorcières",
+      "dept": "15",
+      "date": "2026-07-01",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Loubaresse",
+      "dept": "15",
+      "date": "2026-07-01",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Madic",
+      "dept": "15",
+      "date": "2026-07-01",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Malbo",
+      "dept": "15",
+      "date": "2026-07-01",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    }
+  ],
   "pollen": []
 }

@@ -3,7 +3,7 @@
   "nom": "Haute-Savoie",
   "slug": "haute-savoie",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "28/06/2026 à 13:45",
+  "updated": "29/06/2026 à 16:01",
   "score_eau": 98,
   "nb_communes": 279,
   "potable": [
@@ -40828,10 +40828,8 @@
       "nom": "Marigny-Saint-Marcel",
       "dept": "74",
       "code_bss": "07013X0071/F1",
-      "current": 352.428,
+      "current": 352.405,
       "history": [
-        352.59,
-        352.576,
         352.564,
         352.55,
         352.537,
@@ -40843,9 +40841,11 @@
         352.463,
         352.452,
         352.439,
-        352.428
+        352.428,
+        352.417,
+        352.405
       ],
-      "year_ago": 352.61,
+      "year_ago": 352.58,
       "lat": 45.832389293,
       "lng": 5.962087611,
       "color": "#ef4444"
@@ -40854,10 +40854,8 @@
       "nom": "Publier",
       "dept": "74",
       "code_bss": "06301X0019/P5",
-      "current": 373.779,
+      "current": 373.774,
       "history": [
-        373.821,
-        373.815,
         373.812,
         373.81,
         373.804,
@@ -40869,9 +40867,11 @@
         373.792,
         373.787,
         373.782,
-        373.779
+        373.779,
+        373.775,
+        373.774
       ],
-      "year_ago": 374.31,
+      "year_ago": 374.3,
       "lat": 46.390565227,
       "lng": 6.520859286,
       "color": "#ef4444"
@@ -40897,7 +40897,7 @@
         572.34,
         572.348
       ],
-      "year_ago": 573.42,
+      "year_ago": 573.4,
       "lat": 46.335316884,
       "lng": 6.621257922,
       "color": "#ef4444"
@@ -40906,10 +40906,8 @@
       "nom": "Passy",
       "dept": "74",
       "code_bss": "BSS004QBEB/X",
-      "current": 569.436,
+      "current": 569.433,
       "history": [
-        569.481,
-        569.473,
         569.473,
         569.465,
         569.465,
@@ -40921,7 +40919,9 @@
         569.447,
         569.438,
         569.443,
-        569.436
+        569.436,
+        569.439,
+        569.433
       ],
       "year_ago": 569.32,
       "lat": 45.920935924,
@@ -40932,10 +40932,8 @@
       "nom": "Marigny-Saint-Marcel",
       "dept": "74",
       "code_bss": "BSS004MZXK/X",
-      "current": 362.919,
+      "current": 362.909,
       "history": [
-        363.043,
-        363.044,
         363.038,
         363.02,
         362.735,
@@ -40947,7 +40945,9 @@
         362.903,
         362.942,
         362.816,
-        362.919
+        362.919,
+        362.916,
+        362.909
       ],
       "year_ago": 362.96,
       "lat": 45.835072054,
@@ -40981,6 +40981,187 @@
       "color": "#3b82f6"
     }
   ],
-  "air": [],
+  "air": [
+    {
+      "zone": "Yvoire",
+      "dept": "74",
+      "date": "2026-07-01",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Viuz-la-Chiésaz",
+      "dept": "74",
+      "date": "2026-07-01",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Veyrier-du-Lac",
+      "dept": "74",
+      "date": "2026-07-01",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Thonon-les-Bains",
+      "dept": "74",
+      "date": "2026-07-01",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Talloires",
+      "dept": "74",
+      "date": "2026-07-01",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    }
+  ],
   "pollen": []
 }
