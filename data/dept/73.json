@@ -3,7 +3,7 @@
   "nom": "Savoie",
   "slug": "savoie",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "29/06/2026 à 16:01",
+  "updated": "30/06/2026 à 14:06",
   "score_eau": 99,
   "nb_communes": 274,
   "potable": [
@@ -31620,10 +31620,8 @@
       "nom": "Aiton",
       "dept": "73",
       "code_bss": "07266X0052/PS4",
-      "current": 293.664,
+      "current": 293.663,
       "history": [
-        293.615,
-        293.614,
         293.611,
         293.614,
         293.61,
@@ -31635,9 +31633,11 @@
         293.672,
         293.671,
         293.669,
-        293.664
+        293.664,
+        293.662,
+        293.663
       ],
-      "year_ago": 293.65,
+      "year_ago": 293.64,
       "lat": 45.566444711,
       "lng": 6.245431548,
       "color": "#3b82f6"
@@ -31646,10 +31646,8 @@
       "nom": "Chambéry",
       "dept": "73",
       "code_bss": "07256X0095/CHAMBE",
-      "current": 264.92,
+      "current": 264.927,
       "history": [
-        264.966,
-        264.954,
         264.959,
         264.944,
         264.957,
@@ -31661,21 +31659,21 @@
         264.943,
         264.926,
         264.943,
-        264.92
+        264.92,
+        264.933,
+        264.927
       ],
       "year_ago": 264.92,
       "lat": 45.569053375,
       "lng": 5.916248145,
-      "color": "#ef4444"
+      "color": "#3b82f6"
     },
     {
       "nom": "Cruet",
       "dept": "73",
       "code_bss": "07494X0026/CRUET",
-      "current": 269.723,
+      "current": 269.802,
       "history": [
-        269.624,
-        269.743,
         269.792,
         269.844,
         269.739,
@@ -31687,9 +31685,11 @@
         269.744,
         269.809,
         269.677,
-        269.723
+        269.723,
+        269.666,
+        269.802
       ],
-      "year_ago": 269.66,
+      "year_ago": 269.69,
       "lat": 45.522193195,
       "lng": 6.104556772,
       "color": "#3b82f6"
@@ -31697,9 +31697,81 @@
   ],
   "air": [
     {
-      "zone": "Villaroux",
+      "zone": "Voglans",
       "dept": "73",
-      "date": "2026-07-01",
+      "date": "2026-07-02",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Viviers-du-Lac",
+      "dept": "73",
+      "date": "2026-07-02",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Vimines",
+      "dept": "73",
+      "date": "2026-07-02",
       "indice": 4,
       "label": "Mauvais",
       "color": "#ff5050",
@@ -31735,43 +31807,7 @@
     {
       "zone": "Villard-Sallet",
       "dept": "73",
-      "date": "2026-07-01",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "les Michelins",
-      "dept": "73",
-      "date": "2026-07-01",
+      "date": "2026-07-02",
       "indice": 4,
       "label": "Mauvais",
       "color": "#ff5050",
@@ -31807,43 +31843,7 @@
     {
       "zone": "Villard-d'Héry",
       "dept": "73",
-      "date": "2026-07-01",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Verrens",
-      "dept": "73",
-      "date": "2026-07-01",
+      "date": "2026-07-02",
       "indice": 4,
       "label": "Mauvais",
       "color": "#ff5050",

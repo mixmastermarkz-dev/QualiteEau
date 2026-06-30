@@ -3,7 +3,7 @@
   "nom": "Haute-Savoie",
   "slug": "haute-savoie",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "29/06/2026 à 16:01",
+  "updated": "30/06/2026 à 14:06",
   "score_eau": 98,
   "nb_communes": 279,
   "potable": [
@@ -40825,39 +40825,11 @@
   ],
   "nappes": [
     {
-      "nom": "Marigny-Saint-Marcel",
-      "dept": "74",
-      "code_bss": "07013X0071/F1",
-      "current": 352.405,
-      "history": [
-        352.564,
-        352.55,
-        352.537,
-        352.525,
-        352.513,
-        352.499,
-        352.488,
-        352.474,
-        352.463,
-        352.452,
-        352.439,
-        352.428,
-        352.417,
-        352.405
-      ],
-      "year_ago": 352.58,
-      "lat": 45.832389293,
-      "lng": 5.962087611,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Publier",
       "dept": "74",
       "code_bss": "06301X0019/P5",
-      "current": 373.774,
+      "current": 373.768,
       "history": [
-        373.812,
-        373.81,
         373.804,
         373.799,
         373.794,
@@ -40869,23 +40841,47 @@
         373.782,
         373.779,
         373.775,
-        373.774
+        373.774,
+        373.769,
+        373.768
       ],
-      "year_ago": 374.3,
+      "year_ago": 374.29,
       "lat": 46.390565227,
       "lng": 6.520859286,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Marigny-Saint-Marcel",
+      "dept": "74",
+      "code_bss": "07013X0071/F1",
+      "current": 352.421,
+      "history": [
+        352.537,
+        352.525,
+        352.513,
+        352.499,
+        352.488,
+        352.474,
+        352.463,
+        352.452,
+        352.439,
+        352.428,
+        352.417,
+        352.405,
+        352.393,
+        352.421
+      ],
+      "year_ago": 352.56,
+      "lat": 45.832389293,
+      "lng": 5.962087611,
       "color": "#ef4444"
     },
     {
       "nom": "Vinzier",
       "dept": "74",
       "code_bss": "06306X0042/BIOGE",
-      "current": 572.348,
+      "current": 572.375,
       "history": [
-        572.375,
-        572.308,
-        572.286,
-        572.275,
         572.288,
         572.283,
         572.296,
@@ -40895,7 +40891,11 @@
         572.308,
         572.32,
         572.34,
-        572.348
+        572.348,
+        572.369,
+        572.366,
+        572.377,
+        572.375
       ],
       "year_ago": 573.4,
       "lat": 46.335316884,
@@ -40906,10 +40906,8 @@
       "nom": "Passy",
       "dept": "74",
       "code_bss": "BSS004QBEB/X",
-      "current": 569.433,
+      "current": 569.441,
       "history": [
-        569.473,
-        569.465,
         569.465,
         569.457,
         569.454,
@@ -40921,7 +40919,9 @@
         569.443,
         569.436,
         569.439,
-        569.433
+        569.433,
+        569.435,
+        569.441
       ],
       "year_ago": 569.32,
       "lat": 45.920935924,
@@ -40932,10 +40932,8 @@
       "nom": "Marigny-Saint-Marcel",
       "dept": "74",
       "code_bss": "BSS004MZXK/X",
-      "current": 362.909,
+      "current": 363.104,
       "history": [
-        363.038,
-        363.02,
         362.735,
         362.997,
         362.971,
@@ -40947,23 +40945,21 @@
         362.816,
         362.919,
         362.916,
-        362.909
+        362.909,
+        362.829,
+        363.104
       ],
-      "year_ago": 362.96,
+      "year_ago": 362.93,
       "lat": 45.835072054,
       "lng": 5.968019958,
-      "color": "#ef4444"
+      "color": "#3b82f6"
     },
     {
       "nom": "Viry",
       "dept": "74",
       "code_bss": "06537X0103/VEIGY",
-      "current": 372.432,
+      "current": 372.421,
       "history": [
-        372.485,
-        372.471,
-        372.501,
-        372.472,
         372.486,
         372.467,
         372.482,
@@ -40973,7 +40969,11 @@
         372.458,
         372.434,
         372.453,
-        372.432
+        372.432,
+        372.448,
+        372.417,
+        372.433,
+        372.421
       ],
       "year_ago": 372.09,
       "lat": 46.141387797,
@@ -40983,12 +40983,12 @@
   ],
   "air": [
     {
-      "zone": "Yvoire",
+      "zone": "Reignier",
       "dept": "74",
-      "date": "2026-07-01",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
+      "date": "2026-07-02",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
@@ -40997,9 +40997,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -41019,12 +41019,12 @@
       }
     },
     {
-      "zone": "Viuz-la-Chiésaz",
+      "zone": "Le Reposoir",
       "dept": "74",
-      "date": "2026-07-01",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
+      "date": "2026-07-02",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
@@ -41033,9 +41033,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -41055,12 +41055,12 @@
       }
     },
     {
-      "zone": "Veyrier-du-Lac",
+      "zone": "Reyvroz",
       "dept": "74",
-      "date": "2026-07-01",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
+      "date": "2026-07-02",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
@@ -41069,9 +41069,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -41091,12 +41091,12 @@
       }
     },
     {
-      "zone": "Thonon-les-Bains",
+      "zone": "La Rivière-Enverse",
       "dept": "74",
-      "date": "2026-07-01",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
+      "date": "2026-07-02",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
@@ -41105,9 +41105,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -41127,12 +41127,12 @@
       }
     },
     {
-      "zone": "Talloires",
+      "zone": "La Roche-sur-Foron",
       "dept": "74",
-      "date": "2026-07-01",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
+      "date": "2026-07-02",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
@@ -41141,9 +41141,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
