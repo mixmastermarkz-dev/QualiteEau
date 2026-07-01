@@ -3,7 +3,7 @@
   "nom": "Ariège",
   "slug": "ariege",
   "region": "Occitanie",
-  "updated": "30/06/2026 à 14:06",
+  "updated": "01/07/2026 à 14:31",
   "score_eau": 98,
   "nb_communes": 331,
   "potable": [
@@ -35691,32 +35691,6 @@
   ],
   "nappes": [
     {
-      "nom": "Montaut",
-      "dept": "09",
-      "code_bss": "10357X0021/F",
-      "current": 240.699,
-      "history": [
-        240.729,
-        240.725,
-        240.722,
-        240.72,
-        240.716,
-        240.714,
-        240.713,
-        240.709,
-        240.708,
-        240.706,
-        240.703,
-        240.702,
-        240.7,
-        240.699
-      ],
-      "year_ago": 240.64,
-      "lat": 43.225456979,
-      "lng": 1.62794485,
-      "color": "#3b82f6"
-    },
-    {
       "nom": "Mazères",
       "dept": "09",
       "code_bss": "10357X0213/F",
@@ -35737,19 +35711,43 @@
         254.457,
         254.473
       ],
-      "year_ago": 254.39,
+      "year_ago": 254.38,
       "lat": 43.209411174,
       "lng": 1.692949596,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Montaut",
+      "dept": "09",
+      "code_bss": "10357X0021/F",
+      "current": 240.693,
+      "history": [
+        240.722,
+        240.72,
+        240.716,
+        240.714,
+        240.713,
+        240.709,
+        240.708,
+        240.706,
+        240.703,
+        240.702,
+        240.7,
+        240.699,
+        240.694,
+        240.693
+      ],
+      "year_ago": 240.64,
+      "lat": 43.225456979,
+      "lng": 1.62794485,
       "color": "#3b82f6"
     },
     {
       "nom": "Verniolle",
       "dept": "09",
       "code_bss": "10577X0159/F",
-      "current": 316.006,
+      "current": 315.993,
       "history": [
-        316.093,
-        316.088,
         316.081,
         316.075,
         316.067,
@@ -35761,12 +35759,40 @@
         316.024,
         316.016,
         316.01,
-        316.006
+        316.006,
+        315.999,
+        315.993
       ],
-      "year_ago": 316.06,
+      "year_ago": 316.04,
       "lat": 43.081693662,
       "lng": 1.648900398,
       "color": "#ef4444"
+    },
+    {
+      "nom": "Cazavet",
+      "dept": "09",
+      "code_bss": "10734X0011/HY",
+      "current": 440.812,
+      "history": [
+        440.808,
+        440.809,
+        440.81,
+        440.81,
+        440.81,
+        440.81,
+        440.809,
+        440.81,
+        440.81,
+        440.811,
+        440.812,
+        440.812,
+        440.812,
+        440.812
+      ],
+      "year_ago": 440.78,
+      "lat": 42.990315316,
+      "lng": 1.048876492,
+      "color": "#3b82f6"
     },
     {
       "nom": "Balaguères",
@@ -35778,14 +35804,14 @@
         496.109,
         496.109,
         496.109,
-        496.109,
-        496.109,
-        496.109,
-        496.109,
-        496.109,
-        496.109,
-        496.109,
-        496.109,
+        496.11,
+        496.11,
+        496.11,
+        496.11,
+        496.11,
+        496.11,
+        496.11,
+        496.11,
         496.11,
         496.11
       ],
@@ -35793,40 +35819,195 @@
       "lat": 42.955443654,
       "lng": 1.030378406,
       "color": "#3b82f6"
-    },
-    {
-      "nom": "Cazavet",
-      "dept": "09",
-      "code_bss": "10734X0011/HY",
-      "current": 440.81,
-      "history": [
-        440.804,
-        440.805,
-        440.806,
-        440.806,
-        440.806,
-        440.805,
-        440.805,
-        440.807,
-        440.808,
-        440.809,
-        440.81,
-        440.81,
-        440.81,
-        440.81
-      ],
-      "year_ago": 440.78,
-      "lat": 42.990315316,
-      "lng": 1.048876492,
-      "color": "#3b82f6"
     }
   ],
-  "air": [],
+  "air": [
+    {
+      "zone": "Vétrigne",
+      "dept": "09",
+      "date": "2026-07-03",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Vescemont",
+      "dept": "09",
+      "date": "2026-07-03",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Valdoie",
+      "dept": "09",
+      "date": "2026-07-03",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Sermamagny",
+      "dept": "09",
+      "date": "2026-07-03",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Saint-Germain-le-Châtelet",
+      "dept": "09",
+      "date": "2026-07-03",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    }
+  ],
   "pollen": [
     {
       "dept": "09",
       "lib_zone": "ARIEGE",
-      "date": "2026-07-01",
+      "date": "2026-07-02",
       "indice_global": 3,
       "label_global": "Moyen",
       "color_global": "#f59e0b",
@@ -35857,9 +36038,9 @@
           "color": "#94a3b8"
         },
         "Frêne": {
-          "indice": 3,
-          "label": "Moyen",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Faible",
+          "color": "#a3e635"
         },
         "Chêne": {
           "indice": 1,

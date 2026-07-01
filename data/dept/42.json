@@ -3,7 +3,7 @@
   "nom": "Loire",
   "slug": "loire",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "30/06/2026 à 14:06",
+  "updated": "01/07/2026 à 14:31",
   "score_eau": 97,
   "nb_communes": 326,
   "potable": [
@@ -57052,39 +57052,11 @@
   ],
   "nappes": [
     {
-      "nom": "Cleppé",
-      "dept": "42",
-      "code_bss": "06967X0100/F",
-      "current": 323.759,
-      "history": [
-        323.801,
-        323.787,
-        323.788,
-        323.771,
-        323.771,
-        323.751,
-        323.754,
-        323.739,
-        323.726,
-        323.716,
-        323.728,
-        323.739,
-        323.758,
-        323.759
-      ],
-      "year_ago": 324.07,
-      "lat": 45.769951628,
-      "lng": 4.183823819,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Saint-Galmier",
       "dept": "42",
       "code_bss": "07208X0197/F1C",
-      "current": 372.549,
+      "current": 372.544,
       "history": [
-        372.557,
-        372.549,
         372.558,
         372.549,
         372.554,
@@ -57096,47 +57068,21 @@
         372.549,
         372.543,
         372.547,
-        372.549
+        372.549,
+        372.554,
+        372.544
       ],
-      "year_ago": 372.38,
+      "year_ago": 372.37,
       "lat": 45.605448412,
       "lng": 4.306255162,
       "color": "#3b82f6"
     },
     {
-      "nom": "Chalain-le-Comtal",
-      "dept": "42",
-      "code_bss": "07203X0168/PZ",
-      "current": 338.952,
-      "history": [
-        338.97,
-        338.96,
-        338.97,
-        338.958,
-        338.969,
-        338.958,
-        338.971,
-        338.956,
-        338.97,
-        338.96,
-        338.969,
-        338.957,
-        338.962,
-        338.952
-      ],
-      "year_ago": 339.0,
-      "lat": 45.649419482,
-      "lng": 4.190529903,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Saint-André-le-Puy",
       "dept": "42",
       "code_bss": "07204X0105/F",
-      "current": 355.943,
+      "current": 355.948,
       "history": [
-        356.103,
-        356.075,
         356.085,
         356.063,
         356.074,
@@ -57148,195 +57094,68 @@
         355.976,
         355.929,
         355.95,
-        355.943
+        355.943,
+        355.967,
+        355.948
       ],
-      "year_ago": 356.48,
+      "year_ago": 356.44,
       "lat": 45.647921327,
       "lng": 4.246544955,
       "color": "#ef4444"
+    },
+    {
+      "nom": "Cleppé",
+      "dept": "42",
+      "code_bss": "06967X0100/F",
+      "current": 323.745,
+      "history": [
+        323.788,
+        323.771,
+        323.771,
+        323.751,
+        323.754,
+        323.739,
+        323.726,
+        323.716,
+        323.728,
+        323.739,
+        323.758,
+        323.759,
+        323.761,
+        323.745
+      ],
+      "year_ago": 324.05,
+      "lat": 45.769951628,
+      "lng": 4.183823819,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Chalain-le-Comtal",
+      "dept": "42",
+      "code_bss": "07203X0168/PZ",
+      "current": 338.954,
+      "history": [
+        338.97,
+        338.958,
+        338.969,
+        338.958,
+        338.971,
+        338.956,
+        338.97,
+        338.96,
+        338.969,
+        338.957,
+        338.962,
+        338.952,
+        338.965,
+        338.954
+      ],
+      "year_ago": 339.0,
+      "lat": 45.649419482,
+      "lng": 4.190529903,
+      "color": "#ef4444"
     }
   ],
-  "air": [
-    {
-      "zone": "Saint-Michel-sur-Rhône",
-      "dept": "42",
-      "date": "2026-07-02",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Pierre-de-Bœuf",
-      "dept": "42",
-      "date": "2026-07-02",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Vérin",
-      "dept": "42",
-      "date": "2026-07-02",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Sainte-Agathe-la-Bouteresse",
-      "dept": "42",
-      "date": "2026-07-02",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Alban-les-Eaux",
-      "dept": "42",
-      "date": "2026-07-02",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    }
-  ],
+  "air": [],
   "pollen": []
 }

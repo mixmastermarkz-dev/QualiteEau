@@ -3,7 +3,7 @@
   "nom": "Bas-Rhin",
   "slug": "bas-rhin",
   "region": "Grand Est",
-  "updated": "30/06/2026 à 14:06",
+  "updated": "01/07/2026 à 14:31",
   "score_eau": 97,
   "nb_communes": 514,
   "potable": [
@@ -60231,10 +60231,8 @@
       "nom": "Gresswiller",
       "dept": "67",
       "code_bss": "02713X0105/PZ1",
-      "current": 197.929,
+      "current": 197.979,
       "history": [
-        198.015,
-        198.078,
         198.013,
         198.095,
         198.006,
@@ -60246,7 +60244,9 @@
         197.942,
         197.926,
         197.919,
-        197.929
+        197.929,
+        197.943,
+        197.979
       ],
       "year_ago": 198.95,
       "lat": 48.520713416,
@@ -60257,10 +60257,8 @@
       "nom": "Haegen",
       "dept": "67",
       "code_bss": "02332X0198/F3",
-      "current": 207.228,
+      "current": 207.255,
       "history": [
-        207.394,
-        207.254,
         207.19,
         207.295,
         207.079,
@@ -60272,9 +60270,11 @@
         207.364,
         207.361,
         207.081,
-        207.228
+        207.228,
+        207.218,
+        207.255
       ],
-      "year_ago": 207.17,
+      "year_ago": 207.1,
       "lat": 48.714388864,
       "lng": 7.311970754,
       "color": "#3b82f6"
@@ -60282,9 +60282,9 @@
   ],
   "air": [
     {
-      "zone": "Niedersteinbach",
+      "zone": "Oberhoffen-sur-Moder",
       "dept": "67",
-      "date": "2026-07-01",
+      "date": "2026-07-02",
       "indice": 3,
       "label": "Dégradé",
       "color": "#F0E641",
@@ -60318,9 +60318,9 @@
       }
     },
     {
-      "zone": "Nordheim",
+      "zone": "Oberlauterbach",
       "dept": "67",
-      "date": "2026-07-01",
+      "date": "2026-07-02",
       "indice": 3,
       "label": "Dégradé",
       "color": "#F0E641",
@@ -60354,9 +60354,45 @@
       }
     },
     {
-      "zone": "Nordhouse",
+      "zone": "Obermodern-Zutzendorf",
       "dept": "67",
-      "date": "2026-07-01",
+      "date": "2026-07-02",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Atmo Grand Est",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Obernai",
+      "dept": "67",
+      "date": "2026-07-02",
       "indice": 3,
       "label": "Dégradé",
       "color": "#F0E641",
@@ -60390,45 +60426,9 @@
       }
     },
     {
-      "zone": "Nothalten",
+      "zone": "Oberrœdern",
       "dept": "67",
-      "date": "2026-07-01",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#F0E641",
-      "source": "Atmo Grand Est",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Obenheim",
-      "dept": "67",
-      "date": "2026-07-01",
+      "date": "2026-07-02",
       "indice": 3,
       "label": "Dégradé",
       "color": "#F0E641",

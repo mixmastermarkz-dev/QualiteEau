@@ -3,7 +3,7 @@
   "nom": "Ardèche",
   "slug": "ardeche",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "30/06/2026 à 14:06",
+  "updated": "01/07/2026 à 14:31",
   "score_eau": 96,
   "nb_communes": 336,
   "potable": [
@@ -28817,65 +28817,11 @@
   ],
   "nappes": [
     {
-      "nom": "Aubenas",
-      "dept": "07",
-      "code_bss": "08651X0038/0038",
-      "current": 297.678,
-      "history": [
-        297.895,
-        297.799,
-        297.879,
-        297.772,
-        297.859,
-        297.738,
-        297.828,
-        297.719,
-        297.807,
-        297.7,
-        297.801,
-        297.678,
-        297.772,
-        297.678
-      ],
-      "year_ago": 299.15,
-      "lat": 44.619744152,
-      "lng": 4.39032624,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Veyras",
-      "dept": "07",
-      "code_bss": "08413X0091/F3",
-      "current": 441.78,
-      "history": [
-        441.78,
-        441.78,
-        441.8,
-        441.78,
-        441.78,
-        441.78,
-        441.78,
-        441.78,
-        441.78,
-        441.77,
-        441.78,
-        441.78,
-        441.78,
-        441.78
-      ],
-      "year_ago": 441.42,
-      "lat": 44.733838457,
-      "lng": 4.561214887,
-      "color": "#3b82f6"
-    },
-    {
       "nom": "Lablachère",
       "dept": "07",
       "code_bss": "BSS003GPIS/X",
-      "current": 243.689,
+      "current": 243.702,
       "history": [
-        243.766,
-        243.753,
         243.756,
         243.747,
         243.758,
@@ -28887,14 +28833,249 @@
         243.713,
         243.696,
         243.705,
-        243.689
+        243.689,
+        243.715,
+        243.702
       ],
       "year_ago": 243.98,
       "lat": 44.46354371,
       "lng": 4.214386619,
       "color": "#ef4444"
+    },
+    {
+      "nom": "Aubenas",
+      "dept": "07",
+      "code_bss": "08651X0038/0038",
+      "current": 297.664,
+      "history": [
+        297.879,
+        297.772,
+        297.859,
+        297.738,
+        297.828,
+        297.719,
+        297.807,
+        297.7,
+        297.801,
+        297.678,
+        297.772,
+        297.678,
+        297.772,
+        297.664
+      ],
+      "year_ago": 299.12,
+      "lat": 44.619744152,
+      "lng": 4.39032624,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Veyras",
+      "dept": "07",
+      "code_bss": "08413X0091/F3",
+      "current": 441.79,
+      "history": [
+        441.8,
+        441.78,
+        441.78,
+        441.78,
+        441.78,
+        441.78,
+        441.78,
+        441.77,
+        441.78,
+        441.78,
+        441.78,
+        441.78,
+        441.78,
+        441.79
+      ],
+      "year_ago": 441.42,
+      "lat": 44.733838457,
+      "lng": 4.561214887,
+      "color": "#3b82f6"
     }
   ],
-  "air": [],
+  "air": [
+    {
+      "zone": "Saint-Jean-de-Trézy",
+      "dept": "07",
+      "date": "2026-07-03",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "la Belouse",
+      "dept": "07",
+      "date": "2026-07-03",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Saint-Léger-sur-Dheune",
+      "dept": "07",
+      "date": "2026-07-03",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Saint-Loup-Géanges",
+      "dept": "07",
+      "date": "2026-07-03",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Saint-Loup-de-Varennes",
+      "dept": "07",
+      "date": "2026-07-03",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    }
+  ],
   "pollen": []
 }
