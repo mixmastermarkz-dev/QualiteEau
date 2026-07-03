@@ -3,7 +3,7 @@
   "nom": "Orne",
   "slug": "orne",
   "region": "Normandie",
-  "updated": "02/07/2026 à 14:07",
+  "updated": "03/07/2026 à 14:07",
   "score_eau": 93,
   "nb_communes": 386,
   "potable": [
@@ -46942,39 +46942,11 @@
   ],
   "nappes": [
     {
-      "nom": "Villiers-sous-Mortagne",
-      "dept": "61",
-      "code_bss": "02523X0002/S2",
-      "current": 194.065,
-      "history": [
-        194.123,
-        194.116,
-        194.112,
-        194.106,
-        194.105,
-        194.098,
-        194.093,
-        194.085,
-        194.084,
-        194.08,
-        194.077,
-        194.072,
-        194.068,
-        194.065
-      ],
-      "year_ago": 194.66,
-      "lat": 48.523466288,
-      "lng": 0.591804057,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Saint-Sulpice-sur-Risle",
       "dept": "61",
       "code_bss": "02144X0005/S1",
-      "current": 203.947,
+      "current": 203.886,
       "history": [
-        204.322,
-        204.281,
         204.258,
         204.228,
         204.214,
@@ -46986,11 +46958,39 @@
         204.04,
         204.014,
         203.982,
-        203.947
+        203.947,
+        203.92,
+        203.886
       ],
-      "year_ago": 209.87,
+      "year_ago": 209.79,
       "lat": 48.766362664,
       "lng": 0.658047665,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Villiers-sous-Mortagne",
+      "dept": "61",
+      "code_bss": "02523X0002/S2",
+      "current": 194.057,
+      "history": [
+        194.112,
+        194.106,
+        194.105,
+        194.098,
+        194.093,
+        194.085,
+        194.084,
+        194.08,
+        194.077,
+        194.072,
+        194.068,
+        194.065,
+        194.062,
+        194.057
+      ],
+      "year_ago": 194.65,
+      "lat": 48.523466288,
+      "lng": 0.591804057,
       "color": "#ef4444"
     },
     {
@@ -47014,193 +47014,12 @@
         117.08,
         117.06
       ],
-      "year_ago": 116.0,
+      "year_ago": 115.99,
       "lat": 48.803924391,
       "lng": 0.144862591,
       "color": "#3b82f6"
     }
   ],
-  "air": [
-    {
-      "zone": "Mieuxcé",
-      "dept": "61",
-      "date": "2026-07-04",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Moncy",
-      "dept": "61",
-      "date": "2026-07-04",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Montabard",
-      "dept": "61",
-      "date": "2026-07-04",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Montchevrel",
-      "dept": "61",
-      "date": "2026-07-04",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Montgaudry",
-      "dept": "61",
-      "date": "2026-07-04",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    }
-  ],
+  "air": [],
   "pollen": []
 }

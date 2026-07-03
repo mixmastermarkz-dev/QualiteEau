@@ -3,7 +3,7 @@
   "nom": "Ardèche",
   "slug": "ardeche",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "02/07/2026 à 14:07",
+  "updated": "03/07/2026 à 14:07",
   "score_eau": 96,
   "nb_communes": 336,
   "potable": [
@@ -28817,65 +28817,11 @@
   ],
   "nappes": [
     {
-      "nom": "Veyras",
-      "dept": "07",
-      "code_bss": "08413X0091/F3",
-      "current": 441.77,
-      "history": [
-        441.78,
-        441.78,
-        441.78,
-        441.78,
-        441.78,
-        441.77,
-        441.78,
-        441.78,
-        441.78,
-        441.78,
-        441.78,
-        441.79,
-        441.78,
-        441.77
-      ],
-      "year_ago": 441.42,
-      "lat": 44.733838457,
-      "lng": 4.561214887,
-      "color": "#3b82f6"
-    },
-    {
-      "nom": "Lablachère",
-      "dept": "07",
-      "code_bss": "BSS003GPIS/X",
-      "current": 243.68,
-      "history": [
-        243.758,
-        243.731,
-        243.735,
-        243.713,
-        243.713,
-        243.7,
-        243.713,
-        243.696,
-        243.705,
-        243.689,
-        243.715,
-        243.702,
-        243.712,
-        243.68
-      ],
-      "year_ago": 243.95,
-      "lat": 44.46354371,
-      "lng": 4.214386619,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Aubenas",
       "dept": "07",
       "code_bss": "08651X0038/0038",
-      "current": 297.633,
+      "current": 297.603,
       "history": [
-        297.859,
-        297.738,
         297.828,
         297.719,
         297.807,
@@ -28887,195 +28833,68 @@
         297.772,
         297.664,
         297.742,
-        297.633
+        297.633,
+        297.713,
+        297.603
       ],
-      "year_ago": 299.09,
+      "year_ago": 299.03,
       "lat": 44.619744152,
       "lng": 4.39032624,
       "color": "#ef4444"
+    },
+    {
+      "nom": "Veyras",
+      "dept": "07",
+      "code_bss": "08413X0091/F3",
+      "current": 441.76,
+      "history": [
+        441.78,
+        441.78,
+        441.78,
+        441.77,
+        441.78,
+        441.78,
+        441.78,
+        441.78,
+        441.78,
+        441.79,
+        441.78,
+        441.77,
+        441.77,
+        441.76
+      ],
+      "year_ago": 441.42,
+      "lat": 44.733838457,
+      "lng": 4.561214887,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Lablachère",
+      "dept": "07",
+      "code_bss": "BSS003GPIS/X",
+      "current": 243.627,
+      "history": [
+        243.735,
+        243.713,
+        243.713,
+        243.7,
+        243.713,
+        243.696,
+        243.705,
+        243.689,
+        243.715,
+        243.702,
+        243.712,
+        243.68,
+        243.669,
+        243.627
+      ],
+      "year_ago": 243.91,
+      "lat": 44.46354371,
+      "lng": 4.214386619,
+      "color": "#ef4444"
     }
   ],
-  "air": [
-    {
-      "zone": "Saint-Amour-Bellevue",
-      "dept": "07",
-      "date": "2026-07-04",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-André-en-Bresse",
-      "dept": "07",
-      "date": "2026-07-04",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "les Sept Chênes",
-      "dept": "07",
-      "date": "2026-07-04",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Aubin-en-Charollais",
-      "dept": "07",
-      "date": "2026-07-04",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Aubin-sur-Loire",
-      "dept": "07",
-      "date": "2026-07-04",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    }
-  ],
+  "air": [],
   "pollen": []
 }
