@@ -3,7 +3,7 @@
   "nom": "Ariège",
   "slug": "ariege",
   "region": "Occitanie",
-  "updated": "04/07/2026 à 13:24",
+  "updated": "05/07/2026 à 13:28",
   "score_eau": 98,
   "nb_communes": 331,
   "potable": [
@@ -33705,6 +33705,32 @@
   ],
   "nappes": [
     {
+      "nom": "Montaut",
+      "dept": "09",
+      "code_bss": "10357X0021/F",
+      "current": 240.684,
+      "history": [
+        240.713,
+        240.709,
+        240.708,
+        240.706,
+        240.703,
+        240.702,
+        240.7,
+        240.699,
+        240.694,
+        240.693,
+        240.691,
+        240.69,
+        240.686,
+        240.684
+      ],
+      "year_ago": 240.63,
+      "lat": 43.225456979,
+      "lng": 1.62794485,
+      "color": "#3b82f6"
+    },
+    {
       "nom": "Mazères",
       "dept": "09",
       "code_bss": "10357X0213/F",
@@ -33731,32 +33757,6 @@
       "color": "#3b82f6"
     },
     {
-      "nom": "Montaut",
-      "dept": "09",
-      "code_bss": "10357X0021/F",
-      "current": 240.684,
-      "history": [
-        240.713,
-        240.709,
-        240.708,
-        240.706,
-        240.703,
-        240.702,
-        240.7,
-        240.699,
-        240.694,
-        240.693,
-        240.691,
-        240.69,
-        240.686,
-        240.684
-      ],
-      "year_ago": 240.64,
-      "lat": 43.225456979,
-      "lng": 1.62794485,
-      "color": "#3b82f6"
-    },
-    {
       "nom": "Verniolle",
       "dept": "09",
       "code_bss": "10577X0159/F",
@@ -33777,7 +33777,7 @@
         315.975,
         315.967
       ],
-      "year_ago": 316.01,
+      "year_ago": 316.0,
       "lat": 43.081693662,
       "lng": 1.648900398,
       "color": "#ef4444"
@@ -33835,193 +33835,12 @@
       "color": "#3b82f6"
     }
   ],
-  "air": [
-    {
-      "zone": "Vézelois",
-      "dept": "09",
-      "date": "2026-07-06",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Petit-Croix",
-      "dept": "09",
-      "date": "2026-07-06",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Pérouse",
-      "dept": "09",
-      "date": "2026-07-06",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Offemont",
-      "dept": "09",
-      "date": "2026-07-06",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Novillard",
-      "dept": "09",
-      "date": "2026-07-06",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    }
-  ],
+  "air": [],
   "pollen": [
     {
       "dept": "09",
       "lib_zone": "ARIEGE",
-      "date": "2026-07-05",
+      "date": "2026-07-06",
       "indice_global": 3,
       "label_global": "Moyen",
       "color_global": "#f59e0b",
@@ -34037,9 +33856,9 @@
           "color": "#10b981"
         },
         "Cyprès": {
-          "indice": 1,
-          "label": "Très faible",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Faible",
+          "color": "#a3e635"
         },
         "Platane": {
           "indice": 0,
@@ -34062,9 +33881,9 @@
           "color": "#10b981"
         },
         "Urticacées": {
-          "indice": 2,
-          "label": "Faible",
-          "color": "#a3e635"
+          "indice": 3,
+          "label": "Moyen",
+          "color": "#f59e0b"
         },
         "Bouleau": {
           "indice": 1,
