@@ -3,7 +3,7 @@
   "nom": "Pyrénées-Atlantiques",
   "slug": "pyrenees-atlantiques",
   "region": "Nouvelle-Aquitaine",
-  "updated": "06/07/2026 à 15:42",
+  "updated": "08/07/2026 à 13:45",
   "score_eau": 100,
   "nb_communes": 546,
   "potable": [
@@ -75522,36 +75522,10 @@
         217.42,
         217.416
       ],
-      "year_ago": 217.36,
+      "year_ago": 217.34,
       "lat": 43.235756291,
       "lng": -0.282003913,
       "color": "#3b82f6"
-    },
-    {
-      "nom": "Lannecaube",
-      "dept": "64",
-      "code_bss": "10052X0038/F",
-      "current": 95.42,
-      "history": [
-        95.522,
-        95.486,
-        95.497,
-        95.456,
-        95.455,
-        95.423,
-        95.457,
-        95.441,
-        95.446,
-        95.421,
-        95.428,
-        95.415,
-        95.422,
-        95.42
-      ],
-      "year_ago": 95.63,
-      "lat": 43.485423929,
-      "lng": -0.205881589,
-      "color": "#ef4444"
     },
     {
       "nom": "Lalongue",
@@ -75574,9 +75548,35 @@
         110.77,
         110.67
       ],
-      "year_ago": 113.37,
+      "year_ago": 113.22,
       "lat": 43.476041021,
       "lng": -0.202639256,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Lannecaube",
+      "dept": "64",
+      "code_bss": "10052X0038/F",
+      "current": 95.42,
+      "history": [
+        95.522,
+        95.486,
+        95.497,
+        95.456,
+        95.455,
+        95.423,
+        95.457,
+        95.441,
+        95.446,
+        95.421,
+        95.428,
+        95.415,
+        95.422,
+        95.42
+      ],
+      "year_ago": 95.61,
+      "lat": 43.485423929,
+      "lng": -0.205881589,
       "color": "#ef4444"
     },
     {
@@ -75600,62 +75600,10 @@
         1383.562,
         1383.442
       ],
-      "year_ago": 1384.41,
+      "year_ago": 1384.37,
       "lat": 42.96184,
       "lng": -0.329051,
       "color": "#ef4444"
-    },
-    {
-      "nom": "Eaux-Bonnes",
-      "dept": "64",
-      "code_bss": "BSS004CDVX/X",
-      "current": 1354.341,
-      "history": [
-        1354.038,
-        1354.142,
-        1354.047,
-        1354.068,
-        1354.107,
-        1354.112,
-        1354.271,
-        1354.349,
-        1354.285,
-        1354.254,
-        1354.287,
-        1354.247,
-        1354.295,
-        1354.341
-      ],
-      "year_ago": 1355.86,
-      "lat": 42.961778,
-      "lng": -0.330899,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Eaux-Bonnes",
-      "dept": "64",
-      "code_bss": "BSS004CDVY/X",
-      "current": 1393.09,
-      "history": [
-        1393.192,
-        1393.18,
-        1393.175,
-        1393.166,
-        1393.157,
-        1393.179,
-        1393.167,
-        1393.15,
-        1393.138,
-        1393.134,
-        1393.123,
-        1393.111,
-        1393.1,
-        1393.09
-      ],
-      "year_ago": 1393.07,
-      "lat": 42.958752475,
-      "lng": -0.32997766,
-      "color": "#3b82f6"
     },
     {
       "nom": "Eaux-Bonnes",
@@ -75682,8 +75630,241 @@
       "lat": 42.95862,
       "lng": -0.328503,
       "color": "#3b82f6"
+    },
+    {
+      "nom": "Eaux-Bonnes",
+      "dept": "64",
+      "code_bss": "BSS004CDVY/X",
+      "current": 1393.09,
+      "history": [
+        1393.192,
+        1393.18,
+        1393.175,
+        1393.166,
+        1393.157,
+        1393.179,
+        1393.167,
+        1393.15,
+        1393.138,
+        1393.134,
+        1393.123,
+        1393.111,
+        1393.1,
+        1393.09
+      ],
+      "year_ago": 1393.04,
+      "lat": 42.958752475,
+      "lng": -0.32997766,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Eaux-Bonnes",
+      "dept": "64",
+      "code_bss": "BSS004CDVX/X",
+      "current": 1354.341,
+      "history": [
+        1354.038,
+        1354.142,
+        1354.047,
+        1354.068,
+        1354.107,
+        1354.112,
+        1354.271,
+        1354.349,
+        1354.285,
+        1354.254,
+        1354.287,
+        1354.247,
+        1354.295,
+        1354.341
+      ],
+      "year_ago": 1355.72,
+      "lat": 42.961778,
+      "lng": -0.330899,
+      "color": "#ef4444"
     }
   ],
-  "air": [],
+  "air": [
+    {
+      "zone": "Arbérats-Sillègue",
+      "dept": "64",
+      "date": "2026-07-09",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Nouvelle-Aquitaine",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Bergouey-Viellenave",
+      "dept": "64",
+      "date": "2026-07-09",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Nouvelle-Aquitaine",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Béhasque-Lapiste",
+      "dept": "64",
+      "date": "2026-07-09",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Nouvelle-Aquitaine",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Orthez",
+      "dept": "64",
+      "date": "2026-07-09",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Nouvelle-Aquitaine",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Uhart-Cize",
+      "dept": "64",
+      "date": "2026-07-09",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Nouvelle-Aquitaine",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    }
+  ],
   "pollen": []
 }
