@@ -3,7 +3,7 @@
   "nom": "Vendée",
   "slug": "vendee",
   "region": "Pays de la Loire",
-  "updated": "08/07/2026 à 13:44",
+  "updated": "10/07/2026 à 14:23",
   "score_eau": 96,
   "nb_communes": 256,
   "potable": [
@@ -13200,11 +13200,6 @@
             "date": "2024-08-08",
             "valeur": 0.48,
             "color": "#f59e0b"
-          },
-          {
-            "date": "2024-07-09",
-            "valeur": 0.61,
-            "color": "#ef4444"
           }
         ],
         "O2 saturation": [
@@ -13249,11 +13244,6 @@
             "date": "2024-08-08",
             "valeur": 25.0,
             "color": "#ef4444"
-          },
-          {
-            "date": "2024-07-09",
-            "valeur": 14.0,
-            "color": "#ef4444"
           }
         ],
         "Nitrates": [
@@ -13270,11 +13260,6 @@
           {
             "date": "2024-08-08",
             "valeur": 0.01,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-07-09",
-            "valeur": 0.055,
             "color": "#10b981"
           }
         ],
@@ -44510,9 +44495,9 @@
   "nappes": [],
   "air": [
     {
-      "zone": "l'Orbrie",
+      "zone": "Saint-Martin-des-Fontaines",
       "dept": "85",
-      "date": "2026-07-10",
+      "date": "2026-07-12",
       "indice": 4,
       "label": "mauvais",
       "color": "#ff5050",
@@ -44546,9 +44531,45 @@
       }
     },
     {
-      "zone": "Nesmy",
+      "zone": "Saint-Martin-des-Tilleuls",
       "dept": "85",
-      "date": "2026-07-10",
+      "date": "2026-07-12",
+      "indice": 4,
+      "label": "mauvais",
+      "color": "#ff5050",
+      "source": "Air Pays de la Loire",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Saint-Mathurin",
+      "dept": "85",
+      "date": "2026-07-12",
       "indice": 4,
       "label": "mauvais",
       "color": "#ff5050",
@@ -44582,9 +44603,9 @@
       }
     },
     {
-      "zone": "Mouzeuil-Saint-Martin",
+      "zone": "Saint-Michel-le-Cloucq",
       "dept": "85",
-      "date": "2026-07-10",
+      "date": "2026-07-12",
       "indice": 4,
       "label": "mauvais",
       "color": "#ff5050",
@@ -44618,9 +44639,9 @@
       }
     },
     {
-      "zone": "Mouilleron-le-Captif",
+      "zone": "Saint-Paul-en-Pareds",
       "dept": "85",
-      "date": "2026-07-10",
+      "date": "2026-07-12",
       "indice": 4,
       "label": "mauvais",
       "color": "#ff5050",
@@ -44637,45 +44658,9 @@
           "color": "#f97316"
         },
         "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Mouchamps",
-      "dept": "85",
-      "date": "2026-07-10",
-      "indice": 4,
-      "label": "mauvais",
-      "color": "#ff5050",
-      "source": "Air Pays de la Loire",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM2.5": {
           "indice": 1,
