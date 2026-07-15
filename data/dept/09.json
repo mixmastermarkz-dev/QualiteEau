@@ -3,7 +3,7 @@
   "nom": "Ariège",
   "slug": "ariege",
   "region": "Occitanie",
-  "updated": "14/07/2026 à 13:23",
+  "updated": "15/07/2026 à 13:26",
   "score_eau": 98,
   "nb_communes": 331,
   "potable": [
@@ -35624,48 +35624,48 @@
       "nom": "Montaut",
       "dept": "09",
       "code_bss": "10357X0021/F",
-      "current": 240.684,
+      "current": 240.645,
       "history": [
-        240.713,
-        240.709,
-        240.708,
-        240.706,
-        240.703,
-        240.702,
-        240.7,
-        240.699,
-        240.694,
-        240.693,
-        240.691,
-        240.69,
-        240.686,
-        240.684
+        240.659,
+        240.657,
+        240.656,
+        240.657,
+        240.655,
+        240.655,
+        240.651,
+        240.651,
+        240.648,
+        240.649,
+        240.649,
+        240.648,
+        240.645,
+        240.645
       ],
       "year_ago": 240.67,
       "lat": 43.225456979,
       "lng": 1.62794485,
-      "color": "#3b82f6"
+      "color": "#ef4444"
     },
     {
       "nom": "Mazères",
       "dept": "09",
       "code_bss": "10357X0213/F",
-      "current": 254.491,
+      "current": 254.38,
       "history": [
-        254.43,
-        254.427,
+        254.443,
+        254.441,
+        254.437,
+        254.437,
+        254.429,
         254.422,
-        254.416,
-        254.409,
-        254.446,
-        254.457,
-        254.473,
-        254.485,
-        254.492,
-        254.493,
-        254.495,
-        254.493,
-        254.491
+        254.414,
+        254.408,
+        254.402,
+        254.399,
+        254.392,
+        254.389,
+        254.383,
+        254.38
       ],
       "year_ago": 254.33,
       "lat": 43.209411174,
@@ -35676,87 +35676,268 @@
       "nom": "Verniolle",
       "dept": "09",
       "code_bss": "10577X0159/F",
-      "current": 315.967,
+      "current": 315.802,
       "history": [
-        316.051,
-        316.045,
-        316.038,
-        316.028,
-        316.024,
-        316.016,
-        316.01,
-        316.006,
-        315.999,
-        315.993,
-        315.987,
-        315.981,
-        315.975,
-        315.967
+        315.891,
+        315.885,
+        315.879,
+        315.873,
+        315.866,
+        315.858,
+        315.851,
+        315.844,
+        315.838,
+        315.829,
+        315.821,
+        315.815,
+        315.808,
+        315.802
       ],
-      "year_ago": 315.9,
+      "year_ago": 315.89,
       "lat": 43.081693662,
       "lng": 1.648900398,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Cazavet",
+      "dept": "09",
+      "code_bss": "10734X0011/HY",
+      "current": 440.826,
+      "history": [
+        440.823,
+        440.824,
+        440.825,
+        440.826,
+        440.825,
+        440.825,
+        440.825,
+        440.826,
+        440.826,
+        440.826,
+        440.826,
+        440.826,
+        440.826,
+        440.826
+      ],
+      "year_ago": 440.82,
+      "lat": 42.990315316,
+      "lng": 1.048876492,
       "color": "#3b82f6"
     },
     {
       "nom": "Balaguères",
       "dept": "09",
       "code_bss": "10734X0010/HY",
-      "current": 496.112,
+      "current": 496.123,
       "history": [
-        496.111,
-        496.111,
-        496.111,
-        496.111,
-        496.111,
-        496.111,
-        496.111,
-        496.111,
-        496.111,
-        496.111,
-        496.111,
-        496.112,
-        496.112,
-        496.112
+        496.121,
+        496.121,
+        496.121,
+        496.121,
+        496.121,
+        496.122,
+        496.122,
+        496.122,
+        496.122,
+        496.122,
+        496.122,
+        496.122,
+        496.123,
+        496.123
       ],
       "year_ago": 496.1,
       "lat": 42.955443654,
       "lng": 1.030378406,
       "color": "#3b82f6"
-    },
-    {
-      "nom": "Cazavet",
-      "dept": "09",
-      "code_bss": "10734X0011/HY",
-      "current": 440.81,
-      "history": [
-        440.813,
-        440.814,
-        440.813,
-        440.813,
-        440.813,
-        440.813,
-        440.812,
-        440.812,
-        440.813,
-        440.814,
-        440.814,
-        440.813,
-        440.812,
-        440.81
-      ],
-      "year_ago": 440.81,
-      "lat": 42.990315316,
-      "lng": 1.048876492,
-      "color": "#ef4444"
     }
   ],
-  "air": [],
+  "air": [
+    {
+      "zone": "Andelnans",
+      "dept": "09",
+      "date": "2026-07-17",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Angeot",
+      "dept": "09",
+      "date": "2026-07-17",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Anjoutey",
+      "dept": "09",
+      "date": "2026-07-17",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Argiésans",
+      "dept": "09",
+      "date": "2026-07-17",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Auxelles-Bas",
+      "dept": "09",
+      "date": "2026-07-17",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    }
+  ],
   "pollen": [
     {
       "dept": "09",
       "lib_zone": "ARIEGE",
-      "date": "2026-07-15",
+      "date": "2026-07-16",
       "indice_global": 3,
       "label_global": "Moyen",
       "color_global": "#f59e0b",
@@ -35797,14 +35978,14 @@
           "color": "#10b981"
         },
         "Urticacées": {
-          "indice": 3,
-          "label": "Moyen",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Faible",
+          "color": "#a3e635"
         },
         "Bouleau": {
-          "indice": 1,
-          "label": "Très faible",
-          "color": "#10b981"
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
         },
         "Armoise": {
           "indice": 0,
