@@ -3,7 +3,7 @@
   "nom": "Doubs",
   "slug": "doubs",
   "region": "Bourgogne-Franche-Comté",
-  "updated": "15/07/2026 à 13:26",
+  "updated": "16/07/2026 à 13:37",
   "score_eau": 98,
   "nb_communes": 570,
   "potable": [
@@ -29271,17 +29271,17 @@
           "date": "2026-04-13",
           "realtime": false
         },
-        "Conductivité": {
-          "valeur": 9.2,
-          "unite": "µS/cm",
-          "color": "#10b981",
-          "date": "2026-04-13",
-          "realtime": false
-        },
         "MES": {
           "valeur": 534.0,
           "unite": "mg/L",
           "color": "#ef4444",
+          "date": "2026-04-13",
+          "realtime": false
+        },
+        "Conductivité": {
+          "valeur": 9.2,
+          "unite": "µS/cm",
+          "color": "#10b981",
           "date": "2026-04-13",
           "realtime": false
         },
@@ -29349,33 +29349,6 @@
             "color": "#10b981"
           }
         ],
-        "Conductivité": [
-          {
-            "date": "2026-04-13",
-            "valeur": 9.2,
-            "color": "#10b981"
-          },
-          {
-            "date": "2026-03-06",
-            "valeur": 11.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2026-02-06",
-            "valeur": 10.1,
-            "color": "#10b981"
-          },
-          {
-            "date": "2026-01-15",
-            "valeur": 10.3,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-10-10",
-            "valeur": 10.1,
-            "color": "#10b981"
-          }
-        ],
         "MES": [
           {
             "date": "2026-04-13",
@@ -29401,6 +29374,33 @@
             "date": "2025-10-10",
             "valeur": 583.0,
             "color": "#ef4444"
+          }
+        ],
+        "Conductivité": [
+          {
+            "date": "2026-04-13",
+            "valeur": 9.2,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-03-06",
+            "valeur": 11.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-02-06",
+            "valeur": 10.1,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-01-15",
+            "valeur": 10.3,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-10-10",
+            "valeur": 10.1,
+            "color": "#10b981"
           }
         ],
         "Ammonium": [
@@ -32285,6 +32285,13 @@
       "lon": 6.951423583,
       "nom_cours_eau": "DOUBS",
       "parametres": {
+        "O2 saturation": {
+          "valeur": 109.0,
+          "unite": "%",
+          "color": "#10b981",
+          "date": "2026-04-03",
+          "realtime": false
+        },
         "pH": {
           "valeur": 8.2,
           "unite": "pH",
@@ -32296,13 +32303,6 @@
           "valeur": 461.0,
           "unite": "mg/L",
           "color": "#ef4444",
-          "date": "2026-04-03",
-          "realtime": false
-        },
-        "O2 saturation": {
-          "valeur": 109.0,
-          "unite": "%",
-          "color": "#10b981",
           "date": "2026-04-03",
           "realtime": false
         },
@@ -32343,6 +32343,33 @@
         }
       },
       "historique": {
+        "O2 saturation": [
+          {
+            "date": "2026-04-03",
+            "valeur": 109.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-02-04",
+            "valeur": 102.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-01-06",
+            "valeur": 104.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-12-12",
+            "valeur": 104.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-11-18",
+            "valeur": 100.0,
+            "color": "#10b981"
+          }
+        ],
         "pH": [
           {
             "date": "2026-04-03",
@@ -32395,33 +32422,6 @@
             "date": "2025-11-18",
             "valeur": 468.0,
             "color": "#ef4444"
-          }
-        ],
-        "O2 saturation": [
-          {
-            "date": "2026-04-03",
-            "valeur": 109.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2026-02-04",
-            "valeur": 102.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2026-01-06",
-            "valeur": 104.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-12-12",
-            "valeur": 104.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-11-18",
-            "valeur": 100.0,
-            "color": "#10b981"
           }
         ],
         "Phosphore": [
@@ -33423,292 +33423,6 @@
       "score_label": "Bonne"
     },
     {
-      "nom": "MARAIS A SAONE 1",
-      "dept": "25",
-      "lat": 47.220659257,
-      "lon": 6.104818182,
-      "nom_cours_eau": "MARAIS",
-      "parametres": {
-        "Temp. eau": {
-          "valeur": 5.5,
-          "unite": "°C",
-          "color": "#10b981",
-          "date": "2026-04-02",
-          "realtime": false
-        },
-        "Nitrates": {
-          "valeur": 2.7,
-          "unite": "mg/L",
-          "color": "#10b981",
-          "date": "2026-04-02",
-          "realtime": false
-        },
-        "Ammonium": {
-          "valeur": 8.6,
-          "unite": "mg/L",
-          "color": "#ef4444",
-          "date": "2026-04-02",
-          "realtime": false
-        },
-        "pH": {
-          "valeur": 7.9,
-          "unite": "pH",
-          "color": "#10b981",
-          "date": "2026-04-02",
-          "realtime": false
-        },
-        "MES": {
-          "valeur": 388.0,
-          "unite": "mg/L",
-          "color": "#ef4444",
-          "date": "2026-04-02",
-          "realtime": false
-        },
-        "Conductivité": {
-          "valeur": 10.2,
-          "unite": "µS/cm",
-          "color": "#10b981",
-          "date": "2026-04-02",
-          "realtime": false
-        },
-        "Phosphore": {
-          "valeur": 0.061,
-          "unite": "mg/L",
-          "color": "#10b981",
-          "date": "2026-04-02",
-          "realtime": false
-        },
-        "O2 saturation": {
-          "valeur": 83.8,
-          "unite": "%",
-          "color": "#10b981",
-          "date": "2026-04-02",
-          "realtime": false
-        }
-      },
-      "historique": {
-        "Temp. eau": [
-          {
-            "date": "2026-04-02",
-            "valeur": 5.5,
-            "color": "#10b981"
-          },
-          {
-            "date": "2026-02-10",
-            "valeur": 5.3,
-            "color": "#10b981"
-          },
-          {
-            "date": "2026-01-08",
-            "valeur": 0.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-12-10",
-            "valeur": 7.4,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-10-15",
-            "valeur": 13.4,
-            "color": "#10b981"
-          }
-        ],
-        "Nitrates": [
-          {
-            "date": "2026-04-02",
-            "valeur": 2.7,
-            "color": "#10b981"
-          },
-          {
-            "date": "2026-02-10",
-            "valeur": 4.7,
-            "color": "#10b981"
-          },
-          {
-            "date": "2026-01-08",
-            "valeur": 5.2,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-12-10",
-            "valeur": 16.0,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2025-10-15",
-            "valeur": 5.4,
-            "color": "#10b981"
-          }
-        ],
-        "Ammonium": [
-          {
-            "date": "2026-04-02",
-            "valeur": 8.6,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2026-02-10",
-            "valeur": 7.1,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2026-01-08",
-            "valeur": 5.3,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2025-12-10",
-            "valeur": 9.4,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2025-10-15",
-            "valeur": 7.5,
-            "color": "#ef4444"
-          }
-        ],
-        "pH": [
-          {
-            "date": "2026-04-02",
-            "valeur": 7.9,
-            "color": "#10b981"
-          },
-          {
-            "date": "2026-02-10",
-            "valeur": 7.9,
-            "color": "#10b981"
-          },
-          {
-            "date": "2026-01-08",
-            "valeur": 8.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-12-10",
-            "valeur": 7.6,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-10-15",
-            "valeur": 7.9,
-            "color": "#10b981"
-          }
-        ],
-        "MES": [
-          {
-            "date": "2026-04-02",
-            "valeur": 388.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2026-02-10",
-            "valeur": 378.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2026-01-08",
-            "valeur": 571.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2025-12-10",
-            "valeur": 305.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2025-10-15",
-            "valeur": 619.0,
-            "color": "#ef4444"
-          }
-        ],
-        "Conductivité": [
-          {
-            "date": "2026-04-02",
-            "valeur": 10.2,
-            "color": "#10b981"
-          },
-          {
-            "date": "2026-02-10",
-            "valeur": 10.4,
-            "color": "#10b981"
-          },
-          {
-            "date": "2026-01-08",
-            "valeur": 12.6,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-12-10",
-            "valeur": 9.4,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-10-15",
-            "valeur": 7.1,
-            "color": "#10b981"
-          }
-        ],
-        "Phosphore": [
-          {
-            "date": "2026-04-02",
-            "valeur": 0.061,
-            "color": "#10b981"
-          },
-          {
-            "date": "2026-02-10",
-            "valeur": 0.066,
-            "color": "#10b981"
-          },
-          {
-            "date": "2026-01-08",
-            "valeur": 0.052,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-12-10",
-            "valeur": 0.052,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-10-15",
-            "valeur": 0.28,
-            "color": "#f59e0b"
-          }
-        ],
-        "O2 saturation": [
-          {
-            "date": "2026-04-02",
-            "valeur": 83.8,
-            "color": "#10b981"
-          },
-          {
-            "date": "2026-02-10",
-            "valeur": 86.3,
-            "color": "#10b981"
-          },
-          {
-            "date": "2026-01-08",
-            "valeur": 89.5,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-12-10",
-            "valeur": 81.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-10-15",
-            "valeur": 62.4,
-            "color": "#f59e0b"
-          }
-        ]
-      },
-      "score": 75,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
-    },
-    {
       "nom": "DOUBS A VAIRE-ARCIER ",
       "dept": "25",
       "lat": 47.285513653,
@@ -33993,6 +33707,292 @@
       "score": 81,
       "score_color": "#10b981",
       "score_label": "Bonne"
+    },
+    {
+      "nom": "MARAIS A SAONE 1",
+      "dept": "25",
+      "lat": 47.220659257,
+      "lon": 6.104818182,
+      "nom_cours_eau": "MARAIS",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 2.7,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-04-02",
+          "realtime": false
+        },
+        "Temp. eau": {
+          "valeur": 5.5,
+          "unite": "°C",
+          "color": "#10b981",
+          "date": "2026-04-02",
+          "realtime": false
+        },
+        "Ammonium": {
+          "valeur": 8.6,
+          "unite": "mg/L",
+          "color": "#ef4444",
+          "date": "2026-04-02",
+          "realtime": false
+        },
+        "pH": {
+          "valeur": 7.9,
+          "unite": "pH",
+          "color": "#10b981",
+          "date": "2026-04-02",
+          "realtime": false
+        },
+        "MES": {
+          "valeur": 388.0,
+          "unite": "mg/L",
+          "color": "#ef4444",
+          "date": "2026-04-02",
+          "realtime": false
+        },
+        "Conductivité": {
+          "valeur": 10.2,
+          "unite": "µS/cm",
+          "color": "#10b981",
+          "date": "2026-04-02",
+          "realtime": false
+        },
+        "Phosphore": {
+          "valeur": 0.061,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-04-02",
+          "realtime": false
+        },
+        "O2 saturation": {
+          "valeur": 83.8,
+          "unite": "%",
+          "color": "#10b981",
+          "date": "2026-04-02",
+          "realtime": false
+        }
+      },
+      "historique": {
+        "Nitrates": [
+          {
+            "date": "2026-04-02",
+            "valeur": 2.7,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-02-10",
+            "valeur": 4.7,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-01-08",
+            "valeur": 5.2,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-12-10",
+            "valeur": 16.0,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2025-10-15",
+            "valeur": 5.4,
+            "color": "#10b981"
+          }
+        ],
+        "Temp. eau": [
+          {
+            "date": "2026-04-02",
+            "valeur": 5.5,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-02-10",
+            "valeur": 5.3,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-01-08",
+            "valeur": 0.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-12-10",
+            "valeur": 7.4,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-10-15",
+            "valeur": 13.4,
+            "color": "#10b981"
+          }
+        ],
+        "Ammonium": [
+          {
+            "date": "2026-04-02",
+            "valeur": 8.6,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2026-02-10",
+            "valeur": 7.1,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2026-01-08",
+            "valeur": 5.3,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-12-10",
+            "valeur": 9.4,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-10-15",
+            "valeur": 7.5,
+            "color": "#ef4444"
+          }
+        ],
+        "pH": [
+          {
+            "date": "2026-04-02",
+            "valeur": 7.9,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-02-10",
+            "valeur": 7.9,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-01-08",
+            "valeur": 8.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-12-10",
+            "valeur": 7.6,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-10-15",
+            "valeur": 7.9,
+            "color": "#10b981"
+          }
+        ],
+        "MES": [
+          {
+            "date": "2026-04-02",
+            "valeur": 388.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2026-02-10",
+            "valeur": 378.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2026-01-08",
+            "valeur": 571.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-12-10",
+            "valeur": 305.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-10-15",
+            "valeur": 619.0,
+            "color": "#ef4444"
+          }
+        ],
+        "Conductivité": [
+          {
+            "date": "2026-04-02",
+            "valeur": 10.2,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-02-10",
+            "valeur": 10.4,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-01-08",
+            "valeur": 12.6,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-12-10",
+            "valeur": 9.4,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-10-15",
+            "valeur": 7.1,
+            "color": "#10b981"
+          }
+        ],
+        "Phosphore": [
+          {
+            "date": "2026-04-02",
+            "valeur": 0.061,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-02-10",
+            "valeur": 0.066,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-01-08",
+            "valeur": 0.052,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-12-10",
+            "valeur": 0.052,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-10-15",
+            "valeur": 0.28,
+            "color": "#f59e0b"
+          }
+        ],
+        "O2 saturation": [
+          {
+            "date": "2026-04-02",
+            "valeur": 83.8,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-02-10",
+            "valeur": 86.3,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-01-08",
+            "valeur": 89.5,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-12-10",
+            "valeur": 81.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-10-15",
+            "valeur": 62.4,
+            "color": "#f59e0b"
+          }
+        ]
+      },
+      "score": 75,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
     },
     {
       "nom": "DOUBS A MORTEAU 1",
@@ -34567,292 +34567,6 @@
       "score_label": "Bonne"
     },
     {
-      "nom": "DOUBS A MOUTHE - LE PETIT SARRAGEOIS ",
-      "dept": "25",
-      "lat": 46.719224215,
-      "lon": 6.20853463,
-      "nom_cours_eau": "DOUBS",
-      "parametres": {
-        "Conductivité": {
-          "valeur": 11.9,
-          "unite": "µS/cm",
-          "color": "#10b981",
-          "date": "2026-04-01",
-          "realtime": false
-        },
-        "Ammonium": {
-          "valeur": 1.6,
-          "unite": "mg/L",
-          "color": "#f59e0b",
-          "date": "2026-04-01",
-          "realtime": false
-        },
-        "Phosphore": {
-          "valeur": 0.013,
-          "unite": "mg/L",
-          "color": "#10b981",
-          "date": "2026-04-01",
-          "realtime": false
-        },
-        "MES": {
-          "valeur": 357.0,
-          "unite": "mg/L",
-          "color": "#ef4444",
-          "date": "2026-04-01",
-          "realtime": false
-        },
-        "Temp. eau": {
-          "valeur": 6.4,
-          "unite": "°C",
-          "color": "#10b981",
-          "date": "2026-04-01",
-          "realtime": false
-        },
-        "pH": {
-          "valeur": 8.2,
-          "unite": "pH",
-          "color": "#10b981",
-          "date": "2026-04-01",
-          "realtime": false
-        },
-        "Nitrates": {
-          "valeur": 2.93,
-          "unite": "mg/L",
-          "color": "#10b981",
-          "date": "2026-04-01",
-          "realtime": false
-        },
-        "O2 saturation": {
-          "valeur": 108.0,
-          "unite": "%",
-          "color": "#10b981",
-          "date": "2026-04-01",
-          "realtime": false
-        }
-      },
-      "historique": {
-        "Conductivité": [
-          {
-            "date": "2026-04-01",
-            "valeur": 11.9,
-            "color": "#10b981"
-          },
-          {
-            "date": "2026-02-04",
-            "valeur": 12.1,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-12-12",
-            "valeur": 11.8,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-11-19",
-            "valeur": 11.6,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-10-16",
-            "valeur": 11.3,
-            "color": "#10b981"
-          }
-        ],
-        "Ammonium": [
-          {
-            "date": "2026-04-01",
-            "valeur": 1.6,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2026-02-04",
-            "valeur": 2.0,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2025-12-12",
-            "valeur": 2.0,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2025-11-19",
-            "valeur": 2.9,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2025-10-20",
-            "valeur": 17900.0,
-            "color": "#ef4444"
-          }
-        ],
-        "Phosphore": [
-          {
-            "date": "2026-04-01",
-            "valeur": 0.013,
-            "color": "#10b981"
-          },
-          {
-            "date": "2026-02-04",
-            "valeur": 0.01,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-12-12",
-            "valeur": 0.009,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-11-19",
-            "valeur": 0.052,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-10-16",
-            "valeur": 0.005,
-            "color": "#10b981"
-          }
-        ],
-        "MES": [
-          {
-            "date": "2026-04-01",
-            "valeur": 357.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2026-02-04",
-            "valeur": 342.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2025-12-12",
-            "valeur": 335.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2025-11-19",
-            "valeur": 363.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2025-10-16",
-            "valeur": 401.0,
-            "color": "#ef4444"
-          }
-        ],
-        "Temp. eau": [
-          {
-            "date": "2026-04-01",
-            "valeur": 6.4,
-            "color": "#10b981"
-          },
-          {
-            "date": "2026-02-04",
-            "valeur": 5.8,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-12-12",
-            "valeur": 6.2,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-11-19",
-            "valeur": 5.7,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-10-16",
-            "valeur": 7.1,
-            "color": "#10b981"
-          }
-        ],
-        "pH": [
-          {
-            "date": "2026-04-01",
-            "valeur": 8.2,
-            "color": "#10b981"
-          },
-          {
-            "date": "2026-02-04",
-            "valeur": 8.1,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-12-12",
-            "valeur": 8.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-11-19",
-            "valeur": 8.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-10-16",
-            "valeur": 8.0,
-            "color": "#10b981"
-          }
-        ],
-        "Nitrates": [
-          {
-            "date": "2026-04-01",
-            "valeur": 2.93,
-            "color": "#10b981"
-          },
-          {
-            "date": "2026-02-04",
-            "valeur": 3.8,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-12-12",
-            "valeur": 3.1,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-11-19",
-            "valeur": 3.4,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-10-16",
-            "valeur": 5.3,
-            "color": "#10b981"
-          }
-        ],
-        "O2 saturation": [
-          {
-            "date": "2026-04-01",
-            "valeur": 108.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2026-02-04",
-            "valeur": 110.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-12-12",
-            "valeur": 105.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-11-19",
-            "valeur": 104.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-10-16",
-            "valeur": 103.0,
-            "color": "#10b981"
-          }
-        ]
-      },
-      "score": 81,
-      "score_color": "#10b981",
-      "score_label": "Bonne"
-    },
-    {
       "nom": "BIEF ROUGE A LONGEVILLES-MONT-D'OR 2",
       "dept": "25",
       "lat": 46.763351968,
@@ -35137,6 +34851,292 @@
       "score": 75,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
+    },
+    {
+      "nom": "DOUBS A MOUTHE - LE PETIT SARRAGEOIS ",
+      "dept": "25",
+      "lat": 46.719224215,
+      "lon": 6.20853463,
+      "nom_cours_eau": "DOUBS",
+      "parametres": {
+        "Conductivité": {
+          "valeur": 11.9,
+          "unite": "µS/cm",
+          "color": "#10b981",
+          "date": "2026-04-01",
+          "realtime": false
+        },
+        "Ammonium": {
+          "valeur": 1.6,
+          "unite": "mg/L",
+          "color": "#f59e0b",
+          "date": "2026-04-01",
+          "realtime": false
+        },
+        "Phosphore": {
+          "valeur": 0.013,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-04-01",
+          "realtime": false
+        },
+        "MES": {
+          "valeur": 357.0,
+          "unite": "mg/L",
+          "color": "#ef4444",
+          "date": "2026-04-01",
+          "realtime": false
+        },
+        "Temp. eau": {
+          "valeur": 6.4,
+          "unite": "°C",
+          "color": "#10b981",
+          "date": "2026-04-01",
+          "realtime": false
+        },
+        "pH": {
+          "valeur": 8.2,
+          "unite": "pH",
+          "color": "#10b981",
+          "date": "2026-04-01",
+          "realtime": false
+        },
+        "Nitrates": {
+          "valeur": 2.93,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-04-01",
+          "realtime": false
+        },
+        "O2 saturation": {
+          "valeur": 108.0,
+          "unite": "%",
+          "color": "#10b981",
+          "date": "2026-04-01",
+          "realtime": false
+        }
+      },
+      "historique": {
+        "Conductivité": [
+          {
+            "date": "2026-04-01",
+            "valeur": 11.9,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-02-04",
+            "valeur": 12.1,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-12-12",
+            "valeur": 11.8,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-11-19",
+            "valeur": 11.6,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-10-16",
+            "valeur": 11.3,
+            "color": "#10b981"
+          }
+        ],
+        "Ammonium": [
+          {
+            "date": "2026-04-01",
+            "valeur": 1.6,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2026-02-04",
+            "valeur": 2.0,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2025-12-12",
+            "valeur": 2.0,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2025-11-19",
+            "valeur": 2.9,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-10-20",
+            "valeur": 17900.0,
+            "color": "#ef4444"
+          }
+        ],
+        "Phosphore": [
+          {
+            "date": "2026-04-01",
+            "valeur": 0.013,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-02-04",
+            "valeur": 0.01,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-12-12",
+            "valeur": 0.009,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-11-19",
+            "valeur": 0.052,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-10-16",
+            "valeur": 0.005,
+            "color": "#10b981"
+          }
+        ],
+        "MES": [
+          {
+            "date": "2026-04-01",
+            "valeur": 357.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2026-02-04",
+            "valeur": 342.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-12-12",
+            "valeur": 335.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-11-19",
+            "valeur": 363.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-10-16",
+            "valeur": 401.0,
+            "color": "#ef4444"
+          }
+        ],
+        "Temp. eau": [
+          {
+            "date": "2026-04-01",
+            "valeur": 6.4,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-02-04",
+            "valeur": 5.8,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-12-12",
+            "valeur": 6.2,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-11-19",
+            "valeur": 5.7,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-10-16",
+            "valeur": 7.1,
+            "color": "#10b981"
+          }
+        ],
+        "pH": [
+          {
+            "date": "2026-04-01",
+            "valeur": 8.2,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-02-04",
+            "valeur": 8.1,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-12-12",
+            "valeur": 8.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-11-19",
+            "valeur": 8.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-10-16",
+            "valeur": 8.0,
+            "color": "#10b981"
+          }
+        ],
+        "Nitrates": [
+          {
+            "date": "2026-04-01",
+            "valeur": 2.93,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-02-04",
+            "valeur": 3.8,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-12-12",
+            "valeur": 3.1,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-11-19",
+            "valeur": 3.4,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-10-16",
+            "valeur": 5.3,
+            "color": "#10b981"
+          }
+        ],
+        "O2 saturation": [
+          {
+            "date": "2026-04-01",
+            "valeur": 108.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-02-04",
+            "valeur": 110.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-12-12",
+            "valeur": 105.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-11-19",
+            "valeur": 104.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-10-16",
+            "valeur": 103.0,
+            "color": "#10b981"
+          }
+        ]
+      },
+      "score": 81,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "LOUE A MOUTHIER-HAUTE-PIERRE 1",
@@ -38439,7 +38439,7 @@
           "realtime": false
         },
         "Conductivité": {
-          "valeur": 6.5,
+          "valeur": 6.4,
           "unite": "µS/cm",
           "color": "#10b981",
           "date": "2025-09-18",
@@ -38513,12 +38513,12 @@
           },
           {
             "date": "2025-09-18",
-            "valeur": 428.0,
+            "valeur": 442.0,
             "color": "#ef4444"
           },
           {
             "date": "2025-09-18",
-            "valeur": 442.0,
+            "valeur": 428.0,
             "color": "#ef4444"
           }
         ],
@@ -38579,12 +38579,12 @@
         "Conductivité": [
           {
             "date": "2025-09-18",
-            "valeur": 6.5,
+            "valeur": 6.4,
             "color": "#10b981"
           },
           {
             "date": "2025-09-18",
-            "valeur": 6.4,
+            "valeur": 6.5,
             "color": "#10b981"
           },
           {
@@ -38762,8 +38762,8 @@
           },
           {
             "date": "2025-09-11",
-            "valeur": 67.0,
-            "color": "#f59e0b"
+            "valeur": 71.0,
+            "color": "#10b981"
           },
           {
             "date": "2025-09-11",
@@ -38772,8 +38772,8 @@
           },
           {
             "date": "2025-09-11",
-            "valeur": 71.0,
-            "color": "#10b981"
+            "valeur": 67.0,
+            "color": "#f59e0b"
           },
           {
             "date": "2025-09-11",
@@ -38804,7 +38804,7 @@
           },
           {
             "date": "2025-09-11",
-            "valeur": 13.4,
+            "valeur": 10.8,
             "color": "#10b981"
           }
         ],
@@ -40583,11 +40583,6 @@
             "date": "2024-11-05",
             "valeur": 540.0,
             "color": "#ef4444"
-          },
-          {
-            "date": "2024-07-15",
-            "valeur": 566.0,
-            "color": "#ef4444"
           }
         ],
         "O2 saturation": [
@@ -40604,11 +40599,6 @@
           {
             "date": "2024-11-05",
             "valeur": 100.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-07-15",
-            "valeur": 96.0,
             "color": "#10b981"
           }
         ],
@@ -40627,11 +40617,6 @@
             "date": "2024-11-05",
             "valeur": 2.0,
             "color": "#f59e0b"
-          },
-          {
-            "date": "2024-07-15",
-            "valeur": 2.2,
-            "color": "#ef4444"
           }
         ],
         "pH": [
@@ -40648,11 +40633,6 @@
           {
             "date": "2024-11-05",
             "valeur": 8.1,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-07-15",
-            "valeur": 8.2,
             "color": "#10b981"
           }
         ],
@@ -40671,11 +40651,6 @@
             "date": "2024-11-05",
             "valeur": 0.051,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-07-15",
-            "valeur": 0.052,
-            "color": "#10b981"
           }
         ],
         "Nitrates": [
@@ -40692,11 +40667,6 @@
           {
             "date": "2024-11-05",
             "valeur": 6.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-07-15",
-            "valeur": 4.3,
             "color": "#10b981"
           }
         ],
@@ -40715,11 +40685,6 @@
             "date": "2024-11-05",
             "valeur": 11.1,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-07-15",
-            "valeur": 8.7,
-            "color": "#10b981"
           }
         ],
         "Temp. eau": [
@@ -40736,11 +40701,6 @@
           {
             "date": "2024-11-05",
             "valeur": 7.4,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-07-15",
-            "valeur": 15.9,
             "color": "#10b981"
           }
         ]
@@ -40829,11 +40789,6 @@
             "date": "2024-11-05",
             "valeur": 8.1,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-07-15",
-            "valeur": 15.9,
-            "color": "#10b981"
           }
         ],
         "pH": [
@@ -40850,11 +40805,6 @@
           {
             "date": "2024-11-05",
             "valeur": 8.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-07-15",
-            "valeur": 8.2,
             "color": "#10b981"
           }
         ],
@@ -40873,11 +40823,6 @@
             "date": "2024-11-05",
             "valeur": 0.069,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-07-15",
-            "valeur": 0.048,
-            "color": "#10b981"
           }
         ],
         "Ammonium": [
@@ -40895,11 +40840,6 @@
             "date": "2024-11-05",
             "valeur": 2.0,
             "color": "#f59e0b"
-          },
-          {
-            "date": "2024-07-15",
-            "valeur": 2.3,
-            "color": "#ef4444"
           }
         ],
         "Conductivité": [
@@ -40916,11 +40856,6 @@
           {
             "date": "2024-11-05",
             "valeur": 10.4,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-07-15",
-            "valeur": 8.6,
             "color": "#10b981"
           }
         ],
@@ -40939,11 +40874,6 @@
             "date": "2024-11-05",
             "valeur": 96.0,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-07-15",
-            "valeur": 95.0,
-            "color": "#10b981"
           }
         ],
         "MES": [
@@ -40961,11 +40891,6 @@
             "date": "2024-11-05",
             "valeur": 549.0,
             "color": "#ef4444"
-          },
-          {
-            "date": "2024-07-15",
-            "valeur": 564.0,
-            "color": "#ef4444"
           }
         ],
         "Nitrates": [
@@ -40982,11 +40907,6 @@
           {
             "date": "2024-11-05",
             "valeur": 5.9,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-07-15",
-            "valeur": 3.8,
             "color": "#10b981"
           }
         ]
@@ -41075,11 +40995,6 @@
             "date": "2024-11-05",
             "valeur": 64.0,
             "color": "#f59e0b"
-          },
-          {
-            "date": "2024-07-15",
-            "valeur": 82.0,
-            "color": "#10b981"
           }
         ],
         "MES": [
@@ -41096,11 +41011,6 @@
           {
             "date": "2024-11-05",
             "valeur": 556.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-07-15",
-            "valeur": 565.0,
             "color": "#ef4444"
           }
         ],
@@ -41119,11 +41029,6 @@
             "date": "2024-11-05",
             "valeur": 6.5,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-07-15",
-            "valeur": 7.9,
-            "color": "#10b981"
           }
         ],
         "Nitrates": [
@@ -41140,11 +41045,6 @@
           {
             "date": "2024-11-05",
             "valeur": 0.62,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-07-15",
-            "valeur": 2.4,
             "color": "#10b981"
           }
         ],
@@ -41163,11 +41063,6 @@
             "date": "2024-11-05",
             "valeur": 1.9,
             "color": "#f59e0b"
-          },
-          {
-            "date": "2024-07-15",
-            "valeur": 2.5,
-            "color": "#ef4444"
           }
         ],
         "pH": [
@@ -41184,11 +41079,6 @@
           {
             "date": "2024-11-05",
             "valeur": 7.3,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-07-15",
-            "valeur": 7.5,
             "color": "#10b981"
           }
         ],
@@ -41207,11 +41097,6 @@
             "date": "2024-11-05",
             "valeur": 10.8,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-07-15",
-            "valeur": 12.5,
-            "color": "#10b981"
           }
         ],
         "Phosphore": [
@@ -41227,11 +41112,6 @@
           },
           {
             "date": "2024-11-05",
-            "valeur": 0.01,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-07-15",
             "valeur": 0.01,
             "color": "#10b981"
           }
@@ -41567,11 +41447,6 @@
             "date": "2024-11-05",
             "valeur": 2.1,
             "color": "#ef4444"
-          },
-          {
-            "date": "2024-07-15",
-            "valeur": 2.1,
-            "color": "#ef4444"
           }
         ],
         "MES": [
@@ -41588,11 +41463,6 @@
           {
             "date": "2024-11-05",
             "valeur": 551.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-07-15",
-            "valeur": 581.0,
             "color": "#ef4444"
           }
         ],
@@ -41611,11 +41481,6 @@
             "date": "2024-11-05",
             "valeur": 9.0,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-07-15",
-            "valeur": 15.2,
-            "color": "#10b981"
           }
         ],
         "pH": [
@@ -41632,11 +41497,6 @@
           {
             "date": "2024-11-05",
             "valeur": 7.9,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-07-15",
-            "valeur": 8.0,
             "color": "#10b981"
           }
         ],
@@ -41655,11 +41515,6 @@
             "date": "2024-11-05",
             "valeur": 94.0,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-07-15",
-            "valeur": 91.0,
-            "color": "#10b981"
           }
         ],
         "Phosphore": [
@@ -41676,11 +41531,6 @@
           {
             "date": "2024-11-05",
             "valeur": 0.089,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-07-15",
-            "valeur": 0.051,
             "color": "#10b981"
           }
         ],
@@ -41699,11 +41549,6 @@
             "date": "2024-11-05",
             "valeur": 4.9,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-07-15",
-            "valeur": 3.8,
-            "color": "#10b981"
           }
         ],
         "Conductivité": [
@@ -41720,11 +41565,6 @@
           {
             "date": "2024-11-05",
             "valeur": 10.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-07-15",
-            "valeur": 8.4,
             "color": "#10b981"
           }
         ]
@@ -42168,16 +42008,16 @@
       "lon": 6.133389474,
       "nom_cours_eau": "BREME",
       "parametres": {
-        "Nitrates": {
-          "valeur": 10.0,
-          "unite": "mg/L",
+        "pH": {
+          "valeur": 7.9,
+          "unite": "pH",
           "color": "#10b981",
           "date": "2025-01-14",
           "realtime": false
         },
-        "pH": {
-          "valeur": 7.9,
-          "unite": "pH",
+        "Nitrates": {
+          "valeur": 10.0,
+          "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-01-14",
           "realtime": false
@@ -42219,28 +42059,6 @@
         }
       },
       "historique": {
-        "Nitrates": [
-          {
-            "date": "2025-01-14",
-            "valeur": 10.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-11-26",
-            "valeur": 8.8,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-24",
-            "valeur": 12.0,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2024-09-04",
-            "valeur": 12.0,
-            "color": "#f59e0b"
-          }
-        ],
         "pH": [
           {
             "date": "2025-01-14",
@@ -42261,6 +42079,28 @@
             "date": "2024-09-04",
             "valeur": 8.2,
             "color": "#10b981"
+          }
+        ],
+        "Nitrates": [
+          {
+            "date": "2025-01-14",
+            "valeur": 10.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-11-26",
+            "valeur": 8.8,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-24",
+            "valeur": 12.0,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2024-09-04",
+            "valeur": 12.0,
+            "color": "#f59e0b"
           }
         ],
         "MES": [
@@ -42360,6 +42200,440 @@
           {
             "date": "2024-09-24",
             "valeur": 9.5,
+            "color": "#10b981"
+          }
+        ]
+      },
+      "score": 86,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "RU DE CHARBONNIERES A CHARBONNIERES LES SAPINS ",
+      "dept": "25",
+      "lat": 47.140522587,
+      "lon": 6.203738715,
+      "nom_cours_eau": "RU DE CHARBONNIERES",
+      "parametres": {
+        "pH": {
+          "valeur": 7.7,
+          "unite": "pH",
+          "color": "#10b981",
+          "date": "2025-01-14",
+          "realtime": false
+        },
+        "Nitrates": {
+          "valeur": 8.5,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-01-14",
+          "realtime": false
+        },
+        "Temp. eau": {
+          "valeur": 4.7,
+          "unite": "°C",
+          "color": "#10b981",
+          "date": "2025-01-14",
+          "realtime": false
+        },
+        "Conductivité": {
+          "valeur": 11.9,
+          "unite": "µS/cm",
+          "color": "#10b981",
+          "date": "2025-01-14",
+          "realtime": false
+        },
+        "MES": {
+          "valeur": 528.0,
+          "unite": "mg/L",
+          "color": "#ef4444",
+          "date": "2025-01-14",
+          "realtime": false
+        },
+        "Phosphore": {
+          "valeur": 0.026,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-01-14",
+          "realtime": false
+        },
+        "O2 saturation": {
+          "valeur": 98.0,
+          "unite": "%",
+          "color": "#10b981",
+          "date": "2025-01-14",
+          "realtime": false
+        }
+      },
+      "historique": {
+        "pH": [
+          {
+            "date": "2025-01-14",
+            "valeur": 7.7,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-11-26",
+            "valeur": 8.1,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-24",
+            "valeur": 8.2,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-04",
+            "valeur": 7.8,
+            "color": "#10b981"
+          }
+        ],
+        "Nitrates": [
+          {
+            "date": "2025-01-14",
+            "valeur": 8.5,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-11-26",
+            "valeur": 7.9,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-24",
+            "valeur": 12.0,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2024-09-04",
+            "valeur": 15.0,
+            "color": "#f59e0b"
+          }
+        ],
+        "Temp. eau": [
+          {
+            "date": "2025-01-14",
+            "valeur": 4.7,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-11-26",
+            "valeur": 10.7,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-24",
+            "valeur": 11.5,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-04",
+            "valeur": 16.7,
+            "color": "#10b981"
+          }
+        ],
+        "Conductivité": [
+          {
+            "date": "2025-01-14",
+            "valeur": 11.9,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-11-26",
+            "valeur": 10.6,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-24",
+            "valeur": 10.1,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-04",
+            "valeur": 9.1,
+            "color": "#10b981"
+          }
+        ],
+        "MES": [
+          {
+            "date": "2025-01-14",
+            "valeur": 528.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2024-11-26",
+            "valeur": 533.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2024-09-24",
+            "valeur": 567.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2024-09-04",
+            "valeur": 551.0,
+            "color": "#ef4444"
+          }
+        ],
+        "Phosphore": [
+          {
+            "date": "2025-01-14",
+            "valeur": 0.026,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-11-26",
+            "valeur": 0.059,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-24",
+            "valeur": 0.054,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-04",
+            "valeur": 0.217,
+            "color": "#f59e0b"
+          }
+        ],
+        "O2 saturation": [
+          {
+            "date": "2025-01-14",
+            "valeur": 98.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-11-26",
+            "valeur": 100.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-24",
+            "valeur": 99.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-04",
+            "valeur": 98.0,
+            "color": "#10b981"
+          }
+        ]
+      },
+      "score": 86,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "BREME A CHARBONNIERES-LES-SAPINS ",
+      "dept": "25",
+      "lat": 47.137876249,
+      "lon": 6.224392113,
+      "nom_cours_eau": "BREME",
+      "parametres": {
+        "Conductivité": {
+          "valeur": 12.8,
+          "unite": "µS/cm",
+          "color": "#10b981",
+          "date": "2025-01-14",
+          "realtime": false
+        },
+        "Nitrates": {
+          "valeur": 6.5,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-01-14",
+          "realtime": false
+        },
+        "Temp. eau": {
+          "valeur": 2.1,
+          "unite": "°C",
+          "color": "#10b981",
+          "date": "2025-01-14",
+          "realtime": false
+        },
+        "Phosphore": {
+          "valeur": 0.01,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-01-14",
+          "realtime": false
+        },
+        "pH": {
+          "valeur": 7.7,
+          "unite": "pH",
+          "color": "#10b981",
+          "date": "2025-01-14",
+          "realtime": false
+        },
+        "MES": {
+          "valeur": 529.0,
+          "unite": "mg/L",
+          "color": "#ef4444",
+          "date": "2025-01-14",
+          "realtime": false
+        },
+        "O2 saturation": {
+          "valeur": 99.0,
+          "unite": "%",
+          "color": "#10b981",
+          "date": "2025-01-14",
+          "realtime": false
+        }
+      },
+      "historique": {
+        "Conductivité": [
+          {
+            "date": "2025-01-14",
+            "valeur": 12.8,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-11-26",
+            "valeur": 10.5,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-24",
+            "valeur": 10.1,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-04",
+            "valeur": 8.9,
+            "color": "#10b981"
+          }
+        ],
+        "Nitrates": [
+          {
+            "date": "2025-01-14",
+            "valeur": 6.5,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-11-26",
+            "valeur": 7.6,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-24",
+            "valeur": 9.2,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-04",
+            "valeur": 2.4,
+            "color": "#10b981"
+          }
+        ],
+        "Temp. eau": [
+          {
+            "date": "2025-01-14",
+            "valeur": 2.1,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-11-26",
+            "valeur": 10.8,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-24",
+            "valeur": 12.5,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-04",
+            "valeur": 18.7,
+            "color": "#10b981"
+          }
+        ],
+        "Phosphore": [
+          {
+            "date": "2025-01-14",
+            "valeur": 0.01,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-11-26",
+            "valeur": 0.058,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-24",
+            "valeur": 0.016,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-04",
+            "valeur": 0.026,
+            "color": "#10b981"
+          }
+        ],
+        "pH": [
+          {
+            "date": "2025-01-14",
+            "valeur": 7.7,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-11-26",
+            "valeur": 8.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-24",
+            "valeur": 8.3,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-04",
+            "valeur": 7.6,
+            "color": "#10b981"
+          }
+        ],
+        "MES": [
+          {
+            "date": "2025-01-14",
+            "valeur": 529.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2024-11-26",
+            "valeur": 546.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2024-09-24",
+            "valeur": 533.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2024-09-04",
+            "valeur": 504.0,
+            "color": "#ef4444"
+          }
+        ],
+        "O2 saturation": [
+          {
+            "date": "2025-01-14",
+            "valeur": 99.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-11-26",
+            "valeur": 101.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-24",
+            "valeur": 103.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-04",
+            "valeur": 102.0,
             "color": "#10b981"
           }
         ]
@@ -42608,440 +42882,6 @@
       "score": 75,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
-    },
-    {
-      "nom": "BREME A CHARBONNIERES-LES-SAPINS ",
-      "dept": "25",
-      "lat": 47.137876249,
-      "lon": 6.224392113,
-      "nom_cours_eau": "BREME",
-      "parametres": {
-        "Conductivité": {
-          "valeur": 12.8,
-          "unite": "µS/cm",
-          "color": "#10b981",
-          "date": "2025-01-14",
-          "realtime": false
-        },
-        "Nitrates": {
-          "valeur": 6.5,
-          "unite": "mg/L",
-          "color": "#10b981",
-          "date": "2025-01-14",
-          "realtime": false
-        },
-        "Temp. eau": {
-          "valeur": 2.1,
-          "unite": "°C",
-          "color": "#10b981",
-          "date": "2025-01-14",
-          "realtime": false
-        },
-        "Phosphore": {
-          "valeur": 0.01,
-          "unite": "mg/L",
-          "color": "#10b981",
-          "date": "2025-01-14",
-          "realtime": false
-        },
-        "pH": {
-          "valeur": 7.7,
-          "unite": "pH",
-          "color": "#10b981",
-          "date": "2025-01-14",
-          "realtime": false
-        },
-        "MES": {
-          "valeur": 529.0,
-          "unite": "mg/L",
-          "color": "#ef4444",
-          "date": "2025-01-14",
-          "realtime": false
-        },
-        "O2 saturation": {
-          "valeur": 99.0,
-          "unite": "%",
-          "color": "#10b981",
-          "date": "2025-01-14",
-          "realtime": false
-        }
-      },
-      "historique": {
-        "Conductivité": [
-          {
-            "date": "2025-01-14",
-            "valeur": 12.8,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-11-26",
-            "valeur": 10.5,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-24",
-            "valeur": 10.1,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-04",
-            "valeur": 8.9,
-            "color": "#10b981"
-          }
-        ],
-        "Nitrates": [
-          {
-            "date": "2025-01-14",
-            "valeur": 6.5,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-11-26",
-            "valeur": 7.6,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-24",
-            "valeur": 9.2,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-04",
-            "valeur": 2.4,
-            "color": "#10b981"
-          }
-        ],
-        "Temp. eau": [
-          {
-            "date": "2025-01-14",
-            "valeur": 2.1,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-11-26",
-            "valeur": 10.8,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-24",
-            "valeur": 12.5,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-04",
-            "valeur": 18.7,
-            "color": "#10b981"
-          }
-        ],
-        "Phosphore": [
-          {
-            "date": "2025-01-14",
-            "valeur": 0.01,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-11-26",
-            "valeur": 0.058,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-24",
-            "valeur": 0.016,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-04",
-            "valeur": 0.026,
-            "color": "#10b981"
-          }
-        ],
-        "pH": [
-          {
-            "date": "2025-01-14",
-            "valeur": 7.7,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-11-26",
-            "valeur": 8.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-24",
-            "valeur": 8.3,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-04",
-            "valeur": 7.6,
-            "color": "#10b981"
-          }
-        ],
-        "MES": [
-          {
-            "date": "2025-01-14",
-            "valeur": 529.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-11-26",
-            "valeur": 546.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-09-24",
-            "valeur": 533.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-09-04",
-            "valeur": 504.0,
-            "color": "#ef4444"
-          }
-        ],
-        "O2 saturation": [
-          {
-            "date": "2025-01-14",
-            "valeur": 99.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-11-26",
-            "valeur": 101.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-24",
-            "valeur": 103.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-04",
-            "valeur": 102.0,
-            "color": "#10b981"
-          }
-        ]
-      },
-      "score": 86,
-      "score_color": "#10b981",
-      "score_label": "Bonne"
-    },
-    {
-      "nom": "RU DE CHARBONNIERES A CHARBONNIERES LES SAPINS ",
-      "dept": "25",
-      "lat": 47.140522587,
-      "lon": 6.203738715,
-      "nom_cours_eau": "RU DE CHARBONNIERES",
-      "parametres": {
-        "pH": {
-          "valeur": 7.7,
-          "unite": "pH",
-          "color": "#10b981",
-          "date": "2025-01-14",
-          "realtime": false
-        },
-        "Nitrates": {
-          "valeur": 8.5,
-          "unite": "mg/L",
-          "color": "#10b981",
-          "date": "2025-01-14",
-          "realtime": false
-        },
-        "Temp. eau": {
-          "valeur": 4.7,
-          "unite": "°C",
-          "color": "#10b981",
-          "date": "2025-01-14",
-          "realtime": false
-        },
-        "Conductivité": {
-          "valeur": 11.9,
-          "unite": "µS/cm",
-          "color": "#10b981",
-          "date": "2025-01-14",
-          "realtime": false
-        },
-        "MES": {
-          "valeur": 528.0,
-          "unite": "mg/L",
-          "color": "#ef4444",
-          "date": "2025-01-14",
-          "realtime": false
-        },
-        "Phosphore": {
-          "valeur": 0.026,
-          "unite": "mg/L",
-          "color": "#10b981",
-          "date": "2025-01-14",
-          "realtime": false
-        },
-        "O2 saturation": {
-          "valeur": 98.0,
-          "unite": "%",
-          "color": "#10b981",
-          "date": "2025-01-14",
-          "realtime": false
-        }
-      },
-      "historique": {
-        "pH": [
-          {
-            "date": "2025-01-14",
-            "valeur": 7.7,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-11-26",
-            "valeur": 8.1,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-24",
-            "valeur": 8.2,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-04",
-            "valeur": 7.8,
-            "color": "#10b981"
-          }
-        ],
-        "Nitrates": [
-          {
-            "date": "2025-01-14",
-            "valeur": 8.5,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-11-26",
-            "valeur": 7.9,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-24",
-            "valeur": 12.0,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2024-09-04",
-            "valeur": 15.0,
-            "color": "#f59e0b"
-          }
-        ],
-        "Temp. eau": [
-          {
-            "date": "2025-01-14",
-            "valeur": 4.7,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-11-26",
-            "valeur": 10.7,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-24",
-            "valeur": 11.5,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-04",
-            "valeur": 16.7,
-            "color": "#10b981"
-          }
-        ],
-        "Conductivité": [
-          {
-            "date": "2025-01-14",
-            "valeur": 11.9,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-11-26",
-            "valeur": 10.6,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-24",
-            "valeur": 10.1,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-04",
-            "valeur": 9.1,
-            "color": "#10b981"
-          }
-        ],
-        "MES": [
-          {
-            "date": "2025-01-14",
-            "valeur": 528.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-11-26",
-            "valeur": 533.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-09-24",
-            "valeur": 567.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-09-04",
-            "valeur": 551.0,
-            "color": "#ef4444"
-          }
-        ],
-        "Phosphore": [
-          {
-            "date": "2025-01-14",
-            "valeur": 0.026,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-11-26",
-            "valeur": 0.059,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-24",
-            "valeur": 0.054,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-04",
-            "valeur": 0.217,
-            "color": "#f59e0b"
-          }
-        ],
-        "O2 saturation": [
-          {
-            "date": "2025-01-14",
-            "valeur": 98.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-11-26",
-            "valeur": 100.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-24",
-            "valeur": 99.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-04",
-            "valeur": 98.0,
-            "color": "#10b981"
-          }
-        ]
-      },
-      "score": 86,
-      "score_color": "#10b981",
-      "score_label": "Bonne"
     },
     {
       "nom": "PLAISIR FONTAINE A BONNEVAUX LE PRIEURE 1",
@@ -45964,338 +45804,6 @@
       "score_label": "Moyenne"
     },
     {
-      "nom": "GRANDS TERREAUX A SAONE 2",
-      "dept": "25",
-      "lat": 47.232699911,
-      "lon": 6.107365454,
-      "nom_cours_eau": "GRANDS TERREAUX",
-      "parametres": {
-        "Nitrates": {
-          "valeur": 3.3,
-          "unite": "mg/L",
-          "color": "#10b981",
-          "date": "2024-11-25",
-          "realtime": false
-        },
-        "Ammonium": {
-          "valeur": 2.2,
-          "unite": "mg/L",
-          "color": "#ef4444",
-          "date": "2024-11-25",
-          "realtime": false
-        },
-        "Conductivité": {
-          "valeur": 8.6,
-          "unite": "µS/cm",
-          "color": "#10b981",
-          "date": "2024-11-25",
-          "realtime": false
-        },
-        "MES": {
-          "valeur": 552.0,
-          "unite": "mg/L",
-          "color": "#ef4444",
-          "date": "2024-11-25",
-          "realtime": false
-        },
-        "O2 saturation": {
-          "valeur": 85.0,
-          "unite": "%",
-          "color": "#10b981",
-          "date": "2024-11-25",
-          "realtime": false
-        },
-        "Phosphore": {
-          "valeur": 0.063,
-          "unite": "mg/L",
-          "color": "#10b981",
-          "date": "2024-11-25",
-          "realtime": false
-        },
-        "pH": {
-          "valeur": 7.1,
-          "unite": "pH",
-          "color": "#10b981",
-          "date": "2024-11-25",
-          "realtime": false
-        },
-        "Temp. eau": {
-          "valeur": 12.4,
-          "unite": "°C",
-          "color": "#10b981",
-          "date": "2024-11-25",
-          "realtime": false
-        }
-      },
-      "historique": {
-        "Nitrates": [
-          {
-            "date": "2024-11-25",
-            "valeur": 3.3,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-03",
-            "valeur": 0.61,
-            "color": "#10b981"
-          }
-        ],
-        "Ammonium": [
-          {
-            "date": "2024-11-25",
-            "valeur": 2.2,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-09-03",
-            "valeur": 7.3,
-            "color": "#ef4444"
-          }
-        ],
-        "Conductivité": [
-          {
-            "date": "2024-11-25",
-            "valeur": 8.6,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-03",
-            "valeur": 2.6,
-            "color": "#10b981"
-          }
-        ],
-        "MES": [
-          {
-            "date": "2024-11-25",
-            "valeur": 552.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-09-03",
-            "valeur": 1038.0,
-            "color": "#ef4444"
-          }
-        ],
-        "O2 saturation": [
-          {
-            "date": "2024-11-25",
-            "valeur": 85.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-03",
-            "valeur": 31.0,
-            "color": "#ef4444"
-          }
-        ],
-        "Phosphore": [
-          {
-            "date": "2024-11-25",
-            "valeur": 0.063,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-03",
-            "valeur": 1.03,
-            "color": "#ef4444"
-          }
-        ],
-        "pH": [
-          {
-            "date": "2024-11-25",
-            "valeur": 7.1,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-03",
-            "valeur": 7.4,
-            "color": "#10b981"
-          }
-        ],
-        "Temp. eau": [
-          {
-            "date": "2024-11-25",
-            "valeur": 12.4,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-03",
-            "valeur": 22.0,
-            "color": "#f59e0b"
-          }
-        ]
-      },
-      "score": 75,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
-    },
-    {
-      "nom": "LANTERNE A POUILLEY LES VIGNES 3",
-      "dept": "25",
-      "lat": 47.261877258,
-      "lon": 5.943203692,
-      "nom_cours_eau": "LANTERNE",
-      "parametres": {
-        "Ammonium": {
-          "valeur": 2.5,
-          "unite": "mg/L",
-          "color": "#ef4444",
-          "date": "2024-11-25",
-          "realtime": false
-        },
-        "MES": {
-          "valeur": 595.0,
-          "unite": "mg/L",
-          "color": "#ef4444",
-          "date": "2024-11-25",
-          "realtime": false
-        },
-        "Conductivité": {
-          "valeur": 9.7,
-          "unite": "µS/cm",
-          "color": "#10b981",
-          "date": "2024-11-25",
-          "realtime": false
-        },
-        "Temp. eau": {
-          "valeur": 11.7,
-          "unite": "°C",
-          "color": "#10b981",
-          "date": "2024-11-25",
-          "realtime": false
-        },
-        "Nitrates": {
-          "valeur": 3.9,
-          "unite": "mg/L",
-          "color": "#10b981",
-          "date": "2024-11-25",
-          "realtime": false
-        },
-        "pH": {
-          "valeur": 7.4,
-          "unite": "pH",
-          "color": "#10b981",
-          "date": "2024-11-25",
-          "realtime": false
-        },
-        "O2 saturation": {
-          "valeur": 94.0,
-          "unite": "%",
-          "color": "#10b981",
-          "date": "2024-11-25",
-          "realtime": false
-        },
-        "Phosphore": {
-          "valeur": 0.026,
-          "unite": "mg/L",
-          "color": "#10b981",
-          "date": "2024-11-25",
-          "realtime": false
-        }
-      },
-      "historique": {
-        "Ammonium": [
-          {
-            "date": "2024-11-25",
-            "valeur": 2.5,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-09-03",
-            "valeur": 2.6,
-            "color": "#ef4444"
-          }
-        ],
-        "MES": [
-          {
-            "date": "2024-11-25",
-            "valeur": 595.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-09-03",
-            "valeur": 720.0,
-            "color": "#ef4444"
-          }
-        ],
-        "Conductivité": [
-          {
-            "date": "2024-11-25",
-            "valeur": 9.7,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-03",
-            "valeur": 7.8,
-            "color": "#10b981"
-          }
-        ],
-        "Temp. eau": [
-          {
-            "date": "2024-11-25",
-            "valeur": 11.7,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-03",
-            "valeur": 18.0,
-            "color": "#10b981"
-          }
-        ],
-        "Nitrates": [
-          {
-            "date": "2024-11-25",
-            "valeur": 3.9,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-03",
-            "valeur": 3.8,
-            "color": "#10b981"
-          }
-        ],
-        "pH": [
-          {
-            "date": "2024-11-25",
-            "valeur": 7.4,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-03",
-            "valeur": 7.5,
-            "color": "#10b981"
-          }
-        ],
-        "O2 saturation": [
-          {
-            "date": "2024-11-25",
-            "valeur": 94.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-03",
-            "valeur": 87.0,
-            "color": "#10b981"
-          }
-        ],
-        "Phosphore": [
-          {
-            "date": "2024-11-25",
-            "valeur": 0.026,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-03",
-            "valeur": 0.124,
-            "color": "#10b981"
-          }
-        ]
-      },
-      "score": 75,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
-    },
-    {
       "nom": "LANTERNE A POUILLEY-LES-VIGNES 1",
       "dept": "25",
       "lat": 47.263361991,
@@ -46628,6 +46136,504 @@
       "score_label": "Moyenne"
     },
     {
+      "nom": "LISON A CHATILLON-SUR-LISON 2",
+      "dept": "25",
+      "lat": 47.071569619,
+      "lon": 5.988082654,
+      "nom_cours_eau": "LISON",
+      "parametres": {
+        "MES": {
+          "valeur": 479.0,
+          "unite": "mg/L",
+          "color": "#ef4444",
+          "date": "2024-11-25",
+          "realtime": false
+        },
+        "pH": {
+          "valeur": 8.0,
+          "unite": "pH",
+          "color": "#10b981",
+          "date": "2024-11-25",
+          "realtime": false
+        },
+        "Temp. eau": {
+          "valeur": 10.4,
+          "unite": "°C",
+          "color": "#10b981",
+          "date": "2024-11-25",
+          "realtime": false
+        },
+        "Phosphore": {
+          "valeur": 0.036,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2024-11-25",
+          "realtime": false
+        },
+        "O2 saturation": {
+          "valeur": 101.0,
+          "unite": "%",
+          "color": "#10b981",
+          "date": "2024-11-25",
+          "realtime": false
+        },
+        "Ammonium": {
+          "valeur": 4.0,
+          "unite": "mg/L",
+          "color": "#ef4444",
+          "date": "2024-11-25",
+          "realtime": false
+        },
+        "Conductivité": {
+          "valeur": 10.7,
+          "unite": "µS/cm",
+          "color": "#10b981",
+          "date": "2024-11-25",
+          "realtime": false
+        },
+        "Nitrates": {
+          "valeur": 5.3,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2024-11-25",
+          "realtime": false
+        }
+      },
+      "historique": {
+        "MES": [
+          {
+            "date": "2024-11-25",
+            "valeur": 479.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2024-09-03",
+            "valeur": 384.0,
+            "color": "#ef4444"
+          }
+        ],
+        "pH": [
+          {
+            "date": "2024-11-25",
+            "valeur": 8.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-03",
+            "valeur": 8.2,
+            "color": "#10b981"
+          }
+        ],
+        "Temp. eau": [
+          {
+            "date": "2024-11-25",
+            "valeur": 10.4,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-03",
+            "valeur": 19.7,
+            "color": "#10b981"
+          }
+        ],
+        "Phosphore": [
+          {
+            "date": "2024-11-25",
+            "valeur": 0.036,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-03",
+            "valeur": 0.01,
+            "color": "#10b981"
+          }
+        ],
+        "O2 saturation": [
+          {
+            "date": "2024-11-25",
+            "valeur": 101.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-03",
+            "valeur": 107.0,
+            "color": "#10b981"
+          }
+        ],
+        "Ammonium": [
+          {
+            "date": "2024-11-25",
+            "valeur": 4.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2024-09-03",
+            "valeur": 1.9,
+            "color": "#f59e0b"
+          }
+        ],
+        "Conductivité": [
+          {
+            "date": "2024-11-25",
+            "valeur": 10.7,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-03",
+            "valeur": 9.4,
+            "color": "#10b981"
+          }
+        ],
+        "Nitrates": [
+          {
+            "date": "2024-11-25",
+            "valeur": 5.3,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-03",
+            "valeur": 3.2,
+            "color": "#10b981"
+          }
+        ]
+      },
+      "score": 75,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
+      "nom": "GRANDS TERREAUX A SAONE 2",
+      "dept": "25",
+      "lat": 47.232699911,
+      "lon": 6.107365454,
+      "nom_cours_eau": "GRANDS TERREAUX",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 3.3,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2024-11-25",
+          "realtime": false
+        },
+        "Ammonium": {
+          "valeur": 2.2,
+          "unite": "mg/L",
+          "color": "#ef4444",
+          "date": "2024-11-25",
+          "realtime": false
+        },
+        "Conductivité": {
+          "valeur": 8.6,
+          "unite": "µS/cm",
+          "color": "#10b981",
+          "date": "2024-11-25",
+          "realtime": false
+        },
+        "MES": {
+          "valeur": 552.0,
+          "unite": "mg/L",
+          "color": "#ef4444",
+          "date": "2024-11-25",
+          "realtime": false
+        },
+        "O2 saturation": {
+          "valeur": 85.0,
+          "unite": "%",
+          "color": "#10b981",
+          "date": "2024-11-25",
+          "realtime": false
+        },
+        "Phosphore": {
+          "valeur": 0.063,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2024-11-25",
+          "realtime": false
+        },
+        "pH": {
+          "valeur": 7.1,
+          "unite": "pH",
+          "color": "#10b981",
+          "date": "2024-11-25",
+          "realtime": false
+        },
+        "Temp. eau": {
+          "valeur": 12.4,
+          "unite": "°C",
+          "color": "#10b981",
+          "date": "2024-11-25",
+          "realtime": false
+        }
+      },
+      "historique": {
+        "Nitrates": [
+          {
+            "date": "2024-11-25",
+            "valeur": 3.3,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-03",
+            "valeur": 0.61,
+            "color": "#10b981"
+          }
+        ],
+        "Ammonium": [
+          {
+            "date": "2024-11-25",
+            "valeur": 2.2,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2024-09-03",
+            "valeur": 7.3,
+            "color": "#ef4444"
+          }
+        ],
+        "Conductivité": [
+          {
+            "date": "2024-11-25",
+            "valeur": 8.6,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-03",
+            "valeur": 2.6,
+            "color": "#10b981"
+          }
+        ],
+        "MES": [
+          {
+            "date": "2024-11-25",
+            "valeur": 552.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2024-09-03",
+            "valeur": 1038.0,
+            "color": "#ef4444"
+          }
+        ],
+        "O2 saturation": [
+          {
+            "date": "2024-11-25",
+            "valeur": 85.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-03",
+            "valeur": 31.0,
+            "color": "#ef4444"
+          }
+        ],
+        "Phosphore": [
+          {
+            "date": "2024-11-25",
+            "valeur": 0.063,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-03",
+            "valeur": 1.03,
+            "color": "#ef4444"
+          }
+        ],
+        "pH": [
+          {
+            "date": "2024-11-25",
+            "valeur": 7.1,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-03",
+            "valeur": 7.4,
+            "color": "#10b981"
+          }
+        ],
+        "Temp. eau": [
+          {
+            "date": "2024-11-25",
+            "valeur": 12.4,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-03",
+            "valeur": 22.0,
+            "color": "#f59e0b"
+          }
+        ]
+      },
+      "score": 75,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
+      "nom": "LANTERNE A POUILLEY LES VIGNES 3",
+      "dept": "25",
+      "lat": 47.261877258,
+      "lon": 5.943203692,
+      "nom_cours_eau": "LANTERNE",
+      "parametres": {
+        "Ammonium": {
+          "valeur": 2.5,
+          "unite": "mg/L",
+          "color": "#ef4444",
+          "date": "2024-11-25",
+          "realtime": false
+        },
+        "MES": {
+          "valeur": 595.0,
+          "unite": "mg/L",
+          "color": "#ef4444",
+          "date": "2024-11-25",
+          "realtime": false
+        },
+        "Conductivité": {
+          "valeur": 9.7,
+          "unite": "µS/cm",
+          "color": "#10b981",
+          "date": "2024-11-25",
+          "realtime": false
+        },
+        "Temp. eau": {
+          "valeur": 11.7,
+          "unite": "°C",
+          "color": "#10b981",
+          "date": "2024-11-25",
+          "realtime": false
+        },
+        "Nitrates": {
+          "valeur": 3.9,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2024-11-25",
+          "realtime": false
+        },
+        "pH": {
+          "valeur": 7.4,
+          "unite": "pH",
+          "color": "#10b981",
+          "date": "2024-11-25",
+          "realtime": false
+        },
+        "O2 saturation": {
+          "valeur": 94.0,
+          "unite": "%",
+          "color": "#10b981",
+          "date": "2024-11-25",
+          "realtime": false
+        },
+        "Phosphore": {
+          "valeur": 0.026,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2024-11-25",
+          "realtime": false
+        }
+      },
+      "historique": {
+        "Ammonium": [
+          {
+            "date": "2024-11-25",
+            "valeur": 2.5,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2024-09-03",
+            "valeur": 2.6,
+            "color": "#ef4444"
+          }
+        ],
+        "MES": [
+          {
+            "date": "2024-11-25",
+            "valeur": 595.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2024-09-03",
+            "valeur": 720.0,
+            "color": "#ef4444"
+          }
+        ],
+        "Conductivité": [
+          {
+            "date": "2024-11-25",
+            "valeur": 9.7,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-03",
+            "valeur": 7.8,
+            "color": "#10b981"
+          }
+        ],
+        "Temp. eau": [
+          {
+            "date": "2024-11-25",
+            "valeur": 11.7,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-03",
+            "valeur": 18.0,
+            "color": "#10b981"
+          }
+        ],
+        "Nitrates": [
+          {
+            "date": "2024-11-25",
+            "valeur": 3.9,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-03",
+            "valeur": 3.8,
+            "color": "#10b981"
+          }
+        ],
+        "pH": [
+          {
+            "date": "2024-11-25",
+            "valeur": 7.4,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-03",
+            "valeur": 7.5,
+            "color": "#10b981"
+          }
+        ],
+        "O2 saturation": [
+          {
+            "date": "2024-11-25",
+            "valeur": 94.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-03",
+            "valeur": 87.0,
+            "color": "#10b981"
+          }
+        ],
+        "Phosphore": [
+          {
+            "date": "2024-11-25",
+            "valeur": 0.026,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-03",
+            "valeur": 0.124,
+            "color": "#10b981"
+          }
+        ]
+      },
+      "score": 75,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
       "nom": "LES GRANDS TERREAUX A SAONE 5",
       "dept": "25",
       "lat": 47.22917199,
@@ -46785,172 +46791,6 @@
           {
             "date": "2024-09-03",
             "valeur": 5.3,
-            "color": "#10b981"
-          }
-        ]
-      },
-      "score": 75,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
-    },
-    {
-      "nom": "LISON A CHATILLON-SUR-LISON 2",
-      "dept": "25",
-      "lat": 47.071569619,
-      "lon": 5.988082654,
-      "nom_cours_eau": "LISON",
-      "parametres": {
-        "pH": {
-          "valeur": 8.0,
-          "unite": "pH",
-          "color": "#10b981",
-          "date": "2024-11-25",
-          "realtime": false
-        },
-        "MES": {
-          "valeur": 479.0,
-          "unite": "mg/L",
-          "color": "#ef4444",
-          "date": "2024-11-25",
-          "realtime": false
-        },
-        "Temp. eau": {
-          "valeur": 10.4,
-          "unite": "°C",
-          "color": "#10b981",
-          "date": "2024-11-25",
-          "realtime": false
-        },
-        "Phosphore": {
-          "valeur": 0.036,
-          "unite": "mg/L",
-          "color": "#10b981",
-          "date": "2024-11-25",
-          "realtime": false
-        },
-        "O2 saturation": {
-          "valeur": 101.0,
-          "unite": "%",
-          "color": "#10b981",
-          "date": "2024-11-25",
-          "realtime": false
-        },
-        "Ammonium": {
-          "valeur": 4.0,
-          "unite": "mg/L",
-          "color": "#ef4444",
-          "date": "2024-11-25",
-          "realtime": false
-        },
-        "Conductivité": {
-          "valeur": 10.7,
-          "unite": "µS/cm",
-          "color": "#10b981",
-          "date": "2024-11-25",
-          "realtime": false
-        },
-        "Nitrates": {
-          "valeur": 5.3,
-          "unite": "mg/L",
-          "color": "#10b981",
-          "date": "2024-11-25",
-          "realtime": false
-        }
-      },
-      "historique": {
-        "pH": [
-          {
-            "date": "2024-11-25",
-            "valeur": 8.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-03",
-            "valeur": 8.2,
-            "color": "#10b981"
-          }
-        ],
-        "MES": [
-          {
-            "date": "2024-11-25",
-            "valeur": 479.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-09-03",
-            "valeur": 384.0,
-            "color": "#ef4444"
-          }
-        ],
-        "Temp. eau": [
-          {
-            "date": "2024-11-25",
-            "valeur": 10.4,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-03",
-            "valeur": 19.7,
-            "color": "#10b981"
-          }
-        ],
-        "Phosphore": [
-          {
-            "date": "2024-11-25",
-            "valeur": 0.036,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-03",
-            "valeur": 0.01,
-            "color": "#10b981"
-          }
-        ],
-        "O2 saturation": [
-          {
-            "date": "2024-11-25",
-            "valeur": 101.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-03",
-            "valeur": 107.0,
-            "color": "#10b981"
-          }
-        ],
-        "Ammonium": [
-          {
-            "date": "2024-11-25",
-            "valeur": 4.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-09-03",
-            "valeur": 1.9,
-            "color": "#f59e0b"
-          }
-        ],
-        "Conductivité": [
-          {
-            "date": "2024-11-25",
-            "valeur": 10.7,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-03",
-            "valeur": 9.4,
-            "color": "#10b981"
-          }
-        ],
-        "Nitrates": [
-          {
-            "date": "2024-11-25",
-            "valeur": 5.3,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-03",
-            "valeur": 3.2,
             "color": "#10b981"
           }
         ]
@@ -47500,7 +47340,7 @@
           "realtime": false
         },
         "pH": {
-          "valeur": 7.5,
+          "valeur": 7.6,
           "unite": "pH",
           "color": "#10b981",
           "date": "2024-09-18",
@@ -47594,12 +47434,12 @@
           },
           {
             "date": "2024-09-18",
-            "valeur": 10.0,
+            "valeur": 5.7,
             "color": "#10b981"
           },
           {
             "date": "2024-09-18",
-            "valeur": 5.7,
+            "valeur": 10.0,
             "color": "#10b981"
           }
         ],
@@ -47616,17 +47456,17 @@
           },
           {
             "date": "2024-09-18",
+            "valeur": 6.8,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-18",
             "valeur": 11.1,
             "color": "#10b981"
           },
           {
             "date": "2024-09-18",
             "valeur": 14.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-18",
-            "valeur": 6.8,
             "color": "#10b981"
           }
         ],
@@ -47660,7 +47500,7 @@
         "pH": [
           {
             "date": "2024-09-18",
-            "valeur": 7.5,
+            "valeur": 7.6,
             "color": "#10b981"
           },
           {
@@ -47670,17 +47510,17 @@
           },
           {
             "date": "2024-09-18",
-            "valeur": 7.6,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-18",
-            "valeur": 7.3,
+            "valeur": 8.2,
             "color": "#10b981"
           },
           {
             "date": "2024-09-18",
             "valeur": 7.5,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-18",
+            "valeur": 7.3,
             "color": "#10b981"
           }
         ],
@@ -47759,10 +47599,24 @@
           "date": "2024-09-18",
           "realtime": false
         },
+        "Conductivité": {
+          "valeur": 5.3,
+          "unite": "µS/cm",
+          "color": "#10b981",
+          "date": "2024-09-18",
+          "realtime": false
+        },
+        "Temp. eau": {
+          "valeur": 7.9,
+          "unite": "°C",
+          "color": "#10b981",
+          "date": "2024-09-18",
+          "realtime": false
+        },
         "O2 saturation": {
-          "valeur": 56.0,
+          "valeur": 49.0,
           "unite": "%",
-          "color": "#f59e0b",
+          "color": "#ef4444",
           "date": "2024-09-18",
           "realtime": false
         },
@@ -47776,20 +47630,6 @@
         "Nitrates": {
           "valeur": 3.2,
           "unite": "mg/L",
-          "color": "#10b981",
-          "date": "2024-09-18",
-          "realtime": false
-        },
-        "Temp. eau": {
-          "valeur": 15.0,
-          "unite": "°C",
-          "color": "#10b981",
-          "date": "2024-09-18",
-          "realtime": false
-        },
-        "Conductivité": {
-          "valeur": 5.3,
-          "unite": "µS/cm",
           "color": "#10b981",
           "date": "2024-09-18",
           "realtime": false
@@ -47816,6 +47656,11 @@
           },
           {
             "date": "2024-09-18",
+            "valeur": 346.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2024-09-18",
             "valeur": 327.0,
             "color": "#ef4444"
           },
@@ -47823,19 +47668,9 @@
             "date": "2024-09-18",
             "valeur": 328.0,
             "color": "#ef4444"
-          },
-          {
-            "date": "2024-09-18",
-            "valeur": 327.0,
-            "color": "#ef4444"
           }
         ],
         "pH": [
-          {
-            "date": "2024-09-18",
-            "valeur": 8.1,
-            "color": "#10b981"
-          },
           {
             "date": "2024-09-18",
             "valeur": 8.1,
@@ -47848,6 +47683,11 @@
           },
           {
             "date": "2024-09-18",
+            "valeur": 8.1,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-18",
             "valeur": 8.0,
             "color": "#10b981"
           },
@@ -47857,16 +47697,70 @@
             "color": "#10b981"
           }
         ],
-        "O2 saturation": [
+        "Conductivité": [
           {
             "date": "2024-09-18",
-            "valeur": 56.0,
-            "color": "#f59e0b"
+            "valeur": 5.3,
+            "color": "#10b981"
           },
+          {
+            "date": "2024-09-18",
+            "valeur": 5.2,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-18",
+            "valeur": 9.5,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-18",
+            "valeur": 4.9,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-18",
+            "valeur": 9.5,
+            "color": "#10b981"
+          }
+        ],
+        "Temp. eau": [
+          {
+            "date": "2024-09-18",
+            "valeur": 7.9,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-18",
+            "valeur": 12.2,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-18",
+            "valeur": 15.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-18",
+            "valeur": 15.3,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-18",
+            "valeur": 14.9,
+            "color": "#10b981"
+          }
+        ],
+        "O2 saturation": [
           {
             "date": "2024-09-18",
             "valeur": 49.0,
             "color": "#ef4444"
+          },
+          {
+            "date": "2024-09-18",
+            "valeur": 56.0,
+            "color": "#f59e0b"
           },
           {
             "date": "2024-09-18",
@@ -47933,60 +47827,6 @@
             "color": "#10b981"
           }
         ],
-        "Temp. eau": [
-          {
-            "date": "2024-09-18",
-            "valeur": 15.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-18",
-            "valeur": 7.9,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-18",
-            "valeur": 12.2,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-18",
-            "valeur": 15.3,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-18",
-            "valeur": 14.9,
-            "color": "#10b981"
-          }
-        ],
-        "Conductivité": [
-          {
-            "date": "2024-09-18",
-            "valeur": 5.3,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-18",
-            "valeur": 5.2,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-18",
-            "valeur": 4.9,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-18",
-            "valeur": 9.5,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-18",
-            "valeur": 9.5,
-            "color": "#10b981"
-          }
-        ],
         "Ammonium": [
           {
             "date": "2024-09-18",
@@ -48015,72 +47855,18 @@
           }
         ]
       },
-      "score": 69,
+      "score": 62,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
     }
   ],
   "nappes": [
     {
-      "nom": "Amagney",
-      "dept": "25",
-      "code_bss": "05031X0072/F1",
-      "current": 241.431,
-      "history": [
-        241.299,
-        241.335,
-        241.254,
-        241.444,
-        241.226,
-        241.284,
-        241.304,
-        241.633,
-        241.559,
-        241.662,
-        241.184,
-        241.203,
-        241.161,
-        241.431
-      ],
-      "year_ago": 242.52,
-      "lat": 47.305118991,
-      "lng": 6.151726681,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Gennes",
-      "dept": "25",
-      "code_bss": "05035X0003/P1",
-      "current": 403.124,
-      "history": [
-        403.134,
-        403.134,
-        403.134,
-        403.135,
-        403.135,
-        403.13,
-        403.126,
-        403.127,
-        403.12,
-        403.127,
-        403.122,
-        403.13,
-        403.117,
-        403.124
-      ],
-      "year_ago": 403.54,
-      "lat": 47.244179747,
-      "lng": 6.144849917,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Dommartin",
       "dept": "25",
       "code_bss": "05573X0084/F.6",
-      "current": 806.939,
+      "current": 806.93,
       "history": [
-        807.004,
-        806.998,
         806.994,
         806.988,
         806.982,
@@ -48092,9 +47878,11 @@
         806.952,
         806.948,
         806.944,
-        806.939
+        806.939,
+        806.933,
+        806.93
       ],
-      "year_ago": 807.24,
+      "year_ago": 807.23,
       "lat": 46.918007558,
       "lng": 6.321361278,
       "color": "#ef4444"
@@ -48103,10 +47891,8 @@
       "nom": "Arc-et-Senans",
       "dept": "25",
       "code_bss": "05295X0025/Q5-17",
-      "current": 226.711,
+      "current": 226.709,
       "history": [
-        226.75,
-        226.75,
         226.731,
         226.729,
         226.726,
@@ -48118,11 +47904,65 @@
         226.714,
         226.713,
         226.711,
-        226.711
+        226.711,
+        226.709,
+        226.709
       ],
       "year_ago": 226.85,
       "lat": 47.018458548,
       "lng": 5.756521893,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Amagney",
+      "dept": "25",
+      "code_bss": "05031X0072/F1",
+      "current": 241.726,
+      "history": [
+        241.254,
+        241.444,
+        241.226,
+        241.284,
+        241.304,
+        241.633,
+        241.559,
+        241.662,
+        241.184,
+        241.203,
+        241.161,
+        241.431,
+        241.352,
+        241.726
+      ],
+      "year_ago": 242.57,
+      "lat": 47.305118991,
+      "lng": 6.151726681,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Gennes",
+      "dept": "25",
+      "code_bss": "05035X0003/P1",
+      "current": 403.117,
+      "history": [
+        403.134,
+        403.135,
+        403.135,
+        403.13,
+        403.126,
+        403.127,
+        403.12,
+        403.127,
+        403.122,
+        403.13,
+        403.117,
+        403.124,
+        403.114,
+        403.117
+      ],
+      "year_ago": 403.42,
+      "lat": 47.244179747,
+      "lng": 6.144849917,
       "color": "#ef4444"
     },
     {
@@ -48146,123 +47986,17 @@
         562.317,
         562.318
       ],
-      "year_ago": 562.37,
+      "year_ago": 562.36,
       "lat": 47.175373697,
       "lng": 6.492803501,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Scey-Maisières",
-      "dept": "25",
-      "code_bss": "05301X0042/CN",
-      "current": 317.162,
-      "history": [
-        317.297,
-        317.284,
-        317.284,
-        317.269,
-        317.267,
-        317.25,
-        317.253,
-        317.305,
-        317.254,
-        317.217,
-        317.198,
-        317.168,
-        317.155,
-        317.162
-      ],
-      "year_ago": 320.59,
-      "lat": 47.11920619,
-      "lng": 6.119971519,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Saint-Vit",
-      "dept": "25",
-      "code_bss": "05025X0138/F",
-      "current": 214.951,
-      "history": [
-        215.014,
-        214.931,
-        214.997,
-        214.915,
-        215.012,
-        214.967,
-        215.015,
-        214.967,
-        215.023,
-        214.972,
-        215.006,
-        214.958,
-        215.007,
-        214.951
-      ],
-      "year_ago": 215.23,
-      "lat": 47.174807608,
-      "lng": 5.816207633,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Montferrand-le-Château",
-      "dept": "25",
-      "code_bss": "05026X0013/F",
-      "current": 235.687,
-      "history": [
-        235.838,
-        235.814,
-        235.807,
-        235.786,
-        235.784,
-        235.761,
-        235.757,
-        235.739,
-        235.74,
-        235.725,
-        235.722,
-        235.706,
-        235.699,
-        235.687
-      ],
-      "year_ago": 236.53,
-      "lat": 47.19185164,
-      "lng": 5.918543818,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Branne",
-      "dept": "25",
-      "code_bss": "04738X0150/P",
-      "current": 271.88,
-      "history": [
-        271.98,
-        271.97,
-        271.96,
-        271.95,
-        271.94,
-        271.94,
-        271.93,
-        271.92,
-        271.91,
-        271.91,
-        271.89,
-        271.89,
-        271.88,
-        271.88
-      ],
-      "year_ago": 272.22,
-      "lat": 47.374874593,
-      "lng": 6.466756673,
       "color": "#ef4444"
     },
     {
       "nom": "Branne",
       "dept": "25",
       "code_bss": "04738X0048/P",
-      "current": 271.721,
+      "current": 271.822,
       "history": [
-        271.632,
-        271.811,
         271.685,
         271.674,
         271.584,
@@ -48274,22 +48008,128 @@
         271.65,
         271.783,
         271.732,
-        271.721
+        271.721,
+        271.62,
+        271.822
       ],
-      "year_ago": 272.02,
+      "year_ago": 272.0,
       "lat": 47.376697806,
       "lng": 6.472392909,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Scey-Maisières",
+      "dept": "25",
+      "code_bss": "05301X0042/CN",
+      "current": 317.13,
+      "history": [
+        317.284,
+        317.269,
+        317.267,
+        317.25,
+        317.253,
+        317.305,
+        317.254,
+        317.217,
+        317.198,
+        317.168,
+        317.155,
+        317.162,
+        317.13,
+        317.13
+      ],
+      "year_ago": 319.52,
+      "lat": 47.11920619,
+      "lng": 6.119971519,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Montferrand-le-Château",
+      "dept": "25",
+      "code_bss": "05026X0013/F",
+      "current": 235.674,
+      "history": [
+        235.807,
+        235.786,
+        235.784,
+        235.761,
+        235.757,
+        235.739,
+        235.74,
+        235.725,
+        235.722,
+        235.706,
+        235.699,
+        235.687,
+        235.683,
+        235.674
+      ],
+      "year_ago": 236.4,
+      "lat": 47.19185164,
+      "lng": 5.918543818,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Saint-Vit",
+      "dept": "25",
+      "code_bss": "05025X0138/F",
+      "current": 214.961,
+      "history": [
+        214.997,
+        214.915,
+        215.012,
+        214.967,
+        215.015,
+        214.967,
+        215.023,
+        214.972,
+        215.006,
+        214.958,
+        215.007,
+        214.951,
+        215.006,
+        214.961
+      ],
+      "year_ago": 215.22,
+      "lat": 47.174807608,
+      "lng": 5.816207633,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Branne",
+      "dept": "25",
+      "code_bss": "04738X0150/P",
+      "current": 271.87,
+      "history": [
+        271.96,
+        271.95,
+        271.94,
+        271.94,
+        271.93,
+        271.92,
+        271.91,
+        271.91,
+        271.89,
+        271.89,
+        271.88,
+        271.88,
+        271.87,
+        271.87
+      ],
+      "year_ago": 272.21,
+      "lat": 47.374874593,
+      "lng": 6.466756673,
       "color": "#ef4444"
     }
   ],
   "air": [
     {
-      "zone": "Plaimbois-Vennes",
+      "zone": "Vuillafans",
       "dept": "25",
-      "date": "2026-07-17",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-07-18",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -48298,9 +48138,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "PM10": {
           "indice": 1,
@@ -48320,12 +48160,12 @@
       }
     },
     {
-      "zone": "Les Plains-et-Grands-Essarts",
+      "zone": "Silley-Amancey",
       "dept": "25",
-      "date": "2026-07-17",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-07-18",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -48334,9 +48174,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "PM10": {
           "indice": 1,
@@ -48356,12 +48196,12 @@
       }
     },
     {
-      "zone": "La Planée",
+      "zone": "Septfontaines",
       "dept": "25",
-      "date": "2026-07-17",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-07-18",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -48370,9 +48210,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "PM10": {
           "indice": 1,
@@ -48392,12 +48232,12 @@
       }
     },
     {
-      "zone": "Pointvillers",
+      "zone": "Scey en Varais",
       "dept": "25",
-      "date": "2026-07-17",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-07-18",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -48406,9 +48246,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "PM10": {
           "indice": 1,
@@ -48428,12 +48268,12 @@
       }
     },
     {
-      "zone": "Pompierre-sur-Doubs",
+      "zone": "Reugney",
       "dept": "25",
-      "date": "2026-07-17",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-07-18",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -48442,9 +48282,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "PM10": {
           "indice": 1,

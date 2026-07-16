@@ -3,7 +3,7 @@
   "nom": "Ardèche",
   "slug": "ardeche",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "15/07/2026 à 13:26",
+  "updated": "16/07/2026 à 13:37",
   "score_eau": 96,
   "nb_communes": 336,
   "potable": [
@@ -18603,6 +18603,13 @@
           "date": "2026-03-25",
           "realtime": false
         },
+        "MES": {
+          "valeur": 445.0,
+          "unite": "mg/L",
+          "color": "#ef4444",
+          "date": "2026-03-25",
+          "realtime": false
+        },
         "Temp. eau": {
           "valeur": 12.0,
           "unite": "°C",
@@ -18614,13 +18621,6 @@
           "valeur": 8.1,
           "unite": "pH",
           "color": "#10b981",
-          "date": "2026-03-25",
-          "realtime": false
-        },
-        "MES": {
-          "valeur": 445.0,
-          "unite": "mg/L",
-          "color": "#ef4444",
           "date": "2026-03-25",
           "realtime": false
         },
@@ -18681,6 +18681,33 @@
             "color": "#10b981"
           }
         ],
+        "MES": [
+          {
+            "date": "2026-03-25",
+            "valeur": 445.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2026-02-25",
+            "valeur": 399.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2026-01-21",
+            "valeur": 472.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-12-31",
+            "valeur": 458.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-10-24",
+            "valeur": 454.0,
+            "color": "#ef4444"
+          }
+        ],
         "Temp. eau": [
           {
             "date": "2026-03-25",
@@ -18733,33 +18760,6 @@
             "date": "2025-10-24",
             "valeur": 7.8,
             "color": "#10b981"
-          }
-        ],
-        "MES": [
-          {
-            "date": "2026-03-25",
-            "valeur": 445.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2026-02-25",
-            "valeur": 399.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2026-01-21",
-            "valeur": 472.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2025-12-31",
-            "valeur": 458.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2025-10-24",
-            "valeur": 454.0,
-            "color": "#ef4444"
           }
         ],
         "Conductivité": [
@@ -21742,17 +21742,17 @@
       "lon": 4.340373229,
       "nom_cours_eau": "DORNE",
       "parametres": {
-        "Ammonium": {
-          "valeur": 0.91,
-          "unite": "mg/L",
-          "color": "#f59e0b",
-          "date": "2026-03-23",
-          "realtime": false
-        },
         "pH": {
           "valeur": 7.7,
           "unite": "pH",
           "color": "#10b981",
+          "date": "2026-03-23",
+          "realtime": false
+        },
+        "Ammonium": {
+          "valeur": 0.91,
+          "unite": "mg/L",
+          "color": "#f59e0b",
           "date": "2026-03-23",
           "realtime": false
         },
@@ -21800,33 +21800,6 @@
         }
       },
       "historique": {
-        "Ammonium": [
-          {
-            "date": "2026-03-23",
-            "valeur": 0.91,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2026-01-19",
-            "valeur": 1.1,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2025-12-22",
-            "valeur": 3.3,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2025-10-21",
-            "valeur": 2.8,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2025-08-21",
-            "valeur": 2.1,
-            "color": "#ef4444"
-          }
-        ],
         "pH": [
           {
             "date": "2026-03-23",
@@ -21852,6 +21825,33 @@
             "date": "2025-08-21",
             "valeur": 7.2,
             "color": "#10b981"
+          }
+        ],
+        "Ammonium": [
+          {
+            "date": "2026-03-23",
+            "valeur": 0.91,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2026-01-19",
+            "valeur": 1.1,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2025-12-22",
+            "valeur": 3.3,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-10-21",
+            "valeur": 2.8,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-08-21",
+            "valeur": 2.1,
+            "color": "#ef4444"
           }
         ],
         "Nitrates": [
@@ -24827,16 +24827,16 @@
           "date": "2026-01-21",
           "realtime": false
         },
-        "Nitrates": {
-          "valeur": 2.3,
-          "unite": "mg/L",
+        "Conductivité": {
+          "valeur": 11.9,
+          "unite": "µS/cm",
           "color": "#10b981",
           "date": "2026-01-21",
           "realtime": false
         },
-        "Conductivité": {
-          "valeur": 11.9,
-          "unite": "µS/cm",
+        "Nitrates": {
+          "valeur": 2.3,
+          "unite": "mg/L",
           "color": "#10b981",
           "date": "2026-01-21",
           "realtime": false
@@ -24905,33 +24905,6 @@
             "color": "#10b981"
           }
         ],
-        "Nitrates": [
-          {
-            "date": "2026-01-21",
-            "valeur": 2.3,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-12-31",
-            "valeur": 3.5,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-11-26",
-            "valeur": 4.3,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-10-24",
-            "valeur": 7.5,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-09-23",
-            "valeur": 4.9,
-            "color": "#10b981"
-          }
-        ],
         "Conductivité": [
           {
             "date": "2026-01-21",
@@ -24956,6 +24929,33 @@
           {
             "date": "2025-09-23",
             "valeur": 9.4,
+            "color": "#10b981"
+          }
+        ],
+        "Nitrates": [
+          {
+            "date": "2026-01-21",
+            "valeur": 2.3,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-12-31",
+            "valeur": 3.5,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-11-26",
+            "valeur": 4.3,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-10-24",
+            "valeur": 7.5,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-09-23",
+            "valeur": 4.9,
             "color": "#10b981"
           }
         ],
@@ -25685,6 +25685,13 @@
           "date": "2026-01-20",
           "realtime": false
         },
+        "Conductivité": {
+          "valeur": 11.4,
+          "unite": "µS/cm",
+          "color": "#10b981",
+          "date": "2026-01-20",
+          "realtime": false
+        },
         "Ammonium": {
           "valeur": 0.49,
           "unite": "mg/L",
@@ -25695,13 +25702,6 @@
         "MES": {
           "valeur": 21.0,
           "unite": "mg/L",
-          "color": "#10b981",
-          "date": "2026-01-20",
-          "realtime": false
-        },
-        "Conductivité": {
-          "valeur": 11.4,
-          "unite": "µS/cm",
           "color": "#10b981",
           "date": "2026-01-20",
           "realtime": false
@@ -25763,6 +25763,33 @@
             "color": "#10b981"
           }
         ],
+        "Conductivité": [
+          {
+            "date": "2026-01-20",
+            "valeur": 11.4,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-12-29",
+            "valeur": 12.1,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-11-28",
+            "valeur": 12.4,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-10-21",
+            "valeur": 9.9,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-09-24",
+            "valeur": 10.3,
+            "color": "#10b981"
+          }
+        ],
         "Ammonium": [
           {
             "date": "2026-01-20",
@@ -25815,33 +25842,6 @@
             "date": "2025-09-24",
             "valeur": 28.0,
             "color": "#f59e0b"
-          }
-        ],
-        "Conductivité": [
-          {
-            "date": "2026-01-20",
-            "valeur": 11.4,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-12-29",
-            "valeur": 12.1,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-11-28",
-            "valeur": 12.4,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-10-21",
-            "valeur": 9.9,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-09-24",
-            "valeur": 10.3,
-            "color": "#10b981"
           }
         ],
         "Phosphore": [
@@ -28164,7 +28164,7 @@
           },
           {
             "date": "2025-10-01",
-            "valeur": 8.269,
+            "valeur": 7.983,
             "color": "#10b981"
           }
         ],
@@ -28820,22 +28820,22 @@
       "nom": "Veyras",
       "dept": "07",
       "code_bss": "08413X0091/F3",
-      "current": 441.76,
+      "current": 441.81,
       "history": [
-        441.78,
-        441.78,
-        441.78,
-        441.77,
-        441.78,
-        441.78,
-        441.78,
-        441.78,
-        441.78,
-        441.79,
-        441.78,
-        441.77,
-        441.77,
-        441.76
+        441.82,
+        441.81,
+        441.82,
+        441.82,
+        441.82,
+        441.81,
+        441.82,
+        441.83,
+        441.81,
+        441.82,
+        441.8,
+        441.8,
+        441.81,
+        441.81
       ],
       "year_ago": 441.41,
       "lat": 44.733838457,
@@ -28843,66 +28843,66 @@
       "color": "#3b82f6"
     },
     {
-      "nom": "Aubenas",
-      "dept": "07",
-      "code_bss": "08651X0038/0038",
-      "current": 297.603,
-      "history": [
-        297.828,
-        297.719,
-        297.807,
-        297.7,
-        297.801,
-        297.678,
-        297.772,
-        297.678,
-        297.772,
-        297.664,
-        297.742,
-        297.633,
-        297.713,
-        297.603
-      ],
-      "year_ago": 298.68,
-      "lat": 44.619744152,
-      "lng": 4.39032624,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Lablachère",
       "dept": "07",
       "code_bss": "BSS003GPIS/X",
-      "current": 243.627,
+      "current": 243.624,
       "history": [
-        243.735,
-        243.713,
-        243.713,
-        243.7,
-        243.713,
-        243.696,
-        243.705,
-        243.689,
-        243.715,
-        243.702,
-        243.712,
-        243.68,
-        243.669,
-        243.627
+        243.665,
+        243.637,
+        243.626,
+        243.618,
+        243.621,
+        243.616,
+        243.629,
+        243.618,
+        243.63,
+        243.618,
+        243.64,
+        243.626,
+        243.616,
+        243.624
       ],
       "year_ago": 243.59,
       "lat": 44.46354371,
       "lng": 4.214386619,
       "color": "#3b82f6"
+    },
+    {
+      "nom": "Aubenas",
+      "dept": "07",
+      "code_bss": "08651X0038/0038",
+      "current": 297.347,
+      "history": [
+        297.621,
+        297.504,
+        297.579,
+        297.465,
+        297.531,
+        297.433,
+        297.522,
+        297.415,
+        297.501,
+        297.39,
+        297.473,
+        297.367,
+        297.431,
+        297.347
+      ],
+      "year_ago": 298.66,
+      "lat": 44.619744152,
+      "lng": 4.39032624,
+      "color": "#ef4444"
     }
   ],
   "air": [
     {
-      "zone": "Saint-Bérain-sur-Dheune",
+      "zone": "Vitry-sur-Loire",
       "dept": "07",
-      "date": "2026-07-17",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-07-18",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -28911,9 +28911,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "PM10": {
           "indice": 1,
@@ -28933,12 +28933,12 @@
       }
     },
     {
-      "zone": "Saint-Boil",
+      "zone": "Verjux",
       "dept": "07",
-      "date": "2026-07-17",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-07-18",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -28947,9 +28947,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "PM10": {
           "indice": 1,
@@ -28969,12 +28969,12 @@
       }
     },
     {
-      "zone": "Saint-Bonnet-de-Cray",
+      "zone": "Verdun-sur-le-Doubs",
       "dept": "07",
-      "date": "2026-07-17",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-07-18",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -28983,9 +28983,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "PM10": {
           "indice": 1,
@@ -29005,12 +29005,12 @@
       }
     },
     {
-      "zone": "Saint-Bonnet-de-Joux",
+      "zone": "Torpes",
       "dept": "07",
-      "date": "2026-07-17",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-07-18",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -29019,9 +29019,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "PM10": {
           "indice": 1,
@@ -29041,12 +29041,12 @@
       }
     },
     {
-      "zone": "Saint-Bonnet-de-Vieille-Vigne",
+      "zone": "Le Tartre",
       "dept": "07",
-      "date": "2026-07-17",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-07-18",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -29055,9 +29055,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "PM10": {
           "indice": 1,
