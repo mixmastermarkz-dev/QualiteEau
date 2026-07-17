@@ -3,7 +3,7 @@
   "nom": "Ardèche",
   "slug": "ardeche",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "16/07/2026 à 13:37",
+  "updated": "17/07/2026 à 13:19",
   "score_eau": 96,
   "nb_communes": 336,
   "potable": [
@@ -28483,11 +28483,6 @@
             "date": "2025-08-18",
             "valeur": 0.81,
             "color": "#f59e0b"
-          },
-          {
-            "date": "2024-07-16",
-            "valeur": 0.79,
-            "color": "#f59e0b"
           }
         ],
         "Nitrates": [
@@ -28495,22 +28490,12 @@
             "date": "2025-08-18",
             "valeur": 0.77,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-07-16",
-            "valeur": 0.68,
-            "color": "#10b981"
           }
         ],
         "Phosphore": [
           {
             "date": "2025-08-18",
             "valeur": 0.046,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-07-16",
-            "valeur": 0.0,
             "color": "#10b981"
           }
         ]
@@ -28554,22 +28539,12 @@
             "date": "2025-08-18",
             "valeur": 0.57,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-07-16",
-            "valeur": 0.77,
-            "color": "#10b981"
           }
         ],
         "Phosphore": [
           {
             "date": "2025-08-18",
             "valeur": 0.046,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-07-16",
-            "valeur": 0.0,
             "color": "#10b981"
           }
         ],
@@ -28578,11 +28553,6 @@
             "date": "2025-08-18",
             "valeur": 0.49,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-07-16",
-            "valeur": 0.58,
-            "color": "#f59e0b"
           }
         ]
       },
@@ -28820,10 +28790,8 @@
       "nom": "Veyras",
       "dept": "07",
       "code_bss": "08413X0091/F3",
-      "current": 441.81,
+      "current": 441.82,
       "history": [
-        441.82,
-        441.81,
         441.82,
         441.82,
         441.82,
@@ -28835,7 +28803,9 @@
         441.8,
         441.8,
         441.81,
-        441.81
+        441.81,
+        441.81,
+        441.82
       ],
       "year_ago": 441.41,
       "lat": 44.733838457,
@@ -28843,39 +28813,11 @@
       "color": "#3b82f6"
     },
     {
-      "nom": "Lablachère",
-      "dept": "07",
-      "code_bss": "BSS003GPIS/X",
-      "current": 243.624,
-      "history": [
-        243.665,
-        243.637,
-        243.626,
-        243.618,
-        243.621,
-        243.616,
-        243.629,
-        243.618,
-        243.63,
-        243.618,
-        243.64,
-        243.626,
-        243.616,
-        243.624
-      ],
-      "year_ago": 243.59,
-      "lat": 44.46354371,
-      "lng": 4.214386619,
-      "color": "#3b82f6"
-    },
-    {
       "nom": "Aubenas",
       "dept": "07",
       "code_bss": "08651X0038/0038",
-      "current": 297.347,
+      "current": 297.334,
       "history": [
-        297.621,
-        297.504,
         297.579,
         297.465,
         297.531,
@@ -28887,22 +28829,50 @@
         297.473,
         297.367,
         297.431,
-        297.347
+        297.347,
+        297.431,
+        297.334
       ],
-      "year_ago": 298.66,
+      "year_ago": 298.64,
       "lat": 44.619744152,
       "lng": 4.39032624,
       "color": "#ef4444"
+    },
+    {
+      "nom": "Lablachère",
+      "dept": "07",
+      "code_bss": "BSS003GPIS/X",
+      "current": 243.635,
+      "history": [
+        243.626,
+        243.618,
+        243.621,
+        243.616,
+        243.629,
+        243.618,
+        243.63,
+        243.618,
+        243.64,
+        243.626,
+        243.616,
+        243.624,
+        243.638,
+        243.635
+      ],
+      "year_ago": 243.59,
+      "lat": 44.46354371,
+      "lng": 4.214386619,
+      "color": "#3b82f6"
     }
   ],
   "air": [
     {
-      "zone": "Vitry-sur-Loire",
+      "zone": "Sornay",
       "dept": "07",
-      "date": "2026-07-18",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
+      "date": "2026-07-19",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -28911,9 +28881,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -28933,12 +28903,12 @@
       }
     },
     {
-      "zone": "Verjux",
+      "zone": "Suin",
       "dept": "07",
-      "date": "2026-07-18",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
+      "date": "2026-07-19",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -28947,9 +28917,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -28969,12 +28939,12 @@
       }
     },
     {
-      "zone": "Verdun-sur-le-Doubs",
+      "zone": "Sully",
       "dept": "07",
-      "date": "2026-07-18",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
+      "date": "2026-07-19",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -28983,9 +28953,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -29005,12 +28975,12 @@
       }
     },
     {
-      "zone": "Torpes",
+      "zone": "La Tagnière",
       "dept": "07",
-      "date": "2026-07-18",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
+      "date": "2026-07-19",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -29019,9 +28989,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -29041,12 +29011,12 @@
       }
     },
     {
-      "zone": "Le Tartre",
+      "zone": "Taizé",
       "dept": "07",
-      "date": "2026-07-18",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
+      "date": "2026-07-19",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -29055,9 +29025,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
