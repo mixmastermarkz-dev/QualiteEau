@@ -3,7 +3,7 @@
   "nom": "Bas-Rhin",
   "slug": "bas-rhin",
   "region": "Grand Est",
-  "updated": "17/07/2026 à 13:19",
+  "updated": "18/07/2026 à 13:00",
   "score_eau": 97,
   "nb_communes": 514,
   "potable": [
@@ -60066,10 +60066,8 @@
       "nom": "Gresswiller",
       "dept": "67",
       "code_bss": "02713X0105/PZ1",
-      "current": 197.943,
+      "current": 197.852,
       "history": [
-        197.903,
-        197.853,
         197.869,
         197.873,
         197.847,
@@ -60081,9 +60079,11 @@
         197.826,
         197.875,
         197.818,
-        197.943
+        197.943,
+        197.826,
+        197.852
       ],
-      "year_ago": 198.68,
+      "year_ago": 198.66,
       "lat": 48.520713416,
       "lng": 7.415360799,
       "color": "#ef4444"
@@ -60092,10 +60092,8 @@
       "nom": "Haegen",
       "dept": "67",
       "code_bss": "02332X0198/F3",
-      "current": 207.287,
+      "current": 207.231,
       "history": [
-        206.982,
-        207.115,
         207.249,
         207.282,
         207.315,
@@ -60107,195 +60105,16 @@
         207.375,
         207.241,
         207.087,
-        207.287
+        207.287,
+        207.085,
+        207.231
       ],
-      "year_ago": 207.28,
+      "year_ago": 207.3,
       "lat": 48.714388864,
       "lng": 7.311970754,
-      "color": "#3b82f6"
+      "color": "#ef4444"
     }
   ],
-  "air": [
-    {
-      "zone": "Weyer",
-      "dept": "67",
-      "date": "2026-07-17",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#F0E641",
-      "source": "Atmo Grand Est",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Weyersheim",
-      "dept": "67",
-      "date": "2026-07-17",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#F0E641",
-      "source": "Atmo Grand Est",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Wickersheim-Wilshausen",
-      "dept": "67",
-      "date": "2026-07-17",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#F0E641",
-      "source": "Atmo Grand Est",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Wildersbach",
-      "dept": "67",
-      "date": "2026-07-17",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#F0E641",
-      "source": "Atmo Grand Est",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Willgottheim",
-      "dept": "67",
-      "date": "2026-07-17",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#F0E641",
-      "source": "Atmo Grand Est",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    }
-  ],
+  "air": [],
   "pollen": []
 }
