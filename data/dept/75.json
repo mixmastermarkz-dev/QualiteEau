@@ -3,8 +3,8 @@
   "nom": "Paris",
   "slug": "paris",
   "region": "Île-de-France",
-  "updated": "20/07/2026 à 14:14",
-  "score_eau": 80,
+  "updated": "21/07/2026 à 13:44",
+  "score_eau": 100,
   "nb_communes": 3,
   "potable": [
     {
@@ -15,26 +15,20 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
-        "Nitrates": {
-          "valeur": 29.0,
-          "unite": "mg/L",
-          "color": "#f59e0b",
-          "date": "2026-01-09"
-        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
           "color": "#10b981",
-          "date": "2026-01-09"
+          "date": "2026-04-03"
         },
         "THM": {
-          "valeur": 22.0,
+          "valeur": 10.23,
           "unite": "µg/L",
           "color": "#10b981",
-          "date": "2026-01-09"
+          "date": "2026-04-03"
         }
       },
-      "score": 83,
+      "score": 100,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -46,34 +40,22 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
-        "Nitrates": {
-          "valeur": 25.0,
-          "unite": "mg/L",
-          "color": "#10b981",
-          "date": "2026-01-30"
-        },
-        "Plomb": {
-          "valeur": 12.0,
-          "unite": "µg/L",
-          "color": "#ef4444",
-          "date": "2025-12-10"
-        },
         "Pesticides": {
-          "valeur": 0.095,
+          "valeur": "<0,500",
           "unite": "µg/L",
           "color": "#10b981",
-          "date": "2026-01-27"
+          "date": "2026-04-15"
         },
         "THM": {
-          "valeur": 23.6,
+          "valeur": 17.3,
           "unite": "µg/L",
           "color": "#10b981",
-          "date": "2026-01-30"
+          "date": "2026-04-30"
         }
       },
-      "score": 75,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "SAINT-CLOUD",
@@ -81,28 +63,22 @@
       "insee": "92064",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
-        "Nitrates": {
-          "valeur": 37.0,
-          "unite": "mg/L",
-          "color": "#f59e0b",
-          "date": "2026-01-29"
-        },
         "Pesticides": {
-          "valeur": 0.012,
+          "valeur": "<0,500",
           "unite": "µg/L",
           "color": "#10b981",
-          "date": "2026-01-29"
+          "date": "2026-04-22"
         },
         "THM": {
-          "valeur": 30.2,
+          "valeur": 21.29,
           "unite": "µg/L",
           "color": "#10b981",
-          "date": "2026-01-29"
+          "date": "2026-04-22"
         }
       },
-      "score": 83,
+      "score": 100,
       "score_color": "#10b981",
       "score_label": "Bonne"
     }
@@ -396,6 +372,187 @@
     }
   ],
   "nappes": [],
-  "air": [],
+  "air": [
+    {
+      "zone": "Paris 13e Arrondissement",
+      "dept": "75",
+      "date": "2026-07-22",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
+      "source": "Airparif",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Paris 7e Arrondissement",
+      "dept": "75",
+      "date": "2026-07-22",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Airparif",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Paris 18e Arrondissement",
+      "dept": "75",
+      "date": "2026-07-22",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Airparif",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Paris 20e Arrondissement",
+      "dept": "75",
+      "date": "2026-07-22",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
+      "source": "Airparif",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Paris 11e Arrondissement",
+      "dept": "75",
+      "date": "2026-07-22",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
+      "source": "Airparif",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    }
+  ],
   "pollen": []
 }
