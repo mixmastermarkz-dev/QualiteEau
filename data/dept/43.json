@@ -3,9 +3,9 @@
   "nom": "Haute-Loire",
   "slug": "haute-loire",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "21/07/2026 à 13:44",
+  "updated": "22/07/2026 à 13:45",
   "score_eau": 96,
-  "nb_communes": 262,
+  "nb_communes": 260,
   "potable": [
     {
       "nom": "AGNAT",
@@ -1122,6 +1122,12 @@
         },
         "Pesticides": {
           "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2022-04-04"
+        },
+        "THM": {
+          "valeur": 2.11,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2022-04-04"
@@ -6498,12 +6504,6 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-07-02"
-        },
-        "THM": {
-          "valeur": 2.11,
-          "unite": "µg/L",
-          "color": "#10b981",
-          "date": "2022-04-04"
         }
       },
       "score": 100,
@@ -6547,12 +6547,6 @@
           "unite": "°f",
           "color": "#10b981",
           "date": "2026-05-04"
-        },
-        "Plomb": {
-          "valeur": "<2",
-          "unite": "µg/L",
-          "color": "#10b981",
-          "date": "2023-08-08"
         }
       },
       "score": 100,
@@ -7149,7 +7143,7 @@
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
         "pH": {
-          "valeur": 6.3,
+          "valeur": 5.8,
           "unite": "unité pH",
           "color": "#ef4444",
           "date": "2024-11-14"
@@ -12286,37 +12280,6 @@
       "score_label": "Bonne"
     },
     {
-      "nom": "SOULAGES",
-      "dept": "43",
-      "insee": "15229",
-      "restric": "N.D.",
-      "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
-      "parametres": {
-        "pH": {
-          "valeur": 6.4,
-          "unite": "unité pH",
-          "color": "#ef4444",
-          "date": "2023-10-02"
-        },
-        "Chlore": {
-          "valeur": 0.13,
-          "unite": "mg(Cl2)/L",
-          "color": "#10b981",
-          "date": "2023-10-02"
-        },
-        "Bactériologie": {
-          "valeur": "<1",
-          "unite": "n/(100mL)",
-          "color": "#10b981",
-          "date": "2023-10-02"
-        }
-      },
-      "score": 67,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
-    },
-    {
       "nom": "TAILHAC",
       "dept": "43",
       "insee": "43242",
@@ -12870,61 +12833,6 @@
         }
       },
       "score": 100,
-      "score_color": "#10b981",
-      "score_label": "Bonne"
-    },
-    {
-      "nom": "VEDRINES-SAINT-LOUP",
-      "dept": "43",
-      "insee": "15251",
-      "restric": "N.D.",
-      "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
-      "parametres": {
-        "Nitrates": {
-          "valeur": 2.5,
-          "unite": "mg/L",
-          "color": "#10b981",
-          "date": "2023-08-29"
-        },
-        "pH": {
-          "valeur": 6.0,
-          "unite": "unité pH",
-          "color": "#ef4444",
-          "date": "2023-08-29"
-        },
-        "Chlore": {
-          "valeur": 0.4,
-          "unite": "mg(Cl2)/L",
-          "color": "#10b981",
-          "date": "2023-08-29"
-        },
-        "Bactériologie": {
-          "valeur": "<1",
-          "unite": "n/(100mL)",
-          "color": "#10b981",
-          "date": "2023-08-29"
-        },
-        "Calcaire (TH)": {
-          "valeur": 0.5,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2023-08-29"
-        },
-        "Pesticides": {
-          "valeur": "<0,1",
-          "unite": "µg/L",
-          "color": "#10b981",
-          "date": "2023-05-31"
-        },
-        "THM": {
-          "valeur": 0.12,
-          "unite": "µg/L",
-          "color": "#10b981",
-          "date": "2023-05-31"
-        }
-      },
-      "score": 86,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -44176,10 +44084,8 @@
       "nom": "Azérat",
       "dept": "43",
       "code_bss": "07662X0277/45B-01",
-      "current": 406.189,
+      "current": 406.179,
       "history": [
-        406.21,
-        406.208,
         406.198,
         406.192,
         406.189,
@@ -44191,9 +44097,11 @@
         406.225,
         406.213,
         406.2,
-        406.189
+        406.189,
+        406.187,
+        406.179
       ],
-      "year_ago": 406.23,
+      "year_ago": 406.25,
       "lat": 45.357221793,
       "lng": 3.367729971,
       "color": "#ef4444"
@@ -44202,10 +44110,8 @@
       "nom": "Cohade",
       "dept": "43",
       "code_bss": "07662X0278/45B-03",
-      "current": 405.765,
+      "current": 405.758,
       "history": [
-        405.8,
-        405.796,
         405.795,
         405.792,
         405.788,
@@ -44217,89 +44123,13 @@
         405.775,
         405.771,
         405.772,
-        405.765
+        405.765,
+        405.762,
+        405.758
       ],
-      "year_ago": 405.93,
+      "year_ago": 405.92,
       "lat": 45.354627,
       "lng": 3.358466,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Chaspuzac",
-      "dept": "43",
-      "code_bss": "07916X0008/P1",
-      "current": 863.265,
-      "history": [
-        863.279,
-        863.277,
-        863.273,
-        863.27,
-        863.275,
-        863.276,
-        863.277,
-        863.277,
-        863.281,
-        863.282,
-        863.281,
-        863.274,
-        863.273,
-        863.265
-      ],
-      "year_ago": 862.91,
-      "lat": 45.060946408,
-      "lng": 3.761689363,
-      "color": "#3b82f6"
-    },
-    {
-      "nom": "Saugues",
-      "dept": "43",
-      "code_bss": "08144X0010/PUITS",
-      "current": 955.43,
-      "history": [
-        955.49,
-        955.48,
-        955.48,
-        955.47,
-        955.46,
-        955.47,
-        955.47,
-        955.46,
-        955.46,
-        955.46,
-        955.45,
-        955.45,
-        955.44,
-        955.43
-      ],
-      "year_ago": 955.53,
-      "lat": 44.963175124,
-      "lng": 3.547527986,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Saint-Front",
-      "dept": "43",
-      "code_bss": "08163X0019/PONT",
-      "current": 1200.537,
-      "history": [
-        1200.558,
-        1200.556,
-        1200.551,
-        1200.55,
-        1200.546,
-        1200.546,
-        1200.543,
-        1200.544,
-        1200.544,
-        1200.543,
-        1200.542,
-        1200.541,
-        1200.54,
-        1200.537
-      ],
-      "year_ago": 1200.74,
-      "lat": 44.975693366,
-      "lng": 4.144625431,
       "color": "#ef4444"
     },
     {
@@ -44323,9 +44153,87 @@
         405.753,
         405.768
       ],
-      "year_ago": 405.83,
+      "year_ago": 405.84,
       "lat": 45.355638,
       "lng": 3.362851,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Chaspuzac",
+      "dept": "43",
+      "code_bss": "07916X0008/P1",
+      "current": 863.254,
+      "history": [
+        863.273,
+        863.27,
+        863.275,
+        863.276,
+        863.277,
+        863.277,
+        863.281,
+        863.282,
+        863.281,
+        863.274,
+        863.273,
+        863.265,
+        863.261,
+        863.254
+      ],
+      "year_ago": 862.88,
+      "lat": 45.060946408,
+      "lng": 3.761689363,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Saugues",
+      "dept": "43",
+      "code_bss": "08144X0010/PUITS",
+      "current": 955.42,
+      "history": [
+        955.48,
+        955.47,
+        955.46,
+        955.47,
+        955.47,
+        955.46,
+        955.46,
+        955.46,
+        955.45,
+        955.45,
+        955.44,
+        955.43,
+        955.43,
+        955.42
+      ],
+      "year_ago": 955.52,
+      "lat": 44.963175124,
+      "lng": 3.547527986,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Saint-Front",
+      "dept": "43",
+      "code_bss": "08163X0019/PONT",
+      "current": 1200.524,
+      "history": [
+        1200.546,
+        1200.546,
+        1200.543,
+        1200.544,
+        1200.544,
+        1200.543,
+        1200.542,
+        1200.541,
+        1200.54,
+        1200.537,
+        1200.533,
+        1200.53,
+        1200.527,
+        1200.524
+      ],
+      "year_ago": 1200.74,
+      "lat": 44.975693366,
+      "lng": 4.144625431,
       "color": "#ef4444"
     }
   ],
@@ -44333,10 +44241,10 @@
     {
       "zone": "Saint-Front",
       "dept": "43",
-      "date": "2026-07-23",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-07-24",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
@@ -44345,9 +44253,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "PM10": {
           "indice": 1,
@@ -44369,7 +44277,7 @@
     {
       "zone": "Sainte-Florine",
       "dept": "43",
-      "date": "2026-07-23",
+      "date": "2026-07-24",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
@@ -44405,10 +44313,10 @@
     {
       "zone": "Saint-Ferréol-d'Auroure",
       "dept": "43",
-      "date": "2026-07-23",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-07-24",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
@@ -44417,9 +44325,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "PM10": {
           "indice": 1,
@@ -44441,7 +44349,7 @@
     {
       "zone": "Sainte-Eugénie-de-Villeneuve",
       "dept": "43",
-      "date": "2026-07-23",
+      "date": "2026-07-24",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
@@ -44477,7 +44385,7 @@
     {
       "zone": "le Cheylat",
       "dept": "43",
-      "date": "2026-07-23",
+      "date": "2026-07-24",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",

@@ -3,7 +3,7 @@
   "nom": "Haute-Vienne",
   "slug": "haute-vienne",
   "region": "Nouvelle-Aquitaine",
-  "updated": "21/07/2026 à 13:44",
+  "updated": "22/07/2026 à 13:45",
   "score_eau": 98,
   "nb_communes": 196,
   "potable": [
@@ -2717,16 +2717,16 @@
           "date": "2019-01-10"
         },
         "Pesticides": {
+          "valeur": 0.024,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-09-11"
+        },
+        "THM": {
           "valeur": "<SEUIL",
           "unite": "µg/L",
           "color": "#10b981",
-          "date": "2022-01-26"
-        },
-        "THM": {
-          "valeur": 2.3,
-          "unite": "µg/L",
-          "color": "#10b981",
-          "date": "2022-01-26"
+          "date": "2023-09-11"
         }
       },
       "score": 94,
@@ -5190,13 +5190,13 @@
       "insee": "87101",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "EAU PRESENTANT UNE TRES FORTE CONTAMINATION MICROBIENNE. Cette eau ne peut pas être distribuée sans traitement correctif.",
+      "conclusion": "Eau ne respectant pas les exigences de qualité des eaux destinées à la consommation humaine (pH et conductivité). Eau agressive et corrosive en raison de sa faible minéralisation et de son pH. Risque de teneurs excessives en fer, cuivre voire plomb (en cas de branchements ou de réseaux intérieurs en plomb). Eau nécessitant un traitement de reminéralisation avant distribution. Les autres paramètres sont conformes.",
       "parametres": {
         "Nitrates": {
-          "valeur": 8.8,
+          "valeur": 8.0,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2022-06-21"
+          "date": "2022-02-07"
         },
         "pH": {
           "valeur": 8.1,
@@ -5220,7 +5220,7 @@
           "valeur": 1.2,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2022-06-21"
+          "date": "2022-02-07"
         },
         "Plomb": {
           "valeur": "<1",
@@ -5229,10 +5229,10 @@
           "date": "2019-02-26"
         },
         "Pesticides": {
-          "valeur": 0.012,
+          "valeur": "<SEUIL",
           "unite": "µg/L",
           "color": "#10b981",
-          "date": "2022-06-21"
+          "date": "2020-11-18"
         }
       },
       "score": 100,
@@ -27241,39 +27241,11 @@
   ],
   "nappes": [
     {
-      "nom": "La Meyze",
-      "dept": "87",
-      "code_bss": "07126X0062/P1",
-      "current": 362.316,
-      "history": [
-        362.416,
-        362.412,
-        362.407,
-        362.398,
-        362.394,
-        362.379,
-        362.373,
-        362.367,
-        362.359,
-        362.345,
-        362.34,
-        362.331,
-        362.325,
-        362.316
-      ],
-      "year_ago": 362.78,
-      "lat": 45.61658014,
-      "lng": 1.210581003,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Saint-Mathieu",
       "dept": "87",
       "code_bss": "07111X0033/P1",
-      "current": 331.72,
+      "current": 331.71,
       "history": [
-        331.79,
-        331.78,
         331.78,
         331.77,
         331.77,
@@ -27285,73 +27257,21 @@
         331.73,
         331.73,
         331.72,
-        331.72
+        331.72,
+        331.71,
+        331.71
       ],
-      "year_ago": 331.96,
+      "year_ago": 331.95,
       "lat": 45.708746568,
       "lng": 0.763253786,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Magnac-Laval",
-      "dept": "87",
-      "code_bss": "06401X0010/P1",
-      "current": 201.957,
-      "history": [
-        201.437,
-        201.967,
-        201.567,
-        201.931,
-        201.506,
-        201.897,
-        201.735,
-        201.905,
-        201.442,
-        201.933,
-        201.534,
-        201.953,
-        201.543,
-        201.957
-      ],
-      "year_ago": 202.14,
-      "lat": 46.2153453,
-      "lng": 1.166927972,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Nedde",
-      "dept": "87",
-      "code_bss": "07134X0025/P1",
-      "current": 530.517,
-      "history": [
-        530.645,
-        530.651,
-        530.603,
-        530.626,
-        530.592,
-        530.612,
-        530.576,
-        530.587,
-        530.57,
-        530.573,
-        530.562,
-        530.537,
-        530.55,
-        530.517
-      ],
-      "year_ago": 530.92,
-      "lat": 45.689540864,
-      "lng": 1.794456753,
       "color": "#ef4444"
     },
     {
       "nom": "Couzeix",
       "dept": "87",
       "code_bss": "06882X0213/F1",
-      "current": 391.582,
+      "current": 391.546,
       "history": [
-        391.812,
-        391.794,
         391.777,
         391.761,
         391.741,
@@ -27363,99 +27283,99 @@
         391.638,
         391.621,
         391.601,
-        391.582
+        391.582,
+        391.561,
+        391.546
       ],
-      "year_ago": 392.53,
+      "year_ago": 392.5,
       "lat": 45.89562187,
       "lng": 1.22040592,
       "color": "#ef4444"
     },
     {
-      "nom": "Saint-Bonnet-Briance",
+      "nom": "La Meyze",
       "dept": "87",
-      "code_bss": "07131X0019/P1",
-      "current": 413.943,
+      "code_bss": "07126X0062/P1",
+      "current": 362.298,
       "history": [
-        414.108,
-        414.093,
-        414.083,
-        414.066,
-        414.059,
-        414.044,
-        414.033,
-        414.017,
-        414.009,
-        413.994,
-        413.983,
-        413.967,
-        413.959,
-        413.943
+        362.407,
+        362.398,
+        362.394,
+        362.379,
+        362.373,
+        362.367,
+        362.359,
+        362.345,
+        362.34,
+        362.331,
+        362.325,
+        362.316,
+        362.305,
+        362.298
       ],
-      "year_ago": 414.54,
-      "lat": 45.694767601,
-      "lng": 1.483647877,
+      "year_ago": 362.77,
+      "lat": 45.61658014,
+      "lng": 1.210581003,
       "color": "#ef4444"
     },
     {
-      "nom": "Les Cars",
+      "nom": "Magnac-Laval",
       "dept": "87",
-      "code_bss": "07114X0062/F2",
-      "current": 373.224,
+      "code_bss": "06401X0010/P1",
+      "current": 201.938,
       "history": [
-        373.404,
-        373.391,
-        373.377,
-        373.361,
-        373.351,
-        373.337,
-        373.325,
-        373.31,
-        373.296,
-        373.283,
-        373.268,
-        373.251,
-        373.237,
-        373.224
+        201.567,
+        201.931,
+        201.506,
+        201.897,
+        201.735,
+        201.905,
+        201.442,
+        201.933,
+        201.534,
+        201.953,
+        201.543,
+        201.957,
+        201.586,
+        201.938
       ],
-      "year_ago": 373.9,
-      "lat": 45.672597437,
-      "lng": 1.074559221,
+      "year_ago": 202.16,
+      "lat": 46.2153453,
+      "lng": 1.166927972,
       "color": "#ef4444"
     },
     {
-      "nom": "Nantiat",
+      "nom": "Nedde",
       "dept": "87",
-      "code_bss": "06642X0044/F2",
-      "current": 311.74,
+      "code_bss": "07134X0025/P1",
+      "current": 530.495,
       "history": [
-        311.81,
-        311.81,
-        311.8,
-        311.8,
-        311.79,
-        311.86,
-        311.79,
-        311.78,
-        311.78,
-        311.77,
-        311.76,
-        311.75,
-        311.75,
-        311.74
+        530.603,
+        530.626,
+        530.592,
+        530.612,
+        530.576,
+        530.587,
+        530.57,
+        530.573,
+        530.562,
+        530.537,
+        530.55,
+        530.517,
+        530.537,
+        530.495
       ],
-      "year_ago": 312.13,
-      "lat": 46.035082375,
-      "lng": 1.175314662,
+      "year_ago": 530.91,
+      "lat": 45.689540864,
+      "lng": 1.794456753,
       "color": "#ef4444"
     },
     {
       "nom": "Saint-Laurent-sur-Gorre",
       "dept": "87",
       "code_bss": "06877X0028/P1",
-      "current": 309.676,
+      "current": 309.66,
       "history": [
-        309.786,
-        309.777,
         309.763,
         309.76,
         309.747,
@@ -27467,9 +27387,11 @@
         309.706,
         309.693,
         309.685,
-        309.676
+        309.676,
+        309.666,
+        309.66
       ],
-      "year_ago": 310.12,
+      "year_ago": 310.11,
       "lat": 45.756636379,
       "lng": 0.940063716,
       "color": "#ef4444"
@@ -27478,10 +27400,8 @@
       "nom": "Javerdat",
       "dept": "87",
       "code_bss": "06638X0048/P1",
-      "current": 264.688,
+      "current": 264.681,
       "history": [
-        264.716,
-        264.718,
         264.714,
         264.713,
         264.711,
@@ -27493,21 +27413,99 @@
         264.702,
         264.695,
         264.696,
-        264.688
+        264.688,
+        264.687,
+        264.681
       ],
-      "year_ago": 264.88,
+      "year_ago": 264.87,
       "lat": 45.965038402,
       "lng": 0.989835182,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Nantiat",
+      "dept": "87",
+      "code_bss": "06642X0044/F2",
+      "current": 311.72,
+      "history": [
+        311.8,
+        311.8,
+        311.79,
+        311.86,
+        311.79,
+        311.78,
+        311.78,
+        311.77,
+        311.76,
+        311.75,
+        311.75,
+        311.74,
+        311.73,
+        311.72
+      ],
+      "year_ago": 312.09,
+      "lat": 46.035082375,
+      "lng": 1.175314662,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Les Cars",
+      "dept": "87",
+      "code_bss": "07114X0062/F2",
+      "current": 373.198,
+      "history": [
+        373.377,
+        373.361,
+        373.351,
+        373.337,
+        373.325,
+        373.31,
+        373.296,
+        373.283,
+        373.268,
+        373.251,
+        373.237,
+        373.224,
+        373.21,
+        373.198
+      ],
+      "year_ago": 373.88,
+      "lat": 45.672597437,
+      "lng": 1.074559221,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Saint-Bonnet-Briance",
+      "dept": "87",
+      "code_bss": "07131X0019/P1",
+      "current": 413.916,
+      "history": [
+        414.083,
+        414.066,
+        414.059,
+        414.044,
+        414.033,
+        414.017,
+        414.009,
+        413.994,
+        413.983,
+        413.967,
+        413.959,
+        413.943,
+        413.93,
+        413.916
+      ],
+      "year_ago": 414.55,
+      "lat": 45.694767601,
+      "lng": 1.483647877,
       "color": "#ef4444"
     },
     {
       "nom": "Couzeix",
       "dept": "87",
       "code_bss": "06882X0214/P2",
-      "current": 391.901,
+      "current": 391.863,
       "history": [
-        392.143,
-        392.117,
         392.105,
         392.082,
         392.067,
@@ -27519,9 +27517,11 @@
         391.961,
         391.94,
         391.924,
-        391.901
+        391.901,
+        391.884,
+        391.863
       ],
-      "year_ago": 392.8,
+      "year_ago": 392.77,
       "lat": 45.895586525,
       "lng": 1.220471071,
       "color": "#ef4444"
@@ -27530,10 +27530,8 @@
       "nom": "Javerdat",
       "dept": "87",
       "code_bss": "06638X0049/P2",
-      "current": 269.322,
+      "current": 269.311,
       "history": [
-        269.359,
-        269.368,
         269.349,
         269.366,
         269.346,
@@ -27545,9 +27543,11 @@
         269.344,
         269.334,
         269.339,
-        269.322
+        269.322,
+        269.329,
+        269.311
       ],
-      "year_ago": 269.68,
+      "year_ago": 269.57,
       "lat": 45.965165111,
       "lng": 0.989896583,
       "color": "#ef4444"
@@ -27555,9 +27555,9 @@
   ],
   "air": [
     {
-      "zone": "Videix",
+      "zone": "Le Buis",
       "dept": "87",
-      "date": "2026-07-22",
+      "date": "2026-07-23",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -27591,45 +27591,9 @@
       }
     },
     {
-      "zone": "Saint-Mathieu",
+      "zone": "Les Grands-Chézeaux",
       "dept": "87",
-      "date": "2026-07-22",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Nouvelle-Aquitaine",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Laurière",
-      "dept": "87",
-      "date": "2026-07-22",
+      "date": "2026-07-23",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -27663,9 +27627,9 @@
       }
     },
     {
-      "zone": "Blond",
+      "zone": "Tersannes",
       "dept": "87",
-      "date": "2026-07-22",
+      "date": "2026-07-23",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -27687,9 +27651,9 @@
           "color": "#10b981"
         },
         "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "SO₂": {
           "indice": 0,
@@ -27699,9 +27663,45 @@
       }
     },
     {
-      "zone": "Les Billanges",
+      "zone": "Lussac-les-Églises",
       "dept": "87",
-      "date": "2026-07-22",
+      "date": "2026-07-23",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Nouvelle-Aquitaine",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Balledent",
+      "dept": "87",
+      "date": "2026-07-23",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",

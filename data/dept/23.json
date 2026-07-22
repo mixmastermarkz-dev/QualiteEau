@@ -3,7 +3,7 @@
   "nom": "Creuse",
   "slug": "creuse",
   "region": "Nouvelle-Aquitaine",
-  "updated": "21/07/2026 à 13:44",
+  "updated": "22/07/2026 à 13:45",
   "score_eau": 94,
   "nb_communes": 256,
   "potable": [
@@ -1121,25 +1121,25 @@
       "insee": "23023",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité définies par le Code de la Santé Publique, pour les paramètres mesurés au moment du prélèvement.\t",
       "parametres": {
         "pH": {
           "valeur": 7.4,
           "unite": "unité pH",
           "color": "#10b981",
-          "date": "2023-02-22"
+          "date": "2020-02-11"
         },
         "Chlore": {
-          "valeur": 0.73,
+          "valeur": 0.29,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2023-02-22"
+          "date": "2020-02-11"
         },
         "Bactériologie": {
-          "valeur": "<1",
+          "valeur": 0.0,
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2023-02-22"
+          "date": "2020-02-11"
         }
       },
       "score": 100,
@@ -1614,21 +1614,21 @@
           "date": "2026-03-05"
         },
         "Pesticides": {
-          "valeur": "<SEUIL",
+          "valeur": 1.831,
           "unite": "µg/L",
-          "color": "#10b981",
-          "date": "2023-10-10"
+          "color": "#ef4444",
+          "date": "2020-05-06"
         },
         "THM": {
-          "valeur": 6.0,
+          "valeur": 2.54,
           "unite": "µg/L",
           "color": "#10b981",
-          "date": "2023-10-10"
+          "date": "2020-05-06"
         }
       },
-      "score": 93,
-      "score_color": "#10b981",
-      "score_label": "Bonne"
+      "score": 79,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
     },
     {
       "nom": "BROUSSE",
@@ -3379,9 +3379,9 @@
           "date": "2026-03-19"
         },
         "pH": {
-          "valeur": 6.4,
+          "valeur": 6.9,
           "unite": "unité pH",
-          "color": "#ef4444",
+          "color": "#f59e0b",
           "date": "2026-03-19"
         },
         "Chlore": {
@@ -3409,7 +3409,7 @@
           "date": "2020-11-26"
         }
       },
-      "score": 83,
+      "score": 92,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -3526,7 +3526,7 @@
           "date": "2026-03-19"
         },
         "pH": {
-          "valeur": 7.4,
+          "valeur": 7.1,
           "unite": "unité pH",
           "color": "#10b981",
           "date": "2026-03-19"
@@ -4548,7 +4548,7 @@
           "date": "2026-03-04"
         },
         "pH": {
-          "valeur": 8.0,
+          "valeur": 8.1,
           "unite": "unité pH",
           "color": "#10b981",
           "date": "2026-03-04"
@@ -8829,7 +8829,7 @@
           "date": "2026-04-02"
         },
         "pH": {
-          "valeur": 5.8,
+          "valeur": 5.7,
           "unite": "unité pH",
           "color": "#ef4444",
           "date": "2026-04-02"
@@ -8884,7 +8884,7 @@
           "date": "2026-02-10"
         },
         "pH": {
-          "valeur": 8.1,
+          "valeur": 7.5,
           "unite": "unité pH",
           "color": "#10b981",
           "date": "2026-02-10"
@@ -11893,7 +11893,7 @@
           "date": "2026-03-23"
         },
         "pH": {
-          "valeur": 6.2,
+          "valeur": 6.1,
           "unite": "unité pH",
           "color": "#ef4444",
           "date": "2026-03-23"
@@ -23897,91 +23897,11 @@
   ],
   "nappes": [
     {
-      "nom": "Gouzon",
-      "dept": "23",
-      "code_bss": "06432X0061/P1",
-      "current": 368.917,
-      "history": [
-        368.934,
-        368.928,
-        368.924,
-        368.921,
-        368.92,
-        368.931,
-        368.932,
-        368.933,
-        368.935,
-        368.93,
-        368.933,
-        368.924,
-        368.925,
-        368.917
-      ],
-      "year_ago": 369.12,
-      "lat": 46.201419569,
-      "lng": 2.278985176,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Vallière",
-      "dept": "23",
-      "code_bss": "06667X0006/P1",
-      "current": 565.746,
-      "history": [
-        565.797,
-        565.792,
-        565.787,
-        565.783,
-        565.779,
-        565.775,
-        565.771,
-        565.768,
-        565.765,
-        565.761,
-        565.757,
-        565.753,
-        565.75,
-        565.746
-      ],
-      "year_ago": 565.98,
-      "lat": 45.904671276,
-      "lng": 2.028863194,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Auzances",
-      "dept": "23",
-      "code_bss": "06674X0003/P1",
-      "current": 569.221,
-      "history": [
-        569.13,
-        569.118,
-        569.104,
-        569.095,
-        569.083,
-        569.103,
-        569.155,
-        569.197,
-        569.221,
-        569.237,
-        569.239,
-        569.234,
-        569.229,
-        569.221
-      ],
-      "year_ago": 569.4,
-      "lat": 46.034556704,
-      "lng": 2.501192845,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Sainte-Feyre",
       "dept": "23",
       "code_bss": "06426X0015/P1",
-      "current": 416.654,
+      "current": 416.639,
       "history": [
-        416.489,
-        416.585,
         416.518,
         416.594,
         416.486,
@@ -23993,11 +23913,65 @@
         416.619,
         416.678,
         416.592,
-        416.654
+        416.654,
+        416.564,
+        416.639
       ],
-      "year_ago": 416.88,
+      "year_ago": 416.89,
       "lat": 46.15163885,
       "lng": 1.912331208,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Gouzon",
+      "dept": "23",
+      "code_bss": "06432X0061/P1",
+      "current": 368.906,
+      "history": [
+        368.924,
+        368.921,
+        368.92,
+        368.931,
+        368.932,
+        368.933,
+        368.935,
+        368.93,
+        368.933,
+        368.924,
+        368.925,
+        368.917,
+        368.915,
+        368.906
+      ],
+      "year_ago": 369.11,
+      "lat": 46.201419569,
+      "lng": 2.278985176,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Auzances",
+      "dept": "23",
+      "code_bss": "06674X0003/P1",
+      "current": 569.195,
+      "history": [
+        569.104,
+        569.095,
+        569.083,
+        569.103,
+        569.155,
+        569.197,
+        569.221,
+        569.237,
+        569.239,
+        569.234,
+        569.229,
+        569.221,
+        569.208,
+        569.195
+      ],
+      "year_ago": 569.38,
+      "lat": 46.034556704,
+      "lng": 2.501192845,
       "color": "#ef4444"
     },
     {
@@ -24021,71 +23995,43 @@
         379.85,
         379.844
       ],
-      "year_ago": 379.92,
+      "year_ago": 379.91,
       "lat": 46.156903752,
       "lng": 1.646345884,
       "color": "#ef4444"
     },
     {
-      "nom": "Saint-Junien-la-Bregère",
+      "nom": "Vallière",
       "dept": "23",
-      "code_bss": "06894X0018/P1",
-      "current": 567.273,
+      "code_bss": "06667X0006/P1",
+      "current": 565.736,
       "history": [
-        567.327,
-        567.324,
-        567.308,
-        567.306,
-        567.302,
-        567.3,
-        567.298,
-        567.304,
-        567.308,
-        567.304,
-        567.296,
-        567.289,
-        567.285,
-        567.273
+        565.787,
+        565.783,
+        565.779,
+        565.775,
+        565.771,
+        565.768,
+        565.765,
+        565.761,
+        565.757,
+        565.753,
+        565.75,
+        565.746,
+        565.741,
+        565.736
       ],
-      "year_ago": 567.48,
-      "lat": 45.893207171,
-      "lng": 1.75359489,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Saint-Agnant-de-Versillat",
-      "dept": "23",
-      "code_bss": "06165X0014/F22",
-      "current": 343.457,
-      "history": [
-        343.535,
-        343.527,
-        343.529,
-        343.523,
-        343.519,
-        343.513,
-        343.505,
-        343.501,
-        343.494,
-        343.486,
-        343.478,
-        343.472,
-        343.465,
-        343.457
-      ],
-      "year_ago": 343.78,
-      "lat": 46.292752977,
-      "lng": 1.492061327,
+      "year_ago": 565.97,
+      "lat": 45.904671276,
+      "lng": 2.028863194,
       "color": "#ef4444"
     },
     {
       "nom": "Bord-Saint-Georges",
       "dept": "23",
       "code_bss": "06432X0059/P1",
-      "current": 443.362,
+      "current": 443.342,
       "history": [
-        443.459,
-        443.455,
         443.444,
         443.437,
         443.431,
@@ -24097,47 +24043,73 @@
         443.392,
         443.382,
         443.37,
-        443.362
+        443.362,
+        443.349,
+        443.342
       ],
-      "year_ago": 443.91,
+      "year_ago": 443.87,
       "lat": 46.253649078,
       "lng": 2.307332911,
       "color": "#ef4444"
     },
     {
-      "nom": "Bord-Saint-Georges",
+      "nom": "Saint-Agnant-de-Versillat",
       "dept": "23",
-      "code_bss": "06432X0060/P2",
-      "current": 443.524,
+      "code_bss": "06165X0014/F22",
+      "current": 343.445,
       "history": [
-        443.618,
-        443.612,
-        443.605,
-        443.601,
-        443.594,
-        443.595,
-        443.583,
-        443.587,
-        443.583,
-        443.572,
-        443.553,
-        443.546,
-        443.534,
-        443.524
+        343.529,
+        343.523,
+        343.519,
+        343.513,
+        343.505,
+        343.501,
+        343.494,
+        343.486,
+        343.478,
+        343.472,
+        343.465,
+        343.457,
+        343.449,
+        343.445
       ],
-      "year_ago": 444.06,
-      "lat": 46.253613086,
-      "lng": 2.307319961,
+      "year_ago": 343.76,
+      "lat": 46.292752977,
+      "lng": 1.492061327,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Saint-Junien-la-Bregère",
+      "dept": "23",
+      "code_bss": "06894X0018/P1",
+      "current": 567.254,
+      "history": [
+        567.308,
+        567.306,
+        567.302,
+        567.3,
+        567.298,
+        567.304,
+        567.308,
+        567.304,
+        567.296,
+        567.289,
+        567.285,
+        567.273,
+        567.26,
+        567.254
+      ],
+      "year_ago": 567.51,
+      "lat": 45.893207171,
+      "lng": 1.75359489,
       "color": "#ef4444"
     },
     {
       "nom": "Le Grand-Bourg",
       "dept": "23",
       "code_bss": "06417X0015/P2",
-      "current": 380.348,
+      "current": 380.345,
       "history": [
-        380.351,
-        380.35,
         380.35,
         380.349,
         380.348,
@@ -24149,11 +24121,91 @@
         380.349,
         380.347,
         380.347,
-        380.348
+        380.348,
+        380.345,
+        380.345
       ],
       "year_ago": 380.46,
       "lat": 46.157047303,
       "lng": 1.646279333,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Bord-Saint-Georges",
+      "dept": "23",
+      "code_bss": "06432X0060/P2",
+      "current": 443.506,
+      "history": [
+        443.605,
+        443.601,
+        443.594,
+        443.595,
+        443.583,
+        443.587,
+        443.583,
+        443.572,
+        443.553,
+        443.546,
+        443.534,
+        443.524,
+        443.506,
+        443.506
+      ],
+      "year_ago": 444.02,
+      "lat": 46.253613086,
+      "lng": 2.307319961,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Aubusson",
+      "dept": "23",
+      "code_bss": "06668X0007/F3",
+      "current": 553.499,
+      "history": [
+        553.635,
+        553.613,
+        553.563,
+        553.648,
+        553.607,
+        553.561,
+        553.565,
+        553.594,
+        553.566,
+        553.557,
+        553.481,
+        553.549,
+        553.499,
+        553.499
+      ],
+      "year_ago": 554.5,
+      "lat": 45.938816952,
+      "lng": 2.13764895,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Saint-Agnant-de-Versillat",
+      "dept": "23",
+      "code_bss": "06165X0008/F19",
+      "current": 360.283,
+      "history": [
+        360.321,
+        360.319,
+        360.316,
+        360.314,
+        360.31,
+        360.311,
+        360.304,
+        360.3,
+        360.299,
+        360.296,
+        360.292,
+        360.289,
+        360.285,
+        360.283
+      ],
+      "year_ago": 360.41,
+      "lat": 46.322691669,
+      "lng": 1.495025167,
       "color": "#ef4444"
     },
     {
@@ -24177,71 +24229,17 @@
         331.58,
         331.59
       ],
-      "year_ago": 331.75,
+      "year_ago": 331.73,
       "lat": 46.369742099,
       "lng": 1.531341208,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Saint-Agnant-de-Versillat",
-      "dept": "23",
-      "code_bss": "06165X0008/F19",
-      "current": 360.289,
-      "history": [
-        360.33,
-        360.325,
-        360.321,
-        360.319,
-        360.316,
-        360.314,
-        360.31,
-        360.311,
-        360.304,
-        360.3,
-        360.299,
-        360.296,
-        360.292,
-        360.289
-      ],
-      "year_ago": 360.42,
-      "lat": 46.322691669,
-      "lng": 1.495025167,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Aubusson",
-      "dept": "23",
-      "code_bss": "06668X0007/F3",
-      "current": 553.549,
-      "history": [
-        553.561,
-        553.659,
-        553.635,
-        553.613,
-        553.563,
-        553.648,
-        553.607,
-        553.561,
-        553.565,
-        553.594,
-        553.566,
-        553.557,
-        553.481,
-        553.549
-      ],
-      "year_ago": 554.52,
-      "lat": 45.938816952,
-      "lng": 2.13764895,
       "color": "#ef4444"
     },
     {
       "nom": "Bazelat",
       "dept": "23",
       "code_bss": "BSS004BMZQ/X",
-      "current": 337.057,
+      "current": 337.028,
       "history": [
-        337.138,
-        337.14,
         337.125,
         337.134,
         337.122,
@@ -24253,195 +24251,16 @@
         337.074,
         337.066,
         337.059,
-        337.057
+        337.057,
+        337.047,
+        337.028
       ],
-      "year_ago": 337.26,
+      "year_ago": 337.25,
       "lat": 46.360036113,
       "lng": 1.540807042,
       "color": "#ef4444"
     }
   ],
-  "air": [
-    {
-      "zone": "Bénévent-l'Abbaye",
-      "dept": "23",
-      "date": "2026-07-22",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Nouvelle-Aquitaine",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Arrènes",
-      "dept": "23",
-      "date": "2026-07-22",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Nouvelle-Aquitaine",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Les Mars",
-      "dept": "23",
-      "date": "2026-07-22",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Nouvelle-Aquitaine",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Arfeuille-Châtain",
-      "dept": "23",
-      "date": "2026-07-22",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Nouvelle-Aquitaine",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Brousse",
-      "dept": "23",
-      "date": "2026-07-22",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Nouvelle-Aquitaine",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    }
-  ],
+  "air": [],
   "pollen": []
 }

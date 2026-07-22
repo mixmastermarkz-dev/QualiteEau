@@ -3,7 +3,7 @@
   "nom": "Corrèze",
   "slug": "correze",
   "region": "Nouvelle-Aquitaine",
-  "updated": "21/07/2026 à 13:44",
+  "updated": "22/07/2026 à 13:45",
   "score_eau": 95,
   "nb_communes": 283,
   "potable": [
@@ -3210,6 +3210,12 @@
           "unite": "n/(100mL)",
           "color": "#10b981",
           "date": "2025-04-03"
+        },
+        "Plomb": {
+          "valeur": 0.7,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2021-07-22"
         }
       },
       "score": 100,
@@ -4956,12 +4962,6 @@
           "color": "#10b981",
           "date": "2025-12-17"
         },
-        "Plomb": {
-          "valeur": 0.3,
-          "unite": "µg/L",
-          "color": "#10b981",
-          "date": "2021-05-19"
-        },
         "THM": {
           "valeur": 34.16,
           "unite": "µg/L",
@@ -5126,6 +5126,12 @@
           "unite": "°f",
           "color": "#10b981",
           "date": "2026-05-20"
+        },
+        "Pesticides": {
+          "valeur": "<SEUIL",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2022-10-20"
         }
       },
       "score": 100,
@@ -5304,12 +5310,6 @@
           "unite": "°f",
           "color": "#10b981",
           "date": "2026-03-03"
-        },
-        "Plomb": {
-          "valeur": 0.4,
-          "unite": "µg/L",
-          "color": "#10b981",
-          "date": "2021-09-27"
         },
         "THM": {
           "valeur": 14.08,
@@ -5545,10 +5545,10 @@
           "date": "2025-10-21"
         },
         "THM": {
-          "valeur": "<SEUIL",
+          "valeur": 2.21,
           "unite": "µg/L",
           "color": "#10b981",
-          "date": "2020-07-09"
+          "date": "2022-12-05"
         }
       },
       "score": 88,
@@ -5819,12 +5819,6 @@
           "unite": "n/(100mL)",
           "color": "#10b981",
           "date": "2025-08-07"
-        },
-        "Plomb": {
-          "valeur": 1.1,
-          "unite": "µg/L",
-          "color": "#10b981",
-          "date": "2021-07-05"
         },
         "THM": {
           "valeur": 8.7,
@@ -6145,10 +6139,10 @@
           "date": "2026-05-13"
         },
         "THM": {
-          "valeur": 6.7,
+          "valeur": 45.157,
           "unite": "µg/L",
           "color": "#10b981",
-          "date": "2019-01-22"
+          "date": "2021-06-08"
         }
       },
       "score": 100,
@@ -8777,12 +8771,6 @@
           "color": "#10b981",
           "date": "2026-02-11"
         },
-        "Plomb": {
-          "valeur": 5.2,
-          "unite": "µg/L",
-          "color": "#f59e0b",
-          "date": "2021-07-15"
-        },
         "THM": {
           "valeur": 19.61,
           "unite": "µg/L",
@@ -8790,7 +8778,7 @@
           "date": "2026-02-11"
         }
       },
-      "score": 93,
+      "score": 100,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -10650,31 +10638,25 @@
       "insee": "19223",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Examen conforme aux limites et références de qualité fixées par le Code de la Santé Publique (Art. R 1321-1 à R 1321-68) pour les paramètres mesurés.",
+      "conclusion": "Examen conforme aux limites et références de qualité fixées par le Code de la Santé Publique (Art. R 1321-1 à R 1321-68) pour les paramètres mesurés- Teneur en chlore élevée -",
       "parametres": {
         "pH": {
-          "valeur": 8.0,
+          "valeur": 7.8,
           "unite": "unité pH",
           "color": "#10b981",
-          "date": "2023-10-05"
+          "date": "2020-11-19"
         },
         "Chlore": {
-          "valeur": 0.16,
+          "valeur": 0.5,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2023-10-05"
+          "date": "2020-11-19"
         },
         "Bactériologie": {
           "valeur": 0.0,
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2023-10-05"
-        },
-        "THM": {
-          "valeur": 4.89,
-          "unite": "µg/L",
-          "color": "#10b981",
-          "date": "2021-01-20"
+          "date": "2020-11-19"
         }
       },
       "score": 100,
@@ -10938,6 +10920,18 @@
           "unite": "°f",
           "color": "#10b981",
           "date": "2026-05-11"
+        },
+        "Plomb": {
+          "valeur": 0.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2021-08-03"
+        },
+        "THM": {
+          "valeur": 28.02,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2021-08-04"
         }
       },
       "score": 100,
@@ -10950,31 +10944,31 @@
       "insee": "19230",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Examen conforme aux limites et références de qualité fixées par le Code de la Santé Publique (Art. R 1321-1 à R 1321-68) pour les paramètres mesurés.",
+      "conclusion": "Examen conforme aux limites et références de qualité fixées par le Code de la Santé Publique (Art. R 1321-1 à R 1321-68) pour les paramètres mesurés- Teneur en chlore élevée -",
       "parametres": {
         "pH": {
-          "valeur": 7.9,
+          "valeur": 7.8,
           "unite": "unité pH",
           "color": "#10b981",
-          "date": "2023-11-09"
+          "date": "2020-12-02"
         },
         "Chlore": {
-          "valeur": 0.2,
+          "valeur": 0.45,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2023-11-09"
+          "date": "2020-12-02"
         },
         "Bactériologie": {
           "valeur": 0.0,
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2023-11-09"
+          "date": "2020-12-02"
         },
         "THM": {
-          "valeur": 2.21,
+          "valeur": 3.66,
           "unite": "µg/L",
           "color": "#10b981",
-          "date": "2022-12-05"
+          "date": "2019-05-22"
         }
       },
       "score": 100,
@@ -12538,12 +12532,6 @@
           "color": "#10b981",
           "date": "2026-01-29"
         },
-        "Plomb": {
-          "valeur": "<0,2",
-          "unite": "µg/L",
-          "color": "#10b981",
-          "date": "2021-07-13"
-        },
         "THM": {
           "valeur": 28.7,
           "unite": "µg/L",
@@ -12551,7 +12539,7 @@
           "date": "2026-01-29"
         }
       },
-      "score": 93,
+      "score": 92,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -13970,12 +13958,6 @@
           "unite": "n/(100mL)",
           "color": "#10b981",
           "date": "2026-02-13"
-        },
-        "Plomb": {
-          "valeur": 0.8,
-          "unite": "µg/L",
-          "color": "#10b981",
-          "date": "2021-05-05"
         },
         "THM": {
           "valeur": 29.67,
@@ -47506,39 +47488,11 @@
   ],
   "nappes": [
     {
-      "nom": "Chauffour-sur-Vell",
-      "dept": "19",
-      "code_bss": "07857X0381/P1",
-      "current": 128.56,
-      "history": [
-        128.68,
-        128.58,
-        128.64,
-        128.6,
-        128.62,
-        128.62,
-        128.62,
-        128.61,
-        128.53,
-        128.59,
-        128.61,
-        128.59,
-        128.6,
-        128.56
-      ],
-      "year_ago": 129.14,
-      "lat": 45.019989282,
-      "lng": 1.665009351,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Salon-la-Tour",
       "dept": "19",
       "code_bss": "07372X0048/F10",
-      "current": 389.73,
+      "current": 389.71,
       "history": [
-        389.78,
-        389.81,
         389.75,
         389.79,
         389.76,
@@ -47550,47 +47504,47 @@
         389.75,
         389.74,
         389.75,
-        389.73
+        389.73,
+        389.74,
+        389.71
       ],
-      "year_ago": 389.91,
+      "year_ago": 389.9,
       "lat": 45.529763866,
       "lng": 1.538653482,
       "color": "#ef4444"
     },
     {
-      "nom": "Saint-Martial-de-Gimel",
+      "nom": "Chauffour-sur-Vell",
       "dept": "19",
-      "code_bss": "07621X0040/P1",
-      "current": 485.773,
+      "code_bss": "07857X0381/P1",
+      "current": 128.54,
       "history": [
-        485.913,
-        485.9,
-        485.888,
-        485.876,
-        485.868,
-        485.856,
-        485.846,
-        485.835,
-        485.827,
-        485.816,
-        485.806,
-        485.795,
-        485.785,
-        485.773
+        128.62,
+        128.62,
+        128.62,
+        128.61,
+        128.53,
+        128.59,
+        128.61,
+        128.59,
+        128.6,
+        128.56,
+        128.58,
+        128.56,
+        128.56,
+        128.54
       ],
-      "year_ago": 486.17,
-      "lat": 45.271475367,
-      "lng": 1.865343086,
+      "year_ago": 129.14,
+      "lat": 45.019989282,
+      "lng": 1.665009351,
       "color": "#ef4444"
     },
     {
       "nom": "Donzenac",
       "dept": "19",
       "code_bss": "07616X0141/P1",
-      "current": 336.383,
+      "current": 336.344,
       "history": [
-        336.507,
-        336.49,
         336.545,
         336.543,
         336.528,
@@ -47602,63 +47556,91 @@
         336.443,
         336.421,
         336.404,
-        336.383
+        336.383,
+        336.367,
+        336.344
       ],
-      "year_ago": 336.99,
+      "year_ago": 337.01,
       "lat": 45.250492051,
       "lng": 1.533373139,
       "color": "#ef4444"
     },
     {
-      "nom": "Malemort",
+      "nom": "Saint-Martial-de-Gimel",
       "dept": "19",
-      "code_bss": "07852X0072/P1",
-      "current": 115.2,
+      "code_bss": "07621X0040/P1",
+      "current": 485.753,
       "history": [
-        115.26,
-        115.25,
-        115.25,
-        115.24,
-        115.24,
-        115.23,
-        115.23,
-        115.22,
-        115.22,
-        115.21,
-        115.21,
-        115.21,
-        115.2,
-        115.2
+        485.888,
+        485.876,
+        485.868,
+        485.856,
+        485.846,
+        485.835,
+        485.827,
+        485.816,
+        485.806,
+        485.795,
+        485.785,
+        485.773,
+        485.762,
+        485.753
       ],
-      "year_ago": 115.57,
-      "lat": 45.172484699,
-      "lng": 1.579128779,
+      "year_ago": 486.15,
+      "lat": 45.271475367,
+      "lng": 1.865343086,
       "color": "#ef4444"
     },
     {
-      "nom": "Allassac",
+      "nom": "Saint-Germain-Lavolps",
       "dept": "19",
-      "code_bss": "07615X0043/P1",
-      "current": 109,
+      "code_bss": "07155X0016/P1",
+      "current": 759.294,
       "history": [
-        109.06,
-        109.09,
-        109.04,
-        109.07,
-        109.04,
-        109.06,
-        109.03,
-        109.05,
-        109.01,
-        109.04,
-        109.01,
-        109.02,
-        108.99,
-        109
+        759.333,
+        759.344,
+        759.33,
+        759.346,
+        759.336,
+        759.345,
+        759.327,
+        759.335,
+        759.313,
+        759.319,
+        759.301,
+        759.306,
+        759.288,
+        759.294
       ],
-      "year_ago": 109.3,
-      "lat": 45.2556214,
-      "lng": 1.459741395,
+      "year_ago": 759.39,
+      "lat": 45.600404292,
+      "lng": 2.211360959,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Maussac",
+      "dept": "19",
+      "code_bss": "07384X0043/P1",
+      "current": 602.63,
+      "history": [
+        602.668,
+        602.694,
+        602.662,
+        602.692,
+        602.66,
+        602.672,
+        602.664,
+        602.668,
+        602.662,
+        602.656,
+        602.666,
+        602.642,
+        602.646,
+        602.63
+      ],
+      "year_ago": 602.76,
+      "lat": 45.470745471,
+      "lng": 2.140250069,
       "color": "#ef4444"
     },
     {
@@ -47688,91 +47670,37 @@
       "color": "#ef4444"
     },
     {
-      "nom": "Maussac",
+      "nom": "Allassac",
       "dept": "19",
-      "code_bss": "07384X0043/P1",
-      "current": 602.642,
+      "code_bss": "07615X0043/P1",
+      "current": 108.99,
       "history": [
-        602.682,
-        602.698,
-        602.668,
-        602.694,
-        602.662,
-        602.692,
-        602.66,
-        602.672,
-        602.664,
-        602.668,
-        602.662,
-        602.656,
-        602.666,
-        602.642
+        109.04,
+        109.07,
+        109.04,
+        109.06,
+        109.03,
+        109.05,
+        109.01,
+        109.04,
+        109.01,
+        109.02,
+        108.99,
+        109,
+        108.98,
+        108.99
       ],
-      "year_ago": 602.77,
-      "lat": 45.470745471,
-      "lng": 2.140250069,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Saint-Germain-Lavolps",
-      "dept": "19",
-      "code_bss": "07155X0016/P1",
-      "current": 759.306,
-      "history": [
-        759.313,
-        759.32,
-        759.333,
-        759.344,
-        759.33,
-        759.346,
-        759.336,
-        759.345,
-        759.327,
-        759.335,
-        759.313,
-        759.319,
-        759.301,
-        759.306
-      ],
-      "year_ago": 759.4,
-      "lat": 45.600404292,
-      "lng": 2.211360959,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Saint-Merd-les-Oussines",
-      "dept": "19",
-      "code_bss": "07143X0017/P1",
-      "current": 827.802,
-      "history": [
-        827.824,
-        827.819,
-        827.817,
-        827.817,
-        827.814,
-        827.816,
-        827.815,
-        827.813,
-        827.813,
-        827.812,
-        827.81,
-        827.808,
-        827.803,
-        827.802
-      ],
-      "year_ago": 827.95,
-      "lat": 45.637829918,
-      "lng": 2.043334282,
+      "year_ago": 109.29,
+      "lat": 45.2556214,
+      "lng": 1.459741395,
       "color": "#ef4444"
     },
     {
       "nom": "Astaillac",
       "dept": "19",
       "code_bss": "08101X0227/P1",
-      "current": 134.321,
+      "current": 134.312,
       "history": [
-        134.37,
-        134.366,
         134.362,
         134.358,
         134.356,
@@ -47784,21 +47712,73 @@
         134.33,
         134.326,
         134.322,
-        134.321
+        134.321,
+        134.314,
+        134.312
       ],
-      "year_ago": 134.48,
+      "year_ago": 134.47,
       "lat": 44.949940679,
       "lng": 1.844678072,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Saint-Merd-les-Oussines",
+      "dept": "19",
+      "code_bss": "07143X0017/P1",
+      "current": 827.793,
+      "history": [
+        827.817,
+        827.817,
+        827.814,
+        827.816,
+        827.815,
+        827.813,
+        827.813,
+        827.812,
+        827.81,
+        827.808,
+        827.803,
+        827.802,
+        827.798,
+        827.793
+      ],
+      "year_ago": 827.95,
+      "lat": 45.637829918,
+      "lng": 2.043334282,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Saint-Merd-les-Oussines",
+      "dept": "19",
+      "code_bss": "07143X0018/P2",
+      "current": 828.5,
+      "history": [
+        828.52,
+        828.53,
+        828.54,
+        828.54,
+        828.55,
+        828.55,
+        828.54,
+        828.54,
+        828.53,
+        828.53,
+        828.52,
+        828.51,
+        828.5,
+        828.5
+      ],
+      "year_ago": 828.71,
+      "lat": 45.637803029,
+      "lng": 2.0433729,
       "color": "#ef4444"
     },
     {
       "nom": "Lagleygeolle",
       "dept": "19",
       "code_bss": "07853X0027/P1",
-      "current": 348.634,
+      "current": 348.492,
       "history": [
-        348.762,
-        348.787,
         348.737,
         348.693,
         348.793,
@@ -47810,47 +47790,21 @@
         348.69,
         348.637,
         348.64,
-        348.634
+        348.634,
+        348.54,
+        348.492
       ],
-      "year_ago": 349.51,
+      "year_ago": 349.25,
       "lat": 45.093613954,
       "lng": 1.701614114,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Saint-Merd-les-Oussines",
-      "dept": "19",
-      "code_bss": "07143X0018/P2",
-      "current": 828.51,
-      "history": [
-        828.52,
-        828.52,
-        828.52,
-        828.53,
-        828.54,
-        828.54,
-        828.55,
-        828.55,
-        828.54,
-        828.54,
-        828.53,
-        828.53,
-        828.52,
-        828.51
-      ],
-      "year_ago": 828.69,
-      "lat": 45.637803029,
-      "lng": 2.0433729,
       "color": "#ef4444"
     },
     {
       "nom": "Égletons",
       "dept": "19",
       "code_bss": "07387X0042/F9",
-      "current": 657.814,
+      "current": 657.806,
       "history": [
-        657.826,
-        657.831,
         657.83,
         657.833,
         657.822,
@@ -47862,195 +47816,42 @@
         657.818,
         657.822,
         657.811,
-        657.814
+        657.814,
+        657.802,
+        657.806
       ],
       "year_ago": 658.08,
       "lat": 45.43142107,
       "lng": 2.027216442,
       "color": "#ef4444"
+    },
+    {
+      "nom": "Malemort",
+      "dept": "19",
+      "code_bss": "07852X0072/P1",
+      "current": 115.19,
+      "history": [
+        115.25,
+        115.24,
+        115.24,
+        115.23,
+        115.23,
+        115.22,
+        115.22,
+        115.21,
+        115.21,
+        115.21,
+        115.2,
+        115.2,
+        115.2,
+        115.19
+      ],
+      "year_ago": 115.55,
+      "lat": 45.172484699,
+      "lng": 1.579128779,
+      "color": "#ef4444"
     }
   ],
-  "air": [
-    {
-      "zone": "Saillac",
-      "dept": "19",
-      "date": "2026-07-22",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Nouvelle-Aquitaine",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Chirac-Bellevue",
-      "dept": "19",
-      "date": "2026-07-22",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Nouvelle-Aquitaine",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Soudaine-Lavinadière",
-      "dept": "19",
-      "date": "2026-07-22",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Nouvelle-Aquitaine",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Julien-le-Vendômois",
-      "dept": "19",
-      "date": "2026-07-22",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Nouvelle-Aquitaine",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Louignac",
-      "dept": "19",
-      "date": "2026-07-22",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Nouvelle-Aquitaine",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    }
-  ],
+  "air": [],
   "pollen": []
 }

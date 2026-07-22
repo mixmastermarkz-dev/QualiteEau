@@ -3,7 +3,7 @@
   "nom": "Somme",
   "slug": "somme",
   "region": "Hauts-de-France",
-  "updated": "21/07/2026 à 13:44",
+  "updated": "22/07/2026 à 13:45",
   "score_eau": 90,
   "nb_communes": 776,
   "potable": [
@@ -6454,11 +6454,29 @@
           "unite": "n/(100mL)",
           "color": "#10b981",
           "date": "2025-06-30"
+        },
+        "Calcaire (TH)": {
+          "valeur": 35.4,
+          "unite": "°f",
+          "color": "#f59e0b",
+          "date": "2022-03-29"
+        },
+        "Pesticides": {
+          "valeur": 4.724,
+          "unite": "µg/L",
+          "color": "#ef4444",
+          "date": "2022-10-12"
+        },
+        "THM": {
+          "valeur": "<1,0",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2022-03-29"
         }
       },
-      "score": 88,
-      "score_color": "#10b981",
-      "score_label": "Bonne"
+      "score": 71,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
     },
     {
       "nom": "BRIQUEMESNIL-FLOXICOURT",
@@ -6840,13 +6858,13 @@
       "insee": "80150",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité en vigueur mais non satisfaisante aux références de qualité pour le paramètre bactéries coliformes. Il est demandé de remédier à la situation de non- conformité constatée. En attendant, l'eau reste consommable.",
+      "conclusion": "Eau d’alimentation non conforme aux limites de qualité en vigueur pour les paramètres  pesticides Desphényl-Chloridazone, Méthyl-Desphényl- Chloridazone et total des pesticides analysés. Toutefois, cette eau est propre à la consommation humaine car la concentration des pesticides concernés reste inférieure aux valeurs sanitaires. Un contrôle renforcé est mis en place. Par ailleurs, cette eau est non conforme aux limites de qualité en vigueur pour le paramètre pesticide Chlorothalonil R471811 . Un prélèvement de recontrôle est programmé. Cette situation n'empêche pas la consommation de l'eau.",
       "parametres": {
         "Nitrates": {
-          "valeur": 46.5,
+          "valeur": 46.8,
           "unite": "mg/L",
           "color": "#f59e0b",
-          "date": "2022-09-26"
+          "date": "2023-10-02"
         },
         "pH": {
           "valeur": 7.1,
@@ -6867,22 +6885,22 @@
           "date": "2024-11-08"
         },
         "Calcaire (TH)": {
-          "valeur": 35.2,
+          "valeur": 35.4,
           "unite": "°f",
           "color": "#f59e0b",
-          "date": "2022-09-26"
+          "date": "2023-10-02"
         },
         "Pesticides": {
-          "valeur": 2.472,
+          "valeur": 3.642,
           "unite": "µg/L",
           "color": "#ef4444",
-          "date": "2022-09-26"
+          "date": "2023-10-02"
         },
         "THM": {
           "valeur": "<1,0",
           "unite": "µg/L",
           "color": "#10b981",
-          "date": "2021-07-12"
+          "date": "2023-03-20"
         }
       },
       "score": 71,
@@ -23093,8 +23111,14 @@
       "insee": "80536",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "conclusion": "Eau d’alimentation non conforme aux limites de qualité en vigueur pour le paramètre nitrates. Il est demandé de remédier à la situation de non-conformité constatée. En attendant, cette eau est déconseillée aux populations sensibles (femmes enceintes, nourrissons) pour des usages alimentaires.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 67.4,
+          "unite": "mg/L",
+          "color": "#ef4444",
+          "date": "2022-10-12"
+        },
         "pH": {
           "valeur": 7.4,
           "unite": "unité pH",
@@ -23112,11 +23136,17 @@
           "unite": "n/(100mL)",
           "color": "#10b981",
           "date": "2025-02-17"
+        },
+        "Pesticides": {
+          "valeur": 1.917,
+          "unite": "µg/L",
+          "color": "#ef4444",
+          "date": "2022-10-12"
         }
       },
-      "score": 100,
-      "score_color": "#10b981",
-      "score_label": "Bonne"
+      "score": 60,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
     },
     {
       "nom": "MESNIL-DOMQUEUR",
@@ -23575,6 +23605,12 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 48.8,
+          "unite": "mg/L",
+          "color": "#f59e0b",
+          "date": "2022-06-17"
+        },
         "pH": {
           "valeur": 7.4,
           "unite": "unité pH",
@@ -23592,11 +23628,29 @@
           "unite": "n/(100mL)",
           "color": "#10b981",
           "date": "2025-09-05"
+        },
+        "Calcaire (TH)": {
+          "valeur": 34.6,
+          "unite": "°f",
+          "color": "#f59e0b",
+          "date": "2022-06-17"
+        },
+        "Pesticides": {
+          "valeur": 0.584,
+          "unite": "µg/L",
+          "color": "#ef4444",
+          "date": "2022-08-24"
+        },
+        "THM": {
+          "valeur": 3.1,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2022-02-25"
         }
       },
-      "score": 100,
-      "score_color": "#10b981",
-      "score_label": "Bonne"
+      "score": 71,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
     },
     {
       "nom": "MIRVAUX",
@@ -27568,8 +27622,14 @@
       "insee": "80648",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Au vu des antécédents concernant le paramètre nitrates, la consommation de l'eau est déconseillée aux femmes enceintes et aux nourrissons. Un contrôle renforcé est mis en place.",
+      "conclusion": "Eau d’alimentation non conforme aux limites de qualité en vigueur pour le paramètre nitrates. Il est demandé de remédier à la situation de non-conformité constatée. En attendant, cette eau est déconseillée aux populations sensibles (femmes enceintes, nourrissons) pour des usages alimentaires.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 50.9,
+          "unite": "mg/L",
+          "color": "#ef4444",
+          "date": "2022-09-30"
+        },
         "pH": {
           "valeur": 7.3,
           "unite": "unité pH",
@@ -27587,11 +27647,29 @@
           "unite": "n/(100mL)",
           "color": "#10b981",
           "date": "2025-04-01"
+        },
+        "Calcaire (TH)": {
+          "valeur": 35.0,
+          "unite": "°f",
+          "color": "#f59e0b",
+          "date": "2022-09-30"
+        },
+        "Pesticides": {
+          "valeur": 0.244,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2022-09-30"
+        },
+        "THM": {
+          "valeur": 6.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2021-06-25"
         }
       },
-      "score": 100,
-      "score_color": "#10b981",
-      "score_label": "Bonne"
+      "score": 71,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
     },
     {
       "nom": "QUEND",
@@ -35046,22 +35124,22 @@
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
         "pH": {
-          "valeur": 7.3,
+          "valeur": 7.6,
           "unite": "unité pH",
           "color": "#10b981",
-          "date": "2023-12-18"
+          "date": "2020-12-04"
         },
         "Chlore": {
-          "valeur": 0.4,
+          "valeur": 0.2,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2023-12-18"
+          "date": "2020-12-04"
         },
         "Bactériologie": {
           "valeur": 0.0,
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2023-12-18"
+          "date": "2020-12-04"
         }
       },
       "score": 100,
@@ -50519,10 +50597,8 @@
       "nom": "Valines",
       "dept": "80",
       "code_bss": "00327X0059/P11",
-      "current": 57.192,
+      "current": 57.142,
       "history": [
-        57.504,
-        57.48,
         57.457,
         57.435,
         57.412,
@@ -50534,47 +50610,21 @@
         57.265,
         57.241,
         57.217,
-        57.192
+        57.192,
+        57.166,
+        57.142
       ],
-      "year_ago": 59.46,
+      "year_ago": 59.41,
       "lat": 50.084697357,
       "lng": 1.62846928,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Cardonnette",
-      "dept": "80",
-      "code_bss": "00463X0036/H1",
-      "current": 41.972,
-      "history": [
-        42.068,
-        42.06,
-        42.052,
-        42.046,
-        42.04,
-        42.028,
-        42.024,
-        42.014,
-        42.004,
-        41.998,
-        41.99,
-        41.984,
-        41.976,
-        41.972
-      ],
-      "year_ago": 43.13,
-      "lat": 49.950685924,
-      "lng": 2.359760371,
       "color": "#ef4444"
     },
     {
       "nom": "Essertaux",
       "dept": "80",
       "code_bss": "00625X0002/S1",
-      "current": 71.267,
+      "current": 71.257,
       "history": [
-        71.321,
-        71.313,
         71.313,
         71.309,
         71.313,
@@ -50586,47 +50636,21 @@
         71.285,
         71.278,
         71.278,
-        71.267
+        71.267,
+        71.264,
+        71.257
       ],
-      "year_ago": 72.24,
+      "year_ago": 72.28,
       "lat": 49.738897009,
       "lng": 2.241314629,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Le Translay",
-      "dept": "80",
-      "code_bss": "00443X0042/S1",
-      "current": 90.273,
-      "history": [
-        90.409,
-        90.402,
-        90.391,
-        90.382,
-        90.371,
-        90.363,
-        90.351,
-        90.34,
-        90.33,
-        90.317,
-        90.306,
-        90.296,
-        90.286,
-        90.273
-      ],
-      "year_ago": 96.55,
-      "lat": 49.970130742,
-      "lng": 1.676823707,
       "color": "#ef4444"
     },
     {
       "nom": "Tilloloy",
       "dept": "80",
       "code_bss": "00813X0043/S1",
-      "current": 78.002,
+      "current": 77.966,
       "history": [
-        78.236,
-        78.22,
         78.198,
         78.18,
         78.165,
@@ -50638,21 +50662,47 @@
         78.059,
         78.04,
         78.02,
-        78.002
+        78.002,
+        77.983,
+        77.966
       ],
-      "year_ago": 82.36,
+      "year_ago": 82.34,
       "lat": 49.640295106,
       "lng": 2.745794723,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Le Translay",
+      "dept": "80",
+      "code_bss": "00443X0042/S1",
+      "current": 90.251,
+      "history": [
+        90.391,
+        90.382,
+        90.371,
+        90.363,
+        90.351,
+        90.34,
+        90.33,
+        90.317,
+        90.306,
+        90.296,
+        90.286,
+        90.273,
+        90.262,
+        90.251
+      ],
+      "year_ago": 96.51,
+      "lat": 49.970130742,
+      "lng": 1.676823707,
       "color": "#ef4444"
     },
     {
       "nom": "Mareuil-Caubert",
       "dept": "80",
       "code_bss": "00335X0005/S1",
-      "current": 12.618,
+      "current": 12.614,
       "history": [
-        12.661,
-        12.657,
         12.65,
         12.65,
         12.652,
@@ -50664,73 +50714,21 @@
         12.63,
         12.625,
         12.622,
-        12.618
+        12.618,
+        12.615,
+        12.614
       ],
-      "year_ago": 13.27,
+      "year_ago": 13.26,
       "lat": 50.065023691,
       "lng": 1.80711066,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Hancourt",
-      "dept": "80",
-      "code_bss": "00487X0015/S1",
-      "current": 68.701,
-      "history": [
-        69.081,
-        69.05,
-        69.022,
-        68.989,
-        68.963,
-        68.936,
-        68.907,
-        68.877,
-        68.847,
-        68.815,
-        68.785,
-        68.751,
-        68.73,
-        68.701
-      ],
-      "year_ago": 73.76,
-      "lat": 49.903592241,
-      "lng": 3.072798223,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Neuvillette",
-      "dept": "80",
-      "code_bss": "00342X0025/S1",
-      "current": 97.064,
-      "history": [
-        97.149,
-        97.171,
-        97.141,
-        97.162,
-        97.131,
-        97.144,
-        97.1,
-        97.129,
-        97.085,
-        97.119,
-        97.06,
-        97.094,
-        97.046,
-        97.064
-      ],
-      "year_ago": 97.3,
-      "lat": 50.206478686,
-      "lng": 2.32373766,
       "color": "#ef4444"
     },
     {
       "nom": "Lignières-Châtelain",
       "dept": "80",
       "code_bss": "00611X0035/S1",
-      "current": 177.393,
+      "current": 177.373,
       "history": [
-        177.556,
-        177.543,
         177.53,
         177.517,
         177.506,
@@ -50742,47 +50740,73 @@
         177.429,
         177.414,
         177.404,
-        177.393
+        177.393,
+        177.381,
+        177.373
       ],
-      "year_ago": 181.12,
+      "year_ago": 181.1,
       "lat": 49.778633259,
       "lng": 1.86798788,
       "color": "#ef4444"
     },
     {
-      "nom": "Liancourt-Fosse",
+      "nom": "Hancourt",
       "dept": "80",
-      "code_bss": "00638X0116/S1",
-      "current": 71.657,
+      "code_bss": "00487X0015/S1",
+      "current": 68.654,
       "history": [
-        71.785,
-        71.772,
-        71.767,
-        71.759,
-        71.754,
-        71.743,
-        71.733,
-        71.718,
-        71.708,
-        71.695,
-        71.689,
-        71.676,
-        71.669,
-        71.657
+        69.022,
+        68.989,
+        68.963,
+        68.936,
+        68.907,
+        68.877,
+        68.847,
+        68.815,
+        68.785,
+        68.751,
+        68.73,
+        68.701,
+        68.679,
+        68.654
       ],
-      "year_ago": 72.84,
-      "lat": 49.757694884,
-      "lng": 2.814372334,
+      "year_ago": 73.74,
+      "lat": 49.903592241,
+      "lng": 3.072798223,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Neuvillette",
+      "dept": "80",
+      "code_bss": "00342X0025/S1",
+      "current": 97.072,
+      "history": [
+        97.141,
+        97.162,
+        97.131,
+        97.144,
+        97.1,
+        97.129,
+        97.085,
+        97.119,
+        97.06,
+        97.094,
+        97.046,
+        97.064,
+        97.031,
+        97.072
+      ],
+      "year_ago": 97.28,
+      "lat": 50.206478686,
+      "lng": 2.32373766,
       "color": "#ef4444"
     },
     {
       "nom": "Gapennes",
       "dept": "80",
       "code_bss": "00332X0007/S1",
-      "current": 49.503,
+      "current": 49.481,
       "history": [
-        49.669,
-        49.654,
         49.641,
         49.628,
         49.619,
@@ -50794,47 +50818,21 @@
         49.541,
         49.529,
         49.517,
-        49.503
+        49.503,
+        49.493,
+        49.481
       ],
-      "year_ago": 50.0,
+      "year_ago": 50.02,
       "lat": 50.18533202,
       "lng": 1.946938683,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Huppy",
-      "dept": "80",
-      "code_bss": "00444X0008/S1",
-      "current": 67.387,
-      "history": [
-        67.51,
-        67.498,
-        67.489,
-        67.478,
-        67.472,
-        67.461,
-        67.454,
-        67.444,
-        67.434,
-        67.424,
-        67.415,
-        67.403,
-        67.393,
-        67.387
-      ],
-      "year_ago": 70.3,
-      "lat": 50.01965431,
-      "lng": 1.757926508,
       "color": "#ef4444"
     },
     {
       "nom": "Morvillers-Saint-Saturnin",
       "dept": "80",
       "code_bss": "00608X0028/S1",
-      "current": 171.869,
+      "current": 171.859,
       "history": [
-        171.975,
-        171.967,
         171.963,
         171.955,
         171.955,
@@ -50846,21 +50844,47 @@
         171.896,
         171.888,
         171.884,
-        171.869
+        171.869,
+        171.865,
+        171.859
       ],
-      "year_ago": 178.3,
+      "year_ago": 178.24,
       "lat": 49.764649331,
       "lng": 1.795242036,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Huppy",
+      "dept": "80",
+      "code_bss": "00444X0008/S1",
+      "current": 67.374,
+      "history": [
+        67.489,
+        67.478,
+        67.472,
+        67.461,
+        67.454,
+        67.444,
+        67.434,
+        67.424,
+        67.415,
+        67.403,
+        67.393,
+        67.387,
+        67.381,
+        67.374
+      ],
+      "year_ago": 70.28,
+      "lat": 50.01965431,
+      "lng": 1.757926508,
       "color": "#ef4444"
     },
     {
       "nom": "Hypercourt",
       "dept": "80",
       "code_bss": "00634X0039/S1",
-      "current": 67.863,
+      "current": 67.904,
       "history": [
-        68.071,
-        68.017,
         67.973,
         67.93,
         67.903,
@@ -50872,21 +50896,47 @@
         67.882,
         67.919,
         67.937,
-        67.863
+        67.863,
+        67.873,
+        67.904
       ],
-      "year_ago": 69.09,
+      "year_ago": 69.11,
       "lat": 49.811039486,
       "lng": 2.86898337,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Liancourt-Fosse",
+      "dept": "80",
+      "code_bss": "00638X0116/S1",
+      "current": 71.637,
+      "history": [
+        71.767,
+        71.759,
+        71.754,
+        71.743,
+        71.733,
+        71.718,
+        71.708,
+        71.695,
+        71.689,
+        71.676,
+        71.669,
+        71.657,
+        71.648,
+        71.637
+      ],
+      "year_ago": 72.81,
+      "lat": 49.757694884,
+      "lng": 2.814372334,
       "color": "#ef4444"
     },
     {
       "nom": "Autheux",
       "dept": "80",
       "code_bss": "00341X0050/PZ1",
-      "current": 71.715,
+      "current": 71.679,
       "history": [
-        71.974,
-        71.955,
         71.934,
         71.914,
         71.895,
@@ -50898,9 +50948,11 @@
         71.774,
         71.755,
         71.737,
-        71.715
+        71.715,
+        71.697,
+        71.679
       ],
-      "year_ago": 72.13,
+      "year_ago": 72.09,
       "lat": 50.144917582,
       "lng": 2.231871335,
       "color": "#ef4444"
@@ -50909,10 +50961,8 @@
       "nom": "Fresnes-Mazancourt",
       "dept": "80",
       "code_bss": "00634X0147/PZ1",
-      "current": 55.305,
+      "current": 55.288,
       "history": [
-        55.476,
-        55.467,
         55.459,
         55.441,
         55.413,
@@ -50924,9 +50974,11 @@
         55.329,
         55.322,
         55.316,
-        55.305
+        55.305,
+        55.299,
+        55.288
       ],
-      "year_ago": 57.2,
+      "year_ago": 57.18,
       "lat": 49.85094129,
       "lng": 2.876057356,
       "color": "#ef4444"
@@ -50935,10 +50987,8 @@
       "nom": "Havernas",
       "dept": "80",
       "code_bss": "00461X0040/FE2",
-      "current": 55.797,
+      "current": 55.778,
       "history": [
-        55.948,
-        55.934,
         55.926,
         55.916,
         55.909,
@@ -50950,9 +51000,11 @@
         55.838,
         55.824,
         55.814,
-        55.797
+        55.797,
+        55.789,
+        55.778
       ],
-      "year_ago": 56.71,
+      "year_ago": 56.69,
       "lat": 50.030729165,
       "lng": 2.230757287,
       "color": "#ef4444"
@@ -50961,10 +51013,8 @@
       "nom": "Senlis-le-Sec",
       "dept": "80",
       "code_bss": "00471X0095/PZ2013",
-      "current": 65.354,
+      "current": 65.311,
       "history": [
-        65.665,
-        65.649,
         65.627,
         65.604,
         65.588,
@@ -50976,9 +51026,11 @@
         65.422,
         65.398,
         65.379,
-        65.354
+        65.354,
+        65.333,
+        65.311
       ],
-      "year_ago": 67.16,
+      "year_ago": 67.13,
       "lat": 50.023705,
       "lng": 2.578405,
       "color": "#ef4444"
@@ -50987,10 +51039,8 @@
       "nom": "Beauchamps",
       "dept": "80",
       "code_bss": "00442X0050/P4",
-      "current": 18.976,
+      "current": 18.973,
       "history": [
-        19.002,
-        18.999,
         18.998,
         18.996,
         18.994,
@@ -51002,9 +51052,11 @@
         18.982,
         18.98,
         18.978,
-        18.976
+        18.976,
+        18.974,
+        18.973
       ],
-      "year_ago": 19.1,
+      "year_ago": 19.11,
       "lat": 50.003841107,
       "lng": 1.532115277,
       "color": "#ef4444"
@@ -51013,12 +51065,8 @@
       "nom": "Vauvillers",
       "dept": "80",
       "code_bss": "00633X0132/FR.PAC",
-      "current": 73.378,
+      "current": 73.184,
       "history": [
-        73.337,
-        73.478,
-        73.406,
-        73.346,
         73.29,
         73.256,
         73.297,
@@ -51028,9 +51076,13 @@
         73.414,
         73.482,
         73.522,
-        73.378
+        73.378,
+        73.29,
+        73.264,
+        73.19,
+        73.184
       ],
-      "year_ago": 74.87,
+      "year_ago": 74.85,
       "lat": 49.83572034,
       "lng": 2.710036426,
       "color": "#ef4444"
@@ -51039,10 +51091,8 @@
       "nom": "Maricourt",
       "dept": "80",
       "code_bss": "00474X0011/F",
-      "current": 44.741,
+      "current": 44.734,
       "history": [
-        44.768,
-        44.766,
         44.766,
         44.764,
         44.76,
@@ -51054,9 +51104,11 @@
         44.747,
         44.745,
         44.741,
-        44.741
+        44.741,
+        44.739,
+        44.734
       ],
-      "year_ago": 45.22,
+      "year_ago": 45.21,
       "lat": 49.976898453,
       "lng": 2.792179935,
       "color": "#ef4444"
@@ -51065,10 +51117,8 @@
       "nom": "Fricamps",
       "dept": "80",
       "code_bss": "00613X0002/F",
-      "current": 92.87,
+      "current": 92.867,
       "history": [
-        92.905,
-        92.902,
         92.902,
         92.901,
         92.902,
@@ -51080,7 +51130,9 @@
         92.885,
         92.877,
         92.875,
-        92.87
+        92.87,
+        92.866,
+        92.867
       ],
       "year_ago": 93.39,
       "lat": 49.817475279,
@@ -51091,10 +51143,8 @@
       "nom": "Damery",
       "dept": "80",
       "code_bss": "00637X0093/F",
-      "current": 74.546,
+      "current": 74.509,
       "history": [
-        74.774,
-        74.757,
         74.736,
         74.712,
         74.688,
@@ -51106,9 +51156,11 @@
         74.572,
         74.562,
         74.56,
-        74.546
+        74.546,
+        74.532,
+        74.509
       ],
-      "year_ago": 77.37,
+      "year_ago": 77.36,
       "lat": 49.720529222,
       "lng": 2.738698936,
       "color": "#ef4444"
@@ -51117,10 +51169,8 @@
       "nom": "Ferrières",
       "dept": "80",
       "code_bss": "00465X0007/F",
-      "current": 33.645,
+      "current": 33.63,
       "history": [
-        33.711,
-        33.703,
         33.709,
         33.712,
         33.716,
@@ -51132,7 +51182,9 @@
         33.679,
         33.666,
         33.657,
-        33.645
+        33.645,
+        33.636,
+        33.63
       ],
       "year_ago": 34.84,
       "lat": 49.895282213,
@@ -51160,7 +51212,7 @@
         6.538,
         5.936
       ],
-      "year_ago": 6.23,
+      "year_ago": 6.27,
       "lat": 50.277980161,
       "lng": 1.7085294,
       "color": "#ef4444"
@@ -51169,10 +51221,8 @@
       "nom": "Oisemont",
       "dept": "80",
       "code_bss": "00444X0048/F",
-      "current": 81.349,
+      "current": 81.332,
       "history": [
-        81.453,
-        81.442,
         81.436,
         81.429,
         81.428,
@@ -51184,9 +51234,11 @@
         81.372,
         81.362,
         81.357,
-        81.349
+        81.349,
+        81.343,
+        81.332
       ],
-      "year_ago": 84.61,
+      "year_ago": 84.58,
       "lat": 49.959336263,
       "lng": 1.760875399,
       "color": "#ef4444"
@@ -51195,10 +51247,8 @@
       "nom": "Flers",
       "dept": "80",
       "code_bss": "00358X0216/PIEZO",
-      "current": 98.053,
+      "current": 98.021,
       "history": [
-        98.235,
-        98.22,
         98.212,
         98.197,
         98.185,
@@ -51210,9 +51260,11 @@
         98.104,
         98.082,
         98.075,
-        98.053
+        98.053,
+        98.035,
+        98.021
       ],
-      "year_ago": 101.57,
+      "year_ago": 101.54,
       "lat": 50.051222659,
       "lng": 2.806250125,
       "color": "#ef4444"
@@ -51221,10 +51273,8 @@
       "nom": "Hornoy-le-Bourg",
       "dept": "80",
       "code_bss": "00611X0010/P",
-      "current": 117.871,
+      "current": 117.864,
       "history": [
-        117.924,
-        117.911,
         117.931,
         117.906,
         117.917,
@@ -51236,7 +51286,9 @@
         117.886,
         117.871,
         117.894,
-        117.871
+        117.871,
+        117.883,
+        117.864
       ],
       "year_ago": 118.82,
       "lat": 49.844757134,
@@ -51247,10 +51299,8 @@
       "nom": "Hangest-en-Santerre",
       "dept": "80",
       "code_bss": "00636X0020/P",
-      "current": 73.62,
+      "current": 73.547,
       "history": [
-        73.946,
-        73.937,
         73.902,
         73.877,
         73.829,
@@ -51262,9 +51312,11 @@
         73.693,
         73.674,
         73.633,
-        73.62
+        73.62,
+        73.579,
+        73.547
       ],
-      "year_ago": 78.5,
+      "year_ago": 78.48,
       "lat": 49.751918286,
       "lng": 2.612665716,
       "color": "#ef4444"
@@ -51273,10 +51325,8 @@
       "nom": "Talmas",
       "dept": "80",
       "code_bss": "00347X0002/P",
-      "current": 100.781,
+      "current": 100.744,
       "history": [
-        101.031,
-        101.007,
         100.992,
         100.972,
         100.957,
@@ -51288,37 +51338,13 @@
         100.839,
         100.818,
         100.8,
-        100.781
+        100.781,
+        100.762,
+        100.744
       ],
-      "year_ago": 100.66,
+      "year_ago": 100.62,
       "lat": 50.04329442,
       "lng": 2.362176792,
-      "color": "#3b82f6"
-    },
-    {
-      "nom": "Ligescourt",
-      "dept": "80",
-      "code_bss": "00245X0003/P",
-      "current": 26.63,
-      "history": [
-        26.829,
-        26.806,
-        26.792,
-        26.777,
-        26.765,
-        26.754,
-        26.737,
-        26.725,
-        26.711,
-        26.698,
-        26.68,
-        26.664,
-        26.647,
-        26.63
-      ],
-      "year_ago": 26.49,
-      "lat": 50.292025352,
-      "lng": 1.866716434,
       "color": "#3b82f6"
     },
     {
@@ -51342,19 +51368,43 @@
         61.549,
         61.536
       ],
-      "year_ago": 64.63,
+      "year_ago": 64.6,
       "lat": 49.842323911,
       "lng": 2.633615422,
       "color": "#ef4444"
     },
     {
+      "nom": "Ligescourt",
+      "dept": "80",
+      "code_bss": "00245X0003/P",
+      "current": 26.601,
+      "history": [
+        26.792,
+        26.777,
+        26.765,
+        26.754,
+        26.737,
+        26.725,
+        26.711,
+        26.698,
+        26.68,
+        26.664,
+        26.647,
+        26.63,
+        26.618,
+        26.601
+      ],
+      "year_ago": 26.48,
+      "lat": 50.292025352,
+      "lng": 1.866716434,
+      "color": "#3b82f6"
+    },
+    {
       "nom": "Grattepanche",
       "dept": "80",
       "code_bss": "00622X0014/P",
-      "current": 48.89,
+      "current": 48.882,
       "history": [
-        48.939,
-        48.935,
         48.931,
         48.928,
         48.925,
@@ -51366,7 +51416,9 @@
         48.903,
         48.899,
         48.895,
-        48.89
+        48.89,
+        48.886,
+        48.882
       ],
       "year_ago": 49.81,
       "lat": 49.788025534,
@@ -51374,13 +51426,37 @@
       "color": "#ef4444"
     },
     {
+      "nom": "Cardonnette",
+      "dept": "80",
+      "code_bss": "00463X0036/H1",
+      "current": 41.96,
+      "history": [
+        42.052,
+        42.046,
+        42.04,
+        42.028,
+        42.024,
+        42.014,
+        42.004,
+        41.998,
+        41.99,
+        41.984,
+        41.976,
+        41.972,
+        41.962,
+        41.96
+      ],
+      "year_ago": 43.12,
+      "lat": 49.950685924,
+      "lng": 2.359760371,
+      "color": "#ef4444"
+    },
+    {
       "nom": "Épécamps",
       "dept": "80",
       "code_bss": "00338X0014/P",
-      "current": 82.188,
+      "current": 82.163,
       "history": [
-        82.353,
-        82.341,
         82.327,
         82.319,
         82.311,
@@ -51392,7 +51468,9 @@
         82.23,
         82.219,
         82.205,
-        82.188
+        82.188,
+        82.177,
+        82.163
       ],
       "year_ago": 82.95,
       "lat": 50.112115291,
@@ -51403,10 +51481,8 @@
       "nom": "Liéramont",
       "dept": "80",
       "code_bss": "00482X0025/P",
-      "current": 95.895,
+      "current": 95.88,
       "history": [
-        96.033,
-        96.019,
         96.007,
         95.995,
         95.984,
@@ -51418,9 +51494,11 @@
         95.924,
         95.913,
         95.905,
-        95.895
+        95.895,
+        95.889,
+        95.88
       ],
-      "year_ago": 96.87,
+      "year_ago": 96.86,
       "lat": 49.994197118,
       "lng": 3.050915119,
       "color": "#ef4444"
@@ -51429,10 +51507,8 @@
       "nom": "Coullemelle",
       "dept": "80",
       "code_bss": "00803X0006/P",
-      "current": 83.165,
+      "current": 83.157,
       "history": [
-        83.117,
-        83.121,
         83.133,
         83.141,
         83.145,
@@ -51444,9 +51520,11 @@
         83.169,
         83.161,
         83.161,
-        83.165
+        83.165,
+        83.169,
+        83.157
       ],
-      "year_ago": 84.45,
+      "year_ago": 84.4,
       "lat": 49.668236649,
       "lng": 2.422737692,
       "color": "#ef4444"
@@ -51455,10 +51533,8 @@
       "nom": "Quesnoy-sur-Airaines",
       "dept": "80",
       "code_bss": "00453X0026/P",
-      "current": 34.45,
+      "current": 34.449,
       "history": [
-        34.474,
-        34.472,
         34.47,
         34.472,
         34.47,
@@ -51470,9 +51546,11 @@
         34.454,
         34.45,
         34.45,
-        34.45
+        34.45,
+        34.449,
+        34.449
       ],
-      "year_ago": 34.88,
+      "year_ago": 34.87,
       "lat": 49.955309396,
       "lng": 1.994217705,
       "color": "#ef4444"
@@ -51480,9 +51558,9 @@
   ],
   "air": [
     {
-      "zone": "YONVAL",
+      "zone": "SENTELIE",
       "dept": "80",
-      "date": "2026-07-22",
+      "date": "2026-07-23",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -51504,9 +51582,9 @@
           "color": "#10b981"
         },
         "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "SO₂": {
           "indice": 0,
@@ -51516,9 +51594,9 @@
       }
     },
     {
-      "zone": "YZEUX",
+      "zone": "SEUX",
       "dept": "80",
-      "date": "2026-07-22",
+      "date": "2026-07-23",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -51540,9 +51618,9 @@
           "color": "#10b981"
         },
         "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "SO₂": {
           "indice": 0,
@@ -51552,9 +51630,9 @@
       }
     },
     {
-      "zone": "YZENGREMER",
+      "zone": "SOREL EN VIMEU",
       "dept": "80",
-      "date": "2026-07-22",
+      "date": "2026-07-23",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -51576,9 +51654,9 @@
           "color": "#10b981"
         },
         "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "SO₂": {
           "indice": 0,
@@ -51588,9 +51666,9 @@
       }
     },
     {
-      "zone": "YVRENCHEUX",
+      "zone": "SOREL",
       "dept": "80",
-      "date": "2026-07-22",
+      "date": "2026-07-23",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -51612,9 +51690,9 @@
           "color": "#10b981"
         },
         "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "SO₂": {
           "indice": 0,
@@ -51624,9 +51702,9 @@
       }
     },
     {
-      "zone": "YVRENCH",
+      "zone": "SOUES",
       "dept": "80",
-      "date": "2026-07-22",
+      "date": "2026-07-23",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -51648,9 +51726,9 @@
           "color": "#10b981"
         },
         "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "SO₂": {
           "indice": 0,

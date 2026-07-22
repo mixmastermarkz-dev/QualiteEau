@@ -3,7 +3,7 @@
   "nom": "Val-de-Marne",
   "slug": "val-de-marne",
   "region": "Île-de-France",
-  "updated": "21/07/2026 à 13:44",
+  "updated": "22/07/2026 à 13:45",
   "score_eau": 92,
   "nb_communes": 54,
   "potable": [
@@ -2403,7 +2403,7 @@
           "date": "2026-05-26"
         },
         "pH": {
-          "valeur": 7.5,
+          "valeur": 7.4,
           "unite": "unité pH",
           "color": "#10b981",
           "date": "2026-05-26"
@@ -2507,7 +2507,7 @@
           "date": "2026-05-28"
         },
         "pH": {
-          "valeur": 7.5,
+          "valeur": 7.4,
           "unite": "unité pH",
           "color": "#10b981",
           "date": "2026-05-28"
@@ -2578,12 +2578,6 @@
           "unite": "°f",
           "color": "#10b981",
           "date": "2026-05-22"
-        },
-        "Plomb": {
-          "valeur": "<2",
-          "unite": "µg/L",
-          "color": "#10b981",
-          "date": "2022-11-09"
         },
         "THM": {
           "valeur": 13.2,
@@ -10765,115 +10759,7 @@
     {
       "zone": "Périgny",
       "dept": "94",
-      "date": "2026-07-22",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#F0E641",
-      "source": "Airparif",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Nogent-Sur-Marne",
-      "dept": "94",
-      "date": "2026-07-22",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#F0E641",
-      "source": "Airparif",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Sucy-En-Brie",
-      "dept": "94",
-      "date": "2026-07-22",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#F0E641",
-      "source": "Airparif",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Le Kremlin-Bicêtre",
-      "dept": "94",
-      "date": "2026-07-22",
+      "date": "2026-07-23",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -10895,9 +10781,117 @@
           "color": "#10b981"
         },
         "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Nogent-Sur-Marne",
+      "dept": "94",
+      "date": "2026-07-23",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Airparif",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
           "indice": 2,
           "label": "Moyen",
           "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Le Kremlin-Bicêtre",
+      "dept": "94",
+      "date": "2026-07-23",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Airparif",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Sucy-En-Brie",
+      "dept": "94",
+      "date": "2026-07-23",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Airparif",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "SO₂": {
           "indice": 0,
@@ -10909,10 +10903,10 @@
     {
       "zone": "Villeneuve-Saint-Georges",
       "dept": "94",
-      "date": "2026-07-22",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#F0E641",
+      "date": "2026-07-23",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
       "source": "Airparif",
       "polluants": {
         "NO₂": {
@@ -10921,9 +10915,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
@@ -10931,9 +10925,9 @@
           "color": "#10b981"
         },
         "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "SO₂": {
           "indice": 0,

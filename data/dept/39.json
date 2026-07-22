@@ -3,7 +3,7 @@
   "nom": "Jura",
   "slug": "jura",
   "region": "Bourgogne-Franche-Comté",
-  "updated": "21/07/2026 à 13:44",
+  "updated": "22/07/2026 à 13:45",
   "score_eau": 98,
   "nb_communes": 500,
   "potable": [
@@ -18545,7 +18545,13 @@
           "valeur": "<2",
           "unite": "µg/L",
           "color": "#10b981",
-          "date": "2016-04-18"
+          "date": "2021-07-26"
+        },
+        "THM": {
+          "valeur": 16.11,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-09-04"
         }
       },
       "score": 100,
@@ -21071,22 +21077,22 @@
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
         "pH": {
-          "valeur": 7.1,
+          "valeur": 7.0,
           "unite": "unité pH",
           "color": "#10b981",
-          "date": "2023-09-25"
+          "date": "2020-10-14"
         },
         "Chlore": {
-          "valeur": 0.06,
+          "valeur": 0.3,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2023-09-25"
+          "date": "2020-10-14"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2023-09-25"
+          "date": "2020-10-14"
         },
         "Plomb": {
           "valeur": 0.6,
@@ -23553,52 +23559,52 @@
       "insee": "39548",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité. Equilibre calcocarbonique: Eau à l'équilibre. Référence de qualité non satisfaisante pour les paramètres suivants: Turbidité.",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité. Référence de qualité non satisfaisante pour les paramètres suivants: turbidité.",
       "parametres": {
         "Nitrates": {
-          "valeur": 14.0,
+          "valeur": 18.0,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2023-09-04"
+          "date": "2020-10-19"
         },
         "pH": {
-          "valeur": 7.5,
+          "valeur": 8.1,
           "unite": "unité pH",
           "color": "#10b981",
-          "date": "2023-11-13"
+          "date": "2020-12-15"
         },
         "Chlore": {
-          "valeur": 0.52,
+          "valeur": 0.26,
           "unite": "mg(Cl2)/L",
           "color": "#10b981",
-          "date": "2023-11-13"
+          "date": "2020-12-15"
         },
         "Bactériologie": {
           "valeur": "<1",
           "unite": "n/(100mL)",
           "color": "#10b981",
-          "date": "2023-11-13"
+          "date": "2020-12-15"
         },
         "Calcaire (TH)": {
-          "valeur": 21.5,
+          "valeur": 21.3,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2023-09-04"
+          "date": "2020-10-19"
         },
         "Plomb": {
-          "valeur": "<2",
+          "valeur": 6.0,
           "unite": "µg/L",
-          "color": "#10b981",
-          "date": "2021-07-26"
+          "color": "#f59e0b",
+          "date": "2016-02-09"
         },
         "THM": {
-          "valeur": 16.11,
+          "valeur": 4.77,
           "unite": "µg/L",
           "color": "#10b981",
-          "date": "2023-09-04"
+          "date": "2016-10-05"
         }
       },
-      "score": 100,
+      "score": 93,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -35929,39 +35935,11 @@
   ],
   "nappes": [
     {
-      "nom": "Desnes",
-      "dept": "39",
-      "code_bss": "05811X0159/F2",
-      "current": 200.77,
-      "history": [
-        200.808,
-        200.805,
-        200.802,
-        200.799,
-        200.795,
-        200.793,
-        200.791,
-        200.788,
-        200.786,
-        200.782,
-        200.779,
-        200.777,
-        200.772,
-        200.77
-      ],
-      "year_ago": 200.88,
-      "lat": 46.761018459,
-      "lng": 5.476860534,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Oussières",
       "dept": "39",
       "code_bss": "05553X0009/S2",
-      "current": 223.878,
+      "current": 223.875,
       "history": [
-        223.91,
-        223.906,
         223.906,
         223.899,
         223.909,
@@ -35973,21 +35951,47 @@
         223.889,
         223.881,
         223.885,
-        223.878
+        223.878,
+        223.878,
+        223.875
       ],
-      "year_ago": 223.97,
+      "year_ago": 223.96,
       "lat": 46.901262914,
       "lng": 5.605880793,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Desnes",
+      "dept": "39",
+      "code_bss": "05811X0159/F2",
+      "current": 200.762,
+      "history": [
+        200.802,
+        200.799,
+        200.795,
+        200.793,
+        200.791,
+        200.788,
+        200.786,
+        200.782,
+        200.779,
+        200.777,
+        200.772,
+        200.77,
+        200.766,
+        200.762
+      ],
+      "year_ago": 200.88,
+      "lat": 46.761018459,
+      "lng": 5.476860534,
       "color": "#ef4444"
     },
     {
       "nom": "Chatelay",
       "dept": "39",
       "code_bss": "05288X0053/F3",
-      "current": 226.541,
+      "current": 226.544,
       "history": [
-        226.568,
-        226.561,
         226.568,
         226.558,
         226.581,
@@ -35999,9 +36003,11 @@
         226.55,
         226.542,
         226.554,
-        226.541
+        226.541,
+        226.542,
+        226.544
       ],
-      "year_ago": 226.61,
+      "year_ago": 226.6,
       "lat": 47.041366802,
       "lng": 5.693898783,
       "color": "#ef4444"
@@ -36010,10 +36016,8 @@
       "nom": "Thervay",
       "dept": "39",
       "code_bss": "05013X0001/SM1",
-      "current": 190.441,
+      "current": 190.379,
       "history": [
-        190.366,
-        190.339,
         190.342,
         190.423,
         190.431,
@@ -36025,7 +36029,9 @@
         190.442,
         190.453,
         190.456,
-        190.441
+        190.441,
+        190.438,
+        190.379
       ],
       "year_ago": 190.79,
       "lat": 47.255880567,
@@ -36036,10 +36042,8 @@
       "nom": "Ney",
       "dept": "39",
       "code_bss": "05822X0024/F1",
-      "current": 527.136,
+      "current": 527.129,
       "history": [
-        527.179,
-        527.177,
         527.171,
         527.168,
         527.163,
@@ -36051,7 +36055,9 @@
         527.145,
         527.143,
         527.138,
-        527.136
+        527.136,
+        527.131,
+        527.129
       ],
       "year_ago": 527.36,
       "lat": 46.7255463,
@@ -36062,10 +36068,8 @@
       "nom": "Molay",
       "dept": "39",
       "code_bss": "05285X0374/P7",
-      "current": 189.578,
+      "current": 189.572,
       "history": [
-        189.607,
-        189.602,
         189.596,
         189.592,
         189.59,
@@ -36077,7 +36081,9 @@
         189.58,
         189.58,
         189.578,
-        189.578
+        189.578,
+        189.574,
+        189.572
       ],
       "year_ago": 189.79,
       "lat": 47.026741742,
@@ -36088,10 +36094,8 @@
       "nom": "Hauteroche",
       "dept": "39",
       "code_bss": "05818X0073/F",
-      "current": 423.949,
+      "current": 423.895,
       "history": [
-        424.383,
-        424.357,
         424.297,
         424.281,
         424.225,
@@ -36103,9 +36107,11 @@
         424.063,
         424.013,
         424.001,
-        423.949
+        423.949,
+        423.951,
+        423.895
       ],
-      "year_ago": 425.6,
+      "year_ago": 425.64,
       "lat": 46.692281217,
       "lng": 5.68698072,
       "color": "#ef4444"
@@ -36113,12 +36119,12 @@
   ],
   "air": [
     {
-      "zone": "Mérona",
+      "zone": "Abergement-le-Grand",
       "dept": "39",
-      "date": "2026-07-23",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-07-24",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -36127,9 +36133,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "PM10": {
           "indice": 1,
@@ -36149,12 +36155,12 @@
       }
     },
     {
-      "zone": "Mesnay",
+      "zone": "Abergement-le-Petit",
       "dept": "39",
-      "date": "2026-07-23",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-07-24",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -36163,9 +36169,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "PM10": {
           "indice": 1,
@@ -36185,12 +36191,12 @@
       }
     },
     {
-      "zone": "Mesnois",
+      "zone": "Aiglepierre",
       "dept": "39",
-      "date": "2026-07-23",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-07-24",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -36199,9 +36205,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "PM10": {
           "indice": 1,
@@ -36221,12 +36227,12 @@
       }
     },
     {
-      "zone": "Messia-sur-Sorne",
+      "zone": "Arbois",
       "dept": "39",
-      "date": "2026-07-23",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-07-24",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -36235,9 +36241,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "PM10": {
           "indice": 1,
@@ -36257,12 +36263,12 @@
       }
     },
     {
-      "zone": "Meussia",
+      "zone": "Arlay",
       "dept": "39",
-      "date": "2026-07-23",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-07-24",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -36271,9 +36277,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "PM10": {
           "indice": 1,
