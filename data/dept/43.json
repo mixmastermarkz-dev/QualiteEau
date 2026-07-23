@@ -3,7 +3,7 @@
   "nom": "Haute-Loire",
   "slug": "haute-loire",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "22/07/2026 à 13:45",
+  "updated": "23/07/2026 à 13:48",
   "score_eau": 96,
   "nb_communes": 260,
   "potable": [
@@ -44081,39 +44081,11 @@
   ],
   "nappes": [
     {
-      "nom": "Azérat",
-      "dept": "43",
-      "code_bss": "07662X0277/45B-01",
-      "current": 406.179,
-      "history": [
-        406.198,
-        406.192,
-        406.189,
-        406.226,
-        406.241,
-        406.261,
-        406.252,
-        406.243,
-        406.225,
-        406.213,
-        406.2,
-        406.189,
-        406.187,
-        406.179
-      ],
-      "year_ago": 406.25,
-      "lat": 45.357221793,
-      "lng": 3.367729971,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Cohade",
       "dept": "43",
       "code_bss": "07662X0278/45B-03",
-      "current": 405.758,
+      "current": 405.754,
       "history": [
-        405.795,
-        405.792,
         405.788,
         405.797,
         405.786,
@@ -44125,9 +44097,11 @@
         405.772,
         405.765,
         405.762,
-        405.758
+        405.758,
+        405.757,
+        405.754
       ],
-      "year_ago": 405.92,
+      "year_ago": 405.93,
       "lat": 45.354627,
       "lng": 3.358466,
       "color": "#ef4444"
@@ -44162,10 +44136,8 @@
       "nom": "Chaspuzac",
       "dept": "43",
       "code_bss": "07916X0008/P1",
-      "current": 863.254,
+      "current": 863.255,
       "history": [
-        863.273,
-        863.27,
         863.275,
         863.276,
         863.277,
@@ -44177,7 +44149,9 @@
         863.273,
         863.265,
         863.261,
-        863.254
+        863.254,
+        863.256,
+        863.255
       ],
       "year_ago": 862.88,
       "lat": 45.060946408,
@@ -44185,13 +44159,37 @@
       "color": "#3b82f6"
     },
     {
+      "nom": "Azérat",
+      "dept": "43",
+      "code_bss": "07662X0277/45B-01",
+      "current": 406.172,
+      "history": [
+        406.189,
+        406.226,
+        406.241,
+        406.261,
+        406.252,
+        406.243,
+        406.225,
+        406.213,
+        406.2,
+        406.189,
+        406.187,
+        406.179,
+        406.175,
+        406.172
+      ],
+      "year_ago": 406.21,
+      "lat": 45.357221793,
+      "lng": 3.367729971,
+      "color": "#ef4444"
+    },
+    {
       "nom": "Saugues",
       "dept": "43",
       "code_bss": "08144X0010/PUITS",
-      "current": 955.42,
+      "current": 955.41,
       "history": [
-        955.48,
-        955.47,
         955.46,
         955.47,
         955.47,
@@ -44203,9 +44201,11 @@
         955.44,
         955.43,
         955.43,
-        955.42
+        955.42,
+        955.42,
+        955.41
       ],
-      "year_ago": 955.52,
+      "year_ago": 955.5,
       "lat": 44.963175124,
       "lng": 3.547527986,
       "color": "#ef4444"
@@ -44214,10 +44214,8 @@
       "nom": "Saint-Front",
       "dept": "43",
       "code_bss": "08163X0019/PONT",
-      "current": 1200.524,
+      "current": 1200.521,
       "history": [
-        1200.546,
-        1200.546,
         1200.543,
         1200.544,
         1200.544,
@@ -44229,9 +44227,11 @@
         1200.533,
         1200.53,
         1200.527,
-        1200.524
+        1200.524,
+        1200.522,
+        1200.521
       ],
-      "year_ago": 1200.74,
+      "year_ago": 1200.73,
       "lat": 44.975693366,
       "lng": 4.144625431,
       "color": "#ef4444"
@@ -44239,7 +44239,151 @@
   ],
   "air": [
     {
-      "zone": "Saint-Front",
+      "zone": "Cistrières",
+      "dept": "43",
+      "date": "2026-07-24",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "La Chomette",
+      "dept": "43",
+      "date": "2026-07-24",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Chomelix",
+      "dept": "43",
+      "date": "2026-07-24",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Chilhac",
+      "dept": "43",
+      "date": "2026-07-24",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Chenereilles",
       "dept": "43",
       "date": "2026-07-24",
       "indice": 4,
@@ -44256,150 +44400,6 @@
           "indice": 4,
           "label": "Mauvais",
           "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Sainte-Florine",
-      "dept": "43",
-      "date": "2026-07-24",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Ferréol-d'Auroure",
-      "dept": "43",
-      "date": "2026-07-24",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Sainte-Eugénie-de-Villeneuve",
-      "dept": "43",
-      "date": "2026-07-24",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "le Cheylat",
-      "dept": "43",
-      "date": "2026-07-24",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,

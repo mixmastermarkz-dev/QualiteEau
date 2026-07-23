@@ -3,7 +3,7 @@
   "nom": "Ardèche",
   "slug": "ardeche",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "22/07/2026 à 13:45",
+  "updated": "23/07/2026 à 13:48",
   "score_eau": 96,
   "nb_communes": 337,
   "potable": [
@@ -28668,58 +28668,6 @@
   ],
   "nappes": [
     {
-      "nom": "Veyras",
-      "dept": "07",
-      "code_bss": "08413X0091/F3",
-      "current": 441.82,
-      "history": [
-        441.81,
-        441.81,
-        441.81,
-        441.82,
-        441.82,
-        441.82,
-        441.83,
-        441.82,
-        441.83,
-        441.82,
-        441.82,
-        441.82,
-        441.82,
-        441.82
-      ],
-      "year_ago": 441.41,
-      "lat": 44.733838457,
-      "lng": 4.561214887,
-      "color": "#3b82f6"
-    },
-    {
-      "nom": "Lablachère",
-      "dept": "07",
-      "code_bss": "BSS003GPIS/X",
-      "current": 243.611,
-      "history": [
-        243.616,
-        243.624,
-        243.638,
-        243.635,
-        243.669,
-        243.646,
-        243.665,
-        243.651,
-        243.654,
-        243.635,
-        243.643,
-        243.634,
-        243.638,
-        243.611
-      ],
-      "year_ago": 243.51,
-      "lat": 44.46354371,
-      "lng": 4.214386619,
-      "color": "#3b82f6"
-    },
-    {
       "nom": "Aubenas",
       "dept": "07",
       "code_bss": "08651X0038/0038",
@@ -28740,12 +28688,245 @@
         297.3,
         297.194
       ],
-      "year_ago": 298.47,
+      "year_ago": 298.44,
       "lat": 44.619744152,
       "lng": 4.39032624,
       "color": "#ef4444"
+    },
+    {
+      "nom": "Veyras",
+      "dept": "07",
+      "code_bss": "08413X0091/F3",
+      "current": 441.84,
+      "history": [
+        441.81,
+        441.82,
+        441.82,
+        441.82,
+        441.83,
+        441.82,
+        441.83,
+        441.82,
+        441.82,
+        441.82,
+        441.82,
+        441.82,
+        441.84,
+        441.84
+      ],
+      "year_ago": 441.41,
+      "lat": 44.733838457,
+      "lng": 4.561214887,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Lablachère",
+      "dept": "07",
+      "code_bss": "BSS003GPIS/X",
+      "current": 243.643,
+      "history": [
+        243.638,
+        243.635,
+        243.669,
+        243.646,
+        243.665,
+        243.651,
+        243.654,
+        243.635,
+        243.643,
+        243.634,
+        243.638,
+        243.611,
+        243.643,
+        243.643
+      ],
+      "year_ago": 243.49,
+      "lat": 44.46354371,
+      "lng": 4.214386619,
+      "color": "#3b82f6"
     }
   ],
-  "air": [],
+  "air": [
+    {
+      "zone": "Longepierre",
+      "dept": "07",
+      "date": "2026-07-25",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Louhans",
+      "dept": "07",
+      "date": "2026-07-25",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Lucenay-l'Évêque",
+      "dept": "07",
+      "date": "2026-07-25",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Lugny",
+      "dept": "07",
+      "date": "2026-07-25",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Lux",
+      "dept": "07",
+      "date": "2026-07-25",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    }
+  ],
   "pollen": []
 }
