@@ -3,7 +3,7 @@
   "nom": "Loire",
   "slug": "loire",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "23/07/2026 à 13:48",
+  "updated": "24/07/2026 à 13:39",
   "score_eau": 97,
   "nb_communes": 326,
   "potable": [
@@ -38617,11 +38617,6 @@
             "date": "2024-09-12",
             "valeur": 7.7,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-07-23",
-            "valeur": 8.5,
-            "color": "#10b981"
           }
         ]
       },
@@ -56299,65 +56294,11 @@
   ],
   "nappes": [
     {
-      "nom": "Cleppé",
-      "dept": "42",
-      "code_bss": "06967X0100/F",
-      "current": 323.548,
-      "history": [
-        323.589,
-        323.606,
-        323.617,
-        323.608,
-        323.61,
-        323.601,
-        323.593,
-        323.582,
-        323.577,
-        323.566,
-        323.557,
-        323.555,
-        323.556,
-        323.548
-      ],
-      "year_ago": 323.9,
-      "lat": 45.769951628,
-      "lng": 4.183823819,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Saint-Galmier",
-      "dept": "42",
-      "code_bss": "07208X0197/F1C",
-      "current": 372.55,
-      "history": [
-        372.556,
-        372.55,
-        372.555,
-        372.545,
-        372.554,
-        372.547,
-        372.548,
-        372.542,
-        372.553,
-        372.545,
-        372.547,
-        372.546,
-        372.553,
-        372.55
-      ],
-      "year_ago": 372.39,
-      "lat": 45.605448412,
-      "lng": 4.306255162,
-      "color": "#3b82f6"
-    },
-    {
       "nom": "Chalain-le-Comtal",
       "dept": "42",
       "code_bss": "07203X0168/PZ",
-      "current": 338.944,
+      "current": 338.946,
       "history": [
-        338.975,
-        338.946,
         338.95,
         338.948,
         338.958,
@@ -56369,23 +56310,47 @@
         338.959,
         338.945,
         338.957,
-        338.944
+        338.944,
+        338.959,
+        338.946
       ],
-      "year_ago": 338.98,
+      "year_ago": 339.0,
       "lat": 45.649419482,
       "lng": 4.190529903,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Cleppé",
+      "dept": "42",
+      "code_bss": "06967X0100/F",
+      "current": 323.544,
+      "history": [
+        323.617,
+        323.608,
+        323.61,
+        323.601,
+        323.593,
+        323.582,
+        323.577,
+        323.566,
+        323.557,
+        323.555,
+        323.556,
+        323.548,
+        323.544,
+        323.544
+      ],
+      "year_ago": 323.89,
+      "lat": 45.769951628,
+      "lng": 4.183823819,
       "color": "#ef4444"
     },
     {
       "nom": "Saint-André-le-Puy",
       "dept": "42",
       "code_bss": "07204X0105/F",
-      "current": 355.823,
+      "current": 355.831,
       "history": [
-        355.806,
-        355.776,
-        355.797,
-        355.851,
         355.871,
         355.853,
         355.877,
@@ -56395,195 +56360,44 @@
         355.853,
         355.833,
         355.833,
-        355.823
+        355.823,
+        355.842,
+        355.834,
+        355.845,
+        355.831
       ],
-      "year_ago": 356.02,
+      "year_ago": 356.0,
       "lat": 45.647921327,
       "lng": 4.246544955,
       "color": "#ef4444"
+    },
+    {
+      "nom": "Saint-Galmier",
+      "dept": "42",
+      "code_bss": "07208X0197/F1C",
+      "current": 372.55,
+      "history": [
+        372.555,
+        372.545,
+        372.554,
+        372.547,
+        372.548,
+        372.542,
+        372.553,
+        372.545,
+        372.547,
+        372.546,
+        372.553,
+        372.55,
+        372.56,
+        372.55
+      ],
+      "year_ago": 372.38,
+      "lat": 45.605448412,
+      "lng": 4.306255162,
+      "color": "#3b82f6"
     }
   ],
-  "air": [
-    {
-      "zone": "Chuyer",
-      "dept": "42",
-      "date": "2026-07-24",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Chirassimont",
-      "dept": "42",
-      "date": "2026-07-24",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Chevrières",
-      "dept": "42",
-      "date": "2026-07-24",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "les Moulins Cherier",
-      "dept": "42",
-      "date": "2026-07-24",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Chenereilles",
-      "dept": "42",
-      "date": "2026-07-24",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    }
-  ],
+  "air": [],
   "pollen": []
 }

@@ -3,7 +3,7 @@
   "nom": "Hautes-Alpes",
   "slug": "hautes-alpes",
   "region": "Provence-Alpes-Côte d'Azur",
-  "updated": "23/07/2026 à 13:48",
+  "updated": "24/07/2026 à 13:39",
   "score_eau": 98,
   "nb_communes": 162,
   "potable": [
@@ -16056,65 +16056,11 @@
   ],
   "nappes": [
     {
-      "nom": "Saint-Jean-Saint-Nicolas",
-      "dept": "05",
-      "code_bss": "08466X0009/F2",
-      "current": 1157.22,
-      "history": [
-        1158.12,
-        1158.09,
-        1158.06,
-        1158.05,
-        1158.04,
-        1158.02,
-        1158,
-        1157.98,
-        1157.97,
-        1157.95,
-        1157.94,
-        1157.91,
-        1157.39,
-        1157.22
-      ],
-      "year_ago": 1157.82,
-      "lat": 44.680949438,
-      "lng": 6.260818821,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Aspremont",
-      "dept": "05",
-      "code_bss": "08688X0023/PZ1",
-      "current": 718.25,
-      "history": [
-        718.28,
-        718.28,
-        718.27,
-        718.28,
-        718.27,
-        718.27,
-        718.27,
-        718.27,
-        718.26,
-        718.26,
-        718.26,
-        718.26,
-        718.25,
-        718.25
-      ],
-      "year_ago": 718.45,
-      "lat": 44.493443917,
-      "lng": 5.728933099,
-      "color": "#ef4444"
-    },
-    {
       "nom": "La Roche-de-Rame",
       "dept": "05",
       "code_bss": "08472X0007/F-1",
-      "current": 923.76,
+      "current": 923.75,
       "history": [
-        923.86,
-        923.85,
         923.86,
         923.85,
         923.83,
@@ -16126,7 +16072,9 @@
         923.78,
         923.77,
         923.77,
-        923.76
+        923.76,
+        923.76,
+        923.75
       ],
       "year_ago": 923.85,
       "lat": 44.738691198,
@@ -16134,13 +16082,37 @@
       "color": "#ef4444"
     },
     {
+      "nom": "Aspremont",
+      "dept": "05",
+      "code_bss": "08688X0023/PZ1",
+      "current": 718.25,
+      "history": [
+        718.27,
+        718.28,
+        718.27,
+        718.27,
+        718.27,
+        718.27,
+        718.26,
+        718.26,
+        718.26,
+        718.26,
+        718.25,
+        718.25,
+        718.25,
+        718.25
+      ],
+      "year_ago": 718.44,
+      "lat": 44.493443917,
+      "lng": 5.728933099,
+      "color": "#ef4444"
+    },
+    {
       "nom": "L'Argentière-la-Bessée",
       "dept": "05",
       "code_bss": "08471X0034/P5",
-      "current": 953.21,
+      "current": 953.17,
       "history": [
-        953.31,
-        953.32,
         953.29,
         953.26,
         953.28,
@@ -16152,9 +16124,11 @@
         953.21,
         953.2,
         953.21,
-        953.21
+        953.21,
+        953.19,
+        953.17
       ],
-      "year_ago": 953.15,
+      "year_ago": 953.14,
       "lat": 44.776271664,
       "lng": 6.558809418,
       "color": "#3b82f6"
@@ -16167,8 +16141,6 @@
       "history": [
         491.46,
         491.46,
-        491.46,
-        491.46,
         491.45,
         491.44,
         491.44,
@@ -16178,22 +16150,50 @@
         491.42,
         491.42,
         491.42,
+        491.43,
+        491.43,
         491.43
       ],
-      "year_ago": 491.57,
+      "year_ago": 491.55,
       "lat": 44.231230139,
       "lng": 5.862949573,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Saint-Jean-Saint-Nicolas",
+      "dept": "05",
+      "code_bss": "08466X0009/F2",
+      "current": 1157.01,
+      "history": [
+        1158.06,
+        1158.05,
+        1158.04,
+        1158.02,
+        1158,
+        1157.98,
+        1157.97,
+        1157.95,
+        1157.94,
+        1157.91,
+        1157.39,
+        1157.22,
+        1157.1,
+        1157.01
+      ],
+      "year_ago": 1157.72,
+      "lat": 44.680949438,
+      "lng": 6.260818821,
       "color": "#ef4444"
     }
   ],
   "air": [
     {
-      "zone": "Toury-Lurcy",
+      "zone": "Saint-Andelain",
       "dept": "05",
-      "date": "2026-07-25",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
+      "date": "2026-07-26",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -16202,9 +16202,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
@@ -16224,12 +16224,12 @@
       }
     },
     {
-      "zone": "Boisgibault",
+      "zone": "Saint-André-en-Morvan",
       "dept": "05",
-      "date": "2026-07-25",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
+      "date": "2026-07-26",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -16238,9 +16238,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
@@ -16260,12 +16260,12 @@
       }
     },
     {
-      "zone": "Trois-Vèvres",
+      "zone": "Charancy",
       "dept": "05",
-      "date": "2026-07-25",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
+      "date": "2026-07-26",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -16274,9 +16274,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
@@ -16296,12 +16296,12 @@
       }
     },
     {
-      "zone": "Tronsanges",
+      "zone": "Saint-Aubin-les-Forges",
       "dept": "05",
-      "date": "2026-07-25",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
+      "date": "2026-07-26",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -16310,9 +16310,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
@@ -16332,12 +16332,12 @@
       }
     },
     {
-      "zone": "le Greux",
+      "zone": "Saint-Benin-d'Azy",
       "dept": "05",
-      "date": "2026-07-25",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
+      "date": "2026-07-26",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -16346,9 +16346,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,

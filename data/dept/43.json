@@ -3,7 +3,7 @@
   "nom": "Haute-Loire",
   "slug": "haute-loire",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "23/07/2026 à 13:48",
+  "updated": "24/07/2026 à 13:39",
   "score_eau": 96,
   "nb_communes": 260,
   "potable": [
@@ -40170,11 +40170,6 @@
             "date": "2024-09-16",
             "valeur": 85.1,
             "color": "#ef4444"
-          },
-          {
-            "date": "2024-07-23",
-            "valeur": 78.2,
-            "color": "#ef4444"
           }
         ],
         "pH": [
@@ -40224,11 +40219,6 @@
             "date": "2024-09-16",
             "valeur": 10.24,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-07-23",
-            "valeur": 9.1,
-            "color": "#10b981"
           }
         ],
         "Ammonium": [
@@ -40250,11 +40240,6 @@
           {
             "date": "2024-09-16",
             "valeur": 2.6,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-07-23",
-            "valeur": 5.3,
             "color": "#ef4444"
           }
         ],
@@ -40278,11 +40263,6 @@
             "date": "2024-09-16",
             "valeur": 3.9,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-07-23",
-            "valeur": 3.7,
-            "color": "#10b981"
           }
         ],
         "Phosphore": [
@@ -40304,11 +40284,6 @@
           {
             "date": "2024-09-16",
             "valeur": 0.03,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-07-23",
-            "valeur": 0.04,
             "color": "#10b981"
           }
         ],
@@ -40358,11 +40333,6 @@
           {
             "date": "2024-09-16",
             "valeur": 96.5,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-07-23",
-            "valeur": 96.0,
             "color": "#10b981"
           }
         ]
@@ -44081,13 +44051,37 @@
   ],
   "nappes": [
     {
+      "nom": "Azérat",
+      "dept": "43",
+      "code_bss": "07662X0277/45B-01",
+      "current": 406.183,
+      "history": [
+        406.241,
+        406.261,
+        406.252,
+        406.243,
+        406.225,
+        406.213,
+        406.2,
+        406.189,
+        406.187,
+        406.179,
+        406.175,
+        406.172,
+        406.177,
+        406.183
+      ],
+      "year_ago": 406.23,
+      "lat": 45.357221793,
+      "lng": 3.367729971,
+      "color": "#ef4444"
+    },
+    {
       "nom": "Cohade",
       "dept": "43",
       "code_bss": "07662X0278/45B-03",
-      "current": 405.754,
+      "current": 405.746,
       "history": [
-        405.788,
-        405.797,
         405.786,
         405.786,
         405.782,
@@ -44099,11 +44093,65 @@
         405.762,
         405.758,
         405.757,
-        405.754
+        405.754,
+        405.749,
+        405.746
       ],
       "year_ago": 405.93,
       "lat": 45.354627,
       "lng": 3.358466,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Saugues",
+      "dept": "43",
+      "code_bss": "08144X0010/PUITS",
+      "current": 955.4,
+      "history": [
+        955.47,
+        955.46,
+        955.46,
+        955.46,
+        955.45,
+        955.45,
+        955.44,
+        955.43,
+        955.43,
+        955.42,
+        955.42,
+        955.41,
+        955.4,
+        955.4
+      ],
+      "year_ago": 955.49,
+      "lat": 44.963175124,
+      "lng": 3.547527986,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Saint-Front",
+      "dept": "43",
+      "code_bss": "08163X0019/PONT",
+      "current": 1200.517,
+      "history": [
+        1200.544,
+        1200.543,
+        1200.542,
+        1200.541,
+        1200.54,
+        1200.537,
+        1200.533,
+        1200.53,
+        1200.527,
+        1200.524,
+        1200.522,
+        1200.521,
+        1200.518,
+        1200.517
+      ],
+      "year_ago": 1200.73,
+      "lat": 44.975693366,
+      "lng": 4.144625431,
       "color": "#ef4444"
     },
     {
@@ -44136,10 +44184,8 @@
       "nom": "Chaspuzac",
       "dept": "43",
       "code_bss": "07916X0008/P1",
-      "current": 863.255,
+      "current": 863.256,
       "history": [
-        863.275,
-        863.276,
         863.277,
         863.277,
         863.281,
@@ -44151,273 +44197,16 @@
         863.261,
         863.254,
         863.256,
-        863.255
+        863.255,
+        863.259,
+        863.256
       ],
       "year_ago": 862.88,
       "lat": 45.060946408,
       "lng": 3.761689363,
       "color": "#3b82f6"
-    },
-    {
-      "nom": "Azérat",
-      "dept": "43",
-      "code_bss": "07662X0277/45B-01",
-      "current": 406.172,
-      "history": [
-        406.189,
-        406.226,
-        406.241,
-        406.261,
-        406.252,
-        406.243,
-        406.225,
-        406.213,
-        406.2,
-        406.189,
-        406.187,
-        406.179,
-        406.175,
-        406.172
-      ],
-      "year_ago": 406.21,
-      "lat": 45.357221793,
-      "lng": 3.367729971,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Saugues",
-      "dept": "43",
-      "code_bss": "08144X0010/PUITS",
-      "current": 955.41,
-      "history": [
-        955.46,
-        955.47,
-        955.47,
-        955.46,
-        955.46,
-        955.46,
-        955.45,
-        955.45,
-        955.44,
-        955.43,
-        955.43,
-        955.42,
-        955.42,
-        955.41
-      ],
-      "year_ago": 955.5,
-      "lat": 44.963175124,
-      "lng": 3.547527986,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Saint-Front",
-      "dept": "43",
-      "code_bss": "08163X0019/PONT",
-      "current": 1200.521,
-      "history": [
-        1200.543,
-        1200.544,
-        1200.544,
-        1200.543,
-        1200.542,
-        1200.541,
-        1200.54,
-        1200.537,
-        1200.533,
-        1200.53,
-        1200.527,
-        1200.524,
-        1200.522,
-        1200.521
-      ],
-      "year_ago": 1200.73,
-      "lat": 44.975693366,
-      "lng": 4.144625431,
-      "color": "#ef4444"
     }
   ],
-  "air": [
-    {
-      "zone": "Cistrières",
-      "dept": "43",
-      "date": "2026-07-24",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "La Chomette",
-      "dept": "43",
-      "date": "2026-07-24",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Chomelix",
-      "dept": "43",
-      "date": "2026-07-24",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Chilhac",
-      "dept": "43",
-      "date": "2026-07-24",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Chenereilles",
-      "dept": "43",
-      "date": "2026-07-24",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    }
-  ],
+  "air": [],
   "pollen": []
 }

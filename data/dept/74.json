@@ -3,7 +3,7 @@
   "nom": "Haute-Savoie",
   "slug": "haute-savoie",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "23/07/2026 à 13:48",
+  "updated": "24/07/2026 à 13:39",
   "score_eau": 98,
   "nb_communes": 279,
   "potable": [
@@ -40892,10 +40892,8 @@
       "nom": "Marigny-Saint-Marcel",
       "dept": "74",
       "code_bss": "07013X0071/F1",
-      "current": 352.115,
+      "current": 352.1,
       "history": [
-        352.191,
-        352.2,
         352.194,
         352.186,
         352.178,
@@ -40907,9 +40905,11 @@
         352.136,
         352.129,
         352.123,
-        352.115
+        352.115,
+        352.107,
+        352.1
       ],
-      "year_ago": 352.16,
+      "year_ago": 352.15,
       "lat": 45.832389293,
       "lng": 5.962087611,
       "color": "#ef4444"
@@ -40918,10 +40918,8 @@
       "nom": "Publier",
       "dept": "74",
       "code_bss": "06301X0019/P5",
-      "current": 373.72,
+      "current": 373.714,
       "history": [
-        373.713,
-        373.728,
         373.736,
         373.75,
         373.758,
@@ -40933,7 +40931,9 @@
         373.735,
         373.731,
         373.725,
-        373.72
+        373.72,
+        373.718,
+        373.714
       ],
       "year_ago": 374.07,
       "lat": 46.390565227,
@@ -40944,12 +40944,8 @@
       "nom": "Vinzier",
       "dept": "74",
       "code_bss": "06306X0042/BIOGE",
-      "current": 571.808,
+      "current": 571.785,
       "history": [
-        571.966,
-        571.951,
-        571.919,
-        571.86,
         571.829,
         571.777,
         571.734,
@@ -40959,9 +40955,13 @@
         571.792,
         571.798,
         571.813,
-        571.808
+        571.808,
+        571.814,
+        571.806,
+        571.803,
+        571.785
       ],
-      "year_ago": 571.87,
+      "year_ago": 571.8,
       "lat": 46.335316884,
       "lng": 6.621257922,
       "color": "#ef4444"
@@ -40970,12 +40970,8 @@
       "nom": "Passy",
       "dept": "74",
       "code_bss": "BSS004QBEB/X",
-      "current": 569.22,
+      "current": 569.215,
       "history": [
-        569.177,
-        569.159,
-        569.156,
-        569.148,
         569.138,
         569.131,
         569.145,
@@ -40985,7 +40981,11 @@
         569.202,
         569.207,
         569.217,
-        569.22
+        569.22,
+        569.224,
+        569.221,
+        569.223,
+        569.215
       ],
       "year_ago": 569.32,
       "lat": 45.920935924,
@@ -40993,39 +40993,11 @@
       "color": "#ef4444"
     },
     {
-      "nom": "Viry",
-      "dept": "74",
-      "code_bss": "06537X0103/VEIGY",
-      "current": 372.243,
-      "history": [
-        372.313,
-        372.291,
-        372.297,
-        372.276,
-        372.286,
-        372.268,
-        372.269,
-        372.248,
-        372.266,
-        372.244,
-        372.248,
-        372.239,
-        372.257,
-        372.243
-      ],
-      "year_ago": 371.93,
-      "lat": 46.141387797,
-      "lng": 6.017375948,
-      "color": "#3b82f6"
-    },
-    {
       "nom": "Marigny-Saint-Marcel",
       "dept": "74",
       "code_bss": "BSS004MZXK/X",
-      "current": 362.637,
+      "current": 362.623,
       "history": [
-        362.717,
-        362.795,
         362.775,
         362.747,
         362.651,
@@ -41037,14 +41009,223 @@
         362.54,
         362.649,
         362.645,
-        362.637
+        362.637,
+        362.632,
+        362.623
       ],
-      "year_ago": 362.57,
+      "year_ago": 362.56,
       "lat": 45.835072054,
       "lng": 5.968019958,
       "color": "#3b82f6"
+    },
+    {
+      "nom": "Viry",
+      "dept": "74",
+      "code_bss": "06537X0103/VEIGY",
+      "current": 372.231,
+      "history": [
+        372.297,
+        372.276,
+        372.286,
+        372.268,
+        372.269,
+        372.248,
+        372.266,
+        372.244,
+        372.248,
+        372.239,
+        372.257,
+        372.243,
+        372.25,
+        372.231
+      ],
+      "year_ago": 371.92,
+      "lat": 46.141387797,
+      "lng": 6.017375948,
+      "color": "#3b82f6"
     }
   ],
-  "air": [],
+  "air": [
+    {
+      "zone": "Bluffy",
+      "dept": "74",
+      "date": "2026-07-25",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Saint-Pierre",
+      "dept": "74",
+      "date": "2026-07-25",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Bloye",
+      "dept": "74",
+      "date": "2026-07-25",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Le Biot",
+      "dept": "74",
+      "date": "2026-07-25",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Bernex",
+      "dept": "74",
+      "date": "2026-07-25",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    }
+  ],
   "pollen": []
 }
