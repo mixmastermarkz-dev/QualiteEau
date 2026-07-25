@@ -3,7 +3,7 @@
   "nom": "Orne",
   "slug": "orne",
   "region": "Normandie",
-  "updated": "24/07/2026 à 13:39",
+  "updated": "25/07/2026 à 13:06",
   "score_eau": 93,
   "nb_communes": 386,
   "potable": [
@@ -46383,10 +46383,6 @@
       "code_bss": "02144X0005/S1",
       "current": 203.414,
       "history": [
-        203.449,
-        203.439,
-        203.428,
-        203.418,
         203.417,
         203.409,
         203.412,
@@ -46396,9 +46392,13 @@
         203.414,
         203.415,
         203.42,
+        203.414,
+        203.422,
+        203.418,
+        203.418,
         203.414
       ],
-      "year_ago": 208.92,
+      "year_ago": 208.87,
       "lat": 48.766362664,
       "lng": 0.658047665,
       "color": "#ef4444"
@@ -46407,10 +46407,8 @@
       "nom": "Villiers-sous-Mortagne",
       "dept": "61",
       "code_bss": "02523X0002/S2",
-      "current": 193.898,
+      "current": 193.892,
       "history": [
-        193.947,
-        193.942,
         193.939,
         193.933,
         193.93,
@@ -46422,7 +46420,9 @@
         193.906,
         193.903,
         193.901,
-        193.898
+        193.898,
+        193.896,
+        193.892
       ],
       "year_ago": 194.49,
       "lat": 48.523466288,
@@ -46436,8 +46436,6 @@
       "current": 116.27,
       "history": [
         117.31,
-        117.31,
-        117.31,
         117.3,
         117.3,
         117.29,
@@ -46448,9 +46446,11 @@
         116.27,
         116.27,
         116.27,
+        116.27,
+        116.27,
         116.27
       ],
-      "year_ago": 115.83,
+      "year_ago": 115.82,
       "lat": 48.803924391,
       "lng": 0.144862591,
       "color": "#3b82f6"
@@ -46458,9 +46458,45 @@
   ],
   "air": [
     {
-      "zone": "Saint-André-de-Messei",
+      "zone": "Les Ventes-de-Bourse",
       "dept": "61",
-      "date": "2026-07-26",
+      "date": "2026-07-27",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
+      "source": "Atmo Normandie",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "La Ventrouze",
+      "dept": "61",
+      "date": "2026-07-27",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -46494,12 +46530,12 @@
       }
     },
     {
-      "zone": "Saint-Aquilin-de-Corbion",
+      "zone": "Verrières",
       "dept": "61",
-      "date": "2026-07-26",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
+      "date": "2026-07-27",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
       "source": "Atmo Normandie",
       "polluants": {
         "NO₂": {
@@ -46508,9 +46544,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -46530,12 +46566,12 @@
       }
     },
     {
-      "zone": "Saint-Aubin-d'Appenai",
+      "zone": "Vidai",
       "dept": "61",
-      "date": "2026-07-26",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
+      "date": "2026-07-27",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
       "source": "Atmo Normandie",
       "polluants": {
         "NO₂": {
@@ -46544,9 +46580,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -46566,12 +46602,12 @@
       }
     },
     {
-      "zone": "Saint-Aubin-de-Bonneval",
+      "zone": "Vieux-Pont",
       "dept": "61",
-      "date": "2026-07-26",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
+      "date": "2026-07-27",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
       "source": "Atmo Normandie",
       "polluants": {
         "NO₂": {
@@ -46580,45 +46616,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Aubin-de-Courteraie",
-      "dept": "61",
-      "date": "2026-07-26",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
