@@ -3,7 +3,7 @@
   "nom": "Orne",
   "slug": "orne",
   "region": "Normandie",
-  "updated": "25/07/2026 à 13:06",
+  "updated": "26/07/2026 à 13:16",
   "score_eau": 93,
   "nb_communes": 386,
   "potable": [
@@ -46381,10 +46381,8 @@
       "nom": "Saint-Sulpice-sur-Risle",
       "dept": "61",
       "code_bss": "02144X0005/S1",
-      "current": 203.414,
+      "current": 203.412,
       "history": [
-        203.417,
-        203.409,
         203.412,
         203.399,
         203.412,
@@ -46396,9 +46394,11 @@
         203.422,
         203.418,
         203.418,
-        203.414
+        203.414,
+        203.412,
+        203.412
       ],
-      "year_ago": 208.87,
+      "year_ago": 208.83,
       "lat": 48.766362664,
       "lng": 0.658047665,
       "color": "#ef4444"
@@ -46407,10 +46407,8 @@
       "nom": "Villiers-sous-Mortagne",
       "dept": "61",
       "code_bss": "02523X0002/S2",
-      "current": 193.892,
+      "current": 193.884,
       "history": [
-        193.939,
-        193.933,
         193.93,
         193.925,
         193.923,
@@ -46422,9 +46420,11 @@
         193.901,
         193.898,
         193.896,
-        193.892
+        193.892,
+        193.889,
+        193.884
       ],
-      "year_ago": 194.49,
+      "year_ago": 194.48,
       "lat": 48.523466288,
       "lng": 0.591804057,
       "color": "#ef4444"
@@ -46435,14 +46435,14 @@
       "code_bss": "01776X0023/P",
       "current": 116.27,
       "history": [
-        117.31,
-        117.3,
         117.3,
         117.29,
         117.29,
         117.28,
         117.09,
         117.07,
+        116.27,
+        116.27,
         116.27,
         116.27,
         116.27,
@@ -46458,45 +46458,9 @@
   ],
   "air": [
     {
-      "zone": "Les Ventes-de-Bourse",
+      "zone": "Saint-Evroult-de-Montfort",
       "dept": "61",
-      "date": "2026-07-27",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#F0E641",
-      "source": "Atmo Normandie",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "La Ventrouze",
-      "dept": "61",
-      "date": "2026-07-27",
+      "date": "2026-07-28",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -46530,9 +46494,81 @@
       }
     },
     {
-      "zone": "Verrières",
+      "zone": "Saint-Evroult-Notre-Dame-du-Bois",
       "dept": "61",
-      "date": "2026-07-27",
+      "date": "2026-07-28",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Atmo Normandie",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Saint-Fraimbault",
+      "dept": "61",
+      "date": "2026-07-28",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Atmo Normandie",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Saint-Fulgent-des-Ormes",
+      "dept": "61",
+      "date": "2026-07-28",
       "indice": 3,
       "label": "Dégradé",
       "color": "#F0E641",
@@ -46566,12 +46602,12 @@
       }
     },
     {
-      "zone": "Vidai",
+      "zone": "Sainte-Gauburge-Sainte-Colombe",
       "dept": "61",
-      "date": "2026-07-27",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#F0E641",
+      "date": "2026-07-28",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
       "source": "Atmo Normandie",
       "polluants": {
         "NO₂": {
@@ -46580,45 +46616,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Vieux-Pont",
-      "dept": "61",
-      "date": "2026-07-27",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#F0E641",
-      "source": "Atmo Normandie",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
