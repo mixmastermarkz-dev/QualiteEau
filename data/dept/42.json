@@ -3,7 +3,7 @@
   "nom": "Loire",
   "slug": "loire",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "26/07/2026 à 13:16",
+  "updated": "27/07/2026 à 14:53",
   "score_eau": 97,
   "nb_communes": 326,
   "potable": [
@@ -56294,65 +56294,11 @@
   ],
   "nappes": [
     {
-      "nom": "Chalain-le-Comtal",
-      "dept": "42",
-      "code_bss": "07203X0168/PZ",
-      "current": 338.947,
-      "history": [
-        338.956,
-        338.948,
-        338.954,
-        338.947,
-        338.959,
-        338.945,
-        338.957,
-        338.944,
-        338.959,
-        338.946,
-        338.959,
-        338.947,
-        338.957,
-        338.947
-      ],
-      "year_ago": 338.99,
-      "lat": 45.649419482,
-      "lng": 4.190529903,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Cleppé",
-      "dept": "42",
-      "code_bss": "06967X0100/F",
-      "current": 323.549,
-      "history": [
-        323.593,
-        323.582,
-        323.577,
-        323.566,
-        323.557,
-        323.555,
-        323.556,
-        323.548,
-        323.544,
-        323.544,
-        323.564,
-        323.557,
-        323.551,
-        323.549
-      ],
-      "year_ago": 323.88,
-      "lat": 45.769951628,
-      "lng": 4.183823819,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Saint-Galmier",
       "dept": "42",
       "code_bss": "07208X0197/F1C",
-      "current": 372.545,
+      "current": 372.536,
       "history": [
-        372.548,
-        372.542,
         372.553,
         372.545,
         372.547,
@@ -56364,21 +56310,47 @@
         372.561,
         372.557,
         372.557,
-        372.545
+        372.545,
+        372.548,
+        372.536
       ],
-      "year_ago": 372.38,
+      "year_ago": 372.39,
       "lat": 45.605448412,
       "lng": 4.306255162,
       "color": "#3b82f6"
     },
     {
+      "nom": "Chalain-le-Comtal",
+      "dept": "42",
+      "code_bss": "07203X0168/PZ",
+      "current": 338.946,
+      "history": [
+        338.954,
+        338.947,
+        338.959,
+        338.945,
+        338.957,
+        338.944,
+        338.959,
+        338.946,
+        338.959,
+        338.947,
+        338.957,
+        338.947,
+        338.95,
+        338.946
+      ],
+      "year_ago": 339.0,
+      "lat": 45.649419482,
+      "lng": 4.190529903,
+      "color": "#ef4444"
+    },
+    {
       "nom": "Saint-André-le-Puy",
       "dept": "42",
       "code_bss": "07204X0105/F",
-      "current": 355.835,
+      "current": 355.796,
       "history": [
-        355.861,
-        355.84,
         355.853,
         355.833,
         355.833,
@@ -56390,19 +56362,47 @@
         355.866,
         355.862,
         355.863,
-        355.835
+        355.835,
+        355.829,
+        355.796
       ],
-      "year_ago": 355.98,
+      "year_ago": 355.99,
       "lat": 45.647921327,
       "lng": 4.246544955,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Cleppé",
+      "dept": "42",
+      "code_bss": "06967X0100/F",
+      "current": 323.546,
+      "history": [
+        323.577,
+        323.566,
+        323.557,
+        323.555,
+        323.556,
+        323.548,
+        323.544,
+        323.544,
+        323.564,
+        323.557,
+        323.551,
+        323.549,
+        323.546,
+        323.546
+      ],
+      "year_ago": 323.88,
+      "lat": 45.769951628,
+      "lng": 4.183823819,
       "color": "#ef4444"
     }
   ],
   "air": [
     {
-      "zone": "Saint-Paul-de-Vézelin",
+      "zone": "Unias",
       "dept": "42",
-      "date": "2026-07-26",
+      "date": "2026-07-29",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
@@ -56436,9 +56436,81 @@
       }
     },
     {
-      "zone": "Saint-Paul-d'Uzore",
+      "zone": "Unieux",
       "dept": "42",
-      "date": "2026-07-26",
+      "date": "2026-07-29",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Urbise",
+      "dept": "42",
+      "date": "2026-07-29",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Usson-en-Forez",
+      "dept": "42",
+      "date": "2026-07-29",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
@@ -56472,81 +56544,9 @@
       }
     },
     {
-      "zone": "Cornillon",
+      "zone": "Valeille",
       "dept": "42",
-      "date": "2026-07-26",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Paul-en-Jarez",
-      "dept": "42",
-      "date": "2026-07-26",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Pierre-de-Bœuf",
-      "dept": "42",
-      "date": "2026-07-26",
+      "date": "2026-07-29",
       "indice": 4,
       "label": "Mauvais",
       "color": "#ff5050",

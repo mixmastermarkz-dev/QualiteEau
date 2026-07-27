@@ -3,7 +3,7 @@
   "nom": "Landes",
   "slug": "landes",
   "region": "Nouvelle-Aquitaine",
-  "updated": "26/07/2026 à 13:16",
+  "updated": "27/07/2026 à 14:53",
   "score_eau": 99,
   "nb_communes": 327,
   "potable": [
@@ -56754,39 +56754,11 @@
   ],
   "nappes": [
     {
-      "nom": "Gourbera",
-      "dept": "40",
-      "code_bss": "09505X0034/GO01",
-      "current": 21.39,
-      "history": [
-        21.39,
-        21.38,
-        21.4,
-        21.37,
-        21.37,
-        21.36,
-        21.39,
-        21.38,
-        21.4,
-        21.41,
-        21.44,
-        21.44,
-        21.42,
-        21.39
-      ],
-      "year_ago": 21.23,
-      "lat": 43.788966613,
-      "lng": -1.035321265,
-      "color": "#3b82f6"
-    },
-    {
       "nom": "Lacquy",
       "dept": "40",
       "code_bss": "09266X0004/LC101",
-      "current": 76.464,
+      "current": 76.452,
       "history": [
-        76.476,
-        76.474,
         76.479,
         76.472,
         76.468,
@@ -56798,7 +56770,9 @@
         76.47,
         76.472,
         76.468,
-        76.464
+        76.464,
+        76.458,
+        76.452
       ],
       "year_ago": 76.64,
       "lat": 43.960162747,
@@ -56809,10 +56783,8 @@
       "nom": "Betbezer-d'Armagnac",
       "dept": "40",
       "code_bss": "09267X0014/PIEZO1",
-      "current": 71.123,
+      "current": 71.066,
       "history": [
-        71.323,
-        71.307,
         71.297,
         71.266,
         71.249,
@@ -56824,9 +56796,11 @@
         71.216,
         71.189,
         71.162,
-        71.123
+        71.123,
+        71.088,
+        71.066
       ],
-      "year_ago": 71.36,
+      "year_ago": 71.33,
       "lat": 43.982375767,
       "lng": -0.155560344,
       "color": "#ef4444"
@@ -56835,10 +56809,8 @@
       "nom": "Saint-Yaguen",
       "dept": "40",
       "code_bss": "09511X0022/LS02",
-      "current": 31.37,
+      "current": 31.35,
       "history": [
-        31.38,
-        31.35,
         31.37,
         31.33,
         31.35,
@@ -56850,9 +56822,11 @@
         31.43,
         31.41,
         31.41,
-        31.37
+        31.37,
+        31.37,
+        31.35
       ],
-      "year_ago": 31.22,
+      "year_ago": 31.23,
       "lat": 43.910092549,
       "lng": -0.715761027,
       "color": "#3b82f6"
@@ -56861,10 +56835,8 @@
       "nom": "Ychoux",
       "dept": "40",
       "code_bss": "08746X0031/P22",
-      "current": 56.32,
+      "current": 56.31,
       "history": [
-        56.39,
-        56.38,
         56.37,
         56.37,
         56.36,
@@ -56876,9 +56848,11 @@
         56.34,
         56.33,
         56.32,
-        56.32
+        56.32,
+        56.31,
+        56.31
       ],
-      "year_ago": 56.4,
+      "year_ago": 56.39,
       "lat": 44.344690504,
       "lng": -0.931494266,
       "color": "#ef4444"
@@ -56887,10 +56861,8 @@
       "nom": "Saugnacq-et-Muret",
       "dept": "40",
       "code_bss": "08742X0058/P4",
-      "current": 46.575,
+      "current": 46.568,
       "history": [
-        46.627,
-        46.625,
         46.619,
         46.616,
         46.607,
@@ -56902,43 +56874,71 @@
         46.585,
         46.585,
         46.579,
-        46.575
+        46.575,
+        46.569,
+        46.568
       ],
       "year_ago": 46.65,
       "lat": 44.435996741,
       "lng": -0.945104876,
       "color": "#ef4444"
+    },
+    {
+      "nom": "Gourbera",
+      "dept": "40",
+      "code_bss": "09505X0034/GO01",
+      "current": 21.38,
+      "history": [
+        21.4,
+        21.37,
+        21.37,
+        21.36,
+        21.39,
+        21.38,
+        21.4,
+        21.41,
+        21.44,
+        21.44,
+        21.42,
+        21.39,
+        21.37,
+        21.38
+      ],
+      "year_ago": 21.23,
+      "lat": 43.788966613,
+      "lng": -1.035321265,
+      "color": "#3b82f6"
     }
   ],
   "air": [
     {
-      "zone": "Parleboscq",
+      "zone": "Cagnotte",
       "dept": "40",
-      "date": "2026-07-27",
-      "indice": 7,
-      "label": "Événement",
-      "color": "#888888",
+      "date": "2026-07-28",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
       "source": "Atmo Nouvelle-Aquitaine",
       "polluants": {
         "NO₂": {
-          "indice": 7,
-          "label": "N.C.",
-          "color": "#94a3b8"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "O₃": {
-          "indice": 7,
-          "label": "N.C.",
-          "color": "#94a3b8"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
-          "indice": 7,
-          "label": "N.C.",
-          "color": "#94a3b8"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "PM2.5": {
-          "indice": 7,
-          "label": "N.C.",
-          "color": "#94a3b8"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "SO₂": {
           "indice": 0,
@@ -56948,33 +56948,33 @@
       }
     },
     {
-      "zone": "Sarbazan",
+      "zone": "Habas",
       "dept": "40",
-      "date": "2026-07-27",
-      "indice": 7,
-      "label": "Événement",
-      "color": "#888888",
+      "date": "2026-07-28",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
       "source": "Atmo Nouvelle-Aquitaine",
       "polluants": {
         "NO₂": {
-          "indice": 7,
-          "label": "N.C.",
-          "color": "#94a3b8"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "O₃": {
-          "indice": 7,
-          "label": "N.C.",
-          "color": "#94a3b8"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
-          "indice": 7,
-          "label": "N.C.",
-          "color": "#94a3b8"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "PM2.5": {
-          "indice": 7,
-          "label": "N.C.",
-          "color": "#94a3b8"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "SO₂": {
           "indice": 0,
@@ -56984,33 +56984,33 @@
       }
     },
     {
-      "zone": "Labastide-d'Armagnac",
+      "zone": "Clermont",
       "dept": "40",
-      "date": "2026-07-27",
-      "indice": 7,
-      "label": "Événement",
-      "color": "#888888",
+      "date": "2026-07-28",
+      "indice": 6,
+      "label": "Extrêmement mauvais",
+      "color": "#872181",
       "source": "Atmo Nouvelle-Aquitaine",
       "polluants": {
         "NO₂": {
-          "indice": 7,
-          "label": "N.C.",
-          "color": "#94a3b8"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "O₃": {
-          "indice": 7,
-          "label": "N.C.",
-          "color": "#94a3b8"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
-          "indice": 7,
-          "label": "N.C.",
-          "color": "#94a3b8"
+          "indice": 5,
+          "label": "Très mauvais",
+          "color": "#ef4444"
         },
         "PM2.5": {
-          "indice": 7,
-          "label": "N.C.",
-          "color": "#94a3b8"
+          "indice": 6,
+          "label": "Extrêmement mauvais",
+          "color": "#7c3aed"
         },
         "SO₂": {
           "indice": 0,
@@ -57020,33 +57020,33 @@
       }
     },
     {
-      "zone": "Lüe",
+      "zone": "Ozourt",
       "dept": "40",
-      "date": "2026-07-27",
-      "indice": 7,
-      "label": "Événement",
-      "color": "#888888",
+      "date": "2026-07-28",
+      "indice": 6,
+      "label": "Extrêmement mauvais",
+      "color": "#872181",
       "source": "Atmo Nouvelle-Aquitaine",
       "polluants": {
         "NO₂": {
-          "indice": 7,
-          "label": "N.C.",
-          "color": "#94a3b8"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "O₃": {
-          "indice": 7,
-          "label": "N.C.",
-          "color": "#94a3b8"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
-          "indice": 7,
-          "label": "N.C.",
-          "color": "#94a3b8"
+          "indice": 5,
+          "label": "Très mauvais",
+          "color": "#ef4444"
         },
         "PM2.5": {
-          "indice": 7,
-          "label": "N.C.",
-          "color": "#94a3b8"
+          "indice": 6,
+          "label": "Extrêmement mauvais",
+          "color": "#7c3aed"
         },
         "SO₂": {
           "indice": 0,
@@ -57056,33 +57056,33 @@
       }
     },
     {
-      "zone": "Biscarrosse",
+      "zone": "Bourriot-Bergonce",
       "dept": "40",
-      "date": "2026-07-27",
-      "indice": 7,
-      "label": "Événement",
-      "color": "#888888",
+      "date": "2026-07-28",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
       "source": "Atmo Nouvelle-Aquitaine",
       "polluants": {
         "NO₂": {
-          "indice": 7,
-          "label": "N.C.",
-          "color": "#94a3b8"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "O₃": {
-          "indice": 7,
-          "label": "N.C.",
-          "color": "#94a3b8"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
-          "indice": 7,
-          "label": "N.C.",
-          "color": "#94a3b8"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM2.5": {
-          "indice": 7,
-          "label": "N.C.",
-          "color": "#94a3b8"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,

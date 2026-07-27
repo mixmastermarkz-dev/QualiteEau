@@ -3,7 +3,7 @@
   "nom": "Cantal",
   "slug": "cantal",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "26/07/2026 à 13:16",
+  "updated": "27/07/2026 à 14:53",
   "score_eau": 96,
   "nb_communes": 251,
   "potable": [
@@ -41687,65 +41687,11 @@
   ],
   "nappes": [
     {
-      "nom": "Molompize",
-      "dept": "15",
-      "code_bss": "07657X0018/P1",
-      "current": 949.673,
-      "history": [
-        949.706,
-        949.703,
-        949.701,
-        949.697,
-        949.695,
-        949.691,
-        949.688,
-        949.686,
-        949.683,
-        949.679,
-        949.677,
-        949.675,
-        949.673,
-        949.673
-      ],
-      "year_ago": 949.86,
-      "lat": 45.242098391,
-      "lng": 3.098887675,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Teissières-lès-Bouliès",
-      "dept": "15",
-      "code_bss": "08125X0044/F1",
-      "current": 723.475,
-      "history": [
-        723.536,
-        723.525,
-        723.524,
-        723.505,
-        723.505,
-        723.485,
-        723.496,
-        723.477,
-        723.487,
-        723.469,
-        723.485,
-        723.47,
-        723.484,
-        723.475
-      ],
-      "year_ago": 723.59,
-      "lat": 44.820895,
-      "lng": 2.541051,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Moussages",
       "dept": "15",
       "code_bss": "07638X0017/MAIRIE",
-      "current": 847.024,
+      "current": 847.023,
       "history": [
-        847.025,
-        847.024,
         847.024,
         847.023,
         847.022,
@@ -41757,7 +41703,9 @@
         847.022,
         847.022,
         847.022,
-        847.024
+        847.024,
+        847.023,
+        847.023
       ],
       "year_ago": 847.01,
       "lat": 45.238404427,
@@ -41765,29 +41713,55 @@
       "color": "#3b82f6"
     },
     {
-      "nom": "Roannes-Saint-Mary",
+      "nom": "Teissières-lès-Bouliès",
       "dept": "15",
-      "code_bss": "08353X0052/F",
-      "current": 768.222,
+      "code_bss": "08125X0044/F1",
+      "current": 723.466,
       "history": [
-        768.406,
-        768.421,
-        768.423,
-        768.382,
-        768.353,
-        768.354,
-        768.343,
-        768.312,
-        768.273,
-        768.28,
-        768.285,
-        768.246,
-        768.222,
-        768.222
+        723.524,
+        723.505,
+        723.505,
+        723.485,
+        723.496,
+        723.477,
+        723.487,
+        723.469,
+        723.485,
+        723.47,
+        723.484,
+        723.475,
+        723.478,
+        723.466
       ],
-      "year_ago": 768.9,
-      "lat": 44.811215,
-      "lng": 2.400826,
+      "year_ago": 723.57,
+      "lat": 44.820895,
+      "lng": 2.541051,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Molompize",
+      "dept": "15",
+      "code_bss": "07657X0018/P1",
+      "current": 949.667,
+      "history": [
+        949.701,
+        949.697,
+        949.695,
+        949.691,
+        949.688,
+        949.686,
+        949.683,
+        949.679,
+        949.677,
+        949.675,
+        949.673,
+        949.673,
+        949.67,
+        949.667
+      ],
+      "year_ago": 949.86,
+      "lat": 45.242098391,
+      "lng": 3.098887675,
       "color": "#ef4444"
     },
     {
@@ -41796,8 +41770,6 @@
       "code_bss": "07635X0035/F",
       "current": 509.17,
       "history": [
-        509.19,
-        509.18,
         509.19,
         509.17,
         509.17,
@@ -41809,14 +41781,223 @@
         509.18,
         509.18,
         509.18,
+        509.17,
+        509.16,
         509.17
       ],
-      "year_ago": 509.36,
+      "year_ago": 509.37,
       "lat": 45.241376056,
       "lng": 2.246274272,
       "color": "#ef4444"
+    },
+    {
+      "nom": "Roannes-Saint-Mary",
+      "dept": "15",
+      "code_bss": "08353X0052/F",
+      "current": 768.187,
+      "history": [
+        768.423,
+        768.382,
+        768.353,
+        768.354,
+        768.343,
+        768.312,
+        768.273,
+        768.28,
+        768.285,
+        768.246,
+        768.222,
+        768.222,
+        768.211,
+        768.187
+      ],
+      "year_ago": 768.87,
+      "lat": 44.811215,
+      "lng": 2.400826,
+      "color": "#ef4444"
     }
   ],
-  "air": [],
+  "air": [
+    {
+      "zone": "Gourdièges",
+      "dept": "15",
+      "date": "2026-07-29",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Jabrun",
+      "dept": "15",
+      "date": "2026-07-29",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Jaleyrac",
+      "dept": "15",
+      "date": "2026-07-29",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Joursac",
+      "dept": "15",
+      "date": "2026-07-29",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Jou-sous-Monjou",
+      "dept": "15",
+      "date": "2026-07-29",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    }
+  ],
   "pollen": []
 }
