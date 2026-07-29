@@ -3,7 +3,7 @@
   "nom": "Haute-Loire",
   "slug": "haute-loire",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "28/07/2026 à 13:55",
+  "updated": "29/07/2026 à 13:58",
   "score_eau": 96,
   "nb_communes": 260,
   "potable": [
@@ -43813,37 +43813,9 @@
     {
       "nom": "Cohade",
       "dept": "43",
-      "code_bss": "07662X0279/P45B02",
-      "current": 405.72,
-      "history": [
-        405.752,
-        405.751,
-        405.728,
-        405.731,
-        405.717,
-        405.718,
-        405.702,
-        405.704,
-        405.695,
-        405.7,
-        405.687,
-        405.711,
-        405.71,
-        405.72
-      ],
-      "year_ago": 405.83,
-      "lat": 45.355638,
-      "lng": 3.362851,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Cohade",
-      "dept": "43",
       "code_bss": "07662X0278/45B-03",
-      "current": 405.757,
+      "current": 405.737,
       "history": [
-        405.762,
-        405.758,
         405.757,
         405.754,
         405.749,
@@ -43855,9 +43827,11 @@
         405.769,
         405.761,
         405.745,
-        405.757
+        405.757,
+        405.745,
+        405.737
       ],
-      "year_ago": 405.91,
+      "year_ago": 406.03,
       "lat": 45.354627,
       "lng": 3.358466,
       "color": "#ef4444"
@@ -43866,10 +43840,8 @@
       "nom": "Azérat",
       "dept": "43",
       "code_bss": "07662X0277/45B-01",
-      "current": 406.252,
+      "current": 406.233,
       "history": [
-        406.187,
-        406.179,
         406.175,
         406.172,
         406.177,
@@ -43881,12 +43853,40 @@
         406.221,
         406.236,
         406.247,
-        406.252
+        406.252,
+        406.241,
+        406.233
       ],
       "year_ago": 406.18,
       "lat": 45.357221793,
       "lng": 3.367729971,
       "color": "#3b82f6"
+    },
+    {
+      "nom": "Cohade",
+      "dept": "43",
+      "code_bss": "07662X0279/P45B02",
+      "current": 405.716,
+      "history": [
+        405.717,
+        405.718,
+        405.702,
+        405.704,
+        405.695,
+        405.7,
+        405.687,
+        405.711,
+        405.71,
+        405.72,
+        405.709,
+        405.722,
+        405.714,
+        405.716
+      ],
+      "year_ago": 405.88,
+      "lat": 45.355638,
+      "lng": 3.362851,
+      "color": "#ef4444"
     },
     {
       "nom": "Chaspuzac",
@@ -43909,7 +43909,7 @@
         863.245,
         863.238
       ],
-      "year_ago": 862.86,
+      "year_ago": 862.85,
       "lat": 45.060946408,
       "lng": 3.761689363,
       "color": "#3b82f6"
@@ -43918,10 +43918,8 @@
       "nom": "Saugues",
       "dept": "43",
       "code_bss": "08144X0010/PUITS",
-      "current": 955.37,
+      "current": 955.36,
       "history": [
-        955.43,
-        955.42,
         955.42,
         955.41,
         955.4,
@@ -43933,9 +43931,11 @@
         955.38,
         955.38,
         955.37,
-        955.37
+        955.37,
+        955.36,
+        955.36
       ],
-      "year_ago": 955.46,
+      "year_ago": 955.45,
       "lat": 44.963175124,
       "lng": 3.547527986,
       "color": "#ef4444"
@@ -43944,10 +43944,8 @@
       "nom": "Saint-Front",
       "dept": "43",
       "code_bss": "08163X0019/PONT",
-      "current": 1200.512,
+      "current": 1200.506,
       "history": [
-        1200.527,
-        1200.524,
         1200.522,
         1200.521,
         1200.518,
@@ -43959,7 +43957,9 @@
         1200.519,
         1200.519,
         1200.515,
-        1200.512
+        1200.512,
+        1200.507,
+        1200.506
       ],
       "year_ago": 1200.71,
       "lat": 44.975693366,
@@ -43967,6 +43967,187 @@
       "color": "#ef4444"
     }
   ],
-  "air": [],
+  "air": [
+    {
+      "zone": "Saint-Front",
+      "dept": "43",
+      "date": "2026-07-30",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Sainte-Florine",
+      "dept": "43",
+      "date": "2026-07-30",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Saint-Ferréol-d'Auroure",
+      "dept": "43",
+      "date": "2026-07-30",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Sainte-Eugénie-de-Villeneuve",
+      "dept": "43",
+      "date": "2026-07-30",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "le Cheylat",
+      "dept": "43",
+      "date": "2026-07-30",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    }
+  ],
   "pollen": []
 }

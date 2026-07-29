@@ -3,7 +3,7 @@
   "nom": "Loire",
   "slug": "loire",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "28/07/2026 à 13:55",
+  "updated": "29/07/2026 à 13:58",
   "score_eau": 97,
   "nb_communes": 326,
   "potable": [
@@ -56294,39 +56294,11 @@
   ],
   "nappes": [
     {
-      "nom": "Saint-Galmier",
-      "dept": "42",
-      "code_bss": "07208X0197/F1C",
-      "current": 372.542,
-      "history": [
-        372.547,
-        372.546,
-        372.553,
-        372.55,
-        372.56,
-        372.55,
-        372.561,
-        372.557,
-        372.557,
-        372.545,
-        372.548,
-        372.536,
-        372.541,
-        372.542
-      ],
-      "year_ago": 372.38,
-      "lat": 45.605448412,
-      "lng": 4.306255162,
-      "color": "#3b82f6"
-    },
-    {
       "nom": "Cleppé",
       "dept": "42",
       "code_bss": "06967X0100/F",
-      "current": 323.541,
+      "current": 323.532,
       "history": [
-        323.557,
-        323.555,
         323.556,
         323.548,
         323.544,
@@ -56338,47 +56310,47 @@
         323.546,
         323.546,
         323.545,
-        323.541
+        323.541,
+        323.549,
+        323.532
       ],
-      "year_ago": 323.88,
+      "year_ago": 323.86,
       "lat": 45.769951628,
       "lng": 4.183823819,
       "color": "#ef4444"
     },
     {
-      "nom": "Chalain-le-Comtal",
+      "nom": "Saint-Galmier",
       "dept": "42",
-      "code_bss": "07203X0168/PZ",
-      "current": 338.944,
+      "code_bss": "07208X0197/F1C",
+      "current": 372.547,
       "history": [
-        338.959,
-        338.945,
-        338.957,
-        338.944,
-        338.959,
-        338.946,
-        338.959,
-        338.947,
-        338.957,
-        338.947,
-        338.95,
-        338.946,
-        338.954,
-        338.944
+        372.553,
+        372.55,
+        372.56,
+        372.55,
+        372.561,
+        372.557,
+        372.557,
+        372.545,
+        372.548,
+        372.536,
+        372.541,
+        372.542,
+        372.556,
+        372.547
       ],
-      "year_ago": 338.98,
-      "lat": 45.649419482,
-      "lng": 4.190529903,
-      "color": "#ef4444"
+      "year_ago": 372.39,
+      "lat": 45.605448412,
+      "lng": 4.306255162,
+      "color": "#3b82f6"
     },
     {
       "nom": "Saint-André-le-Puy",
       "dept": "42",
       "code_bss": "07204X0105/F",
-      "current": 355.774,
+      "current": 355.782,
       "history": [
-        355.833,
-        355.823,
         355.842,
         355.834,
         355.845,
@@ -56390,14 +56362,223 @@
         355.829,
         355.796,
         355.789,
-        355.774
+        355.774,
+        355.806,
+        355.782
       ],
-      "year_ago": 355.98,
+      "year_ago": 355.94,
       "lat": 45.647921327,
       "lng": 4.246544955,
       "color": "#ef4444"
+    },
+    {
+      "nom": "Chalain-le-Comtal",
+      "dept": "42",
+      "code_bss": "07203X0168/PZ",
+      "current": 338.943,
+      "history": [
+        338.957,
+        338.944,
+        338.959,
+        338.946,
+        338.959,
+        338.947,
+        338.957,
+        338.947,
+        338.95,
+        338.946,
+        338.954,
+        338.944,
+        338.955,
+        338.943
+      ],
+      "year_ago": 339.0,
+      "lat": 45.649419482,
+      "lng": 4.190529903,
+      "color": "#ef4444"
     }
   ],
-  "air": [],
+  "air": [
+    {
+      "zone": "Veauche",
+      "dept": "42",
+      "date": "2026-07-30",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Veauchette",
+      "dept": "42",
+      "date": "2026-07-30",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Vendranges",
+      "dept": "42",
+      "date": "2026-07-30",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Véranne",
+      "dept": "42",
+      "date": "2026-07-30",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Vérin",
+      "dept": "42",
+      "date": "2026-07-30",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    }
+  ],
   "pollen": []
 }

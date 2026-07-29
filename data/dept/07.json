@@ -3,7 +3,7 @@
   "nom": "Ardèche",
   "slug": "ardeche",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "28/07/2026 à 13:55",
+  "updated": "29/07/2026 à 13:58",
   "score_eau": 96,
   "nb_communes": 337,
   "potable": [
@@ -28653,65 +28653,11 @@
   ],
   "nappes": [
     {
-      "nom": "Veyras",
-      "dept": "07",
-      "code_bss": "08413X0091/F3",
-      "current": 441.93,
-      "history": [
-        441.82,
-        441.82,
-        441.84,
-        441.84,
-        441.86,
-        441.85,
-        441.86,
-        441.87,
-        441.88,
-        441.93,
-        441.94,
-        441.93,
-        441.93,
-        441.93
-      ],
-      "year_ago": 441.4,
-      "lat": 44.733838457,
-      "lng": 4.561214887,
-      "color": "#3b82f6"
-    },
-    {
-      "nom": "Lablachère",
-      "dept": "07",
-      "code_bss": "BSS003GPIS/X",
-      "current": 243.549,
-      "history": [
-        243.638,
-        243.611,
-        243.643,
-        243.643,
-        243.673,
-        243.622,
-        243.64,
-        243.626,
-        243.654,
-        243.642,
-        243.634,
-        243.6,
-        243.581,
-        243.549
-      ],
-      "year_ago": 243.44,
-      "lat": 44.46354371,
-      "lng": 4.214386619,
-      "color": "#3b82f6"
-    },
-    {
       "nom": "Aubenas",
       "dept": "07",
       "code_bss": "08651X0038/0038",
-      "current": 297.05,
+      "current": 297.025,
       "history": [
-        297.3,
-        297.194,
         297.281,
         297.184,
         297.275,
@@ -28723,127 +28669,73 @@
         297.203,
         297.082,
         297.16,
-        297.05
+        297.05,
+        297.128,
+        297.025
       ],
-      "year_ago": 298.27,
+      "year_ago": 298.24,
       "lat": 44.619744152,
       "lng": 4.39032624,
       "color": "#ef4444"
+    },
+    {
+      "nom": "Veyras",
+      "dept": "07",
+      "code_bss": "08413X0091/F3",
+      "current": 441.93,
+      "history": [
+        441.84,
+        441.84,
+        441.86,
+        441.85,
+        441.86,
+        441.87,
+        441.88,
+        441.93,
+        441.94,
+        441.93,
+        441.93,
+        441.93,
+        441.92,
+        441.93
+      ],
+      "year_ago": 441.4,
+      "lat": 44.733838457,
+      "lng": 4.561214887,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Lablachère",
+      "dept": "07",
+      "code_bss": "BSS003GPIS/X",
+      "current": 243.573,
+      "history": [
+        243.643,
+        243.643,
+        243.673,
+        243.622,
+        243.64,
+        243.626,
+        243.654,
+        243.642,
+        243.634,
+        243.6,
+        243.581,
+        243.549,
+        243.576,
+        243.573
+      ],
+      "year_ago": 243.41,
+      "lat": 44.46354371,
+      "lng": 4.214386619,
+      "color": "#3b82f6"
     }
   ],
   "air": [
     {
-      "zone": "Saint-Cyr",
+      "zone": "Saint-Berain-sous-Sanvignes",
       "dept": "07",
-      "date": "2026-07-30",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM2.5": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Denis-de-Vaux",
-      "dept": "07",
-      "date": "2026-07-30",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM2.5": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Désert",
-      "dept": "07",
-      "date": "2026-07-30",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM2.5": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Didier-en-Bresse",
-      "dept": "07",
-      "date": "2026-07-30",
+      "date": "2026-07-31",
       "indice": 4,
       "label": "Mauvais",
       "color": "#ff5050",
@@ -28877,9 +28769,9 @@
       }
     },
     {
-      "zone": "Saint-Didier-en-Brionnais",
+      "zone": "Saint-Bérain-sur-Dheune",
       "dept": "07",
-      "date": "2026-07-30",
+      "date": "2026-07-31",
       "indice": 4,
       "label": "Mauvais",
       "color": "#ff5050",
@@ -28896,9 +28788,117 @@
           "color": "#f97316"
         },
         "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Saint-Boil",
+      "dept": "07",
+      "date": "2026-07-31",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
           "indice": 1,
           "label": "Bon",
           "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Saint-Bonnet-de-Cray",
+      "dept": "07",
+      "date": "2026-07-31",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Saint-Bonnet-de-Joux",
+      "dept": "07",
+      "date": "2026-07-31",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM2.5": {
           "indice": 2,
