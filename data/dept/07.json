@@ -3,7 +3,7 @@
   "nom": "Ardèche",
   "slug": "ardeche",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "30/07/2026 à 13:49",
+  "updated": "31/07/2026 à 13:56",
   "score_eau": 96,
   "nb_communes": 337,
   "potable": [
@@ -28656,10 +28656,8 @@
       "nom": "Aubenas",
       "dept": "07",
       "code_bss": "08651X0038/0038",
-      "current": 297.015,
+      "current": 296.999,
       "history": [
-        297.275,
-        297.171,
         297.27,
         297.164,
         297.256,
@@ -28671,9 +28669,11 @@
         297.128,
         297.025,
         297.106,
-        297.015
+        297.015,
+        297.093,
+        296.999
       ],
-      "year_ago": 298.21,
+      "year_ago": 298.19,
       "lat": 44.619744152,
       "lng": 4.39032624,
       "color": "#ef4444"
@@ -28682,10 +28682,8 @@
       "nom": "Lablachère",
       "dept": "07",
       "code_bss": "BSS003GPIS/X",
-      "current": 243.559,
+      "current": 243.572,
       "history": [
-        243.673,
-        243.622,
         243.64,
         243.626,
         243.654,
@@ -28697,7 +28695,9 @@
         243.576,
         243.573,
         243.594,
-        243.559
+        243.559,
+        243.603,
+        243.572
       ],
       "year_ago": 243.4,
       "lat": 44.46354371,
@@ -28711,8 +28711,6 @@
       "current": 441.93,
       "history": [
         441.86,
-        441.85,
-        441.86,
         441.87,
         441.88,
         441.93,
@@ -28723,6 +28721,8 @@
         441.92,
         441.93,
         441.92,
+        441.93,
+        441.93,
         441.93
       ],
       "year_ago": 441.4,
@@ -28733,9 +28733,9 @@
   ],
   "air": [
     {
-      "zone": "Villegaudin",
+      "zone": "La Corbière",
       "dept": "07",
-      "date": "2026-08-01",
+      "date": "2026-08-02",
       "indice": 4,
       "label": "Mauvais",
       "color": "#ff5050",
@@ -28752,9 +28752,9 @@
           "color": "#f97316"
         },
         "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM2.5": {
           "indice": 1,
@@ -28769,9 +28769,9 @@
       }
     },
     {
-      "zone": "Vérissey",
+      "zone": "La Côte",
       "dept": "07",
-      "date": "2026-08-01",
+      "date": "2026-08-02",
       "indice": 4,
       "label": "Mauvais",
       "color": "#ff5050",
@@ -28788,45 +28788,9 @@
           "color": "#f97316"
         },
         "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Verdun-sur-le-Doubs",
-      "dept": "07",
-      "date": "2026-08-01",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
           "indice": 1,
           "label": "Bon",
           "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
         },
         "PM2.5": {
           "indice": 1,
@@ -28841,9 +28805,9 @@
       }
     },
     {
-      "zone": "Tronchy",
+      "zone": "Courchaton",
       "dept": "07",
-      "date": "2026-08-01",
+      "date": "2026-08-02",
       "indice": 4,
       "label": "Mauvais",
       "color": "#ff5050",
@@ -28860,9 +28824,9 @@
           "color": "#f97316"
         },
         "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM2.5": {
           "indice": 2,
@@ -28877,9 +28841,9 @@
       }
     },
     {
-      "zone": "Toutenant",
+      "zone": "Courmont",
       "dept": "07",
-      "date": "2026-08-01",
+      "date": "2026-08-02",
       "indice": 4,
       "label": "Mauvais",
       "color": "#ff5050",
@@ -28896,14 +28860,50 @@
           "color": "#f97316"
         },
         "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
           "indice": 2,
           "label": "Moyen",
           "color": "#eab308"
         },
-        "PM2.5": {
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Couthenans",
+      "dept": "07",
+      "date": "2026-08-02",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
           "indice": 1,
           "label": "Bon",
           "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
