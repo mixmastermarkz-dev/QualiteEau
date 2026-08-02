@@ -3,7 +3,7 @@
   "nom": "Seine-Saint-Denis",
   "slug": "seine-saint-denis",
   "region": "Île-de-France",
-  "updated": "01/08/2026 à 13:14",
+  "updated": "02/08/2026 à 13:14",
   "score_eau": 96,
   "nb_communes": 48,
   "potable": [
@@ -2615,10 +2615,17 @@
           "date": "2024-12-09",
           "realtime": false
         },
-        "Nitrates": {
-          "valeur": 13.0,
+        "Ammonium": {
+          "valeur": 2.2,
           "unite": "mg/L",
-          "color": "#f59e0b",
+          "color": "#ef4444",
+          "date": "2024-12-09",
+          "realtime": false
+        },
+        "MES": {
+          "valeur": 576.0,
+          "unite": "mg/L",
+          "color": "#ef4444",
           "date": "2024-12-09",
           "realtime": false
         },
@@ -2636,10 +2643,10 @@
           "date": "2024-12-09",
           "realtime": false
         },
-        "pH": {
-          "valeur": 8.2,
-          "unite": "pH",
-          "color": "#10b981",
+        "Nitrates": {
+          "valeur": 13.0,
+          "unite": "mg/L",
+          "color": "#f59e0b",
           "date": "2024-12-09",
           "realtime": false
         },
@@ -2650,17 +2657,10 @@
           "date": "2024-12-09",
           "realtime": false
         },
-        "Ammonium": {
-          "valeur": 2.2,
-          "unite": "mg/L",
-          "color": "#ef4444",
-          "date": "2024-12-09",
-          "realtime": false
-        },
-        "MES": {
-          "valeur": 576.0,
-          "unite": "mg/L",
-          "color": "#ef4444",
+        "pH": {
+          "valeur": 8.2,
+          "unite": "pH",
+          "color": "#10b981",
           "date": "2024-12-09",
           "realtime": false
         }
@@ -2685,116 +2685,6 @@
           {
             "date": "2024-08-12",
             "valeur": 10.67,
-            "color": "#10b981"
-          }
-        ],
-        "Nitrates": [
-          {
-            "date": "2024-12-09",
-            "valeur": 13.0,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2024-12-09",
-            "valeur": 13.0,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2024-10-18",
-            "valeur": 8.7,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-08-12",
-            "valeur": 5.7,
-            "color": "#10b981"
-          }
-        ],
-        "Temp. eau": [
-          {
-            "date": "2024-12-09",
-            "valeur": 6.9,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-12-09",
-            "valeur": 6.9,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-10-18",
-            "valeur": 15.5,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-08-12",
-            "valeur": 26.5,
-            "color": "#ef4444"
-          }
-        ],
-        "O2 saturation": [
-          {
-            "date": "2024-12-09",
-            "valeur": 85.6,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-12-09",
-            "valeur": 85.6,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-10-18",
-            "valeur": 89.1,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-08-12",
-            "valeur": 132.8,
-            "color": "#10b981"
-          }
-        ],
-        "pH": [
-          {
-            "date": "2024-12-09",
-            "valeur": 8.2,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-12-09",
-            "valeur": 8.2,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-10-18",
-            "valeur": 8.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-08-12",
-            "valeur": 7.78,
-            "color": "#10b981"
-          }
-        ],
-        "Phosphore": [
-          {
-            "date": "2024-12-09",
-            "valeur": 0.027,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-12-09",
-            "valeur": 0.027,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-10-18",
-            "valeur": 0.015,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-08-12",
-            "valeur": 0.017,
             "color": "#10b981"
           }
         ],
@@ -2841,6 +2731,116 @@
             "valeur": 439.0,
             "color": "#ef4444"
           }
+        ],
+        "Temp. eau": [
+          {
+            "date": "2024-12-09",
+            "valeur": 6.9,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-12-09",
+            "valeur": 6.9,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-10-18",
+            "valeur": 15.5,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-08-12",
+            "valeur": 26.5,
+            "color": "#ef4444"
+          }
+        ],
+        "O2 saturation": [
+          {
+            "date": "2024-12-09",
+            "valeur": 85.6,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-12-09",
+            "valeur": 85.6,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-10-18",
+            "valeur": 89.1,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-08-12",
+            "valeur": 132.8,
+            "color": "#10b981"
+          }
+        ],
+        "Nitrates": [
+          {
+            "date": "2024-12-09",
+            "valeur": 13.0,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2024-12-09",
+            "valeur": 13.0,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2024-10-18",
+            "valeur": 8.7,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-08-12",
+            "valeur": 5.7,
+            "color": "#10b981"
+          }
+        ],
+        "Phosphore": [
+          {
+            "date": "2024-12-09",
+            "valeur": 0.027,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-12-09",
+            "valeur": 0.027,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-10-18",
+            "valeur": 0.015,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-08-12",
+            "valeur": 0.017,
+            "color": "#10b981"
+          }
+        ],
+        "pH": [
+          {
+            "date": "2024-12-09",
+            "valeur": 8.2,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-12-09",
+            "valeur": 8.2,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-10-18",
+            "valeur": 8.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-08-12",
+            "valeur": 7.78,
+            "color": "#10b981"
+          }
         ]
       },
       "score": 69,
@@ -2851,59 +2851,23 @@
   "nappes": [],
   "air": [
     {
-      "zone": "Neuilly-Plaisance",
+      "zone": "Les Lilas",
       "dept": "93",
-      "date": "2026-08-02",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#F0E641",
+      "date": "2026-08-03",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#FF5050",
       "source": "Airparif",
       "polluants": {
         "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Romainville",
-      "dept": "93",
-      "date": "2026-08-02",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#F0E641",
-      "source": "Airparif",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "PM10": {
           "indice": 1,
@@ -2925,21 +2889,21 @@
     {
       "zone": "L'Île-Saint-Denis",
       "dept": "93",
-      "date": "2026-08-02",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#F0E641",
+      "date": "2026-08-03",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#FF5050",
       "source": "Airparif",
       "polluants": {
         "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "PM10": {
           "indice": 1,
@@ -2959,12 +2923,12 @@
       }
     },
     {
-      "zone": "Les Lilas",
+      "zone": "Neuilly-Sur-Marne",
       "dept": "93",
-      "date": "2026-08-02",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#F0E641",
+      "date": "2026-08-03",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#FF5050",
       "source": "Airparif",
       "polluants": {
         "NO₂": {
@@ -2973,9 +2937,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "PM10": {
           "indice": 1,
@@ -2995,23 +2959,59 @@
       }
     },
     {
-      "zone": "Coubron",
+      "zone": "Villemomble",
       "dept": "93",
-      "date": "2026-08-02",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#F0E641",
+      "date": "2026-08-03",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#FF5050",
       "source": "Airparif",
       "polluants": {
         "NO₂": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
           "indice": 1,
           "label": "Bon",
           "color": "#10b981"
         },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Villetaneuse",
+      "dept": "93",
+      "date": "2026-08-03",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#FF5050",
+      "source": "Airparif",
+      "polluants": {
+        "NO₂": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "PM10": {
           "indice": 1,
