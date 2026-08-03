@@ -3,7 +3,7 @@
   "nom": "Haut-Rhin",
   "slug": "haut-rhin",
   "region": "Grand Est",
-  "updated": "02/08/2026 à 13:14",
+  "updated": "03/08/2026 à 14:53",
   "score_eau": 94,
   "nb_communes": 366,
   "potable": [
@@ -41960,10 +41960,8 @@
       "nom": "Mooslargue",
       "dept": "68",
       "code_bss": "04761X0021/F1",
-      "current": 428.823,
+      "current": 428.821,
       "history": [
-        428.842,
-        428.828,
         428.828,
         428.824,
         428.835,
@@ -41975,9 +41973,11 @@
         428.833,
         428.824,
         428.825,
-        428.823
+        428.823,
+        428.83,
+        428.821
       ],
-      "year_ago": 428.88,
+      "year_ago": 428.87,
       "lat": 47.509654366,
       "lng": 7.218150794,
       "color": "#ef4444"
@@ -41985,9 +41985,9 @@
   ],
   "air": [
     {
-      "zone": "Reiningue",
+      "zone": "Morschwiller-le-Bas",
       "dept": "68",
-      "date": "2026-08-02",
+      "date": "2026-08-04",
       "indice": 4,
       "label": "Mauvais",
       "color": "#FF5050",
@@ -42004,9 +42004,45 @@
           "color": "#f97316"
         },
         "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
           "indice": 1,
           "label": "Bon",
           "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Le Haut Soultzbach",
+      "dept": "68",
+      "date": "2026-08-04",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#FF5050",
+      "source": "Atmo Grand Est",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM2.5": {
           "indice": 2,
@@ -42021,9 +42057,9 @@
       }
     },
     {
-      "zone": "Retzwiller",
+      "zone": "Muespach",
       "dept": "68",
-      "date": "2026-08-02",
+      "date": "2026-08-04",
       "indice": 4,
       "label": "Mauvais",
       "color": "#FF5050",
@@ -42040,9 +42076,9 @@
           "color": "#f97316"
         },
         "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM2.5": {
           "indice": 2,
@@ -42057,9 +42093,9 @@
       }
     },
     {
-      "zone": "Ribeauvillé",
+      "zone": "Muespach-le-Haut",
       "dept": "68",
-      "date": "2026-08-02",
+      "date": "2026-08-04",
       "indice": 4,
       "label": "Mauvais",
       "color": "#FF5050",
@@ -42076,9 +42112,9 @@
           "color": "#f97316"
         },
         "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM2.5": {
           "indice": 2,
@@ -42093,12 +42129,12 @@
       }
     },
     {
-      "zone": "Richwiller",
+      "zone": "Muhlbach-sur-Munster",
       "dept": "68",
-      "date": "2026-08-02",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#FF5050",
+      "date": "2026-08-04",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
       "source": "Atmo Grand Est",
       "polluants": {
         "NO₂": {
@@ -42107,50 +42143,14 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
           "indice": 2,
           "label": "Moyen",
           "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Riedisheim",
-      "dept": "68",
-      "date": "2026-08-02",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#FF5050",
-      "source": "Atmo Grand Est",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
         },
         "PM2.5": {
           "indice": 2,

@@ -3,7 +3,7 @@
   "nom": "Savoie",
   "slug": "savoie",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "02/08/2026 à 13:14",
+  "updated": "03/08/2026 à 14:53",
   "score_eau": 99,
   "nb_communes": 274,
   "potable": [
@@ -31298,10 +31298,8 @@
       "nom": "Aiton",
       "dept": "73",
       "code_bss": "07266X0052/PS4",
-      "current": 293.419,
+      "current": 293.412,
       "history": [
-        293.454,
-        293.452,
         293.448,
         293.445,
         293.433,
@@ -31313,7 +31311,9 @@
         293.422,
         293.422,
         293.42,
-        293.419
+        293.419,
+        293.417,
+        293.412
       ],
       "year_ago": 293.46,
       "lat": 45.566444711,
@@ -31326,8 +31326,6 @@
       "code_bss": "07256X0095/CHAMBE",
       "current": 264.798,
       "history": [
-        264.842,
-        264.827,
         264.837,
         264.819,
         264.833,
@@ -31339,9 +31337,11 @@
         264.818,
         264.802,
         264.815,
+        264.798,
+        264.817,
         264.798
       ],
-      "year_ago": 264.91,
+      "year_ago": 264.9,
       "lat": 45.569053375,
       "lng": 5.916248145,
       "color": "#ef4444"
@@ -31350,10 +31350,8 @@
       "nom": "Cruet",
       "dept": "73",
       "code_bss": "07494X0026/CRUET",
-      "current": 269.39,
+      "current": 269.329,
       "history": [
-        269.318,
-        269.298,
         269.298,
         269.337,
         269.283,
@@ -31365,9 +31363,11 @@
         269.361,
         269.399,
         269.367,
-        269.39
+        269.39,
+        269.317,
+        269.329
       ],
-      "year_ago": 269.45,
+      "year_ago": 269.44,
       "lat": 45.522193195,
       "lng": 6.104556772,
       "color": "#ef4444"
@@ -31375,45 +31375,9 @@
   ],
   "air": [
     {
-      "zone": "les Avanchers",
+      "zone": "Attignat-Oncin",
       "dept": "73",
-      "date": "2026-08-04",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "La Chapelle-Saint-Martin",
-      "dept": "73",
-      "date": "2026-08-04",
+      "date": "2026-08-05",
       "indice": 4,
       "label": "Mauvais",
       "color": "#ff5050",
@@ -31435,9 +31399,9 @@
           "color": "#eab308"
         },
         "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "SO₂": {
           "indice": 0,
@@ -31447,9 +31411,9 @@
       }
     },
     {
-      "zone": "Brison-Saint-Innocent",
+      "zone": "La Chapelle-Blanche",
       "dept": "73",
-      "date": "2026-08-04",
+      "date": "2026-08-05",
       "indice": 4,
       "label": "Mauvais",
       "color": "#ff5050",
@@ -31485,7 +31449,7 @@
     {
       "zone": "Aussois",
       "dept": "73",
-      "date": "2026-08-04",
+      "date": "2026-08-05",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
@@ -31519,9 +31483,9 @@
       }
     },
     {
-      "zone": "Cognin",
+      "zone": "La Bridoire",
       "dept": "73",
-      "date": "2026-08-04",
+      "date": "2026-08-05",
       "indice": 4,
       "label": "Mauvais",
       "color": "#ff5050",
@@ -31543,9 +31507,45 @@
           "color": "#eab308"
         },
         "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "La Chapelle",
+      "dept": "73",
+      "date": "2026-08-05",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "SO₂": {
           "indice": 0,
