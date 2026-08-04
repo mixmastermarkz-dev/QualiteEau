@@ -3,7 +3,7 @@
   "nom": "Cantal",
   "slug": "cantal",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "03/08/2026 à 14:53",
+  "updated": "04/08/2026 à 14:00",
   "score_eau": 96,
   "nb_communes": 251,
   "potable": [
@@ -41665,10 +41665,8 @@
       "nom": "Teissières-lès-Bouliès",
       "dept": "15",
       "code_bss": "08125X0044/F1",
-      "current": 723.387,
+      "current": 723.378,
       "history": [
-        723.46,
-        723.459,
         723.449,
         723.446,
         723.43,
@@ -41680,47 +41678,21 @@
         723.406,
         723.404,
         723.393,
-        723.387
+        723.387,
+        723.382,
+        723.378
       ],
-      "year_ago": 723.48,
+      "year_ago": 723.46,
       "lat": 44.820895,
       "lng": 2.541051,
       "color": "#ef4444"
     },
     {
-      "nom": "Moussages",
-      "dept": "15",
-      "code_bss": "07638X0017/MAIRIE",
-      "current": 847.023,
-      "history": [
-        847.025,
-        847.025,
-        847.026,
-        847.026,
-        847.026,
-        847.025,
-        847.026,
-        847.025,
-        847.025,
-        847.024,
-        847.024,
-        847.024,
-        847.023,
-        847.023
-      ],
-      "year_ago": 847.0,
-      "lat": 45.238404427,
-      "lng": 2.467418099,
-      "color": "#3b82f6"
-    },
-    {
       "nom": "Molompize",
       "dept": "15",
       "code_bss": "07657X0018/P1",
-      "current": 949.632,
+      "current": 949.627,
       "history": [
-        949.665,
-        949.662,
         949.659,
         949.656,
         949.653,
@@ -41732,21 +41704,47 @@
         949.639,
         949.636,
         949.634,
-        949.632
+        949.632,
+        949.63,
+        949.627
       ],
-      "year_ago": 949.83,
+      "year_ago": 949.82,
       "lat": 45.242098391,
       "lng": 3.098887675,
       "color": "#ef4444"
     },
     {
+      "nom": "Moussages",
+      "dept": "15",
+      "code_bss": "07638X0017/MAIRIE",
+      "current": 847.028,
+      "history": [
+        847.026,
+        847.026,
+        847.026,
+        847.025,
+        847.026,
+        847.025,
+        847.025,
+        847.024,
+        847.024,
+        847.024,
+        847.023,
+        847.023,
+        847.022,
+        847.028
+      ],
+      "year_ago": 847.0,
+      "lat": 45.238404427,
+      "lng": 2.467418099,
+      "color": "#3b82f6"
+    },
+    {
       "nom": "Roannes-Saint-Mary",
       "dept": "15",
       "code_bss": "08353X0052/F",
-      "current": 767.905,
+      "current": 767.898,
       "history": [
-        768.151,
-        768.134,
         768.121,
         768.1,
         768.063,
@@ -41758,9 +41756,11 @@
         767.971,
         767.962,
         767.936,
-        767.905
+        767.905,
+        767.894,
+        767.898
       ],
-      "year_ago": 768.64,
+      "year_ago": 768.61,
       "lat": 44.811215,
       "lng": 2.400826,
       "color": "#ef4444"
@@ -41769,12 +41769,10 @@
       "nom": "Chalvignac",
       "dept": "15",
       "code_bss": "07635X0035/F",
-      "current": 509.13,
+      "current": 509.11,
       "history": [
         509.15,
         509.16,
-        509.15,
-        509.16,
         509.14,
         509.16,
         509.13,
@@ -41784,9 +41782,11 @@
         509.13,
         509.14,
         509.13,
-        509.13
+        509.13,
+        509.13,
+        509.11
       ],
-      "year_ago": 509.28,
+      "year_ago": 509.26,
       "lat": 45.241376056,
       "lng": 2.246274272,
       "color": "#ef4444"
@@ -41794,9 +41794,45 @@
   ],
   "air": [
     {
-      "zone": "Gourdièges",
+      "zone": "Allanche",
       "dept": "15",
-      "date": "2026-08-05",
+      "date": "2026-08-06",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "la Barge",
+      "dept": "15",
+      "date": "2026-08-06",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
@@ -41830,9 +41866,45 @@
       }
     },
     {
-      "zone": "Jussac",
+      "zone": "Beaulieu",
       "dept": "15",
-      "date": "2026-08-05",
+      "date": "2026-08-06",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Bassignac",
+      "dept": "15",
+      "date": "2026-08-06",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
@@ -41866,12 +41938,12 @@
       }
     },
     {
-      "zone": "Junhac",
+      "zone": "Barriac-les-Bosquets",
       "dept": "15",
-      "date": "2026-08-05",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-08-06",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
@@ -41880,81 +41952,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Jou-sous-Monjou",
-      "dept": "15",
-      "date": "2026-08-05",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Joursac",
-      "dept": "15",
-      "date": "2026-08-05",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
