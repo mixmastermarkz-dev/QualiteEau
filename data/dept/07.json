@@ -3,7 +3,7 @@
   "nom": "Ardèche",
   "slug": "ardeche",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "04/08/2026 à 14:00",
+  "updated": "05/08/2026 à 13:57",
   "score_eau": 96,
   "nb_communes": 337,
   "potable": [
@@ -19349,6 +19349,13 @@
           "date": "2026-03-27",
           "realtime": false
         },
+        "O2 saturation": {
+          "valeur": 102.0,
+          "unite": "%",
+          "color": "#10b981",
+          "date": "2026-03-27",
+          "realtime": false
+        },
         "pH": {
           "valeur": 8.1,
           "unite": "pH",
@@ -19359,13 +19366,6 @@
         "Conductivité": {
           "valeur": 11.3,
           "unite": "µS/cm",
-          "color": "#10b981",
-          "date": "2026-03-27",
-          "realtime": false
-        },
-        "O2 saturation": {
-          "valeur": 102.0,
-          "unite": "%",
           "color": "#10b981",
           "date": "2026-03-27",
           "realtime": false
@@ -19447,6 +19447,33 @@
             "color": "#ef4444"
           }
         ],
+        "O2 saturation": [
+          {
+            "date": "2026-03-27",
+            "valeur": 102.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-02-19",
+            "valeur": 102.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-01-27",
+            "valeur": 100.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-12-19",
+            "valeur": 106.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-11-28",
+            "valeur": 105.0,
+            "color": "#10b981"
+          }
+        ],
         "pH": [
           {
             "date": "2026-03-27",
@@ -19498,33 +19525,6 @@
           {
             "date": "2025-11-28",
             "valeur": 11.9,
-            "color": "#10b981"
-          }
-        ],
-        "O2 saturation": [
-          {
-            "date": "2026-03-27",
-            "valeur": 102.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2026-02-19",
-            "valeur": 102.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2026-01-27",
-            "valeur": 100.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-12-19",
-            "valeur": 106.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-11-28",
-            "valeur": 105.0,
             "color": "#10b981"
           }
         ],
@@ -24074,16 +24074,16 @@
       "lon": 3.982833218,
       "nom_cours_eau": "BORNE",
       "parametres": {
-        "O2 saturation": {
-          "valeur": 102.0,
-          "unite": "%",
+        "Nitrates": {
+          "valeur": 1.3,
+          "unite": "mg/L",
           "color": "#10b981",
           "date": "2026-02-24",
           "realtime": false
         },
-        "Nitrates": {
-          "valeur": 1.3,
-          "unite": "mg/L",
+        "O2 saturation": {
+          "valeur": 102.0,
+          "unite": "%",
           "color": "#10b981",
           "date": "2026-02-24",
           "realtime": false
@@ -24132,33 +24132,6 @@
         }
       },
       "historique": {
-        "O2 saturation": [
-          {
-            "date": "2026-02-24",
-            "valeur": 102.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-12-29",
-            "valeur": 103.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-11-24",
-            "valeur": 102.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-10-21",
-            "valeur": 102.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-09-23",
-            "valeur": 104.0,
-            "color": "#10b981"
-          }
-        ],
         "Nitrates": [
           {
             "date": "2026-02-24",
@@ -24183,6 +24156,33 @@
           {
             "date": "2025-09-23",
             "valeur": 1.1,
+            "color": "#10b981"
+          }
+        ],
+        "O2 saturation": [
+          {
+            "date": "2026-02-24",
+            "valeur": 102.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-12-29",
+            "valeur": 103.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-11-24",
+            "valeur": 102.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-10-21",
+            "valeur": 102.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-09-23",
+            "valeur": 104.0,
             "color": "#10b981"
           }
         ],
@@ -25218,6 +25218,13 @@
       "lon": 4.69820172,
       "nom_cours_eau": "RHONE",
       "parametres": {
+        "pH": {
+          "valeur": 8.1,
+          "unite": "pH",
+          "color": "#10b981",
+          "date": "2026-01-21",
+          "realtime": false
+        },
         "Conductivité": {
           "valeur": 11.8,
           "unite": "µS/cm",
@@ -25228,13 +25235,6 @@
         "Nitrates": {
           "valeur": 8.0,
           "unite": "mg/L",
-          "color": "#10b981",
-          "date": "2026-01-21",
-          "realtime": false
-        },
-        "pH": {
-          "valeur": 8.1,
-          "unite": "pH",
           "color": "#10b981",
           "date": "2026-01-21",
           "realtime": false
@@ -25276,6 +25276,33 @@
         }
       },
       "historique": {
+        "pH": [
+          {
+            "date": "2026-01-21",
+            "valeur": 8.1,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-11-26",
+            "valeur": 8.3,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-09-23",
+            "valeur": 7.6,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-07-22",
+            "valeur": 8.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-05-22",
+            "valeur": 8.1,
+            "color": "#10b981"
+          }
+        ],
         "Conductivité": [
           {
             "date": "2026-01-21",
@@ -25327,33 +25354,6 @@
           {
             "date": "2025-05-22",
             "valeur": 5.4,
-            "color": "#10b981"
-          }
-        ],
-        "pH": [
-          {
-            "date": "2026-01-21",
-            "valeur": 8.1,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-11-26",
-            "valeur": 8.3,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-09-23",
-            "valeur": 7.6,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-07-22",
-            "valeur": 8.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-05-22",
-            "valeur": 8.1,
             "color": "#10b981"
           }
         ],
@@ -28887,12 +28887,10 @@
       "nom": "Veyras",
       "dept": "07",
       "code_bss": "08413X0091/F3",
-      "current": 441.95,
+      "current": 441.94,
       "history": [
         441.92,
         441.93,
-        441.92,
-        441.93,
         441.93,
         441.93,
         441.95,
@@ -28902,7 +28900,9 @@
         441.93,
         441.95,
         441.95,
-        441.95
+        441.95,
+        441.96,
+        441.94
       ],
       "year_ago": 441.42,
       "lat": 44.733838457,
@@ -28913,10 +28913,8 @@
       "nom": "Lablachère",
       "dept": "07",
       "code_bss": "BSS003GPIS/X",
-      "current": 243.592,
+      "current": 243.573,
       "history": [
-        243.576,
-        243.573,
         243.594,
         243.559,
         243.603,
@@ -28928,7 +28926,9 @@
         243.61,
         243.576,
         243.584,
-        243.592
+        243.592,
+        243.592,
+        243.573
       ],
       "year_ago": 243.3,
       "lat": 44.46354371,
@@ -28939,10 +28939,8 @@
       "nom": "Aubenas",
       "dept": "07",
       "code_bss": "08651X0038/0038",
-      "current": 296.904,
+      "current": 296.867,
       "history": [
-        297.128,
-        297.025,
         297.106,
         297.015,
         297.093,
@@ -28954,9 +28952,11 @@
         297.052,
         296.934,
         297.014,
-        296.904
+        296.904,
+        296.977,
+        296.867
       ],
-      "year_ago": 298.04,
+      "year_ago": 298.02,
       "lat": 44.619744152,
       "lng": 4.39032624,
       "color": "#ef4444"
@@ -28964,9 +28964,9 @@
   ],
   "air": [
     {
-      "zone": "Saint-Usuge",
+      "zone": "Mairie de Saint-Martin-d'Auxy",
       "dept": "07",
-      "date": "2026-08-06",
+      "date": "2026-08-07",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
@@ -29000,9 +29000,9 @@
       }
     },
     {
-      "zone": "Saint-Vallerin",
+      "zone": "Quincy",
       "dept": "07",
-      "date": "2026-08-06",
+      "date": "2026-08-07",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
@@ -29036,9 +29036,9 @@
       }
     },
     {
-      "zone": "Saint-Vérand",
+      "zone": "Saint-Martin-de-Lixy",
       "dept": "07",
-      "date": "2026-08-06",
+      "date": "2026-08-07",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
@@ -29072,9 +29072,9 @@
       }
     },
     {
-      "zone": "Saint-Vincent-en-Bresse",
+      "zone": "Saint-Martin-de-Salencey",
       "dept": "07",
-      "date": "2026-08-06",
+      "date": "2026-08-07",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
@@ -29108,9 +29108,9 @@
       }
     },
     {
-      "zone": "La Salle",
+      "zone": "Saint-Martin-du-Lac",
       "dept": "07",
-      "date": "2026-08-06",
+      "date": "2026-08-07",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",

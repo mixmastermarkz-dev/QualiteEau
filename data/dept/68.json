@@ -3,7 +3,7 @@
   "nom": "Haut-Rhin",
   "slug": "haut-rhin",
   "region": "Grand Est",
-  "updated": "04/08/2026 à 14:00",
+  "updated": "05/08/2026 à 13:57",
   "score_eau": 94,
   "nb_communes": 366,
   "potable": [
@@ -24860,16 +24860,16 @@
           "date": "2024-12-10",
           "realtime": false
         },
-        "Phosphore": {
-          "valeur": 0.11,
-          "unite": "mg/L",
+        "O2 saturation": {
+          "valeur": 111.2,
+          "unite": "%",
           "color": "#10b981",
           "date": "2024-12-10",
           "realtime": false
         },
-        "O2 saturation": {
-          "valeur": 111.2,
-          "unite": "%",
+        "Phosphore": {
+          "valeur": 0.11,
+          "unite": "mg/L",
           "color": "#10b981",
           "date": "2024-12-10",
           "realtime": false
@@ -24933,6 +24933,28 @@
             "color": "#10b981"
           }
         ],
+        "O2 saturation": [
+          {
+            "date": "2024-12-10",
+            "valeur": 111.2,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-11-13",
+            "valeur": 111.7,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-10-18",
+            "valeur": 110.6,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-08-21",
+            "valeur": 110.8,
+            "color": "#10b981"
+          }
+        ],
         "Phosphore": [
           {
             "date": "2024-12-10",
@@ -24957,28 +24979,6 @@
           {
             "date": "2024-08-21",
             "valeur": 0.09,
-            "color": "#10b981"
-          }
-        ],
-        "O2 saturation": [
-          {
-            "date": "2024-12-10",
-            "valeur": 111.2,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-11-13",
-            "valeur": 111.7,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-10-18",
-            "valeur": 110.6,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-08-21",
-            "valeur": 110.8,
             "color": "#10b981"
           }
         ],
@@ -29000,17 +29000,17 @@
           "date": "2024-12-05",
           "realtime": false
         },
-        "Temp. eau": {
-          "valeur": 6.1,
-          "unite": "°C",
-          "color": "#10b981",
-          "date": "2024-12-05",
-          "realtime": false
-        },
         "MES": {
           "valeur": 423.0,
           "unite": "mg/L",
           "color": "#ef4444",
+          "date": "2024-12-05",
+          "realtime": false
+        },
+        "Temp. eau": {
+          "valeur": 6.1,
+          "unite": "°C",
+          "color": "#10b981",
           "date": "2024-12-05",
           "realtime": false
         },
@@ -29078,33 +29078,6 @@
             "color": "#10b981"
           }
         ],
-        "Temp. eau": [
-          {
-            "date": "2024-12-05",
-            "valeur": 6.1,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-11-07",
-            "valeur": 11.8,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-10-11",
-            "valeur": 13.8,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-12",
-            "valeur": 19.1,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-08-14",
-            "valeur": 25.5,
-            "color": "#ef4444"
-          }
-        ],
         "MES": [
           {
             "date": "2024-12-05",
@@ -29129,6 +29102,33 @@
           {
             "date": "2024-08-14",
             "valeur": 304.0,
+            "color": "#ef4444"
+          }
+        ],
+        "Temp. eau": [
+          {
+            "date": "2024-12-05",
+            "valeur": 6.1,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-11-07",
+            "valeur": 11.8,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-10-11",
+            "valeur": 13.8,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-12",
+            "valeur": 19.1,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-08-14",
+            "valeur": 25.5,
             "color": "#ef4444"
           }
         ],
@@ -29382,12 +29382,12 @@
           },
           {
             "date": "2024-10-11",
-            "valeur": 3.4,
+            "valeur": 3.6,
             "color": "#ef4444"
           },
           {
             "date": "2024-10-11",
-            "valeur": 3.6,
+            "valeur": 3.4,
             "color": "#ef4444"
           }
         ],
@@ -34296,6 +34296,292 @@
       "score_label": "Moyenne"
     },
     {
+      "nom": "L'ILL A CARSPACH",
+      "dept": "68",
+      "lat": 47.615523487,
+      "lon": 7.218093436,
+      "nom_cours_eau": "L'ILL",
+      "parametres": {
+        "pH": {
+          "valeur": 8.2,
+          "unite": "pH",
+          "color": "#10b981",
+          "date": "2024-12-03",
+          "realtime": false
+        },
+        "MES": {
+          "valeur": 443.0,
+          "unite": "mg/L",
+          "color": "#ef4444",
+          "date": "2024-12-03",
+          "realtime": false
+        },
+        "O2 saturation": {
+          "valeur": 97.7,
+          "unite": "%",
+          "color": "#10b981",
+          "date": "2024-12-03",
+          "realtime": false
+        },
+        "Phosphore": {
+          "valeur": 0.36,
+          "unite": "mg/L",
+          "color": "#f59e0b",
+          "date": "2024-12-03",
+          "realtime": false
+        },
+        "Conductivité": {
+          "valeur": 11.6,
+          "unite": "µS/cm",
+          "color": "#10b981",
+          "date": "2024-12-03",
+          "realtime": false
+        },
+        "Temp. eau": {
+          "valeur": 7.8,
+          "unite": "°C",
+          "color": "#10b981",
+          "date": "2024-12-03",
+          "realtime": false
+        },
+        "Ammonium": {
+          "valeur": 5.9,
+          "unite": "mg/L",
+          "color": "#ef4444",
+          "date": "2024-12-03",
+          "realtime": false
+        },
+        "Nitrates": {
+          "valeur": 16.0,
+          "unite": "mg/L",
+          "color": "#f59e0b",
+          "date": "2024-12-03",
+          "realtime": false
+        }
+      },
+      "historique": {
+        "pH": [
+          {
+            "date": "2024-12-03",
+            "valeur": 8.2,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-11-06",
+            "valeur": 8.3,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-10-08",
+            "valeur": 8.2,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-10",
+            "valeur": 8.1,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-08-13",
+            "valeur": 8.1,
+            "color": "#10b981"
+          }
+        ],
+        "MES": [
+          {
+            "date": "2024-12-03",
+            "valeur": 443.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2024-11-06",
+            "valeur": 624.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2024-10-08",
+            "valeur": 548.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2024-09-10",
+            "valeur": 544.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2024-08-13",
+            "valeur": 592.0,
+            "color": "#ef4444"
+          }
+        ],
+        "O2 saturation": [
+          {
+            "date": "2024-12-03",
+            "valeur": 97.7,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-11-06",
+            "valeur": 96.6,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-10-08",
+            "valeur": 92.8,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-10",
+            "valeur": 90.3,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-08-13",
+            "valeur": 81.3,
+            "color": "#10b981"
+          }
+        ],
+        "Phosphore": [
+          {
+            "date": "2024-12-03",
+            "valeur": 0.36,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2024-11-06",
+            "valeur": 0.11,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-10-08",
+            "valeur": 0.17,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-10",
+            "valeur": 0.27,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2024-08-13",
+            "valeur": 0.17,
+            "color": "#10b981"
+          }
+        ],
+        "Conductivité": [
+          {
+            "date": "2024-12-03",
+            "valeur": 11.6,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-11-06",
+            "valeur": 10.9,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-10-08",
+            "valeur": 9.6,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-10",
+            "valeur": 8.8,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-08-13",
+            "valeur": 7.3,
+            "color": "#10b981"
+          }
+        ],
+        "Temp. eau": [
+          {
+            "date": "2024-12-03",
+            "valeur": 7.8,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-11-06",
+            "valeur": 9.9,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-10-08",
+            "valeur": 13.7,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-10",
+            "valeur": 16.5,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-08-13",
+            "valeur": 20.6,
+            "color": "#f59e0b"
+          }
+        ],
+        "Ammonium": [
+          {
+            "date": "2024-12-03",
+            "valeur": 5.9,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2024-11-06",
+            "valeur": 2.1,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2024-10-08",
+            "valeur": 3.5,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2024-09-10",
+            "valeur": 4.2,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2024-08-13",
+            "valeur": 1.6,
+            "color": "#f59e0b"
+          }
+        ],
+        "Nitrates": [
+          {
+            "date": "2024-12-03",
+            "valeur": 16.0,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2024-11-06",
+            "valeur": 15.0,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2024-10-08",
+            "valeur": 16.0,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2024-09-10",
+            "valeur": 15.0,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2024-08-13",
+            "valeur": 16.0,
+            "color": "#f59e0b"
+          }
+        ]
+      },
+      "score": 62,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
       "nom": "LE SOULTZBACH A BALSCHWILLER",
       "dept": "68",
       "lat": 47.66581698,
@@ -34868,292 +35154,6 @@
       "score_label": "Moyenne"
     },
     {
-      "nom": "L'ILL A CARSPACH",
-      "dept": "68",
-      "lat": 47.615523487,
-      "lon": 7.218093436,
-      "nom_cours_eau": "L'ILL",
-      "parametres": {
-        "pH": {
-          "valeur": 8.2,
-          "unite": "pH",
-          "color": "#10b981",
-          "date": "2024-12-03",
-          "realtime": false
-        },
-        "MES": {
-          "valeur": 443.0,
-          "unite": "mg/L",
-          "color": "#ef4444",
-          "date": "2024-12-03",
-          "realtime": false
-        },
-        "O2 saturation": {
-          "valeur": 97.7,
-          "unite": "%",
-          "color": "#10b981",
-          "date": "2024-12-03",
-          "realtime": false
-        },
-        "Phosphore": {
-          "valeur": 0.36,
-          "unite": "mg/L",
-          "color": "#f59e0b",
-          "date": "2024-12-03",
-          "realtime": false
-        },
-        "Conductivité": {
-          "valeur": 11.6,
-          "unite": "µS/cm",
-          "color": "#10b981",
-          "date": "2024-12-03",
-          "realtime": false
-        },
-        "Temp. eau": {
-          "valeur": 7.8,
-          "unite": "°C",
-          "color": "#10b981",
-          "date": "2024-12-03",
-          "realtime": false
-        },
-        "Ammonium": {
-          "valeur": 5.9,
-          "unite": "mg/L",
-          "color": "#ef4444",
-          "date": "2024-12-03",
-          "realtime": false
-        },
-        "Nitrates": {
-          "valeur": 16.0,
-          "unite": "mg/L",
-          "color": "#f59e0b",
-          "date": "2024-12-03",
-          "realtime": false
-        }
-      },
-      "historique": {
-        "pH": [
-          {
-            "date": "2024-12-03",
-            "valeur": 8.2,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-11-06",
-            "valeur": 8.3,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-10-08",
-            "valeur": 8.2,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-10",
-            "valeur": 8.1,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-08-13",
-            "valeur": 8.1,
-            "color": "#10b981"
-          }
-        ],
-        "MES": [
-          {
-            "date": "2024-12-03",
-            "valeur": 443.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-11-06",
-            "valeur": 624.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-10-08",
-            "valeur": 548.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-09-10",
-            "valeur": 544.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-08-13",
-            "valeur": 592.0,
-            "color": "#ef4444"
-          }
-        ],
-        "O2 saturation": [
-          {
-            "date": "2024-12-03",
-            "valeur": 97.7,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-11-06",
-            "valeur": 96.6,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-10-08",
-            "valeur": 92.8,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-10",
-            "valeur": 90.3,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-08-13",
-            "valeur": 81.3,
-            "color": "#10b981"
-          }
-        ],
-        "Phosphore": [
-          {
-            "date": "2024-12-03",
-            "valeur": 0.36,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2024-11-06",
-            "valeur": 0.11,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-10-08",
-            "valeur": 0.17,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-10",
-            "valeur": 0.27,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2024-08-13",
-            "valeur": 0.17,
-            "color": "#10b981"
-          }
-        ],
-        "Conductivité": [
-          {
-            "date": "2024-12-03",
-            "valeur": 11.6,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-11-06",
-            "valeur": 10.9,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-10-08",
-            "valeur": 9.6,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-10",
-            "valeur": 8.8,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-08-13",
-            "valeur": 7.3,
-            "color": "#10b981"
-          }
-        ],
-        "Temp. eau": [
-          {
-            "date": "2024-12-03",
-            "valeur": 7.8,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-11-06",
-            "valeur": 9.9,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-10-08",
-            "valeur": 13.7,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-10",
-            "valeur": 16.5,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-08-13",
-            "valeur": 20.6,
-            "color": "#f59e0b"
-          }
-        ],
-        "Ammonium": [
-          {
-            "date": "2024-12-03",
-            "valeur": 5.9,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-11-06",
-            "valeur": 2.1,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-10-08",
-            "valeur": 3.5,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-09-10",
-            "valeur": 4.2,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-08-13",
-            "valeur": 1.6,
-            "color": "#f59e0b"
-          }
-        ],
-        "Nitrates": [
-          {
-            "date": "2024-12-03",
-            "valeur": 16.0,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2024-11-06",
-            "valeur": 15.0,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2024-10-08",
-            "valeur": 16.0,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2024-09-10",
-            "valeur": 15.0,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2024-08-13",
-            "valeur": 16.0,
-            "color": "#f59e0b"
-          }
-        ]
-      },
-      "score": 62,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
-    },
-    {
       "nom": "L'ALTE-BACH A BLOTZHEIM (LEHMATTEN)",
       "dept": "68",
       "lat": 47.59678389,
@@ -35174,6 +35174,13 @@
           "date": "2024-12-02",
           "realtime": false
         },
+        "Ammonium": {
+          "valeur": 0.45,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2024-12-02",
+          "realtime": false
+        },
         "MES": {
           "valeur": 763.0,
           "unite": "mg/L",
@@ -35184,13 +35191,6 @@
         "Temp. eau": {
           "valeur": 6.4,
           "unite": "°C",
-          "color": "#10b981",
-          "date": "2024-12-02",
-          "realtime": false
-        },
-        "Ammonium": {
-          "valeur": 0.45,
-          "unite": "mg/L",
           "color": "#10b981",
           "date": "2024-12-02",
           "realtime": false
@@ -35272,6 +35272,33 @@
             "color": "#10b981"
           }
         ],
+        "Ammonium": [
+          {
+            "date": "2024-12-02",
+            "valeur": 0.45,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-11-05",
+            "valeur": 3.4,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2024-10-07",
+            "valeur": 3.3,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2024-09-09",
+            "valeur": 3.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2024-08-12",
+            "valeur": 2.9,
+            "color": "#ef4444"
+          }
+        ],
         "MES": [
           {
             "date": "2024-12-02",
@@ -35324,33 +35351,6 @@
             "date": "2024-08-12",
             "valeur": 20.7,
             "color": "#f59e0b"
-          }
-        ],
-        "Ammonium": [
-          {
-            "date": "2024-12-02",
-            "valeur": 0.45,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-11-05",
-            "valeur": 3.4,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-10-07",
-            "valeur": 3.3,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-09-09",
-            "valeur": 3.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-08-12",
-            "valeur": 2.9,
-            "color": "#ef4444"
           }
         ],
         "O2 saturation": [
@@ -37883,16 +37883,16 @@
           "date": "2024-11-08",
           "realtime": false
         },
-        "Phosphore": {
-          "valeur": 0.038,
-          "unite": "mg/L",
+        "Temp. eau": {
+          "valeur": 9.1,
+          "unite": "°C",
           "color": "#10b981",
           "date": "2024-11-08",
           "realtime": false
         },
-        "Temp. eau": {
-          "valeur": 9.1,
-          "unite": "°C",
+        "Phosphore": {
+          "valeur": 0.038,
+          "unite": "mg/L",
           "color": "#10b981",
           "date": "2024-11-08",
           "realtime": false
@@ -37956,28 +37956,6 @@
             "color": "#ef4444"
           }
         ],
-        "Phosphore": [
-          {
-            "date": "2024-11-08",
-            "valeur": 0.038,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-10-14",
-            "valeur": 0.036,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-16",
-            "valeur": 0.048,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-08-19",
-            "valeur": 0.062,
-            "color": "#10b981"
-          }
-        ],
         "Temp. eau": [
           {
             "date": "2024-11-08",
@@ -37997,6 +37975,28 @@
           {
             "date": "2024-08-19",
             "valeur": 18.0,
+            "color": "#10b981"
+          }
+        ],
+        "Phosphore": [
+          {
+            "date": "2024-11-08",
+            "valeur": 0.038,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-10-14",
+            "valeur": 0.036,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-09-16",
+            "valeur": 0.048,
+            "color": "#10b981"
+          },
+          {
+            "date": "2024-08-19",
+            "valeur": 0.062,
             "color": "#10b981"
           }
         ],
@@ -41960,10 +41960,8 @@
       "nom": "Mooslargue",
       "dept": "68",
       "code_bss": "04761X0021/F1",
-      "current": 428.815,
+      "current": 428.809,
       "history": [
-        428.835,
-        428.831,
         428.833,
         428.825,
         428.818,
@@ -41975,9 +41973,11 @@
         428.83,
         428.821,
         428.826,
-        428.815
+        428.815,
+        428.816,
+        428.809
       ],
-      "year_ago": 428.87,
+      "year_ago": 428.88,
       "lat": 47.509654366,
       "lng": 7.218150794,
       "color": "#ef4444"
@@ -41987,10 +41987,10 @@
     {
       "zone": "Oderen",
       "dept": "68",
-      "date": "2026-08-05",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
+      "date": "2026-08-06",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
       "source": "Atmo Grand Est",
       "polluants": {
         "NO₂": {
@@ -41999,9 +41999,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -42023,7 +42023,7 @@
     {
       "zone": "Oltingue",
       "dept": "68",
-      "date": "2026-08-05",
+      "date": "2026-08-06",
       "indice": 3,
       "label": "Dégradé",
       "color": "#F0E641",
@@ -42059,10 +42059,10 @@
     {
       "zone": "Orbey",
       "dept": "68",
-      "date": "2026-08-05",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
+      "date": "2026-08-06",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
       "source": "Atmo Grand Est",
       "polluants": {
         "NO₂": {
@@ -42071,9 +42071,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -42095,7 +42095,7 @@
     {
       "zone": "Orschwihr",
       "dept": "68",
-      "date": "2026-08-05",
+      "date": "2026-08-06",
       "indice": 3,
       "label": "Dégradé",
       "color": "#F0E641",
@@ -42131,10 +42131,10 @@
     {
       "zone": "Osenbach",
       "dept": "68",
-      "date": "2026-08-05",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#F0E641",
+      "date": "2026-08-06",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
       "source": "Atmo Grand Est",
       "polluants": {
         "NO₂": {
@@ -42143,9 +42143,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,

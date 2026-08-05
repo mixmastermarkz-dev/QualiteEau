@@ -3,7 +3,7 @@
   "nom": "Cantal",
   "slug": "cantal",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "04/08/2026 à 14:00",
+  "updated": "05/08/2026 à 13:57",
   "score_eau": 96,
   "nb_communes": 251,
   "potable": [
@@ -41665,10 +41665,8 @@
       "nom": "Teissières-lès-Bouliès",
       "dept": "15",
       "code_bss": "08125X0044/F1",
-      "current": 723.378,
+      "current": 723.362,
       "history": [
-        723.449,
-        723.446,
         723.43,
         723.433,
         723.415,
@@ -41680,47 +41678,21 @@
         723.393,
         723.387,
         723.382,
-        723.378
+        723.378,
+        723.379,
+        723.362
       ],
-      "year_ago": 723.46,
+      "year_ago": 723.45,
       "lat": 44.820895,
       "lng": 2.541051,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Molompize",
-      "dept": "15",
-      "code_bss": "07657X0018/P1",
-      "current": 949.627,
-      "history": [
-        949.659,
-        949.656,
-        949.653,
-        949.651,
-        949.65,
-        949.647,
-        949.644,
-        949.641,
-        949.639,
-        949.636,
-        949.634,
-        949.632,
-        949.63,
-        949.627
-      ],
-      "year_ago": 949.82,
-      "lat": 45.242098391,
-      "lng": 3.098887675,
       "color": "#ef4444"
     },
     {
       "nom": "Moussages",
       "dept": "15",
       "code_bss": "07638X0017/MAIRIE",
-      "current": 847.028,
+      "current": 847.026,
       "history": [
-        847.026,
-        847.026,
         847.026,
         847.025,
         847.026,
@@ -41732,7 +41704,9 @@
         847.023,
         847.023,
         847.022,
-        847.028
+        847.028,
+        847.027,
+        847.026
       ],
       "year_ago": 847.0,
       "lat": 45.238404427,
@@ -41740,13 +41714,63 @@
       "color": "#3b82f6"
     },
     {
+      "nom": "Molompize",
+      "dept": "15",
+      "code_bss": "07657X0018/P1",
+      "current": 949.622,
+      "history": [
+        949.653,
+        949.651,
+        949.65,
+        949.647,
+        949.644,
+        949.641,
+        949.639,
+        949.636,
+        949.634,
+        949.632,
+        949.63,
+        949.627,
+        949.625,
+        949.622
+      ],
+      "year_ago": 949.82,
+      "lat": 45.242098391,
+      "lng": 3.098887675,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Chalvignac",
+      "dept": "15",
+      "code_bss": "07635X0035/F",
+      "current": 509.1,
+      "history": [
+        509.14,
+        509.16,
+        509.13,
+        509.15,
+        509.13,
+        509.14,
+        509.13,
+        509.14,
+        509.13,
+        509.13,
+        509.13,
+        509.11,
+        509.12,
+        509.1
+      ],
+      "year_ago": 509.25,
+      "lat": 45.241376056,
+      "lng": 2.246274272,
+      "color": "#ef4444"
+    },
+    {
       "nom": "Roannes-Saint-Mary",
       "dept": "15",
       "code_bss": "08353X0052/F",
-      "current": 767.898,
+      "current": 767.859,
       "history": [
-        768.121,
-        768.1,
         768.063,
         768.07,
         768.061,
@@ -41758,48 +41782,24 @@
         767.936,
         767.905,
         767.894,
-        767.898
+        767.898,
+        767.887,
+        767.859
       ],
-      "year_ago": 768.61,
+      "year_ago": 768.58,
       "lat": 44.811215,
       "lng": 2.400826,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Chalvignac",
-      "dept": "15",
-      "code_bss": "07635X0035/F",
-      "current": 509.11,
-      "history": [
-        509.15,
-        509.16,
-        509.14,
-        509.16,
-        509.13,
-        509.15,
-        509.13,
-        509.14,
-        509.13,
-        509.14,
-        509.13,
-        509.13,
-        509.13,
-        509.11
-      ],
-      "year_ago": 509.26,
-      "lat": 45.241376056,
-      "lng": 2.246274272,
       "color": "#ef4444"
     }
   ],
   "air": [
     {
-      "zone": "Allanche",
+      "zone": "15047",
       "dept": "15",
       "date": "2026-08-06",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
+      "indice": 1,
+      "label": "Bon",
+      "color": "#50f0e6",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
@@ -41808,9 +41808,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM10": {
           "indice": 1,
@@ -41830,12 +41830,12 @@
       }
     },
     {
-      "zone": "la Barge",
+      "zone": "15171",
       "dept": "15",
       "date": "2026-08-06",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "indice": 1,
+      "label": "Bon",
+      "color": "#50f0e6",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
@@ -41844,9 +41844,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM10": {
           "indice": 1,
@@ -41866,43 +41866,7 @@
       }
     },
     {
-      "zone": "Beaulieu",
-      "dept": "15",
-      "date": "2026-08-06",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Bassignac",
+      "zone": "Anglards-de-Saint-Flour",
       "dept": "15",
       "date": "2026-08-06",
       "indice": 3,
@@ -41938,7 +41902,43 @@
       }
     },
     {
-      "zone": "Barriac-les-Bosquets",
+      "zone": "Andelat",
+      "dept": "15",
+      "date": "2026-08-06",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Ally",
       "dept": "15",
       "date": "2026-08-06",
       "indice": 2,

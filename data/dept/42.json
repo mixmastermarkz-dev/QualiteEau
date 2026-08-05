@@ -3,7 +3,7 @@
   "nom": "Loire",
   "slug": "loire",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "04/08/2026 à 14:00",
+  "updated": "05/08/2026 à 13:57",
   "score_eau": 97,
   "nb_communes": 326,
   "potable": [
@@ -25904,16 +25904,16 @@
           "date": "2025-12-02",
           "realtime": false
         },
-        "pH": {
-          "valeur": 7.1,
-          "unite": "pH",
+        "Conductivité": {
+          "valeur": 11.5,
+          "unite": "µS/cm",
           "color": "#10b981",
           "date": "2025-12-02",
           "realtime": false
         },
-        "Conductivité": {
-          "valeur": 11.5,
-          "unite": "µS/cm",
+        "pH": {
+          "valeur": 7.1,
+          "unite": "pH",
           "color": "#10b981",
           "date": "2025-12-02",
           "realtime": false
@@ -26002,33 +26002,6 @@
             "color": "#ef4444"
           }
         ],
-        "pH": [
-          {
-            "date": "2025-12-02",
-            "valeur": 7.1,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-10-15",
-            "valeur": 7.2,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-08-07",
-            "valeur": 6.9,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-07-31",
-            "valeur": 6.8,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-06-26",
-            "valeur": 7.5,
-            "color": "#10b981"
-          }
-        ],
         "Conductivité": [
           {
             "date": "2025-12-02",
@@ -26053,6 +26026,33 @@
           {
             "date": "2025-06-26",
             "valeur": 9.0,
+            "color": "#10b981"
+          }
+        ],
+        "pH": [
+          {
+            "date": "2025-12-02",
+            "valeur": 7.1,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-10-15",
+            "valeur": 7.2,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-08-07",
+            "valeur": 6.9,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-07-31",
+            "valeur": 6.8,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-06-26",
+            "valeur": 7.5,
             "color": "#10b981"
           }
         ],
@@ -51537,17 +51537,17 @@
           "date": "2024-10-15",
           "realtime": false
         },
-        "pH": {
-          "valeur": 7.9,
-          "unite": "pH",
-          "color": "#10b981",
-          "date": "2024-10-15",
-          "realtime": false
-        },
         "MES": {
           "valeur": 323.0,
           "unite": "mg/L",
           "color": "#ef4444",
+          "date": "2024-10-15",
+          "realtime": false
+        },
+        "pH": {
+          "valeur": 7.9,
+          "unite": "pH",
+          "color": "#10b981",
           "date": "2024-10-15",
           "realtime": false
         },
@@ -51595,18 +51595,18 @@
             "color": "#10b981"
           }
         ],
-        "pH": [
-          {
-            "date": "2024-10-15",
-            "valeur": 7.9,
-            "color": "#10b981"
-          }
-        ],
         "MES": [
           {
             "date": "2024-10-15",
             "valeur": 323.0,
             "color": "#ef4444"
+          }
+        ],
+        "pH": [
+          {
+            "date": "2024-10-15",
+            "valeur": 7.9,
+            "color": "#10b981"
           }
         ],
         "O2 saturation": [
@@ -56047,6 +56047,13 @@
           "date": "2024-10-14",
           "realtime": false
         },
+        "Nitrates": {
+          "valeur": 11.0,
+          "unite": "mg/L",
+          "color": "#f59e0b",
+          "date": "2024-10-14",
+          "realtime": false
+        },
         "Ammonium": {
           "valeur": 5.8,
           "unite": "mg/L",
@@ -56058,13 +56065,6 @@
           "valeur": 9.6,
           "unite": "µS/cm",
           "color": "#10b981",
-          "date": "2024-10-14",
-          "realtime": false
-        },
-        "Nitrates": {
-          "valeur": 11.0,
-          "unite": "mg/L",
-          "color": "#f59e0b",
           "date": "2024-10-14",
           "realtime": false
         },
@@ -56105,6 +56105,13 @@
             "color": "#ef4444"
           }
         ],
+        "Nitrates": [
+          {
+            "date": "2024-10-14",
+            "valeur": 11.0,
+            "color": "#f59e0b"
+          }
+        ],
         "Ammonium": [
           {
             "date": "2024-10-14",
@@ -56117,13 +56124,6 @@
             "date": "2024-10-14",
             "valeur": 9.6,
             "color": "#10b981"
-          }
-        ],
-        "Nitrates": [
-          {
-            "date": "2024-10-14",
-            "valeur": 11.0,
-            "color": "#f59e0b"
           }
         ],
         "Phosphore": [
@@ -56454,39 +56454,11 @@
   ],
   "nappes": [
     {
-      "nom": "Cleppé",
-      "dept": "42",
-      "code_bss": "06967X0100/F",
-      "current": 323.491,
-      "history": [
-        323.549,
-        323.532,
-        323.529,
-        323.529,
-        323.529,
-        323.521,
-        323.524,
-        323.515,
-        323.516,
-        323.514,
-        323.52,
-        323.51,
-        323.503,
-        323.491
-      ],
-      "year_ago": 323.81,
-      "lat": 45.769951628,
-      "lng": 4.183823819,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Saint-Galmier",
       "dept": "42",
       "code_bss": "07208X0197/F1C",
-      "current": 372.543,
+      "current": 372.541,
       "history": [
-        372.556,
-        372.547,
         372.553,
         372.55,
         372.544,
@@ -56498,7 +56470,9 @@
         372.563,
         372.549,
         372.557,
-        372.543
+        372.543,
+        372.549,
+        372.541
       ],
       "year_ago": 372.39,
       "lat": 45.605448412,
@@ -56509,10 +56483,8 @@
       "nom": "Saint-André-le-Puy",
       "dept": "42",
       "code_bss": "07204X0105/F",
-      "current": 355.731,
+      "current": 355.703,
       "history": [
-        355.806,
-        355.782,
         355.783,
         355.777,
         355.775,
@@ -56524,11 +56496,39 @@
         355.791,
         355.765,
         355.767,
-        355.731
+        355.731,
+        355.724,
+        355.703
       ],
-      "year_ago": 355.85,
+      "year_ago": 355.84,
       "lat": 45.647921327,
       "lng": 4.246544955,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Cleppé",
+      "dept": "42",
+      "code_bss": "06967X0100/F",
+      "current": 323.487,
+      "history": [
+        323.529,
+        323.529,
+        323.529,
+        323.521,
+        323.524,
+        323.515,
+        323.516,
+        323.514,
+        323.52,
+        323.51,
+        323.503,
+        323.491,
+        323.483,
+        323.487
+      ],
+      "year_ago": 323.81,
+      "lat": 45.769951628,
+      "lng": 4.183823819,
       "color": "#ef4444"
     },
     {
@@ -56537,8 +56537,6 @@
       "code_bss": "07203X0168/PZ",
       "current": 338.944,
       "history": [
-        338.955,
-        338.943,
         338.957,
         338.946,
         338.945,
@@ -56550,9 +56548,11 @@
         338.953,
         338.944,
         338.952,
+        338.944,
+        338.956,
         338.944
       ],
-      "year_ago": 339.01,
+      "year_ago": 339.0,
       "lat": 45.649419482,
       "lng": 4.190529903,
       "color": "#ef4444"
@@ -56560,7 +56560,115 @@
   ],
   "air": [
     {
-      "zone": "Unieux",
+      "zone": "Champoly",
+      "dept": "42",
+      "date": "2026-08-06",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Champdieu",
+      "dept": "42",
+      "date": "2026-08-06",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "La Chambonie",
+      "dept": "42",
+      "date": "2026-08-06",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Le Chambon-Feugerolles",
       "dept": "42",
       "date": "2026-08-06",
       "indice": 4,
@@ -56579,9 +56687,9 @@
           "color": "#f97316"
         },
         "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM2.5": {
           "indice": 1,
@@ -56596,115 +56704,7 @@
       }
     },
     {
-      "zone": "Urbise",
-      "dept": "42",
-      "date": "2026-08-06",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Usson-en-Forez",
-      "dept": "42",
-      "date": "2026-08-06",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Valeille",
-      "dept": "42",
-      "date": "2026-08-06",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Valfleury",
+      "zone": "Chambœuf",
       "dept": "42",
       "date": "2026-08-06",
       "indice": 3,
