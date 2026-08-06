@@ -3,7 +3,7 @@
   "nom": "Ardèche",
   "slug": "ardeche",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "05/08/2026 à 13:57",
+  "updated": "06/08/2026 à 14:00",
   "score_eau": 96,
   "nb_communes": 337,
   "potable": [
@@ -28884,65 +28884,11 @@
   ],
   "nappes": [
     {
-      "nom": "Veyras",
-      "dept": "07",
-      "code_bss": "08413X0091/F3",
-      "current": 441.94,
-      "history": [
-        441.92,
-        441.93,
-        441.93,
-        441.93,
-        441.95,
-        441.91,
-        441.91,
-        441.93,
-        441.93,
-        441.95,
-        441.95,
-        441.95,
-        441.96,
-        441.94
-      ],
-      "year_ago": 441.42,
-      "lat": 44.733838457,
-      "lng": 4.561214887,
-      "color": "#3b82f6"
-    },
-    {
-      "nom": "Lablachère",
-      "dept": "07",
-      "code_bss": "BSS003GPIS/X",
-      "current": 243.573,
-      "history": [
-        243.594,
-        243.559,
-        243.603,
-        243.572,
-        243.632,
-        243.626,
-        243.622,
-        243.603,
-        243.61,
-        243.576,
-        243.584,
-        243.592,
-        243.592,
-        243.573
-      ],
-      "year_ago": 243.3,
-      "lat": 44.46354371,
-      "lng": 4.214386619,
-      "color": "#3b82f6"
-    },
-    {
       "nom": "Aubenas",
       "dept": "07",
       "code_bss": "08651X0038/0038",
-      "current": 296.867,
+      "current": 296.827,
       "history": [
-        297.106,
-        297.015,
         297.093,
         296.999,
         297.095,
@@ -28954,22 +28900,76 @@
         297.014,
         296.904,
         296.977,
-        296.867
+        296.867,
+        296.941,
+        296.827
       ],
-      "year_ago": 298.02,
+      "year_ago": 297.99,
       "lat": 44.619744152,
       "lng": 4.39032624,
       "color": "#ef4444"
+    },
+    {
+      "nom": "Veyras",
+      "dept": "07",
+      "code_bss": "08413X0091/F3",
+      "current": 441.93,
+      "history": [
+        441.93,
+        441.93,
+        441.95,
+        441.91,
+        441.91,
+        441.93,
+        441.93,
+        441.95,
+        441.95,
+        441.95,
+        441.96,
+        441.94,
+        441.96,
+        441.93
+      ],
+      "year_ago": 441.4,
+      "lat": 44.733838457,
+      "lng": 4.561214887,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Lablachère",
+      "dept": "07",
+      "code_bss": "BSS003GPIS/X",
+      "current": 243.565,
+      "history": [
+        243.603,
+        243.572,
+        243.632,
+        243.626,
+        243.622,
+        243.603,
+        243.61,
+        243.576,
+        243.584,
+        243.592,
+        243.592,
+        243.573,
+        243.584,
+        243.565
+      ],
+      "year_ago": 243.3,
+      "lat": 44.46354371,
+      "lng": 4.214386619,
+      "color": "#3b82f6"
     }
   ],
   "air": [
     {
-      "zone": "Mairie de Saint-Martin-d'Auxy",
+      "zone": "Saint-Maurice-de-Satonnay",
       "dept": "07",
-      "date": "2026-08-07",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-08-08",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -28978,9 +28978,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "PM10": {
           "indice": 1,
@@ -29000,12 +29000,12 @@
       }
     },
     {
-      "zone": "Quincy",
+      "zone": "Saint-Maurice-des-Champs",
       "dept": "07",
-      "date": "2026-08-07",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-08-08",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -29014,9 +29014,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "PM10": {
           "indice": 1,
@@ -29036,12 +29036,12 @@
       }
     },
     {
-      "zone": "Saint-Martin-de-Lixy",
+      "zone": "Saint-Maurice-en-Rivière",
       "dept": "07",
-      "date": "2026-08-07",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-08-08",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -29050,9 +29050,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "PM10": {
           "indice": 1,
@@ -29072,12 +29072,12 @@
       }
     },
     {
-      "zone": "Saint-Martin-de-Salencey",
+      "zone": "Saint-Maurice-lès-Couches",
       "dept": "07",
-      "date": "2026-08-07",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-08-08",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -29086,9 +29086,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "PM10": {
           "indice": 1,
@@ -29108,12 +29108,12 @@
       }
     },
     {
-      "zone": "Saint-Martin-du-Lac",
+      "zone": "Saint-Micaud",
       "dept": "07",
-      "date": "2026-08-07",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-08-08",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -29122,9 +29122,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "PM10": {
           "indice": 1,
