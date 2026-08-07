@@ -3,7 +3,7 @@
   "nom": "Ardèche",
   "slug": "ardeche",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "06/08/2026 à 14:00",
+  "updated": "07/08/2026 à 12:49",
   "score_eau": 96,
   "nb_communes": 337,
   "potable": [
@@ -28499,11 +28499,6 @@
             "date": "2025-02-18",
             "valeur": 1.2,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-08-06",
-            "valeur": 2.8,
-            "color": "#10b981"
           }
         ],
         "Phosphore": [
@@ -28516,11 +28511,6 @@
             "date": "2025-02-18",
             "valeur": 0.069,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-08-06",
-            "valeur": 0.137,
-            "color": "#10b981"
           }
         ],
         "Ammonium": [
@@ -28532,11 +28522,6 @@
           {
             "date": "2025-02-18",
             "valeur": 1.6,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2024-08-06",
-            "valeur": 0.94,
             "color": "#f59e0b"
           }
         ]
@@ -28824,99 +28809,15 @@
       "score": 83,
       "score_color": "#10b981",
       "score_label": "Bonne"
-    },
-    {
-      "nom": "MARCELY",
-      "dept": "07",
-      "lat": 44.809217448,
-      "lon": 4.391828259,
-      "nom_cours_eau": "MARCELY",
-      "parametres": {
-        "Phosphore": {
-          "valeur": 0.16,
-          "unite": "mg/L",
-          "color": "#10b981",
-          "date": "2024-08-06",
-          "realtime": false
-        },
-        "Ammonium": {
-          "valeur": 1.2,
-          "unite": "mg/L",
-          "color": "#f59e0b",
-          "date": "2024-08-06",
-          "realtime": false
-        },
-        "Nitrates": {
-          "valeur": 1.6,
-          "unite": "mg/L",
-          "color": "#10b981",
-          "date": "2024-08-06",
-          "realtime": false
-        }
-      },
-      "historique": {
-        "Phosphore": [
-          {
-            "date": "2024-08-06",
-            "valeur": 0.16,
-            "color": "#10b981"
-          }
-        ],
-        "Ammonium": [
-          {
-            "date": "2024-08-06",
-            "valeur": 1.2,
-            "color": "#f59e0b"
-          }
-        ],
-        "Nitrates": [
-          {
-            "date": "2024-08-06",
-            "valeur": 1.6,
-            "color": "#10b981"
-          }
-        ]
-      },
-      "score": 83,
-      "score_color": "#10b981",
-      "score_label": "Bonne"
     }
   ],
   "nappes": [
     {
-      "nom": "Aubenas",
-      "dept": "07",
-      "code_bss": "08651X0038/0038",
-      "current": 296.827,
-      "history": [
-        297.093,
-        296.999,
-        297.095,
-        296.982,
-        297.068,
-        296.971,
-        297.052,
-        296.934,
-        297.014,
-        296.904,
-        296.977,
-        296.867,
-        296.941,
-        296.827
-      ],
-      "year_ago": 297.99,
-      "lat": 44.619744152,
-      "lng": 4.39032624,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Veyras",
       "dept": "07",
       "code_bss": "08413X0091/F3",
-      "current": 441.93,
+      "current": 441.95,
       "history": [
-        441.93,
-        441.93,
         441.95,
         441.91,
         441.91,
@@ -28928,9 +28829,11 @@
         441.96,
         441.94,
         441.96,
-        441.93
+        441.93,
+        441.95,
+        441.95
       ],
-      "year_ago": 441.4,
+      "year_ago": 441.41,
       "lat": 44.733838457,
       "lng": 4.561214887,
       "color": "#3b82f6"
@@ -28939,10 +28842,8 @@
       "nom": "Lablachère",
       "dept": "07",
       "code_bss": "BSS003GPIS/X",
-      "current": 243.565,
+      "current": 243.549,
       "history": [
-        243.603,
-        243.572,
         243.632,
         243.626,
         243.622,
@@ -28954,23 +28855,51 @@
         243.592,
         243.573,
         243.584,
-        243.565
+        243.565,
+        243.599,
+        243.549
       ],
-      "year_ago": 243.3,
+      "year_ago": 243.29,
       "lat": 44.46354371,
       "lng": 4.214386619,
       "color": "#3b82f6"
+    },
+    {
+      "nom": "Aubenas",
+      "dept": "07",
+      "code_bss": "08651X0038/0038",
+      "current": 296.81,
+      "history": [
+        297.095,
+        296.982,
+        297.068,
+        296.971,
+        297.052,
+        296.934,
+        297.014,
+        296.904,
+        296.977,
+        296.867,
+        296.941,
+        296.827,
+        296.918,
+        296.81
+      ],
+      "year_ago": 297.96,
+      "lat": 44.619744152,
+      "lng": 4.39032624,
+      "color": "#ef4444"
     }
   ],
   "air": [
     {
-      "zone": "Saint-Maurice-de-Satonnay",
+      "zone": "Yvré-l'Évêque",
       "dept": "07",
-      "date": "2026-08-08",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
-      "source": "ATMO Bourgogne-Franche-Comté",
+      "date": "2026-08-09",
+      "indice": 3,
+      "label": "dégradé",
+      "color": "#f0e641",
+      "source": "Air Pays de la Loire",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -28978,9 +28907,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -29000,13 +28929,13 @@
       }
     },
     {
-      "zone": "Saint-Maurice-des-Champs",
+      "zone": "Volnay",
       "dept": "07",
-      "date": "2026-08-08",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
-      "source": "ATMO Bourgogne-Franche-Comté",
+      "date": "2026-08-09",
+      "indice": 3,
+      "label": "dégradé",
+      "color": "#f0e641",
+      "source": "Air Pays de la Loire",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -29014,9 +28943,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -29036,13 +28965,13 @@
       }
     },
     {
-      "zone": "Saint-Maurice-en-Rivière",
+      "zone": "Tresson",
       "dept": "07",
-      "date": "2026-08-08",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
-      "source": "ATMO Bourgogne-Franche-Comté",
+      "date": "2026-08-09",
+      "indice": 3,
+      "label": "dégradé",
+      "color": "#f0e641",
+      "source": "Air Pays de la Loire",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -29050,9 +28979,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -29072,13 +29001,13 @@
       }
     },
     {
-      "zone": "Saint-Maurice-lès-Couches",
+      "zone": "Trangé",
       "dept": "07",
-      "date": "2026-08-08",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
-      "source": "ATMO Bourgogne-Franche-Comté",
+      "date": "2026-08-09",
+      "indice": 3,
+      "label": "dégradé",
+      "color": "#f0e641",
+      "source": "Air Pays de la Loire",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -29086,9 +29015,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -29108,13 +29037,13 @@
       }
     },
     {
-      "zone": "Saint-Micaud",
+      "zone": "Torcé-en-Vallée",
       "dept": "07",
-      "date": "2026-08-08",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
-      "source": "ATMO Bourgogne-Franche-Comté",
+      "date": "2026-08-09",
+      "indice": 3,
+      "label": "dégradé",
+      "color": "#f0e641",
+      "source": "Air Pays de la Loire",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -29122,9 +29051,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
