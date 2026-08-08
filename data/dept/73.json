@@ -3,7 +3,7 @@
   "nom": "Savoie",
   "slug": "savoie",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "07/08/2026 à 12:49",
+  "updated": "08/08/2026 à 12:28",
   "score_eau": 99,
   "nb_communes": 274,
   "potable": [
@@ -31298,10 +31298,8 @@
       "nom": "Aiton",
       "dept": "73",
       "code_bss": "07266X0052/PS4",
-      "current": 293.4,
+      "current": 293.398,
       "history": [
-        293.422,
-        293.422,
         293.42,
         293.419,
         293.417,
@@ -31313,9 +31311,11 @@
         293.411,
         293.407,
         293.391,
-        293.4
+        293.4,
+        293.4,
+        293.398
       ],
-      "year_ago": 293.44,
+      "year_ago": 293.43,
       "lat": 45.566444711,
       "lng": 6.245431548,
       "color": "#ef4444"
@@ -31324,10 +31324,8 @@
       "nom": "Chambéry",
       "dept": "73",
       "code_bss": "07256X0095/CHAMBE",
-      "current": 264.794,
+      "current": 264.785,
       "history": [
-        264.818,
-        264.802,
         264.815,
         264.798,
         264.817,
@@ -31339,7 +31337,9 @@
         264.829,
         264.806,
         264.814,
-        264.794
+        264.794,
+        264.806,
+        264.785
       ],
       "year_ago": 264.87,
       "lat": 45.569053375,
@@ -31350,10 +31350,8 @@
       "nom": "Cruet",
       "dept": "73",
       "code_bss": "07494X0026/CRUET",
-      "current": 269.353,
+      "current": 269.341,
       "history": [
-        269.361,
-        269.399,
         269.367,
         269.39,
         269.317,
@@ -31365,9 +31363,11 @@
         269.347,
         269.357,
         269.296,
-        269.353
+        269.353,
+        269.312,
+        269.341
       ],
-      "year_ago": 269.41,
+      "year_ago": 269.46,
       "lat": 45.522193195,
       "lng": 6.104556772,
       "color": "#ef4444"
@@ -31375,43 +31375,7 @@
   ],
   "air": [
     {
-      "zone": "Aussois",
-      "dept": "73",
-      "date": "2026-08-09",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Attignat-Oncin",
+      "zone": "Vimines",
       "dept": "73",
       "date": "2026-08-09",
       "indice": 4,
@@ -31447,43 +31411,7 @@
       }
     },
     {
-      "zone": "Les Chapelles",
-      "dept": "73",
-      "date": "2026-08-09",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Cléry",
+      "zone": "Vions",
       "dept": "73",
       "date": "2026-08-09",
       "indice": 4,
@@ -31519,7 +31447,79 @@
       }
     },
     {
-      "zone": "Arvillard",
+      "zone": "Viviers-du-Lac",
+      "dept": "73",
+      "date": "2026-08-09",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Voglans",
+      "dept": "73",
+      "date": "2026-08-09",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Yenne",
       "dept": "73",
       "date": "2026-08-09",
       "indice": 4,
