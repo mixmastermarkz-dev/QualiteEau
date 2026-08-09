@@ -3,7 +3,7 @@
   "nom": "Landes",
   "slug": "landes",
   "region": "Nouvelle-Aquitaine",
-  "updated": "08/08/2026 à 12:28",
+  "updated": "09/08/2026 à 12:30",
   "score_eau": 99,
   "nb_communes": 327,
   "potable": [
@@ -25559,11 +25559,6 @@
             "date": "2024-08-21",
             "valeur": 3.5,
             "color": "#ef4444"
-          },
-          {
-            "date": "2024-08-08",
-            "valeur": 6720.0,
-            "color": "#ef4444"
           }
         ],
         "Nitrates": [
@@ -48710,11 +48705,6 @@
             "date": "2024-09-18",
             "valeur": 4.7,
             "color": "#ef4444"
-          },
-          {
-            "date": "2024-08-08",
-            "valeur": 6160.0,
-            "color": "#ef4444"
           }
         ],
         "O2 saturation": [
@@ -55957,10 +55947,8 @@
       "nom": "Gourbera",
       "dept": "40",
       "code_bss": "09505X0034/GO01",
-      "current": 21.43,
+      "current": 21.47,
       "history": [
-        21.4,
-        21.44,
         21.45,
         21.45,
         21.45,
@@ -55972,9 +55960,11 @@
         21.39,
         21.38,
         21.43,
-        21.43
+        21.43,
+        21.47,
+        21.47
       ],
-      "year_ago": 21.3,
+      "year_ago": 21.29,
       "lat": 43.788966613,
       "lng": -1.035321265,
       "color": "#3b82f6"
@@ -55983,10 +55973,8 @@
       "nom": "Lacquy",
       "dept": "40",
       "code_bss": "09266X0004/LC101",
-      "current": 76.424,
+      "current": 76.43,
       "history": [
-        76.44,
-        76.444,
         76.45,
         76.454,
         76.455,
@@ -55998,7 +55986,9 @@
         76.423,
         76.419,
         76.422,
-        76.424
+        76.424,
+        76.425,
+        76.43
       ],
       "year_ago": 76.62,
       "lat": 43.960162747,
@@ -56009,10 +55999,8 @@
       "nom": "Betbezer-d'Armagnac",
       "dept": "40",
       "code_bss": "09267X0014/PIEZO1",
-      "current": 70.738,
+      "current": 70.726,
       "history": [
-        70.926,
-        70.934,
         70.942,
         70.913,
         70.898,
@@ -56024,21 +56012,47 @@
         70.753,
         70.729,
         70.75,
-        70.738
+        70.738,
+        70.744,
+        70.726
       ],
-      "year_ago": 71.06,
+      "year_ago": 71.02,
       "lat": 43.982375767,
       "lng": -0.155560344,
       "color": "#ef4444"
     },
     {
+      "nom": "Saint-Yaguen",
+      "dept": "40",
+      "code_bss": "09511X0022/LS02",
+      "current": 31.47,
+      "history": [
+        31.47,
+        31.47,
+        31.47,
+        31.43,
+        31.43,
+        31.38,
+        31.4,
+        31.36,
+        31.41,
+        31.38,
+        31.46,
+        31.42,
+        31.48,
+        31.47
+      ],
+      "year_ago": 31.31,
+      "lat": 43.910092549,
+      "lng": -0.715761027,
+      "color": "#3b82f6"
+    },
+    {
       "nom": "Ychoux",
       "dept": "40",
       "code_bss": "08746X0031/P22",
-      "current": 56.21,
+      "current": 56.2,
       "history": [
-        56.26,
-        56.26,
         56.25,
         56.25,
         56.25,
@@ -56050,47 +56064,21 @@
         56.22,
         56.21,
         56.21,
-        56.21
+        56.21,
+        56.2,
+        56.2
       ],
-      "year_ago": 56.31,
+      "year_ago": 56.3,
       "lat": 44.344690504,
       "lng": -0.931494266,
       "color": "#ef4444"
     },
     {
-      "nom": "Saint-Yaguen",
-      "dept": "40",
-      "code_bss": "09511X0022/LS02",
-      "current": 31.38,
-      "history": [
-        31.4,
-        31.4,
-        31.43,
-        31.46,
-        31.47,
-        31.47,
-        31.47,
-        31.43,
-        31.43,
-        31.38,
-        31.4,
-        31.36,
-        31.41,
-        31.38
-      ],
-      "year_ago": 31.32,
-      "lat": 43.910092549,
-      "lng": -0.715761027,
-      "color": "#3b82f6"
-    },
-    {
       "nom": "Saugnacq-et-Muret",
       "dept": "40",
       "code_bss": "08742X0058/P4",
-      "current": 46.529,
+      "current": 46.526,
       "history": [
-        46.533,
-        46.536,
         46.533,
         46.53,
         46.532,
@@ -56102,9 +56090,11 @@
         46.525,
         46.53,
         46.527,
-        46.529
+        46.529,
+        46.525,
+        46.526
       ],
-      "year_ago": 46.56,
+      "year_ago": 46.55,
       "lat": 44.435996741,
       "lng": -0.945104876,
       "color": "#ef4444"
@@ -56112,9 +56102,81 @@
   ],
   "air": [
     {
-      "zone": "Saint-Yaguen",
+      "zone": "Saint-Gor",
       "dept": "40",
-      "date": "2026-08-09",
+      "date": "2026-08-10",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Nouvelle-Aquitaine",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Roquefort",
+      "dept": "40",
+      "date": "2026-08-10",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Nouvelle-Aquitaine",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Saint-Maurice-sur-Adour",
+      "dept": "40",
+      "date": "2026-08-10",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
@@ -56148,9 +56210,9 @@
       }
     },
     {
-      "zone": "Rion-des-Landes",
+      "zone": "Audignon",
       "dept": "40",
-      "date": "2026-08-09",
+      "date": "2026-08-10",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
@@ -56184,81 +56246,9 @@
       }
     },
     {
-      "zone": "Laluque",
+      "zone": "Argelouse",
       "dept": "40",
-      "date": "2026-08-09",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Nouvelle-Aquitaine",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Villenave",
-      "dept": "40",
-      "date": "2026-08-09",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Nouvelle-Aquitaine",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Belhade",
-      "dept": "40",
-      "date": "2026-08-09",
+      "date": "2026-08-10",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
