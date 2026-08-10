@@ -3,7 +3,7 @@
   "nom": "Landes",
   "slug": "landes",
   "region": "Nouvelle-Aquitaine",
-  "updated": "09/08/2026 à 12:30",
+  "updated": "10/08/2026 à 13:05",
   "score_eau": 99,
   "nb_communes": 327,
   "potable": [
@@ -55944,39 +55944,11 @@
   ],
   "nappes": [
     {
-      "nom": "Gourbera",
-      "dept": "40",
-      "code_bss": "09505X0034/GO01",
-      "current": 21.47,
-      "history": [
-        21.45,
-        21.45,
-        21.45,
-        21.43,
-        21.42,
-        21.38,
-        21.39,
-        21.37,
-        21.39,
-        21.38,
-        21.43,
-        21.43,
-        21.47,
-        21.47
-      ],
-      "year_ago": 21.29,
-      "lat": 43.788966613,
-      "lng": -1.035321265,
-      "color": "#3b82f6"
-    },
-    {
       "nom": "Lacquy",
       "dept": "40",
       "code_bss": "09266X0004/LC101",
-      "current": 76.43,
+      "current": 76.429,
       "history": [
-        76.45,
-        76.454,
         76.455,
         76.458,
         76.45,
@@ -55988,12 +55960,40 @@
         76.422,
         76.424,
         76.425,
-        76.43
+        76.43,
+        76.432,
+        76.429
       ],
-      "year_ago": 76.62,
+      "year_ago": 76.61,
       "lat": 43.960162747,
       "lng": -0.272877691,
       "color": "#ef4444"
+    },
+    {
+      "nom": "Gourbera",
+      "dept": "40",
+      "code_bss": "09505X0034/GO01",
+      "current": 21.44,
+      "history": [
+        21.45,
+        21.43,
+        21.42,
+        21.38,
+        21.39,
+        21.37,
+        21.39,
+        21.38,
+        21.43,
+        21.43,
+        21.47,
+        21.47,
+        21.46,
+        21.44
+      ],
+      "year_ago": 21.31,
+      "lat": 43.788966613,
+      "lng": -1.035321265,
+      "color": "#3b82f6"
     },
     {
       "nom": "Betbezer-d'Armagnac",
@@ -56016,7 +56016,7 @@
         70.744,
         70.726
       ],
-      "year_ago": 71.02,
+      "year_ago": 70.97,
       "lat": 43.982375767,
       "lng": -0.155560344,
       "color": "#ef4444"
@@ -56025,10 +56025,8 @@
       "nom": "Saint-Yaguen",
       "dept": "40",
       "code_bss": "09511X0022/LS02",
-      "current": 31.47,
+      "current": 31.44,
       "history": [
-        31.47,
-        31.47,
         31.47,
         31.43,
         31.43,
@@ -56040,9 +56038,11 @@
         31.46,
         31.42,
         31.48,
-        31.47
+        31.47,
+        31.48,
+        31.44
       ],
-      "year_ago": 31.31,
+      "year_ago": 31.33,
       "lat": 43.910092549,
       "lng": -0.715761027,
       "color": "#3b82f6"
@@ -56051,10 +56051,8 @@
       "nom": "Ychoux",
       "dept": "40",
       "code_bss": "08746X0031/P22",
-      "current": 56.2,
+      "current": 56.19,
       "history": [
-        56.25,
-        56.25,
         56.25,
         56.24,
         56.23,
@@ -56066,9 +56064,11 @@
         56.21,
         56.21,
         56.2,
-        56.2
+        56.2,
+        56.19,
+        56.19
       ],
-      "year_ago": 56.3,
+      "year_ago": 56.29,
       "lat": 44.344690504,
       "lng": -0.931494266,
       "color": "#ef4444"
@@ -56077,10 +56077,8 @@
       "nom": "Saugnacq-et-Muret",
       "dept": "40",
       "code_bss": "08742X0058/P4",
-      "current": 46.526,
+      "current": 46.522,
       "history": [
-        46.533,
-        46.53,
         46.532,
         46.529,
         46.524,
@@ -56092,7 +56090,9 @@
         46.527,
         46.529,
         46.525,
-        46.526
+        46.526,
+        46.521,
+        46.522
       ],
       "year_ago": 46.55,
       "lat": 44.435996741,
@@ -56102,9 +56102,9 @@
   ],
   "air": [
     {
-      "zone": "Saint-Gor",
+      "zone": "Saint-Pandelon",
       "dept": "40",
-      "date": "2026-08-10",
+      "date": "2026-08-11",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -56138,9 +56138,9 @@
       }
     },
     {
-      "zone": "Roquefort",
+      "zone": "Castel-Sarrazin",
       "dept": "40",
-      "date": "2026-08-10",
+      "date": "2026-08-11",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -56174,12 +56174,12 @@
       }
     },
     {
-      "zone": "Saint-Maurice-sur-Adour",
+      "zone": "Arsague",
       "dept": "40",
-      "date": "2026-08-10",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-08-11",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
       "source": "Atmo Nouvelle-Aquitaine",
       "polluants": {
         "NO₂": {
@@ -56188,9 +56188,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
@@ -56210,12 +56210,12 @@
       }
     },
     {
-      "zone": "Audignon",
+      "zone": "Ozourt",
       "dept": "40",
-      "date": "2026-08-10",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-08-11",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
       "source": "Atmo Nouvelle-Aquitaine",
       "polluants": {
         "NO₂": {
@@ -56224,9 +56224,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
@@ -56246,9 +56246,9 @@
       }
     },
     {
-      "zone": "Argelouse",
+      "zone": "Bas-Mauco",
       "dept": "40",
-      "date": "2026-08-10",
+      "date": "2026-08-11",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",

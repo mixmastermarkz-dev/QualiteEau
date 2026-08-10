@@ -3,7 +3,7 @@
   "nom": "Ardèche",
   "slug": "ardeche",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "09/08/2026 à 12:31",
+  "updated": "10/08/2026 à 13:04",
   "score_eau": 96,
   "nb_communes": 337,
   "potable": [
@@ -28816,10 +28816,8 @@
       "nom": "Veyras",
       "dept": "07",
       "code_bss": "08413X0091/F3",
-      "current": 441.97,
+      "current": 441.98,
       "history": [
-        441.93,
-        441.95,
         441.95,
         441.95,
         441.96,
@@ -28831,47 +28829,21 @@
         441.96,
         441.96,
         441.97,
-        441.97
+        441.97,
+        441.98,
+        441.98
       ],
-      "year_ago": 441.41,
+      "year_ago": 441.42,
       "lat": 44.733838457,
       "lng": 4.561214887,
       "color": "#3b82f6"
     },
     {
-      "nom": "Aubenas",
-      "dept": "07",
-      "code_bss": "08651X0038/0038",
-      "current": 296.77,
-      "history": [
-        297.052,
-        296.934,
-        297.014,
-        296.904,
-        296.977,
-        296.867,
-        296.941,
-        296.827,
-        296.918,
-        296.81,
-        296.902,
-        296.788,
-        296.877,
-        296.77
-      ],
-      "year_ago": 297.89,
-      "lat": 44.619744152,
-      "lng": 4.39032624,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Lablachère",
       "dept": "07",
       "code_bss": "BSS003GPIS/X",
-      "current": 243.573,
+      "current": 243.579,
       "history": [
-        243.61,
-        243.576,
         243.584,
         243.592,
         243.592,
@@ -28883,19 +28855,119 @@
         243.57,
         243.548,
         243.562,
-        243.573
+        243.573,
+        243.591,
+        243.579
       ],
-      "year_ago": 243.23,
+      "year_ago": 243.25,
       "lat": 44.46354371,
       "lng": 4.214386619,
       "color": "#3b82f6"
+    },
+    {
+      "nom": "Aubenas",
+      "dept": "07",
+      "code_bss": "08651X0038/0038",
+      "current": 296.743,
+      "history": [
+        297.014,
+        296.904,
+        296.977,
+        296.867,
+        296.941,
+        296.827,
+        296.918,
+        296.81,
+        296.902,
+        296.788,
+        296.877,
+        296.77,
+        296.837,
+        296.743
+      ],
+      "year_ago": 297.86,
+      "lat": 44.619744152,
+      "lng": 4.39032624,
+      "color": "#ef4444"
     }
   ],
   "air": [
     {
+      "zone": "Saint-Christophe-en-Brionnais",
+      "dept": "07",
+      "date": "2026-08-12",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Saint-Clément-sur-Guye",
+      "dept": "07",
+      "date": "2026-08-12",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
       "zone": "Sainte-Croix",
       "dept": "07",
-      "date": "2026-08-11",
+      "date": "2026-08-12",
       "indice": 4,
       "label": "Mauvais",
       "color": "#ff5050",
@@ -28931,7 +29003,7 @@
     {
       "zone": "Saint-Cyr",
       "dept": "07",
-      "date": "2026-08-11",
+      "date": "2026-08-12",
       "indice": 4,
       "label": "Mauvais",
       "color": "#ff5050",
@@ -28967,79 +29039,7 @@
     {
       "zone": "Saint-Denis-de-Vaux",
       "dept": "07",
-      "date": "2026-08-11",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Désert",
-      "dept": "07",
-      "date": "2026-08-11",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Didier-en-Bresse",
-      "dept": "07",
-      "date": "2026-08-11",
+      "date": "2026-08-12",
       "indice": 4,
       "label": "Mauvais",
       "color": "#ff5050",
