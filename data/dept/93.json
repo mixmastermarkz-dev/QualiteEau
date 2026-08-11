@@ -3,7 +3,7 @@
   "nom": "Seine-Saint-Denis",
   "slug": "seine-saint-denis",
   "region": "Île-de-France",
-  "updated": "10/08/2026 à 13:04",
+  "updated": "11/08/2026 à 12:47",
   "score_eau": 96,
   "nb_communes": 48,
   "potable": [
@@ -2853,7 +2853,7 @@
     {
       "zone": "Les Lilas",
       "dept": "93",
-      "date": "2026-08-11",
+      "date": "2026-08-12",
       "indice": 4,
       "label": "Mauvais",
       "color": "#FF5050",
@@ -2889,7 +2889,43 @@
     {
       "zone": "L'Île-Saint-Denis",
       "dept": "93",
-      "date": "2026-08-11",
+      "date": "2026-08-12",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#FF5050",
+      "source": "Airparif",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Drancy",
+      "dept": "93",
+      "date": "2026-08-12",
       "indice": 4,
       "label": "Mauvais",
       "color": "#FF5050",
@@ -2925,43 +2961,7 @@
     {
       "zone": "Le Blanc-Mesnil",
       "dept": "93",
-      "date": "2026-08-11",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#F0E641",
-      "source": "Airparif",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Noisy-Le-Sec",
-      "dept": "93",
-      "date": "2026-08-11",
+      "date": "2026-08-12",
       "indice": 4,
       "label": "Mauvais",
       "color": "#FF5050",
@@ -2995,9 +2995,9 @@
       }
     },
     {
-      "zone": "Neuilly-Sur-Marne",
+      "zone": "Noisy-Le-Sec",
       "dept": "93",
-      "date": "2026-08-11",
+      "date": "2026-08-12",
       "indice": 4,
       "label": "Mauvais",
       "color": "#FF5050",
