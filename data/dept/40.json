@@ -3,7 +3,7 @@
   "nom": "Landes",
   "slug": "landes",
   "region": "Nouvelle-Aquitaine",
-  "updated": "11/08/2026 à 12:47",
+  "updated": "12/08/2026 à 12:57",
   "score_eau": 99,
   "nb_communes": 327,
   "potable": [
@@ -55947,10 +55947,8 @@
       "nom": "Gourbera",
       "dept": "40",
       "code_bss": "09505X0034/GO01",
-      "current": 21.44,
+      "current": 21.43,
       "history": [
-        21.42,
-        21.38,
         21.39,
         21.37,
         21.39,
@@ -55962,9 +55960,11 @@
         21.46,
         21.44,
         21.43,
-        21.44
+        21.44,
+        21.44,
+        21.43
       ],
-      "year_ago": 21.32,
+      "year_ago": 21.35,
       "lat": 43.788966613,
       "lng": -1.035321265,
       "color": "#3b82f6"
@@ -55973,10 +55973,8 @@
       "nom": "Lacquy",
       "dept": "40",
       "code_bss": "09266X0004/LC101",
-      "current": 76.427,
+      "current": 76.424,
       "history": [
-        76.45,
-        76.441,
         76.434,
         76.428,
         76.423,
@@ -55988,9 +55986,11 @@
         76.432,
         76.429,
         76.427,
-        76.427
+        76.427,
+        76.424,
+        76.424
       ],
-      "year_ago": 76.62,
+      "year_ago": 76.63,
       "lat": 43.960162747,
       "lng": -0.272877691,
       "color": "#ef4444"
@@ -55999,10 +55999,8 @@
       "nom": "Betbezer-d'Armagnac",
       "dept": "40",
       "code_bss": "09267X0014/PIEZO1",
-      "current": 70.646,
+      "current": 70.61,
       "history": [
-        70.843,
-        70.795,
         70.787,
         70.753,
         70.753,
@@ -56014,37 +56012,13 @@
         70.72,
         70.679,
         70.659,
-        70.646
+        70.646,
+        70.631,
+        70.61
       ],
-      "year_ago": 70.97,
+      "year_ago": 70.95,
       "lat": 43.982375767,
       "lng": -0.155560344,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Ychoux",
-      "dept": "40",
-      "code_bss": "08746X0031/P22",
-      "current": 56.18,
-      "history": [
-        56.23,
-        56.23,
-        56.23,
-        56.22,
-        56.22,
-        56.21,
-        56.21,
-        56.21,
-        56.2,
-        56.2,
-        56.19,
-        56.19,
-        56.19,
-        56.18
-      ],
-      "year_ago": 56.29,
-      "lat": 44.344690504,
-      "lng": -0.931494266,
       "color": "#ef4444"
     },
     {
@@ -56053,8 +56027,6 @@
       "code_bss": "09511X0022/LS02",
       "current": 31.45,
       "history": [
-        31.43,
-        31.38,
         31.4,
         31.36,
         31.41,
@@ -56066,21 +56038,47 @@
         31.48,
         31.44,
         31.47,
+        31.45,
+        31.49,
         31.45
       ],
-      "year_ago": 31.35,
+      "year_ago": 31.38,
       "lat": 43.910092549,
       "lng": -0.715761027,
       "color": "#3b82f6"
     },
     {
+      "nom": "Ychoux",
+      "dept": "40",
+      "code_bss": "08746X0031/P22",
+      "current": 56.17,
+      "history": [
+        56.23,
+        56.22,
+        56.22,
+        56.21,
+        56.21,
+        56.21,
+        56.2,
+        56.2,
+        56.19,
+        56.19,
+        56.19,
+        56.18,
+        56.18,
+        56.17
+      ],
+      "year_ago": 56.28,
+      "lat": 44.344690504,
+      "lng": -0.931494266,
+      "color": "#ef4444"
+    },
+    {
       "nom": "Saugnacq-et-Muret",
       "dept": "40",
       "code_bss": "08742X0058/P4",
-      "current": 46.519,
+      "current": 46.514,
       "history": [
-        46.524,
-        46.522,
         46.52,
         46.525,
         46.525,
@@ -56092,9 +56090,11 @@
         46.521,
         46.522,
         46.517,
-        46.519
+        46.519,
+        46.514,
+        46.514
       ],
-      "year_ago": 46.55,
+      "year_ago": 46.54,
       "lat": 44.435996741,
       "lng": -0.945104876,
       "color": "#ef4444"
@@ -56102,12 +56102,12 @@
   ],
   "air": [
     {
-      "zone": "Heugas",
+      "zone": "Liposthey",
       "dept": "40",
-      "date": "2026-08-12",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-08-13",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
       "source": "Atmo Nouvelle-Aquitaine",
       "polluants": {
         "NO₂": {
@@ -56116,19 +56116,19 @@
           "color": "#10b981"
         },
         "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
           "indice": 3,
           "label": "Dégradé",
           "color": "#f59e0b"
         },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "SO₂": {
           "indice": 0,
@@ -56138,9 +56138,9 @@
       }
     },
     {
-      "zone": "Estibeaux",
+      "zone": "Aureilhan",
       "dept": "40",
-      "date": "2026-08-12",
+      "date": "2026-08-13",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
@@ -56162,9 +56162,9 @@
           "color": "#eab308"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
@@ -56174,9 +56174,9 @@
       }
     },
     {
-      "zone": "Siest",
+      "zone": "Lahosse",
       "dept": "40",
-      "date": "2026-08-12",
+      "date": "2026-08-13",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
@@ -56198,9 +56198,9 @@
           "color": "#eab308"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
@@ -56210,9 +56210,9 @@
       }
     },
     {
-      "zone": "Narrosse",
+      "zone": "Misson",
       "dept": "40",
-      "date": "2026-08-12",
+      "date": "2026-08-13",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
@@ -56234,9 +56234,9 @@
           "color": "#eab308"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
@@ -56246,9 +56246,9 @@
       }
     },
     {
-      "zone": "Bergouey",
+      "zone": "Ozourt",
       "dept": "40",
-      "date": "2026-08-12",
+      "date": "2026-08-13",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
@@ -56270,9 +56270,9 @@
           "color": "#eab308"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,

@@ -3,7 +3,7 @@
   "nom": "Val-de-Marne",
   "slug": "val-de-marne",
   "region": "Île-de-France",
-  "updated": "11/08/2026 à 12:47",
+  "updated": "12/08/2026 à 12:57",
   "score_eau": 92,
   "nb_communes": 54,
   "potable": [
@@ -10757,9 +10757,45 @@
   "nappes": [],
   "air": [
     {
-      "zone": "Vitry-Sur-Seine",
+      "zone": "Le Kremlin-Bicêtre",
       "dept": "94",
-      "date": "2026-08-12",
+      "date": "2026-08-13",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#FF5050",
+      "source": "Airparif",
+      "polluants": {
+        "NO₂": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Périgny",
+      "dept": "94",
+      "date": "2026-08-13",
       "indice": 4,
       "label": "Mauvais",
       "color": "#FF5050",
@@ -10793,9 +10829,9 @@
       }
     },
     {
-      "zone": "Charenton-Le-Pont",
+      "zone": "Sucy-En-Brie",
       "dept": "94",
-      "date": "2026-08-12",
+      "date": "2026-08-13",
       "indice": 4,
       "label": "Mauvais",
       "color": "#FF5050",
@@ -10829,9 +10865,9 @@
       }
     },
     {
-      "zone": "Nogent-Sur-Marne",
+      "zone": "Villeneuve-Saint-Georges",
       "dept": "94",
-      "date": "2026-08-12",
+      "date": "2026-08-13",
       "indice": 4,
       "label": "Mauvais",
       "color": "#FF5050",
@@ -10848,9 +10884,9 @@
           "color": "#f97316"
         },
         "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM2.5": {
           "indice": 1,
@@ -10865,18 +10901,18 @@
       }
     },
     {
-      "zone": "Ormesson-Sur-Marne",
+      "zone": "Maisons-Alfort",
       "dept": "94",
-      "date": "2026-08-12",
+      "date": "2026-08-13",
       "indice": 4,
       "label": "Mauvais",
       "color": "#FF5050",
       "source": "Airparif",
       "polluants": {
         "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "O₃": {
           "indice": 4,
@@ -10884,45 +10920,9 @@
           "color": "#f97316"
         },
         "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Joinville-Le-Pont",
-      "dept": "94",
-      "date": "2026-08-12",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#FF5050",
-      "source": "Airparif",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM2.5": {
           "indice": 1,

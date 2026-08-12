@@ -3,7 +3,7 @@
   "nom": "Ardèche",
   "slug": "ardeche",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "11/08/2026 à 12:47",
+  "updated": "12/08/2026 à 12:57",
   "score_eau": 96,
   "nb_communes": 337,
   "potable": [
@@ -28816,10 +28816,8 @@
       "nom": "Veyras",
       "dept": "07",
       "code_bss": "08413X0091/F3",
-      "current": 441.99,
+      "current": 441.98,
       "history": [
-        441.96,
-        441.94,
         441.96,
         441.93,
         441.95,
@@ -28831,9 +28829,11 @@
         441.98,
         441.98,
         441.99,
-        441.99
+        441.99,
+        441.98,
+        441.98
       ],
-      "year_ago": 441.44,
+      "year_ago": 441.41,
       "lat": 44.733838457,
       "lng": 4.561214887,
       "color": "#3b82f6"
@@ -28842,10 +28842,8 @@
       "nom": "Aubenas",
       "dept": "07",
       "code_bss": "08651X0038/0038",
-      "current": 296.698,
+      "current": 296.673,
       "history": [
-        296.977,
-        296.867,
         296.941,
         296.827,
         296.918,
@@ -28857,9 +28855,11 @@
         296.837,
         296.743,
         296.821,
-        296.698
+        296.698,
+        296.778,
+        296.673
       ],
-      "year_ago": 297.86,
+      "year_ago": 297.81,
       "lat": 44.619744152,
       "lng": 4.39032624,
       "color": "#ef4444"
@@ -28868,10 +28868,8 @@
       "nom": "Lablachère",
       "dept": "07",
       "code_bss": "BSS003GPIS/X",
-      "current": 243.564,
+      "current": 243.57,
       "history": [
-        243.592,
-        243.573,
         243.584,
         243.565,
         243.599,
@@ -28883,7 +28881,9 @@
         243.591,
         243.579,
         243.595,
-        243.564
+        243.564,
+        243.592,
+        243.57
       ],
       "year_ago": 243.26,
       "lat": 44.46354371,
@@ -28893,13 +28893,85 @@
   ],
   "air": [
     {
-      "zone": "Yvré-l'Évêque",
+      "zone": "Sainte-Cécile",
       "dept": "07",
-      "date": "2026-08-13",
+      "date": "2026-08-14",
       "indice": 4,
-      "label": "mauvais",
+      "label": "Mauvais",
       "color": "#ff5050",
-      "source": "Air Pays de la Loire",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Saint-Christophe-en-Bresse",
+      "dept": "07",
+      "date": "2026-08-14",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Saint-Christophe-en-Brionnais",
+      "dept": "07",
+      "date": "2026-08-14",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -28929,13 +29001,13 @@
       }
     },
     {
-      "zone": "Volnay",
+      "zone": "Saint-Clément-sur-Guye",
       "dept": "07",
-      "date": "2026-08-13",
+      "date": "2026-08-14",
       "indice": 4,
-      "label": "mauvais",
+      "label": "Mauvais",
       "color": "#ff5050",
-      "source": "Air Pays de la Loire",
+      "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -28948,9 +29020,9 @@
           "color": "#f97316"
         },
         "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM2.5": {
           "indice": 1,
@@ -28965,13 +29037,13 @@
       }
     },
     {
-      "zone": "Tresson",
+      "zone": "Sainte-Croix",
       "dept": "07",
-      "date": "2026-08-13",
+      "date": "2026-08-14",
       "indice": 4,
-      "label": "mauvais",
+      "label": "Mauvais",
       "color": "#ff5050",
-      "source": "Air Pays de la Loire",
+      "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -28984,81 +29056,9 @@
           "color": "#f97316"
         },
         "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Trangé",
-      "dept": "07",
-      "date": "2026-08-13",
-      "indice": 4,
-      "label": "mauvais",
-      "color": "#ff5050",
-      "source": "Air Pays de la Loire",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Torcé-en-Vallée",
-      "dept": "07",
-      "date": "2026-08-13",
-      "indice": 4,
-      "label": "mauvais",
-      "color": "#ff5050",
-      "source": "Air Pays de la Loire",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM2.5": {
           "indice": 1,

@@ -3,7 +3,7 @@
   "nom": "Loire",
   "slug": "loire",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "11/08/2026 à 12:47",
+  "updated": "12/08/2026 à 12:57",
   "score_eau": 97,
   "nb_communes": 326,
   "potable": [
@@ -55727,10 +55727,8 @@
       "nom": "Cleppé",
       "dept": "42",
       "code_bss": "06967X0100/F",
-      "current": 323.437,
+      "current": 323.44,
       "history": [
-        323.483,
-        323.487,
         323.483,
         323.478,
         323.458,
@@ -55742,9 +55740,11 @@
         323.452,
         323.463,
         323.452,
-        323.437
+        323.437,
+        323.447,
+        323.44
       ],
-      "year_ago": 323.74,
+      "year_ago": 323.73,
       "lat": 45.769951628,
       "lng": 4.183823819,
       "color": "#ef4444"
@@ -55753,10 +55753,8 @@
       "nom": "Saint-Galmier",
       "dept": "42",
       "code_bss": "07208X0197/F1C",
-      "current": 372.541,
+      "current": 372.544,
       "history": [
-        372.549,
-        372.541,
         372.549,
         372.544,
         372.549,
@@ -55768,7 +55766,9 @@
         372.542,
         372.545,
         372.55,
-        372.541
+        372.541,
+        372.553,
+        372.544
       ],
       "year_ago": 372.4,
       "lat": 45.605448412,
@@ -55796,7 +55796,7 @@
         355.69,
         355.671
       ],
-      "year_ago": 355.77,
+      "year_ago": 355.75,
       "lat": 45.647921327,
       "lng": 4.246544955,
       "color": "#ef4444"
@@ -55805,10 +55805,8 @@
       "nom": "Chalain-le-Comtal",
       "dept": "42",
       "code_bss": "07203X0168/PZ",
-      "current": 338.935,
+      "current": 338.937,
       "history": [
-        338.956,
-        338.944,
         338.951,
         338.939,
         338.954,
@@ -55820,7 +55818,9 @@
         338.941,
         338.936,
         338.947,
-        338.935
+        338.935,
+        338.944,
+        338.937
       ],
       "year_ago": 339.01,
       "lat": 45.649419482,
@@ -55830,45 +55830,9 @@
   ],
   "air": [
     {
-      "zone": "Gumières",
+      "zone": "Apinac",
       "dept": "42",
-      "date": "2026-08-12",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Grézolles",
-      "dept": "42",
-      "date": "2026-08-12",
+      "date": "2026-08-13",
       "indice": 4,
       "label": "Mauvais",
       "color": "#ff5050",
@@ -55902,9 +55866,9 @@
       }
     },
     {
-      "zone": "Grézieux-le-Fromental",
+      "zone": "Andrézieux",
       "dept": "42",
-      "date": "2026-08-12",
+      "date": "2026-08-13",
       "indice": 4,
       "label": "Mauvais",
       "color": "#ff5050",
@@ -55938,9 +55902,9 @@
       }
     },
     {
-      "zone": "La Gresle",
+      "zone": "Ambierle",
       "dept": "42",
-      "date": "2026-08-12",
+      "date": "2026-08-13",
       "indice": 4,
       "label": "Mauvais",
       "color": "#ff5050",
@@ -55974,9 +55938,45 @@
       }
     },
     {
-      "zone": "La Grand-Croix",
+      "zone": "Ailleux",
       "dept": "42",
-      "date": "2026-08-12",
+      "date": "2026-08-13",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Aboën",
+      "dept": "42",
+      "date": "2026-08-13",
       "indice": 4,
       "label": "Mauvais",
       "color": "#ff5050",
@@ -55998,9 +55998,9 @@
           "color": "#eab308"
         },
         "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "SO₂": {
           "indice": 0,

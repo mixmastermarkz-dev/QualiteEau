@@ -3,7 +3,7 @@
   "nom": "Hautes-Alpes",
   "slug": "hautes-alpes",
   "region": "Provence-Alpes-Côte d'Azur",
-  "updated": "11/08/2026 à 12:47",
+  "updated": "12/08/2026 à 12:57",
   "score_eau": 98,
   "nb_communes": 162,
   "potable": [
@@ -16016,39 +16016,11 @@
   ],
   "nappes": [
     {
-      "nom": "La Roche-de-Rame",
-      "dept": "05",
-      "code_bss": "08472X0007/F-1",
-      "current": 923.59,
-      "history": [
-        923.7,
-        923.69,
-        923.68,
-        923.67,
-        923.65,
-        923.64,
-        923.63,
-        923.63,
-        923.62,
-        923.61,
-        923.6,
-        923.6,
-        923.6,
-        923.59
-      ],
-      "year_ago": 923.74,
-      "lat": 44.738691198,
-      "lng": 6.582662145,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Aspremont",
       "dept": "05",
       "code_bss": "08688X0023/PZ1",
       "current": 718.16,
       "history": [
-        718.34,
-        718.22,
         718.19,
         718.19,
         718.18,
@@ -16059,6 +16031,8 @@
         718.17,
         718.18,
         718.18,
+        718.16,
+        718.16,
         718.16,
         718.16
       ],
@@ -16071,10 +16045,8 @@
       "nom": "Saint-Jean-Saint-Nicolas",
       "dept": "05",
       "code_bss": "08466X0009/F2",
-      "current": 1155.86,
+      "current": 1155.59,
       "history": [
-        1156.3,
-        1156.24,
         1156.19,
         1156.16,
         1156.12,
@@ -16086,47 +16058,47 @@
         1155.96,
         1155.94,
         1155.92,
-        1155.86
+        1155.86,
+        1155.7,
+        1155.59
       ],
-      "year_ago": 1157.18,
+      "year_ago": 1157.16,
       "lat": 44.680949438,
       "lng": 6.260818821,
       "color": "#ef4444"
     },
     {
-      "nom": "L'Argentière-la-Bessée",
+      "nom": "La Roche-de-Rame",
       "dept": "05",
-      "code_bss": "08471X0034/P5",
-      "current": 952.79,
+      "code_bss": "08472X0007/F-1",
+      "current": 923.59,
       "history": [
-        952.9,
-        952.9,
-        952.89,
-        952.86,
-        952.85,
-        952.85,
-        952.84,
-        952.82,
-        952.82,
-        952.82,
-        952.81,
-        952.81,
-        952.81,
-        952.79
+        923.68,
+        923.67,
+        923.65,
+        923.64,
+        923.63,
+        923.63,
+        923.62,
+        923.61,
+        923.6,
+        923.6,
+        923.6,
+        923.59,
+        923.59,
+        923.59
       ],
-      "year_ago": 952.93,
-      "lat": 44.776271664,
-      "lng": 6.558809418,
+      "year_ago": 923.75,
+      "lat": 44.738691198,
+      "lng": 6.582662145,
       "color": "#ef4444"
     },
     {
       "nom": "Val Buëch-Méouge",
       "dept": "05",
       "code_bss": "09172X0078/P",
-      "current": 491.35,
+      "current": 491.38,
       "history": [
-        491.39,
-        491.38,
         491.38,
         491.38,
         491.38,
@@ -16138,59 +16110,51 @@
         491.35,
         491.35,
         491.34,
-        491.35
+        491.35,
+        491.38,
+        491.38
       ],
       "year_ago": 491.45,
       "lat": 44.231230139,
       "lng": 5.862949573,
       "color": "#ef4444"
+    },
+    {
+      "nom": "L'Argentière-la-Bessée",
+      "dept": "05",
+      "code_bss": "08471X0034/P5",
+      "current": 952.8,
+      "history": [
+        952.89,
+        952.86,
+        952.85,
+        952.85,
+        952.84,
+        952.82,
+        952.82,
+        952.82,
+        952.81,
+        952.81,
+        952.81,
+        952.79,
+        952.8,
+        952.8
+      ],
+      "year_ago": 952.95,
+      "lat": 44.776271664,
+      "lng": 6.558809418,
+      "color": "#ef4444"
     }
   ],
   "air": [
     {
-      "zone": "Belgeard",
+      "zone": "Montigny-aux-Amognes",
       "dept": "05",
-      "date": "2026-08-13",
+      "date": "2026-08-14",
       "indice": 4,
-      "label": "mauvais",
+      "label": "Mauvais",
       "color": "#ff5050",
-      "source": "Air Pays de la Loire",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Beaulieu-sur-Oudon",
-      "dept": "05",
-      "date": "2026-08-13",
-      "indice": 4,
-      "label": "mauvais",
-      "color": "#ff5050",
-      "source": "Air Pays de la Loire",
+      "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -16220,13 +16184,13 @@
       }
     },
     {
-      "zone": "la Bazoge-Montpinçon",
+      "zone": "Montigny-en-Morvan",
       "dept": "05",
-      "date": "2026-08-13",
+      "date": "2026-08-14",
       "indice": 4,
-      "label": "mauvais",
+      "label": "Mauvais",
       "color": "#ff5050",
-      "source": "Air Pays de la Loire",
+      "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -16256,13 +16220,13 @@
       }
     },
     {
-      "zone": "Aron",
+      "zone": "Montigny-sur-Canne",
       "dept": "05",
-      "date": "2026-08-13",
+      "date": "2026-08-14",
       "indice": 4,
-      "label": "mauvais",
+      "label": "Mauvais",
       "color": "#ff5050",
-      "source": "Air Pays de la Loire",
+      "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -16275,9 +16239,9 @@
           "color": "#f97316"
         },
         "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM2.5": {
           "indice": 1,
@@ -16292,13 +16256,49 @@
       }
     },
     {
-      "zone": "Argentré",
+      "zone": "Montreuillon",
       "dept": "05",
-      "date": "2026-08-13",
+      "date": "2026-08-14",
       "indice": 4,
-      "label": "mauvais",
+      "label": "Mauvais",
       "color": "#ff5050",
-      "source": "Air Pays de la Loire",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Montsauche-les-Settons",
+      "dept": "05",
+      "date": "2026-08-14",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
           "indice": 1,

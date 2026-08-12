@@ -3,7 +3,7 @@
   "nom": "Jura",
   "slug": "jura",
   "region": "Bourgogne-Franche-Comté",
-  "updated": "11/08/2026 à 12:47",
+  "updated": "12/08/2026 à 12:57",
   "score_eau": 98,
   "nb_communes": 500,
   "potable": [
@@ -35885,39 +35885,11 @@
   ],
   "nappes": [
     {
-      "nom": "Oussières",
-      "dept": "39",
-      "code_bss": "05553X0009/S2",
-      "current": 223.814,
-      "history": [
-        223.843,
-        223.831,
-        223.834,
-        223.827,
-        223.832,
-        223.825,
-        223.831,
-        223.826,
-        223.832,
-        223.827,
-        223.826,
-        223.82,
-        223.82,
-        223.814
-      ],
-      "year_ago": 223.92,
-      "lat": 46.901262914,
-      "lng": 5.605880793,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Ney",
       "dept": "39",
       "code_bss": "05822X0024/F1",
-      "current": 527.004,
+      "current": 526.999,
       "history": [
-        527.042,
-        527.039,
         527.036,
         527.033,
         527.03,
@@ -35929,9 +35901,11 @@
         527.013,
         527.011,
         527.007,
-        527.004
+        527.004,
+        527.002,
+        526.999
       ],
-      "year_ago": 527.34,
+      "year_ago": 527.33,
       "lat": 46.7255463,
       "lng": 5.888461993,
       "color": "#ef4444"
@@ -35940,10 +35914,8 @@
       "nom": "Desnes",
       "dept": "39",
       "code_bss": "05811X0159/F2",
-      "current": 200.645,
+      "current": 200.64,
       "history": [
-        200.674,
-        200.672,
         200.669,
         200.667,
         200.666,
@@ -35955,73 +35927,21 @@
         200.651,
         200.65,
         200.647,
-        200.645
+        200.645,
+        200.643,
+        200.64
       ],
-      "year_ago": 200.8,
+      "year_ago": 200.79,
       "lat": 46.761018459,
       "lng": 5.476860534,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Thervay",
-      "dept": "39",
-      "code_bss": "05013X0001/SM1",
-      "current": 190.404,
-      "history": [
-        190.342,
-        190.358,
-        190.357,
-        190.362,
-        190.371,
-        190.375,
-        190.374,
-        190.376,
-        190.355,
-        190.345,
-        190.36,
-        190.344,
-        190.365,
-        190.404
-      ],
-      "year_ago": 190.61,
-      "lat": 47.255880567,
-      "lng": 5.591689688,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Hauteroche",
-      "dept": "39",
-      "code_bss": "05818X0073/F",
-      "current": 423.003,
-      "history": [
-        423.26,
-        423.203,
-        423.222,
-        423.157,
-        423.195,
-        423.123,
-        423.169,
-        423.093,
-        423.131,
-        423.073,
-        423.095,
-        423.033,
-        423.045,
-        423.003
-      ],
-      "year_ago": 424.33,
-      "lat": 46.692281217,
-      "lng": 5.68698072,
       "color": "#ef4444"
     },
     {
       "nom": "Molay",
       "dept": "39",
       "code_bss": "05285X0374/P7",
-      "current": 189.463,
+      "current": 189.462,
       "history": [
-        189.456,
-        189.489,
         189.489,
         189.486,
         189.483,
@@ -36033,21 +35953,99 @@
         189.468,
         189.466,
         189.466,
-        189.463
+        189.463,
+        189.462,
+        189.462
       ],
-      "year_ago": 189.76,
+      "year_ago": 189.75,
       "lat": 47.026741742,
       "lng": 5.426979635,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Hauteroche",
+      "dept": "39",
+      "code_bss": "05818X0073/F",
+      "current": 422.961,
+      "history": [
+        423.222,
+        423.157,
+        423.195,
+        423.123,
+        423.169,
+        423.093,
+        423.131,
+        423.073,
+        423.095,
+        423.033,
+        423.045,
+        423.003,
+        422.995,
+        422.961
+      ],
+      "year_ago": 424.26,
+      "lat": 46.692281217,
+      "lng": 5.68698072,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Oussières",
+      "dept": "39",
+      "code_bss": "05553X0009/S2",
+      "current": 223.81,
+      "history": [
+        223.834,
+        223.827,
+        223.832,
+        223.825,
+        223.831,
+        223.826,
+        223.832,
+        223.827,
+        223.826,
+        223.82,
+        223.82,
+        223.814,
+        223.819,
+        223.81
+      ],
+      "year_ago": 223.91,
+      "lat": 46.901262914,
+      "lng": 5.605880793,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Thervay",
+      "dept": "39",
+      "code_bss": "05013X0001/SM1",
+      "current": 190.341,
+      "history": [
+        190.357,
+        190.362,
+        190.371,
+        190.375,
+        190.374,
+        190.376,
+        190.355,
+        190.345,
+        190.36,
+        190.344,
+        190.365,
+        190.404,
+        190.362,
+        190.341
+      ],
+      "year_ago": 190.61,
+      "lat": 47.255880567,
+      "lng": 5.591689688,
       "color": "#ef4444"
     },
     {
       "nom": "Chatelay",
       "dept": "39",
       "code_bss": "05288X0053/F3",
-      "current": 226.49,
+      "current": 226.486,
       "history": [
-        226.519,
-        226.5,
         226.513,
         226.501,
         226.515,
@@ -36059,9 +36057,11 @@
         226.506,
         226.492,
         226.498,
-        226.49
+        226.49,
+        226.502,
+        226.486
       ],
-      "year_ago": 226.59,
+      "year_ago": 226.57,
       "lat": 47.041366802,
       "lng": 5.693898783,
       "color": "#ef4444"
@@ -36069,9 +36069,117 @@
   ],
   "air": [
     {
-      "zone": "Pillemoine",
+      "zone": "Tavaux",
       "dept": "39",
-      "date": "2026-08-12",
+      "date": "2026-08-14",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Taxenne",
+      "dept": "39",
+      "date": "2026-08-14",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Thervay",
+      "dept": "39",
+      "date": "2026-08-14",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Thésy",
+      "dept": "39",
+      "date": "2026-08-14",
       "indice": 4,
       "label": "Mauvais",
       "color": "#ff5050",
@@ -36105,117 +36213,9 @@
       }
     },
     {
-      "zone": "Pimorin",
+      "zone": "Thoirette",
       "dept": "39",
-      "date": "2026-08-12",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Le Pin",
-      "dept": "39",
-      "date": "2026-08-12",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Plainoiseau",
-      "dept": "39",
-      "date": "2026-08-12",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Plaisia",
-      "dept": "39",
-      "date": "2026-08-12",
+      "date": "2026-08-14",
       "indice": 4,
       "label": "Mauvais",
       "color": "#ff5050",

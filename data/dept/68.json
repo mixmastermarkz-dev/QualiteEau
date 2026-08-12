@@ -3,7 +3,7 @@
   "nom": "Haut-Rhin",
   "slug": "haut-rhin",
   "region": "Grand Est",
-  "updated": "11/08/2026 à 12:47",
+  "updated": "12/08/2026 à 12:57",
   "score_eau": 94,
   "nb_communes": 366,
   "potable": [
@@ -41960,10 +41960,8 @@
       "nom": "Mooslargue",
       "dept": "68",
       "code_bss": "04761X0021/F1",
-      "current": 428.794,
+      "current": 428.79,
       "history": [
-        428.816,
-        428.809,
         428.813,
         428.806,
         428.813,
@@ -41975,7 +41973,9 @@
         428.801,
         428.801,
         428.8,
-        428.794
+        428.794,
+        428.803,
+        428.79
       ],
       "year_ago": 428.87,
       "lat": 47.509654366,
@@ -41985,9 +41985,9 @@
   ],
   "air": [
     {
-      "zone": "Linsdorf",
+      "zone": "Oderen",
       "dept": "68",
-      "date": "2026-08-11",
+      "date": "2026-08-13",
       "indice": 4,
       "label": "Mauvais",
       "color": "#FF5050",
@@ -42021,45 +42021,9 @@
       }
     },
     {
-      "zone": "Linthal",
+      "zone": "Oltingue",
       "dept": "68",
-      "date": "2026-08-11",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#F0E641",
-      "source": "Atmo Grand Est",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Logelheim",
-      "dept": "68",
-      "date": "2026-08-11",
+      "date": "2026-08-13",
       "indice": 4,
       "label": "Mauvais",
       "color": "#FF5050",
@@ -42093,9 +42057,9 @@
       }
     },
     {
-      "zone": "Lucelle",
+      "zone": "Orbey",
       "dept": "68",
-      "date": "2026-08-11",
+      "date": "2026-08-13",
       "indice": 4,
       "label": "Mauvais",
       "color": "#FF5050",
@@ -42129,9 +42093,9 @@
       }
     },
     {
-      "zone": "Luemschwiller",
+      "zone": "Orschwihr",
       "dept": "68",
-      "date": "2026-08-11",
+      "date": "2026-08-13",
       "indice": 4,
       "label": "Mauvais",
       "color": "#FF5050",
@@ -42148,9 +42112,45 @@
           "color": "#f97316"
         },
         "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Osenbach",
+      "dept": "68",
+      "date": "2026-08-13",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#FF5050",
+      "source": "Atmo Grand Est",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM2.5": {
           "indice": 1,
