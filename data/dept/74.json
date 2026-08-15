@@ -3,7 +3,7 @@
   "nom": "Haute-Savoie",
   "slug": "haute-savoie",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "14/08/2026 à 12:55",
+  "updated": "15/08/2026 à 12:18",
   "score_eau": 98,
   "nb_communes": 279,
   "potable": [
@@ -40447,39 +40447,11 @@
   ],
   "nappes": [
     {
-      "nom": "Marigny-Saint-Marcel",
-      "dept": "74",
-      "code_bss": "07013X0071/F1",
-      "current": 351.849,
-      "history": [
-        351.922,
-        351.917,
-        351.912,
-        351.906,
-        351.9,
-        351.895,
-        351.889,
-        351.883,
-        351.877,
-        351.872,
-        351.866,
-        351.86,
-        351.855,
-        351.849
-      ],
-      "year_ago": 351.91,
-      "lat": 45.832389293,
-      "lng": 5.962087611,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Publier",
       "dept": "74",
       "code_bss": "06301X0019/P5",
-      "current": 373.625,
+      "current": 373.62,
       "history": [
-        373.653,
-        373.649,
         373.649,
         373.645,
         373.644,
@@ -40491,9 +40463,11 @@
         373.633,
         373.627,
         373.626,
-        373.625
+        373.625,
+        373.62,
+        373.62
       ],
-      "year_ago": 373.92,
+      "year_ago": 373.91,
       "lat": 46.390565227,
       "lng": 6.520859286,
       "color": "#ef4444"
@@ -40502,10 +40476,8 @@
       "nom": "Vinzier",
       "dept": "74",
       "code_bss": "06306X0042/BIOGE",
-      "current": 571.065,
+      "current": 570.926,
       "history": [
-        571.433,
-        571.412,
         571.411,
         571.4,
         571.406,
@@ -40517,9 +40489,11 @@
         571.339,
         571.266,
         571.168,
-        571.065
+        571.065,
+        570.988,
+        570.926
       ],
-      "year_ago": 572.33,
+      "year_ago": 572.29,
       "lat": 46.335316884,
       "lng": 6.621257922,
       "color": "#ef4444"
@@ -40528,10 +40502,8 @@
       "nom": "Passy",
       "dept": "74",
       "code_bss": "BSS004QBEB/X",
-      "current": 569.056,
+      "current": 569.046,
       "history": [
-        569.143,
-        569.135,
         569.134,
         569.126,
         569.119,
@@ -40543,7 +40515,9 @@
         569.08,
         569.067,
         569.064,
-        569.056
+        569.056,
+        569.051,
+        569.046
       ],
       "year_ago": 569.32,
       "lat": 45.920935924,
@@ -40554,10 +40528,8 @@
       "nom": "Marigny-Saint-Marcel",
       "dept": "74",
       "code_bss": "BSS004MZXK/X",
-      "current": 362.318,
+      "current": 362.304,
       "history": [
-        362.416,
-        362.411,
         362.245,
         362.388,
         362.385,
@@ -40569,9 +40541,11 @@
         362.339,
         362.332,
         362.326,
-        362.318
+        362.318,
+        362.312,
+        362.304
       ],
-      "year_ago": 362.24,
+      "year_ago": 362.26,
       "lat": 45.835072054,
       "lng": 5.968019958,
       "color": "#3b82f6"
@@ -40580,10 +40554,8 @@
       "nom": "Viry",
       "dept": "74",
       "code_bss": "06537X0103/VEIGY",
-      "current": 372.085,
+      "current": 372.088,
       "history": [
-        372.147,
-        372.127,
         372.141,
         372.125,
         372.124,
@@ -40595,17 +40567,45 @@
         372.104,
         372.08,
         372.104,
-        372.085
+        372.085,
+        372.106,
+        372.088
       ],
-      "year_ago": 371.86,
+      "year_ago": 371.85,
       "lat": 46.141387797,
       "lng": 6.017375948,
       "color": "#3b82f6"
+    },
+    {
+      "nom": "Marigny-Saint-Marcel",
+      "dept": "74",
+      "code_bss": "07013X0071/F1",
+      "current": 351.837,
+      "history": [
+        351.912,
+        351.906,
+        351.9,
+        351.895,
+        351.889,
+        351.883,
+        351.877,
+        351.872,
+        351.866,
+        351.86,
+        351.855,
+        351.849,
+        351.843,
+        351.837
+      ],
+      "year_ago": 351.93,
+      "lat": 45.832389293,
+      "lng": 5.962087611,
+      "color": "#ef4444"
     }
   ],
   "air": [
     {
-      "zone": "le Chable",
+      "zone": "Bluffy",
       "dept": "74",
       "date": "2026-08-16",
       "indice": 4,
@@ -40641,7 +40641,7 @@
       }
     },
     {
-      "zone": "Saint-Paul-en-Chablais",
+      "zone": "Saint-Pierre",
       "dept": "74",
       "date": "2026-08-16",
       "indice": 4,
@@ -40660,45 +40660,9 @@
           "color": "#f97316"
         },
         "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Bellevaux",
-      "dept": "74",
-      "date": "2026-08-16",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM2.5": {
           "indice": 1,
@@ -40771,6 +40735,42 @@
           "indice": 1,
           "label": "Bon",
           "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Bloye",
+      "dept": "74",
+      "date": "2026-08-16",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM2.5": {
           "indice": 1,

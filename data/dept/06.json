@@ -3,7 +3,7 @@
   "nom": "Alpes-Maritimes",
   "slug": "alpes-maritimes",
   "region": "Provence-Alpes-Côte d'Azur",
-  "updated": "14/08/2026 à 12:55",
+  "updated": "15/08/2026 à 12:18",
   "score_eau": 99,
   "nb_communes": 164,
   "potable": [
@@ -21478,10 +21478,8 @@
       "nom": "Gilette",
       "dept": "06",
       "code_bss": "09724X0023/P2",
-      "current": 96.021,
+      "current": 95.956,
       "history": [
-        96.488,
-        96.456,
         96.411,
         96.383,
         96.343,
@@ -21493,37 +21491,13 @@
         96.139,
         96.099,
         96.047,
-        96.021
+        96.021,
+        95.992,
+        95.956
       ],
-      "year_ago": 101.75,
+      "year_ago": 101.66,
       "lat": 43.831616009,
       "lng": 7.188887934,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Nice",
-      "dept": "06",
-      "code_bss": "09994X0521/P4B",
-      "current": 10.55,
-      "history": [
-        10.64,
-        10.63,
-        10.62,
-        10.61,
-        10.62,
-        10.62,
-        10.62,
-        10.6,
-        10.59,
-        10.58,
-        10.57,
-        10.56,
-        10.56,
-        10.55
-      ],
-      "year_ago": 11.61,
-      "lat": 43.691448072,
-      "lng": 7.193977883,
       "color": "#ef4444"
     },
     {
@@ -21532,8 +21506,6 @@
       "code_bss": "09998X0199/PZ_PID",
       "current": 18.43,
       "history": [
-        18.5,
-        18.43,
         18.49,
         18.43,
         18.48,
@@ -21545,9 +21517,11 @@
         18.46,
         18.43,
         18.45,
+        18.43,
+        18.44,
         18.43
       ],
-      "year_ago": 18.7,
+      "year_ago": 18.71,
       "lat": 43.640614714,
       "lng": 7.125900921,
       "color": "#ef4444"
@@ -21556,10 +21530,8 @@
       "nom": "Pégomas",
       "dept": "06",
       "code_bss": "09995X0028/F",
-      "current": 9.214,
+      "current": 9.207,
       "history": [
-        9.236,
-        9.261,
         9.273,
         9.237,
         9.24,
@@ -21571,21 +21543,47 @@
         9.237,
         9.257,
         9.262,
-        9.214
+        9.214,
+        9.224,
+        9.207
       ],
-      "year_ago": 9.32,
+      "year_ago": 9.39,
       "lat": 43.587762053,
       "lng": 6.926141257,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Nice",
+      "dept": "06",
+      "code_bss": "09994X0521/P4B",
+      "current": 10.53,
+      "history": [
+        10.62,
+        10.61,
+        10.62,
+        10.62,
+        10.62,
+        10.6,
+        10.59,
+        10.58,
+        10.57,
+        10.56,
+        10.56,
+        10.55,
+        10.54,
+        10.53
+      ],
+      "year_ago": 11.62,
+      "lat": 43.691448072,
+      "lng": 7.193977883,
       "color": "#ef4444"
     },
     {
       "nom": "Gilette",
       "dept": "06",
       "code_bss": "BSS004FHCY/X",
-      "current": 96.25,
+      "current": 96.19,
       "history": [
-        96.72,
-        96.68,
         96.64,
         96.61,
         96.57,
@@ -21597,9 +21595,11 @@
         96.37,
         96.33,
         96.28,
-        96.25
+        96.25,
+        96.23,
+        96.19
       ],
-      "year_ago": 101.96,
+      "year_ago": 101.87,
       "lat": 43.831748442,
       "lng": 7.188607593,
       "color": "#ef4444"
@@ -21607,49 +21607,13 @@
   ],
   "air": [
     {
-      "zone": "Morancé",
+      "zone": "Aiglun",
       "dept": "06",
       "date": "2026-08-16",
       "indice": 4,
       "label": "Mauvais",
-      "color": "#ff5050",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Orléat",
-      "dept": "06",
-      "date": "2026-08-16",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
-      "source": "Atmo Auvergne-Rhône-Alpes",
+      "color": "#FF5050",
+      "source": "AtmoSud",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -21679,13 +21643,13 @@
       }
     },
     {
-      "zone": "Montrottier",
+      "zone": "Amirat",
       "dept": "06",
       "date": "2026-08-16",
       "indice": 3,
       "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Auvergne-Rhône-Alpes",
+      "color": "#F0E641",
+      "source": "AtmoSud",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -21715,13 +21679,13 @@
       }
     },
     {
-      "zone": "Chaponnay",
+      "zone": "Andon",
       "dept": "06",
       "date": "2026-08-16",
       "indice": 4,
       "label": "Mauvais",
-      "color": "#ff5050",
-      "source": "Atmo Auvergne-Rhône-Alpes",
+      "color": "#FF5050",
+      "source": "AtmoSud",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -21734,9 +21698,45 @@
           "color": "#f97316"
         },
         "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Antibes",
+      "dept": "06",
+      "date": "2026-08-16",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#FF5050",
+      "source": "AtmoSud",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM2.5": {
           "indice": 2,
@@ -21751,13 +21751,13 @@
       }
     },
     {
-      "zone": "Montromant",
+      "zone": "Ascros",
       "dept": "06",
       "date": "2026-08-16",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Auvergne-Rhône-Alpes",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#FF5050",
+      "source": "AtmoSud",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -21765,9 +21765,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "PM10": {
           "indice": 1,
