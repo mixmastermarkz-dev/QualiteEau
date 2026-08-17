@@ -3,7 +3,7 @@
   "nom": "Hautes-Alpes",
   "slug": "hautes-alpes",
   "region": "Provence-Alpes-Côte d'Azur",
-  "updated": "16/08/2026 à 12:18",
+  "updated": "17/08/2026 à 12:28",
   "score_eau": 98,
   "nb_communes": 162,
   "potable": [
@@ -16046,65 +16046,11 @@
   ],
   "nappes": [
     {
-      "nom": "La Roche-de-Rame",
-      "dept": "05",
-      "code_bss": "08472X0007/F-1",
-      "current": 923.43,
-      "history": [
-        923.6,
-        923.6,
-        923.6,
-        923.59,
-        923.59,
-        923.59,
-        923.58,
-        923.58,
-        923.58,
-        923.56,
-        923.51,
-        923.48,
-        923.45,
-        923.43
-      ],
-      "year_ago": 923.62,
-      "lat": 44.738691198,
-      "lng": 6.582662145,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Aspremont",
-      "dept": "05",
-      "code_bss": "08688X0023/PZ1",
-      "current": 718.18,
-      "history": [
-        718.18,
-        718.18,
-        718.16,
-        718.16,
-        718.16,
-        718.16,
-        718.16,
-        718.16,
-        718.16,
-        718.15,
-        718.16,
-        718.26,
-        718.2,
-        718.18
-      ],
-      "year_ago": 718.36,
-      "lat": 44.493443917,
-      "lng": 5.728933099,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Saint-Jean-Saint-Nicolas",
       "dept": "05",
       "code_bss": "08466X0009/F2",
-      "current": 1155.91,
+      "current": 1155.89,
       "history": [
-        1155.96,
-        1155.94,
         1155.92,
         1155.86,
         1155.7,
@@ -16116,47 +16062,73 @@
         1155.73,
         1155.85,
         1155.89,
-        1155.91
+        1155.91,
+        1155.9,
+        1155.89
       ],
-      "year_ago": 1156.91,
+      "year_ago": 1156.82,
       "lat": 44.680949438,
       "lng": 6.260818821,
       "color": "#ef4444"
     },
     {
-      "nom": "Val Buëch-Méouge",
+      "nom": "Aspremont",
       "dept": "05",
-      "code_bss": "09172X0078/P",
-      "current": 491.35,
+      "code_bss": "08688X0023/PZ1",
+      "current": 718.22,
       "history": [
-        491.35,
-        491.35,
-        491.34,
-        491.35,
-        491.38,
-        491.38,
-        491.37,
-        491.37,
-        491.36,
-        491.36,
-        491.36,
-        491.36,
-        491.36,
-        491.35
+        718.16,
+        718.16,
+        718.16,
+        718.16,
+        718.16,
+        718.16,
+        718.16,
+        718.15,
+        718.16,
+        718.26,
+        718.2,
+        718.18,
+        718.21,
+        718.22
       ],
-      "year_ago": 491.46,
-      "lat": 44.231230139,
-      "lng": 5.862949573,
+      "year_ago": 718.35,
+      "lat": 44.493443917,
+      "lng": 5.728933099,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "La Roche-de-Rame",
+      "dept": "05",
+      "code_bss": "08472X0007/F-1",
+      "current": 923.39,
+      "history": [
+        923.6,
+        923.59,
+        923.59,
+        923.59,
+        923.58,
+        923.58,
+        923.58,
+        923.56,
+        923.51,
+        923.48,
+        923.45,
+        923.43,
+        923.4,
+        923.39
+      ],
+      "year_ago": 923.62,
+      "lat": 44.738691198,
+      "lng": 6.582662145,
       "color": "#ef4444"
     },
     {
       "nom": "L'Argentière-la-Bessée",
       "dept": "05",
       "code_bss": "08471X0034/P5",
-      "current": 952.62,
+      "current": 952.59,
       "history": [
-        952.81,
-        952.81,
         952.81,
         952.79,
         952.8,
@@ -16168,23 +16140,51 @@
         952.69,
         952.66,
         952.64,
-        952.62
+        952.62,
+        952.6,
+        952.59
       ],
-      "year_ago": 952.9,
+      "year_ago": 952.89,
       "lat": 44.776271664,
       "lng": 6.558809418,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Val Buëch-Méouge",
+      "dept": "05",
+      "code_bss": "09172X0078/P",
+      "current": 491.34,
+      "history": [
+        491.34,
+        491.35,
+        491.38,
+        491.38,
+        491.37,
+        491.37,
+        491.36,
+        491.36,
+        491.36,
+        491.36,
+        491.36,
+        491.35,
+        491.34,
+        491.34
+      ],
+      "year_ago": 491.45,
+      "lat": 44.231230139,
+      "lng": 5.862949573,
       "color": "#ef4444"
     }
   ],
   "air": [
     {
-      "zone": "Les Moitiers-d'Allonne",
+      "zone": "Villapourçon",
       "dept": "05",
       "date": "2026-08-18",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -16192,9 +16192,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -16214,13 +16214,13 @@
       }
     },
     {
-      "zone": "Le Mesnil-Aubert",
+      "zone": "Toury-Lurcy",
       "dept": "05",
       "date": "2026-08-18",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -16228,9 +16228,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -16250,13 +16250,13 @@
       }
     },
     {
-      "zone": "Lolif",
+      "zone": "Saint-Léger-de-Fougeret",
       "dept": "05",
       "date": "2026-08-18",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -16264,9 +16264,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -16286,13 +16286,13 @@
       }
     },
     {
-      "zone": "Monthuchon",
+      "zone": "Saint-Hilaire-Fontaine",
       "dept": "05",
       "date": "2026-08-18",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -16300,9 +16300,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -16322,13 +16322,13 @@
       }
     },
     {
-      "zone": "Sainte-Mère-Église",
+      "zone": "Onlay",
       "dept": "05",
       "date": "2026-08-18",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -16336,9 +16336,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,

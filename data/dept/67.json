@@ -3,7 +3,7 @@
   "nom": "Bas-Rhin",
   "slug": "bas-rhin",
   "region": "Grand Est",
-  "updated": "16/08/2026 à 12:18",
+  "updated": "17/08/2026 à 12:28",
   "score_eau": 97,
   "nb_communes": 514,
   "potable": [
@@ -58282,10 +58282,8 @@
       "nom": "Gresswiller",
       "dept": "67",
       "code_bss": "02713X0105/PZ1",
-      "current": 197.611,
+      "current": 197.648,
       "history": [
-        197.651,
-        197.683,
         197.631,
         197.718,
         197.613,
@@ -58297,7 +58295,9 @@
         197.619,
         197.695,
         197.617,
-        197.611
+        197.611,
+        197.608,
+        197.648
       ],
       "year_ago": 198.31,
       "lat": 48.520713416,
@@ -58308,10 +58308,8 @@
       "nom": "Haegen",
       "dept": "67",
       "code_bss": "02332X0198/F3",
-      "current": 207.304,
+      "current": 207.327,
       "history": [
-        207.303,
-        207.055,
         207.271,
         207.19,
         207.053,
@@ -58323,9 +58321,11 @@
         207.135,
         207.217,
         207.284,
-        207.304
+        207.304,
+        207.323,
+        207.327
       ],
-      "year_ago": 207.27,
+      "year_ago": 207.29,
       "lat": 48.714388864,
       "lng": 7.311970754,
       "color": "#3b82f6"
@@ -58333,9 +58333,9 @@
   ],
   "air": [
     {
-      "zone": "Plobsheim",
+      "zone": "Ohlungen",
       "dept": "67",
-      "date": "2026-08-16",
+      "date": "2026-08-17",
       "indice": 4,
       "label": "Mauvais",
       "color": "#FF5050",
@@ -58347,9 +58347,45 @@
           "color": "#10b981"
         },
         "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
           "indice": 4,
           "label": "Mauvais",
           "color": "#f97316"
+        },
+        "PM2.5": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Ohnenheim",
+      "dept": "67",
+      "date": "2026-08-17",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
+      "source": "Atmo Grand Est",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -58369,12 +58405,12 @@
       }
     },
     {
-      "zone": "Preuschdorf",
+      "zone": "Olwisheim",
       "dept": "67",
-      "date": "2026-08-16",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#FF5050",
+      "date": "2026-08-17",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
       "source": "Atmo Grand Est",
       "polluants": {
         "NO₂": {
@@ -58383,19 +58419,19 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "SO₂": {
           "indice": 0,
@@ -58405,12 +58441,12 @@
       }
     },
     {
-      "zone": "Printzheim",
+      "zone": "Orschwiller",
       "dept": "67",
-      "date": "2026-08-16",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#FF5050",
+      "date": "2026-08-17",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
       "source": "Atmo Grand Est",
       "polluants": {
         "NO₂": {
@@ -58419,19 +58455,19 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
@@ -58441,12 +58477,12 @@
       }
     },
     {
-      "zone": "Puberg",
+      "zone": "Osthoffen",
       "dept": "67",
-      "date": "2026-08-16",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#FF5050",
+      "date": "2026-08-17",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
       "source": "Atmo Grand Est",
       "polluants": {
         "NO₂": {
@@ -58455,55 +58491,19 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Quatzenheim",
-      "dept": "67",
-      "date": "2026-08-16",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#FF5050",
-      "source": "Atmo Grand Est",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "SO₂": {
           "indice": 0,

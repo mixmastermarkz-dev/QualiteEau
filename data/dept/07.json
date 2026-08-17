@@ -3,7 +3,7 @@
   "nom": "Ardèche",
   "slug": "ardeche",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "16/08/2026 à 12:18",
+  "updated": "17/08/2026 à 12:28",
   "score_eau": 96,
   "nb_communes": 337,
   "potable": [
@@ -28823,8 +28823,6 @@
       "code_bss": "08413X0091/F3",
       "current": 442,
       "history": [
-        441.98,
-        441.98,
         441.99,
         441.99,
         441.98,
@@ -28836,47 +28834,21 @@
         442,
         442,
         442.01,
+        442,
+        442,
         442
       ],
-      "year_ago": 441.41,
+      "year_ago": 441.43,
       "lat": 44.733838457,
       "lng": 4.561214887,
-      "color": "#3b82f6"
-    },
-    {
-      "nom": "Lablachère",
-      "dept": "07",
-      "code_bss": "BSS003GPIS/X",
-      "current": 243.627,
-      "history": [
-        243.591,
-        243.579,
-        243.595,
-        243.564,
-        243.592,
-        243.57,
-        243.579,
-        243.565,
-        243.594,
-        243.597,
-        243.626,
-        243.624,
-        243.64,
-        243.627
-      ],
-      "year_ago": 243.23,
-      "lat": 44.46354371,
-      "lng": 4.214386619,
       "color": "#3b82f6"
     },
     {
       "nom": "Aubenas",
       "dept": "07",
       "code_bss": "08651X0038/0038",
-      "current": 296.587,
+      "current": 296.557,
       "history": [
-        296.837,
-        296.743,
         296.821,
         296.698,
         296.778,
@@ -28888,23 +28860,51 @@
         296.73,
         296.619,
         296.689,
-        296.587
+        296.587,
+        296.651,
+        296.557
       ],
-      "year_ago": 297.68,
+      "year_ago": 297.66,
       "lat": 44.619744152,
       "lng": 4.39032624,
       "color": "#ef4444"
+    },
+    {
+      "nom": "Lablachère",
+      "dept": "07",
+      "code_bss": "BSS003GPIS/X",
+      "current": 243.618,
+      "history": [
+        243.595,
+        243.564,
+        243.592,
+        243.57,
+        243.579,
+        243.565,
+        243.594,
+        243.597,
+        243.626,
+        243.624,
+        243.64,
+        243.627,
+        243.626,
+        243.618
+      ],
+      "year_ago": 243.24,
+      "lat": 44.46354371,
+      "lng": 4.214386619,
+      "color": "#3b82f6"
     }
   ],
   "air": [
     {
-      "zone": "Bosville",
+      "zone": "les Avanchers",
       "dept": "07",
-      "date": "2026-08-18",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
+      "date": "2026-08-19",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -28912,9 +28912,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -28934,13 +28934,13 @@
       }
     },
     {
-      "zone": "Fécamp",
+      "zone": "Prapérier",
       "dept": "07",
-      "date": "2026-08-18",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
+      "date": "2026-08-19",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -28948,9 +28948,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -28970,13 +28970,13 @@
       }
     },
     {
-      "zone": "Gueures",
+      "zone": "Étables",
       "dept": "07",
-      "date": "2026-08-18",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
+      "date": "2026-08-19",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -28984,9 +28984,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -29006,13 +29006,13 @@
       }
     },
     {
-      "zone": "Bosc-le-Hard",
+      "zone": "Saint-Cierge-sous-le-Cheylard",
       "dept": "07",
-      "date": "2026-08-18",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
+      "date": "2026-08-19",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -29020,9 +29020,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -29042,13 +29042,13 @@
       }
     },
     {
-      "zone": "Criquebeuf-en-Caux",
+      "zone": "Saint-Romain-de-Lerps",
       "dept": "07",
-      "date": "2026-08-18",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
+      "date": "2026-08-19",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -29056,9 +29056,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,

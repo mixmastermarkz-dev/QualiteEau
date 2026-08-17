@@ -3,7 +3,7 @@
   "nom": "Haut-Rhin",
   "slug": "haut-rhin",
   "region": "Grand Est",
-  "updated": "16/08/2026 à 12:18",
+  "updated": "17/08/2026 à 12:28",
   "score_eau": 94,
   "nb_communes": 366,
   "potable": [
@@ -40739,8 +40739,6 @@
       "code_bss": "04761X0021/F1",
       "current": 428.788,
       "history": [
-        428.801,
-        428.801,
         428.8,
         428.794,
         428.803,
@@ -40752,9 +40750,11 @@
         428.8,
         428.794,
         428.794,
+        428.788,
+        428.785,
         428.788
       ],
-      "year_ago": 428.86,
+      "year_ago": 428.85,
       "lat": 47.509654366,
       "lng": 7.218150794,
       "color": "#ef4444"
@@ -40762,12 +40762,12 @@
   ],
   "air": [
     {
-      "zone": "Ruelisheim",
+      "zone": "Mollau",
       "dept": "68",
-      "date": "2026-08-16",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#FF5050",
+      "date": "2026-08-17",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
       "source": "Atmo Grand Est",
       "polluants": {
         "NO₂": {
@@ -40776,81 +40776,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Rustenhart",
-      "dept": "68",
-      "date": "2026-08-16",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#FF5050",
-      "source": "Atmo Grand Est",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Rumersheim-le-Haut",
-      "dept": "68",
-      "date": "2026-08-16",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#FF5050",
-      "source": "Atmo Grand Est",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 2,
@@ -40870,12 +40798,12 @@
       }
     },
     {
-      "zone": "Saint-Amarin",
+      "zone": "Montreux-Jeune",
       "dept": "68",
-      "date": "2026-08-16",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#FF5050",
+      "date": "2026-08-17",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
       "source": "Atmo Grand Est",
       "polluants": {
         "NO₂": {
@@ -40884,9 +40812,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -40906,12 +40834,12 @@
       }
     },
     {
-      "zone": "Saint-Cosme",
+      "zone": "Montreux-Vieux",
       "dept": "68",
-      "date": "2026-08-16",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#FF5050",
+      "date": "2026-08-17",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
       "source": "Atmo Grand Est",
       "polluants": {
         "NO₂": {
@@ -40920,9 +40848,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -40933,6 +40861,78 @@
           "indice": 1,
           "label": "Bon",
           "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Mooslargue",
+      "dept": "68",
+      "date": "2026-08-17",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
+      "source": "Atmo Grand Est",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Moosch",
+      "dept": "68",
+      "date": "2026-08-17",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
+      "source": "Atmo Grand Est",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
