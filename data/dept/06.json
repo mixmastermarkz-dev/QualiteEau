@@ -3,7 +3,7 @@
   "nom": "Alpes-Maritimes",
   "slug": "alpes-maritimes",
   "region": "Provence-Alpes-Côte d'Azur",
-  "updated": "17/08/2026 à 12:28",
+  "updated": "18/08/2026 à 12:24",
   "score_eau": 99,
   "nb_communes": 164,
   "potable": [
@@ -21496,10 +21496,8 @@
       "nom": "Gilette",
       "dept": "06",
       "code_bss": "09724X0023/P2",
-      "current": 95.797,
+      "current": 95.747,
       "history": [
-        96.293,
-        96.251,
         96.201,
         96.173,
         96.139,
@@ -21511,9 +21509,11 @@
         95.903,
         95.867,
         95.821,
-        95.797
+        95.797,
+        95.776,
+        95.747
       ],
-      "year_ago": 101.21,
+      "year_ago": 101.06,
       "lat": 43.831616009,
       "lng": 7.188887934,
       "color": "#ef4444"
@@ -21522,10 +21522,8 @@
       "nom": "Nice",
       "dept": "06",
       "code_bss": "09994X0521/P4B",
-      "current": 10.49,
+      "current": 10.47,
       "history": [
-        10.62,
-        10.6,
         10.59,
         10.58,
         10.57,
@@ -21537,9 +21535,11 @@
         10.53,
         10.51,
         10.5,
-        10.49
+        10.49,
+        10.48,
+        10.47
       ],
-      "year_ago": 11.59,
+      "year_ago": 11.58,
       "lat": 43.691448072,
       "lng": 7.193977883,
       "color": "#ef4444"
@@ -21548,10 +21548,8 @@
       "nom": "Pégomas",
       "dept": "06",
       "code_bss": "09995X0028/F",
-      "current": 9.234,
+      "current": 9.227,
       "history": [
-        9.209,
-        9.221,
         9.209,
         9.231,
         9.237,
@@ -21563,47 +21561,21 @@
         9.245,
         9.241,
         9.289,
-        9.234
+        9.234,
+        9.255,
+        9.227
       ],
-      "year_ago": 9.45,
+      "year_ago": 9.43,
       "lat": 43.587762053,
       "lng": 6.926141257,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Villeneuve-Loubet",
-      "dept": "06",
-      "code_bss": "09998X0199/PZ_PID",
-      "current": 18.43,
-      "history": [
-        18.5,
-        18.44,
-        18.49,
-        18.44,
-        18.46,
-        18.43,
-        18.45,
-        18.43,
-        18.44,
-        18.43,
-        18.44,
-        18.43,
-        18.42,
-        18.43
-      ],
-      "year_ago": 18.74,
-      "lat": 43.640614714,
-      "lng": 7.125900921,
       "color": "#ef4444"
     },
     {
       "nom": "Gilette",
       "dept": "06",
       "code_bss": "BSS004FHCY/X",
-      "current": 96.03,
+      "current": 95.98,
       "history": [
-        96.52,
-        96.48,
         96.43,
         96.4,
         96.37,
@@ -21615,59 +21587,51 @@
         96.14,
         96.1,
         96.05,
-        96.03
+        96.03,
+        96.01,
+        95.98
       ],
-      "year_ago": 101.44,
+      "year_ago": 101.28,
       "lat": 43.831748442,
       "lng": 7.188607593,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Villeneuve-Loubet",
+      "dept": "06",
+      "code_bss": "09998X0199/PZ_PID",
+      "current": 18.42,
+      "history": [
+        18.49,
+        18.44,
+        18.46,
+        18.43,
+        18.45,
+        18.43,
+        18.44,
+        18.43,
+        18.44,
+        18.43,
+        18.42,
+        18.43,
+        18.45,
+        18.42
+      ],
+      "year_ago": 18.74,
+      "lat": 43.640614714,
+      "lng": 7.125900921,
       "color": "#ef4444"
     }
   ],
   "air": [
     {
-      "zone": "Montrottier",
-      "dept": "06",
-      "date": "2026-08-19",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Chamalières",
+      "zone": "WARLENCOURT EAUCOURT",
       "dept": "06",
       "date": "2026-08-19",
       "indice": 2,
       "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
+      "color": "#50CCAA",
+      "source": "Atmo HDF",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -21697,13 +21661,13 @@
       }
     },
     {
-      "zone": "Saint-Nectaire",
+      "zone": "WARLINCOURT LES PAS",
       "dept": "06",
       "date": "2026-08-19",
       "indice": 2,
       "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
+      "color": "#50CCAA",
+      "source": "Atmo HDF",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -21733,13 +21697,13 @@
       }
     },
     {
-      "zone": "Isserteaux",
+      "zone": "WARLUS",
       "dept": "06",
       "date": "2026-08-19",
       "indice": 2,
       "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
+      "color": "#50CCAA",
+      "source": "Atmo HDF",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -21769,13 +21733,13 @@
       }
     },
     {
-      "zone": "Montromant",
+      "zone": "WARLUZEL",
       "dept": "06",
       "date": "2026-08-19",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Auvergne-Rhône-Alpes",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Atmo HDF",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -21783,9 +21747,45 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "WAST",
+      "dept": "06",
+      "date": "2026-08-19",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Atmo HDF",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,

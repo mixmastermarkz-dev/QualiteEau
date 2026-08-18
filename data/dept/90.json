@@ -3,7 +3,7 @@
   "nom": "Territoire de Belfort",
   "slug": "territoire-de-belfort",
   "region": "Bourgogne-Franche-Comté",
-  "updated": "17/08/2026 à 12:28",
+  "updated": "18/08/2026 à 12:24",
   "score_eau": 98,
   "nb_communes": 100,
   "potable": [
@@ -23730,39 +23730,11 @@
   ],
   "nappes": [
     {
-      "nom": "Valdoie",
-      "dept": "90",
-      "code_bss": "04434X0089/P",
-      "current": 382.207,
-      "history": [
-        382.217,
-        382.226,
-        382.211,
-        382.221,
-        382.204,
-        382.216,
-        382.201,
-        382.213,
-        382.196,
-        382.208,
-        382.195,
-        382.207,
-        382.195,
-        382.207
-      ],
-      "year_ago": 382.43,
-      "lat": 47.675931312,
-      "lng": 6.836792836,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Florimont",
       "dept": "90",
       "code_bss": "04447X0028/S",
-      "current": 380.474,
+      "current": 380.472,
       "history": [
-        380.478,
-        380.472,
         380.48,
         380.472,
         380.478,
@@ -23774,22 +23746,50 @@
         380.48,
         380.468,
         380.475,
-        380.474
+        380.474,
+        380.47,
+        380.472
       ],
       "year_ago": 380.44,
       "lat": 47.542387181,
       "lng": 7.055132727,
       "color": "#3b82f6"
+    },
+    {
+      "nom": "Valdoie",
+      "dept": "90",
+      "code_bss": "04434X0089/P",
+      "current": 382.242,
+      "history": [
+        382.211,
+        382.221,
+        382.204,
+        382.216,
+        382.201,
+        382.213,
+        382.196,
+        382.208,
+        382.195,
+        382.207,
+        382.195,
+        382.207,
+        382.241,
+        382.242
+      ],
+      "year_ago": 382.42,
+      "lat": 47.675931312,
+      "lng": 6.836792836,
+      "color": "#ef4444"
     }
   ],
   "air": [
     {
       "zone": "Villars-le-Sec",
       "dept": "90",
-      "date": "2026-08-18",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
+      "date": "2026-08-20",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -23798,45 +23798,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Trétudans",
-      "dept": "90",
-      "date": "2026-08-18",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -23858,10 +23822,10 @@
     {
       "zone": "Thiancourt",
       "dept": "90",
-      "date": "2026-08-18",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
+      "date": "2026-08-20",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -23870,9 +23834,45 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Suarce",
+      "dept": "90",
+      "date": "2026-08-20",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -23894,10 +23894,10 @@
     {
       "zone": "Saint-Dizier-l'Évêque",
       "dept": "90",
-      "date": "2026-08-18",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
+      "date": "2026-08-20",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -23906,9 +23906,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -23928,12 +23928,12 @@
       }
     },
     {
-      "zone": "Morvillars",
+      "zone": "Réchésy",
       "dept": "90",
-      "date": "2026-08-18",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
+      "date": "2026-08-20",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -23942,9 +23942,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
