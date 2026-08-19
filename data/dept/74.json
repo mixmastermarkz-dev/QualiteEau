@@ -3,7 +3,7 @@
   "nom": "Haute-Savoie",
   "slug": "haute-savoie",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "18/08/2026 à 12:24",
+  "updated": "19/08/2026 à 12:24",
   "score_eau": 98,
   "nb_communes": 279,
   "potable": [
@@ -40568,10 +40568,8 @@
       "nom": "Marigny-Saint-Marcel",
       "dept": "74",
       "code_bss": "07013X0071/F1",
-      "current": 351.799,
+      "current": 351.789,
       "history": [
-        351.877,
-        351.872,
         351.866,
         351.86,
         351.855,
@@ -40583,9 +40581,11 @@
         351.82,
         351.815,
         351.81,
-        351.799
+        351.799,
+        351.795,
+        351.789
       ],
-      "year_ago": 351.91,
+      "year_ago": 351.9,
       "lat": 45.832389293,
       "lng": 5.962087611,
       "color": "#ef4444"
@@ -40594,10 +40594,8 @@
       "nom": "Publier",
       "dept": "74",
       "code_bss": "06301X0019/P5",
-      "current": 373.601,
+      "current": 373.595,
       "history": [
-        373.635,
-        373.633,
         373.633,
         373.627,
         373.626,
@@ -40609,9 +40607,11 @@
         373.608,
         373.609,
         373.605,
-        373.601
+        373.601,
+        373.6,
+        373.595
       ],
-      "year_ago": 373.89,
+      "year_ago": 373.88,
       "lat": 46.390565227,
       "lng": 6.520859286,
       "color": "#ef4444"
@@ -40620,10 +40620,8 @@
       "nom": "Vinzier",
       "dept": "74",
       "code_bss": "06306X0042/BIOGE",
-      "current": 570.798,
+      "current": 570.759,
       "history": [
-        571.385,
-        571.368,
         571.339,
         571.266,
         571.168,
@@ -40635,9 +40633,11 @@
         570.841,
         570.827,
         570.81,
-        570.798
+        570.798,
+        570.786,
+        570.759
       ],
-      "year_ago": 572.23,
+      "year_ago": 572.2,
       "lat": 46.335316884,
       "lng": 6.621257922,
       "color": "#ef4444"
@@ -40646,10 +40646,8 @@
       "nom": "Passy",
       "dept": "74",
       "code_bss": "BSS004QBEB/X",
-      "current": 569.013,
+      "current": 569.002,
       "history": [
-        569.089,
-        569.084,
         569.08,
         569.067,
         569.064,
@@ -40661,7 +40659,9 @@
         569.03,
         569.024,
         569.021,
-        569.013
+        569.013,
+        569.008,
+        569.002
       ],
       "year_ago": 569.32,
       "lat": 45.920935924,
@@ -40672,10 +40672,8 @@
       "nom": "Marigny-Saint-Marcel",
       "dept": "74",
       "code_bss": "BSS004MZXK/X",
-      "current": 362.258,
+      "current": 362.244,
       "history": [
-        362.199,
-        362.342,
         362.339,
         362.332,
         362.326,
@@ -40687,9 +40685,11 @@
         362.176,
         362.263,
         362.258,
-        362.258
+        362.258,
+        362.249,
+        362.244
       ],
-      "year_ago": 362.21,
+      "year_ago": 362.18,
       "lat": 45.835072054,
       "lng": 5.968019958,
       "color": "#3b82f6"
@@ -40698,10 +40698,8 @@
       "nom": "Viry",
       "dept": "74",
       "code_bss": "06537X0103/VEIGY",
-      "current": 372.06,
+      "current": 372.061,
       "history": [
-        372.107,
-        372.089,
         372.104,
         372.08,
         372.104,
@@ -40713,9 +40711,11 @@
         372.082,
         372.068,
         372.06,
-        372.06
+        372.06,
+        372.069,
+        372.061
       ],
-      "year_ago": 371.85,
+      "year_ago": 371.84,
       "lat": 46.141387797,
       "lng": 6.017375948,
       "color": "#3b82f6"
@@ -40723,9 +40723,9 @@
   ],
   "air": [
     {
-      "zone": "le Chable",
+      "zone": "Mégevette",
       "dept": "74",
-      "date": "2026-08-19",
+      "date": "2026-08-20",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
@@ -40759,9 +40759,45 @@
       }
     },
     {
-      "zone": "Saint-Paul-en-Chablais",
+      "zone": "Megève",
       "dept": "74",
-      "date": "2026-08-19",
+      "date": "2026-08-20",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Marin",
+      "dept": "74",
+      "date": "2026-08-20",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
@@ -40795,9 +40831,9 @@
       }
     },
     {
-      "zone": "Bellevaux",
+      "zone": "Marlens",
       "dept": "74",
-      "date": "2026-08-19",
+      "date": "2026-08-20",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
@@ -40831,45 +40867,9 @@
       }
     },
     {
-      "zone": "Bernex",
+      "zone": "Usinens",
       "dept": "74",
-      "date": "2026-08-19",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Le Biot",
-      "dept": "74",
-      "date": "2026-08-19",
+      "date": "2026-08-20",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",

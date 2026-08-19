@@ -3,7 +3,7 @@
   "nom": "Savoie",
   "slug": "savoie",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "18/08/2026 à 12:24",
+  "updated": "19/08/2026 à 12:24",
   "score_eau": 99,
   "nb_communes": 274,
   "potable": [
@@ -31418,10 +31418,8 @@
       "nom": "Aiton",
       "dept": "73",
       "code_bss": "07266X0052/PS4",
-      "current": 293.387,
+      "current": 293.39,
       "history": [
-        293.381,
-        293.378,
         293.367,
         293.351,
         293.361,
@@ -31433,7 +31431,9 @@
         293.355,
         293.367,
         293.381,
-        293.387
+        293.387,
+        293.389,
+        293.39
       ],
       "year_ago": 293.41,
       "lat": 45.566444711,
@@ -31444,10 +31444,8 @@
       "nom": "Chambéry",
       "dept": "73",
       "code_bss": "07256X0095/CHAMBE",
-      "current": 264.782,
+      "current": 264.771,
       "history": [
-        264.784,
-        264.768,
         264.781,
         264.763,
         264.775,
@@ -31459,9 +31457,11 @@
         264.767,
         264.759,
         264.804,
-        264.782
+        264.782,
+        264.791,
+        264.771
       ],
-      "year_ago": 264.83,
+      "year_ago": 264.82,
       "lat": 45.569053375,
       "lng": 5.916248145,
       "color": "#ef4444"
@@ -31487,17 +31487,17 @@
         269.436,
         269.457
       ],
-      "year_ago": 269.44,
+      "year_ago": 269.52,
       "lat": 45.522193195,
       "lng": 6.104556772,
-      "color": "#3b82f6"
+      "color": "#ef4444"
     }
   ],
   "air": [
     {
-      "zone": "les Avanchers",
+      "zone": "Challes-les-Eaux",
       "dept": "73",
-      "date": "2026-08-19",
+      "date": "2026-08-20",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
@@ -31531,9 +31531,9 @@
       }
     },
     {
-      "zone": "Attignat-Oncin",
+      "zone": "Cevins",
       "dept": "73",
-      "date": "2026-08-19",
+      "date": "2026-08-20",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
@@ -31567,45 +31567,9 @@
       }
     },
     {
-      "zone": "Cognin",
+      "zone": "Césarches",
       "dept": "73",
-      "date": "2026-08-19",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Aussois",
-      "dept": "73",
-      "date": "2026-08-19",
+      "date": "2026-08-20",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
@@ -31641,7 +31605,43 @@
     {
       "zone": "Brison-Saint-Innocent",
       "dept": "73",
-      "date": "2026-08-19",
+      "date": "2026-08-20",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "La Bridoire",
+      "dept": "73",
+      "date": "2026-08-20",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",

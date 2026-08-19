@@ -3,7 +3,7 @@
   "nom": "Alpes-Maritimes",
   "slug": "alpes-maritimes",
   "region": "Provence-Alpes-Côte d'Azur",
-  "updated": "18/08/2026 à 12:24",
+  "updated": "19/08/2026 à 12:24",
   "score_eau": 99,
   "nb_communes": 164,
   "potable": [
@@ -21496,10 +21496,8 @@
       "nom": "Gilette",
       "dept": "06",
       "code_bss": "09724X0023/P2",
-      "current": 95.747,
+      "current": 95.694,
       "history": [
-        96.201,
-        96.173,
         96.139,
         96.099,
         96.047,
@@ -21511,9 +21509,11 @@
         95.821,
         95.797,
         95.776,
-        95.747
+        95.747,
+        95.71,
+        95.694
       ],
-      "year_ago": 101.06,
+      "year_ago": 100.97,
       "lat": 43.831616009,
       "lng": 7.188887934,
       "color": "#ef4444"
@@ -21522,10 +21522,8 @@
       "nom": "Nice",
       "dept": "06",
       "code_bss": "09994X0521/P4B",
-      "current": 10.47,
+      "current": 10.46,
       "history": [
-        10.59,
-        10.58,
         10.57,
         10.56,
         10.56,
@@ -21537,73 +21535,21 @@
         10.5,
         10.49,
         10.48,
-        10.47
+        10.47,
+        10.47,
+        10.46
       ],
-      "year_ago": 11.58,
+      "year_ago": 11.56,
       "lat": 43.691448072,
       "lng": 7.193977883,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Pégomas",
-      "dept": "06",
-      "code_bss": "09995X0028/F",
-      "current": 9.227,
-      "history": [
-        9.209,
-        9.231,
-        9.237,
-        9.257,
-        9.262,
-        9.214,
-        9.224,
-        9.207,
-        9.245,
-        9.241,
-        9.289,
-        9.234,
-        9.255,
-        9.227
-      ],
-      "year_ago": 9.43,
-      "lat": 43.587762053,
-      "lng": 6.926141257,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Gilette",
-      "dept": "06",
-      "code_bss": "BSS004FHCY/X",
-      "current": 95.98,
-      "history": [
-        96.43,
-        96.4,
-        96.37,
-        96.33,
-        96.28,
-        96.25,
-        96.23,
-        96.19,
-        96.14,
-        96.1,
-        96.05,
-        96.03,
-        96.01,
-        95.98
-      ],
-      "year_ago": 101.28,
-      "lat": 43.831748442,
-      "lng": 7.188607593,
       "color": "#ef4444"
     },
     {
       "nom": "Villeneuve-Loubet",
       "dept": "06",
       "code_bss": "09998X0199/PZ_PID",
-      "current": 18.42,
+      "current": 18.41,
       "history": [
-        18.49,
-        18.44,
         18.46,
         18.43,
         18.45,
@@ -21615,23 +21561,77 @@
         18.42,
         18.43,
         18.45,
-        18.42
+        18.42,
+        18.44,
+        18.41
       ],
-      "year_ago": 18.74,
+      "year_ago": 18.75,
       "lat": 43.640614714,
       "lng": 7.125900921,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Pégomas",
+      "dept": "06",
+      "code_bss": "09995X0028/F",
+      "current": 9.221,
+      "history": [
+        9.237,
+        9.257,
+        9.262,
+        9.214,
+        9.224,
+        9.207,
+        9.245,
+        9.241,
+        9.289,
+        9.234,
+        9.255,
+        9.227,
+        9.223,
+        9.221
+      ],
+      "year_ago": 9.39,
+      "lat": 43.587762053,
+      "lng": 6.926141257,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Gilette",
+      "dept": "06",
+      "code_bss": "BSS004FHCY/X",
+      "current": 95.92,
+      "history": [
+        96.37,
+        96.33,
+        96.28,
+        96.25,
+        96.23,
+        96.19,
+        96.14,
+        96.1,
+        96.05,
+        96.03,
+        96.01,
+        95.98,
+        95.94,
+        95.92
+      ],
+      "year_ago": 101.18,
+      "lat": 43.831748442,
+      "lng": 7.188607593,
       "color": "#ef4444"
     }
   ],
   "air": [
     {
-      "zone": "WARLENCOURT EAUCOURT",
+      "zone": "Pouvrai",
       "dept": "06",
-      "date": "2026-08-19",
+      "date": "2026-08-20",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
-      "source": "Atmo HDF",
+      "source": "Atmo Normandie",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -21661,13 +21661,13 @@
       }
     },
     {
-      "zone": "WARLINCOURT LES PAS",
+      "zone": "Putanges-le-Lac",
       "dept": "06",
-      "date": "2026-08-19",
+      "date": "2026-08-20",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
-      "source": "Atmo HDF",
+      "source": "Atmo Normandie",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -21697,13 +21697,13 @@
       }
     },
     {
-      "zone": "WARLUS",
+      "zone": "Écouves",
       "dept": "06",
-      "date": "2026-08-19",
+      "date": "2026-08-20",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
-      "source": "Atmo HDF",
+      "source": "Atmo Normandie",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -21733,13 +21733,13 @@
       }
     },
     {
-      "zone": "WARLUZEL",
+      "zone": "Rai",
       "dept": "06",
-      "date": "2026-08-19",
+      "date": "2026-08-20",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
-      "source": "Atmo HDF",
+      "source": "Atmo Normandie",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -21769,13 +21769,13 @@
       }
     },
     {
-      "zone": "WAST",
+      "zone": "Rânes",
       "dept": "06",
-      "date": "2026-08-19",
+      "date": "2026-08-20",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
-      "source": "Atmo HDF",
+      "source": "Atmo Normandie",
       "polluants": {
         "NO₂": {
           "indice": 1,
