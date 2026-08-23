@@ -3,7 +3,7 @@
   "nom": "Ardèche",
   "slug": "ardeche",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "22/08/2026 à 12:19",
+  "updated": "23/08/2026 à 12:20",
   "score_eau": 96,
   "nb_communes": 337,
   "potable": [
@@ -18210,65 +18210,11 @@
   "rivieres": [],
   "nappes": [
     {
-      "nom": "Aubenas",
-      "dept": "07",
-      "code_bss": "08651X0038/0038",
-      "current": 295.983,
-      "history": [
-        296.689,
-        296.587,
-        296.651,
-        296.557,
-        296.632,
-        296.394,
-        296.517,
-        296.305,
-        296.429,
-        296.198,
-        296.321,
-        296.127,
-        296.201,
-        295.983
-      ],
-      "year_ago": 297.47,
-      "lat": 44.619744152,
-      "lng": 4.39032624,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Veyras",
-      "dept": "07",
-      "code_bss": "08413X0091/F3",
-      "current": 442,
-      "history": [
-        442.01,
-        442,
-        442,
-        442,
-        442,
-        442,
-        442.01,
-        442.01,
-        442.03,
-        442.02,
-        442.02,
-        442.03,
-        442.03,
-        442
-      ],
-      "year_ago": 441.43,
-      "lat": 44.733838457,
-      "lng": 4.561214887,
-      "color": "#3b82f6"
-    },
-    {
       "nom": "Lablachère",
       "dept": "07",
       "code_bss": "BSS003GPIS/X",
-      "current": 243.579,
+      "current": 243.587,
       "history": [
-        243.64,
-        243.627,
         243.626,
         243.618,
         243.632,
@@ -18280,23 +18226,77 @@
         243.657,
         243.657,
         243.616,
-        243.579
+        243.579,
+        243.592,
+        243.587
       ],
-      "year_ago": 243.19,
+      "year_ago": 243.21,
       "lat": 44.46354371,
       "lng": 4.214386619,
       "color": "#3b82f6"
+    },
+    {
+      "nom": "Veyras",
+      "dept": "07",
+      "code_bss": "08413X0091/F3",
+      "current": 442,
+      "history": [
+        442,
+        442,
+        442,
+        442,
+        442.01,
+        442.01,
+        442.03,
+        442.02,
+        442.02,
+        442.03,
+        442.03,
+        442,
+        442.01,
+        442
+      ],
+      "year_ago": 441.44,
+      "lat": 44.733838457,
+      "lng": 4.561214887,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Aubenas",
+      "dept": "07",
+      "code_bss": "08651X0038/0038",
+      "current": 295.91,
+      "history": [
+        296.651,
+        296.557,
+        296.632,
+        296.394,
+        296.517,
+        296.305,
+        296.429,
+        296.198,
+        296.321,
+        296.127,
+        296.201,
+        295.983,
+        296.107,
+        295.91
+      ],
+      "year_ago": 297.45,
+      "lat": 44.619744152,
+      "lng": 4.39032624,
+      "color": "#ef4444"
     }
   ],
   "air": [
     {
-      "zone": "Yville-sur-Seine",
+      "zone": "Saint-Didier-en-Brionnais",
       "dept": "07",
-      "date": "2026-08-24",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
+      "date": "2026-08-25",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -18304,9 +18304,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -18326,13 +18326,13 @@
       }
     },
     {
-      "zone": "Yvetot",
+      "zone": "Saint-Didier-sur-Arroux",
       "dept": "07",
-      "date": "2026-08-24",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
+      "date": "2026-08-25",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -18340,9 +18340,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -18362,13 +18362,13 @@
       }
     },
     {
-      "zone": "Yvecrique",
+      "zone": "Saint-Edmond",
       "dept": "07",
-      "date": "2026-08-24",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
+      "date": "2026-08-25",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -18376,9 +18376,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -18398,13 +18398,13 @@
       }
     },
     {
-      "zone": "Yquebeuf",
+      "zone": "Saint-Émiland",
       "dept": "07",
-      "date": "2026-08-24",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
+      "date": "2026-08-25",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -18412,9 +18412,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -18434,13 +18434,13 @@
       }
     },
     {
-      "zone": "Ypreville-Biville",
+      "zone": "Saint-Étienne-en-Bresse",
       "dept": "07",
-      "date": "2026-08-24",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
+      "date": "2026-08-25",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -18448,9 +18448,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,

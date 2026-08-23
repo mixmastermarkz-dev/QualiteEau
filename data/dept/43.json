@@ -3,7 +3,7 @@
   "nom": "Haute-Loire",
   "slug": "haute-loire",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "22/08/2026 à 12:19",
+  "updated": "23/08/2026 à 12:20",
   "score_eau": 96,
   "nb_communes": 260,
   "potable": [
@@ -13605,32 +13605,6 @@
     {
       "nom": "Cohade",
       "dept": "43",
-      "code_bss": "07662X0278/45B-03",
-      "current": 405.616,
-      "history": [
-        405.642,
-        405.641,
-        405.635,
-        405.641,
-        405.634,
-        405.635,
-        405.63,
-        405.633,
-        405.626,
-        405.626,
-        405.621,
-        405.627,
-        405.617,
-        405.616
-      ],
-      "year_ago": 405.79,
-      "lat": 45.354627,
-      "lng": 3.358466,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Cohade",
-      "dept": "43",
       "code_bss": "07662X0279/P45B02",
       "current": 405.655,
       "history": [
@@ -13655,39 +13629,37 @@
       "color": "#ef4444"
     },
     {
-      "nom": "Chaspuzac",
+      "nom": "Cohade",
       "dept": "43",
-      "code_bss": "07916X0008/P1",
-      "current": 863.153,
+      "code_bss": "07662X0278/45B-03",
+      "current": 405.611,
       "history": [
-        863.182,
-        863.178,
-        863.174,
-        863.17,
-        863.168,
-        863.164,
-        863.165,
-        863.165,
-        863.175,
-        863.17,
-        863.172,
-        863.173,
-        863.166,
-        863.153
+        405.635,
+        405.641,
+        405.634,
+        405.635,
+        405.63,
+        405.633,
+        405.626,
+        405.626,
+        405.621,
+        405.627,
+        405.617,
+        405.616,
+        405.612,
+        405.611
       ],
-      "year_ago": 862.78,
-      "lat": 45.060946408,
-      "lng": 3.761689363,
-      "color": "#3b82f6"
+      "year_ago": 405.79,
+      "lat": 45.354627,
+      "lng": 3.358466,
+      "color": "#ef4444"
     },
     {
       "nom": "Azérat",
       "dept": "43",
       "code_bss": "07662X0277/45B-01",
-      "current": 406.251,
+      "current": 406.245,
       "history": [
-        406.239,
-        406.238,
         406.239,
         406.244,
         406.251,
@@ -13699,9 +13671,11 @@
         406.237,
         406.253,
         406.251,
-        406.251
+        406.251,
+        406.244,
+        406.245
       ],
-      "year_ago": 406.24,
+      "year_ago": 406.22,
       "lat": 45.357221793,
       "lng": 3.367729971,
       "color": "#3b82f6"
@@ -13710,10 +13684,8 @@
       "nom": "Saugues",
       "dept": "43",
       "code_bss": "08144X0010/PUITS",
-      "current": 955.12,
+      "current": 955.11,
       "history": [
-        955.19,
-        955.18,
         955.18,
         955.17,
         955.17,
@@ -13725,9 +13697,11 @@
         955.14,
         955.13,
         955.13,
-        955.12
+        955.12,
+        955.12,
+        955.11
       ],
-      "year_ago": 955.23,
+      "year_ago": 955.22,
       "lat": 44.963175124,
       "lng": 3.547527986,
       "color": "#ef4444"
@@ -13736,10 +13710,8 @@
       "nom": "Saint-Front",
       "dept": "43",
       "code_bss": "08163X0019/PONT",
-      "current": 1200.452,
+      "current": 1200.446,
       "history": [
-        1200.455,
-        1200.455,
         1200.454,
         1200.455,
         1200.455,
@@ -13751,17 +13723,81 @@
         1200.454,
         1200.455,
         1200.455,
-        1200.452
+        1200.452,
+        1200.448,
+        1200.446
       ],
-      "year_ago": 1200.59,
+      "year_ago": 1200.58,
       "lat": 44.975693366,
       "lng": 4.144625431,
       "color": "#ef4444"
+    },
+    {
+      "nom": "Chaspuzac",
+      "dept": "43",
+      "code_bss": "07916X0008/P1",
+      "current": 863.139,
+      "history": [
+        863.174,
+        863.17,
+        863.168,
+        863.164,
+        863.165,
+        863.165,
+        863.175,
+        863.17,
+        863.172,
+        863.173,
+        863.166,
+        863.153,
+        863.147,
+        863.139
+      ],
+      "year_ago": 862.77,
+      "lat": 45.060946408,
+      "lng": 3.761689363,
+      "color": "#3b82f6"
     }
   ],
   "air": [
     {
-      "zone": "Beaux",
+      "zone": "La Chapelle-Bertin",
+      "dept": "43",
+      "date": "2026-08-23",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Chanteuges",
       "dept": "43",
       "date": "2026-08-23",
       "indice": 3,
@@ -13797,12 +13833,12 @@
       }
     },
     {
-      "zone": "Beaune-sur-Arzon",
+      "zone": "Chaniat",
       "dept": "43",
       "date": "2026-08-23",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
@@ -13811,9 +13847,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
@@ -13833,12 +13869,12 @@
       }
     },
     {
-      "zone": "Beaumont",
+      "zone": "Chanaleilles",
       "dept": "43",
       "date": "2026-08-23",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
@@ -13847,9 +13883,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
@@ -13869,43 +13905,7 @@
       }
     },
     {
-      "zone": "Beaulieu",
-      "dept": "43",
-      "date": "2026-08-23",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Bas-en-Basset",
+      "zone": "Champclause",
       "dept": "43",
       "date": "2026-08-23",
       "indice": 3,

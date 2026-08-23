@@ -3,7 +3,7 @@
   "nom": "Landes",
   "slug": "landes",
   "region": "Nouvelle-Aquitaine",
-  "updated": "22/08/2026 à 12:19",
+  "updated": "23/08/2026 à 12:20",
   "score_eau": 99,
   "nb_communes": 327,
   "potable": [
@@ -14963,10 +14963,8 @@
       "nom": "Gourbera",
       "dept": "40",
       "code_bss": "09505X0034/GO01",
-      "current": 21.46,
+      "current": 21.5,
       "history": [
-        21.44,
-        21.44,
         21.44,
         21.42,
         21.43,
@@ -14978,9 +14976,11 @@
         21.49,
         21.48,
         21.47,
-        21.46
+        21.46,
+        21.49,
+        21.5
       ],
-      "year_ago": 21.34,
+      "year_ago": 21.38,
       "lat": 43.788966613,
       "lng": -1.035321265,
       "color": "#3b82f6"
@@ -14989,10 +14989,8 @@
       "nom": "Lacquy",
       "dept": "40",
       "code_bss": "09266X0004/LC101",
-      "current": 76.422,
+      "current": 76.424,
       "history": [
-        76.419,
-        76.419,
         76.418,
         76.415,
         76.411,
@@ -15004,9 +15002,11 @@
         76.422,
         76.424,
         76.425,
-        76.422
+        76.422,
+        76.421,
+        76.424
       ],
-      "year_ago": 76.61,
+      "year_ago": 76.6,
       "lat": 43.960162747,
       "lng": -0.272877691,
       "color": "#ef4444"
@@ -15015,10 +15015,8 @@
       "nom": "Betbezer-d'Armagnac",
       "dept": "40",
       "code_bss": "09267X0014/PIEZO1",
-      "current": 70.31,
+      "current": 70.306,
       "history": [
-        70.52,
-        70.498,
         70.475,
         70.449,
         70.435,
@@ -15030,21 +15028,47 @@
         70.395,
         70.374,
         70.342,
-        70.31
+        70.31,
+        70.311,
+        70.306
       ],
-      "year_ago": 70.65,
+      "year_ago": 70.62,
       "lat": 43.982375767,
       "lng": -0.155560344,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Ychoux",
+      "dept": "40",
+      "code_bss": "08746X0031/P22",
+      "current": 56.1,
+      "history": [
+        56.14,
+        56.14,
+        56.13,
+        56.13,
+        56.13,
+        56.12,
+        56.12,
+        56.12,
+        56.11,
+        56.11,
+        56.11,
+        56.1,
+        56.1,
+        56.1
+      ],
+      "year_ago": 56.21,
+      "lat": 44.344690504,
+      "lng": -0.931494266,
       "color": "#ef4444"
     },
     {
       "nom": "Saint-Yaguen",
       "dept": "40",
       "code_bss": "09511X0022/LS02",
-      "current": 31.48,
+      "current": 31.51,
       "history": [
-        31.49,
-        31.48,
         31.48,
         31.46,
         31.47,
@@ -15056,38 +15080,14 @@
         31.53,
         31.51,
         31.5,
-        31.48
+        31.48,
+        31.53,
+        31.51
       ],
-      "year_ago": 31.39,
+      "year_ago": 31.42,
       "lat": 43.910092549,
       "lng": -0.715761027,
       "color": "#3b82f6"
-    },
-    {
-      "nom": "Ychoux",
-      "dept": "40",
-      "code_bss": "08746X0031/P22",
-      "current": 56.1,
-      "history": [
-        56.15,
-        56.14,
-        56.14,
-        56.14,
-        56.13,
-        56.13,
-        56.13,
-        56.12,
-        56.12,
-        56.12,
-        56.11,
-        56.11,
-        56.11,
-        56.1
-      ],
-      "year_ago": 56.21,
-      "lat": 44.344690504,
-      "lng": -0.931494266,
-      "color": "#ef4444"
     },
     {
       "nom": "Saugnacq-et-Muret",
@@ -15118,9 +15118,9 @@
   ],
   "air": [
     {
-      "zone": "Arengosse",
+      "zone": "Garein",
       "dept": "40",
-      "date": "2026-08-22",
+      "date": "2026-08-24",
       "indice": 4,
       "label": "Mauvais",
       "color": "#ff5050",
@@ -15154,9 +15154,45 @@
       }
     },
     {
-      "zone": "Trensacq",
+      "zone": "Luglon",
       "dept": "40",
-      "date": "2026-08-22",
+      "date": "2026-08-24",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Nouvelle-Aquitaine",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM2.5": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Belhade",
+      "dept": "40",
+      "date": "2026-08-24",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -15190,9 +15226,9 @@
       }
     },
     {
-      "zone": "Cagnotte",
+      "zone": "Sore",
       "dept": "40",
-      "date": "2026-08-22",
+      "date": "2026-08-24",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -15226,45 +15262,9 @@
       }
     },
     {
-      "zone": "Clermont",
+      "zone": "Mano",
       "dept": "40",
-      "date": "2026-08-22",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Nouvelle-Aquitaine",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Ozourt",
-      "dept": "40",
-      "date": "2026-08-22",
+      "date": "2026-08-24",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
