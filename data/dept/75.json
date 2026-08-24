@@ -3,189 +3,340 @@
   "nom": "Paris",
   "slug": "paris",
   "region": "Île-de-France",
-  "updated": "23/08/2026 à 12:20",
-  "score_eau": 91,
-  "nb_communes": 3,
-  "potable": [
+  "updated": "24/08/2026 à 12:33",
+  "score_eau": null,
+  "nb_communes": 0,
+  "potable": [],
+  "rivieres": [
     {
-      "nom": "HAY-LES-ROSES (L')",
+      "nom": "LA SEINE A PARIS-12E--ARRONDISSEMENT 1",
       "dept": "75",
-      "insee": "94038",
-      "restric": "N.D.",
-      "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "lat": 48.832587164,
+      "lon": 2.381542365,
+      "nom_cours_eau": "LA SEINE",
       "parametres": {
+        "Temp. eau": {
+          "valeur": 22.3,
+          "unite": "°C",
+          "color": "#f59e0b",
+          "date": "2026-06-17",
+          "realtime": false
+        },
         "Nitrates": {
-          "valeur": 28.6,
+          "valeur": 22.1,
           "unite": "mg/L",
           "color": "#f59e0b",
-          "date": "2026-04-03"
+          "date": "2026-06-17",
+          "realtime": false
         },
-        "pH": {
-          "valeur": 7.7,
-          "unite": "unité pH",
+        "O2 saturation": {
+          "valeur": 99.2,
+          "unite": "%",
           "color": "#10b981",
-          "date": "2026-04-03"
+          "date": "2026-06-17",
+          "realtime": false
         },
-        "Chlore": {
-          "valeur": 0.31,
-          "unite": "mg(Cl2)/L",
-          "color": "#10b981",
-          "date": "2026-04-03"
-        },
-        "Bactériologie": {
-          "valeur": "<1",
-          "unite": "n/(100mL)",
-          "color": "#10b981",
-          "date": "2026-04-03"
-        },
-        "Calcaire (TH)": {
-          "valeur": 25.97,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2026-04-03"
-        },
-        "Pesticides": {
-          "valeur": "<0,500",
-          "unite": "µg/L",
-          "color": "#10b981",
-          "date": "2026-04-03"
-        },
-        "THM": {
-          "valeur": 10.23,
-          "unite": "µg/L",
-          "color": "#10b981",
-          "date": "2026-04-03"
-        }
-      },
-      "score": 93,
-      "score_color": "#10b981",
-      "score_label": "Bonne"
-    },
-    {
-      "nom": "PARIS",
-      "dept": "75",
-      "insee": "75056",
-      "restric": "N.D.",
-      "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
-      "parametres": {
-        "Nitrates": {
-          "valeur": 32.8,
+        "MES": {
+          "valeur": 611.0,
           "unite": "mg/L",
-          "color": "#f59e0b",
-          "date": "2026-04-30"
+          "color": "#ef4444",
+          "date": "2026-06-17",
+          "realtime": false
         },
         "pH": {
-          "valeur": 7.81,
-          "unite": "unité pH",
+          "valeur": 7.9,
+          "unite": "pH",
           "color": "#10b981",
-          "date": "2026-04-30"
+          "date": "2026-06-17",
+          "realtime": false
         },
-        "Chlore": {
-          "valeur": 0.22,
-          "unite": "mg(Cl2)/L",
+        "Conductivité": {
+          "valeur": 8.6,
+          "unite": "µS/cm",
           "color": "#10b981",
-          "date": "2026-04-30"
+          "date": "2026-06-17",
+          "realtime": false
         },
-        "Bactériologie": {
-          "valeur": "<1",
-          "unite": "n/(100mL)",
-          "color": "#10b981",
-          "date": "2026-04-30"
-        },
-        "Calcaire (TH)": {
-          "valeur": 24.92,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2026-04-30"
-        },
-        "Plomb": {
-          "valeur": 8.0,
-          "unite": "µg/L",
-          "color": "#f59e0b",
-          "date": "2019-11-21"
-        },
-        "Pesticides": {
-          "valeur": "<0,500",
-          "unite": "µg/L",
-          "color": "#10b981",
-          "date": "2026-04-15"
-        },
-        "THM": {
-          "valeur": 17.3,
-          "unite": "µg/L",
-          "color": "#10b981",
-          "date": "2026-04-30"
-        }
-      },
-      "score": 88,
-      "score_color": "#10b981",
-      "score_label": "Bonne"
-    },
-    {
-      "nom": "SAINT-CLOUD",
-      "dept": "75",
-      "insee": "92064",
-      "restric": "N.D.",
-      "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
-      "parametres": {
-        "Nitrates": {
-          "valeur": 43.6,
+        "Phosphore": {
+          "valeur": 0.114,
           "unite": "mg/L",
-          "color": "#f59e0b",
-          "date": "2026-04-22"
-        },
-        "pH": {
-          "valeur": 7.8,
-          "unite": "unité pH",
           "color": "#10b981",
-          "date": "2026-04-22"
+          "date": "2026-06-17",
+          "realtime": false
         },
-        "Chlore": {
-          "valeur": 0.23,
-          "unite": "mg(Cl2)/L",
-          "color": "#10b981",
-          "date": "2026-04-22"
-        },
-        "Bactériologie": {
-          "valeur": "<1",
-          "unite": "n/(100mL)",
-          "color": "#10b981",
-          "date": "2026-04-22"
-        },
-        "Calcaire (TH)": {
-          "valeur": 26.24,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2026-04-22"
-        },
-        "Pesticides": {
-          "valeur": "<0,500",
-          "unite": "µg/L",
-          "color": "#10b981",
-          "date": "2026-04-22"
-        },
-        "THM": {
-          "valeur": 21.29,
-          "unite": "µg/L",
-          "color": "#10b981",
-          "date": "2026-04-22"
+        "Ammonium": {
+          "valeur": 2.3,
+          "unite": "mg/L",
+          "color": "#ef4444",
+          "date": "2026-06-17",
+          "realtime": false
         }
       },
-      "score": 93,
-      "score_color": "#10b981",
-      "score_label": "Bonne"
+      "historique": {
+        "Temp. eau": [
+          {
+            "date": "2026-06-17",
+            "valeur": 22.3,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2026-04-14",
+            "valeur": 14.3,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-02-18",
+            "valeur": 7.4,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-12-15",
+            "valeur": 10.1,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-11-17",
+            "valeur": 8.1,
+            "color": "#10b981"
+          }
+        ],
+        "Nitrates": [
+          {
+            "date": "2026-06-17",
+            "valeur": 22.1,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2026-04-14",
+            "valeur": 28.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2026-02-18",
+            "valeur": 19.0,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2025-12-15",
+            "valeur": 23.0,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2025-11-17",
+            "valeur": 24.0,
+            "color": "#f59e0b"
+          }
+        ],
+        "O2 saturation": [
+          {
+            "date": "2026-06-17",
+            "valeur": 99.2,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-04-14",
+            "valeur": 105.3,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-02-18",
+            "valeur": 93.1,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-12-15",
+            "valeur": 100.4,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-11-17",
+            "valeur": 102.2,
+            "color": "#10b981"
+          }
+        ],
+        "MES": [
+          {
+            "date": "2026-06-17",
+            "valeur": 611.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2026-04-14",
+            "valeur": 570.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2026-02-18",
+            "valeur": 433.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-12-15",
+            "valeur": 502.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-11-17",
+            "valeur": 553.0,
+            "color": "#ef4444"
+          }
+        ],
+        "pH": [
+          {
+            "date": "2026-06-17",
+            "valeur": 7.9,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-04-14",
+            "valeur": 8.2,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-02-18",
+            "valeur": 8.2,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-12-15",
+            "valeur": 8.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-11-17",
+            "valeur": 8.1,
+            "color": "#10b981"
+          }
+        ],
+        "Conductivité": [
+          {
+            "date": "2026-06-17",
+            "valeur": 8.6,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-04-14",
+            "valeur": 10.8,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-02-18",
+            "valeur": 11.1,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-12-15",
+            "valeur": 11.8,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-11-17",
+            "valeur": 11.1,
+            "color": "#10b981"
+          }
+        ],
+        "Phosphore": [
+          {
+            "date": "2026-06-17",
+            "valeur": 0.114,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-04-14",
+            "valeur": 0.069,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-02-18",
+            "valeur": 0.188,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-12-15",
+            "valeur": 0.106,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-11-17",
+            "valeur": 0.066,
+            "color": "#10b981"
+          }
+        ],
+        "Ammonium": [
+          {
+            "date": "2026-06-17",
+            "valeur": 2.3,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2026-04-14",
+            "valeur": 2.7,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2026-02-18",
+            "valeur": 4.6,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-12-15",
+            "valeur": 3.2,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-11-17",
+            "valeur": 3.2,
+            "color": "#ef4444"
+          }
+        ]
+      },
+      "score": 62,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
     }
   ],
-  "rivieres": [],
   "nappes": [],
   "air": [
     {
+      "zone": "Paris 16e Arrondissement",
+      "dept": "75",
+      "date": "2026-08-25",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Airparif",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
       "zone": "Paris 13e Arrondissement",
       "dept": "75",
-      "date": "2026-08-23",
+      "date": "2026-08-25",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -221,7 +372,7 @@
     {
       "zone": "Paris 7e Arrondissement",
       "dept": "75",
-      "date": "2026-08-23",
+      "date": "2026-08-25",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -257,7 +408,7 @@
     {
       "zone": "Paris 18e Arrondissement",
       "dept": "75",
-      "date": "2026-08-23",
+      "date": "2026-08-25",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -293,43 +444,7 @@
     {
       "zone": "Paris 20e Arrondissement",
       "dept": "75",
-      "date": "2026-08-23",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Airparif",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Paris 11e Arrondissement",
-      "dept": "75",
-      "date": "2026-08-23",
+      "date": "2026-08-25",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
