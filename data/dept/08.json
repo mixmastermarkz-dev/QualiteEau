@@ -3,7 +3,7 @@
   "nom": "Ardennes",
   "slug": "ardennes",
   "region": "Grand Est",
-  "updated": "24/08/2026 à 12:33",
+  "updated": "25/08/2026 à 12:28",
   "score_eau": 92,
   "nb_communes": 450,
   "potable": [
@@ -4717,6 +4717,12 @@
           "color": "#10b981",
           "date": "2026-06-23"
         },
+        "Aluminium": {
+          "valeur": 0.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2019-10-02"
+        },
         "Plomb": {
           "valeur": 1.5,
           "unite": "µg/L",
@@ -9317,6 +9323,12 @@
           "unite": "°f",
           "color": "#10b981",
           "date": "2026-06-15"
+        },
+        "Aluminium": {
+          "valeur": "<0,5",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2019-10-02"
         },
         "Plomb": {
           "valeur": "<0,5",
@@ -17225,6 +17237,12 @@
           "color": "#f59e0b",
           "date": "2026-06-01"
         },
+        "Aluminium": {
+          "valeur": "<0,5",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-03-10"
+        },
         "Plomb": {
           "valeur": 1.3,
           "unite": "µg/L",
@@ -17244,7 +17262,7 @@
           "date": "2025-10-03"
         }
       },
-      "score": 81,
+      "score": 83,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -49678,10 +49696,8 @@
       "nom": "Bouvellemont",
       "dept": "08",
       "code_bss": "00868X0016/S1",
-      "current": 234.798,
+      "current": 234.796,
       "history": [
-        234.8,
-        234.798,
         234.797,
         234.796,
         234.796,
@@ -49693,47 +49709,21 @@
         234.802,
         234.8,
         234.798,
-        234.798
+        234.798,
+        234.797,
+        234.796
       ],
-      "year_ago": 234.84,
+      "year_ago": 234.83,
       "lat": 49.583411352,
       "lng": 4.665167466,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Semide",
-      "dept": "08",
-      "code_bss": "01097X0014/S1",
-      "current": 115.953,
-      "history": [
-        116.02,
-        116.014,
-        116.008,
-        116.002,
-        115.998,
-        115.998,
-        115.991,
-        115.986,
-        115.985,
-        115.978,
-        115.972,
-        115.965,
-        115.961,
-        115.953
-      ],
-      "year_ago": 116.31,
-      "lat": 49.340745366,
-      "lng": 4.58308525,
       "color": "#ef4444"
     },
     {
       "nom": "Novion-Porcien",
       "dept": "08",
       "code_bss": "00862X0005/S1",
-      "current": 109.67,
+      "current": 109.66,
       "history": [
-        109.65,
-        109.65,
         109.65,
         109.65,
         109.66,
@@ -49745,7 +49735,9 @@
         109.68,
         109.67,
         109.67,
-        109.67
+        109.67,
+        109.67,
+        109.66
       ],
       "year_ago": 109.74,
       "lat": 49.601587554,
@@ -49756,10 +49748,8 @@
       "nom": "Brieulles-sur-Bar",
       "dept": "08",
       "code_bss": "01102X0025/S1",
-      "current": 165.282,
+      "current": 165.28,
       "history": [
-        165.285,
-        165.282,
         165.282,
         165.282,
         165.286,
@@ -49771,9 +49761,11 @@
         165.286,
         165.281,
         165.282,
-        165.282
+        165.282,
+        165.279,
+        165.28
       ],
-      "year_ago": 165.28,
+      "year_ago": 165.27,
       "lat": 49.477007915,
       "lng": 4.855385697,
       "color": "#3b82f6"
@@ -49782,10 +49774,8 @@
       "nom": "Chémery-Chéhéry",
       "dept": "08",
       "code_bss": "00873X0036/F2",
-      "current": 151.987,
+      "current": 151.253,
       "history": [
-        153.397,
-        153.078,
         153.39,
         151.457,
         153.39,
@@ -49797,25 +49787,47 @@
         153.391,
         153.378,
         153.389,
-        151.987
+        151.987,
+        153.384,
+        151.253
       ],
-      "year_ago": 153.52,
+      "year_ago": 153.51,
       "lat": 49.600307808,
       "lng": 4.868863011,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Semide",
+      "dept": "08",
+      "code_bss": "01097X0014/S1",
+      "current": 115.943,
+      "history": [
+        116.008,
+        116.002,
+        115.998,
+        115.998,
+        115.991,
+        115.986,
+        115.985,
+        115.978,
+        115.972,
+        115.965,
+        115.961,
+        115.953,
+        115.949,
+        115.943
+      ],
+      "year_ago": 116.3,
+      "lat": 49.340745366,
+      "lng": 4.58308525,
       "color": "#ef4444"
     },
     {
       "nom": "Hannogne-Saint-Rémy",
       "dept": "08",
       "code_bss": "00853X0030/PZ2013",
-      "current": 103.05,
+      "current": 102.97,
       "history": [
-        103.28,
-        103.26,
-        103.25,
-        103.23,
-        103.21,
-        103.19,
         103.18,
         103.17,
         103.17,
@@ -49823,47 +49835,25 @@
         103.12,
         103.1,
         103.07,
-        103.05
+        103.05,
+        103.03,
+        103.01,
+        103.01,
+        102.99,
+        102.98,
+        102.97
       ],
-      "year_ago": 103.21,
+      "year_ago": 103.18,
       "lat": 49.607394,
       "lng": 4.157302,
       "color": "#ef4444"
     },
     {
-      "nom": "Arreux",
-      "dept": "08",
-      "code_bss": "00684X0051/F-AEP",
-      "current": 262.282,
-      "history": [
-        262.417,
-        262.413,
-        262.399,
-        262.397,
-        262.395,
-        262.395,
-        262.416,
-        262.366,
-        262.361,
-        262.346,
-        262.337,
-        262.309,
-        262.291,
-        262.282
-      ],
-      "year_ago": 262.04,
-      "lat": 49.824721025,
-      "lng": 4.651608799,
-      "color": "#3b82f6"
-    },
-    {
       "nom": "Gespunsart",
       "dept": "08",
       "code_bss": "00692X0062/P",
-      "current": 195.853,
+      "current": 195.996,
       "history": [
-        195.904,
-        196.071,
         195.99,
         196.069,
         195.964,
@@ -49875,9 +49865,11 @@
         195.855,
         196.026,
         195.862,
-        195.853
+        195.853,
+        195.953,
+        195.996
       ],
-      "year_ago": 196.12,
+      "year_ago": 196.11,
       "lat": 49.821555011,
       "lng": 4.828760306,
       "color": "#ef4444"
@@ -49886,10 +49878,8 @@
       "nom": "Thénorgues",
       "dept": "08",
       "code_bss": "01107X0094/P",
-      "current": 184.072,
+      "current": 184.058,
       "history": [
-        184.012,
-        184.009,
         184.008,
         184.016,
         184.04,
@@ -49901,21 +49891,47 @@
         184.111,
         184.096,
         184.082,
-        184.072
+        184.072,
+        184.063,
+        184.058
       ],
-      "year_ago": 184.39,
+      "year_ago": 184.37,
       "lat": 49.407085,
       "lng": 4.924297,
       "color": "#ef4444"
     },
     {
+      "nom": "Arreux",
+      "dept": "08",
+      "code_bss": "00684X0051/F-AEP",
+      "current": 262.31,
+      "history": [
+        262.395,
+        262.395,
+        262.416,
+        262.366,
+        262.361,
+        262.346,
+        262.337,
+        262.309,
+        262.291,
+        262.282,
+        262.285,
+        262.291,
+        262.307,
+        262.31
+      ],
+      "year_ago": 262.04,
+      "lat": 49.824721025,
+      "lng": 4.651608799,
+      "color": "#3b82f6"
+    },
+    {
       "nom": "Alincourt",
       "dept": "08",
       "code_bss": "01095X0001/FAEP",
-      "current": 84.667,
+      "current": 84.669,
       "history": [
-        84.6,
-        84.596,
         84.593,
         84.599,
         84.606,
@@ -49927,47 +49943,21 @@
         84.662,
         84.664,
         84.665,
-        84.667
+        84.667,
+        84.668,
+        84.669
       ],
-      "year_ago": 84.95,
+      "year_ago": 84.94,
       "lat": 49.403699652,
       "lng": 4.344883365,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Ham-sur-Meuse",
-      "dept": "08",
-      "code_bss": "00406X0029/PAEP",
-      "current": 102.67,
-      "history": [
-        102.649,
-        102.644,
-        102.652,
-        102.658,
-        102.648,
-        102.673,
-        102.678,
-        102.683,
-        102.69,
-        102.697,
-        102.71,
-        102.693,
-        102.69,
-        102.67
-      ],
-      "year_ago": 102.71,
-      "lat": 50.111174778,
-      "lng": 4.780779294,
       "color": "#ef4444"
     },
     {
       "nom": "Blanchefosse-et-Bay",
       "dept": "08",
       "code_bss": "00678X0013/RECEAU",
-      "current": 178.94,
+      "current": 179.014,
       "history": [
-        178.975,
-        178.971,
         178.995,
         179.003,
         179.065,
@@ -49979,11 +49969,39 @@
         178.935,
         178.912,
         178.922,
-        178.94
+        178.94,
+        178.98,
+        179.014
       ],
-      "year_ago": 178.99,
+      "year_ago": 179.02,
       "lat": 49.761279963,
       "lng": 4.250636905,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Ham-sur-Meuse",
+      "dept": "08",
+      "code_bss": "00406X0029/PAEP",
+      "current": 102.673,
+      "history": [
+        102.652,
+        102.658,
+        102.648,
+        102.673,
+        102.678,
+        102.683,
+        102.69,
+        102.697,
+        102.71,
+        102.693,
+        102.69,
+        102.67,
+        102.682,
+        102.673
+      ],
+      "year_ago": 102.71,
+      "lat": 50.111174778,
+      "lng": 4.780779294,
       "color": "#ef4444"
     },
     {
@@ -50015,13 +50033,13 @@
   ],
   "air": [
     {
-      "zone": "Vouvant",
+      "zone": "Givry",
       "dept": "08",
       "date": "2026-08-26",
-      "indice": 2,
-      "label": "moyen",
-      "color": "#50ccaa",
-      "source": "Air Pays de la Loire",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -50029,9 +50047,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -50051,13 +50069,13 @@
       }
     },
     {
-      "zone": "la Verrie",
+      "zone": "Grimault",
       "dept": "08",
       "date": "2026-08-26",
-      "indice": 2,
-      "label": "moyen",
-      "color": "#50ccaa",
-      "source": "Air Pays de la Loire",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -50065,9 +50083,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -50087,13 +50105,13 @@
       }
     },
     {
-      "zone": "Vendrennes",
+      "zone": "Guillon",
       "dept": "08",
       "date": "2026-08-26",
-      "indice": 2,
-      "label": "moyen",
-      "color": "#50ccaa",
-      "source": "Air Pays de la Loire",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -50101,9 +50119,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -50123,13 +50141,13 @@
       }
     },
     {
-      "zone": "l'Aiguillon-sur-Vie",
+      "zone": "Island",
       "dept": "08",
       "date": "2026-08-26",
-      "indice": 2,
-      "label": "moyen",
-      "color": "#50ccaa",
-      "source": "Air Pays de la Loire",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -50137,9 +50155,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -50159,13 +50177,13 @@
       }
     },
     {
-      "zone": "Aizenay",
+      "zone": "L'Isle-sur-Serein",
       "dept": "08",
       "date": "2026-08-26",
-      "indice": 2,
-      "label": "moyen",
-      "color": "#50ccaa",
-      "source": "Air Pays de la Loire",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -50173,9 +50191,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
