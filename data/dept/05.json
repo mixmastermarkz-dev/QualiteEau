@@ -3,7 +3,7 @@
   "nom": "Hautes-Alpes",
   "slug": "hautes-alpes",
   "region": "Provence-Alpes-Côte d'Azur",
-  "updated": "26/08/2026 à 12:31",
+  "updated": "27/08/2026 à 22:08",
   "score_eau": 98,
   "nb_communes": 162,
   "potable": [
@@ -16046,39 +16046,11 @@
   ],
   "nappes": [
     {
-      "nom": "La Roche-de-Rame",
-      "dept": "05",
-      "code_bss": "08472X0007/F-1",
-      "current": 923.72,
-      "history": [
-        923.32,
-        923.32,
-        923.31,
-        923.37,
-        923.72,
-        923.73,
-        923.72,
-        923.72,
-        923.71,
-        923.71,
-        923.71,
-        923.76,
-        923.74,
-        923.72
-      ],
-      "year_ago": 923.55,
-      "lat": 44.738691198,
-      "lng": 6.582662145,
-      "color": "#3b82f6"
-    },
-    {
       "nom": "Aspremont",
       "dept": "05",
       "code_bss": "08688X0023/PZ1",
-      "current": 718.18,
+      "current": 718.17,
       "history": [
-        718.17,
-        718.18,
         718.29,
         718.54,
         718.47,
@@ -16090,7 +16062,9 @@
         718.15,
         718.25,
         718.21,
-        718.18
+        718.18,
+        718.17,
+        718.17
       ],
       "year_ago": 718.34,
       "lat": 44.493443917,
@@ -16098,13 +16072,37 @@
       "color": "#ef4444"
     },
     {
+      "nom": "La Roche-de-Rame",
+      "dept": "05",
+      "code_bss": "08472X0007/F-1",
+      "current": 923.71,
+      "history": [
+        923.31,
+        923.37,
+        923.72,
+        923.73,
+        923.72,
+        923.72,
+        923.71,
+        923.71,
+        923.71,
+        923.76,
+        923.74,
+        923.72,
+        923.71,
+        923.71
+      ],
+      "year_ago": 923.56,
+      "lat": 44.738691198,
+      "lng": 6.582662145,
+      "color": "#3b82f6"
+    },
+    {
       "nom": "Saint-Jean-Saint-Nicolas",
       "dept": "05",
       "code_bss": "08466X0009/F2",
-      "current": 1156.07,
+      "current": 1156.01,
       "history": [
-        1154.79,
-        1154.7,
         1154.89,
         1155.14,
         1155.68,
@@ -16116,47 +16114,21 @@
         1156.11,
         1156.15,
         1156.1,
-        1156.07
+        1156.07,
+        1156.04,
+        1156.01
       ],
-      "year_ago": 1156.07,
+      "year_ago": 1156.06,
       "lat": 44.680949438,
       "lng": 6.260818821,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "L'Argentière-la-Bessée",
-      "dept": "05",
-      "code_bss": "08471X0034/P5",
-      "current": 952.53,
-      "history": [
-        952.51,
-        952.49,
-        952.48,
-        952.51,
-        952.78,
-        952.73,
-        952.7,
-        952.66,
-        952.63,
-        952.6,
-        952.58,
-        952.58,
-        952.55,
-        952.53
-      ],
-      "year_ago": 952.81,
-      "lat": 44.776271664,
-      "lng": 6.558809418,
       "color": "#ef4444"
     },
     {
       "nom": "Val Buëch-Méouge",
       "dept": "05",
       "code_bss": "09172X0078/P",
-      "current": 491.33,
+      "current": 491.32,
       "history": [
-        491.31,
-        491.31,
         491.32,
         491.33,
         491.46,
@@ -16168,23 +16140,51 @@
         491.35,
         491.34,
         491.34,
-        491.33
+        491.33,
+        491.32,
+        491.32
       ],
       "year_ago": 491.44,
       "lat": 44.231230139,
       "lng": 5.862949573,
       "color": "#ef4444"
+    },
+    {
+      "nom": "L'Argentière-la-Bessée",
+      "dept": "05",
+      "code_bss": "08471X0034/P5",
+      "current": 952.48,
+      "history": [
+        952.48,
+        952.51,
+        952.78,
+        952.73,
+        952.7,
+        952.66,
+        952.63,
+        952.6,
+        952.58,
+        952.58,
+        952.55,
+        952.53,
+        952.5,
+        952.48
+      ],
+      "year_ago": 952.83,
+      "lat": 44.776271664,
+      "lng": 6.558809418,
+      "color": "#ef4444"
     }
   ],
   "air": [
     {
-      "zone": "Saint-Sauveur-de-Pierrepont",
+      "zone": "Rosans",
       "dept": "05",
-      "date": "2026-08-28",
+      "date": "2026-08-29",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
-      "source": "Atmo Normandie",
+      "source": "AtmoSud",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -16214,13 +16214,85 @@
       }
     },
     {
-      "zone": "Saint-Sauveur-la-Pommeraye",
+      "zone": "Rousset",
       "dept": "05",
-      "date": "2026-08-28",
+      "date": "2026-08-29",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
-      "source": "Atmo Normandie",
+      "source": "AtmoSud",
+      "polluants": {
+        "NO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Saint-André-d'Embrun",
+      "dept": "05",
+      "date": "2026-08-29",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "AtmoSud",
+      "polluants": {
+        "NO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Saint-André-de-Rosans",
+      "dept": "05",
+      "date": "2026-08-29",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "AtmoSud",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -16250,90 +16322,18 @@
       }
     },
     {
-      "zone": "Saint-Sauveur-Villages",
+      "zone": "Saint-Apollinaire",
       "dept": "05",
-      "date": "2026-08-28",
+      "date": "2026-08-29",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
-      "source": "Atmo Normandie",
+      "source": "AtmoSud",
       "polluants": {
         "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
           "indice": 0,
           "label": "N.C.",
           "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Sauveur-le-Vicomte",
-      "dept": "05",
-      "date": "2026-08-28",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Sébastien-de-Raids",
-      "dept": "05",
-      "date": "2026-08-28",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
         },
         "O₃": {
           "indice": 2,

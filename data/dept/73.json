@@ -3,7 +3,7 @@
   "nom": "Savoie",
   "slug": "savoie",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "26/08/2026 à 12:31",
+  "updated": "27/08/2026 à 22:08",
   "score_eau": 99,
   "nb_communes": 274,
   "potable": [
@@ -31418,10 +31418,8 @@
       "nom": "Aiton",
       "dept": "73",
       "code_bss": "07266X0052/PS4",
-      "current": 293.395,
+      "current": 293.397,
       "history": [
-        293.392,
-        293.39,
         293.39,
         293.391,
         293.4,
@@ -31433,9 +31431,11 @@
         293.391,
         293.385,
         293.391,
-        293.395
+        293.395,
+        293.394,
+        293.397
       ],
-      "year_ago": 293.41,
+      "year_ago": 293.4,
       "lat": 45.566444711,
       "lng": 6.245431548,
       "color": "#ef4444"
@@ -31444,10 +31444,8 @@
       "nom": "Chambéry",
       "dept": "73",
       "code_bss": "07256X0095/CHAMBE",
-      "current": 264.747,
+      "current": 264.726,
       "history": [
-        264.786,
-        264.756,
         264.771,
         264.772,
         264.853,
@@ -31459,9 +31457,11 @@
         264.803,
         264.778,
         264.765,
-        264.747
+        264.747,
+        264.738,
+        264.726
       ],
-      "year_ago": 264.82,
+      "year_ago": 264.81,
       "lat": 45.569053375,
       "lng": 5.916248145,
       "color": "#ef4444"
@@ -31470,12 +31470,8 @@
       "nom": "Cruet",
       "dept": "73",
       "code_bss": "07494X0026/CRUET",
-      "current": 269.334,
+      "current": 269.441,
       "history": [
-        269.402,
-        269.475,
-        269.406,
-        269.421,
         269.397,
         269.42,
         269.532,
@@ -31485,19 +31481,23 @@
         269.27,
         269.29,
         269.235,
-        269.334
+        269.334,
+        269.378,
+        269.413,
+        269.369,
+        269.441
       ],
-      "year_ago": 269.4,
+      "year_ago": 269.37,
       "lat": 45.522193195,
       "lng": 6.104556772,
-      "color": "#ef4444"
+      "color": "#3b82f6"
     }
   ],
   "air": [
     {
-      "zone": "Brides-les-Bains",
+      "zone": "Aussois",
       "dept": "73",
-      "date": "2026-08-27",
+      "date": "2026-08-29",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
@@ -31531,9 +31531,45 @@
       }
     },
     {
-      "zone": "Bourg-Saint-Maurice",
+      "zone": "Arith",
       "dept": "73",
-      "date": "2026-08-27",
+      "date": "2026-08-29",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "La Chapelle",
+      "dept": "73",
+      "date": "2026-08-29",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
@@ -31567,81 +31603,9 @@
       }
     },
     {
-      "zone": "La Chavanne",
+      "zone": "Arvillard",
       "dept": "73",
-      "date": "2026-08-27",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Ayn",
-      "dept": "73",
-      "date": "2026-08-27",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Bozel",
-      "dept": "73",
-      "date": "2026-08-27",
+      "date": "2026-08-29",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
@@ -31656,6 +31620,42 @@
           "indice": 3,
           "label": "Dégradé",
           "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Cléry",
+      "dept": "73",
+      "date": "2026-08-29",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
