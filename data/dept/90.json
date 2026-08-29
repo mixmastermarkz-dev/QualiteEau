@@ -3,7 +3,7 @@
   "nom": "Territoire de Belfort",
   "slug": "territoire-de-belfort",
   "region": "Bourgogne-Franche-Comté",
-  "updated": "27/08/2026 à 22:08",
+  "updated": "29/08/2026 à 16:55",
   "score_eau": 98,
   "nb_communes": 100,
   "potable": [
@@ -23733,12 +23733,8 @@
       "nom": "Valdoie",
       "dept": "90",
       "code_bss": "04434X0089/P",
-      "current": 382.289,
+      "current": 382.304,
       "history": [
-        382.201,
-        382.211,
-        382.214,
-        382.24,
         382.228,
         382.231,
         382.217,
@@ -23748,9 +23744,13 @@
         382.307,
         382.307,
         382.287,
-        382.289
+        382.289,
+        382.269,
+        382.279,
+        382.304,
+        382.304
       ],
-      "year_ago": 382.71,
+      "year_ago": 383.24,
       "lat": 47.675931312,
       "lng": 6.836792836,
       "color": "#ef4444"
@@ -23759,12 +23759,8 @@
       "nom": "Florimont",
       "dept": "90",
       "code_bss": "04447X0028/S",
-      "current": 380.463,
+      "current": 380.457,
       "history": [
-        380.469,
-        380.471,
-        380.466,
-        380.465,
         380.465,
         380.462,
         380.466,
@@ -23774,7 +23770,11 @@
         380.462,
         380.459,
         380.468,
-        380.463
+        380.463,
+        380.465,
+        380.458,
+        380.456,
+        380.457
       ],
       "year_ago": 380.44,
       "lat": 47.542387181,
@@ -23784,9 +23784,81 @@
   ],
   "air": [
     {
-      "zone": "Beaucourt",
+      "zone": "Trétudans",
       "dept": "90",
-      "date": "2026-08-29",
+      "date": "2026-08-31",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Châtenois-les-Forges",
+      "dept": "90",
+      "date": "2026-08-31",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Villars-le-Sec",
+      "dept": "90",
+      "date": "2026-08-31",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -23820,9 +23892,9 @@
       }
     },
     {
-      "zone": "Belfort",
+      "zone": "Vézelois",
       "dept": "90",
-      "date": "2026-08-29",
+      "date": "2026-08-31",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -23856,81 +23928,9 @@
       }
     },
     {
-      "zone": "Bermont",
+      "zone": "Vétrigne",
       "dept": "90",
-      "date": "2026-08-29",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Bessoncourt",
-      "dept": "90",
-      "date": "2026-08-29",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Bethonvilliers",
-      "dept": "90",
-      "date": "2026-08-29",
+      "date": "2026-08-31",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
