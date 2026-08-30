@@ -3,7 +3,7 @@
   "nom": "Hautes-Alpes",
   "slug": "hautes-alpes",
   "region": "Provence-Alpes-Côte d'Azur",
-  "updated": "29/08/2026 à 16:55",
+  "updated": "30/08/2026 à 16:39",
   "score_eau": 98,
   "nb_communes": 162,
   "potable": [
@@ -16046,65 +16046,11 @@
   ],
   "nappes": [
     {
-      "nom": "La Roche-de-Rame",
-      "dept": "05",
-      "code_bss": "08472X0007/F-1",
-      "current": 924.02,
-      "history": [
-        923.72,
-        923.72,
-        923.71,
-        923.71,
-        923.71,
-        923.76,
-        923.74,
-        923.72,
-        923.71,
-        923.71,
-        923.73,
-        923.8,
-        924.09,
-        924.02
-      ],
-      "year_ago": 923.82,
-      "lat": 44.738691198,
-      "lng": 6.582662145,
-      "color": "#3b82f6"
-    },
-    {
-      "nom": "Aspremont",
-      "dept": "05",
-      "code_bss": "08688X0023/PZ1",
-      "current": 718.17,
-      "history": [
-        718.22,
-        718.19,
-        718.17,
-        718.16,
-        718.15,
-        718.25,
-        718.21,
-        718.18,
-        718.17,
-        718.17,
-        718.16,
-        718.15,
-        718.18,
-        718.17
-      ],
-      "year_ago": 718.47,
-      "lat": 44.493443917,
-      "lng": 5.728933099,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Saint-Jean-Saint-Nicolas",
       "dept": "05",
       "code_bss": "08466X0009/F2",
-      "current": 1156.09,
+      "current": 1156.1,
       "history": [
-        1156.05,
-        1156.11,
         1156.13,
         1156.12,
         1156.11,
@@ -16116,21 +16062,73 @@
         1155.97,
         1155.94,
         1156.04,
-        1156.09
+        1156.09,
+        1156.1,
+        1156.1
       ],
-      "year_ago": 1156.15,
+      "year_ago": 1156.05,
       "lat": 44.680949438,
       "lng": 6.260818821,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "La Roche-de-Rame",
+      "dept": "05",
+      "code_bss": "08472X0007/F-1",
+      "current": 923.91,
+      "history": [
+        923.71,
+        923.71,
+        923.71,
+        923.76,
+        923.74,
+        923.72,
+        923.71,
+        923.71,
+        923.73,
+        923.8,
+        924.09,
+        924.02,
+        923.96,
+        923.91
+      ],
+      "year_ago": 923.77,
+      "lat": 44.738691198,
+      "lng": 6.582662145,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Aspremont",
+      "dept": "05",
+      "code_bss": "08688X0023/PZ1",
+      "current": 718.08,
+      "history": [
+        718.17,
+        718.16,
+        718.15,
+        718.25,
+        718.21,
+        718.18,
+        718.17,
+        718.17,
+        718.16,
+        718.15,
+        718.18,
+        718.17,
+        718.1,
+        718.08
+      ],
+      "year_ago": 718.4,
+      "lat": 44.493443917,
+      "lng": 5.728933099,
       "color": "#ef4444"
     },
     {
       "nom": "L'Argentière-la-Bessée",
       "dept": "05",
       "code_bss": "08471X0034/P5",
-      "current": 952.44,
+      "current": 952.35,
       "history": [
-        952.7,
-        952.66,
         952.63,
         952.6,
         952.58,
@@ -16142,9 +16140,11 @@
         952.47,
         952.53,
         952.52,
-        952.44
+        952.44,
+        952.39,
+        952.35
       ],
-      "year_ago": 952.98,
+      "year_ago": 952.91,
       "lat": 44.776271664,
       "lng": 6.558809418,
       "color": "#ef4444"
@@ -16155,8 +16155,6 @@
       "code_bss": "09172X0078/P",
       "current": 491.31,
       "history": [
-        491.42,
-        491.4,
         491.38,
         491.36,
         491.35,
@@ -16168,9 +16166,11 @@
         491.32,
         491.31,
         491.31,
+        491.31,
+        491.31,
         491.31
       ],
-      "year_ago": 491.57,
+      "year_ago": 491.56,
       "lat": 44.231230139,
       "lng": 5.862949573,
       "color": "#ef4444"
@@ -16178,13 +16178,13 @@
   ],
   "air": [
     {
-      "zone": "Saint-Georges-Montcocq",
+      "zone": "la Haie-Traversaine",
       "dept": "05",
-      "date": "2026-08-31",
+      "date": "2026-09-01",
       "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
+      "label": "moyen",
+      "color": "#50ccaa",
+      "source": "Air Pays de la Loire",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -16214,13 +16214,13 @@
       }
     },
     {
-      "zone": "Saint-Germain-d'Elle",
+      "zone": "Hardanges",
       "dept": "05",
-      "date": "2026-08-31",
+      "date": "2026-09-01",
       "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
+      "label": "moyen",
+      "color": "#50ccaa",
+      "source": "Air Pays de la Loire",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -16250,13 +16250,13 @@
       }
     },
     {
-      "zone": "Saint-Germain-de-Tournebut",
+      "zone": "le Horps",
       "dept": "05",
-      "date": "2026-08-31",
+      "date": "2026-09-01",
       "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
+      "label": "moyen",
+      "color": "#50ccaa",
+      "source": "Air Pays de la Loire",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -16286,13 +16286,13 @@
       }
     },
     {
-      "zone": "Saint-Germain-de-Varreville",
+      "zone": "le Housseau-Brétignolles",
       "dept": "05",
-      "date": "2026-08-31",
+      "date": "2026-09-01",
       "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
+      "label": "moyen",
+      "color": "#50ccaa",
+      "source": "Air Pays de la Loire",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -16322,13 +16322,13 @@
       }
     },
     {
-      "zone": "Saint-Germain-le-Gaillard",
+      "zone": "l'Huisserie",
       "dept": "05",
-      "date": "2026-08-31",
+      "date": "2026-09-01",
       "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
+      "label": "moyen",
+      "color": "#50ccaa",
+      "source": "Air Pays de la Loire",
       "polluants": {
         "NO₂": {
           "indice": 1,

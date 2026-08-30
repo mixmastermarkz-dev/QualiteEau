@@ -3,7 +3,7 @@
   "nom": "Alpes-Maritimes",
   "slug": "alpes-maritimes",
   "region": "Provence-Alpes-Côte d'Azur",
-  "updated": "29/08/2026 à 16:55",
+  "updated": "30/08/2026 à 16:39",
   "score_eau": 99,
   "nb_communes": 164,
   "potable": [
@@ -15635,11 +15635,6 @@
             "date": "2024-09-03",
             "valeur": 9.1,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-08-29",
-            "valeur": 8.6,
-            "color": "#10b981"
           }
         ],
         "MES": [
@@ -15652,11 +15647,6 @@
             "date": "2024-09-03",
             "valeur": 401.0,
             "color": "#ef4444"
-          },
-          {
-            "date": "2024-08-29",
-            "valeur": 384.0,
-            "color": "#ef4444"
           }
         ],
         "O2 saturation": [
@@ -15668,11 +15658,6 @@
           {
             "date": "2024-09-03",
             "valeur": 102.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-08-29",
-            "valeur": 95.0,
             "color": "#10b981"
           }
         ]
@@ -17279,27 +17264,6 @@
           "color": "#10b981",
           "date": "2025-08-21",
           "realtime": false
-        },
-        "Conductivité": {
-          "valeur": 8.8,
-          "unite": "µS/cm",
-          "color": "#10b981",
-          "date": "2024-08-29",
-          "realtime": false
-        },
-        "O2 saturation": {
-          "valeur": 97.0,
-          "unite": "%",
-          "color": "#10b981",
-          "date": "2024-08-29",
-          "realtime": false
-        },
-        "MES": {
-          "valeur": 292.0,
-          "unite": "mg/L",
-          "color": "#ef4444",
-          "date": "2024-08-29",
-          "realtime": false
         }
       },
       "historique": {
@@ -17308,21 +17272,11 @@
             "date": "2025-08-21",
             "valeur": 0.82,
             "color": "#f59e0b"
-          },
-          {
-            "date": "2024-08-29",
-            "valeur": 0.68,
-            "color": "#f59e0b"
           }
         ],
         "Phosphore": [
           {
             "date": "2025-08-21",
-            "valeur": 0.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-08-29",
             "valeur": 0.0,
             "color": "#10b981"
           }
@@ -17332,38 +17286,12 @@
             "date": "2025-08-21",
             "valeur": 0.58,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-08-29",
-            "valeur": 0.0,
-            "color": "#10b981"
-          }
-        ],
-        "Conductivité": [
-          {
-            "date": "2024-08-29",
-            "valeur": 8.8,
-            "color": "#10b981"
-          }
-        ],
-        "O2 saturation": [
-          {
-            "date": "2024-08-29",
-            "valeur": 97.0,
-            "color": "#10b981"
-          }
-        ],
-        "MES": [
-          {
-            "date": "2024-08-29",
-            "valeur": 292.0,
-            "color": "#ef4444"
           }
         ]
       },
-      "score": 75,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
+      "score": 83,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "PRISE D'EAU JACOURET",
@@ -21341,10 +21269,8 @@
       "nom": "Gilette",
       "dept": "06",
       "code_bss": "09724X0023/P2",
-      "current": 95.457,
+      "current": 95.4,
       "history": [
-        95.7,
-        95.695,
         95.669,
         95.664,
         95.649,
@@ -21356,37 +21282,13 @@
         95.502,
         95.487,
         95.477,
-        95.457
+        95.457,
+        95.425,
+        95.4
       ],
-      "year_ago": 100.15,
+      "year_ago": 99.99,
       "lat": 43.831616009,
       "lng": 7.188887934,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Nice",
-      "dept": "06",
-      "code_bss": "09994X0521/P4B",
-      "current": 10.68,
-      "history": [
-        10.53,
-        10.55,
-        10.57,
-        10.57,
-        10.57,
-        10.58,
-        10.6,
-        10.62,
-        10.64,
-        10.64,
-        10.66,
-        10.67,
-        10.67,
-        10.68
-      ],
-      "year_ago": 11.63,
-      "lat": 43.691448072,
-      "lng": 7.193977883,
       "color": "#ef4444"
     },
     {
@@ -21395,8 +21297,6 @@
       "code_bss": "09998X0199/PZ_PID",
       "current": 18.52,
       "history": [
-        18.49,
-        18.42,
         18.47,
         18.44,
         18.5,
@@ -21408,21 +21308,47 @@
         18.49,
         18.51,
         18.54,
+        18.52,
+        18.54,
         18.52
       ],
-      "year_ago": 18.77,
+      "year_ago": 18.76,
       "lat": 43.640614714,
       "lng": 7.125900921,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Nice",
+      "dept": "06",
+      "code_bss": "09994X0521/P4B",
+      "current": 10.68,
+      "history": [
+        10.57,
+        10.57,
+        10.57,
+        10.58,
+        10.6,
+        10.62,
+        10.64,
+        10.64,
+        10.66,
+        10.67,
+        10.67,
+        10.68,
+        10.68,
+        10.68
+      ],
+      "year_ago": 11.62,
+      "lat": 43.691448072,
+      "lng": 7.193977883,
       "color": "#ef4444"
     },
     {
       "nom": "Pégomas",
       "dept": "06",
       "code_bss": "09995X0028/F",
-      "current": 9.238,
+      "current": 9.233,
       "history": [
-        9.313,
-        9.319,
         9.308,
         9.286,
         9.3,
@@ -21434,9 +21360,11 @@
         9.273,
         9.26,
         9.259,
-        9.238
+        9.238,
+        9.255,
+        9.233
       ],
-      "year_ago": 9.52,
+      "year_ago": 9.41,
       "lat": 43.587762053,
       "lng": 6.926141257,
       "color": "#ef4444"
@@ -21445,10 +21373,8 @@
       "nom": "Gilette",
       "dept": "06",
       "code_bss": "BSS004FHCY/X",
-      "current": 95.67,
+      "current": 95.61,
       "history": [
-        95.92,
-        95.91,
         95.88,
         95.88,
         95.87,
@@ -21460,9 +21386,11 @@
         95.71,
         95.7,
         95.69,
-        95.67
+        95.67,
+        95.63,
+        95.61
       ],
-      "year_ago": 100.36,
+      "year_ago": 100.21,
       "lat": 43.831748442,
       "lng": 7.188607593,
       "color": "#ef4444"
@@ -21470,9 +21398,9 @@
   ],
   "air": [
     {
-      "zone": "Saint-Agnan-sur-Sarthe",
+      "zone": "Saint-Aubin-de-Courteraie",
       "dept": "06",
-      "date": "2026-08-31",
+      "date": "2026-09-01",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -21506,9 +21434,9 @@
       }
     },
     {
-      "zone": "Saint-André-de-Briouze",
+      "zone": "Saint-Bômer-les-Forges",
       "dept": "06",
-      "date": "2026-08-31",
+      "date": "2026-09-01",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -21542,9 +21470,9 @@
       }
     },
     {
-      "zone": "Saint-André-de-Messei",
+      "zone": "Saint-Brice",
       "dept": "06",
-      "date": "2026-08-31",
+      "date": "2026-09-01",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -21578,9 +21506,9 @@
       }
     },
     {
-      "zone": "Saint-Aquilin-de-Corbion",
+      "zone": "Saint-Brice-sous-Rânes",
       "dept": "06",
-      "date": "2026-08-31",
+      "date": "2026-09-01",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -21614,9 +21542,9 @@
       }
     },
     {
-      "zone": "Saint-Aubin-d'Appenai",
+      "zone": "Saint-Céneri-le-Gérei",
       "dept": "06",
-      "date": "2026-08-31",
+      "date": "2026-09-01",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
