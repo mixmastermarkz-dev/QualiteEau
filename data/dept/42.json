@@ -3,7 +3,7 @@
   "nom": "Loire",
   "slug": "loire",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "02/09/2026 à 16:03",
+  "updated": "03/09/2026 à 16:06",
   "score_eau": 97,
   "nb_communes": 326,
   "potable": [
@@ -53849,10 +53849,8 @@
       "nom": "Chalain-le-Comtal",
       "dept": "42",
       "code_bss": "07203X0168/PZ",
-      "current": 338.929,
+      "current": 338.927,
       "history": [
-        339.001,
-        338.969,
         338.956,
         338.944,
         338.946,
@@ -53864,47 +53862,21 @@
         338.943,
         338.926,
         338.937,
-        338.929
+        338.929,
+        338.938,
+        338.927
       ],
-      "year_ago": 339.1,
+      "year_ago": 339.01,
       "lat": 45.649419482,
       "lng": 4.190529903,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Cleppé",
-      "dept": "42",
-      "code_bss": "06967X0100/F",
-      "current": 323.398,
-      "history": [
-        323.421,
-        323.415,
-        323.424,
-        323.426,
-        323.414,
-        323.426,
-        323.434,
-        323.432,
-        323.437,
-        323.413,
-        323.408,
-        323.407,
-        323.413,
-        323.398
-      ],
-      "year_ago": 323.85,
-      "lat": 45.769951628,
-      "lng": 4.183823819,
       "color": "#ef4444"
     },
     {
       "nom": "Saint-André-le-Puy",
       "dept": "42",
       "code_bss": "07204X0105/F",
-      "current": 355.596,
+      "current": 355.583,
       "history": [
-        355.664,
-        355.657,
         355.669,
         355.644,
         355.62,
@@ -53916,9 +53888,11 @@
         355.605,
         355.596,
         355.613,
-        355.596
+        355.596,
+        355.599,
+        355.583
       ],
-      "year_ago": 355.76,
+      "year_ago": 355.78,
       "lat": 45.647921327,
       "lng": 4.246544955,
       "color": "#ef4444"
@@ -53927,10 +53901,8 @@
       "nom": "Saint-Galmier",
       "dept": "42",
       "code_bss": "07208X0197/F1C",
-      "current": 372.543,
+      "current": 372.54,
       "history": [
-        372.557,
-        372.548,
         372.558,
         372.545,
         372.538,
@@ -53942,19 +53914,47 @@
         372.541,
         372.539,
         372.552,
-        372.543
+        372.543,
+        372.543,
+        372.54
       ],
-      "year_ago": 372.41,
+      "year_ago": 372.42,
       "lat": 45.605448412,
       "lng": 4.306255162,
       "color": "#3b82f6"
+    },
+    {
+      "nom": "Cleppé",
+      "dept": "42",
+      "code_bss": "06967X0100/F",
+      "current": 323.392,
+      "history": [
+        323.424,
+        323.426,
+        323.414,
+        323.426,
+        323.434,
+        323.432,
+        323.437,
+        323.413,
+        323.408,
+        323.407,
+        323.413,
+        323.398,
+        323.402,
+        323.392
+      ],
+      "year_ago": 323.84,
+      "lat": 45.769951628,
+      "lng": 4.183823819,
+      "color": "#ef4444"
     }
   ],
   "air": [
     {
-      "zone": "La Valla-sur-Rochefort",
+      "zone": "La Valla-en-Gier",
       "dept": "42",
-      "date": "2026-09-04",
+      "date": "2026-09-05",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
@@ -53988,48 +53988,12 @@
       }
     },
     {
-      "zone": "La Valla-en-Gier",
-      "dept": "42",
-      "date": "2026-09-04",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
       "zone": "Veauche",
       "dept": "42",
-      "date": "2026-09-04",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
+      "date": "2026-09-05",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
@@ -54038,9 +54002,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -54062,10 +54026,10 @@
     {
       "zone": "Veauchette",
       "dept": "42",
-      "date": "2026-09-04",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#ff5050",
+      "date": "2026-09-05",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
@@ -54074,9 +54038,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -54098,7 +54062,43 @@
     {
       "zone": "Vendranges",
       "dept": "42",
-      "date": "2026-09-04",
+      "date": "2026-09-05",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Véranne",
+      "dept": "42",
+      "date": "2026-09-05",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
