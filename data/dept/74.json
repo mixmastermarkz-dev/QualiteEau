@@ -3,7 +3,7 @@
   "nom": "Haute-Savoie",
   "slug": "haute-savoie",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "03/09/2026 à 16:06",
+  "updated": "04/09/2026 à 15:58",
   "score_eau": 98,
   "nb_communes": 279,
   "potable": [
@@ -40568,10 +40568,8 @@
       "nom": "Marigny-Saint-Marcel",
       "dept": "74",
       "code_bss": "07013X0071/F1",
-      "current": 351.706,
+      "current": 351.695,
       "history": [
-        351.744,
-        351.739,
         351.743,
         351.735,
         351.736,
@@ -40583,9 +40581,11 @@
         351.715,
         351.712,
         351.711,
-        351.706
+        351.706,
+        351.703,
+        351.695
       ],
-      "year_ago": 351.97,
+      "year_ago": 351.99,
       "lat": 45.832389293,
       "lng": 5.962087611,
       "color": "#ef4444"
@@ -40594,10 +40594,8 @@
       "nom": "Publier",
       "dept": "74",
       "code_bss": "06301X0019/P5",
-      "current": 373.59,
+      "current": 373.584,
       "history": [
-        373.635,
-        373.634,
         373.63,
         373.63,
         373.628,
@@ -40609,9 +40607,11 @@
         373.606,
         373.598,
         373.593,
-        373.59
+        373.59,
+        373.587,
+        373.584
       ],
-      "year_ago": 374.04,
+      "year_ago": 374.05,
       "lat": 46.390565227,
       "lng": 6.520859286,
       "color": "#ef4444"
@@ -40620,10 +40620,8 @@
       "nom": "Vinzier",
       "dept": "74",
       "code_bss": "06306X0042/BIOGE",
-      "current": 570.162,
+      "current": 570.159,
       "history": [
-        570.424,
-        570.389,
         570.358,
         570.338,
         570.318,
@@ -40635,9 +40633,11 @@
         570.189,
         570.177,
         570.17,
-        570.162
+        570.162,
+        570.162,
+        570.159
       ],
-      "year_ago": 574.1,
+      "year_ago": 574.0,
       "lat": 46.335316884,
       "lng": 6.621257922,
       "color": "#ef4444"
@@ -40646,10 +40646,8 @@
       "nom": "Passy",
       "dept": "74",
       "code_bss": "BSS004QBEB/X",
-      "current": 568.866,
+      "current": 568.854,
       "history": [
-        568.908,
-        568.895,
         568.892,
         568.895,
         568.9,
@@ -40661,7 +40659,9 @@
         568.881,
         568.876,
         568.871,
-        568.866
+        568.866,
+        568.857,
+        568.854
       ],
       "year_ago": 569.32,
       "lat": 45.920935924,
@@ -40669,39 +40669,11 @@
       "color": "#ef4444"
     },
     {
-      "nom": "Marigny-Saint-Marcel",
-      "dept": "74",
-      "code_bss": "BSS004MZXK/X",
-      "current": 362.107,
-      "history": [
-        362.177,
-        362.171,
-        362.184,
-        362.174,
-        362.165,
-        362.158,
-        361.976,
-        362.136,
-        362.131,
-        362.129,
-        362.124,
-        362.119,
-        362.11,
-        362.107
-      ],
-      "year_ago": 362.25,
-      "lat": 45.835072054,
-      "lng": 5.968019958,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Viry",
       "dept": "74",
       "code_bss": "06537X0103/VEIGY",
-      "current": 371.938,
+      "current": 371.946,
       "history": [
-        372.012,
-        371.991,
         371.967,
         371.97,
         371.985,
@@ -40713,19 +40685,119 @@
         371.967,
         371.949,
         371.955,
-        371.938
+        371.938,
+        371.948,
+        371.946
       ],
-      "year_ago": 371.81,
+      "year_ago": 371.8,
       "lat": 46.141387797,
       "lng": 6.017375948,
       "color": "#3b82f6"
+    },
+    {
+      "nom": "Marigny-Saint-Marcel",
+      "dept": "74",
+      "code_bss": "BSS004MZXK/X",
+      "current": 362.097,
+      "history": [
+        362.184,
+        362.174,
+        362.165,
+        362.158,
+        361.976,
+        362.136,
+        362.131,
+        362.129,
+        362.124,
+        362.119,
+        362.11,
+        362.107,
+        362.102,
+        362.097
+      ],
+      "year_ago": 362.25,
+      "lat": 45.835072054,
+      "lng": 5.968019958,
+      "color": "#ef4444"
     }
   ],
   "air": [
     {
-      "zone": "Faucigny",
+      "zone": "Vétraz-Monthoux",
       "dept": "74",
-      "date": "2026-09-05",
+      "date": "2026-09-06",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Veyrier-du-Lac",
+      "dept": "74",
+      "date": "2026-09-06",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Villard",
+      "dept": "74",
+      "date": "2026-09-06",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
@@ -40759,9 +40831,9 @@
       }
     },
     {
-      "zone": "Faverges",
+      "zone": "Les Villards-sur-Thônes",
       "dept": "74",
-      "date": "2026-09-05",
+      "date": "2026-09-06",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
@@ -40795,12 +40867,12 @@
       }
     },
     {
-      "zone": "Feigères",
+      "zone": "Villaz",
       "dept": "74",
-      "date": "2026-09-05",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-09-06",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
@@ -40809,81 +40881,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Fessy",
-      "dept": "74",
-      "date": "2026-09-05",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Féternes",
-      "dept": "74",
-      "date": "2026-09-05",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "PM10": {
           "indice": 1,

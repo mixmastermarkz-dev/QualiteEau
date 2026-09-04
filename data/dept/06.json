@@ -3,7 +3,7 @@
   "nom": "Alpes-Maritimes",
   "slug": "alpes-maritimes",
   "region": "Provence-Alpes-Côte d'Azur",
-  "updated": "03/09/2026 à 16:06",
+  "updated": "04/09/2026 à 15:58",
   "score_eau": 99,
   "nb_communes": 164,
   "potable": [
@@ -15630,11 +15630,6 @@
             "date": "2024-09-30",
             "valeur": 375.0,
             "color": "#ef4444"
-          },
-          {
-            "date": "2024-09-03",
-            "valeur": 401.0,
-            "color": "#ef4444"
           }
         ],
         "O2 saturation": [
@@ -15642,22 +15637,12 @@
             "date": "2024-09-30",
             "valeur": 111.0,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-09-03",
-            "valeur": 102.0,
-            "color": "#10b981"
           }
         ],
         "Conductivité": [
           {
             "date": "2024-09-30",
             "valeur": 10.3,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-03",
-            "valeur": 9.1,
             "color": "#10b981"
           }
         ]
@@ -16768,27 +16753,6 @@
           "color": "#10b981",
           "date": "2025-09-30",
           "realtime": false
-        },
-        "MES": {
-          "valeur": 366.0,
-          "unite": "mg/L",
-          "color": "#ef4444",
-          "date": "2024-09-03",
-          "realtime": false
-        },
-        "O2 saturation": {
-          "valeur": 99.0,
-          "unite": "%",
-          "color": "#10b981",
-          "date": "2024-09-03",
-          "realtime": false
-        },
-        "Conductivité": {
-          "valeur": 8.8,
-          "unite": "µS/cm",
-          "color": "#10b981",
-          "date": "2024-09-03",
-          "realtime": false
         }
       },
       "historique": {
@@ -16802,11 +16766,6 @@
             "date": "2025-05-23",
             "valeur": 0.82,
             "color": "#f59e0b"
-          },
-          {
-            "date": "2024-09-03",
-            "valeur": 2.0,
-            "color": "#f59e0b"
           }
         ],
         "Nitrates": [
@@ -16818,11 +16777,6 @@
           {
             "date": "2025-05-23",
             "valeur": 1.8,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-03",
-            "valeur": 1.7,
             "color": "#10b981"
           }
         ],
@@ -16836,38 +16790,12 @@
             "date": "2025-05-23",
             "valeur": 0.0,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-09-03",
-            "valeur": 0.0,
-            "color": "#10b981"
-          }
-        ],
-        "MES": [
-          {
-            "date": "2024-09-03",
-            "valeur": 366.0,
-            "color": "#ef4444"
-          }
-        ],
-        "O2 saturation": [
-          {
-            "date": "2024-09-03",
-            "valeur": 99.0,
-            "color": "#10b981"
-          }
-        ],
-        "Conductivité": [
-          {
-            "date": "2024-09-03",
-            "valeur": 8.8,
-            "color": "#10b981"
           }
         ]
       },
-      "score": 75,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
+      "score": 83,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "CANAL DU RIOU FREI",
@@ -21269,10 +21197,8 @@
       "nom": "Gilette",
       "dept": "06",
       "code_bss": "09724X0023/P2",
-      "current": 95.222,
+      "current": 95.181,
       "history": [
-        95.502,
-        95.487,
         95.477,
         95.457,
         95.425,
@@ -21284,47 +21210,21 @@
         95.275,
         95.262,
         95.246,
-        95.222
+        95.222,
+        95.19,
+        95.181
       ],
-      "year_ago": 99.55,
+      "year_ago": 99.45,
       "lat": 43.831616009,
       "lng": 7.188887934,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Villeneuve-Loubet",
-      "dept": "06",
-      "code_bss": "09998X0199/PZ_PID",
-      "current": 18.46,
-      "history": [
-        18.49,
-        18.51,
-        18.54,
-        18.52,
-        18.54,
-        18.52,
-        18.51,
-        18.52,
-        18.53,
-        18.49,
-        18.51,
-        18.47,
-        18.51,
-        18.46
-      ],
-      "year_ago": 18.7,
-      "lat": 43.640614714,
-      "lng": 7.125900921,
       "color": "#ef4444"
     },
     {
       "nom": "Nice",
       "dept": "06",
       "code_bss": "09994X0521/P4B",
-      "current": 10.61,
+      "current": 10.6,
       "history": [
-        10.66,
-        10.67,
         10.67,
         10.68,
         10.68,
@@ -21336,21 +21236,47 @@
         10.64,
         10.63,
         10.63,
-        10.61
+        10.61,
+        10.61,
+        10.6
       ],
-      "year_ago": 11.63,
+      "year_ago": 11.61,
       "lat": 43.691448072,
       "lng": 7.193977883,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Villeneuve-Loubet",
+      "dept": "06",
+      "code_bss": "09998X0199/PZ_PID",
+      "current": 18.44,
+      "history": [
+        18.54,
+        18.52,
+        18.54,
+        18.52,
+        18.51,
+        18.52,
+        18.53,
+        18.49,
+        18.51,
+        18.47,
+        18.51,
+        18.46,
+        18.5,
+        18.44
+      ],
+      "year_ago": 18.69,
+      "lat": 43.640614714,
+      "lng": 7.125900921,
       "color": "#ef4444"
     },
     {
       "nom": "Pégomas",
       "dept": "06",
       "code_bss": "09995X0028/F",
-      "current": 9.266,
+      "current": 9.246,
       "history": [
-        9.273,
-        9.26,
         9.259,
         9.238,
         9.255,
@@ -21362,9 +21288,11 @@
         9.276,
         9.365,
         9.249,
-        9.266
+        9.266,
+        9.214,
+        9.246
       ],
-      "year_ago": 9.36,
+      "year_ago": 9.41,
       "lat": 43.587762053,
       "lng": 6.926141257,
       "color": "#ef4444"
@@ -21373,10 +21301,8 @@
       "nom": "Gilette",
       "dept": "06",
       "code_bss": "BSS004FHCY/X",
-      "current": 95.43,
+      "current": 95.39,
       "history": [
-        95.71,
-        95.7,
         95.69,
         95.67,
         95.63,
@@ -21388,9 +21314,11 @@
         95.49,
         95.47,
         95.45,
-        95.43
+        95.43,
+        95.4,
+        95.39
       ],
-      "year_ago": 99.77,
+      "year_ago": 99.67,
       "lat": 43.831748442,
       "lng": 7.188607593,
       "color": "#ef4444"
@@ -21398,9 +21326,9 @@
   ],
   "air": [
     {
-      "zone": "Aiglun",
+      "zone": "Le Mas",
       "dept": "06",
-      "date": "2026-09-05",
+      "date": "2026-09-06",
       "indice": 3,
       "label": "Dégradé",
       "color": "#F0E641",
@@ -21434,9 +21362,9 @@
       }
     },
     {
-      "zone": "Amirat",
+      "zone": "Massoins",
       "dept": "06",
-      "date": "2026-09-05",
+      "date": "2026-09-06",
       "indice": 3,
       "label": "Dégradé",
       "color": "#F0E641",
@@ -21470,9 +21398,9 @@
       }
     },
     {
-      "zone": "Andon",
+      "zone": "Menton",
       "dept": "06",
-      "date": "2026-09-05",
+      "date": "2026-09-06",
       "indice": 3,
       "label": "Dégradé",
       "color": "#F0E641",
@@ -21506,9 +21434,9 @@
       }
     },
     {
-      "zone": "Antibes",
+      "zone": "Mouans-Sartoux",
       "dept": "06",
-      "date": "2026-09-05",
+      "date": "2026-09-06",
       "indice": 3,
       "label": "Dégradé",
       "color": "#F0E641",
@@ -21525,15 +21453,15 @@
           "color": "#f59e0b"
         },
         "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
           "indice": 2,
           "label": "Moyen",
           "color": "#eab308"
         },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
         "SO₂": {
           "indice": 0,
           "label": "N.C.",
@@ -21542,9 +21470,9 @@
       }
     },
     {
-      "zone": "Ascros",
+      "zone": "Mougins",
       "dept": "06",
-      "date": "2026-09-05",
+      "date": "2026-09-06",
       "indice": 3,
       "label": "Dégradé",
       "color": "#F0E641",
@@ -21566,9 +21494,9 @@
           "color": "#10b981"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,

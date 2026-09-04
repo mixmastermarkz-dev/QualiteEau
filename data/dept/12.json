@@ -3,7 +3,7 @@
   "nom": "Aveyron",
   "slug": "aveyron",
   "region": "Occitanie",
-  "updated": "03/09/2026 à 16:06",
+  "updated": "04/09/2026 à 15:58",
   "score_eau": 98,
   "nb_communes": 285,
   "potable": [
@@ -53090,10 +53090,8 @@
       "nom": "Saint-Symphorien-de-Thénières",
       "dept": "12",
       "code_bss": "08363X0018/F",
-      "current": 833.573,
+      "current": 833.564,
       "history": [
-        833.631,
-        833.626,
         833.621,
         833.618,
         833.612,
@@ -53105,9 +53103,11 @@
         833.588,
         833.584,
         833.576,
-        833.573
+        833.573,
+        833.568,
+        833.564
       ],
-      "year_ago": 834.54,
+      "year_ago": 834.55,
       "lat": 44.7447,
       "lng": 2.73221,
       "color": "#ef4444"
@@ -53118,25 +53118,25 @@
     {
       "dept": "12",
       "lib_zone": "AVEYRON",
-      "date": "2026-09-04",
+      "date": "2026-07-05",
       "indice_global": 3,
       "label_global": "Moyen",
       "color_global": "#f59e0b",
       "taxa": {
         "Graminées": {
+          "indice": 3,
+          "label": "Moyen",
+          "color": "#f59e0b"
+        },
+        "Olivier": {
           "indice": 1,
           "label": "Très faible",
           "color": "#10b981"
         },
-        "Olivier": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        },
         "Cyprès": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
+          "indice": 1,
+          "label": "Très faible",
+          "color": "#10b981"
         },
         "Platane": {
           "indice": 0,
@@ -53144,14 +53144,14 @@
           "color": "#94a3b8"
         },
         "Ambroisie": {
-          "indice": 3,
-          "label": "Moyen",
-          "color": "#f59e0b"
-        },
-        "Frêne": {
           "indice": 0,
           "label": "N.C.",
           "color": "#94a3b8"
+        },
+        "Frêne": {
+          "indice": 1,
+          "label": "Très faible",
+          "color": "#10b981"
         },
         "Chêne": {
           "indice": 1,
@@ -53159,19 +53159,19 @@
           "color": "#10b981"
         },
         "Urticacées": {
-          "indice": 2,
-          "label": "Faible",
-          "color": "#a3e635"
+          "indice": 3,
+          "label": "Moyen",
+          "color": "#f59e0b"
         },
         "Bouleau": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        },
-        "Armoise": {
           "indice": 1,
           "label": "Très faible",
           "color": "#10b981"
+        },
+        "Armoise": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
         }
       }
     }
