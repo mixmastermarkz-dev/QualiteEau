@@ -3,7 +3,7 @@
   "nom": "Ariège",
   "slug": "ariege",
   "region": "Occitanie",
-  "updated": "04/09/2026 à 15:58",
+  "updated": "05/09/2026 à 15:13",
   "score_eau": 98,
   "nb_communes": 331,
   "potable": [
@@ -22952,11 +22952,6 @@
             "date": "2024-09-16",
             "valeur": 3.0,
             "color": "#ef4444"
-          },
-          {
-            "date": "2024-09-04",
-            "valeur": 14100.0,
-            "color": "#ef4444"
           }
         ],
         "pH": [
@@ -31746,11 +31741,6 @@
             "date": "2024-09-16",
             "valeur": 0.83,
             "color": "#f59e0b"
-          },
-          {
-            "date": "2024-09-04",
-            "valeur": 44100.0,
-            "color": "#ef4444"
           }
         ],
         "Conductivité": [
@@ -33023,39 +33013,11 @@
   ],
   "nappes": [
     {
-      "nom": "Montaut",
-      "dept": "09",
-      "code_bss": "10357X0021/F",
-      "current": 240.685,
-      "history": [
-        240.699,
-        240.702,
-        240.702,
-        240.702,
-        240.7,
-        240.698,
-        240.698,
-        240.696,
-        240.695,
-        240.693,
-        240.689,
-        240.687,
-        240.686,
-        240.685
-      ],
-      "year_ago": 240.64,
-      "lat": 43.225456979,
-      "lng": 1.62794485,
-      "color": "#3b82f6"
-    },
-    {
       "nom": "Mazères",
       "dept": "09",
       "code_bss": "10357X0213/F",
-      "current": 254.306,
+      "current": 254.293,
       "history": [
-        254.402,
-        254.392,
         254.381,
         254.376,
         254.369,
@@ -33067,7 +33029,9 @@
         254.322,
         254.317,
         254.306,
-        254.306
+        254.306,
+        254.298,
+        254.293
       ],
       "year_ago": 254.18,
       "lat": 43.209411174,
@@ -33075,65 +33039,37 @@
       "color": "#3b82f6"
     },
     {
-      "nom": "Balaguères",
+      "nom": "Montaut",
       "dept": "09",
-      "code_bss": "10734X0010/HY",
-      "current": 496.14,
+      "code_bss": "10357X0021/F",
+      "current": 240.679,
       "history": [
-        496.138,
-        496.138,
-        496.139,
-        496.139,
-        496.139,
-        496.139,
-        496.139,
-        496.139,
-        496.139,
-        496.139,
-        496.139,
-        496.14,
-        496.14,
-        496.14
+        240.702,
+        240.702,
+        240.7,
+        240.698,
+        240.698,
+        240.696,
+        240.695,
+        240.693,
+        240.689,
+        240.687,
+        240.686,
+        240.685,
+        240.682,
+        240.679
       ],
-      "year_ago": 496.09,
-      "lat": 42.955443654,
-      "lng": 1.030378406,
-      "color": "#3b82f6"
-    },
-    {
-      "nom": "Cazavet",
-      "dept": "09",
-      "code_bss": "10734X0011/HY",
-      "current": 440.87,
-      "history": [
-        440.868,
-        440.87,
-        440.87,
-        440.871,
-        440.87,
-        440.87,
-        440.87,
-        440.87,
-        440.871,
-        440.871,
-        440.871,
-        440.871,
-        440.871,
-        440.87
-      ],
-      "year_ago": 440.64,
-      "lat": 42.990315316,
-      "lng": 1.048876492,
+      "year_ago": 240.63,
+      "lat": 43.225456979,
+      "lng": 1.62794485,
       "color": "#3b82f6"
     },
     {
       "nom": "Verniolle",
       "dept": "09",
       "code_bss": "10577X0159/F",
-      "current": 315.276,
+      "current": 315.266,
       "history": [
-        315.337,
-        315.332,
         315.327,
         315.322,
         315.32,
@@ -33145,23 +33081,77 @@
         315.291,
         315.285,
         315.281,
-        315.276
+        315.276,
+        315.271,
+        315.266
       ],
-      "year_ago": 315.41,
+      "year_ago": 315.4,
       "lat": 43.081693662,
       "lng": 1.648900398,
       "color": "#ef4444"
+    },
+    {
+      "nom": "Balaguères",
+      "dept": "09",
+      "code_bss": "10734X0010/HY",
+      "current": 496.141,
+      "history": [
+        496.139,
+        496.139,
+        496.139,
+        496.14,
+        496.14,
+        496.14,
+        496.14,
+        496.14,
+        496.14,
+        496.14,
+        496.14,
+        496.141,
+        496.141,
+        496.141
+      ],
+      "year_ago": 496.09,
+      "lat": 42.955443654,
+      "lng": 1.030378406,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Cazavet",
+      "dept": "09",
+      "code_bss": "10734X0011/HY",
+      "current": 440.872,
+      "history": [
+        440.871,
+        440.871,
+        440.871,
+        440.871,
+        440.871,
+        440.87,
+        440.87,
+        440.87,
+        440.871,
+        440.871,
+        440.871,
+        440.871,
+        440.871,
+        440.872
+      ],
+      "year_ago": 440.64,
+      "lat": 42.990315316,
+      "lng": 1.048876492,
+      "color": "#3b82f6"
     }
   ],
   "air": [
     {
-      "zone": "Andelnans",
+      "zone": "TSINGONI",
       "dept": "09",
-      "date": "2026-09-06",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "ATMO Bourgogne-Franche-Comté",
+      "date": "2026-09-07",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Hawa Mayotte",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -33169,19 +33159,19 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
@@ -33191,13 +33181,13 @@
       }
     },
     {
-      "zone": "Angeot",
+      "zone": "SADA",
       "dept": "09",
-      "date": "2026-09-06",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "ATMO Bourgogne-Franche-Comté",
+      "date": "2026-09-07",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Hawa Mayotte",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -33205,19 +33195,19 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
@@ -33227,13 +33217,13 @@
       }
     },
     {
-      "zone": "Anjoutey",
+      "zone": "PAMANDZI",
       "dept": "09",
-      "date": "2026-09-06",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "ATMO Bourgogne-Franche-Comté",
+      "date": "2026-09-07",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Hawa Mayotte",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -33241,19 +33231,19 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
@@ -33263,13 +33253,13 @@
       }
     },
     {
-      "zone": "Argiésans",
+      "zone": "OUANGANI",
       "dept": "09",
-      "date": "2026-09-06",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "ATMO Bourgogne-Franche-Comté",
+      "date": "2026-09-07",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Hawa Mayotte",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -33277,19 +33267,19 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
@@ -33299,13 +33289,13 @@
       }
     },
     {
-      "zone": "Auxelles-Bas",
+      "zone": "M TSANGAMOUJI",
       "dept": "09",
-      "date": "2026-09-06",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "ATMO Bourgogne-Franche-Comté",
+      "date": "2026-09-07",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Hawa Mayotte",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -33313,19 +33303,19 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
@@ -33339,15 +33329,15 @@
     {
       "dept": "09",
       "lib_zone": "ARIEGE",
-      "date": "2026-07-05",
+      "date": "2026-09-06",
       "indice_global": 3,
       "label_global": "Moyen",
       "color_global": "#f59e0b",
       "taxa": {
         "Graminées": {
-          "indice": 3,
-          "label": "Moyen",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Faible",
+          "color": "#a3e635"
         },
         "Olivier": {
           "indice": 1,
@@ -33355,9 +33345,9 @@
           "color": "#10b981"
         },
         "Cyprès": {
-          "indice": 1,
-          "label": "Très faible",
-          "color": "#10b981"
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
         },
         "Platane": {
           "indice": 0,
@@ -33365,14 +33355,14 @@
           "color": "#94a3b8"
         },
         "Ambroisie": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        },
-        "Frêne": {
           "indice": 3,
           "label": "Moyen",
           "color": "#f59e0b"
+        },
+        "Frêne": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
         },
         "Chêne": {
           "indice": 1,
@@ -33380,9 +33370,9 @@
           "color": "#10b981"
         },
         "Urticacées": {
-          "indice": 3,
-          "label": "Moyen",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Faible",
+          "color": "#a3e635"
         },
         "Bouleau": {
           "indice": 1,
@@ -33390,9 +33380,9 @@
           "color": "#10b981"
         },
         "Armoise": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
+          "indice": 1,
+          "label": "Très faible",
+          "color": "#10b981"
         }
       }
     }
