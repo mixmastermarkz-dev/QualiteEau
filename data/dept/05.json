@@ -3,7 +3,7 @@
   "nom": "Hautes-Alpes",
   "slug": "hautes-alpes",
   "region": "Provence-Alpes-Côte d'Azur",
-  "updated": "05/09/2026 à 15:13",
+  "updated": "06/09/2026 à 15:22",
   "score_eau": 98,
   "nb_communes": 162,
   "potable": [
@@ -14368,34 +14368,6 @@
           "color": "#10b981",
           "date": "2025-12-04",
           "realtime": false
-        },
-        "MES": {
-          "valeur": 276.0,
-          "unite": "mg/L",
-          "color": "#ef4444",
-          "date": "2024-09-05",
-          "realtime": false
-        },
-        "Conductivité": {
-          "valeur": 8.5,
-          "unite": "µS/cm",
-          "color": "#10b981",
-          "date": "2024-09-05",
-          "realtime": false
-        },
-        "O2 saturation": {
-          "valeur": 90.0,
-          "unite": "%",
-          "color": "#10b981",
-          "date": "2024-09-05",
-          "realtime": false
-        },
-        "pH": {
-          "valeur": 7.9,
-          "unite": "pH",
-          "color": "#10b981",
-          "date": "2024-09-05",
-          "realtime": false
         }
       },
       "historique": {
@@ -14409,11 +14381,6 @@
             "date": "2025-07-25",
             "valeur": 0.0,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-09-05",
-            "valeur": 0.023,
-            "color": "#10b981"
           }
         ],
         "Nitrates": [
@@ -14425,11 +14392,6 @@
           {
             "date": "2025-07-25",
             "valeur": 0.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-05",
-            "valeur": 0.6,
             "color": "#10b981"
           }
         ],
@@ -14443,43 +14405,10 @@
             "date": "2025-07-25",
             "valeur": 0.0,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-09-05",
-            "valeur": 0.24,
-            "color": "#10b981"
-          }
-        ],
-        "MES": [
-          {
-            "date": "2024-09-05",
-            "valeur": 276.0,
-            "color": "#ef4444"
-          }
-        ],
-        "Conductivité": [
-          {
-            "date": "2024-09-05",
-            "valeur": 8.5,
-            "color": "#10b981"
-          }
-        ],
-        "O2 saturation": [
-          {
-            "date": "2024-09-05",
-            "valeur": 90.0,
-            "color": "#10b981"
-          }
-        ],
-        "pH": [
-          {
-            "date": "2024-09-05",
-            "valeur": 7.9,
-            "color": "#10b981"
           }
         ]
       },
-      "score": 86,
+      "score": 100,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -16018,39 +15947,11 @@
   ],
   "nappes": [
     {
-      "nom": "La Roche-de-Rame",
-      "dept": "05",
-      "code_bss": "08472X0007/F-1",
-      "current": 923.71,
-      "history": [
-        923.96,
-        923.91,
-        923.87,
-        923.84,
-        923.81,
-        923.79,
-        923.77,
-        923.75,
-        923.74,
-        923.73,
-        923.72,
-        923.71,
-        923.7,
-        923.71
-      ],
-      "year_ago": 923.8,
-      "lat": 44.738691198,
-      "lng": 6.582662145,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Saint-Jean-Saint-Nicolas",
       "dept": "05",
       "code_bss": "08466X0009/F2",
-      "current": 1155.81,
+      "current": 1155.74,
       "history": [
-        1156.1,
-        1156.1,
         1156.09,
         1156.08,
         1156.07,
@@ -16062,21 +15963,47 @@
         1155.89,
         1155.88,
         1155.85,
-        1155.81
+        1155.81,
+        1155.78,
+        1155.74
       ],
-      "year_ago": 1156.83,
+      "year_ago": 1156.84,
       "lat": 44.680949438,
       "lng": 6.260818821,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "La Roche-de-Rame",
+      "dept": "05",
+      "code_bss": "08472X0007/F-1",
+      "current": 923.69,
+      "history": [
+        923.87,
+        923.84,
+        923.81,
+        923.79,
+        923.77,
+        923.75,
+        923.74,
+        923.73,
+        923.72,
+        923.71,
+        923.7,
+        923.71,
+        923.69,
+        923.69
+      ],
+      "year_ago": 923.76,
+      "lat": 44.738691198,
+      "lng": 6.582662145,
       "color": "#ef4444"
     },
     {
       "nom": "Aspremont",
       "dept": "05",
       "code_bss": "08688X0023/PZ1",
-      "current": 718.05,
+      "current": 718.06,
       "history": [
-        718.1,
-        718.08,
         718.07,
         718.06,
         718.06,
@@ -16088,9 +16015,11 @@
         718.06,
         718.05,
         718.05,
-        718.05
+        718.05,
+        718.05,
+        718.06
       ],
-      "year_ago": 718.62,
+      "year_ago": 718.41,
       "lat": 44.493443917,
       "lng": 5.728933099,
       "color": "#ef4444"
@@ -16099,10 +16028,8 @@
       "nom": "L'Argentière-la-Bessée",
       "dept": "05",
       "code_bss": "08471X0034/P5",
-      "current": 952.13,
+      "current": 952.1,
       "history": [
-        952.39,
-        952.35,
         952.31,
         952.29,
         952.27,
@@ -16114,9 +16041,11 @@
         952.15,
         952.15,
         952.14,
-        952.13
+        952.13,
+        952.11,
+        952.1
       ],
-      "year_ago": 952.74,
+      "year_ago": 952.7,
       "lat": 44.776271664,
       "lng": 6.558809418,
       "color": "#ef4444"
@@ -16125,10 +16054,8 @@
       "nom": "Val Buëch-Méouge",
       "dept": "05",
       "code_bss": "09172X0078/P",
-      "current": 491.31,
+      "current": 491.3,
       "history": [
-        491.31,
-        491.31,
         491.3,
         491.3,
         491.3,
@@ -16140,7 +16067,9 @@
         491.28,
         491.3,
         491.32,
-        491.31
+        491.31,
+        491.3,
+        491.3
       ],
       "year_ago": 491.53,
       "lat": 44.231230139,
@@ -16150,13 +16079,13 @@
   ],
   "air": [
     {
-      "zone": "La Vendelée",
+      "zone": "Saint-Léger-des-Vignes",
       "dept": "05",
-      "date": "2026-09-07",
+      "date": "2026-09-08",
       "indice": 2,
       "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
+      "color": "#50ccaa",
+      "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -16186,13 +16115,13 @@
       }
     },
     {
-      "zone": "Ver",
+      "zone": "Saint-Loup",
       "dept": "05",
-      "date": "2026-09-07",
+      "date": "2026-09-08",
       "indice": 2,
       "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
+      "color": "#50ccaa",
+      "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -16222,13 +16151,13 @@
       }
     },
     {
-      "zone": "Vernix",
+      "zone": "Saint-Malo-en-Donziois",
       "dept": "05",
-      "date": "2026-09-07",
+      "date": "2026-09-08",
       "indice": 2,
       "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
+      "color": "#50ccaa",
+      "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -16258,13 +16187,13 @@
       }
     },
     {
-      "zone": "Vesly",
+      "zone": "Sainte-Marie",
       "dept": "05",
-      "date": "2026-09-07",
+      "date": "2026-09-08",
       "indice": 2,
       "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
+      "color": "#50ccaa",
+      "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -16294,13 +16223,13 @@
       }
     },
     {
-      "zone": "Le Vicel",
+      "zone": "Saint-Martin-d'Heuille",
       "dept": "05",
-      "date": "2026-09-07",
+      "date": "2026-09-08",
       "indice": 2,
       "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
+      "color": "#50ccaa",
+      "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
           "indice": 1,

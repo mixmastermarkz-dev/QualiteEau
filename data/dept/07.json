@@ -3,7 +3,7 @@
   "nom": "Ardèche",
   "slug": "ardeche",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "05/09/2026 à 15:13",
+  "updated": "06/09/2026 à 15:22",
   "score_eau": 96,
   "nb_communes": 337,
   "potable": [
@@ -28821,10 +28821,8 @@
       "nom": "Aubenas",
       "dept": "07",
       "code_bss": "08651X0038/0038",
-      "current": 295.701,
+      "current": 295.773,
       "history": [
-        295.582,
-        295.391,
         295.52,
         295.301,
         295.422,
@@ -28836,38 +28834,14 @@
         295.585,
         295.634,
         295.69,
-        295.701
+        295.701,
+        295.746,
+        295.773
       ],
-      "year_ago": 297.0,
+      "year_ago": 296.99,
       "lat": 44.619744152,
       "lng": 4.39032624,
       "color": "#ef4444"
-    },
-    {
-      "nom": "Lablachère",
-      "dept": "07",
-      "code_bss": "BSS003GPIS/X",
-      "current": 243.634,
-      "history": [
-        243.63,
-        243.622,
-        243.648,
-        243.61,
-        243.616,
-        243.6,
-        243.627,
-        243.614,
-        243.63,
-        243.605,
-        243.624,
-        243.629,
-        243.659,
-        243.634
-      ],
-      "year_ago": 243.21,
-      "lat": 44.46354371,
-      "lng": 4.214386619,
-      "color": "#3b82f6"
     },
     {
       "nom": "Veyras",
@@ -28875,8 +28849,6 @@
       "code_bss": "08413X0091/F3",
       "current": 442.03,
       "history": [
-        442.02,
-        442.03,
         442.03,
         442.03,
         442.02,
@@ -28888,23 +28860,51 @@
         442.03,
         442.02,
         442.04,
+        442.03,
+        442.05,
         442.03
       ],
       "year_ago": 441.45,
       "lat": 44.733838457,
       "lng": 4.561214887,
       "color": "#3b82f6"
+    },
+    {
+      "nom": "Lablachère",
+      "dept": "07",
+      "code_bss": "BSS003GPIS/X",
+      "current": 243.621,
+      "history": [
+        243.648,
+        243.61,
+        243.616,
+        243.6,
+        243.627,
+        243.614,
+        243.63,
+        243.605,
+        243.624,
+        243.629,
+        243.659,
+        243.634,
+        243.634,
+        243.621
+      ],
+      "year_ago": 243.25,
+      "lat": 44.46354371,
+      "lng": 4.214386619,
+      "color": "#3b82f6"
     }
   ],
   "air": [
     {
-      "zone": "Yville-sur-Seine",
+      "zone": "Chaintré",
       "dept": "07",
-      "date": "2026-09-07",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
+      "date": "2026-09-08",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -28912,9 +28912,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -28934,13 +28934,13 @@
       }
     },
     {
-      "zone": "Yvetot",
+      "zone": "Champagnat",
       "dept": "07",
-      "date": "2026-09-07",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
+      "date": "2026-09-08",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -28948,9 +28948,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -28970,13 +28970,13 @@
       }
     },
     {
-      "zone": "Yvecrique",
+      "zone": "Chânes",
       "dept": "07",
-      "date": "2026-09-07",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
+      "date": "2026-09-08",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -28984,9 +28984,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -29006,13 +29006,13 @@
       }
     },
     {
-      "zone": "Yquebeuf",
+      "zone": "La Chapelle-de-Guinchay",
       "dept": "07",
-      "date": "2026-09-07",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
+      "date": "2026-09-08",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -29020,9 +29020,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -29042,13 +29042,13 @@
       }
     },
     {
-      "zone": "Réalcamp",
+      "zone": "Condal",
       "dept": "07",
-      "date": "2026-09-07",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
+      "date": "2026-09-08",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -29056,9 +29056,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
