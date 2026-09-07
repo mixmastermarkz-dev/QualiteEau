@@ -3,7 +3,7 @@
   "nom": "Cantal",
   "slug": "cantal",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "06/09/2026 à 15:22",
+  "updated": "07/09/2026 à 17:29",
   "score_eau": 96,
   "nb_communes": 251,
   "potable": [
@@ -15170,17 +15170,17 @@
           "date": "2026-04-09",
           "realtime": false
         },
-        "MES": {
-          "valeur": 97.0,
-          "unite": "mg/L",
-          "color": "#ef4444",
-          "date": "2026-04-09",
-          "realtime": false
-        },
         "Phosphore": {
           "valeur": 0.029,
           "unite": "mg/L",
           "color": "#10b981",
+          "date": "2026-04-09",
+          "realtime": false
+        },
+        "MES": {
+          "valeur": 97.0,
+          "unite": "mg/L",
+          "color": "#ef4444",
           "date": "2026-04-09",
           "realtime": false
         },
@@ -15288,33 +15288,6 @@
             "color": "#10b981"
           }
         ],
-        "MES": [
-          {
-            "date": "2026-04-09",
-            "valeur": 97.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2026-02-03",
-            "valeur": 95.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2025-12-04",
-            "valeur": 99.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2025-10-07",
-            "valeur": 149.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2025-08-07",
-            "valeur": 186.0,
-            "color": "#ef4444"
-          }
-        ],
         "Phosphore": [
           {
             "date": "2026-04-09",
@@ -15340,6 +15313,33 @@
             "date": "2025-08-07",
             "valeur": 0.088,
             "color": "#10b981"
+          }
+        ],
+        "MES": [
+          {
+            "date": "2026-04-09",
+            "valeur": 97.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2026-02-03",
+            "valeur": 95.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-12-04",
+            "valeur": 99.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-10-07",
+            "valeur": 149.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-08-07",
+            "valeur": 186.0,
+            "color": "#ef4444"
           }
         ],
         "O2 saturation": [
@@ -15742,15 +15742,15 @@
           "date": "2025-11-20",
           "realtime": false
         },
-        "Phosphore": {
-          "valeur": 0.02,
+        "Nitrates": {
+          "valeur": 4.2,
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-11-20",
           "realtime": false
         },
-        "Nitrates": {
-          "valeur": 4.2,
+        "Phosphore": {
+          "valeur": 0.02,
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2025-11-20",
@@ -15860,33 +15860,6 @@
             "color": "#10b981"
           }
         ],
-        "Phosphore": [
-          {
-            "date": "2025-11-20",
-            "valeur": 0.02,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-09-18",
-            "valeur": 0.03,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-08-21",
-            "valeur": 0.05,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-07-24",
-            "valeur": 0.05,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-06-26",
-            "valeur": 0.07,
-            "color": "#10b981"
-          }
-        ],
         "Nitrates": [
           {
             "date": "2025-11-20",
@@ -15911,6 +15884,33 @@
           {
             "date": "2025-06-26",
             "valeur": 8.1,
+            "color": "#10b981"
+          }
+        ],
+        "Phosphore": [
+          {
+            "date": "2025-11-20",
+            "valeur": 0.02,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-09-18",
+            "valeur": 0.03,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-08-21",
+            "valeur": 0.05,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-07-24",
+            "valeur": 0.05,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-06-26",
+            "valeur": 0.07,
             "color": "#10b981"
           }
         ],
@@ -38243,65 +38243,11 @@
   ],
   "nappes": [
     {
-      "nom": "Teissières-lès-Bouliès",
-      "dept": "15",
-      "code_bss": "08125X0044/F1",
-      "current": 723.122,
-      "history": [
-        723.216,
-        723.201,
-        723.192,
-        723.176,
-        723.181,
-        723.156,
-        723.161,
-        723.134,
-        723.157,
-        723.131,
-        723.149,
-        723.12,
-        723.142,
-        723.122
-      ],
-      "year_ago": 723.26,
-      "lat": 44.820895,
-      "lng": 2.541051,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Molompize",
-      "dept": "15",
-      "code_bss": "07657X0018/P1",
-      "current": 949.484,
-      "history": [
-        949.513,
-        949.512,
-        949.51,
-        949.507,
-        949.505,
-        949.502,
-        949.5,
-        949.498,
-        949.495,
-        949.493,
-        949.491,
-        949.489,
-        949.487,
-        949.484
-      ],
-      "year_ago": 949.69,
-      "lat": 45.242098391,
-      "lng": 3.098887675,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Moussages",
       "dept": "15",
       "code_bss": "07638X0017/MAIRIE",
-      "current": 847.086,
+      "current": 847.081,
       "history": [
-        847.216,
-        847.191,
         847.17,
         847.152,
         847.14,
@@ -38313,9 +38259,11 @@
         847.097,
         847.093,
         847.089,
-        847.086
+        847.086,
+        847.084,
+        847.081
       ],
-      "year_ago": 847.28,
+      "year_ago": 847.23,
       "lat": 45.238404427,
       "lng": 2.467418099,
       "color": "#ef4444"
@@ -38324,10 +38272,8 @@
       "nom": "Roannes-Saint-Mary",
       "dept": "15",
       "code_bss": "08353X0052/F",
-      "current": 766.986,
+      "current": 766.965,
       "history": [
-        767.167,
-        767.16,
         767.152,
         767.142,
         767.132,
@@ -38339,9 +38285,11 @@
         767.023,
         767.005,
         766.995,
-        766.986
+        766.986,
+        766.976,
+        766.965
       ],
-      "year_ago": 767.79,
+      "year_ago": 767.77,
       "lat": 44.811215,
       "lng": 2.400826,
       "color": "#ef4444"
@@ -38352,8 +38300,6 @@
       "code_bss": "07635X0035/F",
       "current": 508.98,
       "history": [
-        509.06,
-        509.04,
         509.04,
         509.02,
         509.04,
@@ -38365,11 +38311,65 @@
         509.02,
         508.98,
         509,
+        508.98,
+        509,
         508.98
       ],
       "year_ago": 509.19,
       "lat": 45.241376056,
       "lng": 2.246274272,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Molompize",
+      "dept": "15",
+      "code_bss": "07657X0018/P1",
+      "current": 949.48,
+      "history": [
+        949.51,
+        949.507,
+        949.505,
+        949.502,
+        949.5,
+        949.498,
+        949.495,
+        949.493,
+        949.491,
+        949.489,
+        949.487,
+        949.484,
+        949.482,
+        949.48
+      ],
+      "year_ago": 949.68,
+      "lat": 45.242098391,
+      "lng": 3.098887675,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Teissières-lès-Bouliès",
+      "dept": "15",
+      "code_bss": "08125X0044/F1",
+      "current": 723.117,
+      "history": [
+        723.192,
+        723.176,
+        723.181,
+        723.156,
+        723.161,
+        723.134,
+        723.157,
+        723.131,
+        723.149,
+        723.12,
+        723.142,
+        723.122,
+        723.14,
+        723.117
+      ],
+      "year_ago": 723.26,
+      "lat": 44.820895,
+      "lng": 2.541051,
       "color": "#ef4444"
     }
   ],
@@ -38377,10 +38377,10 @@
     {
       "zone": "Gourdièges",
       "dept": "15",
-      "date": "2026-09-08",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-09-09",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
@@ -38389,9 +38389,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
@@ -38413,10 +38413,10 @@
     {
       "zone": "Jabrun",
       "dept": "15",
-      "date": "2026-09-08",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-09-09",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
@@ -38425,9 +38425,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
@@ -38447,12 +38447,12 @@
       }
     },
     {
-      "zone": "Lacapelle-Barrès",
+      "zone": "Jaleyrac",
       "dept": "15",
-      "date": "2026-09-08",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-09-09",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
@@ -38461,9 +38461,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
@@ -38483,12 +38483,12 @@
       }
     },
     {
-      "zone": "Labrousse",
+      "zone": "Joursac",
       "dept": "15",
-      "date": "2026-09-08",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-09-09",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
@@ -38497,9 +38497,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
@@ -38519,12 +38519,12 @@
       }
     },
     {
-      "zone": "Labesserette",
+      "zone": "Laroquebrou",
       "dept": "15",
-      "date": "2026-09-08",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-09-09",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
@@ -38533,9 +38533,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,

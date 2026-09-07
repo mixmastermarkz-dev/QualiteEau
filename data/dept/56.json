@@ -3,7 +3,7 @@
   "nom": "Morbihan",
   "slug": "morbihan",
   "region": "Bretagne",
-  "updated": "06/09/2026 à 15:22",
+  "updated": "07/09/2026 à 17:29",
   "score_eau": 98,
   "nb_communes": 250,
   "potable": [
@@ -16012,6 +16012,13 @@
           "date": "2026-04-24",
           "realtime": false
         },
+        "MES": {
+          "valeur": 225.0,
+          "unite": "mg/L",
+          "color": "#ef4444",
+          "date": "2026-04-24",
+          "realtime": false
+        },
         "Ammonium": {
           "valeur": 2.2,
           "unite": "mg/L",
@@ -16023,13 +16030,6 @@
           "valeur": 0.053,
           "unite": "mg/L",
           "color": "#10b981",
-          "date": "2026-04-24",
-          "realtime": false
-        },
-        "MES": {
-          "valeur": 225.0,
-          "unite": "mg/L",
-          "color": "#ef4444",
           "date": "2026-04-24",
           "realtime": false
         },
@@ -16080,6 +16080,18 @@
             "color": "#10b981"
           }
         ],
+        "MES": [
+          {
+            "date": "2026-04-24",
+            "valeur": 225.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2026-02-26",
+            "valeur": 209.0,
+            "color": "#ef4444"
+          }
+        ],
         "Ammonium": [
           {
             "date": "2026-04-24",
@@ -16102,18 +16114,6 @@
             "date": "2026-02-26",
             "valeur": 0.06,
             "color": "#10b981"
-          }
-        ],
-        "MES": [
-          {
-            "date": "2026-04-24",
-            "valeur": 225.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2026-02-26",
-            "valeur": 209.0,
-            "color": "#ef4444"
           }
         ],
         "Temp. eau": [
@@ -18776,17 +18776,17 @@
           "date": "2026-04-21",
           "realtime": false
         },
-        "O2 saturation": {
-          "valeur": 96.9,
-          "unite": "%",
-          "color": "#10b981",
-          "date": "2026-04-21",
-          "realtime": false
-        },
         "MES": {
           "valeur": 150.0,
           "unite": "mg/L",
           "color": "#ef4444",
+          "date": "2026-04-21",
+          "realtime": false
+        },
+        "O2 saturation": {
+          "valeur": 96.9,
+          "unite": "%",
+          "color": "#10b981",
           "date": "2026-04-21",
           "realtime": false
         },
@@ -18854,33 +18854,6 @@
             "color": "#10b981"
           }
         ],
-        "O2 saturation": [
-          {
-            "date": "2026-04-21",
-            "valeur": 96.9,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-12-09",
-            "valeur": 95.7,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-10-16",
-            "valeur": 101.6,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-08-19",
-            "valeur": 98.2,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-08-11",
-            "valeur": 95.0,
-            "color": "#10b981"
-          }
-        ],
         "MES": [
           {
             "date": "2026-04-21",
@@ -18906,6 +18879,33 @@
             "date": "2025-08-11",
             "valeur": 152.0,
             "color": "#ef4444"
+          }
+        ],
+        "O2 saturation": [
+          {
+            "date": "2026-04-21",
+            "valeur": 96.9,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-12-09",
+            "valeur": 95.7,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-10-16",
+            "valeur": 101.6,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-08-19",
+            "valeur": 98.2,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-08-11",
+            "valeur": 95.0,
+            "color": "#10b981"
           }
         ],
         "Nitrates": [
@@ -21426,16 +21426,16 @@
           "date": "2025-12-03",
           "realtime": false
         },
-        "O2 saturation": {
-          "valeur": 96.9,
-          "unite": "%",
+        "Conductivité": {
+          "valeur": 11.4,
+          "unite": "µS/cm",
           "color": "#10b981",
           "date": "2025-12-03",
           "realtime": false
         },
-        "Conductivité": {
-          "valeur": 11.4,
-          "unite": "µS/cm",
+        "O2 saturation": {
+          "valeur": 96.9,
+          "unite": "%",
           "color": "#10b981",
           "date": "2025-12-03",
           "realtime": false
@@ -21584,33 +21584,6 @@
             "color": "#10b981"
           }
         ],
-        "O2 saturation": [
-          {
-            "date": "2025-12-03",
-            "valeur": 96.9,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-10-07",
-            "valeur": 99.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-08-26",
-            "valeur": 99.5,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-08-12",
-            "valeur": 102.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-07-09",
-            "valeur": 99.0,
-            "color": "#10b981"
-          }
-        ],
         "Conductivité": [
           {
             "date": "2025-12-03",
@@ -21635,6 +21608,33 @@
           {
             "date": "2025-07-09",
             "valeur": 10.35,
+            "color": "#10b981"
+          }
+        ],
+        "O2 saturation": [
+          {
+            "date": "2025-12-03",
+            "valeur": 96.9,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-10-07",
+            "valeur": 99.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-08-26",
+            "valeur": 99.5,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-08-12",
+            "valeur": 102.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-07-09",
+            "valeur": 99.0,
             "color": "#10b981"
           }
         ],
@@ -23095,88 +23095,6 @@
       "score_label": "Moyenne"
     },
     {
-      "nom": "EVEL A MOREAC",
-      "dept": "56",
-      "lat": 47.963919866,
-      "lon": -2.798996623,
-      "nom_cours_eau": "EVEL",
-      "parametres": {
-        "Phosphore": {
-          "valeur": 0.051,
-          "unite": "mg/L",
-          "color": "#10b981",
-          "date": "2025-12-29",
-          "realtime": false
-        },
-        "Nitrates": {
-          "valeur": 55.0,
-          "unite": "mg/L",
-          "color": "#ef4444",
-          "date": "2025-12-29",
-          "realtime": false
-        }
-      },
-      "historique": {
-        "Phosphore": [
-          {
-            "date": "2025-12-29",
-            "valeur": 0.051,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-11-26",
-            "valeur": 0.064,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-10-29",
-            "valeur": 0.085,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-09-24",
-            "valeur": 0.16,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-07-29",
-            "valeur": 0.044,
-            "color": "#10b981"
-          }
-        ],
-        "Nitrates": [
-          {
-            "date": "2025-12-29",
-            "valeur": 55.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2025-11-26",
-            "valeur": 24.0,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2025-10-29",
-            "valeur": 17.0,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2025-09-24",
-            "valeur": 12.0,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2025-07-29",
-            "valeur": 17.0,
-            "color": "#f59e0b"
-          }
-        ]
-      },
-      "score": 50,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
-    },
-    {
       "nom": "RUNIO à NAIZIN",
       "dept": "56",
       "lat": 47.969382939,
@@ -23251,6 +23169,88 @@
             "date": "2025-07-29",
             "valeur": 0.1,
             "color": "#10b981"
+          }
+        ]
+      },
+      "score": 50,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
+      "nom": "EVEL A MOREAC",
+      "dept": "56",
+      "lat": 47.963919866,
+      "lon": -2.798996623,
+      "nom_cours_eau": "EVEL",
+      "parametres": {
+        "Phosphore": {
+          "valeur": 0.051,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-12-29",
+          "realtime": false
+        },
+        "Nitrates": {
+          "valeur": 55.0,
+          "unite": "mg/L",
+          "color": "#ef4444",
+          "date": "2025-12-29",
+          "realtime": false
+        }
+      },
+      "historique": {
+        "Phosphore": [
+          {
+            "date": "2025-12-29",
+            "valeur": 0.051,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-11-26",
+            "valeur": 0.064,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-10-29",
+            "valeur": 0.085,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-09-24",
+            "valeur": 0.16,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-07-29",
+            "valeur": 0.044,
+            "color": "#10b981"
+          }
+        ],
+        "Nitrates": [
+          {
+            "date": "2025-12-29",
+            "valeur": 55.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-11-26",
+            "valeur": 24.0,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2025-10-29",
+            "valeur": 17.0,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2025-09-24",
+            "valeur": 12.0,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2025-07-29",
+            "valeur": 17.0,
+            "color": "#f59e0b"
           }
         ]
       },
@@ -24467,6 +24467,382 @@
       "score_label": "Mauvaise"
     },
     {
+      "nom": "RAU DU MOULIN DU MINY à PLOERMEL",
+      "dept": "56",
+      "lat": 47.953519525,
+      "lon": -2.392074344,
+      "nom_cours_eau": "RAU DU MOULIN DU MINY À PLOERMEL",
+      "parametres": {
+        "Phosphore": {
+          "valeur": 0.041,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-12-23",
+          "realtime": false
+        },
+        "Nitrates": {
+          "valeur": 37.0,
+          "unite": "mg/L",
+          "color": "#ef4444",
+          "date": "2025-12-23",
+          "realtime": false
+        }
+      },
+      "historique": {
+        "Phosphore": [
+          {
+            "date": "2025-12-23",
+            "valeur": 0.0413,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-12-19",
+            "valeur": 0.059,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-11-26",
+            "valeur": 0.0392,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-10-28",
+            "valeur": 0.0749,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-10-20",
+            "valeur": 0.07,
+            "color": "#10b981"
+          }
+        ],
+        "Nitrates": [
+          {
+            "date": "2025-12-23",
+            "valeur": 37.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-11-26",
+            "valeur": 35.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-10-28",
+            "valeur": 7.5,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-09-29",
+            "valeur": 9.4,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-07-29",
+            "valeur": 27.0,
+            "color": "#ef4444"
+          }
+        ]
+      },
+      "score": 50,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
+      "nom": "RAU DE CAMET à MAURON",
+      "dept": "56",
+      "lat": 48.060712578,
+      "lon": -2.349981336,
+      "nom_cours_eau": "RAU DE CAMET À MAURON",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 50.0,
+          "unite": "mg/L",
+          "color": "#ef4444",
+          "date": "2025-12-23",
+          "realtime": false
+        },
+        "Phosphore": {
+          "valeur": 0.049,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-12-23",
+          "realtime": false
+        }
+      },
+      "historique": {
+        "Nitrates": [
+          {
+            "date": "2025-12-23",
+            "valeur": 50.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-11-26",
+            "valeur": 45.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-10-28",
+            "valeur": 8.5,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-09-29",
+            "valeur": 11.0,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2025-07-29",
+            "valeur": 8.7,
+            "color": "#10b981"
+          }
+        ],
+        "Phosphore": [
+          {
+            "date": "2025-12-23",
+            "valeur": 0.0488,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-12-19",
+            "valeur": 0.0924,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-11-26",
+            "valeur": 0.0765,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-10-28",
+            "valeur": 0.062,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-10-20",
+            "valeur": 0.0942,
+            "color": "#10b981"
+          }
+        ]
+      },
+      "score": 50,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
+      "nom": "SAUDRAYE À GUIDEL",
+      "dept": "56",
+      "lat": 47.775274113,
+      "lon": -3.496247305,
+      "nom_cours_eau": "SAUDRAYE À GUIDEL",
+      "parametres": {
+        "Phosphore": {
+          "valeur": 0.11,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-12-23",
+          "realtime": false
+        },
+        "Nitrates": {
+          "valeur": 22.0,
+          "unite": "mg/L",
+          "color": "#f59e0b",
+          "date": "2025-12-23",
+          "realtime": false
+        }
+      },
+      "historique": {
+        "Phosphore": [
+          {
+            "date": "2025-12-23",
+            "valeur": 0.11,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-11-27",
+            "valeur": 0.17,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-10-30",
+            "valeur": 0.18,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-09-30",
+            "valeur": 0.26,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2025-08-28",
+            "valeur": 0.27,
+            "color": "#f59e0b"
+          }
+        ],
+        "Nitrates": [
+          {
+            "date": "2025-12-23",
+            "valeur": 22.0,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2025-11-27",
+            "valeur": 20.0,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2025-10-30",
+            "valeur": 17.0,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2025-09-30",
+            "valeur": 29.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-08-28",
+            "valeur": 22.0,
+            "color": "#f59e0b"
+          }
+        ]
+      },
+      "score": 75,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
+      "nom": "LA PERCHE A PLEUGRIFFET",
+      "dept": "56",
+      "lat": 47.997548283,
+      "lon": -2.668756354,
+      "nom_cours_eau": "LA PERCHE",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 37.0,
+          "unite": "mg/L",
+          "color": "#ef4444",
+          "date": "2025-12-23",
+          "realtime": false
+        },
+        "Phosphore": {
+          "valeur": 0.066,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2025-12-19",
+          "realtime": false
+        }
+      },
+      "historique": {
+        "Nitrates": [
+          {
+            "date": "2025-12-23",
+            "valeur": 37.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-11-26",
+            "valeur": 24.0,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2025-10-28",
+            "valeur": 31.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-09-29",
+            "valeur": 37.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-08-27",
+            "valeur": 33.0,
+            "color": "#ef4444"
+          }
+        ],
+        "Phosphore": [
+          {
+            "date": "2025-12-19",
+            "valeur": 0.0661,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-11-26",
+            "valeur": 0.029,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-10-20",
+            "valeur": 0.0715,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-09-03",
+            "valeur": 0.12,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-08-27",
+            "valeur": 0.0768,
+            "color": "#10b981"
+          }
+        ]
+      },
+      "score": 50,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
+      "nom": "LA VILLE OGER A GUEGON",
+      "dept": "56",
+      "lat": 47.965848496,
+      "lon": -2.625809017,
+      "nom_cours_eau": "LA VILLE OGER",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 47.0,
+          "unite": "mg/L",
+          "color": "#ef4444",
+          "date": "2025-12-23",
+          "realtime": false
+        }
+      },
+      "historique": {
+        "Nitrates": [
+          {
+            "date": "2025-12-23",
+            "valeur": 47.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-11-26",
+            "valeur": 30.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-10-28",
+            "valeur": 24.0,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2025-09-29",
+            "valeur": 31.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-08-27",
+            "valeur": 19.0,
+            "color": "#f59e0b"
+          }
+        ]
+      },
+      "score": 0,
+      "score_color": "#ef4444",
+      "score_label": "Mauvaise"
+    },
+    {
       "nom": "COMBS à QUELNEUC",
       "dept": "56",
       "lat": 47.830063454,
@@ -24631,218 +25007,6 @@
       "score_label": "Moyenne"
     },
     {
-      "nom": "LA PERCHE A PLEUGRIFFET",
-      "dept": "56",
-      "lat": 47.997548283,
-      "lon": -2.668756354,
-      "nom_cours_eau": "LA PERCHE",
-      "parametres": {
-        "Nitrates": {
-          "valeur": 37.0,
-          "unite": "mg/L",
-          "color": "#ef4444",
-          "date": "2025-12-23",
-          "realtime": false
-        },
-        "Phosphore": {
-          "valeur": 0.066,
-          "unite": "mg/L",
-          "color": "#10b981",
-          "date": "2025-12-19",
-          "realtime": false
-        }
-      },
-      "historique": {
-        "Nitrates": [
-          {
-            "date": "2025-12-23",
-            "valeur": 37.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2025-11-26",
-            "valeur": 24.0,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2025-10-28",
-            "valeur": 31.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2025-09-29",
-            "valeur": 37.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2025-08-27",
-            "valeur": 33.0,
-            "color": "#ef4444"
-          }
-        ],
-        "Phosphore": [
-          {
-            "date": "2025-12-19",
-            "valeur": 0.0661,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-11-26",
-            "valeur": 0.029,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-10-20",
-            "valeur": 0.0715,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-09-03",
-            "valeur": 0.12,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-08-27",
-            "valeur": 0.0768,
-            "color": "#10b981"
-          }
-        ]
-      },
-      "score": 50,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
-    },
-    {
-      "nom": "LA VILLE OGER A GUEGON",
-      "dept": "56",
-      "lat": 47.965848496,
-      "lon": -2.625809017,
-      "nom_cours_eau": "LA VILLE OGER",
-      "parametres": {
-        "Nitrates": {
-          "valeur": 47.0,
-          "unite": "mg/L",
-          "color": "#ef4444",
-          "date": "2025-12-23",
-          "realtime": false
-        }
-      },
-      "historique": {
-        "Nitrates": [
-          {
-            "date": "2025-12-23",
-            "valeur": 47.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2025-11-26",
-            "valeur": 30.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2025-10-28",
-            "valeur": 24.0,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2025-09-29",
-            "valeur": 31.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2025-08-27",
-            "valeur": 19.0,
-            "color": "#f59e0b"
-          }
-        ]
-      },
-      "score": 0,
-      "score_color": "#ef4444",
-      "score_label": "Mauvaise"
-    },
-    {
-      "nom": "RAU DU MOULIN DU MINY à PLOERMEL",
-      "dept": "56",
-      "lat": 47.953519525,
-      "lon": -2.392074344,
-      "nom_cours_eau": "RAU DU MOULIN DU MINY À PLOERMEL",
-      "parametres": {
-        "Phosphore": {
-          "valeur": 0.041,
-          "unite": "mg/L",
-          "color": "#10b981",
-          "date": "2025-12-23",
-          "realtime": false
-        },
-        "Nitrates": {
-          "valeur": 37.0,
-          "unite": "mg/L",
-          "color": "#ef4444",
-          "date": "2025-12-23",
-          "realtime": false
-        }
-      },
-      "historique": {
-        "Phosphore": [
-          {
-            "date": "2025-12-23",
-            "valeur": 0.0413,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-12-19",
-            "valeur": 0.059,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-11-26",
-            "valeur": 0.0392,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-10-28",
-            "valeur": 0.0749,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-10-20",
-            "valeur": 0.07,
-            "color": "#10b981"
-          }
-        ],
-        "Nitrates": [
-          {
-            "date": "2025-12-23",
-            "valeur": 37.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2025-11-26",
-            "valeur": 35.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2025-10-28",
-            "valeur": 7.5,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-09-29",
-            "valeur": 9.4,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-07-29",
-            "valeur": 27.0,
-            "color": "#ef4444"
-          }
-        ]
-      },
-      "score": 50,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
-    },
-    {
       "nom": "RUISSEAU DU SCAVE à PONT-SCORFF",
       "dept": "56",
       "lat": 47.808286201,
@@ -24999,170 +25163,6 @@
             "date": "2025-08-27",
             "valeur": 0.77,
             "color": "#ef4444"
-          }
-        ]
-      },
-      "score": 50,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
-    },
-    {
-      "nom": "SAUDRAYE À GUIDEL",
-      "dept": "56",
-      "lat": 47.775274113,
-      "lon": -3.496247305,
-      "nom_cours_eau": "SAUDRAYE À GUIDEL",
-      "parametres": {
-        "Phosphore": {
-          "valeur": 0.11,
-          "unite": "mg/L",
-          "color": "#10b981",
-          "date": "2025-12-23",
-          "realtime": false
-        },
-        "Nitrates": {
-          "valeur": 22.0,
-          "unite": "mg/L",
-          "color": "#f59e0b",
-          "date": "2025-12-23",
-          "realtime": false
-        }
-      },
-      "historique": {
-        "Phosphore": [
-          {
-            "date": "2025-12-23",
-            "valeur": 0.11,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-11-27",
-            "valeur": 0.17,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-10-30",
-            "valeur": 0.18,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-09-30",
-            "valeur": 0.26,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2025-08-28",
-            "valeur": 0.27,
-            "color": "#f59e0b"
-          }
-        ],
-        "Nitrates": [
-          {
-            "date": "2025-12-23",
-            "valeur": 22.0,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2025-11-27",
-            "valeur": 20.0,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2025-10-30",
-            "valeur": 17.0,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2025-09-30",
-            "valeur": 29.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2025-08-28",
-            "valeur": 22.0,
-            "color": "#f59e0b"
-          }
-        ]
-      },
-      "score": 75,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
-    },
-    {
-      "nom": "RAU DE CAMET à MAURON",
-      "dept": "56",
-      "lat": 48.060712578,
-      "lon": -2.349981336,
-      "nom_cours_eau": "RAU DE CAMET À MAURON",
-      "parametres": {
-        "Nitrates": {
-          "valeur": 50.0,
-          "unite": "mg/L",
-          "color": "#ef4444",
-          "date": "2025-12-23",
-          "realtime": false
-        },
-        "Phosphore": {
-          "valeur": 0.049,
-          "unite": "mg/L",
-          "color": "#10b981",
-          "date": "2025-12-23",
-          "realtime": false
-        }
-      },
-      "historique": {
-        "Nitrates": [
-          {
-            "date": "2025-12-23",
-            "valeur": 50.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2025-11-26",
-            "valeur": 45.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2025-10-28",
-            "valeur": 8.5,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-09-29",
-            "valeur": 11.0,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2025-07-29",
-            "valeur": 8.7,
-            "color": "#10b981"
-          }
-        ],
-        "Phosphore": [
-          {
-            "date": "2025-12-23",
-            "valeur": 0.0488,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-12-19",
-            "valeur": 0.0924,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-11-26",
-            "valeur": 0.0765,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-10-28",
-            "valeur": 0.062,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-10-20",
-            "valeur": 0.0942,
-            "color": "#10b981"
           }
         ]
       },
@@ -27087,17 +27087,17 @@
       "lon": -2.882080299,
       "nom_cours_eau": "SAL À PLUMERGAT",
       "parametres": {
-        "MES": {
-          "valeur": 238.0,
-          "unite": "mg/L",
-          "color": "#ef4444",
-          "date": "2025-12-18",
-          "realtime": false
-        },
         "pH": {
           "valeur": 6.8,
           "unite": "pH",
           "color": "#10b981",
+          "date": "2025-12-18",
+          "realtime": false
+        },
+        "MES": {
+          "valeur": 238.0,
+          "unite": "mg/L",
+          "color": "#ef4444",
           "date": "2025-12-18",
           "realtime": false
         },
@@ -27145,33 +27145,6 @@
         }
       },
       "historique": {
-        "MES": [
-          {
-            "date": "2025-12-18",
-            "valeur": 238.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2025-11-19",
-            "valeur": 337.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2025-10-16",
-            "valeur": 346.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2025-09-17",
-            "valeur": 490.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2025-08-21",
-            "valeur": 232.0,
-            "color": "#ef4444"
-          }
-        ],
         "pH": [
           {
             "date": "2025-12-18",
@@ -27197,6 +27170,33 @@
             "date": "2025-08-21",
             "valeur": 7.1,
             "color": "#10b981"
+          }
+        ],
+        "MES": [
+          {
+            "date": "2025-12-18",
+            "valeur": 238.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-11-19",
+            "valeur": 337.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-10-16",
+            "valeur": 346.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-09-17",
+            "valeur": 490.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-08-21",
+            "valeur": 232.0,
+            "color": "#ef4444"
           }
         ],
         "Phosphore": [
@@ -27666,17 +27666,17 @@
           "date": "2025-12-17",
           "realtime": false
         },
-        "Conductivité": {
-          "valeur": 11.5,
-          "unite": "µS/cm",
-          "color": "#10b981",
-          "date": "2025-12-17",
-          "realtime": false
-        },
         "Nitrates": {
           "valeur": 21.0,
           "unite": "mg/L",
           "color": "#f59e0b",
+          "date": "2025-12-17",
+          "realtime": false
+        },
+        "Conductivité": {
+          "valeur": 11.5,
+          "unite": "µS/cm",
+          "color": "#10b981",
           "date": "2025-12-17",
           "realtime": false
         },
@@ -27744,33 +27744,6 @@
             "color": "#ef4444"
           }
         ],
-        "Conductivité": [
-          {
-            "date": "2025-12-17",
-            "valeur": 11.5,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-11-20",
-            "valeur": 12.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-10-15",
-            "valeur": 10.5,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-09-18",
-            "valeur": 9.7,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-08-20",
-            "valeur": 8.3,
-            "color": "#10b981"
-          }
-        ],
         "Nitrates": [
           {
             "date": "2025-12-17",
@@ -27796,6 +27769,33 @@
             "date": "2025-08-20",
             "valeur": 14.0,
             "color": "#f59e0b"
+          }
+        ],
+        "Conductivité": [
+          {
+            "date": "2025-12-17",
+            "valeur": 11.5,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-11-20",
+            "valeur": 12.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-10-15",
+            "valeur": 10.5,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-09-18",
+            "valeur": 9.7,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-08-20",
+            "valeur": 8.3,
+            "color": "#10b981"
           }
         ],
         "O2 saturation": [
@@ -33226,6 +33226,13 @@
           "date": "2025-12-09",
           "realtime": false
         },
+        "Nitrates": {
+          "valeur": 23.0,
+          "unite": "mg/L",
+          "color": "#f59e0b",
+          "date": "2025-12-09",
+          "realtime": false
+        },
         "pH": {
           "valeur": 6.9,
           "unite": "pH",
@@ -33237,13 +33244,6 @@
           "valeur": 11.8,
           "unite": "°C",
           "color": "#10b981",
-          "date": "2025-12-09",
-          "realtime": false
-        },
-        "Nitrates": {
-          "valeur": 23.0,
-          "unite": "mg/L",
-          "color": "#f59e0b",
           "date": "2025-12-09",
           "realtime": false
         },
@@ -33304,6 +33304,33 @@
             "color": "#10b981"
           }
         ],
+        "Nitrates": [
+          {
+            "date": "2025-12-09",
+            "valeur": 23.0,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2025-10-16",
+            "valeur": 27.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-08-19",
+            "valeur": 25.0,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2025-06-16",
+            "valeur": 29.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-04-08",
+            "valeur": 26.0,
+            "color": "#ef4444"
+          }
+        ],
         "pH": [
           {
             "date": "2025-12-09",
@@ -33356,33 +33383,6 @@
             "date": "2025-08-19",
             "valeur": 18.2,
             "color": "#10b981"
-          }
-        ],
-        "Nitrates": [
-          {
-            "date": "2025-12-09",
-            "valeur": 23.0,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2025-10-16",
-            "valeur": 27.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2025-08-19",
-            "valeur": 25.0,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2025-06-16",
-            "valeur": 29.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2025-04-08",
-            "valeur": 26.0,
-            "color": "#ef4444"
           }
         ],
         "Conductivité": [
@@ -35516,8 +35516,8 @@
           },
           {
             "date": "2025-10-08",
-            "valeur": 17.839,
-            "color": "#ef4444"
+            "valeur": 77.576,
+            "color": "#10b981"
           }
         ],
         "Conductivité": [
@@ -37673,6 +37673,58 @@
   ],
   "nappes": [
     {
+      "nom": "Grand-Champ",
+      "dept": "56",
+      "code_bss": "03851X0021/S2",
+      "current": 69.6,
+      "history": [
+        69.64,
+        69.645,
+        69.633,
+        69.637,
+        69.624,
+        69.629,
+        69.624,
+        69.627,
+        69.62,
+        69.619,
+        69.608,
+        69.608,
+        69.599,
+        69.6
+      ],
+      "year_ago": 69.67,
+      "lat": 47.790161061,
+      "lng": -2.817043293,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Ploërdut",
+      "dept": "56",
+      "code_bss": "03128X0011/F",
+      "current": 195.03,
+      "history": [
+        195.12,
+        195.11,
+        195.11,
+        195.1,
+        195.09,
+        195.08,
+        195.08,
+        195.07,
+        195.07,
+        195.05,
+        195.06,
+        195.04,
+        195.05,
+        195.03
+      ],
+      "year_ago": 195.26,
+      "lat": 48.089265719,
+      "lng": -3.276192963,
+      "color": "#ef4444"
+    },
+    {
       "nom": "Bieuzy",
       "dept": "56",
       "code_bss": "03493X0013/F",
@@ -37693,7 +37745,7 @@
         150.23,
         150.23
       ],
-      "year_ago": 150.78,
+      "year_ago": 150.76,
       "lat": 48.007676499,
       "lng": -3.032407561,
       "color": "#ef4444"
@@ -37702,10 +37754,8 @@
       "nom": "Saint-Jacut-les-Pins",
       "dept": "56",
       "code_bss": "04184X0035/F",
-      "current": 41.06,
+      "current": 41.05,
       "history": [
-        41.12,
-        41.11,
         41.11,
         41.1,
         41.1,
@@ -37717,73 +37767,21 @@
         41.07,
         41.07,
         41.06,
-        41.06
+        41.06,
+        41.06,
+        41.05
       ],
-      "year_ago": 41.63,
+      "year_ago": 41.57,
       "lat": 47.686307481,
       "lng": -2.206149523,
       "color": "#ef4444"
     },
     {
-      "nom": "Ploërdut",
-      "dept": "56",
-      "code_bss": "03128X0011/F",
-      "current": 195.04,
-      "history": [
-        195.15,
-        195.13,
-        195.12,
-        195.11,
-        195.11,
-        195.1,
-        195.09,
-        195.08,
-        195.08,
-        195.07,
-        195.07,
-        195.05,
-        195.06,
-        195.04
-      ],
-      "year_ago": 195.26,
-      "lat": 48.089265719,
-      "lng": -3.276192963,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Baud",
-      "dept": "56",
-      "code_bss": "03843X0021/PZ",
-      "current": 57.65,
-      "history": [
-        57.62,
-        57.62,
-        57.63,
-        57.63,
-        57.63,
-        57.63,
-        57.64,
-        57.64,
-        57.65,
-        57.64,
-        57.65,
-        57.64,
-        57.66,
-        57.65
-      ],
-      "year_ago": 57.27,
-      "lat": 47.870106727,
-      "lng": -3.013942635,
-      "color": "#3b82f6"
-    },
-    {
       "nom": "Bignan",
       "dept": "56",
       "code_bss": "03506X0059/F",
-      "current": 86.439,
+      "current": 86.435,
       "history": [
-        86.464,
-        86.462,
         86.455,
         86.457,
         86.453,
@@ -37795,7 +37793,9 @@
         86.442,
         86.438,
         86.44,
-        86.439
+        86.439,
+        86.438,
+        86.435
       ],
       "year_ago": 86.46,
       "lat": 47.889562712,
@@ -37803,65 +37803,11 @@
       "color": "#ef4444"
     },
     {
-      "nom": "Theix-Noyalo",
-      "dept": "56",
-      "code_bss": "BSS003DJYA/X",
-      "current": 12.04,
-      "history": [
-        12.12,
-        12.12,
-        12.1,
-        12.09,
-        12.09,
-        12.08,
-        12.08,
-        12.06,
-        12.08,
-        12.05,
-        12.08,
-        12.04,
-        12.08,
-        12.04
-      ],
-      "year_ago": 12.94,
-      "lat": 47.640548391,
-      "lng": -2.626853854,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Ploërmel",
-      "dept": "56",
-      "code_bss": "03516X0036/PZ",
-      "current": 51.19,
-      "history": [
-        51.36,
-        51.35,
-        51.33,
-        51.31,
-        51.3,
-        51.28,
-        51.28,
-        51.26,
-        51.25,
-        51.24,
-        51.24,
-        51.22,
-        51.2,
-        51.19
-      ],
-      "year_ago": 52.08,
-      "lat": 47.950873394,
-      "lng": -2.397366377,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Pontivy",
       "dept": "56",
       "code_bss": "03137X0026/PZ",
-      "current": 62.53,
+      "current": 62.52,
       "history": [
-        62.61,
-        62.65,
         62.62,
         62.6,
         62.6,
@@ -37873,9 +37819,11 @@
         62.55,
         62.54,
         62.54,
-        62.53
+        62.53,
+        62.53,
+        62.52
       ],
-      "year_ago": 62.88,
+      "year_ago": 62.87,
       "lat": 48.082758634,
       "lng": -2.978267016,
       "color": "#ef4444"
@@ -37884,14 +37832,8 @@
       "nom": "Missiriac",
       "dept": "56",
       "code_bss": "03862X0057/PZ",
-      "current": 18.776,
+      "current": 18.761,
       "history": [
-        18.748,
-        18.783,
-        18.761,
-        18.785,
-        18.757,
-        18.782,
         18.753,
         18.779,
         18.74,
@@ -37899,7 +37841,13 @@
         18.732,
         18.77,
         18.755,
-        18.776
+        18.776,
+        18.748,
+        18.771,
+        18.725,
+        18.766,
+        18.719,
+        18.761
       ],
       "year_ago": 18.91,
       "lat": 47.813252006,
@@ -37910,12 +37858,8 @@
       "nom": "Hennebont",
       "dept": "56",
       "code_bss": "03834X0049/PZ",
-      "current": 22.068,
+      "current": 22.046,
       "history": [
-        22.088,
-        22.114,
-        22.104,
-        22.17,
         22.194,
         22.19,
         22.16,
@@ -37925,9 +37869,13 @@
         22.118,
         22.096,
         22.092,
-        22.068
+        22.068,
+        22.064,
+        22.046,
+        22.06,
+        22.046
       ],
-      "year_ago": 23.07,
+      "year_ago": 23.06,
       "lat": 47.804937076,
       "lng": -3.270288833,
       "color": "#ef4444"
@@ -37936,10 +37884,8 @@
       "nom": "Guer",
       "dept": "56",
       "code_bss": "03871X0016/F",
-      "current": 62.965,
+      "current": 62.959,
       "history": [
-        63.027,
-        63.023,
         63.016,
         63.011,
         63.007,
@@ -37951,7 +37897,9 @@
         62.982,
         62.974,
         62.972,
-        62.965
+        62.965,
+        62.968,
+        62.959
       ],
       "year_ago": 63.26,
       "lat": 47.855734114,
@@ -37959,29 +37907,81 @@
       "color": "#ef4444"
     },
     {
-      "nom": "Grand-Champ",
+      "nom": "Theix-Noyalo",
       "dept": "56",
-      "code_bss": "03851X0021/S2",
-      "current": 69.608,
+      "code_bss": "BSS003DJYA/X",
+      "current": 12.04,
       "history": [
-        69.653,
-        69.653,
-        69.64,
-        69.645,
-        69.633,
-        69.637,
-        69.624,
-        69.629,
-        69.624,
-        69.627,
-        69.62,
-        69.619,
-        69.608,
-        69.608
+        12.1,
+        12.09,
+        12.09,
+        12.08,
+        12.08,
+        12.06,
+        12.08,
+        12.05,
+        12.08,
+        12.04,
+        12.08,
+        12.04,
+        12.07,
+        12.04
       ],
-      "year_ago": 69.68,
-      "lat": 47.790161061,
-      "lng": -2.817043293,
+      "year_ago": 12.93,
+      "lat": 47.640548391,
+      "lng": -2.626853854,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Baud",
+      "dept": "56",
+      "code_bss": "03843X0021/PZ",
+      "current": 57.65,
+      "history": [
+        57.63,
+        57.63,
+        57.63,
+        57.63,
+        57.64,
+        57.64,
+        57.65,
+        57.64,
+        57.65,
+        57.64,
+        57.66,
+        57.65,
+        57.67,
+        57.65
+      ],
+      "year_ago": 57.3,
+      "lat": 47.870106727,
+      "lng": -3.013942635,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Ploërmel",
+      "dept": "56",
+      "code_bss": "03516X0036/PZ",
+      "current": 51.17,
+      "history": [
+        51.33,
+        51.31,
+        51.3,
+        51.28,
+        51.28,
+        51.26,
+        51.25,
+        51.24,
+        51.24,
+        51.22,
+        51.2,
+        51.19,
+        51.19,
+        51.17
+      ],
+      "year_ago": 52.11,
+      "lat": 47.950873394,
+      "lng": -2.397366377,
       "color": "#ef4444"
     }
   ],

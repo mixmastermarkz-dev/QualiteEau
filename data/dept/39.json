@@ -3,7 +3,7 @@
   "nom": "Jura",
   "slug": "jura",
   "region": "Bourgogne-Franche-Comté",
-  "updated": "06/09/2026 à 15:22",
+  "updated": "07/09/2026 à 17:29",
   "score_eau": 98,
   "nb_communes": 500,
   "potable": [
@@ -32651,15 +32651,15 @@
           "date": "2026-03-20",
           "realtime": false
         },
-        "Phosphore": {
-          "valeur": 0.026,
+        "Nitrates": {
+          "valeur": 6.82,
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2026-03-20",
           "realtime": false
         },
-        "Nitrates": {
-          "valeur": 6.82,
+        "Phosphore": {
+          "valeur": 0.026,
           "unite": "mg/L",
           "color": "#10b981",
           "date": "2026-03-20",
@@ -32729,33 +32729,6 @@
             "color": "#ef4444"
           }
         ],
-        "Phosphore": [
-          {
-            "date": "2026-03-20",
-            "valeur": 0.026,
-            "color": "#10b981"
-          },
-          {
-            "date": "2026-01-27",
-            "valeur": 0.011,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-11-26",
-            "valeur": 0.1,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-09-24",
-            "valeur": 0.037,
-            "color": "#10b981"
-          },
-          {
-            "date": "2025-09-22",
-            "valeur": 0.018,
-            "color": "#10b981"
-          }
-        ],
         "Nitrates": [
           {
             "date": "2026-03-20",
@@ -32780,6 +32753,33 @@
           {
             "date": "2025-09-22",
             "valeur": 7.0,
+            "color": "#10b981"
+          }
+        ],
+        "Phosphore": [
+          {
+            "date": "2026-03-20",
+            "valeur": 0.026,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-01-27",
+            "valeur": 0.011,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-11-26",
+            "valeur": 0.1,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-09-24",
+            "valeur": 0.037,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-09-22",
+            "valeur": 0.018,
             "color": "#10b981"
           }
         ],
@@ -34785,7 +34785,7 @@
           },
           {
             "date": "2025-09-10",
-            "valeur": 10.9,
+            "valeur": 0.5,
             "color": "#10b981"
           }
         ],
@@ -35433,7 +35433,7 @@
           },
           {
             "date": "2025-09-09",
-            "valeur": 275.0,
+            "valeur": 264.0,
             "color": "#ef4444"
           }
         ],
@@ -36273,12 +36273,12 @@
           },
           {
             "date": "2024-09-19",
-            "valeur": 107.0,
+            "valeur": 102.0,
             "color": "#10b981"
           },
           {
             "date": "2024-09-19",
-            "valeur": 102.0,
+            "valeur": 107.0,
             "color": "#10b981"
           },
           {
@@ -36324,65 +36324,11 @@
   ],
   "nappes": [
     {
-      "nom": "Thervay",
-      "dept": "39",
-      "code_bss": "05013X0001/SM1",
-      "current": 190.449,
-      "history": [
-        190.452,
-        190.465,
-        190.485,
-        190.495,
-        190.51,
-        190.484,
-        190.506,
-        190.498,
-        190.515,
-        190.503,
-        190.454,
-        190.43,
-        190.423,
-        190.449
-      ],
-      "year_ago": 190.81,
-      "lat": 47.255880567,
-      "lng": 5.591689688,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Ney",
-      "dept": "39",
-      "code_bss": "05822X0024/F1",
-      "current": 526.907,
-      "history": [
-        526.933,
-        526.93,
-        526.928,
-        526.927,
-        526.925,
-        526.923,
-        526.92,
-        526.92,
-        526.917,
-        526.916,
-        526.912,
-        526.911,
-        526.909,
-        526.907
-      ],
-      "year_ago": 527.56,
-      "lat": 46.7255463,
-      "lng": 5.888461993,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Chatelay",
       "dept": "39",
       "code_bss": "05288X0053/F3",
-      "current": 226.43,
+      "current": 226.415,
       "history": [
-        226.456,
-        226.429,
         226.443,
         226.438,
         226.446,
@@ -36394,11 +36340,91 @@
         226.448,
         226.42,
         226.425,
-        226.43
+        226.43,
+        226.438,
+        226.415
       ],
-      "year_ago": 226.52,
+      "year_ago": 226.51,
       "lat": 47.041366802,
       "lng": 5.693898783,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Ney",
+      "dept": "39",
+      "code_bss": "05822X0024/F1",
+      "current": 526.903,
+      "history": [
+        526.928,
+        526.927,
+        526.925,
+        526.923,
+        526.92,
+        526.92,
+        526.917,
+        526.916,
+        526.912,
+        526.911,
+        526.909,
+        526.907,
+        526.905,
+        526.903
+      ],
+      "year_ago": 527.54,
+      "lat": 46.7255463,
+      "lng": 5.888461993,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Oussières",
+      "dept": "39",
+      "code_bss": "05553X0009/S2",
+      "current": 223.739,
+      "history": [
+        223.754,
+        223.751,
+        223.753,
+        223.747,
+        223.749,
+        223.743,
+        223.745,
+        223.745,
+        223.754,
+        223.737,
+        223.736,
+        223.736,
+        223.743,
+        223.739
+      ],
+      "year_ago": 223.85,
+      "lat": 46.901262914,
+      "lng": 5.605880793,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Thervay",
+      "dept": "39",
+      "code_bss": "05013X0001/SM1",
+      "current": 190.428,
+      "history": [
+        190.485,
+        190.495,
+        190.51,
+        190.484,
+        190.506,
+        190.498,
+        190.515,
+        190.503,
+        190.454,
+        190.43,
+        190.423,
+        190.449,
+        190.453,
+        190.428
+      ],
+      "year_ago": 190.82,
+      "lat": 47.255880567,
+      "lng": 5.591689688,
       "color": "#ef4444"
     },
     {
@@ -36428,39 +36454,11 @@
       "color": "#ef4444"
     },
     {
-      "nom": "Hauteroche",
-      "dept": "39",
-      "code_bss": "05818X0073/F",
-      "current": 422.266,
-      "history": [
-        422.597,
-        422.607,
-        422.594,
-        422.528,
-        422.52,
-        422.448,
-        422.454,
-        422.374,
-        422.4,
-        422.33,
-        422.376,
-        422.29,
-        422.336,
-        422.266
-      ],
-      "year_ago": 439.6,
-      "lat": 46.692281217,
-      "lng": 5.68698072,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Molay",
       "dept": "39",
       "code_bss": "05285X0374/P7",
-      "current": 189.461,
+      "current": 189.46,
       "history": [
-        189.45,
-        189.45,
         189.453,
         189.454,
         189.455,
@@ -36472,48 +36470,50 @@
         189.462,
         189.462,
         189.461,
-        189.461
+        189.461,
+        189.461,
+        189.46
       ],
-      "year_ago": 189.92,
+      "year_ago": 189.94,
       "lat": 47.026741742,
       "lng": 5.426979635,
       "color": "#ef4444"
     },
     {
-      "nom": "Oussières",
+      "nom": "Hauteroche",
       "dept": "39",
-      "code_bss": "05553X0009/S2",
-      "current": 223.736,
+      "code_bss": "05818X0073/F",
+      "current": 422.242,
       "history": [
-        223.765,
-        223.752,
-        223.754,
-        223.751,
-        223.753,
-        223.747,
-        223.749,
-        223.743,
-        223.745,
-        223.745,
-        223.754,
-        223.737,
-        223.736,
-        223.736
+        422.594,
+        422.528,
+        422.52,
+        422.448,
+        422.454,
+        422.374,
+        422.4,
+        422.33,
+        422.376,
+        422.29,
+        422.336,
+        422.266,
+        422.308,
+        422.242
       ],
-      "year_ago": 223.85,
-      "lat": 46.901262914,
-      "lng": 5.605880793,
+      "year_ago": 437.85,
+      "lat": 46.692281217,
+      "lng": 5.68698072,
       "color": "#ef4444"
     }
   ],
   "air": [
     {
-      "zone": "Andelot lès Saint-Amour",
+      "zone": "Mont-sous-Vaudrey",
       "dept": "39",
-      "date": "2026-09-08",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-09-09",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -36522,9 +36522,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
@@ -36544,12 +36544,12 @@
       }
     },
     {
-      "zone": "Augea",
+      "zone": "Mont-sur-Monnet",
       "dept": "39",
-      "date": "2026-09-08",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-09-09",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -36558,9 +36558,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
@@ -36580,12 +36580,12 @@
       }
     },
     {
-      "zone": "Balanod",
+      "zone": "Morbier",
       "dept": "39",
-      "date": "2026-09-08",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-09-09",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -36594,9 +36594,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
@@ -36616,12 +36616,12 @@
       }
     },
     {
-      "zone": "Chevreaux",
+      "zone": "Morez",
       "dept": "39",
-      "date": "2026-09-08",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-09-09",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -36630,9 +36630,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
@@ -36652,12 +36652,12 @@
       }
     },
     {
-      "zone": "Cousance",
+      "zone": "Mouchard",
       "dept": "39",
-      "date": "2026-09-08",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-09-09",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -36666,9 +36666,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
