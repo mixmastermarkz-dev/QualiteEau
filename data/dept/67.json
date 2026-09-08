@@ -3,7 +3,7 @@
   "nom": "Bas-Rhin",
   "slug": "bas-rhin",
   "region": "Grand Est",
-  "updated": "07/09/2026 à 17:29",
+  "updated": "08/09/2026 à 16:06",
   "score_eau": 97,
   "nb_communes": 514,
   "potable": [
@@ -54937,10 +54937,8 @@
       "nom": "Gresswiller",
       "dept": "67",
       "code_bss": "02713X0105/PZ1",
-      "current": 197.552,
+      "current": 197.598,
       "history": [
-        197.491,
-        197.564,
         197.472,
         197.567,
         197.496,
@@ -54952,9 +54950,11 @@
         197.458,
         197.426,
         197.468,
-        197.552
+        197.552,
+        197.491,
+        197.598
       ],
-      "year_ago": 198.17,
+      "year_ago": 198.14,
       "lat": 48.520713416,
       "lng": 7.415360799,
       "color": "#ef4444"
@@ -54963,10 +54963,8 @@
       "nom": "Haegen",
       "dept": "67",
       "code_bss": "02332X0198/F3",
-      "current": 207.266,
+      "current": 207.24,
       "history": [
-        207.35,
-        207.247,
         207.316,
         207.24,
         207.173,
@@ -54978,9 +54976,11 @@
         207.252,
         207.266,
         207.307,
-        207.266
+        207.266,
+        207.154,
+        207.24
       ],
-      "year_ago": 207.14,
+      "year_ago": 207.13,
       "lat": 48.714388864,
       "lng": 7.311970754,
       "color": "#3b82f6"
@@ -54988,45 +54988,9 @@
   ],
   "air": [
     {
-      "zone": "Richtolsheim",
+      "zone": "Romanswiller",
       "dept": "67",
-      "date": "2026-09-08",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#F0E641",
-      "source": "Atmo Grand Est",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Riedseltz",
-      "dept": "67",
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -55060,9 +55024,9 @@
       }
     },
     {
-      "zone": "Rimsdorf",
+      "zone": "Roppenheim",
       "dept": "67",
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -55096,9 +55060,9 @@
       }
     },
     {
-      "zone": "Ringendorf",
+      "zone": "Rosenwiller",
       "dept": "67",
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -55132,9 +55096,45 @@
       }
     },
     {
-      "zone": "Rittershoffen",
+      "zone": "Rosheim",
       "dept": "67",
-      "date": "2026-09-08",
+      "date": "2026-09-09",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Atmo Grand Est",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Rossfeld",
+      "dept": "67",
+      "date": "2026-09-09",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
