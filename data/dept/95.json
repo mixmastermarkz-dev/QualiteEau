@@ -3,7 +3,7 @@
   "nom": "Val-d'Oise",
   "slug": "val-d-oise",
   "region": "Île-de-France",
-  "updated": "08/09/2026 à 16:06",
+  "updated": "09/09/2026 à 16:08",
   "score_eau": 93,
   "nb_communes": 191,
   "potable": [
@@ -16421,10 +16421,8 @@
       "nom": "Chars",
       "dept": "95",
       "code_bss": "01266X1013/S1",
-      "current": 85.779,
+      "current": 85.783,
       "history": [
-        85.785,
-        85.784,
         85.782,
         85.781,
         85.78,
@@ -16436,7 +16434,9 @@
         85.774,
         85.776,
         85.777,
-        85.779
+        85.779,
+        85.788,
+        85.783
       ],
       "year_ago": 85.81,
       "lat": 49.145694966,
@@ -16447,10 +16447,8 @@
       "nom": "Buhy",
       "dept": "95",
       "code_bss": "01258X0020/S1",
-      "current": 43.977,
+      "current": 43.974,
       "history": [
-        43.954,
-        43.959,
         43.965,
         43.965,
         43.967,
@@ -16462,9 +16460,11 @@
         43.975,
         43.977,
         43.975,
-        43.977
+        43.977,
+        43.985,
+        43.974
       ],
-      "year_ago": 44.95,
+      "year_ago": 44.93,
       "lat": 49.197517023,
       "lng": 1.711584185,
       "color": "#ef4444"
@@ -16473,10 +16473,8 @@
       "nom": "Villeron",
       "dept": "95",
       "code_bss": "01541X0038/F1",
-      "current": 82.975,
+      "current": 82.946,
       "history": [
-        82.913,
-        82.919,
         82.924,
         82.93,
         82.93,
@@ -16488,9 +16486,11 @@
         82.952,
         82.965,
         82.948,
-        82.975
+        82.975,
+        83.027,
+        82.946
       ],
-      "year_ago": 83.97,
+      "year_ago": 83.99,
       "lat": 49.063723078,
       "lng": 2.52480359,
       "color": "#ef4444"
@@ -16499,10 +16499,8 @@
       "nom": "Théméricourt",
       "dept": "95",
       "code_bss": "01522X0069/PZ2008",
-      "current": 65.636,
+      "current": 65.613,
       "history": [
-        65.819,
-        65.799,
         65.782,
         65.766,
         65.751,
@@ -16514,9 +16512,11 @@
         65.669,
         65.656,
         65.642,
-        65.636
+        65.636,
+        65.626,
+        65.613
       ],
-      "year_ago": 68.77,
+      "year_ago": 68.74,
       "lat": 49.083846437,
       "lng": 1.897575713,
       "color": "#ef4444"
@@ -16525,10 +16525,8 @@
       "nom": "L'Isle-Adam",
       "dept": "95",
       "code_bss": "01531X0047/F",
-      "current": 45.199,
+      "current": 45.19,
       "history": [
-        45.163,
-        45.153,
         45.162,
         45.155,
         45.166,
@@ -16540,9 +16538,11 @@
         45.173,
         45.173,
         45.178,
-        45.199
+        45.199,
+        45.226,
+        45.19
       ],
-      "year_ago": 45.71,
+      "year_ago": 45.74,
       "lat": 49.105984547,
       "lng": 2.209806341,
       "color": "#ef4444"
@@ -16551,10 +16551,8 @@
       "nom": "Puiseux-en-France",
       "dept": "95",
       "code_bss": "01534X0049/F",
-      "current": 82.205,
+      "current": 82.211,
       "history": [
-        82.17,
-        82.165,
         82.162,
         82.167,
         82.162,
@@ -16566,9 +16564,11 @@
         82.159,
         82.184,
         82.175,
-        82.205
+        82.205,
+        82.273,
+        82.211
       ],
-      "year_ago": 83.02,
+      "year_ago": 83.03,
       "lat": 49.06908557,
       "lng": 2.488423943,
       "color": "#ef4444"
@@ -16576,9 +16576,45 @@
   ],
   "air": [
     {
-      "zone": "Vauréal",
+      "zone": "Montigny-Lès-Cormeilles",
       "dept": "95",
-      "date": "2026-09-09",
+      "date": "2026-09-10",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Airparif",
+      "polluants": {
+        "NO₂": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Nucourt",
+      "dept": "95",
+      "date": "2026-09-10",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -16612,9 +16648,45 @@
       }
     },
     {
-      "zone": "Frépillon",
+      "zone": "Mériel",
       "dept": "95",
-      "date": "2026-09-09",
+      "date": "2026-09-10",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Airparif",
+      "polluants": {
+        "NO₂": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Baillet-En-France",
+      "dept": "95",
+      "date": "2026-09-10",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -16648,90 +16720,18 @@
       }
     },
     {
-      "zone": "Presles",
+      "zone": "Bessancourt",
       "dept": "95",
-      "date": "2026-09-09",
+      "date": "2026-09-10",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
       "source": "Airparif",
       "polluants": {
         "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
           "indice": 2,
           "label": "Moyen",
           "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Domont",
-      "dept": "95",
-      "date": "2026-09-09",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Airparif",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Andilly",
-      "dept": "95",
-      "date": "2026-09-09",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Airparif",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
         },
         "O₃": {
           "indice": 2,

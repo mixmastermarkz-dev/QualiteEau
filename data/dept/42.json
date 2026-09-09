@@ -3,7 +3,7 @@
   "nom": "Loire",
   "slug": "loire",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "08/09/2026 à 16:06",
+  "updated": "09/09/2026 à 16:08",
   "score_eau": 97,
   "nb_communes": 326,
   "potable": [
@@ -53846,41 +53846,11 @@
   ],
   "nappes": [
     {
-      "nom": "Cleppé",
-      "dept": "42",
-      "code_bss": "06967X0100/F",
-      "current": 323.391,
-      "history": [
-        323.413,
-        323.398,
-        323.402,
-        323.392,
-        323.399,
-        323.401,
-        323.405,
-        323.385,
-        323.391,
-        323.387,
-        323.404,
-        323.385,
-        323.396,
-        323.391
-      ],
-      "year_ago": 323.84,
-      "lat": 45.769951628,
-      "lng": 4.183823819,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Chalain-le-Comtal",
       "dept": "42",
       "code_bss": "07203X0168/PZ",
-      "current": 338.924,
+      "current": 338.928,
       "history": [
-        338.943,
-        338.926,
-        338.937,
-        338.929,
         338.938,
         338.927,
         338.937,
@@ -53890,47 +53860,23 @@
         338.937,
         338.925,
         338.929,
-        338.924
+        338.924,
+        338.935,
+        338.924,
+        338.936,
+        338.928
       ],
-      "year_ago": 339.63,
+      "year_ago": 339.4,
       "lat": 45.649419482,
       "lng": 4.190529903,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Saint-André-le-Puy",
-      "dept": "42",
-      "code_bss": "07204X0105/F",
-      "current": 355.586,
-      "history": [
-        355.613,
-        355.596,
-        355.599,
-        355.583,
-        355.598,
-        355.592,
-        355.613,
-        355.576,
-        355.578,
-        355.572,
-        355.598,
-        355.572,
-        355.589,
-        355.586
-      ],
-      "year_ago": 355.81,
-      "lat": 45.647921327,
-      "lng": 4.246544955,
       "color": "#ef4444"
     },
     {
       "nom": "Saint-Galmier",
       "dept": "42",
       "code_bss": "07208X0197/F1C",
-      "current": 372.551,
+      "current": 372.545,
       "history": [
-        372.552,
-        372.543,
         372.543,
         372.54,
         372.546,
@@ -53942,19 +53888,73 @@
         372.552,
         372.542,
         372.553,
-        372.551
+        372.551,
+        372.562,
+        372.545
       ],
-      "year_ago": 372.41,
+      "year_ago": 372.42,
       "lat": 45.605448412,
       "lng": 4.306255162,
       "color": "#3b82f6"
+    },
+    {
+      "nom": "Saint-André-le-Puy",
+      "dept": "42",
+      "code_bss": "07204X0105/F",
+      "current": 355.583,
+      "history": [
+        355.599,
+        355.583,
+        355.598,
+        355.592,
+        355.613,
+        355.576,
+        355.578,
+        355.572,
+        355.598,
+        355.572,
+        355.589,
+        355.586,
+        355.622,
+        355.583
+      ],
+      "year_ago": 355.84,
+      "lat": 45.647921327,
+      "lng": 4.246544955,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Cleppé",
+      "dept": "42",
+      "code_bss": "06967X0100/F",
+      "current": 323.381,
+      "history": [
+        323.402,
+        323.392,
+        323.399,
+        323.401,
+        323.405,
+        323.385,
+        323.391,
+        323.387,
+        323.404,
+        323.385,
+        323.396,
+        323.391,
+        323.401,
+        323.381
+      ],
+      "year_ago": 323.86,
+      "lat": 45.769951628,
+      "lng": 4.183823819,
+      "color": "#ef4444"
     }
   ],
   "air": [
     {
-      "zone": "Saint-Romain-la-Motte",
+      "zone": "Soleymieux",
       "dept": "42",
-      "date": "2026-09-10",
+      "date": "2026-09-11",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -53988,9 +53988,9 @@
       }
     },
     {
-      "zone": "Saint-Romain-le-Puy",
+      "zone": "Sorbiers",
       "dept": "42",
-      "date": "2026-09-10",
+      "date": "2026-09-11",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -54024,9 +54024,45 @@
       }
     },
     {
-      "zone": "Saint-Romain-les-Atheux",
+      "zone": "Souternon",
       "dept": "42",
-      "date": "2026-09-10",
+      "date": "2026-09-11",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Sury-le-Comtal",
+      "dept": "42",
+      "date": "2026-09-11",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -54060,45 +54096,9 @@
       }
     },
     {
-      "zone": "Saint-Sauveur-en-Rue",
+      "zone": "La Talaudière",
       "dept": "42",
-      "date": "2026-09-10",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Sixte",
-      "dept": "42",
-      "date": "2026-09-10",
+      "date": "2026-09-11",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
