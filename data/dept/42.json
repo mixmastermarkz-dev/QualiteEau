@@ -3,7 +3,7 @@
   "nom": "Loire",
   "slug": "loire",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "09/09/2026 à 16:08",
+  "updated": "10/09/2026 à 16:02",
   "score_eau": 97,
   "nb_communes": 326,
   "potable": [
@@ -53866,7 +53866,7 @@
         338.936,
         338.928
       ],
-      "year_ago": 339.4,
+      "year_ago": 339.09,
       "lat": 45.649419482,
       "lng": 4.190529903,
       "color": "#ef4444"
@@ -53875,10 +53875,8 @@
       "nom": "Saint-Galmier",
       "dept": "42",
       "code_bss": "07208X0197/F1C",
-      "current": 372.545,
+      "current": 372.547,
       "history": [
-        372.543,
-        372.54,
         372.546,
         372.545,
         372.56,
@@ -53890,38 +53888,14 @@
         372.553,
         372.551,
         372.562,
-        372.545
+        372.545,
+        372.539,
+        372.547
       ],
-      "year_ago": 372.42,
+      "year_ago": 372.43,
       "lat": 45.605448412,
       "lng": 4.306255162,
       "color": "#3b82f6"
-    },
-    {
-      "nom": "Saint-André-le-Puy",
-      "dept": "42",
-      "code_bss": "07204X0105/F",
-      "current": 355.583,
-      "history": [
-        355.599,
-        355.583,
-        355.598,
-        355.592,
-        355.613,
-        355.576,
-        355.578,
-        355.572,
-        355.598,
-        355.572,
-        355.589,
-        355.586,
-        355.622,
-        355.583
-      ],
-      "year_ago": 355.84,
-      "lat": 45.647921327,
-      "lng": 4.246544955,
-      "color": "#ef4444"
     },
     {
       "nom": "Cleppé",
@@ -53929,8 +53903,6 @@
       "code_bss": "06967X0100/F",
       "current": 323.381,
       "history": [
-        323.402,
-        323.392,
         323.399,
         323.401,
         323.405,
@@ -53942,19 +53914,47 @@
         323.396,
         323.391,
         323.401,
+        323.381,
+        323.383,
         323.381
       ],
       "year_ago": 323.86,
       "lat": 45.769951628,
       "lng": 4.183823819,
       "color": "#ef4444"
+    },
+    {
+      "nom": "Saint-André-le-Puy",
+      "dept": "42",
+      "code_bss": "07204X0105/F",
+      "current": 355.572,
+      "history": [
+        355.598,
+        355.592,
+        355.613,
+        355.576,
+        355.578,
+        355.572,
+        355.598,
+        355.572,
+        355.589,
+        355.586,
+        355.622,
+        355.583,
+        355.576,
+        355.572
+      ],
+      "year_ago": 355.87,
+      "lat": 45.647921327,
+      "lng": 4.246544955,
+      "color": "#ef4444"
     }
   ],
   "air": [
     {
-      "zone": "Soleymieux",
+      "zone": "Tarentaise",
       "dept": "42",
-      "date": "2026-09-11",
+      "date": "2026-09-12",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -53988,45 +53988,9 @@
       }
     },
     {
-      "zone": "Sorbiers",
+      "zone": "Tartaras",
       "dept": "42",
-      "date": "2026-09-11",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Souternon",
-      "dept": "42",
-      "date": "2026-09-11",
+      "date": "2026-09-12",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
@@ -54060,9 +54024,45 @@
       }
     },
     {
-      "zone": "Sury-le-Comtal",
+      "zone": "La Terrasse-sur-Dorlay",
       "dept": "42",
-      "date": "2026-09-11",
+      "date": "2026-09-12",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Thélis-la-Combe",
+      "dept": "42",
+      "date": "2026-09-12",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -54096,23 +54096,23 @@
       }
     },
     {
-      "zone": "La Talaudière",
+      "zone": "La Tour-en-Jarez",
       "dept": "42",
-      "date": "2026-09-11",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
+      "date": "2026-09-12",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
           "indice": 2,
           "label": "Moyen",
           "color": "#eab308"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,

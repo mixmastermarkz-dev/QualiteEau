@@ -3,7 +3,7 @@
   "nom": "Bas-Rhin",
   "slug": "bas-rhin",
   "region": "Grand Est",
-  "updated": "09/09/2026 à 16:08",
+  "updated": "10/09/2026 à 16:02",
   "score_eau": 97,
   "nb_communes": 514,
   "potable": [
@@ -54937,10 +54937,8 @@
       "nom": "Gresswiller",
       "dept": "67",
       "code_bss": "02713X0105/PZ1",
-      "current": 197.554,
+      "current": 197.563,
       "history": [
-        197.496,
-        197.55,
         197.481,
         197.566,
         197.511,
@@ -54952,9 +54950,11 @@
         197.491,
         197.598,
         197.495,
-        197.554
+        197.554,
+        197.452,
+        197.563
       ],
-      "year_ago": 198.19,
+      "year_ago": 198.17,
       "lat": 48.520713416,
       "lng": 7.415360799,
       "color": "#ef4444"
@@ -54963,10 +54963,8 @@
       "nom": "Haegen",
       "dept": "67",
       "code_bss": "02332X0198/F3",
-      "current": 207.071,
+      "current": 207.103,
       "history": [
-        207.173,
-        207.23,
         207.064,
         207.124,
         207.071,
@@ -54978,19 +54976,21 @@
         207.154,
         207.24,
         207.062,
-        207.071
+        207.071,
+        206.987,
+        207.103
       ],
-      "year_ago": 207.13,
+      "year_ago": 207.07,
       "lat": 48.714388864,
       "lng": 7.311970754,
-      "color": "#ef4444"
+      "color": "#3b82f6"
     }
   ],
   "air": [
     {
-      "zone": "Reinhardsmunster",
+      "zone": "Schœnbourg",
       "dept": "67",
-      "date": "2026-09-10",
+      "date": "2026-09-11",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -55024,9 +55024,9 @@
       }
     },
     {
-      "zone": "Reipertswiller",
+      "zone": "Schœnenbourg",
       "dept": "67",
-      "date": "2026-09-10",
+      "date": "2026-09-11",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -55060,9 +55060,45 @@
       }
     },
     {
-      "zone": "Retschwiller",
+      "zone": "Schopperten",
       "dept": "67",
-      "date": "2026-09-10",
+      "date": "2026-09-11",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Atmo Grand Est",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Schweighouse-sur-Moder",
+      "dept": "67",
+      "date": "2026-09-11",
       "indice": 3,
       "label": "Dégradé",
       "color": "#F0E641",
@@ -55096,45 +55132,9 @@
       }
     },
     {
-      "zone": "Reutenbourg",
+      "zone": "Schwenheim",
       "dept": "67",
-      "date": "2026-09-10",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Grand Est",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Rexingen",
-      "dept": "67",
-      "date": "2026-09-10",
+      "date": "2026-09-11",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
