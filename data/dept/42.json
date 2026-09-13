@@ -3,7 +3,7 @@
   "nom": "Loire",
   "slug": "loire",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "12/09/2026 à 15:19",
+  "updated": "13/09/2026 à 16:03",
   "score_eau": 97,
   "nb_communes": 326,
   "potable": [
@@ -38629,11 +38629,6 @@
             "date": "2024-10-10",
             "valeur": 9.4,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-09-12",
-            "valeur": 22.0,
-            "color": "#f59e0b"
           }
         ]
       },
@@ -38719,11 +38714,6 @@
           {
             "date": "2024-10-10",
             "valeur": 9.5,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-12",
-            "valeur": 3.7,
             "color": "#10b981"
           }
         ]
@@ -38811,11 +38801,6 @@
             "date": "2024-10-10",
             "valeur": 6.4,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-09-12",
-            "valeur": 5.0,
-            "color": "#10b981"
           }
         ]
       },
@@ -38849,11 +38834,6 @@
             "date": "2024-10-10",
             "valeur": 11.0,
             "color": "#f59e0b"
-          },
-          {
-            "date": "2024-09-12",
-            "valeur": 7.7,
-            "color": "#10b981"
           }
         ]
       },
@@ -38925,11 +38905,6 @@
             "date": "2024-10-10",
             "valeur": 7.7,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-09-12",
-            "valeur": 4.9,
-            "color": "#10b981"
           }
         ]
       },
@@ -38967,11 +38942,6 @@
           {
             "date": "2024-10-10",
             "valeur": 0.1,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-12",
-            "valeur": 5.7,
             "color": "#10b981"
           }
         ]
@@ -44912,11 +44882,6 @@
             "date": "2024-10-10",
             "valeur": 0.1,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-09-12",
-            "valeur": 39.0,
-            "color": "#ef4444"
           }
         ]
       },
@@ -45165,11 +45130,6 @@
           {
             "date": "2024-10-10",
             "valeur": 0.1,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-09-12",
-            "valeur": 7.1,
             "color": "#10b981"
           }
         ]
@@ -53166,39 +53126,11 @@
   ],
   "nappes": [
     {
-      "nom": "Cleppé",
-      "dept": "42",
-      "code_bss": "06967X0100/F",
-      "current": 323.352,
-      "history": [
-        323.391,
-        323.387,
-        323.404,
-        323.385,
-        323.396,
-        323.391,
-        323.401,
-        323.381,
-        323.383,
-        323.381,
-        323.374,
-        323.364,
-        323.359,
-        323.352
-      ],
-      "year_ago": 323.81,
-      "lat": 45.769951628,
-      "lng": 4.183823819,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Saint-Galmier",
       "dept": "42",
       "code_bss": "07208X0197/F1C",
-      "current": 372.539,
+      "current": 372.545,
       "history": [
-        372.546,
-        372.545,
         372.552,
         372.542,
         372.553,
@@ -53210,7 +53142,9 @@
         372.541,
         372.538,
         372.544,
-        372.539
+        372.539,
+        372.547,
+        372.545
       ],
       "year_ago": 372.42,
       "lat": 45.605448412,
@@ -53221,12 +53155,8 @@
       "nom": "Chalain-le-Comtal",
       "dept": "42",
       "code_bss": "07203X0168/PZ",
-      "current": 338.92,
+      "current": 338.921,
       "history": [
-        338.936,
-        338.928,
-        338.937,
-        338.925,
         338.929,
         338.924,
         338.935,
@@ -53236,9 +53166,13 @@
         338.931,
         338.923,
         338.934,
-        338.92
+        338.92,
+        338.933,
+        338.921,
+        338.933,
+        338.921
       ],
-      "year_ago": 339.0,
+      "year_ago": 338.99,
       "lat": 45.649419482,
       "lng": 4.190529903,
       "color": "#ef4444"
@@ -53247,10 +53181,8 @@
       "nom": "Saint-André-le-Puy",
       "dept": "42",
       "code_bss": "07204X0105/F",
-      "current": 355.546,
+      "current": 355.548,
       "history": [
-        355.578,
-        355.572,
         355.598,
         355.572,
         355.589,
@@ -53262,19 +53194,47 @@
         355.573,
         355.559,
         355.56,
-        355.546
+        355.546,
+        355.557,
+        355.548
       ],
-      "year_ago": 355.81,
+      "year_ago": 355.82,
       "lat": 45.647921327,
       "lng": 4.246544955,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Cleppé",
+      "dept": "42",
+      "code_bss": "06967X0100/F",
+      "current": 323.358,
+      "history": [
+        323.404,
+        323.385,
+        323.396,
+        323.391,
+        323.401,
+        323.381,
+        323.383,
+        323.381,
+        323.374,
+        323.364,
+        323.359,
+        323.352,
+        323.355,
+        323.358
+      ],
+      "year_ago": 323.8,
+      "lat": 45.769951628,
+      "lng": 4.183823819,
       "color": "#ef4444"
     }
   ],
   "air": [
     {
-      "zone": "Croizet-sur-Gand",
+      "zone": "Saint-Jodard",
       "dept": "42",
-      "date": "2026-09-13",
+      "date": "2026-09-15",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
@@ -53308,9 +53268,45 @@
       }
     },
     {
-      "zone": "Cremeaux",
+      "zone": "Saint-Joseph",
       "dept": "42",
-      "date": "2026-09-13",
+      "date": "2026-09-15",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Saint-Julien-d'Oddes",
+      "dept": "42",
+      "date": "2026-09-15",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
@@ -53344,9 +53340,9 @@
       }
     },
     {
-      "zone": "Craintilleux",
+      "zone": "Saint-Julien-la-Vêtre",
       "dept": "42",
-      "date": "2026-09-13",
+      "date": "2026-09-15",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
@@ -53380,45 +53376,9 @@
       }
     },
     {
-      "zone": "Coutouvre",
+      "zone": "Saint-Julien-Molin-Molette",
       "dept": "42",
-      "date": "2026-09-13",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Cottance",
-      "dept": "42",
-      "date": "2026-09-13",
+      "date": "2026-09-15",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
