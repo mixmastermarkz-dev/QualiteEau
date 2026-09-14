@@ -3,7 +3,7 @@
   "nom": "Ardèche",
   "slug": "ardeche",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "13/09/2026 à 16:03",
+  "updated": "14/09/2026 à 18:08",
   "score_eau": 96,
   "nb_communes": 337,
   "potable": [
@@ -28818,65 +28818,11 @@
   ],
   "nappes": [
     {
-      "nom": "Veyras",
-      "dept": "07",
-      "code_bss": "08413X0091/F3",
-      "current": 442.05,
-      "history": [
-        442.05,
-        442.04,
-        442.05,
-        442.05,
-        442.07,
-        442.08,
-        442.07,
-        442.06,
-        442.06,
-        442.06,
-        442.05,
-        442.05,
-        442.06,
-        442.05
-      ],
-      "year_ago": 441.48,
-      "lat": 44.733838457,
-      "lng": 4.561214887,
-      "color": "#3b82f6"
-    },
-    {
-      "nom": "Lablachère",
-      "dept": "07",
-      "code_bss": "BSS003GPIS/X",
-      "current": 243.622,
-      "history": [
-        243.646,
-        243.619,
-        243.653,
-        243.665,
-        243.72,
-        243.71,
-        243.693,
-        243.686,
-        243.68,
-        243.651,
-        243.64,
-        243.614,
-        243.627,
-        243.622
-      ],
-      "year_ago": 243.27,
-      "lat": 44.46354371,
-      "lng": 4.214386619,
-      "color": "#3b82f6"
-    },
-    {
       "nom": "Aubenas",
       "dept": "07",
       "code_bss": "08651X0038/0038",
-      "current": 296.13,
+      "current": 296.176,
       "history": [
-        295.819,
-        295.833,
         295.888,
         295.924,
         295.986,
@@ -28888,23 +28834,77 @@
         296.074,
         296.077,
         296.106,
-        296.13
+        296.13,
+        296.158,
+        296.176
       ],
-      "year_ago": 296.74,
+      "year_ago": 296.71,
       "lat": 44.619744152,
       "lng": 4.39032624,
       "color": "#ef4444"
+    },
+    {
+      "nom": "Lablachère",
+      "dept": "07",
+      "code_bss": "BSS003GPIS/X",
+      "current": 243.648,
+      "history": [
+        243.653,
+        243.665,
+        243.72,
+        243.71,
+        243.693,
+        243.686,
+        243.68,
+        243.651,
+        243.64,
+        243.614,
+        243.627,
+        243.622,
+        243.643,
+        243.648
+      ],
+      "year_ago": 243.29,
+      "lat": 44.46354371,
+      "lng": 4.214386619,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Veyras",
+      "dept": "07",
+      "code_bss": "08413X0091/F3",
+      "current": 442.05,
+      "history": [
+        442.05,
+        442.05,
+        442.07,
+        442.08,
+        442.07,
+        442.06,
+        442.06,
+        442.06,
+        442.05,
+        442.05,
+        442.06,
+        442.05,
+        442.04,
+        442.05
+      ],
+      "year_ago": 441.48,
+      "lat": 44.733838457,
+      "lng": 4.561214887,
+      "color": "#3b82f6"
     }
   ],
   "air": [
     {
-      "zone": "La Racineuse",
+      "zone": "Yvré-l'Évêque",
       "dept": "07",
-      "date": "2026-09-15",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "ATMO Bourgogne-Franche-Comté",
+      "date": "2026-09-16",
+      "indice": 2,
+      "label": "moyen",
+      "color": "#50ccaa",
+      "source": "Air Pays de la Loire",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -28912,9 +28912,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
@@ -28934,13 +28934,13 @@
       }
     },
     {
-      "zone": "Rancy",
+      "zone": "Volnay",
       "dept": "07",
-      "date": "2026-09-15",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "ATMO Bourgogne-Franche-Comté",
+      "date": "2026-09-16",
+      "indice": 2,
+      "label": "moyen",
+      "color": "#50ccaa",
+      "source": "Air Pays de la Loire",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -28948,9 +28948,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
@@ -28970,13 +28970,13 @@
       }
     },
     {
-      "zone": "Ratenelle",
+      "zone": "Tresson",
       "dept": "07",
-      "date": "2026-09-15",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "ATMO Bourgogne-Franche-Comté",
+      "date": "2026-09-16",
+      "indice": 2,
+      "label": "moyen",
+      "color": "#50ccaa",
+      "source": "Air Pays de la Loire",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -28984,9 +28984,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
@@ -29006,13 +29006,13 @@
       }
     },
     {
-      "zone": "Ratte",
+      "zone": "Trangé",
       "dept": "07",
-      "date": "2026-09-15",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "ATMO Bourgogne-Franche-Comté",
+      "date": "2026-09-16",
+      "indice": 2,
+      "label": "moyen",
+      "color": "#50ccaa",
+      "source": "Air Pays de la Loire",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -29020,9 +29020,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
@@ -29042,13 +29042,13 @@
       }
     },
     {
-      "zone": "Remigny",
+      "zone": "Torcé-en-Vallée",
       "dept": "07",
-      "date": "2026-09-15",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "ATMO Bourgogne-Franche-Comté",
+      "date": "2026-09-16",
+      "indice": 2,
+      "label": "moyen",
+      "color": "#50ccaa",
+      "source": "Air Pays de la Loire",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -29056,9 +29056,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
