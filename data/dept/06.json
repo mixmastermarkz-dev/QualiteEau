@@ -3,7 +3,7 @@
   "nom": "Alpes-Maritimes",
   "slug": "alpes-maritimes",
   "region": "Provence-Alpes-Côte d'Azur",
-  "updated": "14/09/2026 à 18:08",
+  "updated": "15/09/2026 à 16:37",
   "score_eau": 99,
   "nb_communes": 164,
   "potable": [
@@ -21019,39 +21019,11 @@
   ],
   "nappes": [
     {
-      "nom": "Gilette",
-      "dept": "06",
-      "code_bss": "09724X0023/P2",
-      "current": 95.003,
-      "history": [
-        95.062,
-        95.046,
-        95,
-        95.006,
-        95.005,
-        95.005,
-        95.005,
-        95.004,
-        95.006,
-        95.005,
-        95.003,
-        95.005,
-        95.005,
-        95.003
-      ],
-      "year_ago": 98.76,
-      "lat": 43.831616009,
-      "lng": 7.188887934,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Nice",
       "dept": "06",
       "code_bss": "09994X0521/P4B",
       "current": 10.49,
       "history": [
-        10.57,
-        10.55,
         10.55,
         10.54,
         10.54,
@@ -21063,9 +21035,11 @@
         10.51,
         10.5,
         10.5,
+        10.49,
+        10.49,
         10.49
       ],
-      "year_ago": 11.48,
+      "year_ago": 11.47,
       "lat": 43.691448072,
       "lng": 7.193977883,
       "color": "#ef4444"
@@ -21074,10 +21048,8 @@
       "nom": "Villeneuve-Loubet",
       "dept": "06",
       "code_bss": "09998X0199/PZ_PID",
-      "current": 18.47,
+      "current": 18.44,
       "history": [
-        18.51,
-        18.46,
         18.53,
         18.51,
         18.56,
@@ -21089,9 +21061,11 @@
         18.48,
         18.46,
         18.45,
-        18.47
+        18.47,
+        18.47,
+        18.44
       ],
-      "year_ago": 18.72,
+      "year_ago": 18.73,
       "lat": 43.640614714,
       "lng": 7.125900921,
       "color": "#ef4444"
@@ -21100,12 +21074,8 @@
       "nom": "Pégomas",
       "dept": "06",
       "code_bss": "09995X0028/F",
-      "current": 9.238,
+      "current": 9.321,
       "history": [
-        9.183,
-        9.185,
-        9.225,
-        9.329,
         9.369,
         9.321,
         9.227,
@@ -21115,7 +21085,11 @@
         9.203,
         9.224,
         9.221,
-        9.238
+        9.238,
+        9.231,
+        9.243,
+        9.269,
+        9.321
       ],
       "year_ago": 9.33,
       "lat": 43.587762053,
@@ -21126,10 +21100,8 @@
       "nom": "Gilette",
       "dept": "06",
       "code_bss": "BSS004FHCY/X",
-      "current": 94.96,
+      "current": 94.93,
       "history": [
-        95.26,
-        95.24,
         95.21,
         95.19,
         95.17,
@@ -21141,23 +21113,87 @@
         95.02,
         95,
         94.97,
-        94.96
+        94.96,
+        94.95,
+        94.93
       ],
-      "year_ago": 98.98,
+      "year_ago": 98.91,
       "lat": 43.831748442,
       "lng": 7.188607593,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Gilette",
+      "dept": "06",
+      "code_bss": "09724X0023/P2",
+      "current": 95.004,
+      "history": [
+        95,
+        95.006,
+        95.005,
+        95.005,
+        95.005,
+        95.004,
+        95.006,
+        95.005,
+        95.003,
+        95.005,
+        95.005,
+        95.003,
+        95.004,
+        95.004
+      ],
+      "year_ago": 98.69,
+      "lat": 43.831616009,
+      "lng": 7.188887934,
       "color": "#ef4444"
     }
   ],
   "air": [
     {
-      "zone": "Saint-Aubin-d'Appenai",
+      "zone": "Aiglun",
       "dept": "06",
-      "date": "2026-09-16",
+      "date": "2026-09-17",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
+      "source": "AtmoSud",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Amirat",
+      "dept": "06",
+      "date": "2026-09-17",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
-      "source": "Atmo Normandie",
+      "source": "AtmoSud",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -21187,13 +21223,13 @@
       }
     },
     {
-      "zone": "Saint-Aubin-de-Bonneval",
+      "zone": "Andon",
       "dept": "06",
-      "date": "2026-09-16",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
+      "date": "2026-09-17",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
+      "source": "AtmoSud",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -21201,9 +21237,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -21223,13 +21259,13 @@
       }
     },
     {
-      "zone": "Saint-Aubin-de-Courteraie",
+      "zone": "Antibes",
       "dept": "06",
-      "date": "2026-09-16",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
+      "date": "2026-09-17",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
+      "source": "AtmoSud",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -21237,9 +21273,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -21259,13 +21295,13 @@
       }
     },
     {
-      "zone": "Saint-Bômer-les-Forges",
+      "zone": "Ascros",
       "dept": "06",
-      "date": "2026-09-16",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
+      "date": "2026-09-17",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
+      "source": "AtmoSud",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -21273,45 +21309,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Brice",
-      "dept": "06",
-      "date": "2026-09-16",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
