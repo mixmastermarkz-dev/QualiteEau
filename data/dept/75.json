@@ -3,7 +3,7 @@
   "nom": "Paris",
   "slug": "paris",
   "region": "Île-de-France",
-  "updated": "15/09/2026 à 16:37",
+  "updated": "16/09/2026 à 16:34",
   "score_eau": 91,
   "nb_communes": 3,
   "potable": [
@@ -40,10 +40,10 @@
           "date": "2026-04-03"
         },
         "Calcaire (TH)": {
-          "valeur": 25.97,
+          "valeur": 25.94,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2026-04-03"
+          "date": "2025-12-26"
         },
         "Pesticides": {
           "valeur": "<0,500",
@@ -95,10 +95,10 @@
           "date": "2026-04-30"
         },
         "Calcaire (TH)": {
-          "valeur": 24.92,
+          "valeur": 29.98,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2026-04-30"
+          "date": "2025-12-26"
         },
         "Plomb": {
           "valeur": 8.0,
@@ -156,10 +156,10 @@
           "date": "2026-04-22"
         },
         "Calcaire (TH)": {
-          "valeur": 26.24,
+          "valeur": 26.02,
           "unite": "°f",
           "color": "#10b981",
-          "date": "2026-04-22"
+          "date": "2025-12-16"
         },
         "Pesticides": {
           "valeur": "<0,500",
@@ -470,9 +470,45 @@
   "nappes": [],
   "air": [
     {
+      "zone": "Paris 12e Arrondissement",
+      "dept": "75",
+      "date": "2026-09-17",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Airparif",
+      "polluants": {
+        "NO₂": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
       "zone": "Paris 13e Arrondissement",
       "dept": "75",
-      "date": "2026-09-16",
+      "date": "2026-09-17",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -508,7 +544,7 @@
     {
       "zone": "Paris 7e Arrondissement",
       "dept": "75",
-      "date": "2026-09-16",
+      "date": "2026-09-17",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -544,7 +580,7 @@
     {
       "zone": "Paris 18e Arrondissement",
       "dept": "75",
-      "date": "2026-09-16",
+      "date": "2026-09-17",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -580,43 +616,7 @@
     {
       "zone": "Paris 20e Arrondissement",
       "dept": "75",
-      "date": "2026-09-16",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Airparif",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Paris 11e Arrondissement",
-      "dept": "75",
-      "date": "2026-09-16",
+      "date": "2026-09-17",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
