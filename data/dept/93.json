@@ -3,7 +3,7 @@
   "nom": "Seine-Saint-Denis",
   "slug": "seine-saint-denis",
   "region": "Île-de-France",
-  "updated": "16/09/2026 à 16:34",
+  "updated": "17/09/2026 à 16:39",
   "score_eau": 98,
   "nb_communes": 48,
   "potable": [
@@ -2667,9 +2667,9 @@
   "nappes": [],
   "air": [
     {
-      "zone": "L'Île-Saint-Denis",
+      "zone": "Sevran",
       "dept": "93",
-      "date": "2026-09-17",
+      "date": "2026-09-18",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -2705,7 +2705,43 @@
     {
       "zone": "Les Lilas",
       "dept": "93",
-      "date": "2026-09-17",
+      "date": "2026-09-18",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Airparif",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "L'Île-Saint-Denis",
+      "dept": "93",
+      "date": "2026-09-18",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -2739,9 +2775,9 @@
       }
     },
     {
-      "zone": "Coubron",
+      "zone": "Neuilly-Plaisance",
       "dept": "93",
-      "date": "2026-09-17",
+      "date": "2026-09-18",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -2775,9 +2811,9 @@
       }
     },
     {
-      "zone": "Épinay-Sur-Seine",
+      "zone": "Bondy",
       "dept": "93",
-      "date": "2026-09-17",
+      "date": "2026-09-18",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -2794,45 +2830,9 @@
           "color": "#eab308"
         },
         "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Gournay-Sur-Marne",
-      "dept": "93",
-      "date": "2026-09-17",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Airparif",
-      "polluants": {
-        "NO₂": {
           "indice": 2,
           "label": "Moyen",
           "color": "#eab308"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
         },
         "PM2.5": {
           "indice": 1,
