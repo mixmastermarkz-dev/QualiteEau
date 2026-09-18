@@ -3,7 +3,7 @@
   "nom": "Orne",
   "slug": "orne",
   "region": "Normandie",
-  "updated": "17/09/2026 à 16:39",
+  "updated": "18/09/2026 à 16:04",
   "score_eau": 94,
   "nb_communes": 386,
   "potable": [
@@ -45443,13 +45443,37 @@
   ],
   "nappes": [
     {
+      "nom": "Saint-Sulpice-sur-Risle",
+      "dept": "61",
+      "code_bss": "02144X0005/S1",
+      "current": 203.008,
+      "history": [
+        203.086,
+        203.088,
+        203.083,
+        203.08,
+        203.078,
+        203.074,
+        203.07,
+        203.069,
+        203.05,
+        203.045,
+        203.05,
+        203.03,
+        203.011,
+        203.008
+      ],
+      "year_ago": 206.47,
+      "lat": 48.766362664,
+      "lng": 0.658047665,
+      "color": "#ef4444"
+    },
+    {
       "nom": "Villiers-sous-Mortagne",
       "dept": "61",
       "code_bss": "02523X0002/S2",
-      "current": 193.553,
+      "current": 193.548,
       "history": [
-        193.592,
-        193.588,
         193.584,
         193.582,
         193.578,
@@ -45461,9 +45485,11 @@
         193.559,
         193.557,
         193.556,
-        193.553
+        193.553,
+        193.551,
+        193.548
       ],
-      "year_ago": 194.13,
+      "year_ago": 194.12,
       "lat": 48.523466288,
       "lng": 0.591804057,
       "color": "#ef4444"
@@ -45489,41 +45515,15 @@
         115.59,
         115.59
       ],
-      "year_ago": 115.58,
+      "year_ago": 115.57,
       "lat": 48.803924391,
       "lng": 0.144862591,
       "color": "#3b82f6"
-    },
-    {
-      "nom": "Saint-Sulpice-sur-Risle",
-      "dept": "61",
-      "code_bss": "02144X0005/S1",
-      "current": 203.03,
-      "history": [
-        203.104,
-        203.089,
-        203.086,
-        203.088,
-        203.083,
-        203.08,
-        203.078,
-        203.074,
-        203.07,
-        203.069,
-        203.05,
-        203.045,
-        203.05,
-        203.03
-      ],
-      "year_ago": 206.53,
-      "lat": 48.766362664,
-      "lng": 0.658047665,
-      "color": "#ef4444"
     }
   ],
   "air": [
     {
-      "zone": "Saint-Agnan-sur-Sarthe",
+      "zone": "Le Ménil-Guyon",
       "dept": "61",
       "date": "2026-09-19",
       "indice": 2,
@@ -45559,7 +45559,7 @@
       }
     },
     {
-      "zone": "Saint-André-de-Briouze",
+      "zone": "Ménil-Hermei",
       "dept": "61",
       "date": "2026-09-19",
       "indice": 2,
@@ -45595,7 +45595,7 @@
       }
     },
     {
-      "zone": "Saint-André-de-Messei",
+      "zone": "Ménil-Hubert-en-Exmes",
       "dept": "61",
       "date": "2026-09-19",
       "indice": 2,
@@ -45631,7 +45631,7 @@
       }
     },
     {
-      "zone": "Saint-Aquilin-de-Corbion",
+      "zone": "Ménil-Hubert-sur-Orne",
       "dept": "61",
       "date": "2026-09-19",
       "indice": 2,
@@ -45667,7 +45667,7 @@
       }
     },
     {
-      "zone": "Saint-Aubin-d'Appenai",
+      "zone": "Le Ménil-Scelleur",
       "dept": "61",
       "date": "2026-09-19",
       "indice": 2,
