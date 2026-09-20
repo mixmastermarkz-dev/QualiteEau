@@ -3,7 +3,7 @@
   "nom": "Savoie",
   "slug": "savoie",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "19/09/2026 à 15:40",
+  "updated": "20/09/2026 à 15:55",
   "score_eau": 99,
   "nb_communes": 274,
   "potable": [
@@ -31160,10 +31160,8 @@
       "nom": "Aiton",
       "dept": "73",
       "code_bss": "07266X0052/PS4",
-      "current": 293.313,
+      "current": 293.303,
       "history": [
-        293.354,
-        293.346,
         293.339,
         293.333,
         293.329,
@@ -31175,9 +31173,11 @@
         293.324,
         293.321,
         293.318,
-        293.313
+        293.313,
+        293.308,
+        293.303
       ],
-      "year_ago": 293.43,
+      "year_ago": null,
       "lat": 45.566444711,
       "lng": 6.245431548,
       "color": "#ef4444"
@@ -31186,10 +31186,8 @@
       "nom": "Chambéry",
       "dept": "73",
       "code_bss": "07256X0095/CHAMBE",
-      "current": 264.625,
+      "current": 264.624,
       "history": [
-        264.683,
-        264.669,
         264.673,
         264.657,
         264.669,
@@ -31201,9 +31199,11 @@
         264.63,
         264.618,
         264.638,
-        264.625
+        264.625,
+        264.636,
+        264.624
       ],
-      "year_ago": 264.86,
+      "year_ago": null,
       "lat": 45.569053375,
       "lng": 5.916248145,
       "color": "#ef4444"
@@ -31212,10 +31212,8 @@
       "nom": "Cruet",
       "dept": "73",
       "code_bss": "07494X0026/CRUET",
-      "current": 269.101,
+      "current": 269.049,
       "history": [
-        269.194,
-        269.149,
         269.12,
         269.123,
         269.119,
@@ -31227,14 +31225,197 @@
         269.137,
         269.132,
         269.095,
-        269.101
+        269.101,
+        269.068,
+        269.049
       ],
-      "year_ago": 269.23,
+      "year_ago": null,
       "lat": 45.522193195,
       "lng": 6.104556772,
       "color": "#ef4444"
     }
   ],
-  "air": [],
+  "air": [
+    {
+      "zone": "Aussois",
+      "dept": "73",
+      "date": "2026-09-22",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "La Bâthie",
+      "dept": "73",
+      "date": "2026-09-22",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Argentine",
+      "dept": "73",
+      "date": "2026-09-22",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Bozel",
+      "dept": "73",
+      "date": "2026-09-22",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Arith",
+      "dept": "73",
+      "date": "2026-09-22",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    }
+  ],
   "pollen": []
 }
