@@ -3,7 +3,7 @@
   "nom": "Ardèche",
   "slug": "ardeche",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "20/09/2026 à 15:56",
+  "updated": "21/09/2026 à 18:11",
   "score_eau": 96,
   "nb_communes": 337,
   "potable": [
@@ -28848,39 +28848,11 @@
   ],
   "nappes": [
     {
-      "nom": "Veyras",
-      "dept": "07",
-      "code_bss": "08413X0091/F3",
-      "current": 442.06,
-      "history": [
-        442.04,
-        442.05,
-        442.05,
-        442.06,
-        442.06,
-        442.08,
-        442.07,
-        442.08,
-        442.09,
-        442.08,
-        442.09,
-        442.07,
-        442.07,
-        442.06
-      ],
-      "year_ago": null,
-      "lat": 44.733838457,
-      "lng": 4.561214887,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Aubenas",
       "dept": "07",
       "code_bss": "08651X0038/0038",
-      "current": 296.319,
+      "current": 296.358,
       "history": [
-        296.158,
-        296.176,
         296.205,
         296.219,
         296.259,
@@ -28892,9 +28864,11 @@
         296.334,
         296.316,
         296.33,
-        296.319
+        296.319,
+        296.345,
+        296.358
       ],
-      "year_ago": null,
+      "year_ago": 296.52,
       "lat": 44.619744152,
       "lng": 4.39032624,
       "color": "#ef4444"
@@ -28903,10 +28877,8 @@
       "nom": "Lablachère",
       "dept": "07",
       "code_bss": "BSS003GPIS/X",
-      "current": 243.61,
+      "current": 243.63,
       "history": [
-        243.643,
-        243.648,
         243.672,
         243.656,
         243.691,
@@ -28918,23 +28890,51 @@
         243.688,
         243.64,
         243.635,
-        243.61
+        243.61,
+        243.629,
+        243.63
       ],
-      "year_ago": null,
+      "year_ago": 243.42,
       "lat": 44.46354371,
       "lng": 4.214386619,
-      "color": "#ef4444"
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Veyras",
+      "dept": "07",
+      "code_bss": "08413X0091/F3",
+      "current": 442.06,
+      "history": [
+        442.05,
+        442.06,
+        442.06,
+        442.08,
+        442.07,
+        442.08,
+        442.09,
+        442.08,
+        442.09,
+        442.07,
+        442.07,
+        442.06,
+        442.07,
+        442.06
+      ],
+      "year_ago": 441.49,
+      "lat": 44.733838457,
+      "lng": 4.561214887,
+      "color": "#3b82f6"
     }
   ],
   "air": [
     {
-      "zone": "Fleurville",
+      "zone": "Yvré-l'Évêque",
       "dept": "07",
-      "date": "2026-09-22",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "ATMO Bourgogne-Franche-Comté",
+      "date": "2026-09-23",
+      "indice": 2,
+      "label": "moyen",
+      "color": "#50ccaa",
+      "source": "Air Pays de la Loire",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -28942,9 +28942,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
@@ -28964,13 +28964,13 @@
       }
     },
     {
-      "zone": "Virey-le-Grand",
+      "zone": "Volnay",
       "dept": "07",
-      "date": "2026-09-22",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "ATMO Bourgogne-Franche-Comté",
+      "date": "2026-09-23",
+      "indice": 2,
+      "label": "moyen",
+      "color": "#50ccaa",
+      "source": "Air Pays de la Loire",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -28978,9 +28978,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
@@ -29000,13 +29000,13 @@
       }
     },
     {
-      "zone": "Viré",
+      "zone": "Tresson",
       "dept": "07",
-      "date": "2026-09-22",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "ATMO Bourgogne-Franche-Comté",
+      "date": "2026-09-23",
+      "indice": 2,
+      "label": "moyen",
+      "color": "#50ccaa",
+      "source": "Air Pays de la Loire",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -29014,9 +29014,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
@@ -29036,13 +29036,13 @@
       }
     },
     {
-      "zone": "Vincelles",
+      "zone": "Trangé",
       "dept": "07",
-      "date": "2026-09-22",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "ATMO Bourgogne-Franche-Comté",
+      "date": "2026-09-23",
+      "indice": 2,
+      "label": "moyen",
+      "color": "#50ccaa",
+      "source": "Air Pays de la Loire",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -29050,9 +29050,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
@@ -29072,13 +29072,13 @@
       }
     },
     {
-      "zone": "la Villeneuve",
+      "zone": "Torcé-en-Vallée",
       "dept": "07",
-      "date": "2026-09-22",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "ATMO Bourgogne-Franche-Comté",
+      "date": "2026-09-23",
+      "indice": 2,
+      "label": "moyen",
+      "color": "#50ccaa",
+      "source": "Air Pays de la Loire",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -29086,9 +29086,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,

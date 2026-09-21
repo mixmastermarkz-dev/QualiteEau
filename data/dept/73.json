@@ -3,7 +3,7 @@
   "nom": "Savoie",
   "slug": "savoie",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "20/09/2026 à 15:55",
+  "updated": "21/09/2026 à 18:11",
   "score_eau": 99,
   "nb_communes": 274,
   "potable": [
@@ -31160,10 +31160,8 @@
       "nom": "Aiton",
       "dept": "73",
       "code_bss": "07266X0052/PS4",
-      "current": 293.303,
+      "current": 293.294,
       "history": [
-        293.339,
-        293.333,
         293.329,
         293.329,
         293.335,
@@ -31175,9 +31173,11 @@
         293.318,
         293.313,
         293.308,
-        293.303
+        293.303,
+        293.3,
+        293.294
       ],
-      "year_ago": null,
+      "year_ago": 293.41,
       "lat": 45.566444711,
       "lng": 6.245431548,
       "color": "#ef4444"
@@ -31186,10 +31186,8 @@
       "nom": "Chambéry",
       "dept": "73",
       "code_bss": "07256X0095/CHAMBE",
-      "current": 264.624,
+      "current": 264.617,
       "history": [
-        264.673,
-        264.657,
         264.669,
         264.649,
         264.655,
@@ -31201,9 +31199,11 @@
         264.638,
         264.625,
         264.636,
-        264.624
+        264.624,
+        264.648,
+        264.617
       ],
-      "year_ago": null,
+      "year_ago": 264.92,
       "lat": 45.569053375,
       "lng": 5.916248145,
       "color": "#ef4444"
@@ -31212,10 +31212,8 @@
       "nom": "Cruet",
       "dept": "73",
       "code_bss": "07494X0026/CRUET",
-      "current": 269.049,
+      "current": 269.074,
       "history": [
-        269.12,
-        269.123,
         269.119,
         269.187,
         269.198,
@@ -31227,9 +31225,11 @@
         269.095,
         269.101,
         269.068,
-        269.049
+        269.049,
+        269.034,
+        269.074
       ],
-      "year_ago": null,
+      "year_ago": 269.24,
       "lat": 45.522193195,
       "lng": 6.104556772,
       "color": "#ef4444"
@@ -31239,7 +31239,79 @@
     {
       "zone": "Aussois",
       "dept": "73",
-      "date": "2026-09-22",
+      "date": "2026-09-23",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Arvillard",
+      "dept": "73",
+      "date": "2026-09-23",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "La Chavanne",
+      "dept": "73",
+      "date": "2026-09-23",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -31273,12 +31345,12 @@
       }
     },
     {
-      "zone": "La Bâthie",
+      "zone": "Attignat-Oncin",
       "dept": "73",
-      "date": "2026-09-22",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
+      "date": "2026-09-23",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
@@ -31287,9 +31359,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -31309,12 +31381,12 @@
       }
     },
     {
-      "zone": "Argentine",
+      "zone": "Bourdeau",
       "dept": "73",
-      "date": "2026-09-22",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
+      "date": "2026-09-23",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
@@ -31323,81 +31395,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Bozel",
-      "dept": "73",
-      "date": "2026-09-22",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Arith",
-      "dept": "73",
-      "date": "2026-09-22",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
