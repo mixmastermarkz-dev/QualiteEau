@@ -3,7 +3,7 @@
   "nom": "Loire",
   "slug": "loire",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "21/09/2026 à 18:11",
+  "updated": "22/09/2026 à 16:19",
   "score_eau": 96,
   "nb_communes": 326,
   "potable": [
@@ -50889,10 +50889,8 @@
       "nom": "Cleppé",
       "dept": "42",
       "code_bss": "06967X0100/F",
-      "current": 323.326,
+      "current": 323.328,
       "history": [
-        323.364,
-        323.361,
         323.37,
         323.354,
         323.36,
@@ -50904,9 +50902,11 @@
         323.331,
         323.327,
         323.326,
-        323.326
+        323.326,
+        323.328,
+        323.328
       ],
-      "year_ago": 323.76,
+      "year_ago": 323.82,
       "lat": 45.769951628,
       "lng": 4.183823819,
       "color": "#ef4444"
@@ -50915,10 +50915,8 @@
       "nom": "Saint-Galmier",
       "dept": "42",
       "code_bss": "07208X0197/F1C",
-      "current": 372.539,
+      "current": 372.543,
       "history": [
-        372.549,
-        372.545,
         372.56,
         372.544,
         372.541,
@@ -50930,47 +50928,21 @@
         372.544,
         372.539,
         372.541,
-        372.539
+        372.539,
+        372.548,
+        372.543
       ],
-      "year_ago": 372.44,
+      "year_ago": 372.43,
       "lat": 45.605448412,
       "lng": 4.306255162,
       "color": "#3b82f6"
     },
     {
-      "nom": "Saint-André-le-Puy",
-      "dept": "42",
-      "code_bss": "07204X0105/F",
-      "current": 355.508,
-      "history": [
-        355.566,
-        355.558,
-        355.581,
-        355.56,
-        355.538,
-        355.544,
-        355.563,
-        355.547,
-        355.54,
-        355.524,
-        355.527,
-        355.509,
-        355.515,
-        355.508
-      ],
-      "year_ago": 355.84,
-      "lat": 45.647921327,
-      "lng": 4.246544955,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Chalain-le-Comtal",
       "dept": "42",
       "code_bss": "07203X0168/PZ",
-      "current": 338.915,
+      "current": 338.914,
       "history": [
-        338.982,
-        338.983,
         339.01,
         338.996,
         338.995,
@@ -50982,19 +50954,47 @@
         338.931,
         338.919,
         338.927,
-        338.915
+        338.915,
+        338.923,
+        338.914
       ],
-      "year_ago": 338.99,
+      "year_ago": 339.69,
       "lat": 45.649419482,
       "lng": 4.190529903,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Saint-André-le-Puy",
+      "dept": "42",
+      "code_bss": "07204X0105/F",
+      "current": 355.522,
+      "history": [
+        355.581,
+        355.56,
+        355.538,
+        355.544,
+        355.563,
+        355.547,
+        355.54,
+        355.524,
+        355.527,
+        355.509,
+        355.515,
+        355.508,
+        355.524,
+        355.522
+      ],
+      "year_ago": 355.87,
+      "lat": 45.647921327,
+      "lng": 4.246544955,
       "color": "#ef4444"
     }
   ],
   "air": [
     {
-      "zone": "Unias",
+      "zone": "Verrières-en-Forez",
       "dept": "42",
-      "date": "2026-09-23",
+      "date": "2026-09-24",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
@@ -51028,18 +51028,54 @@
       }
     },
     {
-      "zone": "Unieux",
+      "zone": "La Versanne",
       "dept": "42",
-      "date": "2026-09-23",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
+      "date": "2026-09-24",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
           "indice": 1,
           "label": "Bon",
           "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Villars",
+      "dept": "42",
+      "date": "2026-09-24",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "O₃": {
           "indice": 2,
@@ -51064,9 +51100,9 @@
       }
     },
     {
-      "zone": "Urbise",
+      "zone": "Villemontais",
       "dept": "42",
-      "date": "2026-09-23",
+      "date": "2026-09-24",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
@@ -51100,45 +51136,9 @@
       }
     },
     {
-      "zone": "Usson-en-Forez",
+      "zone": "Villerest",
       "dept": "42",
-      "date": "2026-09-23",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Valeille",
-      "dept": "42",
-      "date": "2026-09-23",
+      "date": "2026-09-24",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
