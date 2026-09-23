@@ -3,7 +3,7 @@
   "nom": "Ardèche",
   "slug": "ardeche",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "22/09/2026 à 16:19",
+  "updated": "23/09/2026 à 16:38",
   "score_eau": 96,
   "nb_communes": 337,
   "potable": [
@@ -28851,10 +28851,8 @@
       "nom": "Aubenas",
       "dept": "07",
       "code_bss": "08651X0038/0038",
-      "current": 296.409,
+      "current": 296.417,
       "history": [
-        296.259,
-        296.268,
         296.27,
         296.289,
         296.33,
@@ -28866,21 +28864,21 @@
         296.345,
         296.358,
         296.401,
-        296.409
+        296.409,
+        296.431,
+        296.417
       ],
-      "year_ago": 296.46,
+      "year_ago": 296.41,
       "lat": 44.619744152,
       "lng": 4.39032624,
-      "color": "#ef4444"
+      "color": "#3b82f6"
     },
     {
       "nom": "Lablachère",
       "dept": "07",
       "code_bss": "BSS003GPIS/X",
-      "current": 243.675,
+      "current": 243.669,
       "history": [
-        243.691,
-        243.697,
         243.689,
         243.681,
         243.716,
@@ -28892,9 +28890,11 @@
         243.629,
         243.63,
         243.667,
-        243.675
+        243.675,
+        243.694,
+        243.669
       ],
-      "year_ago": 243.42,
+      "year_ago": 243.37,
       "lat": 44.46354371,
       "lng": 4.214386619,
       "color": "#3b82f6"
@@ -28903,10 +28903,8 @@
       "nom": "Veyras",
       "dept": "07",
       "code_bss": "08413X0091/F3",
-      "current": 442.08,
+      "current": 442.06,
       "history": [
-        442.06,
-        442.08,
         442.07,
         442.08,
         442.09,
@@ -28918,9 +28916,11 @@
         442.07,
         442.06,
         442.07,
-        442.08
+        442.08,
+        442.07,
+        442.06
       ],
-      "year_ago": 441.5,
+      "year_ago": 441.49,
       "lat": 44.733838457,
       "lng": 4.561214887,
       "color": "#3b82f6"
@@ -28928,13 +28928,13 @@
   ],
   "air": [
     {
-      "zone": "Baudrières",
+      "zone": "Fabras",
       "dept": "07",
-      "date": "2026-09-24",
+      "date": "2026-09-25",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
-      "source": "ATMO Bourgogne-Franche-Comté",
+      "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -28964,13 +28964,85 @@
       }
     },
     {
-      "zone": "Beaumont-sur-Grosne",
+      "zone": "Aussois",
       "dept": "07",
-      "date": "2026-09-24",
+      "date": "2026-09-25",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "La Chapelle",
+      "dept": "07",
+      "date": "2026-09-25",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Dornas",
+      "dept": "07",
+      "date": "2026-09-25",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
-      "source": "ATMO Bourgogne-Franche-Comté",
+      "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -29000,85 +29072,13 @@
       }
     },
     {
-      "zone": "Bey",
+      "zone": "Monestier",
       "dept": "07",
-      "date": "2026-09-24",
+      "date": "2026-09-25",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Bissey-sous-Cruchaud",
-      "dept": "07",
-      "date": "2026-09-24",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Bissy-sous-Uxelles",
-      "dept": "07",
-      "date": "2026-09-24",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "ATMO Bourgogne-Franche-Comté",
+      "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
           "indice": 1,
