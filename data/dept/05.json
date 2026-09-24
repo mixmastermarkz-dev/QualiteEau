@@ -3,7 +3,7 @@
   "nom": "Hautes-Alpes",
   "slug": "hautes-alpes",
   "region": "Provence-Alpes-Côte d'Azur",
-  "updated": "23/09/2026 à 16:38",
+  "updated": "24/09/2026 à 16:36",
   "score_eau": 98,
   "nb_communes": 162,
   "potable": [
@@ -15935,39 +15935,11 @@
   ],
   "nappes": [
     {
-      "nom": "Aspremont",
-      "dept": "05",
-      "code_bss": "08688X0023/PZ1",
-      "current": 717.96,
-      "history": [
-        717.98,
-        717.98,
-        717.97,
-        717.98,
-        717.97,
-        717.97,
-        717.97,
-        717.97,
-        717.97,
-        717.97,
-        717.97,
-        717.97,
-        717.96,
-        717.96
-      ],
-      "year_ago": 718.64,
-      "lat": 44.493443917,
-      "lng": 5.728933099,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Saint-Jean-Saint-Nicolas",
       "dept": "05",
       "code_bss": "08466X0009/F2",
-      "current": 1152.51,
+      "current": 1152.39,
       "history": [
-        1153.55,
-        1153.46,
         1153.36,
         1153.27,
         1153.18,
@@ -15979,9 +15951,11 @@
         1152.71,
         1152.64,
         1152.58,
-        1152.51
+        1152.51,
+        1152.45,
+        1152.39
       ],
-      "year_ago": 1157.51,
+      "year_ago": 1157.61,
       "lat": 44.680949438,
       "lng": 6.260818821,
       "color": "#ef4444"
@@ -15990,10 +15964,8 @@
       "nom": "La Roche-de-Rame",
       "dept": "05",
       "code_bss": "08472X0007/F-1",
-      "current": 923.48,
+      "current": 923.47,
       "history": [
-        923.54,
-        923.54,
         923.53,
         923.53,
         923.52,
@@ -16005,47 +15977,47 @@
         923.5,
         923.49,
         923.49,
-        923.48
+        923.48,
+        923.48,
+        923.47
       ],
-      "year_ago": 923.9,
+      "year_ago": 923.84,
       "lat": 44.738691198,
       "lng": 6.582662145,
       "color": "#ef4444"
     },
     {
-      "nom": "Val Buëch-Méouge",
+      "nom": "Aspremont",
       "dept": "05",
-      "code_bss": "09172X0078/P",
-      "current": 491.23,
+      "code_bss": "08688X0023/PZ1",
+      "current": 717.97,
       "history": [
-        491.3,
-        491.29,
-        491.29,
-        491.28,
-        491.27,
-        491.26,
-        491.26,
-        491.25,
-        491.25,
-        491.24,
-        491.24,
-        491.23,
-        491.23,
-        491.23
+        717.97,
+        717.98,
+        717.97,
+        717.97,
+        717.97,
+        717.97,
+        717.97,
+        717.97,
+        717.97,
+        717.97,
+        717.96,
+        717.96,
+        717.96,
+        717.97
       ],
-      "year_ago": 491.63,
-      "lat": 44.231230139,
-      "lng": 5.862949573,
+      "year_ago": 718.51,
+      "lat": 44.493443917,
+      "lng": 5.728933099,
       "color": "#ef4444"
     },
     {
       "nom": "L'Argentière-la-Bessée",
       "dept": "05",
       "code_bss": "08471X0034/P5",
-      "current": 951.64,
+      "current": 951.61,
       "history": [
-        951.82,
-        951.81,
         951.79,
         951.78,
         951.77,
@@ -16057,19 +16029,83 @@
         951.68,
         951.66,
         951.65,
-        951.64
+        951.64,
+        951.62,
+        951.61
       ],
-      "year_ago": 952.62,
+      "year_ago": 952.59,
       "lat": 44.776271664,
       "lng": 6.558809418,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Val Buëch-Méouge",
+      "dept": "05",
+      "code_bss": "09172X0078/P",
+      "current": 491.22,
+      "history": [
+        491.29,
+        491.28,
+        491.27,
+        491.26,
+        491.26,
+        491.25,
+        491.25,
+        491.24,
+        491.24,
+        491.23,
+        491.23,
+        491.23,
+        491.22,
+        491.22
+      ],
+      "year_ago": 491.62,
+      "lat": 44.231230139,
+      "lng": 5.862949573,
       "color": "#ef4444"
     }
   ],
   "air": [
     {
+      "zone": "Rosans",
+      "dept": "05",
+      "date": "2026-09-26",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
+      "source": "AtmoSud",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
       "zone": "Rousset",
       "dept": "05",
-      "date": "2026-09-25",
+      "date": "2026-09-26",
       "indice": 3,
       "label": "Dégradé",
       "color": "#F0E641",
@@ -16105,7 +16141,7 @@
     {
       "zone": "Saint-André-d'Embrun",
       "dept": "05",
-      "date": "2026-09-25",
+      "date": "2026-09-26",
       "indice": 3,
       "label": "Dégradé",
       "color": "#F0E641",
@@ -16141,7 +16177,7 @@
     {
       "zone": "Saint-André-de-Rosans",
       "dept": "05",
-      "date": "2026-09-25",
+      "date": "2026-09-26",
       "indice": 3,
       "label": "Dégradé",
       "color": "#F0E641",
@@ -16177,43 +16213,7 @@
     {
       "zone": "Saint-Apollinaire",
       "dept": "05",
-      "date": "2026-09-25",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#F0E641",
-      "source": "AtmoSud",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Auban-d'Oze",
-      "dept": "05",
-      "date": "2026-09-25",
+      "date": "2026-09-26",
       "indice": 3,
       "label": "Dégradé",
       "color": "#F0E641",

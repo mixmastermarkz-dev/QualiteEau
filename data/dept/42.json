@@ -3,7 +3,7 @@
   "nom": "Loire",
   "slug": "loire",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "23/09/2026 à 16:38",
+  "updated": "24/09/2026 à 16:36",
   "score_eau": 96,
   "nb_communes": 326,
   "potable": [
@@ -50889,10 +50889,8 @@
       "nom": "Cleppé",
       "dept": "42",
       "code_bss": "06967X0100/F",
-      "current": 323.321,
+      "current": 323.314,
       "history": [
-        323.36,
-        323.357,
         323.361,
         323.349,
         323.34,
@@ -50904,73 +50902,21 @@
         323.328,
         323.328,
         323.333,
-        323.321
+        323.321,
+        323.319,
+        323.314
       ],
-      "year_ago": 323.83,
+      "year_ago": 323.84,
       "lat": 45.769951628,
       "lng": 4.183823819,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Chalain-le-Comtal",
-      "dept": "42",
-      "code_bss": "07203X0168/PZ",
-      "current": 338.914,
-      "history": [
-        338.995,
-        338.961,
-        338.947,
-        338.931,
-        338.934,
-        338.924,
-        338.931,
-        338.919,
-        338.927,
-        338.915,
-        338.923,
-        338.914,
-        338.925,
-        338.914
-      ],
-      "year_ago": 339.43,
-      "lat": 45.649419482,
-      "lng": 4.190529903,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Saint-André-le-Puy",
-      "dept": "42",
-      "code_bss": "07204X0105/F",
-      "current": 355.523,
-      "history": [
-        355.538,
-        355.544,
-        355.563,
-        355.547,
-        355.54,
-        355.524,
-        355.527,
-        355.509,
-        355.515,
-        355.508,
-        355.524,
-        355.522,
-        355.534,
-        355.523
-      ],
-      "year_ago": 355.88,
-      "lat": 45.647921327,
-      "lng": 4.246544955,
       "color": "#ef4444"
     },
     {
       "nom": "Saint-Galmier",
       "dept": "42",
       "code_bss": "07208X0197/F1C",
-      "current": 372.546,
+      "current": 372.536,
       "history": [
-        372.541,
-        372.547,
         372.554,
         372.545,
         372.544,
@@ -50982,19 +50928,181 @@
         372.548,
         372.543,
         372.548,
-        372.546
+        372.546,
+        372.549,
+        372.536
       ],
       "year_ago": 372.43,
       "lat": 45.605448412,
       "lng": 4.306255162,
       "color": "#3b82f6"
+    },
+    {
+      "nom": "Chalain-le-Comtal",
+      "dept": "42",
+      "code_bss": "07203X0168/PZ",
+      "current": 338.913,
+      "history": [
+        338.947,
+        338.931,
+        338.934,
+        338.924,
+        338.931,
+        338.919,
+        338.927,
+        338.915,
+        338.923,
+        338.914,
+        338.925,
+        338.914,
+        338.923,
+        338.913
+      ],
+      "year_ago": 339.13,
+      "lat": 45.649419482,
+      "lng": 4.190529903,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Saint-André-le-Puy",
+      "dept": "42",
+      "code_bss": "07204X0105/F",
+      "current": 355.508,
+      "history": [
+        355.563,
+        355.547,
+        355.54,
+        355.524,
+        355.527,
+        355.509,
+        355.515,
+        355.508,
+        355.524,
+        355.522,
+        355.534,
+        355.523,
+        355.526,
+        355.508
+      ],
+      "year_ago": 355.89,
+      "lat": 45.647921327,
+      "lng": 4.246544955,
+      "color": "#ef4444"
     }
   ],
   "air": [
     {
-      "zone": "Tartaras",
+      "zone": "La Valla-en-Gier",
       "dept": "42",
-      "date": "2026-09-25",
+      "date": "2026-09-26",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Veauche",
+      "dept": "42",
+      "date": "2026-09-26",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Veauchette",
+      "dept": "42",
+      "date": "2026-09-26",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Vendranges",
+      "dept": "42",
+      "date": "2026-09-26",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
@@ -51028,117 +51136,9 @@
       }
     },
     {
-      "zone": "La Terrasse-sur-Dorlay",
+      "zone": "Véranne",
       "dept": "42",
-      "date": "2026-09-25",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Thélis-la-Combe",
-      "dept": "42",
-      "date": "2026-09-25",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "La Tour-en-Jarez",
-      "dept": "42",
-      "date": "2026-09-25",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "La Tourette",
-      "dept": "42",
-      "date": "2026-09-25",
+      "date": "2026-09-26",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",

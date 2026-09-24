@@ -3,7 +3,7 @@
   "nom": "Alpes-Maritimes",
   "slug": "alpes-maritimes",
   "region": "Provence-Alpes-Côte d'Azur",
-  "updated": "23/09/2026 à 16:38",
+  "updated": "24/09/2026 à 16:36",
   "score_eau": 99,
   "nb_communes": 164,
   "potable": [
@@ -20342,24 +20342,24 @@
       "nom": "Gilette",
       "dept": "06",
       "code_bss": "09724X0023/P2",
-      "current": 95.003,
+      "current": 95.007,
       "history": [
+        95.003,
+        95.005,
         95.004,
+        95.004,
+        95.004,
+        95.003,
+        95.004,
+        95.004,
+        95.005,
+        95.005,
+        95.005,
+        95.003,
         95.006,
-        95.003,
-        95.005,
-        95.004,
-        95.004,
-        95.004,
-        95.003,
-        95.004,
-        95.004,
-        95.005,
-        95.005,
-        95.005,
-        95.003
+        95.007
       ],
-      "year_ago": 98.79,
+      "year_ago": 98.78,
       "lat": 43.831616009,
       "lng": 7.188887934,
       "color": "#ef4444"
@@ -20368,10 +20368,8 @@
       "nom": "Nice",
       "dept": "06",
       "code_bss": "09994X0521/P4B",
-      "current": 10.45,
+      "current": 10.43,
       "history": [
-        10.5,
-        10.5,
         10.5,
         10.49,
         10.48,
@@ -20383,7 +20381,9 @@
         10.45,
         10.45,
         10.45,
-        10.45
+        10.46,
+        10.42,
+        10.43
       ],
       "year_ago": 11.57,
       "lat": 43.691448072,
@@ -20394,36 +20394,34 @@
       "nom": "Villeneuve-Loubet",
       "dept": "06",
       "code_bss": "09998X0199/PZ_PID",
-      "current": 33.23,
+      "current": 18.34,
       "history": [
-        18.5,
-        18.5,
+        18.54,
+        18.51,
         18.53,
         18.49,
-        18.52,
-        18.46,
         18.5,
-        18.44,
         18.47,
-        18.44,
-        18.49,
-        18.42,
+        18.47,
+        18.47,
+        18.48,
         18.46,
-        33.23
+        18.45,
+        18.43,
+        18.38,
+        18.34
       ],
-      "year_ago": 18.74,
+      "year_ago": 18.75,
       "lat": 43.640614714,
       "lng": 7.125900921,
-      "color": "#3b82f6"
+      "color": "#ef4444"
     },
     {
       "nom": "Pégomas",
       "dept": "06",
       "code_bss": "09995X0028/F",
-      "current": 9.285,
+      "current": 9.217,
       "history": [
-        9.264,
-        9.286,
         9.247,
         9.19,
         9.165,
@@ -20435,9 +20433,11 @@
         9.176,
         9.227,
         9.228,
-        9.285
+        9.285,
+        9.244,
+        9.217
       ],
-      "year_ago": 9.5,
+      "year_ago": 9.42,
       "lat": 43.587762053,
       "lng": 6.926141257,
       "color": "#ef4444"
@@ -20446,10 +20446,8 @@
       "nom": "Gilette",
       "dept": "06",
       "code_bss": "BSS004FHCY/X",
-      "current": 94.83,
+      "current": 94.88,
       "history": [
-        94.88,
-        94.87,
         94.84,
         94.85,
         94.85,
@@ -20461,7 +20459,9 @@
         94.79,
         94.79,
         94.79,
-        94.83
+        94.83,
+        94.86,
+        94.88
       ],
       "year_ago": 98.95,
       "lat": 43.831748442,
@@ -20473,7 +20473,7 @@
     {
       "zone": "Saint-Babel",
       "dept": "06",
-      "date": "2026-09-25",
+      "date": "2026-09-26",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
@@ -20509,16 +20509,52 @@
     {
       "zone": "Montromant",
       "dept": "06",
-      "date": "2026-09-25",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-09-26",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
           "indice": 1,
           "label": "Bon",
           "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Saint-Étienne-la-Varenne",
+      "dept": "06",
+      "date": "2026-09-26",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "O₃": {
           "indice": 3,
@@ -20543,45 +20579,9 @@
       }
     },
     {
-      "zone": "Saint-Étienne-la-Varenne",
-      "dept": "06",
-      "date": "2026-09-25",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
       "zone": "La Chapelle-sur-Usson",
       "dept": "06",
-      "date": "2026-09-25",
+      "date": "2026-09-26",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
@@ -20617,7 +20617,7 @@
     {
       "zone": "Orcines",
       "dept": "06",
-      "date": "2026-09-25",
+      "date": "2026-09-26",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
