@@ -3,7 +3,7 @@
   "nom": "Haut-Rhin",
   "slug": "haut-rhin",
   "region": "Grand Est",
-  "updated": "25/09/2026 à 16:58",
+  "updated": "26/09/2026 à 16:04",
   "score_eau": 95,
   "nb_communes": 366,
   "potable": [
@@ -35974,10 +35974,8 @@
       "nom": "Mooslargue",
       "dept": "68",
       "code_bss": "04761X0021/F1",
-      "current": 428.685,
+      "current": 428.678,
       "history": [
-        428.696,
-        428.692,
         428.695,
         428.689,
         428.69,
@@ -35989,7 +35987,9 @@
         428.689,
         428.685,
         428.686,
-        428.685
+        428.685,
+        428.686,
+        428.678
       ],
       "year_ago": 428.78,
       "lat": 47.509654366,
@@ -35999,9 +35999,81 @@
   ],
   "air": [
     {
+      "zone": "Obermorschwiller",
+      "dept": "68",
+      "date": "2026-09-27",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
+      "source": "Atmo Grand Est",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Obersaasheim",
+      "dept": "68",
+      "date": "2026-09-27",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#FF5050",
+      "source": "Atmo Grand Est",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
       "zone": "Oderen",
       "dept": "68",
-      "date": "2026-09-26",
+      "date": "2026-09-27",
       "indice": 3,
       "label": "Dégradé",
       "color": "#F0E641",
@@ -36037,7 +36109,7 @@
     {
       "zone": "Oltingue",
       "dept": "68",
-      "date": "2026-09-26",
+      "date": "2026-09-27",
       "indice": 3,
       "label": "Dégradé",
       "color": "#F0E641",
@@ -36073,79 +36145,7 @@
     {
       "zone": "Orbey",
       "dept": "68",
-      "date": "2026-09-26",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#F0E641",
-      "source": "Atmo Grand Est",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Orschwihr",
-      "dept": "68",
-      "date": "2026-09-26",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#F0E641",
-      "source": "Atmo Grand Est",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Osenbach",
-      "dept": "68",
-      "date": "2026-09-26",
+      "date": "2026-09-27",
       "indice": 3,
       "label": "Dégradé",
       "color": "#F0E641",
