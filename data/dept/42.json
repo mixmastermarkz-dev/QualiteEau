@@ -3,7 +3,7 @@
   "nom": "Loire",
   "slug": "loire",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "26/09/2026 à 16:03",
+  "updated": "27/09/2026 à 16:58",
   "score_eau": 96,
   "nb_communes": 326,
   "potable": [
@@ -50729,10 +50729,8 @@
       "nom": "Saint-Galmier",
       "dept": "42",
       "code_bss": "07208X0197/F1C",
-      "current": 372.544,
+      "current": 372.543,
       "history": [
-        372.544,
-        372.539,
         372.541,
         372.539,
         372.548,
@@ -50744,7 +50742,9 @@
         372.545,
         372.543,
         372.547,
-        372.544
+        372.544,
+        372.547,
+        372.543
       ],
       "year_ago": 372.43,
       "lat": 45.605448412,
@@ -50752,39 +50752,11 @@
       "color": "#3b82f6"
     },
     {
-      "nom": "Saint-André-le-Puy",
-      "dept": "42",
-      "code_bss": "07204X0105/F",
-      "current": 355.508,
-      "history": [
-        355.527,
-        355.509,
-        355.515,
-        355.508,
-        355.524,
-        355.522,
-        355.534,
-        355.523,
-        355.526,
-        355.508,
-        355.522,
-        355.518,
-        355.526,
-        355.508
-      ],
-      "year_ago": 355.89,
-      "lat": 45.647921327,
-      "lng": 4.246544955,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Chalain-le-Comtal",
       "dept": "42",
       "code_bss": "07203X0168/PZ",
       "current": 338.911,
       "history": [
-        338.931,
-        338.919,
         338.927,
         338.915,
         338.923,
@@ -50795,6 +50767,8 @@
         338.913,
         338.917,
         338.912,
+        338.921,
+        338.911,
         338.921,
         338.911
       ],
@@ -50807,10 +50781,8 @@
       "nom": "Cleppé",
       "dept": "42",
       "code_bss": "06967X0100/F",
-      "current": 323.304,
+      "current": 323.301,
       "history": [
-        323.331,
-        323.327,
         323.326,
         323.326,
         323.328,
@@ -50822,19 +50794,47 @@
         323.313,
         323.311,
         323.312,
-        323.304
+        323.304,
+        323.303,
+        323.301
       ],
-      "year_ago": 323.82,
+      "year_ago": 323.81,
       "lat": 45.769951628,
       "lng": 4.183823819,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Saint-André-le-Puy",
+      "dept": "42",
+      "code_bss": "07204X0105/F",
+      "current": 355.51,
+      "history": [
+        355.515,
+        355.508,
+        355.524,
+        355.522,
+        355.534,
+        355.523,
+        355.526,
+        355.508,
+        355.522,
+        355.518,
+        355.526,
+        355.508,
+        355.517,
+        355.51
+      ],
+      "year_ago": 355.9,
+      "lat": 45.647921327,
+      "lng": 4.246544955,
       "color": "#ef4444"
     }
   ],
   "air": [
     {
-      "zone": "Champoly",
+      "zone": "Saint-Romain-en-Jarez",
       "dept": "42",
-      "date": "2026-09-27",
+      "date": "2026-09-29",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
@@ -50868,9 +50868,9 @@
       }
     },
     {
-      "zone": "Champdieu",
+      "zone": "Saint-Romain-la-Motte",
       "dept": "42",
-      "date": "2026-09-27",
+      "date": "2026-09-29",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
@@ -50904,9 +50904,45 @@
       }
     },
     {
-      "zone": "La Chambonie",
+      "zone": "Saint-Romain-le-Puy",
       "dept": "42",
-      "date": "2026-09-27",
+      "date": "2026-09-29",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Saint-Romain-les-Atheux",
+      "dept": "42",
+      "date": "2026-09-29",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
@@ -50940,45 +50976,9 @@
       }
     },
     {
-      "zone": "Le Chambon-Feugerolles",
+      "zone": "Saint-Sauveur-en-Rue",
       "dept": "42",
-      "date": "2026-09-27",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Chambœuf",
-      "dept": "42",
-      "date": "2026-09-27",
+      "date": "2026-09-29",
       "indice": 3,
       "label": "Dégradé",
       "color": "#f0e641",
