@@ -3,7 +3,7 @@
   "nom": "Loire",
   "slug": "loire",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "27/09/2026 à 16:58",
+  "updated": "28/09/2026 à 19:56",
   "score_eau": 96,
   "nb_communes": 326,
   "potable": [
@@ -50726,65 +50726,11 @@
   ],
   "nappes": [
     {
-      "nom": "Saint-Galmier",
-      "dept": "42",
-      "code_bss": "07208X0197/F1C",
-      "current": 372.543,
-      "history": [
-        372.541,
-        372.539,
-        372.548,
-        372.543,
-        372.548,
-        372.546,
-        372.549,
-        372.536,
-        372.545,
-        372.543,
-        372.547,
-        372.544,
-        372.547,
-        372.543
-      ],
-      "year_ago": 372.43,
-      "lat": 45.605448412,
-      "lng": 4.306255162,
-      "color": "#3b82f6"
-    },
-    {
-      "nom": "Chalain-le-Comtal",
-      "dept": "42",
-      "code_bss": "07203X0168/PZ",
-      "current": 338.911,
-      "history": [
-        338.927,
-        338.915,
-        338.923,
-        338.914,
-        338.925,
-        338.914,
-        338.923,
-        338.913,
-        338.917,
-        338.912,
-        338.921,
-        338.911,
-        338.921,
-        338.911
-      ],
-      "year_ago": 339.0,
-      "lat": 45.649419482,
-      "lng": 4.190529903,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Cleppé",
       "dept": "42",
       "code_bss": "06967X0100/F",
-      "current": 323.301,
+      "current": 323.307,
       "history": [
-        323.326,
-        323.326,
         323.328,
         323.328,
         323.333,
@@ -50796,7 +50742,9 @@
         323.312,
         323.304,
         323.303,
-        323.301
+        323.301,
+        323.308,
+        323.307
       ],
       "year_ago": 323.81,
       "lat": 45.769951628,
@@ -50807,10 +50755,8 @@
       "nom": "Saint-André-le-Puy",
       "dept": "42",
       "code_bss": "07204X0105/F",
-      "current": 355.51,
+      "current": 355.505,
       "history": [
-        355.515,
-        355.508,
         355.524,
         355.522,
         355.534,
@@ -50822,91 +50768,73 @@
         355.526,
         355.508,
         355.517,
-        355.51
+        355.51,
+        355.521,
+        355.505
       ],
       "year_ago": 355.9,
       "lat": 45.647921327,
       "lng": 4.246544955,
       "color": "#ef4444"
+    },
+    {
+      "nom": "Chalain-le-Comtal",
+      "dept": "42",
+      "code_bss": "07203X0168/PZ",
+      "current": 338.91,
+      "history": [
+        338.923,
+        338.914,
+        338.925,
+        338.914,
+        338.923,
+        338.913,
+        338.917,
+        338.912,
+        338.921,
+        338.911,
+        338.921,
+        338.911,
+        338.915,
+        338.91
+      ],
+      "year_ago": 338.99,
+      "lat": 45.649419482,
+      "lng": 4.190529903,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Saint-Galmier",
+      "dept": "42",
+      "code_bss": "07208X0197/F1C",
+      "current": 372.543,
+      "history": [
+        372.548,
+        372.543,
+        372.548,
+        372.546,
+        372.549,
+        372.536,
+        372.545,
+        372.543,
+        372.547,
+        372.544,
+        372.547,
+        372.543,
+        372.549,
+        372.543
+      ],
+      "year_ago": 372.43,
+      "lat": 45.605448412,
+      "lng": 4.306255162,
+      "color": "#3b82f6"
     }
   ],
   "air": [
     {
-      "zone": "Saint-Romain-en-Jarez",
+      "zone": "Verrières-en-Forez",
       "dept": "42",
-      "date": "2026-09-29",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Romain-la-Motte",
-      "dept": "42",
-      "date": "2026-09-29",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Romain-le-Puy",
-      "dept": "42",
-      "date": "2026-09-29",
+      "date": "2026-09-30",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -50940,12 +50868,12 @@
       }
     },
     {
-      "zone": "Saint-Romain-les-Atheux",
+      "zone": "La Versanne",
       "dept": "42",
-      "date": "2026-09-29",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-09-30",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
@@ -50954,9 +50882,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
@@ -50976,12 +50904,12 @@
       }
     },
     {
-      "zone": "Saint-Sauveur-en-Rue",
+      "zone": "Villars",
       "dept": "42",
-      "date": "2026-09-29",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-09-30",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
@@ -50990,9 +50918,81 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Villemontais",
+      "dept": "42",
+      "date": "2026-09-30",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Villerest",
+      "dept": "42",
+      "date": "2026-09-30",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
