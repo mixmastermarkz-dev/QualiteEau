@@ -3,7 +3,7 @@
   "nom": "Haute-Savoie",
   "slug": "haute-savoie",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "28/09/2026 à 19:56",
+  "updated": "29/09/2026 à 18:19",
   "score_eau": null,
   "nb_communes": 0,
   "potable": [],
@@ -24235,39 +24235,11 @@
   ],
   "nappes": [
     {
-      "nom": "Marigny-Saint-Marcel",
-      "dept": "74",
-      "code_bss": "07013X0071/F1",
-      "current": 351.496,
-      "history": [
-        351.552,
-        351.546,
-        351.543,
-        351.539,
-        351.534,
-        351.53,
-        351.526,
-        351.521,
-        351.517,
-        351.513,
-        351.508,
-        351.503,
-        351.5,
-        351.496
-      ],
-      "year_ago": 352.04,
-      "lat": 45.832389293,
-      "lng": 5.962087611,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Publier",
       "dept": "74",
       "code_bss": "06301X0019/P5",
-      "current": 373.445,
+      "current": 373.436,
       "history": [
-        373.493,
-        373.489,
         373.485,
         373.483,
         373.479,
@@ -24279,9 +24251,11 @@
         373.457,
         373.452,
         373.448,
-        373.445
+        373.445,
+        373.441,
+        373.436
       ],
-      "year_ago": 374.07,
+      "year_ago": 374.08,
       "lat": 46.390565227,
       "lng": 6.520859286,
       "color": "#ef4444"
@@ -24290,10 +24264,8 @@
       "nom": "Vinzier",
       "dept": "74",
       "code_bss": "06306X0042/BIOGE",
-      "current": 569.644,
+      "current": 569.623,
       "history": [
-        569.84,
-        569.827,
         569.815,
         569.792,
         569.775,
@@ -24305,9 +24277,11 @@
         569.679,
         569.666,
         569.66,
-        569.644
+        569.644,
+        569.634,
+        569.623
       ],
-      "year_ago": 571.69,
+      "year_ago": 571.61,
       "lat": 46.335316884,
       "lng": 6.621257922,
       "color": "#ef4444"
@@ -24316,10 +24290,8 @@
       "nom": "Passy",
       "dept": "74",
       "code_bss": "BSS004QBEB/X",
-      "current": 568.635,
+      "current": 568.623,
       "history": [
-        568.715,
-        568.71,
         568.704,
         568.696,
         568.691,
@@ -24331,7 +24303,9 @@
         568.653,
         568.648,
         568.645,
-        568.635
+        568.635,
+        568.631,
+        568.623
       ],
       "year_ago": 569.32,
       "lat": 45.920935924,
@@ -24359,7 +24333,7 @@
         361.975,
         361.972
       ],
-      "year_ago": 362.15,
+      "year_ago": 362.13,
       "lat": 45.835072054,
       "lng": 5.968019958,
       "color": "#ef4444"
@@ -24368,10 +24342,8 @@
       "nom": "Viry",
       "dept": "74",
       "code_bss": "06537X0103/VEIGY",
-      "current": 371.74,
+      "current": 371.728,
       "history": [
-        371.816,
-        371.8,
         371.807,
         371.788,
         371.796,
@@ -24383,19 +24355,47 @@
         371.765,
         371.751,
         371.761,
-        371.74
+        371.74,
+        371.746,
+        371.728
       ],
-      "year_ago": 371.89,
+      "year_ago": 371.88,
       "lat": 46.141387797,
       "lng": 6.017375948,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Marigny-Saint-Marcel",
+      "dept": "74",
+      "code_bss": "07013X0071/F1",
+      "current": 351.486,
+      "history": [
+        351.543,
+        351.539,
+        351.534,
+        351.53,
+        351.526,
+        351.521,
+        351.517,
+        351.513,
+        351.508,
+        351.503,
+        351.5,
+        351.496,
+        351.491,
+        351.486
+      ],
+      "year_ago": 352.04,
+      "lat": 45.832389293,
+      "lng": 5.962087611,
       "color": "#ef4444"
     }
   ],
   "air": [
     {
-      "zone": "Saint-Sylvestre",
+      "zone": "Chêne-en-Semine",
       "dept": "74",
-      "date": "2026-09-30",
+      "date": "2026-10-01",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -24429,81 +24429,9 @@
       }
     },
     {
-      "zone": "Sales",
+      "zone": "Viuz-en-Sallaz",
       "dept": "74",
-      "date": "2026-09-30",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Sallanches",
-      "dept": "74",
-      "date": "2026-09-30",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Sallenôves",
-      "dept": "74",
-      "date": "2026-09-30",
+      "date": "2026-10-01",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -24537,9 +24465,81 @@
       }
     },
     {
-      "zone": "Samoëns",
+      "zone": "Massongy",
       "dept": "74",
-      "date": "2026-09-30",
+      "date": "2026-10-01",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Chavanod",
+      "dept": "74",
+      "date": "2026-10-01",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Chavannaz",
+      "dept": "74",
+      "date": "2026-10-01",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",

@@ -3,10 +3,68 @@
   "nom": "Ardèche",
   "slug": "ardeche",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "28/09/2026 à 19:56",
-  "score_eau": null,
-  "nb_communes": 0,
-  "potable": [],
+  "updated": "29/09/2026 à 18:19",
+  "score_eau": 100,
+  "nb_communes": 3,
+  "potable": [
+    {
+      "nom": "ALBA-LA-ROMAINE",
+      "dept": "07",
+      "insee": "07005",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "parametres": {
+        "Conductivité": {
+          "valeur": 5.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2018-11-16"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "GUILHERAND-GRANGES",
+      "dept": "07",
+      "insee": "07102",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Conductivité": {
+          "valeur": 8.55,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2019-04-12"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-SAUVEUR-DE-MONTAGUT",
+      "dept": "07",
+      "insee": "07295",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "parametres": {
+        "Conductivité": {
+          "valeur": 7.8,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2020-08-28"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    }
+  ],
   "rivieres": [
     {
       "nom": "DOUX A SAINT-JEAN-DE-MUZOLS 1",
@@ -10603,13 +10661,37 @@
   ],
   "nappes": [
     {
+      "nom": "Veyras",
+      "dept": "07",
+      "code_bss": "08413X0091/F3",
+      "current": 442.08,
+      "history": [
+        442.07,
+        442.06,
+        442.06,
+        442.06,
+        442.07,
+        442.09,
+        442.08,
+        442.09,
+        442.08,
+        442.09,
+        442.08,
+        442.1,
+        442.09,
+        442.08
+      ],
+      "year_ago": 441.74,
+      "lat": 44.733838457,
+      "lng": 4.561214887,
+      "color": "#3b82f6"
+    },
+    {
       "nom": "Lablachère",
       "dept": "07",
       "code_bss": "BSS003GPIS/X",
       "current": 243.681,
       "history": [
-        243.667,
-        243.675,
         243.694,
         243.669,
         243.675,
@@ -10621,6 +10703,8 @@
         243.686,
         243.667,
         243.689,
+        243.681,
+        243.697,
         243.681
       ],
       "year_ago": 243.37,
@@ -10632,10 +10716,8 @@
       "nom": "Aubenas",
       "dept": "07",
       "code_bss": "08651X0038/0038",
-      "current": 296.52,
+      "current": 296.534,
       "history": [
-        296.401,
-        296.409,
         296.431,
         296.417,
         296.437,
@@ -10647,49 +10729,25 @@
         296.501,
         296.491,
         296.52,
-        296.52
+        296.52,
+        296.546,
+        296.534
       ],
-      "year_ago": 296.23,
+      "year_ago": 296.19,
       "lat": 44.619744152,
       "lng": 4.39032624,
-      "color": "#3b82f6"
-    },
-    {
-      "nom": "Veyras",
-      "dept": "07",
-      "code_bss": "08413X0091/F3",
-      "current": 442.1,
-      "history": [
-        442.07,
-        442.08,
-        442.07,
-        442.06,
-        442.06,
-        442.06,
-        442.07,
-        442.09,
-        442.08,
-        442.09,
-        442.08,
-        442.09,
-        442.08,
-        442.1
-      ],
-      "year_ago": 441.71,
-      "lat": 44.733838457,
-      "lng": 4.561214887,
       "color": "#3b82f6"
     }
   ],
   "air": [
     {
-      "zone": "Montpont-en-Bresse",
+      "zone": "Lablachère",
       "dept": "07",
-      "date": "2026-09-30",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "ATMO Bourgogne-Franche-Comté",
+      "date": "2026-10-01",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -10697,9 +10755,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
@@ -10719,13 +10777,13 @@
       }
     },
     {
-      "zone": "Montret",
+      "zone": "Nozières",
       "dept": "07",
-      "date": "2026-09-30",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "ATMO Bourgogne-Franche-Comté",
+      "date": "2026-10-01",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -10733,9 +10791,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
@@ -10755,13 +10813,13 @@
       }
     },
     {
-      "zone": "Morey",
+      "zone": "Brides-les-Bains",
       "dept": "07",
-      "date": "2026-09-30",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "ATMO Bourgogne-Franche-Comté",
+      "date": "2026-10-01",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -10769,9 +10827,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
@@ -10791,13 +10849,13 @@
       }
     },
     {
-      "zone": "Moroges",
+      "zone": "Laboule",
       "dept": "07",
-      "date": "2026-09-30",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "ATMO Bourgogne-Franche-Comté",
+      "date": "2026-10-01",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -10805,9 +10863,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
@@ -10827,13 +10885,13 @@
       }
     },
     {
-      "zone": "Mouthier-en-Bresse",
+      "zone": "Le Lac-d'Issarlès",
       "dept": "07",
-      "date": "2026-09-30",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "ATMO Bourgogne-Franche-Comté",
+      "date": "2026-10-01",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -10841,9 +10899,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
