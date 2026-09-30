@@ -3,30 +3,10 @@
   "nom": "Alpes-Maritimes",
   "slug": "alpes-maritimes",
   "region": "Provence-Alpes-Côte d'Azur",
-  "updated": "29/09/2026 à 18:19",
-  "score_eau": 100,
-  "nb_communes": 1,
-  "potable": [
-    {
-      "nom": "NICE",
-      "dept": "06",
-      "insee": "06088",
-      "restric": "N.D.",
-      "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
-      "parametres": {
-        "Aluminium": {
-          "valeur": "<5",
-          "unite": "µg/L",
-          "color": "#10b981",
-          "date": "2018-01-31"
-        }
-      },
-      "score": 100,
-      "score_color": "#10b981",
-      "score_label": "Bonne"
-    }
-  ],
+  "updated": "30/09/2026 à 18:14",
+  "score_eau": null,
+  "nb_communes": 0,
+  "potable": [],
   "rivieres": [
     {
       "nom": "LOUP A TOURRETTE-SUR-LOUP 6",
@@ -10483,10 +10463,8 @@
       "nom": "Gilette",
       "dept": "06",
       "code_bss": "09724X0023/P2",
-      "current": 95.004,
+      "current": 95.067,
       "history": [
-        95.005,
-        95.003,
         95.006,
         95.007,
         95.005,
@@ -10498,7 +10476,9 @@
         95.005,
         95.005,
         95.003,
-        95.004
+        95.004,
+        95.005,
+        95.067
       ],
       "year_ago": 98.76,
       "lat": 43.831616009,
@@ -10506,65 +10486,11 @@
       "color": "#ef4444"
     },
     {
-      "nom": "Nice",
-      "dept": "06",
-      "code_bss": "09994X0521/P4B",
-      "current": 10.42,
-      "history": [
-        10.45,
-        10.46,
-        10.42,
-        10.43,
-        10.44,
-        10.44,
-        10.44,
-        10.44,
-        10.44,
-        10.44,
-        10.45,
-        10.44,
-        10.42,
-        10.42
-      ],
-      "year_ago": 11.57,
-      "lat": 43.691448072,
-      "lng": 7.193977883,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Pégomas",
-      "dept": "06",
-      "code_bss": "09995X0028/F",
-      "current": 9.235,
-      "history": [
-        9.228,
-        9.285,
-        9.244,
-        9.217,
-        9.226,
-        9.254,
-        9.223,
-        9.233,
-        9.228,
-        9.263,
-        9.251,
-        9.224,
-        9.226,
-        9.235
-      ],
-      "year_ago": 9.56,
-      "lat": 43.587762053,
-      "lng": 6.926141257,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Villeneuve-Loubet",
       "dept": "06",
       "code_bss": "09998X0199/PZ_PID",
-      "current": 18.36,
+      "current": 18.35,
       "history": [
-        18.45,
-        18.43,
         18.38,
         18.34,
         18.4,
@@ -10576,7 +10502,9 @@
         18.35,
         18.37,
         18.37,
-        18.36
+        18.36,
+        18.37,
+        18.35
       ],
       "year_ago": 18.72,
       "lat": 43.640614714,
@@ -10584,13 +10512,63 @@
       "color": "#ef4444"
     },
     {
+      "nom": "Nice",
+      "dept": "06",
+      "code_bss": "09994X0521/P4B",
+      "current": 10.41,
+      "history": [
+        10.42,
+        10.43,
+        10.44,
+        10.44,
+        10.44,
+        10.44,
+        10.44,
+        10.44,
+        10.45,
+        10.44,
+        10.42,
+        10.42,
+        10.42,
+        10.41
+      ],
+      "year_ago": 11.55,
+      "lat": 43.691448072,
+      "lng": 7.193977883,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Pégomas",
+      "dept": "06",
+      "code_bss": "09995X0028/F",
+      "current": 9.204,
+      "history": [
+        9.244,
+        9.217,
+        9.226,
+        9.254,
+        9.223,
+        9.233,
+        9.228,
+        9.263,
+        9.251,
+        9.224,
+        9.226,
+        9.235,
+        9.242,
+        9.204
+      ],
+      "year_ago": 9.57,
+      "lat": 43.587762053,
+      "lng": 6.926141257,
+      "color": "#ef4444"
+    },
+    {
       "nom": "Gilette",
       "dept": "06",
       "code_bss": "BSS004FHCY/X",
-      "current": 95.03,
+      "current": 95.18,
       "history": [
-        94.79,
-        94.83,
         94.86,
         94.88,
         94.88,
@@ -10602,7 +10580,9 @@
         94.84,
         94.85,
         94.94,
-        95.03
+        95.03,
+        95.08,
+        95.18
       ],
       "year_ago": 98.94,
       "lat": 43.831748442,
@@ -10612,9 +10592,9 @@
   ],
   "air": [
     {
-      "zone": "Saint-Maurice",
+      "zone": "Orcival",
       "dept": "06",
-      "date": "2026-10-01",
+      "date": "2026-10-02",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -10648,9 +10628,9 @@
       }
     },
     {
-      "zone": "Ranchal",
+      "zone": "Montromant",
       "dept": "06",
-      "date": "2026-10-01",
+      "date": "2026-10-02",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -10684,9 +10664,45 @@
       }
     },
     {
-      "zone": "Saint-Maurice-près-Pionsat",
+      "zone": "Taluyers",
       "dept": "06",
-      "date": "2026-10-01",
+      "date": "2026-10-02",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Saint-Laure",
+      "dept": "06",
+      "date": "2026-10-02",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -10720,45 +10736,9 @@
       }
     },
     {
-      "zone": "Châteauneuf-les-Bains",
+      "zone": "Montmelas-Saint-Sorlin",
       "dept": "06",
-      "date": "2026-10-01",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Chassieu",
-      "dept": "06",
-      "date": "2026-10-01",
+      "date": "2026-10-02",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",

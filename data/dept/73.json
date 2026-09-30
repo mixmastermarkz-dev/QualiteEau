@@ -3,7 +3,7 @@
   "nom": "Savoie",
   "slug": "savoie",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "29/09/2026 à 18:19",
+  "updated": "30/09/2026 à 18:14",
   "score_eau": null,
   "nb_communes": 0,
   "potable": [],
@@ -15423,10 +15423,8 @@
       "nom": "Aiton",
       "dept": "73",
       "code_bss": "07266X0052/PS4",
-      "current": 293.251,
+      "current": 293.244,
       "history": [
-        293.289,
-        293.289,
         293.291,
         293.286,
         293.284,
@@ -15438,9 +15436,11 @@
         293.264,
         293.258,
         293.255,
-        293.251
+        293.251,
+        293.248,
+        293.244
       ],
-      "year_ago": 293.42,
+      "year_ago": 293.41,
       "lat": 45.566444711,
       "lng": 6.245431548,
       "color": "#ef4444"
@@ -15449,10 +15449,8 @@
       "nom": "Chambéry",
       "dept": "73",
       "code_bss": "07256X0095/CHAMBE",
-      "current": 264.61,
+      "current": 264.606,
       "history": [
-        264.641,
-        264.632,
         264.625,
         264.619,
         264.623,
@@ -15464,9 +15462,11 @@
         264.616,
         264.616,
         264.617,
-        264.61
+        264.61,
+        264.603,
+        264.606
       ],
-      "year_ago": 264.92,
+      "year_ago": 264.91,
       "lat": 45.569053375,
       "lng": 5.916248145,
       "color": "#ef4444"
@@ -15492,7 +15492,7 @@
         269.013,
         269.062
       ],
-      "year_ago": 269.27,
+      "year_ago": 269.33,
       "lat": 45.522193195,
       "lng": 6.104556772,
       "color": "#ef4444"
@@ -15500,9 +15500,9 @@
   ],
   "air": [
     {
-      "zone": "Brides-les-Bains",
+      "zone": "Aussois",
       "dept": "73",
-      "date": "2026-10-01",
+      "date": "2026-10-02",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -15536,9 +15536,45 @@
       }
     },
     {
-      "zone": "Bourg-Saint-Maurice",
+      "zone": "Arith",
       "dept": "73",
-      "date": "2026-10-01",
+      "date": "2026-10-02",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Arvillard",
+      "dept": "73",
+      "date": "2026-10-02",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -15574,7 +15610,7 @@
     {
       "zone": "La Chavanne",
       "dept": "73",
-      "date": "2026-10-01",
+      "date": "2026-10-02",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -15608,45 +15644,9 @@
       }
     },
     {
-      "zone": "Ayn",
+      "zone": "Attignat-Oncin",
       "dept": "73",
-      "date": "2026-10-01",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Bozel",
-      "dept": "73",
-      "date": "2026-10-01",
+      "date": "2026-10-02",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
