@@ -3,7 +3,7 @@
   "nom": "Landes",
   "slug": "landes",
   "region": "Nouvelle-Aquitaine",
-  "updated": "03/10/2026 à 16:33",
+  "updated": "04/10/2026 à 17:07",
   "score_eau": 99,
   "nb_communes": 327,
   "potable": [
@@ -44735,32 +44735,6 @@
   ],
   "nappes": [
     {
-      "nom": "Lacquy",
-      "dept": "40",
-      "code_bss": "09266X0004/LC101",
-      "current": 76.35,
-      "history": [
-        76.37,
-        76.372,
-        76.379,
-        76.377,
-        76.386,
-        76.383,
-        76.388,
-        76.387,
-        76.387,
-        76.38,
-        76.366,
-        76.356,
-        76.352,
-        76.35
-      ],
-      "year_ago": 76.57,
-      "lat": 43.960162747,
-      "lng": -0.272877691,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Gourbera",
       "dept": "40",
       "code_bss": "09505X0034/GO01",
@@ -44781,10 +44755,36 @@
         21.49,
         21.47
       ],
-      "year_ago": 21.39,
+      "year_ago": 21.4,
       "lat": 43.788966613,
       "lng": -1.035321265,
       "color": "#3b82f6"
+    },
+    {
+      "nom": "Lacquy",
+      "dept": "40",
+      "code_bss": "09266X0004/LC101",
+      "current": 76.35,
+      "history": [
+        76.37,
+        76.372,
+        76.379,
+        76.377,
+        76.386,
+        76.383,
+        76.388,
+        76.387,
+        76.387,
+        76.38,
+        76.366,
+        76.356,
+        76.352,
+        76.35
+      ],
+      "year_ago": 76.58,
+      "lat": 43.960162747,
+      "lng": -0.272877691,
+      "color": "#ef4444"
     },
     {
       "nom": "Betbezer-d'Armagnac",
@@ -44807,7 +44807,7 @@
         69.047,
         69.038
       ],
-      "year_ago": 69.54,
+      "year_ago": 69.52,
       "lat": 43.982375767,
       "lng": -0.155560344,
       "color": "#ef4444"
@@ -44833,7 +44833,7 @@
         31.61,
         31.6
       ],
-      "year_ago": 31.55,
+      "year_ago": 31.57,
       "lat": 43.910092549,
       "lng": -0.715761027,
       "color": "#3b82f6"
@@ -44893,9 +44893,45 @@
   ],
   "air": [
     {
-      "zone": "Arsague",
+      "zone": "Rimbez-et-Baudiets",
       "dept": "40",
-      "date": "2026-10-04",
+      "date": "2026-10-05",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Nouvelle-Aquitaine",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Callen",
+      "dept": "40",
+      "date": "2026-10-05",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -44929,9 +44965,45 @@
       }
     },
     {
-      "zone": "Montgaillard",
+      "zone": "Mauvezin-d'Armagnac",
       "dept": "40",
-      "date": "2026-10-04",
+      "date": "2026-10-05",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Nouvelle-Aquitaine",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Lencouacq",
+      "dept": "40",
+      "date": "2026-10-05",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -44965,81 +45037,9 @@
       }
     },
     {
-      "zone": "Castaignos-Souslens",
+      "zone": "Mazerolles",
       "dept": "40",
-      "date": "2026-10-04",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Nouvelle-Aquitaine",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Bats",
-      "dept": "40",
-      "date": "2026-10-04",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Nouvelle-Aquitaine",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Lubbon",
-      "dept": "40",
-      "date": "2026-10-04",
+      "date": "2026-10-05",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
