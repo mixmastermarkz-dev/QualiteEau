@@ -3,7 +3,7 @@
   "nom": "Territoire de Belfort",
   "slug": "territoire-de-belfort",
   "region": "Bourgogne-Franche-Comté",
-  "updated": "04/10/2026 à 17:07",
+  "updated": "05/10/2026 à 21:02",
   "score_eau": 98,
   "nb_communes": 100,
   "potable": [
@@ -23286,32 +23286,6 @@
   ],
   "nappes": [
     {
-      "nom": "Florimont",
-      "dept": "90",
-      "code_bss": "04447X0028/S",
-      "current": 380.41,
-      "history": [
-        380.425,
-        380.42,
-        380.425,
-        380.417,
-        380.421,
-        380.416,
-        380.417,
-        380.416,
-        380.417,
-        380.41,
-        380.408,
-        380.41,
-        380.413,
-        380.41
-      ],
-      "year_ago": 380.42,
-      "lat": 47.542387181,
-      "lng": 7.055132727,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Valdoie",
       "dept": "90",
       "code_bss": "04434X0089/P",
@@ -23332,20 +23306,46 @@
         382.19,
         382.195
       ],
-      "year_ago": 383.31,
+      "year_ago": 383.39,
       "lat": 47.675931312,
       "lng": 6.836792836,
       "color": "#ef4444"
+    },
+    {
+      "nom": "Florimont",
+      "dept": "90",
+      "code_bss": "04447X0028/S",
+      "current": 380.41,
+      "history": [
+        380.425,
+        380.42,
+        380.425,
+        380.417,
+        380.421,
+        380.416,
+        380.417,
+        380.416,
+        380.417,
+        380.41,
+        380.408,
+        380.41,
+        380.413,
+        380.41
+      ],
+      "year_ago": 380.4,
+      "lat": 47.542387181,
+      "lng": 7.055132727,
+      "color": "#3b82f6"
     }
   ],
   "air": [
     {
-      "zone": "Vescemont",
+      "zone": "Villars-le-Sec",
       "dept": "90",
-      "date": "2026-10-06",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-10-07",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -23354,56 +23354,20 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Trétudans",
-      "dept": "90",
-      "date": "2026-10-06",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
           "indice": 2,
           "label": "Moyen",
           "color": "#eab308"
         },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
         "SO₂": {
           "indice": 0,
           "label": "N.C.",
@@ -23412,12 +23376,12 @@
       }
     },
     {
-      "zone": "Rougemont-le-Château",
+      "zone": "Vézelois",
       "dept": "90",
-      "date": "2026-10-06",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-10-07",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -23426,9 +23390,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
@@ -23448,12 +23412,12 @@
       }
     },
     {
-      "zone": "Rougegoutte",
+      "zone": "Vétrigne",
       "dept": "90",
-      "date": "2026-10-06",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-10-07",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -23462,9 +23426,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
@@ -23484,12 +23448,12 @@
       }
     },
     {
-      "zone": "Riervescemont",
+      "zone": "Vescemont",
       "dept": "90",
-      "date": "2026-10-06",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-10-07",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -23498,9 +23462,45 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Vellescot",
+      "dept": "90",
+      "date": "2026-10-07",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
