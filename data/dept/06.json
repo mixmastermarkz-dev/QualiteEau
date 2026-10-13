@@ -3,7 +3,7 @@
   "nom": "Alpes-Maritimes",
   "slug": "alpes-maritimes",
   "region": "Provence-Alpes-Côte d'Azur",
-  "updated": "12/10/2026 à 21:36",
+  "updated": "13/10/2026 à 19:20",
   "score_eau": 99,
   "nb_communes": 164,
   "potable": [
@@ -2611,12 +2611,6 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
-        "Aluminium": {
-          "valeur": "<5",
-          "unite": "µg/L",
-          "color": "#10b981",
-          "date": "2018-01-31"
-        },
         "Plomb": {
           "valeur": "<2",
           "unite": "µg/L",
@@ -15230,10 +15224,8 @@
       "nom": "Gilette",
       "dept": "06",
       "code_bss": "09724X0023/P2",
-      "current": 95.003,
+      "current": 95.006,
       "history": [
-        95.351,
-        95.325,
         95.31,
         95.314,
         95.226,
@@ -15245,9 +15237,11 @@
         95.004,
         95.004,
         95.005,
-        95.003
+        95.003,
+        95.004,
+        95.006
       ],
-      "year_ago": 99.03,
+      "year_ago": 98.98,
       "lat": 43.831616009,
       "lng": 7.188887934,
       "color": "#ef4444"
@@ -15256,10 +15250,8 @@
       "nom": "Nice",
       "dept": "06",
       "code_bss": "09994X0521/P4B",
-      "current": 10.59,
+      "current": 10.61,
       "history": [
-        10.39,
-        10.4,
         10.41,
         10.43,
         10.47,
@@ -15271,7 +15263,9 @@
         10.57,
         10.58,
         10.58,
-        10.59
+        10.59,
+        10.6,
+        10.61
       ],
       "year_ago": 11.53,
       "lat": 43.691448072,
@@ -15282,10 +15276,8 @@
       "nom": "Villeneuve-Loubet",
       "dept": "06",
       "code_bss": "09998X0199/PZ_PID",
-      "current": 18.43,
+      "current": 18.38,
       "history": [
-        18.35,
-        18.31,
         18.37,
         18.34,
         18.41,
@@ -15297,9 +15289,11 @@
         18.44,
         18.43,
         18.42,
-        18.43
+        18.43,
+        18.4,
+        18.38
       ],
-      "year_ago": 18.63,
+      "year_ago": 18.65,
       "lat": 43.640614714,
       "lng": 7.125900921,
       "color": "#ef4444"
@@ -15308,10 +15302,8 @@
       "nom": "Pégomas",
       "dept": "06",
       "code_bss": "09995X0028/F",
-      "current": 9.321,
+      "current": 9.306,
       "history": [
-        9.261,
-        9.25,
         9.256,
         9.272,
         9.381,
@@ -15323,21 +15315,21 @@
         9.328,
         9.313,
         9.306,
-        9.321
+        9.321,
+        9.306,
+        9.306
       ],
-      "year_ago": 9.32,
+      "year_ago": 9.57,
       "lat": 43.587762053,
       "lng": 6.926141257,
-      "color": "#3b82f6"
+      "color": "#ef4444"
     },
     {
       "nom": "Gilette",
       "dept": "06",
       "code_bss": "BSS004FHCY/X",
-      "current": 94.94,
+      "current": 94.9,
       "history": [
-        95.49,
-        95.46,
         95.45,
         95.46,
         95.39,
@@ -15349,9 +15341,11 @@
         95.03,
         95,
         94.95,
-        94.94
+        94.94,
+        94.92,
+        94.9
       ],
-      "year_ago": 99.2,
+      "year_ago": 99.16,
       "lat": 43.831748442,
       "lng": 7.188607593,
       "color": "#ef4444"
@@ -15359,13 +15353,13 @@
   ],
   "air": [
     {
-      "zone": "Aiglun",
+      "zone": "Saint-Babel",
       "dept": "06",
-      "date": "2026-10-14",
+      "date": "2026-10-15",
       "indice": 2,
       "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "AtmoSud",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -15395,13 +15389,13 @@
       }
     },
     {
-      "zone": "Amirat",
+      "zone": "Montromant",
       "dept": "06",
-      "date": "2026-10-14",
+      "date": "2026-10-15",
       "indice": 2,
       "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "AtmoSud",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -15431,13 +15425,13 @@
       }
     },
     {
-      "zone": "Andon",
+      "zone": "Saint-Étienne-la-Varenne",
       "dept": "06",
-      "date": "2026-10-14",
+      "date": "2026-10-15",
       "indice": 2,
       "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "AtmoSud",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -15467,18 +15461,18 @@
       }
     },
     {
-      "zone": "Antibes",
+      "zone": "La Chapelle-sur-Usson",
       "dept": "06",
-      "date": "2026-10-14",
+      "date": "2026-10-15",
       "indice": 2,
       "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "AtmoSud",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "O₃": {
           "indice": 2,
@@ -15486,14 +15480,14 @@
           "color": "#eab308"
         },
         "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "SO₂": {
           "indice": 0,
@@ -15503,18 +15497,18 @@
       }
     },
     {
-      "zone": "Ascros",
+      "zone": "Orcines",
       "dept": "06",
-      "date": "2026-10-14",
+      "date": "2026-10-15",
       "indice": 2,
       "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "AtmoSud",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "O₃": {
           "indice": 2,
