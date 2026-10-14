@@ -3,10 +3,4036 @@
   "nom": "Essonne",
   "slug": "essonne",
   "region": "Île-de-France",
-  "updated": "13/10/2026 à 19:20",
-  "score_eau": null,
-  "nb_communes": 0,
-  "potable": [],
+  "updated": "14/10/2026 à 16:51",
+  "score_eau": 97,
+  "nb_communes": 185,
+  "potable": [
+    {
+      "nom": "ABBEVILLE-LA-RIVIERE",
+      "dept": "91",
+      "insee": "91001",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité mais non conforme a ux références de qualité en vigueur. En effet, l'eau n'est pas à l'équ ilibre, avec une valeur de 0, elle est dite incrustante et risque donc d'entartrer les canalisations. Cependant, aucun impact sur la santé n ’est lié à l’équilibre calco-carbonique.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.03,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-19"
+        },
+        "THM": {
+          "valeur": 4.05,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-19"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "ANGERVILLE",
+      "dept": "91",
+      "insee": "91016",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau non conforme aux prescriptions du Code de la Santé Publique (art R1321-2) pour le paramètre plomb, la teneur étant supérieure à la limite de qualité fixée actuellement à 10µg/L. La personne responsable de la production ou de distribution d’eau (PRP DE) a fait une analyse avant compteur le 24/07/2026 et le résultat est de 2µg/L de plomb. La canalisation est en PEBD (polyéthylène basse de nsité) et sera remplacée jusqu'au compteur en PEHD (polyéthylène haute densité). Sur le réseau intérieur (partie après le compteur), c’est le propriéta ire de l’habitation ou de l’immeuble qui doit effectuer les travaux. En attendant, il vous est recommandé de procéder à des purges régulièr es.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 27.5,
+          "unite": "µg/L",
+          "color": "#ef4444",
+          "date": "2026-07-13"
+        },
+        "Pesticides": {
+          "valeur": 0.199,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2025-07-30"
+        },
+        "THM": {
+          "valeur": 12.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-13"
+        }
+      },
+      "score": 50,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
+      "nom": "ANGERVILLIERS",
+      "dept": "91",
+      "insee": "91017",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 18.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-29"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "ARPAJON",
+      "dept": "91",
+      "insee": "91021",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 24.7,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-03"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "ATHIS-MONS",
+      "dept": "91",
+      "insee": "91027",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 33.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-23"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "AUVERNAUX",
+      "dept": "91",
+      "insee": "91037",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 4.45,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-12"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "AUVERS-SAINT-GEORGES",
+      "dept": "91",
+      "insee": "91038",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau conforme pour tous les paramètres à l'exception de la température, qui est légèrement supérieure à la norme. Lors de ce phénomène saisonnier, le gestionnaire doit être vigilant sur le taux de chlore afin d'éviter la prolifération microbienne sur le réseau.",
+      "parametres": {
+        "THM": {
+          "valeur": 6.94,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-29"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "AVRAINVILLE",
+      "dept": "91",
+      "insee": "91041",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 15.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-11"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "BALLAINVILLIERS",
+      "dept": "91",
+      "insee": "91044",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 9.77,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-23"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "BALLANCOURT-SUR-ESSONNE",
+      "dept": "91",
+      "insee": "91045",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité en vigueur mais non conforme à la référence carbone organique total (COT). Le COT n'est pas un paramètre directement à risque pour la santé publique mais il peut être le témoin d’une défaillance du traitement et peut servir de vecteur à un développement microbiologique. Le contrôle du 09/03/2026 a montré un retour à un taux conforme.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.023,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-02-24"
+        },
+        "THM": {
+          "valeur": 21.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-10"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "BAULNE",
+      "dept": "91",
+      "insee": "91047",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 2.67,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-12"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "BIEVRES",
+      "dept": "91",
+      "insee": "91064",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau conforme pour tous les paramètres à l'exception de la température, qui est légèrement supérieure à la norme. Lors de ce phénomène saisonnier, le gestionnaire doit être vigilant sur le taux de chlore afin d'éviter la prolifération microbienne sur le réseau.",
+      "parametres": {
+        "THM": {
+          "valeur": 24.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-10"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "BLANDY",
+      "dept": "91",
+      "insee": "91067",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.02,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-02-13"
+        },
+        "THM": {
+          "valeur": "<0,50",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-02-13"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "BOIGNEVILLE",
+      "dept": "91",
+      "insee": "91069",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau non conforme aux prescriptions du Code de la Santé Publique (art R1321-2) pour le paramètre plomb, la teneur étant supérieure à la limite maximale fixée actuellement à 10µg/L. Un prélèvement réalisé le 12/09/2024 avant compteur par la personne responsable de la production ou de distribution d’eau (PRPDE) ne met pas en évidence la présence de plomb. Dans le cas où le réseau intérieur (partie après le compteur) comporte des conduites en plomb, c’est le propriétaire de l’habitation ou de l’immeuble qui doit effectuer les travaux. En attendant, il vous est recommandé de procéder à des purges régulièr es et de ne pas consommer l'eau.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 24.0,
+          "unite": "µg/L",
+          "color": "#ef4444",
+          "date": "2024-09-06"
+        },
+        "Pesticides": {
+          "valeur": 0.381,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2025-10-29"
+        },
+        "THM": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-10-29"
+        }
+      },
+      "score": 50,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
+      "nom": "BOISSY-LA-RIVIERE",
+      "dept": "91",
+      "insee": "91079",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 0.45,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2017-02-21"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "BOISSY-LE-CUTTE",
+      "dept": "91",
+      "insee": "91080",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité mais non conforme a ux références de qualité en vigueur. En effet, l'eau n'est pas à l'équ ilibre, avec une valeur de 3, elle est dite légèrement agressive et ri sque donc de corroder les canalisations. Cependant, aucun impact sur l a santé n’est lié à l’équilibre calco-carbonique.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": "<1,000",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-19"
+        },
+        "THM": {
+          "valeur": 2.37,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-19"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "BOISSY-LE-SEC",
+      "dept": "91",
+      "insee": "91081",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité mais non conforme a ux références de qualité en vigueur. En effet, l'eau n'est pas à l'équ ilibre, avec une valeur de 0, elle est dite incrustante et risque donc d'entartrer les canalisations. Cependant, aucun impact sur la santé n ’est lié à l’équilibre calco-carbonique. A noter cependant que le paramètre nitrates présente une concentration élevée et très proche de la limite de qualité.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.148,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-07-15"
+        },
+        "THM": {
+          "valeur": 2.49,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-15"
+        }
+      },
+      "score": 75,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
+      "nom": "BOISSY-SOUS-SAINT-YON",
+      "dept": "91",
+      "insee": "91085",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 24.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-24"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "BONDOUFLE",
+      "dept": "91",
+      "insee": "91086",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau conforme pour tous les paramètres à l'exception de la température, qui est légèrement supérieure à la norme. Lors de ce phénomène saisonnier, le gestionnaire doit être vigilant sur le taux de chlore afin d'éviter la prolifération microbienne sur le réseau.",
+      "parametres": {
+        "THM": {
+          "valeur": 24.1,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-02"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "BOULLAY-LES-TROUX",
+      "dept": "91",
+      "insee": "91093",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 43.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-20"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "BOURAY-SUR-JUINE",
+      "dept": "91",
+      "insee": "91095",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": "<1,000",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-20"
+        },
+        "THM": {
+          "valeur": 6.98,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-20"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "BOUSSY-SAINT-ANTOINE",
+      "dept": "91",
+      "insee": "91097",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 8.02,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-09"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "BOUTIGNY-SUR-ESSONNE",
+      "dept": "91",
+      "insee": "91099",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau conforme pour tous les paramètres à l'exception de la température, qui est légèrement supérieure à la norme. Lors de ce phénomène saisonnier, le gestionnaire doit être vigilant sur le taux de chlore afin d'éviter la prolifération microbienne sur le réseau.",
+      "parametres": {
+        "THM": {
+          "valeur": 4.73,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-15"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "BRETIGNY-SUR-ORGE",
+      "dept": "91",
+      "insee": "91103",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 0.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-17"
+        },
+        "THM": {
+          "valeur": 18.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-03"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "BREUILLET",
+      "dept": "91",
+      "insee": "91105",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 20.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-07"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "BREUX-JOUY",
+      "dept": "91",
+      "insee": "91106",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 19.7,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-15"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "BRIERES-LES-SCELLES",
+      "dept": "91",
+      "insee": "91109",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 8.61,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-23"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "BRIIS-SOUS-FORGES",
+      "dept": "91",
+      "insee": "91111",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau conforme aux normes en vigueur pour l'ensemble des paramètres mesurés. Toutefois, on peut noter la présence de bactéries sulfito réductrices. Cela peut être le signe d'une défaillance de la désinfection Il peut s'agir également, d'une insuffisance de purge au moment du prélèvement. L'exploitant doit néanmoins, maintenir une vigilance au niveau des procédés de traitement et de l'intégrité du réseau. Leur présence n'a d'ailleurs pas été confirmée lors du prélèvement de contrôle effectué le 17/07/2026.",
+      "parametres": {
+        "THM": {
+          "valeur": 30.8,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-03"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "BRUNOY",
+      "dept": "91",
+      "insee": "91114",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 26.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-08"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "BRUYERES-LE-CHATEL",
+      "dept": "91",
+      "insee": "91115",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2018-06-13"
+        },
+        "Pesticides": {
+          "valeur": 0.043,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-27"
+        },
+        "THM": {
+          "valeur": 21.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-27"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "BUNO-BONNEVAUX",
+      "dept": "91",
+      "insee": "91121",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 7.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2022-09-23"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "BURES-SUR-YVETTE",
+      "dept": "91",
+      "insee": "91122",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 28.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-07"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "CERNY",
+      "dept": "91",
+      "insee": "91129",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau non conforme aux prescriptions du Code de la Santé Publique (art R1321-2) pour le paramètre plomb, la teneur étant supérieure à la limite de qualité fixée actuellement à 10µg/L. La personne responsable de la production ou de distribution d'eau (PRPDE) confirme la présence de canalisations en plomb avant compteur. Les branchements en plomb du réseau public doivent donc être remplacés par la PRPDE pour que la teneur en plomb dans l'eau au robinet du consommateur ne dépasse pas 10 µg/L. En attendant, il vous est recommandé de procéder à des purges régulièr es.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 12.0,
+          "unite": "µg/L",
+          "color": "#ef4444",
+          "date": "2017-11-09"
+        },
+        "THM": {
+          "valeur": 19.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-10"
+        }
+      },
+      "score": 50,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
+      "nom": "CHALO-SAINT-MARS",
+      "dept": "91",
+      "insee": "91130",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.021,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-10-24"
+        },
+        "THM": {
+          "valeur": 0.55,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-10-24"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "CHALOU-MOULINEUX",
+      "dept": "91",
+      "insee": "91131",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés. A noter cependant que le paramètre nitrates présente une concentration élevée et très proche de la limite de qualité.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.059,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-08-18"
+        },
+        "THM": {
+          "valeur": 0.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-08-18"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "CHAMARANDE",
+      "dept": "91",
+      "insee": "91132",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 27.1,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-14"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "CHAMPCUEIL",
+      "dept": "91",
+      "insee": "91135",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.007,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-19"
+        },
+        "THM": {
+          "valeur": 5.31,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-07"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "CHAMPLAN",
+      "dept": "91",
+      "insee": "91136",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité mais non conforme a ux références de qualité en vigueur. En effet, on peut noter la présen ce de coliformes totaux. Si la présence de coliformes totaux à cette c oncentration ne constitue pas un risque sanitaire élevé, elle est cepe ndant le témoin d’une dégradation de la qualité de l’eau, signe d'une défaillance de la désinfection ou d'une dégradation de l'eau au cours de la distribution ou au point de prélèvement (stagnation, vieillissem ent des installations, des canalisations). Le prélèvement de contrôle du 28/05/2026 effectué après désinfection d u point de prélèvement indique un retour à la normale.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.028,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-22"
+        },
+        "THM": {
+          "valeur": 19.1,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-09"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "CHAMPMOTTEUX",
+      "dept": "91",
+      "insee": "91137",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": "<1,000",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-02-25"
+        },
+        "THM": {
+          "valeur": 3.64,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-02-25"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "CHATIGNONVILLE",
+      "dept": "91",
+      "insee": "91145",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 4.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-18"
+        },
+        "Pesticides": {
+          "valeur": 0.06,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-01-19"
+        },
+        "THM": {
+          "valeur": 9.73,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-01-19"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "CHEPTAINVILLE",
+      "dept": "91",
+      "insee": "91156",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.006,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-29"
+        },
+        "THM": {
+          "valeur": 2.98,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-29"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "CHEVANNES",
+      "dept": "91",
+      "insee": "91159",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 4.22,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-19"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "CHILLY-MAZARIN",
+      "dept": "91",
+      "insee": "91161",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau conforme pour tous les paramètres à l'exception de la température, qui est légèrement supérieure à la norme. Lors de ce phénomène saisonnier, le gestionnaire doit être vigilant sur le taux de chlore afin d'éviter la prolifération microbienne sur le réseau.",
+      "parametres": {
+        "THM": {
+          "valeur": 14.7,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-16"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "CHOISY-LE-ROI",
+      "dept": "91",
+      "insee": "94022",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.053,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-07"
+        },
+        "THM": {
+          "valeur": 16.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-07"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "COMBS-LA-VILLE",
+      "dept": "91",
+      "insee": "77122",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.058,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2021-11-18"
+        },
+        "THM": {
+          "valeur": 15.1,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2021-08-30"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "CONGERVILLE-THIONVILLE",
+      "dept": "91",
+      "insee": "91613",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 7.7,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2016-01-22"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "CORBEIL-ESSONNES",
+      "dept": "91",
+      "insee": "91174",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau conforme pour tous les paramètres à l'exception de la température, qui est légèrement supérieure à la norme. Lors de ce phénomène saisonnier, le gestionnaire doit être vigilant sur le taux de chlore afin d'éviter la prolifération microbienne sur le réseau.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.044,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-20"
+        },
+        "THM": {
+          "valeur": 17.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-20"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "CORBREUSE",
+      "dept": "91",
+      "insee": "91175",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": "<1,000",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-27"
+        },
+        "THM": {
+          "valeur": 1.49,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-27"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "COUDRAY-MONTCEAUX (LE)",
+      "dept": "91",
+      "insee": "91179",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 15.1,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-16"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "COURANCES",
+      "dept": "91",
+      "insee": "91180",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.054,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-29"
+        },
+        "THM": {
+          "valeur": 0.46,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-29"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "COURDIMANCHE-SUR-ESSONNE",
+      "dept": "91",
+      "insee": "91184",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux limites et références de qualité en vigueur pour l'ensemble des paramètres mesurés, toutefois l'eau n'est pas à l'équilibre calcocarbonique (caractère agressif).",
+      "parametres": {
+        "Pesticides": {
+          "valeur": "<1,000",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-02-24"
+        },
+        "THM": {
+          "valeur": 0.71,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-02-24"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "COURSON-MONTELOUP",
+      "dept": "91",
+      "insee": "91186",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 9.97,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-25"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "CROSNE",
+      "dept": "91",
+      "insee": "91191",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 3.1,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-22"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "D'HUISON-LONGUEVILLE",
+      "dept": "91",
+      "insee": "91198",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 13.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-10"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "DOURDAN",
+      "dept": "91",
+      "insee": "91200",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.069,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2021-09-27"
+        },
+        "THM": {
+          "valeur": 4.73,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-16"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "DRAVEIL",
+      "dept": "91",
+      "insee": "91201",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": "<6,00",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-01-22"
+        },
+        "THM": {
+          "valeur": 17.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-07"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "ECHARCON",
+      "dept": "91",
+      "insee": "91204",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 29.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-11"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "EGLY",
+      "dept": "91",
+      "insee": "91207",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 1.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-22"
+        },
+        "THM": {
+          "valeur": 22.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-22"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "EPINAY-SOUS-SENART",
+      "dept": "91",
+      "insee": "91215",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 24.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-17"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "EPINAY-SUR-ORGE",
+      "dept": "91",
+      "insee": "91216",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 0.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2016-02-26"
+        },
+        "THM": {
+          "valeur": 12.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-17"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "ETAMPES",
+      "dept": "91",
+      "insee": "91223",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 0.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2016-12-12"
+        },
+        "Pesticides": {
+          "valeur": 0.027,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-12"
+        },
+        "THM": {
+          "valeur": 0.58,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-10"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "ETIOLLES",
+      "dept": "91",
+      "insee": "91225",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau conforme pour tous les paramètres à l'exception de la température, qui est légèrement supérieure à la norme. Lors de ce phénomène saisonnier, le gestionnaire doit être vigilant sur le taux de chlore afin d'éviter la prolifération microbienne sur le réseau.",
+      "parametres": {
+        "THM": {
+          "valeur": 6.28,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-09"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "ETRECHY",
+      "dept": "91",
+      "insee": "91226",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.031,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-02-17"
+        },
+        "THM": {
+          "valeur": 4.76,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-16"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "EVRY-COURCOURONNES",
+      "dept": "91",
+      "insee": "91228",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau conforme pour tous les paramètres à l'exception de la température, qui est légèrement supérieure à la norme. Lors de ce phénomène saisonnier, le gestionnaire doit être vigilant sur le taux de chlore afin d'éviter la prolifération microbienne sur le réseau.",
+      "parametres": {
+        "THM": {
+          "valeur": 11.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-10"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "FERTE-ALAIS (LA)",
+      "dept": "91",
+      "insee": "91232",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": "<1,000",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-29"
+        },
+        "THM": {
+          "valeur": 2.32,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-07"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "FLEURY-MEROGIS",
+      "dept": "91",
+      "insee": "91235",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau conforme pour tous les paramètres à l'exception de la température, qui est légèrement supérieure à la norme. Lors de ce phénomène saisonnier, le gestionnaire doit être vigilant sur le taux de chlore afin d'éviter la prolifération microbienne sur le réseau.",
+      "parametres": {
+        "THM": {
+          "valeur": 12.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-22"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "FONTAINE-LA-RIVIERE",
+      "dept": "91",
+      "insee": "91240",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau non conforme au Code de la Santé Publique (art R1321-2) pour le paramètre Nickel, la teneur étant supérieure à la limite maximale fixée actuellement à 20µg/L. Une analyse au compteur a été réalisé le 24/05/2016 et indique un résultat normal pour le nickel. Ce résultat met en évidence une dégradation de la qualité de l'eau froide par le réseau intérieur et peut être lié à des accessoires de robinetteries dont le revêtement  en chrome ne recouvre pas totalement les parties nickelées. Il vous est recommandé de veiller à l'entretien de votre réseau (robinetterie comprise) et de procéder à des purges régulières. Aussi la teneur en fer est supérieure à la référence de qualité fixée actuellement à 200 µg/L. Un recontrôle réalisé le 22/07/2016 après une purge, a montré une teneur de nouveau conforme. La présence de fer ne présente pas de danger pour le consommateur. En revanche, cela peut présenter des effets indirects gênants pour l'usager (couleur légèrement rouille de l'eau, goût métallique, formation de dépôts dans les canalisations...). Nous recommandons à l'exploitant de veiller à l'entretien du réseau en procédant à des purges régulières.",
+      "parametres": {
+        "THM": {
+          "valeur": 2.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2016-05-12"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "FONTENAY-LE-VICOMTE",
+      "dept": "91",
+      "insee": "91244",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 7.17,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-15"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "FONTENAY-LES-BRIIS",
+      "dept": "91",
+      "insee": "91243",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 6.77,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-02"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "FORET-LE-ROI (LA)",
+      "dept": "91",
+      "insee": "91247",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 17.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-16"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "FORET-SAINTE-CROIX (LA)",
+      "dept": "91",
+      "insee": "91248",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": "<1,000",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-09"
+        },
+        "THM": {
+          "valeur": 2.74,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-09"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "FORGES-LES-BAINS",
+      "dept": "91",
+      "insee": "91249",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 44.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-11"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "GIF-SUR-YVETTE",
+      "dept": "91",
+      "insee": "91272",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau conforme pour tous les paramètres à l'exception de la température, qui est légèrement supérieure à la norme. Lors de ce phénomène saisonnier, le gestionnaire doit être vigilant sur le taux de chlore afin d'éviter la prolifération microbienne sur le réseau.",
+      "parametres": {
+        "THM": {
+          "valeur": 22.8,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-16"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "GIRONVILLE-SUR-ESSONNE",
+      "dept": "91",
+      "insee": "91273",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.071,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-19"
+        },
+        "THM": {
+          "valeur": 3.88,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-19"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "GOMETZ-LA-VILLE",
+      "dept": "91",
+      "insee": "91274",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 25.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-18"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "GOMETZ-LE-CHATEL",
+      "dept": "91",
+      "insee": "91275",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.008,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-28"
+        },
+        "THM": {
+          "valeur": 25.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-11"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "GRANGES-LE-ROI (LES)",
+      "dept": "91",
+      "insee": "91284",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 10.7,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-15"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "GRIGNY",
+      "dept": "91",
+      "insee": "91286",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 7.0,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2019-12-11"
+        },
+        "THM": {
+          "valeur": 5.72,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-10"
+        }
+      },
+      "score": 75,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
+      "nom": "GUIBEVILLE",
+      "dept": "91",
+      "insee": "91292",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 23.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-16"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "GUIGNEVILLE-SUR-ESSONNE",
+      "dept": "91",
+      "insee": "91293",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 1.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-29"
+        },
+        "THM": {
+          "valeur": 0.51,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-07"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "GUILLERVAL",
+      "dept": "91",
+      "insee": "91294",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": "<1,000",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-08-21"
+        },
+        "THM": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-25"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "IGNY",
+      "dept": "91",
+      "insee": "91312",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 16.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-13"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "ITTEVILLE",
+      "dept": "91",
+      "insee": "91315",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.007,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-20"
+        },
+        "THM": {
+          "valeur": 15.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-15"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "JANVILLE-SUR-JUINE",
+      "dept": "91",
+      "insee": "91318",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-03-06"
+        },
+        "THM": {
+          "valeur": 35.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-16"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "JANVRY",
+      "dept": "91",
+      "insee": "91319",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 24.1,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-18"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "JUVISY-SUR-ORGE",
+      "dept": "91",
+      "insee": "91326",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 33.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-17"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "LARDY",
+      "dept": "91",
+      "insee": "91330",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau conforme pour tous les paramètres à l'exception de la température, qui est légèrement supérieure à la norme. Lors de ce phénomène saisonnier, le gestionnaire doit être vigilant sur le taux de chlore afin d'éviter la prolifération microbienne sur le réseau.",
+      "parametres": {
+        "THM": {
+          "valeur": 19.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-17"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "LEUDEVILLE",
+      "dept": "91",
+      "insee": "91332",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 15.1,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-02"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "LEUVILLE-SUR-ORGE",
+      "dept": "91",
+      "insee": "91333",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.005,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-22"
+        },
+        "THM": {
+          "valeur": 19.8,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-22"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "LIMOURS",
+      "dept": "91",
+      "insee": "91338",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 33.1,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-16"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "LINAS",
+      "dept": "91",
+      "insee": "91339",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.007,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-28"
+        },
+        "THM": {
+          "valeur": 10.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-07"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "LISSES",
+      "dept": "91",
+      "insee": "91340",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau conforme pour tous les paramètres à l'exception de la température, qui est légèrement supérieure à la norme. Lors de ce phénomène saisonnier, le gestionnaire doit être vigilant sur le taux de chlore afin d'éviter la prolifération microbienne sur le réseau.",
+      "parametres": {
+        "THM": {
+          "valeur": 15.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-08"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "LONGJUMEAU",
+      "dept": "91",
+      "insee": "91345",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 17.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-17"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "LONGPONT-SUR-ORGE",
+      "dept": "91",
+      "insee": "91347",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau conforme pour tous les paramètres à l'exception de la température, qui est légèrement supérieure à la norme. Lors de ce phénomène saisonnier, le gestionnaire doit être vigilant sur le taux de chlore afin d'éviter la prolifération microbienne sur le réseau.",
+      "parametres": {
+        "THM": {
+          "valeur": 19.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-07"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "LONGVILLIERS",
+      "dept": "91",
+      "insee": "78349",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.133,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-02-20"
+        },
+        "THM": {
+          "valeur": 0.08,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-02-20"
+        }
+      },
+      "score": 75,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
+      "nom": "MAISSE",
+      "dept": "91",
+      "insee": "91359",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.16,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-02-24"
+        },
+        "THM": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-02-24"
+        }
+      },
+      "score": 75,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
+      "nom": "MANDRES-LES-ROSES",
+      "dept": "91",
+      "insee": "94047",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.036,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-17"
+        },
+        "THM": {
+          "valeur": 0.83,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-17"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "MARCOUSSIS",
+      "dept": "91",
+      "insee": "91363",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 22.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-10"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "MAROLLES-EN-HUREPOIX",
+      "dept": "91",
+      "insee": "91376",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 16.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-01-28"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "MASSY",
+      "dept": "91",
+      "insee": "91377",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau conforme pour tous les paramètres à l'exception de la température, qui est légèrement supérieure à la norme. Lors de ce phénomène saisonnier, le gestionnaire doit être vigilant sur le taux de chlore afin d'éviter la prolifération microbienne sur le réseau.",
+      "parametres": {
+        "THM": {
+          "valeur": 24.8,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-02"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "MENNECY",
+      "dept": "91",
+      "insee": "91386",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 30.7,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-01"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "MEREVILLOIS (LE)",
+      "dept": "91",
+      "insee": "91390",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 0.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-15"
+        },
+        "Pesticides": {
+          "valeur": 0.053,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-02-24"
+        },
+        "THM": {
+          "valeur": 10.8,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-15"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "MEROBERT",
+      "dept": "91",
+      "insee": "91393",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 5.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2018-05-24"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "MILLY-LA-FORET",
+      "dept": "91",
+      "insee": "91405",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d’alimentation non-conforme aux limites de qualité pour le paramèt re chloridazone desphényl (métabolite pertinent). En l'état actuel des connaissances scientifiques, aucune restriction d'usage n'est nécessa ire. Un suivi renforcé est mis en place pour surveiller l’évolution de la situation. La personne responsable de la production et de la distr ibution de l’eau doit engager un programme d’actions visant à réduire les teneurs du paramètre concerné. Les autres paramètres recherchés da ns le cadre du contrôle sanitaire sont conformes aux exigences du code de la santé publique. A noter cependant que le paramètre nitrates présente une concentration élevée et très proche de la limite de qualité.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.191,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-04-29"
+        },
+        "THM": {
+          "valeur": 0.27,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-29"
+        }
+      },
+      "score": 75,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
+      "nom": "MOLIERES (LES)",
+      "dept": "91",
+      "insee": "91411",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 25.1,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-11"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "MONDEVILLE",
+      "dept": "91",
+      "insee": "91412",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 7.55,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-17"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "MONNERVILLE",
+      "dept": "91",
+      "insee": "91414",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.009,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-04"
+        },
+        "THM": {
+          "valeur": 25.8,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2017-11-10"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "MONTGERON",
+      "dept": "91",
+      "insee": "91421",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau non conforme aux prescriptions du Code de la Santé Publique (art R 1321-2) pour le paramètre plomb, la teneur étant supérieure à la limit e de qualité fixée actuellement à 10µg/L. La personne responsable de la production ou de distribution d’eau (PRP DE)ne confirme pas la présence de canalisations en plomb avant et aprè s compteur. Les branchements en plomb du réseau public doivent donc être remplacés par la PRPDE  pour que la teneur en plomb dans l’eau au robinet du co nsommateur ne dépasse pas 10 µg/L. Sur le réseau intérieur (partie après le compteur), le propriétaire de l’habitation a déjà effectuer les travaux. Afin de lever le doute, l'exploitant va réaliser un terrassement qui p ermettra de changer le branchement et de voir le matériau de la condui te. En attendant, il vous est recommandé de procéder à des purges régulièr es",
+      "parametres": {
+        "Plomb": {
+          "valeur": 53.5,
+          "unite": "µg/L",
+          "color": "#ef4444",
+          "date": "2026-02-19"
+        },
+        "THM": {
+          "valeur": 17.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-01"
+        }
+      },
+      "score": 50,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
+      "nom": "MONTLHERY",
+      "dept": "91",
+      "insee": "91425",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau conforme pour tous les paramètres à l'exception de la température, qui est légèrement supérieure à la norme. Lors de ce phénomène saisonnier, le gestionnaire doit être vigilant sur le taux de chlore afin d'éviter la prolifération microbienne sur le réseau.",
+      "parametres": {
+        "THM": {
+          "valeur": 30.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-07"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "MORANGIS",
+      "dept": "91",
+      "insee": "91432",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 13.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-15"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "MORIGNY-CHAMPIGNY",
+      "dept": "91",
+      "insee": "91433",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.043,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-12"
+        },
+        "THM": {
+          "valeur": 3.49,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-17"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "MORSANG-SUR-ORGE",
+      "dept": "91",
+      "insee": "91434",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-07-10"
+        },
+        "THM": {
+          "valeur": 22.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-01"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "MORSANG-SUR-SEINE",
+      "dept": "91",
+      "insee": "91435",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau conforme pour tous les paramètres à l'exception de la température, qui est légèrement supérieure à la norme. Lors de ce phénomène saisonn ier, le gestionnaire doit être vigilant sur le taux de chlore afin d'éviter la prolifération microbienne sur le réseau.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.007,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-20"
+        },
+        "THM": {
+          "valeur": 10.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-20"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "NAINVILLE-LES-ROCHES",
+      "dept": "91",
+      "insee": "91441",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 0.29,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-17"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "NORVILLE (LA)",
+      "dept": "91",
+      "insee": "91457",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 16.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-09"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "NOZAY",
+      "dept": "91",
+      "insee": "91458",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 15.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-22"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "OLLAINVILLE",
+      "dept": "91",
+      "insee": "91461",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 12.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-18"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "ONCY-SUR-ECOLE",
+      "dept": "91",
+      "insee": "91463",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 3.01,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2018-04-20"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "ORMOY",
+      "dept": "91",
+      "insee": "91468",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau conforme pour tous les paramètres à l'exception de la température, qui est légèrement supérieure à la norme. Lors de ce phénomène saisonnier, le gestionnaire doit être vigilant sur le taux de chlore afin d'éviter la prolifération microbienne sur le réseau.",
+      "parametres": {
+        "THM": {
+          "valeur": 11.8,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-01"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "ORMOY-LA-RIVIERE",
+      "dept": "91",
+      "insee": "91469",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": "<1,000",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-02-24"
+        },
+        "THM": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-02-24"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "ORSAY",
+      "dept": "91",
+      "insee": "91471",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau de qualité conforme à l'exception de la température qui est supérieure à la normale compte tenu de la profondeur du captage.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": "<1,000",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-27"
+        },
+        "THM": {
+          "valeur": 0.31,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-08"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "PALAISEAU",
+      "dept": "91",
+      "insee": "91477",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 0.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-10"
+        },
+        "THM": {
+          "valeur": 30.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-10"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "PARAY-VIEILLE-POSTE",
+      "dept": "91",
+      "insee": "91479",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation non-conforme aux limites de qualité et conforme aux références de qualité.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 12.0,
+          "unite": "µg/L",
+          "color": "#ef4444",
+          "date": "2024-06-10"
+        },
+        "THM": {
+          "valeur": 25.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-21"
+        }
+      },
+      "score": 50,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
+      "nom": "PECQUEUSE",
+      "dept": "91",
+      "insee": "91482",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 28.8,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-21"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "PERIGNY",
+      "dept": "91",
+      "insee": "94056",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.005,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-29"
+        },
+        "THM": {
+          "valeur": 1.02,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-29"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "PLESSIS-PATE (LE)",
+      "dept": "91",
+      "insee": "91494",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 18.7,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-09"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "PLESSIS-SAINT-BENOIST",
+      "dept": "91",
+      "insee": "91495",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.098,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-07-30"
+        },
+        "THM": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-07-30"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "PONTHEVRARD",
+      "dept": "91",
+      "insee": "78499",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.082,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-11"
+        },
+        "THM": {
+          "valeur": 8.55,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-11"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "PRUNAY-SUR-ESSONNE",
+      "dept": "91",
+      "insee": "91507",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 31.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2022-05-09"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "PUISELET-LE-MARAIS",
+      "dept": "91",
+      "insee": "91508",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 7.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2016-10-04"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "PUSSAY",
+      "dept": "91",
+      "insee": "91511",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.07,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-12"
+        },
+        "THM": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-11-18"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "QUINCY-SOUS-SENART",
+      "dept": "91",
+      "insee": "91514",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 6.48,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-11"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "RICHARVILLE",
+      "dept": "91",
+      "insee": "91519",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": "<1,000",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-02-24"
+        },
+        "THM": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-10-24"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "RIS-ORANGIS",
+      "dept": "91",
+      "insee": "91521",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2016-01-14"
+        },
+        "THM": {
+          "valeur": 28.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-08"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "ROINVILLE",
+      "dept": "91",
+      "insee": "91525",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 4.35,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-02-13"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SACLAS",
+      "dept": "91",
+      "insee": "91533",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.007,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-12"
+        },
+        "THM": {
+          "valeur": 17.7,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-12"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SACLAY",
+      "dept": "91",
+      "insee": "91534",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 51.2,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-07-08"
+        }
+      },
+      "score": 50,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
+      "nom": "SAINT-AUBIN",
+      "dept": "91",
+      "insee": "91538",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 31.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-29"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-CHERON",
+      "dept": "91",
+      "insee": "91540",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 13.7,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-02"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-CYR-SOUS-DOURDAN",
+      "dept": "91",
+      "insee": "91546",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.178,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-04-24"
+        },
+        "THM": {
+          "valeur": 15.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-15"
+        }
+      },
+      "score": 75,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
+      "nom": "SAINT-ESCOBILLE",
+      "dept": "91",
+      "insee": "91547",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 2.92,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2018-03-16"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-GERMAIN-LES-ARPAJON",
+      "dept": "91",
+      "insee": "91552",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau conforme pour tous les paramètres à l'exception de la température, qui est légèrement supérieure à la norme. Lors de ce phénomène saisonnier, le gestionnaire doit être vigilant sur le taux de chlore afin d'éviter la prolifération microbienne sur le réseau.",
+      "parametres": {
+        "THM": {
+          "valeur": 22.1,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-13"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-GERMAIN-LES-CORBEIL",
+      "dept": "91",
+      "insee": "91553",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 8.56,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-17"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-HILAIRE",
+      "dept": "91",
+      "insee": "91556",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 3.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2019-04-16"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-JEAN-DE-BEAUREGARD",
+      "dept": "91",
+      "insee": "91560",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 16.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-12"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-MARTIN-DE-BRETHENCOURT",
+      "dept": "91",
+      "insee": "78564",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation non-conforme aux exigences de qualité.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.373,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-02-20"
+        },
+        "THM": {
+          "valeur": 3.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-02-20"
+        }
+      },
+      "score": 75,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
+      "nom": "SAINT-MAURICE-MONTCOURONNE",
+      "dept": "91",
+      "insee": "91568",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": 2.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2016-10-31"
+        },
+        "Pesticides": {
+          "valeur": 0.042,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-07-25"
+        },
+        "THM": {
+          "valeur": 4.18,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-15"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-MICHEL-SUR-ORGE",
+      "dept": "91",
+      "insee": "91570",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 27.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-17"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-PIERRE-DU-PERRAY",
+      "dept": "91",
+      "insee": "91573",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 13.1,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-10"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-SULPICE-DE-FAVIERES",
+      "dept": "91",
+      "insee": "91578",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 20.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-02-02"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-VRAIN",
+      "dept": "91",
+      "insee": "91579",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 9.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-03"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-YON",
+      "dept": "91",
+      "insee": "91581",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 13.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-18"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINTE-GENEVIEVE-DES-BOIS",
+      "dept": "91",
+      "insee": "91549",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau conforme pour tous les paramètres à l'exception de la température, qui est légèrement supérieure à la norme. Lors de ce phénomène saisonnier, le gestionnaire doit être vigilant sur le taux de chlore afin d'éviter la prolifération microbienne sur le réseau.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.013,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-22"
+        },
+        "THM": {
+          "valeur": 16.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-17"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINTRY-SUR-SEINE",
+      "dept": "91",
+      "insee": "91577",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.058,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-23"
+        },
+        "THM": {
+          "valeur": 15.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-20"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAULX-LES-CHARTREUX",
+      "dept": "91",
+      "insee": "91587",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau conforme pour tous les paramètres à l'exception de la température, qui est supérieure à la norme. Lors de ce phénomène saisonnier, le ges tionnaire doit être vigilant sur le taux de chlore afin d'éviter la pr olifération microbienne sur le réseau.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.007,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-16"
+        },
+        "THM": {
+          "valeur": 18.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-16"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAVIGNY-LE-TEMPLE",
+      "dept": "91",
+      "insee": "77445",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation non-conforme aux limites de qualité et conforme aux références de qualité.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.246,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2025-03-06"
+        },
+        "THM": {
+          "valeur": 1.52,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-02-13"
+        }
+      },
+      "score": 75,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
+      "nom": "SAVIGNY-SUR-ORGE",
+      "dept": "91",
+      "insee": "91589",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.009,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-19"
+        },
+        "THM": {
+          "valeur": 11.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-21"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SERMAISE",
+      "dept": "91",
+      "insee": "91593",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 4.11,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-24"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SOISY-SUR-ECOLE",
+      "dept": "91",
+      "insee": "91599",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 2.79,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-02-19"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SOISY-SUR-SEINE",
+      "dept": "91",
+      "insee": "91600",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau conforme pour tous les paramètres à l'exception de la température, qui est légèrement supérieure à la norme. Lors de ce phénomène saisonnier, le gestionnaire doit être vigilant sur le taux de chlore afin d'éviter la prolifération microbienne sur le réseau.",
+      "parametres": {
+        "THM": {
+          "valeur": 22.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-13"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SOUZY-LA-BRICHE",
+      "dept": "91",
+      "insee": "91602",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés. A noter cependant que le paramètre nitrates présente une concentration élevée et très proche de la limite de qualité.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.134,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2025-10-15"
+        },
+        "THM": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-10-15"
+        }
+      },
+      "score": 75,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
+      "nom": "TIGERY",
+      "dept": "91",
+      "insee": "91617",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.044,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-24"
+        },
+        "THM": {
+          "valeur": 17.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-24"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "ULIS (LES)",
+      "dept": "91",
+      "insee": "91692",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau conforme pour tous les paramètres à l'exception de la température, qui est légèrement supérieure à la norme. Lors de ce phénomène saisonnier, le gestionnaire doit veiller à maintenir un taux de chlore à 0,1 mg/L sur l’ensemble du réseau pour éviter toute prolifération b actérienne.",
+      "parametres": {
+        "THM": {
+          "valeur": 26.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-21"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "VAL-SAINT-GERMAIN (LE)",
+      "dept": "91",
+      "insee": "91630",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 12.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-16"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "VARENNES-JARCY",
+      "dept": "91",
+      "insee": "91631",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 15.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-16"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "VAUGRIGNEUSE",
+      "dept": "91",
+      "insee": "91634",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 12.1,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-07"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "VAUHALLAN",
+      "dept": "91",
+      "insee": "91635",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau conforme pour tous les paramètres à l'exception de la température, qui est légèrement supérieure à la norme. Lors de ce phénomène saisonnier, le gestionnaire doit être vigilant sur le taux de chlore afin d'éviter la prolifération microbienne sur le réseau.",
+      "parametres": {
+        "THM": {
+          "valeur": 25.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-10"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "VAYRES-SUR-ESSONNE",
+      "dept": "91",
+      "insee": "91639",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 0.48,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-20"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "VERRIERES-LE-BUISSON",
+      "dept": "91",
+      "insee": "91645",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 19.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-17"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "VERT-LE-GRAND",
+      "dept": "91",
+      "insee": "91648",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 2.7,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-01"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "VERT-LE-PETIT",
+      "dept": "91",
+      "insee": "91649",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 37.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-15"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "VIDELLES",
+      "dept": "91",
+      "insee": "91654",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés. Le dépassement de la radioactivité alphaglobal (supérieur à 0,1 Bq/L) a conduit à mesurer la dose indicative naturelle qui a démontré que le niveau d'activité des radionucléides naturels est compatible avec le niveau d'activité de l'activité alpha globale.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": "<1,000",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-02-12"
+        },
+        "THM": {
+          "valeur": 0.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-02-12"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "VIGNEUX-SUR-SEINE",
+      "dept": "91",
+      "insee": "91657",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation non-conforme aux exigences de qualité pour le param ètre chlorates. Toutefois, la limite est est fixée à 700 µg/L car la m éthode de désinfection utilisée peut en générer. La personne responsab le de la production et de la distribution de l'eau étudie des solution s pour abaisser cette valeur. On peut noter la température, qui est légèrement supérieure à la norme . Lors de ce phénomène saisonnier, le gestionnaire doit être vigilant sur le taux de chlore afin d'éviter la prolifération microbienne sur l e réseau.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": "<1,000",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-17"
+        },
+        "THM": {
+          "valeur": 12.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-17"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "VILLABE",
+      "dept": "91",
+      "insee": "91659",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 9.01,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-15"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "VILLE-DU-BOIS (LA)",
+      "dept": "91",
+      "insee": "91665",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau conforme pour tous les paramètres à l'exception de la température, qui est légèrement supérieure à la norme. Lors de ce phénomène saisonnier, le gestionnaire doit être vigilant sur le taux de chlore afin d'éviter la prolifération microbienne sur le réseau.",
+      "parametres": {
+        "THM": {
+          "valeur": 21.1,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-15"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "VILLEBON-SUR-YVETTE",
+      "dept": "91",
+      "insee": "91661",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 7.56,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-15"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "VILLECONIN",
+      "dept": "91",
+      "insee": "91662",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 8.58,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-03"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "VILLEJUST",
+      "dept": "91",
+      "insee": "91666",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 12.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-13"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "VILLEMOISSON-SUR-ORGE",
+      "dept": "91",
+      "insee": "91667",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-01-30"
+        },
+        "THM": {
+          "valeur": 12.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-15"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "VILLENEUVE-SUR-AUVERS",
+      "dept": "91",
+      "insee": "91671",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 28.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-07"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "VILLIERS-LE-BACLE",
+      "dept": "91",
+      "insee": "91679",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 43.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-21"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "VILLIERS-SUR-ORGE",
+      "dept": "91",
+      "insee": "91685",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau conforme pour tous les paramètres à l'exception de la température, qui est légèrement supérieure à la norme. Lors de ce phénomène saisonnier, le gestionnaire doit être vigilant sur le taux de chlore afin d'éviter la prolifération microbienne sur le réseau.",
+      "parametres": {
+        "THM": {
+          "valeur": 11.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-15"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "VIRY-CHATILLON",
+      "dept": "91",
+      "insee": "91687",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Plomb": {
+          "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2021-12-18"
+        },
+        "Pesticides": {
+          "valeur": 0.015,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-22"
+        },
+        "THM": {
+          "valeur": 11.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-16"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "WISSOUS",
+      "dept": "91",
+      "insee": "91689",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau conforme pour tous les paramètres à l'exception de la température, qui est légèrement supérieure à la norme. Lors de ce phénomène saisonnier, le gestionnaire doit être vigilant sur le taux de chlore afin d'éviter la prolifération microbienne sur le réseau.",
+      "parametres": {
+        "THM": {
+          "valeur": 23.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-02"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "YERRES",
+      "dept": "91",
+      "insee": "91691",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.01,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-17"
+        },
+        "THM": {
+          "valeur": 16.8,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-17"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    }
+  ],
   "rivieres": [
     {
       "nom": "L'ÉCOLE A ONCY-SUR-ECOLE 1",
@@ -17891,65 +21917,11 @@
   ],
   "nappes": [
     {
-      "nom": "Roinvilliers",
-      "dept": "91",
-      "code_bss": "02931X0008/S1",
-      "current": 79.2,
-      "history": [
-        79.21,
-        79.21,
-        79.22,
-        79.21,
-        79.22,
-        79.22,
-        79.23,
-        79.23,
-        79.25,
-        79.25,
-        79.25,
-        79.19,
-        79.17,
-        79.2
-      ],
-      "year_ago": 78.99,
-      "lat": 48.356346359,
-      "lng": 2.24099021,
-      "color": "#3b82f6"
-    },
-    {
-      "nom": "Auvers-Saint-Georges",
-      "dept": "91",
-      "code_bss": "02575X0045/F2",
-      "current": 63.555,
-      "history": [
-        63.577,
-        63.578,
-        63.581,
-        63.567,
-        63.561,
-        63.562,
-        63.569,
-        63.572,
-        63.56,
-        63.558,
-        63.558,
-        63.557,
-        63.557,
-        63.555
-      ],
-      "year_ago": 63.66,
-      "lat": 48.482549399,
-      "lng": 2.236686379,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Auvers-Saint-Georges",
       "dept": "91",
       "code_bss": "02575X0044/F1",
-      "current": 52.641,
+      "current": 52.597,
       "history": [
-        52.59,
-        52.61,
         52.659,
         52.608,
         52.6,
@@ -17961,11 +21933,65 @@
         52.672,
         52.578,
         52.646,
-        52.641
+        52.641,
+        52.678,
+        52.597
       ],
-      "year_ago": 53.0,
+      "year_ago": 53.05,
       "lat": 48.482818932,
       "lng": 2.23641531,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Mennecy",
+      "dept": "91",
+      "code_bss": "02574X0041/F3",
+      "current": 44.495,
+      "history": [
+        43.959,
+        43.903,
+        44.268,
+        44.411,
+        44.427,
+        44.475,
+        44.492,
+        44.491,
+        44.507,
+        44.504,
+        44.511,
+        44.5,
+        44.503,
+        44.495
+      ],
+      "year_ago": 44.85,
+      "lat": 48.56538953,
+      "lng": 2.436101575,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Auvers-Saint-Georges",
+      "dept": "91",
+      "code_bss": "02575X0045/F2",
+      "current": 63.545,
+      "history": [
+        63.581,
+        63.567,
+        63.561,
+        63.562,
+        63.569,
+        63.572,
+        63.56,
+        63.558,
+        63.558,
+        63.557,
+        63.557,
+        63.555,
+        63.55,
+        63.545
+      ],
+      "year_ago": 63.66,
+      "lat": 48.482549399,
+      "lng": 2.236686379,
       "color": "#ef4444"
     },
     {
@@ -17975,8 +22001,6 @@
       "current": 60.46,
       "history": [
         60.47,
-        60.47,
-        60.47,
         60.45,
         60.45,
         60.46,
@@ -17985,6 +22009,8 @@
         60.47,
         60.47,
         60.47,
+        60.46,
+        60.46,
         60.46,
         60.46,
         60.46
@@ -17998,10 +22024,8 @@
       "nom": "Bois-Herpin",
       "dept": "91",
       "code_bss": "02931X0028/F3",
-      "current": 76.99,
+      "current": 76.968,
       "history": [
-        77.035,
-        77.037,
         77.031,
         76.971,
         76.945,
@@ -18013,47 +22037,21 @@
         77.007,
         76.999,
         76.994,
-        76.99
+        76.99,
+        76.979,
+        76.968
       ],
-      "year_ago": 76.78,
+      "year_ago": 76.77,
       "lat": 48.369961584,
       "lng": 2.234501201,
       "color": "#3b82f6"
     },
     {
-      "nom": "Itteville",
-      "dept": "91",
-      "code_bss": "02572X0051/CHEBID",
-      "current": 51.009,
-      "history": [
-        50.924,
-        50.942,
-        50.958,
-        50.97,
-        50.965,
-        50.96,
-        50.966,
-        50.979,
-        50.987,
-        50.993,
-        51.002,
-        51.006,
-        51.009,
-        51.009
-      ],
-      "year_ago": 51.5,
-      "lat": 48.512088816,
-      "lng": 2.326359739,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Courances",
       "dept": "91",
       "code_bss": "02578X0043/F",
-      "current": 42.715,
+      "current": 42.664,
       "history": [
-        42.805,
-        42.828,
         42.828,
         42.74,
         42.667,
@@ -18065,125 +22063,47 @@
         42.757,
         42.742,
         42.732,
-        42.715
+        42.715,
+        42.694,
+        42.664
       ],
-      "year_ago": 43.15,
+      "year_ago": 43.14,
       "lat": 48.439825689,
       "lng": 2.474830951,
       "color": "#ef4444"
     },
     {
-      "nom": "Congerville-Thionville",
+      "nom": "Itteville",
       "dept": "91",
-      "code_bss": "02923X0007/F",
-      "current": 113.752,
+      "code_bss": "02572X0051/CHEBID",
+      "current": 51.001,
       "history": [
-        113.761,
-        113.769,
-        113.773,
-        113.766,
-        113.752,
-        113.748,
-        113.756,
-        113.761,
-        113.76,
-        113.76,
-        113.763,
-        113.761,
-        113.757,
-        113.752
+        50.958,
+        50.97,
+        50.965,
+        50.96,
+        50.966,
+        50.979,
+        50.987,
+        50.993,
+        51.002,
+        51.006,
+        51.009,
+        51.009,
+        51.008,
+        51.001
       ],
-      "year_ago": 113.86,
-      "lat": 48.377925271,
-      "lng": 1.994670242,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Blandy",
-      "dept": "91",
-      "code_bss": "02936X5004/F",
-      "current": 91.072,
-      "history": [
-        91.109,
-        91.113,
-        91.11,
-        91.086,
-        91.077,
-        91.082,
-        91.092,
-        91.094,
-        91.088,
-        91.087,
-        91.085,
-        91.077,
-        91.074,
-        91.072
-      ],
-      "year_ago": 91.73,
-      "lat": 48.314678951,
-      "lng": 2.258052806,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Saint-Escobille",
-      "dept": "91",
-      "code_bss": "02922X1006/P",
-      "current": 126.46,
-      "history": [
-        126.48,
-        126.49,
-        126.49,
-        126.47,
-        126.44,
-        126.45,
-        126.47,
-        126.47,
-        126.47,
-        126.47,
-        126.47,
-        126.47,
-        126.46,
-        126.46
-      ],
-      "year_ago": 127.22,
-      "lat": 48.414584975,
-      "lng": 1.951936647,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Mennecy",
-      "dept": "91",
-      "code_bss": "02574X0041/F3",
-      "current": 44.5,
-      "history": [
-        44.415,
-        44.402,
-        43.959,
-        43.903,
-        44.268,
-        44.411,
-        44.427,
-        44.475,
-        44.492,
-        44.491,
-        44.507,
-        44.504,
-        44.511,
-        44.5
-      ],
-      "year_ago": 44.86,
-      "lat": 48.56538953,
-      "lng": 2.436101575,
+      "year_ago": 51.5,
+      "lat": 48.512088816,
+      "lng": 2.326359739,
       "color": "#ef4444"
     },
     {
       "nom": "Saclay",
       "dept": "91",
       "code_bss": "02184X0099/F48",
-      "current": 119.99,
+      "current": 119.9,
       "history": [
-        120.06,
-        120.11,
         120.13,
         120.07,
         119.98,
@@ -18195,19 +22115,161 @@
         120.04,
         120.02,
         120.01,
-        119.99
+        119.99,
+        119.95,
+        119.9
       ],
       "year_ago": 119.92,
       "lat": 48.730183644,
       "lng": 2.150093617,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Blandy",
+      "dept": "91",
+      "code_bss": "02936X5004/F",
+      "current": 91.059,
+      "history": [
+        91.11,
+        91.086,
+        91.077,
+        91.082,
+        91.092,
+        91.094,
+        91.088,
+        91.087,
+        91.085,
+        91.077,
+        91.074,
+        91.072,
+        91.067,
+        91.059
+      ],
+      "year_ago": 91.73,
+      "lat": 48.314678951,
+      "lng": 2.258052806,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Saint-Escobille",
+      "dept": "91",
+      "code_bss": "02922X1006/P",
+      "current": 126.43,
+      "history": [
+        126.49,
+        126.47,
+        126.44,
+        126.45,
+        126.47,
+        126.47,
+        126.47,
+        126.47,
+        126.47,
+        126.47,
+        126.46,
+        126.46,
+        126.45,
+        126.43
+      ],
+      "year_ago": 127.22,
+      "lat": 48.414584975,
+      "lng": 1.951936647,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Congerville-Thionville",
+      "dept": "91",
+      "code_bss": "02923X0007/F",
+      "current": 113.741,
+      "history": [
+        113.773,
+        113.766,
+        113.752,
+        113.748,
+        113.756,
+        113.761,
+        113.76,
+        113.76,
+        113.763,
+        113.761,
+        113.757,
+        113.752,
+        113.747,
+        113.741
+      ],
+      "year_ago": 113.86,
+      "lat": 48.377925271,
+      "lng": 1.994670242,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Roinvilliers",
+      "dept": "91",
+      "code_bss": "02931X0008/S1",
+      "current": 79.19,
+      "history": [
+        79.25,
+        79.19,
+        79.17,
+        79.2,
+        79.23,
+        79.23,
+        79.22,
+        79.23,
+        79.23,
+        79.21,
+        79.21,
+        79.21,
+        79.2,
+        79.19
+      ],
+      "year_ago": 78.99,
+      "lat": 48.356346359,
+      "lng": 2.24099021,
       "color": "#3b82f6"
     }
   ],
   "air": [
     {
-      "zone": "Janvry",
+      "zone": "Morangis",
       "dept": "91",
-      "date": "2026-10-14",
+      "date": "2026-10-15",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Airparif",
+      "polluants": {
+        "NO₂": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Boullay-Les-Troux",
+      "dept": "91",
+      "date": "2026-10-15",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -18241,9 +22303,9 @@
       }
     },
     {
-      "zone": "Champcueil",
+      "zone": "Saint-Aubin",
       "dept": "91",
-      "date": "2026-10-14",
+      "date": "2026-10-15",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -18277,9 +22339,9 @@
       }
     },
     {
-      "zone": "Bouray-Sur-Juine",
+      "zone": "Buno-Bonnevaux",
       "dept": "91",
-      "date": "2026-10-14",
+      "date": "2026-10-15",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -18313,45 +22375,9 @@
       }
     },
     {
-      "zone": "Gironville-Sur-Essonne",
+      "zone": "La Forêt-Sainte-Croix",
       "dept": "91",
-      "date": "2026-10-14",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Airparif",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Écharcon",
-      "dept": "91",
-      "date": "2026-10-14",
+      "date": "2026-10-15",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",

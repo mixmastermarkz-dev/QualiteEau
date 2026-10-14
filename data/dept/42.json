@@ -3,10 +3,29 @@
   "nom": "Loire",
   "slug": "loire",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "13/10/2026 à 19:20",
-  "score_eau": 100,
-  "nb_communes": 161,
+  "updated": "14/10/2026 à 16:51",
+  "score_eau": 94,
+  "nb_communes": 267,
   "potable": [
+    {
+      "nom": "ABOEN",
+      "dept": "42",
+      "insee": "42001",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 19.55,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-09"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
     {
       "nom": "AMBIERLE",
       "dept": "42",
@@ -15,17 +34,23 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 1.87,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-09-16"
-        },
         "Plomb": {
           "valeur": "<2",
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-05-25"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-25"
+        },
+        "THM": {
+          "valeur": 15.32,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-16"
         }
       },
       "score": 100,
@@ -40,17 +65,23 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 8.09,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-12-17"
-        },
         "Plomb": {
           "valeur": "<2",
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-03-18"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-13"
+        },
+        "THM": {
+          "valeur": 30.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-06"
         }
       },
       "score": 100,
@@ -65,11 +96,17 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 3.61,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-09-02"
+          "date": "2025-04-04"
+        },
+        "THM": {
+          "valeur": 21.92,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-09"
         }
       },
       "score": 100,
@@ -84,11 +121,17 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 6.04,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-09-01"
+          "date": "2025-04-17"
+        },
+        "THM": {
+          "valeur": 14.96,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-06-26"
         }
       },
       "score": 100,
@@ -103,17 +146,23 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 0.95,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-12-16"
-        },
         "Plomb": {
           "valeur": "<2",
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-06-30"
+        },
+        "Pesticides": {
+          "valeur": 0.014,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-30"
+        },
+        "THM": {
+          "valeur": 1.03,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-11-18"
         }
       },
       "score": 100,
@@ -133,9 +182,21 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-06-08"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-08"
+        },
+        "THM": {
+          "valeur": 54.3,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-06-08"
         }
       },
-      "score": 100,
+      "score": 83,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -147,17 +208,42 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 14.78,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-11-19"
-        },
         "Plomb": {
           "valeur": "<2",
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-05-20"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-20"
+        },
+        "THM": {
+          "valeur": 20.87,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-03"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "BELLEGARDE-EN-FOREZ",
+      "dept": "42",
+      "insee": "42013",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 7.29,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-01-15"
         }
       },
       "score": 100,
@@ -170,13 +256,19 @@
       "insee": "42014",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 10.95,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-06-25"
+          "date": "2024-06-03"
+        },
+        "THM": {
+          "valeur": 2.93,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-06-03"
         }
       },
       "score": 100,
@@ -191,17 +283,23 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 11.88,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-10-31"
-        },
         "Plomb": {
           "valeur": "<2",
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2021-08-27"
+        },
+        "Pesticides": {
+          "valeur": 0.006,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-10-31"
+        },
+        "THM": {
+          "valeur": 17.1,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-10-31"
         }
       },
       "score": 100,
@@ -221,6 +319,18 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-04-23"
+        },
+        "Pesticides": {
+          "valeur": 0.029,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-23"
+        },
+        "THM": {
+          "valeur": 37.7,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-23"
         }
       },
       "score": 100,
@@ -235,17 +345,42 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 1.14,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-09-22"
-        },
         "Plomb": {
           "valeur": "<2",
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-06-01"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-01"
+        },
+        "THM": {
+          "valeur": 3.14,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-01"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "BESSEY",
+      "dept": "42",
+      "insee": "42018",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité pour le paramètre conductivité",
+      "parametres": {
+        "THM": {
+          "valeur": 12.86,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-21"
         }
       },
       "score": 100,
@@ -265,6 +400,18 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-05-12"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-12"
+        },
+        "THM": {
+          "valeur": 6.22,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-20"
         }
       },
       "score": 100,
@@ -284,9 +431,21 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-03-31"
+        },
+        "Pesticides": {
+          "valeur": 0.125,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-03-31"
+        },
+        "THM": {
+          "valeur": 4.65,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-31"
         }
       },
-      "score": 100,
+      "score": 83,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -296,16 +455,22 @@
       "insee": "42022",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 10.97,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-11-13"
-        },
         "Plomb": {
           "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-10"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-10"
+        },
+        "THM": {
+          "valeur": 46.8,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-06-10"
@@ -323,17 +488,42 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 1.82,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-12-12"
-        },
         "Plomb": {
           "valeur": "<2",
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-01-28"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-17"
+        },
+        "THM": {
+          "valeur": 24.65,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-17"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "BOYER",
+      "dept": "42",
+      "insee": "42025",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 32.22,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-02-10"
         }
       },
       "score": 100,
@@ -348,11 +538,17 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 12.36,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": 0.014,
+          "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-10-31"
+        },
+        "THM": {
+          "valeur": 24.14,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-07"
         }
       },
       "score": 100,
@@ -367,11 +563,55 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 0.91,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-10-17"
+          "date": "2024-10-23"
+        },
+        "THM": {
+          "valeur": 6.42,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-10-23"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "BUSSIERES",
+      "dept": "42",
+      "insee": "42029",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 18.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-04-02"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "BUSSY-ALBIEUX",
+      "dept": "42",
+      "insee": "42030",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 31.59,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-01-23"
         }
       },
       "score": 100,
@@ -384,13 +624,38 @@
       "insee": "42031",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau non conforme à la limite de qualité pesticide individuel pour au moins un pesticide Absence de risque sanitaire Pas de restriction d'utilisation de l'eau",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 6.49,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": 0.123,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2021-04-21"
+        },
+        "THM": {
+          "valeur": 67.19,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-05-05"
+        }
+      },
+      "score": 50,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
+      "nom": "CELLIEU",
+      "dept": "42",
+      "insee": "42032",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 45.7,
+          "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-08-21"
+          "date": "2026-03-05"
         }
       },
       "score": 100,
@@ -405,14 +670,20 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 3.58,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-09-18"
-        },
         "Plomb": {
           "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-28"
+        },
+        "Pesticides": {
+          "valeur": 0.081,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-28"
+        },
+        "THM": {
+          "valeur": 2.59,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-07-28"
@@ -430,9 +701,9 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation non-conforme aux exigences de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 1.45,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-08-18"
         }
@@ -442,6 +713,25 @@
       "score_label": "Bonne"
     },
     {
+      "nom": "CHAGNON",
+      "dept": "42",
+      "insee": "42036",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 53.5,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-05-25"
+        }
+      },
+      "score": 50,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
       "nom": "CHALMAZEL-JEANSAGNIERE",
       "dept": "42",
       "insee": "42039",
@@ -449,9 +739,9 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 0.67,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-07-09"
         }
@@ -468,9 +758,9 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 0.54,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-07-09"
         }
@@ -492,9 +782,21 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-06-09"
+        },
+        "Pesticides": {
+          "valeur": 0.027,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-09"
+        },
+        "THM": {
+          "valeur": 77.51,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-06-09"
         }
       },
-      "score": 100,
+      "score": 83,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -506,17 +808,42 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 9.72,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-08-14"
-        },
         "Plomb": {
           "valeur": "<0,5",
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2016-07-05"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-02-19"
+        },
+        "THM": {
+          "valeur": 43.7,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-31"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "CHAMBOEUF",
+      "dept": "42",
+      "insee": "42043",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 41.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-04"
         }
       },
       "score": 100,
@@ -529,22 +856,28 @@
       "insee": "42044",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 8.66,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-12-17"
-        },
         "Plomb": {
           "valeur": "<2",
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-05-25"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-25"
+        },
+        "THM": {
+          "valeur": 89.9,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-07-02"
         }
       },
-      "score": 100,
+      "score": 83,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -556,9 +889,15 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 1.45,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-07-09"
+        },
+        "THM": {
+          "valeur": 5.94,
+          "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-07-09"
         }
@@ -580,6 +919,37 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-06-10"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-10"
+        },
+        "THM": {
+          "valeur": 6.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-10"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "CHANDON",
+      "dept": "42",
+      "insee": "42048",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 40.26,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-01-06"
         }
       },
       "score": 100,
@@ -594,11 +964,36 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 9.69,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-10-07"
+          "date": "2026-04-24"
+        },
+        "THM": {
+          "valeur": 8.32,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-16"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "CHAPELLE-VILLARS (LA)",
+      "dept": "42",
+      "insee": "42051",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 12.03,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-02-23"
         }
       },
       "score": 100,
@@ -613,22 +1008,28 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 8.66,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-12-30"
-        },
         "Plomb": {
           "valeur": "<2",
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-07-21"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-21"
+        },
+        "THM": {
+          "valeur": 119.64,
+          "unite": "µg/L",
+          "color": "#ef4444",
+          "date": "2026-07-21"
         }
       },
-      "score": 100,
-      "score_color": "#10b981",
-      "score_label": "Bonne"
+      "score": 67,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
     },
     {
       "nom": "CHATEAUNEUF",
@@ -638,11 +1039,17 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 11.65,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-12-16"
+          "date": "2026-07-15"
+        },
+        "THM": {
+          "valeur": 44.02,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-15"
         }
       },
       "score": 100,
@@ -657,11 +1064,30 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 8.57,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": 0.024,
+          "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-10-22"
+          "date": "2024-10-23"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "CHATELUS",
+      "dept": "42",
+      "insee": "42055",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 18.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-19"
         }
       },
       "score": 100,
@@ -676,11 +1102,17 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 1.57,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-10-06"
+          "date": "2025-02-17"
+        },
+        "THM": {
+          "valeur": 0.32,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-12-04"
         }
       },
       "score": 100,
@@ -695,14 +1127,20 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 25.77,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-12-15"
-        },
         "Plomb": {
           "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-27"
+        },
+        "Pesticides": {
+          "valeur": 0.005,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-27"
+        },
+        "THM": {
+          "valeur": 19.26,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-07-27"
@@ -720,11 +1158,17 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 3.63,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-10-24"
+          "date": "2025-06-18"
+        },
+        "THM": {
+          "valeur": 1.22,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-15"
         }
       },
       "score": 100,
@@ -737,19 +1181,25 @@
       "insee": "42059",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 19.63,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-10-14"
-        },
         "Plomb": {
           "valeur": "<2",
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-05-25"
+        },
+        "Pesticides": {
+          "valeur": 0.093,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-22"
+        },
+        "THM": {
+          "valeur": 43.75,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-22"
         }
       },
       "score": 100,
@@ -764,14 +1214,20 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 1.58,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-11-07"
-        },
         "Plomb": {
           "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-20"
+        },
+        "Pesticides": {
+          "valeur": 0.022,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-20"
+        },
+        "THM": {
+          "valeur": 3.21,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-05-20"
@@ -789,17 +1245,61 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 2.61,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-10-21"
-        },
         "Plomb": {
           "valeur": "<2",
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-06-30"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-30"
+        },
+        "THM": {
+          "valeur": 10.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-06"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "CHEVRIERES",
+      "dept": "42",
+      "insee": "42062",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 13.94,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-02-10"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "CHUYER",
+      "dept": "42",
+      "insee": "42064",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 21.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-01"
         }
       },
       "score": 100,
@@ -812,13 +1312,19 @@
       "insee": "42066",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 7.07,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": 0.011,
+          "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-11-04"
+          "date": "2026-04-21"
+        },
+        "THM": {
+          "valeur": 23.7,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-04"
         }
       },
       "score": 100,
@@ -833,11 +1339,11 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 7.49,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-11-05"
+          "date": "2025-05-23"
         }
       },
       "score": 100,
@@ -857,6 +1363,18 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-03-02"
+        },
+        "Pesticides": {
+          "valeur": 0.009,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-02"
+        },
+        "THM": {
+          "valeur": 40.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-02"
         }
       },
       "score": 100,
@@ -869,13 +1387,38 @@
       "insee": "42069",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés à l'exception du paramètre équilibre calco carbonique.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.007,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-12"
+        },
+        "THM": {
+          "valeur": 8.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-12"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "CORDELLE",
+      "dept": "42",
+      "insee": "42070",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 13.56,
-          "unite": "°f",
+        "THM": {
+          "valeur": 33.15,
+          "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-12-10"
+          "date": "2026-05-20"
         }
       },
       "score": 100,
@@ -895,6 +1438,107 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2020-10-20"
+        },
+        "THM": {
+          "valeur": 58.02,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2025-10-02"
+        }
+      },
+      "score": 75,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
+      "nom": "COTTANCE",
+      "dept": "42",
+      "insee": "42073",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 19.72,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-09"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "COUTOUVRE",
+      "dept": "42",
+      "insee": "42074",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 37.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-02"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "CRAINTILLEUX",
+      "dept": "42",
+      "insee": "42075",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "parametres": {
+        "THM": {
+          "valeur": 92.57,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-07-16"
+        }
+      },
+      "score": 50,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
+      "nom": "CREMEAUX",
+      "dept": "42",
+      "insee": "42076",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 40.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-28"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "CROIZET-SUR-GAND",
+      "dept": "42",
+      "insee": "42077",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 37.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-20"
         }
       },
       "score": 100,
@@ -909,20 +1553,26 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 10.05,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-10-31"
-        },
         "Plomb": {
           "valeur": "<2",
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-01-06"
+        },
+        "Pesticides": {
+          "valeur": 0.026,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-01-06"
+        },
+        "THM": {
+          "valeur": 64.93,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-07-17"
         }
       },
-      "score": 100,
+      "score": 83,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -939,6 +1589,56 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-03-03"
+        },
+        "Pesticides": {
+          "valeur": 0.179,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-03-03"
+        },
+        "THM": {
+          "valeur": 3.45,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-03"
+        }
+      },
+      "score": 83,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "DARGOIRE",
+      "dept": "42",
+      "insee": "42083",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 11.46,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-02-02"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "DOIZIEUX",
+      "dept": "42",
+      "insee": "42085",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 39.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-01"
         }
       },
       "score": 100,
@@ -953,11 +1653,36 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 8.15,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": 0.007,
+          "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-12-05"
+        },
+        "THM": {
+          "valeur": 7.89,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-12-05"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "EPERCIEUX-SAINT-PAUL",
+      "dept": "42",
+      "insee": "42088",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 26.1,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-10-25"
         }
       },
       "score": 100,
@@ -972,16 +1697,60 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 3.48,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-12-01"
+          "date": "2025-07-18"
+        },
+        "THM": {
+          "valeur": 1.51,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-21"
         }
       },
       "score": 100,
       "score_color": "#10b981",
       "score_label": "Bonne"
+    },
+    {
+      "nom": "ETRAT (L')",
+      "dept": "42",
+      "insee": "42092",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 44.44,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-01"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "FARNAY",
+      "dept": "42",
+      "insee": "42093",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 54.0,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-06-12"
+        }
+      },
+      "score": 50,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
     },
     {
       "nom": "FEURS",
@@ -991,20 +1760,26 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 16.9,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-12-05"
-        },
         "Plomb": {
           "valeur": 6.0,
           "unite": "µg/L",
           "color": "#f59e0b",
           "date": "2026-03-13"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-21"
+        },
+        "THM": {
+          "valeur": 54.58,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-07-15"
         }
       },
-      "score": 75,
+      "score": 67,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
     },
@@ -1014,18 +1789,24 @@
       "insee": "42095",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 10.76,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-12-17"
+          "date": "2026-05-19"
+        },
+        "THM": {
+          "valeur": 78.69,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-07-23"
         }
       },
-      "score": 100,
-      "score_color": "#10b981",
-      "score_label": "Bonne"
+      "score": 75,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
     },
     {
       "nom": "FONTANES",
@@ -1033,22 +1814,28 @@
       "insee": "42096",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 10.01,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-10-22"
-        },
         "Plomb": {
           "valeur": "<2",
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-01-28"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-01-28"
+        },
+        "THM": {
+          "valeur": 67.84,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-07-31"
         }
       },
-      "score": 100,
+      "score": 83,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -1065,6 +1852,69 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2017-05-29"
+        },
+        "THM": {
+          "valeur": 88.74,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-07-29"
+        }
+      },
+      "score": 75,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
+      "nom": "FRAISSES",
+      "dept": "42",
+      "insee": "42099",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 22.61,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-23"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "GENILAC",
+      "dept": "42",
+      "insee": "42225",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 49.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-04"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "GIMOND (LA)",
+      "dept": "42",
+      "insee": "42100",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "parametres": {
+        "THM": {
+          "valeur": 21.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-19"
         }
       },
       "score": 100,
@@ -1077,19 +1927,19 @@
       "insee": "42101",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 6.85,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-07-07"
-        },
         "Plomb": {
           "valeur": "<2",
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2020-09-21"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-07-07"
         }
       },
       "score": 100,
@@ -1102,16 +1952,22 @@
       "insee": "42102",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 8.02,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-09-04"
-        },
         "Plomb": {
           "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-04"
+        },
+        "Pesticides": {
+          "valeur": 0.072,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-04"
+        },
+        "THM": {
+          "valeur": 14.82,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-05-04"
@@ -1134,6 +1990,69 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2020-05-06"
+        },
+        "THM": {
+          "valeur": 32.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-01-29"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "GRESLE (LA)",
+      "dept": "42",
+      "insee": "42104",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 36.7,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-01-26"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "GREZIEUX-LE-FROMENTAL",
+      "dept": "42",
+      "insee": "42105",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 8.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-15"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "GREZOLLES",
+      "dept": "42",
+      "insee": "42106",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 35.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2021-10-29"
         }
       },
       "score": 100,
@@ -1146,13 +2065,19 @@
       "insee": "69096",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 23.25,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": 0.024,
+          "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-12-08"
+          "date": "2025-11-17"
+        },
+        "THM": {
+          "valeur": 5.06,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-11-17"
         }
       },
       "score": 100,
@@ -1167,17 +2092,23 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 1.54,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-12-17"
-        },
         "Plomb": {
           "valeur": "<2",
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2024-07-19"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-05"
+        },
+        "THM": {
+          "valeur": 6.93,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-18"
         }
       },
       "score": 100,
@@ -1192,9 +2123,15 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 4.18,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-10-22"
+        },
+        "THM": {
+          "valeur": 28.44,
+          "unite": "µg/L",
           "color": "#10b981",
           "date": "2020-10-22"
         }
@@ -1216,9 +2153,21 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-04-21"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-21"
+        },
+        "THM": {
+          "valeur": 50.58,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-07-28"
         }
       },
-      "score": 100,
+      "score": 83,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -1235,6 +2184,37 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-03-02"
+        },
+        "Pesticides": {
+          "valeur": 0.035,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-02"
+        },
+        "THM": {
+          "valeur": 28.41,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-02"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "JAS",
+      "dept": "42",
+      "insee": "42113",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 18.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-04"
         }
       },
       "score": 100,
@@ -1254,6 +2234,12 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2020-11-04"
+        },
+        "THM": {
+          "valeur": 12.1,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-11-05"
         }
       },
       "score": 100,
@@ -1273,6 +2259,18 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-03-02"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-02"
+        },
+        "THM": {
+          "valeur": 0.83,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-02"
         }
       },
       "score": 100,
@@ -1280,18 +2278,37 @@
       "score_label": "Bonne"
     },
     {
-      "nom": "LAPRUGNE",
+      "nom": "LAY",
       "dept": "42",
-      "insee": "03139",
+      "insee": "42118",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 0.42,
-          "unite": "°f",
+        "THM": {
+          "valeur": 30.4,
+          "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-09-03"
+          "date": "2026-02-23"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "LEIGNEUX",
+      "dept": "42",
+      "insee": "42119",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "parametres": {
+        "THM": {
+          "valeur": 3.69,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-03"
         }
       },
       "score": 100,
@@ -1311,6 +2328,18 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-02-17"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-02-17"
+        },
+        "THM": {
+          "valeur": 11.42,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-02-17"
         }
       },
       "score": 100,
@@ -1325,11 +2354,17 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 5.36,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-11-19"
+          "date": "2025-04-16"
+        },
+        "THM": {
+          "valeur": 4.27,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-04-16"
         }
       },
       "score": 100,
@@ -1349,6 +2384,37 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-07-01"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-01"
+        },
+        "THM": {
+          "valeur": 6.7,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-01"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "LORETTE",
+      "dept": "42",
+      "insee": "42123",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 24.94,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-02-02"
         }
       },
       "score": 100,
@@ -1361,16 +2427,22 @@
       "insee": "42126",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 7.88,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-09-17"
-        },
         "Plomb": {
           "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-20"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-20"
+        },
+        "THM": {
+          "valeur": 25.1,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-05-20"
@@ -1379,6 +2451,44 @@
       "score": 100,
       "score_color": "#10b981",
       "score_label": "Bonne"
+    },
+    {
+      "nom": "MABLY",
+      "dept": "42",
+      "insee": "42127",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "parametres": {
+        "THM": {
+          "valeur": 9.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-03"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "MACHEZAL",
+      "dept": "42",
+      "insee": "42128",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 50.8,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-06-03"
+        }
+      },
+      "score": 50,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
     },
     {
       "nom": "MACLAS",
@@ -1393,6 +2503,18 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-04-27"
+        },
+        "Pesticides": {
+          "valeur": 0.006,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-27"
+        },
+        "THM": {
+          "valeur": 35.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-01"
         }
       },
       "score": 100,
@@ -1405,16 +2527,22 @@
       "insee": "42130",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 0.21,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-09-25"
-        },
         "Plomb": {
           "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-02-23"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-02-23"
+        },
+        "THM": {
+          "valeur": 0.36,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-02-23"
@@ -1437,9 +2565,15 @@
           "unite": "µg/L",
           "color": "#f59e0b",
           "date": "2020-11-19"
+        },
+        "THM": {
+          "valeur": 5.93,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-26"
         }
       },
-      "score": 50,
+      "score": 75,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
     },
@@ -1453,6 +2587,18 @@
       "parametres": {
         "Plomb": {
           "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-11"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-11"
+        },
+        "THM": {
+          "valeur": "<0,10",
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-06-11"
@@ -1470,11 +2616,11 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 8.01,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": 0.055,
+          "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-10-23"
+          "date": "2025-03-20"
         }
       },
       "score": 100,
@@ -1494,6 +2640,37 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-03-27"
+        },
+        "Pesticides": {
+          "valeur": 0.015,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-27"
+        },
+        "THM": {
+          "valeur": 45.34,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-22"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "MARCOUX",
+      "dept": "42",
+      "insee": "42136",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 36.51,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-16"
         }
       },
       "score": 100,
@@ -1506,16 +2683,22 @@
       "insee": "42137",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 1.19,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-11-05"
-        },
         "Plomb": {
           "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-18"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-18"
+        },
+        "THM": {
+          "valeur": 9.76,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-06-18"
@@ -1531,19 +2714,25 @@
       "insee": "42139",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 3.27,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-08-27"
-        },
         "Plomb": {
           "valeur": "<2",
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2020-10-19"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-08-27"
+        },
+        "THM": {
+          "valeur": 10.92,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-10-17"
         }
       },
       "score": 100,
@@ -1558,11 +2747,17 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 1.13,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-10-24"
+          "date": "2025-04-04"
+        },
+        "THM": {
+          "valeur": 2.47,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-04-04"
         }
       },
       "score": 100,
@@ -1575,16 +2770,22 @@
       "insee": "42141",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité pour le paramètre turbidité",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 9.92,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-12-05"
-        },
         "Plomb": {
           "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-07"
+        },
+        "Pesticides": {
+          "valeur": 0.02,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-07"
+        },
+        "THM": {
+          "valeur": 5.88,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-04-07"
@@ -1595,6 +2796,63 @@
       "score_label": "Bonne"
     },
     {
+      "nom": "MERLE-LEIGNEC",
+      "dept": "42",
+      "insee": "42142",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 45.49,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-13"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "MIZERIEUX",
+      "dept": "42",
+      "insee": "42143",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "parametres": {
+        "THM": {
+          "valeur": 59.34,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-07-21"
+        }
+      },
+      "score": 50,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
+      "nom": "MONTAGNY",
+      "dept": "42",
+      "insee": "42145",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 66.63,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-06-15"
+        }
+      },
+      "score": 50,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
       "nom": "MONTARCHER",
       "dept": "42",
       "insee": "42146",
@@ -1602,9 +2860,15 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 2.91,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-05-07"
+        },
+        "THM": {
+          "valeur": 1.72,
+          "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-05-07"
         }
@@ -1621,14 +2885,20 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 10.38,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-12-17"
-        },
         "Plomb": {
           "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-10"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-10"
+        },
+        "THM": {
+          "valeur": 7.59,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-06-10"
@@ -1637,6 +2907,139 @@
       "score": 100,
       "score_color": "#10b981",
       "score_label": "Bonne"
+    },
+    {
+      "nom": "MONTCHAL",
+      "dept": "42",
+      "insee": "42148",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 22.7,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-02-23"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "MONTROND-LES-BAINS",
+      "dept": "42",
+      "insee": "42149",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 10.91,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-16"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "MONTVERDUN",
+      "dept": "42",
+      "insee": "42150",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "parametres": {
+        "THM": {
+          "valeur": 55.74,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-04-21"
+        }
+      },
+      "score": 50,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
+      "nom": "MORNAND-EN-FOREZ",
+      "dept": "42",
+      "insee": "42151",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 12.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-27"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "NEAUX",
+      "dept": "42",
+      "insee": "42153",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 47.24,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-03"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "NERONDE",
+      "dept": "42",
+      "insee": "42154",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 29.7,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-10"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "NEULISE",
+      "dept": "42",
+      "insee": "42156",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "parametres": {
+        "THM": {
+          "valeur": 59.0,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-03-27"
+        }
+      },
+      "score": 50,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
     },
     {
       "nom": "NOAILLY",
@@ -1651,6 +3054,18 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-06-01"
+        },
+        "Pesticides": {
+          "valeur": 0.014,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-01"
+        },
+        "THM": {
+          "valeur": 47.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-06-13"
         }
       },
       "score": 100,
@@ -1665,11 +3080,11 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 1.94,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-09-16"
+          "date": "2025-03-18"
         }
       },
       "score": 100,
@@ -1684,17 +3099,61 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 0.71,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-12-19"
-        },
         "Plomb": {
           "valeur": "<2",
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-06-15"
+        },
+        "Pesticides": {
+          "valeur": 0.017,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-15"
+        },
+        "THM": {
+          "valeur": 5.21,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-15"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "NOLLIEUX",
+      "dept": "42",
+      "insee": "42160",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 37.88,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-30"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "OUCHES",
+      "dept": "42",
+      "insee": "42162",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": "<0,50",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-07-11"
         }
       },
       "score": 100,
@@ -1733,6 +3192,18 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-01-06"
+        },
+        "Pesticides": {
+          "valeur": 0.034,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-01-06"
+        },
+        "THM": {
+          "valeur": 16.7,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-01-06"
         }
       },
       "score": 100,
@@ -1745,19 +3216,25 @@
       "insee": "42167",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 1.78,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-11-25"
-        },
         "Plomb": {
           "valeur": "<2",
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2020-11-17"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-07-11"
+        },
+        "THM": {
+          "valeur": 18.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-11"
         }
       },
       "score": 100,
@@ -1770,16 +3247,22 @@
       "insee": "42168",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés pour le paramètre équilibre calco ca rbonique",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 18.55,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-07-18"
-        },
         "Plomb": {
           "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-23"
+        },
+        "Pesticides": {
+          "valeur": 0.006,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-23"
+        },
+        "THM": {
+          "valeur": 10.24,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-03-23"
@@ -1802,11 +3285,42 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-06-25"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-25"
+        },
+        "THM": {
+          "valeur": 70.57,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-06-25"
         }
       },
-      "score": 100,
+      "score": 83,
       "score_color": "#10b981",
       "score_label": "Bonne"
+    },
+    {
+      "nom": "PINAY",
+      "dept": "42",
+      "insee": "42171",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 58.4,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-05-20"
+        }
+      },
+      "score": 50,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
     },
     {
       "nom": "PLANFOY",
@@ -1814,19 +3328,101 @@
       "insee": "42172",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 2.64,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-10-09"
-        },
         "Plomb": {
           "valeur": "<2",
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2020-11-23"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-10-09"
+        },
+        "THM": {
+          "valeur": 12.01,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-11-13"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "POMMIERS",
+      "dept": "42",
+      "insee": "42173",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 27.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-10"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "PONCINS",
+      "dept": "42",
+      "insee": "42174",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 37.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-01-06"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "POUILLY-LES-FEURS",
+      "dept": "42",
+      "insee": "42175",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 23.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-01-20"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "POUILLY-SOUS-CHARLIEU",
+      "dept": "42",
+      "insee": "42177",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 35.07,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-19"
         }
       },
       "score": 100,
@@ -1846,9 +3442,21 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-07-09"
+        },
+        "Pesticides": {
+          "valeur": 0.01,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-09"
+        },
+        "THM": {
+          "valeur": 59.24,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-07-09"
         }
       },
-      "score": 100,
+      "score": 83,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -1862,6 +3470,18 @@
       "parametres": {
         "Plomb": {
           "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-25"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-25"
+        },
+        "THM": {
+          "valeur": 10.18,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-03-25"
@@ -1879,22 +3499,47 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 10.4,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-12-16"
-        },
         "Plomb": {
           "valeur": "<0,5",
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2016-10-27"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-07"
+        },
+        "THM": {
+          "valeur": "<0,50",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-11-18"
         }
       },
       "score": 100,
       "score_color": "#10b981",
       "score_label": "Bonne"
+    },
+    {
+      "nom": "RICAMARIE (LA)",
+      "dept": "42",
+      "insee": "42183",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 52.2,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-07-16"
+        }
+      },
+      "score": 50,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
     },
     {
       "nom": "RIORGES",
@@ -1909,6 +3554,37 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-05-21"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-21"
+        },
+        "THM": {
+          "valeur": 0.12,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-07-07"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "RIVAS",
+      "dept": "42",
+      "insee": "42185",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 8.11,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-19"
         }
       },
       "score": 100,
@@ -1925,6 +3601,18 @@
       "parametres": {
         "Plomb": {
           "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-26"
+        },
+        "Pesticides": {
+          "valeur": 0.015,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-26"
+        },
+        "THM": {
+          "valeur": 31.3,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-05-26"
@@ -1947,6 +3635,18 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-03-02"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-02"
+        },
+        "THM": {
+          "valeur": 24.8,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-10-27"
         }
       },
       "score": 100,
@@ -1961,11 +3661,17 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 8.49,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-10-22"
+          "date": "2025-02-19"
+        },
+        "THM": {
+          "valeur": 0.66,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-02-19"
         }
       },
       "score": 100,
@@ -1973,24 +3679,87 @@
       "score_label": "Bonne"
     },
     {
+      "nom": "ROCHE-LA-MOLIERE",
+      "dept": "42",
+      "insee": "42189",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 59.81,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-07-23"
+        }
+      },
+      "score": 50,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
       "nom": "ROISEY",
       "dept": "42",
       "insee": "42191",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 1.32,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-11-20"
-        },
         "Plomb": {
           "valeur": "<2",
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2021-07-15"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-05-28"
+        },
+        "THM": {
+          "valeur": 8.91,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-05-28"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "ROZIER-COTES-D'AUREC",
+      "dept": "42",
+      "insee": "42192",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 72.42,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-07-27"
+        }
+      },
+      "score": 50,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
+      "nom": "ROZIER-EN-DONZY",
+      "dept": "42",
+      "insee": "42193",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 23.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-31"
         }
       },
       "score": 100,
@@ -2005,9 +3774,15 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 1.62,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": 0.016,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-30"
+        },
+        "THM": {
+          "valeur": 41.82,
+          "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-09-30"
         }
@@ -2024,11 +3799,17 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 1.63,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-11-18"
+        },
+        "THM": {
+          "valeur": 16.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-11"
         }
       },
       "score": 100,
@@ -2048,6 +3829,18 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-02-16"
+        },
+        "Pesticides": {
+          "valeur": 0.006,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-02-16"
+        },
+        "THM": {
+          "valeur": 22.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-02-16"
         }
       },
       "score": 100,
@@ -2062,20 +3855,26 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 20.41,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-11-07"
-        },
         "Plomb": {
           "valeur": "<2",
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2017-01-24"
+        },
+        "Pesticides": {
+          "valeur": 0.147,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-05-22"
+        },
+        "THM": {
+          "valeur": 1.12,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-22"
         }
       },
-      "score": 100,
+      "score": 83,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -2092,6 +3891,37 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-06-24"
+        },
+        "Pesticides": {
+          "valeur": 0.007,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-24"
+        },
+        "THM": {
+          "valeur": 4.87,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-24"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-BARTHELEMY-LESTRA",
+      "dept": "42",
+      "insee": "42202",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 29.32,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-19"
         }
       },
       "score": 100,
@@ -2106,14 +3936,20 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 5.31,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-10-21"
-        },
         "Plomb": {
           "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-22"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-22"
+        },
+        "THM": {
+          "valeur": 21.13,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-06-22"
@@ -2131,9 +3967,15 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 5.98,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-10-07"
+        },
+        "THM": {
+          "valeur": 15.6,
+          "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-10-07"
         }
@@ -2150,9 +3992,15 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 3.14,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-08-27"
+        },
+        "THM": {
+          "valeur": 1.03,
+          "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-08-27"
         }
@@ -2174,11 +4022,17 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2021-11-30"
+        },
+        "THM": {
+          "valeur": 85.06,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-07-31"
         }
       },
-      "score": 100,
-      "score_color": "#10b981",
-      "score_label": "Bonne"
+      "score": 75,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
     },
     {
       "nom": "SAINT-CHAMOND",
@@ -2186,19 +4040,44 @@
       "insee": "42207",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés à l'exception de l'équilibre calco c arbonique.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 7.86,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-12-23"
-        },
         "Plomb": {
           "valeur": "<2",
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-07-28"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-28"
+        },
+        "THM": {
+          "valeur": 58.68,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-07-28"
+        }
+      },
+      "score": 83,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-CHRISTO-EN-JAREZ",
+      "dept": "42",
+      "insee": "42208",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 15.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-02-19"
         }
       },
       "score": 100,
@@ -2218,6 +4097,50 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-07-29"
+        },
+        "THM": {
+          "valeur": 48.42,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-29"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-CYR-DE-FAVIERES",
+      "dept": "42",
+      "insee": "42212",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 29.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-01-26"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-CYR-DE-VALORGES",
+      "dept": "42",
+      "insee": "42213",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 41.7,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-01-26"
         }
       },
       "score": 100,
@@ -2237,6 +4160,37 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-07-06"
+        },
+        "Pesticides": {
+          "valeur": 0.03,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-06"
+        },
+        "THM": {
+          "valeur": 6.43,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-06"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-DENIS-SUR-COISE",
+      "dept": "42",
+      "insee": "42216",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 30.72,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-25"
         }
       },
       "score": 100,
@@ -2249,19 +4203,44 @@
       "insee": "42218",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 8.01,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-12-29"
-        },
         "Plomb": {
           "valeur": "<2",
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-06-15"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-16"
+        },
+        "THM": {
+          "valeur": 44.13,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-30"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-ETIENNE-LE-MOLARD",
+      "dept": "42",
+      "insee": "42219",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 33.8,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-02-23"
         }
       },
       "score": 100,
@@ -2281,6 +4260,37 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-06-02"
+        },
+        "Pesticides": {
+          "valeur": 0.012,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-02"
+        },
+        "THM": {
+          "valeur": 76.0,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-07-21"
+        }
+      },
+      "score": 83,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-GENEST-LERPT",
+      "dept": "42",
+      "insee": "42223",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 49.43,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-30"
         }
       },
       "score": 100,
@@ -2295,17 +4305,42 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 1.28,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-11-18"
-        },
         "Plomb": {
           "valeur": "<2",
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-04-22"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-22"
+        },
+        "THM": {
+          "valeur": 19.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-22"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-GEORGES-DE-BAROILLE",
+      "dept": "42",
+      "insee": "42226",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 35.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-27"
         }
       },
       "score": 100,
@@ -2320,11 +4355,30 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 0.47,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-08-18"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-GEORGES-HAUTE-VILLE",
+      "dept": "42",
+      "insee": "42228",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "parametres": {
+        "THM": {
+          "valeur": 8.79,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-09-03"
         }
       },
       "score": 100,
@@ -2337,18 +4391,37 @@
       "insee": "42229",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 1.66,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": 0.097,
+          "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-11-28"
+          "date": "2025-07-16"
         }
       },
       "score": 100,
       "score_color": "#10b981",
       "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-GERMAIN-LAVAL",
+      "dept": "42",
+      "insee": "42230",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 67.49,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-02-26"
+        }
+      },
+      "score": 50,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
     },
     {
       "nom": "SAINT-GERMAIN-LESPINASSE",
@@ -2363,6 +4436,31 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2020-09-03"
+        },
+        "THM": {
+          "valeur": 11.51,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-16"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-HAON-LE-CHATEL",
+      "dept": "42",
+      "insee": "42232",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 14.7,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-29"
         }
       },
       "score": 100,
@@ -2377,11 +4475,17 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 7.93,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-08-05"
+          "date": "2022-08-16"
+        },
+        "THM": {
+          "valeur": 32.56,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-09"
         }
       },
       "score": 100,
@@ -2394,16 +4498,22 @@
       "insee": "42234",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 10.24,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-10-22"
-        },
         "Plomb": {
           "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-02-04"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-02-04"
+        },
+        "THM": {
+          "valeur": 20.93,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-02-04"
@@ -2419,22 +4529,28 @@
       "insee": "42235",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 7.1,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-12-16"
-        },
         "Plomb": {
           "valeur": "<2",
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-05-20"
+        },
+        "Pesticides": {
+          "valeur": 0.013,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-20"
+        },
+        "THM": {
+          "valeur": 66.61,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-07-27"
         }
       },
-      "score": 100,
+      "score": 83,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -2451,6 +4567,37 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-07-03"
+        },
+        "Pesticides": {
+          "valeur": 0.041,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-03"
+        },
+        "THM": {
+          "valeur": 78.53,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-07-03"
+        }
+      },
+      "score": 83,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-JEAN-BONNEFONDS",
+      "dept": "42",
+      "insee": "42237",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 25.47,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-02-10"
         }
       },
       "score": 100,
@@ -2465,9 +4612,15 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 0.9,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-11-14"
+        },
+        "THM": {
+          "valeur": 0.55,
+          "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-11-14"
         }
@@ -2482,24 +4635,49 @@
       "insee": "42240",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 1.52,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-10-24"
-        },
         "Plomb": {
           "valeur": "<0,5",
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2016-08-01"
+        },
+        "Pesticides": {
+          "valeur": 0.006,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-10-24"
+        },
+        "THM": {
+          "valeur": 1.79,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-17"
         }
       },
       "score": 100,
       "score_color": "#10b981",
       "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-JODARD",
+      "dept": "42",
+      "insee": "42241",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 72.83,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2021-04-30"
+        }
+      },
+      "score": 50,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
     },
     {
       "nom": "SAINT-JOSEPH",
@@ -2514,11 +4692,17 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2020-05-06"
+        },
+        "THM": {
+          "valeur": 55.0,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2025-05-09"
         }
       },
-      "score": 100,
-      "score_color": "#10b981",
-      "score_label": "Bonne"
+      "score": 75,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
     },
     {
       "nom": "SAINT-JULIEN-MOLIN-MOLETTE",
@@ -2528,14 +4712,20 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 2.91,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-09-08"
-        },
         "Plomb": {
           "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-17"
+        },
+        "Pesticides": {
+          "valeur": 0.005,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-17"
+        },
+        "THM": {
+          "valeur": 9.5,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-07-17"
@@ -2553,11 +4743,17 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 1.25,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-08-18"
+        },
+        "THM": {
+          "valeur": 1.52,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-02-07"
         }
       },
       "score": 100,
@@ -2577,6 +4773,37 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-07-06"
+        },
+        "Pesticides": {
+          "valeur": 0.009,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-06"
+        },
+        "THM": {
+          "valeur": 81.44,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-07-06"
+        }
+      },
+      "score": 83,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-JUST-LA-PENDUE",
+      "dept": "42",
+      "insee": "42249",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "parametres": {
+        "THM": {
+          "valeur": 49.56,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-29"
         }
       },
       "score": 100,
@@ -2591,20 +4818,26 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 8.42,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-12-18"
-        },
         "Plomb": {
           "valeur": 0.8,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2016-09-15"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-10"
+        },
+        "THM": {
+          "valeur": 79.4,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-07-21"
         }
       },
-      "score": 100,
+      "score": 83,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -2616,11 +4849,55 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité (conductivité, équilibre calco-carbonique).",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 4.08,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
           "color": "#10b981",
           "date": "2020-09-07"
+        },
+        "THM": {
+          "valeur": 6.75,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2020-09-07"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-MARCEL-D'URFE",
+      "dept": "42",
+      "insee": "42255",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 59.66,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-06-29"
+        }
+      },
+      "score": 50,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
+      "nom": "SAINT-MARCEL-DE-FELINES",
+      "dept": "42",
+      "insee": "42254",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 46.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-20"
         }
       },
       "score": 100,
@@ -2633,19 +4910,82 @@
       "insee": "42256",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 8.47,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-12-18"
-        },
         "Plomb": {
           "valeur": 3.7,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2016-07-12"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-12"
+        },
+        "THM": {
+          "valeur": 65.1,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-07-31"
+        }
+      },
+      "score": 83,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-MARTIN-D'ESTREAUX",
+      "dept": "42",
+      "insee": "42257",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "parametres": {
+        "THM": {
+          "valeur": 26.1,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-01-06"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-MARTIN-LA-PLAINE",
+      "dept": "42",
+      "insee": "42259",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 23.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-12-09"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-MARTIN-LA-SAUVETE",
+      "dept": "42",
+      "insee": "42260",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "parametres": {
+        "THM": {
+          "valeur": 38.37,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-29"
         }
       },
       "score": 100,
@@ -2665,9 +5005,21 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-02-27"
+        },
+        "Pesticides": {
+          "valeur": 0.005,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-02-27"
+        },
+        "THM": {
+          "valeur": 69.56,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-07-29"
         }
       },
-      "score": 100,
+      "score": 83,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -2679,11 +5031,17 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 11.25,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-12-15"
+          "date": "2025-10-08"
+        },
+        "THM": {
+          "valeur": 0.83,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-10-08"
         }
       },
       "score": 100,
@@ -2698,11 +5056,74 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 19.62,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-11-20"
+          "date": "2025-09-18"
+        },
+        "THM": {
+          "valeur": 4.74,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-23"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-NIZIER-SOUS-CHARLIEU",
+      "dept": "42",
+      "insee": "42267",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 19.64,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-23"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-PAUL-EN-CORNILLON",
+      "dept": "42",
+      "insee": "42270",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 36.73,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-04-10"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-PAUL-EN-JAREZ",
+      "dept": "42",
+      "insee": "42271",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 30.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-02-12"
         }
       },
       "score": 100,
@@ -2717,17 +5138,23 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 28.45,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-12-15"
-        },
         "Plomb": {
           "valeur": "<2",
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-06-11"
+        },
+        "Pesticides": {
+          "valeur": 0.005,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-11"
+        },
+        "THM": {
+          "valeur": 8.41,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-23"
         }
       },
       "score": 100,
@@ -2742,16 +5169,41 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 16.48,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": 0.018,
+          "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-10-31"
+          "date": "2026-07-21"
+        },
+        "THM": {
+          "valeur": 41.1,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-21"
         }
       },
       "score": 100,
       "score_color": "#10b981",
       "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-POLGUES",
+      "dept": "42",
+      "insee": "42274",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 53.6,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-05-28"
+        }
+      },
+      "score": 50,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
     },
     {
       "nom": "SAINT-PRIEST-EN-JAREZ",
@@ -2763,6 +5215,18 @@
       "parametres": {
         "Plomb": {
           "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-25"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-25"
+        },
+        "THM": {
+          "valeur": 25.76,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-05-25"
@@ -2780,11 +5244,17 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 0.74,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-10-06"
+          "date": "2025-08-28"
+        },
+        "THM": {
+          "valeur": "<0,50",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-12-04"
         }
       },
       "score": 100,
@@ -2816,19 +5286,25 @@
       "insee": "42280",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 0.89,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-11-05"
-        },
         "Plomb": {
           "valeur": "<2",
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2020-09-02"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-07-07"
+        },
+        "THM": {
+          "valeur": 0.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-11-20"
         }
       },
       "score": 100,
@@ -2843,11 +5319,93 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 3.26,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-04-15"
+        },
+        "THM": {
+          "valeur": 9.8,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-12-10"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-ROMAIN-D'URFE",
+      "dept": "42",
+      "insee": "42282",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "parametres": {
+        "THM": {
+          "valeur": 19.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-01-06"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-ROMAIN-EN-JAREZ",
+      "dept": "42",
+      "insee": "42283",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 20.04,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-12"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-ROMAIN-LA-MOTTE",
+      "dept": "42",
+      "insee": "42284",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 16.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-06-03"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-ROMAIN-LE-PUY",
+      "dept": "42",
+      "insee": "42285",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 32.05,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-04-16"
         }
       },
       "score": 100,
@@ -2862,14 +5420,20 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 2.0,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-11-13"
-        },
         "Plomb": {
           "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-11"
+        },
+        "Pesticides": {
+          "valeur": 0.016,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-11"
+        },
+        "THM": {
+          "valeur": 7.42,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-05-11"
@@ -2887,9 +5451,15 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 1.24,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-09-29"
+        },
+        "THM": {
+          "valeur": 4.12,
+          "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-09-29"
         }
@@ -2906,11 +5476,36 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 3.89,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": 0.005,
+          "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-10-27"
+          "date": "2025-06-23"
+        },
+        "THM": {
+          "valeur": 17.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-06-23"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-SYMPHORIEN-DE-LAY",
+      "dept": "42",
+      "insee": "42289",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 28.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-02"
         }
       },
       "score": 100,
@@ -2923,13 +5518,114 @@
       "insee": "42290",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "parametres": {
+        "Pesticides": {
+          "valeur": 0.073,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-11"
+        },
+        "THM": {
+          "valeur": 22.69,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-11"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-VICTOR-SUR-RHINS",
+      "dept": "42",
+      "insee": "42293",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 10.28,
-          "unite": "°f",
+        "THM": {
+          "valeur": 34.2,
+          "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-11-05"
+          "date": "2026-05-07"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINTE-AGATHE-LA-BOUTERESSE",
+      "dept": "42",
+      "insee": "42197",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 23.68,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-30"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINTE-COLOMBE-SUR-GAND",
+      "dept": "42",
+      "insee": "42209",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 40.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-30"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINTE-CROIX-EN-JAREZ",
+      "dept": "42",
+      "insee": "42210",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "parametres": {
+        "THM": {
+          "valeur": 0.51,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-11-25"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINTE-FOY-SAINT-SULPICE",
+      "dept": "42",
+      "insee": "42221",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 46.57,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-28"
         }
       },
       "score": 100,
@@ -2944,11 +5640,36 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 1.91,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-10-14"
+        },
+        "THM": {
+          "valeur": 7.38,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-10-14"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SALT-EN-DONZY",
+      "dept": "42",
+      "insee": "42296",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 11.82,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-03-25"
         }
       },
       "score": 100,
@@ -2963,14 +5684,20 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 0.49,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-09-30"
-        },
         "Plomb": {
           "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-27"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-27"
+        },
+        "THM": {
+          "valeur": 8.21,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-03-27"
@@ -2986,16 +5713,22 @@
       "insee": "42299",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 10.54,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-11-19"
-        },
         "Plomb": {
           "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-05"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-05"
+        },
+        "THM": {
+          "valeur": 16.63,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-06-05"
@@ -3013,9 +5746,15 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 4.06,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": 0.005,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-10-30"
+        },
+        "THM": {
+          "valeur": 4.35,
+          "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-10-30"
         }
@@ -3037,6 +5776,37 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-03-13"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-13"
+        },
+        "THM": {
+          "valeur": 32.83,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-18"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SOUTERNON",
+      "dept": "42",
+      "insee": "42303",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 33.43,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-02"
         }
       },
       "score": 100,
@@ -3056,6 +5826,37 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-07-15"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-12"
+        },
+        "THM": {
+          "valeur": 84.28,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-07-15"
+        }
+      },
+      "score": 83,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "TALAUDIERE (LA)",
+      "dept": "42",
+      "insee": "42305",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "parametres": {
+        "THM": {
+          "valeur": 45.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-02"
         }
       },
       "score": 100,
@@ -3070,17 +5871,42 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 2.18,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-08-28"
-        },
         "Plomb": {
           "valeur": "<2",
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-02-27"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-02-27"
+        },
+        "THM": {
+          "valeur": 4.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-02-27"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "TARTARAS",
+      "dept": "42",
+      "insee": "42307",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 14.01,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-02"
         }
       },
       "score": 100,
@@ -3093,13 +5919,19 @@
       "insee": "42308",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité. Eau d'alimentation ne respectant pas la référence de qualité pour le paramètre : équilibre calco carbonique.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 9.88,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": 0.01,
+          "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-12-02"
+          "date": "2026-07-15"
+        },
+        "THM": {
+          "valeur": 47.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-28"
         }
       },
       "score": 100,
@@ -3114,11 +5946,68 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 8.54,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-10-17"
+          "date": "2023-04-06"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "TOUR-EN-JAREZ (LA)",
+      "dept": "42",
+      "insee": "42311",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 36.8,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-05"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "TOURETTE (LA)",
+      "dept": "42",
+      "insee": "42312",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 79.41,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-07-29"
+        }
+      },
+      "score": 50,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
+      "nom": "TRELINS",
+      "dept": "42",
+      "insee": "42313",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 45.42,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-22"
         }
       },
       "score": 100,
@@ -3133,16 +6022,22 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 16.04,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-12-04"
+          "date": "2026-07-24"
+        },
+        "THM": {
+          "valeur": 50.12,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-07-24"
         }
       },
-      "score": 100,
-      "score_color": "#10b981",
-      "score_label": "Bonne"
+      "score": 75,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
     },
     {
       "nom": "UNIAS",
@@ -3152,11 +6047,17 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 11.38,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": 0.006,
+          "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-12-18"
+          "date": "2026-04-16"
+        },
+        "THM": {
+          "valeur": 33.8,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-16"
         }
       },
       "score": 100,
@@ -3176,9 +6077,21 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-05-25"
+        },
+        "Pesticides": {
+          "valeur": 0.022,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-25"
+        },
+        "THM": {
+          "valeur": 51.01,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-05-25"
         }
       },
-      "score": 100,
+      "score": 83,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -3190,17 +6103,42 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 6.55,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-08-05"
-        },
         "Plomb": {
           "valeur": "<2",
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-06-09"
+        },
+        "Pesticides": {
+          "valeur": 0.016,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-09"
+        },
+        "THM": {
+          "valeur": 36.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-07"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "VALEILLE",
+      "dept": "42",
+      "insee": "42319",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 35.13,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-28"
         }
       },
       "score": 100,
@@ -3220,6 +6158,12 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2017-04-03"
+        },
+        "THM": {
+          "valeur": 28.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-15"
         }
       },
       "score": 100,
@@ -3234,14 +6178,20 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 4.15,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-12-05"
-        },
         "Plomb": {
           "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-15"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-15"
+        },
+        "THM": {
+          "valeur": 6.11,
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-06-15"
@@ -3259,9 +6209,15 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 1.89,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-10-27"
+        },
+        "THM": {
+          "valeur": 9.9,
+          "unite": "µg/L",
           "color": "#10b981",
           "date": "2025-10-27"
         }
@@ -3269,6 +6225,25 @@
       "score": 100,
       "score_color": "#10b981",
       "score_label": "Bonne"
+    },
+    {
+      "nom": "VEAUCHE",
+      "dept": "42",
+      "insee": "42323",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "parametres": {
+        "THM": {
+          "valeur": 92.95,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-07-31"
+        }
+      },
+      "score": 50,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
     },
     {
       "nom": "VEAUCHETTE",
@@ -3283,9 +6258,21 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-02-19"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-02-19"
+        },
+        "THM": {
+          "valeur": 85.94,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-02-19"
         }
       },
-      "score": 100,
+      "score": 83,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -3297,17 +6284,42 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 0.77,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2025-12-15"
-        },
         "Plomb": {
           "valeur": "<2",
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2026-06-24"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-24"
+        },
+        "THM": {
+          "valeur": 12.61,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-24"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "VERIN",
+      "dept": "42",
+      "insee": "42327",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 13.77,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-04-21"
         }
       },
       "score": 100,
@@ -3322,11 +6334,17 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 4.98,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-12-23"
+          "date": "2025-08-06"
+        },
+        "THM": {
+          "valeur": 3.24,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-08-06"
         }
       },
       "score": 100,
@@ -3341,16 +6359,73 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 1.18,
-          "unite": "°f",
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
           "color": "#10b981",
-          "date": "2025-10-17"
+          "date": "2025-04-14"
         }
       },
       "score": 100,
       "score_color": "#10b981",
       "score_label": "Bonne"
+    },
+    {
+      "nom": "VEZELIN-SUR-LOIRE",
+      "dept": "42",
+      "insee": "42268",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 52.74,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-02-02"
+        }
+      },
+      "score": 50,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
+      "nom": "VILLARS",
+      "dept": "42",
+      "insee": "42330",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 21.29,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-09"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "VILLEREST",
+      "dept": "42",
+      "insee": "42332",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "THM": {
+          "valeur": 79.37,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-06-09"
+        }
+      },
+      "score": 50,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
     },
     {
       "nom": "VIOLAY",
@@ -3360,22 +6435,47 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
-        "Calcaire (TH)": {
-          "valeur": 13.04,
-          "unite": "°f",
-          "color": "#10b981",
-          "date": "2022-07-21"
-        },
         "Plomb": {
           "valeur": "<2",
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2022-07-21"
+        },
+        "Pesticides": {
+          "valeur": 0.051,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2022-07-21"
+        },
+        "THM": {
+          "valeur": 23.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-07-21"
         }
       },
       "score": 100,
       "score_color": "#10b981",
       "score_label": "Bonne"
+    },
+    {
+      "nom": "VIRICELLES",
+      "dept": "42",
+      "insee": "42335",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
+      "parametres": {
+        "THM": {
+          "valeur": 68.67,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2026-06-15"
+        }
+      },
+      "score": 50,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
     },
     {
       "nom": "VOUGY",
@@ -3390,6 +6490,12 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2020-10-16"
+        },
+        "THM": {
+          "valeur": 31.8,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-20"
         }
       },
       "score": 100,
@@ -37691,91 +40797,11 @@
   ],
   "nappes": [
     {
-      "nom": "Cleppé",
-      "dept": "42",
-      "code_bss": "06967X0100/F",
-      "current": 323.294,
-      "history": [
-        323.282,
-        323.282,
-        323.282,
-        323.278,
-        323.298,
-        323.311,
-        323.333,
-        323.349,
-        323.341,
-        323.335,
-        323.325,
-        323.312,
-        323.307,
-        323.294
-      ],
-      "year_ago": 323.75,
-      "lat": 45.769951628,
-      "lng": 4.183823819,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Chalain-le-Comtal",
-      "dept": "42",
-      "code_bss": "07203X0168/PZ",
-      "current": 338.895,
-      "history": [
-        338.908,
-        338.9,
-        338.903,
-        338.903,
-        338.899,
-        338.899,
-        338.902,
-        338.897,
-        338.903,
-        338.897,
-        338.899,
-        338.897,
-        338.902,
-        338.895
-      ],
-      "year_ago": 338.97,
-      "lat": 45.649419482,
-      "lng": 4.190529903,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Saint-André-le-Puy",
-      "dept": "42",
-      "code_bss": "07204X0105/F",
-      "current": 355.474,
-      "history": [
-        355.517,
-        355.518,
-        355.525,
-        355.512,
-        355.466,
-        355.47,
-        355.486,
-        355.505,
-        355.514,
-        355.514,
-        355.512,
-        355.504,
-        355.497,
-        355.474
-      ],
-      "year_ago": 355.86,
-      "lat": 45.647921327,
-      "lng": 4.246544955,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Saint-Galmier",
       "dept": "42",
       "code_bss": "07208X0197/F1C",
-      "current": 372.533,
+      "current": 372.535,
       "history": [
-        372.555,
-        372.553,
         372.555,
         372.545,
         372.526,
@@ -37787,19 +40813,135 @@
         372.548,
         372.539,
         372.542,
-        372.533
+        372.533,
+        372.54,
+        372.535
       ],
       "year_ago": 372.45,
       "lat": 45.605448412,
       "lng": 4.306255162,
       "color": "#3b82f6"
+    },
+    {
+      "nom": "Cleppé",
+      "dept": "42",
+      "code_bss": "06967X0100/F",
+      "current": 323.285,
+      "history": [
+        323.282,
+        323.278,
+        323.298,
+        323.311,
+        323.333,
+        323.349,
+        323.341,
+        323.335,
+        323.325,
+        323.312,
+        323.307,
+        323.294,
+        323.288,
+        323.285
+      ],
+      "year_ago": 323.74,
+      "lat": 45.769951628,
+      "lng": 4.183823819,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Chalain-le-Comtal",
+      "dept": "42",
+      "code_bss": "07203X0168/PZ",
+      "current": 338.893,
+      "history": [
+        338.903,
+        338.903,
+        338.899,
+        338.899,
+        338.902,
+        338.897,
+        338.903,
+        338.897,
+        338.899,
+        338.897,
+        338.902,
+        338.895,
+        338.895,
+        338.893
+      ],
+      "year_ago": 338.96,
+      "lat": 45.649419482,
+      "lng": 4.190529903,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Saint-André-le-Puy",
+      "dept": "42",
+      "code_bss": "07204X0105/F",
+      "current": 355.463,
+      "history": [
+        355.525,
+        355.512,
+        355.466,
+        355.47,
+        355.486,
+        355.505,
+        355.514,
+        355.514,
+        355.512,
+        355.504,
+        355.497,
+        355.474,
+        355.472,
+        355.463
+      ],
+      "year_ago": 355.85,
+      "lat": 45.647921327,
+      "lng": 4.246544955,
+      "color": "#ef4444"
     }
   ],
   "air": [
     {
-      "zone": "Saint-Romain-en-Jarez",
+      "zone": "Soleymieux",
       "dept": "42",
-      "date": "2026-10-15",
+      "date": "2026-10-16",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Sorbiers",
+      "dept": "42",
+      "date": "2026-10-16",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -37833,45 +40975,9 @@
       }
     },
     {
-      "zone": "Saint-Romain-la-Motte",
+      "zone": "Souternon",
       "dept": "42",
-      "date": "2026-10-15",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Romain-le-Puy",
-      "dept": "42",
-      "date": "2026-10-15",
+      "date": "2026-10-16",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -37905,12 +41011,12 @@
       }
     },
     {
-      "zone": "Saint-Romain-les-Atheux",
+      "zone": "Sury-le-Comtal",
       "dept": "42",
-      "date": "2026-10-15",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
+      "date": "2026-10-16",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
@@ -37919,9 +41025,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM10": {
           "indice": 1,
@@ -37941,9 +41047,9 @@
       }
     },
     {
-      "zone": "Saint-Sauveur-en-Rue",
+      "zone": "La Talaudière",
       "dept": "42",
-      "date": "2026-10-15",
+      "date": "2026-10-16",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
