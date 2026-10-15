@@ -3,7 +3,7 @@
   "nom": "Savoie",
   "slug": "savoie",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "14/10/2026 à 16:51",
+  "updated": "15/10/2026 à 16:38",
   "score_eau": 99,
   "nb_communes": 274,
   "potable": [
@@ -31120,10 +31120,8 @@
       "nom": "Aiton",
       "dept": "73",
       "code_bss": "07266X0052/PS4",
-      "current": 293.209,
+      "current": 293.208,
       "history": [
-        293.21,
-        293.216,
         293.227,
         293.241,
         293.246,
@@ -31135,7 +31133,9 @@
         293.221,
         293.216,
         293.213,
-        293.209
+        293.209,
+        293.212,
+        293.208
       ],
       "year_ago": 293.37,
       "lat": 45.566444711,
@@ -31146,10 +31146,8 @@
       "nom": "Chambéry",
       "dept": "73",
       "code_bss": "07256X0095/CHAMBE",
-      "current": 264.724,
+      "current": 264.703,
       "history": [
-        264.64,
-        264.661,
         264.845,
         264.832,
         264.837,
@@ -31161,9 +31159,11 @@
         264.769,
         264.738,
         264.743,
-        264.724
+        264.724,
+        264.725,
+        264.703
       ],
-      "year_ago": 264.8,
+      "year_ago": 264.79,
       "lat": 45.569053375,
       "lng": 5.916248145,
       "color": "#ef4444"
@@ -31172,10 +31172,8 @@
       "nom": "Cruet",
       "dept": "73",
       "code_bss": "07494X0026/CRUET",
-      "current": 268.983,
+      "current": 269.033,
       "history": [
-        269.057,
-        269.112,
         269.139,
         269.182,
         269.144,
@@ -31187,7 +31185,9 @@
         268.994,
         269.002,
         268.985,
-        268.983
+        268.983,
+        269.051,
+        269.033
       ],
       "year_ago": 269.31,
       "lat": 45.522193195,
@@ -31197,9 +31197,9 @@
   ],
   "air": [
     {
-      "zone": "La Bridoire",
+      "zone": "les Avanchers",
       "dept": "73",
-      "date": "2026-10-16",
+      "date": "2026-10-17",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -31224,6 +31224,78 @@
           "indice": 1,
           "label": "Bon",
           "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "La Chapelle-Saint-Martin",
+      "dept": "73",
+      "date": "2026-10-17",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Brison-Saint-Innocent",
+      "dept": "73",
+      "date": "2026-10-17",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
@@ -31235,7 +31307,7 @@
     {
       "zone": "Aussois",
       "dept": "73",
-      "date": "2026-10-16",
+      "date": "2026-10-17",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -31269,81 +31341,9 @@
       }
     },
     {
-      "zone": "Arvillard",
+      "zone": "Cognin",
       "dept": "73",
-      "date": "2026-10-16",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Attignat-Oncin",
-      "dept": "73",
-      "date": "2026-10-16",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "La Chapelle-Blanche",
-      "dept": "73",
-      "date": "2026-10-16",
+      "date": "2026-10-17",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
