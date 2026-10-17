@@ -3,7 +3,7 @@
   "nom": "Savoie",
   "slug": "savoie",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "16/10/2026 à 16:30",
+  "updated": "17/10/2026 à 15:26",
   "score_eau": 99,
   "nb_communes": 274,
   "potable": [
@@ -26681,11 +26681,6 @@
             "date": "2025-02-10",
             "valeur": 2.2,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-10-16",
-            "valeur": 2.2,
-            "color": "#10b981"
           }
         ],
         "Phosphore": [
@@ -26708,11 +26703,6 @@
             "date": "2025-02-10",
             "valeur": 0.012,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-10-16",
-            "valeur": 0.005,
-            "color": "#10b981"
           }
         ],
         "Ammonium": [
@@ -26734,11 +26724,6 @@
           {
             "date": "2025-02-10",
             "valeur": 2.1,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-10-16",
-            "valeur": 2.4,
             "color": "#ef4444"
           }
         ]
@@ -31168,10 +31153,8 @@
       "nom": "Aiton",
       "dept": "73",
       "code_bss": "07266X0052/PS4",
-      "current": 293.209,
+      "current": 293.204,
       "history": [
-        293.246,
-        293.244,
         293.24,
         293.234,
         293.229,
@@ -31183,7 +31166,9 @@
         293.212,
         293.208,
         293.208,
-        293.209
+        293.209,
+        293.208,
+        293.204
       ],
       "year_ago": 293.37,
       "lat": 45.566444711,
@@ -31194,10 +31179,8 @@
       "nom": "Chambéry",
       "dept": "73",
       "code_bss": "07256X0095/CHAMBE",
-      "current": 264.704,
+      "current": 264.686,
       "history": [
-        264.837,
-        264.799,
         264.806,
         264.784,
         264.792,
@@ -31209,9 +31192,11 @@
         264.725,
         264.703,
         264.712,
-        264.704
+        264.704,
+        264.716,
+        264.686
       ],
-      "year_ago": 264.8,
+      "year_ago": 264.79,
       "lat": 45.569053375,
       "lng": 5.916248145,
       "color": "#ef4444"
@@ -31245,7 +31230,43 @@
   ],
   "air": [
     {
-      "zone": "les Avanchers",
+      "zone": "Voglans",
+      "dept": "73",
+      "date": "2026-10-18",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "O₃": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Yenne",
       "dept": "73",
       "date": "2026-10-18",
       "indice": 2,
@@ -31281,7 +31302,7 @@
       }
     },
     {
-      "zone": "La Chapelle-Saint-Martin",
+      "zone": "Verrens",
       "dept": "73",
       "date": "2026-10-18",
       "indice": 2,
@@ -31317,7 +31338,7 @@
       }
     },
     {
-      "zone": "Brison-Saint-Innocent",
+      "zone": "Verthemex",
       "dept": "73",
       "date": "2026-10-18",
       "indice": 2,
@@ -31353,7 +31374,7 @@
       }
     },
     {
-      "zone": "Aussois",
+      "zone": "Villard-d'Héry",
       "dept": "73",
       "date": "2026-10-18",
       "indice": 2,
@@ -31370,42 +31391,6 @@
           "indice": 2,
           "label": "Moyen",
           "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Cognin",
-      "dept": "73",
-      "date": "2026-10-18",
-      "indice": 1,
-      "label": "Bon",
-      "color": "#50f0e6",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
         },
         "PM10": {
           "indice": 1,

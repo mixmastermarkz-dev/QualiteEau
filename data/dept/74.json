@@ -3,7 +3,7 @@
   "nom": "Haute-Savoie",
   "slug": "haute-savoie",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "16/10/2026 à 16:30",
+  "updated": "17/10/2026 à 15:26",
   "score_eau": 98,
   "nb_communes": 279,
   "potable": [
@@ -40377,10 +40377,8 @@
       "nom": "Marigny-Saint-Marcel",
       "dept": "74",
       "code_bss": "07013X0071/F1",
-      "current": 351.38,
+      "current": 351.373,
       "history": [
-        351.421,
-        351.417,
         351.414,
         351.412,
         351.409,
@@ -40392,9 +40390,11 @@
         351.389,
         351.386,
         351.382,
-        351.38
+        351.38,
+        351.376,
+        351.373
       ],
-      "year_ago": 351.99,
+      "year_ago": 351.98,
       "lat": 45.832389293,
       "lng": 5.962087611,
       "color": "#ef4444"
@@ -40403,10 +40403,8 @@
       "nom": "Publier",
       "dept": "74",
       "code_bss": "06301X0019/P5",
-      "current": 373.392,
+      "current": 373.381,
       "history": [
-        373.405,
-        373.412,
         373.417,
         373.422,
         373.42,
@@ -40418,9 +40416,11 @@
         373.397,
         373.395,
         373.392,
-        373.392
+        373.392,
+        373.385,
+        373.381
       ],
-      "year_ago": 373.82,
+      "year_ago": 373.8,
       "lat": 46.390565227,
       "lng": 6.520859286,
       "color": "#ef4444"
@@ -40429,10 +40429,8 @@
       "nom": "Vinzier",
       "dept": "74",
       "code_bss": "06306X0042/BIOGE",
-      "current": 569.11,
+      "current": 569.102,
       "history": [
-        569.25,
-        569.234,
         569.21,
         569.185,
         569.162,
@@ -40444,9 +40442,11 @@
         569.094,
         569.094,
         569.103,
-        569.11
+        569.11,
+        569.113,
+        569.102
       ],
-      "year_ago": 571.23,
+      "year_ago": 571.21,
       "lat": 46.335316884,
       "lng": 6.621257922,
       "color": "#ef4444"
@@ -40455,10 +40455,8 @@
       "nom": "Passy",
       "dept": "74",
       "code_bss": "BSS004QBEB/X",
-      "current": 568.436,
+      "current": 568.414,
       "history": [
-        568.518,
-        568.508,
         568.503,
         568.497,
         568.49,
@@ -40470,7 +40468,9 @@
         568.454,
         568.449,
         568.443,
-        568.436
+        568.436,
+        568.435,
+        568.414
       ],
       "year_ago": 569.32,
       "lat": 45.920935924,
@@ -40498,7 +40498,7 @@
         361.794,
         361.79
       ],
-      "year_ago": 362.04,
+      "year_ago": 362.01,
       "lat": 45.835072054,
       "lng": 5.968019958,
       "color": "#ef4444"
@@ -40532,7 +40532,7 @@
   ],
   "air": [
     {
-      "zone": "Bellevaux",
+      "zone": "Bluffy",
       "dept": "74",
       "date": "2026-10-18",
       "indice": 2,
@@ -40568,43 +40568,7 @@
       }
     },
     {
-      "zone": "Bernex",
-      "dept": "74",
-      "date": "2026-10-18",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Le Biot",
+      "zone": "Saint-Pierre",
       "dept": "74",
       "date": "2026-10-18",
       "indice": 2,
@@ -40676,7 +40640,43 @@
       }
     },
     {
-      "zone": "Saint-Pierre",
+      "zone": "Le Biot",
+      "dept": "74",
+      "date": "2026-10-18",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Bernex",
       "dept": "74",
       "date": "2026-10-18",
       "indice": 2,

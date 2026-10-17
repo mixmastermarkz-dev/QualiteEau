@@ -3,7 +3,7 @@
   "nom": "Ariège",
   "slug": "ariege",
   "region": "Occitanie",
-  "updated": "16/10/2026 à 16:30",
+  "updated": "17/10/2026 à 15:26",
   "score_eau": 97,
   "nb_communes": 331,
   "potable": [
@@ -27443,39 +27443,11 @@
   ],
   "nappes": [
     {
-      "nom": "Montaut",
-      "dept": "09",
-      "code_bss": "10357X0021/F",
-      "current": 240.552,
-      "history": [
-        240.561,
-        240.56,
-        240.559,
-        240.559,
-        240.558,
-        240.557,
-        240.556,
-        240.555,
-        240.554,
-        240.554,
-        240.553,
-        240.553,
-        240.552,
-        240.552
-      ],
-      "year_ago": 240.56,
-      "lat": 43.225456979,
-      "lng": 1.62794485,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Mazères",
       "dept": "09",
       "code_bss": "10357X0213/F",
-      "current": 254.038,
+      "current": 254.034,
       "history": [
-        254.044,
-        254.05,
         254.056,
         254.061,
         254.063,
@@ -27487,21 +27459,47 @@
         254.042,
         254.041,
         254.039,
-        254.038
+        254.038,
+        254.036,
+        254.034
       ],
-      "year_ago": 253.99,
+      "year_ago": 253.98,
       "lat": 43.209411174,
       "lng": 1.692949596,
       "color": "#3b82f6"
     },
     {
+      "nom": "Montaut",
+      "dept": "09",
+      "code_bss": "10357X0021/F",
+      "current": 240.551,
+      "history": [
+        240.559,
+        240.559,
+        240.558,
+        240.557,
+        240.556,
+        240.555,
+        240.554,
+        240.554,
+        240.553,
+        240.553,
+        240.552,
+        240.552,
+        240.551,
+        240.551
+      ],
+      "year_ago": 240.57,
+      "lat": 43.225456979,
+      "lng": 1.62794485,
+      "color": "#ef4444"
+    },
+    {
       "nom": "Verniolle",
       "dept": "09",
       "code_bss": "10577X0159/F",
-      "current": 315.006,
+      "current": 315.001,
       "history": [
-        315.048,
-        315.043,
         315.039,
         315.034,
         315.032,
@@ -27513,9 +27511,11 @@
         315.014,
         315.011,
         315.009,
-        315.006
+        315.006,
+        315.003,
+        315.001
       ],
-      "year_ago": 315.12,
+      "year_ago": 315.11,
       "lat": 43.081693662,
       "lng": 1.648900398,
       "color": "#ef4444"
@@ -27527,16 +27527,16 @@
       "current": 496.151,
       "history": [
         496.15,
-        496.149,
         496.15,
         496.15,
-        496.15,
-        496.15,
-        496.15,
-        496.15,
-        496.15,
-        496.15,
-        496.15,
+        496.151,
+        496.151,
+        496.151,
+        496.151,
+        496.151,
+        496.151,
+        496.151,
+        496.151,
         496.151,
         496.151,
         496.151
@@ -27550,22 +27550,22 @@
       "nom": "Cazavet",
       "dept": "09",
       "code_bss": "10734X0011/HY",
-      "current": 440.838,
+      "current": 440.844,
       "history": [
-        440.82,
-        440.822,
-        440.823,
-        440.825,
-        440.827,
-        440.829,
-        440.831,
-        440.833,
         440.836,
         440.837,
         440.837,
         440.838,
         440.838,
-        440.838
+        440.838,
+        440.839,
+        440.84,
+        440.84,
+        440.841,
+        440.842,
+        440.843,
+        440.843,
+        440.844
       ],
       "year_ago": 440.81,
       "lat": 42.990315316,
@@ -27575,13 +27575,13 @@
   ],
   "air": [
     {
-      "zone": "Cilaos",
+      "zone": "TSINGONI",
       "dept": "09",
-      "date": "2026-10-18",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "ATMO Réunion",
+      "date": "2026-10-19",
+      "indice": 1,
+      "label": "Bon",
+      "color": "#50F0E6",
+      "source": "Hawa Mayotte",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -27589,9 +27589,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM10": {
           "indice": 1,
@@ -27611,13 +27611,13 @@
       }
     },
     {
-      "zone": "Les Trois-Bassins",
+      "zone": "SADA",
       "dept": "09",
-      "date": "2026-10-18",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "ATMO Réunion",
+      "date": "2026-10-19",
+      "indice": 1,
+      "label": "Bon",
+      "color": "#50F0E6",
+      "source": "Hawa Mayotte",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -27625,9 +27625,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM10": {
           "indice": 1,
@@ -27647,13 +27647,13 @@
       }
     },
     {
-      "zone": "Le Tampon",
+      "zone": "PAMANDZI",
       "dept": "09",
-      "date": "2026-10-18",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "ATMO Réunion",
+      "date": "2026-10-19",
+      "indice": 1,
+      "label": "Bon",
+      "color": "#50F0E6",
+      "source": "Hawa Mayotte",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -27661,9 +27661,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM10": {
           "indice": 1,
@@ -27683,13 +27683,13 @@
       }
     },
     {
-      "zone": "Salazie",
+      "zone": "OUANGANI",
       "dept": "09",
-      "date": "2026-10-18",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "ATMO Réunion",
+      "date": "2026-10-19",
+      "indice": 1,
+      "label": "Bon",
+      "color": "#50F0E6",
+      "source": "Hawa Mayotte",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -27697,9 +27697,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM10": {
           "indice": 1,
@@ -27719,13 +27719,13 @@
       }
     },
     {
-      "zone": "Sainte-Suzanne",
+      "zone": "M TSANGAMOUJI",
       "dept": "09",
-      "date": "2026-10-18",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "ATMO Réunion",
+      "date": "2026-10-19",
+      "indice": 1,
+      "label": "Bon",
+      "color": "#50F0E6",
+      "source": "Hawa Mayotte",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -27733,9 +27733,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM10": {
           "indice": 1,
@@ -27759,7 +27759,7 @@
     {
       "dept": "09",
       "lib_zone": "ARIEGE",
-      "date": "2026-10-17",
+      "date": "2026-10-18",
       "indice_global": 2,
       "label_global": "Faible",
       "color_global": "#a3e635",
@@ -27805,14 +27805,14 @@
           "color": "#10b981"
         },
         "Bouleau": {
-          "indice": 1,
-          "label": "Très faible",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Faible",
+          "color": "#a3e635"
         },
         "Armoise": {
-          "indice": 1,
-          "label": "Très faible",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Faible",
+          "color": "#a3e635"
         }
       }
     }
