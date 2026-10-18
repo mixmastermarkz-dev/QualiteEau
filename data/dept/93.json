@@ -3,7 +3,7 @@
   "nom": "Seine-Saint-Denis",
   "slug": "seine-saint-denis",
   "region": "Île-de-France",
-  "updated": "17/10/2026 à 15:26",
+  "updated": "18/10/2026 à 15:44",
   "score_eau": 99,
   "nb_communes": 48,
   "potable": [
@@ -2675,7 +2675,7 @@
     {
       "zone": "L'Île-Saint-Denis",
       "dept": "93",
-      "date": "2026-10-18",
+      "date": "2026-10-19",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -2690,6 +2690,42 @@
           "indice": 2,
           "label": "Moyen",
           "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Villepinte",
+      "dept": "93",
+      "date": "2026-10-19",
+      "indice": 1,
+      "label": "Bon",
+      "color": "#50F0E6",
+      "source": "Airparif",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM10": {
           "indice": 1,
@@ -2711,7 +2747,7 @@
     {
       "zone": "Les Lilas",
       "dept": "93",
-      "date": "2026-10-18",
+      "date": "2026-10-19",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -2728,50 +2764,14 @@
           "color": "#eab308"
         },
         "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Villepinte",
-      "dept": "93",
-      "date": "2026-10-18",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Airparif",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
           "indice": 2,
           "label": "Moyen",
           "color": "#eab308"
         },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
@@ -2783,16 +2783,16 @@
     {
       "zone": "Le Raincy",
       "dept": "93",
-      "date": "2026-10-18",
+      "date": "2026-10-19",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
       "source": "Airparif",
       "polluants": {
         "NO₂": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "O₃": {
           "indice": 2,
@@ -2819,16 +2819,16 @@
     {
       "zone": "La Courneuve",
       "dept": "93",
-      "date": "2026-10-18",
+      "date": "2026-10-19",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
       "source": "Airparif",
       "polluants": {
         "NO₂": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "O₃": {
           "indice": 2,
@@ -2836,9 +2836,9 @@
           "color": "#eab308"
         },
         "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM2.5": {
           "indice": 1,
