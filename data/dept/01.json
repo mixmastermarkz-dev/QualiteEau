@@ -3,7 +3,7 @@
   "nom": "Ain",
   "slug": "ain",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "18/10/2026 à 15:44",
+  "updated": "19/10/2026 à 18:46",
   "score_eau": 99,
   "nb_communes": 397,
   "potable": [
@@ -52630,6 +52630,32 @@
   ],
   "nappes": [
     {
+      "nom": "Saint-Jean-le-Vieux",
+      "dept": "01",
+      "code_bss": "06754X0077/F1",
+      "current": 235.797,
+      "history": [
+        235.738,
+        235.746,
+        235.746,
+        235.753,
+        235.755,
+        235.76,
+        235.762,
+        235.766,
+        235.769,
+        235.777,
+        235.775,
+        235.787,
+        235.788,
+        235.797
+      ],
+      "year_ago": 236.16,
+      "lat": 46.028101809,
+      "lng": 5.356636752,
+      "color": "#ef4444"
+    },
+    {
       "nom": "Ceyzérieu",
       "dept": "01",
       "code_bss": "07004X0046/D6-20",
@@ -52650,7 +52676,7 @@
         229.548,
         229.55
       ],
-      "year_ago": 229.98,
+      "year_ago": 229.99,
       "lat": 45.828148377,
       "lng": 5.748240913,
       "color": "#ef4444"
@@ -52702,35 +52728,9 @@
         487.56,
         487.66
       ],
-      "year_ago": 488.39,
+      "year_ago": 488.41,
       "lat": 46.201179685,
       "lng": 5.948977062,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Saint-Jean-le-Vieux",
-      "dept": "01",
-      "code_bss": "06754X0077/F1",
-      "current": 235.797,
-      "history": [
-        235.738,
-        235.746,
-        235.746,
-        235.753,
-        235.755,
-        235.76,
-        235.762,
-        235.766,
-        235.769,
-        235.777,
-        235.775,
-        235.787,
-        235.788,
-        235.797
-      ],
-      "year_ago": 236.16,
-      "lat": 46.028101809,
-      "lng": 5.356636752,
       "color": "#ef4444"
     },
     {
@@ -52754,7 +52754,7 @@
         238.858,
         238.844
       ],
-      "year_ago": 239.44,
+      "year_ago": 239.45,
       "lat": 46.136402202,
       "lng": 5.313352796,
       "color": "#ef4444"
@@ -52806,7 +52806,7 @@
         527.12,
         526.929
       ],
-      "year_ago": 528.65,
+      "year_ago": 528.51,
       "lat": 46.329030497,
       "lng": 6.069710454,
       "color": "#ef4444"
@@ -52858,7 +52858,7 @@
         193.098,
         193.1
       ],
-      "year_ago": 193.33,
+      "year_ago": 193.34,
       "lat": 46.257458,
       "lng": 5.017404,
       "color": "#ef4444"
@@ -52884,7 +52884,7 @@
         237.385,
         237.365
       ],
-      "year_ago": 238.93,
+      "year_ago": 238.88,
       "lat": 45.8741934,
       "lng": 5.687012357,
       "color": "#ef4444"
@@ -52910,36 +52910,10 @@
         193.866,
         193.852
       ],
-      "year_ago": 194.22,
+      "year_ago": 194.08,
       "lat": 45.877479614,
       "lng": 5.372372479,
       "color": "#ef4444"
-    },
-    {
-      "nom": "Villeneuve",
-      "dept": "01",
-      "code_bss": "06742X0001/VILLEN",
-      "current": 235.306,
-      "history": [
-        235.343,
-        235.342,
-        235.311,
-        235.316,
-        235.3,
-        235.282,
-        235.245,
-        235.268,
-        235.298,
-        235.194,
-        235.32,
-        235.068,
-        235.283,
-        235.306
-      ],
-      "year_ago": 235.05,
-      "lat": 46.018340874,
-      "lng": 4.83075421,
-      "color": "#3b82f6"
     },
     {
       "nom": "Saint-Rémy",
@@ -52988,21 +52962,47 @@
         167.715,
         167.716
       ],
-      "year_ago": 167.9,
+      "year_ago": 167.92,
       "lat": 46.292579771,
       "lng": 4.855658262,
       "color": "#ef4444"
+    },
+    {
+      "nom": "Villeneuve",
+      "dept": "01",
+      "code_bss": "06742X0001/VILLEN",
+      "current": 235.306,
+      "history": [
+        235.343,
+        235.342,
+        235.311,
+        235.316,
+        235.3,
+        235.282,
+        235.245,
+        235.268,
+        235.298,
+        235.194,
+        235.32,
+        235.068,
+        235.283,
+        235.306
+      ],
+      "year_ago": 235.11,
+      "lat": 46.018340874,
+      "lng": 4.83075421,
+      "color": "#3b82f6"
     }
   ],
   "air": [
     {
-      "zone": "Aix-en-Provence",
+      "zone": "JARS",
       "dept": "01",
-      "date": "2026-10-20",
+      "date": "2026-10-21",
       "indice": 2,
       "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "AtmoSud",
+      "color": "#50ccaa",
+      "source": "Lig'Air",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -53032,13 +53032,13 @@
       }
     },
     {
-      "zone": "Allauch",
+      "zone": "LA CELETTE",
       "dept": "01",
-      "date": "2026-10-20",
+      "date": "2026-10-21",
       "indice": 2,
       "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "AtmoSud",
+      "color": "#50ccaa",
+      "source": "Lig'Air",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -53068,13 +53068,13 @@
       }
     },
     {
-      "zone": "Alleins",
+      "zone": "SAINT-MARTIN-D'AUXIGNY",
       "dept": "01",
-      "date": "2026-10-20",
+      "date": "2026-10-21",
       "indice": 2,
       "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "AtmoSud",
+      "color": "#50ccaa",
+      "source": "Lig'Air",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -53104,13 +53104,13 @@
       }
     },
     {
-      "zone": "Arles",
+      "zone": "GRON",
       "dept": "01",
-      "date": "2026-10-20",
+      "date": "2026-10-21",
       "indice": 2,
       "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "AtmoSud",
+      "color": "#50ccaa",
+      "source": "Lig'Air",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -53140,13 +53140,13 @@
       }
     },
     {
-      "zone": "Aubagne",
+      "zone": "PLOU",
       "dept": "01",
-      "date": "2026-10-20",
+      "date": "2026-10-21",
       "indice": 2,
       "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "AtmoSud",
+      "color": "#50ccaa",
+      "source": "Lig'Air",
       "polluants": {
         "NO₂": {
           "indice": 1,
