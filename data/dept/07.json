@@ -3,7 +3,7 @@
   "nom": "Ardèche",
   "slug": "ardeche",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "19/10/2026 à 18:46",
+  "updated": "20/10/2026 à 16:38",
   "score_eau": 97,
   "nb_communes": 337,
   "potable": [
@@ -28848,32 +28848,6 @@
   ],
   "nappes": [
     {
-      "nom": "Aubenas",
-      "dept": "07",
-      "code_bss": "08651X0038/0038",
-      "current": 296.773,
-      "history": [
-        296.73,
-        296.727,
-        296.738,
-        296.726,
-        296.711,
-        296.681,
-        296.695,
-        296.69,
-        296.711,
-        296.71,
-        296.735,
-        296.748,
-        296.772,
-        296.773
-      ],
-      "year_ago": 295.59,
-      "lat": 44.619744152,
-      "lng": 4.39032624,
-      "color": "#3b82f6"
-    },
-    {
       "nom": "Veyras",
       "dept": "07",
       "code_bss": "08413X0091/F3",
@@ -28894,9 +28868,35 @@
         442.13,
         442.13
       ],
-      "year_ago": 441.93,
+      "year_ago": 441.94,
       "lat": 44.733838457,
       "lng": 4.561214887,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Aubenas",
+      "dept": "07",
+      "code_bss": "08651X0038/0038",
+      "current": 296.773,
+      "history": [
+        296.73,
+        296.727,
+        296.738,
+        296.726,
+        296.711,
+        296.681,
+        296.695,
+        296.69,
+        296.711,
+        296.71,
+        296.735,
+        296.748,
+        296.772,
+        296.773
+      ],
+      "year_ago": 295.6,
+      "lat": 44.619744152,
+      "lng": 4.39032624,
       "color": "#3b82f6"
     },
     {
@@ -28920,7 +28920,7 @@
         243.74,
         243.748
       ],
-      "year_ago": 243.51,
+      "year_ago": 243.58,
       "lat": 44.46354371,
       "lng": 4.214386619,
       "color": "#3b82f6"
@@ -28928,13 +28928,13 @@
   ],
   "air": [
     {
-      "zone": "Saint-Micaud",
+      "zone": "Rochecolombe",
       "dept": "07",
-      "date": "2026-10-21",
+      "date": "2026-10-22",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
-      "source": "ATMO Bourgogne-Franche-Comté",
+      "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -28964,13 +28964,13 @@
       }
     },
     {
-      "zone": "Saint-Nizier-sur-Arroux",
+      "zone": "Mairie des Salelles",
       "dept": "07",
-      "date": "2026-10-21",
+      "date": "2026-10-22",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
-      "source": "ATMO Bourgogne-Franche-Comté",
+      "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -29000,13 +29000,49 @@
       }
     },
     {
-      "zone": "Saint-Pierre-de-Varennes",
+      "zone": "Avrieux",
       "dept": "07",
-      "date": "2026-10-21",
+      "date": "2026-10-22",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Saint-Jean-le-Centenier",
+      "dept": "07",
+      "date": "2026-10-22",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
-      "source": "ATMO Bourgogne-Franche-Comté",
+      "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -29036,49 +29072,13 @@
       }
     },
     {
-      "zone": "Saint-Pierre-le-Vieux",
+      "zone": "Mairie de Sampzon",
       "dept": "07",
-      "date": "2026-10-21",
+      "date": "2026-10-22",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Point",
-      "dept": "07",
-      "date": "2026-10-21",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "ATMO Bourgogne-Franche-Comté",
+      "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
           "indice": 1,

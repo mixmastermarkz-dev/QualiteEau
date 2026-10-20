@@ -3,7 +3,7 @@
   "nom": "Landes",
   "slug": "landes",
   "region": "Nouvelle-Aquitaine",
-  "updated": "19/10/2026 à 18:46",
+  "updated": "20/10/2026 à 16:38",
   "score_eau": 99,
   "nb_communes": 327,
   "potable": [
@@ -39726,32 +39726,6 @@
   ],
   "nappes": [
     {
-      "nom": "Gourbera",
-      "dept": "40",
-      "code_bss": "09505X0034/GO01",
-      "current": 21.5,
-      "history": [
-        21.55,
-        21.55,
-        21.58,
-        21.55,
-        21.55,
-        21.5,
-        21.49,
-        21.45,
-        21.51,
-        21.49,
-        21.54,
-        21.5,
-        21.52,
-        21.5
-      ],
-      "year_ago": 21.5,
-      "lat": 43.788966613,
-      "lng": -1.035321265,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Lacquy",
       "dept": "40",
       "code_bss": "09266X0004/LC101",
@@ -39772,9 +39746,35 @@
         76.35,
         76.348
       ],
-      "year_ago": 76.58,
+      "year_ago": 76.6,
       "lat": 43.960162747,
       "lng": -0.272877691,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Gourbera",
+      "dept": "40",
+      "code_bss": "09505X0034/GO01",
+      "current": 21.5,
+      "history": [
+        21.55,
+        21.55,
+        21.58,
+        21.55,
+        21.55,
+        21.5,
+        21.49,
+        21.45,
+        21.51,
+        21.49,
+        21.54,
+        21.5,
+        21.52,
+        21.5
+      ],
+      "year_ago": 21.51,
+      "lat": 43.788966613,
+      "lng": -1.035321265,
       "color": "#ef4444"
     },
     {
@@ -39824,7 +39824,7 @@
         31.67,
         31.67
       ],
-      "year_ago": 31.71,
+      "year_ago": 31.73,
       "lat": 43.910092549,
       "lng": -0.715761027,
       "color": "#ef4444"
@@ -39850,7 +39850,7 @@
         55.87,
         55.86
       ],
-      "year_ago": 55.99,
+      "year_ago": 55.98,
       "lat": 44.344690504,
       "lng": -0.931494266,
       "color": "#ef4444"
@@ -39884,9 +39884,45 @@
   ],
   "air": [
     {
+      "zone": "Mimizan",
+      "dept": "40",
+      "date": "2026-10-21",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Nouvelle-Aquitaine",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
       "zone": "Belhade",
       "dept": "40",
-      "date": "2026-10-20",
+      "date": "2026-10-21",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -39920,9 +39956,9 @@
       }
     },
     {
-      "zone": "Sore",
+      "zone": "Gastes",
       "dept": "40",
-      "date": "2026-10-20",
+      "date": "2026-10-21",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -39956,9 +39992,9 @@
       }
     },
     {
-      "zone": "Mano",
+      "zone": "Parentis-en-Born",
       "dept": "40",
-      "date": "2026-10-20",
+      "date": "2026-10-21",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -39992,45 +40028,9 @@
       }
     },
     {
-      "zone": "Callen",
+      "zone": "Biscarrosse",
       "dept": "40",
-      "date": "2026-10-20",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Nouvelle-Aquitaine",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Pontenx-les-Forges",
-      "dept": "40",
-      "date": "2026-10-20",
+      "date": "2026-10-21",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
