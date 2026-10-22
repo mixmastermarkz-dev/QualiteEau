@@ -3,17 +3,3407 @@
   "nom": "Hauts-de-Seine",
   "slug": "hauts-de-seine",
   "region": "Île-de-France",
-  "updated": "21/10/2026 à 16:50",
-  "score_eau": null,
-  "nb_communes": 0,
-  "potable": [],
-  "rivieres": [],
+  "updated": "22/10/2026 à 16:50",
+  "score_eau": 98,
+  "nb_communes": 42,
+  "potable": [
+    {
+      "nom": "ANTONY",
+      "dept": "92",
+      "insee": "92002",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 12.9,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-07-27"
+        },
+        "pH": {
+          "valeur": 7.4,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-07-27"
+        },
+        "Chlore": {
+          "valeur": 0.35,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2026-07-27"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-07-27"
+        },
+        "Plomb": {
+          "valeur": 6.0,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2025-03-07"
+        },
+        "THM": {
+          "valeur": 26.2,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-03-12"
+        }
+      },
+      "score": 92,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "ASNIERES-SUR-SEINE",
+      "dept": "92",
+      "insee": "92004",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité poour le paramètre température. Ce résultat témoigne d’un réchauffement de l’eau froide au sein du rés eau intérieur, probablement due aux fortes températures de ces dernier s jours et/ou à des canalisations d’eau potable non calorifugées). Il est recommandé de veiller à l'entretien du réseau intérieur de l'immeu ble et de procéder à une purge de votre réseau intérieur en laissant c ouler l’eau 1 à 2 minutes. Les autres paramètres mesurés ont montré des résultats conformes aux p rescriptions réglementaires en vigueur.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 19.3,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-07-02"
+        },
+        "pH": {
+          "valeur": 7.68,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-07-02"
+        },
+        "Chlore": {
+          "valeur": 0.07,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2026-07-02"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-07-02"
+        },
+        "Calcaire (TH)": {
+          "valeur": 25.5,
+          "unite": "°f",
+          "color": "#10b981",
+          "date": "2018-04-27"
+        },
+        "Plomb": {
+          "valeur": 33.0,
+          "unite": "µg/L",
+          "color": "#ef4444",
+          "date": "2025-11-05"
+        },
+        "THM": {
+          "valeur": 16.9,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-06-23"
+        }
+      },
+      "score": 86,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "AUBERGENVILLE",
+      "dept": "92",
+      "insee": "78029",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 20.6,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-03-18"
+        },
+        "pH": {
+          "valeur": 7.56,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-03-18"
+        },
+        "Chlore": {
+          "valeur": 0.63,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2025-03-13"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-03-18"
+        },
+        "Calcaire (TH)": {
+          "valeur": 17.0,
+          "unite": "°f",
+          "color": "#10b981",
+          "date": "2025-12-24"
+        },
+        "Pesticides": {
+          "valeur": 0.005,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-05"
+        },
+        "THM": {
+          "valeur": 9.63,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-18"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "BAGNEUX",
+      "dept": "92",
+      "insee": "92007",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 12.7,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-08-03"
+        },
+        "pH": {
+          "valeur": 7.49,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-08-03"
+        },
+        "Chlore": {
+          "valeur": 0.38,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2026-08-03"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-08-03"
+        },
+        "Plomb": {
+          "valeur": 2.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2022-02-16"
+        },
+        "THM": {
+          "valeur": 43.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-03-26"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "BOIS-COLOMBES",
+      "dept": "92",
+      "insee": "92009",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 22.5,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-06-18"
+        },
+        "pH": {
+          "valeur": 7.5,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-06-18"
+        },
+        "Chlore": {
+          "valeur": 0.25,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2026-06-18"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-06-18"
+        },
+        "Plomb": {
+          "valeur": 11.0,
+          "unite": "µg/L",
+          "color": "#ef4444",
+          "date": "2025-02-26"
+        },
+        "THM": {
+          "valeur": 13.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-02-20"
+        }
+      },
+      "score": 83,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "BOULOGNE-BILLANCOURT",
+      "dept": "92",
+      "insee": "92012",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 12.2,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-08-05"
+        },
+        "pH": {
+          "valeur": 7.49,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-08-05"
+        },
+        "Chlore": {
+          "valeur": 0.36,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2026-08-05"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-08-05"
+        },
+        "Plomb": {
+          "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-04-05"
+        },
+        "THM": {
+          "valeur": 30.26,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-04-05"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "BOURG-LA-REINE",
+      "dept": "92",
+      "insee": "92014",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 12.7,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-08-03"
+        },
+        "pH": {
+          "valeur": 7.52,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-08-03"
+        },
+        "Chlore": {
+          "valeur": 0.32,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2026-08-03"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-08-03"
+        },
+        "Plomb": {
+          "valeur": 4.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-06-26"
+        },
+        "THM": {
+          "valeur": 27.34,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-12-16"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "CHATENAY-MALABRY",
+      "dept": "92",
+      "insee": "92019",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 16.9,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-07-08"
+        },
+        "pH": {
+          "valeur": 7.3,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-07-08"
+        },
+        "Chlore": {
+          "valeur": 0.57,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2026-07-08"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-07-08"
+        },
+        "Plomb": {
+          "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-06-07"
+        },
+        "THM": {
+          "valeur": 20.36,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-12-03"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "CHATILLON",
+      "dept": "92",
+      "insee": "92020",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 13.2,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-08-13"
+        },
+        "pH": {
+          "valeur": 7.51,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-08-13"
+        },
+        "Chlore": {
+          "valeur": 0.44,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2026-08-13"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-08-13"
+        },
+        "Plomb": {
+          "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-06-05"
+        },
+        "THM": {
+          "valeur": 16.64,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-12-01"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "CHAVILLE",
+      "dept": "92",
+      "insee": "92022",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 13.4,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-08-03"
+        },
+        "pH": {
+          "valeur": 7.5,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-08-03"
+        },
+        "Chlore": {
+          "valeur": 0.14,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2026-08-03"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-08-03"
+        },
+        "Plomb": {
+          "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-04-30"
+        },
+        "THM": {
+          "valeur": 17.7,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-04-30"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "CHOISY-LE-ROI",
+      "dept": "92",
+      "insee": "94022",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 25.7,
+          "unite": "mg/L",
+          "color": "#f59e0b",
+          "date": "2026-03-26"
+        },
+        "pH": {
+          "valeur": 7.8,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-03-26"
+        },
+        "Chlore": {
+          "valeur": 0.46,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2025-05-23"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-03-26"
+        },
+        "Calcaire (TH)": {
+          "valeur": 26.5,
+          "unite": "°f",
+          "color": "#10b981",
+          "date": "2025-12-31"
+        },
+        "Pesticides": {
+          "valeur": 0.019,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-26"
+        },
+        "THM": {
+          "valeur": 9.67,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-26"
+        }
+      },
+      "score": 93,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "CLAMART",
+      "dept": "92",
+      "insee": "92023",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 21.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-06-23"
+        },
+        "pH": {
+          "valeur": 7.7,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-06-23"
+        },
+        "Chlore": {
+          "valeur": 0.45,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2026-06-23"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-06-23"
+        },
+        "Plomb": {
+          "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-10-30"
+        },
+        "THM": {
+          "valeur": 33.54,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-12-02"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "CLICHY",
+      "dept": "92",
+      "insee": "92024",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 10.8,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-08-05"
+        },
+        "pH": {
+          "valeur": 7.5,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-08-05"
+        },
+        "Chlore": {
+          "valeur": 0.45,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2026-08-05"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-08-05"
+        },
+        "Plomb": {
+          "valeur": 10.0,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2023-05-17"
+        },
+        "Pesticides": {
+          "valeur": 0.07,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-21"
+        },
+        "THM": {
+          "valeur": 24.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-21"
+        }
+      },
+      "score": 93,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "COLOMBES",
+      "dept": "92",
+      "insee": "92025",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité pour les paramètres température et turbidité .Ce problème était ponctuel et représentatif du seul point de prélèvem ent. Les autres paramètres ont montré une eau conforme à la réglementa tion pour les paramètres mesurés.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 21.4,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-06-22"
+        },
+        "pH": {
+          "valeur": 7.6,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-06-22"
+        },
+        "Chlore": {
+          "valeur": 0.03,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2026-06-22"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-06-22"
+        },
+        "Plomb": {
+          "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-06-19"
+        },
+        "THM": {
+          "valeur": 17.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-04-30"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "COURBEVOIE",
+      "dept": "92",
+      "insee": "92026",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 16.6,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-08-04"
+        },
+        "pH": {
+          "valeur": 7.59,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-08-04"
+        },
+        "Chlore": {
+          "valeur": 0.23,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2026-08-04"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-08-04"
+        },
+        "Calcaire (TH)": {
+          "valeur": 15.67,
+          "unite": "°f",
+          "color": "#10b981",
+          "date": "2021-08-12"
+        },
+        "Plomb": {
+          "valeur": 9.0,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2024-01-12"
+        },
+        "THM": {
+          "valeur": 9.83,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-12-08"
+        }
+      },
+      "score": 93,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "CROISSY-SUR-SEINE",
+      "dept": "92",
+      "insee": "78190",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 13.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-03-17"
+        },
+        "pH": {
+          "valeur": 7.74,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-03-17"
+        },
+        "Chlore": {
+          "valeur": 0.48,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2025-03-11"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-03-17"
+        },
+        "Calcaire (TH)": {
+          "valeur": 17.8,
+          "unite": "°f",
+          "color": "#10b981",
+          "date": "2025-12-19"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-17"
+        },
+        "THM": {
+          "valeur": 9.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-17"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "FONTENAY-AUX-ROSES",
+      "dept": "92",
+      "insee": "92032",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 18.6,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-07-03"
+        },
+        "pH": {
+          "valeur": 7.42,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-07-03"
+        },
+        "Chlore": {
+          "valeur": 0.45,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2026-07-03"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-07-03"
+        },
+        "Plomb": {
+          "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-05-23"
+        },
+        "THM": {
+          "valeur": 34.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-12-05"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "GARCHES",
+      "dept": "92",
+      "insee": "92033",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 12.2,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-08-05"
+        },
+        "pH": {
+          "valeur": 7.9,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-08-05"
+        },
+        "Chlore": {
+          "valeur": 0.05,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2026-08-05"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-08-05"
+        },
+        "Calcaire (TH)": {
+          "valeur": 19.84,
+          "unite": "°f",
+          "color": "#10b981",
+          "date": "2021-08-23"
+        },
+        "Plomb": {
+          "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-04-30"
+        },
+        "Pesticides": {
+          "valeur": 0.068,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-02"
+        },
+        "THM": {
+          "valeur": 23.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-02"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "GARENNE-COLOMBES (LA)",
+      "dept": "92",
+      "insee": "92035",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 25.8,
+          "unite": "mg/L",
+          "color": "#f59e0b",
+          "date": "2026-05-29"
+        },
+        "pH": {
+          "valeur": 7.76,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-05-29"
+        },
+        "Chlore": {
+          "valeur": 0.38,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2026-05-29"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-05-29"
+        },
+        "Plomb": {
+          "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-11-17"
+        },
+        "THM": {
+          "valeur": 6.53,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-02-10"
+        }
+      },
+      "score": 92,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "GENNEVILLIERS",
+      "dept": "92",
+      "insee": "92036",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 20.7,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-06-09"
+        },
+        "pH": {
+          "valeur": 7.7,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-06-09"
+        },
+        "Chlore": {
+          "valeur": 0.29,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2026-06-09"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-06-09"
+        },
+        "Plomb": {
+          "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-11-04"
+        },
+        "THM": {
+          "valeur": 23.8,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-12-11"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "ISSY-LES-MOULINEAUX",
+      "dept": "92",
+      "insee": "92040",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 11.7,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-08-06"
+        },
+        "pH": {
+          "valeur": 7.54,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-08-06"
+        },
+        "Chlore": {
+          "valeur": 0.23,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2026-08-06"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-08-06"
+        },
+        "Plomb": {
+          "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-12-18"
+        },
+        "THM": {
+          "valeur": 21.41,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-12-18"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "LEVALLOIS-PERRET",
+      "dept": "92",
+      "insee": "92044",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 19.5,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-06-02"
+        },
+        "pH": {
+          "valeur": 7.6,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-06-02"
+        },
+        "Chlore": {
+          "valeur": 0.16,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2026-06-02"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-06-02"
+        },
+        "Plomb": {
+          "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-11-28"
+        },
+        "THM": {
+          "valeur": 36.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-06-23"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "LOUVECIENNES",
+      "dept": "92",
+      "insee": "78350",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 13.0,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-03-24"
+        },
+        "pH": {
+          "valeur": 7.82,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-03-24"
+        },
+        "Chlore": {
+          "valeur": 0.59,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2025-03-07"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-03-24"
+        },
+        "Calcaire (TH)": {
+          "valeur": 18.26,
+          "unite": "°f",
+          "color": "#10b981",
+          "date": "2025-12-23"
+        },
+        "Pesticides": {
+          "valeur": 0.036,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-01-14"
+        },
+        "THM": {
+          "valeur": 3.28,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-24"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "MALAKOFF",
+      "dept": "92",
+      "insee": "92046",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 12.1,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-08-06"
+        },
+        "pH": {
+          "valeur": 7.4,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-08-06"
+        },
+        "Chlore": {
+          "valeur": 0.12,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2026-08-06"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-08-06"
+        },
+        "Plomb": {
+          "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-01-25"
+        },
+        "THM": {
+          "valeur": 19.16,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-12-04"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "MARNES-LA-COQUETTE",
+      "dept": "92",
+      "insee": "92047",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 15.6,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-07-10"
+        },
+        "pH": {
+          "valeur": 7.92,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-07-10"
+        },
+        "Chlore": {
+          "valeur": 0.2,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2026-07-10"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-07-10"
+        },
+        "Plomb": {
+          "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-11-13"
+        },
+        "Pesticides": {
+          "valeur": 0.007,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-09"
+        },
+        "THM": {
+          "valeur": 21.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-09"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "MERY-SUR-OISE",
+      "dept": "92",
+      "insee": "95394",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 20.2,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-03-25"
+        },
+        "pH": {
+          "valeur": 7.8,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2025-03-28"
+        },
+        "Chlore": {
+          "valeur": 0.37,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2025-03-28"
+        },
+        "Bactériologie": {
+          "valeur": 0.0,
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-03-25"
+        },
+        "Calcaire (TH)": {
+          "valeur": 17.96,
+          "unite": "°f",
+          "color": "#10b981",
+          "date": "2025-12-30"
+        },
+        "Pesticides": {
+          "valeur": 0.088,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-25"
+        },
+        "THM": {
+          "valeur": 27.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-25"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "MEUDON",
+      "dept": "92",
+      "insee": "92048",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 17.1,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-07-10"
+        },
+        "pH": {
+          "valeur": 7.4,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-07-10"
+        },
+        "Chlore": {
+          "valeur": 0.2,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2026-07-10"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-07-10"
+        },
+        "Plomb": {
+          "valeur": 2.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-11-28"
+        },
+        "THM": {
+          "valeur": 50.3,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2025-06-30"
+        }
+      },
+      "score": 92,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "MONTROUGE",
+      "dept": "92",
+      "insee": "92049",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 18.2,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-07-02"
+        },
+        "pH": {
+          "valeur": 7.69,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-07-02"
+        },
+        "Chlore": {
+          "valeur": 0.24,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2026-07-02"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-07-02"
+        },
+        "Plomb": {
+          "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-03-05"
+        },
+        "THM": {
+          "valeur": 15.6,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-02-11"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "NANTERRE",
+      "dept": "92",
+      "insee": "92050",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Ce prélèvement  a montré un dépassement des exigences de qualité sur l e paramètre température. Ce dépassement estait ponctuel et représentat if du point. Les autres paramètres mesurés ont montré des résultats onformes aux prescriptions réglementaires en vigueur.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 21.2,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-06-24"
+        },
+        "pH": {
+          "valeur": 7.65,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-06-24"
+        },
+        "Chlore": {
+          "valeur": 0.34,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2026-06-24"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-06-24"
+        },
+        "Plomb": {
+          "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-12-04"
+        },
+        "THM": {
+          "valeur": 11.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-12-18"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "NEUILLY-SUR-MARNE",
+      "dept": "92",
+      "insee": "93050",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 26.0,
+          "unite": "mg/L",
+          "color": "#f59e0b",
+          "date": "2026-03-23"
+        },
+        "pH": {
+          "valeur": 7.7,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-03-23"
+        },
+        "Chlore": {
+          "valeur": 0.52,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2025-03-31"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-03-23"
+        },
+        "Calcaire (TH)": {
+          "valeur": 29.2,
+          "unite": "°f",
+          "color": "#10b981",
+          "date": "2025-12-31"
+        },
+        "Pesticides": {
+          "valeur": 0.05,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-23"
+        },
+        "THM": {
+          "valeur": 7.69,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-03-23"
+        }
+      },
+      "score": 93,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "NEUILLY-SUR-SEINE",
+      "dept": "92",
+      "insee": "92051",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité pour le paramètre température. Ce résultat témoigne d’un réchauffement de l’eau froide au sein du rés eau intérieur, probablement due aux fortes températures de ces dernier s jours et/ou à des canalisations d’eau potable non calorifugées).  Il est recommandé de veiller à l'entretien du réseau intérieur de l'imme uble et de procéder à une purge de votre réseau intérieur en laissant couler l’eau 1 à 2 minutes. Les autres paramètres mesurés ont montré des résultats conformes aux p rescriptions réglementaires en vigueur.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 9.7,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-07-16"
+        },
+        "pH": {
+          "valeur": 7.55,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-07-16"
+        },
+        "Chlore": {
+          "valeur": 0.22,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2026-07-16"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-07-16"
+        },
+        "Calcaire (TH)": {
+          "valeur": 15.61,
+          "unite": "°f",
+          "color": "#10b981",
+          "date": "2025-12-04"
+        },
+        "Plomb": {
+          "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-11-20"
+        },
+        "Pesticides": {
+          "valeur": 0.017,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-26"
+        },
+        "THM": {
+          "valeur": 18.1,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-26"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "PLESSIS-ROBINSON (LE)",
+      "dept": "92",
+      "insee": "92060",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Un prélèvement du 02/06 a révélé une légère contamination bactériologi que. Ce dépassement n'a pas été confirmé lors du recontrôle du 16/06.  Les autres paramétres mesurés ont montré des résultats conformes aux prescriptions réglementaires en vigueur.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 22.1,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-06-02"
+        },
+        "pH": {
+          "valeur": 7.5,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-06-16"
+        },
+        "Chlore": {
+          "valeur": 0.13,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2026-06-16"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-06-16"
+        },
+        "Plomb": {
+          "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-12-10"
+        },
+        "THM": {
+          "valeur": 19.25,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-12-03"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "PUTEAUX",
+      "dept": "92",
+      "insee": "92062",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 11.8,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-07-29"
+        },
+        "pH": {
+          "valeur": 7.3,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-07-29"
+        },
+        "Chlore": {
+          "valeur": 0.12,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2026-07-29"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-07-29"
+        },
+        "Plomb": {
+          "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-05-16"
+        },
+        "THM": {
+          "valeur": 64.4,
+          "unite": "µg/L",
+          "color": "#f59e0b",
+          "date": "2025-04-15"
+        }
+      },
+      "score": 92,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "RUEIL-MALMAISON",
+      "dept": "92",
+      "insee": "92063",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité pour le paramètre température. Ce résultat témoigne d’un réchauffement de l’eau froide au sein du rés eau intérieur, probablement due aux fortes températures de ces dernier s jours et/ou à des canalisations d’eau potable non calorifugées). Il est recommandé de veiller à l'entretien du réseau intérieur de l'immeu ble et de procéder à une purge de votre réseau intérieur en laissant c ouler l’eau 1 à 2 minutes. Les autres paramètres mesurés ont montré des résultats conformes aux p rescriptions réglementaires en vigueur.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 16.3,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-08-04"
+        },
+        "pH": {
+          "valeur": 7.8,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-08-04"
+        },
+        "Chlore": {
+          "valeur": 0.12,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2026-08-04"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-08-04"
+        },
+        "Plomb": {
+          "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-11-04"
+        },
+        "THM": {
+          "valeur": 15.8,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-12-02"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SAINT-CLOUD",
+      "dept": "92",
+      "insee": "92064",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 12.1,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-06-02"
+        },
+        "pH": {
+          "valeur": 7.91,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-06-02"
+        },
+        "Chlore": {
+          "valeur": 0.24,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2026-06-02"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-06-02"
+        },
+        "Plomb": {
+          "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-10-23"
+        },
+        "Pesticides": {
+          "valeur": 0.056,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-02"
+        },
+        "THM": {
+          "valeur": 21.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-02"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SCEAUX",
+      "dept": "92",
+      "insee": "92071",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 18.2,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-07-07"
+        },
+        "pH": {
+          "valeur": 7.6,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-07-07"
+        },
+        "Chlore": {
+          "valeur": 0.43,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2026-07-07"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-07-07"
+        },
+        "Plomb": {
+          "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-11-07"
+        },
+        "THM": {
+          "valeur": 18.46,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-12-05"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SEVRES",
+      "dept": "92",
+      "insee": "92072",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 11.8,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-08-14"
+        },
+        "pH": {
+          "valeur": 7.6,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-08-14"
+        },
+        "Chlore": {
+          "valeur": 0.12,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2026-08-14"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-08-14"
+        },
+        "Plomb": {
+          "valeur": 2.0,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-04-12"
+        },
+        "THM": {
+          "valeur": 24.4,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-03-17"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "SURESNES",
+      "dept": "92",
+      "insee": "92073",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 17.8,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-08-13"
+        },
+        "pH": {
+          "valeur": 7.5,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-08-13"
+        },
+        "Chlore": {
+          "valeur": 0.21,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2026-08-13"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-08-13"
+        },
+        "Calcaire (TH)": {
+          "valeur": 16.48,
+          "unite": "°f",
+          "color": "#10b981",
+          "date": "2025-12-19"
+        },
+        "Plomb": {
+          "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-06-28"
+        },
+        "Pesticides": {
+          "valeur": "<0,500",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-08"
+        },
+        "THM": {
+          "valeur": 23.8,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-07-08"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "VANVES",
+      "dept": "92",
+      "insee": "92075",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 12.1,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-08-04"
+        },
+        "pH": {
+          "valeur": 7.3,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-08-04"
+        },
+        "Chlore": {
+          "valeur": 0.1,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2026-08-04"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-08-04"
+        },
+        "Plomb": {
+          "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-12-15"
+        },
+        "THM": {
+          "valeur": 28.31,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-12-15"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "VAUCRESSON",
+      "dept": "92",
+      "insee": "92076",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 14.4,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-07-03"
+        },
+        "pH": {
+          "valeur": 7.7,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-07-03"
+        },
+        "Chlore": {
+          "valeur": 0.32,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2026-07-03"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-07-03"
+        },
+        "Plomb": {
+          "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2023-12-20"
+        },
+        "THM": {
+          "valeur": 19.3,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-04-29"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "VILLE-D'AVRAY",
+      "dept": "92",
+      "insee": "92077",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 13.8,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-07-03"
+        },
+        "pH": {
+          "valeur": 7.7,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-07-03"
+        },
+        "Chlore": {
+          "valeur": 0.25,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2026-07-03"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-07-03"
+        },
+        "Plomb": {
+          "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-09-30"
+        },
+        "THM": {
+          "valeur": 8.03,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2025-02-10"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    },
+    {
+      "nom": "VILLENEUVE-LA-GARENNE",
+      "dept": "92",
+      "insee": "92078",
+      "restric": "N.D.",
+      "origine": "Nappe ou captage local",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 0.8,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-08-05"
+        },
+        "pH": {
+          "valeur": 7.7,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-08-05"
+        },
+        "Chlore": {
+          "valeur": 0.17,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2026-08-05"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-08-05"
+        },
+        "Calcaire (TH)": {
+          "valeur": 18.42,
+          "unite": "°f",
+          "color": "#10b981",
+          "date": "2025-12-17"
+        },
+        "Plomb": {
+          "valeur": "<2",
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2024-11-25"
+        },
+        "Pesticides": {
+          "valeur": 0.008,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-05-27"
+        },
+        "THM": {
+          "valeur": 5.5,
+          "unite": "µg/L",
+          "color": "#10b981",
+          "date": "2026-06-30"
+        }
+      },
+      "score": 100,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
+    }
+  ],
+  "rivieres": [
+    {
+      "nom": "LA SEINE A SURESNES 2",
+      "dept": "92",
+      "lat": 48.866707755,
+      "lon": 2.229494609,
+      "nom_cours_eau": "LA SEINE",
+      "parametres": {
+        "Ammonium": {
+          "valeur": 30433.0,
+          "unite": "mg/L",
+          "color": "#ef4444",
+          "date": "2026-07-23",
+          "realtime": false
+        },
+        "Conductivité": {
+          "valeur": 8.6,
+          "unite": "µS/cm",
+          "color": "#10b981",
+          "date": "2026-07-13",
+          "realtime": false
+        },
+        "Nitrates": {
+          "valeur": 17.9,
+          "unite": "mg/L",
+          "color": "#f59e0b",
+          "date": "2026-07-13",
+          "realtime": false
+        },
+        "O2 saturation": {
+          "valeur": 107.9,
+          "unite": "%",
+          "color": "#10b981",
+          "date": "2026-07-13",
+          "realtime": false
+        },
+        "pH": {
+          "valeur": 8.2,
+          "unite": "pH",
+          "color": "#10b981",
+          "date": "2026-07-13",
+          "realtime": false
+        },
+        "Temp. eau": {
+          "valeur": 27.3,
+          "unite": "°C",
+          "color": "#ef4444",
+          "date": "2026-07-13",
+          "realtime": false
+        },
+        "Phosphore": {
+          "valeur": 0.134,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-07-13",
+          "realtime": false
+        },
+        "MES": {
+          "valeur": 592.0,
+          "unite": "mg/L",
+          "color": "#ef4444",
+          "date": "2026-07-13",
+          "realtime": false
+        }
+      },
+      "historique": {
+        "Ammonium": [
+          {
+            "date": "2026-07-23",
+            "valeur": 30433.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2026-07-13",
+            "valeur": 3.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2026-06-17",
+            "valeur": 2.3,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2026-05-15",
+            "valeur": 2.8,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2026-04-14",
+            "valeur": 2.6,
+            "color": "#ef4444"
+          }
+        ],
+        "Conductivité": [
+          {
+            "date": "2026-07-13",
+            "valeur": 8.6,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-06-17",
+            "valeur": 8.5,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-05-15",
+            "valeur": 9.1,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-04-14",
+            "valeur": 10.3,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-03-12",
+            "valeur": 10.6,
+            "color": "#10b981"
+          }
+        ],
+        "Nitrates": [
+          {
+            "date": "2026-07-13",
+            "valeur": 17.9,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2026-06-17",
+            "valeur": 22.6,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2026-05-15",
+            "valeur": 25.3,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2026-04-14",
+            "valeur": 23.7,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2026-03-12",
+            "valeur": 22.2,
+            "color": "#f59e0b"
+          }
+        ],
+        "O2 saturation": [
+          {
+            "date": "2026-07-13",
+            "valeur": 107.9,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-06-17",
+            "valeur": 98.8,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-05-15",
+            "valeur": 92.3,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-04-14",
+            "valeur": 99.8,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-03-12",
+            "valeur": 96.2,
+            "color": "#10b981"
+          }
+        ],
+        "pH": [
+          {
+            "date": "2026-07-13",
+            "valeur": 8.2,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-06-17",
+            "valeur": 7.9,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-05-15",
+            "valeur": 8.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-04-14",
+            "valeur": 8.3,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-03-12",
+            "valeur": 8.2,
+            "color": "#10b981"
+          }
+        ],
+        "Temp. eau": [
+          {
+            "date": "2026-07-13",
+            "valeur": 27.3,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2026-06-17",
+            "valeur": 23.4,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2026-05-15",
+            "valeur": 15.6,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-04-14",
+            "valeur": 14.1,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-03-12",
+            "valeur": 11.5,
+            "color": "#10b981"
+          }
+        ],
+        "Phosphore": [
+          {
+            "date": "2026-07-13",
+            "valeur": 0.134,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-06-17",
+            "valeur": 0.128,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-05-15",
+            "valeur": 0.12,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-04-14",
+            "valeur": 0.043,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-03-12",
+            "valeur": 0.07,
+            "color": "#10b981"
+          }
+        ],
+        "MES": [
+          {
+            "date": "2026-07-13",
+            "valeur": 592.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2026-06-17",
+            "valeur": 614.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2026-05-15",
+            "valeur": 592.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2026-04-14",
+            "valeur": 572.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2026-03-12",
+            "valeur": 559.0,
+            "color": "#ef4444"
+          }
+        ]
+      },
+      "score": 56,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
+      "nom": "LA SEINE A COLOMBES 2",
+      "dept": "92",
+      "lat": 48.920402018,
+      "lon": 2.220389022,
+      "nom_cours_eau": "LA SEINE",
+      "parametres": {
+        "Phosphore": {
+          "valeur": 0.116,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-06-18",
+          "realtime": false
+        },
+        "Temp. eau": {
+          "valeur": 23.5,
+          "unite": "°C",
+          "color": "#f59e0b",
+          "date": "2026-06-18",
+          "realtime": false
+        },
+        "MES": {
+          "valeur": 654.0,
+          "unite": "mg/L",
+          "color": "#ef4444",
+          "date": "2026-06-18",
+          "realtime": false
+        },
+        "Nitrates": {
+          "valeur": 23.0,
+          "unite": "mg/L",
+          "color": "#f59e0b",
+          "date": "2026-06-18",
+          "realtime": false
+        },
+        "Conductivité": {
+          "valeur": 8.5,
+          "unite": "µS/cm",
+          "color": "#10b981",
+          "date": "2026-06-18",
+          "realtime": false
+        },
+        "Ammonium": {
+          "valeur": 2.3,
+          "unite": "mg/L",
+          "color": "#ef4444",
+          "date": "2026-06-18",
+          "realtime": false
+        },
+        "O2 saturation": {
+          "valeur": 98.4,
+          "unite": "%",
+          "color": "#10b981",
+          "date": "2026-06-18",
+          "realtime": false
+        },
+        "pH": {
+          "valeur": 8.0,
+          "unite": "pH",
+          "color": "#10b981",
+          "date": "2026-06-18",
+          "realtime": false
+        }
+      },
+      "historique": {
+        "Phosphore": [
+          {
+            "date": "2026-06-18",
+            "valeur": 0.116,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-04-14",
+            "valeur": 0.089,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-02-24",
+            "valeur": 0.145,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-12-15",
+            "valeur": 0.111,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-10-23",
+            "valeur": 0.1,
+            "color": "#10b981"
+          }
+        ],
+        "Temp. eau": [
+          {
+            "date": "2026-06-18",
+            "valeur": 23.5,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2026-04-14",
+            "valeur": 14.2,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-02-24",
+            "valeur": 11.3,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-12-15",
+            "valeur": 10.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-10-23",
+            "valeur": 13.9,
+            "color": "#10b981"
+          }
+        ],
+        "MES": [
+          {
+            "date": "2026-06-18",
+            "valeur": 654.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2026-04-14",
+            "valeur": 612.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2026-02-24",
+            "valeur": 443.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-12-15",
+            "valeur": 521.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-10-23",
+            "valeur": 512.0,
+            "color": "#ef4444"
+          }
+        ],
+        "Nitrates": [
+          {
+            "date": "2026-06-18",
+            "valeur": 23.0,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2026-04-14",
+            "valeur": 23.0,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2026-02-24",
+            "valeur": 17.0,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2025-12-15",
+            "valeur": 23.0,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2025-10-23",
+            "valeur": 20.0,
+            "color": "#f59e0b"
+          }
+        ],
+        "Conductivité": [
+          {
+            "date": "2026-06-18",
+            "valeur": 8.5,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-04-14",
+            "valeur": 10.2,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-02-24",
+            "valeur": 10.4,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-12-15",
+            "valeur": 11.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-10-23",
+            "valeur": 10.3,
+            "color": "#10b981"
+          }
+        ],
+        "Ammonium": [
+          {
+            "date": "2026-06-18",
+            "valeur": 2.3,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2026-04-14",
+            "valeur": 2.6,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2026-02-24",
+            "valeur": 4.3,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-12-15",
+            "valeur": 3.8,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-10-23",
+            "valeur": 3.2,
+            "color": "#ef4444"
+          }
+        ],
+        "O2 saturation": [
+          {
+            "date": "2026-06-18",
+            "valeur": 98.4,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-04-14",
+            "valeur": 97.8,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-02-24",
+            "valeur": 93.7,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-12-15",
+            "valeur": 97.2,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-10-23",
+            "valeur": 102.2,
+            "color": "#10b981"
+          }
+        ],
+        "pH": [
+          {
+            "date": "2026-06-18",
+            "valeur": 8.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-04-14",
+            "valeur": 8.2,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-02-24",
+            "valeur": 8.3,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-12-15",
+            "valeur": 8.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-10-23",
+            "valeur": 8.2,
+            "color": "#10b981"
+          }
+        ]
+      },
+      "score": 62,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
+      "nom": "LA SEINE A CLICHY 1",
+      "dept": "92",
+      "lat": 48.912880127,
+      "lon": 2.31046707,
+      "nom_cours_eau": "LA SEINE",
+      "parametres": {
+        "Nitrates": {
+          "valeur": 21.6,
+          "unite": "mg/L",
+          "color": "#f59e0b",
+          "date": "2026-06-17",
+          "realtime": false
+        },
+        "MES": {
+          "valeur": 605.0,
+          "unite": "mg/L",
+          "color": "#ef4444",
+          "date": "2026-06-17",
+          "realtime": false
+        },
+        "Phosphore": {
+          "valeur": 0.103,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-06-17",
+          "realtime": false
+        },
+        "O2 saturation": {
+          "valeur": 110.6,
+          "unite": "%",
+          "color": "#10b981",
+          "date": "2026-06-17",
+          "realtime": false
+        },
+        "Conductivité": {
+          "valeur": 9.7,
+          "unite": "µS/cm",
+          "color": "#10b981",
+          "date": "2026-06-17",
+          "realtime": false
+        },
+        "Temp. eau": {
+          "valeur": 22.6,
+          "unite": "°C",
+          "color": "#f59e0b",
+          "date": "2026-06-17",
+          "realtime": false
+        },
+        "pH": {
+          "valeur": 8.0,
+          "unite": "pH",
+          "color": "#10b981",
+          "date": "2026-06-17",
+          "realtime": false
+        },
+        "Ammonium": {
+          "valeur": 2.1,
+          "unite": "mg/L",
+          "color": "#ef4444",
+          "date": "2026-06-17",
+          "realtime": false
+        }
+      },
+      "historique": {
+        "Nitrates": [
+          {
+            "date": "2026-06-17",
+            "valeur": 21.6,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2026-04-14",
+            "valeur": 24.8,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2026-02-18",
+            "valeur": 20.0,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2025-12-15",
+            "valeur": 23.0,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2025-10-22",
+            "valeur": 19.0,
+            "color": "#f59e0b"
+          }
+        ],
+        "MES": [
+          {
+            "date": "2026-06-17",
+            "valeur": 605.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2026-04-14",
+            "valeur": 579.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2026-02-18",
+            "valeur": 453.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-12-15",
+            "valeur": 512.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-10-22",
+            "valeur": 498.0,
+            "color": "#ef4444"
+          }
+        ],
+        "Phosphore": [
+          {
+            "date": "2026-06-17",
+            "valeur": 0.103,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-04-14",
+            "valeur": 0.058,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-02-18",
+            "valeur": 0.23,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2025-12-15",
+            "valeur": 0.099,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-10-22",
+            "valeur": 0.099,
+            "color": "#10b981"
+          }
+        ],
+        "O2 saturation": [
+          {
+            "date": "2026-06-17",
+            "valeur": 110.6,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-04-14",
+            "valeur": 105.9,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-02-18",
+            "valeur": 86.7,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-12-15",
+            "valeur": 97.5,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-10-22",
+            "valeur": 105.6,
+            "color": "#10b981"
+          }
+        ],
+        "Conductivité": [
+          {
+            "date": "2026-06-17",
+            "valeur": 9.7,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-04-14",
+            "valeur": 10.8,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-02-18",
+            "valeur": 10.4,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-12-15",
+            "valeur": 11.4,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-10-22",
+            "valeur": 10.8,
+            "color": "#10b981"
+          }
+        ],
+        "Temp. eau": [
+          {
+            "date": "2026-06-17",
+            "valeur": 22.6,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2026-04-14",
+            "valeur": 14.4,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-02-18",
+            "valeur": 7.5,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-12-15",
+            "valeur": 10.3,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-10-22",
+            "valeur": 13.9,
+            "color": "#10b981"
+          }
+        ],
+        "pH": [
+          {
+            "date": "2026-06-17",
+            "valeur": 8.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-04-14",
+            "valeur": 8.3,
+            "color": "#10b981"
+          },
+          {
+            "date": "2026-02-18",
+            "valeur": 8.1,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-12-15",
+            "valeur": 8.1,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-10-22",
+            "valeur": 8.1,
+            "color": "#10b981"
+          }
+        ],
+        "Ammonium": [
+          {
+            "date": "2026-06-17",
+            "valeur": 2.1,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2026-04-14",
+            "valeur": 2.2,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2026-02-18",
+            "valeur": 4.4,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-12-15",
+            "valeur": 3.6,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-10-22",
+            "valeur": 2.7,
+            "color": "#ef4444"
+          }
+        ]
+      },
+      "score": 62,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    },
+    {
+      "nom": "LA BIÈVRE A FRESNES 2",
+      "dept": "92",
+      "lat": 48.759999899,
+      "lon": 2.311997568,
+      "nom_cours_eau": "LA BIÈVRE",
+      "parametres": {
+        "Conductivité": {
+          "valeur": 9.25,
+          "unite": "µS/cm",
+          "color": "#10b981",
+          "date": "2025-11-04",
+          "realtime": false
+        },
+        "MES": {
+          "valeur": 733.0,
+          "unite": "mg/L",
+          "color": "#ef4444",
+          "date": "2025-11-04",
+          "realtime": false
+        },
+        "Ammonium": {
+          "valeur": 4.7,
+          "unite": "mg/L",
+          "color": "#ef4444",
+          "date": "2025-11-04",
+          "realtime": false
+        },
+        "Phosphore": {
+          "valeur": 0.28,
+          "unite": "mg/L",
+          "color": "#f59e0b",
+          "date": "2025-11-04",
+          "realtime": false
+        },
+        "Temp. eau": {
+          "valeur": 12.1,
+          "unite": "°C",
+          "color": "#10b981",
+          "date": "2025-11-04",
+          "realtime": false
+        },
+        "Nitrates": {
+          "valeur": 11.0,
+          "unite": "mg/L",
+          "color": "#f59e0b",
+          "date": "2025-11-04",
+          "realtime": false
+        },
+        "O2 saturation": {
+          "valeur": 85.4,
+          "unite": "%",
+          "color": "#10b981",
+          "date": "2025-11-04",
+          "realtime": false
+        },
+        "pH": {
+          "valeur": 7.98,
+          "unite": "pH",
+          "color": "#10b981",
+          "date": "2025-11-04",
+          "realtime": false
+        }
+      },
+      "historique": {
+        "Conductivité": [
+          {
+            "date": "2025-11-04",
+            "valeur": 9.25,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-09-02",
+            "valeur": 8.86,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-07-08",
+            "valeur": 8.36,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-05-06",
+            "valeur": 9.32,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-03-04",
+            "valeur": 12.2,
+            "color": "#10b981"
+          }
+        ],
+        "MES": [
+          {
+            "date": "2025-11-04",
+            "valeur": 733.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-09-02",
+            "valeur": 698.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-07-08",
+            "valeur": 537.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-05-06",
+            "valeur": 917.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-03-04",
+            "valeur": 792.0,
+            "color": "#ef4444"
+          }
+        ],
+        "Ammonium": [
+          {
+            "date": "2025-11-04",
+            "valeur": 4.7,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-09-02",
+            "valeur": 5.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-05-06",
+            "valeur": 4.5,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-03-04",
+            "valeur": 4.7,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2025-02-04",
+            "valeur": 4.7,
+            "color": "#ef4444"
+          }
+        ],
+        "Phosphore": [
+          {
+            "date": "2025-11-04",
+            "valeur": 0.28,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2025-09-02",
+            "valeur": 0.28,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2025-07-08",
+            "valeur": 0.29,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2025-05-06",
+            "valeur": 0.2,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-03-04",
+            "valeur": 0.2,
+            "color": "#10b981"
+          }
+        ],
+        "Temp. eau": [
+          {
+            "date": "2025-11-04",
+            "valeur": 12.1,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-09-02",
+            "valeur": 16.7,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-07-08",
+            "valeur": 17.7,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-05-06",
+            "valeur": 12.3,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-03-04",
+            "valeur": 6.8,
+            "color": "#10b981"
+          }
+        ],
+        "Nitrates": [
+          {
+            "date": "2025-11-04",
+            "valeur": 11.0,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2025-09-02",
+            "valeur": 8.6,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-07-08",
+            "valeur": 5.3,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-05-06",
+            "valeur": 11.0,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2025-03-04",
+            "valeur": 14.0,
+            "color": "#f59e0b"
+          }
+        ],
+        "O2 saturation": [
+          {
+            "date": "2025-11-04",
+            "valeur": 85.4,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-09-02",
+            "valeur": 92.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-07-08",
+            "valeur": 87.7,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-05-06",
+            "valeur": 86.6,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-03-04",
+            "valeur": 99.1,
+            "color": "#10b981"
+          }
+        ],
+        "pH": [
+          {
+            "date": "2025-11-04",
+            "valeur": 7.98,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-09-02",
+            "valeur": 8.04,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-07-08",
+            "valeur": 7.9,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-05-06",
+            "valeur": 8.0,
+            "color": "#10b981"
+          },
+          {
+            "date": "2025-03-04",
+            "valeur": 8.2,
+            "color": "#10b981"
+          }
+        ]
+      },
+      "score": 62,
+      "score_color": "#f59e0b",
+      "score_label": "Moyenne"
+    }
+  ],
   "nappes": [],
   "air": [
     {
+      "zone": "La Garenne-Colombes",
+      "dept": "92",
+      "date": "2026-10-23",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Airparif",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
       "zone": "Châtillon",
       "dept": "92",
-      "date": "2026-10-22",
+      "date": "2026-10-23",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Airparif",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Neuilly-Sur-Seine",
+      "dept": "92",
+      "date": "2026-10-23",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -49,43 +3439,7 @@
     {
       "zone": "Sceaux",
       "dept": "92",
-      "date": "2026-10-22",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Airparif",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "La Garenne-Colombes",
-      "dept": "92",
-      "date": "2026-10-22",
+      "date": "2026-10-23",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -121,43 +3475,7 @@
     {
       "zone": "Villeneuve-La-Garenne",
       "dept": "92",
-      "date": "2026-10-22",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Airparif",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Cloud",
-      "dept": "92",
-      "date": "2026-10-22",
+      "date": "2026-10-23",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
