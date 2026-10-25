@@ -3,7 +3,7 @@
   "nom": "Val-de-Marne",
   "slug": "val-de-marne",
   "region": "Île-de-France",
-  "updated": "24/10/2026 à 15:49",
+  "updated": "25/10/2026 à 15:05",
   "score_eau": 98,
   "nb_communes": 54,
   "potable": [
@@ -10499,9 +10499,9 @@
   "nappes": [],
   "air": [
     {
-      "zone": "Vitry-Sur-Seine",
+      "zone": "Périgny",
       "dept": "94",
-      "date": "2026-10-25",
+      "date": "2026-10-26",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -10535,9 +10535,45 @@
       }
     },
     {
+      "zone": "Vitry-Sur-Seine",
+      "dept": "94",
+      "date": "2026-10-26",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Airparif",
+      "polluants": {
+        "NO₂": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "O₃": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
       "zone": "Chevilly-Larue",
       "dept": "94",
-      "date": "2026-10-25",
+      "date": "2026-10-26",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -10573,10 +10609,10 @@
     {
       "zone": "Charenton-Le-Pont",
       "dept": "94",
-      "date": "2026-10-25",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
+      "date": "2026-10-26",
+      "indice": 1,
+      "label": "Bon",
+      "color": "#50F0E6",
       "source": "Airparif",
       "polluants": {
         "NO₂": {
@@ -10585,9 +10621,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM10": {
           "indice": 1,
@@ -10609,43 +10645,7 @@
     {
       "zone": "Ormesson-Sur-Marne",
       "dept": "94",
-      "date": "2026-10-25",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Airparif",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Joinville-Le-Pont",
-      "dept": "94",
-      "date": "2026-10-25",
+      "date": "2026-10-26",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",

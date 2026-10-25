@@ -3,7 +3,7 @@
   "nom": "Loire",
   "slug": "loire",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "24/10/2026 à 15:49",
+  "updated": "25/10/2026 à 15:05",
   "score_eau": 96,
   "nb_communes": 326,
   "potable": [
@@ -23581,11 +23581,6 @@
             "date": "2025-07-21",
             "valeur": 0.76,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-10-24",
-            "valeur": 1.1,
-            "color": "#10b981"
           }
         ],
         "MES": [
@@ -23596,11 +23591,6 @@
           },
           {
             "date": "2025-07-21",
-            "valeur": 0.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-10-24",
             "valeur": 0.0,
             "color": "#10b981"
           }
@@ -23614,11 +23604,6 @@
           {
             "date": "2025-07-21",
             "valeur": 0.069,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-10-24",
-            "valeur": 0.023,
             "color": "#10b981"
           }
         ]
@@ -42893,30 +42878,56 @@
   ],
   "nappes": [
     {
-      "nom": "Saint-Galmier",
+      "nom": "Cleppé",
       "dept": "42",
-      "code_bss": "07208X0197/F1C",
-      "current": 372.542,
+      "code_bss": "06967X0100/F",
+      "current": 323.296,
       "history": [
-        372.548,
-        372.543,
-        372.548,
-        372.539,
-        372.542,
-        372.533,
-        372.54,
-        372.535,
-        372.544,
-        372.542,
-        372.545,
-        372.544,
-        372.549,
-        372.542
+        323.341,
+        323.335,
+        323.325,
+        323.312,
+        323.307,
+        323.294,
+        323.288,
+        323.285,
+        323.289,
+        323.291,
+        323.301,
+        323.299,
+        323.302,
+        323.296
       ],
-      "year_ago": 372.46,
-      "lat": 45.605448412,
-      "lng": 4.306255162,
-      "color": "#3b82f6"
+      "year_ago": 323.76,
+      "lat": 45.769951628,
+      "lng": 4.183823819,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Saint-André-le-Puy",
+      "dept": "42",
+      "code_bss": "07204X0105/F",
+      "current": 355.498,
+      "history": [
+        355.514,
+        355.514,
+        355.512,
+        355.504,
+        355.497,
+        355.474,
+        355.472,
+        355.463,
+        355.478,
+        355.482,
+        355.496,
+        355.492,
+        355.506,
+        355.498
+      ],
+      "year_ago": 355.86,
+      "lat": 45.647921327,
+      "lng": 4.246544955,
+      "color": "#ef4444"
     },
     {
       "nom": "Chalain-le-Comtal",
@@ -42945,63 +42956,73 @@
       "color": "#ef4444"
     },
     {
-      "nom": "Saint-André-le-Puy",
+      "nom": "Saint-Galmier",
       "dept": "42",
-      "code_bss": "07204X0105/F",
-      "current": 355.498,
+      "code_bss": "07208X0197/F1C",
+      "current": 372.542,
       "history": [
-        355.514,
-        355.514,
-        355.512,
-        355.504,
-        355.497,
-        355.474,
-        355.472,
-        355.463,
-        355.478,
-        355.482,
-        355.496,
-        355.492,
-        355.506,
-        355.498
+        372.548,
+        372.543,
+        372.548,
+        372.539,
+        372.542,
+        372.533,
+        372.54,
+        372.535,
+        372.544,
+        372.542,
+        372.545,
+        372.544,
+        372.549,
+        372.542
       ],
-      "year_ago": 355.83,
-      "lat": 45.647921327,
-      "lng": 4.246544955,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Cleppé",
-      "dept": "42",
-      "code_bss": "06967X0100/F",
-      "current": 323.296,
-      "history": [
-        323.341,
-        323.335,
-        323.325,
-        323.312,
-        323.307,
-        323.294,
-        323.288,
-        323.285,
-        323.289,
-        323.291,
-        323.301,
-        323.299,
-        323.302,
-        323.296
-      ],
-      "year_ago": 323.73,
-      "lat": 45.769951628,
-      "lng": 4.183823819,
-      "color": "#ef4444"
+      "year_ago": 372.47,
+      "lat": 45.605448412,
+      "lng": 4.306255162,
+      "color": "#3b82f6"
     }
   ],
   "air": [
     {
-      "zone": "Gumières",
+      "zone": "Saint-Romain-la-Motte",
       "dept": "42",
-      "date": "2026-10-25",
+      "date": "2026-10-27",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Saint-Romain-le-Puy",
+      "dept": "42",
+      "date": "2026-10-27",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -43035,9 +43056,9 @@
       }
     },
     {
-      "zone": "Grézolles",
+      "zone": "Saint-Romain-les-Atheux",
       "dept": "42",
-      "date": "2026-10-25",
+      "date": "2026-10-27",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -43071,9 +43092,9 @@
       }
     },
     {
-      "zone": "Grézieux-le-Fromental",
+      "zone": "Saint-Sauveur-en-Rue",
       "dept": "42",
-      "date": "2026-10-25",
+      "date": "2026-10-27",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -43107,45 +43128,9 @@
       }
     },
     {
-      "zone": "La Gresle",
+      "zone": "Saint-Sixte",
       "dept": "42",
-      "date": "2026-10-25",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "La Grand-Croix",
-      "dept": "42",
-      "date": "2026-10-25",
+      "date": "2026-10-27",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",

@@ -3,7 +3,7 @@
   "nom": "Hautes-Pyrénées",
   "slug": "hautes-pyrenees",
   "region": "Occitanie",
-  "updated": "24/10/2026 à 15:49",
+  "updated": "25/10/2026 à 15:05",
   "score_eau": 99,
   "nb_communes": 473,
   "potable": [
@@ -35519,6 +35519,32 @@
   ],
   "nappes": [
     {
+      "nom": "Lafitole",
+      "dept": "65",
+      "code_bss": "10065X0042/F",
+      "current": 183.709,
+      "history": [
+        183.706,
+        183.709,
+        183.709,
+        183.708,
+        183.705,
+        183.704,
+        183.703,
+        183.703,
+        183.702,
+        183.705,
+        183.703,
+        183.705,
+        183.705,
+        183.709
+      ],
+      "year_ago": 183.82,
+      "lat": 43.455436994,
+      "lng": 0.078093903,
+      "color": "#ef4444"
+    },
+    {
       "nom": "Laloubère",
       "dept": "65",
       "code_bss": "10315X0112/F",
@@ -35543,32 +35569,6 @@
       "lat": 43.206813342,
       "lng": 0.076201028,
       "color": "#3b82f6"
-    },
-    {
-      "nom": "Lafitole",
-      "dept": "65",
-      "code_bss": "10065X0042/F",
-      "current": 183.709,
-      "history": [
-        183.706,
-        183.709,
-        183.709,
-        183.708,
-        183.705,
-        183.704,
-        183.703,
-        183.703,
-        183.702,
-        183.705,
-        183.703,
-        183.705,
-        183.705,
-        183.709
-      ],
-      "year_ago": 183.81,
-      "lat": 43.455436994,
-      "lng": 0.078093903,
-      "color": "#ef4444"
     },
     {
       "nom": "Sénac",
@@ -35628,7 +35628,7 @@
     {
       "dept": "65",
       "lib_zone": "HAUTES PYRENEES",
-      "date": "2026-10-25",
+      "date": "2026-10-26",
       "indice_global": 2,
       "label_global": "Faible",
       "color_global": "#a3e635",
@@ -35654,9 +35654,9 @@
           "color": "#94a3b8"
         },
         "Ambroisie": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
+          "indice": 1,
+          "label": "Très faible",
+          "color": "#10b981"
         },
         "Frêne": {
           "indice": 1,
