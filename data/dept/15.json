@@ -3,7 +3,7 @@
   "nom": "Cantal",
   "slug": "cantal",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "25/10/2026 à 15:05",
+  "updated": "26/10/2026 à 17:27",
   "score_eau": 96,
   "nb_communes": 251,
   "potable": [
@@ -30341,6 +30341,32 @@
   ],
   "nappes": [
     {
+      "nom": "Teissières-lès-Bouliès",
+      "dept": "15",
+      "code_bss": "08125X0044/F1",
+      "current": 722.826,
+      "history": [
+        722.9,
+        722.904,
+        722.894,
+        722.887,
+        722.875,
+        722.858,
+        722.855,
+        722.837,
+        722.847,
+        722.829,
+        722.841,
+        722.826,
+        722.842,
+        722.826
+      ],
+      "year_ago": 723.56,
+      "lat": 44.820895,
+      "lng": 2.541051,
+      "color": "#ef4444"
+    },
+    {
       "nom": "Molompize",
       "dept": "15",
       "code_bss": "07657X0018/P1",
@@ -30361,7 +30387,7 @@
         949.304,
         949.302
       ],
-      "year_ago": 950.34,
+      "year_ago": 950.31,
       "lat": 45.242098391,
       "lng": 3.098887675,
       "color": "#ef4444"
@@ -30393,32 +30419,6 @@
       "color": "#ef4444"
     },
     {
-      "nom": "Teissières-lès-Bouliès",
-      "dept": "15",
-      "code_bss": "08125X0044/F1",
-      "current": 722.826,
-      "history": [
-        722.9,
-        722.904,
-        722.894,
-        722.887,
-        722.875,
-        722.858,
-        722.855,
-        722.837,
-        722.847,
-        722.829,
-        722.841,
-        722.826,
-        722.842,
-        722.826
-      ],
-      "year_ago": 723.53,
-      "lat": 44.820895,
-      "lng": 2.541051,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Chalvignac",
       "dept": "15",
       "code_bss": "07635X0035/F",
@@ -30439,7 +30439,7 @@
         508.82,
         508.78
       ],
-      "year_ago": 509.39,
+      "year_ago": 509.41,
       "lat": 45.241376056,
       "lng": 2.246274272,
       "color": "#ef4444"
@@ -30465,7 +30465,7 @@
         766.189,
         766.18
       ],
-      "year_ago": 774.77,
+      "year_ago": 775.0,
       "lat": 44.811215,
       "lng": 2.400826,
       "color": "#ef4444"
@@ -30501,7 +30501,7 @@
     {
       "zone": "Gourdièges",
       "dept": "15",
-      "date": "2026-10-27",
+      "date": "2026-10-28",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -30537,43 +30537,7 @@
     {
       "zone": "Jabrun",
       "dept": "15",
-      "date": "2026-10-27",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Joursac",
-      "dept": "15",
-      "date": "2026-10-27",
+      "date": "2026-10-28",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -30609,7 +30573,7 @@
     {
       "zone": "Jaleyrac",
       "dept": "15",
-      "date": "2026-10-27",
+      "date": "2026-10-28",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -30643,9 +30607,45 @@
       }
     },
     {
-      "zone": "Laroquebrou",
+      "zone": "Lapeyrugue",
       "dept": "15",
-      "date": "2026-10-27",
+      "date": "2026-10-28",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Lanobre",
+      "dept": "15",
+      "date": "2026-10-28",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
