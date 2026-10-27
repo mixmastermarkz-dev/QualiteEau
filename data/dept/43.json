@@ -3,7 +3,7 @@
   "nom": "Haute-Loire",
   "slug": "haute-loire",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "26/10/2026 à 17:27",
+  "updated": "27/10/2026 à 16:41",
   "score_eau": 96,
   "nb_communes": 260,
   "potable": [
@@ -40043,9 +40043,35 @@
         406.122,
         406.143
       ],
-      "year_ago": 406.36,
+      "year_ago": 406.32,
       "lat": 45.357221793,
       "lng": 3.367729971,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Cohade",
+      "dept": "43",
+      "code_bss": "07662X0279/P45B02",
+      "current": 405.643,
+      "history": [
+        405.645,
+        405.651,
+        405.649,
+        405.648,
+        405.64,
+        405.639,
+        405.631,
+        405.635,
+        405.633,
+        405.638,
+        405.635,
+        405.639,
+        405.639,
+        405.643
+      ],
+      "year_ago": 405.89,
+      "lat": 45.355638,
+      "lng": 3.362851,
       "color": "#ef4444"
     },
     {
@@ -40069,61 +40095,9 @@
         405.627,
         405.629
       ],
-      "year_ago": 405.94,
+      "year_ago": 405.95,
       "lat": 45.354627,
       "lng": 3.358466,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Chaspuzac",
-      "dept": "43",
-      "code_bss": "07916X0008/P1",
-      "current": 862.971,
-      "history": [
-        863.004,
-        863.004,
-        863.005,
-        862.998,
-        862.991,
-        862.976,
-        862.967,
-        862.956,
-        862.958,
-        862.959,
-        862.965,
-        862.966,
-        862.973,
-        862.971
-      ],
-      "year_ago": 862.65,
-      "lat": 45.060946408,
-      "lng": 3.761689363,
-      "color": "#3b82f6"
-    },
-    {
-      "nom": "Cohade",
-      "dept": "43",
-      "code_bss": "07662X0279/P45B02",
-      "current": 405.643,
-      "history": [
-        405.645,
-        405.651,
-        405.649,
-        405.648,
-        405.64,
-        405.639,
-        405.631,
-        405.635,
-        405.633,
-        405.638,
-        405.635,
-        405.639,
-        405.639,
-        405.643
-      ],
-      "year_ago": 405.88,
-      "lat": 45.355638,
-      "lng": 3.362851,
       "color": "#ef4444"
     },
     {
@@ -40147,35 +40121,9 @@
         954.87,
         954.87
       ],
-      "year_ago": 955.88,
+      "year_ago": 955.92,
       "lat": 44.963175124,
       "lng": 3.547527986,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Céaux-d'Allègre",
-      "dept": "43",
-      "code_bss": "BSS004RHWG/X",
-      "current": 895.656,
-      "history": [
-        895.691,
-        895.685,
-        895.679,
-        895.666,
-        895.65,
-        895.64,
-        895.635,
-        895.638,
-        895.653,
-        895.658,
-        895.661,
-        895.659,
-        895.661,
-        895.656
-      ],
-      "year_ago": 895.81,
-      "lat": 45.186985457,
-      "lng": 3.73136582,
       "color": "#ef4444"
     },
     {
@@ -40205,6 +40153,32 @@
       "color": "#ef4444"
     },
     {
+      "nom": "Céaux-d'Allègre",
+      "dept": "43",
+      "code_bss": "BSS004RHWG/X",
+      "current": 895.656,
+      "history": [
+        895.691,
+        895.685,
+        895.679,
+        895.666,
+        895.65,
+        895.64,
+        895.635,
+        895.638,
+        895.653,
+        895.658,
+        895.661,
+        895.659,
+        895.661,
+        895.656
+      ],
+      "year_ago": 895.81,
+      "lat": 45.186985457,
+      "lng": 3.73136582,
+      "color": "#ef4444"
+    },
+    {
       "nom": "Solignac-sur-Loire",
       "dept": "43",
       "code_bss": "BSS004QTWA/X",
@@ -40229,13 +40203,75 @@
       "lat": 44.942192767,
       "lng": 3.875010316,
       "color": "#ef4444"
+    },
+    {
+      "nom": "Chaspuzac",
+      "dept": "43",
+      "code_bss": "07916X0008/P1",
+      "current": 862.971,
+      "history": [
+        863.004,
+        863.004,
+        863.005,
+        862.998,
+        862.991,
+        862.976,
+        862.967,
+        862.956,
+        862.958,
+        862.959,
+        862.965,
+        862.966,
+        862.973,
+        862.971
+      ],
+      "year_ago": 862.65,
+      "lat": 45.060946408,
+      "lng": 3.761689363,
+      "color": "#3b82f6"
     }
   ],
   "air": [
     {
+      "zone": "Saint-Geneys-près-Saint-Paulien",
+      "dept": "43",
+      "date": "2026-10-29",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
       "zone": "Saint-Front",
       "dept": "43",
-      "date": "2026-10-28",
+      "date": "2026-10-29",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -40271,7 +40307,7 @@
     {
       "zone": "Sainte-Florine",
       "dept": "43",
-      "date": "2026-10-28",
+      "date": "2026-10-29",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -40293,9 +40329,9 @@
           "color": "#10b981"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
@@ -40307,16 +40343,16 @@
     {
       "zone": "Saint-Ferréol-d'Auroure",
       "dept": "43",
-      "date": "2026-10-28",
+      "date": "2026-10-29",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "O₃": {
           "indice": 2,
@@ -40329,9 +40365,9 @@
           "color": "#10b981"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
@@ -40343,43 +40379,7 @@
     {
       "zone": "Sainte-Eugénie-de-Villeneuve",
       "dept": "43",
-      "date": "2026-10-28",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "le Cheylat",
-      "dept": "43",
-      "date": "2026-10-28",
+      "date": "2026-10-29",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",

@@ -3,7 +3,7 @@
   "nom": "Alpes-Maritimes",
   "slug": "alpes-maritimes",
   "region": "Provence-Alpes-Côte d'Azur",
-  "updated": "26/10/2026 à 17:27",
+  "updated": "27/10/2026 à 16:41",
   "score_eau": 99,
   "nb_communes": 164,
   "potable": [
@@ -19918,35 +19918,9 @@
         95.003,
         95.008
       ],
-      "year_ago": 98.59,
+      "year_ago": 98.52,
       "lat": 43.831616009,
       "lng": 7.188887934,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Nice",
-      "dept": "06",
-      "code_bss": "09994X0521/P4B",
-      "current": 10.64,
-      "history": [
-        10.57,
-        10.58,
-        10.58,
-        10.59,
-        10.6,
-        10.61,
-        10.62,
-        10.63,
-        10.64,
-        10.63,
-        10.63,
-        10.64,
-        10.64,
-        10.64
-      ],
-      "year_ago": 11.63,
-      "lat": 43.691448072,
-      "lng": 7.193977883,
       "color": "#ef4444"
     },
     {
@@ -19970,35 +19944,35 @@
         18.31,
         18.27
       ],
-      "year_ago": 18.86,
+      "year_ago": 18.85,
       "lat": 43.640614714,
       "lng": 7.125900921,
       "color": "#ef4444"
     },
     {
-      "nom": "Gilette",
+      "nom": "Nice",
       "dept": "06",
-      "code_bss": "BSS004FHCY/X",
-      "current": 94.73,
+      "code_bss": "09994X0521/P4B",
+      "current": 10.64,
       "history": [
-        95.03,
-        95,
-        94.95,
-        94.94,
-        94.92,
-        94.9,
-        94.86,
-        94.85,
-        94.83,
-        94.81,
-        94.79,
-        94.77,
-        94.75,
-        94.73
+        10.57,
+        10.58,
+        10.58,
+        10.59,
+        10.6,
+        10.61,
+        10.62,
+        10.63,
+        10.64,
+        10.63,
+        10.63,
+        10.64,
+        10.64,
+        10.64
       ],
-      "year_ago": 98.79,
-      "lat": 43.831748442,
-      "lng": 7.188607593,
+      "year_ago": 11.62,
+      "lat": 43.691448072,
+      "lng": 7.193977883,
       "color": "#ef4444"
     },
     {
@@ -20022,21 +19996,119 @@
         9.311,
         9.325
       ],
-      "year_ago": 9.44,
+      "year_ago": 9.42,
       "lat": 43.587762053,
       "lng": 6.926141257,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Gilette",
+      "dept": "06",
+      "code_bss": "BSS004FHCY/X",
+      "current": 94.73,
+      "history": [
+        95.03,
+        95,
+        94.95,
+        94.94,
+        94.92,
+        94.9,
+        94.86,
+        94.85,
+        94.83,
+        94.81,
+        94.79,
+        94.77,
+        94.75,
+        94.73
+      ],
+      "year_ago": 98.72,
+      "lat": 43.831748442,
+      "lng": 7.188607593,
       "color": "#ef4444"
     }
   ],
   "air": [
     {
-      "zone": "Aiglun",
+      "zone": "Morancé",
       "dept": "06",
-      "date": "2026-10-28",
+      "date": "2026-10-29",
       "indice": 2,
       "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "AtmoSud",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "O₃": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Orléat",
+      "dept": "06",
+      "date": "2026-10-29",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Montrottier",
+      "dept": "06",
+      "date": "2026-10-29",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -20066,85 +20138,13 @@
       }
     },
     {
-      "zone": "Amirat",
+      "zone": "Chaponnay",
       "dept": "06",
-      "date": "2026-10-28",
+      "date": "2026-10-29",
       "indice": 2,
       "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "AtmoSud",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Andon",
-      "dept": "06",
-      "date": "2026-10-28",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "AtmoSud",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Antibes",
-      "dept": "06",
-      "date": "2026-10-28",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "AtmoSud",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
           "indice": 2,
@@ -20152,9 +20152,9 @@
           "color": "#eab308"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM10": {
           "indice": 2,
@@ -20174,13 +20174,13 @@
       }
     },
     {
-      "zone": "Ascros",
+      "zone": "Montmelas-Saint-Sorlin",
       "dept": "06",
-      "date": "2026-10-28",
+      "date": "2026-10-29",
       "indice": 2,
       "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "AtmoSud",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
           "indice": 1,

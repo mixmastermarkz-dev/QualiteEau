@@ -3,7 +3,7 @@
   "nom": "Ariège",
   "slug": "ariege",
   "region": "Occitanie",
-  "updated": "26/10/2026 à 17:27",
+  "updated": "27/10/2026 à 16:41",
   "score_eau": 97,
   "nb_communes": 331,
   "potable": [
@@ -27187,32 +27187,6 @@
   ],
   "nappes": [
     {
-      "nom": "Montaut",
-      "dept": "09",
-      "code_bss": "10357X0021/F",
-      "current": 240.551,
-      "history": [
-        240.559,
-        240.559,
-        240.558,
-        240.557,
-        240.556,
-        240.555,
-        240.554,
-        240.554,
-        240.553,
-        240.553,
-        240.552,
-        240.552,
-        240.551,
-        240.551
-      ],
-      "year_ago": 240.55,
-      "lat": 43.225456979,
-      "lng": 1.62794485,
-      "color": "#3b82f6"
-    },
-    {
       "nom": "Mazères",
       "dept": "09",
       "code_bss": "10357X0213/F",
@@ -27239,6 +27213,32 @@
       "color": "#3b82f6"
     },
     {
+      "nom": "Montaut",
+      "dept": "09",
+      "code_bss": "10357X0021/F",
+      "current": 240.551,
+      "history": [
+        240.559,
+        240.559,
+        240.558,
+        240.557,
+        240.556,
+        240.555,
+        240.554,
+        240.554,
+        240.553,
+        240.553,
+        240.552,
+        240.552,
+        240.551,
+        240.551
+      ],
+      "year_ago": 240.55,
+      "lat": 43.225456979,
+      "lng": 1.62794485,
+      "color": "#3b82f6"
+    },
+    {
       "nom": "Verniolle",
       "dept": "09",
       "code_bss": "10577X0159/F",
@@ -27259,7 +27259,7 @@
         315.003,
         315.001
       ],
-      "year_ago": 315.07,
+      "year_ago": 315.06,
       "lat": 43.081693662,
       "lng": 1.648900398,
       "color": "#ef4444"
@@ -27285,7 +27285,7 @@
         496.151,
         496.151
       ],
-      "year_ago": 496.1,
+      "year_ago": 496.09,
       "lat": 42.955443654,
       "lng": 1.030378406,
       "color": "#3b82f6"
@@ -27311,7 +27311,7 @@
         440.849,
         440.849
       ],
-      "year_ago": 440.71,
+      "year_ago": 440.51,
       "lat": 42.990315316,
       "lng": 1.048876492,
       "color": "#3b82f6"
@@ -27319,13 +27319,49 @@
   ],
   "air": [
     {
-      "zone": "Cilaos",
+      "zone": "Saint-Martin",
       "dept": "09",
-      "date": "2026-10-28",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "ATMO Réunion",
+      "date": "2026-10-29",
+      "indice": 1,
+      "label": "Bon",
+      "color": "#50F0E6",
+      "source": "Gwad'Air",
+      "polluants": {
+        "NO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        },
+        "O₃": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        },
+        "PM10": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        },
+        "PM2.5": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Vieux-Habitants",
+      "dept": "09",
+      "date": "2026-10-29",
+      "indice": 1,
+      "label": "Bon",
+      "color": "#50F0E6",
+      "source": "Gwad'Air",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -27333,9 +27369,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM10": {
           "indice": 1,
@@ -27355,13 +27391,13 @@
       }
     },
     {
-      "zone": "Les Trois-Bassins",
+      "zone": "Vieux-Fort",
       "dept": "09",
-      "date": "2026-10-28",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "ATMO Réunion",
+      "date": "2026-10-29",
+      "indice": 1,
+      "label": "Bon",
+      "color": "#50F0E6",
+      "source": "Gwad'Air",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -27369,9 +27405,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM10": {
           "indice": 1,
@@ -27391,13 +27427,13 @@
       }
     },
     {
-      "zone": "Le Tampon",
+      "zone": "Trois-Rivières",
       "dept": "09",
-      "date": "2026-10-28",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "ATMO Réunion",
+      "date": "2026-10-29",
+      "indice": 1,
+      "label": "Bon",
+      "color": "#50F0E6",
+      "source": "Gwad'Air",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -27405,9 +27441,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM10": {
           "indice": 1,
@@ -27427,13 +27463,13 @@
       }
     },
     {
-      "zone": "Salazie",
+      "zone": "Terre-de-Haut",
       "dept": "09",
-      "date": "2026-10-28",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "ATMO Réunion",
+      "date": "2026-10-29",
+      "indice": 1,
+      "label": "Bon",
+      "color": "#50F0E6",
+      "source": "Gwad'Air",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -27441,45 +27477,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
           "indice": 1,
           "label": "Bon",
           "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Sainte-Suzanne",
-      "dept": "09",
-      "date": "2026-10-28",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "ATMO Réunion",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
@@ -27503,7 +27503,7 @@
     {
       "dept": "09",
       "lib_zone": "ARIEGE",
-      "date": "2026-10-27",
+      "date": "2026-10-28",
       "indice_global": 2,
       "label_global": "Faible",
       "color_global": "#a3e635",
@@ -27529,9 +27529,9 @@
           "color": "#94a3b8"
         },
         "Ambroisie": {
-          "indice": 1,
-          "label": "Très faible",
-          "color": "#10b981"
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
         },
         "Frêne": {
           "indice": 1,
@@ -27549,9 +27549,9 @@
           "color": "#10b981"
         },
         "Bouleau": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
+          "indice": 1,
+          "label": "Très faible",
+          "color": "#10b981"
         },
         "Armoise": {
           "indice": 1,
