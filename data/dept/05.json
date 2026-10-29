@@ -3,7 +3,7 @@
   "nom": "Hautes-Alpes",
   "slug": "hautes-alpes",
   "region": "Provence-Alpes-Côte d'Azur",
-  "updated": "28/10/2026 à 17:25",
+  "updated": "29/10/2026 à 17:34",
   "score_eau": 98,
   "nb_communes": 162,
   "potable": [
@@ -14717,39 +14717,11 @@
   ],
   "nappes": [
     {
-      "nom": "Aspremont",
-      "dept": "05",
-      "code_bss": "08688X0023/PZ1",
-      "current": 717.8,
-      "history": [
-        717.91,
-        717.88,
-        717.86,
-        717.85,
-        717.83,
-        717.82,
-        717.81,
-        717.8,
-        717.8,
-        717.8,
-        717.8,
-        717.8,
-        717.8,
-        717.8
-      ],
-      "year_ago": 718.54,
-      "lat": 44.493443917,
-      "lng": 5.728933099,
-      "color": "#ef4444"
-    },
-    {
       "nom": "La Roche-de-Rame",
       "dept": "05",
       "code_bss": "08472X0007/F-1",
-      "current": 923.39,
+      "current": 923.38,
       "history": [
-        923.46,
-        923.46,
         923.45,
         923.44,
         923.43,
@@ -14761,9 +14733,11 @@
         923.4,
         923.4,
         923.39,
-        923.39
+        923.39,
+        923.39,
+        923.38
       ],
-      "year_ago": 923.72,
+      "year_ago": 923.71,
       "lat": 44.738691198,
       "lng": 6.582662145,
       "color": "#ef4444"
@@ -14789,9 +14763,35 @@
         1152.1,
         1152.1
       ],
-      "year_ago": 1159.83,
+      "year_ago": 1159.84,
       "lat": 44.680949438,
       "lng": 6.260818821,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Aspremont",
+      "dept": "05",
+      "code_bss": "08688X0023/PZ1",
+      "current": 717.8,
+      "history": [
+        717.91,
+        717.88,
+        717.86,
+        717.85,
+        717.83,
+        717.82,
+        717.81,
+        717.8,
+        717.8,
+        717.8,
+        717.8,
+        717.8,
+        717.8,
+        717.8
+      ],
+      "year_ago": 718.53,
+      "lat": 44.493443917,
+      "lng": 5.728933099,
       "color": "#ef4444"
     },
     {
@@ -14815,7 +14815,7 @@
         951.32,
         951.32
       ],
-      "year_ago": 952.36,
+      "year_ago": 952.35,
       "lat": 44.776271664,
       "lng": 6.558809418,
       "color": "#ef4444"
@@ -14841,7 +14841,7 @@
         491.15,
         491.15
       ],
-      "year_ago": 491.46,
+      "year_ago": 491.45,
       "lat": 44.231230139,
       "lng": 5.862949573,
       "color": "#ef4444"
@@ -14849,9 +14849,9 @@
   ],
   "air": [
     {
-      "zone": "Abriès-Ristolas",
+      "zone": "Rosans",
       "dept": "05",
-      "date": "2026-10-30",
+      "date": "2026-10-31",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -14885,81 +14885,9 @@
       }
     },
     {
-      "zone": "Aiguilles",
+      "zone": "Rousset",
       "dept": "05",
-      "date": "2026-10-30",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "AtmoSud",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Ancelle",
-      "dept": "05",
-      "date": "2026-10-30",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "AtmoSud",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "L'Argentière-la-Bessée",
-      "dept": "05",
-      "date": "2026-10-30",
+      "date": "2026-10-31",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -14993,9 +14921,81 @@
       }
     },
     {
-      "zone": "Arvieux",
+      "zone": "Saint-André-d'Embrun",
       "dept": "05",
-      "date": "2026-10-30",
+      "date": "2026-10-31",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "AtmoSud",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Saint-André-de-Rosans",
+      "dept": "05",
+      "date": "2026-10-31",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "AtmoSud",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Saint-Apollinaire",
+      "dept": "05",
+      "date": "2026-10-31",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
