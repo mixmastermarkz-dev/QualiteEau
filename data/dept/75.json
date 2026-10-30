@@ -3,7 +3,7 @@
   "nom": "Paris",
   "slug": "paris",
   "region": "Île-de-France",
-  "updated": "29/10/2026 à 17:34",
+  "updated": "30/10/2026 à 17:31",
   "score_eau": 91,
   "nb_communes": 3,
   "potable": [
@@ -470,9 +470,9 @@
   "nappes": [],
   "air": [
     {
-      "zone": "Paris 9e Arrondissement",
+      "zone": "Paris 17e Arrondissement",
       "dept": "75",
-      "date": "2026-10-30",
+      "date": "2026-10-31",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -489,9 +489,45 @@
           "color": "#eab308"
         },
         "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
           "indice": 2,
           "label": "Moyen",
           "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Paris 9e Arrondissement",
+      "dept": "75",
+      "date": "2026-10-31",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Airparif",
+      "polluants": {
+        "NO₂": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM2.5": {
           "indice": 2,
@@ -508,7 +544,7 @@
     {
       "zone": "Paris 15e Arrondissement",
       "dept": "75",
-      "date": "2026-10-30",
+      "date": "2026-10-31",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -525,45 +561,9 @@
           "color": "#eab308"
         },
         "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Paris 7e Arrondissement",
-      "dept": "75",
-      "date": "2026-10-30",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Airparif",
-      "polluants": {
-        "NO₂": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM2.5": {
           "indice": 2,
@@ -580,7 +580,7 @@
     {
       "zone": "Paris 18e Arrondissement",
       "dept": "75",
-      "date": "2026-10-30",
+      "date": "2026-10-31",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -597,9 +597,9 @@
           "color": "#eab308"
         },
         "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM2.5": {
           "indice": 2,
@@ -614,18 +614,18 @@
       }
     },
     {
-      "zone": "Paris 20e Arrondissement",
+      "zone": "Paris 7e Arrondissement",
       "dept": "75",
-      "date": "2026-10-30",
+      "date": "2026-10-31",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
       "source": "Airparif",
       "polluants": {
         "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "O₃": {
           "indice": 2,
@@ -633,9 +633,9 @@
           "color": "#eab308"
         },
         "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM2.5": {
           "indice": 2,
