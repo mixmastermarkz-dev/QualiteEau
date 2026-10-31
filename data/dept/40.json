@@ -3,7 +3,7 @@
   "nom": "Landes",
   "slug": "landes",
   "region": "Nouvelle-Aquitaine",
-  "updated": "30/10/2026 à 17:31",
+  "updated": "31/10/2026 à 16:35",
   "score_eau": 99,
   "nb_communes": 327,
   "potable": [
@@ -39349,39 +39349,11 @@
   ],
   "nappes": [
     {
-      "nom": "Gourbera",
-      "dept": "40",
-      "code_bss": "09505X0034/GO01",
-      "current": 21.52,
-      "history": [
-        21.52,
-        21.5,
-        21.53,
-        21.55,
-        21.56,
-        21.54,
-        21.58,
-        21.59,
-        21.55,
-        21.47,
-        21.52,
-        21.51,
-        21.56,
-        21.52
-      ],
-      "year_ago": 21.5,
-      "lat": 43.788966613,
-      "lng": -1.035321265,
-      "color": "#3b82f6"
-    },
-    {
       "nom": "Lacquy",
       "dept": "40",
       "code_bss": "09266X0004/LC101",
       "current": 76.343,
       "history": [
-        76.355,
-        76.346,
         76.346,
         76.346,
         76.351,
@@ -39393,6 +39365,8 @@
         76.346,
         76.34,
         76.344,
+        76.343,
+        76.346,
         76.343
       ],
       "year_ago": 76.61,
@@ -39401,13 +39375,37 @@
       "color": "#ef4444"
     },
     {
+      "nom": "Gourbera",
+      "dept": "40",
+      "code_bss": "09505X0034/GO01",
+      "current": 21.52,
+      "history": [
+        21.53,
+        21.55,
+        21.56,
+        21.54,
+        21.58,
+        21.59,
+        21.55,
+        21.47,
+        21.52,
+        21.51,
+        21.56,
+        21.52,
+        21.56,
+        21.52
+      ],
+      "year_ago": 21.49,
+      "lat": 43.788966613,
+      "lng": -1.035321265,
+      "color": "#3b82f6"
+    },
+    {
       "nom": "Betbezer-d'Armagnac",
       "dept": "40",
       "code_bss": "09267X0014/PIEZO1",
-      "current": 68.291,
+      "current": 68.261,
       "history": [
-        68.463,
-        68.421,
         68.436,
         68.446,
         68.442,
@@ -39419,9 +39417,11 @@
         68.313,
         68.305,
         68.321,
-        68.291
+        68.291,
+        68.298,
+        68.261
       ],
-      "year_ago": 68.91,
+      "year_ago": 68.87,
       "lat": 43.982375767,
       "lng": -0.155560344,
       "color": "#ef4444"
@@ -39430,10 +39430,8 @@
       "nom": "Saint-Yaguen",
       "dept": "40",
       "code_bss": "09511X0022/LS02",
-      "current": 31.72,
+      "current": 31.71,
       "history": [
-        31.67,
-        31.68,
         31.71,
         31.76,
         31.72,
@@ -39445,7 +39443,9 @@
         31.71,
         31.72,
         31.74,
-        31.72
+        31.72,
+        31.74,
+        31.71
       ],
       "year_ago": 31.72,
       "lat": 43.910092549,
@@ -39456,7 +39456,7 @@
       "nom": "Ychoux",
       "dept": "40",
       "code_bss": "08746X0031/P22",
-      "current": 55.83,
+      "current": 55.82,
       "history": [
         55.84,
         55.84,
@@ -39464,16 +39464,16 @@
         55.84,
         55.84,
         55.84,
-        55.84,
-        55.84,
         55.83,
         55.83,
         55.83,
         55.83,
         55.83,
-        55.83
+        55.83,
+        55.83,
+        55.82
       ],
-      "year_ago": 56.08,
+      "year_ago": 56.09,
       "lat": 44.344690504,
       "lng": -0.931494266,
       "color": "#ef4444"
@@ -39482,10 +39482,8 @@
       "nom": "Saugnacq-et-Muret",
       "dept": "40",
       "code_bss": "08742X0058/P4",
-      "current": 46.22,
+      "current": 46.218,
       "history": [
-        46.239,
-        46.238,
         46.236,
         46.234,
         46.233,
@@ -39497,9 +39495,11 @@
         46.225,
         46.222,
         46.221,
-        46.22
+        46.22,
+        46.219,
+        46.218
       ],
-      "year_ago": 46.62,
+      "year_ago": 46.63,
       "lat": 44.435996741,
       "lng": -0.945104876,
       "color": "#ef4444"
@@ -39507,9 +39507,9 @@
   ],
   "air": [
     {
-      "zone": "Tilh",
+      "zone": "Gastes",
       "dept": "40",
-      "date": "2026-10-31",
+      "date": "2026-11-01",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -39543,12 +39543,12 @@
       }
     },
     {
-      "zone": "Bougue",
+      "zone": "Parentis-en-Born",
       "dept": "40",
-      "date": "2026-10-31",
-      "indice": 1,
-      "label": "Bon",
-      "color": "#50f0e6",
+      "date": "2026-11-01",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
       "source": "Atmo Nouvelle-Aquitaine",
       "polluants": {
         "NO₂": {
@@ -39557,9 +39557,81 @@
           "color": "#10b981"
         },
         "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
           "indice": 1,
           "label": "Bon",
           "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Biscarrosse",
+      "dept": "40",
+      "date": "2026-11-01",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Nouvelle-Aquitaine",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Liposthey",
+      "dept": "40",
+      "date": "2026-11-01",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Nouvelle-Aquitaine",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
@@ -39579,81 +39651,9 @@
       }
     },
     {
-      "zone": "Canenx-et-Réaut",
+      "zone": "Sainte-Eulalie-en-Born",
       "dept": "40",
-      "date": "2026-10-31",
-      "indice": 1,
-      "label": "Bon",
-      "color": "#50f0e6",
-      "source": "Atmo Nouvelle-Aquitaine",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Maurice-sur-Adour",
-      "dept": "40",
-      "date": "2026-10-31",
-      "indice": 1,
-      "label": "Bon",
-      "color": "#50f0e6",
-      "source": "Atmo Nouvelle-Aquitaine",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Yzosse",
-      "dept": "40",
-      "date": "2026-10-31",
+      "date": "2026-11-01",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",

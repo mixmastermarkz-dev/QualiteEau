@@ -3,7 +3,7 @@
   "nom": "Ardèche",
   "slug": "ardeche",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "30/10/2026 à 17:31",
+  "updated": "31/10/2026 à 16:35",
   "score_eau": 97,
   "nb_communes": 337,
   "potable": [
@@ -28752,39 +28752,11 @@
   ],
   "nappes": [
     {
-      "nom": "Lablachère",
-      "dept": "07",
-      "code_bss": "BSS003GPIS/X",
-      "current": 243.966,
-      "history": [
-        243.778,
-        243.794,
-        243.914,
-        244.02,
-        244.063,
-        244.027,
-        244.043,
-        244.046,
-        244.043,
-        244.012,
-        243.993,
-        243.992,
-        243.989,
-        243.966
-      ],
-      "year_ago": 243.55,
-      "lat": 44.46354371,
-      "lng": 4.214386619,
-      "color": "#3b82f6"
-    },
-    {
       "nom": "Veyras",
       "dept": "07",
       "code_bss": "08413X0091/F3",
-      "current": 442.15,
+      "current": 442.16,
       "history": [
-        442.17,
-        442.16,
         442.16,
         442.17,
         442.18,
@@ -28796,9 +28768,11 @@
         442.16,
         442.15,
         442.16,
-        442.15
+        442.15,
+        442.17,
+        442.16
       ],
-      "year_ago": 442.07,
+      "year_ago": 442.03,
       "lat": 44.733838457,
       "lng": 4.561214887,
       "color": "#3b82f6"
@@ -28807,10 +28781,8 @@
       "nom": "Aubenas",
       "dept": "07",
       "code_bss": "08651X0038/0038",
-      "current": 296.859,
+      "current": 296.864,
       "history": [
-        296.816,
-        296.791,
         296.824,
         296.85,
         296.864,
@@ -28822,23 +28794,51 @@
         296.835,
         296.848,
         296.863,
-        296.859
+        296.859,
+        296.877,
+        296.864
       ],
-      "year_ago": 295.24,
+      "year_ago": 295.18,
       "lat": 44.619744152,
       "lng": 4.39032624,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Lablachère",
+      "dept": "07",
+      "code_bss": "BSS003GPIS/X",
+      "current": 243.944,
+      "history": [
+        243.914,
+        244.02,
+        244.063,
+        244.027,
+        244.043,
+        244.046,
+        244.043,
+        244.012,
+        243.993,
+        243.992,
+        243.989,
+        243.966,
+        243.968,
+        243.944
+      ],
+      "year_ago": 243.48,
+      "lat": 44.46354371,
+      "lng": 4.214386619,
       "color": "#3b82f6"
     }
   ],
   "air": [
     {
-      "zone": "Mairie de Sampzon",
+      "zone": "Yville-sur-Seine",
       "dept": "07",
-      "date": "2026-11-01",
+      "date": "2026-11-02",
       "indice": 2,
       "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
+      "color": "#50CCAA",
+      "source": "Atmo Normandie",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -28868,49 +28868,13 @@
       }
     },
     {
-      "zone": "La Balme",
+      "zone": "Yvetot",
       "dept": "07",
-      "date": "2026-11-01",
+      "date": "2026-11-02",
       "indice": 2,
       "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Sanilhac",
-      "dept": "07",
-      "date": "2026-11-01",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
+      "color": "#50CCAA",
+      "source": "Atmo Normandie",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -28940,13 +28904,13 @@
       }
     },
     {
-      "zone": "Saint-Jean-Roure",
+      "zone": "Yvecrique",
       "dept": "07",
-      "date": "2026-11-01",
+      "date": "2026-11-02",
       "indice": 2,
       "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
+      "color": "#50CCAA",
+      "source": "Atmo Normandie",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -28976,13 +28940,49 @@
       }
     },
     {
-      "zone": "Saint-Bauzile",
+      "zone": "Yquebeuf",
       "dept": "07",
-      "date": "2026-11-01",
+      "date": "2026-11-02",
       "indice": 2,
       "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
+      "color": "#50CCAA",
+      "source": "Atmo Normandie",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Ypreville-Biville",
+      "dept": "07",
+      "date": "2026-11-02",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Atmo Normandie",
       "polluants": {
         "NO₂": {
           "indice": 1,

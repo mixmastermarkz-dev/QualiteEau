@@ -3,7 +3,7 @@
   "nom": "Alpes-Maritimes",
   "slug": "alpes-maritimes",
   "region": "Provence-Alpes-Côte d'Azur",
-  "updated": "30/10/2026 à 17:31",
+  "updated": "31/10/2026 à 16:35",
   "score_eau": 99,
   "nb_communes": 164,
   "potable": [
@@ -19901,10 +19901,8 @@
       "nom": "Gilette",
       "dept": "06",
       "code_bss": "09724X0023/P2",
-      "current": 95.085,
+      "current": 95.109,
       "history": [
-        95.006,
-        95.005,
         95.004,
         95.003,
         95.003,
@@ -19916,9 +19914,11 @@
         95.031,
         95.046,
         95.06,
-        95.085
+        95.085,
+        95.103,
+        95.109
       ],
-      "year_ago": 98.51,
+      "year_ago": 98.75,
       "lat": 43.831616009,
       "lng": 7.188887934,
       "color": "#ef4444"
@@ -19929,8 +19929,6 @@
       "code_bss": "09994X0521/P4B",
       "current": 11.06,
       "history": [
-        10.95,
-        10.97,
         10.99,
         11.01,
         11.04,
@@ -19942,9 +19940,11 @@
         11.09,
         11.08,
         11.07,
+        11.06,
+        11.07,
         11.06
       ],
-      "year_ago": 11.67,
+      "year_ago": 11.71,
       "lat": 43.691448072,
       "lng": 7.193977883,
       "color": "#ef4444"
@@ -19953,10 +19953,8 @@
       "nom": "Villeneuve-Loubet",
       "dept": "06",
       "code_bss": "09998X0199/PZ_PID",
-      "current": 18.4,
+      "current": 18.39,
       "history": [
-        18.45,
-        18.43,
         18.41,
         18.4,
         18.41,
@@ -19968,11 +19966,39 @@
         18.43,
         18.41,
         18.44,
-        18.4
+        18.4,
+        18.44,
+        18.39
       ],
-      "year_ago": 18.88,
+      "year_ago": 18.85,
       "lat": 43.640614714,
       "lng": 7.125900921,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Gilette",
+      "dept": "06",
+      "code_bss": "BSS004FHCY/X",
+      "current": 95.27,
+      "history": [
+        95,
+        95.04,
+        95.08,
+        95.11,
+        95.13,
+        95.16,
+        95.18,
+        95.18,
+        95.19,
+        95.2,
+        95.22,
+        95.24,
+        95.26,
+        95.27
+      ],
+      "year_ago": 98.95,
+      "lat": 43.831748442,
+      "lng": 7.188607593,
       "color": "#ef4444"
     },
     {
@@ -19996,83 +20022,21 @@
         9.707,
         9.651
       ],
-      "year_ago": 9.66,
+      "year_ago": 9.63,
       "lat": 43.587762053,
       "lng": 6.926141257,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Gilette",
-      "dept": "06",
-      "code_bss": "BSS004FHCY/X",
-      "current": 95.24,
-      "history": [
-        94.96,
-        94.97,
-        95,
-        95.04,
-        95.08,
-        95.11,
-        95.13,
-        95.16,
-        95.18,
-        95.18,
-        95.19,
-        95.2,
-        95.22,
-        95.24
-      ],
-      "year_ago": 98.72,
-      "lat": 43.831748442,
-      "lng": 7.188607593,
-      "color": "#ef4444"
+      "color": "#3b82f6"
     }
   ],
   "air": [
     {
-      "zone": "Neuville-sur-Saône",
+      "zone": "Saint-Agnan-sur-Sarthe",
       "dept": "06",
-      "date": "2026-11-01",
+      "date": "2026-11-02",
       "indice": 2,
       "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Bonnet-près-Orcival",
-      "dept": "06",
-      "date": "2026-11-01",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
+      "color": "#50CCAA",
+      "source": "Atmo Normandie",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -20102,13 +20066,13 @@
       }
     },
     {
-      "zone": "Parent",
+      "zone": "Saint-André-de-Briouze",
       "dept": "06",
-      "date": "2026-11-01",
+      "date": "2026-11-02",
       "indice": 2,
       "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
+      "color": "#50CCAA",
+      "source": "Atmo Normandie",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -20121,14 +20085,14 @@
           "color": "#eab308"
         },
         "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "SO₂": {
           "indice": 0,
@@ -20138,13 +20102,13 @@
       }
     },
     {
-      "zone": "Saint-Pardoux",
+      "zone": "Saint-André-de-Messei",
       "dept": "06",
-      "date": "2026-11-01",
+      "date": "2026-11-02",
       "indice": 2,
       "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
+      "color": "#50CCAA",
+      "source": "Atmo Normandie",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -20157,14 +20121,14 @@
           "color": "#eab308"
         },
         "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "SO₂": {
           "indice": 0,
@@ -20174,33 +20138,69 @@
       }
     },
     {
-      "zone": "La Mulatière",
+      "zone": "Saint-Aquilin-de-Corbion",
       "dept": "06",
-      "date": "2026-11-01",
+      "date": "2026-11-02",
       "indice": 2,
       "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
+      "color": "#50CCAA",
+      "source": "Atmo Normandie",
       "polluants": {
         "NO₂": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "O₃": {
           "indice": 1,
           "label": "Bon",
           "color": "#10b981"
         },
-        "PM10": {
+        "O₃": {
           "indice": 2,
           "label": "Moyen",
           "color": "#eab308"
         },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
         "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Saint-Aubin-d'Appenai",
+      "dept": "06",
+      "date": "2026-11-02",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Atmo Normandie",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
           "indice": 2,
           "label": "Moyen",
           "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "SO₂": {
           "indice": 0,

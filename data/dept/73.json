@@ -3,7 +3,7 @@
   "nom": "Savoie",
   "slug": "savoie",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "30/10/2026 à 17:31",
+  "updated": "31/10/2026 à 16:35",
   "score_eau": 99,
   "nb_communes": 274,
   "potable": [
@@ -31153,10 +31153,8 @@
       "nom": "Aiton",
       "dept": "73",
       "code_bss": "07266X0052/PS4",
-      "current": 293.262,
+      "current": 293.253,
       "history": [
-        293.206,
-        293.22,
         293.225,
         293.224,
         293.223,
@@ -31168,9 +31166,11 @@
         293.27,
         293.268,
         293.266,
-        293.262
+        293.262,
+        293.258,
+        293.253
       ],
-      "year_ago": 293.8,
+      "year_ago": 293.84,
       "lat": 45.566444711,
       "lng": 6.245431548,
       "color": "#ef4444"
@@ -31179,10 +31179,8 @@
       "nom": "Chambéry",
       "dept": "73",
       "code_bss": "07256X0095/CHAMBE",
-      "current": 264.819,
+      "current": 264.81,
       "history": [
-        264.891,
-        264.904,
         264.906,
         264.892,
         264.89,
@@ -31194,9 +31192,11 @@
         264.853,
         264.833,
         264.844,
-        264.819
+        264.819,
+        264.825,
+        264.81
       ],
-      "year_ago": 265.38,
+      "year_ago": 265.35,
       "lat": 45.569053375,
       "lng": 5.916248145,
       "color": "#ef4444"
@@ -31205,12 +31205,8 @@
       "nom": "Cruet",
       "dept": "73",
       "code_bss": "07494X0026/CRUET",
-      "current": 269.236,
+      "current": 269.153,
       "history": [
-        269.044,
-        269.06,
-        269.1,
-        269.158,
         269.109,
         269.103,
         269.112,
@@ -31220,9 +31216,13 @@
         269.251,
         269.291,
         269.229,
-        269.236
+        269.236,
+        269.199,
+        269.196,
+        269.154,
+        269.153
       ],
-      "year_ago": 270.38,
+      "year_ago": 270.32,
       "lat": 45.522193195,
       "lng": 6.104556772,
       "color": "#ef4444"
@@ -31230,7 +31230,7 @@
   ],
   "air": [
     {
-      "zone": "La Balme",
+      "zone": "Yenne",
       "dept": "73",
       "date": "2026-11-01",
       "indice": 2,
@@ -31266,7 +31266,43 @@
       }
     },
     {
-      "zone": "Le Châtelard",
+      "zone": "Villard-d'Héry",
+      "dept": "73",
+      "date": "2026-11-01",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "les Michelins",
       "dept": "73",
       "date": "2026-11-01",
       "indice": 2,
@@ -31302,7 +31338,7 @@
       }
     },
     {
-      "zone": "Cohennoz",
+      "zone": "Villard-Sallet",
       "dept": "73",
       "date": "2026-11-01",
       "indice": 1,
@@ -31338,12 +31374,12 @@
       }
     },
     {
-      "zone": "Ayn",
+      "zone": "Villard-sur-Doron",
       "dept": "73",
       "date": "2026-11-01",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
+      "indice": 1,
+      "label": "Bon",
+      "color": "#50f0e6",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
@@ -31355,42 +31391,6 @@
           "indice": 1,
           "label": "Bon",
           "color": "#10b981"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Avrieux",
-      "dept": "73",
-      "date": "2026-11-01",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,

@@ -3,7 +3,7 @@
   "nom": "Haut-Rhin",
   "slug": "haut-rhin",
   "region": "Grand Est",
-  "updated": "30/10/2026 à 17:31",
+  "updated": "31/10/2026 à 16:35",
   "score_eau": 95,
   "nb_communes": 366,
   "potable": [
@@ -33012,10 +33012,8 @@
       "nom": "Mooslargue",
       "dept": "68",
       "code_bss": "04761X0021/F1",
-      "current": 428.586,
+      "current": 428.582,
       "history": [
-        428.611,
-        428.597,
         428.604,
         428.629,
         428.6,
@@ -33027,9 +33025,11 @@
         428.586,
         428.589,
         428.588,
-        428.586
+        428.586,
+        428.586,
+        428.582
       ],
-      "year_ago": 428.78,
+      "year_ago": 428.75,
       "lat": 47.509654366,
       "lng": 7.218150794,
       "color": "#ef4444"
@@ -33037,9 +33037,45 @@
   ],
   "air": [
     {
-      "zone": "Oderen",
+      "zone": "Schwoben",
       "dept": "68",
-      "date": "2026-10-31",
+      "date": "2026-11-01",
+      "indice": 1,
+      "label": "Bon",
+      "color": "#50F0E6",
+      "source": "Atmo Grand Est",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Sentheim",
+      "dept": "68",
+      "date": "2026-11-01",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -33073,12 +33109,12 @@
       }
     },
     {
-      "zone": "Oltingue",
+      "zone": "Seppois-le-Bas",
       "dept": "68",
-      "date": "2026-10-31",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
+      "date": "2026-11-01",
+      "indice": 1,
+      "label": "Bon",
+      "color": "#50F0E6",
       "source": "Atmo Grand Est",
       "polluants": {
         "NO₂": {
@@ -33087,9 +33123,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM10": {
           "indice": 1,
@@ -33109,12 +33145,12 @@
       }
     },
     {
-      "zone": "Orbey",
+      "zone": "Seppois-le-Haut",
       "dept": "68",
-      "date": "2026-10-31",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
+      "date": "2026-11-01",
+      "indice": 1,
+      "label": "Bon",
+      "color": "#50F0E6",
       "source": "Atmo Grand Est",
       "polluants": {
         "NO₂": {
@@ -33123,9 +33159,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM10": {
           "indice": 1,
@@ -33145,45 +33181,9 @@
       }
     },
     {
-      "zone": "Orschwihr",
+      "zone": "Sewen",
       "dept": "68",
-      "date": "2026-10-31",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Grand Est",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Osenbach",
-      "dept": "68",
-      "date": "2026-10-31",
+      "date": "2026-11-01",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",

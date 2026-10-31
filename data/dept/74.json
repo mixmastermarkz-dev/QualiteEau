@@ -3,7 +3,7 @@
   "nom": "Haute-Savoie",
   "slug": "haute-savoie",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "30/10/2026 à 17:31",
+  "updated": "31/10/2026 à 16:35",
   "score_eau": 98,
   "nb_communes": 279,
   "potable": [
@@ -40374,65 +40374,11 @@
   ],
   "nappes": [
     {
-      "nom": "Marigny-Saint-Marcel",
-      "dept": "74",
-      "code_bss": "07013X0071/F1",
-      "current": 351.399,
-      "history": [
-        351.394,
-        351.4,
-        351.403,
-        351.406,
-        351.407,
-        351.411,
-        351.412,
-        351.414,
-        351.414,
-        351.413,
-        351.411,
-        351.408,
-        351.404,
-        351.399
-      ],
-      "year_ago": 352.28,
-      "lat": 45.832389293,
-      "lng": 5.962087611,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Publier",
-      "dept": "74",
-      "code_bss": "06301X0019/P5",
-      "current": 373.467,
-      "history": [
-        373.393,
-        373.405,
-        373.411,
-        373.415,
-        373.419,
-        373.428,
-        373.429,
-        373.441,
-        373.452,
-        373.458,
-        373.467,
-        373.47,
-        373.467,
-        373.467
-      ],
-      "year_ago": 374.52,
-      "lat": 46.390565227,
-      "lng": 6.520859286,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Vinzier",
       "dept": "74",
       "code_bss": "06306X0042/BIOGE",
-      "current": 568.869,
+      "current": 568.845,
       "history": [
-        569.006,
-        568.976,
         568.955,
         568.939,
         568.909,
@@ -40444,9 +40390,11 @@
         568.957,
         568.918,
         568.887,
-        568.869
+        568.869,
+        568.858,
+        568.845
       ],
-      "year_ago": 576.48,
+      "year_ago": 576.73,
       "lat": 46.335316884,
       "lng": 6.621257922,
       "color": "#ef4444"
@@ -40455,10 +40403,8 @@
       "nom": "Passy",
       "dept": "74",
       "code_bss": "BSS004QBEB/X",
-      "current": 568.299,
+      "current": 568.291,
       "history": [
-        568.346,
-        568.341,
         568.339,
         568.338,
         568.322,
@@ -40470,11 +40416,65 @@
         568.309,
         568.307,
         568.299,
-        568.299
+        568.299,
+        568.296,
+        568.291
       ],
       "year_ago": 569.32,
       "lat": 45.920935924,
       "lng": 6.72495014,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Marigny-Saint-Marcel",
+      "dept": "74",
+      "code_bss": "07013X0071/F1",
+      "current": 351.39,
+      "history": [
+        351.403,
+        351.406,
+        351.407,
+        351.411,
+        351.412,
+        351.414,
+        351.414,
+        351.413,
+        351.411,
+        351.408,
+        351.404,
+        351.399,
+        351.395,
+        351.39
+      ],
+      "year_ago": 352.33,
+      "lat": 45.832389293,
+      "lng": 5.962087611,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Publier",
+      "dept": "74",
+      "code_bss": "06301X0019/P5",
+      "current": 373.459,
+      "history": [
+        373.411,
+        373.415,
+        373.419,
+        373.428,
+        373.429,
+        373.441,
+        373.452,
+        373.458,
+        373.467,
+        373.47,
+        373.467,
+        373.467,
+        373.464,
+        373.459
+      ],
+      "year_ago": 374.61,
+      "lat": 46.390565227,
+      "lng": 6.520859286,
       "color": "#ef4444"
     },
     {
@@ -40498,7 +40498,7 @@
         361.794,
         361.79
       ],
-      "year_ago": 362.39,
+      "year_ago": 362.43,
       "lat": 45.835072054,
       "lng": 5.968019958,
       "color": "#ef4444"
@@ -40507,10 +40507,8 @@
       "nom": "Viry",
       "dept": "74",
       "code_bss": "06537X0103/VEIGY",
-      "current": 371.523,
+      "current": 371.519,
       "history": [
-        371.519,
-        371.499,
         371.525,
         371.55,
         371.525,
@@ -40522,7 +40520,9 @@
         371.509,
         371.522,
         371.522,
-        371.523
+        371.523,
+        371.519,
+        371.519
       ],
       "year_ago": 371.92,
       "lat": 46.141387797,
@@ -40532,79 +40532,7 @@
   ],
   "air": [
     {
-      "zone": "Mégevette",
-      "dept": "74",
-      "date": "2026-11-01",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Chêne-en-Semine",
-      "dept": "74",
-      "date": "2026-11-01",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Chavanod",
+      "zone": "Bluffy",
       "dept": "74",
       "date": "2026-11-01",
       "indice": 2,
@@ -40640,7 +40568,79 @@
       }
     },
     {
-      "zone": "Vailly",
+      "zone": "Saint-Pierre",
+      "dept": "74",
+      "date": "2026-11-01",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Bloye",
+      "dept": "74",
+      "date": "2026-11-01",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Le Biot",
       "dept": "74",
       "date": "2026-11-01",
       "indice": 2,
@@ -40676,7 +40676,7 @@
       }
     },
     {
-      "zone": "Meillerie",
+      "zone": "Bernex",
       "dept": "74",
       "date": "2026-11-01",
       "indice": 2,
