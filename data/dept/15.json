@@ -3,7 +3,7 @@
   "nom": "Cantal",
   "slug": "cantal",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "31/10/2026 à 16:35",
+  "updated": "01/11/2026 à 17:33",
   "score_eau": 96,
   "nb_communes": 251,
   "potable": [
@@ -30344,10 +30344,8 @@
       "nom": "Molompize",
       "dept": "15",
       "code_bss": "07657X0018/P1",
-      "current": 949.245,
+      "current": 949.24,
       "history": [
-        949.273,
-        949.27,
         949.269,
         949.267,
         949.264,
@@ -30359,47 +30357,21 @@
         949.252,
         949.249,
         949.248,
-        949.245
+        949.245,
+        949.243,
+        949.24
       ],
-      "year_ago": 950.19,
+      "year_ago": 950.18,
       "lat": 45.242098391,
       "lng": 3.098887675,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Teissières-lès-Bouliès",
-      "dept": "15",
-      "code_bss": "08125X0044/F1",
-      "current": 722.76,
-      "history": [
-        722.843,
-        722.853,
-        722.853,
-        722.849,
-        722.841,
-        722.832,
-        722.822,
-        722.799,
-        722.804,
-        722.783,
-        722.797,
-        722.767,
-        722.785,
-        722.76
-      ],
-      "year_ago": 723.62,
-      "lat": 44.820895,
-      "lng": 2.541051,
       "color": "#ef4444"
     },
     {
       "nom": "Moussages",
       "dept": "15",
       "code_bss": "07638X0017/MAIRIE",
-      "current": 847.167,
+      "current": 847.137,
       "history": [
-        847.226,
-        847.256,
         847.44,
         847.499,
         847.466,
@@ -30411,21 +30383,47 @@
         847.239,
         847.211,
         847.187,
-        847.167
+        847.167,
+        847.149,
+        847.137
       ],
-      "year_ago": 847.77,
+      "year_ago": 847.63,
       "lat": 45.238404427,
       "lng": 2.467418099,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Teissières-lès-Bouliès",
+      "dept": "15",
+      "code_bss": "08125X0044/F1",
+      "current": 722.761,
+      "history": [
+        722.853,
+        722.849,
+        722.841,
+        722.832,
+        722.822,
+        722.799,
+        722.804,
+        722.783,
+        722.797,
+        722.767,
+        722.785,
+        722.76,
+        722.784,
+        722.761
+      ],
+      "year_ago": 723.63,
+      "lat": 44.820895,
+      "lng": 2.541051,
       "color": "#ef4444"
     },
     {
       "nom": "Roannes-Saint-Mary",
       "dept": "15",
       "code_bss": "08353X0052/F",
-      "current": 766.065,
+      "current": 766.066,
       "history": [
-        766.085,
-        766.084,
         766.103,
         766.155,
         766.202,
@@ -30437,9 +30435,11 @@
         766.073,
         766.059,
         766.062,
-        766.065
+        766.065,
+        766.071,
+        766.066
       ],
-      "year_ago": 774.25,
+      "year_ago": 774.06,
       "lat": 44.811215,
       "lng": 2.400826,
       "color": "#ef4444"
@@ -30450,8 +30450,6 @@
       "code_bss": "07635X0035/F",
       "current": 508.78,
       "history": [
-        508.82,
-        508.83,
         508.84,
         508.82,
         508.84,
@@ -30463,6 +30461,8 @@
         508.84,
         508.79,
         508.83,
+        508.78,
+        508.82,
         508.78
       ],
       "year_ago": 509.49,
@@ -30474,10 +30474,8 @@
       "nom": "Velzic",
       "dept": "15",
       "code_bss": "BSS004RHVX/X",
-      "current": 696.947,
+      "current": 696.932,
       "history": [
-        696.839,
-        696.849,
         697.068,
         697.094,
         697.077,
@@ -30489,7 +30487,9 @@
         696.981,
         696.967,
         696.956,
-        696.947
+        696.947,
+        696.938,
+        696.932
       ],
       "year_ago": 696.68,
       "lat": 44.991676247,
@@ -30499,12 +30499,12 @@
   ],
   "air": [
     {
-      "zone": "15047",
+      "zone": "Raulhac",
       "dept": "15",
-      "date": "2026-11-01",
-      "indice": 1,
-      "label": "Bon",
-      "color": "#50f0e6",
+      "date": "2026-11-03",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
@@ -30513,9 +30513,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
@@ -30535,12 +30535,12 @@
       }
     },
     {
-      "zone": "15171",
+      "zone": "Saint-Antoine",
       "dept": "15",
-      "date": "2026-11-01",
-      "indice": 1,
-      "label": "Bon",
-      "color": "#50f0e6",
+      "date": "2026-11-03",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
@@ -30549,9 +30549,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
@@ -30559,9 +30559,9 @@
           "color": "#10b981"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
@@ -30571,9 +30571,45 @@
       }
     },
     {
-      "zone": "Laurie",
+      "zone": "Saint-Amandin",
       "dept": "15",
-      "date": "2026-11-01",
+      "date": "2026-11-03",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Saignes",
+      "dept": "15",
+      "date": "2026-11-03",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -30607,45 +30643,9 @@
       }
     },
     {
-      "zone": "Lastic",
+      "zone": "Ruynes-en-Margeride",
       "dept": "15",
-      "date": "2026-11-01",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Lascelle",
-      "dept": "15",
-      "date": "2026-11-01",
+      "date": "2026-11-03",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
