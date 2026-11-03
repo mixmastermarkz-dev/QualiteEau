@@ -3,7 +3,7 @@
   "nom": "Ardèche",
   "slug": "ardeche",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "02/11/2026 à 20:57",
+  "updated": "03/11/2026 à 18:30",
   "score_eau": 97,
   "nb_communes": 337,
   "potable": [
@@ -29161,65 +29161,11 @@
   ],
   "nappes": [
     {
-      "nom": "Veyras",
-      "dept": "07",
-      "code_bss": "08413X0091/F3",
-      "current": 442.17,
-      "history": [
-        442.17,
-        442.17,
-        442.18,
-        442.16,
-        442.16,
-        442.15,
-        442.16,
-        442.15,
-        442.17,
-        442.16,
-        442.17,
-        442.17,
-        442.18,
-        442.17
-      ],
-      "year_ago": 442.14,
-      "lat": 44.733838457,
-      "lng": 4.561214887,
-      "color": "#3b82f6"
-    },
-    {
-      "nom": "Lablachère",
-      "dept": "07",
-      "code_bss": "BSS003GPIS/X",
-      "current": 243.898,
-      "history": [
-        244.043,
-        244.046,
-        244.043,
-        244.012,
-        243.993,
-        243.992,
-        243.989,
-        243.966,
-        243.968,
-        243.944,
-        243.939,
-        243.946,
-        243.947,
-        243.898
-      ],
-      "year_ago": 243.51,
-      "lat": 44.46354371,
-      "lng": 4.214386619,
-      "color": "#3b82f6"
-    },
-    {
       "nom": "Aubenas",
       "dept": "07",
       "code_bss": "08651X0038/0038",
-      "current": 296.877,
+      "current": 296.915,
       "history": [
-        296.842,
-        296.843,
         296.853,
         296.832,
         296.835,
@@ -29231,23 +29177,77 @@
         296.87,
         296.896,
         296.893,
-        296.877
+        296.877,
+        296.898,
+        296.915
       ],
-      "year_ago": 295.11,
+      "year_ago": 295.07,
       "lat": 44.619744152,
       "lng": 4.39032624,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Lablachère",
+      "dept": "07",
+      "code_bss": "BSS003GPIS/X",
+      "current": 243.919,
+      "history": [
+        244.043,
+        244.012,
+        243.993,
+        243.992,
+        243.989,
+        243.966,
+        243.968,
+        243.944,
+        243.939,
+        243.946,
+        243.947,
+        243.898,
+        243.912,
+        243.919
+      ],
+      "year_ago": 243.46,
+      "lat": 44.46354371,
+      "lng": 4.214386619,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Veyras",
+      "dept": "07",
+      "code_bss": "08413X0091/F3",
+      "current": 442.19,
+      "history": [
+        442.18,
+        442.16,
+        442.16,
+        442.15,
+        442.16,
+        442.15,
+        442.17,
+        442.16,
+        442.17,
+        442.17,
+        442.18,
+        442.17,
+        442.17,
+        442.19
+      ],
+      "year_ago": 442.09,
+      "lat": 44.733838457,
+      "lng": 4.561214887,
       "color": "#3b82f6"
     }
   ],
   "air": [
     {
-      "zone": "Simard",
+      "zone": "Césarches",
       "dept": "07",
-      "date": "2026-11-04",
+      "date": "2026-11-05",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
-      "source": "ATMO Bourgogne-Franche-Comté",
+      "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -29277,13 +29277,13 @@
       }
     },
     {
-      "zone": "Sivignon",
+      "zone": "Mairie de Sampzon",
       "dept": "07",
-      "date": "2026-11-04",
+      "date": "2026-11-05",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
-      "source": "ATMO Bourgogne-Franche-Comté",
+      "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -29313,13 +29313,13 @@
       }
     },
     {
-      "zone": "Sologny",
+      "zone": "La Compôte",
       "dept": "07",
-      "date": "2026-11-04",
+      "date": "2026-11-05",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
-      "source": "ATMO Bourgogne-Franche-Comté",
+      "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -29327,9 +29327,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
@@ -29337,9 +29337,9 @@
           "color": "#10b981"
         },
         "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "SO₂": {
           "indice": 0,
@@ -29349,13 +29349,13 @@
       }
     },
     {
-      "zone": "Solutré-Pouilly",
+      "zone": "Saint-Jean-Roure",
       "dept": "07",
-      "date": "2026-11-04",
+      "date": "2026-11-05",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
-      "source": "ATMO Bourgogne-Franche-Comté",
+      "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -29363,9 +29363,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
@@ -29373,9 +29373,9 @@
           "color": "#10b981"
         },
         "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "SO₂": {
           "indice": 0,
@@ -29385,13 +29385,13 @@
       }
     },
     {
-      "zone": "Sornay",
+      "zone": "Sanilhac",
       "dept": "07",
-      "date": "2026-11-04",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "ATMO Bourgogne-Franche-Comté",
+      "date": "2026-11-05",
+      "indice": 1,
+      "label": "Bon",
+      "color": "#50f0e6",
+      "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -29409,9 +29409,9 @@
           "color": "#10b981"
         },
         "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "SO₂": {
           "indice": 0,

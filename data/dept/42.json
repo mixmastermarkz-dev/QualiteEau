@@ -3,7 +3,7 @@
   "nom": "Loire",
   "slug": "loire",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "02/11/2026 à 20:57",
+  "updated": "03/11/2026 à 18:30",
   "score_eau": 96,
   "nb_communes": 326,
   "potable": [
@@ -43012,10 +43012,8 @@
       "nom": "Cleppé",
       "dept": "42",
       "code_bss": "06967X0100/F",
-      "current": 323.28,
+      "current": 323.279,
       "history": [
-        323.331,
-        323.331,
         323.329,
         323.319,
         323.324,
@@ -43027,11 +43025,39 @@
         323.287,
         323.291,
         323.288,
-        323.28
+        323.28,
+        323.282,
+        323.279
       ],
       "year_ago": 323.85,
       "lat": 45.769951628,
       "lng": 4.183823819,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Saint-André-le-Puy",
+      "dept": "42",
+      "code_bss": "07204X0105/F",
+      "current": 355.522,
+      "history": [
+        355.532,
+        355.496,
+        355.499,
+        355.506,
+        355.513,
+        355.515,
+        355.517,
+        355.511,
+        355.503,
+        355.51,
+        355.513,
+        355.502,
+        355.514,
+        355.522
+      ],
+      "year_ago": 355.78,
+      "lat": 45.647921327,
+      "lng": 4.246544955,
       "color": "#ef4444"
     },
     {
@@ -43061,39 +43087,11 @@
       "color": "#ef4444"
     },
     {
-      "nom": "Saint-André-le-Puy",
-      "dept": "42",
-      "code_bss": "07204X0105/F",
-      "current": 355.502,
-      "history": [
-        355.527,
-        355.532,
-        355.532,
-        355.496,
-        355.499,
-        355.506,
-        355.513,
-        355.515,
-        355.517,
-        355.511,
-        355.503,
-        355.51,
-        355.513,
-        355.502
-      ],
-      "year_ago": 355.82,
-      "lat": 45.647921327,
-      "lng": 4.246544955,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Saint-Galmier",
       "dept": "42",
       "code_bss": "07208X0197/F1C",
-      "current": 372.536,
+      "current": 372.545,
       "history": [
-        372.541,
-        372.543,
         372.545,
         372.529,
         372.537,
@@ -43105,7 +43103,9 @@
         372.537,
         372.542,
         372.543,
-        372.536
+        372.536,
+        372.541,
+        372.545
       ],
       "year_ago": 372.46,
       "lat": 45.605448412,
@@ -43115,9 +43115,9 @@
   ],
   "air": [
     {
-      "zone": "Viricelles",
+      "zone": "Saint-Romain-les-Atheux",
       "dept": "42",
-      "date": "2026-11-04",
+      "date": "2026-11-05",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -43132,78 +43132,6 @@
           "indice": 2,
           "label": "Moyen",
           "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Virigneux",
-      "dept": "42",
-      "date": "2026-11-04",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Vivans",
-      "dept": "42",
-      "date": "2026-11-04",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
         },
         "PM10": {
           "indice": 1,
@@ -43223,18 +43151,54 @@
       }
     },
     {
-      "zone": "Vougy",
+      "zone": "Saint-Sauveur-en-Rue",
       "dept": "42",
-      "date": "2026-11-04",
+      "date": "2026-11-05",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
           "indice": 2,
           "label": "Moyen",
           "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Saint-Sixte",
+      "dept": "42",
+      "date": "2026-11-05",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "O₃": {
           "indice": 1,
@@ -43259,9 +43223,9 @@
       }
     },
     {
-      "zone": "Chausseterre",
+      "zone": "Saint-Symphorien-de-Lay",
       "dept": "42",
-      "date": "2026-11-04",
+      "date": "2026-11-05",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -43273,14 +43237,50 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM10": {
           "indice": 1,
           "label": "Bon",
           "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Saint-Thomas-la-Garde",
+      "dept": "42",
+      "date": "2026-11-05",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM2.5": {
           "indice": 2,

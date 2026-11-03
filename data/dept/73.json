@@ -3,7 +3,7 @@
   "nom": "Savoie",
   "slug": "savoie",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "02/11/2026 à 20:57",
+  "updated": "03/11/2026 à 18:30",
   "score_eau": 99,
   "nb_communes": 274,
   "potable": [
@@ -31193,10 +31193,8 @@
       "nom": "Aiton",
       "dept": "73",
       "code_bss": "07266X0052/PS4",
-      "current": 293.235,
+      "current": 293.228,
       "history": [
-        293.256,
-        293.264,
         293.27,
         293.272,
         293.27,
@@ -31208,9 +31206,11 @@
         293.249,
         293.244,
         293.24,
-        293.235
+        293.235,
+        293.229,
+        293.228
       ],
-      "year_ago": 293.85,
+      "year_ago": 293.88,
       "lat": 45.566444711,
       "lng": 6.245431548,
       "color": "#ef4444"
@@ -31219,10 +31219,8 @@
       "nom": "Chambéry",
       "dept": "73",
       "code_bss": "07256X0095/CHAMBE",
-      "current": 264.775,
+      "current": 264.769,
       "history": [
-        264.903,
-        264.891,
         264.879,
         264.863,
         264.853,
@@ -31234,9 +31232,11 @@
         264.805,
         264.795,
         264.794,
-        264.775
+        264.775,
+        264.78,
+        264.769
       ],
-      "year_ago": 265.42,
+      "year_ago": 265.43,
       "lat": 45.569053375,
       "lng": 5.916248145,
       "color": "#ef4444"
@@ -31245,12 +31245,8 @@
       "nom": "Cruet",
       "dept": "73",
       "code_bss": "07494X0026/CRUET",
-      "current": 269.112,
+      "current": 269.101,
       "history": [
-        269.112,
-        269.3,
-        269.302,
-        269.322,
         269.251,
         269.291,
         269.229,
@@ -31260,9 +31256,13 @@
         269.154,
         269.153,
         269.105,
-        269.112
+        269.112,
+        269.078,
+        269.081,
+        269.066,
+        269.101
       ],
-      "year_ago": 270.21,
+      "year_ago": 270.26,
       "lat": 45.522193195,
       "lng": 6.104556772,
       "color": "#ef4444"
@@ -31270,9 +31270,9 @@
   ],
   "air": [
     {
-      "zone": "Les Chapelles",
+      "zone": "Césarches",
       "dept": "73",
-      "date": "2026-11-04",
+      "date": "2026-11-05",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -31284,9 +31284,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM10": {
           "indice": 1,
@@ -31306,81 +31306,9 @@
       }
     },
     {
-      "zone": "Avressieux",
+      "zone": "La Compôte",
       "dept": "73",
-      "date": "2026-11-04",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Arvillard",
-      "dept": "73",
-      "date": "2026-11-04",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Bourget-en-Huile",
-      "dept": "73",
-      "date": "2026-11-04",
+      "date": "2026-11-05",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -31414,9 +31342,45 @@
       }
     },
     {
-      "zone": "Attignat-Oncin",
+      "zone": "La Bridoire",
       "dept": "73",
-      "date": "2026-11-04",
+      "date": "2026-11-05",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Aussois",
+      "dept": "73",
+      "date": "2026-11-05",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -31433,14 +31397,50 @@
           "color": "#eab308"
         },
         "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "les Avanchers",
+      "dept": "73",
+      "date": "2026-11-05",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
           "indice": 2,
           "label": "Moyen",
           "color": "#eab308"
         },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
         "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "SO₂": {
           "indice": 0,

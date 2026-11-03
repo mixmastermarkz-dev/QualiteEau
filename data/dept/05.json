@@ -3,7 +3,7 @@
   "nom": "Hautes-Alpes",
   "slug": "hautes-alpes",
   "region": "Provence-Alpes-Côte d'Azur",
-  "updated": "02/11/2026 à 20:57",
+  "updated": "03/11/2026 à 18:30",
   "score_eau": 98,
   "nb_communes": 162,
   "potable": [
@@ -17423,39 +17423,11 @@
   ],
   "nappes": [
     {
-      "nom": "Saint-Jean-Saint-Nicolas",
-      "dept": "05",
-      "code_bss": "08466X0009/F2",
-      "current": 1152.07,
-      "history": [
-        1152.28,
-        1152.27,
-        1152.26,
-        1152.26,
-        1152.25,
-        1152.25,
-        1152.24,
-        1152.22,
-        1152.2,
-        1152.18,
-        1152.16,
-        1152.14,
-        1152.11,
-        1152.07
-      ],
-      "year_ago": 1160.6,
-      "lat": 44.680949438,
-      "lng": 6.260818821,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Aspremont",
       "dept": "05",
       "code_bss": "08688X0023/PZ1",
-      "current": 718.06,
+      "current": 718.04,
       "history": [
-        718.19,
-        718.17,
         718.16,
         718.14,
         718.14,
@@ -17467,7 +17439,9 @@
         718.09,
         718.08,
         718.07,
-        718.06
+        718.06,
+        718.05,
+        718.04
       ],
       "year_ago": 718.85,
       "lat": 44.493443917,
@@ -17475,13 +17449,37 @@
       "color": "#ef4444"
     },
     {
+      "nom": "Saint-Jean-Saint-Nicolas",
+      "dept": "05",
+      "code_bss": "08466X0009/F2",
+      "current": 1152,
+      "history": [
+        1152.26,
+        1152.26,
+        1152.25,
+        1152.25,
+        1152.24,
+        1152.22,
+        1152.2,
+        1152.18,
+        1152.16,
+        1152.14,
+        1152.11,
+        1152.07,
+        1152.04,
+        1152
+      ],
+      "year_ago": 1160.6,
+      "lat": 44.680949438,
+      "lng": 6.260818821,
+      "color": "#ef4444"
+    },
+    {
       "nom": "La Roche-de-Rame",
       "dept": "05",
       "code_bss": "08472X0007/F-1",
-      "current": 923.35,
+      "current": 923.34,
       "history": [
-        923.4,
-        923.4,
         923.39,
         923.39,
         923.39,
@@ -17493,7 +17491,9 @@
         923.37,
         923.37,
         923.36,
-        923.35
+        923.35,
+        923.34,
+        923.34
       ],
       "year_ago": 923.78,
       "lat": 44.738691198,
@@ -17501,39 +17501,11 @@
       "color": "#ef4444"
     },
     {
-      "nom": "Val Buëch-Méouge",
-      "dept": "05",
-      "code_bss": "09172X0078/P",
-      "current": 491.3,
-      "history": [
-        491.38,
-        491.36,
-        491.36,
-        491.35,
-        491.34,
-        491.34,
-        491.33,
-        491.33,
-        491.32,
-        491.32,
-        491.31,
-        491.31,
-        491.31,
-        491.3
-      ],
-      "year_ago": 491.85,
-      "lat": 44.231230139,
-      "lng": 5.862949573,
-      "color": "#ef4444"
-    },
-    {
       "nom": "L'Argentière-la-Bessée",
       "dept": "05",
       "code_bss": "08471X0034/P5",
-      "current": 951.17,
+      "current": 951.15,
       "history": [
-        951.28,
-        951.27,
         951.26,
         951.26,
         951.25,
@@ -17545,19 +17517,83 @@
         951.2,
         951.2,
         951.19,
-        951.17
+        951.17,
+        951.16,
+        951.15
       ],
-      "year_ago": 952.45,
+      "year_ago": 952.46,
       "lat": 44.776271664,
       "lng": 6.558809418,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Val Buëch-Méouge",
+      "dept": "05",
+      "code_bss": "09172X0078/P",
+      "current": 491.3,
+      "history": [
+        491.36,
+        491.35,
+        491.34,
+        491.34,
+        491.33,
+        491.33,
+        491.32,
+        491.32,
+        491.31,
+        491.31,
+        491.31,
+        491.3,
+        491.3,
+        491.3
+      ],
+      "year_ago": 491.87,
+      "lat": 44.231230139,
+      "lng": 5.862949573,
       "color": "#ef4444"
     }
   ],
   "air": [
     {
+      "zone": "Rousset",
+      "dept": "05",
+      "date": "2026-11-05",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "AtmoSud",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
       "zone": "Saint-André-d'Embrun",
       "dept": "05",
-      "date": "2026-11-04",
+      "date": "2026-11-05",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -17593,7 +17629,7 @@
     {
       "zone": "Saint-André-de-Rosans",
       "dept": "05",
-      "date": "2026-11-04",
+      "date": "2026-11-05",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -17629,7 +17665,7 @@
     {
       "zone": "Saint-Apollinaire",
       "dept": "05",
-      "date": "2026-11-04",
+      "date": "2026-11-05",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -17665,7 +17701,7 @@
     {
       "zone": "Saint-Auban-d'Oze",
       "dept": "05",
-      "date": "2026-11-04",
+      "date": "2026-11-05",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -17690,42 +17726,6 @@
           "indice": 1,
           "label": "Bon",
           "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Bonnet-en-Champsaur",
-      "dept": "05",
-      "date": "2026-11-04",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "AtmoSud",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
