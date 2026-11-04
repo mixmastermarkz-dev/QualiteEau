@@ -3,7 +3,7 @@
   "nom": "Hautes-Alpes",
   "slug": "hautes-alpes",
   "region": "Provence-Alpes-Côte d'Azur",
-  "updated": "03/11/2026 à 18:30",
+  "updated": "04/11/2026 à 18:43",
   "score_eau": 98,
   "nb_communes": 162,
   "potable": [
@@ -17423,39 +17423,11 @@
   ],
   "nappes": [
     {
-      "nom": "Aspremont",
-      "dept": "05",
-      "code_bss": "08688X0023/PZ1",
-      "current": 718.04,
-      "history": [
-        718.16,
-        718.14,
-        718.14,
-        718.12,
-        718.12,
-        718.11,
-        718.1,
-        718.09,
-        718.09,
-        718.08,
-        718.07,
-        718.06,
-        718.05,
-        718.04
-      ],
-      "year_ago": 718.85,
-      "lat": 44.493443917,
-      "lng": 5.728933099,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Saint-Jean-Saint-Nicolas",
       "dept": "05",
       "code_bss": "08466X0009/F2",
-      "current": 1152,
+      "current": 1151.92,
       "history": [
-        1152.26,
-        1152.26,
         1152.25,
         1152.25,
         1152.24,
@@ -17467,7 +17439,9 @@
         1152.11,
         1152.07,
         1152.04,
-        1152
+        1152,
+        1151.96,
+        1151.92
       ],
       "year_ago": 1160.6,
       "lat": 44.680949438,
@@ -17478,10 +17452,8 @@
       "nom": "La Roche-de-Rame",
       "dept": "05",
       "code_bss": "08472X0007/F-1",
-      "current": 923.34,
+      "current": 923.32,
       "history": [
-        923.39,
-        923.39,
         923.39,
         923.38,
         923.38,
@@ -17493,21 +17465,47 @@
         923.36,
         923.35,
         923.34,
-        923.34
+        923.34,
+        923.33,
+        923.32
       ],
-      "year_ago": 923.78,
+      "year_ago": 923.74,
       "lat": 44.738691198,
       "lng": 6.582662145,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Aspremont",
+      "dept": "05",
+      "code_bss": "08688X0023/PZ1",
+      "current": 718.03,
+      "history": [
+        718.14,
+        718.12,
+        718.12,
+        718.11,
+        718.1,
+        718.09,
+        718.09,
+        718.08,
+        718.07,
+        718.06,
+        718.05,
+        718.04,
+        718.04,
+        718.03
+      ],
+      "year_ago": 718.81,
+      "lat": 44.493443917,
+      "lng": 5.728933099,
       "color": "#ef4444"
     },
     {
       "nom": "L'Argentière-la-Bessée",
       "dept": "05",
       "code_bss": "08471X0034/P5",
-      "current": 951.15,
+      "current": 951.13,
       "history": [
-        951.26,
-        951.26,
         951.25,
         951.24,
         951.23,
@@ -17519,9 +17517,11 @@
         951.19,
         951.17,
         951.16,
-        951.15
+        951.15,
+        951.14,
+        951.13
       ],
-      "year_ago": 952.46,
+      "year_ago": 952.45,
       "lat": 44.776271664,
       "lng": 6.558809418,
       "color": "#ef4444"
@@ -17530,10 +17530,8 @@
       "nom": "Val Buëch-Méouge",
       "dept": "05",
       "code_bss": "09172X0078/P",
-      "current": 491.3,
+      "current": 491.29,
       "history": [
-        491.36,
-        491.35,
         491.34,
         491.34,
         491.33,
@@ -17545,9 +17543,11 @@
         491.31,
         491.3,
         491.3,
-        491.3
+        491.3,
+        491.3,
+        491.29
       ],
-      "year_ago": 491.87,
+      "year_ago": 491.84,
       "lat": 44.231230139,
       "lng": 5.862949573,
       "color": "#ef4444"
@@ -17555,13 +17555,13 @@
   ],
   "air": [
     {
-      "zone": "Rousset",
+      "zone": "Millay",
       "dept": "05",
-      "date": "2026-11-05",
+      "date": "2026-11-06",
       "indice": 2,
       "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "AtmoSud",
+      "color": "#50ccaa",
+      "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -17579,9 +17579,9 @@
           "color": "#10b981"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
@@ -17591,13 +17591,13 @@
       }
     },
     {
-      "zone": "Saint-André-d'Embrun",
+      "zone": "Moissy",
       "dept": "05",
-      "date": "2026-11-05",
+      "date": "2026-11-06",
       "indice": 2,
       "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "AtmoSud",
+      "color": "#50ccaa",
+      "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -17605,9 +17605,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM10": {
           "indice": 1,
@@ -17615,9 +17615,9 @@
           "color": "#10b981"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
@@ -17627,13 +17627,13 @@
       }
     },
     {
-      "zone": "Saint-André-de-Rosans",
+      "zone": "Monceaux-le-Comte",
       "dept": "05",
-      "date": "2026-11-05",
+      "date": "2026-11-06",
       "indice": 2,
       "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "AtmoSud",
+      "color": "#50ccaa",
+      "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -17641,9 +17641,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM10": {
           "indice": 1,
@@ -17651,9 +17651,9 @@
           "color": "#10b981"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
@@ -17663,13 +17663,13 @@
       }
     },
     {
-      "zone": "Saint-Apollinaire",
+      "zone": "Montapas",
       "dept": "05",
-      "date": "2026-11-05",
+      "date": "2026-11-06",
       "indice": 2,
       "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "AtmoSud",
+      "color": "#50ccaa",
+      "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -17677,9 +17677,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM10": {
           "indice": 1,
@@ -17687,9 +17687,9 @@
           "color": "#10b981"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
@@ -17699,13 +17699,13 @@
       }
     },
     {
-      "zone": "Saint-Auban-d'Oze",
+      "zone": "Montambert",
       "dept": "05",
-      "date": "2026-11-05",
+      "date": "2026-11-06",
       "indice": 2,
       "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "AtmoSud",
+      "color": "#50ccaa",
+      "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -17713,9 +17713,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM10": {
           "indice": 1,
@@ -17723,9 +17723,9 @@
           "color": "#10b981"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
