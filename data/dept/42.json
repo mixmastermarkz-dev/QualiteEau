@@ -3,7 +3,7 @@
   "nom": "Loire",
   "slug": "loire",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "04/11/2026 à 18:43",
+  "updated": "05/11/2026 à 18:50",
   "score_eau": 96,
   "nb_communes": 326,
   "potable": [
@@ -43012,10 +43012,8 @@
       "nom": "Saint-André-le-Puy",
       "dept": "42",
       "code_bss": "07204X0105/F",
-      "current": 355.518,
+      "current": 355.514,
       "history": [
-        355.499,
-        355.506,
         355.513,
         355.515,
         355.517,
@@ -43027,73 +43025,21 @@
         355.514,
         355.522,
         355.524,
-        355.518
+        355.518,
+        355.52,
+        355.514
       ],
-      "year_ago": 355.83,
+      "year_ago": 355.87,
       "lat": 45.647921327,
       "lng": 4.246544955,
       "color": "#ef4444"
     },
     {
-      "nom": "Cleppé",
-      "dept": "42",
-      "code_bss": "06967X0100/F",
-      "current": 323.265,
-      "history": [
-        323.324,
-        323.319,
-        323.314,
-        323.307,
-        323.303,
-        323.296,
-        323.287,
-        323.291,
-        323.288,
-        323.28,
-        323.282,
-        323.279,
-        323.274,
-        323.265
-      ],
-      "year_ago": 323.86,
-      "lat": 45.769951628,
-      "lng": 4.183823819,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Saint-Galmier",
-      "dept": "42",
-      "code_bss": "07208X0197/F1C",
-      "current": 372.544,
-      "history": [
-        372.537,
-        372.541,
-        372.544,
-        372.543,
-        372.546,
-        372.541,
-        372.537,
-        372.542,
-        372.543,
-        372.536,
-        372.541,
-        372.545,
-        372.547,
-        372.544
-      ],
-      "year_ago": 372.47,
-      "lat": 45.605448412,
-      "lng": 4.306255162,
-      "color": "#3b82f6"
-    },
-    {
       "nom": "Chalain-le-Comtal",
       "dept": "42",
       "code_bss": "07203X0168/PZ",
-      "current": 338.874,
+      "current": 338.871,
       "history": [
-        338.886,
-        338.878,
         338.884,
         338.876,
         338.884,
@@ -43105,55 +43051,73 @@
         338.88,
         338.873,
         338.877,
-        338.874
+        338.874,
+        338.873,
+        338.871
       ],
       "year_ago": 338.95,
       "lat": 45.649419482,
       "lng": 4.190529903,
       "color": "#ef4444"
+    },
+    {
+      "nom": "Saint-Galmier",
+      "dept": "42",
+      "code_bss": "07208X0197/F1C",
+      "current": 372.542,
+      "history": [
+        372.544,
+        372.543,
+        372.546,
+        372.541,
+        372.537,
+        372.542,
+        372.543,
+        372.536,
+        372.541,
+        372.545,
+        372.547,
+        372.544,
+        372.546,
+        372.542
+      ],
+      "year_ago": 372.48,
+      "lat": 45.605448412,
+      "lng": 4.306255162,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Cleppé",
+      "dept": "42",
+      "code_bss": "06967X0100/F",
+      "current": 323.261,
+      "history": [
+        323.314,
+        323.307,
+        323.303,
+        323.296,
+        323.287,
+        323.291,
+        323.288,
+        323.28,
+        323.282,
+        323.279,
+        323.274,
+        323.265,
+        323.267,
+        323.261
+      ],
+      "year_ago": 323.87,
+      "lat": 45.769951628,
+      "lng": 4.183823819,
+      "color": "#ef4444"
     }
   ],
   "air": [
     {
-      "zone": "Usson-en-Forez",
+      "zone": "Leignecq",
       "dept": "42",
-      "date": "2026-11-06",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Valeille",
-      "dept": "42",
-      "date": "2026-11-06",
+      "date": "2026-11-07",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -43187,12 +43151,12 @@
       }
     },
     {
-      "zone": "Valfleury",
+      "zone": "Mizérieux",
       "dept": "42",
-      "date": "2026-11-06",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
+      "date": "2026-11-07",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
@@ -43209,6 +43173,42 @@
           "indice": 2,
           "label": "Moyen",
           "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Montagny",
+      "dept": "42",
+      "date": "2026-11-07",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM2.5": {
           "indice": 2,
@@ -43223,9 +43223,9 @@
       }
     },
     {
-      "zone": "La Valla-sur-Rochefort",
+      "zone": "Montarcher",
       "dept": "42",
-      "date": "2026-11-06",
+      "date": "2026-11-07",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -43247,9 +43247,9 @@
           "color": "#10b981"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
@@ -43259,18 +43259,18 @@
       }
     },
     {
-      "zone": "La Valla-en-Gier",
+      "zone": "Montbrison",
       "dept": "42",
-      "date": "2026-11-06",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
+      "date": "2026-11-07",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#f0e641",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "O₃": {
           "indice": 2,
@@ -43283,9 +43283,9 @@
           "color": "#eab308"
         },
         "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "SO₂": {
           "indice": 0,

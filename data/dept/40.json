@@ -3,7 +3,7 @@
   "nom": "Landes",
   "slug": "landes",
   "region": "Nouvelle-Aquitaine",
-  "updated": "04/11/2026 à 18:43",
+  "updated": "05/11/2026 à 18:50",
   "score_eau": 99,
   "nb_communes": 327,
   "potable": [
@@ -67041,10 +67041,8 @@
       "nom": "Lacquy",
       "dept": "40",
       "code_bss": "09266X0004/LC101",
-      "current": 76.345,
+      "current": 76.354,
       "history": [
-        76.346,
-        76.34,
         76.344,
         76.343,
         76.346,
@@ -67056,9 +67054,11 @@
         76.337,
         76.336,
         76.34,
-        76.345
+        76.345,
+        76.351,
+        76.354
       ],
-      "year_ago": 76.58,
+      "year_ago": 76.59,
       "lat": 43.960162747,
       "lng": -0.272877691,
       "color": "#ef4444"
@@ -67069,8 +67069,6 @@
       "code_bss": "09505X0034/GO01",
       "current": 21.59,
       "history": [
-        21.52,
-        21.51,
         21.56,
         21.52,
         21.56,
@@ -67082,63 +67080,13 @@
         21.54,
         21.55,
         21.58,
+        21.59,
+        21.6,
         21.59
       ],
-      "year_ago": 21.44,
+      "year_ago": 21.51,
       "lat": 43.788966613,
       "lng": -1.035321265,
-      "color": "#3b82f6"
-    },
-    {
-      "nom": "Betbezer-d'Armagnac",
-      "dept": "40",
-      "code_bss": "09267X0014/PIEZO1",
-      "current": 68.195,
-      "history": [
-        68.313,
-        68.305,
-        68.321,
-        68.291,
-        68.298,
-        68.261,
-        68.262,
-        68.227,
-        68.229,
-        68.199,
-        68.203,
-        68.2,
-        68.205,
-        68.195
-      ],
-      "year_ago": 68.74,
-      "lat": 43.982375767,
-      "lng": -0.155560344,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Saint-Yaguen",
-      "dept": "40",
-      "code_bss": "09511X0022/LS02",
-      "current": 31.74,
-      "history": [
-        31.71,
-        31.68,
-        31.71,
-        31.72,
-        31.74,
-        31.72,
-        31.74,
-        31.71,
-        31.72,
-        31.7,
-        31.72,
-        31.69,
-        31.73,
-        31.74
-      ],
-      "year_ago": 31.66,
-      "lat": 43.910092549,
-      "lng": -0.715761027,
       "color": "#3b82f6"
     },
     {
@@ -67150,8 +67098,6 @@
         55.83,
         55.83,
         55.83,
-        55.83,
-        55.83,
         55.82,
         55.82,
         55.82,
@@ -67160,6 +67106,8 @@
         55.82,
         55.82,
         55.82,
+        55.81,
+        55.81,
         55.81
       ],
       "year_ago": 56.11,
@@ -67168,13 +67116,63 @@
       "color": "#ef4444"
     },
     {
+      "nom": "Betbezer-d'Armagnac",
+      "dept": "40",
+      "code_bss": "09267X0014/PIEZO1",
+      "current": 68.164,
+      "history": [
+        68.321,
+        68.291,
+        68.298,
+        68.261,
+        68.262,
+        68.227,
+        68.229,
+        68.199,
+        68.203,
+        68.2,
+        68.205,
+        68.195,
+        68.183,
+        68.164
+      ],
+      "year_ago": 68.76,
+      "lat": 43.982375767,
+      "lng": -0.155560344,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Saint-Yaguen",
+      "dept": "40",
+      "code_bss": "09511X0022/LS02",
+      "current": 31.78,
+      "history": [
+        31.74,
+        31.72,
+        31.74,
+        31.71,
+        31.72,
+        31.7,
+        31.72,
+        31.69,
+        31.73,
+        31.74,
+        31.77,
+        31.78,
+        31.78,
+        31.78
+      ],
+      "year_ago": 31.73,
+      "lat": 43.910092549,
+      "lng": -0.715761027,
+      "color": "#3b82f6"
+    },
+    {
       "nom": "Saugnacq-et-Muret",
       "dept": "40",
       "code_bss": "08742X0058/P4",
-      "current": 46.208,
+      "current": 46.204,
       "history": [
-        46.225,
-        46.222,
         46.221,
         46.22,
         46.219,
@@ -67186,7 +67184,9 @@
         46.212,
         46.209,
         46.209,
-        46.208
+        46.208,
+        46.206,
+        46.204
       ],
       "year_ago": 46.65,
       "lat": 44.435996741,
@@ -67196,9 +67196,9 @@
   ],
   "air": [
     {
-      "zone": "Bélis",
+      "zone": "Oeyreluy",
       "dept": "40",
-      "date": "2026-11-05",
+      "date": "2026-11-06",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -67210,9 +67210,45 @@
           "color": "#10b981"
         },
         "O₃": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
           "indice": 2,
           "label": "Moyen",
           "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Sorde-l'Abbaye",
+      "dept": "40",
+      "date": "2026-11-06",
+      "indice": 1,
+      "label": "Bon",
+      "color": "#50f0e6",
+      "source": "Atmo Nouvelle-Aquitaine",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM10": {
           "indice": 1,
@@ -67232,9 +67268,9 @@
       }
     },
     {
-      "zone": "Vert",
+      "zone": "Saint-Lon-les-Mines",
       "dept": "40",
-      "date": "2026-11-05",
+      "date": "2026-11-06",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -67246,9 +67282,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM10": {
           "indice": 1,
@@ -67256,9 +67292,9 @@
           "color": "#10b981"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
@@ -67268,9 +67304,9 @@
       }
     },
     {
-      "zone": "Saint-Cricq-Chalosse",
+      "zone": "Vieux-Boucau-les-Bains",
       "dept": "40",
-      "date": "2026-11-05",
+      "date": "2026-11-06",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -67292,9 +67328,9 @@
           "color": "#10b981"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
@@ -67304,9 +67340,9 @@
       }
     },
     {
-      "zone": "Momuy",
+      "zone": "Saubion",
       "dept": "40",
-      "date": "2026-11-05",
+      "date": "2026-11-06",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -67328,45 +67364,9 @@
           "color": "#10b981"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Labastide-Chalosse",
-      "dept": "40",
-      "date": "2026-11-05",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Nouvelle-Aquitaine",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
           "indice": 2,
           "label": "Moyen",
           "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
         },
         "SO₂": {
           "indice": 0,
