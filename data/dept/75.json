@@ -3,8 +3,8 @@
   "nom": "Paris",
   "slug": "paris",
   "region": "Île-de-France",
-  "updated": "05/11/2026 à 18:50",
-  "score_eau": 89,
+  "updated": "06/11/2026 à 18:09",
+  "score_eau": 91,
   "nb_communes": 3,
   "potable": [
     {
@@ -15,6 +15,36 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 26.7,
+          "unite": "mg/L",
+          "color": "#f59e0b",
+          "date": "2026-06-17"
+        },
+        "pH": {
+          "valeur": 7.85,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-06-17"
+        },
+        "Chlore": {
+          "valeur": 0.28,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2026-06-17"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-06-17"
+        },
+        "Calcaire (TH)": {
+          "valeur": 25.94,
+          "unite": "°f",
+          "color": "#10b981",
+          "date": "2025-12-26"
+        },
         "Pesticides": {
           "valeur": "<0,500",
           "unite": "µg/L",
@@ -28,7 +58,7 @@
           "date": "2026-06-17"
         }
       },
-      "score": 100,
+      "score": 93,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -38,8 +68,38 @@
       "insee": "75056",
       "restric": "N.D.",
       "origine": "Nappe ou captage local",
-      "conclusion": "Eau d'alimentation non-conforme aux limites de qualité et conforme aux références de qualité.",
+      "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 22.8,
+          "unite": "mg/L",
+          "color": "#10b981",
+          "date": "2026-06-30"
+        },
+        "pH": {
+          "valeur": 7.6,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-06-30"
+        },
+        "Chlore": {
+          "valeur": 0.14,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2026-06-30"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-06-30"
+        },
+        "Calcaire (TH)": {
+          "valeur": 29.98,
+          "unite": "°f",
+          "color": "#10b981",
+          "date": "2025-12-26"
+        },
         "Plomb": {
           "valeur": 13.0,
           "unite": "µg/L",
@@ -59,9 +119,9 @@
           "date": "2026-06-30"
         }
       },
-      "score": 67,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
+      "score": 88,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "SAINT-CLOUD",
@@ -71,6 +131,36 @@
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
+        "Nitrates": {
+          "valeur": 39.6,
+          "unite": "mg/L",
+          "color": "#f59e0b",
+          "date": "2026-06-02"
+        },
+        "pH": {
+          "valeur": 7.6,
+          "unite": "unité pH",
+          "color": "#10b981",
+          "date": "2026-06-02"
+        },
+        "Chlore": {
+          "valeur": 0.14,
+          "unite": "mg(Cl2)/L",
+          "color": "#10b981",
+          "date": "2026-06-02"
+        },
+        "Bactériologie": {
+          "valeur": "<1",
+          "unite": "n/(100mL)",
+          "color": "#10b981",
+          "date": "2026-06-02"
+        },
+        "Calcaire (TH)": {
+          "valeur": 26.02,
+          "unite": "°f",
+          "color": "#10b981",
+          "date": "2025-12-16"
+        },
         "Pesticides": {
           "valeur": 0.026,
           "unite": "µg/L",
@@ -84,7 +174,7 @@
           "date": "2026-06-02"
         }
       },
-      "score": 100,
+      "score": 93,
       "score_color": "#10b981",
       "score_label": "Bonne"
     }
@@ -382,7 +472,7 @@
     {
       "zone": "Paris 9e Arrondissement",
       "dept": "75",
-      "date": "2026-11-06",
+      "date": "2026-11-07",
       "indice": 4,
       "label": "Mauvais",
       "color": "#FF5050",
@@ -416,9 +506,9 @@
       }
     },
     {
-      "zone": "Paris 17e Arrondissement",
+      "zone": "Paris 20e Arrondissement",
       "dept": "75",
-      "date": "2026-11-06",
+      "date": "2026-11-07",
       "indice": 4,
       "label": "Mauvais",
       "color": "#FF5050",
@@ -435,9 +525,9 @@
           "color": "#10b981"
         },
         "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
         },
         "PM2.5": {
           "indice": 4,
@@ -452,45 +542,9 @@
       }
     },
     {
-      "zone": "Paris 18e Arrondissement",
+      "zone": "Paris 11e Arrondissement",
       "dept": "75",
-      "date": "2026-11-06",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#FF5050",
-      "source": "Airparif",
-      "polluants": {
-        "NO₂": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Paris 7e Arrondissement",
-      "dept": "75",
-      "date": "2026-11-06",
+      "date": "2026-11-07",
       "indice": 4,
       "label": "Mauvais",
       "color": "#FF5050",
@@ -526,7 +580,43 @@
     {
       "zone": "Paris 16e Arrondissement",
       "dept": "75",
-      "date": "2026-11-06",
+      "date": "2026-11-07",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#FF5050",
+      "source": "Airparif",
+      "polluants": {
+        "NO₂": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "O₃": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Paris 10e Arrondissement",
+      "dept": "75",
+      "date": "2026-11-07",
       "indice": 4,
       "label": "Mauvais",
       "color": "#FF5050",
