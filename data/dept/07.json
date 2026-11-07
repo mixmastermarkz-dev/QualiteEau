@@ -3,7 +3,7 @@
   "nom": "Ardèche",
   "slug": "ardeche",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "06/11/2026 à 18:09",
+  "updated": "07/11/2026 à 17:04",
   "score_eau": 97,
   "nb_communes": 337,
   "potable": [
@@ -29161,39 +29161,11 @@
   ],
   "nappes": [
     {
-      "nom": "Aubenas",
-      "dept": "07",
-      "code_bss": "08651X0038/0038",
-      "current": 296.92,
-      "history": [
-        296.877,
-        296.864,
-        296.87,
-        296.896,
-        296.893,
-        296.877,
-        296.898,
-        296.915,
-        296.925,
-        296.917,
-        296.91,
-        296.912,
-        296.912,
-        296.92
-      ],
-      "year_ago": 295.07,
-      "lat": 44.619744152,
-      "lng": 4.39032624,
-      "color": "#3b82f6"
-    },
-    {
       "nom": "Lablachère",
       "dept": "07",
       "code_bss": "BSS003GPIS/X",
-      "current": 243.82,
+      "current": 243.89,
       "history": [
-        243.968,
-        243.944,
         243.939,
         243.946,
         243.947,
@@ -29205,9 +29177,11 @@
         243.882,
         243.856,
         243.834,
-        243.82
+        243.82,
+        243.836,
+        243.89
       ],
-      "year_ago": 243.66,
+      "year_ago": 243.65,
       "lat": 44.46354371,
       "lng": 4.214386619,
       "color": "#3b82f6"
@@ -29216,14 +29190,8 @@
       "nom": "Veyras",
       "dept": "07",
       "code_bss": "08413X0091/F3",
-      "current": 442.19,
+      "current": 442.2,
       "history": [
-        442.16,
-        442.15,
-        442.16,
-        442.15,
-        442.17,
-        442.16,
         442.17,
         442.17,
         442.18,
@@ -29231,59 +29199,55 @@
         442.17,
         442.19,
         442.2,
-        442.19
+        442.19,
+        442.18,
+        442.18,
+        442.19,
+        442.21,
+        442.2,
+        442.2
       ],
-      "year_ago": 441.93,
+      "year_ago": 441.9,
       "lat": 44.733838457,
       "lng": 4.561214887,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Aubenas",
+      "dept": "07",
+      "code_bss": "08651X0038/0038",
+      "current": 296.931,
+      "history": [
+        296.87,
+        296.896,
+        296.893,
+        296.877,
+        296.898,
+        296.915,
+        296.925,
+        296.917,
+        296.91,
+        296.912,
+        296.912,
+        296.92,
+        296.934,
+        296.931
+      ],
+      "year_ago": 295.01,
+      "lat": 44.619744152,
+      "lng": 4.39032624,
       "color": "#3b82f6"
     }
   ],
   "air": [
     {
-      "zone": "Césarches",
+      "zone": "Aigné",
       "dept": "07",
-      "date": "2026-11-08",
+      "date": "2026-11-09",
       "indice": 2,
-      "label": "Moyen",
+      "label": "moyen",
       "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Mairie de Sampzon",
-      "dept": "07",
-      "date": "2026-11-08",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
+      "source": "Air Pays de la Loire",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -29313,13 +29277,13 @@
       }
     },
     {
-      "zone": "La Compôte",
+      "zone": "Allonnes",
       "dept": "07",
-      "date": "2026-11-08",
+      "date": "2026-11-09",
       "indice": 2,
-      "label": "Moyen",
+      "label": "moyen",
       "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
+      "source": "Air Pays de la Loire",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -29327,9 +29291,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM10": {
           "indice": 1,
@@ -29349,13 +29313,13 @@
       }
     },
     {
-      "zone": "Sanilhac",
+      "zone": "Ardenay-sur-Mérize",
       "dept": "07",
-      "date": "2026-11-08",
+      "date": "2026-11-09",
       "indice": 2,
-      "label": "Moyen",
+      "label": "moyen",
       "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
+      "source": "Air Pays de la Loire",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -29363,9 +29327,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM10": {
           "indice": 1,
@@ -29373,9 +29337,9 @@
           "color": "#10b981"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
@@ -29385,13 +29349,13 @@
       }
     },
     {
-      "zone": "Saint-Jean-Roure",
+      "zone": "Arnage",
       "dept": "07",
-      "date": "2026-11-08",
+      "date": "2026-11-09",
       "indice": 2,
-      "label": "Moyen",
+      "label": "moyen",
       "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
+      "source": "Air Pays de la Loire",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -29399,9 +29363,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM10": {
           "indice": 1,
@@ -29409,9 +29373,45 @@
           "color": "#10b981"
         },
         "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Ballon",
+      "dept": "07",
+      "date": "2026-11-09",
+      "indice": 2,
+      "label": "moyen",
+      "color": "#50ccaa",
+      "source": "Air Pays de la Loire",
+      "polluants": {
+        "NO₂": {
           "indice": 1,
           "label": "Bon",
           "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
