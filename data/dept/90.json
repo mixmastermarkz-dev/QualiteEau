@@ -3,7 +3,7 @@
   "nom": "Territoire de Belfort",
   "slug": "territoire-de-belfort",
   "region": "Bourgogne-Franche-Comté",
-  "updated": "07/11/2026 à 17:04",
+  "updated": "08/11/2026 à 17:29",
   "score_eau": 98,
   "nb_communes": 100,
   "potable": [
@@ -23316,39 +23316,11 @@
   ],
   "nappes": [
     {
-      "nom": "Florimont",
-      "dept": "90",
-      "code_bss": "04447X0028/S",
-      "current": 380.362,
-      "history": [
-        380.368,
-        380.37,
-        380.368,
-        380.37,
-        380.367,
-        380.366,
-        380.365,
-        380.367,
-        380.364,
-        380.365,
-        380.366,
-        380.364,
-        380.365,
-        380.362
-      ],
-      "year_ago": 380.38,
-      "lat": 47.542387181,
-      "lng": 7.055132727,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Valdoie",
       "dept": "90",
       "code_bss": "04434X0089/P",
-      "current": 383.303,
+      "current": 383.317,
       "history": [
-        383.201,
-        383.211,
         383.217,
         383.211,
         383.224,
@@ -23360,195 +23332,42 @@
         383.276,
         383.286,
         383.294,
-        383.303
+        383.303,
+        383.311,
+        383.317
       ],
-      "year_ago": 383.42,
+      "year_ago": 383.41,
       "lat": 47.675931312,
       "lng": 6.836792836,
       "color": "#ef4444"
+    },
+    {
+      "nom": "Florimont",
+      "dept": "90",
+      "code_bss": "04447X0028/S",
+      "current": 380.36,
+      "history": [
+        380.368,
+        380.37,
+        380.367,
+        380.366,
+        380.365,
+        380.367,
+        380.364,
+        380.365,
+        380.366,
+        380.364,
+        380.365,
+        380.362,
+        380.358,
+        380.36
+      ],
+      "year_ago": 380.37,
+      "lat": 47.542387181,
+      "lng": 7.055132727,
+      "color": "#ef4444"
     }
   ],
-  "air": [
-    {
-      "zone": "Vézelois",
-      "dept": "90",
-      "date": "2026-11-09",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Vellescot",
-      "dept": "90",
-      "date": "2026-11-09",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Vauthiermont",
-      "dept": "90",
-      "date": "2026-11-09",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Suarce",
-      "dept": "90",
-      "date": "2026-11-09",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Germain-le-Châtelet",
-      "dept": "90",
-      "date": "2026-11-09",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    }
-  ],
+  "air": [],
   "pollen": []
 }
