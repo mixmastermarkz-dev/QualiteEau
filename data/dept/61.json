@@ -3,7 +3,7 @@
   "nom": "Orne",
   "slug": "orne",
   "region": "Normandie",
-  "updated": "08/11/2026 à 17:29",
+  "updated": "09/11/2026 à 21:23",
   "score_eau": 94,
   "nb_communes": 386,
   "potable": [
@@ -43121,10 +43121,8 @@
       "nom": "Saint-Sulpice-sur-Risle",
       "dept": "61",
       "code_bss": "02144X0005/S1",
-      "current": 202.877,
+      "current": 202.876,
       "history": [
-        202.965,
-        202.957,
         202.955,
         202.954,
         202.952,
@@ -43136,9 +43134,11 @@
         202.887,
         202.884,
         202.882,
-        202.877
+        202.877,
+        202.88,
+        202.876
       ],
-      "year_ago": 204.62,
+      "year_ago": 204.58,
       "lat": 48.766362664,
       "lng": 0.658047665,
       "color": "#ef4444"
@@ -43164,7 +43164,7 @@
         193.447,
         193.441
       ],
-      "year_ago": 193.91,
+      "year_ago": 193.9,
       "lat": 48.523466288,
       "lng": 0.591804057,
       "color": "#ef4444"
@@ -43173,29 +43173,210 @@
       "nom": "Gouffern en Auge",
       "dept": "61",
       "code_bss": "01776X0023/P",
-      "current": 115.37,
+      "current": 115.27,
       "history": [
-        115.36,
-        115.36,
-        115.35,
-        115.37,
-        115.37,
-        115.37,
-        115.37,
-        115.36,
-        115.36,
-        115.36,
-        115.36,
-        115.36,
-        115.36,
-        115.37
+        115.32,
+        115.31,
+        115.31,
+        115.31,
+        115.3,
+        115.3,
+        115.3,
+        115.29,
+        115.29,
+        115.29,
+        115.28,
+        115.28,
+        115.27,
+        115.27
       ],
-      "year_ago": 115.39,
+      "year_ago": 115.38,
       "lat": 48.803924391,
       "lng": 0.144862591,
       "color": "#ef4444"
     }
   ],
-  "air": [],
+  "air": [
+    {
+      "zone": "Vieux-Pont",
+      "dept": "61",
+      "date": "2026-11-11",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Atmo Normandie",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Villedieu-lès-Bailleul",
+      "dept": "61",
+      "date": "2026-11-11",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Atmo Normandie",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Villiers-sous-Mortagne",
+      "dept": "61",
+      "date": "2026-11-11",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Atmo Normandie",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Vimoutiers",
+      "dept": "61",
+      "date": "2026-11-11",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Atmo Normandie",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Vitrai-sous-Laigle",
+      "dept": "61",
+      "date": "2026-11-11",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Atmo Normandie",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    }
+  ],
   "pollen": []
 }

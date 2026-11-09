@@ -3,7 +3,7 @@
   "nom": "Loire",
   "slug": "loire",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "08/11/2026 à 17:29",
+  "updated": "09/11/2026 à 21:23",
   "score_eau": 96,
   "nb_communes": 326,
   "potable": [
@@ -43012,10 +43012,8 @@
       "nom": "Saint-Galmier",
       "dept": "42",
       "code_bss": "07208X0197/F1C",
-      "current": 372.543,
+      "current": 372.548,
       "history": [
-        372.543,
-        372.536,
         372.541,
         372.545,
         372.547,
@@ -43027,7 +43025,9 @@
         372.545,
         372.541,
         372.545,
-        372.543
+        372.543,
+        372.546,
+        372.548
       ],
       "year_ago": 372.47,
       "lat": 45.605448412,
@@ -43035,39 +43035,11 @@
       "color": "#3b82f6"
     },
     {
-      "nom": "Saint-André-le-Puy",
-      "dept": "42",
-      "code_bss": "07204X0105/F",
-      "current": 355.56,
-      "history": [
-        355.513,
-        355.502,
-        355.514,
-        355.522,
-        355.524,
-        355.518,
-        355.52,
-        355.514,
-        355.513,
-        355.539,
-        355.547,
-        355.548,
-        355.559,
-        355.56
-      ],
-      "year_ago": 355.86,
-      "lat": 45.647921327,
-      "lng": 4.246544955,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Chalain-le-Comtal",
       "dept": "42",
       "code_bss": "07203X0168/PZ",
-      "current": 338.87,
+      "current": 338.868,
       "history": [
-        338.884,
-        338.874,
         338.88,
         338.873,
         338.877,
@@ -43079,7 +43051,9 @@
         338.877,
         338.87,
         338.88,
-        338.87
+        338.87,
+        338.871,
+        338.868
       ],
       "year_ago": 338.95,
       "lat": 45.649419482,
@@ -43087,13 +43061,37 @@
       "color": "#ef4444"
     },
     {
+      "nom": "Saint-André-le-Puy",
+      "dept": "42",
+      "code_bss": "07204X0105/F",
+      "current": 355.584,
+      "history": [
+        355.514,
+        355.522,
+        355.524,
+        355.518,
+        355.52,
+        355.514,
+        355.513,
+        355.539,
+        355.547,
+        355.548,
+        355.559,
+        355.56,
+        355.571,
+        355.584
+      ],
+      "year_ago": 355.81,
+      "lat": 45.647921327,
+      "lng": 4.246544955,
+      "color": "#ef4444"
+    },
+    {
       "nom": "Cleppé",
       "dept": "42",
       "code_bss": "06967X0100/F",
-      "current": 323.338,
+      "current": 323.337,
       "history": [
-        323.288,
-        323.28,
         323.282,
         323.279,
         323.274,
@@ -43105,14 +43103,197 @@
         323.344,
         323.344,
         323.342,
-        323.338
+        323.338,
+        323.336,
+        323.337
       ],
-      "year_ago": 323.86,
+      "year_ago": 323.85,
       "lat": 45.769951628,
       "lng": 4.183823819,
       "color": "#ef4444"
     }
   ],
-  "air": [],
+  "air": [
+    {
+      "zone": "Bussy-Albieux",
+      "dept": "42",
+      "date": "2026-11-11",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Bussières",
+      "dept": "42",
+      "date": "2026-11-11",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Unieux",
+      "dept": "42",
+      "date": "2026-11-11",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Burdignes",
+      "dept": "42",
+      "date": "2026-11-11",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Bully",
+      "dept": "42",
+      "date": "2026-11-11",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    }
+  ],
   "pollen": []
 }
