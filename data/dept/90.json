@@ -3,7 +3,7 @@
   "nom": "Territoire de Belfort",
   "slug": "territoire-de-belfort",
   "region": "Bourgogne-Franche-Comté",
-  "updated": "10/11/2026 à 18:28",
+  "updated": "11/11/2026 à 18:40",
   "score_eau": 98,
   "nb_communes": 100,
   "potable": [
@@ -23321,8 +23321,6 @@
       "code_bss": "04447X0028/S",
       "current": 380.359,
       "history": [
-        380.365,
-        380.367,
         380.364,
         380.365,
         380.366,
@@ -23334,9 +23332,11 @@
         380.362,
         380.36,
         380.361,
+        380.359,
+        380.359,
         380.359
       ],
-      "year_ago": 380.38,
+      "year_ago": 380.37,
       "lat": 47.542387181,
       "lng": 7.055132727,
       "color": "#ef4444"
@@ -23345,10 +23345,8 @@
       "nom": "Valdoie",
       "dept": "90",
       "code_bss": "04434X0089/P",
-      "current": 383.398,
+      "current": 383.4,
       "history": [
-        383.244,
-        383.253,
         383.261,
         383.268,
         383.276,
@@ -23360,9 +23358,11 @@
         383.322,
         383.327,
         383.365,
-        383.398
+        383.398,
+        383.404,
+        383.4
       ],
-      "year_ago": 383.39,
+      "year_ago": 383.38,
       "lat": 47.675931312,
       "lng": 6.836792836,
       "color": "#3b82f6"
@@ -23370,9 +23370,9 @@
   ],
   "air": [
     {
-      "zone": "Vézelois",
+      "zone": "Villars-le-Sec",
       "dept": "90",
-      "date": "2026-11-12",
+      "date": "2026-11-13",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -23384,9 +23384,45 @@
           "color": "#10b981"
         },
         "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
           "indice": 1,
           "label": "Bon",
           "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Vézelois",
+      "dept": "90",
+      "date": "2026-11-13",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
@@ -23408,7 +23444,7 @@
     {
       "zone": "Vétrigne",
       "dept": "90",
-      "date": "2026-11-12",
+      "date": "2026-11-13",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -23420,9 +23456,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
@@ -23430,9 +23466,9 @@
           "color": "#10b981"
         },
         "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "SO₂": {
           "indice": 0,
@@ -23444,7 +23480,7 @@
     {
       "zone": "Vescemont",
       "dept": "90",
-      "date": "2026-11-12",
+      "date": "2026-11-13",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -23478,9 +23514,9 @@
       }
     },
     {
-      "zone": "Vauthiermont",
+      "zone": "Vellescot",
       "dept": "90",
-      "date": "2026-11-12",
+      "date": "2026-11-13",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -23492,45 +23528,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
           "indice": 2,
           "label": "Moyen",
           "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Urcerey",
-      "dept": "90",
-      "date": "2026-11-12",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
         },
         "PM10": {
           "indice": 1,

@@ -3,7 +3,7 @@
   "nom": "Hautes-Alpes",
   "slug": "hautes-alpes",
   "region": "Provence-Alpes-Côte d'Azur",
-  "updated": "10/11/2026 à 18:28",
+  "updated": "11/11/2026 à 18:40",
   "score_eau": 98,
   "nb_communes": 162,
   "potable": [
@@ -17423,39 +17423,37 @@
   ],
   "nappes": [
     {
-      "nom": "La Roche-de-Rame",
+      "nom": "Aspremont",
       "dept": "05",
-      "code_bss": "08472X0007/F-1",
-      "current": 923.3,
+      "code_bss": "08688X0023/PZ1",
+      "current": 718.1,
       "history": [
-        923.33,
-        923.32,
-        923.32,
-        923.31,
-        923.31,
-        923.31,
-        923.31,
-        923.31,
-        923.31,
-        923.3,
-        923.3,
-        923.3,
-        923.3,
-        923.3
+        718.03,
+        718.03,
+        718.03,
+        718.03,
+        718.03,
+        718.02,
+        718.02,
+        718.01,
+        718.01,
+        718.02,
+        718.02,
+        718.08,
+        718.11,
+        718.1
       ],
-      "year_ago": 923.68,
-      "lat": 44.738691198,
-      "lng": 6.582662145,
+      "year_ago": 718.61,
+      "lat": 44.493443917,
+      "lng": 5.728933099,
       "color": "#ef4444"
     },
     {
       "nom": "Saint-Jean-Saint-Nicolas",
       "dept": "05",
       "code_bss": "08466X0009/F2",
-      "current": 1151.8,
+      "current": 1152.34,
       "history": [
-        1151.96,
-        1151.92,
         1151.89,
         1151.86,
         1151.84,
@@ -17467,47 +17465,73 @@
         1151.75,
         1151.74,
         1151.75,
-        1151.8
+        1151.8,
+        1152.07,
+        1152.34
       ],
-      "year_ago": 1160.21,
+      "year_ago": 1160.15,
       "lat": 44.680949438,
       "lng": 6.260818821,
       "color": "#ef4444"
     },
     {
-      "nom": "Aspremont",
+      "nom": "La Roche-de-Rame",
       "dept": "05",
-      "code_bss": "08688X0023/PZ1",
-      "current": 718.08,
+      "code_bss": "08472X0007/F-1",
+      "current": 923.35,
       "history": [
-        718.04,
-        718.03,
-        718.03,
-        718.03,
-        718.03,
-        718.03,
-        718.03,
-        718.02,
-        718.02,
-        718.01,
-        718.01,
-        718.02,
-        718.02,
-        718.08
+        923.32,
+        923.31,
+        923.31,
+        923.31,
+        923.31,
+        923.31,
+        923.31,
+        923.3,
+        923.3,
+        923.3,
+        923.3,
+        923.3,
+        923.35,
+        923.35
       ],
-      "year_ago": 718.63,
-      "lat": 44.493443917,
-      "lng": 5.728933099,
+      "year_ago": 923.67,
+      "lat": 44.738691198,
+      "lng": 6.582662145,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Val Buëch-Méouge",
+      "dept": "05",
+      "code_bss": "09172X0078/P",
+      "current": 491.28,
+      "history": [
+        491.29,
+        491.29,
+        491.28,
+        491.28,
+        491.28,
+        491.28,
+        491.28,
+        491.28,
+        491.27,
+        491.27,
+        491.27,
+        491.27,
+        491.28,
+        491.28
+      ],
+      "year_ago": 491.63,
+      "lat": 44.231230139,
+      "lng": 5.862949573,
       "color": "#ef4444"
     },
     {
       "nom": "L'Argentière-la-Bessée",
       "dept": "05",
       "code_bss": "08471X0034/P5",
-      "current": 951.05,
+      "current": 951.08,
       "history": [
-        951.14,
-        951.13,
         951.12,
         951.11,
         951.1,
@@ -17519,37 +17543,13 @@
         951.07,
         951.06,
         951.05,
-        951.05
+        951.05,
+        951.08,
+        951.08
       ],
-      "year_ago": 952.39,
+      "year_ago": 952.38,
       "lat": 44.776271664,
       "lng": 6.558809418,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Val Buëch-Méouge",
-      "dept": "05",
-      "code_bss": "09172X0078/P",
-      "current": 491.27,
-      "history": [
-        491.3,
-        491.29,
-        491.29,
-        491.29,
-        491.28,
-        491.28,
-        491.28,
-        491.28,
-        491.28,
-        491.28,
-        491.27,
-        491.27,
-        491.27,
-        491.27
-      ],
-      "year_ago": 491.64,
-      "lat": 44.231230139,
-      "lng": 5.862949573,
       "color": "#ef4444"
     }
   ],
@@ -17557,10 +17557,10 @@
     {
       "zone": "Rosans",
       "dept": "05",
-      "date": "2026-11-12",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
+      "date": "2026-11-13",
+      "indice": 1,
+      "label": "Bon",
+      "color": "#50F0E6",
       "source": "AtmoSud",
       "polluants": {
         "NO₂": {
@@ -17569,9 +17569,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM10": {
           "indice": 1,
@@ -17593,10 +17593,10 @@
     {
       "zone": "Rousset",
       "dept": "05",
-      "date": "2026-11-12",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
+      "date": "2026-11-13",
+      "indice": 1,
+      "label": "Bon",
+      "color": "#50F0E6",
       "source": "AtmoSud",
       "polluants": {
         "NO₂": {
@@ -17605,9 +17605,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM10": {
           "indice": 1,
@@ -17629,7 +17629,7 @@
     {
       "zone": "Saint-André-d'Embrun",
       "dept": "05",
-      "date": "2026-11-12",
+      "date": "2026-11-13",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -17665,10 +17665,10 @@
     {
       "zone": "Saint-André-de-Rosans",
       "dept": "05",
-      "date": "2026-11-12",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
+      "date": "2026-11-13",
+      "indice": 1,
+      "label": "Bon",
+      "color": "#50F0E6",
       "source": "AtmoSud",
       "polluants": {
         "NO₂": {
@@ -17677,9 +17677,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM10": {
           "indice": 1,
@@ -17701,10 +17701,10 @@
     {
       "zone": "Saint-Apollinaire",
       "dept": "05",
-      "date": "2026-11-12",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
+      "date": "2026-11-13",
+      "indice": 1,
+      "label": "Bon",
+      "color": "#50F0E6",
       "source": "AtmoSud",
       "polluants": {
         "NO₂": {
@@ -17713,9 +17713,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM10": {
           "indice": 1,

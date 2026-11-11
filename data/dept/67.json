@@ -3,7 +3,7 @@
   "nom": "Bas-Rhin",
   "slug": "bas-rhin",
   "region": "Grand Est",
-  "updated": "10/11/2026 à 18:28",
+  "updated": "11/11/2026 à 18:40",
   "score_eau": 98,
   "nb_communes": 514,
   "potable": [
@@ -44804,10 +44804,8 @@
       "nom": "Gresswiller",
       "dept": "67",
       "code_bss": "02713X0105/PZ1",
-      "current": 197.37,
+      "current": 197.393,
       "history": [
-        197.322,
-        197.308,
         197.33,
         197.375,
         197.325,
@@ -44819,9 +44817,11 @@
         197.315,
         197.339,
         197.369,
-        197.37
+        197.37,
+        197.39,
+        197.393
       ],
-      "year_ago": 198.03,
+      "year_ago": 198.06,
       "lat": 48.520713416,
       "lng": 7.415360799,
       "color": "#ef4444"
@@ -44830,10 +44830,8 @@
       "nom": "Haegen",
       "dept": "67",
       "code_bss": "02332X0198/F3",
-      "current": 207.393,
+      "current": 207.347,
       "history": [
-        207.38,
-        207.298,
         207.254,
         207.196,
         207.303,
@@ -44845,7 +44843,9 @@
         207.369,
         207.311,
         207.386,
-        207.393
+        207.393,
+        207.41,
+        207.347
       ],
       "year_ago": 207.29,
       "lat": 48.714388864,
@@ -44855,9 +44855,45 @@
   ],
   "air": [
     {
-      "zone": "Schœnbourg",
+      "zone": "Oberhoffen-lès-Wissembourg",
       "dept": "67",
-      "date": "2026-11-11",
+      "date": "2026-11-12",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Atmo Grand Est",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Oberhoffen-sur-Moder",
+      "dept": "67",
+      "date": "2026-11-12",
       "indice": 1,
       "label": "Bon",
       "color": "#50F0E6",
@@ -44891,12 +44927,12 @@
       }
     },
     {
-      "zone": "Schœnenbourg",
+      "zone": "Oberlauterbach",
       "dept": "67",
-      "date": "2026-11-11",
-      "indice": 1,
-      "label": "Bon",
-      "color": "#50F0E6",
+      "date": "2026-11-12",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
       "source": "Atmo Grand Est",
       "polluants": {
         "NO₂": {
@@ -44905,9 +44941,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
@@ -44927,12 +44963,12 @@
       }
     },
     {
-      "zone": "Schopperten",
+      "zone": "Obermodern-Zutzendorf",
       "dept": "67",
-      "date": "2026-11-11",
-      "indice": 1,
-      "label": "Bon",
-      "color": "#50F0E6",
+      "date": "2026-11-12",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
       "source": "Atmo Grand Est",
       "polluants": {
         "NO₂": {
@@ -44941,9 +44977,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
@@ -44963,12 +44999,12 @@
       }
     },
     {
-      "zone": "Schweighouse-sur-Moder",
+      "zone": "Obernai",
       "dept": "67",
-      "date": "2026-11-11",
-      "indice": 1,
-      "label": "Bon",
-      "color": "#50F0E6",
+      "date": "2026-11-12",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
       "source": "Atmo Grand Est",
       "polluants": {
         "NO₂": {
@@ -44987,45 +45023,9 @@
           "color": "#10b981"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Schwenheim",
-      "dept": "67",
-      "date": "2026-11-11",
-      "indice": 1,
-      "label": "Bon",
-      "color": "#50F0E6",
-      "source": "Atmo Grand Est",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,

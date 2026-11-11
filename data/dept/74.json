@@ -3,7 +3,7 @@
   "nom": "Haute-Savoie",
   "slug": "haute-savoie",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "10/11/2026 à 18:28",
+  "updated": "11/11/2026 à 18:40",
   "score_eau": 98,
   "nb_communes": 279,
   "potable": [
@@ -40296,10 +40296,8 @@
       "nom": "Marigny-Saint-Marcel",
       "dept": "74",
       "code_bss": "07013X0071/F1",
-      "current": 351.33,
+      "current": 351.325,
       "history": [
-        351.362,
-        351.36,
         351.357,
         351.355,
         351.352,
@@ -40311,9 +40309,11 @@
         351.337,
         351.335,
         351.333,
-        351.33
+        351.33,
+        351.327,
+        351.325
       ],
-      "year_ago": 352.99,
+      "year_ago": 352.98,
       "lat": 45.832389293,
       "lng": 5.962087611,
       "color": "#ef4444"
@@ -40322,10 +40322,8 @@
       "nom": "Publier",
       "dept": "74",
       "code_bss": "06301X0019/P5",
-      "current": 373.346,
+      "current": 373.355,
       "history": [
-        373.412,
-        373.405,
         373.4,
         373.395,
         373.388,
@@ -40337,9 +40335,11 @@
         373.357,
         373.357,
         373.347,
-        373.346
+        373.346,
+        373.352,
+        373.355
       ],
-      "year_ago": 374.91,
+      "year_ago": 374.87,
       "lat": 46.390565227,
       "lng": 6.520859286,
       "color": "#ef4444"
@@ -40348,10 +40348,8 @@
       "nom": "Vinzier",
       "dept": "74",
       "code_bss": "06306X0042/BIOGE",
-      "current": 568.671,
+      "current": 568.666,
       "history": [
-        568.753,
-        568.735,
         568.725,
         568.713,
         568.702,
@@ -40363,9 +40361,11 @@
         568.662,
         568.663,
         568.673,
-        568.671
+        568.671,
+        568.671,
+        568.666
       ],
-      "year_ago": 574.57,
+      "year_ago": 574.44,
       "lat": 46.335316884,
       "lng": 6.621257922,
       "color": "#ef4444"
@@ -40374,10 +40374,8 @@
       "nom": "Passy",
       "dept": "74",
       "code_bss": "BSS004QBEB/X",
-      "current": 568.202,
+      "current": 568.191,
       "history": [
-        568.269,
-        568.268,
         568.261,
         568.253,
         568.25,
@@ -40389,7 +40387,9 @@
         568.215,
         568.212,
         568.206,
-        568.202
+        568.202,
+        568.193,
+        568.191
       ],
       "year_ago": 569.32,
       "lat": 45.920935924,
@@ -40417,7 +40417,7 @@
         361.794,
         361.79
       ],
-      "year_ago": 362.81,
+      "year_ago": 362.8,
       "lat": 45.835072054,
       "lng": 5.968019958,
       "color": "#ef4444"
@@ -40426,10 +40426,8 @@
       "nom": "Viry",
       "dept": "74",
       "code_bss": "06537X0103/VEIGY",
-      "current": 371.509,
+      "current": 371.511,
       "history": [
-        371.515,
-        371.512,
         371.513,
         371.504,
         371.509,
@@ -40441,9 +40439,11 @@
         371.503,
         371.503,
         371.519,
-        371.509
+        371.509,
+        371.512,
+        371.511
       ],
-      "year_ago": 371.98,
+      "year_ago": 371.97,
       "lat": 46.141387797,
       "lng": 6.017375948,
       "color": "#ef4444"
@@ -40451,43 +40451,7 @@
   ],
   "air": [
     {
-      "zone": "Chêne-en-Semine",
-      "dept": "74",
-      "date": "2026-11-12",
-      "indice": 1,
-      "label": "Bon",
-      "color": "#50f0e6",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Vacheresse",
+      "zone": "Bluffy",
       "dept": "74",
       "date": "2026-11-12",
       "indice": 2,
@@ -40523,7 +40487,79 @@
       }
     },
     {
-      "zone": "Maxilly-sur-Léman",
+      "zone": "Saint-Pierre",
+      "dept": "74",
+      "date": "2026-11-12",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "O₃": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Bloye",
+      "dept": "74",
+      "date": "2026-11-12",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Le Biot",
       "dept": "74",
       "date": "2026-11-12",
       "indice": 1,
@@ -40559,12 +40595,12 @@
       }
     },
     {
-      "zone": "Chavanod",
+      "zone": "Bernex",
       "dept": "74",
       "date": "2026-11-12",
-      "indice": 1,
-      "label": "Bon",
-      "color": "#50f0e6",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
@@ -40573,45 +40609,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Chavannaz",
-      "dept": "74",
-      "date": "2026-11-12",
-      "indice": 1,
-      "label": "Bon",
-      "color": "#50f0e6",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
