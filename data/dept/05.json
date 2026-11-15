@@ -3,7 +3,7 @@
   "nom": "Hautes-Alpes",
   "slug": "hautes-alpes",
   "region": "Provence-Alpes-Côte d'Azur",
-  "updated": "14/11/2026 à 17:21",
+  "updated": "15/11/2026 à 17:47",
   "score_eau": 98,
   "nb_communes": 162,
   "potable": [
@@ -17423,39 +17423,11 @@
   ],
   "nappes": [
     {
-      "nom": "Aspremont",
-      "dept": "05",
-      "code_bss": "08688X0023/PZ1",
-      "current": 718.67,
-      "history": [
-        718.02,
-        718.01,
-        718.01,
-        718.02,
-        718.02,
-        718.08,
-        718.11,
-        718.1,
-        718.1,
-        718.24,
-        718.72,
-        718.78,
-        718.73,
-        718.67
-      ],
-      "year_ago": 718.55,
-      "lat": 44.493443917,
-      "lng": 5.728933099,
-      "color": "#3b82f6"
-    },
-    {
       "nom": "Saint-Jean-Saint-Nicolas",
       "dept": "05",
       "code_bss": "08466X0009/F2",
-      "current": 1156.06,
+      "current": 1157,
       "history": [
-        1151.8,
-        1151.78,
         1151.75,
         1151.74,
         1151.75,
@@ -17467,21 +17439,47 @@
         1153.25,
         1154.47,
         1155.4,
-        1156.06
+        1156.06,
+        1156.56,
+        1157
       ],
-      "year_ago": 1159.94,
+      "year_ago": 1159.92,
       "lat": 44.680949438,
       "lng": 6.260818821,
       "color": "#ef4444"
     },
     {
+      "nom": "Aspremont",
+      "dept": "05",
+      "code_bss": "08688X0023/PZ1",
+      "current": 718.68,
+      "history": [
+        718.01,
+        718.02,
+        718.02,
+        718.08,
+        718.11,
+        718.1,
+        718.1,
+        718.24,
+        718.72,
+        718.78,
+        718.73,
+        718.67,
+        718.62,
+        718.68
+      ],
+      "year_ago": 718.56,
+      "lat": 44.493443917,
+      "lng": 5.728933099,
+      "color": "#3b82f6"
+    },
+    {
       "nom": "La Roche-de-Rame",
       "dept": "05",
       "code_bss": "08472X0007/F-1",
-      "current": 923.51,
+      "current": 923.52,
       "history": [
-        923.31,
-        923.3,
         923.3,
         923.3,
         923.3,
@@ -17493,7 +17491,9 @@
         923.46,
         923.51,
         923.52,
-        923.51
+        923.51,
+        923.51,
+        923.52
       ],
       "year_ago": 923.64,
       "lat": 44.738691198,
@@ -17506,8 +17506,6 @@
       "code_bss": "09172X0078/P",
       "current": 491.72,
       "history": [
-        491.28,
-        491.28,
         491.27,
         491.27,
         491.27,
@@ -17519,9 +17517,11 @@
         491.55,
         491.69,
         491.72,
+        491.72,
+        491.71,
         491.72
       ],
-      "year_ago": 491.61,
+      "year_ago": 491.6,
       "lat": 44.231230139,
       "lng": 5.862949573,
       "color": "#3b82f6"
@@ -17530,10 +17530,8 @@
       "nom": "L'Argentière-la-Bessée",
       "dept": "05",
       "code_bss": "08471X0034/P5",
-      "current": 951.21,
+      "current": 951.22,
       "history": [
-        951.09,
-        951.08,
         951.07,
         951.06,
         951.05,
@@ -17545,7 +17543,9 @@
         951.15,
         951.2,
         951.21,
-        951.21
+        951.21,
+        951.21,
+        951.22
       ],
       "year_ago": 952.34,
       "lat": 44.776271664,
@@ -17555,13 +17555,13 @@
   ],
   "air": [
     {
-      "zone": "la Chapelle-Anthenaise",
+      "zone": "Rosans",
       "dept": "05",
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "indice": 2,
-      "label": "moyen",
-      "color": "#50ccaa",
-      "source": "Air Pays de la Loire",
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "AtmoSud",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -17591,13 +17591,13 @@
       }
     },
     {
-      "zone": "la Chapelle-au-Riboul",
+      "zone": "Rousset",
       "dept": "05",
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "indice": 2,
-      "label": "moyen",
-      "color": "#50ccaa",
-      "source": "Air Pays de la Loire",
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "AtmoSud",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -17627,13 +17627,13 @@
       }
     },
     {
-      "zone": "Charchigné",
+      "zone": "Saint-André-d'Embrun",
       "dept": "05",
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "indice": 2,
-      "label": "moyen",
-      "color": "#50ccaa",
-      "source": "Air Pays de la Loire",
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "AtmoSud",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -17663,13 +17663,13 @@
       }
     },
     {
-      "zone": "Commer",
+      "zone": "Saint-André-de-Rosans",
       "dept": "05",
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "indice": 2,
-      "label": "moyen",
-      "color": "#50ccaa",
-      "source": "Air Pays de la Loire",
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "AtmoSud",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -17699,13 +17699,13 @@
       }
     },
     {
-      "zone": "Contest",
+      "zone": "Saint-Apollinaire",
       "dept": "05",
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "indice": 2,
-      "label": "moyen",
-      "color": "#50ccaa",
-      "source": "Air Pays de la Loire",
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "AtmoSud",
       "polluants": {
         "NO₂": {
           "indice": 1,
