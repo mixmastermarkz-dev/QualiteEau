@@ -3,7 +3,7 @@
   "nom": "Paris",
   "slug": "paris",
   "region": "Île-de-France",
-  "updated": "15/11/2026 à 17:47",
+  "updated": "16/11/2026 à 20:59",
   "score_eau": 91,
   "nb_communes": 3,
   "potable": [
@@ -187,6 +187,13 @@
       "lon": 2.381542365,
       "nom_cours_eau": "LA SEINE",
       "parametres": {
+        "Nitrates": {
+          "valeur": 13.1,
+          "unite": "mg/L",
+          "color": "#f59e0b",
+          "date": "2026-08-14",
+          "realtime": false
+        },
         "pH": {
           "valeur": 8.1,
           "unite": "pH",
@@ -194,17 +201,17 @@
           "date": "2026-08-14",
           "realtime": false
         },
-        "O2 saturation": {
-          "valeur": 101.2,
-          "unite": "%",
-          "color": "#10b981",
+        "Ammonium": {
+          "valeur": 3.0,
+          "unite": "mg/L",
+          "color": "#ef4444",
           "date": "2026-08-14",
           "realtime": false
         },
-        "Phosphore": {
-          "valeur": 0.141,
+        "MES": {
+          "valeur": 523.0,
           "unite": "mg/L",
-          "color": "#10b981",
+          "color": "#ef4444",
           "date": "2026-08-14",
           "realtime": false
         },
@@ -222,29 +229,49 @@
           "date": "2026-08-14",
           "realtime": false
         },
-        "MES": {
-          "valeur": 523.0,
-          "unite": "mg/L",
-          "color": "#ef4444",
+        "O2 saturation": {
+          "valeur": 101.2,
+          "unite": "%",
+          "color": "#10b981",
           "date": "2026-08-14",
           "realtime": false
         },
-        "Ammonium": {
-          "valeur": 3.0,
+        "Phosphore": {
+          "valeur": 0.141,
           "unite": "mg/L",
-          "color": "#ef4444",
-          "date": "2026-08-14",
-          "realtime": false
-        },
-        "Nitrates": {
-          "valeur": 13.1,
-          "unite": "mg/L",
-          "color": "#f59e0b",
+          "color": "#10b981",
           "date": "2026-08-14",
           "realtime": false
         }
       },
       "historique": {
+        "Nitrates": [
+          {
+            "date": "2026-08-14",
+            "valeur": 13.1,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2026-06-17",
+            "valeur": 22.1,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2026-04-14",
+            "valeur": 28.0,
+            "color": "#ef4444"
+          },
+          {
+            "date": "2026-02-18",
+            "valeur": 19.0,
+            "color": "#f59e0b"
+          },
+          {
+            "date": "2025-12-15",
+            "valeur": 23.0,
+            "color": "#f59e0b"
+          }
+        ],
         "pH": [
           {
             "date": "2026-08-14",
@@ -272,58 +299,58 @@
             "color": "#10b981"
           }
         ],
-        "O2 saturation": [
+        "Ammonium": [
           {
             "date": "2026-08-14",
-            "valeur": 101.2,
-            "color": "#10b981"
+            "valeur": 3.0,
+            "color": "#ef4444"
           },
           {
             "date": "2026-06-17",
-            "valeur": 99.2,
-            "color": "#10b981"
+            "valeur": 2.3,
+            "color": "#ef4444"
           },
           {
             "date": "2026-04-14",
-            "valeur": 105.3,
-            "color": "#10b981"
+            "valeur": 2.7,
+            "color": "#ef4444"
           },
           {
             "date": "2026-02-18",
-            "valeur": 93.1,
-            "color": "#10b981"
+            "valeur": 4.6,
+            "color": "#ef4444"
           },
           {
             "date": "2025-12-15",
-            "valeur": 100.4,
-            "color": "#10b981"
+            "valeur": 3.2,
+            "color": "#ef4444"
           }
         ],
-        "Phosphore": [
+        "MES": [
           {
             "date": "2026-08-14",
-            "valeur": 0.141,
-            "color": "#10b981"
+            "valeur": 523.0,
+            "color": "#ef4444"
           },
           {
             "date": "2026-06-17",
-            "valeur": 0.114,
-            "color": "#10b981"
+            "valeur": 611.0,
+            "color": "#ef4444"
           },
           {
             "date": "2026-04-14",
-            "valeur": 0.069,
-            "color": "#10b981"
+            "valeur": 570.0,
+            "color": "#ef4444"
           },
           {
             "date": "2026-02-18",
-            "valeur": 0.188,
-            "color": "#10b981"
+            "valeur": 433.0,
+            "color": "#ef4444"
           },
           {
             "date": "2025-12-15",
-            "valeur": 0.106,
-            "color": "#10b981"
+            "valeur": 502.0,
+            "color": "#ef4444"
           }
         ],
         "Temp. eau": [
@@ -380,85 +407,58 @@
             "color": "#10b981"
           }
         ],
-        "MES": [
+        "O2 saturation": [
           {
             "date": "2026-08-14",
-            "valeur": 523.0,
-            "color": "#ef4444"
+            "valeur": 101.2,
+            "color": "#10b981"
           },
           {
             "date": "2026-06-17",
-            "valeur": 611.0,
-            "color": "#ef4444"
+            "valeur": 99.2,
+            "color": "#10b981"
           },
           {
             "date": "2026-04-14",
-            "valeur": 570.0,
-            "color": "#ef4444"
+            "valeur": 105.3,
+            "color": "#10b981"
           },
           {
             "date": "2026-02-18",
-            "valeur": 433.0,
-            "color": "#ef4444"
+            "valeur": 93.1,
+            "color": "#10b981"
           },
           {
             "date": "2025-12-15",
-            "valeur": 502.0,
-            "color": "#ef4444"
+            "valeur": 100.4,
+            "color": "#10b981"
           }
         ],
-        "Ammonium": [
+        "Phosphore": [
           {
             "date": "2026-08-14",
-            "valeur": 3.0,
-            "color": "#ef4444"
+            "valeur": 0.141,
+            "color": "#10b981"
           },
           {
             "date": "2026-06-17",
-            "valeur": 2.3,
-            "color": "#ef4444"
+            "valeur": 0.114,
+            "color": "#10b981"
           },
           {
             "date": "2026-04-14",
-            "valeur": 2.7,
-            "color": "#ef4444"
+            "valeur": 0.069,
+            "color": "#10b981"
           },
           {
             "date": "2026-02-18",
-            "valeur": 4.6,
-            "color": "#ef4444"
+            "valeur": 0.188,
+            "color": "#10b981"
           },
           {
             "date": "2025-12-15",
-            "valeur": 3.2,
-            "color": "#ef4444"
-          }
-        ],
-        "Nitrates": [
-          {
-            "date": "2026-08-14",
-            "valeur": 13.1,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2026-06-17",
-            "valeur": 22.1,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2026-04-14",
-            "valeur": 28.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2026-02-18",
-            "valeur": 19.0,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2025-12-15",
-            "valeur": 23.0,
-            "color": "#f59e0b"
+            "valeur": 0.106,
+            "color": "#10b981"
           }
         ]
       },
@@ -472,7 +472,7 @@
     {
       "zone": "Paris 9e Arrondissement",
       "dept": "75",
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -506,18 +506,18 @@
       }
     },
     {
-      "zone": "Paris 12e Arrondissement",
+      "zone": "Paris 16e Arrondissement",
       "dept": "75",
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
       "source": "Airparif",
       "polluants": {
         "NO₂": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "O₃": {
           "indice": 2,
@@ -542,9 +542,9 @@
       }
     },
     {
-      "zone": "Paris 6e Arrondissement",
+      "zone": "Paris 11e Arrondissement",
       "dept": "75",
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -580,7 +580,7 @@
     {
       "zone": "Paris 10e Arrondissement",
       "dept": "75",
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -614,9 +614,9 @@
       }
     },
     {
-      "zone": "Paris 20e Arrondissement",
+      "zone": "Paris 6e Arrondissement",
       "dept": "75",
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
