@@ -3,7 +3,7 @@
   "nom": "Landes",
   "slug": "landes",
   "region": "Nouvelle-Aquitaine",
-  "updated": "16/11/2026 à 20:58",
+  "updated": "17/11/2026 à 19:55",
   "score_eau": 99,
   "nb_communes": 327,
   "potable": [
@@ -67221,10 +67221,8 @@
       "nom": "Lacquy",
       "dept": "40",
       "code_bss": "09266X0004/LC101",
-      "current": 76.376,
+      "current": 76.385,
       "history": [
-        76.366,
-        76.369,
         76.379,
         76.386,
         76.394,
@@ -67236,7 +67234,9 @@
         76.397,
         76.389,
         76.386,
-        76.376
+        76.376,
+        76.379,
+        76.385
       ],
       "year_ago": 76.64,
       "lat": 43.960162747,
@@ -67244,39 +67244,11 @@
       "color": "#ef4444"
     },
     {
-      "nom": "Gourbera",
-      "dept": "40",
-      "code_bss": "09505X0034/GO01",
-      "current": 21.57,
-      "history": [
-        21.67,
-        21.64,
-        21.69,
-        21.68,
-        21.73,
-        21.77,
-        21.77,
-        21.65,
-        21.65,
-        21.62,
-        21.64,
-        21.59,
-        21.63,
-        21.57
-      ],
-      "year_ago": 21.51,
-      "lat": 43.788966613,
-      "lng": -1.035321265,
-      "color": "#3b82f6"
-    },
-    {
       "nom": "Betbezer-d'Armagnac",
       "dept": "40",
       "code_bss": "09267X0014/PIEZO1",
-      "current": 67.823,
+      "current": 67.884,
       "history": [
-        68.089,
-        68.054,
         68.067,
         68.056,
         68.058,
@@ -67288,38 +67260,14 @@
         67.907,
         67.859,
         67.876,
-        67.823
+        67.823,
+        67.846,
+        67.884
       ],
-      "year_ago": 68.56,
+      "year_ago": 68.5,
       "lat": 43.982375767,
       "lng": -0.155560344,
       "color": "#ef4444"
-    },
-    {
-      "nom": "Saint-Yaguen",
-      "dept": "40",
-      "code_bss": "09511X0022/LS02",
-      "current": 31.82,
-      "history": [
-        31.87,
-        31.89,
-        31.9,
-        31.92,
-        31.96,
-        32.02,
-        31.95,
-        31.89,
-        31.86,
-        31.87,
-        31.86,
-        31.85,
-        31.84,
-        31.82
-      ],
-      "year_ago": 31.73,
-      "lat": 43.910092549,
-      "lng": -0.715761027,
-      "color": "#3b82f6"
     },
     {
       "nom": "Ychoux",
@@ -67327,8 +67275,6 @@
       "code_bss": "08746X0031/P22",
       "current": 55.78,
       "history": [
-        55.8,
-        55.8,
         55.8,
         55.8,
         55.79,
@@ -67340,12 +67286,66 @@
         55.79,
         55.79,
         55.78,
+        55.78,
+        55.78,
         55.78
       ],
       "year_ago": 56.23,
       "lat": 44.344690504,
       "lng": -0.931494266,
       "color": "#ef4444"
+    },
+    {
+      "nom": "Saint-Yaguen",
+      "dept": "40",
+      "code_bss": "09511X0022/LS02",
+      "current": 31.91,
+      "history": [
+        31.9,
+        31.92,
+        31.96,
+        32.02,
+        31.95,
+        31.89,
+        31.86,
+        31.87,
+        31.86,
+        31.85,
+        31.84,
+        31.82,
+        31.89,
+        31.91
+      ],
+      "year_ago": 31.68,
+      "lat": 43.910092549,
+      "lng": -0.715761027,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Gourbera",
+      "dept": "40",
+      "code_bss": "09505X0034/GO01",
+      "current": 21.69,
+      "history": [
+        21.69,
+        21.68,
+        21.73,
+        21.77,
+        21.77,
+        21.65,
+        21.65,
+        21.62,
+        21.64,
+        21.59,
+        21.63,
+        21.57,
+        21.64,
+        21.69
+      ],
+      "year_ago": 21.46,
+      "lat": 43.788966613,
+      "lng": -1.035321265,
+      "color": "#3b82f6"
     },
     {
       "nom": "Saugnacq-et-Muret",
@@ -67376,117 +67376,9 @@
   ],
   "air": [
     {
-      "zone": "Mano",
-      "dept": "40",
-      "date": "2026-11-17",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Nouvelle-Aquitaine",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Argelouse",
-      "dept": "40",
-      "date": "2026-11-17",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Nouvelle-Aquitaine",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
       "zone": "Belhade",
       "dept": "40",
-      "date": "2026-11-17",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "Atmo Nouvelle-Aquitaine",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Mimizan",
-      "dept": "40",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -67520,12 +67412,12 @@
       }
     },
     {
-      "zone": "Biscarrosse",
+      "zone": "Sore",
       "dept": "40",
-      "date": "2026-11-17",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-11-18",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
       "source": "Atmo Nouvelle-Aquitaine",
       "polluants": {
         "NO₂": {
@@ -67534,9 +67426,117 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Mano",
+      "dept": "40",
+      "date": "2026-11-18",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Nouvelle-Aquitaine",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Callen",
+      "dept": "40",
+      "date": "2026-11-18",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Nouvelle-Aquitaine",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Pontenx-les-Forges",
+      "dept": "40",
+      "date": "2026-11-18",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Nouvelle-Aquitaine",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,

@@ -3,7 +3,7 @@
   "nom": "Savoie",
   "slug": "savoie",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "16/11/2026 à 20:59",
+  "updated": "17/11/2026 à 19:56",
   "score_eau": 99,
   "nb_communes": 274,
   "potable": [
@@ -31223,10 +31223,8 @@
       "nom": "Aiton",
       "dept": "73",
       "code_bss": "07266X0052/PS4",
-      "current": 293.301,
+      "current": 293.315,
       "history": [
-        293.214,
-        293.227,
         293.233,
         293.242,
         293.242,
@@ -31238,9 +31236,11 @@
         293.292,
         293.293,
         293.297,
-        293.301
+        293.301,
+        293.309,
+        293.315
       ],
-      "year_ago": 293.7,
+      "year_ago": 293.68,
       "lat": 45.566444711,
       "lng": 6.245431548,
       "color": "#ef4444"
@@ -31249,10 +31249,8 @@
       "nom": "Chambéry",
       "dept": "73",
       "code_bss": "07256X0095/CHAMBE",
-      "current": 264.898,
+      "current": 264.846,
       "history": [
-        264.72,
-        264.705,
         264.727,
         264.708,
         264.728,
@@ -31264,9 +31262,11 @@
         264.949,
         264.94,
         264.871,
-        264.898
+        264.898,
+        264.881,
+        264.846
       ],
-      "year_ago": 265.11,
+      "year_ago": 265.13,
       "lat": 45.569053375,
       "lng": 5.916248145,
       "color": "#ef4444"
@@ -31292,7 +31292,7 @@
         269.197,
         269.193
       ],
-      "year_ago": 269.46,
+      "year_ago": 269.57,
       "lat": 45.522193195,
       "lng": 6.104556772,
       "color": "#ef4444"
@@ -31300,9 +31300,81 @@
   ],
   "air": [
     {
-      "zone": "Brison-Saint-Innocent",
+      "zone": "Attignat-Oncin",
       "dept": "73",
-      "date": "2026-11-18",
+      "date": "2026-11-19",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "La Chapelle-Blanche",
+      "dept": "73",
+      "date": "2026-11-19",
+      "indice": 1,
+      "label": "Bon",
+      "color": "#50f0e6",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Aussois",
+      "dept": "73",
+      "date": "2026-11-19",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -31338,10 +31410,10 @@
     {
       "zone": "La Bridoire",
       "dept": "73",
-      "date": "2026-11-18",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
+      "date": "2026-11-19",
+      "indice": 1,
+      "label": "Bon",
+      "color": "#50f0e6",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
@@ -31350,9 +31422,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM10": {
           "indice": 1,
@@ -31372,12 +31444,12 @@
       }
     },
     {
-      "zone": "Brides-les-Bains",
+      "zone": "Arbin",
       "dept": "73",
-      "date": "2026-11-18",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
+      "date": "2026-11-19",
+      "indice": 1,
+      "label": "Bon",
+      "color": "#50f0e6",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
@@ -31386,81 +31458,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
           "indice": 1,
           "label": "Bon",
           "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Coise",
-      "dept": "73",
-      "date": "2026-11-18",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Bourg-Saint-Maurice",
-      "dept": "73",
-      "date": "2026-11-18",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,

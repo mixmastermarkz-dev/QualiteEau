@@ -3,7 +3,7 @@
   "nom": "Haute-Savoie",
   "slug": "haute-savoie",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "16/11/2026 à 20:59",
+  "updated": "17/11/2026 à 19:56",
   "score_eau": 98,
   "nb_communes": 279,
   "potable": [
@@ -40332,10 +40332,8 @@
       "nom": "Marigny-Saint-Marcel",
       "dept": "74",
       "code_bss": "07013X0071/F1",
-      "current": 351.398,
+      "current": 351.413,
       "history": [
-        351.333,
-        351.33,
         351.327,
         351.325,
         351.325,
@@ -40347,9 +40345,11 @@
         351.376,
         351.384,
         351.39,
-        351.398
+        351.398,
+        351.407,
+        351.413
       ],
-      "year_ago": 352.99,
+      "year_ago": 353.03,
       "lat": 45.832389293,
       "lng": 5.962087611,
       "color": "#ef4444"
@@ -40358,10 +40358,8 @@
       "nom": "Publier",
       "dept": "74",
       "code_bss": "06301X0019/P5",
-      "current": 373.505,
+      "current": 373.549,
       "history": [
-        373.347,
-        373.346,
         373.352,
         373.355,
         373.362,
@@ -40373,9 +40371,11 @@
         373.453,
         373.468,
         373.489,
-        373.505
+        373.505,
+        373.528,
+        373.549
       ],
-      "year_ago": 374.69,
+      "year_ago": 374.67,
       "lat": 46.390565227,
       "lng": 6.520859286,
       "color": "#ef4444"
@@ -40384,10 +40384,8 @@
       "nom": "Vinzier",
       "dept": "74",
       "code_bss": "06306X0042/BIOGE",
-      "current": 568.973,
+      "current": 568.928,
       "history": [
-        568.673,
-        568.671,
         568.671,
         568.666,
         568.649,
@@ -40399,9 +40397,11 @@
         569.017,
         569.075,
         569.052,
-        568.973
+        568.973,
+        568.917,
+        568.928
       ],
-      "year_ago": 573.87,
+      "year_ago": 573.89,
       "lat": 46.335316884,
       "lng": 6.621257922,
       "color": "#ef4444"
@@ -40410,10 +40410,8 @@
       "nom": "Passy",
       "dept": "74",
       "code_bss": "BSS004QBEB/X",
-      "current": 568.199,
+      "current": 568.207,
       "history": [
-        568.206,
-        568.202,
         568.193,
         568.191,
         568.188,
@@ -40425,7 +40423,9 @@
         568.194,
         568.198,
         568.199,
-        568.199
+        568.199,
+        568.201,
+        568.207
       ],
       "year_ago": 569.32,
       "lat": 45.920935924,
@@ -40453,7 +40453,7 @@
         361.794,
         361.79
       ],
-      "year_ago": 362.96,
+      "year_ago": 362.97,
       "lat": 45.835072054,
       "lng": 5.968019958,
       "color": "#ef4444"
@@ -40462,10 +40462,8 @@
       "nom": "Viry",
       "dept": "74",
       "code_bss": "06537X0103/VEIGY",
-      "current": 371.476,
+      "current": 371.535,
       "history": [
-        371.519,
-        371.509,
         371.512,
         371.511,
         371.504,
@@ -40477,9 +40475,11 @@
         371.476,
         371.484,
         371.501,
-        371.476
+        371.476,
+        371.489,
+        371.535
       ],
-      "year_ago": 372.02,
+      "year_ago": 372.0,
       "lat": 46.141387797,
       "lng": 6.017375948,
       "color": "#ef4444"
@@ -40487,9 +40487,9 @@
   ],
   "air": [
     {
-      "zone": "Massongy",
+      "zone": "Verchaix",
       "dept": "74",
-      "date": "2026-11-18",
+      "date": "2026-11-19",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -40523,9 +40523,45 @@
       }
     },
     {
-      "zone": "Bellevaux",
+      "zone": "Peillonnex",
       "dept": "74",
-      "date": "2026-11-18",
+      "date": "2026-11-19",
+      "indice": 1,
+      "label": "Bon",
+      "color": "#50f0e6",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Perrignier",
+      "dept": "74",
+      "date": "2026-11-19",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -40559,9 +40595,9 @@
       }
     },
     {
-      "zone": "Maxilly-sur-Léman",
+      "zone": "Pers-Jussy",
       "dept": "74",
-      "date": "2026-11-18",
+      "date": "2026-11-19",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -40595,45 +40631,9 @@
       }
     },
     {
-      "zone": "Annemasse",
+      "zone": "Le Petit-Bornand-les-Glières",
       "dept": "74",
-      "date": "2026-11-18",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Bonnevaux",
-      "dept": "74",
-      "date": "2026-11-18",
+      "date": "2026-11-19",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
