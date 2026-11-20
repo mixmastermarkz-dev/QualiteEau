@@ -14,7 +14,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.mon-environnement.fr/">
     <meta property="og:title" content="Mon-Environnement.fr — Qualité de l'air et de l'eau par ville">
-    <meta property="og:description" content="Qualité de l'air, eau potable, nappes phréatiques, rivières et risque pollinique par ville. Sources officielles ARS, Atmo Occitanie, BRGM, Hub'Eau.">
+    <meta property="og:description" content="Qualité de l'air, eau potable, nappes phréatiques, rivières et risque pollinique par ville. Données issues de sources publiques officielles : ARS, Atmo France, BRGM, Hub'Eau, VigiEau.">
     <meta property="og:image" content="https://www.mon-environnement.fr/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -200,8 +200,9 @@
             width:150px;
             height:150px;
             flex-shrink:0;
+            margin:0 auto;
         }
-        .score-svg-wrap svg{transform:rotate(-90deg)}
+        .score-svg-wrap svg{transform:rotate(-90deg);display:block}
         .score-center{
             position:absolute;
             inset:0;
@@ -209,6 +210,7 @@
             flex-direction:column;
             align-items:center;
             justify-content:center;
+            text-align:center;
         }
         .score-number{font-size:2rem;font-weight:900;line-height:1}
         .score-label-sm{font-size:.6rem;color:#94a3b8;font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-top:.15rem}
@@ -650,9 +652,56 @@
         }
         footer p,footer a{color:rgba(255,255,255,.3)!important}
         footer a:hover{color:rgba(255,255,255,.6)!important}
-    </style>
+    /* ── BANDEAU COOKIES ── */
+#cookie-banner{
+    position:fixed;bottom:0;left:0;right:0;z-index:9999;
+    background:#1e293b;color:#e2e8f0;
+    padding:.85rem 1.25rem;
+    display:flex;align-items:center;flex-wrap:wrap;gap:.75rem;
+    font-size:.78rem;line-height:1.5;
+    box-shadow:0 -4px 24px rgba(0,0,0,.18);
+    border-top:1px solid rgba(255,255,255,.08);
+}
+#cookie-banner a{color:#5eead4;text-underline-offset:.15em}
+#cookie-banner .cb-btns{display:flex;gap:.5rem;flex-shrink:0;margin-left:auto}
+#cookie-banner button{
+    padding:.4rem .9rem;border-radius:.5rem;font-size:.78rem;font-weight:700;cursor:pointer;border:none;
+}
+.cb-accept{background:#10b981;color:#fff}
+.cb-accept:hover{background:#059669}
+.cb-refuse{background:rgba(255,255,255,.1);color:#e2e8f0}
+.cb-refuse:hover{background:rgba(255,255,255,.18)}
+</style>
 </head>
 <body>
+
+<!-- ═══ BANDEAU CONSENTEMENT COOKIES (RGPD) ═══ -->
+<div id="cookie-banner" role="dialog" aria-label="Consentement aux cookies" aria-live="polite" style="display:none">
+    <span>🍪 Ce site utilise Google AdSense (cookies publicitaires tiers). Vous pouvez accepter ou refuser. <a href="/politique-confidentialite.html" target="_blank" rel="noopener">En savoir plus</a></span>
+    <div class="cb-btns">
+        <button class="cb-refuse" onclick="cookieChoice(false)" aria-label="Refuser les cookies publicitaires">Refuser</button>
+        <button class="cb-accept" onclick="cookieChoice(true)" aria-label="Accepter les cookies publicitaires">Accepter</button>
+    </div>
+</div>
+<script>
+(function(){
+    var KEY='cookie_consent';
+    var v=localStorage.getItem(KEY);
+    if(v===null){
+        document.getElementById('cookie-banner').style.display='flex';
+    } else if(v!=='accepted'){
+        // Désactiver AdSense si refusé
+        window['adsbygoogle']={paused:true};
+    }
+})();
+function cookieChoice(accepted){
+    localStorage.setItem('cookie_consent', accepted?'accepted':'refused');
+    document.getElementById('cookie-banner').style.display='none';
+    if(!accepted){
+        window['adsbygoogle']={paused:true};
+    }
+}
+</script>
 
 <header class="w-full px-6 py-4 flex items-center justify-end" style="position:relative;z-index:1">
     <nav class="flex items-center gap-4">
@@ -668,7 +717,7 @@
 
     <!-- Logo -->
     <div class="flex flex-col items-center mb-9">
-        <div class="hero-badge" style="font-size:.72rem">🌿 Données officielles · Temps réel</div>
+        <div class="hero-badge" style="font-size:.72rem">🌿 Données issues de sources publiques officielles · Mise à jour quotidienne</div>
         <div class="logo-title" style="font-size:2.6rem;font-weight:900;letter-spacing:-.04em;color:#1e293b">
             Mon-Environnement<span style="color:#10b981">.fr</span>
         </div>
@@ -690,14 +739,16 @@
     <!-- Popular -->
     <div class="flex flex-wrap justify-center gap-2 mt-5 max-w-2xl" id="popular-cities">
         <span class="text-xs text-slate-400 w-full text-center mb-1">Villes populaires</span>
+        <span class="popular-pill" onclick="selectCity('paris')">📍 Paris</span>
+        <span class="popular-pill" onclick="selectCity('lyon')">📍 Lyon</span>
+        <span class="popular-pill" onclick="selectCity('marseille')">📍 Marseille</span>
+        <span class="popular-pill" onclick="selectCity('toulouse')">📍 Toulouse</span>
+        <span class="popular-pill" onclick="selectCity('bordeaux')">📍 Bordeaux</span>
+        <span class="popular-pill" onclick="selectCity('nantes')">📍 Nantes</span>
+        <span class="popular-pill" onclick="selectCity('strasbourg')">📍 Strasbourg</span>
+        <span class="popular-pill" onclick="selectCity('lille')">📍 Lille</span>
         <span class="popular-pill" onclick="selectCity('montpellier')">📍 Montpellier</span>
-        <span class="popular-pill" onclick="selectCity('nimes')">📍 Nîmes</span>
-        <span class="popular-pill" onclick="selectCity('beziers')">📍 Béziers</span>
-        <span class="popular-pill" onclick="selectCity('sete')">📍 Sète</span>
-        <span class="popular-pill" onclick="selectCity('palavas-les-flots')">📍 Palavas-les-Flots</span>
-        <span class="popular-pill" onclick="selectCity('uzes')">📍 Uzès</span>
-        <span class="popular-pill" onclick="selectCity('ales')">📍 Alès</span>
-        <span class="popular-pill" onclick="selectCity('agde')">📍 Agde</span>
+        <span class="popular-pill" onclick="selectCity('rennes')">📍 Rennes</span>
     </div>
 
     <!-- Pillars editorial -->
@@ -706,7 +757,7 @@
             <span class="pillar-card-icon">🌬️</span>
             <div class="pillar-card-title">Qualité de l'air</div>
             <div class="pillar-card-text">Indice ATMO en temps réel : NO₂, O₃, PM2.5, PM10. Effets sanitaires et recommandations selon votre ville.</div>
-            <span class="pillar-card-tag">Source · Atmo Occitanie</span>
+            <span class="pillar-card-tag">Source · Atmo France · Atmo Occitanie</span>
         </div>
         <div class="pillar-card">
             <span class="pillar-card-icon">💧</span>
@@ -724,13 +775,13 @@
 
     <!-- Stats -->
     <div class="stats-bar flex items-center gap-6 mt-8 px-6 py-4 bg-white/80 backdrop-blur rounded-2xl shadow-sm border border-slate-100">
-        <div class="text-center flex-shrink-0"><div class="stat-num" id="stat-communes">—</div><div class="stat-lbl">Communes</div></div>
+        <div class="text-center flex-shrink-0"><div class="stat-num" id="stat-communes">2&nbsp;280</div><div class="stat-lbl">Communes</div></div>
+        <div class="sep w-px h-8 bg-slate-100"></div>
+        <div class="text-center flex-shrink-0"><div class="stat-num">96</div><div class="stat-lbl">Départements</div></div>
         <div class="sep w-px h-8 bg-slate-100"></div>
         <div class="text-center flex-shrink-0"><div class="stat-num">5</div><div class="stat-lbl">Rubriques</div></div>
         <div class="sep w-px h-8 bg-slate-100"></div>
-        <div class="text-center flex-shrink-0"><div class="stat-num">Live</div><div class="stat-lbl">Données</div></div>
-        <div class="sep w-px h-8 bg-slate-100"></div>
-        <div class="text-center flex-shrink-0"><div class="stat-num">100%</div><div class="stat-lbl">Officiel</div></div>
+        <div class="text-center flex-shrink-0"><div class="stat-num" style="font-size:.85rem;line-height:1.3">Sources<br>officielles</div><div class="stat-lbl">Données</div></div>
     </div>
 </section>
 
@@ -750,8 +801,8 @@
     </div>
 
     <!-- Loading -->
-    <div id="loading-state" class="text-center py-12 text-slate-400">
-        <div style="font-size:2rem" class="mb-2 animate-pulse">🌿</div>
+    <div id="loading-state" class="text-center py-12 text-slate-400" role="status" aria-live="polite" aria-label="Chargement des données en cours">
+        <div style="font-size:2rem" class="mb-2 animate-pulse" aria-hidden="true">🌿</div>
         <div class="text-sm">Chargement des données…</div>
     </div>
 
@@ -759,13 +810,38 @@
 </section>
 </main>
 
+<!-- Fallback sans JavaScript -->
+<noscript>
+<div style="max-width:720px;margin:2rem auto;padding:1.5rem;background:#fff;border-radius:1rem;border:1px solid #e2e8f0;font-family:system-ui,sans-serif">
+    <h2 style="font-size:1.1rem;font-weight:700;color:#1e293b;margin-bottom:.75rem">🌿 Mon-Environnement.fr</h2>
+    <p style="font-size:.9rem;color:#64748b;margin-bottom:1rem">Ce site affiche des données environnementales officielles (air, eau potable, nappes, rivières, pollen) pour 2&nbsp;280 communes françaises. JavaScript est requis pour la recherche interactive.</p>
+    <p style="font-size:.85rem;color:#64748b;margin-bottom:.75rem">Accédez directement aux fiches par département :</p>
+    <div style="display:flex;flex-wrap:wrap;gap:.5rem">
+        <a href="/departement/herault/" style="padding:.3rem .7rem;background:#f1f5f9;border-radius:.5rem;font-size:.8rem;color:#1e293b;text-decoration:none">Hérault (34)</a>
+        <a href="/departement/gard/" style="padding:.3rem .7rem;background:#f1f5f9;border-radius:.5rem;font-size:.8rem;color:#1e293b;text-decoration:none">Gard (30)</a>
+        <a href="/departement/haute-garonne/" style="padding:.3rem .7rem;background:#f1f5f9;border-radius:.5rem;font-size:.8rem;color:#1e293b;text-decoration:none">Haute-Garonne (31)</a>
+        <a href="/departement/bouches-du-rhone/" style="padding:.3rem .7rem;background:#f1f5f9;border-radius:.5rem;font-size:.8rem;color:#1e293b;text-decoration:none">Bouches-du-Rhône (13)</a>
+        <a href="/departement/rhone/" style="padding:.3rem .7rem;background:#f1f5f9;border-radius:.5rem;font-size:.8rem;color:#1e293b;text-decoration:none">Rhône (69)</a>
+        <a href="/departement/nord/" style="padding:.3rem .7rem;background:#f1f5f9;border-radius:.5rem;font-size:.8rem;color:#1e293b;text-decoration:none">Nord (59)</a>
+        <a href="/departement/bas-rhin/" style="padding:.3rem .7rem;background:#f1f5f9;border-radius:.5rem;font-size:.8rem;color:#1e293b;text-decoration:none">Bas-Rhin (67)</a>
+        <a href="/departement/gironde/" style="padding:.3rem .7rem;background:#f1f5f9;border-radius:.5rem;font-size:.8rem;color:#1e293b;text-decoration:none">Gironde (33)</a>
+        <a href="/departement/loire-atlantique/" style="padding:.3rem .7rem;background:#f1f5f9;border-radius:.5rem;font-size:.8rem;color:#1e293b;text-decoration:none">Loire-Atlantique (44)</a>
+        <a href="/departement/ille-et-vilaine/" style="padding:.3rem .7rem;background:#f1f5f9;border-radius:.5rem;font-size:.8rem;color:#1e293b;text-decoration:none">Ille-et-Vilaine (35)</a>
+    </div>
+    <p style="font-size:.75rem;color:#94a3b8;margin-top:1rem">Données issues de sources publiques officielles : ARS · Atmo France · Hub'Eau · BRGM · VigiEau · RNSA</p>
+</div>
+</noscript>
+
 <footer style="position:relative;z-index:1;border-top:1px solid #f1f5f9;padding:1.5rem 1rem;text-align:center">
     <p style="font-size:.75rem;color:#94a3b8">
         © 2026 Mon-Environnement.fr
         · <a href="/mentions-legales.html" style="color:#94a3b8;text-decoration:none" class="hover:text-slate-600">Mentions légales</a>
         · <a href="/politique-confidentialite.html" style="color:#94a3b8;text-decoration:none" class="hover:text-slate-600">Confidentialité</a>
         · <a href="/contact.html" style="color:#94a3b8;text-decoration:none" class="hover:text-slate-600">Contact</a>
-        · Sources : ARS · Atmo · Hub'Eau · BRGM
+        · <a href="/sources-et-methodologie.html" style="color:#94a3b8;text-decoration:none" class="hover:text-slate-600">Sources &amp; méthodo</a>
+    </p>
+    <p style="font-size:.7rem;color:#cbd5e1;margin-top:.4rem">
+        Données issues de sources publiques officielles · ARS · Atmo France · Atmo Occitanie · Hub'Eau · BRGM · VigiEau · RNSA · Open-Meteo
     </p>
 </footer>
 
@@ -3056,10 +3132,7 @@ const CITIES=[
     {slug:"ezanville",name:"Ézanville",dept:"Val-d'Oise (95)",deptNum:"95",code:"95229",lat:49.0382,lng:2.3617}
 ];
 
-document.addEventListener("DOMContentLoaded",()=>{
-    const el=document.getElementById("stat-communes");
-    if(el) el.textContent=CITIES.length.toLocaleString("fr-FR");
-});
+// stat-communes est pré-rempli dans le HTML pour le SEO/noscript
 
 // city slug → air zone index in full_data.json air array
 const CITY_AIR_ZONE={
@@ -3247,7 +3320,14 @@ function showResults(city){
     loadDataForDept(city.deptNum).then(d=>{
         document.getElementById("loading-state").style.display="none";
         if(d.updated)document.getElementById("result-updated").textContent="Mis à jour le "+d.updated;
-        document.getElementById("data-sections").innerHTML=renderAll(city,d);
+        // Bannière de fraîcheur des données
+        const freshBanner=renderFreshnessBanner(d.updated);
+        try{
+            document.getElementById("data-sections").innerHTML=freshBanner+renderAll(city,d);
+        }catch(renderErr){
+            console.error("[renderAll] Erreur de rendu:",renderErr);
+            document.getElementById("data-sections").innerHTML=freshBanner+`<div style="padding:1rem;color:#ef4444;font-size:.85rem">⚠ Erreur d'affichage des données. Réessayez ou contactez le support.</div>`;
+        }
         // stagger card animations via --i CSS variable
         requestAnimationFrame(()=>{
             document.querySelectorAll("#data-sections .section-card").forEach((el,i)=>{
@@ -3255,7 +3335,10 @@ function showResults(city){
             });
             initMaps(city,d);
         });
-    }).catch(()=>{document.getElementById("loading-state").innerHTML='<p class="text-red-400 text-sm">❌ Erreur de chargement.</p>';});
+    }).catch((e)=>{
+        console.error("[loadData] Erreur réseau:",e);
+        document.getElementById("loading-state").innerHTML='<p style="color:#ef4444;font-size:.85rem">❌ Données temporairement indisponibles. Réessayez dans quelques minutes.</p>';
+    });
 }
 function resetSearch(){
     destroyMaps();
@@ -3352,19 +3435,21 @@ function generateCityContext(city,d){
         if(score>=80) pills.push({cls:"good",txt:"💧 Eau conforme · bonne qualité"});
         else if(score>=50) pills.push({cls:"warn",txt:"💧 Eau sous surveillance ARS"});
         else if(score>0)   pills.push({cls:"alert",txt:"⚠ Eau potable non conforme"});
-        if(potable.restric&&potable.restric!=="Aucune"&&potable.restric!=="RAS")
+        if(potable.restric&&potable.restric!=="Aucune"&&potable.restric!=="RAS"&&potable.restric!=="N.D.")
             pills.push({cls:"alert",txt:"🚫 "+potable.restric});
     }
 
     // Air quality
-    const zi=CITY_AIR_ZONE[city.slug];
-    if(zi!==undefined&&Array.isArray(d.air)&&d.air[zi]){
-        const ar=d.air[zi];
-        const iqa=ar.iqa||ar.indice;
-        if(iqa===1)      pills.push({cls:"good",txt:"🌬️ Air excellent · sport en plein air"});
-        else if(iqa===2) pills.push({cls:"good",txt:"🌬️ Air bon · conditions favorables"});
-        else if(iqa===3) pills.push({cls:"warn",txt:"🌬️ Air dégradé · personnes sensibles"});
-        else if(iqa>=4)  pills.push({cls:"alert",txt:"😷 Air mauvais · limiter l'exposition"});
+    if(Array.isArray(d.air)&&d.air.length){
+        const zi=CITY_AIR_ZONE[city.slug];
+        const ar=zi!==undefined?d.air[zi]:d.air.find(a=>a.dept===city.deptNum)||d.air[0];
+        if(ar){
+            const iqa=ar.iqa||ar.indice;
+            if(iqa===1)      pills.push({cls:"good",txt:"🌬️ Air excellent · sport en plein air"});
+            else if(iqa===2) pills.push({cls:"good",txt:"🌬️ Air bon · conditions favorables"});
+            else if(iqa===3) pills.push({cls:"warn",txt:"🌬️ Air dégradé · personnes sensibles"});
+            else if(iqa>=4)  pills.push({cls:"alert",txt:"😷 Air mauvais · limiter l'exposition"});
+        }
     }
 
     // Pollen
@@ -3401,13 +3486,36 @@ function generateCityContext(city,d){
         <div class="city-banner-bg" style="background-image:url('${cityPhoto}')"></div>
         <div class="city-banner-overlay"></div>
         <div class="city-banner-content">
-            <div class="city-banner-location">${city.dept} · Occitanie · France</div>
+            <div class="city-banner-location">${city.dept} · France</div>
             <div class="city-banner-name">${city.name}</div>
             <div class="city-banner-pills">
                 ${pills.map(p=>`<span class="ctx-pill ${p.cls}">${p.txt}</span>`).join("")}
             </div>
         </div>
     </div>`;
+}
+
+// ════════════════════════════════════════════════
+// BANNIÈRE FRAÎCHEUR DES DONNÉES
+// ════════════════════════════════════════════════
+function renderFreshnessBanner(updatedStr){
+    if(!updatedStr) return "";
+    // Parse "DD/MM/YYYY à HH:MM"
+    const m=updatedStr.match(/(\d{2})\/(\d{2})\/(\d{4})/);
+    if(!m) return "";
+    const dataDate=new Date(+m[3],+m[2]-1,+m[1]);
+    const ageMs=Date.now()-dataDate.getTime();
+    const ageDays=Math.floor(ageMs/(1000*60*60*24));
+    if(ageDays<=2) return ""; // données récentes, pas de bannière
+    const isOld=ageDays>30;
+    const bg=isOld?"#fef2f2":"#fffbeb";
+    const border=isOld?"#fca5a5":"#fcd34d";
+    const color=isOld?"#b91c1c":"#92400e";
+    const icon=isOld?"⚠":"ℹ";
+    const msg=isOld
+        ?`Sources de données indisponibles depuis ${ageDays} jours (maintenance). Les valeurs affichées datent du ${updatedStr}.`
+        :`Dernière mise à jour il y a ${ageDays} jours (${updatedStr}). Certaines sources peuvent être temporairement indisponibles.`;
+    return`<div style="margin-bottom:1rem;padding:.6rem 1rem;border-radius:.75rem;background:${bg};border:1px solid ${border};color:${color};font-size:.78rem;display:flex;align-items:center;gap:.5rem">${icon} ${msg}</div>`;
 }
 
 // ════════════════════════════════════════════════
@@ -3429,6 +3537,7 @@ function renderAll(city,d){
 // accent: #0ea5e9
 // ────────────────────────────────────────────────
 function renderPotable(city,potable){
+    if(!Array.isArray(potable)||!potable.length) return `<div class="section-card" style="padding:1.25rem 1.5rem;color:#94a3b8;font-size:.85rem">💧 Eau potable — données temporairement indisponibles.</div>`;
     const rec=potable.find(p=>p.insee===city.code||norm(p.nom)===norm(city.name));
     if(!rec) return "";
 
@@ -3450,15 +3559,18 @@ function renderPotable(city,potable){
         ?`<span class="badge badge-alert" style="margin-left:auto">⚠ ${restric}</span>`:"";
 
     const bars=Object.entries(rec.parametres||{}).map(([name,p])=>{
+        const isPFAS=name==="PFAS";
         const lim=PARAM_LIMITS[name];
         const raw=parseFloat(p.valeur);
         let pct=0;
         if(lim&&!isNaN(raw)) pct=Math.min(100,Math.round((raw/lim.limit)*100));
         else pct=p.color==="#10b981"?12:p.color==="#f59e0b"?55:82;
         const d=p.date?fmtDate(p.date):"";
-        return`<div class="param-row">
+        const pfasStyle=isPFAS?`background:#fef3c7;border:1.5px solid #f59e0b;border-radius:.5rem;padding:.3rem .5rem;`:"";
+        const pfasBadge=isPFAS?`<span style="font-size:.58rem;font-weight:800;color:#92400e;background:#fde68a;padding:.1rem .4rem;border-radius:999px;margin-left:.35rem">⚠ surveiller</span>`:"";
+        return`<div class="param-row" style="${pfasStyle}">
             <div class="param-row-top">
-                <span class="param-row-name">${name}</span>
+                <span class="param-row-name">${name}${pfasBadge}</span>
                 <span class="param-row-val" style="color:${p.color}">${p.valeur}<span class="param-row-unit">${p.unite}</span></span>
             </div>
             <div class="param-row-bottom">
@@ -3516,6 +3628,56 @@ function renderPotable(city,potable){
                 ${legendHtml}
                 ${vigilanceNote}
             </div>
+
+            <!-- ENCART PÉDAGOGIQUE EAU POTABLE -->
+            <details style="margin-top:1rem">
+                <summary style="cursor:pointer;font-size:.72rem;font-weight:700;color:#0369a1;padding:.5rem .75rem;background:#f0f9ff;border:1px solid #bae6fd;border-radius:.6rem;user-select:none;list-style:none;display:flex;align-items:center;gap:.4rem">
+                    <span>📖</span> Comprendre les paramètres de l'eau potable
+                </summary>
+                <div style="margin-top:.6rem;padding:.75rem 1rem;background:#f8fbff;border:1px solid #dbeafe;border-radius:.6rem;font-size:.72rem;line-height:1.7;color:#374151">
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:.65rem 1.2rem">
+                        <div>
+                            <strong style="color:#1e40af">Nitrates (NO₃⁻)</strong><br>
+                            Proviennent principalement des engrais agricoles et des eaux usées. À forte dose, ils réduisent la capacité du sang à transporter l'oxygène (méthémoglobinémie chez les nourrissons). <em>Seuil OMS &amp; EU : 50 mg/L. Objectif qualité : &lt; 25 mg/L.</em>
+                        </div>
+                        <div>
+                            <strong style="color:#1e40af">Chlore résiduel</strong><br>
+                            Désinfectant ajouté volontairement pour éliminer les bactéries. Son odeur est normale et rassurante. Trop peu = risque bactériologique ; trop = peut former des sous-produits (THM). <em>Seuil max UE : 0,5 mg/L.</em>
+                        </div>
+                        <div>
+                            <strong style="color:#1e40af">Bactériologie (E. coli)</strong><br>
+                            Indicateur de contamination fécale. La norme impose 0 colonie pour 100 mL d'eau distribuée. Un dépassement entraîne immédiatement une alerte préfectorale. <em>Norme OMS &amp; EU : 0 UFC/100 mL.</em>
+                        </div>
+                        <div>
+                            <strong style="color:#1e40af">pH</strong><br>
+                            Mesure l'acidité ou basicité de l'eau. Un pH trop bas attaque les canalisations (dissolution du plomb) ; trop haut forme des dépôts calcaires. <em>Norme EU : 6,5–9,5. Optimal : 7–8.</em>
+                        </div>
+                        <div>
+                            <strong style="color:#1e40af">Calcaire — Titre Hydrotimétrique (TH)</strong><br>
+                            Mesure la dureté de l'eau (calcium + magnésium). Eau dure = entartrage des appareils. Eau trop douce = eau agressive pour les canalisations. <em>Idéal : 15–35 °f. Pas de seuil sanitaire réglementaire.</em>
+                        </div>
+                        <div>
+                            <strong style="color:#1e40af">Plomb (Pb)</strong><br>
+                            Métal lourd toxique pour le système nerveux, particulièrement chez l'enfant. Présent dans les vieilles canalisations (avant 1948). <em>Norme EU 2021 : &lt; 5 µg/L (ancien seuil 10 µg/L). OMS : &lt; 10 µg/L.</em>
+                        </div>
+                        <div>
+                            <strong style="color:#1e40af">Pesticides</strong><br>
+                            Herbicides, fongicides et insecticides issus de l'agriculture. Certains sont des perturbateurs endocriniens. La somme de tous les pesticides détectés ne doit pas dépasser 0,5 µg/L. <em>Seuil par molécule : 0,1 µg/L (UE).</em>
+                        </div>
+                        <div>
+                            <strong style="color:#1e40af">THM — Trihalométhanes</strong><br>
+                            Sous-produits de la désinfection au chlore. Se forment en réaction avec la matière organique. Classés possiblement cancérigènes à long terme. <em>Seuil EU : &lt; 100 µg/L. OMS : &lt; 300 µg/L.</em>
+                        </div>
+                        <div style="grid-column:1/-1;border:1.5px solid #f59e0b;border-radius:.5rem;padding:.55rem .75rem;background:#fffbeb">
+                            <strong style="color:#92400e">⚠ PFAS — Polluants éternels</strong><br>
+                            Substances per- et polyfluoroalkylées, utilisées dans les emballages alimentaires, textiles imperméables, mousses anti-incendie… Très persistants dans l'environnement et l'organisme. Suspectés d'être cancérigènes et perturbateurs endocriniens. <em>Nouveau seuil EU (Directive 2020/2184) : somme 20 PFAS &lt; 0,1 µg/L en vigueur à partir de 2026. OMS recommande &lt; 0,004 µg/L pour le PFOA.</em>
+                        </div>
+                    </div>
+                    <div style="margin-top:.7rem;padding:.5rem .75rem;background:#dbeafe;border-radius:.45rem;font-size:.66rem;color:#1e40af">
+                        <strong>Sources réglementaires</strong> : Directive EU 2020/2184 (eau potable) · Recommandations OMS 2022 · Code de la santé publique français · Arrêté du 11/01/2007 relatif aux limites et références de qualité des eaux destinées à la consommation humaine.
+                    </div>
+                </div>
+            </details>
         </div>
     </div>`;
 }
@@ -3527,7 +3689,9 @@ function renderPotable(city,potable){
 function renderAir(city,air){
     if(!Array.isArray(air)||!air.length) return "";
     const zIdx=CITY_AIR_ZONE[city.slug];
-    const rec=zIdx!==undefined?air[zIdx]:air.find(a=>a.dept===city.deptNum);
+    // Pour les villes 34/30 : utilise l'index précis ; sinon : cherche par dept ou prend la 1ère zone
+    const rec=zIdx!==undefined?air[zIdx]
+        :air.find(a=>a.dept===city.deptNum)||air[0];
     if(!rec) return "";
 
     // Couleur ATMO basée sur l'indice (pas rec.color qui peut diverger)
@@ -3582,7 +3746,7 @@ function renderAir(city,air){
             <span class="card-header-icon">💨</span>
             <div style="flex:1">
                 <div class="card-header-title">Qualité de l'air</div>
-                <div class="card-header-sub">Indice ATMO · EAQI européen · ${rec.zone} · Atmo Occitanie</div>
+                <div class="card-header-sub">Indice ATMO · EAQI européen · ${rec.zone} · ${rec.source||"Atmo France"}</div>
             </div>
             <span style="font-size:.68rem;color:#94a3b8;font-weight:500;flex-shrink:0">Relevé du ${fmtDate(rec.date)}</span>
         </div>

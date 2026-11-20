@@ -112,12 +112,22 @@ def get_json(url: str, timeout: int = 20, retries: int = 2):
     """
     GET JSON avec retry automatique.
     Retourne le dict parsé ou None si toutes les tentatives échouent.
+    Détecte les pages HTML de maintenance (hubeau.eaufrance.fr retourne 200 + HTML
+    pendant les maintenances BRGM) et les traite comme une erreur récupérable.
     """
     for attempt in range(retries + 1):
         try:
             req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
             with urllib.request.urlopen(req, timeout=timeout) as r:
-                return json.loads(r.read().decode())
+                raw = r.read().decode(errors="replace")
+            # Détection page de maintenance HTML (server répond 200 mais renvoie du HTML)
+            if raw.lstrip().startswith("<"):
+                if attempt < retries:
+                    print(f"    [RETRY {attempt + 1}/{retries}] {url[:80]}… → réponse HTML (maintenance serveur)")
+                else:
+                    print(f"    [MAINTENANCE] {url[:80]}… → réponse HTML au lieu de JSON — API temporairement indisponible")
+                continue  # on retente, puis on abandonne proprement
+            return json.loads(raw)
         except Exception as exc:
             if attempt < retries:
                 print(f"    [RETRY {attempt + 1}/{retries}] {url[:80]}… → {exc}")

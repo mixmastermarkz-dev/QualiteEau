@@ -555,16 +555,31 @@ def run_all():
     pollen     = fetch_pollen(today)
     pesticides = fetch_pesticides(today)
 
-    # Garde-fou : ne pas écraser les rivières si le fetch a retourné 0 résultats
-    if len(rivieres) == 0:
-        try:
-            with open(out_path, encoding="utf-8") as f:
-                prev = json.load(f)
-            if prev.get("rivieres"):
-                print(f"  [GARDE-FOU] 0 rivières — conservation des {len(prev['rivieres'])} stations précédentes.")
-                rivieres = prev["rivieres"]
-        except Exception:
-            pass
+    # Garde-fous : ne pas écraser les données si les fetches ont retourné 0 résultats
+    # (cas typique : maintenance Hub'Eau, Atmo, etc. — le serveur répond 200 + HTML)
+    try:
+        with open(out_path, encoding="utf-8") as f:
+            prev = json.load(f)
+    except Exception:
+        prev = {}
+
+    for key, new_val, label in [
+        ("potable",    potable,    "communes eau potable"),
+        ("rivieres",   rivieres,   "stations rivières"),
+        ("nappes",     nappes,     "stations nappes"),
+        ("air",        air,        "zones air"),
+        ("pollen",     pollen,     "depts pollen"),
+        ("pesticides", pesticides, "mesures pesticides"),
+    ]:
+        if len(new_val) == 0 and prev.get(key):
+            print(f"  [GARDE-FOU] 0 {label} récupérés — conservation des {len(prev[key])} entrées précédentes.")
+            locals_dict = locals()
+            if key == "potable":    potable    = prev[key]
+            elif key == "rivieres": rivieres   = prev[key]
+            elif key == "nappes":   nappes     = prev[key]
+            elif key == "air":      air        = prev[key]
+            elif key == "pollen":   pollen     = prev[key]
+            elif key == "pesticides": pesticides = prev[key]
 
     final_data = {
         "nappes":     nappes,

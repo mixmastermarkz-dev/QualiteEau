@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sources et méthodologie — Mon-Environnement.fr</title>
+    <meta name="description" content="Présentation des sources de données officielles utilisées par Mon-Environnement.fr : ARS, Atmo France, Hub'Eau, BRGM, VigiEau, RNSA. Méthode de calcul des scores et fréquence de mise à jour.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.mon-environnement.fr/sources-et-methodologie.html">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.mon-environnement.fr/sources-et-methodologie.html">
+    <meta property="og:title" content="Sources et méthodologie — Mon-Environnement.fr">
+    <meta property="og:locale" content="fr_FR">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 min-h-screen font-sans antialiased text-slate-900">
+
+<!-- HEADER -->
+<header class="bg-white border-b border-slate-200 shadow-sm">
+    <div class="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between gap-4">
+        <a href="/" class="font-black text-slate-800 uppercase tracking-tight text-sm hover:text-teal-600 transition-colors">🌿 Mon-Environnement.fr</a>
+        <a href="/" class="text-xs font-semibold text-slate-400 hover:text-slate-700 transition-colors">← Retour à l'accueil</a>
+    </div>
+</header>
+
+<!-- MAIN -->
+<main class="max-w-3xl mx-auto px-4 py-12">
+
+    <div class="mb-10">
+        <p class="text-xs font-black text-slate-400 uppercase tracking-widest mb-3">Mon-Environnement.fr</p>
+        <h1 class="text-4xl font-black text-slate-800 leading-tight mb-3">Sources &amp; <span class="text-teal-600">méthodologie</span></h1>
+        <p class="text-slate-500 text-base">Mon-Environnement.fr agrège des données issues exclusivement de sources publiques officielles françaises. Cette page décrit chaque source, sa couverture géographique, la fréquence de mise à jour et la méthode utilisée pour calculer les scores et indicateurs.</p>
+    </div>
+
+    <!-- AVERTISSEMENT -->
+    <div class="bg-amber-50 border border-amber-200 rounded-2xl p-5 mb-10 text-sm text-amber-800">
+        <strong>Important :</strong> les données affichées sur ce site sont fournies à titre informatif. Elles sont issues de sources officielles mais peuvent présenter des délais de mise à jour ou des interruptions temporaires. <strong>Pour toute décision réglementaire, sanitaire ou juridique, référez-vous directement aux publications officielles des autorités compétentes.</strong>
+    </div>
+
+    <!-- SOURCES -->
+    <section class="space-y-8">
+
+        <h2 class="text-xl font-black text-slate-800 uppercase tracking-tight border-b border-slate-200 pb-3">1. Sources de données</h2>
+
+        <!-- EAU POTABLE -->
+        <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-6 space-y-3">
+            <div class="flex items-start gap-3">
+                <span class="text-2xl">💧</span>
+                <div>
+                    <h3 class="font-black text-slate-800">Eau potable</h3>
+                    <p class="text-xs text-teal-600 font-semibold">Hub'Eau / ARS (Agences Régionales de Santé)</p>
+                </div>
+            </div>
+            <table class="w-full text-sm text-slate-600 border-collapse">
+                <tr class="border-b border-slate-100"><td class="py-1.5 pr-4 font-semibold text-slate-700 w-36">API</td><td><a href="https://hubeau.eaufrance.fr/page/api-qualite-eau-potable" target="_blank" rel="noopener" class="text-teal-600 underline hover:text-teal-800">Hub'Eau — qualite_eau_potable</a></td></tr>
+                <tr class="border-b border-slate-100"><td class="py-1.5 font-semibold text-slate-700">Couverture</td><td>France entière — 96 départements</td></tr>
+                <tr class="border-b border-slate-100"><td class="py-1.5 font-semibold text-slate-700">Mise à jour</td><td>Quotidienne (11h00 heure de Paris)</td></tr>
+                <tr class="border-b border-slate-100"><td class="py-1.5 font-semibold text-slate-700">Paramètres</td><td>Nitrates, pH, Chlore résiduel, Bactériologie, Dureté, Aluminium, Plomb, Pesticides, THM, Conductivité, PFAS</td></tr>
+                <tr><td class="py-1.5 font-semibold text-slate-700">Licence</td><td><a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence" target="_blank" rel="noopener" class="text-teal-600 underline">Licence Ouverte Etalab 2.0</a></td></tr>
+            </table>
+        </div>
+
+        <!-- RIVIÈRES -->
+        <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-6 space-y-3">
+            <div class="flex items-start gap-3">
+                <span class="text-2xl">🏞️</span>
+                <div>
+                    <h3 class="font-black text-slate-800">Qualité des rivières</h3>
+                    <p class="text-xs text-teal-600 font-semibold">Hub'Eau / OFB (Office Français de la Biodiversité)</p>
+                </div>
+            </div>
+            <table class="w-full text-sm text-slate-600 border-collapse">
+                <tr class="border-b border-slate-100"><td class="py-1.5 pr-4 font-semibold text-slate-700 w-36">API</td><td><a href="https://hubeau.eaufrance.fr/page/api-qualite-cours-deau" target="_blank" rel="noopener" class="text-teal-600 underline hover:text-teal-800">Hub'Eau — qualite_rivieres v2</a></td></tr>
+                <tr class="border-b border-slate-100"><td class="py-1.5 font-semibold text-slate-700">Couverture</td><td>France entière</td></tr>
+                <tr class="border-b border-slate-100"><td class="py-1.5 font-semibold text-slate-700">Mise à jour</td><td>Quotidienne</td></tr>
+                <tr class="border-b border-slate-100"><td class="py-1.5 font-semibold text-slate-700">Paramètres</td><td>Température eau, Nitrates, Phosphore total, pH, Conductivité, Saturation O₂, MES, Ammonium</td></tr>
+                <tr class="border-b border-slate-100"><td class="py-1.5 font-semibold text-slate-700">Référentiel</td><td>Directive Cadre sur l'Eau (DCE) 2000/60/CE</td></tr>
+                <tr><td class="py-1.5 font-semibold text-slate-700">Licence</td><td><a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence" target="_blank" rel="noopener" class="text-teal-600 underline">Licence Ouverte Etalab 2.0</a></td></tr>
+            </table>
+        </div>
+
+        <!-- NAPPES -->
+        <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-6 space-y-3">
+            <div class="flex items-start gap-3">
+                <span class="text-2xl">🌊</span>
+                <div>
+                    <h3 class="font-black text-slate-800">Nappes phréatiques</h3>
+                    <p class="text-xs text-teal-600 font-semibold">BRGM — Banque du Sous-Sol (BSS)</p>
+                </div>
+            </div>
+            <table class="w-full text-sm text-slate-600 border-collapse">
+                <tr class="border-b border-slate-100"><td class="py-1.5 pr-4 font-semibold text-slate-700 w-36">API</td><td><a href="https://hubeau.eaufrance.fr/page/api-niveaux-nappes" target="_blank" rel="noopener" class="text-teal-600 underline hover:text-teal-800">Hub'Eau — niveaux_nappes</a></td></tr>
+                <tr class="border-b border-slate-100"><td class="py-1.5 font-semibold text-slate-700">Couverture</td><td>France entière (stations piézométriques BRGM)</td></tr>
+                <tr class="border-b border-slate-100"><td class="py-1.5 font-semibold text-slate-700">Mise à jour</td><td>Quotidienne (données temps réel + historique)</td></tr>
+                <tr class="border-b border-slate-100"><td class="py-1.5 font-semibold text-slate-700">Unité</td><td>Mètres NGF (Nivellement Général de France, système Lallemand)</td></tr>
+                <tr><td class="py-1.5 font-semibold text-slate-700">Licence</td><td><a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence" target="_blank" rel="noopener" class="text-teal-600 underline">Licence Ouverte Etalab 2.0</a></td></tr>
+            </table>
+        </div>
+
+        <!-- AIR -->
+        <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-6 space-y-3">
+            <div class="flex items-start gap-3">
+                <span class="text-2xl">🌬️</span>
+                <div>
+                    <h3 class="font-black text-slate-800">Qualité de l'air</h3>
+                    <p class="text-xs text-teal-600 font-semibold">Atmo France — réseau des associations agréées de surveillance de la qualité de l'air (AASQA)</p>
+                </div>
+            </div>
+            <table class="w-full text-sm text-slate-600 border-collapse">
+                <tr class="border-b border-slate-100"><td class="py-1.5 pr-4 font-semibold text-slate-700 w-36">Source nationale</td><td><a href="https://data.atmo-france.org" target="_blank" rel="noopener" class="text-teal-600 underline hover:text-teal-800">data.atmo-france.org</a> (WFS GeoServer)</td></tr>
+                <tr class="border-b border-slate-100"><td class="py-1.5 font-semibold text-slate-700">Source régionale</td><td><a href="https://data-atmo-occitanie.opendata.arcgis.com" target="_blank" rel="noopener" class="text-teal-600 underline hover:text-teal-800">Atmo Occitanie ArcGIS</a> (détail communal)</td></tr>
+                <tr class="border-b border-slate-100"><td class="py-1.5 font-semibold text-slate-700">Couverture</td><td>France entière (indice ATMO) · Occitanie (détail communal)</td></tr>
+                <tr class="border-b border-slate-100"><td class="py-1.5 font-semibold text-slate-700">Indice</td><td>ATMO — échelle européenne EAQI (1 = Bon → 6 = Très mauvais)</td></tr>
+                <tr class="border-b border-slate-100"><td class="py-1.5 font-semibold text-slate-700">Polluants</td><td>NO₂, O₃, PM10, PM2.5, SO₂</td></tr>
+                <tr><td class="py-1.5 font-semibold text-slate-700">Mise à jour</td><td>Quotidienne</td></tr>
+            </table>
+        </div>
+
+        <!-- POLLEN -->
+        <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-6 space-y-3">
+            <div class="flex items-start gap-3">
+                <span class="text-2xl">🌸</span>
+                <div>
+                    <h3 class="font-black text-slate-800">Pollen</h3>
+                    <p class="text-xs text-teal-600 font-semibold">RNSA — Réseau National de Surveillance Aérobiologique</p>
+                </div>
+            </div>
+            <table class="w-full text-sm text-slate-600 border-collapse">
+                <tr class="border-b border-slate-100"><td class="py-1.5 pr-4 font-semibold text-slate-700 w-36">Source</td><td>RNSA via Atmo Occitanie ArcGIS FeatureServer</td></tr>
+                <tr class="border-b border-slate-100"><td class="py-1.5 font-semibold text-slate-700">Couverture</td><td>Occitanie (départements 09, 11, 12, 30, 31, 32, 34, 46, 48, 65, 66, 81, 82)</td></tr>
+                <tr class="border-b border-slate-100"><td class="py-1.5 font-semibold text-slate-700">Taxa suivis</td><td>Graminées, Olivier, Cyprès, Platane, Ambroisie, Frêne, Chêne, Urticacées, Bouleau, Armoise</td></tr>
+                <tr class="border-b border-slate-100"><td class="py-1.5 font-semibold text-slate-700">Indice</td><td>0 (nul) à 5 (très élevé) — Échelle RNSA</td></tr>
+                <tr class="border-b border-slate-100"><td class="py-1.5 font-semibold text-slate-700">Données allergenicité</td><td>Classement SEAIC (Société espagnole d'allergologie) · Prévalence : données épidémiologiques françaises</td></tr>
+                <tr><td class="py-1.5 font-semibold text-slate-700">Mise à jour</td><td>Hebdomadaire (en saison)</td></tr>
+            </table>
+        </div>
+
+        <!-- VIGIEAU -->
+        <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-6 space-y-3">
+            <div class="flex items-start gap-3">
+                <span class="text-2xl">🚱</span>
+                <div>
+                    <h3 class="font-black text-slate-800">Restrictions d'eau / Sécheresse</h3>
+                    <p class="text-xs text-teal-600 font-semibold">VigiEau — MTECT (Ministère de la Transition Écologique)</p>
+                </div>
+            </div>
+            <table class="w-full text-sm text-slate-600 border-collapse">
+                <tr class="border-b border-slate-100"><td class="py-1.5 pr-4 font-semibold text-slate-700 w-36">API</td><td><a href="https://api.vigieau.gouv.fr" target="_blank" rel="noopener" class="text-teal-600 underline hover:text-teal-800">api.vigieau.gouv.fr</a></td></tr>
+                <tr class="border-b border-slate-100"><td class="py-1.5 font-semibold text-slate-700">Couverture</td><td>France entière</td></tr>
+                <tr class="border-b border-slate-100"><td class="py-1.5 font-semibold text-slate-700">Niveaux</td><td>Vigilance · Alerte · Alerte Renforcée · Crise</td></tr>
+                <tr class="border-b border-slate-100"><td class="py-1.5 font-semibold text-slate-700">Mise à jour</td><td>En temps réel (arrêtés préfectoraux)</td></tr>
+                <tr><td class="py-1.5 font-semibold text-slate-700">Avertissement</td><td>Seules les publications légales des préfectures font foi.</td></tr>
+            </table>
+        </div>
+
+        <!-- OPEN-METEO -->
+        <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-6 space-y-3">
+            <div class="flex items-start gap-3">
+                <span class="text-2xl">🌡️</span>
+                <div>
+                    <h3 class="font-black text-slate-800">Données météorologiques</h3>
+                    <p class="text-xs text-teal-600 font-semibold">Open-Meteo (modèle Météo-France)</p>
+                </div>
+            </div>
+            <table class="w-full text-sm text-slate-600 border-collapse">
+                <tr class="border-b border-slate-100"><td class="py-1.5 pr-4 font-semibold text-slate-700 w-36">Source</td><td><a href="https://open-meteo.com" target="_blank" rel="noopener" class="text-teal-600 underline hover:text-teal-800">open-meteo.com</a></td></tr>
+                <tr class="border-b border-slate-100"><td class="py-1.5 font-semibold text-slate-700">Usage</td><td>Température de l'air en temps réel (enrichissement des fiches rivières)</td></tr>
+                <tr class="border-b border-slate-100"><td class="py-1.5 font-semibold text-slate-700">Modèle</td><td>Météo-France AROME</td></tr>
+                <tr><td class="py-1.5 font-semibold text-slate-700">Licence</td><td>Libre (CC BY 4.0)</td></tr>
+            </table>
+        </div>
+
+    </section>
+
+    <!-- MÉTHODE DE CALCUL -->
+    <section class="mt-12 space-y-6">
+        <h2 class="text-xl font-black text-slate-800 uppercase tracking-tight border-b border-slate-200 pb-3">2. Méthode de calcul des scores</h2>
+
+        <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-6 space-y-4 text-sm text-slate-600">
+            <h3 class="font-black text-slate-800">Score eau potable (0–100)</h3>
+            <p>Le score est calculé à partir de la conformité de chaque paramètre analysé, selon les seuils réglementaires de l'arrêté du 11 janvier 2007 (eau potable) :</p>
+            <ul class="list-disc list-inside space-y-1 ml-2">
+                <li><span class="text-green-600 font-semibold">Vert (conforme)</span> : valeur dans les normes → 100 points</li>
+                <li><span class="text-amber-500 font-semibold">Orange (surveillance)</span> : valeur proche des seuils → 50 points</li>
+                <li><span class="text-red-500 font-semibold">Rouge (non conforme)</span> : valeur hors normes → 0 points</li>
+            </ul>
+            <p>Le score final est la moyenne des scores de chaque paramètre mesuré. Un score élevé ne garantit pas l'absence de risque — il reflète le dernier contrôle ARS disponible.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-6 space-y-4 text-sm text-slate-600">
+            <h3 class="font-black text-slate-800">Tendance nappes phréatiques</h3>
+            <p>La tendance est calculée en comparant le niveau actuel (en mètres NGF) au niveau mesuré un an auparavant sur la même station piézométrique :</p>
+            <ul class="list-disc list-inside space-y-1 ml-2">
+                <li><span class="text-blue-600 font-semibold">↑ Hausse</span> : différence &gt; +0,3 m</li>
+                <li><span class="text-slate-500 font-semibold">→ Stable</span> : différence entre −0,5 m et +0,3 m</li>
+                <li><span class="text-red-500 font-semibold">↓ Baisse</span> : différence &lt; −0,5 m</li>
+            </ul>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-6 space-y-3 text-sm text-slate-600">
+            <h3 class="font-black text-slate-800">Qualité des rivières — seuils DCE</h3>
+            <p>Les seuils d'évaluation sont issus de la <strong>Directive Cadre sur l'Eau (DCE) 2000/60/CE</strong> et des arrêtés de l'annexe V. Chaque paramètre est classé selon son niveau de qualité (très bon / bon / moyen / médiocre / mauvais). Les valeurs affichées sont les plus récentes disponibles dans la base Hub'Eau.</p>
+        </div>
+    </section>
+
+    <!-- FRÉQUENCE -->
+    <section class="mt-12 space-y-4">
+        <h2 class="text-xl font-black text-slate-800 uppercase tracking-tight border-b border-slate-200 pb-3">3. Fréquence de mise à jour</h2>
+        <div class="overflow-x-auto">
+            <table class="w-full text-sm text-slate-600 bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden">
+                <thead class="bg-slate-50 text-xs font-black text-slate-500 uppercase tracking-wider">
+                    <tr>
+                        <th class="px-4 py-3 text-left">Module</th>
+                        <th class="px-4 py-3 text-left">Fréquence</th>
+                        <th class="px-4 py-3 text-left">Heure (Paris)</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-100">
+                    <tr><td class="px-4 py-3 font-semibold">Eau potable</td><td class="px-4 py-3">Quotidienne</td><td class="px-4 py-3">11h30</td></tr>
+                    <tr><td class="px-4 py-3 font-semibold">Rivières</td><td class="px-4 py-3">Quotidienne</td><td class="px-4 py-3">11h30</td></tr>
+                    <tr><td class="px-4 py-3 font-semibold">Nappes phréatiques</td><td class="px-4 py-3">Quotidienne</td><td class="px-4 py-3">11h30</td></tr>
+                    <tr><td class="px-4 py-3 font-semibold">Qualité de l'air</td><td class="px-4 py-3">Quotidienne</td><td class="px-4 py-3">12h00</td></tr>
+                    <tr><td class="px-4 py-3 font-semibold">Restrictions eau (VigiEau)</td><td class="px-4 py-3">Quotidienne</td><td class="px-4 py-3">11h30</td></tr>
+                    <tr><td class="px-4 py-3 font-semibold">Pollen</td><td class="px-4 py-3">Hebdomadaire (en saison)</td><td class="px-4 py-3">12h00</td></tr>
+                    <tr><td class="px-4 py-3 font-semibold">Pesticides (air)</td><td class="px-4 py-3">Hebdomadaire</td><td class="px-4 py-3">11h30</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="text-xs text-slate-400">Les données peuvent présenter un délai entre la publication officielle par la source et leur affichage sur ce site. En cas de maintenance d'une source, les dernières données disponibles sont conservées et affichées avec leur date de mesure.</p>
+    </section>
+
+    <!-- LIMITES -->
+    <section class="mt-12">
+        <h2 class="text-xl font-black text-slate-800 uppercase tracking-tight border-b border-slate-200 pb-3 mb-5">4. Limites et avertissements</h2>
+        <ul class="space-y-3 text-sm text-slate-600">
+            <li class="flex gap-3"><span class="text-amber-500 flex-shrink-0">⚠</span><span>Les données sont issues des derniers contrôles officiels disponibles. L'absence de dépassement dans la base de données ne garantit pas l'absence de risque entre deux contrôles.</span></li>
+            <li class="flex gap-3"><span class="text-amber-500 flex-shrink-0">⚠</span><span>Les restrictions d'eau (VigiEau) sont données à titre indicatif. Seules les publications légales des préfectures font foi.</span></li>
+            <li class="flex gap-3"><span class="text-amber-500 flex-shrink-0">⚠</span><span>La couverture géographique varie selon les modules : eau potable et nappes couvrent toute la France ; qualité de l'air et pollen sont plus détaillés en Occitanie.</span></li>
+            <li class="flex gap-3"><span class="text-amber-500 flex-shrink-0">⚠</span><span>Les données Hub'Eau (eau potable, rivières, nappes) peuvent être temporairement indisponibles lors des maintenances du serveur BRGM.</span></li>
+            <li class="flex gap-3"><span class="text-blue-500 flex-shrink-0">ℹ</span><span>Pour signaler une erreur ou une incohérence, <a href="/contact.html" class="text-teal-600 underline hover:text-teal-800">contactez-nous</a>.</span></li>
+        </ul>
+    </section>
+
+    <div class="mt-12 pt-6 border-t border-slate-200">
+        <a href="/" class="inline-flex items-center gap-2 text-teal-600 font-bold text-sm hover:text-teal-800 transition-colors">← Retour à l'accueil</a>
+    </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="border-t border-slate-200 py-6 mt-8 text-center">
+    <p class="text-xs text-slate-400">
+        © 2026 Mon-Environnement.fr
+        · <a href="/mentions-legales.html" class="hover:text-slate-600 transition-colors">Mentions légales</a>
+        · <a href="/politique-confidentialite.html" class="hover:text-slate-600 transition-colors">Confidentialité</a>
+        · <a href="/contact.html" class="hover:text-slate-600 transition-colors">Contact</a>
+    </p>
+    <p class="text-xs text-slate-300 mt-1">Données issues de sources publiques officielles · ARS · Atmo France · Hub'Eau · BRGM · VigiEau · RNSA</p>
+</footer>
+
+</body>
+</html>

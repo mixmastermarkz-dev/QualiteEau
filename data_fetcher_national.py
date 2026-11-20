@@ -523,6 +523,32 @@ def process_dept(dept_code: str, today: datetime, outdir: str,
     air      = fetch_air(dept_code, insee_codes)
     pollen   = fetch_pollen(dept_code)
 
+    # Garde-fous : si un module revient vide alors que le fichier précédent avait des données,
+    # on conserve les anciennes valeurs (cas typique : maintenance Hub'Eau ou Atmo).
+    os.makedirs(outdir, exist_ok=True)
+    out_path = os.path.join(outdir, f"{dept_code}.json")
+    try:
+        with open(out_path, encoding="utf-8") as f:
+            prev = json.load(f)
+    except Exception:
+        prev = {}
+
+    for key, new_val, label in [
+        ("potable",  potable,  "communes eau potable"),
+        ("rivieres", rivieres, "stations rivières"),
+        ("nappes",   nappes,   "stations nappes"),
+        ("air",      air,      "zones air"),
+        ("pollen",   pollen,   "depts pollen"),
+    ]:
+        if len(new_val) == 0 and prev.get(key):
+            print(f"  [GARDE-FOU] dept {dept_code} — 0 {label} récupérés, "
+                  f"conservation des {len(prev[key])} entrées précédentes.")
+            if key == "potable":  potable  = prev[key]
+            elif key == "rivieres": rivieres = prev[key]
+            elif key == "nappes": nappes   = prev[key]
+            elif key == "air":    air      = prev[key]
+            elif key == "pollen": pollen   = prev[key]
+
     scores    = [c["score"] for c in potable if c.get("score") is not None]
     score_eau = round(sum(scores) / len(scores)) if scores else None
 
@@ -540,9 +566,6 @@ def process_dept(dept_code: str, today: datetime, outdir: str,
         "air":         air,
         "pollen":      pollen,
     }
-
-    os.makedirs(outdir, exist_ok=True)
-    out_path = os.path.join(outdir, f"{dept_code}.json")
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(dept_data, f, indent=2, ensure_ascii=False)
 

@@ -1,0 +1,59 @@
+name: Monitoring APIs quotidien
+
+on:
+  schedule:
+    - cron: '0 7 * * *'   # 07h00 UTC = 09h00 Paris — avant les fetches de données
+  workflow_dispatch:        # Déclenchement manuel
+
+permissions:
+  contents: read
+  issues: write             # Pour créer des GitHub Issues en cas d'alerte
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v4
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Lancer le monitoring
+        id: monitor
+        env:
+          # Email — configurer ces secrets dans Settings > Secrets > Actions
+          ALERT_EMAIL_TO:   ${{ secrets.ALERT_EMAIL_TO }}
+          ALERT_SMTP_HOST:  ${{ secrets.ALERT_SMTP_HOST }}
+          ALERT_SMTP_PORT:  ${{ secrets.ALERT_SMTP_PORT }}
+          ALERT_SMTP_USER:  ${{ secrets.ALERT_SMTP_USER }}
+          ALERT_SMTP_PASS:  ${{ secrets.ALERT_SMTP_PASS }}
+          # GitHub Issues — automatiquement disponible dans les workflows
+          GITHUB_TOKEN:          ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY:     ${{ github.repository }}
+        run: |
+          python monitor_apis.py \
+            --github-issue \
+            --email \
+            --timeout 20 \
+            --fail-on-critical
+
+      - name: Résumé dans le job
+        if: always()
+        run: |
+          echo "### Résultat du monitoring" >> $GITHUB_STEP_SUMMARY
+          python monitor_apis.py --json 2>/dev/null | python3 -c "
+          import sys, json
+          d = json.load(sys.stdin)
+          print(f'**{len([r for r in d[\"results\"] if r[\"ok\"]])} / {len(d[\"results\"])} APIs OK**')
+          ko = [r for r in d['results'] if not r['ok']]
+          if ko:
+              print()
+              print('| API | Cause |')
+              print('|-----|-------|')
+              for r in ko:
+                  print(f'| {r[\"name\"]} | {r[\"cause\"]} |')
+          " >> $GITHUB_STEP_SUMMARY || true
