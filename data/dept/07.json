@@ -3,7 +3,7 @@
   "nom": "Ardèche",
   "slug": "ardeche",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "19/11/2026 à 19:50",
+  "updated": "20/11/2026 à 19:15",
   "score_eau": 97,
   "nb_communes": 337,
   "potable": [
@@ -29227,65 +29227,11 @@
   ],
   "nappes": [
     {
-      "nom": "Aubenas",
-      "dept": "07",
-      "code_bss": "08651X0038/0038",
-      "current": 297.293,
-      "history": [
-        297.175,
-        297.084,
-        297.015,
-        297.006,
-        297.025,
-        297.042,
-        297.074,
-        297.087,
-        297.111,
-        297.184,
-        297.221,
-        297.237,
-        297.218,
-        297.293
-      ],
-      "year_ago": 294.74,
-      "lat": 44.619744152,
-      "lng": 4.39032624,
-      "color": "#3b82f6"
-    },
-    {
-      "nom": "Veyras",
-      "dept": "07",
-      "code_bss": "08413X0091/F3",
-      "current": 442.06,
-      "history": [
-        442.3,
-        442.32,
-        442.28,
-        442.26,
-        442.25,
-        442.26,
-        442.25,
-        442.26,
-        442.26,
-        442.26,
-        442.27,
-        442.28,
-        442.06,
-        442.06
-      ],
-      "year_ago": 441.83,
-      "lat": 44.733838457,
-      "lng": 4.561214887,
-      "color": "#3b82f6"
-    },
-    {
       "nom": "Lablachère",
       "dept": "07",
       "code_bss": "BSS003GPIS/X",
-      "current": 245.609,
+      "current": 245.426,
       "history": [
-        245.366,
-        245.311,
         245.313,
         245.321,
         245.33,
@@ -29297,19 +29243,73 @@
         245.523,
         245.553,
         245.542,
-        245.609
+        245.609,
+        245.502,
+        245.426
       ],
-      "year_ago": 243.96,
+      "year_ago": 244.0,
       "lat": 44.46354371,
       "lng": 4.214386619,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Veyras",
+      "dept": "07",
+      "code_bss": "08413X0091/F3",
+      "current": 442.06,
+      "history": [
+        442.28,
+        442.26,
+        442.25,
+        442.26,
+        442.25,
+        442.26,
+        442.26,
+        442.26,
+        442.27,
+        442.28,
+        442.06,
+        442.06,
+        442.06,
+        442.06
+      ],
+      "year_ago": 441.83,
+      "lat": 44.733838457,
+      "lng": 4.561214887,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Aubenas",
+      "dept": "07",
+      "code_bss": "08651X0038/0038",
+      "current": 297.207,
+      "history": [
+        297.015,
+        297.006,
+        297.025,
+        297.042,
+        297.074,
+        297.087,
+        297.111,
+        297.184,
+        297.221,
+        297.237,
+        297.218,
+        297.293,
+        297.227,
+        297.207
+      ],
+      "year_ago": 294.69,
+      "lat": 44.619744152,
+      "lng": 4.39032624,
       "color": "#3b82f6"
     }
   ],
   "air": [
     {
-      "zone": "les Avanchers",
+      "zone": "Saint-Jean-de-Muzols",
       "dept": "07",
-      "date": "2026-11-21",
+      "date": "2026-11-22",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -29343,9 +29343,9 @@
       }
     },
     {
-      "zone": "Prapérier",
+      "zone": "Mairie des Salelles",
       "dept": "07",
-      "date": "2026-11-21",
+      "date": "2026-11-22",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -29379,45 +29379,9 @@
       }
     },
     {
-      "zone": "Étables",
+      "zone": "La Bridoire",
       "dept": "07",
-      "date": "2026-11-21",
-      "indice": 1,
-      "label": "Bon",
-      "color": "#50f0e6",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Cierge-sous-le-Cheylard",
-      "dept": "07",
-      "date": "2026-11-21",
+      "date": "2026-11-22",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -29451,12 +29415,12 @@
       }
     },
     {
-      "zone": "Saint-Romain-de-Lerps",
+      "zone": "Aussois",
       "dept": "07",
-      "date": "2026-11-21",
-      "indice": 1,
-      "label": "Bon",
-      "color": "#50f0e6",
+      "date": "2026-11-22",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
@@ -29465,9 +29429,45 @@
           "color": "#10b981"
         },
         "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
           "indice": 1,
           "label": "Bon",
           "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Sceautres",
+      "dept": "07",
+      "date": "2026-11-22",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,
