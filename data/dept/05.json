@@ -3,7 +3,7 @@
   "nom": "Hautes-Alpes",
   "slug": "hautes-alpes",
   "region": "Provence-Alpes-Côte d'Azur",
-  "updated": "20/11/2026 à 19:15",
+  "updated": "21/11/2026 à 18:04",
   "score_eau": 98,
   "nb_communes": 162,
   "potable": [
@@ -17447,39 +17447,14 @@
   ],
   "nappes": [
     {
-      "nom": "Saint-Jean-Saint-Nicolas",
-      "dept": "05",
-      "code_bss": "08466X0009/F2",
-      "current": 1159.83,
-      "history": [
-        1155.4,
-        1156.06,
-        1156.56,
-        1157,
-        1157.4,
-        1157.78,
-        1158.12,
-        1158.39,
-        1158.66,
-        1158.99,
-        1159.31,
-        1159.54,
-        1159.7,
-        1159.83
-      ],
-      "year_ago": 1160.24,
-      "lat": 44.680949438,
-      "lng": 6.260818821,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Aspremont",
+      "libelle": "Aspremont - Parking",
+      "masse_eau": "Alluvions du Buëch",
+      "profondeur": 11.0,
       "dept": "05",
       "code_bss": "08688X0023/PZ1",
-      "current": 718.77,
+      "current": 718.72,
       "history": [
-        718.73,
-        718.67,
         718.62,
         718.68,
         718.71,
@@ -17491,73 +17466,53 @@
         718.76,
         718.82,
         718.8,
-        718.77
+        718.77,
+        718.75,
+        718.72
       ],
-      "year_ago": 718.67,
+      "year_ago": 718.65,
       "lat": 44.493443917,
       "lng": 5.728933099,
       "color": "#3b82f6"
     },
     {
-      "nom": "La Roche-de-Rame",
+      "nom": "Saint-Jean-Saint-Nicolas",
+      "libelle": "Saint-Jean-Saint-Nicolas - Les Ricous",
+      "masse_eau": "Alluvions du Drac amont et Séveraisse",
+      "profondeur": 20.0,
       "dept": "05",
-      "code_bss": "08472X0007/F-1",
-      "current": 923.66,
+      "code_bss": "08466X0009/F2",
+      "current": 1159.92,
       "history": [
-        923.52,
-        923.51,
-        923.51,
-        923.52,
-        923.51,
-        923.52,
-        923.52,
-        923.51,
-        923.55,
-        923.6,
-        923.61,
-        923.63,
-        923.65,
-        923.66
+        1156.56,
+        1157,
+        1157.4,
+        1157.78,
+        1158.12,
+        1158.39,
+        1158.66,
+        1158.99,
+        1159.31,
+        1159.54,
+        1159.7,
+        1159.83,
+        1159.89,
+        1159.92
       ],
-      "year_ago": 923.63,
-      "lat": 44.738691198,
-      "lng": 6.582662145,
-      "color": "#3b82f6"
-    },
-    {
-      "nom": "Val Buëch-Méouge",
-      "dept": "05",
-      "code_bss": "09172X0078/P",
-      "current": 491.85,
-      "history": [
-        491.72,
-        491.72,
-        491.71,
-        491.72,
-        491.86,
-        491.93,
-        491.97,
-        491.96,
-        491.93,
-        491.91,
-        491.9,
-        491.88,
-        491.86,
-        491.85
-      ],
-      "year_ago": 491.66,
-      "lat": 44.231230139,
-      "lng": 5.862949573,
-      "color": "#3b82f6"
+      "year_ago": 1160.18,
+      "lat": 44.680949438,
+      "lng": 6.260818821,
+      "color": "#ef4444"
     },
     {
       "nom": "L'Argentière-la-Bessée",
+      "libelle": "L'Argentière-La-Bessée (P5)",
+      "masse_eau": "Alluvions Durance amont",
+      "profondeur": 15.0,
       "dept": "05",
       "code_bss": "08471X0034/P5",
-      "current": 951.61,
+      "current": 951.69,
       "history": [
-        951.21,
-        951.21,
         951.21,
         951.22,
         951.23,
@@ -17569,195 +17524,74 @@
         951.49,
         951.53,
         951.58,
-        951.61
+        951.61,
+        951.65,
+        951.69
       ],
-      "year_ago": 952.31,
+      "year_ago": 952.29,
       "lat": 44.776271664,
       "lng": 6.558809418,
       "color": "#ef4444"
+    },
+    {
+      "nom": "Val Buëch-Méouge",
+      "libelle": "Ribiers - L'Iscle",
+      "masse_eau": "Alluvions du Buëch",
+      "profondeur": 6.3,
+      "dept": "05",
+      "code_bss": "09172X0078/P",
+      "current": 491.82,
+      "history": [
+        491.71,
+        491.72,
+        491.86,
+        491.93,
+        491.97,
+        491.96,
+        491.93,
+        491.91,
+        491.9,
+        491.88,
+        491.86,
+        491.85,
+        491.84,
+        491.82
+      ],
+      "year_ago": 491.64,
+      "lat": 44.231230139,
+      "lng": 5.862949573,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "La Roche-de-Rame",
+      "libelle": "La-Roche-De-Rame",
+      "masse_eau": "Alluvions Durance amont",
+      "profondeur": 4.6,
+      "dept": "05",
+      "code_bss": "08472X0007/F-1",
+      "current": 923.66,
+      "history": [
+        923.51,
+        923.52,
+        923.51,
+        923.52,
+        923.52,
+        923.51,
+        923.55,
+        923.6,
+        923.61,
+        923.63,
+        923.65,
+        923.66,
+        923.66,
+        923.66
+      ],
+      "year_ago": 923.62,
+      "lat": 44.738691198,
+      "lng": 6.582662145,
+      "color": "#3b82f6"
     }
   ],
-  "air": [
-    {
-      "zone": "Rosans",
-      "dept": "05",
-      "date": "2026-11-22",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "AtmoSud",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Rousset",
-      "dept": "05",
-      "date": "2026-11-22",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "AtmoSud",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-André-d'Embrun",
-      "dept": "05",
-      "date": "2026-11-22",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "AtmoSud",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-André-de-Rosans",
-      "dept": "05",
-      "date": "2026-11-22",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "AtmoSud",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Apollinaire",
-      "dept": "05",
-      "date": "2026-11-22",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "AtmoSud",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    }
-  ],
+  "air": [],
   "pollen": []
 }

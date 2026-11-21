@@ -3,7 +3,7 @@
   "nom": "Saône-et-Loire",
   "slug": "saone-et-loire",
   "region": "Bourgogne-Franche-Comté",
-  "updated": "20/11/2026 à 19:15",
+  "updated": "21/11/2026 à 18:04",
   "score_eau": 97,
   "nb_communes": 564,
   "potable": [
@@ -45460,91 +45460,14 @@
   ],
   "nappes": [
     {
-      "nom": "Mâcon",
-      "dept": "71",
-      "code_bss": "06252X0063/PZ1",
-      "current": 204.726,
-      "history": [
-        204.434,
-        204.429,
-        204.426,
-        204.473,
-        204.461,
-        204.477,
-        204.47,
-        204.507,
-        204.583,
-        204.63,
-        204.627,
-        204.672,
-        204.722,
-        204.726
-      ],
-      "year_ago": 205.39,
-      "lat": 46.37047647,
-      "lng": 4.841428393,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Saint-Prix",
-      "dept": "71",
-      "code_bss": "05245X0047/PZ1",
-      "current": 890.434,
-      "history": [
-        881.766,
-        881.815,
-        881.862,
-        881.913,
-        881.967,
-        882.004,
-        882.099,
-        882.844,
-        889.553,
-        890.915,
-        890.867,
-        890.682,
-        890.432,
-        890.434
-      ],
-      "year_ago": 883.71,
-      "lat": 46.99394543,
-      "lng": 4.038246739,
-      "color": "#3b82f6"
-    },
-    {
-      "nom": "Mellecey",
-      "dept": "71",
-      "code_bss": "05536X0079/PZ1",
-      "current": 188.832,
-      "history": [
-        188.805,
-        188.767,
-        188.809,
-        188.796,
-        188.839,
-        188.803,
-        188.825,
-        188.865,
-        188.896,
-        188.884,
-        188.873,
-        188.898,
-        188.866,
-        188.832
-      ],
-      "year_ago": 189.26,
-      "lat": 46.819497797,
-      "lng": 4.785236206,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Lans",
+      "libelle": "Forage Brgm (Lans-71)",
+      "masse_eau": "Sables, graviers et argiles - St Cosmes du Val de Saône",
+      "profondeur": 28.5,
       "dept": "71",
       "code_bss": "05794X0021/PZ1",
-      "current": 179.403,
+      "current": 179.392,
       "history": [
-        179.399,
-        179.376,
         179.386,
         179.379,
         179.386,
@@ -45556,7 +45479,9 @@
         179.408,
         179.412,
         179.41,
-        179.403
+        179.403,
+        179.399,
+        179.392
       ],
       "year_ago": 179.85,
       "lat": 46.757021343,
@@ -45564,7 +45489,39 @@
       "color": "#ef4444"
     },
     {
+      "nom": "Saint-Prix",
+      "libelle": "Forage Brgm (Saint-Prix-71)",
+      "masse_eau": "Bassin versant de socle de la Loire bourguignonne",
+      "profondeur": 50.0,
+      "dept": "71",
+      "code_bss": "05245X0047/PZ1",
+      "current": 890.956,
+      "history": [
+        881.862,
+        881.913,
+        881.967,
+        882.004,
+        882.099,
+        882.844,
+        889.553,
+        890.915,
+        890.867,
+        890.682,
+        890.432,
+        890.434,
+        890.812,
+        890.956
+      ],
+      "year_ago": 883.72,
+      "lat": 46.99394543,
+      "lng": 4.038246739,
+      "color": "#3b82f6"
+    },
+    {
       "nom": "Pourlans",
+      "libelle": "Forage Brgm (Pourlans-71)",
+      "masse_eau": "Domaine marneux de la Bresse et du Val de Saône",
+      "profondeur": 22.0,
       "dept": "71",
       "code_bss": "05277X1008/PZ1",
       "current": 177.642,
@@ -45584,13 +45541,45 @@
         177.693,
         177.642
       ],
-      "year_ago": 178.73,
+      "year_ago": 178.69,
       "lat": 46.980622215,
       "lng": 5.230358811,
       "color": "#ef4444"
     },
     {
+      "nom": "Mellecey",
+      "libelle": "Forage Brgm (Mellecey-71)",
+      "masse_eau": "Calcaires jurassiques sous couverture pied de côte bourguign",
+      "profondeur": 78.0,
+      "dept": "71",
+      "code_bss": "05536X0079/PZ1",
+      "current": 188.783,
+      "history": [
+        188.809,
+        188.796,
+        188.839,
+        188.803,
+        188.825,
+        188.865,
+        188.896,
+        188.884,
+        188.873,
+        188.898,
+        188.866,
+        188.832,
+        188.813,
+        188.783
+      ],
+      "year_ago": 189.23,
+      "lat": 46.819497797,
+      "lng": 4.785236206,
+      "color": "#ef4444"
+    },
+    {
       "nom": "Beaubery",
+      "libelle": "Puits Communal (Beaubery-71)",
+      "masse_eau": "Bassin versant de socle de la Loire bourguignonne",
+      "profondeur": 8.9,
       "dept": "71",
       "code_bss": "06241X0016/P",
       "current": 474.372,
@@ -45617,13 +45606,14 @@
     },
     {
       "nom": "Sassenay",
+      "libelle": "Forage Communal (Sassenay-71)",
+      "masse_eau": "Calcaires jurassiques sous couverture pied de côte bourguign",
+      "profondeur": 50.0,
       "dept": "71",
       "code_bss": "05537X0127/P",
-      "current": 182.54,
+      "current": 182.52,
       "history": [
         182.52,
-        182.51,
-        182.52,
         182.52,
         182.53,
         182.52,
@@ -45634,47 +45624,24 @@
         182.55,
         182.56,
         182.55,
-        182.54
+        182.54,
+        182.53,
+        182.52
       ],
-      "year_ago": 182.71,
+      "year_ago": 182.7,
       "lat": 46.837040555,
       "lng": 4.911401644,
       "color": "#ef4444"
     },
     {
-      "nom": "L'Abergement-de-Cuisery",
-      "dept": "71",
-      "code_bss": "06024X0045/PZ9",
-      "current": 169.618,
-      "history": [
-        169.631,
-        169.637,
-        169.646,
-        169.639,
-        169.646,
-        169.634,
-        169.639,
-        169.654,
-        169.643,
-        169.637,
-        169.626,
-        169.636,
-        169.622,
-        169.618
-      ],
-      "year_ago": 173.08,
-      "lat": 46.579454367,
-      "lng": 4.950550849,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Vitry-sur-Loire",
+      "libelle": "Forage Privé (Vitry-Sur-Loire-71)",
+      "masse_eau": "Alluvions de la Loire du Massif Central",
+      "profondeur": 6.3,
       "dept": "71",
       "code_bss": "05765X0013/SONDAG",
-      "current": 198.4,
+      "current": 198.46,
       "history": [
-        198.11,
-        198.12,
         198.13,
         198.13,
         198.15,
@@ -45686,21 +45653,53 @@
         198.33,
         198.36,
         198.38,
-        198.4
+        198.4,
+        198.42,
+        198.46
       ],
-      "year_ago": 199.32,
+      "year_ago": 199.26,
       "lat": 46.685398889,
       "lng": 3.671706052,
       "color": "#ef4444"
     },
     {
+      "nom": "L'Abergement-de-Cuisery",
+      "libelle": "Forage Privé (Abergement-De-Cuisery-71)",
+      "masse_eau": "Alluvions de la Saône entre le confluent du Doubs et le seui",
+      "profondeur": 12.7,
+      "dept": "71",
+      "code_bss": "06024X0045/PZ9",
+      "current": 169.616,
+      "history": [
+        169.646,
+        169.639,
+        169.646,
+        169.634,
+        169.639,
+        169.654,
+        169.643,
+        169.637,
+        169.626,
+        169.636,
+        169.622,
+        169.618,
+        169.618,
+        169.616
+      ],
+      "year_ago": 173.08,
+      "lat": 46.579454367,
+      "lng": 4.950550849,
+      "color": "#ef4444"
+    },
+    {
       "nom": "Montmort",
+      "libelle": "Puits Communal (Montmort-71)",
+      "masse_eau": "Bassin versant de socle de la Loire bourguignonne",
+      "profondeur": 8.04,
       "dept": "71",
       "code_bss": "05772X0037/P",
-      "current": 253.357,
+      "current": 253.399,
       "history": [
-        252.057,
-        252.12,
         252.176,
         252.223,
         252.266,
@@ -45712,7 +45711,9 @@
         253.196,
         253.246,
         253.333,
-        253.357
+        253.357,
+        253.407,
+        253.399
       ],
       "year_ago": 253.32,
       "lat": 46.736347918,
@@ -45721,12 +45722,13 @@
     },
     {
       "nom": "Oudry",
+      "libelle": "Puits Communal (Oudry-71)",
+      "masse_eau": "Bassin versant de socle de la Loire bourguignonne",
+      "profondeur": 10.0,
       "dept": "71",
       "code_bss": "06003X0088/P",
-      "current": 254.543,
+      "current": 254.531,
       "history": [
-        254.446,
-        254.441,
         254.443,
         254.442,
         254.444,
@@ -45738,15 +45740,49 @@
         254.52,
         254.524,
         254.541,
-        254.543
+        254.543,
+        254.539,
+        254.531
       ],
-      "year_ago": 256.82,
+      "year_ago": 256.88,
       "lat": 46.575696291,
       "lng": 4.16286751,
       "color": "#ef4444"
     },
     {
+      "nom": "Changy",
+      "libelle": "Puits Communal (Changy-Tourny-71)",
+      "masse_eau": "Calcaires et marnes du Jurassique du Beaujolais libres",
+      "profondeur": 16.4,
+      "dept": "71",
+      "code_bss": "06234X0098/P",
+      "current": 335.173,
+      "history": [
+        334.624,
+        334.633,
+        334.636,
+        334.662,
+        334.681,
+        334.694,
+        334.855,
+        334.908,
+        334.926,
+        334.927,
+        335.127,
+        335.172,
+        335.181,
+        335.173
+      ],
+      "year_ago": 342.68,
+      "lat": 46.399698229,
+      "lng": 4.252989899,
+      "color": "#ef4444"
+    },
+    {
       "nom": "L'Hôpital-le-Mercier",
+      "libelle": "Puits Communal (Hopital-Le-Mercier-71)",
+      "masse_eau": "Calcaires et marnes du Jurassique du Beaujolais libres",
+      "profondeur": 8.78,
       "dept": "71",
       "code_bss": "06231X0139/P",
       "current": 234.598,
@@ -45766,19 +45802,20 @@
         234.591,
         234.598
       ],
-      "year_ago": 235.03,
+      "year_ago": 235.02,
       "lat": 46.387892697,
       "lng": 4.014823198,
       "color": "#ef4444"
     },
     {
       "nom": "Saint-Cyr",
+      "libelle": "Forage Communal (Saint-Cyr-71)",
+      "masse_eau": "Sables, graviers et argiles - St Cosmes du Val de Saône",
+      "profondeur": 20.0,
       "dept": "71",
       "code_bss": "05797X0145/FPZ",
-      "current": 174.945,
+      "current": 174.935,
       "history": [
-        174.941,
-        174.935,
         174.935,
         174.936,
         174.939,
@@ -45790,7 +45827,9 @@
         174.951,
         174.96,
         174.954,
-        174.945
+        174.945,
+        174.938,
+        174.935
       ],
       "year_ago": 175.27,
       "lat": 46.661465485,
@@ -45798,213 +45837,35 @@
       "color": "#ef4444"
     },
     {
-      "nom": "Changy",
+      "nom": "Mâcon",
+      "libelle": "Forage Brgm (Sennece-Les-Macon-71)",
+      "masse_eau": "Domaine formations sédimentaires des Côtes chalonnaise, maco",
+      "profondeur": 40.0,
       "dept": "71",
-      "code_bss": "06234X0098/P",
-      "current": 335.172,
+      "code_bss": "06252X0063/PZ1",
+      "current": 204.745,
       "history": [
-        334.634,
-        334.631,
-        334.624,
-        334.633,
-        334.636,
-        334.662,
-        334.681,
-        334.694,
-        334.855,
-        334.908,
-        334.926,
-        334.927,
-        335.127,
-        335.172
+        204.426,
+        204.473,
+        204.461,
+        204.477,
+        204.47,
+        204.507,
+        204.583,
+        204.63,
+        204.627,
+        204.672,
+        204.722,
+        204.726,
+        204.724,
+        204.745
       ],
-      "year_ago": 342.7,
-      "lat": 46.399698229,
-      "lng": 4.252989899,
+      "year_ago": 205.35,
+      "lat": 46.37047647,
+      "lng": 4.841428393,
       "color": "#ef4444"
     }
   ],
-  "air": [
-    {
-      "zone": "La Tagnière",
-      "dept": "71",
-      "date": "2026-11-22",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Taizé",
-      "dept": "71",
-      "date": "2026-11-22",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Tancon",
-      "dept": "71",
-      "date": "2026-11-22",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Le Tartre",
-      "dept": "71",
-      "date": "2026-11-22",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Tavernay",
-      "dept": "71",
-      "date": "2026-11-22",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    }
-  ],
+  "air": [],
   "pollen": []
 }

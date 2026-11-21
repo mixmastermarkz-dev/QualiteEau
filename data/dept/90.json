@@ -3,7 +3,7 @@
   "nom": "Territoire de Belfort",
   "slug": "territoire-de-belfort",
   "region": "Bourgogne-Franche-Comté",
-  "updated": "20/11/2026 à 19:15",
+  "updated": "21/11/2026 à 18:04",
   "score_eau": 98,
   "nb_communes": 100,
   "potable": [
@@ -23340,39 +23340,14 @@
   ],
   "nappes": [
     {
-      "nom": "Valdoie",
-      "dept": "90",
-      "code_bss": "04434X0089/P",
-      "current": 383.476,
-      "history": [
-        383.411,
-        383.408,
-        383.406,
-        383.404,
-        383.414,
-        383.429,
-        383.436,
-        383.447,
-        383.452,
-        383.456,
-        383.468,
-        383.457,
-        383.473,
-        383.476
-      ],
-      "year_ago": 383.38,
-      "lat": 47.675931312,
-      "lng": 6.836792836,
-      "color": "#3b82f6"
-    },
-    {
       "nom": "Florimont",
+      "libelle": "Forage Communal (Florimont-90)",
+      "masse_eau": "Cailloutis du Sundgau dans BV du Doubs",
+      "profondeur": 34.0,
       "dept": "90",
       "code_bss": "04447X0028/S",
-      "current": 380.337,
+      "current": 380.33,
       "history": [
-        380.34,
-        380.348,
         380.354,
         380.353,
         380.356,
@@ -23384,195 +23359,45 @@
         380.342,
         380.353,
         380.341,
-        380.337
+        380.337,
+        380.337,
+        380.33
       ],
-      "year_ago": 380.37,
+      "year_ago": 380.36,
       "lat": 47.542387181,
       "lng": 7.055132727,
       "color": "#ef4444"
+    },
+    {
+      "nom": "Valdoie",
+      "libelle": "Forage Communal (Valdoie-90)",
+      "masse_eau": "Alluvions de la Savoureuse",
+      "profondeur": null,
+      "dept": "90",
+      "code_bss": "04434X0089/P",
+      "current": 383.481,
+      "history": [
+        383.406,
+        383.404,
+        383.414,
+        383.429,
+        383.436,
+        383.447,
+        383.452,
+        383.456,
+        383.468,
+        383.457,
+        383.473,
+        383.476,
+        383.481,
+        383.481
+      ],
+      "year_ago": 383.38,
+      "lat": 47.675931312,
+      "lng": 6.836792836,
+      "color": "#3b82f6"
     }
   ],
-  "air": [
-    {
-      "zone": "Vézelois",
-      "dept": "90",
-      "date": "2026-11-22",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Vescemont",
-      "dept": "90",
-      "date": "2026-11-22",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Vauthiermont",
-      "dept": "90",
-      "date": "2026-11-22",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Reppe",
-      "dept": "90",
-      "date": "2026-11-22",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Phaffans",
-      "dept": "90",
-      "date": "2026-11-22",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    }
-  ],
+  "air": [],
   "pollen": []
 }

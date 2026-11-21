@@ -3,7 +3,7 @@
   "nom": "Landes",
   "slug": "landes",
   "region": "Nouvelle-Aquitaine",
-  "updated": "20/11/2026 à 19:16",
+  "updated": "21/11/2026 à 18:04",
   "score_eau": 99,
   "nb_communes": 327,
   "potable": [
@@ -67139,12 +67139,13 @@
   "nappes": [
     {
       "nom": "Gourbera",
+      "libelle": "Foret Communale (Gourbera-40)",
+      "masse_eau": "Calcaires du sommet du Crétacé supérieur majoritairement cap",
+      "profondeur": 2208.5,
       "dept": "40",
       "code_bss": "09505X0034/GO01",
-      "current": 21.6,
+      "current": 21.57,
       "history": [
-        21.65,
-        21.62,
         21.64,
         21.59,
         21.63,
@@ -67156,21 +67157,24 @@
         21.69,
         21.69,
         21.65,
-        21.6
+        21.6,
+        21.57,
+        21.57
       ],
-      "year_ago": 21.41,
+      "year_ago": 21.35,
       "lat": 43.788966613,
       "lng": -1.035321265,
       "color": "#3b82f6"
     },
     {
       "nom": "Lacquy",
+      "libelle": "Lacquy 101 (Lacquy - 40)",
+      "masse_eau": "Sables et grès de l'Eocène inférieur et moyen majoritairemen",
+      "profondeur": 4002.0,
       "dept": "40",
       "code_bss": "09266X0004/LC101",
-      "current": 76.403,
+      "current": 76.386,
       "history": [
-        76.412,
-        76.403,
         76.397,
         76.389,
         76.386,
@@ -67182,47 +67186,53 @@
         76.404,
         76.412,
         76.412,
-        76.403
+        76.403,
+        76.394,
+        76.386
       ],
-      "year_ago": 76.6,
+      "year_ago": 76.59,
       "lat": 43.960162747,
       "lng": -0.272877691,
       "color": "#ef4444"
     },
     {
-      "nom": "Betbezer-d'Armagnac",
+      "nom": "Ychoux",
+      "libelle": "Malet (Ychoux-40)",
+      "masse_eau": "Sables et graviers plio-quaternaires des étangs littoraux Bo",
+      "profondeur": 11.0,
       "dept": "40",
-      "code_bss": "09267X0014/PIEZO1",
-      "current": 67.737,
+      "code_bss": "08746X0031/P22",
+      "current": 55.79,
       "history": [
-        67.934,
-        67.904,
-        67.907,
-        67.859,
-        67.876,
-        67.823,
-        67.846,
-        67.884,
-        67.881,
-        67.853,
-        67.838,
-        67.85,
-        67.791,
-        67.737
+        55.79,
+        55.79,
+        55.78,
+        55.78,
+        55.78,
+        55.78,
+        55.78,
+        55.78,
+        55.78,
+        55.78,
+        55.78,
+        55.77,
+        55.78,
+        55.79
       ],
-      "year_ago": 68.42,
-      "lat": 43.982375767,
-      "lng": -0.155560344,
+      "year_ago": 56.24,
+      "lat": 44.344690504,
+      "lng": -0.931494266,
       "color": "#ef4444"
     },
     {
       "nom": "Saint-Yaguen",
+      "libelle": "Landes De Siougos (Saint Yaguen-40)",
+      "masse_eau": "Calcaires du Paléocène majoritairement captif du Sud du Bass",
+      "profondeur": 1295.0,
       "dept": "40",
       "code_bss": "09511X0022/LS02",
       "current": 31.84,
       "history": [
-        31.86,
-        31.87,
         31.86,
         31.85,
         31.84,
@@ -67234,49 +67244,24 @@
         31.96,
         31.93,
         31.87,
+        31.84,
+        31.8,
         31.84
       ],
-      "year_ago": 31.63,
+      "year_ago": 31.58,
       "lat": 43.910092549,
       "lng": -0.715761027,
       "color": "#3b82f6"
     },
     {
-      "nom": "Ychoux",
-      "dept": "40",
-      "code_bss": "08746X0031/P22",
-      "current": 55.77,
-      "history": [
-        55.79,
-        55.79,
-        55.79,
-        55.79,
-        55.78,
-        55.78,
-        55.78,
-        55.78,
-        55.78,
-        55.78,
-        55.78,
-        55.78,
-        55.78,
-        55.77
-      ],
-      "year_ago": 56.24,
-      "lat": 44.344690504,
-      "lng": -0.931494266,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Saugnacq-et-Muret",
+      "libelle": "Millet (Saugnacq-Et-Muret-40)",
+      "masse_eau": "Sables et graviers plio-quaternaires de la Leyre, cours d'ea",
+      "profondeur": 11.0,
       "dept": "40",
       "code_bss": "08742X0058/P4",
-      "current": 46.174,
+      "current": 46.28,
       "history": [
-        46.186,
-        46.184,
-        46.184,
-        46.183,
         46.181,
         46.181,
         46.179,
@@ -67286,195 +67271,47 @@
         46.174,
         46.173,
         46.172,
-        46.174
+        46.174,
+        46.181,
+        46.194,
+        46.24,
+        46.28
       ],
       "year_ago": 46.83,
       "lat": 44.435996741,
       "lng": -0.945104876,
       "color": "#ef4444"
+    },
+    {
+      "nom": "Betbezer-d'Armagnac",
+      "libelle": "Betbezer (Betbezer-D'Armagnac - 40)",
+      "masse_eau": "Calcaires du sommet du Crétacé supérieur majoritairement cap",
+      "profondeur": 110.0,
+      "dept": "40",
+      "code_bss": "09267X0014/PIEZO1",
+      "current": 67.686,
+      "history": [
+        67.907,
+        67.859,
+        67.876,
+        67.823,
+        67.846,
+        67.884,
+        67.881,
+        67.853,
+        67.838,
+        67.85,
+        67.791,
+        67.737,
+        67.698,
+        67.686
+      ],
+      "year_ago": 68.39,
+      "lat": 43.982375767,
+      "lng": -0.155560344,
+      "color": "#ef4444"
     }
   ],
-  "air": [
-    {
-      "zone": "Aureilhan",
-      "dept": "40",
-      "date": "2026-11-21",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Nouvelle-Aquitaine",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Siest",
-      "dept": "40",
-      "date": "2026-11-21",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Nouvelle-Aquitaine",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Pomarez",
-      "dept": "40",
-      "date": "2026-11-21",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Nouvelle-Aquitaine",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Monget",
-      "dept": "40",
-      "date": "2026-11-21",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Nouvelle-Aquitaine",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Peyre",
-      "dept": "40",
-      "date": "2026-11-21",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Nouvelle-Aquitaine",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    }
-  ],
+  "air": [],
   "pollen": []
 }

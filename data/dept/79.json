@@ -3,7 +3,7 @@
   "nom": "Deux-Sèvres",
   "slug": "deux-sevres",
   "region": "Nouvelle-Aquitaine",
-  "updated": "20/11/2026 à 19:15",
+  "updated": "21/11/2026 à 18:04",
   "score_eau": 95,
   "nb_communes": 256,
   "potable": [
@@ -40753,11 +40753,6 @@
             "date": "2024-12-11",
             "valeur": 856.0,
             "color": "#ef4444"
-          },
-          {
-            "date": "2024-11-20",
-            "valeur": 818.0,
-            "color": "#ef4444"
           }
         ],
         "pH": [
@@ -40765,22 +40760,12 @@
             "date": "2024-12-11",
             "valeur": 8.0,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-11-20",
-            "valeur": 7.9,
-            "color": "#10b981"
           }
         ],
         "Temp. eau": [
           {
             "date": "2024-12-11",
             "valeur": 9.8,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-11-20",
-            "valeur": 10.5,
             "color": "#10b981"
           }
         ],
@@ -40803,11 +40788,6 @@
             "date": "2024-12-11",
             "valeur": 77.28,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-11-20",
-            "valeur": 78.6,
-            "color": "#10b981"
           }
         ],
         "Nitrates": [
@@ -40822,11 +40802,6 @@
             "date": "2024-12-11",
             "valeur": 8.8,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-11-20",
-            "valeur": 8.7,
-            "color": "#10b981"
           }
         ]
       },
@@ -40837,39 +40812,14 @@
   ],
   "nappes": [
     {
-      "nom": "François",
-      "dept": "79",
-      "code_bss": "06111X0046/C43",
-      "current": 37.92,
-      "history": [
-        36.61,
-        36.62,
-        36.62,
-        36.62,
-        36.69,
-        36.72,
-        36.84,
-        37.22,
-        37.71,
-        37.64,
-        37.65,
-        37.78,
-        37.9,
-        37.92
-      ],
-      "year_ago": 37.98,
-      "lat": 46.383996606,
-      "lng": -0.3310716,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Saint-Gelais",
+      "libelle": "Stgelais",
+      "masse_eau": "Calcaires du Dogger du bassin versant amont de la Sèvre-Nior",
+      "profondeur": 50.0,
       "dept": "79",
       "code_bss": "06104X0014/C32",
-      "current": 30.334,
+      "current": 30.646,
       "history": [
-        28.679,
-        28.671,
         28.67,
         28.667,
         28.708,
@@ -40881,21 +40831,53 @@
         29.808,
         29.996,
         30.139,
-        30.334
+        30.334,
+        30.503,
+        30.646
       ],
-      "year_ago": 31.46,
+      "year_ago": 31.45,
       "lat": 46.38259581,
       "lng": -0.389863401,
       "color": "#ef4444"
     },
     {
+      "nom": "François",
+      "libelle": "Breuil",
+      "masse_eau": "Calcaires du Dogger du bassin versant amont de la Sèvre-Nior",
+      "profondeur": 44.0,
+      "dept": "79",
+      "code_bss": "06111X0046/C43",
+      "current": 37.9,
+      "history": [
+        36.62,
+        36.62,
+        36.69,
+        36.72,
+        36.84,
+        37.22,
+        37.71,
+        37.64,
+        37.65,
+        37.78,
+        37.9,
+        37.92,
+        37.91,
+        37.9
+      ],
+      "year_ago": 37.98,
+      "lat": 46.383996606,
+      "lng": -0.3310716,
+      "color": "#ef4444"
+    },
+    {
       "nom": "Prahecq",
+      "libelle": "Prahecq3",
+      "masse_eau": "Calcaires du Dogger du bassin versant amont de la Sèvre-Nior",
+      "profondeur": 90.0,
       "dept": "79",
       "code_bss": "06115X0025/F4",
-      "current": 23.825,
+      "current": 23.875,
       "history": [
-        20.853,
-        20.846,
         20.862,
         20.862,
         20.864,
@@ -40907,47 +40889,82 @@
         23.206,
         23.436,
         23.701,
-        23.825
+        23.825,
+        23.833,
+        23.875
       ],
-      "year_ago": 25.24,
+      "year_ago": 25.16,
       "lat": 46.269703941,
       "lng": -0.356239434,
       "color": "#ef4444"
     },
     {
-      "nom": "Saint-Hilaire-la-Palud",
+      "nom": "Aiffres",
+      "libelle": "Aiffres2",
+      "masse_eau": "Calcaires du Dogger du bassin versant amont de la Sèvre-Nior",
+      "profondeur": 20.0,
       "dept": "79",
-      "code_bss": "06351X0002/F",
-      "current": 1.869,
+      "code_bss": "06108X0010/F",
+      "current": 18.273,
       "history": [
-        1.59,
-        1.585,
-        1.588,
-        1.584,
-        1.586,
-        1.608,
-        1.604,
-        1.642,
-        1.726,
-        1.754,
-        1.756,
-        1.798,
-        1.834,
-        1.869
+        13.334,
+        13.33,
+        13.445,
+        13.524,
+        13.669,
+        14.802,
+        16.672,
+        17.02,
+        17.28,
+        17.679,
+        17.951,
+        18.133,
+        18.229,
+        18.273
       ],
-      "year_ago": 4.49,
-      "lat": 46.245005539,
-      "lng": -0.692399938,
+      "year_ago": 18.28,
+      "lat": 46.286277214,
+      "lng": -0.417116042,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Plaine-d'Argenson",
+      "libelle": "Prisse",
+      "masse_eau": "Calcaires et marnes du Jurassique supérieur de l'Aunis libre",
+      "profondeur": 20.35,
+      "dept": "79",
+      "code_bss": "06357X0012/F",
+      "current": 31.421,
+      "history": [
+        30.511,
+        30.501,
+        30.51,
+        30.517,
+        30.509,
+        30.56,
+        30.682,
+        30.721,
+        30.783,
+        30.89,
+        31,
+        31.124,
+        31.268,
+        31.421
+      ],
+      "year_ago": 36.31,
+      "lat": 46.15171691,
+      "lng": -0.480471416,
       "color": "#ef4444"
     },
     {
       "nom": "Chef-Boutonne",
+      "libelle": "Outres1",
+      "masse_eau": "Calcaires du Jurassique moyen du bassin versant de la Bouton",
+      "profondeur": 18.5,
       "dept": "79",
       "code_bss": "06367X0172/F",
-      "current": 69.504,
+      "current": 69.623,
       "history": [
-        70.504,
-        69.058,
         70.517,
         69.059,
         70.535,
@@ -40959,47 +40976,24 @@
         70.801,
         69.394,
         70.893,
-        69.504
+        69.504,
+        71.001,
+        69.623
       ],
-      "year_ago": 72.88,
+      "year_ago": 72.85,
       "lat": 46.109610118,
       "lng": -0.069559864,
       "color": "#ef4444"
     },
     {
-      "nom": "Sainte-Soline",
-      "dept": "79",
-      "code_bss": "06371X0047/F",
-      "current": 112.258,
-      "history": [
-        112.277,
-        112.25,
-        112.287,
-        112.257,
-        112.305,
-        112.237,
-        112.282,
-        112.347,
-        112.36,
-        112.332,
-        112.334,
-        112.353,
-        112.308,
-        112.258
-      ],
-      "year_ago": 113.07,
-      "lat": 46.238520588,
-      "lng": 0.040446212,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Limalonges",
+      "libelle": "Limalon2",
+      "masse_eau": "Sables, grès, calcaires et dolomies de l'infra-Toarcien libr",
+      "profondeur": 129.0,
       "dept": "79",
       "code_bss": "06377X0059/F",
-      "current": 109.181,
+      "current": 109.164,
       "history": [
-        109.033,
-        109.021,
         109.062,
         109.048,
         109.096,
@@ -41011,21 +41005,53 @@
         109.196,
         109.227,
         109.206,
-        109.181
+        109.181,
+        109.158,
+        109.164
       ],
-      "year_ago": 111.89,
+      "year_ago": 111.88,
       "lat": 46.124321897,
       "lng": 0.204588373,
       "color": "#ef4444"
     },
     {
+      "nom": "Sainte-Soline",
+      "libelle": "Le Bois De L'Hâle",
+      "masse_eau": "Sables, grès, calcaires et dolomies de l'infra-Toarcien libr",
+      "profondeur": 265.0,
+      "dept": "79",
+      "code_bss": "06371X0047/F",
+      "current": 112.186,
+      "history": [
+        112.287,
+        112.257,
+        112.305,
+        112.237,
+        112.282,
+        112.347,
+        112.36,
+        112.332,
+        112.334,
+        112.353,
+        112.308,
+        112.258,
+        112.212,
+        112.186
+      ],
+      "year_ago": 113.02,
+      "lat": 46.238520588,
+      "lng": 0.040446212,
+      "color": "#ef4444"
+    },
+    {
       "nom": "Lorigné",
+      "libelle": "Lorigne2",
+      "masse_eau": "Sables, grès, calcaires et dolomies de l'infra-Toarcien libr",
+      "profondeur": 99.0,
       "dept": "79",
       "code_bss": "06375X0024/PIEZO",
-      "current": 121.657,
+      "current": 121.642,
       "history": [
-        121.651,
-        121.62,
         121.651,
         121.617,
         121.65,
@@ -41037,15 +41063,20 @@
         121.665,
         121.702,
         121.678,
-        121.657
+        121.657,
+        121.646,
+        121.642
       ],
-      "year_ago": 124.22,
+      "year_ago": 124.21,
       "lat": 46.103342088,
       "lng": 0.061136269,
       "color": "#ef4444"
     },
     {
       "nom": "Lezay",
+      "libelle": "Lezay",
+      "masse_eau": "Sables, grès, calcaires et dolomies de l'infra-Toarcien libr",
+      "profondeur": 285.0,
       "dept": "79",
       "code_bss": "06364X0034/PIEZO",
       "current": 106.247,
@@ -41065,19 +41096,20 @@
         106.274,
         106.247
       ],
-      "year_ago": 111.08,
+      "year_ago": 111.06,
       "lat": 46.258394122,
       "lng": -0.006587336,
       "color": "#ef4444"
     },
     {
       "nom": "Sauzé-Vaussais",
+      "libelle": "Sauze",
+      "masse_eau": "Calcaires du Jurassique moyen en rive droite de la Charente ",
+      "profondeur": 23.2,
       "dept": "79",
       "code_bss": "06376X0020/P",
-      "current": 117.203,
+      "current": 117.032,
       "history": [
-        112.42,
-        112.44,
         112.448,
         112.45,
         112.605,
@@ -41089,21 +41121,24 @@
         117.181,
         117.324,
         117.341,
-        117.203
+        117.203,
+        117.124,
+        117.032
       ],
-      "year_ago": 118.47,
+      "year_ago": 118.41,
       "lat": 46.135031673,
       "lng": 0.138790956,
       "color": "#ef4444"
     },
     {
       "nom": "Limalonges",
+      "libelle": "Limalong",
+      "masse_eau": "Calcaires du Jurassique moyen en rive droite de la Charente ",
+      "profondeur": 36.1,
       "dept": "79",
       "code_bss": "06377X0030/P",
-      "current": 107.989,
+      "current": 108.038,
       "history": [
-        107.664,
-        107.669,
         107.674,
         107.677,
         107.688,
@@ -41115,47 +41150,53 @@
         107.889,
         107.926,
         107.958,
-        107.989
+        107.989,
+        108.015,
+        108.038
       ],
-      "year_ago": 110.41,
+      "year_ago": 110.42,
       "lat": 46.131282597,
       "lng": 0.19667888,
       "color": "#ef4444"
     },
     {
       "nom": "Plaine-et-Vallées",
+      "libelle": "Oiron",
+      "masse_eau": "Calcaires à silex et marnes captifs du Dogger sud bassin par",
+      "profondeur": 21.8,
       "dept": "79",
       "code_bss": "05394X0012/P",
-      "current": 59.323,
+      "current": 59.354,
       "history": [
-        59.34,
-        59.338,
-        59.335,
-        59.334,
-        59.33,
-        59.322,
-        59.316,
-        59.308,
         59.306,
         59.302,
         59.31,
         59.313,
         59.308,
-        59.323
+        59.323,
+        59.345,
+        59.355,
+        59.358,
+        59.384,
+        59.406,
+        59.391,
+        59.374,
+        59.354
       ],
-      "year_ago": 60.56,
+      "year_ago": 60.54,
       "lat": 46.945027603,
       "lng": -0.073291306,
       "color": "#ef4444"
     },
     {
       "nom": "Lorigné",
+      "libelle": "Lorigne1",
+      "masse_eau": "Calcaires du Jurassique moyen en rive droite de la Charente ",
+      "profondeur": 11.52,
       "dept": "79",
       "code_bss": "06375X0003/P",
-      "current": 127.902,
+      "current": 128.232,
       "history": [
-        127.94,
-        127.81,
         128.168,
         127.98,
         127.967,
@@ -41167,73 +41208,24 @@
         128.341,
         127.935,
         128.37,
-        127.902
+        127.902,
+        127.925,
+        128.232
       ],
-      "year_ago": 129.54,
+      "year_ago": 129.55,
       "lat": 46.109884759,
       "lng": 0.060928451,
       "color": "#ef4444"
     },
     {
-      "nom": "Paizay-le-Chapt",
-      "dept": "79",
-      "code_bss": "06603X0093/P",
-      "current": 86.137,
-      "history": [
-        84.609,
-        84.618,
-        84.625,
-        84.631,
-        84.643,
-        84.661,
-        84.681,
-        84.747,
-        84.988,
-        85.199,
-        85.454,
-        85.698,
-        85.934,
-        86.137
-      ],
-      "year_ago": 87.16,
-      "lat": 46.07929584,
-      "lng": -0.177147488,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Coulon",
-      "dept": "79",
-      "code_bss": "06106X0015/P",
-      "current": 5.601,
-      "history": [
-        5.414,
-        5.414,
-        5.415,
-        5.415,
-        5.418,
-        5.42,
-        5.423,
-        5.436,
-        5.464,
-        5.487,
-        5.512,
-        5.538,
-        5.565,
-        5.601
-      ],
-      "year_ago": 6.9,
-      "lat": 46.341960555,
-      "lng": -0.547909885,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Ensigné",
+      "libelle": "Ensigne",
+      "masse_eau": "Calcaires du Jurassique supérieur du bassin versant de la Bo",
+      "profondeur": 13.9,
       "dept": "79",
       "code_bss": "06366X0006/P",
-      "current": 73.204,
+      "current": 73.856,
       "history": [
-        68.456,
-        68.475,
         68.479,
         68.479,
         68.515,
@@ -41245,47 +41237,82 @@
         71.727,
         72.219,
         72.762,
-        73.204
+        73.204,
+        73.476,
+        73.856
       ],
-      "year_ago": 75.38,
+      "year_ago": 75.36,
       "lat": 46.088860527,
       "lng": -0.236064146,
       "color": "#ef4444"
     },
     {
-      "nom": "Val-du-Mignon",
+      "nom": "Coulon",
+      "libelle": "Coulon",
+      "masse_eau": "Calcaires et marnes du Lias et Dogger du Sud-Vendée libres",
+      "profondeur": 20.8,
       "dept": "79",
-      "code_bss": "06356X0007/P",
-      "current": 23.739,
+      "code_bss": "06106X0015/P",
+      "current": 5.682,
       "history": [
-        23.52,
-        23.519,
-        23.518,
-        23.518,
-        23.532,
-        23.536,
-        23.542,
-        23.611,
-        23.667,
-        23.672,
-        23.679,
-        23.71,
-        23.733,
-        23.739
+        5.415,
+        5.415,
+        5.418,
+        5.42,
+        5.423,
+        5.436,
+        5.464,
+        5.487,
+        5.512,
+        5.538,
+        5.565,
+        5.601,
+        5.643,
+        5.682
       ],
-      "year_ago": 24.01,
-      "lat": 46.168620439,
-      "lng": -0.573734887,
+      "year_ago": 6.98,
+      "lat": 46.341960555,
+      "lng": -0.547909885,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Paizay-le-Chapt",
+      "libelle": "Paizay",
+      "masse_eau": "Calcaires du Jurassique supérieur du bassin versant de la Bo",
+      "profondeur": 2.5,
+      "dept": "79",
+      "code_bss": "06603X0093/P",
+      "current": 86.444,
+      "history": [
+        84.625,
+        84.631,
+        84.643,
+        84.661,
+        84.681,
+        84.747,
+        84.988,
+        85.199,
+        85.454,
+        85.698,
+        85.934,
+        86.137,
+        86.286,
+        86.444
+      ],
+      "year_ago": 87.17,
+      "lat": 46.07929584,
+      "lng": -0.177147488,
       "color": "#ef4444"
     },
     {
       "nom": "Assais-les-Jumeaux",
+      "libelle": "Assais",
+      "masse_eau": "Calcaires et marnes du Dogger du bassin versant du Thouet li",
+      "profondeur": 29.5,
       "dept": "79",
       "code_bss": "05654X0017/P",
-      "current": 114.245,
+      "current": 114.208,
       "history": [
-        114.307,
-        114.288,
         114.275,
         114.265,
         114.262,
@@ -41297,21 +41324,53 @@
         114.264,
         114.271,
         114.26,
-        114.245
+        114.245,
+        114.228,
+        114.208
       ],
-      "year_ago": 116.39,
+      "year_ago": 116.36,
       "lat": 46.777400112,
       "lng": -0.083492839,
       "color": "#ef4444"
     },
     {
+      "nom": "Val-du-Mignon",
+      "libelle": "Usseau",
+      "masse_eau": "Calcaires et marnes du Jurassique supérieur de l'Aunis libre",
+      "profondeur": 5.54,
+      "dept": "79",
+      "code_bss": "06356X0007/P",
+      "current": 23.779,
+      "history": [
+        23.518,
+        23.518,
+        23.532,
+        23.536,
+        23.542,
+        23.611,
+        23.667,
+        23.672,
+        23.679,
+        23.71,
+        23.733,
+        23.739,
+        23.75,
+        23.779
+      ],
+      "year_ago": 24.0,
+      "lat": 46.168620439,
+      "lng": -0.573734887,
+      "color": "#ef4444"
+    },
+    {
       "nom": "Thénezay",
+      "libelle": "Lamoinie",
+      "masse_eau": "Calcaires et marnes du Dogger du bassin versant du Thouet li",
+      "profondeur": 27.1,
       "dept": "79",
       "code_bss": "05654X0018/P",
-      "current": 109.784,
+      "current": 109.799,
       "history": [
-        109.659,
-        109.652,
         109.648,
         109.639,
         109.638,
@@ -41323,177 +41382,24 @@
         109.717,
         109.741,
         109.763,
-        109.784
+        109.784,
+        109.798,
+        109.799
       ],
-      "year_ago": 111.41,
+      "year_ago": 111.39,
       "lat": 46.729266054,
       "lng": -0.026620717,
       "color": "#ef4444"
     },
     {
-      "nom": "Pamproux",
-      "dept": "79",
-      "code_bss": "06114X0004/R",
-      "current": 87.476,
-      "history": [
-        86.982,
-        86.981,
-        86.981,
-        86.985,
-        86.986,
-        87.038,
-        87.023,
-        87.09,
-        87.417,
-        87.472,
-        87.368,
-        87.354,
-        87.445,
-        87.476
-      ],
-      "year_ago": 87.19,
-      "lat": 46.395887598,
-      "lng": -0.055431525,
-      "color": "#3b82f6"
-    },
-    {
-      "nom": "Le Bourdet",
-      "dept": "79",
-      "code_bss": "06352X0032/S",
-      "current": 12.2,
-      "history": [
-        11.986,
-        11.988,
-        11.992,
-        11.996,
-        12.002,
-        12.002,
-        12.009,
-        12.048,
-        12.1,
-        12.092,
-        12.099,
-        12.157,
-        12.183,
-        12.2
-      ],
-      "year_ago": 12.96,
-      "lat": 46.242060647,
-      "lng": -0.62333209,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Salles",
-      "dept": "79",
-      "code_bss": "06114X0037/S",
-      "current": 94.624,
-      "history": [
-        94.464,
-        94.462,
-        94.503,
-        94.502,
-        94.555,
-        94.507,
-        94.559,
-        94.635,
-        94.655,
-        94.636,
-        94.649,
-        94.674,
-        94.654,
-        94.624
-      ],
-      "year_ago": 95.58,
-      "lat": 46.385209516,
-      "lng": -0.088404757,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Chef-Boutonne",
-      "dept": "79",
-      "code_bss": "06367X0138/S",
-      "current": 71.627,
-      "history": [
-        71.526,
-        71.514,
-        71.551,
-        71.535,
-        71.581,
-        71.526,
-        71.578,
-        71.645,
-        71.661,
-        71.643,
-        71.659,
-        71.682,
-        71.654,
-        71.627
-      ],
-      "year_ago": 73.28,
-      "lat": 46.105638649,
-      "lng": -0.114172833,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Saint-Coutant",
-      "dept": "79",
-      "code_bss": "06371X0004/PUITS",
-      "current": 129.08,
-      "history": [
-        128.513,
-        128.513,
-        128.513,
-        128.516,
-        128.526,
-        128.555,
-        128.558,
-        128.634,
-        128.812,
-        128.797,
-        128.761,
-        128.823,
-        128.923,
-        129.08
-      ],
-      "year_ago": 129.25,
-      "lat": 46.225686502,
-      "lng": 0.005712099,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Aiffres",
-      "dept": "79",
-      "code_bss": "06108X0010/F",
-      "current": 18.133,
-      "history": [
-        13.34,
-        13.339,
-        13.334,
-        13.33,
-        13.445,
-        13.524,
-        13.669,
-        14.802,
-        16.672,
-        17.02,
-        17.28,
-        17.679,
-        17.951,
-        18.133
-      ],
-      "year_ago": 18.41,
-      "lat": 46.286277214,
-      "lng": -0.417116042,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Aiffres",
+      "libelle": "Aiffres1",
+      "masse_eau": "Calcaires du Dogger du bassin versant amont de la Sèvre-Nior",
+      "profondeur": 100.0,
       "dept": "79",
       "code_bss": "06108X0011/F",
-      "current": 16.723,
+      "current": 17.056,
       "history": [
-        13.188,
-        13.196,
         13.219,
         13.209,
         13.243,
@@ -41505,47 +41411,169 @@
         15.782,
         16.154,
         16.463,
-        16.723
+        16.723,
+        16.915,
+        17.056
       ],
-      "year_ago": 17.42,
+      "year_ago": 17.36,
       "lat": 46.286277214,
       "lng": -0.417116042,
       "color": "#ef4444"
     },
     {
-      "nom": "Plaine-d'Argenson",
+      "nom": "Saint-Hilaire-la-Palud",
+      "libelle": "Hilaire",
+      "masse_eau": "Calcaires et marnes du Jurassique supérieur de l'Aunis libre",
+      "profondeur": 11.0,
       "dept": "79",
-      "code_bss": "06357X0012/F",
-      "current": 31.124,
+      "code_bss": "06351X0002/F",
+      "current": 1.931,
       "history": [
-        30.528,
-        30.519,
-        30.511,
-        30.501,
-        30.51,
-        30.517,
-        30.509,
-        30.56,
-        30.682,
-        30.721,
-        30.783,
-        30.89,
-        31,
-        31.124
+        1.588,
+        1.584,
+        1.586,
+        1.608,
+        1.604,
+        1.642,
+        1.726,
+        1.754,
+        1.756,
+        1.798,
+        1.834,
+        1.869,
+        1.909,
+        1.931
       ],
-      "year_ago": 36.36,
-      "lat": 46.15171691,
-      "lng": -0.480471416,
+      "year_ago": 4.48,
+      "lat": 46.245005539,
+      "lng": -0.692399938,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Le Bourdet",
+      "libelle": "Bourdet",
+      "masse_eau": "Calcaires et marnes du Jurassique supérieur de l'Aunis libre",
+      "profondeur": 15.0,
+      "dept": "79",
+      "code_bss": "06352X0032/S",
+      "current": 12.22,
+      "history": [
+        11.992,
+        11.996,
+        12.002,
+        12.002,
+        12.009,
+        12.048,
+        12.1,
+        12.092,
+        12.099,
+        12.157,
+        12.183,
+        12.2,
+        12.205,
+        12.22
+      ],
+      "year_ago": 12.95,
+      "lat": 46.242060647,
+      "lng": -0.62333209,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Chef-Boutonne",
+      "libelle": "Outres2",
+      "masse_eau": "Sables, grès, calcaires et dolomies de l'infra-Toarcien libr",
+      "profondeur": 159.0,
+      "dept": "79",
+      "code_bss": "06367X0138/S",
+      "current": 71.6,
+      "history": [
+        71.551,
+        71.535,
+        71.581,
+        71.526,
+        71.578,
+        71.645,
+        71.661,
+        71.643,
+        71.659,
+        71.682,
+        71.654,
+        71.627,
+        71.601,
+        71.6
+      ],
+      "year_ago": 73.24,
+      "lat": 46.105638649,
+      "lng": -0.114172833,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Pamproux",
+      "libelle": "Pamproux1",
+      "masse_eau": "Calcaires du Dogger du bassin versant amont de la Sèvre-Nior",
+      "profondeur": 8.85,
+      "dept": "79",
+      "code_bss": "06114X0004/R",
+      "current": 87.316,
+      "history": [
+        86.981,
+        86.985,
+        86.986,
+        87.038,
+        87.023,
+        87.09,
+        87.417,
+        87.472,
+        87.368,
+        87.354,
+        87.445,
+        87.476,
+        87.386,
+        87.316
+      ],
+      "year_ago": 87.18,
+      "lat": 46.395887598,
+      "lng": -0.055431525,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Salles",
+      "libelle": "Fontgriv",
+      "masse_eau": "Calcaires et marnes de l'Infra-Toarcien au nord du seuil du ",
+      "profondeur": 74.0,
+      "dept": "79",
+      "code_bss": "06114X0037/S",
+      "current": 94.588,
+      "history": [
+        94.503,
+        94.502,
+        94.555,
+        94.507,
+        94.559,
+        94.635,
+        94.655,
+        94.636,
+        94.649,
+        94.674,
+        94.654,
+        94.624,
+        94.594,
+        94.588
+      ],
+      "year_ago": 95.55,
+      "lat": 46.385209516,
+      "lng": -0.088404757,
       "color": "#ef4444"
     },
     {
       "nom": "Niort",
+      "libelle": "Niort",
+      "masse_eau": "Calcaires du Dogger du bassin versant amont de la Sèvre-Nior",
+      "profondeur": 19.45,
       "dept": "79",
       "code_bss": "06108X0022/S",
-      "current": 19.26,
+      "current": 19.425,
       "history": [
-        18.056,
-        18.053,
         18.057,
         18.053,
         18.06,
@@ -41557,195 +41585,45 @@
         18.885,
         18.99,
         19.126,
-        19.26
+        19.26,
+        19.35,
+        19.425
       ],
-      "year_ago": 21.0,
+      "year_ago": 20.97,
       "lat": 46.325375099,
       "lng": -0.410972369,
       "color": "#ef4444"
+    },
+    {
+      "nom": "Saint-Coutant",
+      "libelle": "Stcoutan",
+      "masse_eau": "Calcaires du Dogger du bassin versant amont de la Sèvre-Nior",
+      "profondeur": 5.7,
+      "dept": "79",
+      "code_bss": "06371X0004/PUITS",
+      "current": 129.019,
+      "history": [
+        128.513,
+        128.516,
+        128.526,
+        128.555,
+        128.558,
+        128.634,
+        128.812,
+        128.797,
+        128.761,
+        128.823,
+        128.923,
+        129.08,
+        129.053,
+        129.019
+      ],
+      "year_ago": 129.23,
+      "lat": 46.225686502,
+      "lng": 0.005712099,
+      "color": "#ef4444"
     }
   ],
-  "air": [
-    {
-      "zone": "Mairé-Levescault",
-      "dept": "79",
-      "date": "2026-11-21",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Nouvelle-Aquitaine",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Martin-de-Saint-Maixent",
-      "dept": "79",
-      "date": "2026-11-21",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Nouvelle-Aquitaine",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Sainte-Eanne",
-      "dept": "79",
-      "date": "2026-11-21",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Nouvelle-Aquitaine",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Brieuil-sur-Chizé",
-      "dept": "79",
-      "date": "2026-11-21",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Nouvelle-Aquitaine",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Chizé",
-      "dept": "79",
-      "date": "2026-11-21",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Nouvelle-Aquitaine",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    }
-  ],
+  "air": [],
   "pollen": []
 }

@@ -3,7 +3,7 @@
   "nom": "Alpes-Maritimes",
   "slug": "alpes-maritimes",
   "region": "Provence-Alpes-Côte d'Azur",
-  "updated": "20/11/2026 à 19:15",
+  "updated": "21/11/2026 à 18:04",
   "score_eau": 99,
   "nb_communes": 164,
   "potable": [
@@ -16924,27 +16924,6 @@
           "color": "#10b981",
           "date": "2025-07-10",
           "realtime": false
-        },
-        "O2 saturation": {
-          "valeur": 105.0,
-          "unite": "%",
-          "color": "#10b981",
-          "date": "2024-11-20",
-          "realtime": false
-        },
-        "Conductivité": {
-          "valeur": 9.5,
-          "unite": "µS/cm",
-          "color": "#10b981",
-          "date": "2024-11-20",
-          "realtime": false
-        },
-        "MES": {
-          "valeur": 379.0,
-          "unite": "mg/L",
-          "color": "#ef4444",
-          "date": "2024-11-20",
-          "realtime": false
         }
       },
       "historique": {
@@ -16961,11 +16940,6 @@
           },
           {
             "date": "2025-03-26",
-            "valeur": 0.023,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-11-20",
             "valeur": 0.023,
             "color": "#10b981"
           }
@@ -16990,11 +16964,6 @@
             "date": "2024-11-25",
             "valeur": 0.73,
             "color": "#f59e0b"
-          },
-          {
-            "date": "2024-11-20",
-            "valeur": 0.83,
-            "color": "#f59e0b"
           }
         ],
         "Nitrates": [
@@ -17012,36 +16981,10 @@
             "date": "2025-03-26",
             "valeur": 0.97,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-11-20",
-            "valeur": 1.4,
-            "color": "#10b981"
-          }
-        ],
-        "O2 saturation": [
-          {
-            "date": "2024-11-20",
-            "valeur": 105.0,
-            "color": "#10b981"
-          }
-        ],
-        "Conductivité": [
-          {
-            "date": "2024-11-20",
-            "valeur": 9.5,
-            "color": "#10b981"
-          }
-        ],
-        "MES": [
-          {
-            "date": "2024-11-20",
-            "valeur": 379.0,
-            "color": "#ef4444"
           }
         ]
       },
-      "score": 83,
+      "score": 100,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -19863,12 +19806,13 @@
   "nappes": [
     {
       "nom": "Gilette",
+      "libelle": "Gilette - Le Devens (P2)",
+      "masse_eau": "Alluvions de la basse vallée du Var",
+      "profondeur": 29.3,
       "dept": "06",
       "code_bss": "09724X0023/P2",
-      "current": 100.75,
+      "current": 100.878,
       "history": [
-        98.457,
-        98.828,
         99.117,
         99.383,
         99.61,
@@ -19880,21 +19824,24 @@
         100.437,
         100.56,
         100.692,
-        100.75
+        100.75,
+        100.8,
+        100.878
       ],
-      "year_ago": 101.12,
+      "year_ago": 101.24,
       "lat": 43.831616009,
       "lng": 7.188887934,
       "color": "#ef4444"
     },
     {
       "nom": "Nice",
+      "libelle": "Nice - Stade Des Arboras (P4B)",
+      "masse_eau": "Alluvions de la basse vallée du Var",
+      "profondeur": 15.0,
       "dept": "06",
       "code_bss": "09994X0521/P4B",
       "current": 12.22,
       "history": [
-        11.96,
-        12.03,
         12.06,
         12.08,
         12.1,
@@ -19906,21 +19853,24 @@
         12.14,
         12.16,
         12.18,
+        12.22,
+        12.23,
         12.22
       ],
-      "year_ago": 12.01,
+      "year_ago": 12.0,
       "lat": 43.691448072,
       "lng": 7.193977883,
       "color": "#3b82f6"
     },
     {
       "nom": "Villeneuve-Loubet",
+      "libelle": "Villeneuve-Loubet - Pied De Digue",
+      "masse_eau": "Calcaires jurassiques de la région de Villeneuve-Loubet",
+      "profondeur": 323.0,
       "dept": "06",
       "code_bss": "09998X0199/PZ_PID",
       "current": 18.77,
       "history": [
-        18.94,
-        18.89,
         18.89,
         18.87,
         18.87,
@@ -19932,21 +19882,24 @@
         18.84,
         18.88,
         18.8,
+        18.77,
+        18.78,
         18.77
       ],
-      "year_ago": 19.15,
+      "year_ago": 19.14,
       "lat": 43.640614714,
       "lng": 7.125900921,
       "color": "#ef4444"
     },
     {
       "nom": "Pégomas",
+      "libelle": "Pégomas - Le Boutéou (F6)",
+      "masse_eau": "Alluvions des basses vallées littorales des Alpes-Maritimes ",
+      "profondeur": 18.5,
       "dept": "06",
       "code_bss": "09995X0028/F",
-      "current": 9.593,
+      "current": 9.869,
       "history": [
-        10.598,
-        10.361,
         10.317,
         10.079,
         10.01,
@@ -19958,21 +19911,24 @@
         9.75,
         9.637,
         9.633,
-        9.593
+        9.593,
+        9.605,
+        9.869
       ],
-      "year_ago": 9.66,
+      "year_ago": 9.51,
       "lat": 43.587762053,
       "lng": 6.926141257,
-      "color": "#ef4444"
+      "color": "#3b82f6"
     },
     {
       "nom": "Gilette",
+      "libelle": "Gilette_Pz4",
+      "masse_eau": "Alluvions de la basse vallée du Var",
+      "profondeur": 36.5,
       "dept": "06",
       "code_bss": "BSS004FHCY/X",
-      "current": 100.9,
+      "current": 101.02,
       "history": [
-        98.48,
-        98.88,
         99.19,
         99.46,
         99.7,
@@ -19984,195 +19940,16 @@
         100.55,
         100.68,
         100.82,
-        100.9
+        100.9,
+        100.96,
+        101.02
       ],
-      "year_ago": 101.24,
+      "year_ago": 101.37,
       "lat": 43.831748442,
       "lng": 7.188607593,
       "color": "#ef4444"
     }
   ],
-  "air": [
-    {
-      "zone": "Montrottier",
-      "dept": "06",
-      "date": "2026-11-22",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Beauzire",
-      "dept": "06",
-      "date": "2026-11-22",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Myon",
-      "dept": "06",
-      "date": "2026-11-22",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Orcival",
-      "dept": "06",
-      "date": "2026-11-22",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Montromant",
-      "dept": "06",
-      "date": "2026-11-22",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    }
-  ],
+  "air": [],
   "pollen": []
 }

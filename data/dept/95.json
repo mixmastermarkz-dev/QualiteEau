@@ -3,7 +3,7 @@
   "nom": "Val-d'Oise",
   "slug": "val-d-oise",
   "region": "Île-de-France",
-  "updated": "20/11/2026 à 19:15",
+  "updated": "21/11/2026 à 18:04",
   "score_eau": 93,
   "nb_communes": 191,
   "potable": [
@@ -15975,12 +15975,13 @@
   "nappes": [
     {
       "nom": "Villeron",
+      "libelle": "Piézomètre Du Lieu-Dit La Sucrerie (Villeron -95)",
+      "masse_eau": "Éocène du Valois",
+      "profondeur": 85.25,
       "dept": "95",
       "code_bss": "01541X0038/F1",
-      "current": 82.79,
+      "current": 82.702,
       "history": [
-        82.758,
-        82.771,
         82.838,
         82.865,
         82.905,
@@ -15992,21 +15993,24 @@
         82.845,
         82.903,
         82.844,
-        82.79
+        82.79,
+        82.765,
+        82.702
       ],
-      "year_ago": 83.97,
+      "year_ago": 83.91,
       "lat": 49.063723078,
       "lng": 2.52480359,
       "color": "#ef4444"
     },
     {
       "nom": "Buhy",
+      "libelle": "Puits Du Hameau De Buchet (Buhy - 95)",
+      "masse_eau": "Éocène et Craie du Vexin français",
+      "profondeur": 24.0,
       "dept": "95",
       "code_bss": "01258X0020/S1",
-      "current": 47.218,
+      "current": 47.261,
       "history": [
-        46.676,
-        46.703,
         46.745,
         46.791,
         46.848,
@@ -16018,99 +16022,24 @@
         47.099,
         47.157,
         47.189,
-        47.218
+        47.218,
+        47.238,
+        47.261
       ],
-      "year_ago": 47.96,
+      "year_ago": 47.97,
       "lat": 49.197517023,
       "lng": 1.711584185,
       "color": "#ef4444"
     },
     {
-      "nom": "Chars",
-      "dept": "95",
-      "code_bss": "01266X1013/S1",
-      "current": 85.752,
-      "history": [
-        85.752,
-        85.748,
-        85.747,
-        85.75,
-        85.751,
-        85.751,
-        85.753,
-        85.759,
-        85.762,
-        85.765,
-        85.756,
-        85.756,
-        85.751,
-        85.752
-      ],
-      "year_ago": 85.79,
-      "lat": 49.145694966,
-      "lng": 1.90127567,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "L'Isle-Adam",
-      "dept": "95",
-      "code_bss": "01531X0047/F",
-      "current": 45.356,
-      "history": [
-        45.251,
-        45.24,
-        45.279,
-        45.287,
-        45.342,
-        45.299,
-        45.307,
-        45.395,
-        45.401,
-        45.39,
-        45.372,
-        45.401,
-        45.379,
-        45.356
-      ],
-      "year_ago": 46.22,
-      "lat": 49.105984547,
-      "lng": 2.209806341,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Puiseux-en-France",
-      "dept": "95",
-      "code_bss": "01534X0049/F",
-      "current": 82.084,
-      "history": [
-        81.983,
-        81.959,
-        82.007,
-        82.046,
-        82.099,
-        82.08,
-        82.057,
-        82.176,
-        82.195,
-        82.184,
-        82.149,
-        82.201,
-        82.153,
-        82.084
-      ],
-      "year_ago": 82.86,
-      "lat": 49.06908557,
-      "lng": 2.488423943,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Théméricourt",
+      "libelle": "Piézomètre De La Place Roland Vasseur (Théméricourt - 95)",
+      "masse_eau": "Éocène et Craie du Vexin français",
+      "profondeur": 30.0,
       "dept": "95",
       "code_bss": "01522X0069/PZ2008",
-      "current": 64.183,
+      "current": 64.254,
       "history": [
-        63.811,
-        63.824,
         63.841,
         63.857,
         63.873,
@@ -16122,195 +16051,103 @@
         64.069,
         64.105,
         64.141,
-        64.183
+        64.183,
+        64.214,
+        64.254
       ],
       "year_ago": 67.82,
       "lat": 49.083846437,
       "lng": 1.897575713,
       "color": "#ef4444"
+    },
+    {
+      "nom": "Puiseux-en-France",
+      "libelle": "Piézomètre De Puiseux-En-France (Puiseux-En-France - 95)",
+      "masse_eau": "Éocène du Valois",
+      "profondeur": 104.0,
+      "dept": "95",
+      "code_bss": "01534X0049/F",
+      "current": 81.936,
+      "history": [
+        82.007,
+        82.046,
+        82.099,
+        82.08,
+        82.057,
+        82.176,
+        82.195,
+        82.184,
+        82.149,
+        82.201,
+        82.153,
+        82.084,
+        82.042,
+        81.936
+      ],
+      "year_ago": 82.79,
+      "lat": 49.06908557,
+      "lng": 2.488423943,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Chars",
+      "libelle": "Piézomètre Du Hameau De Bercagny (Chars -95)",
+      "masse_eau": "Éocène et Craie du Vexin français",
+      "profondeur": 25.5,
+      "dept": "95",
+      "code_bss": "01266X1013/S1",
+      "current": 85.744,
+      "history": [
+        85.747,
+        85.75,
+        85.751,
+        85.751,
+        85.753,
+        85.759,
+        85.762,
+        85.765,
+        85.756,
+        85.756,
+        85.751,
+        85.752,
+        85.748,
+        85.744
+      ],
+      "year_ago": 85.79,
+      "lat": 49.145694966,
+      "lng": 1.90127567,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "L'Isle-Adam",
+      "libelle": "Piézomètre De L'Isle-Adam (Isle-Adam - 95)",
+      "masse_eau": "Albien-Néocomien captif",
+      "profondeur": 630.0,
+      "dept": "95",
+      "code_bss": "01531X0047/F",
+      "current": 45.269,
+      "history": [
+        45.279,
+        45.287,
+        45.342,
+        45.299,
+        45.307,
+        45.395,
+        45.401,
+        45.39,
+        45.372,
+        45.401,
+        45.379,
+        45.356,
+        45.313,
+        45.269
+      ],
+      "year_ago": 46.2,
+      "lat": 49.105984547,
+      "lng": 2.209806341,
+      "color": "#ef4444"
     }
   ],
-  "air": [
-    {
-      "zone": "Domont",
-      "dept": "95",
-      "date": "2026-11-21",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Airparif",
-      "polluants": {
-        "NO₂": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Vauréal",
-      "dept": "95",
-      "date": "2026-11-21",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Airparif",
-      "polluants": {
-        "NO₂": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Santeuil",
-      "dept": "95",
-      "date": "2026-11-21",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Airparif",
-      "polluants": {
-        "NO₂": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Presles",
-      "dept": "95",
-      "date": "2026-11-21",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Airparif",
-      "polluants": {
-        "NO₂": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Moussy",
-      "dept": "95",
-      "date": "2026-11-21",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Airparif",
-      "polluants": {
-        "NO₂": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    }
-  ],
+  "air": [],
   "pollen": []
 }

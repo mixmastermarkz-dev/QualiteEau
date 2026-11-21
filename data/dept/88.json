@@ -3,7 +3,7 @@
   "nom": "Vosges",
   "slug": "vosges",
   "region": "Grand Est",
-  "updated": "20/11/2026 à 19:15",
+  "updated": "21/11/2026 à 18:04",
   "score_eau": 98,
   "nb_communes": 537,
   "potable": [
@@ -24746,12 +24746,6 @@
           "unite": "µg/L",
           "color": "#10b981",
           "date": "2022-09-09"
-        },
-        "Conductivité": {
-          "valeur": 7.5,
-          "unite": "mg/L",
-          "color": "#10b981",
-          "date": "2022-09-09"
         }
       },
       "score": 100,
@@ -31433,12 +31427,13 @@
   "nappes": [
     {
       "nom": "Fréville",
+      "libelle": "Calcaires Du Dogger À Freville",
+      "masse_eau": "Calcaires du Dogger versant Meuse sud",
+      "profondeur": 135.0,
       "dept": "88",
       "code_bss": "03027X0007/F1",
-      "current": 283.35,
+      "current": 284.226,
       "history": [
-        279.882,
-        279.87,
         279.888,
         279.899,
         279.921,
@@ -31450,21 +31445,24 @@
         283.203,
         283.199,
         283.204,
-        283.35
+        283.35,
+        283.991,
+        284.226
       ],
-      "year_ago": 282.13,
+      "year_ago": 281.76,
       "lat": 48.315977961,
       "lng": 5.630829393,
       "color": "#3b82f6"
     },
     {
       "nom": "They-sous-Montfort",
+      "libelle": "Grès Vosgiens Indifférencié À They-Sous-Montfort (88)",
+      "masse_eau": "Grès du Trias inférieur au nord de la faille de Vittel",
+      "profondeur": 320.0,
       "dept": "88",
       "code_bss": "03383X0147/F1",
-      "current": 257.191,
+      "current": 257.112,
       "history": [
-        257.122,
-        257.077,
         257.118,
         257.115,
         257.155,
@@ -31476,73 +31474,24 @@
         257.235,
         257.246,
         257.235,
-        257.191
+        257.191,
+        257.173,
+        257.112
       ],
-      "year_ago": 257.46,
+      "year_ago": 257.42,
       "lat": 48.225093869,
       "lng": 5.97540693,
       "color": "#ef4444"
     },
     {
-      "nom": "Celles-sur-Plaine",
-      "dept": "88",
-      "code_bss": "02706X0074/S77-20",
-      "current": 310.037,
-      "history": [
-        310.057,
-        310.059,
-        310.065,
-        310.061,
-        310.065,
-        310.048,
-        310.054,
-        310.07,
-        310.049,
-        310.044,
-        310.048,
-        310.063,
-        310.044,
-        310.037
-      ],
-      "year_ago": 310.18,
-      "lat": 48.439546314,
-      "lng": 6.93027724,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Plombières-les-Bains",
-      "dept": "88",
-      "code_bss": "03754X0015/F2",
-      "current": 535.996,
-      "history": [
-        535.219,
-        535.199,
-        535.241,
-        535.23,
-        535.267,
-        535.247,
-        535.279,
-        535.351,
-        535.568,
-        535.693,
-        535.75,
-        535.787,
-        535.873,
-        535.996
-      ],
-      "year_ago": 537.37,
-      "lat": 47.988110371,
-      "lng": 6.446683945,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Xonrupt-Longemer",
+      "libelle": "Fluvioglaciaire Sur Socle À Xonrupt",
+      "masse_eau": "Socle du massif vosgien",
+      "profondeur": 18.75,
       "dept": "88",
       "code_bss": "03415X0037/P2",
-      "current": 727.721,
+      "current": 728.25,
       "history": [
-        726.051,
-        726.112,
         726.167,
         726.217,
         726.261,
@@ -31554,21 +31503,24 @@
         727.056,
         727.306,
         727.505,
-        727.721
+        727.721,
+        727.981,
+        728.25
       ],
-      "year_ago": 729.82,
+      "year_ago": 729.77,
       "lat": 48.079799471,
       "lng": 6.917556236,
       "color": "#ef4444"
     },
     {
       "nom": "Châtel-sur-Moselle",
+      "libelle": "Alluvions De La Moselle À Chatel-Sur-Moselle",
+      "masse_eau": "Alluvions de la Meurthe, de la Moselle et de leurs affluents",
+      "profondeur": 8.5,
       "dept": "88",
       "code_bss": "03047X0058/SCAR4",
-      "current": 281.09,
+      "current": 281.21,
       "history": [
-        280.62,
-        280.6,
         280.59,
         280.59,
         280.58,
@@ -31580,7 +31532,9 @@
         281.03,
         281.05,
         281.03,
-        281.09
+        281.09,
+        281.16,
+        281.21
       ],
       "year_ago": 280.65,
       "lat": 48.328349741,
@@ -31588,39 +31542,14 @@
       "color": "#3b82f6"
     },
     {
-      "nom": "Essegney",
-      "dept": "88",
-      "code_bss": "03043X0056/PZ4",
-      "current": 265.994,
-      "history": [
-        265.957,
-        266.063,
-        265.917,
-        266.121,
-        265.912,
-        266.064,
-        265.883,
-        265.87,
-        265.871,
-        265.886,
-        265.906,
-        265.932,
-        265.97,
-        265.994
-      ],
-      "year_ago": 266.84,
-      "lat": 48.369447918,
-      "lng": 6.305867638,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Gérardmer",
+      "libelle": "Socle Vosgien À Gerardmer",
+      "masse_eau": "Socle du massif vosgien",
+      "profondeur": 22.3,
       "dept": "88",
       "code_bss": "03771X0070/PA",
-      "current": 671.611,
+      "current": 671.483,
       "history": [
-        671.244,
-        671.051,
         671.126,
         671.132,
         671.122,
@@ -31632,7 +31561,9 @@
         671.541,
         671.359,
         671.625,
-        671.611
+        671.611,
+        671.566,
+        671.483
       ],
       "year_ago": 670.67,
       "lat": 48.058119919,
@@ -31640,65 +31571,14 @@
       "color": "#3b82f6"
     },
     {
-      "nom": "Attignéville",
-      "dept": "88",
-      "code_bss": "03031X0044/F",
-      "current": 346.132,
-      "history": [
-        346.135,
-        346.136,
-        346.136,
-        346.134,
-        346.132,
-        346.134,
-        346.134,
-        346.135,
-        346.136,
-        346.14,
-        346.131,
-        346.13,
-        346.131,
-        346.132
-      ],
-      "year_ago": 346.38,
-      "lat": 48.388055556,
-      "lng": 5.829638889,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Saint-Menge",
-      "dept": "88",
-      "code_bss": "03037X0053/F",
-      "current": 255.454,
-      "history": [
-        255.374,
-        255.328,
-        255.372,
-        255.372,
-        255.417,
-        255.405,
-        255.408,
-        255.454,
-        255.501,
-        255.503,
-        255.498,
-        255.507,
-        255.495,
-        255.454
-      ],
-      "year_ago": 255.67,
-      "lat": 48.289824697,
-      "lng": 5.94595919,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Belrupt",
+      "libelle": "Grès Du Trias Inférieur (Gti) À Belrupt",
+      "masse_eau": "Grès Trias inférieur BV Saône",
+      "profondeur": 60.0,
       "dept": "88",
       "code_bss": "03388X0002/F",
-      "current": 285.961,
+      "current": 285.879,
       "history": [
-        285.905,
-        285.859,
         285.848,
         285.863,
         285.878,
@@ -31710,7 +31590,9 @@
         285.99,
         285.984,
         285.992,
-        285.961
+        285.961,
+        285.926,
+        285.879
       ],
       "year_ago": 286.42,
       "lat": 48.087858838,
@@ -31718,7 +31600,68 @@
       "color": "#ef4444"
     },
     {
+      "nom": "Saint-Menge",
+      "libelle": "Grès Du Trias Inférieur Sous Couverture À Saint-Menge",
+      "masse_eau": "Grès du Trias inférieur au nord de la faille de Vittel",
+      "profondeur": 420.0,
+      "dept": "88",
+      "code_bss": "03037X0053/F",
+      "current": 255.366,
+      "history": [
+        255.372,
+        255.372,
+        255.417,
+        255.405,
+        255.408,
+        255.454,
+        255.501,
+        255.503,
+        255.498,
+        255.507,
+        255.495,
+        255.454,
+        255.434,
+        255.366
+      ],
+      "year_ago": 255.62,
+      "lat": 48.289824697,
+      "lng": 5.94595919,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Attignéville",
+      "libelle": "Calcaires Du Dogger Du Plateau De Haye À Attigneville",
+      "masse_eau": "Calcaires du Dogger versant Meuse sud",
+      "profondeur": 45.0,
+      "dept": "88",
+      "code_bss": "03031X0044/F",
+      "current": 346.134,
+      "history": [
+        346.136,
+        346.134,
+        346.132,
+        346.134,
+        346.134,
+        346.135,
+        346.136,
+        346.14,
+        346.131,
+        346.13,
+        346.131,
+        346.132,
+        346.129,
+        346.134
+      ],
+      "year_ago": 346.39,
+      "lat": 48.388055556,
+      "lng": 5.829638889,
+      "color": "#ef4444"
+    },
+    {
       "nom": "Valfroicourt",
+      "libelle": "Grès Du Trias Inférieur Captif À Valfroicourt",
+      "masse_eau": "Grès du Trias inférieur au sud de la faille de Vittel",
+      "profondeur": 144.0,
       "dept": "88",
       "code_bss": "03384X0005/F",
       "current": 290.077,
@@ -31738,45 +31681,20 @@
         291.406,
         290.077
       ],
-      "year_ago": 291.35,
+      "year_ago": 291.32,
       "lat": 48.197761447,
       "lng": 6.094695069,
       "color": "#ef4444"
     },
     {
-      "nom": "Chaumousey",
-      "dept": "88",
-      "code_bss": "03393X0096/F",
-      "current": 362.895,
-      "history": [
-        361.942,
-        362.798,
-        362.389,
-        362.829,
-        359.085,
-        362.761,
-        361.737,
-        362.898,
-        362.801,
-        359.11,
-        362.781,
-        362.962,
-        362.753,
-        362.895
-      ],
-      "year_ago": 363.33,
-      "lat": 48.167066787,
-      "lng": 6.326627448,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Deinvillers",
+      "libelle": "Calcaires Du Muschelkalk À Deinvillers",
+      "masse_eau": "Calcaires et argiles du Muschelkalk",
+      "profondeur": 64.0,
       "dept": "88",
       "code_bss": "03051X0055/F",
-      "current": 262.086,
+      "current": 262.339,
       "history": [
-        261.043,
-        262.35,
         258.936,
         261.972,
         262.237,
@@ -31788,21 +31706,82 @@
         261.997,
         261.616,
         262.198,
-        262.086
+        262.086,
+        262.302,
+        262.339
       ],
-      "year_ago": 263.68,
+      "year_ago": 263.59,
       "lat": 48.406639023,
       "lng": 6.547583741,
       "color": "#ef4444"
     },
     {
+      "nom": "Celles-sur-Plaine",
+      "libelle": "Grès Du Trias Inférieur Affleurant À Celles-Sur Plaine",
+      "masse_eau": "Grès du Trias inférieur au nord de la faille de Vittel",
+      "profondeur": 17.6,
+      "dept": "88",
+      "code_bss": "02706X0074/S77-20",
+      "current": 310.025,
+      "history": [
+        310.065,
+        310.061,
+        310.065,
+        310.048,
+        310.054,
+        310.07,
+        310.049,
+        310.044,
+        310.048,
+        310.063,
+        310.044,
+        310.037,
+        310.039,
+        310.025
+      ],
+      "year_ago": 310.16,
+      "lat": 48.439546314,
+      "lng": 6.93027724,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Plombières-les-Bains",
+      "libelle": "Grès Du Trias Inférieur Affleurant À Plombieres-Les-Bains",
+      "masse_eau": "Grès Trias inférieur BV Saône",
+      "profondeur": 68.0,
+      "dept": "88",
+      "code_bss": "03754X0015/F2",
+      "current": 536.163,
+      "history": [
+        535.241,
+        535.23,
+        535.267,
+        535.247,
+        535.279,
+        535.351,
+        535.568,
+        535.693,
+        535.75,
+        535.787,
+        535.873,
+        535.996,
+        536.075,
+        536.163
+      ],
+      "year_ago": 537.32,
+      "lat": 47.988110371,
+      "lng": 6.446683945,
+      "color": "#ef4444"
+    },
+    {
       "nom": "Grandvillers",
+      "libelle": "Fluvioglaciaire Sur Muschelkalk Gréseux À Grandvillers",
+      "masse_eau": "Grès du Trias inférieur au sud de la faille de Vittel",
+      "profondeur": 11.12,
       "dept": "88",
       "code_bss": "03057X0018/F",
-      "current": 385.663,
+      "current": 385.669,
       "history": [
-        385.672,
-        385.666,
         385.665,
         385.663,
         385.663,
@@ -31814,7 +31793,9 @@
         385.666,
         385.663,
         385.663,
-        385.663
+        385.663,
+        385.663,
+        385.669
       ],
       "year_ago": 386.04,
       "lat": 48.242035591,
@@ -31823,12 +31804,13 @@
     },
     {
       "nom": "Bulgnéville",
+      "libelle": "Grès Du Trias Inférieur (Gti) À Bulgneville",
+      "masse_eau": "Grès du Trias inférieur au sud de la faille de Vittel",
+      "profondeur": 353.8,
       "dept": "88",
       "code_bss": "03381X0008/F",
-      "current": 262.696,
+      "current": 262.377,
       "history": [
-        262.552,
-        261.972,
         261.882,
         261.997,
         262.106,
@@ -31840,21 +31822,53 @@
         262.624,
         262.497,
         262.877,
-        262.696
+        262.696,
+        262.569,
+        262.377
       ],
-      "year_ago": 265.69,
+      "year_ago": 265.63,
       "lat": 48.207294286,
       "lng": 5.83464969,
       "color": "#ef4444"
     },
     {
+      "nom": "Essegney",
+      "libelle": "Alluvions De La Moselle À Essegney",
+      "masse_eau": "Alluvions de la Meurthe, de la Moselle et de leurs affluents",
+      "profondeur": 7.3,
+      "dept": "88",
+      "code_bss": "03043X0056/PZ4",
+      "current": 266.271,
+      "history": [
+        265.917,
+        266.121,
+        265.912,
+        266.064,
+        265.883,
+        265.87,
+        265.871,
+        265.886,
+        265.906,
+        265.932,
+        265.97,
+        265.994,
+        266.035,
+        266.271
+      ],
+      "year_ago": 266.84,
+      "lat": 48.369447918,
+      "lng": 6.305867638,
+      "color": "#ef4444"
+    },
+    {
       "nom": "Dombrot-le-Sec",
+      "libelle": "Calcaires Du Muschelkalk A Dombrot-Le-Sec (88)",
+      "masse_eau": "Calcaires et argiles du Muschelkalk",
+      "profondeur": 91.0,
       "dept": "88",
       "code_bss": "03386X0042/ANGER",
-      "current": 447.573,
+      "current": 447.492,
       "history": [
-        447.541,
-        447.528,
         447.569,
         447.585,
         447.611,
@@ -31866,21 +31880,24 @@
         447.633,
         447.653,
         447.625,
-        447.573
+        447.573,
+        447.554,
+        447.492
       ],
-      "year_ago": 448.16,
+      "year_ago": 448.06,
       "lat": 48.132361,
       "lng": 5.863659,
       "color": "#ef4444"
     },
     {
       "nom": "Relanges",
+      "libelle": "Grès Du Trias Inférieur Affleurant À Relanges",
+      "masse_eau": "Grès Trias inférieur BV Saône",
+      "profondeur": 51.0,
       "dept": "88",
       "code_bss": "03387X0040/S",
-      "current": 356.72,
+      "current": 355.82,
       "history": [
-        356.78,
-        356.06,
         355.83,
         355.88,
         356.01,
@@ -31892,21 +31909,24 @@
         357.85,
         357.34,
         357.28,
-        356.72
+        356.72,
+        356.11,
+        355.82
       ],
-      "year_ago": 356.86,
+      "year_ago": 356.26,
       "lat": 48.122641168,
       "lng": 6.000484867,
       "color": "#ef4444"
     },
     {
       "nom": "Gignéville",
+      "libelle": "Grès Du Trias Inférieur Sous Couverture À Gigneville",
+      "masse_eau": "Grès du Trias inférieur au sud de la faille de Vittel",
+      "profondeur": 102.15,
       "dept": "88",
       "code_bss": "03386X0031/S",
-      "current": 300.42,
+      "current": 300.3,
       "history": [
-        300.32,
-        300.28,
         300.3,
         300.32,
         300.35,
@@ -31918,21 +31938,24 @@
         300.47,
         300.48,
         300.47,
-        300.42
+        300.42,
+        300.38,
+        300.3
       ],
-      "year_ago": 300.44,
+      "year_ago": 300.37,
       "lat": 48.114824675,
       "lng": 5.921033639,
       "color": "#ef4444"
     },
     {
       "nom": "La Neuveville-sous-Montfort",
+      "libelle": "Gres Du Trias Inferieur (Gti) A Neuveville-Sous-Montfort",
+      "masse_eau": "Grès du Trias inférieur au nord de la faille de Vittel",
+      "profondeur": 278.7,
       "dept": "88",
       "code_bss": "03383X0094/S",
-      "current": 255.665,
+      "current": 255.593,
       "history": [
-        255.592,
-        255.551,
         255.59,
         255.586,
         255.627,
@@ -31944,21 +31967,41 @@
         255.702,
         255.711,
         255.704,
-        255.665
+        255.665,
+        255.649,
+        255.593
       ],
-      "year_ago": 256.0,
+      "year_ago": 255.96,
       "lat": 48.224547689,
       "lng": 6.018291421,
       "color": "#ef4444"
     },
     {
+      "nom": "Lignéville",
+      "libelle": "Calcaires Du Muschelkalk A Ligneville (88)",
+      "masse_eau": "Calcaires et argiles du Muschelkalk",
+      "profondeur": 70.0,
+      "dept": "88",
+      "code_bss": "03382X0083/PZ",
+      "current": 380.509,
+      "history": [
+        380.586,
+        380.509
+      ],
+      "year_ago": 380.6,
+      "lat": 48.170973789,
+      "lng": 5.927073194,
+      "color": "#ef4444"
+    },
+    {
       "nom": "Dombrot-le-Sec",
+      "libelle": "Grès Vosgien Captif Non Minéralisé À Dombrot-Le-Sec",
+      "masse_eau": "Grès du Trias inférieur au sud de la faille de Vittel",
+      "profondeur": 200.0,
       "dept": "88",
       "code_bss": "BSS003GPNI/X",
-      "current": 279.939,
+      "current": 279.861,
       "history": [
-        279.826,
-        279.803,
         279.831,
         279.846,
         279.874,
@@ -31970,21 +32013,24 @@
         279.967,
         279.997,
         279.969,
-        279.939
+        279.939,
+        279.907,
+        279.861
       ],
-      "year_ago": 280.4,
+      "year_ago": 280.38,
       "lat": 48.133138889,
       "lng": 5.863111111,
       "color": "#ef4444"
     },
     {
       "nom": "Lignéville",
+      "libelle": "Grès Du Trias Inférieur Sous Couverture À Ligneville",
+      "masse_eau": "Grès du Trias inférieur au sud de la faille de Vittel",
+      "profondeur": 126.0,
       "dept": "88",
       "code_bss": "BSS003YBQW/X",
-      "current": 290.499,
+      "current": 290.353,
       "history": [
-        290.351,
-        290.294,
         290.337,
         290.355,
         290.41,
@@ -31996,23 +32042,24 @@
         290.569,
         290.6,
         290.58,
-        290.499
+        290.499,
+        290.451,
+        290.353
       ],
-      "year_ago": 290.51,
+      "year_ago": 290.41,
       "lat": 48.154491519,
       "lng": 5.958055499,
       "color": "#ef4444"
     },
     {
       "nom": "Haréville",
+      "libelle": "Calcaires Du Muschelkalk À Hareville",
+      "masse_eau": "Calcaires et argiles du Muschelkalk",
+      "profondeur": 54.0,
       "dept": "88",
       "code_bss": "03384X0037/PZ",
-      "current": 342.183,
+      "current": 342.2,
       "history": [
-        342.229,
-        342.138,
-        342.058,
-        342.001,
         342.012,
         342.026,
         342.047,
@@ -32022,195 +32069,47 @@
         342.24,
         342.234,
         342.198,
-        342.183
+        342.183,
+        342.213,
+        342.166,
+        342.17,
+        342.2
       ],
-      "year_ago": 347.87,
+      "year_ago": 347.71,
       "lat": 48.202608393,
       "lng": 6.027042983,
       "color": "#ef4444"
+    },
+    {
+      "nom": "Chaumousey",
+      "libelle": "Grès Vosgien En Partie Libre À Chaumousey",
+      "masse_eau": "Grès du Trias inférieur au sud de la faille de Vittel",
+      "profondeur": 60.0,
+      "dept": "88",
+      "code_bss": "03393X0096/F",
+      "current": 360.37,
+      "history": [
+        362.389,
+        362.829,
+        359.085,
+        362.761,
+        361.737,
+        362.898,
+        362.801,
+        359.11,
+        362.781,
+        362.962,
+        362.753,
+        362.895,
+        362.823,
+        360.37
+      ],
+      "year_ago": 363.27,
+      "lat": 48.167066787,
+      "lng": 6.326627448,
+      "color": "#ef4444"
     }
   ],
-  "air": [
-    {
-      "zone": "Zincourt",
-      "dept": "88",
-      "date": "2026-11-21",
-      "indice": 1,
-      "label": "Bon",
-      "color": "#50F0E6",
-      "source": "Atmo Grand Est",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Xonrupt-Longemer",
-      "dept": "88",
-      "date": "2026-11-21",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Grand Est",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Xertigny",
-      "dept": "88",
-      "date": "2026-11-21",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Grand Est",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Xaronval",
-      "dept": "88",
-      "date": "2026-11-21",
-      "indice": 1,
-      "label": "Bon",
-      "color": "#50F0E6",
-      "source": "Atmo Grand Est",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Xamontarupt",
-      "dept": "88",
-      "date": "2026-11-21",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Grand Est",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    }
-  ],
+  "air": [],
   "pollen": []
 }

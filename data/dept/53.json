@@ -3,7 +3,7 @@
   "nom": "Mayenne",
   "slug": "mayenne",
   "region": "Pays de la Loire",
-  "updated": "20/11/2026 à 19:15",
+  "updated": "21/11/2026 à 18:04",
   "score_eau": 95,
   "nb_communes": 243,
   "potable": [
@@ -29142,11 +29142,6 @@
             "date": "2025-03-18",
             "valeur": 7.6,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-11-20",
-            "valeur": 7.6,
-            "color": "#10b981"
           }
         ],
         "Ammonium": [
@@ -29163,11 +29158,6 @@
           {
             "date": "2025-03-18",
             "valeur": 3.5,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-11-20",
-            "valeur": 4.9,
             "color": "#ef4444"
           }
         ],
@@ -29186,11 +29176,6 @@
             "date": "2025-03-18",
             "valeur": 0.11221,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-11-20",
-            "valeur": 0.19007,
-            "color": "#10b981"
           }
         ],
         "MES": [
@@ -29207,11 +29192,6 @@
           {
             "date": "2025-03-18",
             "valeur": 259.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-11-20",
-            "valeur": 284.0,
             "color": "#ef4444"
           }
         ]
@@ -34628,11 +34608,6 @@
             "date": "2024-12-16",
             "valeur": 27.0,
             "color": "#ef4444"
-          },
-          {
-            "date": "2024-11-20",
-            "valeur": 20.0,
-            "color": "#f59e0b"
           }
         ]
       },
@@ -35148,12 +35123,13 @@
   "nappes": [
     {
       "nom": "Commer",
+      "libelle": "Commer",
+      "masse_eau": "Bassin versant de la Mayenne",
+      "profondeur": 30.0,
       "dept": "53",
       "code_bss": "03201X6016/PZ2",
-      "current": 120.91,
+      "current": 120.945,
       "history": [
-        120.602,
-        120.596,
         120.622,
         120.616,
         120.649,
@@ -35165,47 +35141,24 @@
         120.833,
         120.871,
         120.881,
-        120.91
+        120.91,
+        120.911,
+        120.945
       ],
-      "year_ago": 120.7,
+      "year_ago": 120.68,
       "lat": 48.238819253,
       "lng": -0.652337953,
       "color": "#3b82f6"
     },
     {
-      "nom": "Château-Gontier-sur-Mayenne",
-      "dept": "53",
-      "code_bss": "03904X6010/PZ4",
-      "current": 91.302,
-      "history": [
-        91.32,
-        91.321,
-        91.319,
-        91.321,
-        91.309,
-        91.312,
-        91.318,
-        91.311,
-        91.31,
-        91.308,
-        91.31,
-        91.304,
-        91.303,
-        91.302
-      ],
-      "year_ago": 91.55,
-      "lat": 47.846524834,
-      "lng": -0.761531899,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Ernée",
+      "libelle": "Ernee",
+      "masse_eau": "Bassin versant de la Mayenne",
+      "profondeur": 30.0,
       "dept": "53",
       "code_bss": "02846X6018/PZ3",
-      "current": 150.299,
+      "current": 150.286,
       "history": [
-        150.338,
-        150.332,
         150.333,
         150.331,
         150.331,
@@ -35217,21 +35170,53 @@
         150.313,
         150.31,
         150.304,
-        150.299
+        150.299,
+        150.287,
+        150.286
       ],
-      "year_ago": 150.06,
+      "year_ago": 150.05,
       "lat": 48.295848791,
       "lng": -0.96252818,
       "color": "#3b82f6"
     },
     {
+      "nom": "Château-Gontier-sur-Mayenne",
+      "libelle": "Bazouges 2",
+      "masse_eau": "",
+      "profondeur": 12.0,
+      "dept": "53",
+      "code_bss": "03904X6010/PZ4",
+      "current": 91.299,
+      "history": [
+        91.319,
+        91.321,
+        91.309,
+        91.312,
+        91.318,
+        91.311,
+        91.31,
+        91.308,
+        91.31,
+        91.304,
+        91.303,
+        91.302,
+        91.299,
+        91.299
+      ],
+      "year_ago": 91.54,
+      "lat": 47.846524834,
+      "lng": -0.761531899,
+      "color": "#ef4444"
+    },
+    {
       "nom": "Ballots",
+      "libelle": "Ballots",
+      "masse_eau": "Bassin versant de l'Oudon",
+      "profondeur": 31.25,
       "dept": "53",
       "code_bss": "03555X6010/PZ1",
-      "current": 79.968,
+      "current": 79.992,
       "history": [
-        79.78,
-        79.779,
         79.78,
         79.777,
         79.78,
@@ -35243,21 +35228,24 @@
         79.903,
         79.934,
         79.948,
-        79.968
+        79.968,
+        79.973,
+        79.992
       ],
-      "year_ago": 80.95,
+      "year_ago": 80.93,
       "lat": 47.892473036,
       "lng": -1.047491524,
       "color": "#ef4444"
     },
     {
       "nom": "Grez-en-Bouère",
+      "libelle": "Grez En Bouere",
+      "masse_eau": "Bassin versant de la Sarthe aval",
+      "profondeur": 30.8,
       "dept": "53",
       "code_bss": "03567X0041/PZ4",
-      "current": 83.578,
+      "current": 83.595,
       "history": [
-        83.39,
-        83.393,
         83.392,
         83.391,
         83.395,
@@ -35269,47 +35257,24 @@
         83.506,
         83.538,
         83.56,
-        83.578
+        83.578,
+        83.587,
+        83.595
       ],
-      "year_ago": 83.8,
+      "year_ago": 83.79,
       "lat": 47.891068292,
       "lng": -0.542395294,
       "color": "#ef4444"
     },
     {
-      "nom": "Pré-en-Pail-Saint-Samson",
-      "dept": "53",
-      "code_bss": "02507X0615/PZ6",
-      "current": 351.144,
-      "history": [
-        351.196,
-        351.192,
-        351.189,
-        351.183,
-        351.178,
-        351.177,
-        351.171,
-        351.167,
-        351.163,
-        351.159,
-        351.156,
-        351.151,
-        351.146,
-        351.144
-      ],
-      "year_ago": 350.51,
-      "lat": 48.452794166,
-      "lng": -0.17363092,
-      "color": "#3b82f6"
-    },
-    {
       "nom": "Laval",
+      "libelle": "Laval",
+      "masse_eau": "Bassin versant de la Mayenne",
+      "profondeur": 31.3,
       "dept": "53",
       "code_bss": "03554X0029/PZ5",
-      "current": 89.055,
+      "current": 89.03,
       "history": [
-        89.096,
-        89.101,
         89.11,
         89.115,
         89.117,
@@ -35321,73 +35286,53 @@
         89.093,
         89.09,
         89.064,
-        89.055
+        89.055,
+        89.029,
+        89.03
       ],
-      "year_ago": 89.54,
+      "year_ago": 89.52,
       "lat": 48.030851126,
       "lng": -0.746919156,
       "color": "#ef4444"
     },
     {
-      "nom": "Saint-Christophe-du-Luat",
+      "nom": "Pré-en-Pail-Saint-Samson",
+      "libelle": "Pre En Pail",
+      "masse_eau": "Bassin versant de la Mayenne",
+      "profondeur": 16.0,
       "dept": "53",
-      "code_bss": "03207X0603/PZ7",
-      "current": 97.599,
+      "code_bss": "02507X0615/PZ6",
+      "current": 351.164,
       "history": [
-        97.462,
-        97.47,
-        97.488,
-        97.495,
-        97.516,
-        97.498,
-        97.521,
-        97.577,
-        97.603,
-        97.597,
-        97.605,
-        97.611,
-        97.594,
-        97.599
+        351.189,
+        351.183,
+        351.178,
+        351.177,
+        351.171,
+        351.167,
+        351.163,
+        351.159,
+        351.156,
+        351.151,
+        351.146,
+        351.144,
+        351.138,
+        351.164
       ],
-      "year_ago": 98.33,
-      "lat": 48.133247352,
-      "lng": -0.468123265,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Le Horps",
-      "dept": "53",
-      "code_bss": "02854X0024/PZ6",
-      "current": 262.735,
-      "history": [
-        262.674,
-        262.665,
-        262.669,
-        262.665,
-        262.667,
-        262.657,
-        262.658,
-        262.663,
-        262.668,
-        262.676,
-        262.691,
-        262.709,
-        262.724,
-        262.735
-      ],
-      "year_ago": 262.48,
-      "lat": 48.405818323,
-      "lng": -0.441152,
+      "year_ago": 350.5,
+      "lat": 48.452794166,
+      "lng": -0.17363092,
       "color": "#3b82f6"
     },
     {
       "nom": "Vimartin-sur-Orthe",
+      "libelle": "Saint Pierre Sur Orthe",
+      "masse_eau": "Bassin versant de la Sarthe amont",
+      "profondeur": 13.9,
       "dept": "53",
       "code_bss": "03212X0021/P",
-      "current": 144.833,
+      "current": 144.826,
       "history": [
-        144.814,
-        144.811,
         144.809,
         144.806,
         144.805,
@@ -35399,15 +35344,78 @@
         144.833,
         144.834,
         144.832,
-        144.833
+        144.833,
+        144.828,
+        144.826
       ],
-      "year_ago": 144.73,
+      "year_ago": 144.72,
       "lat": 48.211817416,
       "lng": -0.211977047,
       "color": "#3b82f6"
     },
     {
+      "nom": "Saint-Christophe-du-Luat",
+      "libelle": "Saint Christophe",
+      "masse_eau": "Bassin versant de la Mayenne",
+      "profondeur": 30.9,
+      "dept": "53",
+      "code_bss": "03207X0603/PZ7",
+      "current": 97.574,
+      "history": [
+        97.488,
+        97.495,
+        97.516,
+        97.498,
+        97.521,
+        97.577,
+        97.603,
+        97.597,
+        97.605,
+        97.611,
+        97.594,
+        97.599,
+        97.579,
+        97.574
+      ],
+      "year_ago": 98.31,
+      "lat": 48.133247352,
+      "lng": -0.468123265,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "La Gravelle",
+      "libelle": "La Gravelle",
+      "masse_eau": "Bassin versant de l'Oudon",
+      "profondeur": 35.0,
+      "dept": "53",
+      "code_bss": "03195X0513/PZ",
+      "current": 158.462,
+      "history": [
+        158.376,
+        158.376,
+        158.393,
+        158.398,
+        158.414,
+        158.473,
+        158.483,
+        158.482,
+        158.485,
+        158.49,
+        158.484,
+        158.478,
+        158.467,
+        158.462
+      ],
+      "year_ago": 158.62,
+      "lat": 48.073155795,
+      "lng": -1.012882566,
+      "color": "#ef4444"
+    },
+    {
       "nom": "Saint-Pierre-sur-Erve",
+      "libelle": "Saint-Pierre-Sur-Erve",
+      "masse_eau": "Bassin versant de la Sarthe aval",
+      "profondeur": 44.0,
       "dept": "53",
       "code_bss": "03564X0063/PZ",
       "current": 90.453,
@@ -35427,45 +35435,49 @@
         90.391,
         90.453
       ],
-      "year_ago": 90.08,
+      "year_ago": 90.03,
       "lat": 48.001717815,
       "lng": -0.407226232,
       "color": "#3b82f6"
     },
     {
-      "nom": "La Gravelle",
+      "nom": "Le Horps",
+      "libelle": "Le Horps",
+      "masse_eau": "Bassin versant de la Mayenne",
+      "profondeur": 43.0,
       "dept": "53",
-      "code_bss": "03195X0513/PZ",
-      "current": 158.478,
+      "code_bss": "02854X0024/PZ6",
+      "current": 262.768,
       "history": [
-        158.373,
-        158.37,
-        158.376,
-        158.376,
-        158.393,
-        158.398,
-        158.414,
-        158.473,
-        158.483,
-        158.482,
-        158.485,
-        158.49,
-        158.484,
-        158.478
+        262.669,
+        262.665,
+        262.667,
+        262.657,
+        262.658,
+        262.663,
+        262.668,
+        262.676,
+        262.691,
+        262.709,
+        262.724,
+        262.735,
+        262.748,
+        262.768
       ],
-      "year_ago": 158.63,
-      "lat": 48.073155795,
-      "lng": -1.012882566,
-      "color": "#ef4444"
+      "year_ago": 262.47,
+      "lat": 48.405818323,
+      "lng": -0.441152,
+      "color": "#3b82f6"
     },
     {
       "nom": "Château-Gontier-sur-Mayenne",
+      "libelle": "Bazouges",
+      "masse_eau": "Bassin versant de l'Oudon",
+      "profondeur": 30.0,
       "dept": "53",
       "code_bss": "03904X0064/PZ",
-      "current": 93.159,
+      "current": 93.136,
       "history": [
-        93.164,
-        93.162,
         93.173,
         93.175,
         93.19,
@@ -35477,195 +35489,16 @@
         93.18,
         93.186,
         93.173,
-        93.159
+        93.159,
+        93.142,
+        93.136
       ],
-      "year_ago": 93.36,
+      "year_ago": 93.34,
       "lat": 47.850494157,
       "lng": -0.767621191,
       "color": "#ef4444"
     }
   ],
-  "air": [
-    {
-      "zone": "Thubœuf",
-      "dept": "53",
-      "date": "2026-11-22",
-      "indice": 2,
-      "label": "moyen",
-      "color": "#50ccaa",
-      "source": "Air Pays de la Loire",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Soulgé-sur-Ouette",
-      "dept": "53",
-      "date": "2026-11-22",
-      "indice": 2,
-      "label": "moyen",
-      "color": "#50ccaa",
-      "source": "Air Pays de la Loire",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Pierre-la-Cour",
-      "dept": "53",
-      "date": "2026-11-22",
-      "indice": 2,
-      "label": "moyen",
-      "color": "#50ccaa",
-      "source": "Air Pays de la Loire",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Ouën-des-Toits",
-      "dept": "53",
-      "date": "2026-11-22",
-      "indice": 2,
-      "label": "moyen",
-      "color": "#50ccaa",
-      "source": "Air Pays de la Loire",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Sainte-Marie-du-Bois",
-      "dept": "53",
-      "date": "2026-11-22",
-      "indice": 2,
-      "label": "moyen",
-      "color": "#50ccaa",
-      "source": "Air Pays de la Loire",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    }
-  ],
+  "air": [],
   "pollen": []
 }

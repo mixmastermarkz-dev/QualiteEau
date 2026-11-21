@@ -3,7 +3,7 @@
   "nom": "Isère",
   "slug": "isere",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "20/11/2026 à 19:16",
+  "updated": "21/11/2026 à 18:04",
   "score_eau": 97,
   "nb_communes": 514,
   "potable": [
@@ -60231,12 +60231,13 @@
   "nappes": [
     {
       "nom": "Vif",
+      "libelle": "Piezometre - Reymure (Vif - Brgm 38) - Bsh",
+      "masse_eau": "Alluvions de la rive gauche du Drac et secteur Rochefort",
+      "profondeur": 26.88,
       "dept": "38",
       "code_bss": "07968X0186/RE11",
-      "current": 262.32,
+      "current": 262.34,
       "history": [
-        262.299,
-        262.313,
         262.321,
         262.329,
         262.334,
@@ -60248,21 +60249,24 @@
         262.31,
         262.31,
         262.31,
-        262.32
+        262.32,
+        262.33,
+        262.34
       ],
-      "year_ago": 262.5,
+      "year_ago": 262.51,
       "lat": 45.072061448,
       "lng": 5.700698352,
       "color": "#ef4444"
     },
     {
       "nom": "Nantoin",
+      "libelle": "Forage - La Vie (Nantoin  - Brgm 38) - Bsh",
+      "masse_eau": "Alluvions de la Plaine de Bièvre-Valloire",
+      "profondeur": 37.0,
       "dept": "38",
       "code_bss": "07477X0048/F1",
-      "current": 420.548,
+      "current": 420.53,
       "history": [
-        420.666,
-        420.658,
         420.649,
         420.639,
         420.629,
@@ -60274,47 +60278,24 @@
         420.575,
         420.569,
         420.556,
-        420.548
+        420.548,
+        420.538,
+        420.53
       ],
-      "year_ago": 421.58,
+      "year_ago": 421.57,
       "lat": 45.425263485,
       "lng": 5.278050329,
       "color": "#ef4444"
     },
     {
-      "nom": "Tencin",
-      "dept": "38",
-      "code_bss": "07733X0070/F2",
-      "current": 231.799,
-      "history": [
-        231.724,
-        231.728,
-        231.733,
-        231.735,
-        231.736,
-        231.736,
-        231.735,
-        231.736,
-        231.74,
-        231.745,
-        231.754,
-        231.763,
-        231.781,
-        231.799
-      ],
-      "year_ago": 232.17,
-      "lat": 45.318871204,
-      "lng": 5.964116027,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Vatilieu",
+      "libelle": "Forage - Croix Du Platre (Vatilieu - Brgm 38)",
+      "masse_eau": "Formations variées de l'Avant-Pays savoyard dans BV du Rhône",
+      "profondeur": 185.0,
       "dept": "38",
       "code_bss": "07725X0071/F3",
-      "current": 568.48,
+      "current": 568.44,
       "history": [
-        568.485,
-        568.482,
         568.495,
         568.493,
         568.512,
@@ -60326,21 +60307,24 @@
         568.534,
         568.587,
         568.519,
-        568.48
+        568.48,
+        568.453,
+        568.44
       ],
-      "year_ago": 568.83,
+      "year_ago": 568.82,
       "lat": 45.269570438,
       "lng": 5.425138445,
       "color": "#ef4444"
     },
     {
       "nom": "Pommier-de-Beaurepaire",
+      "libelle": "Piezometre - Val Du Suzon (Pommier-De-Beaurepaire - Brgm 38) - Bsh",
+      "masse_eau": "Alluvions de la Plaine de Bièvre-Valloire",
+      "profondeur": 51.0,
       "dept": "38",
       "code_bss": "07475X0008/F3",
-      "current": 287.58,
+      "current": 287.57,
       "history": [
-        287.537,
-        287.536,
         287.539,
         287.535,
         287.534,
@@ -60352,21 +60336,24 @@
         287.519,
         287.519,
         287.59,
-        287.58
+        287.58,
+        287.57,
+        287.57
       ],
-      "year_ago": 288.34,
+      "year_ago": 288.27,
       "lat": 45.36714914,
       "lng": 5.112251636,
       "color": "#ef4444"
     },
     {
       "nom": "Moidieu-Détourbe",
+      "libelle": "Piezometre - Chemin Charbonnier (Moidieu-Detourbe - Brgm 38) - Bsh",
+      "masse_eau": "Alluvions des vallées de Vienne (Véga, Gère, Vesonne, Sévenn",
+      "profondeur": 28.6,
       "dept": "38",
       "code_bss": "07464X0005/SM3",
-      "current": 255.864,
+      "current": 255.861,
       "history": [
-        255.885,
-        255.88,
         255.881,
         255.876,
         255.878,
@@ -60378,7 +60365,9 @@
         255.869,
         255.869,
         255.865,
-        255.864
+        255.864,
+        255.861,
+        255.861
       ],
       "year_ago": 256.26,
       "lat": 45.495028774,
@@ -60386,39 +60375,14 @@
       "color": "#ef4444"
     },
     {
-      "nom": "Sonnay",
-      "dept": "38",
-      "code_bss": "07703X0043/SDC",
-      "current": 209.404,
-      "history": [
-        209.328,
-        209.333,
-        209.345,
-        209.349,
-        209.36,
-        209.364,
-        209.371,
-        209.383,
-        209.389,
-        209.395,
-        209.399,
-        209.41,
-        209.404,
-        209.404
-      ],
-      "year_ago": 209.94,
-      "lat": 45.338843911,
-      "lng": 4.91131599,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Vizille",
+      "libelle": "Piezometre - Champ Captant (Vizille - Brgm 38)",
+      "masse_eau": "Alluvions de la Romanche vallée d'Oisans, Eau d'Olle et Roma",
+      "profondeur": 22.0,
       "dept": "38",
       "code_bss": "07975X0081/PGB",
-      "current": 282.534,
+      "current": 282.489,
       "history": [
-        282.497,
-        282.46,
         282.46,
         282.41,
         282.418,
@@ -60430,21 +60394,53 @@
         282.528,
         282.499,
         282.55,
-        282.534
+        282.534,
+        282.469,
+        282.489
       ],
-      "year_ago": 282.62,
+      "year_ago": 282.65,
       "lat": 45.069459697,
       "lng": 5.764523963,
       "color": "#ef4444"
     },
     {
+      "nom": "Sonnay",
+      "libelle": "Piezometre - Bel Air (Bouge-Chambalud - Brgm 38) - Bsh",
+      "masse_eau": "Alluvions de la Plaine de Bièvre-Valloire",
+      "profondeur": 28.0,
+      "dept": "38",
+      "code_bss": "07703X0043/SDC",
+      "current": 209.409,
+      "history": [
+        209.345,
+        209.349,
+        209.36,
+        209.364,
+        209.371,
+        209.383,
+        209.389,
+        209.395,
+        209.399,
+        209.41,
+        209.404,
+        209.404,
+        209.405,
+        209.409
+      ],
+      "year_ago": 210.02,
+      "lat": 45.338843911,
+      "lng": 4.91131599,
+      "color": "#ef4444"
+    },
+    {
       "nom": "Nivolas-Vermelle",
+      "libelle": "Forage - Za Du Vernay (Nivolas-Vermelle - Brgm 38) - Bsh",
+      "masse_eau": "Alluvions de la Bourbre - Cattelan",
+      "profondeur": 15.0,
       "dept": "38",
       "code_bss": "07238X0110/F",
-      "current": 262.438,
+      "current": 262.476,
       "history": [
-        262.093,
-        262.111,
         262.138,
         262.142,
         262.165,
@@ -60456,7 +60452,9 @@
         262.308,
         262.339,
         262.419,
-        262.438
+        262.438,
+        262.461,
+        262.476
       ],
       "year_ago": 262.77,
       "lat": 45.570777064,
@@ -60464,13 +60462,43 @@
       "color": "#ef4444"
     },
     {
+      "nom": "Saint-Joseph-de-Rivière",
+      "libelle": "Piezometre - Champ Captant (St-Joseph-De-Riviere - Brgm 38) - Bsh",
+      "masse_eau": "Alluvions du Guiers - Herretang",
+      "profondeur": 50.0,
+      "dept": "38",
+      "code_bss": "07488X0011/F",
+      "current": 404.912,
+      "history": [
+        404.609,
+        404.599,
+        404.53,
+        404.506,
+        404.399,
+        404.625,
+        404.321,
+        404.695,
+        404.667,
+        404.67,
+        404.75,
+        404.886,
+        404.832,
+        404.912
+      ],
+      "year_ago": 405.72,
+      "lat": 45.375782904,
+      "lng": 5.696861749,
+      "color": "#ef4444"
+    },
+    {
       "nom": "Saint-Savin",
+      "libelle": "Forage - Les Tuches (Saint-Savin - Brgm 38) - Bsh",
+      "masse_eau": "Alluvions de la Bourbre - Cattelan",
+      "profondeur": 33.0,
       "dept": "38",
       "code_bss": "07237X0113/F",
-      "current": 214.518,
+      "current": 214.48,
       "history": [
-        214.436,
-        214.414,
         214.399,
         214.381,
         214.37,
@@ -60482,21 +60510,24 @@
         214.398,
         214.446,
         214.532,
-        214.518
+        214.518,
+        214.495,
+        214.48
       ],
-      "year_ago": 214.64,
+      "year_ago": 214.61,
       "lat": 45.629236883,
       "lng": 5.275400666,
       "color": "#ef4444"
     },
     {
       "nom": "Saint-Jean-de-Bournay",
+      "libelle": "Provisoire-03_Rha _Forage_Saint Jean De Bournay_Le Carloz",
+      "masse_eau": "Molasses miocènes du Bas Dauphiné depuis le seuil de Vienne ",
+      "profondeur": 120.0,
       "dept": "38",
       "code_bss": "07472X0024/F",
-      "current": 388.397,
+      "current": 388.317,
       "history": [
-        388.263,
-        388.266,
         388.314,
         388.255,
         388.303,
@@ -60508,7 +60539,9 @@
         388.331,
         388.279,
         388.371,
-        388.397
+        388.397,
+        388.318,
+        388.317
       ],
       "year_ago": null,
       "lat": 45.502347129,
@@ -60517,12 +60550,13 @@
     },
     {
       "nom": "Saint-Étienne-de-Saint-Geoirs",
+      "libelle": "Piezometre - Veyer (St-Etienne-St-Geoirs - Brgm 38) - Bsh",
+      "masse_eau": "Alluvions de la Plaine de Bièvre-Valloire",
+      "profondeur": 55.0,
       "dept": "38",
       "code_bss": "07714X0054/F",
-      "current": 361.478,
+      "current": 361.467,
       "history": [
-        361.558,
-        361.554,
         361.546,
         361.539,
         361.533,
@@ -60534,21 +60568,24 @@
         361.495,
         361.495,
         361.483,
-        361.478
+        361.478,
+        361.471,
+        361.467
       ],
-      "year_ago": 361.99,
+      "year_ago": 361.98,
       "lat": 45.357156674,
       "lng": 5.357321209,
       "color": "#ef4444"
     },
     {
       "nom": "Clonas-sur-Varèze",
+      "libelle": "Piezometre - Les Bourassones (Clonas-Sur-Vareze - Brgm 38)",
+      "masse_eau": "Alluvions du Rhône depuis l'amont de la confluence du Gier j",
+      "profondeur": 20.0,
       "dept": "38",
       "code_bss": "07466X0054/F",
-      "current": 144.195,
+      "current": 144.198,
       "history": [
-        144.181,
-        144.185,
         144.191,
         144.195,
         144.195,
@@ -60560,21 +60597,24 @@
         144.195,
         144.195,
         144.195,
-        144.195
+        144.195,
+        144.196,
+        144.198
       ],
-      "year_ago": 144.22,
+      "year_ago": 144.21,
       "lat": 45.414289197,
       "lng": 4.79087634,
       "color": "#ef4444"
     },
     {
       "nom": "Saint-Ondras",
+      "libelle": "Provisoire-04 _Rha_ Le Petit Buclas_Saint Ondras",
+      "masse_eau": "Molasses miocènes du Bas Dauphiné depuis le seuil de Vienne ",
+      "profondeur": 100.0,
       "dept": "38",
       "code_bss": "07482X0049/F",
-      "current": 327.995,
+      "current": 327.936,
       "history": [
-        327.924,
-        327.877,
         327.882,
         327.874,
         327.901,
@@ -60586,7 +60626,9 @@
         328.016,
         328.062,
         328.035,
-        327.995
+        327.995,
+        327.96,
+        327.936
       ],
       "year_ago": null,
       "lat": 45.52676013,
@@ -60595,12 +60637,13 @@
     },
     {
       "nom": "Septème",
+      "libelle": "Piezometre - Champ Gymnase (Septeme - Brgm 38)",
+      "masse_eau": "Alluvions des vallées de Vienne (Véga, Gère, Vesonne, Sévenn",
+      "profondeur": 19.0,
       "dept": "38",
       "code_bss": "07228X0017/PZF",
-      "current": 215.93,
+      "current": 215.933,
       "history": [
-        215.916,
-        215.918,
         215.921,
         215.923,
         215.925,
@@ -60612,7 +60655,9 @@
         215.929,
         215.928,
         215.93,
-        215.93
+        215.93,
+        215.932,
+        215.933
       ],
       "year_ago": 216.09,
       "lat": 45.555518843,
@@ -60620,39 +60665,14 @@
       "color": "#ef4444"
     },
     {
-      "nom": "Saint-Bonnet-de-Chavagne",
-      "dept": "38",
-      "code_bss": "07953X0104/P",
-      "current": 249.559,
-      "history": [
-        249.541,
-        249.547,
-        249.558,
-        249.554,
-        249.562,
-        249.555,
-        249.563,
-        249.58,
-        249.583,
-        249.58,
-        249.571,
-        249.59,
-        249.567,
-        249.559
-      ],
-      "year_ago": 249.75,
-      "lat": 45.123958356,
-      "lng": 5.228987412,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Les Côtes-d'Arey",
+      "libelle": "Puits - Les Barres (Les-Cotes-D-Arey - Brgm 38)",
+      "masse_eau": "Molasses miocènes du Bas Dauphiné depuis le seuil de Vienne ",
+      "profondeur": 30.0,
       "dept": "38",
       "code_bss": "07463X0084/P",
-      "current": 351.318,
+      "current": 351.312,
       "history": [
-        351.326,
-        351.326,
         351.34,
         351.339,
         351.34,
@@ -60664,21 +60684,53 @@
         351.332,
         351.363,
         351.343,
-        351.318
+        351.318,
+        351.316,
+        351.312
       ],
-      "year_ago": 351.4,
+      "year_ago": 351.38,
       "lat": 45.465954722,
       "lng": 4.8632885,
       "color": "#ef4444"
     },
     {
+      "nom": "Tencin",
+      "libelle": "Piezometre - Noyers (Tencin - Brgm 38)",
+      "masse_eau": "Alluvions de l'Isère Combe de Savoie et Grésivaudan",
+      "profondeur": 10.0,
+      "dept": "38",
+      "code_bss": "07733X0070/F2",
+      "current": 231.836,
+      "history": [
+        231.733,
+        231.735,
+        231.736,
+        231.736,
+        231.735,
+        231.736,
+        231.74,
+        231.745,
+        231.754,
+        231.763,
+        231.781,
+        231.799,
+        231.817,
+        231.836
+      ],
+      "year_ago": 232.18,
+      "lat": 45.318871204,
+      "lng": 5.964116027,
+      "color": "#ef4444"
+    },
+    {
       "nom": "Penol",
+      "libelle": "Piezometre - Bois Des Burettes (Penol - Brgm 38) - Bsh",
+      "masse_eau": "Alluvions de la Plaine de Bièvre-Valloire",
+      "profondeur": 69.0,
       "dept": "38",
       "code_bss": "07476X0029/S",
-      "current": 297.294,
+      "current": 297.291,
       "history": [
-        297.327,
-        297.329,
         297.326,
         297.321,
         297.321,
@@ -60690,7 +60742,9 @@
         297.302,
         297.307,
         297.296,
-        297.294
+        297.294,
+        297.293,
+        297.291
       ],
       "year_ago": 297.92,
       "lat": 45.365054956,
@@ -60699,12 +60753,13 @@
     },
     {
       "nom": "Le Bourg-d'Oisans",
+      "libelle": "Piezometre - Rochetaillee (Bourg-D-Oisans - Brgm 38)",
+      "masse_eau": "Alluvions de la Romanche vallée d'Oisans, Eau d'Olle et Roma",
+      "profondeur": 10.0,
       "dept": "38",
       "code_bss": "07973X0011/RS15S",
-      "current": 708.264,
+      "current": 708.289,
       "history": [
-        708.178,
-        708.18,
         708.182,
         708.182,
         708.186,
@@ -60716,7 +60771,9 @@
         708.226,
         708.236,
         708.252,
-        708.264
+        708.264,
+        708.278,
+        708.289
       ],
       "year_ago": 708.41,
       "lat": 45.1161802,
@@ -60724,13 +60781,43 @@
       "color": "#ef4444"
     },
     {
+      "nom": "Saint-Bonnet-de-Chavagne",
+      "libelle": "Puits - Fontchaude (Saint-Bonnet-De-Chavagne - Brgm 38) - Bsh",
+      "masse_eau": "Molasses miocènes du Bas Dauphiné plaine de Valence et Drôme",
+      "profondeur": 19.93,
+      "dept": "38",
+      "code_bss": "07953X0104/P",
+      "current": 249.556,
+      "history": [
+        249.558,
+        249.554,
+        249.562,
+        249.555,
+        249.563,
+        249.58,
+        249.583,
+        249.58,
+        249.571,
+        249.59,
+        249.567,
+        249.559,
+        249.557,
+        249.556
+      ],
+      "year_ago": 249.75,
+      "lat": 45.123958356,
+      "lng": 5.228987412,
+      "color": "#ef4444"
+    },
+    {
       "nom": "Le Péage-de-Roussillon",
+      "libelle": "Puits - Les Oves Sud (Le Peage De Roussillon - Brgm 38)",
+      "masse_eau": "Alluvions du Rhône de la plaine de Péage-du-Roussillon et îl",
+      "profondeur": 6.0,
       "dept": "38",
       "code_bss": "BSS003ZFSK/X",
-      "current": 132.639,
+      "current": 133.008,
       "history": [
-        132.515,
-        132.514,
         132.513,
         132.517,
         132.518,
@@ -60742,15 +60829,20 @@
         132.514,
         132.562,
         132.552,
-        132.639
+        132.639,
+        132.818,
+        133.008
       ],
-      "year_ago": 133.54,
+      "year_ago": 133.47,
       "lat": 45.364615,
       "lng": 4.764418,
       "color": "#ef4444"
     },
     {
       "nom": "Heyrieux",
+      "libelle": "Piezometre - Rond Point (Buclay - Brgm 38) - Bsh",
+      "masse_eau": "Couloirs de l'Est lyonnais (Meyzieu, Décines, Mions) et allu",
+      "profondeur": 48.87,
       "dept": "38",
       "code_bss": "07231C0252/BUCLAY",
       "current": 227.68,
@@ -60770,219 +60862,12 @@
         227.678,
         227.68
       ],
-      "year_ago": 227.84,
+      "year_ago": 227.83,
       "lat": 45.640019367,
       "lng": 5.041296142,
       "color": "#ef4444"
-    },
-    {
-      "nom": "Saint-Joseph-de-Rivière",
-      "dept": "38",
-      "code_bss": "07488X0011/F",
-      "current": 404.886,
-      "history": [
-        404.154,
-        404.551,
-        404.609,
-        404.599,
-        404.53,
-        404.506,
-        404.399,
-        404.625,
-        404.321,
-        404.695,
-        404.667,
-        404.67,
-        404.75,
-        404.886
-      ],
-      "year_ago": 405.7,
-      "lat": 45.375782904,
-      "lng": 5.696861749,
-      "color": "#ef4444"
     }
   ],
-  "air": [
-    {
-      "zone": "Auberives-en-Royans",
-      "dept": "38",
-      "date": "2026-11-22",
-      "indice": 1,
-      "label": "Bon",
-      "color": "#50f0e6",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Annoisin",
-      "dept": "38",
-      "date": "2026-11-22",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Cernon",
-      "dept": "38",
-      "date": "2026-11-22",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "le Grand Oriol",
-      "dept": "38",
-      "date": "2026-11-22",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Anthon",
-      "dept": "38",
-      "date": "2026-11-22",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    }
-  ],
+  "air": [],
   "pollen": []
 }
