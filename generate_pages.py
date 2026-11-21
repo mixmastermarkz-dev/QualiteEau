@@ -229,6 +229,134 @@ def render_param_row(name, p):
     )
 
 
+def _sécheresse_bloc(zone_id: str = "") -> str:
+    """Bloc 'Risque sécheresse estimé' — placeholder statique en attendant le backend."""
+    zone_js = zone_id.replace("'", "\\'") if zone_id else ""
+    return f"""
+    <!-- BLOC RISQUE SÉCHERESSE -->
+    <section class="bg-white rounded-3xl shadow-sm border border-slate-200 p-6" id="secheresse-bloc">
+        <div class="flex items-start justify-between gap-4 mb-4">
+            <div>
+                <h2 class="font-black text-slate-800 uppercase tracking-tight">🌊 Risque sécheresse estimé</h2>
+                <p class="text-xs text-slate-400 mt-0.5">Modèle prédictif expérimental · Source : VigiEau, BRGM, Hub'Eau</p>
+            </div>
+        </div>
+
+        <!-- Légende des niveaux -->
+        <div class="flex flex-wrap gap-3 mb-4">
+            <span class="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1 rounded-full bg-green-100 text-green-700">
+                <span class="w-2 h-2 rounded-full bg-green-500 inline-block"></span> Faible
+            </span>
+            <span class="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1 rounded-full bg-orange-100 text-orange-700">
+                <span class="w-2 h-2 rounded-full bg-orange-500 inline-block"></span> Modéré
+            </span>
+            <span class="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1 rounded-full bg-red-100 text-red-700">
+                <span class="w-2 h-2 rounded-full bg-red-500 inline-block"></span> Élevé
+            </span>
+        </div>
+
+        <!-- Contenu dynamique — placeholder jusqu'au déploiement du backend -->
+        <div id="secheresse-content" class="bg-slate-50 border border-slate-200 rounded-2xl p-4 text-center text-slate-500 text-sm">
+            <p class="font-bold text-slate-700 mb-1">🔮 Prédictions disponibles prochainement pour les abonnés</p>
+            <p class="text-xs">L'indicateur de risque sécheresse sera disponible pour les communes d'Occitanie dès l'ouverture des abonnements.</p>
+        </div>
+
+        <!-- Mention légale obligatoire -->
+        <p class="text-[10px] text-amber-700 bg-amber-50 border border-amber-100 rounded-xl px-3 py-2 mt-4">
+            ⚠️ Estimation non officielle — modèle prédictif expérimental. Seuls les arrêtés préfectoraux publiés font foi.
+        </p>
+
+        <!-- CTA -->
+        <div class="mt-4 flex flex-col sm:flex-row gap-3 items-start sm:items-center">
+            <a href="/tarifs/" class="inline-flex items-center gap-1 text-sky-600 font-black text-sm hover:text-sky-800 transition-colors">
+                Voir les prévisions détaillées →
+            </a>
+        </div>
+
+        <noscript>
+            <p class="text-xs text-slate-500 mt-3">
+                Prévisions de sécheresse disponibles sur <a href="/tarifs/" class="underline text-sky-600">la page tarifs</a>.
+            </p>
+        </noscript>
+    </section>
+    <script>
+    (function(){{
+        var zone = '{zone_js}';
+        if(!zone) return;
+        var apiUrl = 'https://www.mon-environnement.fr/api/v1/risque/' + encodeURIComponent(zone);
+        fetch(apiUrl, {{method:'GET', headers:{{'Accept':'application/json'}}}})
+            .then(function(r){{ return r.ok ? r.json() : Promise.reject(r.status); }})
+            .then(function(d){{
+                var el = document.getElementById('secheresse-content');
+                if(!el || !d || !d.niveau) return;
+                var niveaux = {{
+                    'faible':  ['bg-green-100 text-green-700',  '🟢 Faible'],
+                    'modere':  ['bg-orange-100 text-orange-700','🟠 Modéré'],
+                    'eleve':   ['bg-red-100 text-red-700',      '🔴 Élevé']
+                }};
+                var style = niveaux[d.niveau] || ['bg-slate-100 text-slate-500', d.niveau];
+                el.className = 'rounded-2xl p-4 text-center font-black text-lg ' + style[0];
+                el.innerHTML = '<p>' + style[1] + '</p>'
+                    + (d.date ? '<p class="text-xs font-normal mt-1 opacity-70">Mise à jour : ' + d.date + '</p>' : '');
+            }})
+            .catch(function(){{ /* mode dégradé : placeholder déjà affiché */ }});
+    }})();
+    </script>"""
+
+
+def _cookie_banner_html() -> str:
+    return """<!-- BANDEAU COOKIES CNIL -->
+<div id="cookie-banner" style="display:none" role="dialog" aria-label="Consentement cookies" aria-modal="true"
+     class="fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-slate-200 shadow-2xl p-4 md:p-6">
+  <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-start md:items-center gap-4">
+    <div class="flex-1 text-sm text-slate-700">
+      <p class="font-bold mb-1">Ce site utilise des cookies publicitaires (Google AdSense)</p>
+      <p>En cliquant \u00ab Accepter \u00bb, vous autorisez le dépôt de cookies pour la personnalisation des publicités.
+         Vous pouvez refuser sans impact sur votre navigation.
+         <a href="/politique-confidentialite.html" class="underline text-sky-600">En savoir plus</a>.</p>
+    </div>
+    <div class="flex gap-3 flex-shrink-0">
+      <button id="cookie-refuse" onclick="cookieRefuse()"
+              class="px-5 py-2.5 rounded-xl border-2 border-slate-300 text-sm font-bold text-slate-700 hover:border-slate-500 transition-colors">
+        Refuser
+      </button>
+      <button id="cookie-accept" onclick="cookieAccept()"
+              class="px-5 py-2.5 rounded-xl bg-sky-500 text-white text-sm font-bold hover:bg-sky-600 transition-colors">
+        Accepter
+      </button>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var CONSENT_KEY = 'cookie_consent';
+  var CONSENT_VERSION = '1';
+  function getConsent(){ return localStorage.getItem(CONSENT_KEY); }
+  function loadAdsense(){
+    if(document.querySelector('script[data-adsense]')) return;
+    var s = document.createElement('script');
+    s.async = true;
+    s.setAttribute('data-adsense','1');
+    s.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6656990941754174';
+    s.crossOrigin = 'anonymous';
+    document.head.appendChild(s);
+  }
+  window.cookieAccept = function(){
+    localStorage.setItem(CONSENT_KEY, 'accepted:' + CONSENT_VERSION);
+    document.getElementById('cookie-banner').style.display = 'none';
+    loadAdsense();
+  };
+  window.cookieRefuse = function(){
+    localStorage.setItem(CONSENT_KEY, 'refused:' + CONSENT_VERSION);
+    document.getElementById('cookie-banner').style.display = 'none';
+  };
+  var c = getConsent();
+  if(!c){ document.getElementById('cookie-banner').style.display = ''; }
+  else if(c.startsWith('accepted')){ loadAdsense(); }
+})();
+</script>"""
+
+
 def render_river_section(rivieres: list) -> str:
     """HTML de la section rivières pour une page commune (peut être vide)."""
     if not rivieres:
@@ -383,7 +511,7 @@ def build_json_ld(commune, slug):
 # TEMPLATE PAGE COMMUNE
 # ---------------------------------------------------------------------------
 
-def build_page(commune, neighbors_html, json_ld, slug, rivieres_html=""):
+def build_page(commune, neighbors_html, json_ld, slug, rivieres_html="", zone_id=""):
     nom   = commune["nom"]
     dept  = commune.get("dept", "")
     dept_label  = "Hérault (34)" if dept == "34" else "Gard (30)"
@@ -439,7 +567,9 @@ def build_page(commune, neighbors_html, json_ld, slug, rivieres_html=""):
     <script type="application/ld+json">
 {json_ld}
     </script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assets/css/tailwind.3.4.1.min.css"
+          integrity="sha256-9vMjhXEJhnMA4eZu2RkP4gbUPIzq4+zL9+KIIOHJj4A="
+          crossorigin="anonymous">
     <style>
         .score-badge {{
             width: 88px; height: 88px; border-radius: 50%;
@@ -533,6 +663,8 @@ def build_page(commune, neighbors_html, json_ld, slug, rivieres_html=""):
 
     {rivieres_html}
 
+    {_sécheresse_bloc(zone_id)}
+
     <!-- COMMUNES VOISINES -->
     <section class="bg-white rounded-3xl shadow-sm border border-slate-200 p-6">
         <h2 class="font-black text-slate-800 uppercase tracking-tight mb-1">Communes voisines</h2>
@@ -566,6 +698,7 @@ def build_page(commune, neighbors_html, json_ld, slug, rivieres_html=""):
     </div>
 </footer>
 
+{_cookie_banner_html()}
 </body>
 </html>"""
 
@@ -643,7 +776,9 @@ def main():
         json_ld       = build_json_ld(commune, slug)
         comm_rivieres = find_rivieres_for_commune(nom, all_rivieres)
         rivieres_html = render_river_section(comm_rivieres)
-        html          = build_page(commune, neighbors_html, json_ld, slug, rivieres_html)
+        # Identifiant de zone pour le bloc sécheresse (code INSEE ou slug par défaut)
+        zone_id = commune.get("code_zone") or commune.get("code_commune") or slug
+        html          = build_page(commune, neighbors_html, json_ld, slug, rivieres_html, zone_id)
 
         page_dir = os.path.join(out_dir, slug)
         os.makedirs(page_dir, exist_ok=True)
