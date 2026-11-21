@@ -49,10 +49,18 @@ class Settings(BaseSettings):
     # Lien magique
     magic_link_ttl_minutes: int = 15        # Durée de validité du lien
 
+    # Paiement
+    payment_grace_period_days: int = 7     # Délai après échec de paiement avant suspension
+
     @property
     def session_cookie_name(self) -> str:
         """__Host- en production (HTTPS requis), 'session' en dev."""
         return "__Host-session" if self.is_production else "session"
+
+    def get_price_id_for_plan(self, plan_value: str) -> str | None:
+        """Retourne le price_id Stripe pour un nom de formule (A/B/C). None si inconnu."""
+        mapping = {"A": self.stripe_price_a, "B": self.stripe_price_b, "C": self.stripe_price_c}
+        return mapping.get(plan_value.upper()) or None
 
     @property
     def price_plan_map(self) -> dict:

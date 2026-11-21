@@ -19,6 +19,8 @@ from app.config import settings
 from app.database import engine, Base
 import app.models  # noqa: F401 — enregistre tous les modèles dans Base.metadata
 from app.routers import auth as auth_router
+from app.routers import billing as billing_router
+from app.services.billing import init_stripe
 
 
 # ── Rate limiter ──────────────────────────────────────────────────────────────
@@ -32,6 +34,9 @@ limiter = Limiter(key_func=get_remote_address, default_limits=["200/minute"])
 async def lifespan(app: FastAPI):
     if settings.is_production:
         settings.assert_production_secrets()
+
+    # Initialisation du client Stripe (clé API)
+    init_stripe()
 
     # Créer les tables si elles n'existent pas (dev uniquement — prod utilise Alembic)
     if settings.is_development:
@@ -98,6 +103,7 @@ async def health():
 
 
 app.include_router(auth_router.router)
+app.include_router(billing_router.router)
 
 
 # ── Rate limit par route ──────────────────────────────────────────────────────
