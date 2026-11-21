@@ -42,6 +42,31 @@ class Settings(BaseSettings):
     stripe_price_b: str = ""
     stripe_price_c: str = ""
 
+    # Sessions
+    session_duration_days: int = 30         # Expiration absolue
+    session_inactivity_days: int = 7        # Expiration par inactivité
+
+    # Lien magique
+    magic_link_ttl_minutes: int = 15        # Durée de validité du lien
+
+    @property
+    def session_cookie_name(self) -> str:
+        """__Host- en production (HTTPS requis), 'session' en dev."""
+        return "__Host-session" if self.is_production else "session"
+
+    @property
+    def price_plan_map(self) -> dict:
+        """Correspondance price_id Stripe → Plan. Source unique de vérité côté serveur."""
+        from app.models.subscription import Plan
+        result: dict[str, Plan] = {}
+        if self.stripe_price_a:
+            result[self.stripe_price_a] = Plan.A
+        if self.stripe_price_b:
+            result[self.stripe_price_b] = Plan.B
+        if self.stripe_price_c:
+            result[self.stripe_price_c] = Plan.C
+        return result
+
     @property
     def is_production(self) -> bool:
         return self.environment == "production"

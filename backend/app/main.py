@@ -4,26 +4,36 @@ Point d'entrée FastAPI — mon-environnement.fr backend
 
 from contextlib import asynccontextmanager
 
-from fastapi import FastAPI
+from fastapi import FastAPI, Request, status
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
+from slowapi import Limiter, _rate_limit_exceeded_handler
+from slowapi.errors import RateLimitExceeded
+from slowapi.middleware import SlowAPIMiddleware
+from slowapi.util import get_remote_address
 from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.requests import Request
 from starlette.responses import Response
 
 from app.config import settings
 from app.database import engine, Base
+import app.models  # noqa: F401 — enregistre tous les modèles dans Base.metadata
+from app.routers import auth as auth_router
+
+
+# ── Rate limiter ──────────────────────────────────────────────────────────────
+
+limiter = Limiter(key_func=get_remote_address, default_limits=["200/minute"])
 
 
 # ── Cycle de vie ──────────────────────────────────────────────────────────────
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    # Vérifications au démarrage
     if settings.is_production:
         settings.assert_production_secrets()
 
-    # Créer les tables si elles n'existent pas (dev uniquement)
-    # En production : utiliser Alembic
+    # Créer les tables si elles n'existent pas (dev uniquement — prod utilise Alembic)
     if settings.is_development:
         async with engine.begin() as conn:
             await conn.run_sync(Base.metadata.create_all)
@@ -38,7 +48,6 @@ async def lifespan(app: FastAPI):
 app = FastAPI(
     title="mon-environnement.fr API",
     version="0.1.0",
-    # Swagger et OpenAPI désactivés en production
     docs_url="/docs" if not settings.is_production else None,
     redoc_url="/redoc" if not settings.is_production else None,
     openapi_url="/openapi.json" if not settings.is_production else None,
@@ -46,7 +55,12 @@ app = FastAPI(
 )
 
 
-# ── Middleware sécurité ───────────────────────────────────────────────────────
+# ── Middleware ────────────────────────────────────────────────────────────────
+
+app.state.limiter = limiter
+app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
+app.add_middleware(SlowAPIMiddleware)
+
 
 class SecurityHeadersMiddleware(BaseHTTPMiddleware):
     async def dispatch(self, request: Request, call_next) -> Response:
@@ -81,3 +95,11 @@ app.add_middleware(
 async def health():
     """Point de santé — vérifié par le monitoring."""
     return {"status": "ok", "environment": settings.environment}
+
+
+app.include_router(auth_router.router)
+
+
+# ── Rate limit par route ──────────────────────────────────────────────────────
+# Les limites spécifiques sont déclarées sur les routes via @limiter.limit(...)
+# directement dans les routers. Le défaut global est 200/minute/IP.

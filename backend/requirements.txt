@@ -11,13 +11,18 @@ asyncpg==0.30.0
 # Validation
 pydantic==2.10.3
 pydantic-settings==2.6.1
+email-validator==2.2.0
 
 # Sécurité — authentification
 argon2-cffi==23.1.0
 pyotp==2.9.0
+itsdangerous==2.2.0
 
 # Sécurité — rate limiting
 slowapi==0.1.9
+
+# Paiement
+stripe==11.1.0
 
 # HTTP client (appels APIs externes)
 httpx==0.28.1
