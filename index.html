@@ -3983,11 +3983,12 @@ function renderNappes(city,nappes){
         return`<div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:.85rem;padding:.9rem 1.1rem;margin-bottom:.85rem">
             <div style="display:flex;align-items:flex-start;gap:1rem;flex-wrap:wrap">
                 <div style="flex:1;min-width:180px">
-                    <div style="display:flex;align-items:baseline;gap:.5rem;flex-wrap:wrap;margin-bottom:.15rem">
-                        <span style="font-size:.84rem;font-weight:800;color:#1e3a5f">${n.nom}</span>
+                    <div style="display:flex;align-items:baseline;gap:.5rem;flex-wrap:wrap;margin-bottom:.1rem">
+                        <span style="font-size:.84rem;font-weight:800;color:#1e3a5f">${n.libelle||n.nom}</span>
                         ${distLabel}
                     </div>
-                    <div style="font-size:.62rem;color:#94a3b8;font-family:monospace;margin-bottom:.55rem">${n.code_bss}</div>
+                    ${n.masse_eau?`<div style="font-size:.68rem;color:#0369a1;font-weight:600;margin-bottom:.1rem">🪨 ${n.masse_eau}</div>`:""}
+                    <div style="font-size:.6rem;color:#94a3b8;font-family:monospace;margin-bottom:.55rem">${n.code_bss}${n.profondeur?` · ${n.profondeur} m de profondeur`:""}</div>
 
                     <div style="display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;margin-bottom:.5rem">
                         ${trendBadge}

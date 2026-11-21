@@ -359,16 +359,26 @@ def _fetch_nappe_station(s: dict, one_year_ago: str):
                         f"?code_bss={bss}&date_debut_mesure={one_year_ago}&size=1&sort=asc")
     year_ago = d_old["data"][0]["niveau_nappe_eau"] if d_old and d_old.get("data") else None
 
+    # Libellé distinctif : libelle_pe nettoyé (ex. "BRGM MONTPELLIER" → "BRGM Montpellier")
+    libelle = s.get("libelle_pe", "").strip().title()
+    # Masse d'eau : premier élément de la liste, tronqué à 60 chars pour l'affichage
+    noms_masse = s.get("noms_masse_eau_edl") or []
+    masse_eau = noms_masse[0][:60] if noms_masse else ""
+    profondeur = s.get("profondeur_investigation")
+
     return {
-        "nom":      s["nom_commune"],
-        "dept":     s["code_departement"],
-        "code_bss": s["code_bss"],
-        "current":  current,
-        "history":  history,
-        "year_ago": year_ago,
-        "lat":      s.get("y"),
-        "lng":      s.get("x"),
-        "color":    "#3b82f6" if (year_ago and current > year_ago) else "#ef4444",
+        "nom":        s["nom_commune"],
+        "libelle":    libelle,
+        "masse_eau":  masse_eau,
+        "profondeur": profondeur,
+        "dept":       s["code_departement"],
+        "code_bss":   s["code_bss"],
+        "current":    current,
+        "history":    history,
+        "year_ago":   year_ago,
+        "lat":        s.get("y"),
+        "lng":        s.get("x"),
+        "color":      "#3b82f6" if (year_ago and current > year_ago) else "#ef4444",
     }
 
 
