@@ -20,6 +20,7 @@ from app.database import engine, Base
 import app.models  # noqa: F401 — enregistre tous les modèles dans Base.metadata
 from app.routers import auth as auth_router
 from app.routers import billing as billing_router
+from app.routers.predictif import router as predictif_router
 from app.services.billing import init_stripe
 
 
@@ -104,6 +105,7 @@ async def health():
 
 app.include_router(auth_router.router)
 app.include_router(billing_router.router)
+app.include_router(predictif_router)
 
 
 # ── Rate limit par route ──────────────────────────────────────────────────────
