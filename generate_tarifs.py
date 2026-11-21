@@ -80,9 +80,7 @@ def build_tarifs_page() -> str:
     <meta property="og:description" content="Accédez aux prévisions de sécheresse sur vos zones d'alerte en Occitanie. Alertes e-mail, historique CSV, API à clé.">
     <meta property="og:locale" content="fr_FR">
     <!-- AdSense chargé après consentement cookies (voir cookie-banner en bas de page) -->
-    <link rel="stylesheet" href="/assets/css/tailwind.3.4.1.min.css"
-          integrity="{TAILWIND_SRI}"
-          crossorigin="anonymous">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
     <style>
         body {{ font-family: system-ui, sans-serif; }}
