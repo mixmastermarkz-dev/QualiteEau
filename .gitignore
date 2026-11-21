@@ -32,6 +32,10 @@ workers/auth-gate/node_modules/
 donnees_34/
 **/donnees_34/
 
+# Module prédictif : données, cache, modèles ML (jamais commitées)
+backend/data/predictif/
+*.pkl
+
 # Backend — secrets et artefacts locaux
 backend/.env
 *.pem
