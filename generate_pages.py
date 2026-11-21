@@ -140,6 +140,13 @@ def slugify(name: str) -> str:
     return name.strip("-")
 
 
+def normalize(text: str) -> str:
+    """Normalise pour comparaison : minuscules, sans accents, sans tirets."""
+    text = unicodedata.normalize("NFD", text)
+    text = "".join(c for c in text if unicodedata.category(c) != "Mn")
+    return re.sub(r"[^a-z0-9]", "", text.lower())
+
+
 def haversine(lat1, lon1, lat2, lon2) -> float:
     R = 6371.0
     phi1, phi2 = math.radians(lat1), math.radians(lat2)
@@ -147,6 +154,12 @@ def haversine(lat1, lon1, lat2, lon2) -> float:
     dlambda = math.radians(lon2 - lon1)
     a = math.sin(dphi / 2) ** 2 + math.cos(phi1) * math.cos(phi2) * math.sin(dlambda / 2) ** 2
     return R * 2 * math.asin(math.sqrt(a))
+
+
+def find_rivieres_for_commune(nom: str, all_rivieres: list) -> list:
+    """Retourne les stations rivières dont le nom contient le nom de la commune."""
+    cn = normalize(nom)
+    return [r for r in all_rivieres if cn in normalize(r.get("nom", ""))]
 
 
 def nearest_communes(nom: str, all_communes: list, n: int = 5) -> list:
@@ -213,6 +226,82 @@ def render_param_row(name, p):
         f'<td class="py-3 px-4 text-xs text-slate-400">{d}</td>'
         f'<td class="py-3 px-4"><span class="inline-block w-3 h-3 rounded-full {dot}"></span></td>'
         f'</tr>'
+    )
+
+
+def render_river_section(rivieres: list) -> str:
+    """HTML de la section rivières pour une page commune (peut être vide)."""
+    if not rivieres:
+        return ""
+
+    cards = []
+    for r in rivieres:
+        nom_station = r.get("nom", "—")
+        nom_cours = r.get("nom_cours_eau", "")
+        score = r.get("score")
+        sc = r.get("score_color", "#94a3b8")
+        sl = r.get("score_label", "—")
+        score_str = f"{score}/100" if score is not None else "—"
+        params = r.get("parametres", {})
+
+        param_rows = []
+        for pname, pdata in list(params.items())[:6]:  # max 6 params
+            val = pdata.get("valeur")
+            unite = pdata.get("unite", "")
+            color = pdata.get("color", "#94a3b8")
+            d = iso_to_fr(pdata.get("date", "—"))
+            dot = COLOR_TO_DOT.get(color, "bg-slate-300")
+            val_str = str(val) if val is not None else "—"
+            param_rows.append(
+                f'<tr class="border-b border-slate-100">'
+                f'<td class="py-2 px-3 text-xs font-bold text-slate-600">{pname}</td>'
+                f'<td class="py-2 px-3 text-xs text-slate-900 font-black">{val_str}'
+                f' <span class="text-slate-400 font-normal">{unite}</span></td>'
+                f'<td class="py-2 px-3 text-[10px] text-slate-400">{d}</td>'
+                f'<td class="py-2 px-3"><span class="inline-block w-2.5 h-2.5 rounded-full {dot}"></span></td>'
+                f'</tr>'
+            )
+        rows_html = "".join(param_rows) if param_rows else (
+            '<tr><td colspan="4" class="py-3 text-center text-slate-400 text-xs">Aucun paramètre disponible</td></tr>'
+        )
+
+        titre = nom_cours if nom_cours else nom_station
+        sous_titre = nom_station if nom_cours and nom_cours != nom_station else ""
+        sous_titre_html = (
+            f'<p class="text-[10px] text-slate-400 mt-0.5">{sous_titre}</p>'
+            if sous_titre else ""
+        )
+
+        cards.append(
+            f'<div class="bg-white rounded-2xl border border-slate-200 overflow-hidden">'
+            f'<div class="px-4 py-3 border-b border-slate-100 flex items-center justify-between gap-3">'
+            f'<div>'
+            f'<p class="font-black text-slate-800 text-sm">🏞 {titre}</p>'
+            f'{sous_titre_html}'
+            f'</div>'
+            f'<span class="text-xs font-black px-2 py-0.5 rounded-full flex-shrink-0" '
+            f'style="background:{sc}22;color:{sc}">{score_str} · {sl}</span>'
+            f'</div>'
+            f'<div class="overflow-x-auto">'
+            f'<table class="w-full">'
+            f'<thead><tr class="bg-slate-50">'
+            f'<th class="py-1.5 px-3 text-left text-[9px] font-black text-slate-400 uppercase tracking-widest">Paramètre</th>'
+            f'<th class="py-1.5 px-3 text-left text-[9px] font-black text-slate-400 uppercase tracking-widest">Valeur</th>'
+            f'<th class="py-1.5 px-3 text-left text-[9px] font-black text-slate-400 uppercase tracking-widest">Date</th>'
+            f'<th class="py-1.5 px-3 text-left text-[9px] font-black text-slate-400 uppercase tracking-widest">Éval.</th>'
+            f'</tr></thead>'
+            f'<tbody>{rows_html}</tbody>'
+            f'</table></div></div>'
+        )
+
+    nb = len(rivieres)
+    label = "station" if nb == 1 else "stations"
+    return (
+        f'<section class="bg-white rounded-3xl shadow-sm border border-slate-200 p-6">'
+        f'<h2 class="font-black text-slate-800 uppercase tracking-tight mb-1">Qualité des rivières à proximité</h2>'
+        f'<p class="text-xs text-slate-400 mb-4">{nb} {label} de mesure · Source : BRGM / Hub\'Eau Qualité des cours d\'eau</p>'
+        f'<div class="space-y-4">{"".join(cards)}</div>'
+        f'</section>'
     )
 
 
@@ -294,7 +383,7 @@ def build_json_ld(commune, slug):
 # TEMPLATE PAGE COMMUNE
 # ---------------------------------------------------------------------------
 
-def build_page(commune, neighbors_html, json_ld, slug):
+def build_page(commune, neighbors_html, json_ld, slug, rivieres_html=""):
     nom   = commune["nom"]
     dept  = commune.get("dept", "")
     dept_label  = "Hérault (34)" if dept == "34" else "Gard (30)"
@@ -368,7 +457,7 @@ def build_page(commune, neighbors_html, json_ld, slug):
         <a href="/" class="flex items-center gap-3 group">
             <span class="text-slate-400 group-hover:text-sky-500 transition-colors text-lg font-black">←</span>
             <div>
-                <span class="font-black text-slate-700 uppercase tracking-tight text-sm group-hover:text-sky-600 transition-colors">Qualité Air et Eau 34/30</span>
+                <span class="font-black text-slate-700 uppercase tracking-tight text-sm group-hover:text-sky-600 transition-colors">Mon-Environnement.fr</span>
                 <p class="text-[10px] text-slate-400 italic mt-0.5">📡 Données mises à jour quotidiennement à 11h</p>
             </div>
         </a>
@@ -442,6 +531,8 @@ def build_page(commune, neighbors_html, json_ld, slug):
         </p>
     </div>
 
+    {rivieres_html}
+
     <!-- COMMUNES VOISINES -->
     <section class="bg-white rounded-3xl shadow-sm border border-slate-200 p-6">
         <h2 class="font-black text-slate-800 uppercase tracking-tight mb-1">Communes voisines</h2>
@@ -463,9 +554,9 @@ def build_page(commune, neighbors_html, json_ld, slug):
 <!-- FOOTER -->
 <footer class="bg-slate-900 text-white py-10 mt-4">
     <div class="max-w-4xl mx-auto px-4 text-center">
-        <p class="font-black uppercase text-lg mb-2">QUALITÉ <span class="text-sky-400">AIR ET EAU</span></p>
+        <p class="font-black uppercase text-lg mb-2">MON-<span class="text-sky-400">ENVIRONNEMENT</span>.FR</p>
         <p class="text-slate-400 text-sm">Surveillance indépendante · Données officielles ARS, BRGM, Hub'Eau</p>
-        <p class="text-slate-400 text-sm">Hérault (34) &amp; Gard (30) · Communes de plus de 1 000 habitants</p>
+        <p class="text-slate-400 text-sm">France métropolitaine · Mises à jour quotidiennes</p>
         <div class="mt-4 flex justify-center gap-6 text-xs text-slate-500">
             <a href="/contact.html" class="hover:text-white transition-colors underline">Contact</a>
             <a href="/mentions-legales.html" class="hover:text-white transition-colors underline">Mentions légales</a>
@@ -534,6 +625,8 @@ def main():
         print("Aucune donnée potable dans full_data.json — rien à générer.")
         return
 
+    all_rivieres = data.get("rivieres", [])
+
     # Correspondance nom → slug pour les liens internes
     slug_map = {c["nom"]: slugify(c["nom"]) for c in communes}
 
@@ -548,7 +641,9 @@ def main():
         neighbors     = nearest_communes(nom, communes, n=5)
         neighbors_html = "\n            ".join(render_neighbor_card(c, slug_map) for c in neighbors)
         json_ld       = build_json_ld(commune, slug)
-        html          = build_page(commune, neighbors_html, json_ld, slug)
+        comm_rivieres = find_rivieres_for_commune(nom, all_rivieres)
+        rivieres_html = render_river_section(comm_rivieres)
+        html          = build_page(commune, neighbors_html, json_ld, slug, rivieres_html)
 
         page_dir = os.path.join(out_dir, slug)
         os.makedirs(page_dir, exist_ok=True)
