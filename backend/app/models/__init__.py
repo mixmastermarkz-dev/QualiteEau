@@ -12,6 +12,7 @@ from app.models.subscription import Subscription, Plan, SubscriptionStatus
 from app.models.stripe_event import StripeEvent
 from app.models.api_key import ApiKey
 from app.models.audit_log import AuditLog
+from app.models.prediction import ZoneAlerte, ArreteSecheresse, ModelVersion, Prediction
 
 __all__ = [
     "Organisation",
@@ -25,4 +26,8 @@ __all__ = [
     "StripeEvent",
     "ApiKey",
     "AuditLog",
+    "ZoneAlerte",
+    "ArreteSecheresse",
+    "ModelVersion",
+    "Prediction",
 ]
