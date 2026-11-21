@@ -193,50 +193,63 @@
     <section class="bg-white rounded-3xl shadow-sm border border-slate-200 p-6"><h2 class="font-black text-slate-800 uppercase tracking-tight mb-1">Qualité des rivières à proximité</h2><p class="text-xs text-slate-400 mb-4">1 station de mesure · Source : BRGM / Hub'Eau Qualité des cours d'eau</p><div class="space-y-4"><div class="bg-white rounded-2xl border border-slate-200 overflow-hidden"><div class="px-4 py-3 border-b border-slate-100 flex items-center justify-between gap-3"><div><p class="font-black text-slate-800 text-sm">🏞 VIDOURLE</p><p class="text-[10px] text-slate-400 mt-0.5">VIDOURLE A QUISSAC </p></div><span class="text-xs font-black px-2 py-0.5 rounded-full flex-shrink-0" style="background:#10b98122;color:#10b981">81/100 · Bonne</span></div><div class="overflow-x-auto"><table class="w-full"><thead><tr class="bg-slate-50"><th class="py-1.5 px-3 text-left text-[9px] font-black text-slate-400 uppercase tracking-widest">Paramètre</th><th class="py-1.5 px-3 text-left text-[9px] font-black text-slate-400 uppercase tracking-widest">Valeur</th><th class="py-1.5 px-3 text-left text-[9px] font-black text-slate-400 uppercase tracking-widest">Date</th><th class="py-1.5 px-3 text-left text-[9px] font-black text-slate-400 uppercase tracking-widest">Éval.</th></tr></thead><tbody><tr class="border-b border-slate-100"><td class="py-2 px-3 text-xs font-bold text-slate-600">Nitrates</td><td class="py-2 px-3 text-xs text-slate-900 font-black">2.6 <span class="text-slate-400 font-normal">mg/L</span></td><td class="py-2 px-3 text-[10px] text-slate-400">17/11/2025</td><td class="py-2 px-3"><span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-500"></span></td></tr><tr class="border-b border-slate-100"><td class="py-2 px-3 text-xs font-bold text-slate-600">Ammonium</td><td class="py-2 px-3 text-xs text-slate-900 font-black">1.5 <span class="text-slate-400 font-normal">mg/L</span></td><td class="py-2 px-3 text-[10px] text-slate-400">17/11/2025</td><td class="py-2 px-3"><span class="inline-block w-2.5 h-2.5 rounded-full bg-amber-400"></span></td></tr><tr class="border-b border-slate-100"><td class="py-2 px-3 text-xs font-bold text-slate-600">Temp. eau</td><td class="py-2 px-3 text-xs text-slate-900 font-black">14.4 <span class="text-slate-400 font-normal">°C</span></td><td class="py-2 px-3 text-[10px] text-slate-400">17/11/2025</td><td class="py-2 px-3"><span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-500"></span></td></tr><tr class="border-b border-slate-100"><td class="py-2 px-3 text-xs font-bold text-slate-600">pH</td><td class="py-2 px-3 text-xs text-slate-900 font-black">8.1 <span class="text-slate-400 font-normal">pH</span></td><td class="py-2 px-3 text-[10px] text-slate-400">17/11/2025</td><td class="py-2 px-3"><span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-500"></span></td></tr><tr class="border-b border-slate-100"><td class="py-2 px-3 text-xs font-bold text-slate-600">Conductivité</td><td class="py-2 px-3 text-xs text-slate-900 font-black">9.55 <span class="text-slate-400 font-normal">µS/cm</span></td><td class="py-2 px-3 text-[10px] text-slate-400">17/11/2025</td><td class="py-2 px-3"><span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-500"></span></td></tr><tr class="border-b border-slate-100"><td class="py-2 px-3 text-xs font-bold text-slate-600">MES</td><td class="py-2 px-3 text-xs text-slate-900 font-black">322.0 <span class="text-slate-400 font-normal">mg/L</span></td><td class="py-2 px-3 text-[10px] text-slate-400">17/11/2025</td><td class="py-2 px-3"><span class="inline-block w-2.5 h-2.5 rounded-full bg-red-500"></span></td></tr></tbody></table></div></div></div></section>
 
     
-    <!-- BLOC RISQUE SÉCHERESSE -->
-    <section class="bg-white rounded-3xl shadow-sm border border-slate-200 p-6" id="secheresse-bloc">
-        <div class="flex items-start justify-between gap-4 mb-4">
-            <div>
-                <h2 class="font-black text-slate-800 uppercase tracking-tight">🌊 Risque sécheresse estimé</h2>
-                <p class="text-xs text-slate-400 mt-0.5">Modèle prédictif expérimental · Source : VigiEau, BRGM, Hub'Eau</p>
+    <!-- BLOC RISQUE SÉCHERESSE + OFFRE -->
+    <section class="rounded-3xl overflow-hidden border-2 border-sky-200 shadow-md" id="secheresse-bloc">
+
+        <!-- En-tête coloré -->
+        <div class="bg-gradient-to-r from-sky-500 to-blue-600 px-6 py-5 text-white">
+            <div class="flex items-center gap-3 mb-1">
+                <span class="text-2xl">🌊</span>
+                <h2 class="font-black text-xl uppercase tracking-tight">Prévision sécheresse</h2>
             </div>
+            <p class="text-sky-100 text-sm">Anticipez les restrictions d'eau jusqu'à 30 jours à l'avance</p>
         </div>
 
-        <!-- Légende des niveaux -->
-        <div class="flex flex-wrap gap-3 mb-4">
-            <span class="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1 rounded-full bg-green-100 text-green-700">
-                <span class="w-2 h-2 rounded-full bg-green-500 inline-block"></span> Faible
-            </span>
-            <span class="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1 rounded-full bg-orange-100 text-orange-700">
-                <span class="w-2 h-2 rounded-full bg-orange-500 inline-block"></span> Modéré
-            </span>
-            <span class="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1 rounded-full bg-red-100 text-red-700">
-                <span class="w-2 h-2 rounded-full bg-red-500 inline-block"></span> Élevé
-            </span>
-        </div>
+        <div class="bg-white px-6 py-5">
 
-        <!-- Contenu dynamique — placeholder jusqu'au déploiement du backend -->
-        <div id="secheresse-content" class="bg-slate-50 border border-slate-200 rounded-2xl p-4 text-center text-slate-500 text-sm">
-            <p class="font-bold text-slate-700 mb-1">🔮 Prédictions disponibles prochainement pour les abonnés</p>
-            <p class="text-xs">L'indicateur de risque sécheresse sera disponible pour les communes d'Occitanie dès l'ouverture des abonnements.</p>
-        </div>
+            <!-- Indicateur dynamique (remplacé par JS si API disponible) -->
+            <div id="secheresse-content" class="mb-5">
+                <div class="flex items-center gap-3 p-4 bg-slate-50 rounded-2xl border border-slate-200">
+                    <span class="text-3xl">🔒</span>
+                    <div>
+                        <p class="font-black text-slate-800">Indicateur disponible pour les abonnés</p>
+                        <p class="text-xs text-slate-500 mt-0.5">Faible · Modéré · Élevé · Critique — mis à jour chaque nuit</p>
+                    </div>
+                </div>
+            </div>
 
-        <!-- Mention légale obligatoire -->
-        <p class="text-[10px] text-amber-700 bg-amber-50 border border-amber-100 rounded-xl px-3 py-2 mt-4">
-            ⚠️ Estimation non officielle — modèle prédictif expérimental. Seuls les arrêtés préfectoraux publiés font foi.
-        </p>
+            <!-- Ce que les abonnés obtiennent -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-5">
+                <div class="bg-sky-50 rounded-2xl p-4 border border-sky-100">
+                    <p class="text-sky-700 font-black text-sm mb-1">📅 À 15 jours</p>
+                    <p class="text-xs text-slate-600">Probabilité de restriction · Formule Essentiel dès <span class="font-bold">4,90 €/mois</span></p>
+                </div>
+                <div class="bg-indigo-50 rounded-2xl p-4 border border-indigo-100">
+                    <p class="text-indigo-700 font-black text-sm mb-1">📅 À 7, 15, 30 jours</p>
+                    <p class="text-xs text-slate-600">Multi-zones + historique CSV · Formule Pro dès <span class="font-bold">39 €/mois</span></p>
+                </div>
+                <div class="bg-purple-50 rounded-2xl p-4 border border-purple-100">
+                    <p class="text-purple-700 font-black text-sm mb-1">🏛️ Collectivités</p>
+                    <p class="text-xs text-slate-600">Toute l'Occitanie + API + PDF · Formule Ultimate <span class="font-bold">199 €/mois</span></p>
+                </div>
+            </div>
 
-        <!-- CTA -->
-        <div class="mt-4 flex flex-col sm:flex-row gap-3 items-start sm:items-center">
-            <a href="/tarifs/" class="inline-flex items-center gap-1 text-sky-600 font-black text-sm hover:text-sky-800 transition-colors">
-                Voir les prévisions détaillées →
+            <!-- CTA principal -->
+            <a href="/tarifs/"
+               class="block w-full text-center bg-sky-500 hover:bg-sky-600 text-white font-black py-3 px-6 rounded-2xl transition-colors text-sm shadow-sm">
+                Voir les formules et tarifs →
             </a>
+
+            <!-- Mention légale -->
+            <p class="text-[10px] text-amber-700 bg-amber-50 border border-amber-100 rounded-xl px-3 py-2 mt-4">
+                ⚠️ Estimation non officielle — modèle prédictif expérimental. Seuls les arrêtés préfectoraux publiés font foi.
+            </p>
         </div>
 
         <noscript>
-            <p class="text-xs text-slate-500 mt-3">
-                Prévisions de sécheresse disponibles sur <a href="/tarifs/" class="underline text-sky-600">la page tarifs</a>.
-            </p>
+            <div class="px-6 pb-4 bg-white">
+                <a href="/tarifs/" class="text-sky-600 underline text-sm font-bold">Voir les formules d'abonnement →</a>
+            </div>
         </noscript>
     </section>
     <script>
@@ -247,19 +260,22 @@
         fetch(apiUrl, {method:'GET', headers:{'Accept':'application/json'}})
             .then(function(r){ return r.ok ? r.json() : Promise.reject(r.status); })
             .then(function(d){
-                var el = document.getElementById('secheresse-content');
-                if(!el || !d || !d.niveau) return;
-                var niveaux = {
-                    'faible':  ['bg-green-100 text-green-700',  '🟢 Faible'],
-                    'modere':  ['bg-orange-100 text-orange-700','🟠 Modéré'],
-                    'eleve':   ['bg-red-100 text-red-700',      '🔴 Élevé']
+                if(!d || !d.risque) return;
+                var cfg = {
+                    'faible': ['bg-green-50 border-green-200', 'text-green-700', '🟢', 'Risque faible'],
+                    'modere': ['bg-orange-50 border-orange-200', 'text-orange-700', '🟠', 'Risque modéré'],
+                    'eleve':  ['bg-red-50 border-red-200', 'text-red-700', '🔴', 'Risque élevé']
                 };
-                var style = niveaux[d.niveau] || ['bg-slate-100 text-slate-500', d.niveau];
-                el.className = 'rounded-2xl p-4 text-center font-black text-lg ' + style[0];
-                el.innerHTML = '<p>' + style[1] + '</p>'
-                    + (d.date ? '<p class="text-xs font-normal mt-1 opacity-70">Mise à jour : ' + d.date + '</p>' : '');
+                var c = cfg[d.risque] || cfg['faible'];
+                var el = document.getElementById('secheresse-content');
+                if(!el) return;
+                el.innerHTML = '<div class="flex items-center gap-4 p-4 rounded-2xl border ' + c[0] + '">'
+                    + '<span class="text-4xl">' + c[2] + '</span>'
+                    + '<div><p class="font-black text-xl ' + c[1] + '">' + c[3] + '</p>'
+                    + '<p class="text-xs text-slate-500 mt-0.5">Risque de restriction dans les 30 prochains jours'
+                    + (d.date_prediction ? ' · ' + d.date_prediction : '') + '</p></div></div>';
             })
-            .catch(function(){ /* mode dégradé : placeholder déjà affiché */ });
+            .catch(function(){ /* mode dégradé : offre affichée */ });
     })();
     </script>
 
