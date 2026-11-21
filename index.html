@@ -36,15 +36,22 @@
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Mon-Environnement.fr","url":"https://www.mon-environnement.fr/","inLanguage":"fr-FR","potentialAction":{"@type":"SearchAction","target":"https://www.mon-environnement.fr/?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
 
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6656990941754174" crossorigin="anonymous"></script>
+    <!-- AdSense chargé après consentement cookies (voir cookie-banner en bas de page) -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://unpkg.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- TODO(production): remplacer ce CDN dynamique par une compilation via `tailwind CLI`
+         (npx tailwindcss -i ./src/input.css -o ./assets/css/tailwind.min.css --minify)
+         pour permettre SRI et supprimer la dépendance CDN. -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin="anonymous"/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+ldybIL/8Nq1mS48="
+            crossorigin="anonymous"></script>
 
     <style>
         *{box-sizing:border-box}
@@ -4340,6 +4347,56 @@ async function initRivieresMap(city,rivieres){
         const c=CITIES.find(x=>norm(x.name)===norm(q));
         if(c) showResults(c);
     }
+})();
+</script>
+<!-- BANDEAU COOKIES CNIL -->
+<div id="cookie-banner" style="display:none" role="dialog" aria-label="Consentement cookies" aria-modal="true"
+     class="fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-slate-200 shadow-2xl p-4 md:p-6">
+  <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-start md:items-center gap-4">
+    <div class="flex-1 text-sm text-slate-700">
+      <p class="font-bold mb-1">Ce site utilise des cookies publicitaires (Google AdSense)</p>
+      <p>En cliquant « Accepter », vous autorisez le dépôt de cookies pour la personnalisation des publicités.
+         Vous pouvez refuser sans impact sur votre navigation.
+         <a href="/politique-confidentialite.html" class="underline text-sky-600">En savoir plus</a>.</p>
+    </div>
+    <div class="flex gap-3 flex-shrink-0">
+      <button id="cookie-refuse" onclick="cookieRefuse()"
+              class="px-5 py-2.5 rounded-xl border-2 border-slate-300 text-sm font-bold text-slate-700 hover:border-slate-500 transition-colors">
+        Refuser
+      </button>
+      <button id="cookie-accept" onclick="cookieAccept()"
+              class="px-5 py-2.5 rounded-xl bg-sky-500 text-white text-sm font-bold hover:bg-sky-600 transition-colors">
+        Accepter
+      </button>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var CONSENT_KEY = 'cookie_consent';
+  var CONSENT_VERSION = '1';
+  function getConsent(){ return localStorage.getItem(CONSENT_KEY); }
+  function loadAdsense(){
+    if(document.querySelector('script[data-adsense]')) return;
+    var s = document.createElement('script');
+    s.async = true;
+    s.setAttribute('data-adsense','1');
+    s.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6656990941754174';
+    s.crossOrigin = 'anonymous';
+    document.head.appendChild(s);
+  }
+  window.cookieAccept = function(){
+    localStorage.setItem(CONSENT_KEY, 'accepted:' + CONSENT_VERSION);
+    document.getElementById('cookie-banner').style.display = 'none';
+    loadAdsense();
+  };
+  window.cookieRefuse = function(){
+    localStorage.setItem(CONSENT_KEY, 'refused:' + CONSENT_VERSION);
+    document.getElementById('cookie-banner').style.display = 'none';
+  };
+  var c = getConsent();
+  if(!c){ document.getElementById('cookie-banner').style.display = ''; }
+  else if(c.startsWith('accepted')){ loadAdsense(); }
 })();
 </script>
 </body>
