@@ -27,3 +27,13 @@ Thumbs.db
 # Node (Wrangler)
 node_modules/
 workers/auth-gate/node_modules/
+
+# Prototype prédictif : cache et prédictions (données payantes, jamais commitées)
+donnees_34/
+**/donnees_34/
+
+# Backend — secrets et artefacts locaux
+backend/.env
+*.pem
+*.key
+*.p12
