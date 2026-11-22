@@ -249,6 +249,150 @@ def render_param_row(name, p):
     )
 
 
+def _sécheresse_bloc(zone_id: str = "") -> str:
+    """Bloc 'Risque sécheresse + offre abonnement' — accrocheur et commercial."""
+    zone_js = zone_id.replace("'", "\\'") if zone_id else ""
+    return f"""
+    <!-- BLOC RISQUE SÉCHERESSE + OFFRE -->
+    <section class="rounded-3xl overflow-hidden border-2 border-sky-200 shadow-md" id="secheresse-bloc">
+
+        <!-- En-tête coloré -->
+        <div class="bg-gradient-to-r from-sky-500 to-blue-600 px-6 py-5 text-white">
+            <div class="flex items-center gap-3 mb-1">
+                <span class="text-2xl">🌊</span>
+                <h2 class="font-black text-xl uppercase tracking-tight">Prévision sécheresse</h2>
+            </div>
+            <p class="text-sky-100 text-sm">Anticipez les restrictions d'eau jusqu'à 30 jours à l'avance</p>
+        </div>
+
+        <div class="bg-white px-6 py-5">
+
+            <!-- Indicateur dynamique (remplacé par JS si API disponible) -->
+            <div id="secheresse-content" class="mb-5">
+                <div class="flex items-center gap-3 p-4 bg-slate-50 rounded-2xl border border-slate-200">
+                    <span class="text-3xl">🔒</span>
+                    <div>
+                        <p class="font-black text-slate-800">Indicateur disponible pour les abonnés</p>
+                        <p class="text-xs text-slate-500 mt-0.5">Faible · Modéré · Élevé · Critique — mis à jour chaque nuit</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ce que les abonnés obtiennent -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-5">
+                <div class="bg-sky-50 rounded-2xl p-4 border border-sky-100">
+                    <p class="text-sky-700 font-black text-sm mb-1">📅 À 15 jours</p>
+                    <p class="text-xs text-slate-600">Probabilité de restriction · Formule Essentiel dès <span class="font-bold">4,90 €/mois</span></p>
+                </div>
+                <div class="bg-indigo-50 rounded-2xl p-4 border border-indigo-100">
+                    <p class="text-indigo-700 font-black text-sm mb-1">📅 À 7, 15, 30 jours</p>
+                    <p class="text-xs text-slate-600">Multi-zones + historique CSV · Formule Pro dès <span class="font-bold">39 €/mois</span></p>
+                </div>
+                <div class="bg-purple-50 rounded-2xl p-4 border border-purple-100">
+                    <p class="text-purple-700 font-black text-sm mb-1">🏛️ Collectivités</p>
+                    <p class="text-xs text-slate-600">Toute l'Occitanie + API + PDF · Formule Ultimate <span class="font-bold">199 €/mois</span></p>
+                </div>
+            </div>
+
+            <!-- CTA principal -->
+            <a href="/tarifs/"
+               class="block w-full text-center bg-sky-500 hover:bg-sky-600 text-white font-black py-3 px-6 rounded-2xl transition-colors text-sm shadow-sm">
+                Voir les formules et tarifs →
+            </a>
+
+            <!-- Mention légale -->
+            <p class="text-[10px] text-amber-700 bg-amber-50 border border-amber-100 rounded-xl px-3 py-2 mt-4">
+                ⚠️ Estimation non officielle — modèle prédictif expérimental. Seuls les arrêtés préfectoraux publiés font foi.
+            </p>
+        </div>
+
+        <noscript>
+            <div class="px-6 pb-4 bg-white">
+                <a href="/tarifs/" class="text-sky-600 underline text-sm font-bold">Voir les formules d'abonnement →</a>
+            </div>
+        </noscript>
+    </section>
+    <script>
+    (function(){{
+        var zone = '{zone_js}';
+        if(!zone) return;
+        var apiUrl = 'https://www.mon-environnement.fr/api/v1/risque/' + encodeURIComponent(zone);
+        fetch(apiUrl, {{method:'GET', headers:{{'Accept':'application/json'}}}})
+            .then(function(r){{ return r.ok ? r.json() : Promise.reject(r.status); }})
+            .then(function(d){{
+                if(!d || !d.risque) return;
+                var cfg = {{
+                    'faible': ['bg-green-50 border-green-200', 'text-green-700', '🟢', 'Risque faible'],
+                    'modere': ['bg-orange-50 border-orange-200', 'text-orange-700', '🟠', 'Risque modéré'],
+                    'eleve':  ['bg-red-50 border-red-200', 'text-red-700', '🔴', 'Risque élevé']
+                }};
+                var c = cfg[d.risque] || cfg['faible'];
+                var el = document.getElementById('secheresse-content');
+                if(!el) return;
+                el.innerHTML = '<div class="flex items-center gap-4 p-4 rounded-2xl border ' + c[0] + '">'
+                    + '<span class="text-4xl">' + c[2] + '</span>'
+                    + '<div><p class="font-black text-xl ' + c[1] + '">' + c[3] + '</p>'
+                    + '<p class="text-xs text-slate-500 mt-0.5">Risque de restriction dans les 30 prochains jours'
+                    + (d.date_prediction ? ' · ' + d.date_prediction : '') + '</p></div></div>';
+            }})
+            .catch(function(){{ /* mode dégradé : offre affichée */ }});
+    }})();
+    </script>"""
+
+
+def _cookie_banner_html() -> str:
+    return """<!-- BANDEAU COOKIES CNIL -->
+<div id="cookie-banner" style="display:none" role="dialog" aria-label="Consentement cookies" aria-modal="true"
+     class="fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-slate-200 shadow-2xl p-4 md:p-6">
+  <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-start md:items-center gap-4">
+    <div class="flex-1 text-sm text-slate-700">
+      <p class="font-bold mb-1">Ce site utilise des cookies publicitaires (Google AdSense)</p>
+      <p>En cliquant \u00ab Accepter \u00bb, vous autorisez le dépôt de cookies pour la personnalisation des publicités.
+         Vous pouvez refuser sans impact sur votre navigation.
+         <a href="/politique-confidentialite.html" class="underline text-sky-600">En savoir plus</a>.</p>
+    </div>
+    <div class="flex gap-3 flex-shrink-0">
+      <button id="cookie-refuse" onclick="cookieRefuse()"
+              class="px-5 py-2.5 rounded-xl border-2 border-slate-300 text-sm font-bold text-slate-700 hover:border-slate-500 transition-colors">
+        Refuser
+      </button>
+      <button id="cookie-accept" onclick="cookieAccept()"
+              class="px-5 py-2.5 rounded-xl bg-sky-500 text-white text-sm font-bold hover:bg-sky-600 transition-colors">
+        Accepter
+      </button>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var CONSENT_KEY = 'cookie_consent';
+  var CONSENT_VERSION = '1';
+  function getConsent(){ return localStorage.getItem(CONSENT_KEY); }
+  function loadAdsense(){
+    if(document.querySelector('script[data-adsense]')) return;
+    var s = document.createElement('script');
+    s.async = true;
+    s.setAttribute('data-adsense','1');
+    s.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6656990941754174';
+    s.crossOrigin = 'anonymous';
+    document.head.appendChild(s);
+  }
+  window.cookieAccept = function(){
+    localStorage.setItem(CONSENT_KEY, 'accepted:' + CONSENT_VERSION);
+    document.getElementById('cookie-banner').style.display = 'none';
+    loadAdsense();
+  };
+  window.cookieRefuse = function(){
+    localStorage.setItem(CONSENT_KEY, 'refused:' + CONSENT_VERSION);
+    document.getElementById('cookie-banner').style.display = 'none';
+  };
+  var c = getConsent();
+  if(!c){ document.getElementById('cookie-banner').style.display = ''; }
+  else if(c.startsWith('accepted')){ loadAdsense(); }
+})();
+</script>"""
+
+
 def render_river_section(rivieres: list) -> str:
     """HTML de la section rivières pour une page commune (peut être vide)."""
     if not rivieres:
@@ -403,7 +547,7 @@ def build_json_ld(commune, slug):
 # TEMPLATE PAGE COMMUNE
 # ---------------------------------------------------------------------------
 
-def build_page(commune, neighbors_html, json_ld, slug, rivieres_html=""):
+def build_page(commune, neighbors_html, json_ld, slug, rivieres_html="", zone_id=""):
     nom   = commune["nom"]
     dept  = commune.get("dept", "")
     dept_label  = "Hérault (34)" if dept == "34" else "Gard (30)"
@@ -486,7 +630,10 @@ def build_page(commune, neighbors_html, json_ld, slug, rivieres_html=""):
                 <p class="text-[10px] text-slate-400 italic mt-0.5">📡 Données mises à jour quotidiennement à 11h</p>
             </div>
         </a>
-        <span class="text-xs font-bold text-slate-400 uppercase tracking-widest hidden md:block">{dept_label}</span>
+        <div class="flex items-center gap-4">
+            <a href="/tarifs/" class="text-xs font-bold text-sky-600 hover:text-sky-800 transition-colors border border-sky-200 rounded-lg px-3 py-1 hover:bg-sky-50 hidden sm:inline-flex">Prévisions sécheresse</a>
+            <span class="text-xs font-bold text-slate-400 uppercase tracking-widest hidden md:block">{dept_label}</span>
+        </div>
     </div>
 </header>
 
@@ -558,6 +705,8 @@ def build_page(commune, neighbors_html, json_ld, slug, rivieres_html=""):
 
     {rivieres_html}
 
+    {_sécheresse_bloc(zone_id)}
+
     <!-- COMMUNES VOISINES -->
     <section class="bg-white rounded-3xl shadow-sm border border-slate-200 p-6">
         <h2 class="font-black text-slate-800 uppercase tracking-tight mb-1">Communes voisines</h2>
@@ -591,6 +740,7 @@ def build_page(commune, neighbors_html, json_ld, slug, rivieres_html=""):
     </div>
 </footer>
 
+{_cookie_banner_html()}
 </body>
 </html>"""
 
@@ -668,7 +818,9 @@ def main():
         json_ld       = build_json_ld(commune, slug)
         comm_rivieres = find_rivieres_for_commune(nom, all_rivieres)
         rivieres_html = render_river_section(comm_rivieres)
-        html          = build_page(commune, neighbors_html, json_ld, slug, rivieres_html)
+        # Identifiant de zone pour le bloc sécheresse (code INSEE ou slug par défaut)
+        zone_id = commune.get("code_zone") or commune.get("code_commune") or slug
+        html          = build_page(commune, neighbors_html, json_ld, slug, rivieres_html, zone_id)
 
         page_dir = os.path.join(out_dir, slug)
         os.makedirs(page_dir, exist_ok=True)

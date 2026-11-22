@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>{% block title %}Mon Espace — mon-environnement.fr{% endblock %}</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50:  '#ecfdf5',
+              100: '#d1fae5',
+              200: '#a7f3d0',
+              300: '#6ee7b7',
+              400: '#34d399',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+              800: '#065f46',
+              900: '#064e3b',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .plan-badge-free     { @apply bg-gray-100 text-gray-700 ring-gray-200; }
+    .plan-badge-a        { @apply bg-brand-100 text-brand-800 ring-brand-300; }
+    .plan-badge-b        { @apply bg-blue-100 text-blue-800 ring-blue-300; }
+    .plan-badge-c        { @apply bg-purple-100 text-purple-800 ring-purple-300; }
+  </style>
+  {% block head %}{% endblock %}
+</head>
+<body class="bg-brand-50 text-brand-900 min-h-screen flex flex-col antialiased">
+
+  <!-- ── Navigation ─────────────────────────────────────────────────────── -->
+  <header class="bg-white shadow-sm border-b border-brand-100 sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-2 font-bold text-brand-700 text-lg hover:text-brand-900 transition-colors">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 004 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/>
+        </svg>
+        mon-environnement.fr
+      </a>
+
+      <nav class="hidden sm:flex items-center gap-6 text-sm font-medium text-brand-700">
+        {% if current_user %}
+          <a href="/app/" class="hover:text-brand-900 transition-colors">Tableau de bord</a>
+          <a href="/app/account" class="hover:text-brand-900 transition-colors">Mon compte</a>
+          <form action="/app/logout" method="post" class="inline">
+            <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+            <button type="submit"
+                    class="text-gray-500 hover:text-red-600 transition-colors">
+              Déconnexion
+            </button>
+          </form>
+        {% else %}
+          <a href="/" class="hover:text-brand-900 transition-colors">Accueil</a>
+          <a href="/tarifs/" class="hover:text-brand-900 transition-colors">Tarifs</a>
+          <a href="/app/login"
+             class="bg-brand-600 text-white px-4 py-1.5 rounded-lg hover:bg-brand-700 transition-colors">
+            Connexion
+          </a>
+        {% endif %}
+      </nav>
+
+      <!-- Mobile menu toggle -->
+      <button id="mobileMenuBtn" class="sm:hidden p-2 text-brand-700" aria-label="Menu">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile nav -->
+    <div id="mobileMenu" class="sm:hidden hidden border-t border-brand-100 bg-white px-4 py-3 space-y-2 text-sm font-medium">
+      {% if current_user %}
+        <a href="/app/" class="block py-2 text-brand-700">Tableau de bord</a>
+        <a href="/app/account" class="block py-2 text-brand-700">Mon compte</a>
+        <form action="/app/logout" method="post">
+          <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+          <button type="submit" class="block py-2 text-red-600 w-full text-left">Déconnexion</button>
+        </form>
+      {% else %}
+        <a href="/" class="block py-2 text-brand-700">Accueil</a>
+        <a href="/tarifs/" class="block py-2 text-brand-700">Tarifs</a>
+        <a href="/app/login" class="block py-2 text-brand-600 font-semibold">Connexion</a>
+      {% endif %}
+    </div>
+  </header>
+
+  <!-- ── Flash messages ─────────────────────────────────────────────────── -->
+  {% if flash_error %}
+  <div class="bg-red-50 border-l-4 border-red-500 px-4 py-3 text-red-700 text-sm" role="alert">
+    <strong>Erreur :</strong> {{ flash_error }}
+  </div>
+  {% endif %}
+  {% if flash_success %}
+  <div class="bg-brand-50 border-l-4 border-brand-500 px-4 py-3 text-brand-700 text-sm" role="alert">
+    {{ flash_success }}
+  </div>
+  {% endif %}
+
+  <!-- ── Contenu principal ─────────────────────────────────────────────── -->
+  <main class="flex-1">
+    {% block content %}{% endblock %}
+  </main>
+
+  <!-- ── Pied de page ───────────────────────────────────────────────────── -->
+  <footer class="bg-brand-900 text-brand-200 py-6 mt-auto">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm">
+      <span>© 2025 mon-environnement.fr — données environnementales Occitanie</span>
+      <div class="flex gap-4">
+        <a href="/mentions-legales.html" class="hover:text-white transition-colors">Mentions légales</a>
+        <a href="/politique-confidentialite.html" class="hover:text-white transition-colors">Confidentialité</a>
+        <a href="/tarifs/" class="hover:text-white transition-colors">Tarifs</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    document.getElementById('mobileMenuBtn')?.addEventListener('click', () => {
+      document.getElementById('mobileMenu')?.classList.toggle('hidden');
+    });
+  </script>
+  {% block scripts %}{% endblock %}
+</body>
+</html>
