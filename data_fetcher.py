@@ -19,7 +19,7 @@ from shared import (
     POL_LABELS, POL_COLORS, POLLEN_TAXA,
     get_json, get_color, get_temp_color, calc_score,
     score_color, score_label, extract_nom_cours_eau,
-    parse_result, encode_bss,
+    parse_result, encode_bss, vigieau_niveau,
 )
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -178,17 +178,8 @@ def _fetch_commune(insee: str, nom: str) -> dict:
     Récupère toutes les données eau potable pour une commune.
     Conçu pour ThreadPoolExecutor — indépendant et thread-safe.
     """
-    # Restriction sécheresse VigiEau
-    restric = "Vigilance"
-    d_res = get_json(
-        f"https://api.vigieau.gouv.fr/api/zones?commune={insee}&profil=particulier",
-        timeout=10,
-    )
-    if d_res:
-        lvls = [z.get("niveauGravite", "") for z in d_res]
-        if "crise" in lvls:              restric = "Crise"
-        elif "alerte_renforcee" in lvls: restric = "Alerte Renforcée"
-        elif "alerte" in lvls:           restric = "Alerte"
+    # Restriction sécheresse VigiEau ("Aucune" si pas de zone, "N.D." si API muette)
+    restric = vigieau_niveau(insee)
 
     conclusion, parametres, historique = "N/A", {}, {}
     got_conclusion = False

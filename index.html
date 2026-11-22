@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon-Environnement.fr — Qualité de l'air et de l'eau par ville</title>
-    <meta name="description" content="Qualité de l'air, eau potable, nappes phréatiques, rivières et risque pollinique par ville en France. Données officielles ARS, Atmo, BRGM, Hub'Eau.">
+    <meta name="description" content="Qualité de l'air, eau potable, nappes phréatiques, rivières et risque pollinique par ville en France. Données issues de sources publiques officielles : ARS, Atmo, BRGM, Hub'Eau.">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Mon-Environnement.fr">
     <meta name="theme-color" content="#14b8a6">
@@ -24,7 +24,7 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Mon-Environnement.fr — Qualité de l'air et de l'eau par ville">
-    <meta name="twitter:description" content="Données environnementales officielles par commune : air, eau potable, nappes, rivières, pollen.">
+    <meta name="twitter:description" content="Données environnementales par commune, issues de sources publiques officielles : air, eau potable, nappes, rivières, pollen.">
     <meta name="twitter:image" content="https://www.mon-environnement.fr/og-image.png">
 
     <!-- Apple / PWA -->
@@ -202,7 +202,7 @@
             flex-shrink:0;
             margin:0 auto;
         }
-        .score-svg-wrap svg{transform:rotate(-90deg);display:block}
+        .score-svg-wrap svg{transform:rotate(-90deg);display:block;width:100%;height:100%}
         .score-center{
             position:absolute;
             inset:0;
@@ -781,7 +781,7 @@ function cookieChoice(accepted){
         <div class="sep w-px h-8 bg-slate-100"></div>
         <div class="text-center flex-shrink-0"><div class="stat-num">5</div><div class="stat-lbl">Rubriques</div></div>
         <div class="sep w-px h-8 bg-slate-100"></div>
-        <div class="text-center flex-shrink-0"><div class="stat-num" style="font-size:.85rem;line-height:1.3">Sources<br>officielles</div><div class="stat-lbl">Données</div></div>
+        <div class="text-center flex-shrink-0"><div class="stat-num" style="font-size:.85rem;line-height:1.3">Sources<br>publiques</div><div class="stat-lbl">Données</div></div>
     </div>
 </section>
 
@@ -814,7 +814,7 @@ function cookieChoice(accepted){
 <noscript>
 <div style="max-width:720px;margin:2rem auto;padding:1.5rem;background:#fff;border-radius:1rem;border:1px solid #e2e8f0;font-family:system-ui,sans-serif">
     <h2 style="font-size:1.1rem;font-weight:700;color:#1e293b;margin-bottom:.75rem">🌿 Mon-Environnement.fr</h2>
-    <p style="font-size:.9rem;color:#64748b;margin-bottom:1rem">Ce site affiche des données environnementales officielles (air, eau potable, nappes, rivières, pollen) pour 2&nbsp;280 communes françaises. JavaScript est requis pour la recherche interactive.</p>
+    <p style="font-size:.9rem;color:#64748b;margin-bottom:1rem">Ce site affiche des données environnementales issues de sources publiques officielles (air, eau potable, nappes, rivières, pollen) pour 2&nbsp;280 communes françaises. JavaScript est requis pour la recherche interactive.</p>
     <p style="font-size:.85rem;color:#64748b;margin-bottom:.75rem">Accédez directement aux fiches par département :</p>
     <div style="display:flex;flex-wrap:wrap;gap:.5rem">
         <a href="/departement/herault/" style="padding:.3rem .7rem;background:#f1f5f9;border-radius:.5rem;font-size:.8rem;color:#1e293b;text-decoration:none">Hérault (34)</a>
@@ -3409,7 +3409,7 @@ function scoreRing(score,color){
         requestAnimationFrame(step);
     },50);
     return`<div class="score-svg-wrap">
-        <svg width="150" height="150" viewBox="0 0 150 150">
+        <svg width="150" height="150" viewBox="0 0 150 150" aria-hidden="true">
             <circle cx="75" cy="75" r="${r}" fill="none" stroke="#f1f5f9" stroke-width="10"/>
             <circle cx="75" cy="75" r="${r}" fill="none" stroke="${color}" stroke-width="10"
                 stroke-dasharray="${dash} ${gap}" stroke-linecap="round"
@@ -3425,6 +3425,16 @@ function scoreRing(score,color){
 // ════════════════════════════════════════════════
 // GENERATE CITY EDITORIAL CONTEXT
 // ════════════════════════════════════════════════
+// Lecture de la conclusion sanitaire ARS : "limites" (non conforme aux limites,
+// enjeu sanitaire), "references" (conforme aux limites mais pas aux références,
+// indicateurs de fonctionnement), "ok" (conforme), null (inconnu).
+function conformiteEau(conclusion){
+    const c=(conclusion||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");
+    if(/non conforme aux limites/.test(c)) return "limites";
+    if(/non conforme aux references/.test(c)) return "references";
+    if(/conforme/.test(c)) return "ok";
+    return null;
+}
 function generateCityContext(city,d){
     const pills=[];
 
@@ -3432,11 +3442,14 @@ function generateCityContext(city,d){
     const potable=Array.isArray(d.potable)?d.potable.find(p=>p.insee===city.code||norm(p.nom)===norm(city.name)):null;
     if(potable){
         const score=potable.score||0;
-        if(score>=80) pills.push({cls:"good",txt:"💧 Eau conforme · bonne qualité"});
+        const conf=conformiteEau(potable.conclusion);
+        if(conf==="limites")         pills.push({cls:"alert",txt:"⚠ Eau non conforme aux limites de qualité"});
+        else if(conf==="references") pills.push({cls:"warn",txt:"💧 Eau conforme aux limites sanitaires"});
+        else if(score>=80) pills.push({cls:"good",txt:"💧 Eau conforme · bonne qualité"});
         else if(score>=50) pills.push({cls:"warn",txt:"💧 Eau sous surveillance ARS"});
         else if(score>0)   pills.push({cls:"alert",txt:"⚠ Eau potable non conforme"});
-        if(potable.restric&&potable.restric!=="Aucune"&&potable.restric!=="RAS"&&potable.restric!=="N.D.")
-            pills.push({cls:"alert",txt:"🚫 "+potable.restric});
+        if(["Alerte","Alerte renforcée","Alerte Renforcée","Renforcée","Crise"].includes(potable.restric))
+            pills.push({cls:"alert",txt:"🚫 Sécheresse : "+potable.restric});
     }
 
     // Air quality
@@ -3544,8 +3557,10 @@ function renderPotable(city,potable){
     const c=rec.score_color||"#0ea5e9";
     const restric=rec.restric||"N.D.";
     const RESTRIC_MAP={
-        "Vigilance":  {bg:"#dcfce7",color:"#15803d",icon:"🟡"},
+        "Vigilance":  {bg:"#fef9c3",color:"#854d0e",icon:"🟡"},
         "Alerte":     {bg:"#fef9c3",color:"#92400e",icon:"🟠"},
+        "Alerte renforcée":{bg:"#ffedd5",color:"#9a3412",icon:"🔴"},
+        "Alerte Renforcée":{bg:"#ffedd5",color:"#9a3412",icon:"🔴"},
         "Renforcée":  {bg:"#ffedd5",color:"#9a3412",icon:"🔴"},
         "Crise":      {bg:"#fee2e2",color:"#b91c1c",icon:"🆘"},
         "Aucune":     {bg:"#f0fdf4",color:"#15803d",icon:"✅"},
@@ -3554,8 +3569,8 @@ function renderPotable(city,potable){
     const rm=RESTRIC_MAP[restric];
     const restricBlock=rm
         ?`<div style="padding:.35rem .75rem;border-radius:.5rem;background:${rm.bg};color:${rm.color};font-size:.75rem;font-weight:700;display:inline-flex;align-items:center;gap:.4rem">${rm.icon} Sécheresse : ${restric}</div>`
-        :`<div style="padding:.35rem .75rem;border-radius:.5rem;background:#f1f5f9;color:#64748b;font-size:.75rem;font-weight:700;display:inline-flex;align-items:center;gap:.4rem">💧 Sécheresse : ${restric}</div>`;
-    const alertBadge=(restric&&restric!=="Aucune"&&restric!=="RAS"&&restric!=="N.D.")
+        :`<a href="https://vigieau.gouv.fr/" target="_blank" rel="noopener" style="padding:.35rem .75rem;border-radius:.5rem;background:#f1f5f9;color:#475569;font-size:.75rem;font-weight:700;display:inline-flex;align-items:center;gap:.4rem;text-decoration:underline">💧 Sécheresse : voir VigiEau ↗</a>`;
+    const alertBadge=["Alerte","Alerte renforcée","Alerte Renforcée","Renforcée","Crise"].includes(restric)
         ?`<span class="badge badge-alert" style="margin-left:auto">⚠ ${restric}</span>`:"";
 
     const bars=Object.entries(rec.parametres||{}).map(([name,p])=>{
@@ -3606,7 +3621,7 @@ function renderPotable(city,potable){
             <span class="card-header-icon">🚰</span>
             <div style="flex:1">
                 <div class="card-header-title">Eau potable</div>
-                <div class="card-header-sub">ARS · Hub'Eau · Données officielles</div>
+                <div class="card-header-sub">ARS · Hub'Eau · Données publiques</div>
             </div>
             ${alertBadge}
         </div>
@@ -3619,6 +3634,7 @@ function renderPotable(city,potable){
                 </div>
                 <div class="score-right">
                     ${rec.conclusion?`<div class="conclusion-text" style="margin-bottom:.9rem">${rec.conclusion}</div>`:""}
+                    ${conformiteEau(rec.conclusion)==="references"?`<div style="margin:-.4rem 0 .9rem;padding:.6rem .75rem;background:#f8fafc;border:1px solid #e2e8f0;border-radius:.5rem;font-size:.72rem;color:#475569;line-height:1.5"><strong>ℹ️ Qu'est-ce qu'une « référence de qualité » ?</strong><br>Les « références de qualité » sont des indicateurs du bon fonctionnement des installations (chlore, turbidité, carbone organique, bactéries témoins…). En règle générale, leur dépassement n'indique pas de risque direct pour la santé : il déclenche une surveillance et, si besoin, des mesures correctives de l'exploitant sous le contrôle de l'ARS. Les « limites de qualité », qui portent sur les paramètres sanitaires, sont respectées.</div>`:""}
                     <div style="margin-bottom:.75rem">${restricBlock}</div>
                     <div class="params-grid">${bars}</div>
                 </div>

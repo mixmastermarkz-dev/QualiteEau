@@ -136,6 +136,43 @@ def get_json(url: str, timeout: int = 20, retries: int = 2):
     return None
 
 # ---------------------------------------------------------------------------
+# RESTRICTIONS SÉCHERESSE — VigiEau
+# ---------------------------------------------------------------------------
+
+# Du plus grave au moins grave : (code API VigiEau, libellé affiché)
+VIGIEAU_NIVEAUX = (
+    ("crise", "Crise"),
+    ("alerte_renforcee", "Alerte renforcée"),
+    ("alerte", "Alerte"),
+    ("vigilance", "Vigilance"),
+)
+
+
+def vigieau_niveau(insee: str, timeout: int = 10) -> str:
+    """
+    Niveau de restriction sécheresse le plus grave en vigueur sur une commune
+    (profil particulier, toutes ressources confondues).
+
+    Retourne :
+      - "Crise" | "Alerte renforcée" | "Alerte" | "Vigilance"
+      - "Aucune" si VigiEau répond sans zone en restriction (liste vide)
+      - "N.D."   si l'API ne répond pas ou renvoie un format inattendu
+    Une réponse vide n'est PAS une erreur : elle signifie « pas de restriction ».
+    """
+    d = get_json(
+        f"https://api.vigieau.gouv.fr/api/zones?commune={insee}&profil=particulier",
+        timeout=timeout,
+        retries=1,
+    )
+    if d is None or not isinstance(d, list):
+        return "N.D."
+    niveaux = {str(z.get("niveauGravite", "")).lower() for z in d if isinstance(z, dict)}
+    for code, libelle in VIGIEAU_NIVEAUX:
+        if code in niveaux:
+            return libelle
+    return "Aucune"
+
+# ---------------------------------------------------------------------------
 # ÉVALUATION DE LA QUALITÉ
 # ---------------------------------------------------------------------------
 

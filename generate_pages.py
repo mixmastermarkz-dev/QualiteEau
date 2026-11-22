@@ -184,11 +184,31 @@ def nearest_communes(nom: str, all_communes: list, n: int = 5) -> list:
 # ---------------------------------------------------------------------------
 
 RESTRIC_STYLE = {
-    "Vigilance": ("bg-green-100 text-green-700",   "Vigilance"),
-    "Alerte":    ("bg-yellow-100 text-yellow-700",  "Alerte"),
-    "Renforcée": ("bg-orange-100 text-orange-700",  "Alerte renforcée"),
-    "Crise":     ("bg-red-100 text-red-700",         "Crise"),
+    "Aucune":           ("bg-emerald-50 text-emerald-700", "Aucune restriction"),
+    "Vigilance":        ("bg-sky-100 text-sky-700",         "Vigilance"),
+    "Alerte":           ("bg-yellow-100 text-yellow-700",  "Alerte"),
+    "Alerte renforcée": ("bg-orange-100 text-orange-700",  "Alerte renforcée"),
+    "Alerte Renforcée": ("bg-orange-100 text-orange-700",  "Alerte renforcée"),  # ancien libellé
+    "Renforcée":        ("bg-orange-100 text-orange-700",  "Alerte renforcée"),  # ancien libellé
+    "Crise":            ("bg-red-100 text-red-700",         "Crise"),
+    "N.D.":             ("bg-slate-100 text-slate-500",     "Non disponible, voir vigieau.gouv.fr"),
 }
+
+REF_QUALITE_NOTE = ("Les « références de qualité » sont des indicateurs du bon fonctionnement des installations (chlore, turbidité, carbone organique, bactéries témoins…). En règle générale, leur dépassement n'indique pas de risque direct pour la santé : il déclenche une surveillance et, si besoin, des mesures correctives de l'exploitant sous le contrôle de l'ARS. Les « limites de qualité », qui portent sur les paramètres sanitaires, sont respectées.")
+
+
+def conformite_eau(conclusion: str) -> str | None:
+    """'limites' | 'references' | 'ok' | None, d'après la conclusion sanitaire ARS."""
+    import unicodedata
+    c = unicodedata.normalize("NFD", (conclusion or "").lower())
+    c = "".join(ch for ch in c if unicodedata.category(ch) != "Mn")
+    if "non conforme aux limites" in c:
+        return "limites"
+    if "non conforme aux references" in c:
+        return "references"
+    if "conforme" in c:
+        return "ok"
+    return None
 
 COLOR_TO_DOT = {
     "#10b981": "bg-emerald-500",
@@ -392,6 +412,11 @@ def build_page(commune, neighbors_html, json_ld, slug, rivieres_html=""):
     score_str   = str(score) if score is not None else "—"
     conclusion  = commune.get("conclusion") or "Aucune conclusion disponible."
     origine     = commune.get("origine") or ""
+    ref_note_html = (
+        '\n            <p class="text-xs text-slate-500 mt-2 leading-relaxed max-w-2xl bg-slate-50 '
+        'border border-slate-200 rounded-xl px-3 py-2"><strong>ℹ️ Référence de qualité :</strong> '
+        + REF_QUALITE_NOTE + '</p>'
+    ) if conformite_eau(commune.get("conclusion")) == "references" else ""
     restric     = commune.get("restric") or ""
     restric_cls, restric_lbl = RESTRIC_STYLE.get(restric, ("bg-slate-100 text-slate-500", restric or "Aucune alerte"))
 
@@ -475,7 +500,7 @@ def build_page(commune, neighbors_html, json_ld, slug, rivieres_html=""):
             <h1 class="text-3xl md:text-4xl font-black leading-tight">
                 Qualité de l'eau potable à <span class="text-sky-600">{nom}</span> — {YEAR}
             </h1>
-            <p class="text-sm text-slate-500 mt-3 leading-relaxed max-w-2xl">{conclusion}</p>
+            <p class="text-sm text-slate-500 mt-3 leading-relaxed max-w-2xl">{conclusion}</p>{ref_note_html}
         </div>
         <div class="flex-shrink-0 text-center">
             <div class="score-badge mx-auto" style="background:{score_color}">
@@ -555,7 +580,7 @@ def build_page(commune, neighbors_html, json_ld, slug, rivieres_html=""):
 <footer class="bg-slate-900 text-white py-10 mt-4">
     <div class="max-w-4xl mx-auto px-4 text-center">
         <p class="font-black uppercase text-lg mb-2">MON-<span class="text-sky-400">ENVIRONNEMENT</span>.FR</p>
-        <p class="text-slate-400 text-sm">Surveillance indépendante · Données officielles ARS, BRGM, Hub'Eau</p>
+        <p class="text-slate-400 text-sm">Surveillance indépendante · Données publiques ARS, BRGM, Hub'Eau</p>
         <p class="text-slate-400 text-sm">France métropolitaine · Mises à jour quotidiennes</p>
         <div class="mt-4 flex justify-center gap-6 text-xs text-slate-500">
             <a href="/contact.html" class="hover:text-white transition-colors underline">Contact</a>
