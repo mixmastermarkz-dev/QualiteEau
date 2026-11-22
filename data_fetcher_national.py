@@ -38,7 +38,7 @@ from shared import (
     QUAL_LABELS, QUAL_COLORS, SUB_PARAMS, OCCITANIE_DEPTS,
     POL_LABELS, POL_COLORS, POLLEN_TAXA,
     get_json, get_color, calc_score, score_color, score_label,
-    parse_result, encode_bss, extract_nom_cours_eau,
+    parse_result, encode_bss, extract_nom_cours_eau, vigieau_niveau,
 )
 
 WFS_NATIONAL_AIR = (
@@ -219,6 +219,18 @@ def fetch_potable(dept_code: str, today: datetime) -> list:
                 "date":   date_str,
             })
 
+    # Restrictions sécheresse VigiEau, une requête par commune (en parallèle).
+    # 4 workers par département × 6 départements en parallèle = 24 requêtes
+    # simultanées au plus vers VigiEau : volontairement modéré.
+    insees = [i for i, data in par_commune.items() if data["parametres"]]
+    restrictions: dict = {}
+    with ThreadPoolExecutor(max_workers=4) as pool:
+        for insee, niveau in zip(insees, pool.map(vigieau_niveau, insees)):
+            restrictions[insee] = niveau
+    nd = sum(1 for v in restrictions.values() if v == "N.D.")
+    if nd:
+        print(f"    [WARN] VigiEau : {nd}/{len(insees)} communes sans réponse (N.D.)")
+
     potable = []
     for insee, data in par_commune.items():
         if not data["parametres"]:
@@ -228,7 +240,7 @@ def fetch_potable(dept_code: str, today: datetime) -> list:
             "nom":         data["nom"],
             "dept":        dept_code,
             "insee":       insee,
-            "restric":     "N.D.",
+            "restric":     restrictions.get(insee, "N.D."),
             "origine":     "Nappe ou captage local",
             "conclusion":  data["conclusion"],
             "parametres":  data["parametres"],

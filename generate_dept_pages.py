@@ -480,7 +480,7 @@ def build_dept_page(data):
 <footer class="bg-slate-900 text-white py-10 mt-4">
     <div class="max-w-5xl mx-auto px-4 text-center">
         <p class="font-black uppercase text-lg mb-2">MON-<span class="text-sky-400">ENVIRONNEMENT</span>.FR</p>
-        <p class="text-slate-400 text-sm">Surveillance indépendante · Données officielles ARS, BRGM, Hub'Eau, Atmo</p>
+        <p class="text-slate-400 text-sm">Surveillance indépendante · Données publiques ARS, BRGM, Hub'Eau, Atmo</p>
         <p class="text-slate-400 text-sm mt-1">{nom} ({dept}) · {region}</p>
         <p class="text-slate-600 text-xs mt-4">© {YEAR} · <a href="/" class="hover:text-white transition-colors">mon-environnement.fr</a></p>
     </div>
