@@ -135,9 +135,9 @@ async def verify_magic_link(
     """
     user = await consume_magic_token(db, token)
     if user is None:
-        # Redirection vers une page d'erreur plutôt qu'une 4xx brute
+        # Redirection vers la page de connexion avec le paramètre d'erreur
         return RedirectResponse(
-            url=settings.frontend_origin + "/app/login?error=lien_invalide",
+            url="/app/login?error=lien_invalide",
             status_code=status.HTTP_302_FOUND,
         )
 
@@ -146,7 +146,7 @@ async def verify_magic_link(
     raw_session = await create_session(db, user, ip_address=ip, user_agent=ua)
 
     response = RedirectResponse(
-        url=settings.frontend_origin + "/app/",
+        url="/app/",
         status_code=status.HTTP_302_FOUND,
     )
     _set_session_cookie(response, raw_session)

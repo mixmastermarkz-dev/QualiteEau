@@ -78,7 +78,8 @@ def _lire_csv_arrete(path: Path) -> pd.DataFrame | None:
     c = {
         "debut": _trouver_colonne(cols, ["debut"], ("cadre",)),
         "fin": _trouver_colonne(cols, ["fin"], ("cadre", "fichier")),
-        "niveau": _trouver_colonne(cols, ["niveau"]) or _trouver_colonne(cols, ["gravite"]),
+        "niveau": (_trouver_colonne(cols, ["niveau"], ("aep",))
+                   or _trouver_colonne(cols, ["gravite"], ("aep",))),
         "dep": _trouver_colonne(cols, ["dep"], ("date",)),
         "zone": _trouver_colonne(cols, ["nom", "zone"]) or _trouver_colonne(cols, ["zone"]),
     }
@@ -135,7 +136,19 @@ class VigeauSource(DataSource):
                 url = res.get("url", "")
                 fmt = (res.get("format") or "").lower()
                 t = _sans_accents(titre)
-                if "arr" not in t or fmt not in ("csv", "zip"):
+                u = url.lower()
+
+                # On ne veut QUE les CSV d'arrêtés — exclure GeoJSON, shapefiles, zones géo
+                if fmt not in ("csv", "zip"):
+                    continue
+                if "arr" not in t:
+                    continue
+                # Exclure explicitement les fichiers géographiques (peuvent faire > 500 Mo)
+                if any(x in u for x in ("geojson", "shapefile", "shp", "gpkg", "zones_geo", "pmtiles", ".pbf", "mvt")):
+                    logger.info("VigiEau : fichier géographique ignoré : %s", url[:80])
+                    continue
+                if any(x in t for x in ("geojson", "shapefile", "geographi", "cartograph")):
+                    logger.info("VigiEau : ressource géographique ignorée : %s", titre[:60])
                     continue
                 nom = self._cache_dir / (_sans_accents(titre).replace(" ", "_").replace("/", "-")[:80] + "." + fmt)
                 if nom.exists():
@@ -167,9 +180,13 @@ class VigeauSource(DataSource):
         morceaux = []
         errors = []
         for f in sorted(self._cache_dir.glob("*.csv")):
+            # Les fichiers "cadre" sont des métadonnées administratives sans colonne niveau
+            if "cadre" in f.name.lower():
+                logger.debug("VigiEau : fichier cadre ignoré (pas de niveaux) : %s", f.name)
+                continue
             try:
                 df = _lire_csv_arrete(f)
-                if df is not None:
+                if df is not None and not df.empty:
                     morceaux.append(df)
             except ValueError as e:
                 errors.append(str(e))

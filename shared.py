@@ -21,7 +21,9 @@ PARAMS_POTABLE = {
     "6276": {"name": "Pesticides",    "unite": "µg/L",     "warning": 0.1,  "danger": 0.5,  "mode": "max"},
     "2036": {"name": "THM",           "unite": "µg/L",     "warning": 50,   "danger": 100,  "mode": "max"},
     "1311": {"name": "Conductivité",  "unite": "µS/cm",    "warning": 800,  "danger": 1100, "mode": "max"},
-    "8111": {"name": "PFAS",          "unite": "µg/L",     "warning": 0.05, "danger": 0.10, "mode": "max"},
+    # NOTE: pas de code SANDRE officiel pour les PFAS dans Hub'Eau (état nov. 2026).
+    # Le code 8111 est FAUX (cyanobactéries). Les PFAS sont lus via la conclusion texte.
+    # Voir backend/app/services/eau_potable.py → get_pfas_commune()
 }
 
 # ---------------------------------------------------------------------------

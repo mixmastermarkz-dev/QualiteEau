@@ -1,0 +1,128 @@
+{% extends "base.html" %}
+{% block title %}Mon compte — mon-environnement.fr{% endblock %}
+
+{% block content %}
+<div class="max-w-3xl mx-auto px-4 sm:px-6 py-10 space-y-6">
+
+  {% set plan_labels = {'free': 'Gratuit', 'A': 'Essentiel', 'B': 'Pro', 'C': 'Ultimate'} %}
+  {% set plan_colors = {
+    'free': 'bg-gray-100 text-gray-700 ring-gray-200',
+    'A':    'bg-brand-100 text-brand-800 ring-brand-300',
+    'B':    'bg-blue-100 text-blue-800 ring-blue-300',
+    'C':    'bg-purple-100 text-purple-800 ring-purple-300'
+  } %}
+
+  <h1 class="text-2xl font-bold text-brand-900">Mon compte</h1>
+
+  <!-- ── Profil ───────────────────────────────────────────────────────── -->
+  <div class="bg-white rounded-2xl border border-brand-100 shadow-sm p-6">
+    <h2 class="text-sm font-bold text-brand-700 uppercase tracking-wide mb-4">Profil</h2>
+    <div class="flex items-center gap-4">
+      <div class="w-12 h-12 rounded-full bg-brand-100 flex items-center justify-center text-brand-700 font-bold text-lg">
+        {{ email[0] | upper }}
+      </div>
+      <div>
+        <p class="font-semibold text-brand-900">{{ email }}</p>
+        <span class="inline-flex items-center gap-1 text-xs font-semibold px-2.5 py-0.5 rounded-full ring-1 mt-1
+                     {{ plan_colors[plan] }}">
+          Formule {{ plan_labels[plan] }}
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Abonnement ───────────────────────────────────────────────────── -->
+  <div class="bg-white rounded-2xl border border-brand-100 shadow-sm p-6">
+    <h2 class="text-sm font-bold text-brand-700 uppercase tracking-wide mb-4">Abonnement</h2>
+
+    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <div>
+        <p class="font-semibold text-brand-900">{{ plan_labels[plan] }}</p>
+        {% if plan == 'free' %}
+          <p class="text-sm text-brand-500 mt-0.5">Accès limité aux données publiques</p>
+        {% else %}
+          <p class="text-sm text-brand-500 mt-0.5">
+            Statut :
+            <span class="font-medium {% if sub_status == 'active' %}text-green-600{% elif sub_status == 'past_due' %}text-orange-600{% else %}text-red-600{% endif %}">
+              {{ sub_status | replace('_', ' ') | capitalize }}
+            </span>
+            {% if grace_until %}
+              — délai de grâce jusqu'au {{ grace_until }}
+            {% endif %}
+          </p>
+        {% endif %}
+      </div>
+
+      <div class="flex gap-3 flex-wrap">
+        {% if plan == 'free' %}
+          <a href="/app/checkout"
+             class="bg-brand-600 text-white text-sm font-semibold px-5 py-2 rounded-lg hover:bg-brand-700 transition-colors">
+            Passer à Essentiel
+          </a>
+        {% else %}
+          <form action="/billing/portal" method="post">
+            <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+            <button type="submit"
+                    class="bg-white border border-brand-200 text-brand-700 text-sm font-semibold px-5 py-2 rounded-lg hover:bg-brand-50 transition-colors">
+              Gérer via Stripe →
+            </button>
+          </form>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Clé API (Plan C) ─────────────────────────────────────────────── -->
+  {% if plan == 'C' %}
+  <div id="api" class="bg-white rounded-2xl border border-purple-200 shadow-sm p-6">
+    <h2 class="text-sm font-bold text-purple-700 uppercase tracking-wide mb-4">Clé API</h2>
+    <p class="text-sm text-brand-600 mb-3">
+      Utilisez cette clé dans l'en-tête <code class="bg-brand-50 px-1 rounded text-xs">Authorization: Bearer &lt;clé&gt;</code>
+    </p>
+    <div class="bg-gray-900 rounded-lg px-4 py-3 font-mono text-sm text-green-400 break-all mb-3">
+      {{ api_key or "Aucune clé active — contactez le support" }}
+    </div>
+    <div class="flex gap-3">
+      <button onclick="navigator.clipboard.writeText('{{ api_key or '' }}')"
+              class="text-xs text-brand-600 hover:underline">
+        Copier
+      </button>
+      <span class="text-brand-200">|</span>
+      <a href="mailto:support@mon-environnement.fr"
+         class="text-xs text-brand-600 hover:underline">
+        Régénérer (support)
+      </a>
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- ── Sécurité / Sessions ─────────────────────────────────────────── -->
+  <div class="bg-white rounded-2xl border border-brand-100 shadow-sm p-6">
+    <h2 class="text-sm font-bold text-brand-700 uppercase tracking-wide mb-4">Sécurité</h2>
+    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+      <div>
+        <p class="text-sm font-medium text-brand-800">Déconnexion de tous les appareils</p>
+        <p class="text-xs text-brand-500 mt-0.5">Révoque toutes les sessions actives</p>
+      </div>
+      <form action="/auth/logout-all" method="post">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+        <button type="submit"
+                class="text-sm font-medium text-red-600 hover:text-red-800 hover:underline transition-colors"
+                onclick="return confirm('Déconnecter tous les appareils ?')">
+          Déconnecter partout
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ── Déconnexion ─────────────────────────────────────────────────── -->
+  <form action="/app/logout" method="post" class="text-center">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+    <button type="submit"
+            class="text-sm text-brand-500 hover:text-red-600 hover:underline transition-colors">
+      ← Déconnexion
+    </button>
+  </form>
+
+</div>
+{% endblock %}

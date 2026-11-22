@@ -46,6 +46,18 @@ def _verify_csrf_token(token: str) -> bool:
         return False
 
 
+def verify_csrf_value(cookie_token: str, form_token: str) -> bool:
+    """
+    Vérifie le CSRF pour les formulaires HTML (champ caché, pas d'en-tête).
+    Utilisé par les routes Jinja2 qui reçoivent le jeton via POST form data.
+    """
+    if not cookie_token or not form_token:
+        return False
+    if cookie_token != form_token:
+        return False
+    return _verify_csrf_token(cookie_token)
+
+
 async def verify_csrf(
     x_csrf_token: str | None = Header(default=None, alias="X-CSRF-Token"),
     csrf_token: str | None = Cookie(default=None),

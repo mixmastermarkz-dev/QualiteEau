@@ -1,0 +1,512 @@
+{% extends "base.html" %}
+{% block title %}Tableau de bord — mon-environnement.fr{% endblock %}
+
+{% block content %}
+
+{# ── Helpers ──────────────────────────────────────────────────────────── #}
+{% set plan_labels = {'free': 'Gratuit', 'A': 'Essentiel', 'B': 'Pro', 'C': 'Ultimate'} %}
+{% set plan_colors = {
+  'free': 'bg-gray-100 text-gray-700 ring-gray-200',
+  'A':    'bg-brand-100 text-brand-800 ring-brand-300',
+  'B':    'bg-blue-100 text-blue-800 ring-blue-300',
+  'C':    'bg-purple-100 text-purple-800 ring-purple-300'
+} %}
+{% set risk_colors = {
+  'faible':  'bg-green-100 text-green-800 border-green-300',
+  'modere':  'bg-yellow-100 text-yellow-800 border-yellow-300',
+  'eleve':   'bg-orange-100 text-orange-800 border-orange-300',
+  'critique':'bg-red-100 text-red-800 border-red-300',
+} %}
+
+{# Access helpers #}
+{% set has_a = plan in ('A', 'B', 'C') %}
+{% set has_b = plan in ('B', 'C') %}
+{% set has_c = plan == 'C' %}
+
+<div class="max-w-6xl mx-auto px-4 sm:px-6 py-8 space-y-8">
+
+  <!-- ── En-tête personnalisé ─────────────────────────────────────────── -->
+  <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+    <div>
+      <h1 class="text-2xl font-bold text-brand-900">Bonjour 👋</h1>
+      <p class="text-brand-500 text-sm mt-0.5">{{ email }}</p>
+    </div>
+    <div class="flex items-center gap-3">
+      <span class="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full ring-1 {{ plan_colors[plan] }}">
+        {% if plan == 'C' %}
+          <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+        {% endif %}
+        Formule {{ plan_labels[plan] }}
+      </span>
+      {% if not has_b %}
+      <a href="/app/checkout"
+         class="text-xs font-semibold text-brand-600 hover:text-brand-800 hover:underline transition-colors">
+        Passer à Pro →
+      </a>
+      {% endif %}
+    </div>
+  </div>
+
+  <!-- ── Alertes sécheresse Occitanie ─────────────────────────────────── -->
+  <section>
+    <div class="flex items-center justify-between mb-4">
+      <h2 class="text-base font-bold text-brand-800 flex items-center gap-2">
+        <svg class="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+        </svg>
+        Sécheresse — Occitanie
+      </h2>
+      <span class="text-xs text-brand-400">Données Hub'Eau · VigiEau</span>
+    </div>
+
+    <div class="grid sm:grid-cols-3 gap-4">
+
+      <!-- Score actuel (FREE) -->
+      <div class="bg-white rounded-xl border border-brand-100 p-5 shadow-sm">
+        <p class="text-xs font-semibold text-brand-500 uppercase tracking-wide mb-1">Niveau actuel</p>
+        <div class="flex items-end gap-2 mt-2">
+          <span class="text-3xl font-bold text-brand-900">{{ drought.niveau_actuel }}</span>
+        </div>
+        <span class="inline-block mt-2 text-xs font-medium px-2 py-0.5 rounded-full border
+                     {{ risk_colors.get(drought.code_couleur, 'bg-gray-100 text-gray-700 border-gray-200') }}">
+          {{ drought.code_couleur | capitalize }}
+        </span>
+        <p class="text-xs text-brand-400 mt-3">Restriction en vigueur sur votre zone</p>
+      </div>
+
+      <!-- Prévision J+7 (Plan A+) -->
+      <div class="bg-white rounded-xl border {% if has_a %}border-brand-100{% else %}border-gray-100{% endif %} p-5 shadow-sm relative overflow-hidden">
+        {% if not has_a %}
+        <div class="absolute inset-0 bg-white/80 backdrop-blur-[1px] flex flex-col items-center justify-center z-10 rounded-xl">
+          <svg class="w-6 h-6 text-gray-400 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+          </svg>
+          <p class="text-xs font-semibold text-gray-600">Formule Essentiel</p>
+          <a href="/app/checkout" class="mt-1 text-xs text-brand-600 hover:underline font-medium">Débloquer →</a>
+        </div>
+        {% endif %}
+        <p class="text-xs font-semibold text-brand-500 uppercase tracking-wide mb-1">Prévision J+7</p>
+        <div class="flex items-end gap-2 mt-2">
+          {% if has_a %}
+            <span class="text-3xl font-bold text-brand-900">{{ drought.prev_7j }}%</span>
+            <span class="text-sm text-brand-500 mb-1">probabilité</span>
+          {% else %}
+            <span class="text-3xl font-bold text-gray-300">??</span>
+          {% endif %}
+        </div>
+        {% if has_a %}
+        <span class="inline-block mt-2 text-xs font-medium px-2 py-0.5 rounded-full border
+                     {{ risk_colors.get(drought.prev_7j_niveau, 'bg-gray-100 text-gray-700 border-gray-200') }}">
+          {{ drought.prev_7j_niveau | capitalize }}
+        </span>
+        {% endif %}
+        <p class="text-xs {% if has_a %}text-brand-400{% else %}text-gray-300{% endif %} mt-3">Probabilité de restriction dans 7 jours</p>
+      </div>
+
+      <!-- Prévision J+15 & J+30 (Plan B+) -->
+      <div class="bg-white rounded-xl border {% if has_b %}border-brand-100{% else %}border-gray-100{% endif %} p-5 shadow-sm relative overflow-hidden">
+        {% if not has_b %}
+        <div class="absolute inset-0 bg-white/80 backdrop-blur-[1px] flex flex-col items-center justify-center z-10 rounded-xl">
+          <svg class="w-6 h-6 text-gray-400 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+          </svg>
+          <p class="text-xs font-semibold text-gray-600">Formule Pro</p>
+          <a href="/app/checkout" class="mt-1 text-xs text-brand-600 hover:underline font-medium">Débloquer →</a>
+        </div>
+        {% endif %}
+        <p class="text-xs font-semibold text-brand-500 uppercase tracking-wide mb-1">Prévisions étendues</p>
+        <div class="mt-2 space-y-2">
+          <div class="flex items-center justify-between text-sm">
+            <span class="text-brand-600 font-medium">J+15</span>
+            {% if has_b %}
+              <span class="font-bold text-brand-900">{{ drought.prev_15j }}%</span>
+            {% else %}
+              <span class="font-bold text-gray-300">??</span>
+            {% endif %}
+          </div>
+          <div class="flex items-center justify-between text-sm">
+            <span class="text-brand-600 font-medium">J+30</span>
+            {% if has_b %}
+              <span class="font-bold text-brand-900">{{ drought.prev_30j }}%</span>
+            {% else %}
+              <span class="font-bold text-gray-300">??</span>
+            {% endif %}
+          </div>
+        </div>
+        <p class="text-xs {% if has_b %}text-brand-400{% else %}text-gray-300{% endif %} mt-3">Modèle HistGBT · Occitanie</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Eau potable ───────────────────────────────────────────────────── -->
+  <section>
+    <div class="flex items-center justify-between mb-4">
+      <h2 class="text-base font-bold text-brand-800 flex items-center gap-2">
+        <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+        </svg>
+        Eau potable
+      </h2>
+      <span class="text-xs text-brand-400">Source : Hub'Eau SISE-Eaux</span>
+    </div>
+
+    <!-- Recherche commune -->
+    <div class="bg-white rounded-xl border border-brand-100 p-5 shadow-sm mb-4">
+      <form method="get" class="flex gap-3 flex-col sm:flex-row">
+        <input type="text" name="commune" placeholder="Code INSEE ou nom (ex: 34172 / Montpellier)"
+               value="{{ eau_commune_recherchee or '' }}"
+               class="flex-1 px-4 py-2 rounded-lg border border-brand-200 bg-brand-50 text-sm
+                      focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent">
+        <button type="submit"
+                class="bg-brand-600 text-white px-5 py-2 rounded-lg text-sm font-semibold hover:bg-brand-700 transition-colors">
+          Analyser
+        </button>
+      </form>
+    </div>
+
+    {% if eau %}
+
+    {% if not eau.disponible %}
+    <div class="bg-amber-50 border border-amber-200 rounded-xl px-5 py-4 text-sm text-amber-800">
+      Aucune donnée Hub'Eau disponible pour cette commune. Consultez directement
+      <a href="{{ eau.source_url }}" target="_blank" rel="noopener" class="underline font-medium">resultats.eaux.sante.gouv.fr</a>.
+    </div>
+    {% else %}
+
+    <!-- En-tête résultat -->
+    <div class="bg-white rounded-xl border border-brand-100 shadow-sm overflow-hidden mb-4">
+      <div class="px-5 py-4 border-b border-brand-50 flex items-center justify-between flex-wrap gap-2">
+        <div>
+          <p class="font-semibold text-brand-900">{{ eau.commune_nom }}</p>
+          <p class="text-xs text-brand-500">{{ eau.distributeur }} · analyse du {{ eau.date_derniere_analyse }}</p>
+        </div>
+        <span class="text-xs font-medium px-2.5 py-1 rounded-full
+                     {% if eau.conforme_global %}bg-green-100 text-green-700
+                     {% elif eau.conforme_global == false %}bg-red-100 text-red-700
+                     {% else %}bg-gray-100 text-gray-600{% endif %}">
+          {% if eau.conforme_global %}Conforme{% elif eau.conforme_global == false %}Non conforme{% else %}—{% endif %}
+        </span>
+      </div>
+
+      <!-- Paramètres principaux (FREE) -->
+      <div class="px-5 py-4 grid grid-cols-2 sm:grid-cols-4 gap-4 border-b border-brand-50">
+        <div>
+          <p class="text-xs text-brand-500 mb-1">Bactériologie</p>
+          <p class="font-bold text-sm
+             {% if eau.conformite_bacterio == 'Conforme' %}text-green-700
+             {% elif eau.conformite_bacterio == 'Non conforme' %}text-red-700
+             {% else %}text-brand-900{% endif %}">
+            {{ eau.conformite_bacterio }}
+          </p>
+        </div>
+        <div>
+          <p class="text-xs text-brand-500 mb-1">Chimique</p>
+          <p class="font-bold text-sm
+             {% if eau.conformite_chimique == 'Conforme' %}text-green-700
+             {% elif eau.conformite_chimique == 'Non conforme' %}text-red-700
+             {% else %}text-brand-900{% endif %}">
+            {{ eau.conformite_chimique }}
+          </p>
+        </div>
+
+        {# Nitrates — Plan A+ #}
+        {% set nit = eau.parametres.get('1340') %}
+        <div class="relative">
+          {% if not has_a %}
+          <div class="absolute inset-0 flex flex-col items-center justify-center bg-white/80 rounded">
+            <svg class="w-4 h-4 text-gray-300 mb-0.5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-xs text-gray-400 font-semibold">Essentiel</span>
+          </div>
+          {% endif %}
+          <p class="text-xs {% if has_a %}text-brand-500{% else %}text-gray-200{% endif %} mb-1">Nitrates</p>
+          <p class="font-bold text-sm {% if has_a %}{% if nit and nit.conforme == false %}text-red-700{% else %}text-brand-900{% endif %}{% else %}text-gray-200{% endif %}">
+            {% if has_a %}{{ nit.valeur if nit else '—' }} {% if nit %}mg/L{% endif %}{% else %}??{% endif %}
+          </p>
+        </div>
+
+        {# pH — Plan A+ #}
+        {% set ph = eau.parametres.get('1302') %}
+        <div class="relative">
+          {% if not has_a %}
+          <div class="absolute inset-0 flex flex-col items-center justify-center bg-white/80 rounded">
+            <svg class="w-4 h-4 text-gray-300 mb-0.5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-xs text-gray-400 font-semibold">Essentiel</span>
+          </div>
+          {% endif %}
+          <p class="text-xs {% if has_a %}text-brand-500{% else %}text-gray-200{% endif %} mb-1">pH</p>
+          <p class="font-bold text-sm {% if has_a %}text-brand-900{% else %}text-gray-200{% endif %}">
+            {% if has_a %}{{ ph.valeur if ph else '—' }}{% else %}??{% endif %}
+          </p>
+        </div>
+      </div>
+
+      {# Paramètres détaillés — Plan A+ #}
+      {% if has_a %}
+      <div class="px-5 py-4 grid grid-cols-2 sm:grid-cols-4 gap-4 border-b border-brand-50">
+        {% set turbidite = eau.parametres.get('1295') %}
+        {% set chlore    = eau.parametres.get('1399') %}
+        {% set aluminium = eau.parametres.get('1370') %}
+        {% set chlorures = eau.parametres.get('1337') %}
+        {% for p in [turbidite, chlore, aluminium, chlorures] %}
+        {% if p %}
+        <div>
+          <p class="text-xs text-brand-500 mb-1">{{ p.name }}</p>
+          <p class="font-bold text-sm {% if p.conforme == false %}text-red-700{% else %}text-brand-900{% endif %}">
+            {{ p.valeur }} {{ p.unite }}
+          </p>
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>
+      {% else %}
+      <div class="bg-brand-50 border-t border-brand-100 px-5 py-3 flex items-center justify-between">
+        <p class="text-xs text-brand-600">
+          <strong>Turbidité, chlore, aluminium</strong> disponibles avec Essentiel
+        </p>
+        <a href="/app/checkout?plan=a" class="text-xs font-semibold text-brand-600 hover:underline">Débloquer →</a>
+      </div>
+      {% endif %}
+
+      <!-- Lien officiel -->
+      <div class="px-5 py-3 flex justify-end">
+        <a href="{{ eau.source_url }}" target="_blank" rel="noopener"
+           class="text-xs text-brand-400 hover:text-brand-600 hover:underline transition-colors">
+          Voir sur resultats.eaux.sante.gouv.fr →
+        </a>
+      </div>
+    </div>
+
+    <!-- ── PFAS ─────────────────────────────────────────────────────────── -->
+    <div class="bg-white rounded-xl border
+         {% if eau.pfas.statut == 'non_conforme' %}border-red-200
+         {% elif eau.pfas.statut == 'conforme' %}border-green-200
+         {% else %}border-gray-200{% endif %}
+         shadow-sm overflow-hidden">
+
+      <div class="px-5 py-4 border-b
+           {% if eau.pfas.statut == 'non_conforme' %}border-red-100 bg-red-50
+           {% elif eau.pfas.statut == 'conforme' %}border-green-100 bg-green-50
+           {% else %}border-gray-100 bg-gray-50{% endif %}
+           flex items-center justify-between flex-wrap gap-2">
+        <div class="flex items-center gap-2">
+          <svg class="w-4 h-4 {% if eau.pfas.statut == 'non_conforme' %}text-red-600{% elif eau.pfas.statut == 'conforme' %}text-green-600{% else %}text-gray-400{% endif %}"
+               fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+          </svg>
+          <span class="text-sm font-bold text-brand-900">PFAS (polluants éternels)</span>
+          <span class="text-xs px-2 py-0.5 rounded-full font-semibold
+            {% if eau.pfas.statut == 'non_conforme' %}bg-red-100 text-red-700
+            {% elif eau.pfas.statut == 'conforme' %}bg-green-100 text-green-700
+            {% elif eau.pfas.statut == 'mentionne' %}bg-yellow-100 text-yellow-700
+            {% else %}bg-gray-100 text-gray-500{% endif %}">
+            {% if eau.pfas.statut == 'non_conforme' %}⚠ Dépassement détecté
+            {% elif eau.pfas.statut == 'conforme' %}✓ Conforme
+            {% elif eau.pfas.statut == 'mentionne' %}ℹ Mentionné
+            {% else %}Aucun relevé publié{% endif %}
+          </span>
+        </div>
+        {% if eau.pfas.valeur %}
+        <span class="text-sm font-bold
+          {% if eau.pfas.statut == 'non_conforme' %}text-red-700{% else %}text-green-700{% endif %}">
+          {{ eau.pfas.valeur }} µg/L
+          <span class="text-xs font-normal text-gray-500">/ limite 0,10 µg/L</span>
+        </span>
+        {% endif %}
+      </div>
+
+      <div class="px-5 py-4">
+        {% if eau.pfas.statut in ('non_conforme', 'conforme', 'mentionne') %}
+          <p class="text-xs text-gray-600 leading-relaxed italic">
+            « {{ eau.pfas.texte }} »
+          </p>
+        {% else %}
+          <p class="text-xs text-gray-500 leading-relaxed">
+            Aucune analyse PFAS publiée via Hub'Eau pour cette commune.
+            Les codes SANDRE pour les 20 PFAS de la directive UE 2020/2184
+            ne sont pas encore intégrés dans SISE-Eaux (état nov. 2026).
+          </p>
+          <p class="text-xs text-gray-400 mt-2">
+            Consultez votre
+            <a href="https://www.occitanie.ars.sante.fr/" target="_blank" rel="noopener"
+               class="underline hover:text-brand-600">ARS Occitanie</a>
+            ou
+            <a href="{{ eau.source_url }}" target="_blank" rel="noopener"
+               class="underline hover:text-brand-600">resultats.eaux.sante.gouv.fr</a>
+            pour les données les plus récentes.
+          </p>
+        {% endif %}
+
+        <p class="text-xs text-gray-400 mt-3">
+          Directive UE 2020/2184 · Limite réglementaire : Σ 20 PFAS ≤ 0,10 µg/L · Σ tous PFAS ≤ 0,50 µg/L
+        </p>
+      </div>
+    </div>
+
+    {% endif %} {# eau.disponible #}
+    {% endif %} {# eau #}
+  </section>
+
+  <!-- ── Qualité de l'air ──────────────────────────────────────────────── -->
+  <section>
+    <div class="flex items-center justify-between mb-4">
+      <h2 class="text-base font-bold text-brand-800 flex items-center gap-2">
+        <svg class="w-5 h-5 text-sky-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/>
+        </svg>
+        Qualité de l'air
+      </h2>
+      <span class="text-xs text-brand-400">Source : Atmo Occitanie</span>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+
+      <!-- ATMO global (FREE) -->
+      <div class="bg-white rounded-xl border border-brand-100 p-5 shadow-sm">
+        <p class="text-xs font-semibold text-brand-500 uppercase tracking-wide mb-1">Indice ATMO</p>
+        <div class="flex items-end gap-1 mt-2">
+          <span class="text-4xl font-bold text-brand-900">{{ air.atmo }}</span>
+          <span class="text-sm text-brand-500 mb-1">/10</span>
+        </div>
+        <p class="text-xs text-brand-600 mt-2 font-medium">{{ air.atmo_label }}</p>
+        <p class="text-xs text-brand-400 mt-1">{{ air.zone_nom }}</p>
+      </div>
+
+      <!-- PM2.5 (Plan A+) -->
+      <div class="bg-white rounded-xl border {% if has_a %}border-brand-100{% else %}border-gray-100{% endif %} p-5 shadow-sm relative overflow-hidden">
+        {% if not has_a %}
+        <div class="absolute inset-0 bg-gradient-to-br from-white/90 to-gray-50/90 flex flex-col items-center justify-center z-10 rounded-xl">
+          <svg class="w-5 h-5 text-gray-300 mb-1" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/>
+          </svg>
+          <span class="text-xs font-bold text-gray-400">Essentiel</span>
+        </div>
+        {% endif %}
+        <p class="text-xs font-semibold {% if has_a %}text-brand-500{% else %}text-gray-300{% endif %} uppercase tracking-wide mb-1">PM2.5</p>
+        <div class="flex items-end gap-1 mt-2">
+          {% if has_a %}
+            <span class="text-4xl font-bold text-brand-900">{{ air.pm25 }}</span>
+            <span class="text-sm text-brand-500 mb-1">µg/m³</span>
+          {% else %}
+            <span class="text-4xl font-bold text-gray-200">??</span>
+          {% endif %}
+        </div>
+        <p class="text-xs {% if has_a %}text-brand-400{% else %}text-gray-200{% endif %} mt-2">Particules fines</p>
+      </div>
+
+      <!-- PM10 (Plan A+) -->
+      <div class="bg-white rounded-xl border {% if has_a %}border-brand-100{% else %}border-gray-100{% endif %} p-5 shadow-sm relative overflow-hidden">
+        {% if not has_a %}
+        <div class="absolute inset-0 bg-gradient-to-br from-white/90 to-gray-50/90 flex flex-col items-center justify-center z-10 rounded-xl">
+          <svg class="w-5 h-5 text-gray-300 mb-1" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/>
+          </svg>
+          <span class="text-xs font-bold text-gray-400">Essentiel</span>
+        </div>
+        {% endif %}
+        <p class="text-xs font-semibold {% if has_a %}text-brand-500{% else %}text-gray-300{% endif %} uppercase tracking-wide mb-1">PM10</p>
+        <div class="flex items-end gap-1 mt-2">
+          {% if has_a %}
+            <span class="text-4xl font-bold text-brand-900">{{ air.pm10 }}</span>
+            <span class="text-sm text-brand-500 mb-1">µg/m³</span>
+          {% else %}
+            <span class="text-4xl font-bold text-gray-200">??</span>
+          {% endif %}
+        </div>
+        <p class="text-xs {% if has_a %}text-brand-400{% else %}text-gray-200{% endif %} mt-2">Particules inhalables</p>
+      </div>
+
+      <!-- NO2 + O3 (Plan B+) -->
+      <div class="bg-white rounded-xl border {% if has_b %}border-brand-100{% else %}border-gray-100{% endif %} p-5 shadow-sm relative overflow-hidden">
+        {% if not has_b %}
+        <div class="absolute inset-0 bg-gradient-to-br from-white/90 to-gray-50/90 flex flex-col items-center justify-center z-10 rounded-xl">
+          <svg class="w-5 h-5 text-gray-300 mb-1" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/>
+          </svg>
+          <span class="text-xs font-bold text-gray-400">Pro</span>
+        </div>
+        {% endif %}
+        <p class="text-xs font-semibold {% if has_b %}text-brand-500{% else %}text-gray-300{% endif %} uppercase tracking-wide mb-1">NO₂ / O₃</p>
+        <div class="mt-2 space-y-1.5">
+          <div class="flex justify-between text-sm">
+            <span class="{% if has_b %}text-brand-600{% else %}text-gray-200{% endif %}">NO₂</span>
+            {% if has_b %}
+              <span class="font-bold text-brand-900">{{ air.no2 }} µg/m³</span>
+            {% else %}
+              <span class="font-bold text-gray-200">??</span>
+            {% endif %}
+          </div>
+          <div class="flex justify-between text-sm">
+            <span class="{% if has_b %}text-brand-600{% else %}text-gray-200{% endif %}">O₃</span>
+            {% if has_b %}
+              <span class="font-bold text-brand-900">{{ air.o3 }} µg/m³</span>
+            {% else %}
+              <span class="font-bold text-gray-200">??</span>
+            {% endif %}
+          </div>
+        </div>
+        <p class="text-xs {% if has_b %}text-brand-400{% else %}text-gray-200{% endif %} mt-2">Dioxyde d'azote · Ozone</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Accès API (Plan C uniquement) ────────────────────────────────── -->
+  {% if has_c %}
+  <section>
+    <div class="bg-gradient-to-r from-purple-900 to-purple-700 rounded-2xl p-6 text-white">
+      <div class="flex items-start justify-between gap-4">
+        <div>
+          <div class="flex items-center gap-2 mb-2">
+            <svg class="w-5 h-5 text-purple-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+            </svg>
+            <span class="text-sm font-bold text-purple-200 uppercase tracking-wide">Accès API</span>
+          </div>
+          <p class="text-white font-semibold">Clé API active</p>
+          <p class="text-purple-200 text-sm mt-1">Accès complet à l'API REST — 10 000 req/jour</p>
+        </div>
+        <a href="/app/account#api"
+           class="bg-white/10 hover:bg-white/20 text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors">
+          Gérer →
+        </a>
+      </div>
+      <div class="mt-4 bg-black/30 rounded-lg px-4 py-3 font-mono text-xs text-purple-100 break-all">
+        {{ api_key or "Générez votre clé API dans les paramètres du compte" }}
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  <!-- ── CTA upgrade si FREE ───────────────────────────────────────────── -->
+  {% if plan == 'free' %}
+  <section class="bg-gradient-to-r from-brand-600 to-brand-700 rounded-2xl p-6 text-white">
+    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <div>
+        <h3 class="font-bold text-lg">Passez à la formule Essentiel</h3>
+        <p class="text-brand-100 text-sm mt-1">
+          Débloquez les prévisions J+7, les paramètres eau détaillés et la qualité de l'air complète.
+        </p>
+      </div>
+      <a href="/app/checkout?plan=a"
+         class="inline-flex items-center gap-2 bg-white text-brand-700 font-bold px-6 py-3
+                rounded-xl hover:bg-brand-50 transition-colors whitespace-nowrap text-sm shadow-sm">
+        4,90 € / mois →
+      </a>
+    </div>
+  </section>
+  {% endif %}
+
+</div>
+{% endblock %}

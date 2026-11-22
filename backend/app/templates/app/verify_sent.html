@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block title %}Vérifiez votre e-mail — mon-environnement.fr{% endblock %}
+
+{% block content %}
+<div class="min-h-[calc(100vh-10rem)] flex items-center justify-center px-4 py-16">
+  <div class="w-full max-w-md text-center">
+
+    <!-- Icône animée -->
+    <div class="inline-flex items-center justify-center w-20 h-20 bg-brand-100 rounded-full mb-6">
+      <svg class="w-10 h-10 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+      </svg>
+    </div>
+
+    <h1 class="text-2xl font-bold text-brand-900 mb-3">Vérifiez votre messagerie</h1>
+
+    <p class="text-brand-600 text-sm mb-2">
+      Un lien de connexion a été envoyé à
+    </p>
+    <p class="text-brand-800 font-semibold text-base mb-6">{{ email }}</p>
+
+    <div class="bg-white rounded-xl border border-brand-100 px-6 py-5 text-sm text-brand-700 text-left space-y-2 mb-8">
+      <div class="flex gap-2 items-start">
+        <svg class="w-4 h-4 text-brand-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+        </svg>
+        Cliquez sur le lien dans l'e-mail pour vous connecter
+      </div>
+      <div class="flex gap-2 items-start">
+        <svg class="w-4 h-4 text-brand-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+        </svg>
+        Le lien est valide <strong>15 minutes</strong>
+      </div>
+      <div class="flex gap-2 items-start">
+        <svg class="w-4 h-4 text-brand-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+        </svg>
+        Usage unique — sécurisé, aucun mot de passe
+      </div>
+    </div>
+
+    <!-- Dev mode: magic link direct -->
+    {% if dev_link %}
+    <div class="bg-amber-50 border border-amber-200 rounded-xl px-5 py-4 text-left mb-6">
+      <p class="text-xs font-bold text-amber-700 uppercase tracking-wide mb-2">
+        🔧 Mode développement — lien direct
+      </p>
+      <a href="{{ dev_link }}"
+         class="text-xs text-amber-800 break-all hover:underline font-mono">
+        {{ dev_link }}
+      </a>
+    </div>
+    {% endif %}
+
+    <a href="/app/login"
+       class="text-sm text-brand-500 hover:text-brand-700 hover:underline transition-colors">
+      ← Changer d'adresse e-mail
+    </a>
+
+  </div>
+</div>
+{% endblock %}

@@ -32,9 +32,11 @@ def _preparer_x(jeu: pd.DataFrame, zones: list[str]) -> pd.DataFrame:
 
 
 def _nouveau_modele() -> HistGradientBoostingClassifier:
+    # zone_code peut avoir > 255 modalités (limite HistGradient pour categorical_features)
+    # → traité comme numérique ordinal, ce qui reste exploitable par le modèle
     return HistGradientBoostingClassifier(
         max_iter=400, learning_rate=0.05, max_leaf_nodes=31, min_samples_leaf=40,
-        l2_regularization=1.0, categorical_features=[0], random_state=0,
+        l2_regularization=1.0, random_state=0,
     )
 
 

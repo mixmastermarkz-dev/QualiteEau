@@ -165,7 +165,7 @@ def construire_jeu(
     commun["jour_cos"] = np.cos(2 * np.pi * idx.dayofyear / 365.25)
     commun["fiabilite_reduite"] = int(fiabilite_reduite)
 
-    # --- Features par zone + targets
+    # --- Features par zone + targets (sans commun pour économiser la mémoire)
     result_parts = []
     for z in niv.columns:
         s = niv[z]
@@ -176,7 +176,10 @@ def construire_jeu(
         for h in HORIZONS:
             futur = s[::-1].rolling(h, min_periods=h).max()[::-1].shift(-1)
             d[f"y_{h}j"] = (futur >= NIVEAU_CIBLE).astype(float).where(futur.notna())
-        result_parts.append(d.join(commun))
+        result_parts.append(d)
 
+    # Concat d'abord (léger), join commun une seule fois
     jeu = pd.concat(result_parts).rename_axis("date").reset_index()
-    return jeu[jeu["niveau_actuel"].notna()]
+    jeu = jeu[jeu["niveau_actuel"].notna()]
+    jeu = jeu.join(commun, on="date")
+    return jeu

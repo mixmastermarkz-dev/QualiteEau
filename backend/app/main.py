@@ -7,6 +7,7 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI, Request, status
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
+from fastapi.staticfiles import StaticFiles
 from slowapi import Limiter, _rate_limit_exceeded_handler
 from slowapi.errors import RateLimitExceeded
 from slowapi.middleware import SlowAPIMiddleware
@@ -20,6 +21,7 @@ from app.database import engine, Base
 import app.models  # noqa: F401 — enregistre tous les modèles dans Base.metadata
 from app.routers import auth as auth_router
 from app.routers import billing as billing_router
+from app.routers.app_pages import router as app_pages_router
 from app.routers.predictif import router as predictif_router
 from app.services.billing import init_stripe
 
@@ -105,7 +107,17 @@ async def health():
 
 app.include_router(auth_router.router)
 app.include_router(billing_router.router)
+app.include_router(app_pages_router)
 app.include_router(predictif_router)
+
+
+# ── Fichiers statiques du site public ────────────────────────────────────────
+# Monté EN DERNIER — les routes FastAPI ont la priorité.
+# html=True : sert index.html automatiquement pour les répertoires.
+import os as _os
+_site_dir = "/app/site"
+if _os.path.isdir(_site_dir):
+    app.mount("/", StaticFiles(directory=_site_dir, html=True), name="site")
 
 
 # ── Rate limit par route ──────────────────────────────────────────────────────
