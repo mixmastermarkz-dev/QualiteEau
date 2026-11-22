@@ -3,7 +3,7 @@
   "nom": "Paris",
   "slug": "paris",
   "region": "Île-de-France",
-  "updated": "20/11/2026 à 19:15",
+  "updated": "22/11/2026 à 16:49",
   "score_eau": 91,
   "nb_communes": 3,
   "potable": [
@@ -11,7 +11,7 @@
       "nom": "HAY-LES-ROSES (L')",
       "dept": "75",
       "insee": "94038",
-      "restric": "N.D.",
+      "restric": "Vigilance",
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
@@ -66,7 +66,7 @@
       "nom": "PARIS",
       "dept": "75",
       "insee": "75056",
-      "restric": "N.D.",
+      "restric": "Vigilance",
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
@@ -127,7 +127,7 @@
       "nom": "SAINT-CLOUD",
       "dept": "75",
       "insee": "92064",
-      "restric": "N.D.",
+      "restric": "Vigilance",
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
@@ -470,9 +470,9 @@
   "nappes": [],
   "air": [
     {
-      "zone": "Paris 17e Arrondissement",
+      "zone": "Paris 9e Arrondissement",
       "dept": "75",
-      "date": "2026-11-21",
+      "date": "2026-11-23",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -489,9 +489,9 @@
           "color": "#10b981"
         },
         "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM2.5": {
           "indice": 2,
@@ -508,7 +508,7 @@
     {
       "zone": "Paris 12e Arrondissement",
       "dept": "75",
-      "date": "2026-11-21",
+      "date": "2026-11-23",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -525,9 +525,81 @@
           "color": "#10b981"
         },
         "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
           "indice": 2,
           "label": "Moyen",
           "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Paris 6e Arrondissement",
+      "dept": "75",
+      "date": "2026-11-23",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Airparif",
+      "polluants": {
+        "NO₂": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "O₃": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Paris 10e Arrondissement",
+      "dept": "75",
+      "date": "2026-11-23",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Airparif",
+      "polluants": {
+        "NO₂": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "O₃": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM2.5": {
           "indice": 2,
@@ -544,7 +616,7 @@
     {
       "zone": "Paris 7e Arrondissement",
       "dept": "75",
-      "date": "2026-11-21",
+      "date": "2026-11-23",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -561,81 +633,9 @@
           "color": "#10b981"
         },
         "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Paris 18e Arrondissement",
-      "dept": "75",
-      "date": "2026-11-21",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Airparif",
-      "polluants": {
-        "NO₂": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "O₃": {
           "indice": 1,
           "label": "Bon",
           "color": "#10b981"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Paris 11e Arrondissement",
-      "dept": "75",
-      "date": "2026-11-21",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Airparif",
-      "polluants": {
-        "NO₂": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
         },
         "PM2.5": {
           "indice": 2,
