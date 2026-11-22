@@ -1,19 +1,133 @@
 """
 Feature engineering pour le modèle prédictif sécheresse.
-Adapté du prototype secheresse_34.py pour l'Occitanie (13 départements).
+
+Corrections Phase 3 (audit 2026-11-22) :
+  1. Une zone n'existe dans le jeu qu'à partir de son premier arrêté (plus de remplissage
+     depuis le 1er janvier → fuite de présence supprimée).
+  2. ffill(limit=10) remplace interpolate(limit=10) : aucune valeur future.
+  3. Délais de disponibilité appliqués à chaque source (config.DELAIS_DISPONIBILITE).
+  4. Climatologie de zone calculée uniquement sur les années passées (clim_zone).
+  5. Variables départementales par zone (dep_nb_alerte, dep_une_alerte, type_sou).
+  6. zone_code (ordinal) et fiabilite_reduite retirés des features du modèle.
+  7. Colonne dep ajoutée au jeu pour le backtest par département.
 """
 from __future__ import annotations
 
 import logging
-from datetime import date
 
 import numpy as np
 import pandas as pd
 
-from predictif.config import ANNEE_FIN_ENTRAINEMENT, HORIZONS, NIVEAU_CIBLE, NB_STATIONS_DETAILLEES
+from predictif.config import (
+    ANNEE_FIN_ENTRAINEMENT,
+    DELAIS_DISPONIBILITE,
+    HORIZONS,
+    NIVEAU_CIBLE,
+    NB_STATIONS_DETAILLEES,
+)
 
 logger = logging.getLogger(__name__)
 
+
+# ── Helpers ───────────────────────────────────────────────────────────────────
+
+def _appliquer_delai(
+    df: pd.DataFrame | None,
+    col_date: str,
+    delai_jours: int,
+) -> pd.DataFrame | None:
+    """
+    Décale les dates d'un DataFrame de +delai_jours pour simuler le délai
+    de publication d'une source. Les features calculées à la date t utilisent
+    alors des données disponibles à t, soit des mesures de t-delai_jours.
+    """
+    if df is None or df.empty or delai_jours == 0:
+        return df
+    df = df.copy()
+    df[col_date] = pd.to_datetime(df[col_date]) + pd.Timedelta(days=delai_jours)
+    return df
+
+
+def _climatologie_zone(s: pd.Series, idx: pd.DatetimeIndex) -> pd.Series:
+    """
+    Probabilité historique d'alerte par jour de l'année pour une zone,
+    calculée **uniquement sur les années strictement passées** (rolling expanding).
+
+    Méthode (backtest_honnete.py) :
+      1. Pour chaque (année, jour_de_l'année) : moyenne des jours en alerte
+      2. Lissage saisonnier ±15 j (rolling 31)
+      3. Moyenne cumulée des années passées uniquement : expanding().shift(1)
+
+    Retourne NaN pour les premières années (pas assez d'historique).
+    """
+    a = (s >= NIVEAU_CIBLE).astype(float).where(s.notna())
+    doy = pd.Series(idx.dayofyear, index=idx)
+    yr = pd.Series(idx.year, index=idx)
+
+    tab = a.groupby([yr, doy]).mean().unstack()
+    if tab.empty or tab.shape[0] < 2:
+        return pd.Series(np.nan, index=idx)
+
+    # Lissage saisonnier ±15 j
+    tab = tab.T.rolling(31, center=True, min_periods=1).mean().T
+
+    # Années strictement passées
+    cum = tab.expanding().mean().shift(1)
+
+    clim = cum.stack().reindex(list(zip(yr, doy)))
+    clim.index = idx
+    return clim
+
+
+def features_locales_zone(
+    zone: str,
+    dep: str | None,
+    df_hydro: pd.DataFrame | None,
+    df_piezo: pd.DataFrame | None,
+    idx: pd.DatetimeIndex,
+) -> pd.DataFrame:
+    """
+    Variables locales propres à la zone : stations de référence ou stations proches.
+
+    Approche cible (Phase 3, implémentation partielle) :
+      1. Chercher les stations dans data/referentiel/seuils/ (valeurs `verifie`)
+         associées à cette zone ou à son cours d'eau de référence.
+      2. Si absent, utiliser les stations Hub'Eau du même département.
+      3. Garder les variables régionales en plus, pas à la place.
+
+    État actuel : le référentiel seuils (data/referentiel/seuils/) n'existe pas encore.
+    Les géométries VigiEau ne sont pas chargées en mémoire.
+    → Retourne un DataFrame vide. Les variables régionales restent actives.
+    TODO : implémenter une fois data/referentiel/seuils/ disponible.
+    """
+    # Fallback : stations du même département (approximation en attendant les géométries)
+    # Pour une implémentation rigoureuse, il faudrait :
+    # - Charger les géométries VigiEau (zones_alerte.geojson) pour le polygone de la zone
+    # - Trouver les stations Hub'Eau dans ou à proximité du polygone (< 50 km)
+    # - Priorité aux stations marquées verifie dans le référentiel des seuils
+    if dep is None or (df_hydro is None and df_piezo is None):
+        return pd.DataFrame(index=idx)
+
+    out_parts = []
+
+    if df_hydro is not None and not df_hydro.empty and "dep" in df_hydro.columns:
+        h_dep = df_hydro[df_hydro["dep"] == dep]
+        if not h_dep.empty:
+            feat = features_series(h_dep, "code_station", "date", "valeur", f"ql_{dep}", True, idx)
+            out_parts.append(feat)
+
+    if df_piezo is not None and not df_piezo.empty and "dep" in df_piezo.columns:
+        p_dep = df_piezo[df_piezo["dep"] == dep]
+        if not p_dep.empty:
+            feat = features_series(p_dep, "code_bss", "date", "valeur", f"nappel_{dep}", False, idx)
+            out_parts.append(feat)
+
+    if out_parts:
+        return pd.concat(out_parts, axis=1)
+    return pd.DataFrame(index=idx)
+
+
+# ── Anomalie et features agrégées ─────────────────────────────────────────────
 
 def anomalie_saisonniere(serie: pd.Series, log: bool = False) -> pd.Series:
     """
@@ -45,11 +159,12 @@ def features_series(
 ) -> pd.DataFrame:
     """
     Calcule les features agrégées à partir d'un DataFrame de séries temporelles.
-    col_entite : colonne identifiant la station/piézomètre
+    Utilise ffill(limit=10) : jamais de valeur future (Phase 3, item 2).
     """
     anomalies: dict[str, pd.Series] = {}
     for entite, grp in df_source.groupby(col_entite):
-        s = grp.set_index(col_date)[col_val].reindex(idx).interpolate(limit=10)
+        # ffill : uniquement vers l'avant — aucune contamination future
+        s = grp.set_index(col_date)[col_val].reindex(idx).ffill(limit=10)
         an = anomalie_saisonniere(s, log=log)
         if an.notna().mean() > 0.5:
             anomalies[str(entite)] = an
@@ -105,6 +220,8 @@ def features_meteo(df_meteo: pd.DataFrame, idx: pd.DatetimeIndex) -> pd.DataFram
     return out
 
 
+# ── Jeu de données principal ──────────────────────────────────────────────────
+
 def construire_jeu(
     df_arretes: pd.DataFrame,
     df_hydro: pd.DataFrame | None,
@@ -117,20 +234,28 @@ def construire_jeu(
     """
     Construit le jeu de données complet (features + targets) pour l'entraînement ou la prédiction.
 
-    fiabilite_reduite : True si au moins une source est absente
-    source_manquante : nom de la source absente (pour la transparence)
+    Paramètres
+    ----------
+    fiabilite_reduite : True si au moins une source est absente — stocké comme
+        colonne de métadonnées, **non utilisé comme variable du modèle** (Phase 3).
+    source_manquante  : noms des sources absentes (pour la transparence).
     """
-    from predictif.sources.vigeau import _sans_accents
-
-    # --- Niveaux journaliers par zone (depuis les arrêtés)
+    # ── 1. Filtrage département ────────────────────────────────────────────────
     df_arretes = df_arretes.copy()
     if df_arretes["dep"].notna().any():
         df_arretes = df_arretes[df_arretes["dep"].isin(depts)]
 
+    # Mappings stables par zone (dep, type)
+    zone_dep: dict[str, str] = df_arretes.groupby("zone")["dep"].first().to_dict()
+    zone_type: dict[str, str] = df_arretes.groupby("zone")["type"].first().to_dict()
+
+    # Premier arrêté connu par zone (pour supprimer les lignes avant l'existence de la zone)
+    premier_arrete: dict[str, pd.Timestamp] = df_arretes.groupby("zone")["debut"].min().to_dict()
+
+    # ── 2. Niveaux journaliers (date × zone) ─────────────────────────────────
     aujourd_hui = pd.Timestamp.today().normalize()
     idx = pd.date_range("2012-01-01", aujourd_hui, freq="D")
 
-    # Tableau date x zone du niveau maximal en vigueur
     lignes = []
     for r in df_arretes.itertuples():
         fin = r.fin if pd.notna(r.fin) else min(r.debut + pd.Timedelta(days=120), aujourd_hui)
@@ -143,39 +268,87 @@ def construire_jeu(
 
     j = pd.DataFrame(lignes, columns=["date", "zone", "niveau"])
     niv = j.groupby(["date", "zone"])["niveau"].max().unstack("zone").reindex(idx).fillna(0)
+
+    # Phase 3, item 1 : une zone n'existe qu'à partir de son premier arrêté réel
+    # (NE PAS utiliser le 1er janvier de l'année → c'était la source de la fuite)
     for z in niv.columns:
-        premiere = niv.index[niv[z] > 0].min()
-        if pd.notna(premiere):
-            niv.loc[niv.index < pd.Timestamp(premiere.year, 1, 1), z] = np.nan
+        premiere = premier_arrete.get(z)
+        if premiere is not None and pd.notna(premiere):
+            niv.loc[niv.index < pd.Timestamp(premiere), z] = np.nan
 
-    logger.info("Zones d'alerte : %d | période %s → %s", niv.shape[1], idx.min().date(), idx.max().date())
+    logger.info(
+        "Zones d'alerte : %d | période %s → %s",
+        niv.shape[1], idx.min().date(), idx.max().date(),
+    )
 
-    # --- Features communes
+    # ── 3. Contexte départemental (autres zones du même dept en alerte) ───────
+    alerte = (niv >= NIVEAU_CIBLE)
+
+    dep_alerte_total: dict[str, pd.Series] = {}
+    for dep in set(zone_dep.values()):
+        zones_du_dep = [z for z in niv.columns if zone_dep.get(z) == dep]
+        if zones_du_dep:
+            dep_alerte_total[dep] = alerte[zones_du_dep].sum(axis=1)
+
+    # ── 4. Délais de disponibilité (Phase 3, item 3) ─────────────────────────
+    df_hydro_s = _appliquer_delai(df_hydro, "date", DELAIS_DISPONIBILITE["hubeau_hydro"])
+    df_piezo_s = _appliquer_delai(df_piezo, "date", DELAIS_DISPONIBILITE["hubeau_piezo"])
+    df_meteo_s = _appliquer_delai(df_meteo, "time", DELAIS_DISPONIBILITE["meteo"])
+
+    # ── 5. Features communes (régionales) ────────────────────────────────────
     parts = []
-    if df_hydro is not None and not df_hydro.empty:
-        parts.append(features_series(df_hydro, "code_station", "date", "valeur", "q", True, idx))
-    if df_piezo is not None and not df_piezo.empty:
-        parts.append(features_series(df_piezo, "code_bss", "date", "valeur", "nappe", False, idx))
-    parts.append(features_meteo(df_meteo, idx) if df_meteo is not None else pd.DataFrame(index=idx))
+    if df_hydro_s is not None and not df_hydro_s.empty:
+        parts.append(features_series(df_hydro_s, "code_station", "date", "valeur", "q", True, idx))
+    if df_piezo_s is not None and not df_piezo_s.empty:
+        parts.append(features_series(df_piezo_s, "code_bss", "date", "valeur", "nappe", False, idx))
+    parts.append(features_meteo(df_meteo_s, idx) if df_meteo_s is not None else pd.DataFrame(index=idx))
 
     commun = pd.concat(parts, axis=1) if parts else pd.DataFrame(index=idx)
-    commun["dep_niveau_max"] = niv.max(axis=1)
-    commun["dep_nb_zones_alerte"] = (niv >= NIVEAU_CIBLE).sum(axis=1)
     commun["jour_sin"] = np.sin(2 * np.pi * idx.dayofyear / 365.25)
     commun["jour_cos"] = np.cos(2 * np.pi * idx.dayofyear / 365.25)
-    commun["fiabilite_reduite"] = int(fiabilite_reduite)
+    # Note : fiabilite_reduite n'est plus dans commun (retiré des features, item 6)
 
-    # --- Features par zone + targets (sans commun pour économiser la mémoire)
+    # ── 6. Features par zone + targets ───────────────────────────────────────
     result_parts = []
     for z in niv.columns:
         s = niv[z]
-        d = pd.DataFrame({"zone": z, "niveau_actuel": s}, index=idx)
+        dep = zone_dep.get(z)
+        typ = zone_type.get(z)
+
+        d = pd.DataFrame({
+            "zone": z,
+            "dep": dep,                     # item 7 : colonne dep dans le jeu
+            "niveau_actuel": s,
+        }, index=idx)
+
+        # Historique de la zone
         chg = (s != s.shift()).cumsum()
         d["jours_meme_niveau"] = s.groupby(chg).cumcount()
         d["niveau_max_365j"] = s.rolling(365, min_periods=1).max()
+
+        # Type de ressource (binaire, stable — pas ordinal)
+        d["type_sou"] = int(typ == "SOU") if pd.notna(typ) else 0
+
+        # Climatologie de zone (item 5 / item 4 du prompt)
+        d["clim_zone"] = _climatologie_zone(s, idx)
+
+        # Contexte départemental (autres zones du même département en alerte)
+        if dep in dep_alerte_total:
+            dep_total = dep_alerte_total[dep]
+            d["dep_nb_alerte"] = dep_total - alerte[z].astype(int)
+            d["dep_une_alerte"] = (d["dep_nb_alerte"] > 0).astype(int)
+        else:
+            d["dep_nb_alerte"] = 0
+            d["dep_une_alerte"] = 0
+
+        # Targets
         for h in HORIZONS:
             futur = s[::-1].rolling(h, min_periods=h).max()[::-1].shift(-1)
             d[f"y_{h}j"] = (futur >= NIVEAU_CIBLE).astype(float).where(futur.notna())
+
+        # Métadonnées (non utilisées comme features du modèle, item 6)
+        d["fiabilite_reduite"] = int(fiabilite_reduite)
+
         result_parts.append(d)
 
     # Concat d'abord (léger), join commun une seule fois
