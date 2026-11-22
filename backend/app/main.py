@@ -70,6 +70,20 @@ app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 app.add_middleware(SlowAPIMiddleware)
 
 
+class HiddenFilesMiddleware(BaseHTTPMiddleware):
+    """Bloque tout chemin dont un segment commence par '.' (→ 404).
+
+    Évite de servir .env, .git/config et autres fichiers cachés même si
+    ceux-ci se retrouvaient par erreur dans le dossier de publication.
+    """
+
+    async def dispatch(self, request: Request, call_next) -> Response:
+        for segment in request.url.path.split("/"):
+            if segment.startswith("."):
+                return Response(status_code=404)
+        return await call_next(request)
+
+
 class SecurityHeadersMiddleware(BaseHTTPMiddleware):
     async def dispatch(self, request: Request, call_next) -> Response:
         response = await call_next(request)
@@ -86,6 +100,7 @@ class SecurityHeadersMiddleware(BaseHTTPMiddleware):
         return response
 
 
+app.add_middleware(HiddenFilesMiddleware)
 app.add_middleware(SecurityHeadersMiddleware)
 
 app.add_middleware(

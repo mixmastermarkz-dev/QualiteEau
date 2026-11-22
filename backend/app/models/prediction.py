@@ -78,6 +78,12 @@ class ModelVersion(Base, TimestampMixin):
     model_artifact_path: Mapped[str | None] = mapped_column(
         String(512)
     )  # chemin .pkl
+    model_sha256: Mapped[str | None] = mapped_column(
+        String(64)
+    )  # empreinte SHA-256 du .pkl, vérifiée avant pickle.load
+    validated_by_owner: Mapped[bool] = mapped_column(
+        Boolean, default=False
+    )  # le propriétaire doit valider avant tout déploiement en production
 
 
 class Prediction(Base, TimestampMixin):

@@ -14,6 +14,7 @@ from pathlib import Path
 import pandas as pd
 
 from predictif.config import (
+    ANNEE_FIN_ENTRAINEMENT,
     CACHE_DIR,
     DATA_DIR,
     DATE_DEBUT_HISTORIQUE,
@@ -128,21 +129,47 @@ async def run_pipeline(db_session=None, entrainer: bool = False) -> dict:
     if entrainer:
         rapport, modeles, zones = entrainer_et_evaluer(jeu)
         version = datetime.now(timezone.utc).strftime("%Y-%m-%d_v1")
-        artifact_path = sauvegarder_modeles(modeles, zones, MODELS_DIR, version)
+        artifact_path, sha256 = sauvegarder_modeles(modeles, zones, MODELS_DIR, version)
 
         if db_session:
-            await _sauvegarder_model_version(db_session, version, rapport, str(artifact_path))
+            await _sauvegarder_model_version(db_session, version, rapport, str(artifact_path), sha256)
     else:
-        # Charge le dernier modèle actif
-        pkl_files = sorted(MODELS_DIR.glob("*.pkl"))
-        if not pkl_files:
-            logger.warning("Aucun modèle sauvegardé — entraînement forcé")
-            rapport, modeles, zones = entrainer_et_evaluer(jeu)
-            version = datetime.now(timezone.utc).strftime("%Y-%m-%d_v1")
-            artifact_path = sauvegarder_modeles(modeles, zones, MODELS_DIR, version)
-            if db_session:
-                await _sauvegarder_model_version(db_session, version, rapport, str(artifact_path))
+        if db_session:
+            # Prod : ne charger que le modèle is_active=True ET validated_by_owner=True (S2).
+            # L'entraînement automatique en production est interdit (S3).
+            from sqlalchemy import select
+            from app.models.prediction import ModelVersion as _ModelVersion
+            result = await db_session.execute(
+                select(_ModelVersion)
+                .where(
+                    _ModelVersion.is_active == True,  # noqa: E712
+                    _ModelVersion.validated_by_owner == True,  # noqa: E712
+                )
+                .order_by(_ModelVersion.trained_at.desc())
+                .limit(1)
+            )
+            mv = result.scalar_one_or_none()
+            if mv is None:
+                logger.error(
+                    "Aucun modèle validé par le propriétaire "
+                    "(is_active=True, validated_by_owner=True) — prédiction impossible. "
+                    "Validez un modèle via l'interface d'administration."
+                )
+                return {"statut": "erreur", "raison": "aucun_modele_valide"}
+            modeles, zones = charger_modeles(Path(mv.model_artifact_path), expected_sha256=mv.model_sha256)
+            version = mv.version
+            rapport = {}
         else:
+            # Dev / backtest : charger le dernier .pkl avec vérification d'empreinte.
+            # Pas d'entraînement automatique (S3) : si aucun modèle n'existe, on l'indique.
+            pkl_files = sorted(p for p in MODELS_DIR.glob("*.pkl") if not p.suffix == ".sha256")
+            if not pkl_files:
+                logger.error(
+                    "Aucun modèle disponible dans %s. "
+                    "Entraînez un modèle avec entrainer=True, puis validez-le avant de déployer.",
+                    MODELS_DIR,
+                )
+                return {"statut": "erreur", "raison": "aucun_modele_valide"}
             modeles, zones = charger_modeles(pkl_files[-1])
             version = pkl_files[-1].stem
             rapport = {}
@@ -166,8 +193,14 @@ async def run_pipeline(db_session=None, entrainer: bool = False) -> dict:
     }
 
 
-async def _sauvegarder_model_version(db, version: str, rapport: dict, artifact_path: str):
-    """Écrit ou met à jour la ligne ModelVersion en DB."""
+async def _sauvegarder_model_version(
+    db, version: str, rapport: dict, artifact_path: str, sha256: str | None = None
+):
+    """Écrit ou met à jour la ligne ModelVersion en DB.
+
+    validated_by_owner reste False : le propriétaire doit valider explicitement
+    via l'interface d'administration avant que le modèle soit servi en production.
+    """
     from sqlalchemy import select
     from app.models.prediction import ModelVersion
 
@@ -192,6 +225,8 @@ async def _sauvegarder_model_version(db, version: str, rapport: dict, artifact_p
                 backtest_report_json=json.dumps(rapport, default=float),
                 is_active=True,
                 model_artifact_path=artifact_path,
+                model_sha256=sha256,
+                validated_by_owner=False,  # validation manuelle obligatoire
             )
             db.add(mv)
 
