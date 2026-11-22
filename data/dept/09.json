@@ -3,7 +3,7 @@
   "nom": "Ariège",
   "slug": "ariege",
   "region": "Occitanie",
-  "updated": "22/11/2026 à 16:49",
+  "updated": "22/11/2026 à 18:35",
   "score_eau": 98,
   "nb_communes": 331,
   "potable": [
@@ -38996,35 +38996,6 @@
       "color": "#ef4444"
     },
     {
-      "nom": "Mazères",
-      "libelle": "Solferino",
-      "masse_eau": "Alluvions de l'Ariège et de l'Hers Vif",
-      "profondeur": 5.72,
-      "dept": "09",
-      "code_bss": "10357X0213/F",
-      "current": 253.935,
-      "history": [
-        253.944,
-        253.942,
-        253.941,
-        253.94,
-        253.942,
-        253.94,
-        253.94,
-        253.942,
-        253.94,
-        253.937,
-        253.935,
-        253.933,
-        253.934,
-        253.935
-      ],
-      "year_ago": null,
-      "lat": 43.209411174,
-      "lng": 1.692949596,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Verniolle",
       "libelle": "Verniolle",
       "masse_eau": "Alluvions de l'Ariège et de l'Hers Vif",
@@ -39089,32 +39060,97 @@
       "profondeur": null,
       "dept": "09",
       "code_bss": "10734X0011/HY",
-      "current": 440.507,
+      "current": 440.281,
       "history": [
-        440.323,
-        440.342,
-        440.36,
-        440.378,
-        440.389,
-        440.401,
-        440.412,
-        440.423,
         440.434,
         440.446,
         440.461,
         440.477,
         440.491,
-        440.507
+        440.507,
+        440.527,
+        440.538,
+        440.55,
+        440.56,
+        440.569,
+        440.554,
+        440.444,
+        440.281
       ],
       "year_ago": null,
       "lat": 42.990315316,
       "lng": 1.048876492,
       "color": "#ef4444"
+    },
+    {
+      "nom": "Mazères",
+      "libelle": "Solferino",
+      "masse_eau": "Alluvions de l'Ariège et de l'Hers Vif",
+      "profondeur": 5.72,
+      "dept": "09",
+      "code_bss": "10357X0213/F",
+      "current": 253.935,
+      "history": [
+        253.944,
+        253.942,
+        253.941,
+        253.94,
+        253.942,
+        253.94,
+        253.94,
+        253.942,
+        253.94,
+        253.937,
+        253.935,
+        253.933,
+        253.934,
+        253.935
+      ],
+      "year_ago": null,
+      "lat": 43.209411174,
+      "lng": 1.692949596,
+      "color": "#ef4444"
     }
   ],
   "air": [
     {
-      "zone": "Sainte-Rose",
+      "zone": "Saint-Martin",
+      "dept": "09",
+      "date": "2026-11-24",
+      "indice": 1,
+      "label": "Bon",
+      "color": "#50F0E6",
+      "source": "Gwad'Air",
+      "polluants": {
+        "NO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        },
+        "O₃": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        },
+        "PM10": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        },
+        "PM2.5": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Vieux-Habitants",
       "dept": "09",
       "date": "2026-11-24",
       "indice": 2,
@@ -39150,7 +39186,7 @@
       }
     },
     {
-      "zone": "Sainte-Anne",
+      "zone": "Vieux-Fort",
       "dept": "09",
       "date": "2026-11-24",
       "indice": 2,
@@ -39186,7 +39222,7 @@
       }
     },
     {
-      "zone": "Saint-Louis",
+      "zone": "Trois-Rivières",
       "dept": "09",
       "date": "2026-11-24",
       "indice": 2,
@@ -39222,43 +39258,7 @@
       }
     },
     {
-      "zone": "Saint-François",
-      "dept": "09",
-      "date": "2026-11-24",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Gwad'Air",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Claude",
+      "zone": "Terre-de-Haut",
       "dept": "09",
       "date": "2026-11-24",
       "indice": 2,
