@@ -3,7 +3,7 @@
   "nom": "Alpes-Maritimes",
   "slug": "alpes-maritimes",
   "region": "Provence-Alpes-Côte d'Azur",
-  "updated": "22/11/2026 à 18:35",
+  "updated": "23/11/2026 à 22:52",
   "score_eau": 99,
   "nb_communes": 164,
   "potable": [
@@ -16175,27 +16175,6 @@
           "color": "#10b981",
           "date": "2025-10-14",
           "realtime": false
-        },
-        "O2 saturation": {
-          "valeur": 114.0,
-          "unite": "%",
-          "color": "#10b981",
-          "date": "2024-11-22",
-          "realtime": false
-        },
-        "MES": {
-          "valeur": 406.0,
-          "unite": "mg/L",
-          "color": "#ef4444",
-          "date": "2024-11-22",
-          "realtime": false
-        },
-        "Conductivité": {
-          "valeur": 10.4,
-          "unite": "µS/cm",
-          "color": "#10b981",
-          "date": "2024-11-22",
-          "realtime": false
         }
       },
       "historique": {
@@ -16214,11 +16193,6 @@
             "date": "2025-03-13",
             "valeur": 1.2,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-11-22",
-            "valeur": 1.6,
-            "color": "#10b981"
           }
         ],
         "Phosphore": [
@@ -16235,11 +16209,6 @@
           {
             "date": "2025-03-13",
             "valeur": 0.046,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-11-22",
-            "valeur": 0.023,
             "color": "#10b981"
           }
         ],
@@ -16258,36 +16227,10 @@
             "date": "2025-03-13",
             "valeur": 1.7,
             "color": "#f59e0b"
-          },
-          {
-            "date": "2024-11-22",
-            "valeur": 0.59,
-            "color": "#f59e0b"
-          }
-        ],
-        "O2 saturation": [
-          {
-            "date": "2024-11-22",
-            "valeur": 114.0,
-            "color": "#10b981"
-          }
-        ],
-        "MES": [
-          {
-            "date": "2024-11-22",
-            "valeur": 406.0,
-            "color": "#ef4444"
-          }
-        ],
-        "Conductivité": [
-          {
-            "date": "2024-11-22",
-            "valeur": 10.4,
-            "color": "#10b981"
           }
         ]
       },
-      "score": 83,
+      "score": 100,
       "score_color": "#10b981",
       "score_label": "Bonne"
     },
@@ -19811,10 +19754,8 @@
       "profondeur": 29.3,
       "dept": "06",
       "code_bss": "09724X0023/P2",
-      "current": 101.057,
+      "current": 101.247,
       "history": [
-        99.61,
-        99.782,
         99.93,
         100.078,
         100.214,
@@ -19826,9 +19767,11 @@
         100.8,
         100.878,
         100.957,
-        101.057
+        101.057,
+        101.165,
+        101.247
       ],
-      "year_ago": null,
+      "year_ago": 101.41,
       "lat": 43.831616009,
       "lng": 7.188887934,
       "color": "#ef4444"
@@ -19840,10 +19783,8 @@
       "profondeur": 15.0,
       "dept": "06",
       "code_bss": "09994X0521/P4B",
-      "current": 12.22,
+      "current": 12.27,
       "history": [
-        12.1,
-        12.12,
         12.14,
         12.14,
         12.15,
@@ -19855,41 +19796,14 @@
         12.23,
         12.22,
         12.22,
-        12.22
+        12.22,
+        12.24,
+        12.27
       ],
-      "year_ago": null,
+      "year_ago": 11.93,
       "lat": 43.691448072,
       "lng": 7.193977883,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Pégomas",
-      "libelle": "Pégomas - Le Boutéou (F6)",
-      "masse_eau": "Alluvions des basses vallées littorales des Alpes-Maritimes ",
-      "profondeur": 18.5,
-      "dept": "06",
-      "code_bss": "09995X0028/F",
-      "current": 9.817,
-      "history": [
-        10.01,
-        9.95,
-        9.976,
-        9.864,
-        9.801,
-        9.766,
-        9.75,
-        9.637,
-        9.633,
-        9.593,
-        9.605,
-        9.869,
-        9.975,
-        9.817
-      ],
-      "year_ago": null,
-      "lat": 43.587762053,
-      "lng": 6.926141257,
-      "color": "#ef4444"
+      "color": "#3b82f6"
     },
     {
       "nom": "Villeneuve-Loubet",
@@ -19898,10 +19812,8 @@
       "profondeur": 323.0,
       "dept": "06",
       "code_bss": "09998X0199/PZ_PID",
-      "current": 18.81,
+      "current": 18.83,
       "history": [
-        18.87,
-        18.86,
         18.89,
         18.85,
         18.88,
@@ -19913,12 +19825,43 @@
         18.78,
         18.77,
         18.76,
-        18.81
+        18.81,
+        18.83,
+        18.83
       ],
-      "year_ago": null,
+      "year_ago": 18.91,
       "lat": 43.640614714,
       "lng": 7.125900921,
       "color": "#ef4444"
+    },
+    {
+      "nom": "Pégomas",
+      "libelle": "Pégomas - Le Boutéou (F6)",
+      "masse_eau": "Alluvions des basses vallées littorales des Alpes-Maritimes ",
+      "profondeur": 18.5,
+      "dept": "06",
+      "code_bss": "09995X0028/F",
+      "current": 9.941,
+      "history": [
+        9.976,
+        9.864,
+        9.801,
+        9.766,
+        9.75,
+        9.637,
+        9.633,
+        9.593,
+        9.605,
+        9.869,
+        9.975,
+        9.817,
+        9.876,
+        9.941
+      ],
+      "year_ago": 9.56,
+      "lat": 43.587762053,
+      "lng": 6.926141257,
+      "color": "#3b82f6"
     },
     {
       "nom": "Gilette",
@@ -19927,10 +19870,8 @@
       "profondeur": 36.5,
       "dept": "06",
       "code_bss": "BSS004FHCY/X",
-      "current": 101.21,
+      "current": 101.42,
       "history": [
-        99.7,
-        99.88,
         100.03,
         100.18,
         100.32,
@@ -19942,9 +19883,11 @@
         100.96,
         101.02,
         101.1,
-        101.21
+        101.21,
+        101.32,
+        101.42
       ],
-      "year_ago": null,
+      "year_ago": 101.57,
       "lat": 43.831748442,
       "lng": 7.188607593,
       "color": "#ef4444"
@@ -19952,13 +19895,13 @@
   ],
   "air": [
     {
-      "zone": "Aiglun",
+      "zone": "Saint-André-de-Messei",
       "dept": "06",
-      "date": "2026-11-24",
+      "date": "2026-11-25",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
-      "source": "AtmoSud",
+      "source": "Atmo Normandie",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -19976,9 +19919,9 @@
           "color": "#10b981"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
@@ -19988,13 +19931,13 @@
       }
     },
     {
-      "zone": "Amirat",
+      "zone": "Saint-Aquilin-de-Corbion",
       "dept": "06",
-      "date": "2026-11-24",
+      "date": "2026-11-25",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
-      "source": "AtmoSud",
+      "source": "Atmo Normandie",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -20002,9 +19945,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM10": {
           "indice": 1,
@@ -20012,9 +19955,9 @@
           "color": "#10b981"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
@@ -20024,13 +19967,13 @@
       }
     },
     {
-      "zone": "Andon",
+      "zone": "Saint-Aubin-d'Appenai",
       "dept": "06",
-      "date": "2026-11-24",
+      "date": "2026-11-25",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
-      "source": "AtmoSud",
+      "source": "Atmo Normandie",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -20038,9 +19981,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM10": {
           "indice": 1,
@@ -20048,9 +19991,9 @@
           "color": "#10b981"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
@@ -20060,23 +20003,23 @@
       }
     },
     {
-      "zone": "Antibes",
+      "zone": "Saint-Aubin-de-Bonneval",
       "dept": "06",
-      "date": "2026-11-24",
+      "date": "2026-11-25",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
-      "source": "AtmoSud",
+      "source": "Atmo Normandie",
       "polluants": {
         "NO₂": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM10": {
           "indice": 1,
@@ -20084,9 +20027,9 @@
           "color": "#10b981"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
@@ -20096,13 +20039,13 @@
       }
     },
     {
-      "zone": "Ascros",
+      "zone": "Saint-Aubin-de-Courteraie",
       "dept": "06",
-      "date": "2026-11-24",
+      "date": "2026-11-25",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
-      "source": "AtmoSud",
+      "source": "Atmo Normandie",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -20110,9 +20053,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM10": {
           "indice": 1,
@@ -20120,9 +20063,9 @@
           "color": "#10b981"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,

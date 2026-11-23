@@ -3,7 +3,7 @@
   "nom": "Ardèche",
   "slug": "ardeche",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "22/11/2026 à 18:35",
+  "updated": "23/11/2026 à 22:52",
   "score_eau": 97,
   "nb_communes": 337,
   "potable": [
@@ -29233,10 +29233,8 @@
       "profondeur": 160.0,
       "dept": "07",
       "code_bss": "BSS003GPIS/X",
-      "current": 245.318,
+      "current": 245.152,
       "history": [
-        245.332,
-        245.324,
         245.354,
         245.455,
         245.523,
@@ -29248,41 +29246,14 @@
         245.37,
         245.3,
         245.288,
-        245.318
+        245.318,
+        245.227,
+        245.152
       ],
-      "year_ago": null,
+      "year_ago": 243.96,
       "lat": 44.46354371,
       "lng": 4.214386619,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Aubenas",
-      "libelle": "Provisoire-02 _Rha_Forage - Constantine_Aubenas",
-      "masse_eau": "Grès Trias ardéchois",
-      "profondeur": 104.0,
-      "dept": "07",
-      "code_bss": "08651X0038/0038",
-      "current": 297.208,
-      "history": [
-        297.025,
-        297.042,
-        297.074,
-        297.087,
-        297.111,
-        297.184,
-        297.221,
-        297.237,
-        297.218,
-        297.293,
-        297.227,
-        297.207,
-        297.203,
-        297.208
-      ],
-      "year_ago": null,
-      "lat": 44.619744152,
-      "lng": 4.39032624,
-      "color": "#ef4444"
+      "color": "#3b82f6"
     },
     {
       "nom": "Veyras",
@@ -29293,10 +29264,6 @@
       "code_bss": "08413X0091/F3",
       "current": 442.06,
       "history": [
-        442.25,
-        442.26,
-        442.25,
-        442.26,
         442.26,
         442.26,
         442.27,
@@ -29306,19 +29273,52 @@
         442.06,
         442.06,
         442.06,
+        442.06,
+        442.06,
+        442.06,
+        442.06,
         442.06
       ],
-      "year_ago": null,
+      "year_ago": 441.84,
       "lat": 44.733838457,
       "lng": 4.561214887,
-      "color": "#ef4444"
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Aubenas",
+      "libelle": "Provisoire-02 _Rha_Forage - Constantine_Aubenas",
+      "masse_eau": "Grès Trias ardéchois",
+      "profondeur": 104.0,
+      "dept": "07",
+      "code_bss": "08651X0038/0038",
+      "current": 297.315,
+      "history": [
+        297.111,
+        297.184,
+        297.221,
+        297.237,
+        297.218,
+        297.293,
+        297.227,
+        297.207,
+        297.203,
+        297.208,
+        297.281,
+        297.379,
+        297.339,
+        297.315
+      ],
+      "year_ago": 294.64,
+      "lat": 44.619744152,
+      "lng": 4.39032624,
+      "color": "#3b82f6"
     }
   ],
   "air": [
     {
-      "zone": "Marmagne",
+      "zone": "Montvoisin",
       "dept": "07",
-      "date": "2026-11-24",
+      "date": "2026-11-25",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -29352,9 +29352,9 @@
       }
     },
     {
-      "zone": "Martigny-le-Comte",
+      "zone": "La Comelle",
       "dept": "07",
-      "date": "2026-11-24",
+      "date": "2026-11-25",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -29388,9 +29388,9 @@
       }
     },
     {
-      "zone": "Mary",
+      "zone": "Condal",
       "dept": "07",
-      "date": "2026-11-24",
+      "date": "2026-11-25",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -29424,9 +29424,9 @@
       }
     },
     {
-      "zone": "Matour",
+      "zone": "Cressy-sur-Somme",
       "dept": "07",
-      "date": "2026-11-24",
+      "date": "2026-11-25",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -29460,18 +29460,18 @@
       }
     },
     {
-      "zone": "Mazille",
+      "zone": "Le Creusot",
       "dept": "07",
-      "date": "2026-11-24",
+      "date": "2026-11-25",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "O₃": {
           "indice": 2,

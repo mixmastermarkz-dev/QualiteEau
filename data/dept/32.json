@@ -3,7 +3,7 @@
   "nom": "Gers",
   "slug": "gers",
   "region": "Occitanie",
-  "updated": "22/11/2026 à 18:35",
+  "updated": "23/11/2026 à 22:52",
   "score_eau": 99,
   "nb_communes": 467,
   "potable": [
@@ -62474,11 +62474,6 @@
             "date": "2025-02-06",
             "valeur": 0.069,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-11-22",
-            "valeur": 0.388,
-            "color": "#f59e0b"
           }
         ],
         "Nitrates": [
@@ -62496,11 +62491,6 @@
             "date": "2025-02-06",
             "valeur": 26.0,
             "color": "#ef4444"
-          },
-          {
-            "date": "2024-11-22",
-            "valeur": 15.0,
-            "color": "#f59e0b"
           }
         ],
         "Ammonium": [
@@ -62518,11 +62508,6 @@
             "date": "2025-02-06",
             "valeur": 2.0,
             "color": "#f59e0b"
-          },
-          {
-            "date": "2024-11-22",
-            "valeur": 4.8,
-            "color": "#ef4444"
           }
         ],
         "MES": [
@@ -62539,11 +62524,6 @@
           {
             "date": "2025-02-06",
             "valeur": 460.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-11-22",
-            "valeur": 330.0,
             "color": "#ef4444"
           }
         ]
@@ -71456,103 +71436,14 @@
   ],
   "nappes": [
     {
-      "nom": "Polastron",
-      "libelle": "Polastron 101",
-      "masse_eau": "Sables et grès de l'Eocène inférieur et moyen majoritairemen",
-      "profondeur": 2751.2,
-      "dept": "32",
-      "code_bss": "10082X0001/F",
-      "current": 109.705,
-      "history": [
-        109.693,
-        109.656,
-        109.695,
-        109.74,
-        109.751,
-        109.738,
-        109.738,
-        109.742,
-        109.713,
-        109.677,
-        109.651,
-        109.654,
-        109.692,
-        109.705
-      ],
-      "year_ago": null,
-      "lat": 43.521514492,
-      "lng": 0.876623753,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Tarsac",
-      "libelle": "Tarsac",
-      "masse_eau": "Alluvions de l'Adour amont",
-      "profondeur": 6.0,
-      "dept": "32",
-      "code_bss": "09793X0011/F",
-      "current": 98.406,
-      "history": [
-        98.348,
-        98.35,
-        98.353,
-        98.355,
-        98.355,
-        98.355,
-        98.358,
-        98.364,
-        98.366,
-        98.371,
-        98.391,
-        98.398,
-        98.401,
-        98.406
-      ],
-      "year_ago": null,
-      "lat": 43.668135616,
-      "lng": -0.112822644,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Nogaro",
-      "libelle": "Nogaro",
-      "masse_eau": "Molasses du bassin de la Garonne - Agenais et Gascogne",
-      "profondeur": 150.0,
-      "dept": "32",
-      "code_bss": "BSS003AFAC/X",
-      "current": 96.268,
-      "history": [
-        96.246,
-        96.229,
-        96.252,
-        96.27,
-        96.276,
-        96.266,
-        96.275,
-        96.278,
-        96.262,
-        96.25,
-        96.243,
-        96.246,
-        96.266,
-        96.268
-      ],
-      "year_ago": null,
-      "lat": 43.756145,
-      "lng": -0.027202,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Monbardon",
       "libelle": "Puymaurin 2",
       "masse_eau": "Sables et grès de l'Eocène inférieur et moyen majoritairemen",
       "profondeur": 3821.8,
       "dept": "32",
       "code_bss": "10078X0001/F",
-      "current": 171.62,
+      "current": 171.614,
       "history": [
-        171.613,
-        171.61,
         171.611,
         171.614,
         171.614,
@@ -71564,11 +71455,100 @@
         171.622,
         171.618,
         171.618,
-        171.62
+        171.62,
+        171.618,
+        171.614
       ],
-      "year_ago": null,
+      "year_ago": 171.95,
       "lat": 43.386791615,
       "lng": 0.715230782,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Tarsac",
+      "libelle": "Tarsac",
+      "masse_eau": "Alluvions de l'Adour amont",
+      "profondeur": 6.0,
+      "dept": "32",
+      "code_bss": "09793X0011/F",
+      "current": 98.423,
+      "history": [
+        98.353,
+        98.355,
+        98.355,
+        98.355,
+        98.358,
+        98.364,
+        98.366,
+        98.371,
+        98.391,
+        98.398,
+        98.401,
+        98.406,
+        98.41,
+        98.423
+      ],
+      "year_ago": 98.53,
+      "lat": 43.668135616,
+      "lng": -0.112822644,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Nogaro",
+      "libelle": "Nogaro",
+      "masse_eau": "Molasses du bassin de la Garonne - Agenais et Gascogne",
+      "profondeur": 150.0,
+      "dept": "32",
+      "code_bss": "BSS003AFAC/X",
+      "current": 96.237,
+      "history": [
+        96.252,
+        96.27,
+        96.276,
+        96.266,
+        96.275,
+        96.278,
+        96.262,
+        96.25,
+        96.243,
+        96.246,
+        96.266,
+        96.268,
+        96.245,
+        96.237
+      ],
+      "year_ago": 96.2,
+      "lat": 43.756145,
+      "lng": -0.027202,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Polastron",
+      "libelle": "Polastron 101",
+      "masse_eau": "Sables et grès de l'Eocène inférieur et moyen majoritairemen",
+      "profondeur": 2751.2,
+      "dept": "32",
+      "code_bss": "10082X0001/F",
+      "current": 109.616,
+      "history": [
+        109.695,
+        109.74,
+        109.751,
+        109.738,
+        109.738,
+        109.742,
+        109.713,
+        109.677,
+        109.651,
+        109.654,
+        109.692,
+        109.705,
+        109.641,
+        109.616
+      ],
+      "year_ago": 109.96,
+      "lat": 43.521514492,
+      "lng": 0.876623753,
       "color": "#ef4444"
     }
   ],
@@ -71577,10 +71557,10 @@
     {
       "dept": "32",
       "lib_zone": "GERS",
-      "date": "2026-11-23",
-      "indice_global": 3,
-      "label_global": "Moyen",
-      "color_global": "#f59e0b",
+      "date": "2026-11-24",
+      "indice_global": 1,
+      "label_global": "Très faible",
+      "color_global": "#10b981",
       "taxa": {
         "Graminées": {
           "indice": 0,
@@ -71623,9 +71603,9 @@
           "color": "#94a3b8"
         },
         "Bouleau": {
-          "indice": 3,
-          "label": "Moyen",
-          "color": "#f59e0b"
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
         },
         "Armoise": {
           "indice": 0,

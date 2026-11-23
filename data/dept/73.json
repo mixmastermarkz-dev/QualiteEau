@@ -3,7 +3,7 @@
   "nom": "Savoie",
   "slug": "savoie",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "22/11/2026 à 18:35",
+  "updated": "23/11/2026 à 22:53",
   "score_eau": 99,
   "nb_communes": 274,
   "potable": [
@@ -31220,74 +31220,14 @@
   ],
   "nappes": [
     {
-      "nom": "Chambéry",
-      "libelle": "Piezometre - Parc Du Verney (Chambery - Brgm 73) - Bsh",
-      "masse_eau": "Alluvions de la Plaine de Chambery",
-      "profondeur": 16.0,
-      "dept": "73",
-      "code_bss": "07256X0095/CHAMBE",
-      "current": 265.232,
-      "history": [
-        264.871,
-        264.898,
-        264.881,
-        264.846,
-        264.908,
-        264.935,
-        264.99,
-        264.99,
-        265.231,
-        265.218,
-        265.24,
-        265.234,
-        265.252,
-        265.232
-      ],
-      "year_ago": null,
-      "lat": 45.569053375,
-      "lng": 5.916248145,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Cruet",
-      "libelle": "Piezometre - Monument Aux Morts (Cruet - Brgm 73) - Bsh",
-      "masse_eau": "Alluvions de l'Isère Combe de Savoie et Grésivaudan",
-      "profondeur": 28.0,
-      "dept": "73",
-      "code_bss": "07494X0026/CRUET",
-      "current": 269.957,
-      "history": [
-        269.197,
-        269.193,
-        269.241,
-        269.239,
-        269.368,
-        269.579,
-        269.797,
-        269.788,
-        269.995,
-        269.972,
-        270,
-        270.02,
-        269.988,
-        269.957
-      ],
-      "year_ago": null,
-      "lat": 45.522193195,
-      "lng": 6.104556772,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Aiton",
       "libelle": "Piezometre - Le Plan (Aiton - Brgm 73) - Bsh",
       "masse_eau": "Alluvions de l'Isère Combe de Savoie et Grésivaudan",
       "profondeur": 8.37,
       "dept": "73",
       "code_bss": "07266X0052/PS4",
-      "current": 293.717,
+      "current": 294.135,
       "history": [
-        293.297,
-        293.301,
         293.309,
         293.315,
         293.333,
@@ -31299,19 +31239,79 @@
         293.579,
         293.622,
         293.676,
-        293.717
+        293.717,
+        293.763,
+        294.135
       ],
-      "year_ago": null,
+      "year_ago": 293.65,
       "lat": 45.566444711,
       "lng": 6.245431548,
-      "color": "#ef4444"
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Chambéry",
+      "libelle": "Piezometre - Parc Du Verney (Chambery - Brgm 73) - Bsh",
+      "masse_eau": "Alluvions de la Plaine de Chambery",
+      "profondeur": 16.0,
+      "dept": "73",
+      "code_bss": "07256X0095/CHAMBE",
+      "current": 265.934,
+      "history": [
+        264.881,
+        264.846,
+        264.908,
+        264.935,
+        264.99,
+        264.99,
+        265.231,
+        265.218,
+        265.24,
+        265.234,
+        265.252,
+        265.232,
+        265.521,
+        265.934
+      ],
+      "year_ago": 265.1,
+      "lat": 45.569053375,
+      "lng": 5.916248145,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Cruet",
+      "libelle": "Piezometre - Monument Aux Morts (Cruet - Brgm 73) - Bsh",
+      "masse_eau": "Alluvions de l'Isère Combe de Savoie et Grésivaudan",
+      "profondeur": 28.0,
+      "dept": "73",
+      "code_bss": "07494X0026/CRUET",
+      "current": 271.039,
+      "history": [
+        269.241,
+        269.239,
+        269.368,
+        269.579,
+        269.797,
+        269.788,
+        269.995,
+        269.972,
+        270,
+        270.02,
+        269.988,
+        269.957,
+        270.147,
+        271.039
+      ],
+      "year_ago": 269.66,
+      "lat": 45.522193195,
+      "lng": 6.104556772,
+      "color": "#3b82f6"
     }
   ],
   "air": [
     {
       "zone": "Aussois",
       "dept": "73",
-      "date": "2026-11-24",
+      "date": "2026-11-25",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -31345,9 +31345,45 @@
       }
     },
     {
-      "zone": "Arvillard",
+      "zone": "La Chapelle-du-Mont-du-Chat",
       "dept": "73",
-      "date": "2026-11-24",
+      "date": "2026-11-25",
+      "indice": 1,
+      "label": "Bon",
+      "color": "#50f0e6",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "les Avanchers",
+      "dept": "73",
+      "date": "2026-11-25",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -31381,9 +31417,9 @@
       }
     },
     {
-      "zone": "Cléry",
+      "zone": "Argentine",
       "dept": "73",
-      "date": "2026-11-24",
+      "date": "2026-11-25",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -31417,12 +31453,12 @@
       }
     },
     {
-      "zone": "Les Chapelles",
+      "zone": "La Chapelle-Blanche",
       "dept": "73",
-      "date": "2026-11-24",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
+      "date": "2026-11-25",
+      "indice": 1,
+      "label": "Bon",
+      "color": "#50f0e6",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
@@ -31431,45 +31467,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
           "indice": 1,
           "label": "Bon",
           "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Attignat-Oncin",
-      "dept": "73",
-      "date": "2026-11-24",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
         },
         "PM10": {
           "indice": 1,

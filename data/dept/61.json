@@ -3,7 +3,7 @@
   "nom": "Orne",
   "slug": "orne",
   "region": "Normandie",
-  "updated": "22/11/2026 à 18:35",
+  "updated": "23/11/2026 à 22:52",
   "score_eau": 94,
   "nb_communes": 386,
   "potable": [
@@ -42836,35 +42836,6 @@
   ],
   "nappes": [
     {
-      "nom": "Saint-Sulpice-sur-Risle",
-      "libelle": "Puits Du Château Du Souchey (L'Aigle) - 61",
-      "masse_eau": "Craie du Lieuvin-Ouche - bassin versant de la Risle",
-      "profondeur": 29.8,
-      "dept": "61",
-      "code_bss": "02144X0005/S1",
-      "current": 202.973,
-      "history": [
-        202.845,
-        202.848,
-        202.876,
-        202.936,
-        202.941,
-        202.887,
-        202.887,
-        202.951,
-        202.92,
-        202.922,
-        202.947,
-        202.955,
-        202.955,
-        202.973
-      ],
-      "year_ago": null,
-      "lat": 48.766362664,
-      "lng": 0.658047665,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Villiers-sous-Mortagne",
       "libelle": "Forage Du Verger (Villiers Sous Mortagne) - 61",
       "masse_eau": "Sables et gres du Cenomanien sarthois libres",
@@ -42888,7 +42859,7 @@
         193.447,
         193.441
       ],
-      "year_ago": null,
+      "year_ago": 193.87,
       "lat": 48.523466288,
       "lng": 0.591804057,
       "color": "#ef4444"
@@ -42900,10 +42871,8 @@
       "profondeur": 37.5,
       "dept": "61",
       "code_bss": "01776X0023/P",
-      "current": 118.109,
+      "current": 118.133,
       "history": [
-        115.25,
-        115.26,
         115.26,
         115.26,
         115.27,
@@ -42915,19 +42884,194 @@
         118.119,
         118.114,
         118.112,
-        118.109
+        118.109,
+        118.128,
+        118.133
       ],
-      "year_ago": null,
+      "year_ago": 118.39,
       "lat": 48.803924391,
       "lng": 0.144862591,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Saint-Sulpice-sur-Risle",
+      "libelle": "Puits Du Château Du Souchey (L'Aigle) - 61",
+      "masse_eau": "Craie du Lieuvin-Ouche - bassin versant de la Risle",
+      "profondeur": 29.8,
+      "dept": "61",
+      "code_bss": "02144X0005/S1",
+      "current": 203.096,
+      "history": [
+        202.876,
+        202.936,
+        202.941,
+        202.887,
+        202.887,
+        202.951,
+        202.92,
+        202.922,
+        202.947,
+        202.955,
+        202.955,
+        202.973,
+        203.08,
+        203.096
+      ],
+      "year_ago": 204.36,
+      "lat": 48.766362664,
+      "lng": 0.658047665,
       "color": "#ef4444"
     }
   ],
   "air": [
     {
+      "zone": "Saint-André-de-Messei",
+      "dept": "61",
+      "date": "2026-11-25",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Atmo Normandie",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Saint-Aquilin-de-Corbion",
+      "dept": "61",
+      "date": "2026-11-25",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Atmo Normandie",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Saint-Aubin-d'Appenai",
+      "dept": "61",
+      "date": "2026-11-25",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Atmo Normandie",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Saint-Aubin-de-Bonneval",
+      "dept": "61",
+      "date": "2026-11-25",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Atmo Normandie",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
       "zone": "Saint-Aubin-de-Courteraie",
       "dept": "61",
-      "date": "2026-11-24",
+      "date": "2026-11-25",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -42939,9 +43083,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM10": {
           "indice": 1,
@@ -42949,153 +43093,9 @@
           "color": "#10b981"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Bômer-les-Forges",
-      "dept": "61",
-      "date": "2026-11-24",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
           "indice": 2,
           "label": "Moyen",
           "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Brice",
-      "dept": "61",
-      "date": "2026-11-24",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Brice-sous-Rânes",
-      "dept": "61",
-      "date": "2026-11-24",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Saint-Céneri-le-Gérei",
-      "dept": "61",
-      "date": "2026-11-24",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Normandie",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
         },
         "SO₂": {
           "indice": 0,
