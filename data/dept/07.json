@@ -3,7 +3,7 @@
   "nom": "Ardèche",
   "slug": "ardeche",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "23/11/2026 à 22:52",
+  "updated": "24/11/2026 à 21:28",
   "score_eau": 97,
   "nb_communes": 337,
   "potable": [
@@ -29227,35 +29227,6 @@
   ],
   "nappes": [
     {
-      "nom": "Lablachère",
-      "libelle": "Provisoire-01 _Rha_Forage - Le Bieuzet_Lablachère",
-      "masse_eau": "Grès Trias ardéchois",
-      "profondeur": 160.0,
-      "dept": "07",
-      "code_bss": "BSS003GPIS/X",
-      "current": 245.152,
-      "history": [
-        245.354,
-        245.455,
-        245.523,
-        245.553,
-        245.542,
-        245.609,
-        245.502,
-        245.426,
-        245.37,
-        245.3,
-        245.288,
-        245.318,
-        245.227,
-        245.152
-      ],
-      "year_ago": 243.96,
-      "lat": 44.46354371,
-      "lng": 4.214386619,
-      "color": "#3b82f6"
-    },
-    {
       "nom": "Veyras",
       "libelle": "Forage - Captage Des Tombes Antiques (Veyras - Brgm 07)",
       "masse_eau": "Grès Trias ardéchois",
@@ -29264,8 +29235,6 @@
       "code_bss": "08413X0091/F3",
       "current": 442.06,
       "history": [
-        442.26,
-        442.26,
         442.27,
         442.28,
         442.06,
@@ -29277,11 +29246,42 @@
         442.06,
         442.06,
         442.06,
+        442.06,
+        442.06,
         442.06
       ],
-      "year_ago": 441.84,
+      "year_ago": 441.76,
       "lat": 44.733838457,
       "lng": 4.561214887,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Lablachère",
+      "libelle": "Provisoire-01 _Rha_Forage - Le Bieuzet_Lablachère",
+      "masse_eau": "Grès Trias ardéchois",
+      "profondeur": 160.0,
+      "dept": "07",
+      "code_bss": "BSS003GPIS/X",
+      "current": 245.147,
+      "history": [
+        245.523,
+        245.553,
+        245.542,
+        245.609,
+        245.502,
+        245.426,
+        245.37,
+        245.3,
+        245.288,
+        245.318,
+        245.227,
+        245.152,
+        245.136,
+        245.147
+      ],
+      "year_ago": 244.08,
+      "lat": 44.46354371,
+      "lng": 4.214386619,
       "color": "#3b82f6"
     },
     {
@@ -29291,10 +29291,8 @@
       "profondeur": 104.0,
       "dept": "07",
       "code_bss": "08651X0038/0038",
-      "current": 297.315,
+      "current": 297.377,
       "history": [
-        297.111,
-        297.184,
         297.221,
         297.237,
         297.218,
@@ -29306,9 +29304,11 @@
         297.281,
         297.379,
         297.339,
-        297.315
+        297.315,
+        297.323,
+        297.377
       ],
-      "year_ago": 294.64,
+      "year_ago": 294.71,
       "lat": 44.619744152,
       "lng": 4.39032624,
       "color": "#3b82f6"
@@ -29316,13 +29316,13 @@
   ],
   "air": [
     {
-      "zone": "Montvoisin",
+      "zone": "Saint-Jean-le-Centenier",
       "dept": "07",
-      "date": "2026-11-25",
+      "date": "2026-11-26",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
-      "source": "ATMO Bourgogne-Franche-Comté",
+      "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -29352,13 +29352,13 @@
       }
     },
     {
-      "zone": "La Comelle",
+      "zone": "Savas",
       "dept": "07",
-      "date": "2026-11-25",
+      "date": "2026-11-26",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
-      "source": "ATMO Bourgogne-Franche-Comté",
+      "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -29388,13 +29388,13 @@
       }
     },
     {
-      "zone": "Condal",
+      "zone": "Saint-Jeure-d'Andaure",
       "dept": "07",
-      "date": "2026-11-25",
+      "date": "2026-11-26",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
-      "source": "ATMO Bourgogne-Franche-Comté",
+      "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -29424,13 +29424,13 @@
       }
     },
     {
-      "zone": "Cressy-sur-Somme",
+      "zone": "Aussois",
       "dept": "07",
-      "date": "2026-11-25",
+      "date": "2026-11-26",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
-      "source": "ATMO Bourgogne-Franche-Comté",
+      "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
           "indice": 1,
@@ -29460,18 +29460,18 @@
       }
     },
     {
-      "zone": "Le Creusot",
+      "zone": "Saint-Bauzile",
       "dept": "07",
-      "date": "2026-11-25",
+      "date": "2026-11-26",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
-      "source": "ATMO Bourgogne-Franche-Comté",
+      "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "O₃": {
           "indice": 2,

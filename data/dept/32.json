@@ -3,7 +3,7 @@
   "nom": "Gers",
   "slug": "gers",
   "region": "Occitanie",
-  "updated": "23/11/2026 à 22:52",
+  "updated": "24/11/2026 à 21:28",
   "score_eau": 99,
   "nb_communes": 467,
   "potable": [
@@ -71436,16 +71436,43 @@
   ],
   "nappes": [
     {
+      "nom": "Polastron",
+      "libelle": "Polastron 101",
+      "masse_eau": "Sables et grès de l'Eocène inférieur et moyen majoritairemen",
+      "profondeur": 2751.2,
+      "dept": "32",
+      "code_bss": "10082X0001/F",
+      "current": 109.653,
+      "history": [
+        109.751,
+        109.738,
+        109.738,
+        109.742,
+        109.713,
+        109.677,
+        109.651,
+        109.654,
+        109.692,
+        109.705,
+        109.641,
+        109.616,
+        109.627,
+        109.653
+      ],
+      "year_ago": 110.02,
+      "lat": 43.521514492,
+      "lng": 0.876623753,
+      "color": "#ef4444"
+    },
+    {
       "nom": "Monbardon",
       "libelle": "Puymaurin 2",
       "masse_eau": "Sables et grès de l'Eocène inférieur et moyen majoritairemen",
       "profondeur": 3821.8,
       "dept": "32",
       "code_bss": "10078X0001/F",
-      "current": 171.614,
+      "current": 171.61,
       "history": [
-        171.611,
-        171.614,
         171.614,
         171.617,
         171.618,
@@ -71457,7 +71484,9 @@
         171.618,
         171.62,
         171.618,
-        171.614
+        171.614,
+        171.612,
+        171.61
       ],
       "year_ago": 171.95,
       "lat": 43.386791615,
@@ -71471,10 +71500,8 @@
       "profondeur": 6.0,
       "dept": "32",
       "code_bss": "09793X0011/F",
-      "current": 98.423,
+      "current": 98.432,
       "history": [
-        98.353,
-        98.355,
         98.355,
         98.355,
         98.358,
@@ -71486,9 +71513,11 @@
         98.401,
         98.406,
         98.41,
-        98.423
+        98.423,
+        98.43,
+        98.432
       ],
-      "year_ago": 98.53,
+      "year_ago": 98.59,
       "lat": 43.668135616,
       "lng": -0.112822644,
       "color": "#ef4444"
@@ -71500,10 +71529,8 @@
       "profondeur": 150.0,
       "dept": "32",
       "code_bss": "BSS003AFAC/X",
-      "current": 96.237,
+      "current": 96.255,
       "history": [
-        96.252,
-        96.27,
         96.276,
         96.266,
         96.275,
@@ -71515,41 +71542,14 @@
         96.266,
         96.268,
         96.245,
-        96.237
+        96.237,
+        96.243,
+        96.255
       ],
-      "year_ago": 96.2,
+      "year_ago": 96.24,
       "lat": 43.756145,
       "lng": -0.027202,
       "color": "#3b82f6"
-    },
-    {
-      "nom": "Polastron",
-      "libelle": "Polastron 101",
-      "masse_eau": "Sables et grès de l'Eocène inférieur et moyen majoritairemen",
-      "profondeur": 2751.2,
-      "dept": "32",
-      "code_bss": "10082X0001/F",
-      "current": 109.616,
-      "history": [
-        109.695,
-        109.74,
-        109.751,
-        109.738,
-        109.738,
-        109.742,
-        109.713,
-        109.677,
-        109.651,
-        109.654,
-        109.692,
-        109.705,
-        109.641,
-        109.616
-      ],
-      "year_ago": 109.96,
-      "lat": 43.521514492,
-      "lng": 0.876623753,
-      "color": "#ef4444"
     }
   ],
   "air": [],
@@ -71557,7 +71557,7 @@
     {
       "dept": "32",
       "lib_zone": "GERS",
-      "date": "2026-11-24",
+      "date": "2026-11-25",
       "indice_global": 1,
       "label_global": "Très faible",
       "color_global": "#10b981",

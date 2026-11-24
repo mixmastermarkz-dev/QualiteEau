@@ -3,7 +3,7 @@
   "nom": "Landes",
   "slug": "landes",
   "region": "Nouvelle-Aquitaine",
-  "updated": "23/11/2026 à 22:52",
+  "updated": "24/11/2026 à 21:28",
   "score_eau": 99,
   "nb_communes": 327,
   "potable": [
@@ -67144,10 +67144,8 @@
       "profondeur": 2208.5,
       "dept": "40",
       "code_bss": "09505X0034/GO01",
-      "current": 21.51,
+      "current": 21.56,
       "history": [
-        21.64,
-        21.69,
         21.7,
         21.67,
         21.69,
@@ -67159,9 +67157,11 @@
         21.63,
         21.63,
         21.55,
-        21.51
+        21.51,
+        21.54,
+        21.56
       ],
-      "year_ago": 21.43,
+      "year_ago": 21.51,
       "lat": 43.788966613,
       "lng": -1.035321265,
       "color": "#3b82f6"
@@ -67173,10 +67173,8 @@
       "profondeur": 4002.0,
       "dept": "40",
       "code_bss": "09266X0004/LC101",
-      "current": 76.375,
+      "current": 76.366,
       "history": [
-        76.379,
-        76.385,
         76.392,
         76.398,
         76.404,
@@ -67188,9 +67186,11 @@
         76.387,
         76.394,
         76.389,
-        76.375
+        76.375,
+        76.369,
+        76.366
       ],
-      "year_ago": 76.59,
+      "year_ago": 76.61,
       "lat": 43.960162747,
       "lng": -0.272877691,
       "color": "#ef4444"
@@ -67202,10 +67202,8 @@
       "profondeur": 110.0,
       "dept": "40",
       "code_bss": "09267X0014/PIEZO1",
-      "current": 67.601,
+      "current": 67.628,
       "history": [
-        67.846,
-        67.884,
         67.881,
         67.853,
         67.838,
@@ -67217,12 +67215,43 @@
         67.725,
         67.737,
         67.654,
-        67.601
+        67.601,
+        67.606,
+        67.628
       ],
-      "year_ago": 68.42,
+      "year_ago": 68.49,
       "lat": 43.982375767,
       "lng": -0.155560344,
       "color": "#ef4444"
+    },
+    {
+      "nom": "Saint-Yaguen",
+      "libelle": "Landes De Siougos (Saint Yaguen-40)",
+      "masse_eau": "Calcaires du Paléocène majoritairement captif du Sud du Bass",
+      "profondeur": 1295.0,
+      "dept": "40",
+      "code_bss": "09511X0022/LS02",
+      "current": 31.87,
+      "history": [
+        31.94,
+        31.92,
+        31.96,
+        31.93,
+        31.87,
+        31.84,
+        31.8,
+        31.84,
+        31.89,
+        31.88,
+        31.78,
+        31.78,
+        31.78,
+        31.87
+      ],
+      "year_ago": 31.73,
+      "lat": 43.910092549,
+      "lng": -0.715761027,
+      "color": "#3b82f6"
     },
     {
       "nom": "Ychoux",
@@ -67231,10 +67260,8 @@
       "profondeur": 11.0,
       "dept": "40",
       "code_bss": "08746X0031/P22",
-      "current": 55.85,
+      "current": 55.88,
       "history": [
-        55.78,
-        55.78,
         55.78,
         55.78,
         55.78,
@@ -67246,9 +67273,11 @@
         55.81,
         55.82,
         55.84,
-        55.85
+        55.85,
+        55.87,
+        55.88
       ],
-      "year_ago": 56.25,
+      "year_ago": 56.3,
       "lat": 44.344690504,
       "lng": -0.931494266,
       "color": "#ef4444"
@@ -67277,82 +67306,17 @@
         46.24,
         46.28
       ],
-      "year_ago": 46.87,
+      "year_ago": 47.2,
       "lat": 44.435996741,
       "lng": -0.945104876,
       "color": "#ef4444"
-    },
-    {
-      "nom": "Saint-Yaguen",
-      "libelle": "Landes De Siougos (Saint Yaguen-40)",
-      "masse_eau": "Calcaires du Paléocène majoritairement captif du Sud du Bass",
-      "profondeur": 1295.0,
-      "dept": "40",
-      "code_bss": "09511X0022/LS02",
-      "current": 31.78,
-      "history": [
-        31.89,
-        31.91,
-        31.94,
-        31.92,
-        31.96,
-        31.93,
-        31.87,
-        31.84,
-        31.8,
-        31.84,
-        31.89,
-        31.88,
-        31.78,
-        31.78
-      ],
-      "year_ago": 31.65,
-      "lat": 43.910092549,
-      "lng": -0.715761027,
-      "color": "#3b82f6"
     }
   ],
   "air": [
     {
-      "zone": "Garrey",
+      "zone": "Belhade",
       "dept": "40",
-      "date": "2026-11-24",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Nouvelle-Aquitaine",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Seyresse",
-      "dept": "40",
-      "date": "2026-11-24",
+      "date": "2026-11-25",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -67388,7 +67352,7 @@
     {
       "zone": "Castel-Sarrazin",
       "dept": "40",
-      "date": "2026-11-24",
+      "date": "2026-11-25",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -67422,9 +67386,9 @@
       }
     },
     {
-      "zone": "Narrosse",
+      "zone": "Donzacq",
       "dept": "40",
-      "date": "2026-11-24",
+      "date": "2026-11-25",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -67458,9 +67422,45 @@
       }
     },
     {
-      "zone": "Saint-Cricq-du-Gave",
+      "zone": "Siest",
       "dept": "40",
-      "date": "2026-11-24",
+      "date": "2026-11-25",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Nouvelle-Aquitaine",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Peyrehorade",
+      "dept": "40",
+      "date": "2026-11-25",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
