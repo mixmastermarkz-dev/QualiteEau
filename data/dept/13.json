@@ -3,7 +3,7 @@
   "nom": "Bouches-du-Rhône",
   "slug": "bouches-du-rhone",
   "region": "Provence-Alpes-Côte d'Azur",
-  "updated": "25/11/2026 à 20:44",
+  "updated": "26/11/2026 à 20:24",
   "score_eau": 97,
   "nb_communes": 119,
   "potable": [
@@ -16550,34 +16550,6 @@
           "color": "#10b981",
           "date": "2025-09-18",
           "realtime": false
-        },
-        "Conductivité": {
-          "valeur": 9.5,
-          "unite": "µS/cm",
-          "color": "#10b981",
-          "date": "2024-11-25",
-          "realtime": false
-        },
-        "O2 saturation": {
-          "valeur": 105.0,
-          "unite": "%",
-          "color": "#10b981",
-          "date": "2024-11-25",
-          "realtime": false
-        },
-        "pH": {
-          "valeur": 7.96,
-          "unite": "pH",
-          "color": "#10b981",
-          "date": "2024-11-25",
-          "realtime": false
-        },
-        "MES": {
-          "valeur": 447.0,
-          "unite": "mg/L",
-          "color": "#ef4444",
-          "date": "2024-11-25",
-          "realtime": false
         }
       },
       "historique": {
@@ -16591,11 +16563,6 @@
             "date": "2025-04-22",
             "valeur": 0.96,
             "color": "#f59e0b"
-          },
-          {
-            "date": "2024-11-25",
-            "valeur": 1.5,
-            "color": "#f59e0b"
           }
         ],
         "Nitrates": [
@@ -16607,11 +16574,6 @@
           {
             "date": "2025-04-22",
             "valeur": 3.2,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-11-25",
-            "valeur": 1.7,
             "color": "#10b981"
           }
         ],
@@ -16625,45 +16587,12 @@
             "date": "2025-04-22",
             "valeur": 0.137,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-11-25",
-            "valeur": 0.0,
-            "color": "#10b981"
-          }
-        ],
-        "Conductivité": [
-          {
-            "date": "2024-11-25",
-            "valeur": 9.5,
-            "color": "#10b981"
-          }
-        ],
-        "O2 saturation": [
-          {
-            "date": "2024-11-25",
-            "valeur": 105.0,
-            "color": "#10b981"
-          }
-        ],
-        "pH": [
-          {
-            "date": "2024-11-25",
-            "valeur": 7.96,
-            "color": "#10b981"
-          }
-        ],
-        "MES": [
-          {
-            "date": "2024-11-25",
-            "valeur": 447.0,
-            "color": "#ef4444"
           }
         ]
       },
-      "score": 79,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
+      "score": 83,
+      "score_color": "#10b981",
+      "score_label": "Bonne"
     },
     {
       "nom": "FONT-COUVERTE",
@@ -18984,10 +18913,8 @@
       "profondeur": 34.4,
       "dept": "13",
       "code_bss": "09662X0038/F41",
-      "current": 18.6,
+      "current": 18.61,
       "history": [
-        18.59,
-        18.63,
         18.66,
         18.67,
         18.67,
@@ -18999,40 +18926,13 @@
         18.64,
         18.63,
         18.62,
-        18.6
+        18.6,
+        18.6,
+        18.61
       ],
       "year_ago": 17.61,
       "lat": 43.870329768,
       "lng": 4.824484393,
-      "color": "#3b82f6"
-    },
-    {
-      "nom": "Fuveau",
-      "libelle": "Fuveau - La Grande Bastide",
-      "masse_eau": "Formations variées et calcaires fuvéliens et jurassiques du ",
-      "profondeur": 7.5,
-      "dept": "13",
-      "code_bss": "10212X0029/P1",
-      "current": 212.37,
-      "history": [
-        212.43,
-        212.42,
-        212.41,
-        212.41,
-        212.4,
-        212.39,
-        212.39,
-        212.38,
-        212.38,
-        212.37,
-        212.37,
-        212.36,
-        212.36,
-        212.37
-      ],
-      "year_ago": 211.72,
-      "lat": 43.47125293,
-      "lng": 5.550939404,
       "color": "#3b82f6"
     },
     {
@@ -19042,10 +18942,8 @@
       "profondeur": 150.0,
       "dept": "13",
       "code_bss": "10217X0223/P1",
-      "current": 306.782,
+      "current": 306.839,
       "history": [
-        306.343,
-        306.427,
         306.234,
         306.317,
         306.32,
@@ -19057,69 +18955,42 @@
         306.648,
         306.685,
         306.724,
-        306.782
+        306.782,
+        306.82,
+        306.839
       ],
-      "year_ago": 308.97,
+      "year_ago": 308.93,
       "lat": 43.414466435,
       "lng": 5.662765841,
       "color": "#ef4444"
     },
     {
-      "nom": "Sénas",
-      "libelle": "Sénas - L'Escombe",
-      "masse_eau": "Alluvions basse Durance",
-      "profondeur": 15.0,
+      "nom": "Fuveau",
+      "libelle": "Fuveau - La Grande Bastide",
+      "masse_eau": "Formations variées et calcaires fuvéliens et jurassiques du ",
+      "profondeur": 7.5,
       "dept": "13",
-      "code_bss": "09675X0123/P2",
-      "current": 92.58,
+      "code_bss": "10212X0029/P1",
+      "current": 212.5,
       "history": [
-        92.68,
-        92.66,
-        92.62,
-        92.6,
-        92.57,
-        92.55,
-        92.53,
-        92.54,
-        92.52,
-        92.49,
-        92.48,
-        92.47,
-        92.47,
-        92.58
+        212.41,
+        212.41,
+        212.4,
+        212.39,
+        212.39,
+        212.38,
+        212.38,
+        212.37,
+        212.37,
+        212.36,
+        212.36,
+        212.37,
+        212.46,
+        212.5
       ],
-      "year_ago": 91.16,
-      "lat": 43.751682758,
-      "lng": 5.085576729,
-      "color": "#3b82f6"
-    },
-    {
-      "nom": "Gémenos",
-      "libelle": "Gémenos - Carosserie Lambert",
-      "masse_eau": "Alluvions de l'Huveaune",
-      "profondeur": 5.8,
-      "dept": "13",
-      "code_bss": "10447X0195/P3",
-      "current": 105.24,
-      "history": [
-        105.53,
-        105.51,
-        105.44,
-        105.39,
-        105.35,
-        105.32,
-        105.3,
-        105.3,
-        105.28,
-        105.23,
-        105.21,
-        105.18,
-        105.17,
-        105.24
-      ],
-      "year_ago": 104.34,
-      "lat": 43.280390832,
-      "lng": 5.620239049,
+      "year_ago": 211.71,
+      "lat": 43.47125293,
+      "lng": 5.550939404,
       "color": "#3b82f6"
     },
     {
@@ -19129,10 +19000,8 @@
       "profondeur": 11.5,
       "dept": "13",
       "code_bss": "10202X0117/PN2",
-      "current": 11.49,
+      "current": 11.63,
       "history": [
-        11.55,
-        11.56,
         11.54,
         11.52,
         11.51,
@@ -19144,11 +19013,42 @@
         11.47,
         11.46,
         11.47,
-        11.49
+        11.49,
+        11.56,
+        11.63
       ],
       "year_ago": 8.89,
       "lat": 43.519548938,
       "lng": 5.148065787,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Sénas",
+      "libelle": "Sénas - L'Escombe",
+      "masse_eau": "Alluvions basse Durance",
+      "profondeur": 15.0,
+      "dept": "13",
+      "code_bss": "09675X0123/P2",
+      "current": 93.12,
+      "history": [
+        92.62,
+        92.6,
+        92.57,
+        92.55,
+        92.53,
+        92.54,
+        92.52,
+        92.49,
+        92.48,
+        92.47,
+        92.47,
+        92.58,
+        93.12,
+        93.12
+      ],
+      "year_ago": 91.15,
+      "lat": 43.751682758,
+      "lng": 5.085576729,
       "color": "#3b82f6"
     },
     {
@@ -19158,10 +19058,8 @@
       "profondeur": 8.25,
       "dept": "13",
       "code_bss": "09665X0073/203",
-      "current": 6.41,
+      "current": 6.45,
       "history": [
-        6.59,
-        6.62,
         6.63,
         6.62,
         6.61,
@@ -19173,11 +19071,42 @@
         6.49,
         6.46,
         6.43,
-        6.41
+        6.41,
+        6.43,
+        6.45
       ],
-      "year_ago": 5.1,
+      "year_ago": 5.11,
       "lat": 43.812165924,
       "lng": 4.7003098,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Gémenos",
+      "libelle": "Gémenos - Carosserie Lambert",
+      "masse_eau": "Alluvions de l'Huveaune",
+      "profondeur": 5.8,
+      "dept": "13",
+      "code_bss": "10447X0195/P3",
+      "current": 105.7,
+      "history": [
+        105.44,
+        105.39,
+        105.35,
+        105.32,
+        105.3,
+        105.3,
+        105.28,
+        105.23,
+        105.21,
+        105.18,
+        105.17,
+        105.24,
+        105.55,
+        105.7
+      ],
+      "year_ago": 104.31,
+      "lat": 43.280390832,
+      "lng": 5.620239049,
       "color": "#3b82f6"
     },
     {
@@ -19187,10 +19116,8 @@
       "profondeur": 18.0,
       "dept": "13",
       "code_bss": "09668X0106/16",
-      "current": 59.74,
+      "current": 59.79,
       "history": [
-        59.47,
-        59.5,
         59.51,
         59.53,
         59.55,
@@ -19202,69 +19129,13 @@
         59.67,
         59.7,
         59.72,
-        59.74
+        59.74,
+        59.77,
+        59.79
       ],
       "year_ago": 58.77,
       "lat": 43.816003841,
       "lng": 5.006552273,
-      "color": "#3b82f6"
-    },
-    {
-      "nom": "Miramas",
-      "libelle": "Miramas - Les Cabasses",
-      "masse_eau": "Formations variées du bassin versant de la Touloubre et de l",
-      "profondeur": 24.0,
-      "dept": "13",
-      "code_bss": "09938X0164/P12B",
-      "current": 53.76,
-      "history": [
-        53.76,
-        53.83,
-        53.74,
-        53.7,
-        53.67,
-        53.67,
-        53.7,
-        53.79,
-        53.7,
-        53.66,
-        53.65,
-        53.66,
-        53.7,
-        53.76
-      ],
-      "year_ago": 51.27,
-      "lat": 43.590415962,
-      "lng": 5.025132831,
-      "color": "#3b82f6"
-    },
-    {
-      "nom": "Arles",
-      "libelle": "Arles - Négreiron",
-      "masse_eau": "Cailloutis de la Crau",
-      "profondeur": 12.0,
-      "dept": "13",
-      "code_bss": "10192X0095/P21B",
-      "current": 4.17,
-      "history": [
-        4.18,
-        4.17,
-        4.14,
-        4.13,
-        4.11,
-        4.1,
-        4.1,
-        4.13,
-        4.09,
-        4.08,
-        4.06,
-        4.06,
-        4.06,
-        4.17
-      ],
-      "year_ago": 1.84,
-      "lat": 43.539904887,
-      "lng": 4.811397298,
       "color": "#3b82f6"
     },
     {
@@ -19274,10 +19145,8 @@
       "profondeur": 15.0,
       "dept": "13",
       "code_bss": "09937X0135/P23B",
-      "current": 23.37,
+      "current": 23.4,
       "history": [
-        24.13,
-        24.07,
         23.96,
         23.9,
         23.82,
@@ -19289,40 +19158,42 @@
         23.47,
         23.43,
         23.4,
-        23.37
+        23.37,
+        23.37,
+        23.4
       ],
-      "year_ago": 16.0,
+      "year_ago": 15.99,
       "lat": 43.578046374,
       "lng": 4.871874989,
       "color": "#3b82f6"
     },
     {
-      "nom": "Saint-Martin-de-Crau",
-      "libelle": "Saint-Martin-De-Crau - Mas Archimbaud",
-      "masse_eau": "Cailloutis de la Crau",
-      "profondeur": 15.5,
+      "nom": "Miramas",
+      "libelle": "Miramas - Les Cabasses",
+      "masse_eau": "Formations variées du bassin versant de la Touloubre et de l",
+      "profondeur": 24.0,
       "dept": "13",
-      "code_bss": "09934X0087/P18B",
-      "current": 57.78,
+      "code_bss": "09938X0164/P12B",
+      "current": 54.11,
       "history": [
-        57.99,
-        57.97,
-        57.9,
-        57.87,
-        57.83,
-        57.81,
-        57.79,
-        57.82,
-        57.77,
-        57.74,
-        57.71,
-        57.69,
-        57.69,
-        57.78
+        53.74,
+        53.7,
+        53.67,
+        53.67,
+        53.7,
+        53.79,
+        53.7,
+        53.66,
+        53.65,
+        53.66,
+        53.7,
+        53.76,
+        54.15,
+        54.11
       ],
-      "year_ago": 54.94,
-      "lat": 43.648887185,
-      "lng": 4.961161123,
+      "year_ago": 51.22,
+      "lat": 43.590415962,
+      "lng": 5.025132831,
       "color": "#3b82f6"
     },
     {
@@ -19332,10 +19203,8 @@
       "profondeur": 13.01,
       "dept": "13",
       "code_bss": "10193X0151/P29B",
-      "current": 20.424,
+      "current": 20.377,
       "history": [
-        20.849,
-        20.838,
         20.768,
         20.728,
         20.687,
@@ -19347,40 +19216,42 @@
         20.485,
         20.458,
         20.448,
-        20.424
+        20.424,
+        20.406,
+        20.377
       ],
-      "year_ago": 16.53,
+      "year_ago": 16.52,
       "lat": 43.55076448,
       "lng": 4.897662374,
       "color": "#3b82f6"
     },
     {
-      "nom": "Meyrargues",
-      "libelle": "Meyrargues - Le Pont De Pertuis",
-      "masse_eau": "Alluvions basse Durance",
-      "profondeur": 8.0,
+      "nom": "Saint-Martin-de-Crau",
+      "libelle": "Saint-Martin-De-Crau - Mas Archimbaud",
+      "masse_eau": "Cailloutis de la Crau",
+      "profondeur": 15.5,
       "dept": "13",
-      "code_bss": "09952X0082/F9B",
-      "current": 189.63,
+      "code_bss": "09934X0087/P18B",
+      "current": 57.9,
       "history": [
-        189.6,
-        189.63,
-        189.63,
-        189.64,
-        189.64,
-        189.65,
-        189.65,
-        189.65,
-        189.65,
-        189.65,
-        189.64,
-        189.64,
-        189.63,
-        189.63
+        57.9,
+        57.87,
+        57.83,
+        57.81,
+        57.79,
+        57.82,
+        57.77,
+        57.74,
+        57.71,
+        57.69,
+        57.69,
+        57.78,
+        57.9,
+        57.9
       ],
-      "year_ago": 188.74,
-      "lat": 43.659703983,
-      "lng": 5.503517575,
+      "year_ago": 54.91,
+      "lat": 43.648887185,
+      "lng": 4.961161123,
       "color": "#3b82f6"
     },
     {
@@ -19390,10 +19261,8 @@
       "profondeur": 17.0,
       "dept": "13",
       "code_bss": "10192X0094/F",
-      "current": 0.983,
+      "current": 0.953,
       "history": [
-        1.015,
-        1.015,
         0.999,
         0.988,
         0.976,
@@ -19405,9 +19274,11 @@
         0.939,
         0.952,
         0.927,
-        0.983
+        0.983,
+        0.956,
+        0.953
       ],
-      "year_ago": 0.65,
+      "year_ago": 0.64,
       "lat": 43.475903274,
       "lng": 4.855065998,
       "color": "#3b82f6"
@@ -19419,10 +19290,8 @@
       "profondeur": 60.0,
       "dept": "13",
       "code_bss": "10218X0195/F",
-      "current": 273.39,
+      "current": 273.67,
       "history": [
-        272.79,
-        272.85,
         272.81,
         272.8,
         272.8,
@@ -19434,9 +19303,11 @@
         272.87,
         272.87,
         272.88,
-        273.39
+        273.39,
+        274.36,
+        273.67
       ],
-      "year_ago": 270.87,
+      "year_ago": 270.84,
       "lat": 43.442828034,
       "lng": 5.66768264,
       "color": "#3b82f6"
@@ -19448,10 +19319,8 @@
       "profondeur": 5.4,
       "dept": "13",
       "code_bss": "09662X0246/F",
-      "current": 12.55,
+      "current": 12.46,
       "history": [
-        12.29,
-        12.27,
         12.21,
         12.18,
         12.15,
@@ -19463,11 +19332,42 @@
         12.08,
         12.08,
         12.08,
-        12.55
+        12.55,
+        12.52,
+        12.46
       ],
-      "year_ago": 10.34,
+      "year_ago": 10.38,
       "lat": 43.846833982,
       "lng": 4.771213879,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Aureille",
+      "libelle": "Aureille -La Romanière",
+      "masse_eau": "Cailloutis de la Crau",
+      "profondeur": 16.5,
+      "dept": "13",
+      "code_bss": "09933X0088/F",
+      "current": 60.16,
+      "history": [
+        60.45,
+        60.41,
+        60.38,
+        60.34,
+        60.32,
+        60.31,
+        60.27,
+        60.22,
+        60.19,
+        60.16,
+        60.14,
+        60.13,
+        60.16,
+        60.16
+      ],
+      "year_ago": 56.55,
+      "lat": 43.679960845,
+      "lng": 4.934792575,
       "color": "#3b82f6"
     },
     {
@@ -19477,27 +19377,56 @@
       "profondeur": 172.0,
       "dept": "13",
       "code_bss": "10446X0239/F",
-      "current": 14.59,
+      "current": 38.736,
       "history": [
-        15.357,
-        15.242,
-        15.143,
-        15.054,
-        14.975,
-        14.897,
-        14.83,
-        14.761,
-        14.744,
-        14.716,
-        14.689,
+        15.346,
+        15.229,
+        15.135,
+        15.047,
+        14.967,
+        14.892,
+        14.823,
+        14.76,
+        14.742,
+        14.713,
+        14.681,
         14.656,
-        14.624,
-        14.59
+        14.619,
+        38.736
       ],
-      "year_ago": 22.09,
+      "year_ago": 21.93,
       "lat": 43.217838924,
       "lng": 5.496517053,
-      "color": "#ef4444"
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Istres",
+      "libelle": "Istres - Mas Du Vallon",
+      "masse_eau": "Cailloutis de la Crau",
+      "profondeur": 15.0,
+      "dept": "13",
+      "code_bss": "09937X0134/P19T",
+      "current": 45.81,
+      "history": [
+        45.82,
+        45.8,
+        45.76,
+        45.74,
+        45.72,
+        45.72,
+        45.69,
+        45.67,
+        45.65,
+        45.63,
+        45.62,
+        45.67,
+        45.78,
+        45.81
+      ],
+      "year_ago": 43.7,
+      "lat": 43.60925324,
+      "lng": 4.923937991,
+      "color": "#3b82f6"
     },
     {
       "nom": "Le Puy-Sainte-Réparade",
@@ -19506,10 +19435,8 @@
       "profondeur": 6.74,
       "dept": "13",
       "code_bss": "BSS004PLRJ/X",
-      "current": 176.13,
+      "current": 176.29,
       "history": [
-        176.21,
-        176.21,
         176.2,
         176.18,
         176.17,
@@ -19521,7 +19448,9 @@
         176.13,
         176.12,
         176.11,
-        176.13
+        176.13,
+        176.24,
+        176.29
       ],
       "year_ago": 175.19,
       "lat": 43.673171154,
@@ -19535,10 +19464,8 @@
       "profondeur": 20.0,
       "dept": "13",
       "code_bss": "BSS004ESZE/X",
-      "current": 2.88,
+      "current": 2.97,
       "history": [
-        2.85,
-        2.85,
         2.8,
         2.79,
         2.76,
@@ -19550,69 +19477,13 @@
         2.72,
         2.73,
         2.76,
-        2.88
+        2.88,
+        2.96,
+        2.97
       ],
-      "year_ago": 1.53,
+      "year_ago": 1.54,
       "lat": 43.70982,
       "lng": 4.62744,
-      "color": "#3b82f6"
-    },
-    {
-      "nom": "Istres",
-      "libelle": "Istres - Mas Du Vallon",
-      "masse_eau": "Cailloutis de la Crau",
-      "profondeur": 15.0,
-      "dept": "13",
-      "code_bss": "09937X0134/P19T",
-      "current": 45.67,
-      "history": [
-        45.89,
-        45.86,
-        45.82,
-        45.8,
-        45.76,
-        45.74,
-        45.72,
-        45.72,
-        45.69,
-        45.67,
-        45.65,
-        45.63,
-        45.62,
-        45.67
-      ],
-      "year_ago": 43.75,
-      "lat": 43.60925324,
-      "lng": 4.923937991,
-      "color": "#3b82f6"
-    },
-    {
-      "nom": "Aubagne",
-      "libelle": "Aubagne - L'Aumône",
-      "masse_eau": "Alluvions de l'Huveaune",
-      "profondeur": 15.0,
-      "dept": "13",
-      "code_bss": "10446X0267/PIEZ",
-      "current": 77.35,
-      "history": [
-        77.21,
-        77.23,
-        77.22,
-        77.23,
-        77.23,
-        77.25,
-        77.26,
-        77.29,
-        77.29,
-        77.29,
-        77.3,
-        77.31,
-        77.32,
-        77.35
-      ],
-      "year_ago": 76.51,
-      "lat": 43.287757863,
-      "lng": 5.52877423,
       "color": "#3b82f6"
     },
     {
@@ -19622,10 +19493,8 @@
       "profondeur": 20.5,
       "dept": "13",
       "code_bss": "10443X0301/PIEZ",
-      "current": 102.877,
+      "current": 102.922,
       "history": [
-        102.87,
-        102.889,
         102.871,
         102.863,
         102.856,
@@ -19637,11 +19506,42 @@
         102.855,
         102.853,
         102.86,
-        102.877
+        102.877,
+        102.894,
+        102.922
       ],
-      "year_ago": 100.23,
+      "year_ago": 100.2,
       "lat": 43.305335665,
       "lng": 5.592269255,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Aubagne",
+      "libelle": "Aubagne - L'Aumône",
+      "masse_eau": "Alluvions de l'Huveaune",
+      "profondeur": 15.0,
+      "dept": "13",
+      "code_bss": "10446X0267/PIEZ",
+      "current": 77.43,
+      "history": [
+        77.22,
+        77.23,
+        77.23,
+        77.25,
+        77.26,
+        77.29,
+        77.29,
+        77.29,
+        77.3,
+        77.31,
+        77.32,
+        77.35,
+        77.4,
+        77.43
+      ],
+      "year_ago": 76.5,
+      "lat": 43.287757863,
+      "lng": 5.52877423,
       "color": "#3b82f6"
     },
     {
@@ -19651,10 +19551,8 @@
       "profondeur": 50.0,
       "dept": "13",
       "code_bss": "10195X0041/PZ",
-      "current": 0.018,
+      "current": 0.037,
       "history": [
-        0.078,
-        0.083,
         0.048,
         0.004,
         -0.015,
@@ -19666,48 +19564,115 @@
         -0.084,
         -0.076,
         -0.028,
-        0.018
+        0.018,
+        0.055,
+        0.037
       ],
-      "year_ago": -0.2,
+      "year_ago": -0.24,
       "lat": 43.440650111,
       "lng": 4.756834685,
       "color": "#3b82f6"
     },
     {
-      "nom": "Aureille",
-      "libelle": "Aureille -La Romanière",
+      "nom": "Arles",
+      "libelle": "Arles - Négreiron",
       "masse_eau": "Cailloutis de la Crau",
-      "profondeur": 16.5,
+      "profondeur": 12.0,
       "dept": "13",
-      "code_bss": "09933X0088/F",
-      "current": 60.13,
+      "code_bss": "10192X0095/P21B",
+      "current": 4.13,
       "history": [
-        60.49,
-        60.48,
-        60.45,
-        60.41,
-        60.38,
-        60.34,
-        60.32,
-        60.31,
-        60.27,
-        60.22,
-        60.19,
-        60.16,
-        60.14,
-        60.13
+        4.14,
+        4.13,
+        4.11,
+        4.1,
+        4.1,
+        4.13,
+        4.09,
+        4.08,
+        4.06,
+        4.06,
+        4.06,
+        4.17,
+        4.15,
+        4.13
       ],
-      "year_ago": 56.6,
-      "lat": 43.679960845,
-      "lng": 4.934792575,
+      "year_ago": 1.83,
+      "lat": 43.539904887,
+      "lng": 4.811397298,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Meyrargues",
+      "libelle": "Meyrargues - Le Pont De Pertuis",
+      "masse_eau": "Alluvions basse Durance",
+      "profondeur": 8.0,
+      "dept": "13",
+      "code_bss": "09952X0082/F9B",
+      "current": 189.73,
+      "history": [
+        189.63,
+        189.64,
+        189.64,
+        189.65,
+        189.65,
+        189.65,
+        189.65,
+        189.65,
+        189.64,
+        189.64,
+        189.63,
+        189.63,
+        189.66,
+        189.73
+      ],
+      "year_ago": 188.72,
+      "lat": 43.659703983,
+      "lng": 5.503517575,
       "color": "#3b82f6"
     }
   ],
   "air": [
     {
-      "zone": "La Barben",
+      "zone": "Aix-en-Provence",
       "dept": "13",
-      "date": "2026-11-27",
+      "date": "2026-11-28",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "AtmoSud",
+      "polluants": {
+        "NO₂": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Allauch",
+      "dept": "13",
+      "date": "2026-11-28",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -19741,9 +19706,9 @@
       }
     },
     {
-      "zone": "Barbentane",
+      "zone": "Alleins",
       "dept": "13",
-      "date": "2026-11-27",
+      "date": "2026-11-28",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -19777,9 +19742,9 @@
       }
     },
     {
-      "zone": "Les Baux-de-Provence",
+      "zone": "Arles",
       "dept": "13",
-      "date": "2026-11-27",
+      "date": "2026-11-28",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -19813,54 +19778,18 @@
       }
     },
     {
-      "zone": "Beaurecueil",
+      "zone": "Aubagne",
       "dept": "13",
-      "date": "2026-11-27",
+      "date": "2026-11-28",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
       "source": "AtmoSud",
       "polluants": {
         "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
           "indice": 2,
           "label": "Moyen",
           "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Belcodène",
-      "dept": "13",
-      "date": "2026-11-27",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "AtmoSud",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
         },
         "O₃": {
           "indice": 2,

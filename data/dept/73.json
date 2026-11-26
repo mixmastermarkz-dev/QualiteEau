@@ -3,7 +3,7 @@
   "nom": "Savoie",
   "slug": "savoie",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "25/11/2026 à 20:44",
+  "updated": "26/11/2026 à 20:24",
   "score_eau": 99,
   "nb_communes": 274,
   "potable": [
@@ -31226,10 +31226,8 @@
       "profondeur": 8.37,
       "dept": "73",
       "code_bss": "07266X0052/PS4",
-      "current": 294.275,
+      "current": 294.22,
       "history": [
-        293.402,
-        293.435,
         293.482,
         293.53,
         293.579,
@@ -31241,9 +31239,11 @@
         294.307,
         294.317,
         294.302,
-        294.275
+        294.275,
+        294.246,
+        294.22
       ],
-      "year_ago": 293.99,
+      "year_ago": 294.05,
       "lat": 45.566444711,
       "lng": 6.245431548,
       "color": "#3b82f6"
@@ -31255,10 +31255,8 @@
       "profondeur": 16.0,
       "dept": "73",
       "code_bss": "07256X0095/CHAMBE",
-      "current": 265.6,
+      "current": 265.589,
       "history": [
-        264.99,
-        264.99,
         265.231,
         265.218,
         265.24,
@@ -31270,7 +31268,9 @@
         265.869,
         265.762,
         265.636,
-        265.6
+        265.6,
+        265.617,
+        265.589
       ],
       "year_ago": 265.55,
       "lat": 45.569053375,
@@ -31301,7 +31301,7 @@
         270.485,
         270.394
       ],
-      "year_ago": 270.27,
+      "year_ago": 270.23,
       "lat": 45.522193195,
       "lng": 6.104556772,
       "color": "#3b82f6"
@@ -31309,9 +31309,45 @@
   ],
   "air": [
     {
-      "zone": "Cevins",
+      "zone": "Avressieux",
       "dept": "73",
-      "date": "2026-11-27",
+      "date": "2026-11-28",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Aussois",
+      "dept": "73",
+      "date": "2026-11-28",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -31345,12 +31381,12 @@
       }
     },
     {
-      "zone": "Conjux",
+      "zone": "Chindrieux",
       "dept": "73",
-      "date": "2026-11-27",
-      "indice": 1,
-      "label": "Bon",
-      "color": "#50f0e6",
+      "date": "2026-11-28",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
@@ -31364,14 +31400,14 @@
           "color": "#10b981"
         },
         "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
@@ -31381,9 +31417,9 @@
       }
     },
     {
-      "zone": "Césarches",
+      "zone": "les Avanchers",
       "dept": "73",
-      "date": "2026-11-27",
+      "date": "2026-11-28",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -31417,9 +31453,9 @@
       }
     },
     {
-      "zone": "La Bridoire",
+      "zone": "Les Chapelles",
       "dept": "73",
-      "date": "2026-11-27",
+      "date": "2026-11-28",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -31431,45 +31467,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
           "indice": 2,
           "label": "Moyen",
           "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Brison-Saint-Innocent",
-      "dept": "73",
-      "date": "2026-11-27",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
         },
         "PM10": {
           "indice": 1,

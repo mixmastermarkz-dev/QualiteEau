@@ -3,7 +3,7 @@
   "nom": "Jura",
   "slug": "jura",
   "region": "Bourgogne-Franche-Comté",
-  "updated": "25/11/2026 à 20:43",
+  "updated": "26/11/2026 à 20:24",
   "score_eau": 99,
   "nb_communes": 500,
   "potable": [
@@ -2395,7 +2395,7 @@
       "nom": "BILLEY",
       "dept": "39",
       "insee": "21074",
-      "restric": "Crise",
+      "restric": "Alerte",
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
@@ -6493,7 +6493,7 @@
       "nom": "CLERY",
       "dept": "39",
       "insee": "21180",
-      "restric": "Crise",
+      "restric": "Alerte",
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux exigences de qualité en vigueur pour l'ensemble des paramètres mesurés.",
       "parametres": {
@@ -35176,6 +35176,151 @@
   ],
   "nappes": [
     {
+      "nom": "Ney",
+      "libelle": "Forage Privé (Ney-39)",
+      "masse_eau": "Calcaires et marnes jurassiques Haut Jura et Bugey -  BV Ain",
+      "profondeur": 14.0,
+      "dept": "39",
+      "code_bss": "05822X0024/F1",
+      "current": 528.056,
+      "history": [
+        527.753,
+        527.907,
+        527.985,
+        528.167,
+        528.033,
+        528,
+        528.172,
+        528.435,
+        528.443,
+        528.371,
+        528.224,
+        528.142,
+        527.988,
+        528.056
+      ],
+      "year_ago": 528.1,
+      "lat": 46.7255463,
+      "lng": 5.888461993,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Oussières",
+      "libelle": "Forage (Oussières-39)",
+      "masse_eau": "Cailloutis pliocènes de la Forêt de Chaux et formations mioc",
+      "profondeur": 59.3,
+      "dept": "39",
+      "code_bss": "05553X0009/S2",
+      "current": 223.581,
+      "history": [
+        223.561,
+        223.552,
+        223.551,
+        223.547,
+        223.564,
+        223.583,
+        223.563,
+        223.551,
+        223.547,
+        223.564,
+        223.585,
+        223.597,
+        223.592,
+        223.581
+      ],
+      "year_ago": 223.89,
+      "lat": 46.901262914,
+      "lng": 5.605880793,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Chatelay",
+      "libelle": "Forage Privé (Chatelay-39)",
+      "masse_eau": "Cailloutis pliocènes de la Forêt de Chaux et formations mioc",
+      "profondeur": 300.0,
+      "dept": "39",
+      "code_bss": "05288X0053/F3",
+      "current": 226.223,
+      "history": [
+        226.228,
+        226.224,
+        226.231,
+        226.224,
+        226.253,
+        226.268,
+        226.217,
+        226.213,
+        226.214,
+        226.238,
+        226.258,
+        226.257,
+        226.236,
+        226.223
+      ],
+      "year_ago": 226.41,
+      "lat": 47.041366802,
+      "lng": 5.693898783,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Thervay",
+      "libelle": "Puits Privé (Thervay-39)",
+      "masse_eau": "Alluvions de l'Ognon",
+      "profondeur": 13.72,
+      "dept": "39",
+      "code_bss": "05013X0001/SM1",
+      "current": 190.968,
+      "history": [
+        190.608,
+        190.618,
+        190.701,
+        190.667,
+        190.677,
+        190.692,
+        190.749,
+        190.747,
+        190.793,
+        190.819,
+        190.88,
+        190.94,
+        190.966,
+        190.968
+      ],
+      "year_ago": 192.07,
+      "lat": 47.255880567,
+      "lng": 5.591689688,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Hauteroche",
+      "libelle": "Forage Communal (Crançot-39)",
+      "masse_eau": "Calcaires jurassiques chaîne du Jura 1er plateau",
+      "profondeur": 261.4,
+      "dept": "39",
+      "code_bss": "05818X0073/F",
+      "current": 446.603,
+      "history": [
+        437.465,
+        440.453,
+        443.439,
+        443.728,
+        444.29,
+        443.824,
+        453.542,
+        464.73,
+        465.956,
+        463.501,
+        458.119,
+        450.81,
+        448.188,
+        446.603
+      ],
+      "year_ago": 460.43,
+      "lat": 46.692281217,
+      "lng": 5.68698072,
+      "color": "#ef4444"
+    },
+    {
       "nom": "Desnes",
       "libelle": "Forage Communal (Desnes-39)",
       "masse_eau": "Alluvions de la Bresse - plaine de Bletterans",
@@ -35199,154 +35344,9 @@
         200.741,
         200.753
       ],
-      "year_ago": 201.51,
+      "year_ago": 201.61,
       "lat": 46.761018459,
       "lng": 5.476860534,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Ney",
-      "libelle": "Forage Privé (Ney-39)",
-      "masse_eau": "Calcaires et marnes jurassiques Haut Jura et Bugey -  BV Ain",
-      "profondeur": 14.0,
-      "dept": "39",
-      "code_bss": "05822X0024/F1",
-      "current": 528.142,
-      "history": [
-        527.519,
-        527.574,
-        527.753,
-        527.907,
-        527.985,
-        528.167,
-        528.033,
-        528,
-        528.172,
-        528.435,
-        528.443,
-        528.371,
-        528.224,
-        528.142
-      ],
-      "year_ago": 528.16,
-      "lat": 46.7255463,
-      "lng": 5.888461993,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Thervay",
-      "libelle": "Puits Privé (Thervay-39)",
-      "masse_eau": "Alluvions de l'Ognon",
-      "profondeur": 13.72,
-      "dept": "39",
-      "code_bss": "05013X0001/SM1",
-      "current": 190.94,
-      "history": [
-        190.579,
-        190.56,
-        190.608,
-        190.618,
-        190.701,
-        190.667,
-        190.677,
-        190.692,
-        190.749,
-        190.747,
-        190.793,
-        190.819,
-        190.88,
-        190.94
-      ],
-      "year_ago": 192.06,
-      "lat": 47.255880567,
-      "lng": 5.591689688,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Chatelay",
-      "libelle": "Forage Privé (Chatelay-39)",
-      "masse_eau": "Cailloutis pliocènes de la Forêt de Chaux et formations mioc",
-      "profondeur": 300.0,
-      "dept": "39",
-      "code_bss": "05288X0053/F3",
-      "current": 226.257,
-      "history": [
-        226.232,
-        226.264,
-        226.228,
-        226.224,
-        226.231,
-        226.224,
-        226.253,
-        226.268,
-        226.217,
-        226.213,
-        226.214,
-        226.238,
-        226.258,
-        226.257
-      ],
-      "year_ago": 226.53,
-      "lat": 47.041366802,
-      "lng": 5.693898783,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Oussières",
-      "libelle": "Forage (Oussières-39)",
-      "masse_eau": "Cailloutis pliocènes de la Forêt de Chaux et formations mioc",
-      "profondeur": 59.3,
-      "dept": "39",
-      "code_bss": "05553X0009/S2",
-      "current": 223.597,
-      "history": [
-        223.564,
-        223.579,
-        223.561,
-        223.552,
-        223.551,
-        223.547,
-        223.564,
-        223.583,
-        223.563,
-        223.551,
-        223.547,
-        223.564,
-        223.585,
-        223.597
-      ],
-      "year_ago": 223.92,
-      "lat": 46.901262914,
-      "lng": 5.605880793,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Hauteroche",
-      "libelle": "Forage Communal (Crançot-39)",
-      "masse_eau": "Calcaires jurassiques chaîne du Jura 1er plateau",
-      "profondeur": 261.4,
-      "dept": "39",
-      "code_bss": "05818X0073/F",
-      "current": 450.81,
-      "history": [
-        438.408,
-        437.062,
-        437.465,
-        440.453,
-        443.439,
-        443.728,
-        444.29,
-        443.824,
-        453.542,
-        464.73,
-        465.956,
-        463.501,
-        458.119,
-        450.81
-      ],
-      "year_ago": 462.51,
-      "lat": 46.692281217,
-      "lng": 5.68698072,
       "color": "#ef4444"
     },
     {
@@ -35356,10 +35356,8 @@
       "profondeur": 14.0,
       "dept": "39",
       "code_bss": "05285X0374/P7",
-      "current": 189.827,
+      "current": 190.104,
       "history": [
-        189.565,
-        189.496,
         189.555,
         189.571,
         189.558,
@@ -35371,9 +35369,11 @@
         189.713,
         189.743,
         189.781,
-        189.827
+        189.827,
+        189.957,
+        190.104
       ],
-      "year_ago": 191.05,
+      "year_ago": 191.37,
       "lat": 47.026741742,
       "lng": 5.426979635,
       "color": "#ef4444"
@@ -35381,12 +35381,12 @@
   ],
   "air": [
     {
-      "zone": "Pleure",
+      "zone": "Villette-lès-Dole",
       "dept": "39",
-      "date": "2026-11-27",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
+      "date": "2026-11-28",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -35400,14 +35400,14 @@
           "color": "#10b981"
         },
         "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
           "indice": 2,
           "label": "Moyen",
           "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "SO₂": {
           "indice": 0,
@@ -35417,12 +35417,12 @@
       }
     },
     {
-      "zone": "Plumont",
+      "zone": "Villers-Robert",
       "dept": "39",
-      "date": "2026-11-27",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
+      "date": "2026-11-28",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -35436,14 +35436,14 @@
           "color": "#10b981"
         },
         "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
           "indice": 2,
           "label": "Moyen",
           "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "SO₂": {
           "indice": 0,
@@ -35453,12 +35453,12 @@
       }
     },
     {
-      "zone": "Poids-de-Fiole",
+      "zone": "Villers-les-Bois",
       "dept": "39",
-      "date": "2026-11-27",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
+      "date": "2026-11-28",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -35472,14 +35472,14 @@
           "color": "#10b981"
         },
         "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
           "indice": 2,
           "label": "Moyen",
           "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "SO₂": {
           "indice": 0,
@@ -35489,12 +35489,12 @@
       }
     },
     {
-      "zone": "Pointre",
+      "zone": "Tavaux",
       "dept": "39",
-      "date": "2026-11-27",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
+      "date": "2026-11-28",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -35508,14 +35508,14 @@
           "color": "#10b981"
         },
         "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
           "indice": 2,
           "label": "Moyen",
           "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "SO₂": {
           "indice": 0,
@@ -35525,12 +35525,12 @@
       }
     },
     {
-      "zone": "Poligny",
+      "zone": "Tassenières",
       "dept": "39",
-      "date": "2026-11-27",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
+      "date": "2026-11-28",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -35544,14 +35544,14 @@
           "color": "#10b981"
         },
         "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
           "indice": 2,
           "label": "Moyen",
           "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "SO₂": {
           "indice": 0,

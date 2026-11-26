@@ -3,7 +3,7 @@
   "nom": "Haute-Loire",
   "slug": "haute-loire",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "25/11/2026 à 20:43",
+  "updated": "26/11/2026 à 20:24",
   "score_eau": 96,
   "nb_communes": 260,
   "potable": [
@@ -11676,7 +11676,7 @@
       "nom": "SAUVESSANGES",
       "dept": "43",
       "insee": "63412",
-      "restric": "Alerte",
+      "restric": "Aucune",
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
@@ -43969,135 +43969,38 @@
       "score": 75,
       "score_color": "#f59e0b",
       "score_label": "Moyenne"
-    },
-    {
-      "nom": "ALLIER à LANGEAC",
-      "dept": "43",
-      "lat": 45.093933525,
-      "lon": 3.511704422,
-      "nom_cours_eau": "ALLIER À LANGEAC",
-      "parametres": {
-        "pH": {
-          "valeur": 7.48,
-          "unite": "pH",
-          "color": "#10b981",
-          "date": "2024-11-25",
-          "realtime": false
-        },
-        "O2 saturation": {
-          "valeur": 99.4,
-          "unite": "%",
-          "color": "#10b981",
-          "date": "2024-11-25",
-          "realtime": false
-        },
-        "MES": {
-          "valeur": 77.3,
-          "unite": "mg/L",
-          "color": "#ef4444",
-          "date": "2024-11-25",
-          "realtime": false
-        },
-        "Ammonium": {
-          "valeur": 4.4,
-          "unite": "mg/L",
-          "color": "#ef4444",
-          "date": "2024-11-25",
-          "realtime": false
-        },
-        "Phosphore": {
-          "valeur": 0.01,
-          "unite": "mg/L",
-          "color": "#10b981",
-          "date": "2024-11-25",
-          "realtime": false
-        },
-        "Nitrates": {
-          "valeur": 3.8,
-          "unite": "mg/L",
-          "color": "#10b981",
-          "date": "2024-11-25",
-          "realtime": false
-        },
-        "Conductivité": {
-          "valeur": 11.2,
-          "unite": "µS/cm",
-          "color": "#10b981",
-          "date": "2024-11-25",
-          "realtime": false
-        },
-        "Temp. eau": {
-          "valeur": 7.7,
-          "unite": "°C",
-          "color": "#10b981",
-          "date": "2024-11-25",
-          "realtime": false
-        }
-      },
-      "historique": {
-        "pH": [
-          {
-            "date": "2024-11-25",
-            "valeur": 7.48,
-            "color": "#10b981"
-          }
-        ],
-        "O2 saturation": [
-          {
-            "date": "2024-11-25",
-            "valeur": 99.4,
-            "color": "#10b981"
-          }
-        ],
-        "MES": [
-          {
-            "date": "2024-11-25",
-            "valeur": 77.3,
-            "color": "#ef4444"
-          }
-        ],
-        "Ammonium": [
-          {
-            "date": "2024-11-25",
-            "valeur": 4.4,
-            "color": "#ef4444"
-          }
-        ],
-        "Phosphore": [
-          {
-            "date": "2024-11-25",
-            "valeur": 0.01,
-            "color": "#10b981"
-          }
-        ],
-        "Nitrates": [
-          {
-            "date": "2024-11-25",
-            "valeur": 3.8,
-            "color": "#10b981"
-          }
-        ],
-        "Conductivité": [
-          {
-            "date": "2024-11-25",
-            "valeur": 11.2,
-            "color": "#10b981"
-          }
-        ],
-        "Temp. eau": [
-          {
-            "date": "2024-11-25",
-            "valeur": 7.7,
-            "color": "#10b981"
-          }
-        ]
-      },
-      "score": 75,
-      "score_color": "#f59e0b",
-      "score_label": "Moyenne"
     }
   ],
   "nappes": [
+    {
+      "nom": "Cohade",
+      "libelle": "Puits Du Gray (Cohade - 43)",
+      "masse_eau": "Alluvions de l'Allier amont",
+      "profondeur": 9.88,
+      "dept": "43",
+      "code_bss": "07662X0278/45B-03",
+      "current": 406.079,
+      "history": [
+        406.023,
+        406.029,
+        406.034,
+        406.048,
+        406.071,
+        406.098,
+        406.053,
+        406.053,
+        406.06,
+        406.081,
+        406.099,
+        406.099,
+        406.097,
+        406.079
+      ],
+      "year_ago": 405.99,
+      "lat": 45.354627,
+      "lng": 3.358466,
+      "color": "#3b82f6"
+    },
     {
       "nom": "Cohade",
       "libelle": "Puits Des Crozes (Cohade - 43)",
@@ -44122,7 +44025,7 @@
         406.093,
         406.092
       ],
-      "year_ago": 405.94,
+      "year_ago": 405.95,
       "lat": 45.355638,
       "lng": 3.362851,
       "color": "#3b82f6"
@@ -44134,10 +44037,8 @@
       "profondeur": 9.43,
       "dept": "43",
       "code_bss": "07662X0277/45B-01",
-      "current": 406.524,
+      "current": 406.499,
       "history": [
-        406.495,
-        406.489,
         406.524,
         406.618,
         406.656,
@@ -44149,41 +44050,14 @@
         406.567,
         406.555,
         406.541,
-        406.524
+        406.524,
+        406.51,
+        406.499
       ],
-      "year_ago": 406.48,
+      "year_ago": 406.5,
       "lat": 45.357221793,
       "lng": 3.367729971,
-      "color": "#3b82f6"
-    },
-    {
-      "nom": "Cohade",
-      "libelle": "Puits Du Gray (Cohade - 43)",
-      "masse_eau": "Alluvions de l'Allier amont",
-      "profondeur": 9.88,
-      "dept": "43",
-      "code_bss": "07662X0278/45B-03",
-      "current": 406.099,
-      "history": [
-        405.976,
-        406,
-        406.023,
-        406.029,
-        406.034,
-        406.048,
-        406.071,
-        406.098,
-        406.053,
-        406.053,
-        406.06,
-        406.081,
-        406.099,
-        406.099
-      ],
-      "year_ago": 406.01,
-      "lat": 45.354627,
-      "lng": 3.358466,
-      "color": "#3b82f6"
+      "color": "#ef4444"
     },
     {
       "nom": "Chaspuzac",
@@ -44209,7 +44083,7 @@
         863.696,
         863.685
       ],
-      "year_ago": 862.71,
+      "year_ago": 862.68,
       "lat": 45.060946408,
       "lng": 3.761689363,
       "color": "#3b82f6"
@@ -44221,10 +44095,8 @@
       "profondeur": 48.0,
       "dept": "43",
       "code_bss": "08163X0019/PONT",
-      "current": 1200.666,
+      "current": 1200.678,
       "history": [
-        1200.638,
-        1200.644,
         1200.649,
         1200.648,
         1200.646,
@@ -44236,12 +44108,14 @@
         1200.654,
         1200.653,
         1200.66,
-        1200.666
+        1200.666,
+        1200.675,
+        1200.678
       ],
       "year_ago": 1200.67,
       "lat": 44.975693366,
       "lng": 4.144625431,
-      "color": "#ef4444"
+      "color": "#3b82f6"
     },
     {
       "nom": "Saugues",
@@ -44250,10 +44124,8 @@
       "profondeur": 8.1,
       "dept": "43",
       "code_bss": "08144X0010/PUITS",
-      "current": 956.78,
+      "current": 956.8,
       "history": [
-        956.12,
-        956.18,
         956.29,
         956.38,
         956.46,
@@ -44265,41 +44137,14 @@
         956.7,
         956.73,
         956.75,
-        956.78
+        956.78,
+        956.79,
+        956.8
       ],
-      "year_ago": 956.06,
+      "year_ago": 956.12,
       "lat": 44.963175124,
       "lng": 3.547527986,
       "color": "#3b82f6"
-    },
-    {
-      "nom": "Céaux-d'Allègre",
-      "libelle": "Pz Mont Bar - Pinet (Ceaux D'Allegre - 43)",
-      "masse_eau": "",
-      "profondeur": 56.0,
-      "dept": "43",
-      "code_bss": "BSS004RHWG/X",
-      "current": 895.69,
-      "history": [
-        895.557,
-        895.583,
-        895.551,
-        895.539,
-        895.536,
-        895.554,
-        895.599,
-        895.658,
-        895.59,
-        895.584,
-        895.594,
-        895.64,
-        895.678,
-        895.69
-      ],
-      "year_ago": 895.81,
-      "lat": 45.186985457,
-      "lng": 3.73136582,
-      "color": "#ef4444"
     },
     {
       "nom": "Solignac-sur-Loire",
@@ -44308,10 +44153,8 @@
       "profondeur": null,
       "dept": "43",
       "code_bss": "BSS004QTWA/X",
-      "current": 897.618,
+      "current": 897.604,
       "history": [
-        897.603,
-        897.613,
         897.593,
         897.588,
         897.587,
@@ -44323,19 +44166,50 @@
         897.593,
         897.607,
         897.621,
-        897.618
+        897.618,
+        897.619,
+        897.604
       ],
       "year_ago": 897.6,
       "lat": 44.942192767,
       "lng": 3.875010316,
       "color": "#3b82f6"
+    },
+    {
+      "nom": "Céaux-d'Allègre",
+      "libelle": "Pz Mont Bar - Pinet (Ceaux D'Allegre - 43)",
+      "masse_eau": "",
+      "profondeur": 56.0,
+      "dept": "43",
+      "code_bss": "BSS004RHWG/X",
+      "current": 895.659,
+      "history": [
+        895.551,
+        895.539,
+        895.536,
+        895.554,
+        895.599,
+        895.658,
+        895.59,
+        895.584,
+        895.594,
+        895.64,
+        895.678,
+        895.69,
+        895.685,
+        895.659
+      ],
+      "year_ago": 895.81,
+      "lat": 45.186985457,
+      "lng": 3.73136582,
+      "color": "#ef4444"
     }
   ],
   "air": [
     {
-      "zone": "Saint-Vert",
+      "zone": "Saint-Georges-d'Aurac",
       "dept": "43",
-      "date": "2026-11-27",
+      "date": "2026-11-28",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -44369,9 +44243,9 @@
       }
     },
     {
-      "zone": "Saint-Victor-Malescours",
+      "zone": "Saint-Geneys-près-Saint-Paulien",
       "dept": "43",
-      "date": "2026-11-27",
+      "date": "2026-11-28",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -44405,9 +44279,9 @@
       }
     },
     {
-      "zone": "Saint-Victor-sur-Arlanc",
+      "zone": "Saint-Front",
       "dept": "43",
-      "date": "2026-11-27",
+      "date": "2026-11-28",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -44441,9 +44315,9 @@
       }
     },
     {
-      "zone": "Saint-Vidal",
+      "zone": "Sainte-Florine",
       "dept": "43",
-      "date": "2026-11-27",
+      "date": "2026-11-28",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -44455,9 +44329,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM10": {
           "indice": 1,
@@ -44465,9 +44339,9 @@
           "color": "#10b981"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
@@ -44477,18 +44351,18 @@
       }
     },
     {
-      "zone": "Saint-Vincent",
+      "zone": "Saint-Ferréol-d'Auroure",
       "dept": "43",
-      "date": "2026-11-27",
+      "date": "2026-11-28",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "O₃": {
           "indice": 2,
@@ -44501,9 +44375,9 @@
           "color": "#10b981"
         },
         "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
