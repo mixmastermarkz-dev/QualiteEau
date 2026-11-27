@@ -3,7 +3,7 @@
   "nom": "Territoire de Belfort",
   "slug": "territoire-de-belfort",
   "region": "Bourgogne-Franche-Comté",
-  "updated": "26/11/2026 à 20:24",
+  "updated": "27/11/2026 à 20:19",
   "score_eau": 98,
   "nb_communes": 100,
   "potable": [
@@ -23340,45 +23340,14 @@
   ],
   "nappes": [
     {
-      "nom": "Florimont",
-      "libelle": "Forage Communal (Florimont-90)",
-      "masse_eau": "Cailloutis du Sundgau dans BV du Doubs",
-      "profondeur": 34.0,
-      "dept": "90",
-      "code_bss": "04447X0028/S",
-      "current": 380.331,
-      "history": [
-        380.341,
-        380.337,
-        380.337,
-        380.33,
-        380.341,
-        380.349,
-        380.335,
-        380.329,
-        380.33,
-        380.334,
-        380.341,
-        380.342,
-        380.335,
-        380.331
-      ],
-      "year_ago": 380.35,
-      "lat": 47.542387181,
-      "lng": 7.055132727,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Valdoie",
       "libelle": "Forage Communal (Valdoie-90)",
       "masse_eau": "Alluvions de la Savoureuse",
       "profondeur": null,
       "dept": "90",
       "code_bss": "04434X0089/P",
-      "current": 383.454,
+      "current": 383.448,
       "history": [
-        383.473,
-        383.476,
         383.481,
         383.481,
         383.472,
@@ -23390,11 +23359,42 @@
         383.469,
         383.463,
         383.459,
-        383.454
+        383.454,
+        383.449,
+        383.448
       ],
-      "year_ago": 383.47,
+      "year_ago": 383.46,
       "lat": 47.675931312,
       "lng": 6.836792836,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Florimont",
+      "libelle": "Forage Communal (Florimont-90)",
+      "masse_eau": "Cailloutis du Sundgau dans BV du Doubs",
+      "profondeur": 34.0,
+      "dept": "90",
+      "code_bss": "04447X0028/S",
+      "current": 380.329,
+      "history": [
+        380.337,
+        380.33,
+        380.341,
+        380.349,
+        380.335,
+        380.329,
+        380.33,
+        380.334,
+        380.341,
+        380.342,
+        380.335,
+        380.331,
+        380.328,
+        380.329
+      ],
+      "year_ago": 380.35,
+      "lat": 47.542387181,
+      "lng": 7.055132727,
       "color": "#ef4444"
     }
   ],
@@ -23402,10 +23402,10 @@
     {
       "zone": "Vézelois",
       "dept": "90",
-      "date": "2026-11-28",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-11-29",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -23424,9 +23424,9 @@
           "color": "#eab308"
         },
         "PM2.5": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "SO₂": {
           "indice": 0,
@@ -23438,10 +23438,10 @@
     {
       "zone": "Vétrigne",
       "dept": "90",
-      "date": "2026-11-28",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-11-29",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -23450,9 +23450,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 2,
@@ -23460,9 +23460,9 @@
           "color": "#eab308"
         },
         "PM2.5": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "SO₂": {
           "indice": 0,
@@ -23472,12 +23472,12 @@
       }
     },
     {
-      "zone": "Vellescot",
+      "zone": "Valdoie",
       "dept": "90",
-      "date": "2026-11-28",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-11-29",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -23486,9 +23486,9 @@
           "color": "#10b981"
         },
         "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "PM10": {
           "indice": 2,
@@ -23496,45 +23496,9 @@
           "color": "#eab308"
         },
         "PM2.5": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Vauthiermont",
-      "dept": "90",
-      "date": "2026-11-28",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
-      "source": "ATMO Bourgogne-Franche-Comté",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "SO₂": {
           "indice": 0,
@@ -23546,10 +23510,46 @@
     {
       "zone": "Urcerey",
       "dept": "90",
-      "date": "2026-11-28",
-      "indice": 3,
-      "label": "Dégradé",
-      "color": "#f0e641",
+      "date": "2026-11-29",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
+      "source": "ATMO Bourgogne-Franche-Comté",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Trétudans",
+      "dept": "90",
+      "date": "2026-11-29",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#ff5050",
       "source": "ATMO Bourgogne-Franche-Comté",
       "polluants": {
         "NO₂": {
@@ -23568,9 +23568,9 @@
           "color": "#eab308"
         },
         "PM2.5": {
-          "indice": 3,
-          "label": "Dégradé",
-          "color": "#f59e0b"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "SO₂": {
           "indice": 0,

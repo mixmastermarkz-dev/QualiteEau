@@ -3,7 +3,7 @@
   "nom": "Morbihan",
   "slug": "morbihan",
   "region": "Bretagne",
-  "updated": "26/11/2026 à 20:24",
+  "updated": "27/11/2026 à 20:19",
   "score_eau": 98,
   "nb_communes": 250,
   "potable": [
@@ -38906,22 +38906,12 @@
             "date": "2024-12-31",
             "valeur": 7.3,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-11-26",
-            "valeur": 7.4,
-            "color": "#10b981"
           }
         ],
         "Phosphore": [
           {
             "date": "2024-12-31",
             "valeur": 0.21068,
-            "color": "#f59e0b"
-          },
-          {
-            "date": "2024-11-26",
-            "valeur": 0.229,
             "color": "#f59e0b"
           }
         ],
@@ -38930,11 +38920,6 @@
             "date": "2024-12-31",
             "valeur": 7.0,
             "color": "#ef4444"
-          },
-          {
-            "date": "2024-11-26",
-            "valeur": 7.8,
-            "color": "#ef4444"
           }
         ],
         "Nitrates": [
@@ -38942,22 +38927,12 @@
             "date": "2024-12-31",
             "valeur": 24.0,
             "color": "#f59e0b"
-          },
-          {
-            "date": "2024-11-26",
-            "valeur": 21.0,
-            "color": "#f59e0b"
           }
         ],
         "MES": [
           {
             "date": "2024-12-31",
             "valeur": 305.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-11-26",
-            "valeur": 355.0,
             "color": "#ef4444"
           }
         ]
@@ -39291,32 +39266,32 @@
   ],
   "nappes": [
     {
-      "nom": "Bieuzy",
-      "libelle": "Piézomètre De Saint Samson (Bieuzy - 56)",
-      "masse_eau": "Bassin versant du Blavet",
-      "profondeur": 29.0,
+      "nom": "Guer",
+      "libelle": "Piézomètre De La Telhaie (Guer - 56)",
+      "masse_eau": "Bassin versant de la Vilaine",
+      "profondeur": 47.0,
       "dept": "56",
-      "code_bss": "03493X0013/F",
-      "current": 150.28,
+      "code_bss": "03871X0016/F",
+      "current": 63.037,
       "history": [
-        150.16,
-        150.17,
-        150.16,
-        150.16,
-        150.15,
-        150.17,
-        150.23,
-        150.28,
-        150.31,
-        150.31,
-        150.31,
-        150.31,
-        150.29,
-        150.28
+        62.757,
+        62.775,
+        62.791,
+        62.815,
+        62.836,
+        62.864,
+        62.886,
+        62.92,
+        62.944,
+        62.971,
+        62.983,
+        63.003,
+        63.017,
+        63.037
       ],
-      "year_ago": 151.83,
-      "lat": 48.007676499,
-      "lng": -3.032407561,
+      "year_ago": 63.44,
+      "lat": 47.855734114,
+      "lng": -2.132246015,
       "color": "#ef4444"
     },
     {
@@ -39326,10 +39301,8 @@
       "profondeur": 45.0,
       "dept": "56",
       "code_bss": "03851X0021/S2",
-      "current": 70.185,
+      "current": 70.174,
       "history": [
-        70.065,
-        70.075,
         70.073,
         70.077,
         70.082,
@@ -39341,7 +39314,9 @@
         70.216,
         70.209,
         70.191,
-        70.185
+        70.185,
+        70.177,
+        70.174
       ],
       "year_ago": 70.28,
       "lat": 47.790161061,
@@ -39355,10 +39330,8 @@
       "profondeur": 28.0,
       "dept": "56",
       "code_bss": "04184X0035/F",
-      "current": 45.03,
+      "current": 44.98,
       "history": [
-        42.66,
-        42.89,
         43.02,
         43.1,
         43.17,
@@ -39370,98 +39343,42 @@
         45.08,
         45.09,
         45.05,
-        45.03
+        45.03,
+        45.01,
+        44.98
       ],
-      "year_ago": 43.03,
+      "year_ago": 43.1,
       "lat": 47.686307481,
       "lng": -2.206149523,
       "color": "#3b82f6"
     },
     {
-      "nom": "Guer",
-      "libelle": "Piézomètre De La Telhaie (Guer - 56)",
-      "masse_eau": "Bassin versant de la Vilaine",
-      "profondeur": 47.0,
-      "dept": "56",
-      "code_bss": "03871X0016/F",
-      "current": 63.003,
-      "history": [
-        62.73,
-        62.747,
-        62.757,
-        62.775,
-        62.791,
-        62.815,
-        62.836,
-        62.864,
-        62.886,
-        62.92,
-        62.944,
-        62.971,
-        62.983,
-        63.003
-      ],
-      "year_ago": 63.42,
-      "lat": 47.855734114,
-      "lng": -2.132246015,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Ploërdut",
-      "libelle": "Piézomètre De Barac'H (Ploërdut -56)",
-      "masse_eau": "Bassin versant de la Laïta",
-      "profondeur": 51.0,
-      "dept": "56",
-      "code_bss": "03128X0011/F",
-      "current": 194.38,
-      "history": [
-        194.3,
-        194.3,
-        194.29,
-        194.31,
-        194.32,
-        194.33,
-        194.32,
-        194.34,
-        194.35,
-        194.37,
-        194.38,
-        194.39,
-        194.37,
-        194.38
-      ],
-      "year_ago": 196.13,
-      "lat": 48.089265719,
-      "lng": -3.276192963,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Baud",
-      "libelle": "Piézomètre Du Parc Du Scaouet (Baud - 56)",
+      "nom": "Bieuzy",
+      "libelle": "Piézomètre De Saint Samson (Bieuzy - 56)",
       "masse_eau": "Bassin versant du Blavet",
-      "profondeur": 43.0,
+      "profondeur": 29.0,
       "dept": "56",
-      "code_bss": "03843X0021/PZ",
-      "current": 57.77,
+      "code_bss": "03493X0013/F",
+      "current": 150.26,
       "history": [
-        57.64,
-        57.66,
-        57.66,
-        57.68,
-        57.69,
-        57.71,
-        57.71,
-        57.74,
-        57.74,
-        57.77,
-        57.77,
-        57.78,
-        57.76,
-        57.77
+        150.16,
+        150.16,
+        150.15,
+        150.17,
+        150.23,
+        150.28,
+        150.31,
+        150.31,
+        150.31,
+        150.31,
+        150.29,
+        150.28,
+        150.27,
+        150.26
       ],
-      "year_ago": 57.82,
-      "lat": 47.870106727,
-      "lng": -3.013942635,
+      "year_ago": 151.84,
+      "lat": 48.007676499,
+      "lng": -3.032407561,
       "color": "#ef4444"
     },
     {
@@ -39471,10 +39388,8 @@
       "profondeur": 34.0,
       "dept": "56",
       "code_bss": "BSS003DJYA/X",
-      "current": 12.57,
+      "current": 12.56,
       "history": [
-        12.2,
-        12.23,
         12.24,
         12.27,
         12.29,
@@ -39486,40 +39401,13 @@
         12.56,
         12.59,
         12.56,
-        12.57
+        12.57,
+        12.56,
+        12.56
       ],
-      "year_ago": 13.55,
+      "year_ago": 13.61,
       "lat": 47.640548391,
       "lng": -2.626853854,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Pontivy",
-      "libelle": "Piézomètre Du Gros Chene (Pontivy -56)",
-      "masse_eau": "Bassin versant du Blavet",
-      "profondeur": 31.0,
-      "dept": "56",
-      "code_bss": "03137X0026/PZ",
-      "current": 62.69,
-      "history": [
-        62.51,
-        62.55,
-        62.56,
-        62.57,
-        62.59,
-        62.64,
-        62.7,
-        62.73,
-        62.74,
-        62.73,
-        62.72,
-        62.71,
-        62.7,
-        62.69
-      ],
-      "year_ago": 63.33,
-      "lat": 48.082758634,
-      "lng": -2.978267016,
       "color": "#ef4444"
     },
     {
@@ -39529,10 +39417,8 @@
       "profondeur": 35.0,
       "dept": "56",
       "code_bss": "03506X0059/F",
-      "current": 86.231,
+      "current": 86.228,
       "history": [
-        86.244,
-        86.241,
         86.234,
         86.237,
         86.235,
@@ -39544,11 +39430,71 @@
         86.234,
         86.236,
         86.229,
-        86.231
+        86.231,
+        86.224,
+        86.228
       ],
-      "year_ago": 86.25,
+      "year_ago": 86.26,
       "lat": 47.889562712,
       "lng": -2.733114748,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Baud",
+      "libelle": "Piézomètre Du Parc Du Scaouet (Baud - 56)",
+      "masse_eau": "Bassin versant du Blavet",
+      "profondeur": 43.0,
+      "dept": "56",
+      "code_bss": "03843X0021/PZ",
+      "current": 57.76,
+      "history": [
+        57.66,
+        57.68,
+        57.69,
+        57.71,
+        57.71,
+        57.74,
+        57.74,
+        57.77,
+        57.77,
+        57.78,
+        57.76,
+        57.77,
+        57.75,
+        57.76
+      ],
+      "year_ago": 57.83,
+      "lat": 47.870106727,
+      "lng": -3.013942635,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Pontivy",
+      "libelle": "Piézomètre Du Gros Chene (Pontivy -56)",
+      "masse_eau": "Bassin versant du Blavet",
+      "profondeur": 31.0,
+      "dept": "56",
+      "code_bss": "03137X0026/PZ",
+      "current": 62.68,
+      "history": [
+        62.56,
+        62.57,
+        62.59,
+        62.64,
+        62.7,
+        62.73,
+        62.74,
+        62.73,
+        62.72,
+        62.71,
+        62.7,
+        62.69,
+        62.69,
+        62.68
+      ],
+      "year_ago": 63.35,
+      "lat": 48.082758634,
+      "lng": -2.978267016,
       "color": "#ef4444"
     },
     {
@@ -39558,10 +39504,8 @@
       "profondeur": 40.0,
       "dept": "56",
       "code_bss": "03516X0036/PZ",
-      "current": 53.14,
+      "current": 53.17,
       "history": [
-        51.82,
-        51.98,
         52.1,
         52.19,
         52.29,
@@ -39573,41 +39517,14 @@
         53.02,
         53.09,
         53.13,
-        53.14
+        53.14,
+        53.16,
+        53.17
       ],
-      "year_ago": 53.61,
+      "year_ago": 53.75,
       "lat": 47.950873394,
       "lng": -2.397366377,
       "color": "#ef4444"
-    },
-    {
-      "nom": "Hennebont",
-      "libelle": "Piézomètre De Kerbillan (Hennebont - 56)",
-      "masse_eau": "Bassin versant du Blavet",
-      "profondeur": 61.0,
-      "dept": "56",
-      "code_bss": "03834X0049/PZ",
-      "current": 24.15,
-      "history": [
-        24.246,
-        24.312,
-        24.322,
-        24.268,
-        24.252,
-        24.318,
-        24.388,
-        24.41,
-        24.394,
-        24.366,
-        24.322,
-        24.278,
-        24.262,
-        24.15
-      ],
-      "year_ago": 24.05,
-      "lat": 47.804937076,
-      "lng": -3.270288833,
-      "color": "#3b82f6"
     },
     {
       "nom": "Missiriac",
@@ -39616,10 +39533,8 @@
       "profondeur": 10.0,
       "dept": "56",
       "code_bss": "03862X0057/PZ",
-      "current": 18.836,
+      "current": 18.83,
       "history": [
-        18.821,
-        18.817,
         18.808,
         18.807,
         18.809,
@@ -39631,11 +39546,71 @@
         18.843,
         18.848,
         18.84,
-        18.836
+        18.836,
+        18.833,
+        18.83
       ],
-      "year_ago": 19.02,
+      "year_ago": 19.03,
       "lat": 47.813252006,
       "lng": -2.360646754,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Hennebont",
+      "libelle": "Piézomètre De Kerbillan (Hennebont - 56)",
+      "masse_eau": "Bassin versant du Blavet",
+      "profondeur": 61.0,
+      "dept": "56",
+      "code_bss": "03834X0049/PZ",
+      "current": 24.03,
+      "history": [
+        24.322,
+        24.268,
+        24.252,
+        24.318,
+        24.388,
+        24.41,
+        24.394,
+        24.366,
+        24.322,
+        24.278,
+        24.262,
+        24.15,
+        24.1,
+        24.03
+      ],
+      "year_ago": 23.97,
+      "lat": 47.804937076,
+      "lng": -3.270288833,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Ploërdut",
+      "libelle": "Piézomètre De Barac'H (Ploërdut -56)",
+      "masse_eau": "Bassin versant de la Laïta",
+      "profondeur": 51.0,
+      "dept": "56",
+      "code_bss": "03128X0011/F",
+      "current": 194.38,
+      "history": [
+        194.29,
+        194.31,
+        194.32,
+        194.33,
+        194.32,
+        194.34,
+        194.35,
+        194.37,
+        194.38,
+        194.39,
+        194.37,
+        194.38,
+        194.38,
+        194.38
+      ],
+      "year_ago": 196.18,
+      "lat": 48.089265719,
+      "lng": -3.276192963,
       "color": "#ef4444"
     }
   ],

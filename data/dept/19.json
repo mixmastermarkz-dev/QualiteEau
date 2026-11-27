@@ -3,7 +3,7 @@
   "nom": "Corrèze",
   "slug": "correze",
   "region": "Nouvelle-Aquitaine",
-  "updated": "26/11/2026 à 20:24",
+  "updated": "27/11/2026 à 20:19",
   "score_eau": 96,
   "nb_communes": 283,
   "potable": [
@@ -3238,7 +3238,7 @@
       "nom": "COURTINE (LA)",
       "dept": "19",
       "insee": "23067",
-      "restric": "Alerte",
+      "restric": "Aucune",
       "origine": "Nappe ou captage local",
       "conclusion": "Eau d'alimentation conforme aux limites de qualité et non conforme aux références de qualité.",
       "parametres": {
@@ -37530,11 +37530,6 @@
             "date": "2025-02-05",
             "valeur": 0.05,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-11-26",
-            "valeur": 0.11,
-            "color": "#10b981"
           }
         ],
         "Ammonium": [
@@ -37552,11 +37547,6 @@
             "date": "2025-02-05",
             "valeur": 2.0,
             "color": "#f59e0b"
-          },
-          {
-            "date": "2024-11-26",
-            "valeur": 0.0,
-            "color": "#10b981"
           }
         ],
         "MES": [
@@ -37573,11 +37563,6 @@
           {
             "date": "2025-02-05",
             "valeur": 95.9,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-11-26",
-            "valeur": 90.9,
             "color": "#ef4444"
           }
         ],
@@ -37596,11 +37581,6 @@
             "date": "2025-02-05",
             "valeur": 7.2,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-11-26",
-            "valeur": 7.1,
-            "color": "#10b981"
           }
         ],
         "Nitrates": [
@@ -37618,11 +37598,6 @@
             "date": "2025-02-05",
             "valeur": 11.0,
             "color": "#f59e0b"
-          },
-          {
-            "date": "2024-11-26",
-            "valeur": 7.2,
-            "color": "#10b981"
           }
         ]
       },
@@ -49288,11 +49263,6 @@
             "date": "2025-03-06",
             "valeur": 47.4,
             "color": "#f59e0b"
-          },
-          {
-            "date": "2024-11-26",
-            "valeur": 48.5,
-            "color": "#f59e0b"
           }
         ],
         "Nitrates": [
@@ -49309,11 +49279,6 @@
           {
             "date": "2025-03-06",
             "valeur": 4.5,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-11-26",
-            "valeur": 2.5,
             "color": "#10b981"
           }
         ],
@@ -49332,11 +49297,6 @@
             "date": "2025-03-06",
             "valeur": 0.03,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-11-26",
-            "valeur": 0.07,
-            "color": "#10b981"
           }
         ],
         "Ammonium": [
@@ -49354,11 +49314,6 @@
             "date": "2025-03-06",
             "valeur": 2.0,
             "color": "#f59e0b"
-          },
-          {
-            "date": "2024-11-26",
-            "valeur": 5.8,
-            "color": "#ef4444"
           }
         ],
         "pH": [
@@ -49375,11 +49330,6 @@
           {
             "date": "2025-03-06",
             "valeur": 6.9,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-11-26",
-            "valeur": 7.0,
             "color": "#10b981"
           }
         ]
@@ -50805,45 +50755,14 @@
   ],
   "nappes": [
     {
-      "nom": "Chauffour-sur-Vell",
-      "libelle": "Chauffour Sur Vell - Cimetière",
-      "masse_eau": "Calcaires, dolomies et grès du Lias du bassin versant de la ",
-      "profondeur": 41.0,
-      "dept": "19",
-      "code_bss": "07857X0381/P1",
-      "current": 129.3,
-      "history": [
-        128.63,
-        128.78,
-        128.86,
-        128.93,
-        128.98,
-        129.04,
-        129.07,
-        129.12,
-        129.16,
-        129.21,
-        129.26,
-        129.3,
-        129.29,
-        129.3
-      ],
-      "year_ago": 130.89,
-      "lat": 45.019989282,
-      "lng": 1.665009351,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Saint-Martial-de-Gimel",
       "libelle": "Saint-Martial-De-Gimel - La Bitareloune",
       "masse_eau": "Socle amont des bassins versants de la Vézère et de la Corrè",
       "profondeur": 27.0,
       "dept": "19",
       "code_bss": "07621X0040/P1",
-      "current": 485.806,
+      "current": 485.835,
       "history": [
-        484.987,
-        485.059,
         485.157,
         485.266,
         485.356,
@@ -50855,69 +50774,42 @@
         485.729,
         485.762,
         485.789,
-        485.806
+        485.806,
+        485.82,
+        485.835
       ],
-      "year_ago": 487.99,
+      "year_ago": 488.01,
       "lat": 45.271475367,
       "lng": 1.865343086,
       "color": "#ef4444"
     },
     {
-      "nom": "Salon-la-Tour",
-      "libelle": "Salon-La-Tour - La Grènerie",
-      "masse_eau": "Socle aval des bassins versants de la Vézère et de la Corrèz",
-      "profondeur": 138.0,
+      "nom": "Chauffour-sur-Vell",
+      "libelle": "Chauffour Sur Vell - Cimetière",
+      "masse_eau": "Calcaires, dolomies et grès du Lias du bassin versant de la ",
+      "profondeur": 41.0,
       "dept": "19",
-      "code_bss": "07372X0048/F10",
-      "current": 390.487,
+      "code_bss": "07857X0381/P1",
+      "current": 129.29,
       "history": [
-        390.77,
-        390.717,
-        390.699,
-        390.76,
-        390.735,
-        390.711,
-        390.76,
-        390.728,
-        390.693,
-        390.647,
-        390.612,
-        390.568,
-        390.537,
-        390.487
+        128.86,
+        128.93,
+        128.98,
+        129.04,
+        129.07,
+        129.12,
+        129.16,
+        129.21,
+        129.26,
+        129.3,
+        129.29,
+        129.3,
+        129.31,
+        129.29
       ],
-      "year_ago": 390.87,
-      "lat": 45.529763866,
-      "lng": 1.538653482,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Donzenac",
-      "libelle": "Donzenac - Zac Des 3A",
-      "masse_eau": "Socle aval des bassins versants de la Vézère et de la Corrèz",
-      "profondeur": 51.0,
-      "dept": "19",
-      "code_bss": "07616X0141/P1",
-      "current": 337.463,
-      "history": [
-        336.914,
-        337.259,
-        337.472,
-        337.548,
-        337.51,
-        337.463,
-        337.644,
-        337.798,
-        337.788,
-        337.728,
-        337.66,
-        337.586,
-        337.535,
-        337.463
-      ],
-      "year_ago": 340.21,
-      "lat": 45.250492051,
-      "lng": 1.533373139,
+      "year_ago": 130.87,
+      "lat": 45.019989282,
+      "lng": 1.665009351,
       "color": "#ef4444"
     },
     {
@@ -50927,10 +50819,8 @@
       "profondeur": 6.0,
       "dept": "19",
       "code_bss": "07852X0072/P1",
-      "current": 116.28,
+      "current": 116.3,
       "history": [
-        115.59,
-        115.66,
         115.72,
         115.77,
         115.82,
@@ -50942,9 +50832,11 @@
         116.23,
         116.26,
         116.28,
-        116.28
+        116.28,
+        116.29,
+        116.3
       ],
-      "year_ago": 117.11,
+      "year_ago": 117.01,
       "lat": 45.172484699,
       "lng": 1.579128779,
       "color": "#ef4444"
@@ -50956,10 +50848,8 @@
       "profondeur": 59.0,
       "dept": "19",
       "code_bss": "07384X0043/P1",
-      "current": 603.18,
+      "current": 603.146,
       "history": [
-        603.13,
-        603.144,
         603.146,
         603.16,
         603.166,
@@ -50971,9 +50861,11 @@
         603.222,
         603.212,
         603.228,
-        603.18
+        603.18,
+        603.192,
+        603.146
       ],
-      "year_ago": 603.25,
+      "year_ago": 603.22,
       "lat": 45.470745471,
       "lng": 2.140250069,
       "color": "#ef4444"
@@ -50985,10 +50877,8 @@
       "profondeur": 13.0,
       "dept": "19",
       "code_bss": "07155X0016/P1",
-      "current": 759.674,
+      "current": 759.619,
       "history": [
-        760.013,
-        760.037,
         759.985,
         759.943,
         759.883,
@@ -51000,40 +50890,13 @@
         759.78,
         759.737,
         759.705,
-        759.674
+        759.674,
+        759.645,
+        759.619
       ],
-      "year_ago": 760.06,
+      "year_ago": 760.0,
       "lat": 45.600404292,
       "lng": 2.211360959,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Allassac",
-      "libelle": "Allassac - Les Rivières",
-      "masse_eau": "Grès du Permo-Trias du bassin de Brive",
-      "profondeur": 6.0,
-      "dept": "19",
-      "code_bss": "07615X0043/P1",
-      "current": 109.81,
-      "history": [
-        109.36,
-        109.42,
-        109.46,
-        109.48,
-        109.52,
-        109.55,
-        109.61,
-        109.7,
-        109.74,
-        109.78,
-        109.81,
-        109.81,
-        109.83,
-        109.81
-      ],
-      "year_ago": 110.59,
-      "lat": 45.2556214,
-      "lng": 1.459741395,
       "color": "#ef4444"
     },
     {
@@ -51043,12 +50906,8 @@
       "profondeur": 38.0,
       "dept": "19",
       "code_bss": "07844X0076/P1",
-      "current": 100.925,
+      "current": 100.908,
       "history": [
-        100.927,
-        100.94,
-        100.923,
-        100.918,
         100.914,
         100.912,
         100.921,
@@ -51058,40 +50917,73 @@
         100.911,
         100.914,
         100.926,
-        100.925
+        100.925,
+        100.927,
+        100.917,
+        100.917,
+        100.908
       ],
-      "year_ago": 101.06,
+      "year_ago": 101.07,
       "lat": 45.14181915,
       "lng": 1.373866719,
       "color": "#ef4444"
     },
     {
-      "nom": "Saint-Merd-les-Oussines",
-      "libelle": "Saint-Merd-Les-Oussines - Croix Des Abeilles",
-      "masse_eau": "Socle amont des bassins versants de la Vézère et de la Corrè",
-      "profondeur": 58.0,
+      "nom": "Salon-la-Tour",
+      "libelle": "Salon-La-Tour - La Grènerie",
+      "masse_eau": "Socle aval des bassins versants de la Vézère et de la Corrèz",
+      "profondeur": 138.0,
       "dept": "19",
-      "code_bss": "07143X0017/P1",
-      "current": 828.593,
+      "code_bss": "07372X0048/F10",
+      "current": 390.433,
       "history": [
-        828.085,
-        828.13,
-        828.193,
-        828.251,
-        828.304,
-        828.35,
-        828.392,
-        828.432,
-        828.473,
-        828.509,
-        828.539,
-        828.562,
-        828.581,
-        828.593
+        390.699,
+        390.76,
+        390.735,
+        390.711,
+        390.76,
+        390.728,
+        390.693,
+        390.647,
+        390.612,
+        390.568,
+        390.537,
+        390.487,
+        390.468,
+        390.433
       ],
-      "year_ago": 828.75,
-      "lat": 45.637829918,
-      "lng": 2.043334282,
+      "year_ago": 390.75,
+      "lat": 45.529763866,
+      "lng": 1.538653482,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Donzenac",
+      "libelle": "Donzenac - Zac Des 3A",
+      "masse_eau": "Socle aval des bassins versants de la Vézère et de la Corrèz",
+      "profondeur": 51.0,
+      "dept": "19",
+      "code_bss": "07616X0141/P1",
+      "current": 337.364,
+      "history": [
+        337.472,
+        337.548,
+        337.51,
+        337.463,
+        337.644,
+        337.798,
+        337.788,
+        337.728,
+        337.66,
+        337.586,
+        337.535,
+        337.463,
+        337.407,
+        337.364
+      ],
+      "year_ago": 339.72,
+      "lat": 45.250492051,
+      "lng": 1.533373139,
       "color": "#ef4444"
     },
     {
@@ -51101,10 +50993,8 @@
       "profondeur": 74.0,
       "dept": "19",
       "code_bss": "07853X0027/P1",
-      "current": 347.401,
+      "current": 347.275,
       "history": [
-        347.314,
-        347.133,
         347.011,
         346.975,
         347.156,
@@ -51116,40 +51006,13 @@
         347.417,
         347.462,
         347.506,
-        347.401
+        347.401,
+        347.342,
+        347.275
       ],
       "year_ago": 349.68,
       "lat": 45.093613954,
       "lng": 1.701614114,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Saint-Merd-les-Oussines",
-      "libelle": "Saint-Merd-Les-Oussines2 - Croix Des Abeilles",
-      "masse_eau": "Socle amont des bassins versants de la Vézère et de la Corrè",
-      "profondeur": 8.5,
-      "dept": "19",
-      "code_bss": "07143X0018/P2",
-      "current": 829.99,
-      "history": [
-        829.69,
-        830.01,
-        830.19,
-        830.19,
-        830.14,
-        830.11,
-        830.16,
-        830.23,
-        830.26,
-        830.21,
-        830.16,
-        830.11,
-        830.05,
-        829.99
-      ],
-      "year_ago": 830.3,
-      "lat": 45.637803029,
-      "lng": 2.0433729,
       "color": "#ef4444"
     },
     {
@@ -51159,10 +51022,8 @@
       "profondeur": 15.0,
       "dept": "19",
       "code_bss": "08101X0227/P1",
-      "current": 134.117,
+      "current": 134.14,
       "history": [
-        134.034,
-        134.036,
         134.041,
         134.045,
         134.049,
@@ -51174,11 +51035,71 @@
         134.087,
         134.097,
         134.107,
-        134.117
+        134.117,
+        134.129,
+        134.14
       ],
-      "year_ago": 134.97,
+      "year_ago": 135.01,
       "lat": 44.949940679,
       "lng": 1.844678072,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Saint-Merd-les-Oussines",
+      "libelle": "Saint-Merd-Les-Oussines2 - Croix Des Abeilles",
+      "masse_eau": "Socle amont des bassins versants de la Vézère et de la Corrè",
+      "profondeur": 8.5,
+      "dept": "19",
+      "code_bss": "07143X0018/P2",
+      "current": 829.88,
+      "history": [
+        830.19,
+        830.19,
+        830.14,
+        830.11,
+        830.16,
+        830.23,
+        830.26,
+        830.21,
+        830.16,
+        830.11,
+        830.05,
+        829.99,
+        829.93,
+        829.88
+      ],
+      "year_ago": 830.22,
+      "lat": 45.637803029,
+      "lng": 2.0433729,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Allassac",
+      "libelle": "Allassac - Les Rivières",
+      "masse_eau": "Grès du Permo-Trias du bassin de Brive",
+      "profondeur": 6.0,
+      "dept": "19",
+      "code_bss": "07615X0043/P1",
+      "current": 109.84,
+      "history": [
+        109.46,
+        109.48,
+        109.52,
+        109.55,
+        109.61,
+        109.7,
+        109.74,
+        109.78,
+        109.81,
+        109.81,
+        109.83,
+        109.81,
+        109.82,
+        109.84
+      ],
+      "year_ago": 110.57,
+      "lat": 45.2556214,
+      "lng": 1.459741395,
       "color": "#ef4444"
     },
     {
@@ -51188,10 +51109,8 @@
       "profondeur": 48.0,
       "dept": "19",
       "code_bss": "07387X0042/F9",
-      "current": 658.394,
+      "current": 658.374,
       "history": [
-        658.34,
-        658.365,
         658.384,
         658.407,
         658.405,
@@ -51203,19 +51122,50 @@
         658.424,
         658.418,
         658.407,
-        658.394
+        658.394,
+        658.383,
+        658.374
       ],
-      "year_ago": 658.56,
+      "year_ago": 658.54,
       "lat": 45.43142107,
       "lng": 2.027216442,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Saint-Merd-les-Oussines",
+      "libelle": "Saint-Merd-Les-Oussines - Croix Des Abeilles",
+      "masse_eau": "Socle amont des bassins versants de la Vézère et de la Corrè",
+      "profondeur": 58.0,
+      "dept": "19",
+      "code_bss": "07143X0017/P1",
+      "current": 828.607,
+      "history": [
+        828.193,
+        828.251,
+        828.304,
+        828.35,
+        828.392,
+        828.432,
+        828.473,
+        828.509,
+        828.539,
+        828.562,
+        828.581,
+        828.593,
+        828.602,
+        828.607
+      ],
+      "year_ago": 828.79,
+      "lat": 45.637829918,
+      "lng": 2.043334282,
       "color": "#ef4444"
     }
   ],
   "air": [
     {
-      "zone": "Meyssac",
+      "zone": "Moustier-Ventadour",
       "dept": "19",
-      "date": "2026-11-27",
+      "date": "2026-11-28",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -51249,9 +51199,9 @@
       }
     },
     {
-      "zone": "Saint-Pantaléon-de-Lapleau",
+      "zone": "Neuvic",
       "dept": "19",
-      "date": "2026-11-27",
+      "date": "2026-11-28",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -51285,9 +51235,45 @@
       }
     },
     {
-      "zone": "Saint-Martial-de-Gimel",
+      "zone": "Gourdon-Murat",
       "dept": "19",
-      "date": "2026-11-27",
+      "date": "2026-11-28",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Nouvelle-Aquitaine",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Lamazière-Basse",
+      "dept": "19",
+      "date": "2026-11-28",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -51321,45 +51307,9 @@
       }
     },
     {
-      "zone": "Le Pescher",
+      "zone": "Soudeilles",
       "dept": "19",
-      "date": "2026-11-27",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50ccaa",
-      "source": "Atmo Nouvelle-Aquitaine",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Sexcles",
-      "dept": "19",
-      "date": "2026-11-27",
+      "date": "2026-11-28",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",

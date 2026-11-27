@@ -3,7 +3,7 @@
   "nom": "Bas-Rhin",
   "slug": "bas-rhin",
   "region": "Grand Est",
-  "updated": "26/11/2026 à 20:24",
+  "updated": "27/11/2026 à 20:19",
   "score_eau": 98,
   "nb_communes": 514,
   "potable": [
@@ -35442,7 +35442,7 @@
         197.362,
         197.378
       ],
-      "year_ago": 197.92,
+      "year_ago": 197.87,
       "lat": 48.520713416,
       "lng": 7.415360799,
       "color": "#ef4444"
@@ -35454,10 +35454,8 @@
       "profondeur": 200.0,
       "dept": "67",
       "code_bss": "02332X0198/F3",
-      "current": 207.369,
+      "current": 206.904,
       "history": [
-        207.429,
-        207.402,
         207.409,
         207.371,
         207.383,
@@ -35469,19 +35467,57 @@
         207.381,
         207.276,
         207.376,
-        207.369
+        207.369,
+        207.375,
+        206.904
       ],
-      "year_ago": 207.13,
+      "year_ago": 207.15,
       "lat": 48.714388864,
       "lng": 7.311970754,
-      "color": "#3b82f6"
+      "color": "#ef4444"
     }
   ],
   "air": [
     {
-      "zone": "Retschwiller",
+      "zone": "Niedersoultzbach",
       "dept": "67",
-      "date": "2026-11-27",
+      "date": "2026-11-28",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
+      "source": "Atmo Grand Est",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Niedersteinbach",
+      "dept": "67",
+      "date": "2026-11-28",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -35515,12 +35551,12 @@
       }
     },
     {
-      "zone": "Reutenbourg",
+      "zone": "Nordheim",
       "dept": "67",
-      "date": "2026-11-27",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
+      "date": "2026-11-28",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#FF5050",
       "source": "Atmo Grand Est",
       "polluants": {
         "NO₂": {
@@ -35539,9 +35575,9 @@
           "color": "#eab308"
         },
         "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "SO₂": {
           "indice": 0,
@@ -35551,12 +35587,12 @@
       }
     },
     {
-      "zone": "Rexingen",
+      "zone": "Nordhouse",
       "dept": "67",
-      "date": "2026-11-27",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
+      "date": "2026-11-28",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#FF5050",
       "source": "Atmo Grand Est",
       "polluants": {
         "NO₂": {
@@ -35575,9 +35611,9 @@
           "color": "#eab308"
         },
         "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "SO₂": {
           "indice": 0,
@@ -35587,12 +35623,12 @@
       }
     },
     {
-      "zone": "Rhinau",
+      "zone": "Nothalten",
       "dept": "67",
-      "date": "2026-11-27",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
+      "date": "2026-11-28",
+      "indice": 4,
+      "label": "Mauvais",
+      "color": "#FF5050",
       "source": "Atmo Grand Est",
       "polluants": {
         "NO₂": {
@@ -35611,45 +35647,9 @@
           "color": "#eab308"
         },
         "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Richtolsheim",
-      "dept": "67",
-      "date": "2026-11-27",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo Grand Est",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 4,
+          "label": "Mauvais",
+          "color": "#f97316"
         },
         "SO₂": {
           "indice": 0,

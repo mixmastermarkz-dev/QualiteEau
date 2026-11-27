@@ -3,7 +3,7 @@
   "nom": "Haute-Corse",
   "slug": "haute-corse",
   "region": "Corse",
-  "updated": "26/11/2026 à 20:24",
+  "updated": "27/11/2026 à 20:19",
   "score_eau": 96,
   "nb_communes": 234,
   "potable": [
@@ -22143,11 +22143,6 @@
             "date": "2025-01-29",
             "valeur": 5.4,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-11-26",
-            "valeur": 6.8,
-            "color": "#10b981"
           }
         ],
         "MES": [
@@ -22164,11 +22159,6 @@
           {
             "date": "2025-01-29",
             "valeur": 682.0,
-            "color": "#ef4444"
-          },
-          {
-            "date": "2024-11-26",
-            "valeur": 756.0,
             "color": "#ef4444"
           }
         ],
@@ -22187,11 +22177,6 @@
             "date": "2025-01-29",
             "valeur": 11.8,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-11-26",
-            "valeur": 14.6,
-            "color": "#10b981"
           }
         ],
         "Conductivité": [
@@ -22208,11 +22193,6 @@
           {
             "date": "2025-01-29",
             "valeur": 10.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-11-26",
-            "valeur": 9.1,
             "color": "#10b981"
           }
         ],
@@ -22231,11 +22211,6 @@
             "date": "2025-01-29",
             "valeur": 91.93,
             "color": "#10b981"
-          },
-          {
-            "date": "2024-11-26",
-            "valeur": 90.0,
-            "color": "#10b981"
           }
         ],
         "pH": [
@@ -22252,11 +22227,6 @@
           {
             "date": "2025-01-29",
             "valeur": 8.0,
-            "color": "#10b981"
-          },
-          {
-            "date": "2024-11-26",
-            "valeur": 7.9,
             "color": "#10b981"
           }
         ],
@@ -22275,11 +22245,6 @@
             "date": "2025-01-29",
             "valeur": 2.3,
             "color": "#ef4444"
-          },
-          {
-            "date": "2024-11-26",
-            "valeur": 1.4,
-            "color": "#f59e0b"
           }
         ],
         "Phosphore": [
@@ -22297,11 +22262,6 @@
             "date": "2025-01-29",
             "valeur": 0.28,
             "color": "#f59e0b"
-          },
-          {
-            "date": "2024-11-26",
-            "valeur": 0.077,
-            "color": "#10b981"
           }
         ]
       },
@@ -25835,16 +25795,43 @@
   ],
   "nappes": [
     {
+      "nom": "Ventiseri",
+      "libelle": "Base Aérienne 126",
+      "masse_eau": "Alluvions des fleuves côtiers de la Plaine-Orientale (Alesan",
+      "profondeur": null,
+      "dept": "2B",
+      "code_bss": "11221X0152/PZ1",
+      "current": 4.038,
+      "history": [
+        4.15,
+        4.123,
+        4.099,
+        4.082,
+        4.076,
+        4.147,
+        4.106,
+        4.079,
+        4.061,
+        4.048,
+        4.031,
+        4.047,
+        4.06,
+        4.038
+      ],
+      "year_ago": 3.09,
+      "lat": 41.910449,
+      "lng": 9.402014,
+      "color": "#3b82f6"
+    },
+    {
       "nom": "Penta-di-Casinca",
       "libelle": "Penta Di Casinca",
       "masse_eau": "Alluvions de la Plaine de la Marana-Casinca (Bevinco, Golo, ",
       "profondeur": 20.0,
       "dept": "2B",
       "code_bss": "11112X0081/FIUM-A",
-      "current": 3.319,
+      "current": 3.309,
       "history": [
-        3.429,
-        3.422,
         3.411,
         3.399,
         3.385,
@@ -25856,41 +25843,14 @@
         3.315,
         3.299,
         3.307,
-        3.319
+        3.319,
+        3.32,
+        3.309
       ],
-      "year_ago": 3.34,
+      "year_ago": 3.39,
       "lat": 42.442072,
       "lng": 9.51989,
       "color": "#ef4444"
-    },
-    {
-      "nom": "Ventiseri",
-      "libelle": "Base Aérienne 126",
-      "masse_eau": "Alluvions des fleuves côtiers de la Plaine-Orientale (Alesan",
-      "profondeur": null,
-      "dept": "2B",
-      "code_bss": "11221X0152/PZ1",
-      "current": 4.048,
-      "history": [
-        4.117,
-        4.105,
-        4.244,
-        4.188,
-        4.15,
-        4.123,
-        4.099,
-        4.082,
-        4.076,
-        4.147,
-        4.106,
-        4.079,
-        4.061,
-        4.048
-      ],
-      "year_ago": 3.11,
-      "lat": 41.910449,
-      "lng": 9.402014,
-      "color": "#3b82f6"
     },
     {
       "nom": "Ghisonaccia",
@@ -25899,10 +25859,8 @@
       "profondeur": 12.0,
       "dept": "2B",
       "code_bss": "11195X0114/SP1",
-      "current": 7.1,
+      "current": 7.06,
       "history": [
-        7.26,
-        7.24,
         7.23,
         7.21,
         7.2,
@@ -25914,41 +25872,14 @@
         7.12,
         7.12,
         7.11,
-        7.1
+        7.1,
+        7.08,
+        7.06
       ],
       "year_ago": 7.24,
       "lat": 42.01868007,
       "lng": 9.392170104,
       "color": "#ef4444"
-    },
-    {
-      "nom": "Luri",
-      "libelle": "Luri",
-      "masse_eau": "Alluvions des fleuves côtiers de la Corse alpine (Aliso et P",
-      "profondeur": 6.9,
-      "dept": "2B",
-      "code_bss": "11028X0124/SEVERA",
-      "current": 2.642,
-      "history": [
-        2.828,
-        2.804,
-        2.788,
-        2.766,
-        2.753,
-        2.739,
-        2.73,
-        2.707,
-        2.684,
-        2.647,
-        2.613,
-        2.581,
-        2.56,
-        2.642
-      ],
-      "year_ago": 1.21,
-      "lat": 42.887295932,
-      "lng": 9.468460697,
-      "color": "#3b82f6"
     },
     {
       "nom": "Calvi",
@@ -25957,10 +25888,8 @@
       "profondeur": 18.0,
       "dept": "2B",
       "code_bss": "11056X0120/FIGA",
-      "current": 3.498,
+      "current": 3.558,
       "history": [
-        3.878,
-        3.659,
         3.558,
         3.502,
         3.46,
@@ -25972,12 +25901,43 @@
         3.436,
         3.408,
         3.385,
-        3.498
+        3.498,
+        3.616,
+        3.558
       ],
-      "year_ago": 3.52,
+      "year_ago": 3.41,
       "lat": 42.549214469,
       "lng": 8.788863876,
-      "color": "#ef4444"
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Luri",
+      "libelle": "Luri",
+      "masse_eau": "Alluvions des fleuves côtiers de la Corse alpine (Aliso et P",
+      "profondeur": 6.9,
+      "dept": "2B",
+      "code_bss": "11028X0124/SEVERA",
+      "current": 2.92,
+      "history": [
+        2.788,
+        2.766,
+        2.753,
+        2.739,
+        2.73,
+        2.707,
+        2.684,
+        2.647,
+        2.613,
+        2.581,
+        2.56,
+        2.642,
+        2.793,
+        2.92
+      ],
+      "year_ago": 1.19,
+      "lat": 42.887295932,
+      "lng": 9.468460697,
+      "color": "#3b82f6"
     },
     {
       "nom": "Corte",
@@ -25986,10 +25946,8 @@
       "profondeur": null,
       "dept": "2B",
       "code_bss": "11106X0027/SOURCE",
-      "current": 373.398,
+      "current": 373.462,
       "history": [
-        372.442,
-        372.124,
         372.06,
         371.885,
         371.837,
@@ -26001,69 +25959,13 @@
         372.872,
         373.111,
         373.239,
-        373.398
+        373.398,
+        373.446,
+        373.462
       ],
-      "year_ago": 391.28,
+      "year_ago": 391.03,
       "lat": 42.318551014,
       "lng": 9.150543915,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Palasca",
-      "libelle": "Palasca",
-      "masse_eau": "Alluvions des fleuves côtiers du nord-ouest de la Corse (Ost",
-      "profondeur": 16.2,
-      "dept": "2B",
-      "code_bss": "11061X0032/BELLE",
-      "current": 4.331,
-      "history": [
-        3.465,
-        3.522,
-        3.586,
-        3.646,
-        3.718,
-        3.787,
-        3.852,
-        3.917,
-        3.982,
-        4.051,
-        4.117,
-        4.196,
-        4.264,
-        4.331
-      ],
-      "year_ago": 3.18,
-      "lat": 42.646214016,
-      "lng": 9.075718892,
-      "color": "#3b82f6"
-    },
-    {
-      "nom": "Brando",
-      "libelle": "Source De La Glaciere Brando",
-      "masse_eau": "Formations métamorphiques du Cap-Corse et de l'Est de la Cor",
-      "profondeur": null,
-      "dept": "2B",
-      "code_bss": "11042X0120/BRAND",
-      "current": 49.704,
-      "history": [
-        49.689,
-        49.693,
-        49.698,
-        49.698,
-        49.699,
-        49.702,
-        49.7,
-        49.703,
-        49.705,
-        49.706,
-        49.707,
-        49.705,
-        49.705,
-        49.704
-      ],
-      "year_ago": 49.74,
-      "lat": 42.775125254,
-      "lng": 9.475412547,
       "color": "#ef4444"
     },
     {
@@ -26076,8 +25978,6 @@
       "current": 559.972,
       "history": [
         559.973,
-        559.974,
-        559.973,
         559.972,
         559.972,
         559.972,
@@ -26087,6 +25987,8 @@
         559.972,
         559.971,
         559.971,
+        559.972,
+        559.972,
         559.972,
         559.972
       ],
@@ -26096,62 +25998,62 @@
       "color": "#3b82f6"
     },
     {
-      "nom": "Linguizzetta",
-      "libelle": "Linguizetta",
-      "masse_eau": "Alluvions des fleuves côtiers de la Plaine-Orientale (Alesan",
-      "profondeur": 9.1,
+      "nom": "Brando",
+      "libelle": "Source De La Glaciere Brando",
+      "masse_eau": "Formations métamorphiques du Cap-Corse et de l'Est de la Cor",
+      "profondeur": null,
       "dept": "2B",
-      "code_bss": "11156X0009/BRAVON",
-      "current": 10.88,
+      "code_bss": "11042X0120/BRAND",
+      "current": 49.705,
       "history": [
-        10.93,
-        10.92,
-        10.91,
-        10.91,
-        10.9,
-        10.9,
-        10.89,
-        10.89,
-        10.88,
-        10.88,
-        10.88,
-        10.88,
-        10.87,
-        10.88
+        49.698,
+        49.698,
+        49.699,
+        49.702,
+        49.7,
+        49.703,
+        49.705,
+        49.706,
+        49.707,
+        49.705,
+        49.705,
+        49.704,
+        49.703,
+        49.705
       ],
-      "year_ago": 10.74,
-      "lat": 42.263982063,
-      "lng": 9.473112049,
-      "color": "#3b82f6"
+      "year_ago": 49.74,
+      "lat": 42.775125254,
+      "lng": 9.475412547,
+      "color": "#ef4444"
     },
     {
-      "nom": "Belgodère",
-      "libelle": "Belgodere",
+      "nom": "Palasca",
+      "libelle": "Palasca",
       "masse_eau": "Alluvions des fleuves côtiers du nord-ouest de la Corse (Ost",
-      "profondeur": 8.5,
+      "profondeur": 16.2,
       "dept": "2B",
-      "code_bss": "11061X0017/REGINO",
-      "current": 1.59,
+      "code_bss": "11061X0032/BELLE",
+      "current": 4.455,
       "history": [
-        1.622,
-        1.585,
-        1.581,
-        1.588,
-        1.595,
-        1.596,
-        1.583,
-        1.58,
-        1.582,
-        1.59,
-        1.587,
-        1.589,
-        1.594,
-        1.59
+        3.586,
+        3.646,
+        3.718,
+        3.787,
+        3.852,
+        3.917,
+        3.982,
+        4.051,
+        4.117,
+        4.196,
+        4.264,
+        4.331,
+        4.391,
+        4.455
       ],
-      "year_ago": 1.94,
-      "lat": 42.632768203,
-      "lng": 9.008753614,
-      "color": "#ef4444"
+      "year_ago": 3.18,
+      "lat": 42.646214016,
+      "lng": 9.075718892,
+      "color": "#3b82f6"
     },
     {
       "nom": "Ventiseri",
@@ -26160,10 +26062,8 @@
       "profondeur": 59.5,
       "dept": "2B",
       "code_bss": "11188X0151/ANTAL",
-      "current": 349.018,
+      "current": 349.012,
       "history": [
-        349.08,
-        349.06,
         349.048,
         349.04,
         349.032,
@@ -26175,12 +26075,72 @@
         349.022,
         349.023,
         349.02,
-        349.018
+        349.018,
+        349.016,
+        349.012
       ],
-      "year_ago": 348.25,
+      "year_ago": 348.34,
       "lat": 41.957373254,
       "lng": 9.338847383,
       "color": "#3b82f6"
+    },
+    {
+      "nom": "Linguizzetta",
+      "libelle": "Linguizetta",
+      "masse_eau": "Alluvions des fleuves côtiers de la Plaine-Orientale (Alesan",
+      "profondeur": 9.1,
+      "dept": "2B",
+      "code_bss": "11156X0009/BRAVON",
+      "current": 10.87,
+      "history": [
+        10.91,
+        10.91,
+        10.9,
+        10.9,
+        10.89,
+        10.89,
+        10.88,
+        10.88,
+        10.88,
+        10.88,
+        10.87,
+        10.88,
+        10.88,
+        10.87
+      ],
+      "year_ago": 10.79,
+      "lat": 42.263982063,
+      "lng": 9.473112049,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Oletta",
+      "libelle": "Oletta",
+      "masse_eau": "Alluvions des fleuves côtiers de la Corse alpine (Aliso et P",
+      "profondeur": 11.75,
+      "dept": "2B",
+      "code_bss": "11064X0013/ALISO",
+      "current": 5.41,
+      "history": [
+        5.39,
+        5.39,
+        5.39,
+        5.39,
+        5.39,
+        5.39,
+        5.39,
+        5.39,
+        5.39,
+        5.39,
+        5.39,
+        5.4,
+        5.4,
+        5.41
+      ],
+      "year_ago": 5.44,
+      "lat": 42.651455446,
+      "lng": 9.290128585,
+      "color": "#ef4444"
     },
     {
       "nom": "Pietroso",
@@ -26189,10 +26149,8 @@
       "profondeur": null,
       "dept": "2B",
       "code_bss": "11184X0122/BOLERO",
-      "current": 525.628,
+      "current": 525.629,
       "history": [
-        525.624,
-        525.624,
         525.626,
         525.627,
         525.628,
@@ -26204,11 +26162,42 @@
         525.629,
         525.629,
         525.629,
-        525.628
+        525.628,
+        525.628,
+        525.629
       ],
       "year_ago": 525.65,
       "lat": 42.156761633,
       "lng": 9.270312639,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Belgodère",
+      "libelle": "Belgodere",
+      "masse_eau": "Alluvions des fleuves côtiers du nord-ouest de la Corse (Ost",
+      "profondeur": 8.5,
+      "dept": "2B",
+      "code_bss": "11061X0017/REGINO",
+      "current": 1.591,
+      "history": [
+        1.581,
+        1.588,
+        1.595,
+        1.596,
+        1.583,
+        1.58,
+        1.582,
+        1.59,
+        1.587,
+        1.589,
+        1.594,
+        1.59,
+        1.6,
+        1.591
+      ],
+      "year_ago": 1.91,
+      "lat": 42.632768203,
+      "lng": 9.008753614,
       "color": "#ef4444"
     },
     {
@@ -26218,10 +26207,8 @@
       "profondeur": 19.3,
       "dept": "2B",
       "code_bss": "11071X0062/CASATO",
-      "current": 2.5,
+      "current": 2.493,
       "history": [
-        2.579,
-        2.54,
         2.579,
         2.527,
         2.563,
@@ -26233,40 +26220,42 @@
         2.485,
         2.463,
         2.504,
-        2.5
+        2.5,
+        2.526,
+        2.493
       ],
-      "year_ago": 2.51,
+      "year_ago": 2.54,
       "lat": 42.619037933,
       "lng": 9.445552504,
       "color": "#ef4444"
     },
     {
-      "nom": "Oletta",
-      "libelle": "Oletta",
+      "nom": "Meria",
+      "libelle": "Meria",
       "masse_eau": "Alluvions des fleuves côtiers de la Corse alpine (Aliso et P",
-      "profondeur": 11.75,
+      "profondeur": 7.97,
       "dept": "2B",
-      "code_bss": "11064X0013/ALISO",
-      "current": 5.4,
+      "code_bss": "11024X0113/PIEZO",
+      "current": 0.746,
       "history": [
-        5.39,
-        5.39,
-        5.39,
-        5.39,
-        5.39,
-        5.39,
-        5.39,
-        5.39,
-        5.39,
-        5.39,
-        5.39,
-        5.39,
-        5.39,
-        5.4
+        0.745,
+        0.741,
+        0.735,
+        0.732,
+        0.733,
+        0.729,
+        0.723,
+        0.717,
+        0.706,
+        0.704,
+        0.718,
+        0.732,
+        0.746,
+        0.746
       ],
-      "year_ago": 5.45,
-      "lat": 42.651455446,
-      "lng": 9.290128585,
+      "year_ago": 0.78,
+      "lat": 42.933483,
+      "lng": 9.460277,
       "color": "#ef4444"
     },
     {
@@ -26276,10 +26265,8 @@
       "profondeur": 11.9,
       "dept": "2B",
       "code_bss": "11038X0105/STRU",
-      "current": 1.883,
+      "current": 1.872,
       "history": [
-        1.991,
-        1.99,
         1.987,
         1.983,
         1.977,
@@ -26291,7 +26278,9 @@
         1.911,
         1.901,
         1.891,
-        1.883
+        1.883,
+        1.875,
+        1.872
       ],
       "year_ago": 2.44,
       "lat": 42.693983901,
@@ -26305,10 +26294,8 @@
       "profondeur": 25.0,
       "dept": "2B",
       "code_bss": "BSS004BHJB/X",
-      "current": 1.758,
+      "current": 1.735,
       "history": [
-        2.445,
-        2.916,
         2.731,
         2.48,
         2.266,
@@ -26320,9 +26307,11 @@
         2.028,
         1.926,
         1.834,
-        1.758
+        1.758,
+        1.723,
+        1.735
       ],
-      "year_ago": 1.24,
+      "year_ago": 1.15,
       "lat": 42.533497161,
       "lng": 9.487268362,
       "color": "#3b82f6"
@@ -26334,10 +26323,8 @@
       "profondeur": 17.3,
       "dept": "2B",
       "code_bss": "BSS003JOVM/X",
-      "current": 6.21,
+      "current": 6.29,
       "history": [
-        6.46,
-        6.3,
         6.22,
         6.18,
         6.14,
@@ -26349,69 +26336,13 @@
         6.09,
         6.07,
         6.05,
-        6.21
+        6.21,
+        6.36,
+        6.29
       ],
-      "year_ago": 6.28,
+      "year_ago": 6.14,
       "lat": 42.414529457,
       "lng": 8.677022423,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Meria",
-      "libelle": "Meria",
-      "masse_eau": "Alluvions des fleuves côtiers de la Corse alpine (Aliso et P",
-      "profondeur": 7.97,
-      "dept": "2B",
-      "code_bss": "11024X0113/PIEZO",
-      "current": 0.732,
-      "history": [
-        0.748,
-        0.749,
-        0.745,
-        0.741,
-        0.735,
-        0.732,
-        0.733,
-        0.729,
-        0.723,
-        0.717,
-        0.706,
-        0.704,
-        0.718,
-        0.732
-      ],
-      "year_ago": 0.79,
-      "lat": 42.933483,
-      "lng": 9.460277,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Ghisonaccia",
-      "libelle": "Piézo Brgm - Ghisonaccia",
-      "masse_eau": "Alluvions des fleuves côtiers de la Plaine-Orientale (Alesan",
-      "profondeur": 13.5,
-      "dept": "2B",
-      "code_bss": "BSS004CGXX/X",
-      "current": 7.007,
-      "history": [
-        7.17,
-        7.149,
-        7.136,
-        7.12,
-        7.107,
-        7.103,
-        7.097,
-        7.081,
-        7.062,
-        7.045,
-        7.036,
-        7.028,
-        7.021,
-        7.007
-      ],
-      "year_ago": 3.22,
-      "lat": 42.018640157,
-      "lng": 9.3923065,
       "color": "#3b82f6"
     },
     {
@@ -26421,10 +26352,8 @@
       "profondeur": 40.0,
       "dept": "2B",
       "code_bss": "BSS004KBHY/X",
-      "current": 9.977,
+      "current": 9.947,
       "history": [
-        9.945,
-        9.936,
         9.935,
         9.929,
         9.926,
@@ -26436,11 +26365,42 @@
         9.926,
         9.96,
         9.967,
-        9.977
+        9.977,
+        9.952,
+        9.947
       ],
-      "year_ago": 9.35,
+      "year_ago": 9.34,
       "lat": 42.22802,
       "lng": 9.52964,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Ghisonaccia",
+      "libelle": "Piézo Brgm - Ghisonaccia",
+      "masse_eau": "Alluvions des fleuves côtiers de la Plaine-Orientale (Alesan",
+      "profondeur": 13.5,
+      "dept": "2B",
+      "code_bss": "BSS004CGXX/X",
+      "current": 6.97,
+      "history": [
+        7.136,
+        7.12,
+        7.107,
+        7.103,
+        7.097,
+        7.081,
+        7.062,
+        7.045,
+        7.036,
+        7.028,
+        7.021,
+        7.007,
+        6.99,
+        6.97
+      ],
+      "year_ago": 3.23,
+      "lat": 42.018640157,
+      "lng": 9.3923065,
       "color": "#3b82f6"
     },
     {
@@ -26450,10 +26410,8 @@
       "profondeur": 49.5,
       "dept": "2B",
       "code_bss": "11072X0063/PZ",
-      "current": 3.203,
+      "current": 3.201,
       "history": [
-        3.381,
-        3.368,
         3.385,
         3.37,
         3.387,
@@ -26465,9 +26423,11 @@
         3.179,
         3.222,
         3.171,
-        3.203
+        3.203,
+        3.145,
+        3.201
       ],
-      "year_ago": 2.84,
+      "year_ago": 2.92,
       "lat": 42.61502,
       "lng": 9.44728,
       "color": "#3b82f6"
@@ -26477,7 +26437,7 @@
     {
       "zone": "Chisa",
       "dept": "2B",
-      "date": "2026-11-27",
+      "date": "2026-11-29",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -26513,7 +26473,7 @@
     {
       "zone": "San-Gavino-di-Fiumorbo",
       "dept": "2B",
-      "date": "2026-11-27",
+      "date": "2026-11-29",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -26549,7 +26509,7 @@
     {
       "zone": "Zuani",
       "dept": "2B",
-      "date": "2026-11-27",
+      "date": "2026-11-29",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -26585,7 +26545,7 @@
     {
       "zone": "Zilia",
       "dept": "2B",
-      "date": "2026-11-27",
+      "date": "2026-11-29",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -26621,7 +26581,7 @@
     {
       "zone": "Zalana",
       "dept": "2B",
-      "date": "2026-11-27",
+      "date": "2026-11-29",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",

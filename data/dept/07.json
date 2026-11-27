@@ -3,7 +3,7 @@
   "nom": "Ardèche",
   "slug": "ardeche",
   "region": "Auvergne-Rhône-Alpes",
-  "updated": "26/11/2026 à 20:24",
+  "updated": "27/11/2026 à 20:19",
   "score_eau": 97,
   "nb_communes": 337,
   "potable": [
@@ -29227,64 +29227,6 @@
   ],
   "nappes": [
     {
-      "nom": "Lablachère",
-      "libelle": "Provisoire-01 _Rha_Forage - Le Bieuzet_Lablachère",
-      "masse_eau": "Grès Trias ardéchois",
-      "profondeur": 160.0,
-      "dept": "07",
-      "code_bss": "BSS003GPIS/X",
-      "current": 245.189,
-      "history": [
-        245.502,
-        245.426,
-        245.37,
-        245.3,
-        245.288,
-        245.318,
-        245.227,
-        245.152,
-        245.136,
-        245.147,
-        245.159,
-        245.198,
-        245.195,
-        245.189
-      ],
-      "year_ago": 244.01,
-      "lat": 44.46354371,
-      "lng": 4.214386619,
-      "color": "#3b82f6"
-    },
-    {
-      "nom": "Aubenas",
-      "libelle": "Provisoire-02 _Rha_Forage - Constantine_Aubenas",
-      "masse_eau": "Grès Trias ardéchois",
-      "profondeur": 104.0,
-      "dept": "07",
-      "code_bss": "08651X0038/0038",
-      "current": 297.512,
-      "history": [
-        297.218,
-        297.293,
-        297.227,
-        297.207,
-        297.203,
-        297.208,
-        297.281,
-        297.379,
-        297.339,
-        297.315,
-        297.323,
-        297.377,
-        297.431,
-        297.512
-      ],
-      "year_ago": 294.53,
-      "lat": 44.619744152,
-      "lng": 4.39032624,
-      "color": "#3b82f6"
-    },
-    {
       "nom": "Veyras",
       "libelle": "Forage - Captage Des Tombes Antiques (Veyras - Brgm 07)",
       "masse_eau": "Grès Trias ardéchois",
@@ -29308,62 +29250,84 @@
         442.06,
         442.06
       ],
-      "year_ago": 441.82,
+      "year_ago": 441.84,
       "lat": 44.733838457,
       "lng": 4.561214887,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Lablachère",
+      "libelle": "Provisoire-01 _Rha_Forage - Le Bieuzet_Lablachère",
+      "masse_eau": "Grès Trias ardéchois",
+      "profondeur": 160.0,
+      "dept": "07",
+      "code_bss": "BSS003GPIS/X",
+      "current": 245.342,
+      "history": [
+        245.37,
+        245.3,
+        245.288,
+        245.318,
+        245.227,
+        245.152,
+        245.136,
+        245.147,
+        245.159,
+        245.198,
+        245.195,
+        245.189,
+        245.26,
+        245.342
+      ],
+      "year_ago": 243.9,
+      "lat": 44.46354371,
+      "lng": 4.214386619,
+      "color": "#3b82f6"
+    },
+    {
+      "nom": "Aubenas",
+      "libelle": "Provisoire-02 _Rha_Forage - Constantine_Aubenas",
+      "masse_eau": "Grès Trias ardéchois",
+      "profondeur": 104.0,
+      "dept": "07",
+      "code_bss": "08651X0038/0038",
+      "current": 297.531,
+      "history": [
+        297.203,
+        297.208,
+        297.281,
+        297.379,
+        297.339,
+        297.315,
+        297.323,
+        297.377,
+        297.431,
+        297.512,
+        297.546,
+        297.535,
+        297.533,
+        297.531
+      ],
+      "year_ago": 294.53,
+      "lat": 44.619744152,
+      "lng": 4.39032624,
       "color": "#3b82f6"
     }
   ],
   "air": [
     {
-      "zone": "Mairie des Salelles",
+      "zone": "Rochemaure",
       "dept": "07",
-      "date": "2026-11-28",
-      "indice": 1,
-      "label": "Bon",
-      "color": "#50f0e6",
-      "source": "Atmo Auvergne-Rhône-Alpes",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "Avressieux",
-      "dept": "07",
-      "date": "2026-11-28",
+      "date": "2026-11-29",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
       "source": "Atmo Auvergne-Rhône-Alpes",
       "polluants": {
         "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "O₃": {
           "indice": 1,
@@ -29371,9 +29335,9 @@
           "color": "#10b981"
         },
         "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM2.5": {
           "indice": 2,
@@ -29388,9 +29352,9 @@
       }
     },
     {
-      "zone": "Sceautres",
+      "zone": "Rochepaule",
       "dept": "07",
-      "date": "2026-11-28",
+      "date": "2026-11-29",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",
@@ -29424,9 +29388,45 @@
       }
     },
     {
-      "zone": "Saint-Bauzile",
+      "zone": "Cevins",
       "dept": "07",
-      "date": "2026-11-28",
+      "date": "2026-11-29",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50ccaa",
+      "source": "Atmo Auvergne-Rhône-Alpes",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM10": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "Rocher",
+      "dept": "07",
+      "date": "2026-11-29",
       "indice": 1,
       "label": "Bon",
       "color": "#50f0e6",
@@ -29460,9 +29460,9 @@
       }
     },
     {
-      "zone": "Saint-Jeure-d'Andaure",
+      "zone": "Rochessauve",
       "dept": "07",
-      "date": "2026-11-28",
+      "date": "2026-11-29",
       "indice": 2,
       "label": "Moyen",
       "color": "#50ccaa",

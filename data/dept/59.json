@@ -3,7 +3,7 @@
   "nom": "Nord",
   "slug": "nord",
   "region": "Hauts-de-France",
-  "updated": "26/11/2026 à 20:24",
+  "updated": "27/11/2026 à 20:19",
   "score_eau": 92,
   "nb_communes": 656,
   "potable": [
@@ -46707,16 +46707,72 @@
   ],
   "nappes": [
     {
+      "nom": "Rieulay",
+      "libelle": "Sondage Des Hudions (Marchiennes Campagne) - 59",
+      "masse_eau": "Craie des vallées de la Scarpe et de la Sensée",
+      "profondeur": 35.3,
+      "dept": "59",
+      "code_bss": "00281X0002/F1",
+      "current": 6.681,
+      "history": [
+        6.648,
+        6.686,
+        6.696,
+        6.837,
+        6.813,
+        6.865,
+        6.787,
+        6.873,
+        6.855,
+        6.927,
+        6.836,
+        6.823,
+        6.71,
+        6.681
+      ],
+      "year_ago": 8.42,
+      "lat": 50.389681094,
+      "lng": 3.282862717,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Grand-Fayt",
+      "libelle": "Forage Du Campiau (Grand Fayt) - 59",
+      "masse_eau": "Calcaires de l'Avesnois",
+      "profondeur": 36.0,
+      "dept": "59",
+      "code_bss": "00387X0184/PZCC1",
+      "current": 139.597,
+      "history": [
+        139.548,
+        139.593,
+        139.654,
+        139.629,
+        139.643,
+        139.613,
+        139.647,
+        139.634,
+        139.663,
+        139.631,
+        139.639,
+        139.614,
+        139.617,
+        139.597
+      ],
+      "year_ago": 139.62,
+      "lat": 50.109494526,
+      "lng": 3.794037727,
+      "color": "#ef4444"
+    },
+    {
       "nom": "Maulde",
       "libelle": "Maulde-Carbo-00213X0002",
       "masse_eau": "Calcaire carbonifère de Roubaix-Tourcoing",
       "profondeur": 90.0,
       "dept": "59",
       "code_bss": "00213X0002/F1",
-      "current": 11.991,
+      "current": 12.007,
       "history": [
-        11.928,
-        11.932,
         11.934,
         11.935,
         11.938,
@@ -46728,11 +46784,42 @@
         11.967,
         11.971,
         11.983,
-        11.991
+        11.991,
+        12.002,
+        12.007
       ],
       "year_ago": 12.74,
       "lat": 50.496552567,
       "lng": 3.435183594,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Roost-Warendin",
+      "libelle": "Forage De Roost-Warendin - 59",
+      "masse_eau": "Craie des vallées de la Scarpe et de la Sensée",
+      "profondeur": 51.0,
+      "dept": "59",
+      "code_bss": "00207X0133/F1",
+      "current": 17.255,
+      "history": [
+        17.101,
+        17.203,
+        17.275,
+        17.35,
+        17.33,
+        17.314,
+        17.296,
+        17.32,
+        17.326,
+        17.344,
+        17.315,
+        17.296,
+        17.274,
+        17.255
+      ],
+      "year_ago": 17.43,
+      "lat": 50.413432839,
+      "lng": 3.09367125,
       "color": "#ef4444"
     },
     {
@@ -46765,103 +46852,14 @@
       "color": "#ef4444"
     },
     {
-      "nom": "Rieulay",
-      "libelle": "Sondage Des Hudions (Marchiennes Campagne) - 59",
-      "masse_eau": "Craie des vallées de la Scarpe et de la Sensée",
-      "profondeur": 35.3,
-      "dept": "59",
-      "code_bss": "00281X0002/F1",
-      "current": 6.823,
-      "history": [
-        6.712,
-        6.693,
-        6.648,
-        6.686,
-        6.696,
-        6.837,
-        6.813,
-        6.865,
-        6.787,
-        6.873,
-        6.855,
-        6.927,
-        6.836,
-        6.823
-      ],
-      "year_ago": 8.46,
-      "lat": 50.389681094,
-      "lng": 3.282862717,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Roost-Warendin",
-      "libelle": "Forage De Roost-Warendin - 59",
-      "masse_eau": "Craie des vallées de la Scarpe et de la Sensée",
-      "profondeur": 51.0,
-      "dept": "59",
-      "code_bss": "00207X0133/F1",
-      "current": 17.296,
-      "history": [
-        16.993,
-        17.045,
-        17.101,
-        17.203,
-        17.275,
-        17.35,
-        17.33,
-        17.314,
-        17.296,
-        17.32,
-        17.326,
-        17.344,
-        17.315,
-        17.296
-      ],
-      "year_ago": 17.4,
-      "lat": 50.413432839,
-      "lng": 3.09367125,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Lille",
-      "libelle": "Forage Au Lieut Dit \"Le Marais\" (Lomme) - 59",
-      "masse_eau": "Calcaire carbonifère de Roubaix-Tourcoing",
-      "profondeur": 108.25,
-      "dept": "59",
-      "code_bss": "00146B0007/F1",
-      "current": 15.815,
-      "history": [
-        15.748,
-        15.748,
-        15.684,
-        15.684,
-        15.688,
-        15.758,
-        15.723,
-        15.722,
-        15.698,
-        15.754,
-        15.77,
-        15.824,
-        15.813,
-        15.815
-      ],
-      "year_ago": 16.03,
-      "lat": 50.627050553,
-      "lng": 3.01421481,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Abscon",
       "libelle": "Abscon-00281X0004",
       "masse_eau": "Craie des vallées de la Scarpe et de la Sensée",
       "profondeur": 50.19,
       "dept": "59",
       "code_bss": "00281X0004/F1",
-      "current": 28.251,
+      "current": 28.239,
       "history": [
-        27.517,
-        27.589,
         27.864,
         28.075,
         28.143,
@@ -46873,9 +46871,11 @@
         28.235,
         28.243,
         28.247,
-        28.251
+        28.251,
+        28.247,
+        28.239
       ],
-      "year_ago": 27.99,
+      "year_ago": 28.0,
       "lat": 50.3340992,
       "lng": 3.302334118,
       "color": "#3b82f6"
@@ -46887,10 +46887,8 @@
       "profondeur": 120.0,
       "dept": "59",
       "code_bss": "00155C0017/F1",
-      "current": 27.414,
+      "current": 27.412,
       "history": [
-        27.434,
-        27.437,
         27.433,
         27.426,
         27.424,
@@ -46902,7 +46900,9 @@
         27.41,
         27.413,
         27.414,
-        27.414
+        27.414,
+        27.414,
+        27.412
       ],
       "year_ago": 29.34,
       "lat": 50.608093628,
@@ -46910,119 +46910,32 @@
       "color": "#ef4444"
     },
     {
-      "nom": "Anor",
-      "libelle": "Anor-00512X0001",
-      "masse_eau": "Socle ardennais",
-      "profondeur": 42.7,
-      "dept": "59",
-      "code_bss": "00512X0001/P1",
-      "current": 226.072,
-      "history": [
-        229.822,
-        230.95,
-        231.653,
-        231.493,
-        230.72,
-        229.859,
-        229.027,
-        228.356,
-        227.834,
-        227.419,
-        227.081,
-        226.747,
-        226.407,
-        226.072
-      ],
-      "year_ago": 228.34,
-      "lat": 49.986170128,
-      "lng": 4.103056357,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Rombies-et-Marchipont",
-      "libelle": "Puits De Rombies",
-      "masse_eau": "Craie du Valenciennois",
-      "profondeur": 30.65,
-      "dept": "59",
-      "code_bss": "00291X0031/P1",
-      "current": 29.085,
-      "history": [
-        29.068,
-        29.065,
-        29.09,
-        29.078,
-        29.071,
-        29.071,
-        29.067,
-        29.065,
-        29.065,
-        29.07,
-        29.076,
-        29.078,
-        29.083,
-        29.085
-      ],
-      "year_ago": 30.94,
-      "lat": 50.370975314,
-      "lng": 3.641252377,
-      "color": "#ef4444"
-    },
-    {
       "nom": "Lille",
-      "libelle": "Puits Des Ateliers De La Sncf (Hellemmes) - 59",
-      "masse_eau": "Craie de la vallée de la Deûle",
-      "profondeur": 23.19,
-      "dept": "59",
-      "code_bss": "00147D0218/P1",
-      "current": 17.183,
-      "history": [
-        17.381,
-        16.904,
-        16.976,
-        17.482,
-        16.94,
-        17.094,
-        17.485,
-        17.003,
-        17.12,
-        17.567,
-        17.05,
-        17.153,
-        17.629,
-        17.183
-      ],
-      "year_ago": 18.03,
-      "lat": 50.622566922,
-      "lng": 3.102482544,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Bondues",
-      "libelle": "Bondues-00143C0079",
+      "libelle": "Forage Au Lieut Dit \"Le Marais\" (Lomme) - 59",
       "masse_eau": "Calcaire carbonifère de Roubaix-Tourcoing",
-      "profondeur": 168.53,
+      "profondeur": 108.25,
       "dept": "59",
-      "code_bss": "00143C0079/F1",
-      "current": -63.223,
+      "code_bss": "00146B0007/F1",
+      "current": 15.811,
       "history": [
-        -63.105,
-        -63.11,
-        -63.22,
-        -63.228,
-        -63.239,
-        -63.124,
-        -63.164,
-        -63.178,
-        -63.258,
-        -63.21,
-        -63.177,
-        -63.108,
-        -63.167,
-        -63.223
+        15.684,
+        15.684,
+        15.688,
+        15.758,
+        15.723,
+        15.722,
+        15.698,
+        15.754,
+        15.77,
+        15.824,
+        15.813,
+        15.815,
+        15.809,
+        15.811
       ],
-      "year_ago": -63.18,
-      "lat": 50.706550499,
-      "lng": 3.101277748,
+      "year_ago": 16.07,
+      "lat": 50.627050553,
+      "lng": 3.01421481,
       "color": "#ef4444"
     },
     {
@@ -47032,10 +46945,8 @@
       "profondeur": 27.0,
       "dept": "59",
       "code_bss": "00035X0210/PZO1",
-      "current": 1.07,
+      "current": 1.039,
       "history": [
-        1.243,
-        1.29,
         1.271,
         1.253,
         1.242,
@@ -47047,11 +46958,129 @@
         1.128,
         1.122,
         1.097,
-        1.07
+        1.07,
+        1.053,
+        1.039
       ],
-      "year_ago": 1.43,
+      "year_ago": 1.41,
       "lat": 50.971087105,
       "lng": 2.169598809,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Bondues",
+      "libelle": "Bondues-00143C0079",
+      "masse_eau": "Calcaire carbonifère de Roubaix-Tourcoing",
+      "profondeur": 168.53,
+      "dept": "59",
+      "code_bss": "00143C0079/F1",
+      "current": -63.303,
+      "history": [
+        -63.22,
+        -63.228,
+        -63.239,
+        -63.124,
+        -63.164,
+        -63.178,
+        -63.258,
+        -63.21,
+        -63.177,
+        -63.108,
+        -63.167,
+        -63.223,
+        -63.264,
+        -63.303
+      ],
+      "year_ago": -63.14,
+      "lat": 50.706550499,
+      "lng": 3.101277748,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Anor",
+      "libelle": "Anor-00512X0001",
+      "masse_eau": "Socle ardennais",
+      "profondeur": 42.7,
+      "dept": "59",
+      "code_bss": "00512X0001/P1",
+      "current": 225.403,
+      "history": [
+        231.653,
+        231.493,
+        230.72,
+        229.859,
+        229.027,
+        228.356,
+        227.834,
+        227.419,
+        227.081,
+        226.747,
+        226.407,
+        226.072,
+        225.734,
+        225.403
+      ],
+      "year_ago": 227.87,
+      "lat": 49.986170128,
+      "lng": 4.103056357,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Rombies-et-Marchipont",
+      "libelle": "Puits De Rombies",
+      "masse_eau": "Craie du Valenciennois",
+      "profondeur": 30.65,
+      "dept": "59",
+      "code_bss": "00291X0031/P1",
+      "current": 29.091,
+      "history": [
+        29.09,
+        29.078,
+        29.071,
+        29.071,
+        29.067,
+        29.065,
+        29.065,
+        29.07,
+        29.076,
+        29.078,
+        29.083,
+        29.085,
+        29.088,
+        29.091
+      ],
+      "year_ago": 30.93,
+      "lat": 50.370975314,
+      "lng": 3.641252377,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Lille",
+      "libelle": "Puits Des Ateliers De La Sncf (Hellemmes) - 59",
+      "masse_eau": "Craie de la vallée de la Deûle",
+      "profondeur": 23.19,
+      "dept": "59",
+      "code_bss": "00147D0218/P1",
+      "current": 17.671,
+      "history": [
+        16.976,
+        17.482,
+        16.94,
+        17.094,
+        17.485,
+        17.003,
+        17.12,
+        17.567,
+        17.05,
+        17.153,
+        17.629,
+        17.183,
+        17.195,
+        17.671
+      ],
+      "year_ago": 18.07,
+      "lat": 50.622566922,
+      "lng": 3.102482544,
       "color": "#ef4444"
     },
     {
@@ -47061,10 +47090,8 @@
       "profondeur": 27.0,
       "dept": "59",
       "code_bss": "00296X0158/P1",
-      "current": 122.065,
+      "current": 122.165,
       "history": [
-        120.63,
-        120.679,
         120.742,
         120.827,
         120.949,
@@ -47076,9 +47103,11 @@
         121.808,
         121.915,
         121.998,
-        122.065
+        122.065,
+        122.118,
+        122.165
       ],
-      "year_ago": 121.33,
+      "year_ago": 121.47,
       "lat": 50.267824257,
       "lng": 3.706224389,
       "color": "#3b82f6"
@@ -47090,10 +47119,8 @@
       "profondeur": 3.2,
       "dept": "59",
       "code_bss": "00217X0068/P1",
-      "current": 13.528,
+      "current": 13.472,
       "history": [
-        14.876,
-        14.646,
         14.811,
         14.526,
         14.357,
@@ -47105,69 +47132,13 @@
         13.667,
         13.627,
         13.584,
-        13.528
+        13.528,
+        13.494,
+        13.472
       ],
-      "year_ago": 14.07,
+      "year_ago": 13.64,
       "lat": 50.487572987,
       "lng": 3.496164849,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Neuvilly",
-      "libelle": "Puits De La Ferme De Rambourlieux (Neuvilly) - 59",
-      "masse_eau": "Craie du Cambrésis",
-      "profondeur": 44.6,
-      "dept": "59",
-      "code_bss": "00377X0051/S1",
-      "current": 90.899,
-      "history": [
-        90.899,
-        90.899,
-        90.897,
-        90.899,
-        90.899,
-        90.899,
-        90.895,
-        90.894,
-        90.902,
-        90.897,
-        90.897,
-        90.897,
-        90.9,
-        90.899
-      ],
-      "year_ago": 92.44,
-      "lat": 50.124795409,
-      "lng": 3.503568802,
-      "color": "#ef4444"
-    },
-    {
-      "nom": "Ligny-en-Cambrésis",
-      "libelle": "Forage Du Chemin Des Lois (Ligny - Haucourt) - 59",
-      "masse_eau": "Craie du Cambrésis",
-      "profondeur": 41.0,
-      "dept": "59",
-      "code_bss": "00376X0210/PZ1",
-      "current": 81.509,
-      "history": [
-        81.434,
-        81.459,
-        81.485,
-        81.526,
-        81.543,
-        81.552,
-        81.549,
-        81.546,
-        81.541,
-        81.537,
-        81.533,
-        81.523,
-        81.519,
-        81.509
-      ],
-      "year_ago": 83.06,
-      "lat": 50.110007928,
-      "lng": 3.363811673,
       "color": "#ef4444"
     },
     {
@@ -47177,10 +47148,8 @@
       "profondeur": 108.8,
       "dept": "59",
       "code_bss": "00204X0260/PZ1",
-      "current": 14.641,
+      "current": 14.604,
       "history": [
-        14.803,
-        14.776,
         14.701,
         14.664,
         14.652,
@@ -47192,11 +47161,71 @@
         14.651,
         14.682,
         14.682,
-        14.641
+        14.641,
+        14.646,
+        14.604
       ],
-      "year_ago": 15.04,
+      "year_ago": 15.03,
       "lat": 50.531441394,
       "lng": 3.194340278,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Neuvilly",
+      "libelle": "Puits De La Ferme De Rambourlieux (Neuvilly) - 59",
+      "masse_eau": "Craie du Cambrésis",
+      "profondeur": 44.6,
+      "dept": "59",
+      "code_bss": "00377X0051/S1",
+      "current": 90.902,
+      "history": [
+        90.897,
+        90.899,
+        90.899,
+        90.899,
+        90.895,
+        90.894,
+        90.902,
+        90.897,
+        90.897,
+        90.897,
+        90.9,
+        90.899,
+        90.897,
+        90.902
+      ],
+      "year_ago": 92.43,
+      "lat": 50.124795409,
+      "lng": 3.503568802,
+      "color": "#ef4444"
+    },
+    {
+      "nom": "Ligny-en-Cambrésis",
+      "libelle": "Forage Du Chemin Des Lois (Ligny - Haucourt) - 59",
+      "masse_eau": "Craie du Cambrésis",
+      "profondeur": 41.0,
+      "dept": "59",
+      "code_bss": "00376X0210/PZ1",
+      "current": 81.497,
+      "history": [
+        81.485,
+        81.526,
+        81.543,
+        81.552,
+        81.549,
+        81.546,
+        81.541,
+        81.537,
+        81.533,
+        81.523,
+        81.519,
+        81.509,
+        81.501,
+        81.497
+      ],
+      "year_ago": 83.05,
+      "lat": 50.110007928,
+      "lng": 3.363811673,
       "color": "#ef4444"
     },
     {
@@ -47206,10 +47235,8 @@
       "profondeur": 55.0,
       "dept": "59",
       "code_bss": "00134X0127/PZ1",
-      "current": -7.983,
+      "current": -8.039,
       "history": [
-        -7.946,
-        -7.956,
         -7.998,
         -7.999,
         -7.995,
@@ -47221,9 +47248,11 @@
         -7.958,
         -7.94,
         -7.943,
-        -7.983
+        -7.983,
+        -8.036,
+        -8.039
       ],
-      "year_ago": -6.95,
+      "year_ago": -6.96,
       "lat": 50.683526719,
       "lng": 2.819637172,
       "color": "#ef4444"
@@ -47235,10 +47264,8 @@
       "profondeur": 20.0,
       "dept": "59",
       "code_bss": "00202A0460/PZ12",
-      "current": 13.891,
+      "current": 13.876,
       "history": [
-        13.9,
-        13.918,
         13.934,
         13.938,
         13.941,
@@ -47250,9 +47277,11 @@
         13.914,
         13.905,
         13.898,
-        13.891
+        13.891,
+        13.885,
+        13.876
       ],
-      "year_ago": 15.37,
+      "year_ago": 15.35,
       "lat": 50.539014093,
       "lng": 2.98110811,
       "color": "#ef4444"
@@ -47264,10 +47293,8 @@
       "profondeur": 42.8,
       "dept": "59",
       "code_bss": "00225X0077/FC2",
-      "current": 12.829,
+      "current": 12.837,
       "history": [
-        12.474,
-        12.493,
         12.535,
         12.616,
         12.676,
@@ -47279,9 +47306,11 @@
         12.809,
         12.824,
         12.826,
-        12.829
+        12.829,
+        12.832,
+        12.837
       ],
-      "year_ago": 12.91,
+      "year_ago": 12.93,
       "lat": 50.430348283,
       "lng": 3.59697448,
       "color": "#ef4444"
@@ -47293,10 +47322,8 @@
       "profondeur": 20.0,
       "dept": "59",
       "code_bss": "00148D0177/F2",
-      "current": 21.879,
+      "current": 21.847,
       "history": [
-        21.763,
-        21.913,
         21.936,
         21.947,
         21.961,
@@ -47308,7 +47335,9 @@
         21.919,
         21.911,
         21.895,
-        21.879
+        21.879,
+        21.862,
+        21.847
       ],
       "year_ago": 22.47,
       "lat": 50.618748936,
@@ -47339,7 +47368,7 @@
         21.276,
         21.248
       ],
-      "year_ago": 21.59,
+      "year_ago": 21.55,
       "lat": 50.621843202,
       "lng": 3.141078161,
       "color": "#ef4444"
@@ -47351,10 +47380,8 @@
       "profondeur": 26.8,
       "dept": "59",
       "code_bss": "00286X0405/PZST2",
-      "current": 53.376,
+      "current": 53.374,
       "history": [
-        53.38,
-        53.381,
         53.374,
         53.376,
         53.379,
@@ -47366,7 +47393,9 @@
         53.378,
         53.38,
         53.375,
-        53.376
+        53.376,
+        53.375,
+        53.374
       ],
       "year_ago": 54.29,
       "lat": 50.226952586,
@@ -47380,10 +47409,8 @@
       "profondeur": 18.3,
       "dept": "59",
       "code_bss": "00203A0359/PZ2",
-      "current": 22.29,
+      "current": 22.246,
       "history": [
-        22.094,
-        22.297,
         22.41,
         22.453,
         22.465,
@@ -47395,48 +47422,93 @@
         22.355,
         22.335,
         22.313,
-        22.29
+        22.29,
+        22.268,
+        22.246
       ],
       "year_ago": 22.31,
       "lat": 50.546309473,
       "lng": 3.064021091,
       "color": "#ef4444"
-    },
-    {
-      "nom": "Grand-Fayt",
-      "libelle": "Forage Du Campiau (Grand Fayt) - 59",
-      "masse_eau": "Calcaires de l'Avesnois",
-      "profondeur": 36.0,
-      "dept": "59",
-      "code_bss": "00387X0184/PZCC1",
-      "current": 139.614,
-      "history": [
-        139.406,
-        139.445,
-        139.548,
-        139.593,
-        139.654,
-        139.629,
-        139.643,
-        139.613,
-        139.647,
-        139.634,
-        139.663,
-        139.631,
-        139.639,
-        139.614
-      ],
-      "year_ago": 139.62,
-      "lat": 50.109494526,
-      "lng": 3.794037727,
-      "color": "#ef4444"
     }
   ],
   "air": [
     {
-      "zone": "SEMERIES",
+      "zone": "SAINT AMAND LES EAUX",
       "dept": "59",
-      "date": "2026-11-27",
+      "date": "2026-11-28",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
+      "source": "Atmo HDF",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "SAINT ANDRE LEZ LILLE",
+      "dept": "59",
+      "date": "2026-11-28",
+      "indice": 3,
+      "label": "Dégradé",
+      "color": "#F0E641",
+      "source": "Atmo HDF",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM10": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 3,
+          "label": "Dégradé",
+          "color": "#f59e0b"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "SAINT AUBERT",
+      "dept": "59",
+      "date": "2026-11-28",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -47448,9 +47520,45 @@
           "color": "#10b981"
         },
         "O₃": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "PM10": {
           "indice": 2,
           "label": "Moyen",
           "color": "#eab308"
+        },
+        "PM2.5": {
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
+        },
+        "SO₂": {
+          "indice": 0,
+          "label": "N.C.",
+          "color": "#94a3b8"
+        }
+      }
+    },
+    {
+      "zone": "SAINT AUBIN",
+      "dept": "59",
+      "date": "2026-11-28",
+      "indice": 2,
+      "label": "Moyen",
+      "color": "#50CCAA",
+      "source": "Atmo HDF",
+      "polluants": {
+        "NO₂": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
+        },
+        "O₃": {
+          "indice": 1,
+          "label": "Bon",
+          "color": "#10b981"
         },
         "PM10": {
           "indice": 1,
@@ -47470,81 +47578,9 @@
       }
     },
     {
-      "zone": "SEMOUSIES",
+      "zone": "SAINT AYBERT",
       "dept": "59",
-      "date": "2026-11-27",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo HDF",
-      "polluants": {
-        "NO₂": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "O₃": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "SENTINELLE",
-      "dept": "59",
-      "date": "2026-11-27",
-      "indice": 2,
-      "label": "Moyen",
-      "color": "#50CCAA",
-      "source": "Atmo HDF",
-      "polluants": {
-        "NO₂": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM10": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "SEPMERIES",
-      "dept": "59",
-      "date": "2026-11-27",
+      "date": "2026-11-28",
       "indice": 2,
       "label": "Moyen",
       "color": "#50CCAA",
@@ -47561,50 +47597,14 @@
           "color": "#10b981"
         },
         "PM10": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM2.5": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "SO₂": {
-          "indice": 0,
-          "label": "N.C.",
-          "color": "#94a3b8"
-        }
-      }
-    },
-    {
-      "zone": "SEQUEDIN",
-      "dept": "59",
-      "date": "2026-11-27",
-      "indice": 4,
-      "label": "Mauvais",
-      "color": "#FF5050",
-      "source": "Atmo HDF",
-      "polluants": {
-        "NO₂": {
-          "indice": 2,
-          "label": "Moyen",
-          "color": "#eab308"
-        },
-        "O₃": {
-          "indice": 1,
-          "label": "Bon",
-          "color": "#10b981"
-        },
-        "PM10": {
           "indice": 2,
           "label": "Moyen",
           "color": "#eab308"
         },
         "PM2.5": {
-          "indice": 4,
-          "label": "Mauvais",
-          "color": "#f97316"
+          "indice": 2,
+          "label": "Moyen",
+          "color": "#eab308"
         },
         "SO₂": {
           "indice": 0,
